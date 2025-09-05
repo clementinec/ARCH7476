@@ -182,61 +182,61 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "ARCH7476: Evidence-Based Design",
+    "title": "ARCH7476: Evidence-Based Generative Design",
     "section": "",
     "text": "ARCH7476: Evidence-Based Design explores how architects can make better design decisions through systematic data collection, analysis, and interpretation. This course bridges the gap between intuitive design thinking and empirical evidence, preparing students to justify design choices with quantitative and qualitative data.\n\n\n\n“Generative design is not magic” — it requires evidence, testing, and systematic evaluation.\n\nModern architectural practice increasingly demands evidence-based decision making. Whether optimizing building performance, validating design assumptions, or communicating with clients and stakeholders, architects need skills in data collection, analysis, and presentation.\n\n\n\nBy the end of this course, students will be able to:\n\nFrame architectural problems as testable research questions\nCollect and analyze data relevant to design decisions\nDesign and conduct tests to evaluate design alternatives\nCommunicate findings effectively to diverse audiences\nDocument workflows for reproducible design research\nApply ethical frameworks to data collection and use in architecture\n\n\n\n\nThis course serves students across different programs:\n\nMArch students: Focus on practical design decision memos and real-world applications\nUndergraduate students: Guided scaffolding with low-code tools and preset simulations\nPhD students: Deeper engagement with uncertainty analysis, reproducibility, and advanced workflows\n\nAll students produce equivalent deliverables, but technical depth and methodological rigor flex according to experience and program requirements.",
     "crumbs": [
       "Home",
       "Course Overview",
-      "ARCH7476: Evidence-Based Design"
+      "ARCH7476: Evidence-Based Generative Design"
     ]
   },
   {
     "objectID": "index.html#course-overview",
     "href": "index.html#course-overview",
-    "title": "ARCH7476: Evidence-Based Design",
+    "title": "ARCH7476: Evidence-Based Generative Design",
     "section": "",
     "text": "ARCH7476: Evidence-Based Design explores how architects can make better design decisions through systematic data collection, analysis, and interpretation. This course bridges the gap between intuitive design thinking and empirical evidence, preparing students to justify design choices with quantitative and qualitative data.\n\n\n\n“Generative design is not magic” — it requires evidence, testing, and systematic evaluation.\n\nModern architectural practice increasingly demands evidence-based decision making. Whether optimizing building performance, validating design assumptions, or communicating with clients and stakeholders, architects need skills in data collection, analysis, and presentation.\n\n\n\nBy the end of this course, students will be able to:\n\nFrame architectural problems as testable research questions\nCollect and analyze data relevant to design decisions\nDesign and conduct tests to evaluate design alternatives\nCommunicate findings effectively to diverse audiences\nDocument workflows for reproducible design research\nApply ethical frameworks to data collection and use in architecture\n\n\n\n\nThis course serves students across different programs:\n\nMArch students: Focus on practical design decision memos and real-world applications\nUndergraduate students: Guided scaffolding with low-code tools and preset simulations\nPhD students: Deeper engagement with uncertainty analysis, reproducibility, and advanced workflows\n\nAll students produce equivalent deliverables, but technical depth and methodological rigor flex according to experience and program requirements.",
     "crumbs": [
       "Home",
       "Course Overview",
-      "ARCH7476: Evidence-Based Design"
+      "ARCH7476: Evidence-Based Generative Design"
     ]
   },
   {
     "objectID": "index.html#course-structure",
     "href": "index.html#course-structure",
-    "title": "ARCH7476: Evidence-Based Design",
+    "title": "ARCH7476: Evidence-Based Generative Design",
     "section": "Course Structure",
     "text": "Course Structure\n\nCore Assignments\nThe course centers around four major assignments that build toward a comprehensive research brief:\n\nA1: Decision Claim (Week 2)\n\nIdentify a design object and articulate a testable claim about its performance or impact.\n\nA2: Evidence Map (Week 4)\n\nMap existing evidence and identify gaps requiring new data collection.\n\nA3: Test Plan + Pilot (Week 5)\n\nDesign and pilot a systematic test of your design claim.\n\nA4: Final Package (Week 12)\n\nComplete research brief including Practice Case, Object Card, and Reproducibility Capsule.\n\n\n\n\nPedagogical Approach\n\nLearning by doing: Each week combines conceptual frameworks with hands-on application\nPeer review: Multiple opportunities for peer feedback and collaborative learning\nMentor dialogue: Mid-course consultation with external practitioners\nPublic presentation: Final “Object Fair” with invited critics\n\n\n\nTools and Technology\nThe course emphasizes tool flexibility rather than software mastery:\nLow-code options: Excel/Sheets, QGIS, preset simulations (Radiance/VELUX, EnergyPlus Simple Glazing)\nCode-heavy options: Python/Colab, GitHub workflows, custom analysis scripts\nUniversal tools: Visualization software, presentation platforms, documentation systems",
     "crumbs": [
       "Home",
       "Course Overview",
-      "ARCH7476: Evidence-Based Design"
+      "ARCH7476: Evidence-Based Generative Design"
     ]
   },
   {
     "objectID": "index.html#schedule-at-a-glance",
     "href": "index.html#schedule-at-a-glance",
-    "title": "ARCH7476: Evidence-Based Design",
+    "title": "ARCH7476: Evidence-Based Generative Design",
     "section": "Schedule at a Glance",
     "text": "Schedule at a Glance\n\n\n\n\n\n\n\n\n\nWeek\nFocus\nKey Activity\nDeliverable\n\n\n\n\n1\nWhy Evidence Matters\nCourse introduction, seed ideas\nDraft A1 concept\n\n\n2\nFinding and Framing Data\nData sources, ethics\nSubmit A1\n\n\n3\nPlanning a Test\nTest design, pre-registration\nDraft A3 plan\n\n\n4\nSensitivity & Peer Check\nUncertainty analysis\nSubmit A2\n\n\n5\nPilot Week\nConduct pilot test\nSubmit A3\n\n\n6\nMaking Results Readable\nData visualization\nDraft A4 figures\n\n\n7\nDecide with Numbers\nThresholds, peer review\nRevise A4\n\n\n8\nLight Workflow Help\nDocumentation, mentor consults\nMentor Report\n\n\n9\nStorytelling & Figures\nPractice Case narrative\nPolish A4\n\n\n10\nDraft Defense\nIn-class presentations\nFeedback integration\n\n\n11\nFinal Polish\nFinal revisions\nNear-final A4\n\n\n12\nObject Fair\nFinal presentations\nSubmit A4 Final",
     "crumbs": [
       "Home",
       "Course Overview",
-      "ARCH7476: Evidence-Based Design"
+      "ARCH7476: Evidence-Based Generative Design"
     ]
   },
   {
     "objectID": "index.html#getting-started",
     "href": "index.html#getting-started",
-    "title": "ARCH7476: Evidence-Based Design",
+    "title": "ARCH7476: Evidence-Based Generative Design",
     "section": "Getting Started",
     "text": "Getting Started\n\nPreparation\nBefore our first meeting:\n\nReview the syllabus and assignment descriptions\nInstall basic tools: Spreadsheet software, QGIS (free)\nIdentify a potential design object for your semester-long investigation\nRead: Selected excerpts from The Craft of Research (available on course site)\n\n\n\nQuestions?\n\nCheck the Resources page for software installation guides\nReview Assignment Details for complete rubrics and timelines\nBrowse the Weekly Schedule for detailed session plans\n\n\nThis course website is built with Quarto and hosted via GitHub Pages. Source code available on GitHub.",
     "crumbs": [
       "Home",
       "Course Overview",
-      "ARCH7476: Evidence-Based Design"
+      "ARCH7476: Evidence-Based Generative Design"
     ]
   },
   {
