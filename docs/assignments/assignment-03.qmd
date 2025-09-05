@@ -1,0 +1,428 @@
+---
+title: "Assignment 3: Test Plan + Pilot Study"
+subtitle: "Designing and Testing Your Research Method"
+format: 
+  html:
+    toc: true
+  pdf:
+    toc: true
+---
+
+**Due:** End of Week 5  
+**Weight:** 25% of final grade  
+**Length:** 3-4 pages + pilot results summary  
+**Format:** PDF submission via course portal
+
+---
+
+# Assignment Overview
+
+**A3: Test Plan + Pilot Study** translates the evidence gaps identified in A2 into a concrete research method. You will design a systematic approach to test your A1 decision claim, conduct a small-scale pilot to validate your method, and refine your approach based on initial results. This assignment develops **method design skills** and **adaptive planning** essential for reliable evidence collection.
+
+## Learning Objectives
+
+By completing this assignment, you will:
+
+1. **Design appropriate research methods** matched to your decision claim and evidence gaps
+2. **Plan systematic data collection** with clear protocols and quality controls
+3. **Conduct pilot testing** to validate methods and identify implementation challenges
+4. **Adapt research plans** based on pilot results and practical constraints
+5. **Document methods** clearly enough for reproduction and peer review
+
+---
+
+# What Is a "Test Plan + Pilot"?
+
+A **test plan** is your systematic strategy for collecting evidence to evaluate your decision claim. It specifies:
+- Exactly what data you will collect and how
+- What comparisons you will make to test your claim  
+- How you will ensure data quality and reliability
+- What analysis approaches you will use
+
+A **pilot study** is a small-scale trial of your test plan that helps you:
+- Verify that your methods work in practice
+- Identify unexpected challenges and solutions
+- Refine your protocols before full implementation
+- Estimate time, cost, and resource requirements
+
+Think of this as **engineering your research** — designing a reliable system for generating trustworthy evidence.
+
+---
+
+# Assignment Requirements
+
+## Part 1: Research Design (1.5-2 pages)
+
+### Research Questions and Hypotheses
+**Primary Research Question**
+- Restate your A1 decision claim as a specific, testable question
+- Break complex claims into component sub-questions if needed
+- Explain how answering this question addresses the evidence gaps identified in A2
+
+**Testable Hypotheses** 
+- What specific outcomes do you predict for your design object?
+- What alternative explanations will you test?
+- How will you distinguish between competing hypotheses?
+
+**Success Criteria**
+- What results would support your claim?
+- What results would refute it?
+- What results would be inconclusive, and how would you interpret them?
+
+### Method Selection and Justification
+
+**Approach Overview**
+Choose one of these research approaches (or justify a hybrid):
+
+1. **Comparative Analysis**: Compare performance of different design alternatives
+2. **Simulation Study**: Use computational models to test design variations
+3. **Measurement Study**: Collect empirical data on existing conditions
+4. **User Study**: Evaluate human responses to design alternatives
+5. **Case Study Analysis**: Deep investigation of exemplary projects
+
+**Method Justification**
+- Why is this approach appropriate for your research question?
+- What are the strengths and limitations of your chosen method?
+- How does your approach address the gaps identified in A2?
+- What alternatives did you consider and why did you reject them?
+
+### Data Collection Protocol
+
+**Data Sources and Selection Criteria**
+- What buildings, spaces, or conditions will you study?
+- How will you select your sample (random, purposive, convenience)?
+- What sample size do you need for reliable results?
+- How will you handle access and permission issues?
+
+**Measurement Procedures**
+- Exactly what will you measure/observe/record?
+- What tools, instruments, or software will you use?
+- What protocols will ensure consistent data collection?
+- How will you handle missing data or measurement errors?
+
+**Quality Control**
+- How will you verify data accuracy and reliability?
+- What calibration or validation procedures will you use?
+- How will you address potential sources of bias or error?
+- What documentation will you maintain throughout data collection?
+
+### Analysis Plan
+
+**Data Analysis Strategy**
+- How will you process and analyze your data?
+- What statistical or analytical approaches will you use?
+- How will you visualize and present your findings?
+- What software tools will support your analysis?
+
+**Interpretation Framework**
+- How will you determine if results support your claim?
+- What threshold or criteria will you use for decision-making?
+- How will you address uncertainty and limitations?
+- How will results connect to your stakeholder decision context?
+
+## Part 2: Pilot Study Implementation (1-1.5 pages)
+
+### Pilot Study Design
+**Pilot Scope and Objectives**
+- What specific aspects of your method did you pilot test?
+- What questions were you trying to answer about your approach?
+- How did you scale down your full method for pilot testing?
+- What success criteria did you set for the pilot?
+
+**Pilot Implementation**
+- Exactly what did you do in your pilot study?
+- What data did you collect and how?
+- What challenges or surprises did you encounter?
+- How long did different tasks take compared to your estimates?
+
+### Pilot Results and Learning
+
+**What Worked Well**
+- Which aspects of your method performed as expected?
+- Where did you get good quality, useful data?
+- What procedures were efficient and reliable?
+- What tools or approaches exceeded your expectations?
+
+**What Didn't Work**
+- Where did you encounter problems or failures?
+- What data was lower quality or less useful than expected?
+- Which procedures were inefficient, unreliable, or unclear?
+- What assumptions proved incorrect?
+
+**Unexpected Findings**
+- What did you learn that you didn't anticipate?
+- Did you discover new data sources or measurement opportunities?
+- Did you identify alternative approaches worth exploring?
+- What insights emerged about your design object or context?
+
+### Method Refinements
+
+**Revised Protocol**
+Based on pilot results:
+- How will you modify your data collection procedures?
+- What changes will you make to tools, instruments, or software?
+- How will you adjust your sample selection or size?
+- What quality control improvements will you implement?
+
+**Updated Timeline and Resources**
+- How has pilot testing changed your time estimates?
+- What additional resources or support do you need?
+- What new challenges do you need to plan for?
+- How will you prioritize if you can't do everything originally planned?
+
+**Risk Management**
+- What could go wrong with your revised approach?
+- What backup plans do you have for likely problems?
+- How will you maintain data quality if you face constraints?
+- What would constitute partial success if full implementation isn't possible?
+
+## Part 3: Reproducibility Documentation (0.5 pages)
+
+### Method Documentation
+**Step-by-Step Protocol**
+- Document your final method clearly enough for another researcher to replicate
+- Include specific tools, settings, procedures, and decision criteria
+- Explain any judgment calls or contextual adaptations
+- Provide templates, checklists, or forms you developed
+
+**Data Management Plan**
+- How will you organize, store, and backup your data?
+- What file naming and organization system will you use?
+- How will you ensure data security and privacy?
+- What metadata will you record to support analysis and interpretation?
+
+**Ethical Considerations**
+- Do you need institutional review for human subjects research?
+- How will you protect privacy of buildings, spaces, or people you study?
+- What permissions do you need for access or data use?
+- How will you acknowledge sources and credit collaborators?
+
+---
+
+# Method Options and Guidance
+
+## Low-Code Approaches (Recommended for beginners)
+
+### Building Performance Comparison
+- **Tools**: EnergyPlus GUI, Climate Consultant, Excel
+- **Data**: Energy simulation results, climate data, building characteristics
+- **Example**: Compare energy use of different window configurations using preset models
+
+### Space Usage Analysis  
+- **Tools**: Manual observation, simple counting apps, Excel
+- **Data**: Occupancy patterns, space utilization rates, user behavior
+- **Example**: Compare seating usage in different plaza configurations over time
+
+### Post-Occupancy Survey
+- **Tools**: Google Forms, Qualtrics, Excel/Sheets
+- **Data**: User satisfaction, comfort ratings, preference rankings
+- **Example**: Compare user satisfaction with different workspace acoustics
+
+## Code-Heavy Options (For experienced students)
+
+### Parametric Performance Analysis
+- **Tools**: Python, Ladybug/Honeybee, Jupyter notebooks
+- **Data**: Automated simulation results, optimization studies
+- **Example**: Parametric study of shading device performance across climate conditions
+
+### Sensor Data Analysis
+- **Tools**: Python/R, data loggers, building management systems
+- **Data**: Environmental conditions, energy use, occupancy patterns
+- **Example**: Statistical analysis of temperature, humidity, and comfort relationships
+
+### Spatial Analysis
+- **Tools**: QGIS Python, PostGIS, spatial statistics packages
+- **Data**: Urban data, building locations, accessibility metrics
+- **Example**: GIS analysis of green infrastructure impact on urban heat island
+
+---
+
+# Differentiated Expectations
+
+## Undergraduate Students
+- **Method complexity**: Single, straightforward approach with clear protocols
+- **Pilot scope**: Simple validation of basic procedures
+- **Analysis depth**: Descriptive statistics and basic comparisons
+- **Documentation**: Clear step-by-step protocols for replication
+
+## MArch Students
+- **Method complexity**: Professional-level approach suitable for practice contexts
+- **Pilot scope**: Testing feasibility for real project implementation
+- **Analysis depth**: Industry-relevant metrics and decision criteria
+- **Documentation**: Consultant-quality method documentation
+
+## PhD Students
+- **Method complexity**: Methodologically innovative or rigorous approach
+- **Pilot scope**: Testing validity and reliability of new procedures
+- **Analysis depth**: Statistical analysis with uncertainty quantification
+- **Documentation**: Publication-quality method description
+
+---
+
+# Common Method Categories and Examples
+
+## Simulation-Based Testing
+**Building Energy Analysis**
+- Compare design alternatives using EnergyPlus or similar tools
+- Vary parameters systematically (insulation, window area, shading)
+- Analyze results across multiple climate conditions or use patterns
+
+**Daylighting Performance**
+- Use Radiance, VELUX, or similar tools to model natural lighting
+- Compare spatial layouts, window configurations, or shading strategies
+- Evaluate metrics like daylight autonomy, glare probability
+
+**Urban Microclimate**
+- Model heat island effects, wind patterns, or solar access
+- Compare building arrangements, materials, or green infrastructure
+- Use tools like ENVI-met, Climate Consultant, or CFD software
+
+## Measurement-Based Testing
+**Environmental Monitoring**
+- Deploy sensors to measure temperature, humidity, light, noise, air quality
+- Compare conditions in different spaces or times
+- Correlate physical conditions with user experience or energy use
+
+**Space Utilization Studies**
+- Observe and record how people use different spatial configurations
+- Count occupancy, track movement patterns, measure dwell times
+- Compare usage between different design alternatives
+
+**Building Performance Assessment**
+- Analyze utility bills, energy monitoring data, or BMS records
+- Compare actual performance with design predictions
+- Identify factors that explain performance variations
+
+## User Experience Testing
+**Occupant Satisfaction Surveys**
+- Develop questionnaires to assess comfort, satisfaction, productivity
+- Compare responses between different design conditions
+- Correlate subjective responses with objective measurements
+
+**Behavioral Observation**
+- Systematically observe user behavior in different environments
+- Record patterns of space use, social interaction, movement
+- Compare behavior between design alternatives
+
+**Focus Groups or Interviews**
+- Gather qualitative insights into user needs and preferences
+- Understand reasoning behind quantitative survey responses
+- Explore unexpected findings from other data collection methods
+
+---
+
+# Assessment Criteria
+
+## Research Design Quality (40%)
+- **Methodological appropriateness**: Does your method match your research question?
+- **Technical feasibility**: Can you realistically implement your approach?
+- **Quality controls**: Have you planned for data reliability and validity?
+- **Analysis strategy**: Do you have a clear plan for interpreting results?
+
+## Pilot Study Execution (30%)
+- **Implementation quality**: Did you conduct a meaningful pilot test?
+- **Critical evaluation**: Do you accurately assess what worked and didn't work?
+- **Learning integration**: Have you revised your approach based on pilot results?
+- **Problem-solving**: Do you have realistic solutions for identified challenges?
+
+## Method Documentation (20%)
+- **Reproducibility**: Could another researcher follow your protocol?
+- **Transparency**: Are your procedures and decision criteria clear?
+- **Ethical considerations**: Have you addressed privacy, access, and consent issues?
+- **Data management**: Do you have sound plans for data organization and security?
+
+## Communication Quality (10%)
+- **Professional presentation**: Clear writing, good organization, error-free
+- **Appropriate detail**: Right level of technical depth for your audience
+- **Logical flow**: Does your narrative connect research design to pilot results to refinements?
+- **Visual aids**: Do tables, diagrams, or figures support your text effectively?
+
+---
+
+# Common Challenges and Solutions
+
+## Challenge: "My pilot didn't work at all"
+**This is actually good news!** Pilots are supposed to reveal problems.
+**Solutions:**
+- Document exactly what went wrong and why
+- Develop alternative approaches based on what you learned
+- Simplify your method to something more manageable
+- Focus on the most important aspects of your original plan
+- Frame pilot "failure" as valuable methodological learning
+
+## Challenge: "I can't get access to data/buildings/people"
+**Solutions:**
+- Develop backup options with easier access requirements
+- Scale down to publicly accessible examples
+- Use existing datasets or published case studies
+- Partner with classmates for mutual data access
+- Focus on method development rather than comprehensive data collection
+
+## Challenge: "My results are boring/inconclusive"
+**Solutions:**
+- Inconclusive results are still results — document why
+- Look for unexpected patterns or interesting secondary findings
+- Consider what additional data would clarify results
+- Frame inconclusive results as identifying needs for future research
+- Focus on validating your method rather than proving your claim
+
+## Challenge: "I don't have time/resources to do what I planned"
+**Solutions:**
+- Prioritize the most important aspects of your research question
+- Document what you would do with more time/resources
+- Do a smaller-scale but higher-quality study
+- Focus on method development and pilot testing rather than full implementation
+- Plan a phased approach with clear priorities
+
+---
+
+# Resources and Support
+
+## Technical Tools
+**Low-code simulation**: EnergyPlus GUI, VELUX Daylight, Climate Consultant
+**Data collection**: Google Forms, manual observation templates, basic sensors
+**Analysis**: Excel/Sheets, QGIS, basic statistical functions
+**Documentation**: Templates for protocols, data sheets, consent forms
+
+## Advanced Tools
+**Simulation**: Python scripting, Ladybug/Honeybee, R statistical packages
+**Data collection**: IoT sensors, building management system APIs, web scraping
+**Analysis**: Python/R statistical analysis, machine learning approaches
+**Documentation**: Jupyter notebooks, GitHub version control, automated reporting
+
+## Support Resources
+- **Week 3-4 method workshops**: Hands-on help with tool selection and setup
+- **Office hours**: Individual consultation on research design and pilot planning
+- **Technical support**: HKU IT services for software installation and troubleshooting
+- **Peer collaboration**: Classmate partnerships for data access and method validation
+- **External mentors**: Week 5 consultations with practitioners using similar methods
+
+---
+
+# Timeline and Milestones
+
+## Week 3: Research Design
+- Finalize research questions and hypotheses
+- Select method approach and justify choice
+- Develop initial data collection protocol
+- Plan pilot study scope and procedures
+
+## Week 4: Pilot Preparation  
+- Set up tools, instruments, and access permissions
+- Create data collection materials (forms, templates, protocols)
+- Identify pilot test locations, subjects, or data sources
+- Conduct any necessary training or calibration
+
+## Week 5: Pilot Execution and Refinement
+- Conduct pilot study and collect initial data
+- Evaluate pilot results and identify needed changes  
+- Refine method protocol based on pilot learning
+- Submit A3 with pilot results and revised method plan
+
+---
+
+**Remember:** Your A3 test plan becomes the foundation for your A4 final analysis. Invest time in getting the method right — good evidence comes from good methods, and good methods come from careful planning and pilot testing.
+
+---
+
+*Research is iterative. Your pilot "failures" are actually methodological successes — they help you design better studies and collect more reliable evidence.*

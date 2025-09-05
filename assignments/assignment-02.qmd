@@ -1,0 +1,349 @@
+---
+title: "Assignment 2: Evidence Map"
+subtitle: "Mapping Existing Knowledge and Identifying Research Gaps"
+format: 
+  html:
+    toc: true
+  pdf:
+    toc: true
+---
+
+**Due:** End of Week 4  
+**Weight:** 20% of final grade  
+**Length:** 3-5 pages + evidence matrix  
+**Format:** PDF submission via course portal
+
+---
+
+# Assignment Overview
+
+**A2: Evidence Map** builds directly on your A1 Decision Claim by systematically surveying existing evidence related to your design question. You will map what is already known, identify gaps where new evidence is needed, and develop a strategic plan for filling those gaps. This assignment develops **critical evaluation skills** and **research planning** essential for evidence-based design.
+
+## Learning Objectives
+
+By completing this assignment, you will:
+
+1. **Conduct systematic literature review** relevant to your decision claim
+2. **Evaluate evidence quality** using appropriate criteria for design research
+3. **Identify knowledge gaps** where new evidence could make a meaningful contribution  
+4. **Map evidence to stakeholder needs** connecting research findings to decision requirements
+5. **Plan targeted investigation** focusing your A3 testing on highest-impact gaps
+
+---
+
+# What Is an "Evidence Map"?
+
+An **evidence map** visualizes the landscape of existing knowledge around your design question, showing:
+- What evidence already exists and its quality/reliability
+- How existing evidence relates to your specific decision context  
+- Where gaps exist that new research could address
+- Which gaps are most critical for your stakeholders' decisions
+
+Think of it as a **strategic reconnaissance mission** before designing your own research study.
+
+---
+
+# Assignment Requirements
+
+## Core Deliverables
+
+### Part 1: Literature Search Strategy (0.5 pages)
+
+Document your systematic approach to finding relevant evidence:
+
+**Search Terms and Databases**
+- Key terms, synonyms, and combinations you used
+- Databases searched (academic, industry, government sources)
+- Time period covered and why
+- Language and geographic scope of your search
+
+**Inclusion/Exclusion Criteria**  
+- What types of studies/reports did you include?
+- What did you exclude and why?
+- How did you handle different study types (experimental, observational, case studies)?
+- Quality thresholds you applied
+
+**Search Results Summary**
+- How many sources did you initially identify?
+- How many did you include after screening?
+- What types of evidence did you find (academic studies, industry reports, case studies, etc.)?
+
+### Part 2: Evidence Synthesis (2-3 pages)
+
+Organize and synthesize your findings around key themes:
+
+**Existing Knowledge**
+- What do we already know about your design object and claim?
+- Where is there strong consensus in the literature?
+- What are the key findings most relevant to your stakeholders?
+- How confident can we be in existing evidence?
+
+**Methodological Approaches**  
+- What research methods have been used to study your question?
+- Which methods produced the most reliable/useful results?
+- What are the strengths and limitations of different approaches?
+- How do methodological choices affect findings?
+
+**Contradictions and Uncertainties**
+- Where do sources disagree or produce conflicting results?
+- What factors might explain these contradictions?
+- What assumptions or contexts vary between studies?
+- Where does uncertainty remain highest?
+
+**Contextual Relevance**
+- How well does existing evidence match your specific context (climate, building type, user group, etc.)?
+- What evidence comes from similar contexts vs. very different ones?
+- How transferable are findings from other contexts to yours?
+- What context-specific factors might change the conclusions?
+
+### Part 3: Gap Analysis (1-1.5 pages)
+
+Identify and prioritize the most important knowledge gaps:
+
+**Critical Evidence Gaps**
+- What questions remain unanswered by existing research?
+- Which gaps are most important for your stakeholder decisions?
+- What evidence would most strengthen confidence in your claim?
+- Where could new research make the biggest practical contribution?
+
+**Methodological Gaps**
+- What research approaches haven't been tried?
+- Where do existing methods have significant limitations?
+- What new data sources or measurement approaches could be valuable?
+- How might new tools/technologies enable better evidence collection?
+
+**Contextual Gaps**  
+- What contexts, building types, or user groups are understudied?
+- Where do local conditions (climate, culture, regulations) create unique needs?
+- What scale of investigation (building, neighborhood, city) needs more evidence?
+- How might changing conditions (climate change, new technologies) create new evidence needs?
+
+**Feasibility Assessment**
+- Which gaps could you realistically address in A3/A4?
+- What gaps would require resources beyond the course scope?
+- Where would pilot testing be most valuable?
+- What gaps should be addressed by future research?
+
+### Part 4: Evidence Matrix (Visual Summary)
+
+Create a structured matrix showing:
+
+**Rows:** Key sources you reviewed (10-15 most important)
+**Columns:** 
+- Source type (academic study, industry report, case study, etc.)
+- Study context (location, building type, scale)
+- Methods used
+- Key findings relevant to your claim
+- Evidence quality/reliability rating
+- Relevance to your stakeholders
+
+Use color coding or symbols to quickly show:
+- Strong vs. weak evidence quality
+- High vs. low relevance to your context
+- Supporting vs. contradicting your initial claim
+- Gaps where no evidence exists
+
+---
+
+# Evidence Quality Assessment
+
+## Academic Sources
+**Strong Evidence:**
+- Peer-reviewed studies with appropriate sample sizes
+- Clear methodology and statistical analysis
+- Results replicated in multiple contexts
+- Transparent reporting of limitations
+
+**Moderate Evidence:**
+- Conference papers or reports with good methodology
+- Case studies with detailed documentation
+- Industry research with transparent methods
+- Gray literature from reputable organizations
+
+**Weak Evidence:**
+- Anecdotal reports without systematic data
+- Studies with serious methodological flaws
+- Promotional materials or biased sources
+- Outdated research in rapidly changing fields
+
+## Industry Sources
+**Strong Evidence:**
+- Multi-project databases with standardized metrics
+- Third-party evaluations and post-occupancy studies
+- Professional organization research reports
+- Building performance monitoring data
+
+**Moderate Evidence:**
+- Single-project case studies with good documentation
+- Manufacturer research with clear methodology
+- Professional surveys and practitioner reports
+- Regulatory agency analysis
+
+**Weak Evidence:**
+- Marketing materials and promotional case studies
+- Unsupported claims or testimonials
+- Outdated technical reports
+- Sources with clear commercial bias
+
+---
+
+# Differentiated Expectations
+
+## Undergraduate Students
+- **Literature scope:** 8-12 high-quality sources minimum
+- **Evidence types:** Mix of academic and professional sources
+- **Analysis depth:** Clear summary of main findings and obvious gaps
+- **Gap focus:** 2-3 well-defined gaps suitable for simple investigation
+
+## MArch Students
+- **Literature scope:** 12-15 sources including recent industry reports
+- **Evidence types:** Emphasis on practice-relevant sources and standards
+- **Analysis depth:** Professional-level synthesis with stakeholder focus
+- **Gap focus:** Gaps that address real practice challenges and decision needs
+
+## PhD Students  
+- **Literature scope:** 15+ sources with comprehensive coverage
+- **Evidence types:** Methodologically diverse with critical evaluation
+- **Analysis depth:** Scholarly analysis of research approaches and limitations
+- **Gap focus:** Methodological innovations and theoretical contributions
+
+---
+
+# Example Evidence Categories
+
+## Building Performance Evidence
+- **Energy simulation studies**: Comparative analysis of design alternatives
+- **Post-occupancy evaluations**: Real building performance vs. predictions
+- **Sensor data analysis**: Long-term monitoring of actual conditions
+- **Benchmark databases**: Industry performance comparisons
+
+## User Experience Evidence  
+- **Occupant surveys**: Satisfaction, comfort, productivity measures
+- **Behavioral observation**: Space usage patterns and preferences
+- **Physiological studies**: Stress, cognitive performance, health outcomes
+- **Focus groups**: Qualitative insights into user needs and preferences
+
+## Economic Evidence
+- **Life-cycle cost analysis**: Construction, operation, maintenance costs
+- **Market analysis**: Premium/discount for performance features
+- **Productivity studies**: Workplace performance and business outcomes
+- **Policy analysis**: Regulatory costs and compliance requirements
+
+## Environmental Evidence
+- **Life-cycle assessment**: Material and energy impacts over time
+- **Urban heat island**: Building contributions to microclimate
+- **Biodiversity impact**: Green infrastructure ecological benefits
+- **Resource efficiency**: Water, waste, material optimization studies
+
+---
+
+# Assessment Criteria
+
+## Literature Search Quality (25%)
+- **Comprehensiveness**: Did you find the most relevant and important sources?
+- **Strategy**: Was your search systematic and well-documented?  
+- **Source diversity**: Appropriate mix of academic, industry, and case study evidence?
+- **Currency**: Are your sources appropriately recent for a fast-changing field?
+
+## Evidence Synthesis (35%)
+- **Organization**: Are findings clearly organized around key themes?
+- **Critical analysis**: Do you evaluate evidence quality and identify limitations?
+- **Relevance**: Is the synthesis focused on your decision claim and stakeholders?
+- **Integration**: Do you identify patterns and contradictions across sources?
+
+## Gap Analysis (25%)
+- **Strategic focus**: Do you identify the most important gaps for your research?
+- **Feasibility**: Are your proposed investigations realistic for the course context?
+- **Stakeholder alignment**: Are gaps connected to real decision needs?
+- **Methodological insight**: Do you understand what approaches would fill each gap?
+
+## Communication Quality (15%)
+- **Professional presentation**: Clear writing, good organization, error-free
+- **Visual effectiveness**: Does your evidence matrix communicate key patterns clearly?
+- **Appropriate depth**: Right level of detail for your intended audience
+- **Citations**: Proper attribution following architectural research conventions
+
+---
+
+# Common Challenges and Solutions
+
+## Challenge: "I can't find enough relevant sources"
+**Solutions:**
+- Broaden search terms (use synonyms, related concepts)
+- Include gray literature (industry reports, case studies)
+- Look at adjacent fields (psychology, engineering, urban planning)
+- Search international sources and different databases
+- Consider different scales (component → building → district)
+
+## Challenge: "All the sources contradict each other"
+**Solutions:**
+- This IS evidence! Document the contradictions systematically
+- Look for methodological differences that might explain variations
+- Consider contextual factors (climate, culture, building type)
+- Identify what additional evidence would resolve disagreements
+- Frame contradictions as research opportunities
+
+## Challenge: "The evidence doesn't match my claim"
+**Solutions:**
+- Revise your claim based on what you learned (this is good science!)
+- Reframe your claim more narrowly or precisely
+- Identify what conditions would make your claim true
+- Focus on unstudied contexts where your claim might hold
+- Consider alternative claims suggested by the evidence
+
+## Challenge: "Everything has already been studied"
+**Solutions:**
+- Look for contextual gaps (different climates, building types, user groups)
+- Consider methodological improvements (better tools, longer studies)  
+- Focus on implementation and practice gaps
+- Look at changing conditions (new technologies, climate change)
+- Scale gaps (building-level vs. district-level analysis)
+
+---
+
+# Resources and Tools
+
+## Search Databases
+**Academic:** Google Scholar, Web of Science, Scopus, JSTOR
+**Architecture-specific:** Avery Index, Architectural Database  
+**Industry:** BuildingGreen, ASHRAE Research, manufacturer databases
+**Government:** DOE Building Technologies, EPA databases, local building departments
+
+## Citation Management
+- **Zotero** (free): Good for mixed academic/industry sources
+- **Mendeley** (free): Strong PDF annotation features
+- **EndNote** (HKU license): Professional reference management
+
+## Evidence Quality Assessment
+- **GRADE system**: For systematic reviews (adapted for design research)
+- **Building research guidelines**: CIB, AIVC research quality criteria
+- **Industry standards**: ASHRAE research report guidelines
+
+---
+
+# Getting Started
+
+## Week 2-3 Activities
+1. **Develop search strategy**: List key terms, databases, inclusion criteria
+2. **Initial broad search**: Cast a wide net to understand the landscape
+3. **Screen and prioritize**: Focus on most relevant, highest-quality sources
+4. **Begin synthesis**: Identify themes and patterns as you read
+
+## Time Management  
+- **Week 2:** Search strategy and initial source collection
+- **Week 3:** Detailed reading and evidence synthesis
+- **Week 4:** Gap analysis and evidence matrix creation
+
+## Getting Help
+- **Librarian consultation**: HKU research librarians for search strategy
+- **Office hours**: Wednesdays 4-6pm at KB722, or by appointment
+- **Peer review**: Week 4 in-class workshop for feedback on drafts
+- **Writing support**: HKU academic writing center for organization and clarity
+
+---
+
+**Remember:** Your Evidence Map directly informs your A3 Test Plan. The gaps you identify here become the focus of your empirical investigation. Invest time in strategic gap analysis — it will make your research contribution much stronger and more focused.
+
+---
+
+*Strong evidence mapping is the foundation of all good research. You're learning to stand on the shoulders of giants before building something new.*

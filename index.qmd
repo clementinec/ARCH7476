@@ -1,0 +1,113 @@
+---
+title: "ARCH7476: Evidence-Based Design"
+subtitle: "Data-Driven Decision Making in Architecture"
+format: 
+  html:
+    toc: true
+  revealjs:
+    slide-number: true
+---
+
+## Course Overview
+
+**ARCH7476: Evidence-Based Design** explores how architects can make better design decisions through systematic data collection, analysis, and interpretation. This course bridges the gap between intuitive design thinking and empirical evidence, preparing students to justify design choices with quantitative and qualitative data.
+
+### Course Philosophy
+
+> "Generative design is not magic" — it requires evidence, testing, and systematic evaluation.
+
+Modern architectural practice increasingly demands evidence-based decision making. Whether optimizing building performance, validating design assumptions, or communicating with clients and stakeholders, architects need skills in data collection, analysis, and presentation.
+
+### Learning Outcomes
+
+By the end of this course, students will be able to:
+
+1. **Frame architectural problems** as testable research questions
+2. **Collect and analyze data** relevant to design decisions
+3. **Design and conduct tests** to evaluate design alternatives
+4. **Communicate findings** effectively to diverse audiences
+5. **Document workflows** for reproducible design research
+6. **Apply ethical frameworks** to data collection and use in architecture
+
+### Mixed Audience Approach
+
+This course serves students across different programs:
+
+- **MArch students**: Focus on practical design decision memos and real-world applications
+- **Undergraduate students**: Guided scaffolding with low-code tools and preset simulations
+- **PhD students**: Deeper engagement with uncertainty analysis, reproducibility, and advanced workflows
+
+All students produce equivalent deliverables, but technical depth and methodological rigor flex according to experience and program requirements.
+
+## Course Structure
+
+### Core Assignments
+
+The course centers around four major assignments that build toward a comprehensive research brief:
+
+**A1: Decision Claim** (Week 2)
+: Identify a design object and articulate a testable claim about its performance or impact.
+
+**A2: Evidence Map** (Week 4)  
+: Map existing evidence and identify gaps requiring new data collection.
+
+**A3: Test Plan + Pilot** (Week 5)
+: Design and pilot a systematic test of your design claim.
+
+**A4: Final Package** (Week 12)
+: Complete research brief including Practice Case, Object Card, and Reproducibility Capsule.
+
+### Pedagogical Approach
+
+- **Learning by doing**: Each week combines conceptual frameworks with hands-on application
+- **Peer review**: Multiple opportunities for peer feedback and collaborative learning
+- **Mentor dialogue**: Mid-course consultation with external practitioners
+- **Public presentation**: Final "Object Fair" with invited critics
+
+### Tools and Technology
+
+The course emphasizes **tool flexibility** rather than software mastery:
+
+**Low-code options**: Excel/Sheets, QGIS, preset simulations (Radiance/VELUX, EnergyPlus Simple Glazing)
+
+**Code-heavy options**: Python/Colab, GitHub workflows, custom analysis scripts
+
+**Universal tools**: Visualization software, presentation platforms, documentation systems
+
+## Schedule at a Glance
+
+| Week | Focus | Key Activity | Deliverable |
+|------|-------|--------------|-------------|
+| 1 | Why Evidence Matters | Course introduction, seed ideas | Draft A1 concept |
+| 2 | Finding and Framing Data | Data sources, ethics | **Submit A1** |
+| 3 | Planning a Test | Test design, pre-registration | Draft A3 plan |
+| 4 | Sensitivity & Peer Check | Uncertainty analysis | **Submit A2** |
+| 5 | Pilot Week | Conduct pilot test | **Submit A3** |
+| 6 | Making Results Readable | Data visualization | Draft A4 figures |
+| 7 | Decide with Numbers | Thresholds, peer review | Revise A4 |
+| 8 | Light Workflow Help | Documentation, mentor consults | Mentor Report |
+| 9 | Storytelling & Figures | Practice Case narrative | Polish A4 |
+| 10 | Draft Defense | In-class presentations | Feedback integration |
+| 11 | Final Polish | Final revisions | Near-final A4 |
+| 12 | Object Fair | Final presentations | **Submit A4 Final** |
+
+## Getting Started
+
+### Preparation
+
+Before our first meeting:
+
+1. **Review the syllabus** and assignment descriptions
+2. **Install basic tools**: Spreadsheet software, QGIS (free)
+3. **Identify a potential design object** for your semester-long investigation
+4. **Read**: Selected excerpts from *The Craft of Research* (available on course site)
+
+### Questions?
+
+- Check the [Resources](resources.qmd) page for software installation guides
+- Review [Assignment Details](assignments.qmd) for complete rubrics and timelines
+- Browse the [Weekly Schedule](schedule.qmd) for detailed session plans
+
+---
+
+*This course website is built with [Quarto](https://quarto.org) and hosted via GitHub Pages. Source code available on [GitHub](https://github.com/).*

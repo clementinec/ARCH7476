@@ -1,0 +1,213 @@
+/* Custom CSS for ARCH7476 Course Website */
+
+/* Color scheme based on architectural drawing conventions */
+:root {
+  --primary-blue: #2C5F7E;
+  --accent-orange: #D97639; 
+  --light-gray: #F5F5F5;
+  --dark-gray: #333333;
+  --warning-red: #C5362D;
+}
+
+/* Typography improvements */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--dark-gray);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+/* Navigation styling */
+.navbar {
+  background-color: var(--primary-blue) !important;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent-orange) !important;
+}
+
+/* Sidebar styling */
+.sidebar {
+  background-color: var(--light-gray);
+  border-right: 1px solid #ddd;
+}
+
+.sidebar .nav-link {
+  color: var(--dark-gray);
+  padding: 0.5rem 1rem;
+}
+
+.sidebar .nav-link:hover {
+  background-color: white;
+  color: var(--primary-blue);
+}
+
+.sidebar .nav-link.active {
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+/* Content styling */
+.quarto-title-banner {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-orange) 100%);
+  color: white;
+}
+
+/* Table styling for schedule */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+table th {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+  background-color: var(--light-gray);
+}
+
+/* Assignment cards */
+.assignment-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.assignment-card h3 {
+  color: var(--accent-orange);
+  margin-top: 0;
+}
+
+/* Week cards */
+.week-card {
+  border-left: 4px solid var(--primary-blue);
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  background-color: var(--light-gray);
+}
+
+/* Callout boxes */
+.callout {
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid;
+}
+
+.callout-note {
+  border-left-color: var(--primary-blue);
+  background-color: rgba(44, 95, 126, 0.1);
+}
+
+.callout-warning {
+  border-left-color: var(--warning-red);
+  background-color: rgba(197, 54, 45, 0.1);
+}
+
+.callout-tip {
+  border-left-color: var(--accent-orange);
+  background-color: rgba(217, 118, 57, 0.1);
+}
+
+/* Code styling */
+pre, code {
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: var(--light-gray);
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-orange);
+  border-color: var(--accent-orange);
+}
+
+/* Footer styling */
+footer {
+  background-color: var(--dark-gray);
+  color: white;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: var(--accent-orange);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+  }
+  
+  table {
+    font-size: 0.9em;
+  }
+  
+  .assignment-card, .week-card {
+    margin: 0.5rem 0;
+    padding: 1rem;
+  }
+}
+
+/* RevealJS slide customizations */
+.reveal h1, .reveal h2, .reveal h3 {
+  color: var(--primary-blue);
+}
+
+.reveal .slides section .fragment.highlight-current-blue {
+  color: var(--accent-orange);
+}
+
+/* Print styling */
+@media print {
+  .sidebar, .navbar, footer {
+    display: none;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+  
+  table {
+    page-break-inside: avoid;
+  }
+}

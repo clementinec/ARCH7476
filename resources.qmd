@@ -1,0 +1,190 @@
+---
+title: "Course Resources"
+subtitle: "Tools, Readings, and Technical Support"
+format: 
+  html:
+    toc: true
+---
+
+# Essential Tools
+
+## Software Installation
+
+### Required for All Students
+- **Spreadsheet software**: Excel (HKU license) or Google Sheets (free)
+- **QGIS**: Free, open-source GIS software ([download here](https://qgis.org/))
+- **Web browser**: Chrome or Firefox for online tools
+
+### Optional Advanced Tools
+- **Python + Jupyter**: For students interested in coding ([Anaconda distribution](https://www.anaconda.com/))
+- **GitHub Desktop**: For version control and reproducibility ([download here](https://desktop.github.com/))
+- **R + RStudio**: Alternative to Python for statistical analysis
+
+### Building Performance Tools
+- **Radiance**: Advanced daylighting simulation (optional)
+- **EnergyPlus**: Building energy modeling with Simple Glazing GUI
+- **Climate Consultant**: Climate analysis tool (free from UCLA)
+
+## Installation Support
+- **Office hours**: Individual troubleshooting available (Wednesdays 4-6pm, KB722, or by appointment)
+- **Student tech support**: Peer mentoring for software issues
+- **HKU IT services**: Campus-wide software licensing and support
+- **Online tutorials**: Video guides for common installation issues
+
+---
+
+# Key Readings
+
+## Core Texts
+
+### *The Craft of Research* (Booth, Colomb, Williams)
+- **Week 1**: Chapters 1-3 (From Problems to Sources)
+- **Week 4**: Chapters 7-8 (Making Good Arguments)  
+- **Week 9**: Chapters 11-12 (Communicating Evidence)
+
+Available through HKU library digital collection.
+
+### *Data Visualization Handbook* (Andy Kirk)
+- **Week 6**: Chapters 2-3 (Design Process and Visual Encoding)
+- **Week 9**: Chapter 7 (Storytelling with Data)
+
+## Supplementary Resources
+
+### Research Methods
+- Groat & Wang: *Architectural Research Methods* (selected chapters)
+- Laurel Blinda: *Design Research Through Practice* 
+- Kimbell: *Ethnography for Design*
+
+### Data and Evidence
+- Edward Tufte: *The Visual Display of Quantitative Information* (excerpts)
+- Alberto Cairo: *The Truthful Art* (data visualization ethics)
+- Few, Stephen: *Show Me the Numbers* (dashboard design)
+
+### Building Performance  
+- Reinhart, Christoph: *Daylighting Handbook* (simulation methods)
+- ASHRAE Standards: Thermal comfort and energy metrics
+- LEED/BREEAM Guidelines: Performance benchmarks
+
+## Access and Availability
+- **HKU Library**: Digital access to most resources
+- **Course reserves**: Physical copies available for checkout
+- **Open access alternatives**: Free resources provided when possible
+- **Reading summaries**: Key points extracted for time-constrained students
+
+---
+
+# Technical Support
+
+## Learning Pathways
+
+### Low-Code Track (Recommended for beginners)
+1. **Week 1-2**: Excel/Sheets mastery with architectural data
+2. **Week 3-4**: QGIS basics for spatial analysis  
+3. **Week 5-6**: Preset building simulations (Radiance/EnergyPlus GUI)
+4. **Week 7-8**: Advanced visualization in spreadsheet tools
+5. **Week 9-12**: Professional presentation and documentation
+
+### Code-Heavy Track (For experienced students)
+1. **Week 1-2**: Python setup with Jupyter notebooks
+2. **Week 3-4**: Pandas for data manipulation, GeoPandas for GIS
+3. **Week 5-6**: Building simulation APIs and scripting
+4. **Week 7-8**: Statistical analysis and uncertainty quantification
+5. **Week 9-12**: Automated reporting and reproducible workflows
+
+## Help Resources
+
+### In-Person Support
+- **Office hours**: Wednesdays 4-6pm at KB722, or by appointment
+- **Peer mentoring**: Advanced students available for basic questions
+- **Mentor consultations**: Week 8 external practitioner meetings
+- **Drop-in support**: Brief technical questions welcome before/after class
+
+### Online Resources  
+- **Course Slack workspace**: Real-time questions and answers
+- **Video tutorials**: Recorded walkthroughs of common tasks
+- **FAQ document**: Solutions to frequently encountered problems
+- **External documentation**: Links to official software guides
+
+### Emergency Support
+- **24-hour email response**: For urgent technical issues
+- **Backup options**: Alternative approaches when primary tools fail
+- **Extension policies**: Clear guidelines for technical difficulties
+- **Accessibility services**: HKU disability support integration
+
+---
+
+# Data Sources
+
+## Building Performance Data
+
+### Climate Data
+- **EnergyPlus Weather Files**: Global climate data for simulations
+- **Climate Consultant**: UCLA tool for climate analysis
+- **Weather Underground**: Historical weather data
+- **Hong Kong Observatory**: Local climate records
+
+### Building Standards and Benchmarks
+- **ASHRAE Standards**: Thermal comfort, ventilation, energy
+- **Hong Kong Building Code**: Local regulatory requirements  
+- **LEED/BREEAM Databases**: Performance benchmarks
+- **Energy Star Portfolio Manager**: Building energy comparisons
+
+### Sensor and IoT Data
+- **Building management systems**: Live building performance data
+- **Environmental monitoring**: Air quality, noise, light levels
+- **Occupancy sensors**: Usage patterns and space utilization
+- **Smart home devices**: Residential performance data
+
+## Spatial and Urban Data
+
+### Hong Kong Government Data
+- **DATA.GOV.HK**: Official open data portal
+- **Planning Department**: Land use, zoning, demographics
+- **Transport Department**: Traffic, transit, accessibility data
+- **Environmental Protection**: Air quality, noise mapping
+
+### Global Datasets
+- **OpenStreetMap**: Free, editable world map data
+- **Sentinel Hub**: Satellite imagery and analysis
+- **World Bank Open Data**: Urban development indicators
+- **UN Habitat**: Global urban data collections
+
+## Privacy and Ethics
+
+### Data Use Guidelines
+- **HKU Research Ethics**: Required approval processes
+- **GDPR Compliance**: Personal data protection standards
+- **Informed consent**: Templates for data collection from people
+- **Anonymous analysis**: Protecting individual privacy in research
+
+### Best Practices
+- **Data minimization**: Collect only what you need
+- **Secure storage**: HKU-approved data storage solutions  
+- **Clear documentation**: Record data sources and permissions
+- **Reproducible deletion**: Clear data lifecycle management
+
+---
+
+# Professional Development
+
+## Guest Speakers
+- **Week 3**: Building performance consultant on simulation methods
+- **Week 6**: Data visualization designer from architecture firm
+- **Week 9**: Researcher on evidence-based design in practice  
+- **Week 12**: External critics for final Object Fair
+
+## Industry Connections
+- **Mentor network**: Practicing architects using evidence-based methods
+- **Firm partnerships**: Access to real project data and challenges
+- **Alumni connections**: Recent graduates in data-driven design roles
+- **Conference opportunities**: Student presentations at research venues
+
+## Career Preparation
+- **Portfolio development**: Documenting evidence-based design skills
+- **Interview preparation**: Communicating technical competence to employers
+- **Continuing education**: Resources for post-graduation skill development
+- **Professional networks**: Introduction to evidence-based design community
+
+---
+
+*Resources updated regularly. Check course announcements for new additions and corrections.*

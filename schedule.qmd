@@ -1,0 +1,373 @@
+---
+title: "Course Schedule"
+subtitle: "12-Week Teaching Roadmap"
+format: 
+  html:
+    toc: true
+---
+
+# Weekly Schedule Overview
+
+This schedule accommodates a mixed audience of MArch, undergraduate, and PhD students through differentiated technical depth while maintaining equivalent learning outcomes.
+
+## Week 1: Why Evidence Matters
+
+### Focus
+Course introduction and the foundations of evidence-based design thinking.
+
+### In Class
+- Course introduction and expectations
+- "Generative design is not magic" — demystifying data-driven design
+- Why data and evidence matter in architecture
+- Examples of evidence-based design in plain language
+- Introduction to the semester-long research brief format
+
+### Out of Class
+- Draft seed idea for A1 (design object + testable claim)
+- **Reading**: *The Craft of Research* (selected excerpts)
+- Set up basic tools (spreadsheet software, QGIS)
+
+### Deliverable Alignment
+Prepares foundation for **A1: Decision Claim**
+
+### Tools Introduced
+- Excel/Google Sheets for basic data organization
+- QGIS for spatial data (introductory level)
+
+---
+
+## Week 2: Finding and Framing Data
+
+### Focus
+Data sources, collection methods, and ethical considerations in architectural research.
+
+### In Class
+- Architectural data sources: sensors, BIM/GIS, building standards
+- Ethics and privacy in data collection
+- Setting appropriate ranges and parameters for testing
+- Framing research questions for different audiences
+
+### Out of Class
+- **Submit A1: Decision Claim**
+- Draft mentor consultation questions
+- Begin preliminary data exploration
+
+### Deliverable Alignment
+**Submit A1** (Design object and testable claim)
+
+### Tools Focus
+- QGIS buffer and clip operations
+- HKU data storage and privacy protocols
+- Introduction to building performance databases
+
+### Required Reading
+HKU data privacy guidelines and research ethics notes
+
+---
+
+## Week 3: Planning a Test
+
+### Focus
+Systematic test design and the pre-registration mindset.
+
+### In Class
+- Proxy vs. preset simulations: when to use each approach
+- Designing a test plan with clear hypotheses
+- Pre-registration mindset: documenting assumptions before testing
+- Introduction to building performance simulation basics
+
+### Out of Class
+- Draft A3 test plan outline
+- Begin A2 evidence mapping exercise
+- Explore relevant simulation tools for your project
+
+### Deliverable Alignment
+Progress toward **A2: Evidence Map** and **A3: Test Plan**
+
+### Tools Focus
+- Radiance/VELUX daylight presets
+- EnergyPlus Simple Glazing GUI
+- Basic parametric thinking
+
+### Readings
+Introductory handouts for Radiance and EnergyPlus workflows
+
+---
+
+## Week 4: Sensitivity & Peer Check
+
+### Focus
+Understanding how results change with different inputs and assumptions.
+
+### In Class
+- Sensitivity analysis: how results shift with parameter ranges
+- Uncertainty quantification and confidence intervals
+- Mini peer review session: testing each other's assumptions
+- Data visualization for uncertainty
+
+### Out of Class
+- **Complete and submit A2: Evidence Map** (3-5 pages)
+- Refine A3 test plan based on peer feedback
+
+### Deliverable Alignment
+**Submit A2** (Evidence Map with literature review and gap analysis)
+
+### Tools Focus
+- Excel charting and statistical functions
+- Simple plotting and uncertainty visualization
+- Introduction to error bars and confidence ranges
+
+### Reading
+Edward Tufte excerpts on statistical graphics and uncertainty visualization
+
+---
+
+## Week 5: Pilot Week
+
+### Focus
+Conducting pilot tests and learning from early results.
+
+### In Class
+- Pilot testing strategies and documentation
+- Logging surprises and unexpected results
+- Adjusting plans based on pilot findings
+- Troubleshooting common simulation and data collection issues
+
+### Out of Class
+- Conduct pilot test using your chosen method
+- Draft A3 Pilot Memo documenting process and initial findings
+
+### Deliverable Alignment
+**Submit A3** (Test Plan + Pilot Note) and begin **Peer Review #1**
+
+### Tools Application
+Execute chosen testing approach:
+- Physical measurements and sensors
+- Preset building simulations
+- Survey data collection
+- Spatial analysis workflows
+
+### Reading
+Pilot memo template and examples from previous semesters
+
+---
+
+## Week 6: Making Results Readable
+
+### Focus
+Data visualization and communication for architectural audiences.
+
+### In Class
+- Data visualization principles for architecture
+- From raw numbers to clear, compelling figures
+- Designing your Object Card figure (key visual summary)
+- Critique session: what makes results readable?
+
+### Out of Class
+- Draft A4 figures and visualizations
+- Continue data collection and analysis
+- Develop Object Card visual concept
+
+### Deliverable Alignment
+**Object Card** development and A4 progress
+
+### Tools Focus
+- Advanced Excel/Sheets visualization
+- Introduction to design-quality graphics
+- Layout and composition for technical communication
+
+### Reading
+Andy Kirk's *Data Visualization Handbook* (selected chapters)
+
+---
+
+## Week 7: Decide with Numbers
+
+### Focus
+Setting thresholds for design decisions and addressing counter-arguments.
+
+### In Class
+- Establishing thresholds for adopt/defer decisions
+- Addressing counter-arguments and alternative interpretations
+- **Peer Review Session #1**: structured feedback on draft work
+- Decision frameworks and trade-off analysis
+
+### Out of Class
+- Revise A4 based on peer feedback
+- **Complete Change Log #1** (documenting revisions)
+- Strengthen argument structure
+
+### Deliverable Alignment
+Significant progress on **A4 draft** with peer feedback integration
+
+### Tools Application
+- Excel/Sheets for decision matrices
+- Optional: Colab/GitHub for more advanced analysis
+- Argument mapping and logic checking
+
+### Reading
+Example practice memos and decision frameworks
+
+---
+
+## Week 8: Light Workflow Help
+
+### Focus
+Documenting processes for reproducibility and addressing automation ethics.
+
+### In Class
+- Documenting workflows: from manual processes to scripts
+- Ethical limits of automation in design research
+- **Individual mentor consultations** (30-45 minutes each)
+- Reproducibility and research transparency
+
+### Out of Class
+- **Complete Mentor Report** (1-2 pages summarizing consultation)
+- Document your workflow for A4 Reproducibility Capsule
+- Refine analysis methods
+
+### Deliverable Alignment
+**Mentor Dialogue** task and reproducibility documentation
+
+### Tools Introduction
+- Optional: Python/Colab for interested students
+- GitHub for version control and documentation
+- Workflow diagramming tools
+
+### Reading
+Workflow documentation template and reproducibility guidelines
+
+---
+
+## Week 9: Storytelling & Figures
+
+### Focus
+Crafting compelling narratives and polishing visualizations.
+
+### In Class
+- Crafting the two-slide Practice Case presentation
+- Figure and narrative clinic: individual consultation time
+- **Peer Review Session #2**: near-final feedback
+- Presentation skills for technical audiences
+
+### Out of Class
+- Polish A4 draft incorporating all feedback
+- **Complete Change Log #2** (tracking all revisions)
+- Finalize Object Card design
+
+### Deliverable Alignment
+Near-final **A4 package** ready for defense
+
+### Tools Focus
+- Presentation software optimization
+- Final figure polishing in Excel/design software
+- Narrative structure and flow
+
+### Reading
+Course style guide and presentation examples
+
+---
+
+## Week 10: Draft Defense
+
+### Focus
+Practice presentations with constructive feedback.
+
+### In Class
+- **Short in-class defenses** (6-8 minutes per student + Q&A)
+- Collective feedback and discussion
+- Identifying final polishing priorities
+- Final presentation logistics and expectations
+
+### Out of Class
+- Integrate defense feedback into final package
+- Address any identified gaps or weaknesses
+- Prepare for final Object Fair
+
+### Deliverable Alignment
+**A4 draft defense** with clear revision priorities
+
+### Assessment
+Formative assessment preparing for final evaluation
+
+---
+
+## Week 11: Final Polish
+
+### Focus
+Integration of all feedback and final preparation.
+
+### In Class
+- **Mentor feedback integration workshop**
+- Finalizing decision thresholds and recommendations
+- Final preparation for Object Fair presentation
+- Technical troubleshooting and last-minute support
+
+### Out of Class
+- **Final polish of A4 complete package**
+- Practice final presentation
+- Prepare for public Object Fair event
+
+### Deliverable Alignment
+Final **A4 package** due next week
+
+### Support
+Individual consultation time for final questions and technical issues
+
+---
+
+## Week 12: Object Fair (Final Review)
+
+### Focus
+Public presentation of semester work with external evaluation.
+
+### Event Structure
+**Object Fair Format:**
+- 6-8 minute presentation per student
+- 4 minute Q&A with jurors and peers  
+- External critics and guest jurors invited
+- Professional presentation setting
+
+### Final Submission
+**Submit A4: Complete Final Package** including:
+- Research Brief (main document)
+- Practice Case (two-slide summary)
+- Object Card (visual summary)
+- Reproducibility Capsule (workflow documentation)
+
+### Assessment
+Final evaluation by instructor and external jurors based on:
+- Clarity and rigor of research question
+- Appropriateness of methods and analysis
+- Quality of evidence and reasoning
+- Effectiveness of communication
+- Reproducibility and transparency
+
+---
+
+# Notes for Mixed Audience Integration
+
+## Differentiated Approaches
+
+### MArch Students
+- Focus on practical design decision memos
+- Emphasize real-world client communication
+- Connect to professional practice standards
+
+### Undergraduate Students  
+- Guided scaffolding with templates and examples
+- Low-code tools (spreadsheets, preset simulations)
+- Extra support sessions available
+
+### PhD Students
+- Deeper engagement with uncertainty analysis and statistical methods
+- Advanced reproducibility requirements
+- Code-heavy workflow options encouraged
+- Additional methodological rigor expected
+
+## Equivalent Outcomes
+All students produce the same core deliverables (A1-A4) but with technical depth and methodological sophistication appropriate to their program level and experience.
+
+---
+
+*Schedule subject to minor adjustments based on class needs and guest speaker availability.*

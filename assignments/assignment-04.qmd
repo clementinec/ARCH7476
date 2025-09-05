@@ -1,0 +1,469 @@
+---
+title: "Assignment 4: Final Research Package"
+subtitle: "Complete Evidence-Based Design Research Brief"
+format: 
+  html:
+    toc: true
+  pdf:
+    toc: true
+---
+
+**Due:** End of Week 12 (Final Object Fair)  
+**Weight:** 40% of final grade  
+**Format:** Complete research package with four components  
+**Submission:** PDF + presentation materials via course portal
+
+---
+
+# Assignment Overview
+
+**A4: Final Research Package** represents the culmination of your semester-long investigation into evidence-based design. Building on your A1 decision claim, A2 evidence map, and A3 test plan, you will present a complete research brief that provides actionable evidence for architectural decision-makers. This capstone assignment demonstrates **professional research competence** and **evidence-based design thinking** essential for contemporary practice.
+
+## Learning Objectives
+
+By completing this assignment, you will:
+
+1. **Synthesize semester learning** into a coherent research narrative
+2. **Provide actionable evidence** directly applicable to design decisions
+3. **Communicate findings** effectively to diverse professional audiences
+4. **Document reproducible methods** that others can verify and extend
+5. **Demonstrate research impact** on real architectural challenges
+
+---
+
+# Assignment Components
+
+Your A4 Final Package contains **four integrated components** that work together to provide comprehensive decision support:
+
+## Component 1: Research Brief (Main Document)
+**Length:** 8-12 pages  
+**Audience:** Primary stakeholders from your A1 analysis  
+**Purpose:** Complete evidence synthesis with clear recommendations
+
+## Component 2: Practice Case (Executive Summary)  
+**Format:** Two-slide presentation + 2-page memo  
+**Audience:** Busy practitioners and decision-makers  
+**Purpose:** Concise findings and immediate action items
+
+## Component 3: Object Card (Visual Summary)
+**Format:** Single infographic/poster  
+**Audience:** General professional community  
+**Purpose:** Quick visual communication of key insights
+
+## Component 4: Reproducibility Capsule (Method Documentation)
+**Length:** 3-5 pages + supplementary materials  
+**Audience:** Researchers and method replicators  
+**Purpose:** Complete method documentation for verification and extension
+
+---
+
+# Component 1: Research Brief (Main Document)
+
+## Structure and Content
+
+### Executive Summary (1 page)
+**Decision Context**
+- Restate your design object and decision claim from A1
+- Summarize why this evidence matters to your stakeholders
+- Preview your main findings and recommendations
+
+**Key Findings** 
+- 3-5 bullet points summarizing your most important results
+- Confidence level for each finding (high/medium/low certainty)
+- Practical implications of each finding for design decisions
+
+**Recommendations**
+- Specific actions your stakeholders should take based on your evidence
+- Decision thresholds or criteria they should apply
+- Areas where further evidence is needed before acting
+
+### Literature Foundation (1-2 pages)
+**Evidence Synthesis**
+- Update and refine your A2 literature review
+- Integrate new sources discovered during your investigation
+- Highlight how your findings relate to existing knowledge
+- Identify where your results confirm, extend, or contradict prior research
+
+**Knowledge Contribution**
+- What new evidence does your research provide?
+- How do your findings fill gaps identified in A2?
+- What questions do your results raise for future research?
+- How do your methods improve on previous approaches?
+
+### Research Method (2-3 pages)
+**Approach Overview**
+- Refine your A3 method description based on full implementation
+- Explain methodological choices and their implications
+- Describe how pilot testing improved your final approach
+- Justify your method relative to alternatives
+
+**Data Collection**
+- What data did you actually collect (vs. originally planned)?
+- What challenges did you encounter and how did you address them?
+- How did you ensure data quality and reliability?
+- What limitations affected your data collection?
+
+**Analysis Strategy**
+- How did you process and analyze your data?
+- What analytical tools and techniques did you employ?
+- How did you handle uncertainty, missing data, or anomalies?
+- What validation checks did you perform on your results?
+
+### Results and Analysis (3-4 pages)
+
+**Primary Findings**
+- Present your main results clearly with appropriate visualizations
+- Use tables, charts, and graphics to support quantitative findings
+- Include qualitative insights and unexpected discoveries
+- Organize results around your original research questions
+
+**Statistical Analysis and Uncertainty**
+- Report confidence intervals, error bars, or uncertainty ranges where appropriate
+- Explain the practical significance (not just statistical significance) of your findings
+- Acknowledge limitations and potential sources of error
+- Discuss how sample size or scope affects generalizability
+
+**Comparative Analysis**
+- How do your results compare to existing benchmarks or standards?
+- Which design alternatives performed best according to your criteria?
+- What trade-offs or compromises emerged from your analysis?
+- How sensitive are your findings to different assumptions or conditions?
+
+**Interpretation for Decision-Making**
+- What do your results mean for your stakeholders' decisions?
+- What design strategies do your findings support or recommend against?
+- How confident should decision-makers be in acting on your evidence?
+- What additional information would strengthen confidence in your conclusions?
+
+### Recommendations and Implementation (1-2 pages)
+
+**Decision Framework**
+- Provide clear criteria for when to adopt your recommendations
+- Specify thresholds, ranges, or decision rules based on your evidence
+- Address different scenarios or contexts your stakeholders might face
+- Explain how to weigh your evidence against other considerations
+
+**Implementation Guidance**
+- What specific steps should stakeholders take to apply your findings?
+- What resources, expertise, or support would implementation require?
+- What potential barriers or challenges should they anticipate?
+- How can they monitor or evaluate the success of implementation?
+
+**Future Research Priorities**
+- What evidence gaps remain most important to address?
+- What methods would best generate needed additional evidence?
+- How could future research build on your findings?
+- What resources would future investigations require?
+
+---
+
+# Component 2: Practice Case (Executive Summary)
+
+## Two-Slide Presentation
+
+### Slide 1: The Problem and Evidence
+**Visual Elements:**
+- Clear photo or diagram of your design object
+- Key performance data or user experience findings
+- Comparison between alternatives (before/after, option A vs B)
+
+**Text Elements:**
+- One-sentence problem statement
+- 2-3 key findings with confidence indicators
+- Clear performance metrics or outcomes
+
+### Slide 2: Decision Recommendations  
+**Visual Elements:**
+- Decision matrix, flowchart, or recommendation summary
+- Implementation timeline or process diagram
+- Contact information for follow-up
+
+**Text Elements:**
+- Specific recommendations with decision criteria
+- Implementation steps and resource requirements
+- Next steps for stakeholders
+
+## Two-Page Memo Format
+
+### Page 1: Executive Summary
+**To:** [Primary stakeholder group]  
+**From:** [Your name and credentials]  
+**Date:** [Submission date]  
+**Re:** Evidence-Based Recommendations for [Design Object]
+
+**Background** (1 paragraph)
+Brief context for why this evidence was needed and how it was collected.
+
+**Key Findings** (3-4 bullet points)
+Most important results with practical implications for decisions.
+
+**Recommendations** (3-4 bullet points)  
+Specific actions to take based on evidence, with implementation priority.
+
+### Page 2: Supporting Details
+**Evidence Summary**
+- Method overview and data collection approach
+- Sample size, scope, and quality indicators
+- Key limitations and uncertainty ranges
+
+**Decision Criteria**
+- When to apply each recommendation
+- How to weigh evidence against other factors
+- What additional information might be needed
+
+**Implementation Support**
+- Resources available for implementation
+- Contact information for follow-up questions
+- Timeline for updates or additional evidence
+
+---
+
+# Component 3: Object Card (Visual Summary)
+
+## Design Requirements
+**Format:** Single page, poster-style layout (portrait or landscape)
+**Resolution:** Publication quality (300 DPI minimum)
+**Style:** Professional, accessible to general architectural audience
+
+## Required Elements
+
+### Visual Identity
+- Clear title and subtitle
+- Your design object illustrated with high-quality photos or diagrams
+- Consistent color scheme and typography throughout
+- Professional layout with clear information hierarchy
+
+### Evidence Summary
+- Key performance metrics or outcomes prominently displayed
+- Before/after comparisons or alternative performance data
+- Clear indication of evidence quality/confidence levels
+- Visual representation of most important findings
+
+### Decision Support
+- Clear recommendations with visual decision aids
+- Implementation guidance or next steps
+- Contact information for additional details
+- References to full research brief
+
+### Method Transparency  
+- Brief description of research approach
+- Sample size, scope, and timeframe indicators
+- Data sources and collection methods
+- Limitations or caveats clearly noted
+
+## Design Guidelines
+- **Hierarchy:** Most important information should be largest and most prominent
+- **Balance:** Mix of text, graphics, and white space for readability
+- **Accuracy:** All data and claims must be supported by your research
+- **Accessibility:** Readable by diverse professional audiences without specialized knowledge
+
+---
+
+# Component 4: Reproducibility Capsule
+
+## Purpose and Scope
+The Reproducibility Capsule enables other researchers to verify your findings, replicate your study in different contexts, or build on your methods. It provides complete methodological transparency and supporting materials.
+
+## Required Documentation
+
+### Method Protocol (2-3 pages)
+**Step-by-Step Procedures**
+- Detailed protocols for each phase of data collection
+- Specific tools, software settings, and measurement procedures
+- Quality control checks and validation steps
+- Decision rules for handling edge cases or problems
+
+**Materials and Resources**
+- Complete list of required tools, software, and equipment
+- Access requirements and permission processes
+- Time and resource estimates for replication
+- Skill requirements and training needs
+
+**Data Organization**
+- File naming conventions and folder structure
+- Data collection templates and forms
+- Coding schemes for qualitative data
+- Database structure or data organization system
+
+### Implementation Guide (1-2 pages)
+**Adaptation Guidelines**
+- How to modify the method for different contexts
+- What aspects are essential vs. adaptable
+- How to scale the approach up or down
+- Context-specific considerations and adjustments
+
+**Troubleshooting Guide**
+- Common problems and solutions
+- Alternative approaches when primary methods fail  
+- Quality indicators for successful implementation
+- When to seek additional expertise or support
+
+**Validation Procedures**
+- How to check data quality and method reliability
+- Comparison benchmarks or validation datasets
+- Peer review or external validation processes
+- Documentation requirements for credible replication
+
+### Supplementary Materials
+**Data Collection Tools**
+- Survey instruments, observation forms, measurement protocols
+- Software code, scripts, or configuration files
+- Template letters for access requests or permissions
+- Consent forms or ethical approval documentation
+
+**Analysis Resources**
+- Data analysis code or step-by-step analytical procedures
+- Visualization templates and reporting formats
+- Statistical analysis approaches and assumption checks
+- Interpretation guidelines and decision criteria
+
+**Example Materials**
+- Sample data files (anonymized) with analysis examples
+- Completed forms, templates, or documentation examples
+- Photos or videos demonstrating procedures where helpful
+- Case study or pilot implementation as model
+
+---
+
+# Differentiated Expectations by Program Level
+
+## Undergraduate Students
+**Research Brief:** Clear findings with straightforward analysis and practical recommendations
+**Practice Case:** Focus on immediate applicability with simple decision criteria
+**Object Card:** Clean, accessible design emphasizing key takeaways
+**Reproducibility:** Clear protocols suitable for peer replication
+
+## MArch Students
+**Research Brief:** Professional-quality analysis suitable for consultant reports
+**Practice Case:** Executive-level presentation with business case reasoning
+**Object Card:** Portfolio-quality design demonstrating communication skills
+**Reproducibility:** Industry-standard documentation suitable for professional use
+
+## PhD Students  
+**Research Brief:** Scholarly rigor with methodological contributions and statistical analysis
+**Practice Case:** Policy-level recommendations with implementation strategies
+**Object Card:** Research communication suitable for academic or professional conferences
+**Reproducibility:** Publication-quality methods documentation for peer review
+
+---
+
+# Assessment Criteria
+
+## Evidence Quality and Rigor (30%)
+**Data Quality**
+- Did you collect reliable, relevant data using appropriate methods?
+- How well did you address limitations and potential sources of error?
+- Are your findings supported by adequate evidence?
+
+**Analysis Appropriateness**
+- Did you use suitable analytical approaches for your data and questions?
+- How well did you handle uncertainty and alternative interpretations?
+- Are your conclusions justified by your evidence?
+
+**Methodological Transparency**
+- Are your methods clearly documented and reproducible?
+- Did you acknowledge limitations and methodological choices?
+- Could another researcher verify or replicate your work?
+
+## Practical Relevance and Impact (25%)
+**Stakeholder Alignment**
+- Do your findings directly address your stakeholders' decision needs?
+- Are your recommendations actionable and implementable?
+- How well do you understand the decision context and constraints?
+
+**Professional Applicability**
+- Could practitioners realistically use your evidence and recommendations?
+- Do you provide appropriate guidance for implementation?
+- How well do your findings transfer to similar decision contexts?
+
+## Communication Excellence (25%)
+**Audience Appropriateness**
+- Is each component tailored to its intended audience?
+- Do you use appropriate technical depth and professional language?
+- Are complex findings accessible to non-specialist decision-makers?
+
+**Visual Communication**
+- Do your graphics, tables, and figures effectively support your findings?
+- Is your Object Card professionally designed and impactful?
+- Do visual elements enhance rather than distract from key messages?
+
+**Integration and Coherence**
+- Do all four components work together as a unified package?
+- Is there clear narrative flow from problem through evidence to recommendations?
+- Are findings consistent across all components?
+
+## Research Contribution (20%)
+**Knowledge Advancement**
+- What new evidence does your research contribute to the field?
+- How do your findings extend, confirm, or challenge existing knowledge?
+- What methodological innovations or improvements do you demonstrate?
+
+**Future Research Direction**
+- How well do you identify priorities for future investigation?
+- Do you provide a foundation for others to build upon your work?
+- What broader implications do your findings suggest?
+
+---
+
+# Common Excellence Indicators
+
+## Research Brief Excellence
+- **Clear problem-solution narrative** connecting decision needs to evidence to recommendations
+- **Appropriate confidence claims** that accurately reflect evidence quality and limitations
+- **Professional presentation** suitable for stakeholder decision-making contexts
+- **Methodological rigor** appropriate to program level and research scope
+
+## Practice Case Excellence
+- **Executive accessibility** — busy professionals can quickly grasp key points
+- **Actionable recommendations** with specific implementation guidance
+- **Decision support** — clear criteria for when and how to apply findings
+- **Professional credibility** — suitable for client presentations or policy briefings
+
+## Object Card Excellence
+- **Visual impact** — compelling and memorable at poster or presentation scale
+- **Information density** — maximum insight per square inch without cluttering
+- **Professional design quality** — suitable for portfolio, conference, or publication
+- **Accurate communication** — visually represents findings without distortion
+
+## Reproducibility Capsule Excellence
+- **Complete documentation** — others can fully replicate your methods
+- **Practical guidance** — realistic implementation support with troubleshooting
+- **Methodological contribution** — advances best practices for evidence-based design research
+- **Quality assurance** — built-in checks for reliable implementation
+
+---
+
+# Timeline and Support
+
+## Weeks 6-11: Development Phase
+**Week 6-7:** Complete data collection and initial analysis
+**Week 8-9:** Draft Research Brief with mentor consultation
+**Week 10:** Peer review, Practice Case development, Object Card design
+**Week 11:** Final integration, Reproducibility Capsule completion
+
+## Week 12: Object Fair Presentation
+**Format:** 6-8 minute presentation + 4 minutes Q&A
+**Audience:** Classmates, instructor, external critics/practitioners
+**Materials:** All four components submitted + presentation slides
+
+## Support Resources
+- **Individual consultations:** Wednesdays 4-6pm at KB722, or by appointment, and mentor meetings
+- **Peer review sessions:** Structured feedback on draft materials
+- **Technical workshops:** Support for analysis, visualization, and design
+- **External critics:** Professional feedback at Object Fair event
+
+## Submission Requirements
+- **Complete PDF package** with all four components
+- **Presentation slides** used at Object Fair
+- **Change log** documenting major revisions since A3
+- **Self-assessment** reflecting on learning and research process
+
+---
+
+**Remember:** Your A4 Final Package demonstrates your development as an evidence-based design researcher. This is your opportunity to show how systematic investigation can improve architectural decision-making and contribute to professional knowledge.
+
+The Object Fair is a celebration of your semester's work and a chance to share your findings with the broader community. Prepare presentations that communicate both your specific findings and the broader value of evidence-based design thinking.
+
+---
+
+*Excellent research serves both immediate decision needs and long-term knowledge advancement. Your final package should demonstrate competence in both practical problem-solving and scholarly contribution to the field.*
