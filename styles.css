@@ -1,37 +1,82 @@
 /* Custom CSS for ARCH7476 Course Website */
 
-/* Color scheme based on architectural drawing conventions */
+/* Modern architectural color palette */
 :root {
-  --primary-blue: #2C5F7E;
-  --accent-orange: #D97639; 
-  --light-gray: #F5F5F5;
-  --dark-gray: #333333;
-  --warning-red: #C5362D;
+  --primary-blue: #0F172A;
+  --secondary-blue: #1E293B;
+  --accent-blue: #3B82F6;
+  --accent-orange: #F59E0B;
+  --accent-emerald: #10B981;
+  --accent-purple: #8B5CF6;
+  --light-gray: #F8FAFC;
+  --medium-gray: #E2E8F0;
+  --dark-gray: #1E293B;
+  --text-gray: #475569;
+  --warning-red: #EF4444;
+  
+  /* Gradient combinations */
+  --gradient-primary: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #3B82F6 100%);
+  --gradient-accent: linear-gradient(135deg, #F59E0B 0%, #10B981 100%);
+  --gradient-hero: linear-gradient(135deg, #0F172A 0%, #1E293B 25%, #3B82F6 75%, #8B5CF6 100%);
 }
 
-/* Typography improvements */
+/* Modern typography with better hierarchy */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: var(--dark-gray);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.7;
+  color: var(--text-gray);
+  background: var(--light-gray);
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--primary-blue);
   font-weight: 600;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.75rem;
 }
 
-/* Navigation styling */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--secondary-blue);
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--accent-blue);
+}
+
+/* Modern navigation with glass effect */
 .navbar {
-  background-color: var(--primary-blue) !important;
+  background: rgba(15, 23, 42, 0.95) !important;
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .navbar-brand, .navbar-nav .nav-link {
   color: white !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
   color: var(--accent-orange) !important;
+  transform: translateY(-1px);
+  text-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
 }
 
 /* Sidebar styling */
@@ -55,10 +100,39 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-/* Content styling */
+/* Hero banner with animated gradient */
 .quarto-title-banner {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-orange) 100%);
+  background: var(--gradient-hero);
+  background-size: 200% 200%;
+  animation: gradientShift 6s ease infinite;
   color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 2rem;
+}
+
+.quarto-title-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(1px);
+}
+
+.quarto-title-banner h1,
+.quarto-title-banner .subtitle {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* Table styling for schedule */
@@ -84,63 +158,173 @@ table tr:nth-child(even) {
   background-color: var(--light-gray);
 }
 
-/* Assignment cards */
+/* Modern assignment cards with hover effects */
 .assignment-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin: 1rem 0;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid var(--medium-gray);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  background: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.assignment-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-accent);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.assignment-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-color: var(--accent-blue);
+}
+
+.assignment-card:hover::before {
+  transform: scaleX(1);
 }
 
 .assignment-card h3 {
-  color: var(--accent-orange);
+  color: var(--accent-blue);
   margin-top: 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-/* Week cards */
+.assignment-card h3::before {
+  content: '📋';
+  font-size: 1.2em;
+}
+
+/* Modern week cards */
 .week-card {
-  border-left: 4px solid var(--primary-blue);
-  padding: 1rem 1.5rem;
-  margin: 1rem 0;
-  background-color: var(--light-gray);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 0;
+  background: linear-gradient(135deg, white 0%, var(--light-gray) 100%);
+  border: 1px solid var(--medium-gray);
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* Callout boxes */
+.week-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--gradient-primary);
+  border-radius: 12px 0 0 12px;
+}
+
+.week-card:hover {
+  transform: translateX(4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.week-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--secondary-blue);
+}
+
+/* Modern callout boxes with icons */
 .callout {
-  border-radius: 6px;
-  padding: 1rem;
+  border-radius: 12px;
+  padding: 1.5rem;
   margin: 1.5rem 0;
-  border-left: 4px solid;
+  border: 1px solid;
+  position: relative;
+  backdrop-filter: blur(10px);
+}
+
+.callout::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
 }
 
 .callout-note {
-  border-left-color: var(--primary-blue);
-  background-color: rgba(44, 95, 126, 0.1);
+  border-color: var(--accent-blue);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(59, 130, 246, 0.15) 100%);
+}
+
+.callout-note::before {
+  content: 'ℹ';
+  background: var(--accent-blue);
 }
 
 .callout-warning {
-  border-left-color: var(--warning-red);
-  background-color: rgba(197, 54, 45, 0.1);
+  border-color: var(--warning-red);
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(239, 68, 68, 0.15) 100%);
+}
+
+.callout-warning::before {
+  content: '⚠';
+  background: var(--warning-red);
 }
 
 .callout-tip {
-  border-left-color: var(--accent-orange);
-  background-color: rgba(217, 118, 57, 0.1);
+  border-color: var(--accent-emerald);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(16, 185, 129, 0.15) 100%);
 }
 
-/* Code styling */
+.callout-tip::before {
+  content: '💡';
+  background: var(--accent-emerald);
+}
+
+/* Modern code styling */
 pre, code {
-  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
-  font-size: 0.9em;
+  font-family: "JetBrains Mono", "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  font-size: 0.875em;
+  font-weight: 400;
+}
+
+code {
+  background: var(--medium-gray);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  color: var(--secondary-blue);
+  font-weight: 500;
 }
 
 pre {
-  background-color: var(--light-gray);
-  padding: 1rem;
-  border-radius: 4px;
+  background: var(--secondary-blue);
+  color: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: 12px;
   overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
 }
 
 /* Button styling */
@@ -166,6 +350,74 @@ footer a {
   color: var(--accent-orange);
 }
 
+/* Additional modern elements */
+.content-wrapper {
+  position: relative;
+}
+
+/* Floating action elements */
+.floating-nav {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+.floating-nav button {
+  background: var(--gradient-accent);
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.floating-nav button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Progress indicators */
+.progress-bar {
+  background: var(--medium-gray);
+  height: 4px;
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--gradient-accent);
+  transition: width 0.3s ease;
+}
+
+/* Modern table styling */
+table {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+table th {
+  background: var(--secondary-blue);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+}
+
+table tr:hover {
+  background-color: rgba(59, 130, 246, 0.05);
+  transition: background-color 0.2s ease;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .sidebar {
@@ -173,13 +425,26 @@ footer a {
     width: 100%;
   }
   
+  .quarto-title-banner {
+    padding: 2rem 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
   table {
     font-size: 0.9em;
   }
   
   .assignment-card, .week-card {
-    margin: 0.5rem 0;
-    padding: 1rem;
+    margin: 0.75rem 0;
+    padding: 1.25rem;
+  }
+  
+  .floating-nav {
+    bottom: 1rem;
+    right: 1rem;
   }
 }
 

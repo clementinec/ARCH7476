@@ -3,8 +3,8 @@ title: "Week 3: Planning a Test"
 subtitle: "Systematic Test Design and Pre-Registration"
 format: 
   revealjs:
-    theme: simple
-    transition: slide
+    theme: league
+    transition: zoom
     slide-number: true
     incremental: true
 ---

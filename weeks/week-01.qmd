@@ -3,7 +3,7 @@ title: "Week 1: Why Evidence Matters"
 subtitle: "Course Introduction and Foundations"
 format: 
   revealjs:
-    theme: simple
+    theme: moon
     transition: slide
     slide-number: true
     incremental: true
@@ -280,7 +280,115 @@ Choose tools that match:
 
 ---
 
-## Getting Started
+## Generative Design is not Magic
+![](https://upload.wikimedia.org/wikipedia/commons/3/37/Magic_circle.png){width=400}
+
+> It’s about making design decisions with evidence — data, simulations, and thresholds.  
+
+::: notes
+Students often think “generative” = black-box AI magic. Clarify from the start: this course is about reproducibility, clarity, and decision usefulness.  
+:::
+
+---
+
+##  {background-image="https://upload.wikimedia.org/wikipedia/commons/5/5a/Aerial_view_of_Apple_Park_dllu.jpg" background-size="contain" background-position="center" background-repeat="no-repeat"}
+
+
+---
+
+## Case 1 – Apple Park Glass Walls
+
+*Employees at Apple Park kept walking into the pristine curved glass walls.*  
+
+::: notes
+NYT (2018) reported multiple incidents. A design that looked flawless in renders failed human factors testing.  
+If the object is “transparent façade,” a decision claim might be: *“Does a subtle coating reduce accidents without losing daylight?”*  
+:::
+
+---
+
+<!-- ## Daylight Atrium (AMNH – Gilder Center) -->
+![](https://upload.wikimedia.org/wikipedia/commons/5/59/Central_atrium_of_the_Richard_Gilder_Center_for_Science%2C_Education%2C_and_Innovation_-_skylight_view.jpg)
+<!-- {.stretch} -->
+
+---
+
+
+## Case 2 – Daylight as a Design Asset
+<!-- ![](https://images.adsttc.com/media/images/5db0/cf95/3312/fd6d/4500/003f/newsletter/feature_1.jpg?1571887372){width=600} -->
+
+*WELL Building Standard pushes daylight for health. Tech firms compete for daylight-rich workspaces.*  
+
+::: notes
+Wired & Architectural Digest covered how big firms prioritize daylight to boost productivity and health.  
+Evidence links daylight exposure to sleep and wellbeing.  
+Prompt: *“If your object is window size, how do you test daylight vs. glare trade-offs?”*  
+:::
+
+---
+
+##  {background-image="https://upload.wikimedia.org/wikipedia/commons/2/28/Chaleur_Paris_19e_juin_2022.jpg" background-size="contain" background-position="center" background-repeat="no-repeat"}
+
+
+---
+
+## Case 3 – Heat Resilience in Cities
+
+*Paris 2022: heatwaves forced rethink of shade, airflow, and public space.*  
+
+::: notes
+Architectural press documented how shade structures and surface materials affect thermal comfort.  
+Evidence can guide claims like: *“Does increasing tree cover by 20% reduce perceived heat stress?”*  
+:::
+
+---
+
+![](https://upload.wikimedia.org/wikipedia/commons/6/66/Onda_architettonica.jpg)
+<!-- {.stretch} -->
+
+---
+
+## Case 4 – AI Hype vs. Evidence
+![](https://cdn.vox-cdn.com/thumbor/hIhuwl3Rj2kXYB0UGkoCj5Uuf10=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/72556493/DSCF4084.0.jpg){width=600}
+
+*Generative AI renders go viral — but few are tested for buildability.*  
+
+::: notes
+Dezeen and WIRED highlight seductive AI-generated architecture images.  
+But are they ventilated? Do they meet comfort codes?  
+Prompt: *“If your object is an AI render, what evidence claim would you test first?”*  
+:::
+
+---
+
+![](https://upload.wikimedia.org/wikipedia/commons/b/b2/Midtown_Manhattan_from_Weehawken_September_2021_panorama_1.jpg)
+<!-- {.stretch} -->
+
+---
+
+## Case 5 – Energy Retrofits as Evidence
+![](https://s3-prod.crainsnewyork.com/styles/width_792/s3/Law97-062719.jpg){width=600}
+
+*NYC Local Law 97 sets strict emission thresholds for buildings.*  
+
+::: notes
+Architectural Record covered how retrofits must now meet numeric CO₂ caps.  
+Policy itself provides evidence: thresholds like *≤ 0.9 W/m²K* for adoption.  
+Ask students: *“If your object is insulation, what’s your adopt/defer threshold?”*  
+:::
+
+---
+
+## Activity: Your First Object Claim
+- Sketch 2–3 possible **objects** from your studio or interest  
+- Draft one **decision claim** (1–2 sentences)  
+- Share with a peer, refine, and keep notes  
+
+::: notes
+This activity seeds A1 (Decision Claim). Encourage variety: glazing, HVAC rules, shading devices, workflow scripts. Students leave Week 1 with a concrete starting point.  
+:::
+
+
 
 ---
 

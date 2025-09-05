@@ -3,8 +3,8 @@ title: "Week 2: Finding and Framing Data"
 subtitle: "Data Sources, Collection Methods, and Ethics"
 format: 
   revealjs:
-    theme: simple
-    transition: slide
+    theme: solarized
+    transition: convex
     slide-number: true
     incremental: true
 ---

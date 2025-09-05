@@ -3,8 +3,8 @@ title: "Week 4: Sensitivity & Peer Check"
 subtitle: "Understanding Uncertainty and Validation"
 format: 
   revealjs:
-    theme: simple
-    transition: slide
+    theme: serif
+    transition: fade
     slide-number: true
     incremental: true
 ---

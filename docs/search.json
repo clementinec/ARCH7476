@@ -3216,11 +3216,83 @@
     ]
   },
   {
-    "objectID": "weeks/week-01.html#getting-started",
-    "href": "weeks/week-01.html#getting-started",
+    "objectID": "weeks/week-01.html#generative-design-is-not-magic",
+    "href": "weeks/week-01.html#generative-design-is-not-magic",
     "title": "Week 1: Why Evidence Matters",
-    "section": "Getting Started",
-    "text": "Getting Started",
+    "section": "Generative Design is not Magic",
+    "text": "Generative Design is not Magic\n\n\nIt’s about making design decisions with evidence — data, simulations, and thresholds.\n\n\nStudents often think “generative” = black-box AI magic. Clarify from the start: this course is about reproducibility, clarity, and decision usefulness.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W1: Why Evidence Matters"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#case-1-apple-park-glass-walls",
+    "href": "weeks/week-01.html#case-1-apple-park-glass-walls",
+    "title": "Week 1: Why Evidence Matters",
+    "section": "Case 1 – Apple Park Glass Walls",
+    "text": "Case 1 – Apple Park Glass Walls\nEmployees at Apple Park kept walking into the pristine curved glass walls.\n\nNYT (2018) reported multiple incidents. A design that looked flawless in renders failed human factors testing.\nIf the object is “transparent façade,” a decision claim might be: “Does a subtle coating reduce accidents without losing daylight?”",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W1: Why Evidence Matters"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#case-2-daylight-as-a-design-asset",
+    "href": "weeks/week-01.html#case-2-daylight-as-a-design-asset",
+    "title": "Week 1: Why Evidence Matters",
+    "section": "Case 2 – Daylight as a Design Asset",
+    "text": "Case 2 – Daylight as a Design Asset\n\nWELL Building Standard pushes daylight for health. Tech firms compete for daylight-rich workspaces.\n\nWired & Architectural Digest covered how big firms prioritize daylight to boost productivity and health.\nEvidence links daylight exposure to sleep and wellbeing.\nPrompt: “If your object is window size, how do you test daylight vs. glare trade-offs?”",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W1: Why Evidence Matters"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#case-3-heat-resilience-in-cities",
+    "href": "weeks/week-01.html#case-3-heat-resilience-in-cities",
+    "title": "Week 1: Why Evidence Matters",
+    "section": "Case 3 – Heat Resilience in Cities",
+    "text": "Case 3 – Heat Resilience in Cities\nParis 2022: heatwaves forced rethink of shade, airflow, and public space.\n\nArchitectural press documented how shade structures and surface materials affect thermal comfort.\nEvidence can guide claims like: “Does increasing tree cover by 20% reduce perceived heat stress?”",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W1: Why Evidence Matters"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#case-4-ai-hype-vs.-evidence",
+    "href": "weeks/week-01.html#case-4-ai-hype-vs.-evidence",
+    "title": "Week 1: Why Evidence Matters",
+    "section": "Case 4 – AI Hype vs. Evidence",
+    "text": "Case 4 – AI Hype vs. Evidence\n\nGenerative AI renders go viral — but few are tested for buildability.\n\nDezeen and WIRED highlight seductive AI-generated architecture images.\nBut are they ventilated? Do they meet comfort codes?\nPrompt: “If your object is an AI render, what evidence claim would you test first?”",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W1: Why Evidence Matters"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#case-5-energy-retrofits-as-evidence",
+    "href": "weeks/week-01.html#case-5-energy-retrofits-as-evidence",
+    "title": "Week 1: Why Evidence Matters",
+    "section": "Case 5 – Energy Retrofits as Evidence",
+    "text": "Case 5 – Energy Retrofits as Evidence\n\nNYC Local Law 97 sets strict emission thresholds for buildings.\n\nArchitectural Record covered how retrofits must now meet numeric CO₂ caps.\nPolicy itself provides evidence: thresholds like ≤ 0.9 W/m²K for adoption.\nAsk students: “If your object is insulation, what’s your adopt/defer threshold?”",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W1: Why Evidence Matters"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#activity-your-first-object-claim",
+    "href": "weeks/week-01.html#activity-your-first-object-claim",
+    "title": "Week 1: Why Evidence Matters",
+    "section": "Activity: Your First Object Claim",
+    "text": "Activity: Your First Object Claim\n\nSketch 2–3 possible objects from your studio or interest\n\nDraft one decision claim (1–2 sentences)\n\nShare with a peer, refine, and keep notes\n\n\nThis activity seeds A1 (Decision Claim). Encourage variety: glazing, HVAC rules, shading devices, workflow scripts. Students leave Week 1 with a concrete starting point.",
     "crumbs": [
       "Home",
       "Weekly Content",
