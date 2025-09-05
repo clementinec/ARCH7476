@@ -4,8 +4,6 @@ subtitle: "Complete Evidence-Based Design Research Brief"
 format: 
   html:
     toc: true
-  pdf:
-    toc: true
 ---
 
 **Due:** End of Week 12 (Final Object Fair)  

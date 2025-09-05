@@ -4,8 +4,6 @@ subtitle: "Mapping Existing Knowledge and Identifying Research Gaps"
 format: 
   html:
     toc: true
-  pdf:
-    toc: true
 ---
 
 **Due:** End of Week 4  

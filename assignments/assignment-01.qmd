@@ -4,8 +4,6 @@ subtitle: "Identifying and Framing Your Design Research Question"
 format: 
   html:
     toc: true
-  pdf:
-    toc: true
 ---
 
 **Due:** End of Week 2  

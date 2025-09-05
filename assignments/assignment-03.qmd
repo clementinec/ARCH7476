@@ -4,8 +4,6 @@ subtitle: "Designing and Testing Your Research Method"
 format: 
   html:
     toc: true
-  pdf:
-    toc: true
 ---
 
 **Due:** End of Week 5  

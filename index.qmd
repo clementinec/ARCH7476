@@ -1,11 +1,9 @@
 ---
-title: "ARCH7476: Evidence-Based Design"
+title: "ARCH7476: Evidence-Based Generative Design"
 subtitle: "Data-Driven Decision Making in Architecture"
 format: 
   html:
     toc: true
-  revealjs:
-    slide-number: true
 ---
 
 ## Course Overview
