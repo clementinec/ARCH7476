@@ -1,0 +1,1730 @@
+[
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "This schedule accommodates a mixed audience of MArch, undergraduate, and PhD students through differentiated technical depth while maintaining equivalent learning outcomes.\n\n\n\n\nCourse introduction and the foundations of evidence-based design thinking.\n\n\n\n\nCourse introduction and expectations\n“Generative design is not magic” — demystifying data-driven design\nWhy data and evidence matter in architecture\nExamples of evidence-based design in plain language\nIntroduction to the semester-long research brief format\n\n\n\n\n\nDraft seed idea for A1 (design object + testable claim)\nReading: The Craft of Research (selected excerpts)\nSet up basic tools (spreadsheet software, QGIS)\n\n\n\n\nPrepares foundation for A1: Decision Claim\n\n\n\n\nExcel/Google Sheets for basic data organization\nQGIS for spatial data (introductory level)\n\n\n\n\n\n\n\n\nData sources, collection methods, and ethical considerations in architectural research.\n\n\n\n\nArchitectural data sources: sensors, BIM/GIS, building standards\nEthics and privacy in data collection\nSetting appropriate ranges and parameters for testing\nFraming research questions for different audiences\n\n\n\n\n\nSubmit A1: Decision Claim\nDraft mentor consultation questions\nBegin preliminary data exploration\n\n\n\n\nSubmit A1 (Design object and testable claim)\n\n\n\n\nQGIS buffer and clip operations\nHKU data storage and privacy protocols\nIntroduction to building performance databases\n\n\n\n\nHKU data privacy guidelines and research ethics notes\n\n\n\n\n\n\n\nSystematic test design and the pre-registration mindset.\n\n\n\n\nProxy vs. preset simulations: when to use each approach\nDesigning a test plan with clear hypotheses\nPre-registration mindset: documenting assumptions before testing\nIntroduction to building performance simulation basics\n\n\n\n\n\nDraft A3 test plan outline\nBegin A2 evidence mapping exercise\nExplore relevant simulation tools for your project\n\n\n\n\nProgress toward A2: Evidence Map and A3: Test Plan\n\n\n\n\nRadiance/VELUX daylight presets\nEnergyPlus Simple Glazing GUI\nBasic parametric thinking\n\n\n\n\nIntroductory handouts for Radiance and EnergyPlus workflows\n\n\n\n\n\n\n\nUnderstanding how results change with different inputs and assumptions.\n\n\n\n\nSensitivity analysis: how results shift with parameter ranges\nUncertainty quantification and confidence intervals\nMini peer review session: testing each other’s assumptions\nData visualization for uncertainty\n\n\n\n\n\nComplete and submit A2: Evidence Map (3-5 pages)\nRefine A3 test plan based on peer feedback\n\n\n\n\nSubmit A2 (Evidence Map with literature review and gap analysis)\n\n\n\n\nExcel charting and statistical functions\nSimple plotting and uncertainty visualization\nIntroduction to error bars and confidence ranges\n\n\n\n\nEdward Tufte excerpts on statistical graphics and uncertainty visualization\n\n\n\n\n\n\n\nConducting pilot tests and learning from early results.\n\n\n\n\nPilot testing strategies and documentation\nLogging surprises and unexpected results\nAdjusting plans based on pilot findings\nTroubleshooting common simulation and data collection issues\n\n\n\n\n\nConduct pilot test using your chosen method\nDraft A3 Pilot Memo documenting process and initial findings\n\n\n\n\nSubmit A3 (Test Plan + Pilot Note) and begin Peer Review #1\n\n\n\nExecute chosen testing approach: - Physical measurements and sensors - Preset building simulations - Survey data collection - Spatial analysis workflows\n\n\n\nPilot memo template and examples from previous semesters\n\n\n\n\n\n\n\nData visualization and communication for architectural audiences.\n\n\n\n\nData visualization principles for architecture\nFrom raw numbers to clear, compelling figures\nDesigning your Object Card figure (key visual summary)\nCritique session: what makes results readable?\n\n\n\n\n\nDraft A4 figures and visualizations\nContinue data collection and analysis\nDevelop Object Card visual concept\n\n\n\n\nObject Card development and A4 progress\n\n\n\n\nAdvanced Excel/Sheets visualization\nIntroduction to design-quality graphics\nLayout and composition for technical communication\n\n\n\n\nAndy Kirk’s Data Visualization Handbook (selected chapters)\n\n\n\n\n\n\n\nSetting thresholds for design decisions and addressing counter-arguments.\n\n\n\n\nEstablishing thresholds for adopt/defer decisions\nAddressing counter-arguments and alternative interpretations\nPeer Review Session #1: structured feedback on draft work\nDecision frameworks and trade-off analysis\n\n\n\n\n\nRevise A4 based on peer feedback\nComplete Change Log #1 (documenting revisions)\nStrengthen argument structure\n\n\n\n\nSignificant progress on A4 draft with peer feedback integration\n\n\n\n\nExcel/Sheets for decision matrices\nOptional: Colab/GitHub for more advanced analysis\nArgument mapping and logic checking\n\n\n\n\nExample practice memos and decision frameworks\n\n\n\n\n\n\n\nDocumenting processes for reproducibility and addressing automation ethics.\n\n\n\n\nDocumenting workflows: from manual processes to scripts\nEthical limits of automation in design research\nIndividual mentor consultations (30-45 minutes each)\nReproducibility and research transparency\n\n\n\n\n\nComplete Mentor Report (1-2 pages summarizing consultation)\nDocument your workflow for A4 Reproducibility Capsule\nRefine analysis methods\n\n\n\n\nMentor Dialogue task and reproducibility documentation\n\n\n\n\nOptional: Python/Colab for interested students\nGitHub for version control and documentation\nWorkflow diagramming tools\n\n\n\n\nWorkflow documentation template and reproducibility guidelines\n\n\n\n\n\n\n\nCrafting compelling narratives and polishing visualizations.\n\n\n\n\nCrafting the two-slide Practice Case presentation\nFigure and narrative clinic: individual consultation time\nPeer Review Session #2: near-final feedback\nPresentation skills for technical audiences\n\n\n\n\n\nPolish A4 draft incorporating all feedback\nComplete Change Log #2 (tracking all revisions)\nFinalize Object Card design\n\n\n\n\nNear-final A4 package ready for defense\n\n\n\n\nPresentation software optimization\nFinal figure polishing in Excel/design software\nNarrative structure and flow\n\n\n\n\nCourse style guide and presentation examples\n\n\n\n\n\n\n\nPractice presentations with constructive feedback.\n\n\n\n\nShort in-class defenses (6-8 minutes per student + Q&A)\nCollective feedback and discussion\nIdentifying final polishing priorities\nFinal presentation logistics and expectations\n\n\n\n\n\nIntegrate defense feedback into final package\nAddress any identified gaps or weaknesses\nPrepare for final Object Fair\n\n\n\n\nA4 draft defense with clear revision priorities\n\n\n\nFormative assessment preparing for final evaluation\n\n\n\n\n\n\n\nIntegration of all feedback and final preparation.\n\n\n\n\nMentor feedback integration workshop\nFinalizing decision thresholds and recommendations\nFinal preparation for Object Fair presentation\nTechnical troubleshooting and last-minute support\n\n\n\n\n\nFinal polish of A4 complete package\nPractice final presentation\nPrepare for public Object Fair event\n\n\n\n\nFinal A4 package due next week\n\n\n\nIndividual consultation time for final questions and technical issues\n\n\n\n\n\n\n\nPublic presentation of semester work with external evaluation.\n\n\n\nObject Fair Format: - 6-8 minute presentation per student - 4 minute Q&A with jurors and peers\n- External critics and guest jurors invited - Professional presentation setting\n\n\n\nSubmit A4: Complete Final Package including: - Research Brief (main document) - Practice Case (two-slide summary) - Object Card (visual summary) - Reproducibility Capsule (workflow documentation)\n\n\n\nFinal evaluation by instructor and external jurors based on: - Clarity and rigor of research question - Appropriateness of methods and analysis - Quality of evidence and reasoning - Effectiveness of communication - Reproducibility and transparency",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#week-1-why-evidence-matters",
+    "href": "schedule.html#week-1-why-evidence-matters",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "Course introduction and the foundations of evidence-based design thinking.\n\n\n\n\nCourse introduction and expectations\n“Generative design is not magic” — demystifying data-driven design\nWhy data and evidence matter in architecture\nExamples of evidence-based design in plain language\nIntroduction to the semester-long research brief format\n\n\n\n\n\nDraft seed idea for A1 (design object + testable claim)\nReading: The Craft of Research (selected excerpts)\nSet up basic tools (spreadsheet software, QGIS)\n\n\n\n\nPrepares foundation for A1: Decision Claim\n\n\n\n\nExcel/Google Sheets for basic data organization\nQGIS for spatial data (introductory level)",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#week-2-finding-and-framing-data",
+    "href": "schedule.html#week-2-finding-and-framing-data",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "Data sources, collection methods, and ethical considerations in architectural research.\n\n\n\n\nArchitectural data sources: sensors, BIM/GIS, building standards\nEthics and privacy in data collection\nSetting appropriate ranges and parameters for testing\nFraming research questions for different audiences\n\n\n\n\n\nSubmit A1: Decision Claim\nDraft mentor consultation questions\nBegin preliminary data exploration\n\n\n\n\nSubmit A1 (Design object and testable claim)\n\n\n\n\nQGIS buffer and clip operations\nHKU data storage and privacy protocols\nIntroduction to building performance databases\n\n\n\n\nHKU data privacy guidelines and research ethics notes",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#week-3-planning-a-test",
+    "href": "schedule.html#week-3-planning-a-test",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "Systematic test design and the pre-registration mindset.\n\n\n\n\nProxy vs. preset simulations: when to use each approach\nDesigning a test plan with clear hypotheses\nPre-registration mindset: documenting assumptions before testing\nIntroduction to building performance simulation basics\n\n\n\n\n\nDraft A3 test plan outline\nBegin A2 evidence mapping exercise\nExplore relevant simulation tools for your project\n\n\n\n\nProgress toward A2: Evidence Map and A3: Test Plan\n\n\n\n\nRadiance/VELUX daylight presets\nEnergyPlus Simple Glazing GUI\nBasic parametric thinking\n\n\n\n\nIntroductory handouts for Radiance and EnergyPlus workflows",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#week-4-sensitivity-peer-check",
+    "href": "schedule.html#week-4-sensitivity-peer-check",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "Understanding how results change with different inputs and assumptions.\n\n\n\n\nSensitivity analysis: how results shift with parameter ranges\nUncertainty quantification and confidence intervals\nMini peer review session: testing each other’s assumptions\nData visualization for uncertainty\n\n\n\n\n\nComplete and submit A2: Evidence Map (3-5 pages)\nRefine A3 test plan based on peer feedback\n\n\n\n\nSubmit A2 (Evidence Map with literature review and gap analysis)\n\n\n\n\nExcel charting and statistical functions\nSimple plotting and uncertainty visualization\nIntroduction to error bars and confidence ranges\n\n\n\n\nEdward Tufte excerpts on statistical graphics and uncertainty visualization",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#week-5-pilot-week",
+    "href": "schedule.html#week-5-pilot-week",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "Conducting pilot tests and learning from early results.\n\n\n\n\nPilot testing strategies and documentation\nLogging surprises and unexpected results\nAdjusting plans based on pilot findings\nTroubleshooting common simulation and data collection issues\n\n\n\n\n\nConduct pilot test using your chosen method\nDraft A3 Pilot Memo documenting process and initial findings\n\n\n\n\nSubmit A3 (Test Plan + Pilot Note) and begin Peer Review #1\n\n\n\nExecute chosen testing approach: - Physical measurements and sensors - Preset building simulations - Survey data collection - Spatial analysis workflows\n\n\n\nPilot memo template and examples from previous semesters",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#week-6-making-results-readable",
+    "href": "schedule.html#week-6-making-results-readable",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "Data visualization and communication for architectural audiences.\n\n\n\n\nData visualization principles for architecture\nFrom raw numbers to clear, compelling figures\nDesigning your Object Card figure (key visual summary)\nCritique session: what makes results readable?\n\n\n\n\n\nDraft A4 figures and visualizations\nContinue data collection and analysis\nDevelop Object Card visual concept\n\n\n\n\nObject Card development and A4 progress\n\n\n\n\nAdvanced Excel/Sheets visualization\nIntroduction to design-quality graphics\nLayout and composition for technical communication\n\n\n\n\nAndy Kirk’s Data Visualization Handbook (selected chapters)",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#week-7-decide-with-numbers",
+    "href": "schedule.html#week-7-decide-with-numbers",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "Setting thresholds for design decisions and addressing counter-arguments.\n\n\n\n\nEstablishing thresholds for adopt/defer decisions\nAddressing counter-arguments and alternative interpretations\nPeer Review Session #1: structured feedback on draft work\nDecision frameworks and trade-off analysis\n\n\n\n\n\nRevise A4 based on peer feedback\nComplete Change Log #1 (documenting revisions)\nStrengthen argument structure\n\n\n\n\nSignificant progress on A4 draft with peer feedback integration\n\n\n\n\nExcel/Sheets for decision matrices\nOptional: Colab/GitHub for more advanced analysis\nArgument mapping and logic checking\n\n\n\n\nExample practice memos and decision frameworks",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#week-8-light-workflow-help",
+    "href": "schedule.html#week-8-light-workflow-help",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "Documenting processes for reproducibility and addressing automation ethics.\n\n\n\n\nDocumenting workflows: from manual processes to scripts\nEthical limits of automation in design research\nIndividual mentor consultations (30-45 minutes each)\nReproducibility and research transparency\n\n\n\n\n\nComplete Mentor Report (1-2 pages summarizing consultation)\nDocument your workflow for A4 Reproducibility Capsule\nRefine analysis methods\n\n\n\n\nMentor Dialogue task and reproducibility documentation\n\n\n\n\nOptional: Python/Colab for interested students\nGitHub for version control and documentation\nWorkflow diagramming tools\n\n\n\n\nWorkflow documentation template and reproducibility guidelines",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#week-9-storytelling-figures",
+    "href": "schedule.html#week-9-storytelling-figures",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "Crafting compelling narratives and polishing visualizations.\n\n\n\n\nCrafting the two-slide Practice Case presentation\nFigure and narrative clinic: individual consultation time\nPeer Review Session #2: near-final feedback\nPresentation skills for technical audiences\n\n\n\n\n\nPolish A4 draft incorporating all feedback\nComplete Change Log #2 (tracking all revisions)\nFinalize Object Card design\n\n\n\n\nNear-final A4 package ready for defense\n\n\n\n\nPresentation software optimization\nFinal figure polishing in Excel/design software\nNarrative structure and flow\n\n\n\n\nCourse style guide and presentation examples",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#week-10-draft-defense",
+    "href": "schedule.html#week-10-draft-defense",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "Practice presentations with constructive feedback.\n\n\n\n\nShort in-class defenses (6-8 minutes per student + Q&A)\nCollective feedback and discussion\nIdentifying final polishing priorities\nFinal presentation logistics and expectations\n\n\n\n\n\nIntegrate defense feedback into final package\nAddress any identified gaps or weaknesses\nPrepare for final Object Fair\n\n\n\n\nA4 draft defense with clear revision priorities\n\n\n\nFormative assessment preparing for final evaluation",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#week-11-final-polish",
+    "href": "schedule.html#week-11-final-polish",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "Integration of all feedback and final preparation.\n\n\n\n\nMentor feedback integration workshop\nFinalizing decision thresholds and recommendations\nFinal preparation for Object Fair presentation\nTechnical troubleshooting and last-minute support\n\n\n\n\n\nFinal polish of A4 complete package\nPractice final presentation\nPrepare for public Object Fair event\n\n\n\n\nFinal A4 package due next week\n\n\n\nIndividual consultation time for final questions and technical issues",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#week-12-object-fair-final-review",
+    "href": "schedule.html#week-12-object-fair-final-review",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "Public presentation of semester work with external evaluation.\n\n\n\nObject Fair Format: - 6-8 minute presentation per student - 4 minute Q&A with jurors and peers\n- External critics and guest jurors invited - Professional presentation setting\n\n\n\nSubmit A4: Complete Final Package including: - Research Brief (main document) - Practice Case (two-slide summary) - Object Card (visual summary) - Reproducibility Capsule (workflow documentation)\n\n\n\nFinal evaluation by instructor and external jurors based on: - Clarity and rigor of research question - Appropriateness of methods and analysis - Quality of evidence and reasoning - Effectiveness of communication - Reproducibility and transparency",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#differentiated-approaches",
+    "href": "schedule.html#differentiated-approaches",
+    "title": "Course Schedule",
+    "section": "Differentiated Approaches",
+    "text": "Differentiated Approaches\n\nMArch Students\n\nFocus on practical design decision memos\nEmphasize real-world client communication\nConnect to professional practice standards\n\n\n\nUndergraduate Students\n\nGuided scaffolding with templates and examples\nLow-code tools (spreadsheets, preset simulations)\nExtra support sessions available\n\n\n\nPhD Students\n\nDeeper engagement with uncertainty analysis and statistical methods\nAdvanced reproducibility requirements\nCode-heavy workflow options encouraged\nAdditional methodological rigor expected",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#equivalent-outcomes",
+    "href": "schedule.html#equivalent-outcomes",
+    "title": "Course Schedule",
+    "section": "Equivalent Outcomes",
+    "text": "Equivalent Outcomes\nAll students produce the same core deliverables (A1-A4) but with technical depth and methodological sophistication appropriate to their program level and experience.\n\nSchedule subject to minor adjustments based on class needs and guest speaker availability.",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ARCH7476: Evidence-Based Design",
+    "section": "",
+    "text": "ARCH7476: Evidence-Based Design explores how architects can make better design decisions through systematic data collection, analysis, and interpretation. This course bridges the gap between intuitive design thinking and empirical evidence, preparing students to justify design choices with quantitative and qualitative data.\n\n\n\n“Generative design is not magic” — it requires evidence, testing, and systematic evaluation.\n\nModern architectural practice increasingly demands evidence-based decision making. Whether optimizing building performance, validating design assumptions, or communicating with clients and stakeholders, architects need skills in data collection, analysis, and presentation.\n\n\n\nBy the end of this course, students will be able to:\n\nFrame architectural problems as testable research questions\nCollect and analyze data relevant to design decisions\nDesign and conduct tests to evaluate design alternatives\nCommunicate findings effectively to diverse audiences\nDocument workflows for reproducible design research\nApply ethical frameworks to data collection and use in architecture\n\n\n\n\nThis course serves students across different programs:\n\nMArch students: Focus on practical design decision memos and real-world applications\nUndergraduate students: Guided scaffolding with low-code tools and preset simulations\nPhD students: Deeper engagement with uncertainty analysis, reproducibility, and advanced workflows\n\nAll students produce equivalent deliverables, but technical depth and methodological rigor flex according to experience and program requirements.",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "ARCH7476: Evidence-Based Design"
+    ]
+  },
+  {
+    "objectID": "index.html#course-overview",
+    "href": "index.html#course-overview",
+    "title": "ARCH7476: Evidence-Based Design",
+    "section": "",
+    "text": "ARCH7476: Evidence-Based Design explores how architects can make better design decisions through systematic data collection, analysis, and interpretation. This course bridges the gap between intuitive design thinking and empirical evidence, preparing students to justify design choices with quantitative and qualitative data.\n\n\n\n“Generative design is not magic” — it requires evidence, testing, and systematic evaluation.\n\nModern architectural practice increasingly demands evidence-based decision making. Whether optimizing building performance, validating design assumptions, or communicating with clients and stakeholders, architects need skills in data collection, analysis, and presentation.\n\n\n\nBy the end of this course, students will be able to:\n\nFrame architectural problems as testable research questions\nCollect and analyze data relevant to design decisions\nDesign and conduct tests to evaluate design alternatives\nCommunicate findings effectively to diverse audiences\nDocument workflows for reproducible design research\nApply ethical frameworks to data collection and use in architecture\n\n\n\n\nThis course serves students across different programs:\n\nMArch students: Focus on practical design decision memos and real-world applications\nUndergraduate students: Guided scaffolding with low-code tools and preset simulations\nPhD students: Deeper engagement with uncertainty analysis, reproducibility, and advanced workflows\n\nAll students produce equivalent deliverables, but technical depth and methodological rigor flex according to experience and program requirements.",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "ARCH7476: Evidence-Based Design"
+    ]
+  },
+  {
+    "objectID": "index.html#course-structure",
+    "href": "index.html#course-structure",
+    "title": "ARCH7476: Evidence-Based Design",
+    "section": "Course Structure",
+    "text": "Course Structure\n\nCore Assignments\nThe course centers around four major assignments that build toward a comprehensive research brief:\n\nA1: Decision Claim (Week 2)\n\nIdentify a design object and articulate a testable claim about its performance or impact.\n\nA2: Evidence Map (Week 4)\n\nMap existing evidence and identify gaps requiring new data collection.\n\nA3: Test Plan + Pilot (Week 5)\n\nDesign and pilot a systematic test of your design claim.\n\nA4: Final Package (Week 12)\n\nComplete research brief including Practice Case, Object Card, and Reproducibility Capsule.\n\n\n\n\nPedagogical Approach\n\nLearning by doing: Each week combines conceptual frameworks with hands-on application\nPeer review: Multiple opportunities for peer feedback and collaborative learning\nMentor dialogue: Mid-course consultation with external practitioners\nPublic presentation: Final “Object Fair” with invited critics\n\n\n\nTools and Technology\nThe course emphasizes tool flexibility rather than software mastery:\nLow-code options: Excel/Sheets, QGIS, preset simulations (Radiance/VELUX, EnergyPlus Simple Glazing)\nCode-heavy options: Python/Colab, GitHub workflows, custom analysis scripts\nUniversal tools: Visualization software, presentation platforms, documentation systems",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "ARCH7476: Evidence-Based Design"
+    ]
+  },
+  {
+    "objectID": "index.html#schedule-at-a-glance",
+    "href": "index.html#schedule-at-a-glance",
+    "title": "ARCH7476: Evidence-Based Design",
+    "section": "Schedule at a Glance",
+    "text": "Schedule at a Glance\n\n\n\n\n\n\n\n\n\nWeek\nFocus\nKey Activity\nDeliverable\n\n\n\n\n1\nWhy Evidence Matters\nCourse introduction, seed ideas\nDraft A1 concept\n\n\n2\nFinding and Framing Data\nData sources, ethics\nSubmit A1\n\n\n3\nPlanning a Test\nTest design, pre-registration\nDraft A3 plan\n\n\n4\nSensitivity & Peer Check\nUncertainty analysis\nSubmit A2\n\n\n5\nPilot Week\nConduct pilot test\nSubmit A3\n\n\n6\nMaking Results Readable\nData visualization\nDraft A4 figures\n\n\n7\nDecide with Numbers\nThresholds, peer review\nRevise A4\n\n\n8\nLight Workflow Help\nDocumentation, mentor consults\nMentor Report\n\n\n9\nStorytelling & Figures\nPractice Case narrative\nPolish A4\n\n\n10\nDraft Defense\nIn-class presentations\nFeedback integration\n\n\n11\nFinal Polish\nFinal revisions\nNear-final A4\n\n\n12\nObject Fair\nFinal presentations\nSubmit A4 Final",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "ARCH7476: Evidence-Based Design"
+    ]
+  },
+  {
+    "objectID": "index.html#getting-started",
+    "href": "index.html#getting-started",
+    "title": "ARCH7476: Evidence-Based Design",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nPreparation\nBefore our first meeting:\n\nReview the syllabus and assignment descriptions\nInstall basic tools: Spreadsheet software, QGIS (free)\nIdentify a potential design object for your semester-long investigation\nRead: Selected excerpts from The Craft of Research (available on course site)\n\n\n\nQuestions?\n\nCheck the Resources page for software installation guides\nReview Assignment Details for complete rubrics and timelines\nBrowse the Weekly Schedule for detailed session plans\n\n\nThis course website is built with Quarto and hosted via GitHub Pages. Source code available on GitHub.",
+    "crumbs": [
+      "Home",
+      "Course Overview",
+      "ARCH7476: Evidence-Based Design"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html",
+    "href": "assignments/assignment-02.html",
+    "title": "Assignment 2: Evidence Map",
+    "section": "",
+    "text": "Due: End of Week 4\nWeight: 20% of final grade\nLength: 3-5 pages + evidence matrix\nFormat: PDF submission via course portal",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#learning-objectives",
+    "href": "assignments/assignment-02.html#learning-objectives",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy completing this assignment, you will:\n\nConduct systematic literature review relevant to your decision claim\nEvaluate evidence quality using appropriate criteria for design research\nIdentify knowledge gaps where new evidence could make a meaningful contribution\n\nMap evidence to stakeholder needs connecting research findings to decision requirements\nPlan targeted investigation focusing your A3 testing on highest-impact gaps",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#core-deliverables",
+    "href": "assignments/assignment-02.html#core-deliverables",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Core Deliverables",
+    "text": "Core Deliverables\n\nPart 1: Literature Search Strategy (0.5 pages)\nDocument your systematic approach to finding relevant evidence:\nSearch Terms and Databases - Key terms, synonyms, and combinations you used - Databases searched (academic, industry, government sources) - Time period covered and why - Language and geographic scope of your search\nInclusion/Exclusion Criteria\n- What types of studies/reports did you include? - What did you exclude and why? - How did you handle different study types (experimental, observational, case studies)? - Quality thresholds you applied\nSearch Results Summary - How many sources did you initially identify? - How many did you include after screening? - What types of evidence did you find (academic studies, industry reports, case studies, etc.)?\n\n\nPart 2: Evidence Synthesis (2-3 pages)\nOrganize and synthesize your findings around key themes:\nExisting Knowledge - What do we already know about your design object and claim? - Where is there strong consensus in the literature? - What are the key findings most relevant to your stakeholders? - How confident can we be in existing evidence?\nMethodological Approaches\n- What research methods have been used to study your question? - Which methods produced the most reliable/useful results? - What are the strengths and limitations of different approaches? - How do methodological choices affect findings?\nContradictions and Uncertainties - Where do sources disagree or produce conflicting results? - What factors might explain these contradictions? - What assumptions or contexts vary between studies? - Where does uncertainty remain highest?\nContextual Relevance - How well does existing evidence match your specific context (climate, building type, user group, etc.)? - What evidence comes from similar contexts vs. very different ones? - How transferable are findings from other contexts to yours? - What context-specific factors might change the conclusions?\n\n\nPart 3: Gap Analysis (1-1.5 pages)\nIdentify and prioritize the most important knowledge gaps:\nCritical Evidence Gaps - What questions remain unanswered by existing research? - Which gaps are most important for your stakeholder decisions? - What evidence would most strengthen confidence in your claim? - Where could new research make the biggest practical contribution?\nMethodological Gaps - What research approaches haven’t been tried? - Where do existing methods have significant limitations? - What new data sources or measurement approaches could be valuable? - How might new tools/technologies enable better evidence collection?\nContextual Gaps\n- What contexts, building types, or user groups are understudied? - Where do local conditions (climate, culture, regulations) create unique needs? - What scale of investigation (building, neighborhood, city) needs more evidence? - How might changing conditions (climate change, new technologies) create new evidence needs?\nFeasibility Assessment - Which gaps could you realistically address in A3/A4? - What gaps would require resources beyond the course scope? - Where would pilot testing be most valuable? - What gaps should be addressed by future research?\n\n\nPart 4: Evidence Matrix (Visual Summary)\nCreate a structured matrix showing:\nRows: Key sources you reviewed (10-15 most important) Columns: - Source type (academic study, industry report, case study, etc.) - Study context (location, building type, scale) - Methods used - Key findings relevant to your claim - Evidence quality/reliability rating - Relevance to your stakeholders\nUse color coding or symbols to quickly show: - Strong vs. weak evidence quality - High vs. low relevance to your context - Supporting vs. contradicting your initial claim - Gaps where no evidence exists",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#academic-sources",
+    "href": "assignments/assignment-02.html#academic-sources",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Academic Sources",
+    "text": "Academic Sources\nStrong Evidence: - Peer-reviewed studies with appropriate sample sizes - Clear methodology and statistical analysis - Results replicated in multiple contexts - Transparent reporting of limitations\nModerate Evidence: - Conference papers or reports with good methodology - Case studies with detailed documentation - Industry research with transparent methods - Gray literature from reputable organizations\nWeak Evidence: - Anecdotal reports without systematic data - Studies with serious methodological flaws - Promotional materials or biased sources - Outdated research in rapidly changing fields",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#industry-sources",
+    "href": "assignments/assignment-02.html#industry-sources",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Industry Sources",
+    "text": "Industry Sources\nStrong Evidence: - Multi-project databases with standardized metrics - Third-party evaluations and post-occupancy studies - Professional organization research reports - Building performance monitoring data\nModerate Evidence: - Single-project case studies with good documentation - Manufacturer research with clear methodology - Professional surveys and practitioner reports - Regulatory agency analysis\nWeak Evidence: - Marketing materials and promotional case studies - Unsupported claims or testimonials - Outdated technical reports - Sources with clear commercial bias",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#undergraduate-students",
+    "href": "assignments/assignment-02.html#undergraduate-students",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Undergraduate Students",
+    "text": "Undergraduate Students\n\nLiterature scope: 8-12 high-quality sources minimum\nEvidence types: Mix of academic and professional sources\nAnalysis depth: Clear summary of main findings and obvious gaps\nGap focus: 2-3 well-defined gaps suitable for simple investigation",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#march-students",
+    "href": "assignments/assignment-02.html#march-students",
+    "title": "Assignment 2: Evidence Map",
+    "section": "MArch Students",
+    "text": "MArch Students\n\nLiterature scope: 12-15 sources including recent industry reports\nEvidence types: Emphasis on practice-relevant sources and standards\nAnalysis depth: Professional-level synthesis with stakeholder focus\nGap focus: Gaps that address real practice challenges and decision needs",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#phd-students",
+    "href": "assignments/assignment-02.html#phd-students",
+    "title": "Assignment 2: Evidence Map",
+    "section": "PhD Students",
+    "text": "PhD Students\n\nLiterature scope: 15+ sources with comprehensive coverage\nEvidence types: Methodologically diverse with critical evaluation\nAnalysis depth: Scholarly analysis of research approaches and limitations\nGap focus: Methodological innovations and theoretical contributions",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#building-performance-evidence",
+    "href": "assignments/assignment-02.html#building-performance-evidence",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Building Performance Evidence",
+    "text": "Building Performance Evidence\n\nEnergy simulation studies: Comparative analysis of design alternatives\nPost-occupancy evaluations: Real building performance vs. predictions\nSensor data analysis: Long-term monitoring of actual conditions\nBenchmark databases: Industry performance comparisons",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#user-experience-evidence",
+    "href": "assignments/assignment-02.html#user-experience-evidence",
+    "title": "Assignment 2: Evidence Map",
+    "section": "User Experience Evidence",
+    "text": "User Experience Evidence\n\nOccupant surveys: Satisfaction, comfort, productivity measures\nBehavioral observation: Space usage patterns and preferences\nPhysiological studies: Stress, cognitive performance, health outcomes\nFocus groups: Qualitative insights into user needs and preferences",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#economic-evidence",
+    "href": "assignments/assignment-02.html#economic-evidence",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Economic Evidence",
+    "text": "Economic Evidence\n\nLife-cycle cost analysis: Construction, operation, maintenance costs\nMarket analysis: Premium/discount for performance features\nProductivity studies: Workplace performance and business outcomes\nPolicy analysis: Regulatory costs and compliance requirements",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#environmental-evidence",
+    "href": "assignments/assignment-02.html#environmental-evidence",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Environmental Evidence",
+    "text": "Environmental Evidence\n\nLife-cycle assessment: Material and energy impacts over time\nUrban heat island: Building contributions to microclimate\nBiodiversity impact: Green infrastructure ecological benefits\nResource efficiency: Water, waste, material optimization studies",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#literature-search-quality-25",
+    "href": "assignments/assignment-02.html#literature-search-quality-25",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Literature Search Quality (25%)",
+    "text": "Literature Search Quality (25%)\n\nComprehensiveness: Did you find the most relevant and important sources?\nStrategy: Was your search systematic and well-documented?\n\nSource diversity: Appropriate mix of academic, industry, and case study evidence?\nCurrency: Are your sources appropriately recent for a fast-changing field?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#evidence-synthesis-35",
+    "href": "assignments/assignment-02.html#evidence-synthesis-35",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Evidence Synthesis (35%)",
+    "text": "Evidence Synthesis (35%)\n\nOrganization: Are findings clearly organized around key themes?\nCritical analysis: Do you evaluate evidence quality and identify limitations?\nRelevance: Is the synthesis focused on your decision claim and stakeholders?\nIntegration: Do you identify patterns and contradictions across sources?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#gap-analysis-25",
+    "href": "assignments/assignment-02.html#gap-analysis-25",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Gap Analysis (25%)",
+    "text": "Gap Analysis (25%)\n\nStrategic focus: Do you identify the most important gaps for your research?\nFeasibility: Are your proposed investigations realistic for the course context?\nStakeholder alignment: Are gaps connected to real decision needs?\nMethodological insight: Do you understand what approaches would fill each gap?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#communication-quality-15",
+    "href": "assignments/assignment-02.html#communication-quality-15",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Communication Quality (15%)",
+    "text": "Communication Quality (15%)\n\nProfessional presentation: Clear writing, good organization, error-free\nVisual effectiveness: Does your evidence matrix communicate key patterns clearly?\nAppropriate depth: Right level of detail for your intended audience\nCitations: Proper attribution following architectural research conventions",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#challenge-i-cant-find-enough-relevant-sources",
+    "href": "assignments/assignment-02.html#challenge-i-cant-find-enough-relevant-sources",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Challenge: “I can’t find enough relevant sources”",
+    "text": "Challenge: “I can’t find enough relevant sources”\nSolutions: - Broaden search terms (use synonyms, related concepts) - Include gray literature (industry reports, case studies) - Look at adjacent fields (psychology, engineering, urban planning) - Search international sources and different databases - Consider different scales (component → building → district)",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#challenge-all-the-sources-contradict-each-other",
+    "href": "assignments/assignment-02.html#challenge-all-the-sources-contradict-each-other",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Challenge: “All the sources contradict each other”",
+    "text": "Challenge: “All the sources contradict each other”\nSolutions: - This IS evidence! Document the contradictions systematically - Look for methodological differences that might explain variations - Consider contextual factors (climate, culture, building type) - Identify what additional evidence would resolve disagreements - Frame contradictions as research opportunities",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#challenge-the-evidence-doesnt-match-my-claim",
+    "href": "assignments/assignment-02.html#challenge-the-evidence-doesnt-match-my-claim",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Challenge: “The evidence doesn’t match my claim”",
+    "text": "Challenge: “The evidence doesn’t match my claim”\nSolutions: - Revise your claim based on what you learned (this is good science!) - Reframe your claim more narrowly or precisely - Identify what conditions would make your claim true - Focus on unstudied contexts where your claim might hold - Consider alternative claims suggested by the evidence",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#challenge-everything-has-already-been-studied",
+    "href": "assignments/assignment-02.html#challenge-everything-has-already-been-studied",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Challenge: “Everything has already been studied”",
+    "text": "Challenge: “Everything has already been studied”\nSolutions: - Look for contextual gaps (different climates, building types, user groups) - Consider methodological improvements (better tools, longer studies)\n- Focus on implementation and practice gaps - Look at changing conditions (new technologies, climate change) - Scale gaps (building-level vs. district-level analysis)",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#search-databases",
+    "href": "assignments/assignment-02.html#search-databases",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Search Databases",
+    "text": "Search Databases\nAcademic: Google Scholar, Web of Science, Scopus, JSTOR Architecture-specific: Avery Index, Architectural Database\nIndustry: BuildingGreen, ASHRAE Research, manufacturer databases Government: DOE Building Technologies, EPA databases, local building departments",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#citation-management",
+    "href": "assignments/assignment-02.html#citation-management",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Citation Management",
+    "text": "Citation Management\n\nZotero (free): Good for mixed academic/industry sources\nMendeley (free): Strong PDF annotation features\nEndNote (HKU license): Professional reference management",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#evidence-quality-assessment-1",
+    "href": "assignments/assignment-02.html#evidence-quality-assessment-1",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Evidence Quality Assessment",
+    "text": "Evidence Quality Assessment\n\nGRADE system: For systematic reviews (adapted for design research)\nBuilding research guidelines: CIB, AIVC research quality criteria\nIndustry standards: ASHRAE research report guidelines",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#week-2-3-activities",
+    "href": "assignments/assignment-02.html#week-2-3-activities",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Week 2-3 Activities",
+    "text": "Week 2-3 Activities\n\nDevelop search strategy: List key terms, databases, inclusion criteria\nInitial broad search: Cast a wide net to understand the landscape\nScreen and prioritize: Focus on most relevant, highest-quality sources\nBegin synthesis: Identify themes and patterns as you read",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#time-management",
+    "href": "assignments/assignment-02.html#time-management",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Time Management",
+    "text": "Time Management\n\nWeek 2: Search strategy and initial source collection\nWeek 3: Detailed reading and evidence synthesis\nWeek 4: Gap analysis and evidence matrix creation",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-02.html#getting-help",
+    "href": "assignments/assignment-02.html#getting-help",
+    "title": "Assignment 2: Evidence Map",
+    "section": "Getting Help",
+    "text": "Getting Help\n\nLibrarian consultation: HKU research librarians for search strategy\nOffice hours: Wednesdays 4-6pm at KB722, or by appointment\nPeer review: Week 4 in-class workshop for feedback on drafts\nWriting support: HKU academic writing center for organization and clarity\n\n\nRemember: Your Evidence Map directly informs your A3 Test Plan. The gaps you identify here become the focus of your empirical investigation. Invest time in strategic gap analysis — it will make your research contribution much stronger and more focused.\n\nStrong evidence mapping is the foundation of all good research. You’re learning to stand on the shoulders of giants before building something new.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A2: Evidence Map"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html",
+    "href": "assignments/assignment-04.html",
+    "title": "Assignment 4: Final Research Package",
+    "section": "",
+    "text": "Due: End of Week 12 (Final Object Fair)\nWeight: 40% of final grade\nFormat: Complete research package with four components\nSubmission: PDF + presentation materials via course portal",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#learning-objectives",
+    "href": "assignments/assignment-04.html#learning-objectives",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy completing this assignment, you will:\n\nSynthesize semester learning into a coherent research narrative\nProvide actionable evidence directly applicable to design decisions\nCommunicate findings effectively to diverse professional audiences\nDocument reproducible methods that others can verify and extend\nDemonstrate research impact on real architectural challenges",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#component-1-research-brief-main-document",
+    "href": "assignments/assignment-04.html#component-1-research-brief-main-document",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Component 1: Research Brief (Main Document)",
+    "text": "Component 1: Research Brief (Main Document)\nLength: 8-12 pages\nAudience: Primary stakeholders from your A1 analysis\nPurpose: Complete evidence synthesis with clear recommendations",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#component-2-practice-case-executive-summary",
+    "href": "assignments/assignment-04.html#component-2-practice-case-executive-summary",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Component 2: Practice Case (Executive Summary)",
+    "text": "Component 2: Practice Case (Executive Summary)\nFormat: Two-slide presentation + 2-page memo\nAudience: Busy practitioners and decision-makers\nPurpose: Concise findings and immediate action items",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#component-3-object-card-visual-summary",
+    "href": "assignments/assignment-04.html#component-3-object-card-visual-summary",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Component 3: Object Card (Visual Summary)",
+    "text": "Component 3: Object Card (Visual Summary)\nFormat: Single infographic/poster\nAudience: General professional community\nPurpose: Quick visual communication of key insights",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#component-4-reproducibility-capsule-method-documentation",
+    "href": "assignments/assignment-04.html#component-4-reproducibility-capsule-method-documentation",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Component 4: Reproducibility Capsule (Method Documentation)",
+    "text": "Component 4: Reproducibility Capsule (Method Documentation)\nLength: 3-5 pages + supplementary materials\nAudience: Researchers and method replicators\nPurpose: Complete method documentation for verification and extension",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#structure-and-content",
+    "href": "assignments/assignment-04.html#structure-and-content",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Structure and Content",
+    "text": "Structure and Content\n\nExecutive Summary (1 page)\nDecision Context - Restate your design object and decision claim from A1 - Summarize why this evidence matters to your stakeholders - Preview your main findings and recommendations\nKey Findings - 3-5 bullet points summarizing your most important results - Confidence level for each finding (high/medium/low certainty) - Practical implications of each finding for design decisions\nRecommendations - Specific actions your stakeholders should take based on your evidence - Decision thresholds or criteria they should apply - Areas where further evidence is needed before acting\n\n\nLiterature Foundation (1-2 pages)\nEvidence Synthesis - Update and refine your A2 literature review - Integrate new sources discovered during your investigation - Highlight how your findings relate to existing knowledge - Identify where your results confirm, extend, or contradict prior research\nKnowledge Contribution - What new evidence does your research provide? - How do your findings fill gaps identified in A2? - What questions do your results raise for future research? - How do your methods improve on previous approaches?\n\n\nResearch Method (2-3 pages)\nApproach Overview - Refine your A3 method description based on full implementation - Explain methodological choices and their implications - Describe how pilot testing improved your final approach - Justify your method relative to alternatives\nData Collection - What data did you actually collect (vs. originally planned)? - What challenges did you encounter and how did you address them? - How did you ensure data quality and reliability? - What limitations affected your data collection?\nAnalysis Strategy - How did you process and analyze your data? - What analytical tools and techniques did you employ? - How did you handle uncertainty, missing data, or anomalies? - What validation checks did you perform on your results?\n\n\nResults and Analysis (3-4 pages)\nPrimary Findings - Present your main results clearly with appropriate visualizations - Use tables, charts, and graphics to support quantitative findings - Include qualitative insights and unexpected discoveries - Organize results around your original research questions\nStatistical Analysis and Uncertainty - Report confidence intervals, error bars, or uncertainty ranges where appropriate - Explain the practical significance (not just statistical significance) of your findings - Acknowledge limitations and potential sources of error - Discuss how sample size or scope affects generalizability\nComparative Analysis - How do your results compare to existing benchmarks or standards? - Which design alternatives performed best according to your criteria? - What trade-offs or compromises emerged from your analysis? - How sensitive are your findings to different assumptions or conditions?\nInterpretation for Decision-Making - What do your results mean for your stakeholders’ decisions? - What design strategies do your findings support or recommend against? - How confident should decision-makers be in acting on your evidence? - What additional information would strengthen confidence in your conclusions?\n\n\nRecommendations and Implementation (1-2 pages)\nDecision Framework - Provide clear criteria for when to adopt your recommendations - Specify thresholds, ranges, or decision rules based on your evidence - Address different scenarios or contexts your stakeholders might face - Explain how to weigh your evidence against other considerations\nImplementation Guidance - What specific steps should stakeholders take to apply your findings? - What resources, expertise, or support would implementation require? - What potential barriers or challenges should they anticipate? - How can they monitor or evaluate the success of implementation?\nFuture Research Priorities - What evidence gaps remain most important to address? - What methods would best generate needed additional evidence? - How could future research build on your findings? - What resources would future investigations require?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#two-slide-presentation",
+    "href": "assignments/assignment-04.html#two-slide-presentation",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Two-Slide Presentation",
+    "text": "Two-Slide Presentation\n\nSlide 1: The Problem and Evidence\nVisual Elements: - Clear photo or diagram of your design object - Key performance data or user experience findings - Comparison between alternatives (before/after, option A vs B)\nText Elements: - One-sentence problem statement - 2-3 key findings with confidence indicators - Clear performance metrics or outcomes\n\n\nSlide 2: Decision Recommendations\nVisual Elements: - Decision matrix, flowchart, or recommendation summary - Implementation timeline or process diagram - Contact information for follow-up\nText Elements: - Specific recommendations with decision criteria - Implementation steps and resource requirements - Next steps for stakeholders",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#two-page-memo-format",
+    "href": "assignments/assignment-04.html#two-page-memo-format",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Two-Page Memo Format",
+    "text": "Two-Page Memo Format\n\nPage 1: Executive Summary\nTo: [Primary stakeholder group]\nFrom: [Your name and credentials]\nDate: [Submission date]\nRe: Evidence-Based Recommendations for [Design Object]\nBackground (1 paragraph) Brief context for why this evidence was needed and how it was collected.\nKey Findings (3-4 bullet points) Most important results with practical implications for decisions.\nRecommendations (3-4 bullet points)\nSpecific actions to take based on evidence, with implementation priority.\n\n\nPage 2: Supporting Details\nEvidence Summary - Method overview and data collection approach - Sample size, scope, and quality indicators - Key limitations and uncertainty ranges\nDecision Criteria - When to apply each recommendation - How to weigh evidence against other factors - What additional information might be needed\nImplementation Support - Resources available for implementation - Contact information for follow-up questions - Timeline for updates or additional evidence",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#design-requirements",
+    "href": "assignments/assignment-04.html#design-requirements",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Design Requirements",
+    "text": "Design Requirements\nFormat: Single page, poster-style layout (portrait or landscape) Resolution: Publication quality (300 DPI minimum) Style: Professional, accessible to general architectural audience",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#required-elements",
+    "href": "assignments/assignment-04.html#required-elements",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Required Elements",
+    "text": "Required Elements\n\nVisual Identity\n\nClear title and subtitle\nYour design object illustrated with high-quality photos or diagrams\nConsistent color scheme and typography throughout\nProfessional layout with clear information hierarchy\n\n\n\nEvidence Summary\n\nKey performance metrics or outcomes prominently displayed\nBefore/after comparisons or alternative performance data\nClear indication of evidence quality/confidence levels\nVisual representation of most important findings\n\n\n\nDecision Support\n\nClear recommendations with visual decision aids\nImplementation guidance or next steps\nContact information for additional details\nReferences to full research brief\n\n\n\nMethod Transparency\n\nBrief description of research approach\nSample size, scope, and timeframe indicators\nData sources and collection methods\nLimitations or caveats clearly noted",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#design-guidelines",
+    "href": "assignments/assignment-04.html#design-guidelines",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Design Guidelines",
+    "text": "Design Guidelines\n\nHierarchy: Most important information should be largest and most prominent\nBalance: Mix of text, graphics, and white space for readability\nAccuracy: All data and claims must be supported by your research\nAccessibility: Readable by diverse professional audiences without specialized knowledge",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#purpose-and-scope",
+    "href": "assignments/assignment-04.html#purpose-and-scope",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Purpose and Scope",
+    "text": "Purpose and Scope\nThe Reproducibility Capsule enables other researchers to verify your findings, replicate your study in different contexts, or build on your methods. It provides complete methodological transparency and supporting materials.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#required-documentation",
+    "href": "assignments/assignment-04.html#required-documentation",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Required Documentation",
+    "text": "Required Documentation\n\nMethod Protocol (2-3 pages)\nStep-by-Step Procedures - Detailed protocols for each phase of data collection - Specific tools, software settings, and measurement procedures - Quality control checks and validation steps - Decision rules for handling edge cases or problems\nMaterials and Resources - Complete list of required tools, software, and equipment - Access requirements and permission processes - Time and resource estimates for replication - Skill requirements and training needs\nData Organization - File naming conventions and folder structure - Data collection templates and forms - Coding schemes for qualitative data - Database structure or data organization system\n\n\nImplementation Guide (1-2 pages)\nAdaptation Guidelines - How to modify the method for different contexts - What aspects are essential vs. adaptable - How to scale the approach up or down - Context-specific considerations and adjustments\nTroubleshooting Guide - Common problems and solutions - Alternative approaches when primary methods fail\n- Quality indicators for successful implementation - When to seek additional expertise or support\nValidation Procedures - How to check data quality and method reliability - Comparison benchmarks or validation datasets - Peer review or external validation processes - Documentation requirements for credible replication\n\n\nSupplementary Materials\nData Collection Tools - Survey instruments, observation forms, measurement protocols - Software code, scripts, or configuration files - Template letters for access requests or permissions - Consent forms or ethical approval documentation\nAnalysis Resources - Data analysis code or step-by-step analytical procedures - Visualization templates and reporting formats - Statistical analysis approaches and assumption checks - Interpretation guidelines and decision criteria\nExample Materials - Sample data files (anonymized) with analysis examples - Completed forms, templates, or documentation examples - Photos or videos demonstrating procedures where helpful - Case study or pilot implementation as model",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#undergraduate-students",
+    "href": "assignments/assignment-04.html#undergraduate-students",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Undergraduate Students",
+    "text": "Undergraduate Students\nResearch Brief: Clear findings with straightforward analysis and practical recommendations Practice Case: Focus on immediate applicability with simple decision criteria Object Card: Clean, accessible design emphasizing key takeaways Reproducibility: Clear protocols suitable for peer replication",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#march-students",
+    "href": "assignments/assignment-04.html#march-students",
+    "title": "Assignment 4: Final Research Package",
+    "section": "MArch Students",
+    "text": "MArch Students\nResearch Brief: Professional-quality analysis suitable for consultant reports Practice Case: Executive-level presentation with business case reasoning Object Card: Portfolio-quality design demonstrating communication skills Reproducibility: Industry-standard documentation suitable for professional use",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#phd-students",
+    "href": "assignments/assignment-04.html#phd-students",
+    "title": "Assignment 4: Final Research Package",
+    "section": "PhD Students",
+    "text": "PhD Students\nResearch Brief: Scholarly rigor with methodological contributions and statistical analysis Practice Case: Policy-level recommendations with implementation strategies Object Card: Research communication suitable for academic or professional conferences Reproducibility: Publication-quality methods documentation for peer review",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#evidence-quality-and-rigor-30",
+    "href": "assignments/assignment-04.html#evidence-quality-and-rigor-30",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Evidence Quality and Rigor (30%)",
+    "text": "Evidence Quality and Rigor (30%)\nData Quality - Did you collect reliable, relevant data using appropriate methods? - How well did you address limitations and potential sources of error? - Are your findings supported by adequate evidence?\nAnalysis Appropriateness - Did you use suitable analytical approaches for your data and questions? - How well did you handle uncertainty and alternative interpretations? - Are your conclusions justified by your evidence?\nMethodological Transparency - Are your methods clearly documented and reproducible? - Did you acknowledge limitations and methodological choices? - Could another researcher verify or replicate your work?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#practical-relevance-and-impact-25",
+    "href": "assignments/assignment-04.html#practical-relevance-and-impact-25",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Practical Relevance and Impact (25%)",
+    "text": "Practical Relevance and Impact (25%)\nStakeholder Alignment - Do your findings directly address your stakeholders’ decision needs? - Are your recommendations actionable and implementable? - How well do you understand the decision context and constraints?\nProfessional Applicability - Could practitioners realistically use your evidence and recommendations? - Do you provide appropriate guidance for implementation? - How well do your findings transfer to similar decision contexts?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#communication-excellence-25",
+    "href": "assignments/assignment-04.html#communication-excellence-25",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Communication Excellence (25%)",
+    "text": "Communication Excellence (25%)\nAudience Appropriateness - Is each component tailored to its intended audience? - Do you use appropriate technical depth and professional language? - Are complex findings accessible to non-specialist decision-makers?\nVisual Communication - Do your graphics, tables, and figures effectively support your findings? - Is your Object Card professionally designed and impactful? - Do visual elements enhance rather than distract from key messages?\nIntegration and Coherence - Do all four components work together as a unified package? - Is there clear narrative flow from problem through evidence to recommendations? - Are findings consistent across all components?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#research-contribution-20",
+    "href": "assignments/assignment-04.html#research-contribution-20",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Research Contribution (20%)",
+    "text": "Research Contribution (20%)\nKnowledge Advancement - What new evidence does your research contribute to the field? - How do your findings extend, confirm, or challenge existing knowledge? - What methodological innovations or improvements do you demonstrate?\nFuture Research Direction - How well do you identify priorities for future investigation? - Do you provide a foundation for others to build upon your work? - What broader implications do your findings suggest?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#research-brief-excellence",
+    "href": "assignments/assignment-04.html#research-brief-excellence",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Research Brief Excellence",
+    "text": "Research Brief Excellence\n\nClear problem-solution narrative connecting decision needs to evidence to recommendations\nAppropriate confidence claims that accurately reflect evidence quality and limitations\nProfessional presentation suitable for stakeholder decision-making contexts\nMethodological rigor appropriate to program level and research scope",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#practice-case-excellence",
+    "href": "assignments/assignment-04.html#practice-case-excellence",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Practice Case Excellence",
+    "text": "Practice Case Excellence\n\nExecutive accessibility — busy professionals can quickly grasp key points\nActionable recommendations with specific implementation guidance\nDecision support — clear criteria for when and how to apply findings\nProfessional credibility — suitable for client presentations or policy briefings",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#object-card-excellence",
+    "href": "assignments/assignment-04.html#object-card-excellence",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Object Card Excellence",
+    "text": "Object Card Excellence\n\nVisual impact — compelling and memorable at poster or presentation scale\nInformation density — maximum insight per square inch without cluttering\nProfessional design quality — suitable for portfolio, conference, or publication\nAccurate communication — visually represents findings without distortion",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#reproducibility-capsule-excellence",
+    "href": "assignments/assignment-04.html#reproducibility-capsule-excellence",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Reproducibility Capsule Excellence",
+    "text": "Reproducibility Capsule Excellence\n\nComplete documentation — others can fully replicate your methods\nPractical guidance — realistic implementation support with troubleshooting\nMethodological contribution — advances best practices for evidence-based design research\nQuality assurance — built-in checks for reliable implementation",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#weeks-6-11-development-phase",
+    "href": "assignments/assignment-04.html#weeks-6-11-development-phase",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Weeks 6-11: Development Phase",
+    "text": "Weeks 6-11: Development Phase\nWeek 6-7: Complete data collection and initial analysis Week 8-9: Draft Research Brief with mentor consultation Week 10: Peer review, Practice Case development, Object Card design Week 11: Final integration, Reproducibility Capsule completion",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#week-12-object-fair-presentation",
+    "href": "assignments/assignment-04.html#week-12-object-fair-presentation",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Week 12: Object Fair Presentation",
+    "text": "Week 12: Object Fair Presentation\nFormat: 6-8 minute presentation + 4 minutes Q&A Audience: Classmates, instructor, external critics/practitioners Materials: All four components submitted + presentation slides",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#support-resources",
+    "href": "assignments/assignment-04.html#support-resources",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Support Resources",
+    "text": "Support Resources\n\nIndividual consultations: Wednesdays 4-6pm at KB722, or by appointment, and mentor meetings\nPeer review sessions: Structured feedback on draft materials\nTechnical workshops: Support for analysis, visualization, and design\nExternal critics: Professional feedback at Object Fair event",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-04.html#submission-requirements",
+    "href": "assignments/assignment-04.html#submission-requirements",
+    "title": "Assignment 4: Final Research Package",
+    "section": "Submission Requirements",
+    "text": "Submission Requirements\n\nComplete PDF package with all four components\nPresentation slides used at Object Fair\nChange log documenting major revisions since A3\nSelf-assessment reflecting on learning and research process\n\n\nRemember: Your A4 Final Package demonstrates your development as an evidence-based design researcher. This is your opportunity to show how systematic investigation can improve architectural decision-making and contribute to professional knowledge.\nThe Object Fair is a celebration of your semester’s work and a chance to share your findings with the broader community. Prepare presentations that communicate both your specific findings and the broader value of evidence-based design thinking.\n\nExcellent research serves both immediate decision needs and long-term knowledge advancement. Your final package should demonstrate competence in both practical problem-solving and scholarly contribution to the field.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A4: Final Package"
+    ]
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Assignments Overview",
+    "section": "",
+    "text": "The course is organized around four major assignments that build systematically toward a comprehensive evidence-based design research brief. Each assignment scaffolds skills and knowledge needed for the next, culminating in a professional-quality research package.\n\n\n\n\n\nAssignment\nDue Week\nWeight\nFocus\n\n\n\n\nA1: Decision Claim\nWeek 2\n15%\nProblem framing\n\n\nA2: Evidence Map\nWeek 4\n20%\nLiterature & gap analysis\n\n\nA3: Test Plan + Pilot\nWeek 5\n25%\nMethod design & pilot\n\n\nA4: Final Package\nWeek 12\n40%\nComplete research brief\n\n\n\n\n\n\n\n\nEach assignment builds directly on previous work:\nA1 → A2: Your decision claim from A1 becomes the focus of your evidence mapping in A2\nA2 → A3: Gaps identified in A2 inform the testing approach designed in A3\nA3 → A4: Pilot results from A3 guide the full analysis and recommendations in A4\n\n\n\nWhile all students complete equivalent assignments, expectations for technical depth vary:\n\nUndergraduate students: Guided templates, low-code tools, extra scaffolding\nMArch students: Professional memo format, practical decision focus\n\nPhD students: Advanced methodological rigor, code-heavy options encouraged\n\n\n\n\n\n\n\n\nProblem identification: Recognizing design decisions that benefit from evidence\nQuestion framing: Converting design intuitions into testable claims\nStakeholder analysis: Understanding who needs to be convinced and why\n\n\n\n\n\nLiterature review: Finding and synthesizing relevant existing evidence\nGap analysis: Identifying what evidence is missing or inadequate\nResearch planning: Setting up systematic investigation of gaps\n\n\n\n\n\nMethod design: Choosing appropriate data collection and analysis approaches\nPilot execution: Testing methods on a small scale before full implementation\nIteration: Adjusting plans based on pilot results and constraints\n\n\n\n\n\nAnalysis: Systematic evaluation of evidence against decision criteria\nCommunication: Presenting findings to different audiences effectively\n\nReproducibility: Documenting process for verification and replication\nDecision support: Making clear recommendations with stated confidence levels\n\n\n\n\n\n\n\nAssignments are evaluated using the same evidence-based thinking taught in the course:\n\nClear criteria: Rubrics specify exactly what constitutes different performance levels\nMultiple perspectives: Peer review, self-assessment, and instructor evaluation\nIterative improvement: Change logs track learning and revision processes\nTransparent reasoning: Feedback explains the evidence behind grades\n\n\n\n\nAll assignments prepare students for real-world architectural practice:\n\nClient communication: Practice explaining technical findings to non-experts\nProfessional formatting: Industry-standard document structure and presentation\nEthical responsibility: Transparent limitations and appropriate confidence claims\nCollaborative process: Peer review mirrors professional design team dynamics\n\n\n\n\n\n\n\n\nOffice hours: Wednesdays 4-6pm at KB722, or by appointment\nPeer review: Structured feedback sessions built into the schedule\nMentor dialogue: Mid-semester consultation with external practitioner\nTechnical workshops: Just-in-time support for tools and methods\n\n\n\n\n\nTool choice: Low-code and code-heavy options for different comfort levels\nTopic flexibility: Wide range of design objects and scales acceptable\nTimeline accommodation: Extensions available for documented need\nAlternative formats: Accessibility accommodations available on request\n\n\n\n\n\n\n\nBy the end of A4, successful work demonstrates:\n\nClear problem definition with stakeholder needs understood\nSystematic evidence collection using appropriate methods\n\nRigorous analysis with uncertainty appropriately acknowledged\nActionable recommendations with clear decision thresholds\nProfessional communication accessible to intended audiences\nReproducible process documented for verification\n\n\n\n\n\nConfirmation bias: Testing only ideas you already believe\nMethod mismatch: Using complex tools for simple questions (or vice versa)\nCommunication gaps: Technical accuracy without audience awareness\nOverconfidence: Making strong claims from limited evidence\nIrreproducibility: Methods too vague or idiosyncratic to replicate\n\n\n\n\n\n\nFor complete assignment descriptions, rubrics, and submission guidelines, see:\n\nA1: Decision Claim — Identify and frame your design research question\nA2: Evidence Map — Map existing knowledge and identify gaps\n\nA3: Test Plan + Pilot — Design and test your research method\nA4: Final Package — Complete research brief with recommendations\n\n\nAll assignments support the development of evidence-based design thinking skills essential for contemporary architectural practice.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Assignments Overview"
+    ]
+  },
+  {
+    "objectID": "assignments.html#assignment-timeline",
+    "href": "assignments.html#assignment-timeline",
+    "title": "Assignments Overview",
+    "section": "",
+    "text": "Assignment\nDue Week\nWeight\nFocus\n\n\n\n\nA1: Decision Claim\nWeek 2\n15%\nProblem framing\n\n\nA2: Evidence Map\nWeek 4\n20%\nLiterature & gap analysis\n\n\nA3: Test Plan + Pilot\nWeek 5\n25%\nMethod design & pilot\n\n\nA4: Final Package\nWeek 12\n40%\nComplete research brief",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Assignments Overview"
+    ]
+  },
+  {
+    "objectID": "assignments.html#assignment-progression",
+    "href": "assignments.html#assignment-progression",
+    "title": "Assignments Overview",
+    "section": "",
+    "text": "Each assignment builds directly on previous work:\nA1 → A2: Your decision claim from A1 becomes the focus of your evidence mapping in A2\nA2 → A3: Gaps identified in A2 inform the testing approach designed in A3\nA3 → A4: Pilot results from A3 guide the full analysis and recommendations in A4\n\n\n\nWhile all students complete equivalent assignments, expectations for technical depth vary:\n\nUndergraduate students: Guided templates, low-code tools, extra scaffolding\nMArch students: Professional memo format, practical decision focus\n\nPhD students: Advanced methodological rigor, code-heavy options encouraged",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Assignments Overview"
+    ]
+  },
+  {
+    "objectID": "assignments.html#core-skills-developed",
+    "href": "assignments.html#core-skills-developed",
+    "title": "Assignments Overview",
+    "section": "",
+    "text": "Problem identification: Recognizing design decisions that benefit from evidence\nQuestion framing: Converting design intuitions into testable claims\nStakeholder analysis: Understanding who needs to be convinced and why\n\n\n\n\n\nLiterature review: Finding and synthesizing relevant existing evidence\nGap analysis: Identifying what evidence is missing or inadequate\nResearch planning: Setting up systematic investigation of gaps\n\n\n\n\n\nMethod design: Choosing appropriate data collection and analysis approaches\nPilot execution: Testing methods on a small scale before full implementation\nIteration: Adjusting plans based on pilot results and constraints\n\n\n\n\n\nAnalysis: Systematic evaluation of evidence against decision criteria\nCommunication: Presenting findings to different audiences effectively\n\nReproducibility: Documenting process for verification and replication\nDecision support: Making clear recommendations with stated confidence levels",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Assignments Overview"
+    ]
+  },
+  {
+    "objectID": "assignments.html#assessment-philosophy",
+    "href": "assignments.html#assessment-philosophy",
+    "title": "Assignments Overview",
+    "section": "",
+    "text": "Assignments are evaluated using the same evidence-based thinking taught in the course:\n\nClear criteria: Rubrics specify exactly what constitutes different performance levels\nMultiple perspectives: Peer review, self-assessment, and instructor evaluation\nIterative improvement: Change logs track learning and revision processes\nTransparent reasoning: Feedback explains the evidence behind grades\n\n\n\n\nAll assignments prepare students for real-world architectural practice:\n\nClient communication: Practice explaining technical findings to non-experts\nProfessional formatting: Industry-standard document structure and presentation\nEthical responsibility: Transparent limitations and appropriate confidence claims\nCollaborative process: Peer review mirrors professional design team dynamics",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Assignments Overview"
+    ]
+  },
+  {
+    "objectID": "assignments.html#support-structure",
+    "href": "assignments.html#support-structure",
+    "title": "Assignments Overview",
+    "section": "",
+    "text": "Office hours: Wednesdays 4-6pm at KB722, or by appointment\nPeer review: Structured feedback sessions built into the schedule\nMentor dialogue: Mid-semester consultation with external practitioner\nTechnical workshops: Just-in-time support for tools and methods\n\n\n\n\n\nTool choice: Low-code and code-heavy options for different comfort levels\nTopic flexibility: Wide range of design objects and scales acceptable\nTimeline accommodation: Extensions available for documented need\nAlternative formats: Accessibility accommodations available on request",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Assignments Overview"
+    ]
+  },
+  {
+    "objectID": "assignments.html#quality-standards",
+    "href": "assignments.html#quality-standards",
+    "title": "Assignments Overview",
+    "section": "",
+    "text": "By the end of A4, successful work demonstrates:\n\nClear problem definition with stakeholder needs understood\nSystematic evidence collection using appropriate methods\n\nRigorous analysis with uncertainty appropriately acknowledged\nActionable recommendations with clear decision thresholds\nProfessional communication accessible to intended audiences\nReproducible process documented for verification\n\n\n\n\n\nConfirmation bias: Testing only ideas you already believe\nMethod mismatch: Using complex tools for simple questions (or vice versa)\nCommunication gaps: Technical accuracy without audience awareness\nOverconfidence: Making strong claims from limited evidence\nIrreproducibility: Methods too vague or idiosyncratic to replicate",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Assignments Overview"
+    ]
+  },
+  {
+    "objectID": "assignments.html#individual-assignment-details",
+    "href": "assignments.html#individual-assignment-details",
+    "title": "Assignments Overview",
+    "section": "",
+    "text": "For complete assignment descriptions, rubrics, and submission guidelines, see:\n\nA1: Decision Claim — Identify and frame your design research question\nA2: Evidence Map — Map existing knowledge and identify gaps\n\nA3: Test Plan + Pilot — Design and test your research method\nA4: Final Package — Complete research brief with recommendations\n\n\nAll assignments support the development of evidence-based design thinking skills essential for contemporary architectural practice.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "Assignments Overview"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html",
+    "href": "assignments/assignment-03.html",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "",
+    "text": "Due: End of Week 5\nWeight: 25% of final grade\nLength: 3-4 pages + pilot results summary\nFormat: PDF submission via course portal",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#learning-objectives",
+    "href": "assignments/assignment-03.html#learning-objectives",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy completing this assignment, you will:\n\nDesign appropriate research methods matched to your decision claim and evidence gaps\nPlan systematic data collection with clear protocols and quality controls\nConduct pilot testing to validate methods and identify implementation challenges\nAdapt research plans based on pilot results and practical constraints\nDocument methods clearly enough for reproduction and peer review",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#part-1-research-design-1.5-2-pages",
+    "href": "assignments/assignment-03.html#part-1-research-design-1.5-2-pages",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Part 1: Research Design (1.5-2 pages)",
+    "text": "Part 1: Research Design (1.5-2 pages)\n\nResearch Questions and Hypotheses\nPrimary Research Question - Restate your A1 decision claim as a specific, testable question - Break complex claims into component sub-questions if needed - Explain how answering this question addresses the evidence gaps identified in A2\nTestable Hypotheses - What specific outcomes do you predict for your design object? - What alternative explanations will you test? - How will you distinguish between competing hypotheses?\nSuccess Criteria - What results would support your claim? - What results would refute it? - What results would be inconclusive, and how would you interpret them?\n\n\nMethod Selection and Justification\nApproach Overview Choose one of these research approaches (or justify a hybrid):\n\nComparative Analysis: Compare performance of different design alternatives\nSimulation Study: Use computational models to test design variations\nMeasurement Study: Collect empirical data on existing conditions\nUser Study: Evaluate human responses to design alternatives\nCase Study Analysis: Deep investigation of exemplary projects\n\nMethod Justification - Why is this approach appropriate for your research question? - What are the strengths and limitations of your chosen method? - How does your approach address the gaps identified in A2? - What alternatives did you consider and why did you reject them?\n\n\nData Collection Protocol\nData Sources and Selection Criteria - What buildings, spaces, or conditions will you study? - How will you select your sample (random, purposive, convenience)? - What sample size do you need for reliable results? - How will you handle access and permission issues?\nMeasurement Procedures - Exactly what will you measure/observe/record? - What tools, instruments, or software will you use? - What protocols will ensure consistent data collection? - How will you handle missing data or measurement errors?\nQuality Control - How will you verify data accuracy and reliability? - What calibration or validation procedures will you use? - How will you address potential sources of bias or error? - What documentation will you maintain throughout data collection?\n\n\nAnalysis Plan\nData Analysis Strategy - How will you process and analyze your data? - What statistical or analytical approaches will you use? - How will you visualize and present your findings? - What software tools will support your analysis?\nInterpretation Framework - How will you determine if results support your claim? - What threshold or criteria will you use for decision-making? - How will you address uncertainty and limitations? - How will results connect to your stakeholder decision context?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#part-2-pilot-study-implementation-1-1.5-pages",
+    "href": "assignments/assignment-03.html#part-2-pilot-study-implementation-1-1.5-pages",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Part 2: Pilot Study Implementation (1-1.5 pages)",
+    "text": "Part 2: Pilot Study Implementation (1-1.5 pages)\n\nPilot Study Design\nPilot Scope and Objectives - What specific aspects of your method did you pilot test? - What questions were you trying to answer about your approach? - How did you scale down your full method for pilot testing? - What success criteria did you set for the pilot?\nPilot Implementation - Exactly what did you do in your pilot study? - What data did you collect and how? - What challenges or surprises did you encounter? - How long did different tasks take compared to your estimates?\n\n\nPilot Results and Learning\nWhat Worked Well - Which aspects of your method performed as expected? - Where did you get good quality, useful data? - What procedures were efficient and reliable? - What tools or approaches exceeded your expectations?\nWhat Didn’t Work - Where did you encounter problems or failures? - What data was lower quality or less useful than expected? - Which procedures were inefficient, unreliable, or unclear? - What assumptions proved incorrect?\nUnexpected Findings - What did you learn that you didn’t anticipate? - Did you discover new data sources or measurement opportunities? - Did you identify alternative approaches worth exploring? - What insights emerged about your design object or context?\n\n\nMethod Refinements\nRevised Protocol Based on pilot results: - How will you modify your data collection procedures? - What changes will you make to tools, instruments, or software? - How will you adjust your sample selection or size? - What quality control improvements will you implement?\nUpdated Timeline and Resources - How has pilot testing changed your time estimates? - What additional resources or support do you need? - What new challenges do you need to plan for? - How will you prioritize if you can’t do everything originally planned?\nRisk Management - What could go wrong with your revised approach? - What backup plans do you have for likely problems? - How will you maintain data quality if you face constraints? - What would constitute partial success if full implementation isn’t possible?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#part-3-reproducibility-documentation-0.5-pages",
+    "href": "assignments/assignment-03.html#part-3-reproducibility-documentation-0.5-pages",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Part 3: Reproducibility Documentation (0.5 pages)",
+    "text": "Part 3: Reproducibility Documentation (0.5 pages)\n\nMethod Documentation\nStep-by-Step Protocol - Document your final method clearly enough for another researcher to replicate - Include specific tools, settings, procedures, and decision criteria - Explain any judgment calls or contextual adaptations - Provide templates, checklists, or forms you developed\nData Management Plan - How will you organize, store, and backup your data? - What file naming and organization system will you use? - How will you ensure data security and privacy? - What metadata will you record to support analysis and interpretation?\nEthical Considerations - Do you need institutional review for human subjects research? - How will you protect privacy of buildings, spaces, or people you study? - What permissions do you need for access or data use? - How will you acknowledge sources and credit collaborators?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#low-code-approaches-recommended-for-beginners",
+    "href": "assignments/assignment-03.html#low-code-approaches-recommended-for-beginners",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Low-Code Approaches (Recommended for beginners)",
+    "text": "Low-Code Approaches (Recommended for beginners)\n\nBuilding Performance Comparison\n\nTools: EnergyPlus GUI, Climate Consultant, Excel\nData: Energy simulation results, climate data, building characteristics\nExample: Compare energy use of different window configurations using preset models\n\n\n\nSpace Usage Analysis\n\nTools: Manual observation, simple counting apps, Excel\nData: Occupancy patterns, space utilization rates, user behavior\nExample: Compare seating usage in different plaza configurations over time\n\n\n\nPost-Occupancy Survey\n\nTools: Google Forms, Qualtrics, Excel/Sheets\nData: User satisfaction, comfort ratings, preference rankings\nExample: Compare user satisfaction with different workspace acoustics",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#code-heavy-options-for-experienced-students",
+    "href": "assignments/assignment-03.html#code-heavy-options-for-experienced-students",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Code-Heavy Options (For experienced students)",
+    "text": "Code-Heavy Options (For experienced students)\n\nParametric Performance Analysis\n\nTools: Python, Ladybug/Honeybee, Jupyter notebooks\nData: Automated simulation results, optimization studies\nExample: Parametric study of shading device performance across climate conditions\n\n\n\nSensor Data Analysis\n\nTools: Python/R, data loggers, building management systems\nData: Environmental conditions, energy use, occupancy patterns\nExample: Statistical analysis of temperature, humidity, and comfort relationships\n\n\n\nSpatial Analysis\n\nTools: QGIS Python, PostGIS, spatial statistics packages\nData: Urban data, building locations, accessibility metrics\nExample: GIS analysis of green infrastructure impact on urban heat island",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#undergraduate-students",
+    "href": "assignments/assignment-03.html#undergraduate-students",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Undergraduate Students",
+    "text": "Undergraduate Students\n\nMethod complexity: Single, straightforward approach with clear protocols\nPilot scope: Simple validation of basic procedures\nAnalysis depth: Descriptive statistics and basic comparisons\nDocumentation: Clear step-by-step protocols for replication",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#march-students",
+    "href": "assignments/assignment-03.html#march-students",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "MArch Students",
+    "text": "MArch Students\n\nMethod complexity: Professional-level approach suitable for practice contexts\nPilot scope: Testing feasibility for real project implementation\nAnalysis depth: Industry-relevant metrics and decision criteria\nDocumentation: Consultant-quality method documentation",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#phd-students",
+    "href": "assignments/assignment-03.html#phd-students",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "PhD Students",
+    "text": "PhD Students\n\nMethod complexity: Methodologically innovative or rigorous approach\nPilot scope: Testing validity and reliability of new procedures\nAnalysis depth: Statistical analysis with uncertainty quantification\nDocumentation: Publication-quality method description",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#simulation-based-testing",
+    "href": "assignments/assignment-03.html#simulation-based-testing",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Simulation-Based Testing",
+    "text": "Simulation-Based Testing\nBuilding Energy Analysis - Compare design alternatives using EnergyPlus or similar tools - Vary parameters systematically (insulation, window area, shading) - Analyze results across multiple climate conditions or use patterns\nDaylighting Performance - Use Radiance, VELUX, or similar tools to model natural lighting - Compare spatial layouts, window configurations, or shading strategies - Evaluate metrics like daylight autonomy, glare probability\nUrban Microclimate - Model heat island effects, wind patterns, or solar access - Compare building arrangements, materials, or green infrastructure - Use tools like ENVI-met, Climate Consultant, or CFD software",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#measurement-based-testing",
+    "href": "assignments/assignment-03.html#measurement-based-testing",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Measurement-Based Testing",
+    "text": "Measurement-Based Testing\nEnvironmental Monitoring - Deploy sensors to measure temperature, humidity, light, noise, air quality - Compare conditions in different spaces or times - Correlate physical conditions with user experience or energy use\nSpace Utilization Studies - Observe and record how people use different spatial configurations - Count occupancy, track movement patterns, measure dwell times - Compare usage between different design alternatives\nBuilding Performance Assessment - Analyze utility bills, energy monitoring data, or BMS records - Compare actual performance with design predictions - Identify factors that explain performance variations",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#user-experience-testing",
+    "href": "assignments/assignment-03.html#user-experience-testing",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "User Experience Testing",
+    "text": "User Experience Testing\nOccupant Satisfaction Surveys - Develop questionnaires to assess comfort, satisfaction, productivity - Compare responses between different design conditions - Correlate subjective responses with objective measurements\nBehavioral Observation - Systematically observe user behavior in different environments - Record patterns of space use, social interaction, movement - Compare behavior between design alternatives\nFocus Groups or Interviews - Gather qualitative insights into user needs and preferences - Understand reasoning behind quantitative survey responses - Explore unexpected findings from other data collection methods",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#research-design-quality-40",
+    "href": "assignments/assignment-03.html#research-design-quality-40",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Research Design Quality (40%)",
+    "text": "Research Design Quality (40%)\n\nMethodological appropriateness: Does your method match your research question?\nTechnical feasibility: Can you realistically implement your approach?\nQuality controls: Have you planned for data reliability and validity?\nAnalysis strategy: Do you have a clear plan for interpreting results?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#pilot-study-execution-30",
+    "href": "assignments/assignment-03.html#pilot-study-execution-30",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Pilot Study Execution (30%)",
+    "text": "Pilot Study Execution (30%)\n\nImplementation quality: Did you conduct a meaningful pilot test?\nCritical evaluation: Do you accurately assess what worked and didn’t work?\nLearning integration: Have you revised your approach based on pilot results?\nProblem-solving: Do you have realistic solutions for identified challenges?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#method-documentation-20",
+    "href": "assignments/assignment-03.html#method-documentation-20",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Method Documentation (20%)",
+    "text": "Method Documentation (20%)\n\nReproducibility: Could another researcher follow your protocol?\nTransparency: Are your procedures and decision criteria clear?\nEthical considerations: Have you addressed privacy, access, and consent issues?\nData management: Do you have sound plans for data organization and security?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#communication-quality-10",
+    "href": "assignments/assignment-03.html#communication-quality-10",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Communication Quality (10%)",
+    "text": "Communication Quality (10%)\n\nProfessional presentation: Clear writing, good organization, error-free\nAppropriate detail: Right level of technical depth for your audience\nLogical flow: Does your narrative connect research design to pilot results to refinements?\nVisual aids: Do tables, diagrams, or figures support your text effectively?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#challenge-my-pilot-didnt-work-at-all",
+    "href": "assignments/assignment-03.html#challenge-my-pilot-didnt-work-at-all",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Challenge: “My pilot didn’t work at all”",
+    "text": "Challenge: “My pilot didn’t work at all”\nThis is actually good news! Pilots are supposed to reveal problems. Solutions: - Document exactly what went wrong and why - Develop alternative approaches based on what you learned - Simplify your method to something more manageable - Focus on the most important aspects of your original plan - Frame pilot “failure” as valuable methodological learning",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#challenge-i-cant-get-access-to-databuildingspeople",
+    "href": "assignments/assignment-03.html#challenge-i-cant-get-access-to-databuildingspeople",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Challenge: “I can’t get access to data/buildings/people”",
+    "text": "Challenge: “I can’t get access to data/buildings/people”\nSolutions: - Develop backup options with easier access requirements - Scale down to publicly accessible examples - Use existing datasets or published case studies - Partner with classmates for mutual data access - Focus on method development rather than comprehensive data collection",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#challenge-my-results-are-boringinconclusive",
+    "href": "assignments/assignment-03.html#challenge-my-results-are-boringinconclusive",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Challenge: “My results are boring/inconclusive”",
+    "text": "Challenge: “My results are boring/inconclusive”\nSolutions: - Inconclusive results are still results — document why - Look for unexpected patterns or interesting secondary findings - Consider what additional data would clarify results - Frame inconclusive results as identifying needs for future research - Focus on validating your method rather than proving your claim",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#challenge-i-dont-have-timeresources-to-do-what-i-planned",
+    "href": "assignments/assignment-03.html#challenge-i-dont-have-timeresources-to-do-what-i-planned",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Challenge: “I don’t have time/resources to do what I planned”",
+    "text": "Challenge: “I don’t have time/resources to do what I planned”\nSolutions: - Prioritize the most important aspects of your research question - Document what you would do with more time/resources - Do a smaller-scale but higher-quality study - Focus on method development and pilot testing rather than full implementation - Plan a phased approach with clear priorities",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#technical-tools",
+    "href": "assignments/assignment-03.html#technical-tools",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Technical Tools",
+    "text": "Technical Tools\nLow-code simulation: EnergyPlus GUI, VELUX Daylight, Climate Consultant Data collection: Google Forms, manual observation templates, basic sensors Analysis: Excel/Sheets, QGIS, basic statistical functions Documentation: Templates for protocols, data sheets, consent forms",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#advanced-tools",
+    "href": "assignments/assignment-03.html#advanced-tools",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Advanced Tools",
+    "text": "Advanced Tools\nSimulation: Python scripting, Ladybug/Honeybee, R statistical packages Data collection: IoT sensors, building management system APIs, web scraping Analysis: Python/R statistical analysis, machine learning approaches Documentation: Jupyter notebooks, GitHub version control, automated reporting",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#support-resources",
+    "href": "assignments/assignment-03.html#support-resources",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Support Resources",
+    "text": "Support Resources\n\nWeek 3-4 method workshops: Hands-on help with tool selection and setup\nOffice hours: Wednesdays 4-6pm at KB722, or by appointment\nTechnical support: HKU IT services for software installation and troubleshooting\nPeer collaboration: Classmate partnerships for data access and method validation\nExternal mentors: Week 5 consultations with practitioners using similar methods",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#week-3-research-design",
+    "href": "assignments/assignment-03.html#week-3-research-design",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Week 3: Research Design",
+    "text": "Week 3: Research Design\n\nFinalize research questions and hypotheses\nSelect method approach and justify choice\nDevelop initial data collection protocol\nPlan pilot study scope and procedures",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#week-4-pilot-preparation",
+    "href": "assignments/assignment-03.html#week-4-pilot-preparation",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Week 4: Pilot Preparation",
+    "text": "Week 4: Pilot Preparation\n\nSet up tools, instruments, and access permissions\nCreate data collection materials (forms, templates, protocols)\nIdentify pilot test locations, subjects, or data sources\nConduct any necessary training or calibration",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-03.html#week-5-pilot-execution-and-refinement",
+    "href": "assignments/assignment-03.html#week-5-pilot-execution-and-refinement",
+    "title": "Assignment 3: Test Plan + Pilot Study",
+    "section": "Week 5: Pilot Execution and Refinement",
+    "text": "Week 5: Pilot Execution and Refinement\n\nConduct pilot study and collect initial data\nEvaluate pilot results and identify needed changes\n\nRefine method protocol based on pilot learning\nSubmit A3 with pilot results and revised method plan\n\n\nRemember: Your A3 test plan becomes the foundation for your A4 final analysis. Invest time in getting the method right — good evidence comes from good methods, and good methods come from careful planning and pilot testing.\n\nResearch is iterative. Your pilot “failures” are actually methodological successes — they help you design better studies and collect more reliable evidence.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A3: Test Plan + Pilot"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html",
+    "href": "assignments/assignment-01.html",
+    "title": "Assignment 1: Decision Claim",
+    "section": "",
+    "text": "Due: End of Week 2\nWeight: 15% of final grade\nLength: 2-3 pages + 1 visual summary\nFormat: PDF submission via course portal",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#learning-objectives",
+    "href": "assignments/assignment-01.html#learning-objectives",
+    "title": "Assignment 1: Decision Claim",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy completing this assignment, you will:\n\nIdentify a suitable design object at an appropriate scale for evidence-based investigation\nFrame a testable claim that can be evaluated with available data and methods\nDefine stakeholders who would benefit from evidence about your claim\nArticulate the decision context where your evidence would be applied\nScope your investigation realistically within course constraints",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#good-decision-claims-have-four-elements",
+    "href": "assignments/assignment-01.html#good-decision-claims-have-four-elements",
+    "title": "Assignment 1: Decision Claim",
+    "section": "Good Decision Claims Have Four Elements:",
+    "text": "Good Decision Claims Have Four Elements:\n\n1. Design Object (What you’re investigating)\n\nSpecific enough to test systematically\nBroad enough to generate useful evidence\nAccessible for data collection within semester timeframe\n\nExamples: - Window-to-wall ratios in Hong Kong residential towers - Ceiling height in collaborative workspaces\n- Green roof configurations for urban buildings - Wayfinding signage systems in hospital environments\n\n\n2. Performance Dimension (What you’re measuring)\n\nClearly defined and measurable\nConnected to stakeholder concerns\nAchievable with available tools and methods\n\nExamples: - Energy performance, daylighting quality, thermal comfort - User satisfaction, space utilization, productivity metrics - Construction cost, maintenance requirements, lifecycle impact\n\n\n3. Stakeholder Group (Who needs this evidence)\n\nSpecific decision-makers who would use your findings\nClear understanding of their constraints and priorities\nRealistic access for validation and feedback\n\nExamples: - Residential developers in dense urban markets - Corporate facility managers optimizing workplace design - Hospital administrators balancing patient outcomes and costs - Municipal planners developing green infrastructure policies\n\n\n4. Decision Context (When/how evidence would be applied)\n\nReal situations where choices must be made\nClear alternatives being compared\nSpecific decision criteria and trade-offs\n\nExamples: - Early design phase when major systems are being selected - Retrofit decisions for existing building portfolios - Policy development requiring performance standards - Post-occupancy evaluation informing future projects",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#core-deliverables",
+    "href": "assignments/assignment-01.html#core-deliverables",
+    "title": "Assignment 1: Decision Claim",
+    "section": "Core Deliverables",
+    "text": "Core Deliverables\n\nPart 1: Problem Statement (1 page)\nWrite a clear, concise problem statement addressing:\nDesign Object Description - What specifically are you investigating? (Be precise about scale, typology, context) - Why is this object/system/space important in contemporary practice? - What design variables or alternatives will you focus on?\nCurrent Decision-Making Process - How are decisions about this object typically made now? - What information do decision-makers currently use? - What gaps or uncertainties exist in current practice?\nProposed Claim - State your testable claim in one clear sentence - Explain why you believe this claim might be true (initial hypothesis) - Identify what evidence would support or refute your claim\n\n\nPart 2: Stakeholder Analysis (1 page)\nIdentify and analyze your primary stakeholders:\nPrimary Decision-Makers - Who would directly use your evidence to make design decisions? - What are their main concerns, constraints, and success criteria? - How do they currently evaluate alternatives for your design object?\nSecondary Stakeholders - Who else is affected by decisions about your design object? - What outcomes matter most to these groups? - How might their priorities conflict with primary decision-makers?\nEvidence Requirements - What type of evidence would be most convincing to your stakeholders? - What level of precision/confidence would they require? - What format would make your findings most actionable for them?\n\n\nPart 3: Scope and Constraints (0.5-1 page)\nRealistically assess what you can accomplish this semester:\nAvailable Resources - What data sources are accessible to you? - What tools and methods can you realistically learn and apply? - What time and budget constraints will shape your approach?\nManageable Scope - How will you narrow your investigation to be achievable? - What limitations will you acknowledge upfront? - What would constitute “success” for this project?\n\n\nPart 4: Visual Summary (1 page)\nCreate a single-page visual that communicates: - Your design object with key variables highlighted - Your proposed claim as a testable question - Your primary stakeholders and their decision context - The type of evidence you plan to collect\nThis can be a diagram, infographic, or annotated photographs — choose the format that best communicates your concept.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#undergraduate-students",
+    "href": "assignments/assignment-01.html#undergraduate-students",
+    "title": "Assignment 1: Decision Claim",
+    "section": "Undergraduate Students",
+    "text": "Undergraduate Students\n\nFocus: Clear problem identification with instructor guidance\nScope: Well-defined, smaller-scale objects (single building element or system)\nStakeholders: Primary focus on one main stakeholder group\nEvidence: Straightforward metrics accessible through existing data or simple measurement",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#march-students",
+    "href": "assignments/assignment-01.html#march-students",
+    "title": "Assignment 1: Decision Claim",
+    "section": "MArch Students",
+    "text": "MArch Students\n\nFocus: Professional memo format suitable for practice contexts\nScope: Building-scale or neighborhood-scale investigations\nStakeholders: Multiple stakeholder groups with competing priorities\nEvidence: Industry-relevant metrics and decision criteria",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#phd-students",
+    "href": "assignments/assignment-01.html#phd-students",
+    "title": "Assignment 1: Decision Claim",
+    "section": "PhD Students",
+    "text": "PhD Students\n\nFocus: Research question suitable for systematic investigation\nScope: Multi-building or policy-scale questions\nStakeholders: Complex stakeholder networks including regulatory bodies\nEvidence: Methodologically rigorous approaches with uncertainty quantification",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#example-1-residential-energy-performance",
+    "href": "assignments/assignment-01.html#example-1-residential-energy-performance",
+    "title": "Assignment 1: Decision Claim",
+    "section": "Example 1: Residential Energy Performance",
+    "text": "Example 1: Residential Energy Performance\nDesign Object: Window-to-wall ratios in Hong Kong high-rise residential buildings\nClaim: “Optimizing window-to-wall ratios can reduce residential cooling energy by 15-25% while maintaining acceptable daylighting levels”\nStakeholders: Residential developers, building owners, energy policy makers\nDecision Context: Early design phase for new residential developments",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#example-2-workplace-productivity",
+    "href": "assignments/assignment-01.html#example-2-workplace-productivity",
+    "title": "Assignment 1: Decision Claim",
+    "section": "Example 2: Workplace Productivity",
+    "text": "Example 2: Workplace Productivity\nDesign Object: Open office acoustics and spatial configuration\nClaim: “Strategic placement of acoustic treatments can improve reported productivity by 20% without major space reallocation”\nStakeholders: Corporate facility managers, workplace designers, HR departments\nDecision Context: Office renovation decisions and workplace strategy planning",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#example-3-public-space-usage",
+    "href": "assignments/assignment-01.html#example-3-public-space-usage",
+    "title": "Assignment 1: Decision Claim",
+    "section": "Example 3: Public Space Usage",
+    "text": "Example 3: Public Space Usage\nDesign Object: Seating arrangements in urban plazas\nClaim: “Flexible seating configurations increase space utilization by 40% compared to fixed bench arrangements”\nStakeholders: Urban planners, park departments, public space designers\nDecision Context: Public space design guidelines and renovation priorities",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#clarity-and-feasibility-40",
+    "href": "assignments/assignment-01.html#clarity-and-feasibility-40",
+    "title": "Assignment 1: Decision Claim",
+    "section": "Clarity and Feasibility (40%)",
+    "text": "Clarity and Feasibility (40%)\n\nClear problem definition: Is your design object specific and well-bounded?\nTestable claim: Can your claim be evaluated with evidence?\nRealistic scope: Is your investigation achievable within course constraints?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#stakeholder-understanding-30",
+    "href": "assignments/assignment-01.html#stakeholder-understanding-30",
+    "title": "Assignment 1: Decision Claim",
+    "section": "Stakeholder Understanding (30%)",
+    "text": "Stakeholder Understanding (30%)\n\nRelevant stakeholders: Have you identified appropriate decision-makers?\nDecision context: Do you understand when/how your evidence would be used?\nEvidence requirements: Do you know what would convince your stakeholders?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#communication-quality-20",
+    "href": "assignments/assignment-01.html#communication-quality-20",
+    "title": "Assignment 1: Decision Claim",
+    "section": "Communication Quality (20%)",
+    "text": "Communication Quality (20%)\n\nProfessional presentation: Is your document clear, well-organized, and error-free?\nVisual effectiveness: Does your visual summary communicate key concepts clearly?\nAppropriate audience: Is your writing suitable for your intended stakeholders?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#research-potential-10",
+    "href": "assignments/assignment-01.html#research-potential-10",
+    "title": "Assignment 1: Decision Claim",
+    "section": "Research Potential (10%)",
+    "text": "Research Potential (10%)\n\nInteresting question: Will investigating this claim generate useful knowledge?\nMethodological feasibility: Can you reasonably collect relevant evidence?\nBroader relevance: Could your findings inform similar decisions elsewhere?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#scope-issues",
+    "href": "assignments/assignment-01.html#scope-issues",
+    "title": "Assignment 1: Decision Claim",
+    "section": "Scope Issues",
+    "text": "Scope Issues\n\nToo broad: “How to design sustainable buildings” (instead: focus on one specific system/element)\nToo narrow: “The optimal paint color for my bedroom” (instead: scale up to stakeholder relevance)\nToo abstract: “How to make beautiful architecture” (instead: focus on measurable performance)",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#claim-problems",
+    "href": "assignments/assignment-01.html#claim-problems",
+    "title": "Assignment 1: Decision Claim",
+    "section": "Claim Problems",
+    "text": "Claim Problems\n\nUntestable: Claims about aesthetic preference or cultural meaning\nAlready proven: Well-established relationships documented in literature\nImpossible to measure: Outcomes requiring unavailable data or methods",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#stakeholder-misalignment",
+    "href": "assignments/assignment-01.html#stakeholder-misalignment",
+    "title": "Assignment 1: Decision Claim",
+    "section": "Stakeholder Misalignment",
+    "text": "Stakeholder Misalignment\n\nNo real stakeholders: Academic exercise without practical application\nUnrealistic access: Stakeholders who won’t engage with student research\nMismatched priorities: Evidence that doesn’t address stakeholder concerns",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#week-1-activities",
+    "href": "assignments/assignment-01.html#week-1-activities",
+    "title": "Assignment 1: Decision Claim",
+    "section": "Week 1 Activities",
+    "text": "Week 1 Activities\n\nBrowse examples: Look at evidence-based design studies in journals and practice\nIdentify interests: What design decisions intrigue you? What performance questions do you have?\nTalk to practitioners: What design decisions do working architects struggle with?\nCheck feasibility: What data and methods are realistically available to you?",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#resources-for-topic-development",
+    "href": "assignments/assignment-01.html#resources-for-topic-development",
+    "title": "Assignment 1: Decision Claim",
+    "section": "Resources for Topic Development",
+    "text": "Resources for Topic Development\n\nBuilding performance databases: Energy Star, LEED project database, local building surveys\nUser experience research: POE studies, occupant satisfaction surveys, space utilization data\nProfessional publications: Architectural Record, Journal of Green Building, Environment and Behavior\nLocal contexts: Hong Kong buildings, climate, regulations, and construction practices",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-01.html#getting-help",
+    "href": "assignments/assignment-01.html#getting-help",
+    "title": "Assignment 1: Decision Claim",
+    "section": "Getting Help",
+    "text": "Getting Help\n\nOffice hours: Wednesdays 4-6pm at KB722, or by appointment\nPeer discussion: Week 1 in-class workshop for topic development\nOnline forum: Course Slack for questions and idea sharing\nWriting center: HKU academic support for clear technical writing\n\n\nRemember: A strong Decision Claim sets up your entire semester project. Invest time in getting this foundation right — it will make all subsequent assignments clearer and more focused.\n\nThis assignment launches your journey into evidence-based design thinking. Choose a question that genuinely interests you and matters to real decision-makers.",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "A1: Decision Claim"
+    ]
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Course Resources",
+    "section": "",
+    "text": "Spreadsheet software: Excel (HKU license) or Google Sheets (free)\nQGIS: Free, open-source GIS software (download here)\nWeb browser: Chrome or Firefox for online tools\n\n\n\n\n\nPython + Jupyter: For students interested in coding (Anaconda distribution)\nGitHub Desktop: For version control and reproducibility (download here)\nR + RStudio: Alternative to Python for statistical analysis\n\n\n\n\n\nRadiance: Advanced daylighting simulation (optional)\nEnergyPlus: Building energy modeling with Simple Glazing GUI\nClimate Consultant: Climate analysis tool (free from UCLA)\n\n\n\n\n\n\nOffice hours: Individual troubleshooting available (Wednesdays 4-6pm, KB722, or by appointment)\nStudent tech support: Peer mentoring for software issues\nHKU IT services: Campus-wide software licensing and support\nOnline tutorials: Video guides for common installation issues",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Course Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#software-installation",
+    "href": "resources.html#software-installation",
+    "title": "Course Resources",
+    "section": "",
+    "text": "Spreadsheet software: Excel (HKU license) or Google Sheets (free)\nQGIS: Free, open-source GIS software (download here)\nWeb browser: Chrome or Firefox for online tools\n\n\n\n\n\nPython + Jupyter: For students interested in coding (Anaconda distribution)\nGitHub Desktop: For version control and reproducibility (download here)\nR + RStudio: Alternative to Python for statistical analysis\n\n\n\n\n\nRadiance: Advanced daylighting simulation (optional)\nEnergyPlus: Building energy modeling with Simple Glazing GUI\nClimate Consultant: Climate analysis tool (free from UCLA)",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Course Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#installation-support",
+    "href": "resources.html#installation-support",
+    "title": "Course Resources",
+    "section": "",
+    "text": "Office hours: Individual troubleshooting available (Wednesdays 4-6pm, KB722, or by appointment)\nStudent tech support: Peer mentoring for software issues\nHKU IT services: Campus-wide software licensing and support\nOnline tutorials: Video guides for common installation issues",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Course Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#core-texts",
+    "href": "resources.html#core-texts",
+    "title": "Course Resources",
+    "section": "Core Texts",
+    "text": "Core Texts\n\nThe Craft of Research (Booth, Colomb, Williams)\n\nWeek 1: Chapters 1-3 (From Problems to Sources)\nWeek 4: Chapters 7-8 (Making Good Arguments)\n\nWeek 9: Chapters 11-12 (Communicating Evidence)\n\nAvailable through HKU library digital collection.\n\n\nData Visualization Handbook (Andy Kirk)\n\nWeek 6: Chapters 2-3 (Design Process and Visual Encoding)\nWeek 9: Chapter 7 (Storytelling with Data)",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Course Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#supplementary-resources",
+    "href": "resources.html#supplementary-resources",
+    "title": "Course Resources",
+    "section": "Supplementary Resources",
+    "text": "Supplementary Resources\n\nResearch Methods\n\nGroat & Wang: Architectural Research Methods (selected chapters)\nLaurel Blinda: Design Research Through Practice\nKimbell: Ethnography for Design\n\n\n\nData and Evidence\n\nEdward Tufte: The Visual Display of Quantitative Information (excerpts)\nAlberto Cairo: The Truthful Art (data visualization ethics)\nFew, Stephen: Show Me the Numbers (dashboard design)\n\n\n\nBuilding Performance\n\nReinhart, Christoph: Daylighting Handbook (simulation methods)\nASHRAE Standards: Thermal comfort and energy metrics\nLEED/BREEAM Guidelines: Performance benchmarks",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Course Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#access-and-availability",
+    "href": "resources.html#access-and-availability",
+    "title": "Course Resources",
+    "section": "Access and Availability",
+    "text": "Access and Availability\n\nHKU Library: Digital access to most resources\nCourse reserves: Physical copies available for checkout\nOpen access alternatives: Free resources provided when possible\nReading summaries: Key points extracted for time-constrained students",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Course Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#learning-pathways",
+    "href": "resources.html#learning-pathways",
+    "title": "Course Resources",
+    "section": "Learning Pathways",
+    "text": "Learning Pathways\n\nLow-Code Track (Recommended for beginners)\n\nWeek 1-2: Excel/Sheets mastery with architectural data\nWeek 3-4: QGIS basics for spatial analysis\n\nWeek 5-6: Preset building simulations (Radiance/EnergyPlus GUI)\nWeek 7-8: Advanced visualization in spreadsheet tools\nWeek 9-12: Professional presentation and documentation\n\n\n\nCode-Heavy Track (For experienced students)\n\nWeek 1-2: Python setup with Jupyter notebooks\nWeek 3-4: Pandas for data manipulation, GeoPandas for GIS\nWeek 5-6: Building simulation APIs and scripting\nWeek 7-8: Statistical analysis and uncertainty quantification\nWeek 9-12: Automated reporting and reproducible workflows",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Course Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#help-resources",
+    "href": "resources.html#help-resources",
+    "title": "Course Resources",
+    "section": "Help Resources",
+    "text": "Help Resources\n\nIn-Person Support\n\nOffice hours: Wednesdays 4-6pm at KB722, or by appointment\nPeer mentoring: Advanced students available for basic questions\nMentor consultations: Week 8 external practitioner meetings\nDrop-in support: Brief technical questions welcome before/after class\n\n\n\nOnline Resources\n\nCourse Slack workspace: Real-time questions and answers\nVideo tutorials: Recorded walkthroughs of common tasks\nFAQ document: Solutions to frequently encountered problems\nExternal documentation: Links to official software guides\n\n\n\nEmergency Support\n\n24-hour email response: For urgent technical issues\nBackup options: Alternative approaches when primary tools fail\nExtension policies: Clear guidelines for technical difficulties\nAccessibility services: HKU disability support integration",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Course Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#building-performance-data",
+    "href": "resources.html#building-performance-data",
+    "title": "Course Resources",
+    "section": "Building Performance Data",
+    "text": "Building Performance Data\n\nClimate Data\n\nEnergyPlus Weather Files: Global climate data for simulations\nClimate Consultant: UCLA tool for climate analysis\nWeather Underground: Historical weather data\nHong Kong Observatory: Local climate records\n\n\n\nBuilding Standards and Benchmarks\n\nASHRAE Standards: Thermal comfort, ventilation, energy\nHong Kong Building Code: Local regulatory requirements\n\nLEED/BREEAM Databases: Performance benchmarks\nEnergy Star Portfolio Manager: Building energy comparisons\n\n\n\nSensor and IoT Data\n\nBuilding management systems: Live building performance data\nEnvironmental monitoring: Air quality, noise, light levels\nOccupancy sensors: Usage patterns and space utilization\nSmart home devices: Residential performance data",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Course Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#spatial-and-urban-data",
+    "href": "resources.html#spatial-and-urban-data",
+    "title": "Course Resources",
+    "section": "Spatial and Urban Data",
+    "text": "Spatial and Urban Data\n\nHong Kong Government Data\n\nDATA.GOV.HK: Official open data portal\nPlanning Department: Land use, zoning, demographics\nTransport Department: Traffic, transit, accessibility data\nEnvironmental Protection: Air quality, noise mapping\n\n\n\nGlobal Datasets\n\nOpenStreetMap: Free, editable world map data\nSentinel Hub: Satellite imagery and analysis\nWorld Bank Open Data: Urban development indicators\nUN Habitat: Global urban data collections",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Course Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#privacy-and-ethics",
+    "href": "resources.html#privacy-and-ethics",
+    "title": "Course Resources",
+    "section": "Privacy and Ethics",
+    "text": "Privacy and Ethics\n\nData Use Guidelines\n\nHKU Research Ethics: Required approval processes\nGDPR Compliance: Personal data protection standards\nInformed consent: Templates for data collection from people\nAnonymous analysis: Protecting individual privacy in research\n\n\n\nBest Practices\n\nData minimization: Collect only what you need\nSecure storage: HKU-approved data storage solutions\n\nClear documentation: Record data sources and permissions\nReproducible deletion: Clear data lifecycle management",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Course Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#guest-speakers",
+    "href": "resources.html#guest-speakers",
+    "title": "Course Resources",
+    "section": "Guest Speakers",
+    "text": "Guest Speakers\n\nWeek 3: Building performance consultant on simulation methods\nWeek 6: Data visualization designer from architecture firm\nWeek 9: Researcher on evidence-based design in practice\n\nWeek 12: External critics for final Object Fair",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Course Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#industry-connections",
+    "href": "resources.html#industry-connections",
+    "title": "Course Resources",
+    "section": "Industry Connections",
+    "text": "Industry Connections\n\nMentor network: Practicing architects using evidence-based methods\nFirm partnerships: Access to real project data and challenges\nAlumni connections: Recent graduates in data-driven design roles\nConference opportunities: Student presentations at research venues",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Course Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#career-preparation",
+    "href": "resources.html#career-preparation",
+    "title": "Course Resources",
+    "section": "Career Preparation",
+    "text": "Career Preparation\n\nPortfolio development: Documenting evidence-based design skills\nInterview preparation: Communicating technical competence to employers\nContinuing education: Resources for post-graduation skill development\nProfessional networks: Introduction to evidence-based design community\n\n\nResources updated regularly. Check course announcements for new additions and corrections.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Course Resources"
+    ]
+  }
+]
