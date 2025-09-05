@@ -1,0 +1,369 @@
+---
+title: "Week 1: Why Evidence Matters"
+subtitle: "Course Introduction and Foundations"
+format: 
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+    center: true
+---
+
+## Welcome to ARCH7476
+
+**Evidence-Based Generative Design**
+
+*Data-Driven Decision Making in Architecture*
+
+---
+
+## Today's Agenda
+
+- Course introduction and expectations
+- "Generative design is not magic"
+- Why evidence matters in architecture  
+- Examples in plain language
+- Setting up for semester success
+
+---
+
+## Course Philosophy {.center}
+
+> "Generative design is not magic" — it requires evidence, testing, and systematic evaluation.
+
+---
+
+## The Current Reality
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**How decisions are made now:**
+
+- Precedent and intuition
+- "Best practices" 
+- Aesthetic preference
+- Client demands
+- Budget constraints
+:::
+
+::: {.column width="50%"}
+**What's missing:**
+
+- Systematic testing
+- Performance validation
+- User feedback integration
+- Data-driven optimization
+- Evidence documentation
+:::
+
+::::
+
+---
+
+## Why Evidence Matters Now
+
+- **Climate crisis** demands performance optimization
+- **Complex buildings** need systematic analysis
+- **Diverse users** require inclusive design validation
+- **Tight budgets** need justified decisions
+- **Professional liability** requires documented reasoning
+
+---
+
+## Evidence-Based Design Examples
+
+---
+
+### Example 1: Window Design
+
+**Traditional approach:**
+
+- Copy successful precedents
+- Apply rules of thumb
+- Adjust based on complaints
+
+**Evidence-based approach:**
+
+- Measure daylight performance
+- Survey user satisfaction
+- Compare energy consumption
+- Optimize based on data
+
+---
+
+### Example 2: Workplace Layout
+
+**Traditional approach:**
+
+- Follow space planning standards
+- Design for average user
+- Adjust post-occupancy
+
+**Evidence-based approach:**
+
+- Observe actual usage patterns
+- Test alternative configurations
+- Measure productivity impacts
+- Iterate based on evidence
+
+---
+
+### Example 3: Public Space Design
+
+**Traditional approach:**
+
+- Apply urban design principles
+- Design for intended use
+- Hope for the best
+
+**Evidence-based approach:**
+
+- Study user behavior patterns
+- Test design interventions
+- Measure social outcomes
+- Scale successful strategies
+
+---
+
+## What You'll Learn This Semester
+
+---
+
+### Core Skills
+
+1. **Frame design problems** as testable research questions
+2. **Collect and analyze data** relevant to design decisions
+3. **Design and conduct tests** to evaluate alternatives
+4. **Communicate findings** effectively to stakeholders
+5. **Document workflows** for reproducible research
+
+---
+
+### Mixed Audience Approach
+
+:::: {.columns}
+
+::: {.column width="33%"}
+**Undergraduate**
+
+- Guided scaffolding
+- Low-code tools
+- Clear templates
+:::
+
+::: {.column width="33%"}
+**MArch**
+
+- Practice applications
+- Client communication
+- Professional formats
+:::
+
+::: {.column width="33%"}
+**PhD**
+
+- Advanced methods
+- Statistical rigor
+- Research contributions
+:::
+
+::::
+
+---
+
+## Course Structure
+
+---
+
+### Four Major Assignments
+
+**A1: Decision Claim** (Week 2)
+: Identify design object + testable claim
+
+**A2: Evidence Map** (Week 4)
+: Map existing evidence + identify gaps
+
+**A3: Test Plan + Pilot** (Week 5)
+: Design method + pilot test
+
+**A4: Final Package** (Week 12)
+: Complete research brief for stakeholders
+
+---
+
+### Assignment Progression
+
+```mermaid
+graph LR
+    A1[Decision<br/>Claim] --> A2[Evidence<br/>Map]
+    A2 --> A3[Test Plan<br/>+ Pilot]
+    A3 --> A4[Final<br/>Package]
+```
+
+Each assignment builds directly on the previous one
+
+---
+
+### Support Structure
+
+- **Office hours**: Wednesdays 4-6pm, KB722
+- **Peer review**: Built into schedule
+- **Mentor dialogue**: Week 8 external consultation
+- **Object Fair**: Week 12 public presentation
+
+---
+
+## Tools and Technology
+
+---
+
+### Tool Flexibility Philosophy
+
+We emphasize **solving problems**, not **mastering software**
+
+Choose tools that match:
+
+- Your experience level
+- Your research question  
+- Available time/resources
+- Stakeholder needs
+
+---
+
+### Low-Code Options
+
+**Spreadsheets**: Excel, Google Sheets
+
+- Data organization and basic analysis
+- Charts and simple visualizations
+- Decision matrices and comparisons
+
+**QGIS**: Free GIS software
+
+- Spatial analysis and mapping
+- Buffer/clip operations
+- Data visualization on maps
+
+---
+
+### Code-Heavy Options
+
+**Python/Jupyter**: For advanced analysis
+
+- Automated data processing
+- Statistical analysis and machine learning
+- Custom visualization and reporting
+
+**GitHub**: For reproducible workflows
+
+- Version control for research
+- Collaboration and sharing
+- Documentation and transparency
+
+---
+
+### Building Performance Tools
+
+**Simulation Presets**:
+
+- Radiance/VELUX (daylighting)
+- EnergyPlus Simple Glazing (energy)
+- Climate Consultant (weather analysis)
+
+**Measurement Tools**:
+
+- Environmental sensors
+- Building management systems
+- User survey platforms
+
+---
+
+## Getting Started
+
+---
+
+### This Week's Tasks
+
+**Before next class:**
+
+1. Install basic tools (Excel/Sheets, QGIS - where applicable)
+2. Read: *Craft of Research* excerpts (available online)
+3. **Draft seed idea for A1** - design object + initial claim
+4. Explore course website and resources
+
+---
+
+### Brainstorming Your A1 Topic
+
+Think about design decisions that intrigue you:
+
+- What performance questions do you have?
+- What design "rules" would you like to test?
+- What stakeholders need better evidence?
+- What decisions are architects struggling with?
+
+---
+
+### Good A1 Topics
+
+**Window-to-wall ratios** in Hong Kong residential towers
+
+- Testable performance impacts
+- Clear stakeholders (developers, residents)
+- Available data sources
+
+**Ceiling height** in collaborative workspaces
+
+- Measurable user outcomes
+- Industry relevance
+- Feasible testing approach
+
+---
+
+### Topic Development Questions
+
+1. **What specifically** are you investigating?
+2. **Who** would use this evidence to make decisions?
+3. **How** could you test your ideas this semester?
+4. **Why** does this matter for architectural practice?
+
+---
+
+## Questions & Discussion
+
+What design decisions are you curious about?
+
+What evidence would help you make better design choices?
+
+---
+
+## Next Week Preview
+
+**Week 2: Finding and Framing Data**
+
+- Data sources for architecture
+- Ethics and privacy considerations
+- Setting ranges and parameters
+- **A1 Decision Claim due**
+
+---
+
+### Office Hours
+
+**Wednesdays 4-6pm, KB722**
+*Or by appointment*
+
+Come discuss:
+
+- A1 topic development
+- Tool selection and setup
+- Research question refinement
+- Technical challenges
+
+---
+
+## Welcome to Evidence-Based Design!
+
+*Let's make architecture more systematic, more effective, and more responsive to the people who use our buildings.*

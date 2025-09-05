@@ -1,0 +1,396 @@
+---
+title: "Week 5: Pilot Week"
+subtitle: "Testing Methods and Learning from Implementation"
+format: 
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+---
+
+## Today's Agenda
+
+- Pilot study results sharing
+- Troubleshooting workshop
+- Learning from "failures"
+- A3 finalization strategies
+- Peer Review #1 launch
+
+---
+
+## Pilot Study Gallery
+
+**Round Robin Sharing (20 minutes)**
+
+**3 minutes per person:**
+1. **What you tested** - brief method overview
+2. **What worked** - successes and good surprises
+3. **What didn't work** - challenges and failures
+4. **Key learning** - most important insight from pilot
+
+**Listen for patterns across projects**
+
+---
+
+## Celebrating "Failures"
+
+---
+
+### Reframing Pilot "Failures"
+
+**"My simulation didn't work"**
+→ *You discovered software limitations before wasting weeks*
+
+**"I couldn't get the data I wanted"**
+→ *You identified realistic data constraints for your field*
+
+**"My survey got no responses"**
+→ *You learned about user engagement and incentive strategies*
+
+**"My results made no sense"**
+→ *You discovered measurement or analysis errors early*
+
+---
+
+### What Pilot "Failures" Teach Us
+
+**Method validation:** Does this approach actually work?
+
+**Resource estimation:** How long do things really take?
+
+**Skill requirements:** What knowledge/training do you need?
+
+**Quality control:** How can you ensure reliable results?
+
+**Scope adjustment:** What's realistic vs. aspirational?
+
+---
+
+### Famous Research "Failures"
+
+**Post-it Notes:** Failed super-strong adhesive became repositionable adhesive
+
+**Microwave Oven:** Radar magnetron accidentally melted chocolate bar
+
+**Penicillin:** Contaminated bacterial culture led to antibiotic discovery
+
+**Key insight:** Unexpected results often lead to important discoveries
+
+---
+
+## Troubleshooting Workshop
+
+---
+
+### Common Pilot Challenges
+
+**Software issues:**
+- Installation and compatibility problems
+- Learning curve steeper than expected
+- Output formats difficult to analyze
+- Results don't match expectations
+
+**Data collection problems:**
+- Access permissions denied
+- Data quality lower than anticipated
+- Sample sizes smaller than planned
+- Missing information or variables
+
+---
+
+### Problem-Solving Strategies
+
+**Software troubles:**
+- Try simpler alternatives or web-based tools
+- Focus on key analyses rather than comprehensive modeling
+- Partner with classmates who have complementary skills
+- Use preset examples to validate your approach
+
+**Data access issues:**
+- Shift to publicly available datasets
+- Use case studies from literature
+- Create synthetic examples for method testing
+- Collaborate for mutual data access
+
+---
+
+### Adaptive Research Design
+
+**The research spiral:**
+1. Plan based on best available information
+2. Test with small pilot study
+3. Learn from unexpected results
+4. Revise approach based on learning
+5. Repeat with refined method
+
+**This is normal and good research practice!**
+
+---
+
+## Group Troubleshooting
+
+---
+
+### Breakout Sessions
+
+**Self-organize by challenge type:**
+- **Software/simulation issues** 
+- **Data access and collection**
+- **Analysis and interpretation**
+- **Scope and feasibility**
+
+**15 minutes:** Share specific problems and brainstorm solutions
+
+**10 minutes:** Report back key solutions to full group
+
+---
+
+### Resource Sharing
+
+**What's working well:**
+- Which tools/approaches are user-friendly?
+- Where have you found good data sources?
+- What shortcuts save time without losing quality?
+- Who has expertise to share?
+
+**Mutual aid opportunities:**
+- Data collection partnerships
+- Software skill sharing
+- Access permission sharing
+- Method validation collaboration
+
+---
+
+## A3 Finalization Strategy
+
+---
+
+### A3 Structure Reminder
+
+**Part 1: Research Design** (1.5-2 pages)
+- Refined research questions and hypotheses
+- Method selection and justification
+- Data collection protocol
+- Analysis plan
+
+**Part 2: Pilot Study Results** (1-1.5 pages)
+- What you actually did
+- What worked and what didn't
+- Key learning and insights
+- Revised approach for A4
+
+---
+
+### Writing Your Pilot Results
+
+**Be honest about challenges:**
+- Document problems you encountered
+- Explain what you tried to solve them
+- Acknowledge limitations of your pilot
+
+**Focus on learning:**
+- What did you discover about your method?
+- How did pilot results change your understanding?
+- What would you do differently next time?
+
+**Show adaptability:**
+- How did you revise your approach?
+- What alternative strategies did you develop?
+- How will pilot learning inform your A4?
+
+---
+
+### Turning Problems into Contributions
+
+**If your simulation crashed:** Compare manual calculations to identify software limitations
+
+**If your survey failed:** Analyze why and propose better engagement strategies
+
+**If your data was incomplete:** Develop frameworks for handling missing information
+
+**If your scope was too big:** Create prioritization criteria for future research
+
+---
+
+## Method Documentation Best Practices
+
+---
+
+### Reproducibility Requirements
+
+**Step-by-step protocols:**
+- Exact software versions and settings
+- Data sources and collection procedures
+- Analysis workflows and decision rules
+- Quality control and validation steps
+
+**Materials and resources:**
+- Required tools and their alternatives
+- Time and skill requirements
+- Access permissions and constraints
+- Troubleshooting guides
+
+---
+
+### Documentation Templates
+
+**For simulation studies:**
+- Model setup parameters and assumptions
+- Input data sources and processing
+- Analysis scripts or procedures
+- Output validation and interpretation
+
+**For survey/observational studies:**
+- Recruitment and sampling procedures
+- Data collection instruments and protocols
+- Analysis approaches and coding schemes
+- Privacy and ethical considerations
+
+---
+
+## Peer Review #1 Launch
+
+---
+
+### Peer Review Process
+
+**Week 6-7:** Exchange A3 drafts for peer review
+
+**Review focus:**
+- Method clarity and feasibility
+- Pilot learning integration
+- Research design strength
+- Documentation completeness
+
+**Deliverable:** 1-page review memo with specific feedback
+
+---
+
+### Review Assignment Process
+
+**Random pairing:** You'll be assigned a classmate's A3 to review
+
+**Timeline:**
+- **Monday Week 6:** Receive partner assignment and A3 draft
+- **Wednesday Week 6:** Submit peer review memo
+- **Friday Week 6:** Receive feedback on your A3
+
+**Use feedback to strengthen your A3 final submission**
+
+---
+
+### Effective Peer Review Guidelines
+
+**Read for understanding first:**
+- What is the research question?
+- What method did they use?
+- What did they learn from their pilot?
+
+**Provide constructive feedback:**
+- What works well in their approach?
+- What could be clearer or stronger?
+- What questions do you have about their method?
+- What suggestions do you have for improvement?
+
+---
+
+## Data Analysis Preview
+
+---
+
+### From Pilot to Full Analysis
+
+**Scale up what worked:**
+- Expand successful pilot procedures
+- Apply lessons learned to larger dataset
+- Maintain quality controls that proved effective
+
+**Address pilot limitations:**
+- Develop solutions for identified problems
+- Strengthen weak aspects of your approach
+- Plan for challenges you now anticipate
+
+---
+
+### Analysis Planning
+
+**Statistical analysis:**
+- What comparisons will you make?
+- What statistical tests are appropriate?
+- How will you handle uncertainty and variability?
+
+**Visualization planning:**
+- What charts/graphs will best show your results?
+- How will you communicate uncertainty?
+- What format will stakeholders find most useful?
+
+---
+
+### Quality Assurance
+
+**Sanity checks:**
+- Do results fall within expected ranges?
+- Are patterns consistent with theory/literature?
+- Do different analysis approaches give similar results?
+
+**Peer validation:**
+- Can others understand and replicate your approach?
+- Do independent analyses reach similar conclusions?
+- Are interpretations reasonable and justified?
+
+---
+
+## Next Steps
+
+---
+
+### This Week's Priorities
+
+1. **Complete A3 submission** - due end of Week 5
+2. **Prepare for peer review** - clean draft ready Monday Week 6
+3. **Begin full data collection** - apply pilot lessons learned
+4. **Plan A4 structure** - how will you organize final package?
+
+---
+
+### Week 6 Preview
+
+**Making Results Readable**
+- Data visualization principles for architecture
+- From numbers to clear, compelling figures
+- Object Card design workshop
+- A4 figure development
+
+---
+
+### Office Hours Focus
+
+**A3 finalization support:**
+- Writing pilot results effectively
+- Method documentation review
+- Reproducibility requirements
+- Integration of pilot learning
+
+---
+
+## Reflection Questions
+
+- What's the most important thing you learned from your pilot?
+- How has your understanding of your research question changed?
+- What are you most confident about in your approach now?
+- What aspect still feels most uncertain?
+
+---
+
+## Key Takeaways
+
+1. **"Failures" are valuable learning** - embrace unexpected results
+2. **Adapt methods based on pilot experience** - rigid plans often break
+3. **Document everything** - your struggles help others avoid similar problems
+4. **Peer collaboration strengthens research** - share resources and expertise
+5. **Quality over quantity** - better to do less well than more poorly
+
+---
+
+*Next week: From data to insight - making your findings compelling and clear*

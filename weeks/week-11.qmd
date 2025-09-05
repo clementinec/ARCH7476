@@ -1,0 +1,361 @@
+---
+title: "Week 11: Final Polish"
+subtitle: "Integration, Refinement, and Object Fair Preparation"
+format: 
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+---
+
+## Today's Agenda
+
+- Draft defense feedback integration
+- Final A4 package assembly and review
+- Object Fair presentation rehearsals
+- Professional networking preparation
+- Final submission logistics
+
+---
+
+## Feedback Integration Workshop
+
+---
+
+### Systematic Response to Draft Defense
+
+**Individual analysis (15 minutes):**
+1. **Categorize feedback** - content vs. presentation vs. technical
+2. **Prioritize changes** - essential vs. nice-to-have improvements  
+3. **Plan implementation** - what can be completed this week vs. next week
+4. **Identify resources needed** - help, tools, or clarification required
+
+**Common feedback themes:**
+- Presentation timing and pacing
+- Stakeholder relevance and connection
+- Figure clarity and professional design
+- Recommendation specificity and actionability
+
+---
+
+### Integration Strategy Session
+
+**Small group consultation (20 minutes):**
+- Share prioritized revision plans with 2-3 classmates
+- Get input on revision strategies and resource needs
+- Offer assistance and collaboration opportunities
+- Refine implementation timeline based on peer input
+
+**Instructor consultation available:**
+- Sign up for 5-minute individual meetings
+- Focus on highest-priority revision needs
+- Get clarification on feedback interpretation
+- Confirm final submission requirements
+
+---
+
+## A4 Package Final Assembly
+
+---
+
+### Component Integration Review
+
+**Consistency across components:**
+- **Key findings** aligned across Research Brief, Practice Case, and Object Card
+- **Terminology and metrics** used consistently throughout
+- **Stakeholder framing** coherent across different formats
+- **Visual identity** unified across all materials
+
+**Quality assurance checklist:**
+- All citations and references complete and accurate
+- Figures professionally designed and clearly labeled
+- Writing clear, error-free, and appropriately formatted
+- File formats correct for submission and presentation
+
+---
+
+### Professional Presentation Standards
+
+**Research Brief (8-12 pages):**
+- Executive summary compelling and complete
+- Methods clearly documented and reproducible
+- Results presented with appropriate uncertainty
+- Recommendations specific and implementable
+
+**Practice Case (2 slides + 2-page memo):**
+- Key findings immediately apparent
+- Decision criteria and thresholds clear
+- Implementation guidance specific
+- Professional formatting and design
+
+---
+
+**Object Card (single page poster):**
+- Visually compelling at arm's length viewing
+- Key message prominent and clear
+- Professional design quality suitable for portfolio
+- Contact information and next steps included
+
+**Reproducibility Capsule (3-5 pages + materials):**
+- Step-by-step procedures clear and complete
+- Tool requirements and alternatives specified
+- Quality control and troubleshooting included
+- Adaptation guidance for different contexts
+
+---
+
+## Presentation Rehearsal Sessions
+
+---
+
+### Structured Practice Format
+
+**Individual presentation (6-8 minutes):**
+- Complete Object Fair presentation as planned
+- Use final slides and materials
+- Practice with timer for pacing
+- Focus on smooth transitions and confident delivery
+
+**Peer feedback (3-4 minutes):**
+- Content clarity and logical flow
+- Visual aid effectiveness  
+- Professional presentation style
+- Suggestions for final improvement
+
+**Immediate revision (2-3 minutes):**
+- Note key improvement areas
+- Plan specific changes for final week
+- Practice problem areas immediately
+
+---
+
+### Common Presentation Challenges
+
+**Timing issues:**
+- Too much content for time limit
+- Uneven pacing across sections
+- Rushing through important points
+- Inadequate time for questions
+
+**Solutions:**
+- Prioritize most important 2-3 points
+- Practice with timer multiple times
+- Build in natural pause points
+- Prepare concise responses to likely questions
+
+---
+
+### Question and Answer Preparation
+
+**Anticipate common question types:**
+- **Clarification:** "Can you explain how you..."
+- **Validation:** "How do you know that..."  
+- **Application:** "How would this work in..."
+- **Limitation:** "What about situations where..."
+
+**Preparation strategies:**
+- Practice honest acknowledgment of limitations
+- Prepare specific examples to illustrate points
+- Know your data and methods well enough for detailed questions
+- Practice redirecting off-topic questions back to your findings
+
+---
+
+## Professional Networking Preparation
+
+---
+
+### Object Fair as Networking Opportunity
+
+**External critic participation:**
+- Industry practitioners and potential employers
+- Faculty from architecture, engineering, and planning
+- Alumni working in evidence-based design
+- Professional colleagues and potential collaborators
+
+**Networking goals:**
+- Share your work and demonstrate professional competence
+- Learn about career opportunities and industry trends
+- Build relationships for future collaboration
+- Get advice for continued professional development
+
+---
+
+### Networking Skills Development
+
+**Elevator pitch refinement:**
+- 30-second version for quick introductions
+- 2-minute version for interested parties
+- Focus on stakeholder value rather than technical details
+- Practice confident, enthusiastic delivery
+
+**Business card and contact strategy:**
+- Professional contact information ready
+- LinkedIn profile updated and professional
+- Portfolio or website link available
+- Follow-up plan for interesting connections
+
+---
+
+### Professional Presentation Behaviors
+
+**Before presentations:**
+- Arrive early and test technology setup
+- Review Object Card placement and visibility
+- Practice confident posture and voice projection
+- Network casually with early arrivals
+
+**During presentations:**
+- Professional attire and confident demeanor
+- Clear articulation and appropriate pacing
+- Eye contact with audience members
+- Gracious response to questions and feedback
+
+**After presentations:**
+- Thank critics and audience members
+- Follow up on interesting conversations
+- Exchange contact information appropriately
+- Reflect on feedback for future improvement
+
+---
+
+## Final Logistics and Submission
+
+---
+
+### Submission Requirements
+
+**Digital submission (due before Object Fair):**
+- Complete A4 package as single PDF
+- Individual component files for reference
+- Presentation slides in PowerPoint format
+- Self-assessment reflection (1 page)
+
+**Physical materials for Object Fair:**
+- Printed Object Card at appropriate size
+- Backup presentation files on USB drive
+- Professional business cards or contact information
+- Any demonstration materials or props
+
+---
+
+### Object Fair Day Timeline
+
+**Setup period (30 minutes):**
+- Technology testing and troubleshooting
+- Object Card display arrangement
+- Final material organization
+- Networking with early arrivals
+
+**Presentation period (90 minutes):**
+- Individual presentations (6-8 min + 4 min Q&A)
+- Active audience participation and feedback
+- Professional critic evaluation and input
+- Peer support and engagement
+
+**Networking period (30 minutes):**
+- Informal conversations with critics and peers
+- Contact information exchange
+- Career advice and opportunity discussion
+- Course celebration and reflection
+
+---
+
+### Self-Assessment Reflection
+
+**Required reflection topics:**
+1. **Learning integration:** How did the four assignments build your research capabilities?
+2. **Skill development:** What evidence-based design competencies did you develop?
+3. **Professional growth:** How will you apply these skills in future work?
+4. **Course impact:** What was most valuable about this learning experience?
+
+**Format:** 1 page, professional writing, submitted with A4 package
+
+---
+
+## Course Completion and Beyond
+
+---
+
+### Continued Professional Development
+
+**Immediate next steps:**
+- Apply skills to current projects and coursework
+- Share methods and insights with colleagues
+- Continue building evidence-based design portfolio
+- Maintain connections made through Object Fair networking
+
+**Long-term development:**
+- Consider advanced coursework in research methods
+- Explore internship or job opportunities using these skills
+- Contribute to professional publications or conferences
+- Build research collaboration networks
+
+---
+
+### Resource Access and Support
+
+**Ongoing resources:**
+- Course materials remain available for reference
+- Office hours continue for follow-up questions
+- Peer network for continued collaboration
+- Professional mentor relationships developed
+
+**Future learning opportunities:**
+- Advanced workshops in specific tools or methods
+- Professional development through industry organizations
+- Graduate research opportunities in evidence-based design
+- Continuing education and certification programs
+
+---
+
+## Final Week Priorities
+
+---
+
+### This Week's Essential Tasks
+
+1. **Implement draft defense feedback** - focus on highest-priority improvements
+2. **Complete final A4 assembly** - ensure all components are polished and integrated  
+3. **Practice presentation extensively** - aim for smooth, confident delivery
+4. **Prepare networking materials** - business cards, contact information, elevator pitch
+
+### Next Week's Object Fair Tasks
+
+1. **Submit complete A4 package** - all components and reflection
+2. **Deliver professional presentation** - demonstrate semester learning effectively
+3. **Engage with critics and peers** - maximize networking and learning opportunities
+4. **Celebrate achievement** - acknowledge significant skill development and hard work
+
+---
+
+## Questions and Final Support
+
+**Individual consultation available:**
+- Office hours: Wednesday 4-6pm, KB722, or by appointment
+- Focus on specific revision needs and presentation preparation
+- Technical assistance with final formatting and submission
+- Career guidance and networking strategy discussion
+
+**Peer support opportunities:**
+- Study group formation for final week preparation
+- Presentation practice partnerships
+- Resource sharing and collaboration
+- Mutual encouragement and motivation
+
+---
+
+## Key Takeaways
+
+1. **Integration creates coherence** - align all components for maximum impact
+2. **Practice builds confidence** - extensive rehearsal improves presentation quality
+3. **Professional presentation opens doors** - Object Fair offers real networking value
+4. **Feedback drives improvement** - systematic response to input strengthens work
+5. **Skills transfer beyond course** - evidence-based design thinking applies broadly
+
+---
+
+*Next week: Object Fair - Celebrating Evidence-Based Design Achievement*
+
+**Final preparation resources available through course website and office hours**

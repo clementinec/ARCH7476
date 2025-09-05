@@ -1,0 +1,398 @@
+---
+title: "Week 4: Sensitivity & Peer Check"
+subtitle: "Understanding Uncertainty and Validation"
+format: 
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+---
+
+## Today's Agenda
+
+- A2 Evidence Map presentations
+- Sensitivity analysis concepts
+- Uncertainty quantification
+- Peer review workshop
+- Data visualization for uncertainty
+
+---
+
+## A2 Evidence Map Gallery Walk
+
+**Format:** 5-minute poster presentations
+
+**What to listen for:**
+- What evidence gaps are most critical?
+- Where do sources contradict each other?
+- What methods show most promise?
+- What contextual factors matter most?
+
+---
+
+## Understanding Sensitivity
+
+---
+
+### What is Sensitivity Analysis?
+
+**Testing how results change** when you vary input assumptions, parameters, or methods.
+
+**Purpose:**
+- Understand which factors matter most
+- Identify robust vs. fragile conclusions
+- Guide data collection priorities
+- Communicate confidence appropriately
+
+---
+
+### Types of Sensitivity
+
+**Parameter sensitivity:**
+- How do results change with different input values?
+- Which parameters have the largest impact?
+
+**Method sensitivity:**
+- Do different analysis approaches give similar results?
+- How do modeling choices affect conclusions?
+
+**Context sensitivity:**
+- Do findings hold across different buildings, climates, user groups?
+- What local factors might change the results?
+
+---
+
+### Example: Window Performance Analysis
+
+**Key parameters to test:**
+- Window-to-wall ratio (30%, 40%, 50%, 60%)
+- Glass type (single, double, low-e, tinted)
+- Orientation (north, south, east, west)
+- Shading (none, overhangs, side fins, both)
+
+**Sensitivity questions:**
+- Which parameter has the biggest energy impact?
+- Do rankings change across different climates?
+- How sensitive are results to occupancy assumptions?
+
+---
+
+## Uncertainty Quantification
+
+---
+
+### Sources of Uncertainty
+
+**Measurement uncertainty:**
+- Sensor accuracy and calibration
+- Sampling limitations and bias
+- Missing or incomplete data
+
+**Model uncertainty:**
+- Simplified physics and assumptions
+- Parameter estimation errors
+- Validation limitations
+
+**Context uncertainty:**
+- Different building types, climates, users
+- Changing conditions over time
+- Scaling from specific to general cases
+
+---
+
+### Expressing Uncertainty
+
+**Confidence intervals:**
+- "Energy savings: 15-25% (95% confidence)"
+- Range that likely contains true value
+
+**Sensitivity ranges:**
+- "Results vary from 10-30% depending on occupancy assumptions"
+- Shows impact of key uncertainties
+
+**Scenario analysis:**
+- Best case, worst case, most likely outcomes
+- "Under optimistic assumptions... under conservative assumptions..."
+
+---
+
+### Uncertainty Communication
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Good practices:**
+- Report ranges, not point estimates
+- Explain sources of uncertainty
+- Use error bars or confidence bands
+- Acknowledge limitations explicitly
+:::
+
+::: {.column width="50%"}
+**Avoid:**
+- False precision (e.g., "23.7% savings")
+- Hiding uncertainty or limitations
+- Overconfident claims from limited data
+- Ignoring context sensitivity
+:::
+
+::::
+
+---
+
+## Peer Review Workshop
+
+---
+
+### Peer Review Purpose
+
+**For authors:**
+- Identify blind spots and weaknesses
+- Get feedback from different perspectives
+- Practice explaining complex methods
+- Build confidence through validation
+
+**For reviewers:**
+- Learn from others' approaches
+- Develop critical evaluation skills
+- Practice professional feedback
+- Contribute to collective learning
+
+---
+
+### Review Structure
+
+**Phase 1: Method exchange** (15 minutes)
+- Present your A3 research design to partner
+- Focus on approach, not results
+- Ask clarifying questions about method
+
+**Phase 2: Critical feedback** (15 minutes)
+- What assumptions need testing?
+- What could go wrong with this approach?
+- What alternative explanations exist?
+- How could the method be strengthened?
+
+---
+
+### Effective Peer Review
+
+**Be specific:**
+- "Consider testing occupancy sensitivity" vs. "Think about assumptions"
+- Point to particular sections or claims
+- Suggest concrete improvements
+
+**Be constructive:**
+- Identify both strengths and areas for improvement
+- Suggest solutions, not just problems
+- Focus on helping the research succeed
+
+**Be professional:**
+- Critique the work, not the person
+- Use "I" statements: "I'm unclear about..." 
+- Acknowledge limitations of your own expertise
+
+---
+
+### Review Checklist
+
+**Research design clarity:**
+- Are research questions specific and testable?
+- Is the method appropriate for the questions?
+- Are key assumptions stated explicitly?
+
+**Feasibility assessment:**
+- Can this actually be completed this semester?
+- Are required resources available?
+- Are technical skills realistic?
+
+**Validity concerns:**
+- What factors might confound results?
+- How will quality be ensured?
+- What are the main limitations?
+
+---
+
+## Data Visualization for Uncertainty
+
+---
+
+### Showing Variability
+
+**Error bars:**
+- Standard deviation or confidence intervals
+- Shows uncertainty around point estimates
+- Good for comparing multiple alternatives
+
+**Box plots:**
+- Shows distribution shape, outliers, quartiles
+- Good for comparing groups or conditions
+- Reveals data quality issues
+
+**Scatter plots with trend lines:**
+- Shows relationship strength and variability
+- Confidence bands around regression lines
+- Individual data points visible
+
+---
+
+### Scenario Visualization
+
+**Tornado diagrams:**
+- Shows impact of different parameter assumptions
+- Horizontal bars showing sensitivity ranges
+- Quick identification of key variables
+
+**Scenario comparison charts:**
+- Best case, base case, worst case outcomes
+- Multiple bars or lines for different assumptions
+- Clear labeling of scenario definitions
+
+---
+
+### Uncertainty Communication Examples
+
+**Good:** "Energy savings range from 15-25% across different occupancy scenarios, with 20% most likely under typical conditions"
+
+**Bad:** "Energy savings are 19.7%"
+
+**Good:** "User satisfaction improved in 7 of 9 tested configurations (confidence: moderate)"
+
+**Bad:** "User satisfaction improved"
+
+---
+
+## Excel/Sheets Uncertainty Analysis
+
+---
+
+### Simple Sensitivity Analysis
+
+**Parameter tables:**
+- Vary one parameter across different values
+- Calculate outcomes for each scenario
+- Create charts showing relationships
+
+**Two-way tables:**
+- Vary two parameters simultaneously
+- Use conditional formatting for heat maps
+- Identify interaction effects
+
+---
+
+### Monte Carlo in Spreadsheets
+
+**Basic approach:**
+- Use RAND() functions to generate input variations
+- Calculate many scenarios (100-1000 trials)
+- Analyze distribution of outcomes
+- Report percentiles or confidence intervals
+
+**Example application:**
+- Uncertain occupancy schedules
+- Variable weather conditions
+- Range of user preferences
+
+---
+
+## Mini Case Study: Uncertainty in Practice
+
+---
+
+### The Problem
+
+**Client question:** "Will this daylighting strategy work in our office building?"
+
+**Initial analysis:** Average daylight levels meet targets
+
+**Sensitivity analysis revealed:**
+- Results highly sensitive to furniture layout assumptions
+- Performance varies dramatically by floor and orientation
+- Weather variability creates 30% performance range
+
+---
+
+### The Solution
+
+**Revised recommendation:**
+- Strategy works well on south-facing floors
+- North floors need supplementary electric lighting
+- Flexible furniture layouts essential for success
+- Monitor actual performance and adjust as needed
+
+**Key insight:** Simple average performance missed critical variations
+
+---
+
+## Looking Ahead: A3 Pilot Studies
+
+---
+
+### Pilot Study Goals
+
+**Validate your method:**
+- Does your approach actually work?
+- Can you collect the data you planned?
+- Do results make sense?
+
+**Identify challenges:**
+- What takes longer than expected?
+- What skills/tools do you need?
+- Where do you need help?
+
+**Refine approach:**
+- What can be simplified?
+- What needs to be expanded?
+- How can quality be improved?
+
+---
+
+### Pilot Study Scope
+
+**Keep it small:**
+- 1-2 test cases, not comprehensive analysis
+- Focus on method validation, not complete results
+- 2-3 hours of work maximum
+
+**Document everything:**
+- What you actually did vs. what you planned
+- Problems encountered and solutions tried
+- Time required for each step
+- Lessons learned and revisions needed
+
+---
+
+### Next Week: Pilot Implementation
+
+**Monday-Wednesday:**
+- Conduct pilot studies
+- Document challenges and solutions
+- Revise methods based on learning
+
+**Class session:**
+- Pilot results sharing
+- Troubleshooting workshop
+- A3 finalization
+
+---
+
+## Questions & Discussion
+
+- What aspects of your method feel most uncertain?
+- How might you test the sensitivity of your key assumptions?
+- What would increase your confidence in your results?
+
+---
+
+## Key Takeaways
+
+1. **Test key assumptions** - don't assume your parameters are correct
+2. **Acknowledge uncertainty** - ranges are more honest than point estimates
+3. **Peer review strengthens research** - embrace constructive criticism
+4. **Visualize variability** - show uncertainty in your figures
+5. **Pilot before full implementation** - small tests prevent big failures
+
+---
+
+*Next week: Putting methods into practice - pilot study implementation and troubleshooting*

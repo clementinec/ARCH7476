@@ -1,0 +1,442 @@
+---
+title: "Week 3: Planning a Test"
+subtitle: "Systematic Test Design and Pre-Registration"
+format: 
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+---
+
+## Today's Agenda
+
+- A2 Evidence Map progress check
+- Proxy vs. preset simulations
+- Pre-registration mindset
+- Building performance simulation basics
+- A3 test plan development
+
+---
+
+## A2 Progress Check
+
+**Quick sharing:** What's the most surprising thing you've found in your literature review so far?
+
+Common patterns:
+- Less evidence than expected?
+- Contradictory findings?
+- Methodological limitations?
+- Contextual gaps?
+
+---
+
+## Testing Approaches: Proxy vs. Preset
+
+---
+
+### What is a "Test" in Design Research?
+
+**A systematic comparison** designed to evaluate competing alternatives or validate design assumptions.
+
+Not just "trying things out" — but structured investigation with:
+- Clear hypotheses
+- Controlled comparisons  
+- Measurable outcomes
+- Documented methods
+
+---
+
+### Proxy Testing
+
+**Using simplified models or representations** to understand performance relationships
+
+**Examples:**
+- Physical scale models in wind tunnel
+- Simple energy models with key variables
+- Mock-ups of spatial configurations
+- User testing with prototypes or scenarios
+
+**Advantages:**
+- Lower cost and faster iteration
+- Focus on key relationships
+- Easier to control variables
+
+---
+
+### Preset Simulation Testing
+
+**Using established software tools** with validated models and standard inputs
+
+**Examples:**
+- EnergyPlus for building energy analysis
+- Radiance for daylighting simulation
+- CFD for airflow and thermal comfort
+- Acoustic modeling for sound performance
+
+**Advantages:**
+- Validated algorithms and physics
+- Industry-standard metrics
+- Comprehensive analysis capabilities
+
+---
+
+### Choosing Your Approach
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Use Proxy when:**
+- Exploring new design concepts
+- Limited time/resources
+- Focus on key relationships
+- Early design phase decisions
+- User behavior questions
+:::
+
+::: {.column width="50%"}
+**Use Preset when:**
+- Optimizing known systems
+- Need detailed performance data
+- Comparing standard alternatives
+- Later design phase decisions
+- Regulatory compliance questions
+:::
+
+::::
+
+---
+
+## The Pre-Registration Mindset
+
+---
+
+### What is Pre-Registration?
+
+**Documenting your research plan** before conducting the study, including:
+- Research questions and hypotheses
+- Methods and analysis approach
+- Success criteria and interpretation rules
+- Potential limitations and biases
+
+**Purpose:** Prevent cherry-picking results and ensure transparent research
+
+---
+
+### Pre-Registration for Design Research
+
+**Document before testing:**
+1. **Specific claims** you're testing
+2. **Alternative explanations** you'll consider
+3. **Metrics and thresholds** for decision-making
+4. **Analysis approach** you'll use
+5. **Potential confounding factors**
+
+**Benefits:**
+- Clearer thinking about research design
+- More credible results
+- Better documentation for replication
+
+---
+
+### Pre-Registration Template
+
+**Research Question:** What exactly are you testing?
+
+**Hypotheses:** What do you predict will happen?
+
+**Methods:** How will you conduct the test?
+
+**Analysis Plan:** How will you interpret results?
+
+**Success Criteria:** What results would support/refute your claim?
+
+**Limitations:** What factors might affect validity?
+
+---
+
+## Building Performance Simulation Basics
+
+---
+
+### Energy Simulation: EnergyPlus
+
+**What it does:**
+- Calculates heating/cooling loads
+- Models HVAC system performance
+- Estimates energy consumption
+- Simulates thermal comfort
+
+**Key inputs:**
+- Weather data
+- Building geometry and materials
+- HVAC systems and schedules
+- Occupancy and equipment loads
+
+---
+
+### Daylighting Simulation: Radiance
+
+**What it does:**
+- Models natural light distribution
+- Calculates illuminance levels
+- Evaluates glare probability
+- Optimizes daylight strategies
+
+**Key inputs:**
+- Building geometry and materials
+- Window properties and shading
+- Sky conditions and sun angles
+- Interior surface reflectances
+
+---
+
+### Simulation Tool Selection
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Beginner-Friendly:**
+- EnergyPlus GUI interfaces
+- VELUX Daylight Visualizer
+- Climate Consultant
+- Simple web-based calculators
+:::
+
+::: {.column width="50%"}
+**Advanced Options:**
+- Grasshopper + Ladybug/Honeybee
+- Python scripting interfaces
+- Custom analysis workflows
+- Parametric optimization
+:::
+
+::::
+
+---
+
+### Simulation Best Practices
+
+**Start simple:**
+- Use default values for secondary parameters
+- Focus on key design variables
+- Validate with known cases
+
+**Document everything:**
+- Model assumptions and simplifications
+- Input parameter sources
+- Version numbers and settings
+
+**Check results:**
+- Do outputs make physical sense?
+- Compare to benchmarks or rules of thumb
+- Identify sensitivity to key assumptions
+
+---
+
+## Test Design Workshop
+
+---
+
+### Exercise: Design Your Test
+
+**Individual work (15 minutes):**
+
+Using your A1 decision claim, draft:
+1. **Specific hypothesis** - what exactly are you predicting?
+2. **Test approach** - proxy, preset, or hybrid method?
+3. **Key variables** - what will you compare or vary?
+4. **Success metrics** - how will you measure outcomes?
+5. **Potential challenges** - what could go wrong?
+
+---
+
+### Peer Review
+
+**Pairs (15 minutes):**
+
+Exchange test plans and provide feedback:
+- Is the hypothesis testable with the proposed method?
+- Are the variables and metrics appropriate?
+- What assumptions might need validation?
+- What alternative explanations should be considered?
+- How could the approach be simplified or strengthened?
+
+---
+
+### Common Test Design Challenges
+
+**Scope creep:**
+- Trying to test too many variables at once
+- Expanding beyond semester constraints
+- Perfect vs. good enough analysis
+
+**Method mismatch:**
+- Complex tools for simple questions
+- Simple tools for complex questions
+- Unfamiliar software with steep learning curves
+
+**Validation gaps:**
+- No way to check if results make sense
+- Missing baseline or comparison cases
+- Insufficient documentation for replication
+
+---
+
+## A3 Development Strategy
+
+---
+
+### A3 Structure Preview
+
+**Part 1: Research Design**
+- Refined research questions and hypotheses
+- Method selection and justification
+- Data collection protocol
+- Analysis plan
+
+**Part 2: Pilot Implementation**
+- Small-scale test of your method
+- Documentation of what worked/didn't work
+- Refined approach based on pilot learning
+
+---
+
+### Pilot Study Planning
+
+**Purpose of pilot testing:**
+- Validate that your method actually works
+- Identify unexpected challenges
+- Refine protocols and procedures
+- Estimate time and resource requirements
+
+**What to pilot:**
+- Data collection procedures
+- Software workflows
+- Analysis approaches
+- Documentation systems
+
+---
+
+### Time Management for A3
+
+**Week 3 (this week):**
+- Finalize research design approach
+- Set up software and tools
+- Plan pilot study scope
+
+**Week 4:**
+- Conduct pilot testing
+- Document challenges and solutions
+- Refine method based on learning
+
+**Week 5:**
+- Complete A3 writeup
+- Submit test plan + pilot results
+
+---
+
+## Building Performance Tool Demo
+
+---
+
+### EnergyPlus Simple Glazing
+
+**Live demonstration:**
+- Setting up a basic building model
+- Comparing window alternatives
+- Interpreting energy results
+- Exporting data for further analysis
+
+**Your turn:**
+- Download and install software
+- Work through tutorial example
+- Test with your own parameters
+
+---
+
+### VELUX Daylight Visualizer
+
+**Live demonstration:**
+- Creating room geometry
+- Setting up sky conditions
+- Analyzing daylight distribution
+- Generating performance metrics
+
+**Your turn:**
+- Set up simple room model
+- Test different window configurations
+- Export results for comparison
+
+---
+
+## Guest Speaker Introduction
+
+**Next week's guest:** [Professional building performance consultant]
+
+**Topics:**
+- Real-world simulation workflows
+- Common challenges and solutions
+- Integration with design practice
+- Quality assurance and validation
+
+**Prepare questions about:**
+- Tool selection strategies
+- Client communication approaches
+- Verification and validation methods
+- Career paths in building performance
+
+---
+
+## Next Steps
+
+---
+
+### This Week's Tasks
+
+1. **Continue A2 literature review** - target 15+ sources
+2. **Set up simulation tools** - download and test basic functionality
+3. **Draft A3 research design** - hypothesis, methods, analysis plan
+4. **Plan pilot study** - what will you test and how?
+
+---
+
+### Office Hours Focus
+
+**Research design consultation:**
+- Method selection and justification
+- Pilot study scope and feasibility  
+- Software setup and troubleshooting
+- Integration with A2 literature findings
+
+---
+
+### Week 4 Preview
+
+**Sensitivity & Peer Check**
+- Understanding how results change with assumptions
+- Uncertainty analysis and confidence intervals
+- Peer review of research approaches
+- A2 Evidence Map submission
+
+---
+
+## Discussion Questions
+
+- How do you decide between proxy and preset approaches?
+- What aspects of your research design feel most uncertain?
+- What would convince you that your test results are reliable?
+
+---
+
+## Key Takeaways
+
+1. **Choose testing approach** based on question, resources, and timeline
+2. **Pre-register your approach** to ensure transparent, credible research
+3. **Start simple** with simulation tools - focus on key relationships
+4. **Plan to pilot** - small tests prevent big failures
+5. **Document everything** - your future self will thank you
+
+---
+
+*Next week: Testing your tests - sensitivity analysis and peer review*

@@ -27,6 +27,32 @@ website:
         contents:
           - index.qmd
           - schedule.qmd
+      - section: "Weekly Content"
+        contents:
+          - text: "W1: Why Evidence Matters"
+            href: weeks/week-01.qmd
+          - text: "W2: Finding and Framing Data"
+            href: weeks/week-02.qmd
+          - text: "W3: Planning a Test"
+            href: weeks/week-03.qmd
+          - text: "W4: Sensitivity & Peer Check"
+            href: weeks/week-04.qmd
+          - text: "W5: Pilot Week"
+            href: weeks/week-05.qmd
+          - text: "W6: Making Results Readable"
+            href: weeks/week-06.qmd
+          - text: "W7: Decide with Numbers"
+            href: weeks/week-07.qmd
+          - text: "W8: Light Workflow Help"
+            href: weeks/week-08.qmd
+          - text: "W9: Storytelling & Figures"
+            href: weeks/week-09.qmd
+          - text: "W10: Draft Defense"
+            href: weeks/week-10.qmd
+          - text: "W11: Final Polish"
+            href: weeks/week-11.qmd
+          - text: "W12: Object Fair"
+            href: weeks/week-12.qmd
       - section: "Assignments"
         contents:
           - assignments.qmd

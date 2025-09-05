@@ -1,0 +1,465 @@
+---
+title: "Week 2: Finding and Framing Data"
+subtitle: "Data Sources, Collection Methods, and Ethics"
+format: 
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+---
+
+## Today's Agenda
+
+- Review A1 Decision Claims
+- Architectural data landscape
+- Ethics and privacy in data collection
+- Setting appropriate ranges and parameters
+- Framing for different stakeholder audiences
+
+---
+
+## A1 Check-In
+
+**Quick sharing:** 30-second pitch of your design object + claim
+
+Listen for:
+- Clarity of the design object
+- Testability of the claim  
+- Relevance to real stakeholders
+- Feasibility for semester scope
+
+---
+
+## The Architectural Data Landscape
+
+---
+
+### Traditional Data Sources
+
+**Building codes and standards**
+- ASHRAE thermal comfort guidelines
+- Hong Kong Building Code requirements
+- LEED/BREEAM performance benchmarks
+- Industry best practice guidelines
+
+---
+
+### Building Performance Data
+
+**Energy and environmental**
+- Utility bills and energy monitoring
+- Building management system data
+- Weather files and climate data
+- Indoor environmental quality measurements
+
+**Usage and occupancy**
+- Space utilization rates
+- Occupancy sensor data
+- User behavior observations
+- Post-occupancy evaluation surveys
+
+---
+
+### Spatial and Urban Data
+
+**Geographic information**
+- DATA.GOV.HK open data portal
+- Planning Department GIS datasets
+- OpenStreetMap and satellite imagery
+- Transport and accessibility data
+
+**Built environment databases**
+- Building inventory and characteristics
+- Construction cost databases
+- Real estate and market data
+- Infrastructure and services mapping
+
+---
+
+### Human Experience Data
+
+**User feedback**
+- Occupant satisfaction surveys
+- Focus groups and interviews
+- Social media and review data
+- Complaint and maintenance records
+
+**Behavioral observation**
+- Activity mapping and time studies
+- Movement pattern tracking
+- Social interaction documentation
+- Space usage photography/video
+
+---
+
+## Data Collection Ethics
+
+---
+
+### Core Principles
+
+**Respect for persons**
+- Informed consent for data collection
+- Right to withdraw participation
+- Protection of vulnerable populations
+- Transparent research purposes
+
+**Beneficence**
+- Maximize benefits, minimize harms
+- Consider broader societal impacts
+- Share findings appropriately
+- Respect cultural sensitivities
+
+---
+
+### Privacy Considerations
+
+**Personal data protection**
+- Anonymize individual responses
+- Secure data storage and transmission
+- Limited access to sensitive information
+- Clear data retention and deletion policies
+
+**Spatial privacy**
+- Respect private vs. public spaces
+- Obtain permissions for data collection
+- Consider surveillance implications
+- Protect location-based privacy
+
+---
+
+### HKU Research Ethics
+
+**When do you need approval?**
+- Human subjects research (surveys, interviews)
+- Identifiable personal data collection
+- Sensitive or private space documentation
+- Publication of identifiable information
+
+**What's typically exempt?**
+- Anonymous observation in public spaces
+- Published data and literature review
+- Building performance measurement
+- Design process documentation
+
+---
+
+### Practical Ethics Guidelines
+
+1. **Be transparent** about data collection purposes
+2. **Get permission** before photographing people or private spaces
+3. **Anonymize** personal information whenever possible
+4. **Store securely** using HKU-approved systems
+5. **Document clearly** what you collected and how
+
+---
+
+## Setting Ranges and Parameters
+
+---
+
+### Defining Your Investigation Scope
+
+**Spatial boundaries**
+- What buildings, neighborhoods, or regions?
+- Indoor vs. outdoor conditions?
+- Public vs. private spaces?
+- Scale of analysis (room, building, district)?
+
+**Temporal boundaries**
+- What time periods (seasons, daily cycles)?
+- Historical vs. contemporary data?
+- Snapshot vs. longitudinal analysis?
+- Peak vs. average conditions?
+
+---
+
+### Parameter Selection
+
+**Performance metrics**
+- Energy use intensity (kWh/m²/year)
+- Thermal comfort (temperature, humidity, air speed)
+- Daylighting (illuminance, daylight factor, glare)
+- User satisfaction (Likert scales, preference ratings)
+
+**Design variables**
+- Building characteristics (age, size, orientation)
+- System specifications (HVAC, lighting, envelope)
+- Spatial configurations (layout, ceiling height, windows)
+- Usage patterns (occupancy, activities, schedules)
+
+---
+
+### Quality Control Considerations
+
+**Data reliability**
+- Measurement accuracy and calibration
+- Sample size and representativeness
+- Missing data and outlier handling
+- Consistency across different sources
+
+**Validity checks**
+- Do measurements match expected ranges?
+- Are user responses consistent and logical?
+- Do findings align with known relationships?
+- Can results be replicated or verified?
+
+---
+
+## Framing for Stakeholder Audiences
+
+---
+
+### Understanding Your Stakeholders
+
+**Primary decision-makers**
+- Who will directly use your evidence?
+- What decisions are they trying to make?
+- What constraints and pressures do they face?
+- How do they currently evaluate alternatives?
+
+**Secondary audiences**
+- Who else is affected by these decisions?
+- What outcomes matter most to different groups?
+- Where might priorities conflict?
+- How can you address multiple perspectives?
+
+---
+
+### Stakeholder-Specific Framing
+
+**For developers and owners**
+- Financial performance and ROI
+- Risk mitigation and compliance
+- Market differentiation and value
+- Operational efficiency and maintenance
+
+**For facility managers**
+- User satisfaction and productivity
+- Energy costs and system performance
+- Maintenance requirements and reliability
+- Occupant health and safety
+
+---
+
+**For designers and architects**
+- Design flexibility and creativity
+- Performance optimization strategies
+- Best practices and guidelines
+- Innovation opportunities and precedents
+
+**For users and occupants**
+- Comfort and satisfaction
+- Health and wellbeing impacts
+- Usability and accessibility
+- Social and environmental quality
+
+---
+
+### Communication Strategies
+
+**Language and terminology**
+- Use stakeholder-familiar terms
+- Define technical concepts clearly
+- Avoid unnecessary jargon
+- Provide context and comparisons
+
+**Evidence presentation**
+- Lead with stakeholder-relevant outcomes
+- Use familiar units and scales
+- Show uncertainty and confidence levels
+- Provide actionable recommendations
+
+---
+
+## Data Source Deep Dive
+
+---
+
+### Building Management Systems (BMS)
+
+**What's available:**
+- Real-time HVAC performance data
+- Energy consumption by system/zone
+- Indoor environmental conditions
+- Occupancy and usage patterns
+
+**Access considerations:**
+- Building owner permissions required
+- Data format and export capabilities
+- Historical data availability
+- Privacy and proprietary concerns
+
+---
+
+### Government Open Data
+
+**Hong Kong DATA.GOV.HK**
+- Air quality and weather monitoring
+- Traffic and transport statistics
+- Planning and development data
+- Population and demographic information
+
+**Advantages:**
+- Free and publicly available
+- Regularly updated and quality-controlled
+- Comprehensive geographic coverage
+- Official and authoritative sources
+
+---
+
+### Sensor Networks and IoT
+
+**Environmental monitoring**
+- Temperature, humidity, air quality sensors
+- Light levels and acoustic measurements
+- Occupancy detection and counting
+- Energy use monitoring devices
+
+**Deployment considerations:**
+- Equipment costs and availability
+- Installation permissions and access
+- Data logging and retrieval systems
+- Maintenance and calibration requirements
+
+---
+
+### User-Generated Data
+
+**Survey platforms**
+- Google Forms, Qualtrics, SurveyMonkey
+- Mobile apps for real-time feedback
+- QR codes for location-based surveys
+- Incentive strategies for participation
+
+**Social media and reviews**
+- Location-based social media posts
+- Review platforms (Google, Yelp, Facebook)
+- Photo and video user-generated content
+- Sentiment analysis of text data
+
+---
+
+## Practical Exercise
+
+---
+
+### Data Source Mapping
+
+**Individual work (10 minutes):**
+
+For your A1 decision claim, identify:
+1. **3 potential data sources** for testing your claim
+2. **Key parameters** you would need to measure
+3. **Stakeholder concerns** that would shape your approach
+4. **Ethical considerations** for your data collection
+
+---
+
+### Peer Discussion
+
+**Small groups (15 minutes):**
+
+Share your data source ideas and get feedback:
+- Are the sources realistic and accessible?
+- Do the parameters match the research question?
+- Are there alternative or better data sources?
+- What challenges might you encounter?
+
+---
+
+### Group Report-Out
+
+**Brief sharing (10 minutes):**
+
+Each group shares:
+- One particularly creative data source idea
+- One common challenge across multiple projects
+- One ethical consideration that emerged
+- One suggestion for a classmate's project
+
+---
+
+## A2 Preview: Evidence Map
+
+---
+
+### What's Coming
+
+**Due Week 4:**
+- Systematic literature review of your topic
+- Quality assessment of existing evidence
+- Gap analysis identifying what's missing
+- Strategic plan for filling critical gaps
+
+**Key skills:**
+- Database searching and source evaluation
+- Evidence synthesis and organization
+- Critical analysis of research methods
+- Research planning and prioritization
+
+---
+
+### Getting Started on A2
+
+**This week:**
+1. **Finalize and submit A1** - due end of week
+2. **Begin literature search** - key terms and databases
+3. **Set up reference management** - Zotero, Mendeley, or EndNote
+4. **Start evidence collection** - academic and industry sources
+
+---
+
+## Next Steps
+
+---
+
+### This Week's Tasks
+
+1. **Polish A1 submission** - due end of Week 2
+2. **Begin A2 literature search** - find 5-10 initial sources
+3. **Set up data tools** - reference management, basic analysis
+4. **Draft mentor questions** - what would you ask a practitioner?
+
+---
+
+### Office Hours Focus
+
+Come discuss:
+- **Data source validation** - are your ideas realistic?
+- **Ethical approval needs** - do you need HKU research ethics review?
+- **Tool selection** - what software matches your approach?
+- **Literature search strategy** - where to find the best evidence?
+
+---
+
+### Looking Ahead: Week 3
+
+**Planning a Test**
+- Proxy vs. preset simulations
+- Research design and pre-registration
+- Introduction to building performance tools
+- A3 test plan development
+
+---
+
+## Questions & Discussion
+
+- What data sources seem most promising for your projects?
+- What ethical considerations hadn't you thought of?
+- How might different stakeholders interpret the same evidence differently?
+
+---
+
+## Key Takeaways
+
+1. **Multiple data sources** exist for most architectural questions
+2. **Ethics matter** - get permissions, protect privacy, be transparent
+3. **Stakeholder framing** shapes how you collect and present evidence
+4. **Quality control** is essential for reliable findings
+5. **Start broad, then focus** on the most critical evidence gaps
+
+---
+
+*Next week: From data to testing - designing systematic investigations*

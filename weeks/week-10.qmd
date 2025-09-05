@@ -1,0 +1,373 @@
+---
+title: "Week 10: Draft Defense"
+subtitle: "Practice Presentations and Final Feedback"
+format: 
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+---
+
+## Today's Agenda
+
+- Draft defense presentations (6-8 min each)
+- Structured peer and instructor feedback
+- Final polish priorities identification
+- Object Fair preparation logistics
+- Semester reflection and integration
+
+---
+
+## Draft Defense Format
+
+---
+
+### Presentation Structure
+
+**6-8 minutes total:**
+- Problem and stakeholder context (1-2 min)
+- Method overview and key findings (3-4 min)
+- Recommendations and implications (1-2 min)
+- Questions and discussion (4 min additional)
+
+**Materials:**
+- Presentation slides (Object Fair format)
+- Object Card displayed
+- Confidence and professionalism expected
+
+---
+
+### Evaluation Focus
+
+**Content quality:**
+- Research question clarity and relevance
+- Method appropriateness and execution
+- Evidence quality and interpretation
+- Recommendation specificity and actionability
+
+**Communication effectiveness:**
+- Stakeholder audience awareness
+- Narrative flow and logical structure
+- Visual design and professional presentation
+- Response to questions and discussion
+
+---
+
+### Feedback Structure
+
+**Immediate verbal feedback (2-3 minutes per presentation):**
+- One strength to maintain/emphasize
+- One area for improvement with specific suggestions
+- One question for clarification or deeper exploration
+
+**Written feedback form:**
+- Detailed comments for final revision
+- Specific suggestions for Object Fair preparation
+- Assessment of readiness for final presentation
+
+---
+
+## Individual Presentations
+
+---
+
+### Presentation Order
+
+**Randomly assigned to ensure fairness**
+*[Order will be determined in class]*
+
+**While waiting:**
+- Take notes on classmates' approaches
+- Prepare thoughtful questions and feedback
+- Observe effective presentation techniques
+- Consider comparative strengths of different projects
+
+---
+
+### Constructive Feedback Guidelines
+
+**Focus on helping success:**
+- Identify specific strengths worth emphasizing
+- Suggest concrete improvements rather than general critique
+- Ask clarifying questions to better understand the work
+- Consider stakeholder perspective in feedback
+
+**Professional tone:**
+- Respectful and supportive language
+- Focus on work quality, not personal characteristics
+- Acknowledge effort and learning demonstrated
+- Provide actionable suggestions for improvement
+
+---
+
+## Common Themes and Patterns
+
+---
+
+### Strengths Observed
+
+*[To be filled in during class based on presentations]*
+
+**Methodological innovations:**
+**Clear stakeholder focus:**
+**Effective visualizations:**
+**Strong implementation strategies:**
+
+---
+
+### Areas for Improvement
+
+*[To be filled in during class based on presentations]*
+
+**Common challenges:**
+**Presentation skills:**
+**Technical clarity:**
+**Stakeholder connection:**
+
+---
+
+### Lessons for Object Fair
+
+**What worked well across presentations:**
+- Clear problem statements that immediately establish relevance
+- Effective use of visuals to support key points
+- Confident handling of limitations and uncertainties
+- Specific, actionable recommendations
+
+**What to improve for final presentations:**
+- Smoother transitions between sections
+- Better time management and pacing
+- More effective use of Object Card as visual aid
+- Stronger preparation for anticipated questions
+
+---
+
+## Final Polish Priorities
+
+---
+
+### Individual Feedback Integration
+
+**Based on draft defense feedback:**
+
+1. **Immediate fixes (this week):**
+   - Presentation flow and timing issues
+   - Slide design and visual clarity problems
+   - Missing or unclear key points
+
+2. **Content refinement (Week 11):**
+   - Strengthening weak arguments or evidence
+   - Improving stakeholder relevance
+   - Enhancing recommendation specificity
+
+3. **Presentation polish (Week 11-12):**
+   - Rehearsing for smooth delivery
+   - Preparing for likely questions
+   - Finalizing Object Card and materials
+
+---
+
+### Quality Assurance Checklist
+
+**Research brief completeness:**
+- [ ] All sections complete and well-integrated
+- [ ] Citations and references accurate
+- [ ] Figures professional and clearly labeled
+- [ ] Recommendations specific and implementable
+
+**Practice Case effectiveness:**
+- [ ] Two slides tell complete story
+- [ ] Key findings prominently displayed
+- [ ] Action items clear and specific
+- [ ] Professional design and layout
+
+**Object Card impact:**
+- [ ] Visually compelling at poster scale
+- [ ] Key message immediately apparent
+- [ ] Professional design quality
+- [ ] Contact information included
+
+**Reproducibility Capsule utility:**
+- [ ] Step-by-step procedures clear
+- [ ] Tool requirements specified
+- [ ] Troubleshooting guidance provided
+- [ ] Adaptation strategies included
+
+---
+
+## Object Fair Logistics
+
+---
+
+### Event Details
+
+**Date:** [Final class session]
+**Duration:** [Full class period]
+**Audience:** Classmates, instructor, external critics, practitioners
+**Format:** Professional conference-style presentations
+
+**Setup:**
+- Presentation technology tested in advance
+- Object Cards displayed as posters
+- Professional attire expected
+- Name tags and networking encouraged
+
+---
+
+### External Critic Participation
+
+**Invited guests:**
+- Industry practitioners using evidence-based design
+- Faculty from related programs
+- Alumni working in relevant fields
+- Potential employers and collaborators
+
+**Their role:**
+- Provide professional perspective on work quality
+- Ask questions about real-world application
+- Offer networking and career guidance
+- Evaluate presentations for professional readiness
+
+---
+
+### Presentation Day Success Strategies
+
+**Technical preparation:**
+- Test slides on presentation system
+- Have backup files in multiple formats
+- Bring personal laptop as backup
+- Practice with microphone and remote
+
+**Content readiness:**
+- Rehearse presentation multiple times
+- Prepare responses to likely questions
+- Have printed Object Card and business cards
+- Practice elevator pitch for networking
+
+---
+
+## Semester Integration and Reflection
+
+---
+
+### Learning Journey Mapping
+
+**Assignment progression:**
+- How did A1 decision claim evolve through the semester?
+- What role did A2 literature review play in shaping your research?
+- How did A3 pilot testing improve your final methods?
+- What integration challenges did you overcome for A4?
+
+**Skill development:**
+- Research question formulation and refinement
+- Literature review and evidence evaluation
+- Method design and systematic testing
+- Data analysis and uncertainty quantification
+- Professional communication and presentation
+
+---
+
+### Professional Identity Development
+
+**Evidence-based design thinking:**
+- How has your approach to design problems changed?
+- What role will evidence play in your future practice?
+- How will you continue developing these skills?
+- What networks and resources will you maintain?
+
+**Interdisciplinary collaboration:**
+- What did you learn from classmates in different programs?
+- How might you collaborate across disciplines in future work?
+- What perspectives from other fields enriched your understanding?
+
+---
+
+### Course Impact Assessment
+
+**Immediate applications:**
+- How will you use these skills in current projects?
+- What tools and methods will you continue using?
+- How will you share learning with colleagues or classmates?
+
+**Long-term development:**
+- What additional skills or knowledge do you need?
+- How might you contribute to evidence-based design practice?
+- What research questions remain for future investigation?
+
+---
+
+## Final Preparation Timeline
+
+---
+
+### Week 10 Tasks (This Week)
+
+**Immediate revisions:**
+- Address major issues identified in draft defense
+- Improve presentation timing and flow
+- Polish key slides and figures
+
+**Content finalization:**
+- Complete any remaining analysis
+- Finalize all four A4 components
+- Ensure consistency across materials
+
+---
+
+### Week 11 Tasks
+
+**Final revisions:**
+- Implement all feedback from draft defense
+- Professional copyediting and proofreading
+- Final figure and layout polishing
+
+**Presentation preparation:**
+- Extensive practice with timing
+- Anticipate and prepare for questions
+- Test presentation technology setup
+
+---
+
+### Week 12 Tasks
+
+**Final submission:**
+- Complete A4 package uploaded
+- Printed Object Card ready for display
+- Presentation slides tested and ready
+
+**Object Fair participation:**
+- Professional presentation delivery
+- Active engagement with critics and peers
+- Networking and professional development
+
+---
+
+## Questions and Discussion
+
+**Immediate concerns:**
+- What aspects of final preparation feel most challenging?
+- How can classmates support each other's success?
+- What resources are needed for final polish?
+
+**Broader reflections:**
+- How has your understanding of evidence-based design evolved?
+- What has been most valuable about this learning experience?
+- How will you apply these skills beyond this course?
+
+---
+
+## Key Takeaways
+
+1. **Feedback accelerates improvement** - use draft defense input strategically
+2. **Professional presentation matters** - polish reflects content quality
+3. **Practice builds confidence** - rehearsal reduces anxiety and improves delivery
+4. **Integration creates coherence** - connect learning across assignments and experiences
+5. **Network for future success** - Object Fair offers professional development opportunities
+
+---
+
+*Next week: Final polish and presentation preparation*
+
+**Office Hours Available:**
+Wednesday 4-6pm, KB722, or by appointment

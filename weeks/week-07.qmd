@@ -1,0 +1,381 @@
+---
+title: "Week 7: Decide with Numbers"
+subtitle: "Thresholds, Trade-offs, and Decision Frameworks"
+format: 
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+---
+
+## Today's Agenda
+
+- Peer Review #1 feedback integration
+- Setting decision thresholds
+- Addressing counter-arguments
+- Trade-off analysis frameworks
+- Change Log #1 documentation
+
+---
+
+## Peer Review Debrief
+
+**What patterns emerged from peer feedback?**
+
+**Common strengths:**
+- Clear research questions
+- Appropriate methods
+- Good pilot learning integration
+
+**Common improvement areas:**
+- Method documentation clarity
+- Uncertainty acknowledgment
+- Stakeholder relevance
+
+**How will you use this feedback to strengthen A4?**
+
+---
+
+## From Evidence to Decisions
+
+---
+
+### The Decision-Making Challenge
+
+**Your evidence shows:**
+- Performance differences between alternatives
+- Uncertainty ranges and confidence levels
+- Context-specific factors and limitations
+
+**Your stakeholders need:**
+- Clear recommendations for action
+- Decision criteria and thresholds
+- Understanding of trade-offs and risks
+- Implementation guidance
+
+---
+
+### Decision Thresholds
+
+**Performance thresholds:**
+- At what point is performance "good enough"?
+- What improvement level justifies investment?
+- How do you handle uncertainty in threshold setting?
+
+**Cost-benefit thresholds:**
+- What return on investment is required?
+- How do you value non-monetary benefits?
+- What risk tolerance do stakeholders have?
+
+---
+
+## Setting Appropriate Thresholds
+
+---
+
+### Regulatory and Standards-Based
+
+**Building code compliance:**
+- Minimum performance requirements
+- Safety factors and margins
+- Local vs. international standards
+
+**Green building standards:**
+- LEED, BREEAM, Green Mark thresholds
+- Point systems and credit requirements
+- Market expectations and norms
+
+---
+
+### Performance Benchmarking
+
+**Peer building comparison:**
+- Industry average performance levels
+- Best-in-class examples
+- Worst acceptable performance
+
+**User satisfaction benchmarks:**
+- Survey response thresholds (e.g., 4.0/5.0 satisfaction)
+- Complaint rates and frequencies
+- Productivity impact measurements
+
+---
+
+### Stakeholder-Specific Thresholds
+
+**Developer criteria:**
+- ROI minimums and payback periods
+- Risk tolerance and market positioning
+- Competitive advantage requirements
+
+**User-focused criteria:**
+- Comfort and satisfaction minimums
+- Health and safety thresholds
+- Accessibility and inclusion requirements
+
+---
+
+## Counter-Argument Analysis
+
+---
+
+### Anticipating Objections
+
+**"Too expensive"**
+- Life-cycle cost analysis
+- Non-monetary benefit quantification
+- Financing and incentive options
+- Risk cost of not implementing
+
+**"Unproven technology"**
+- Precedent examples and case studies
+- Gradual implementation strategies
+- Pilot testing and monitoring plans
+- Backup and contingency options
+
+---
+
+### Alternative Explanations
+
+**"Results could be due to other factors"**
+- Sensitivity analysis across variables
+- Control for confounding factors
+- Multiple validation approaches
+- Transparent limitation acknowledgment
+
+**"Context may not transfer"**
+- Boundary condition analysis
+- Similar context identification
+- Adaptation strategies
+- Local validation recommendations
+
+---
+
+## Trade-Off Analysis Frameworks
+
+---
+
+### Multi-Criteria Decision Analysis
+
+**Identify competing objectives:**
+- Energy performance vs. cost
+- User satisfaction vs. maintenance
+- Sustainability vs. aesthetics
+- Privacy vs. collaboration
+
+**Weight criteria by stakeholder priority:**
+- Survey stakeholders for preference ranking
+- Use revealed preferences from past decisions
+- Apply regulatory or market requirements
+
+---
+
+### Decision Matrix Development
+
+| Alternative | Energy (30%) | Cost (25%) | User Sat (25%) | Maintenance (20%) | **Total** |
+|-------------|--------------|------------|----------------|-------------------|-----------|
+| Option A    | 8            | 6          | 9              | 7                 | **7.5**   |
+| Option B    | 9            | 4          | 8              | 8                 | **7.25**  |
+| Option C    | 7            | 9          | 7              | 9                 | **7.8**   |
+
+---
+
+### Scenario Planning
+
+**Best case scenario:**
+- All assumptions optimistic
+- Maximum benefits realized
+- Minimal implementation challenges
+
+**Worst case scenario:**
+- Conservative assumptions
+- Implementation difficulties
+- External factors unfavorable
+
+**Most likely scenario:**
+- Realistic assumptions
+- Expected challenges and solutions
+- Moderate benefit realization
+
+---
+
+## Workshop: Decision Framework Development
+
+---
+
+### Individual Exercise (20 minutes)
+
+**For your research project:**
+
+1. **Identify key performance thresholds**
+   - What levels constitute success?
+   - What benchmarks or standards apply?
+   - How do you handle uncertainty?
+
+2. **List potential objections**
+   - What might stakeholders resist?
+   - What alternative explanations exist?
+   - How can you address concerns?
+
+3. **Define trade-offs**
+   - What competing objectives exist?
+   - How should they be weighted?
+   - What scenarios should be considered?
+
+---
+
+### Peer Discussion (15 minutes)
+
+**Small groups:**
+- Share decision frameworks
+- Test thresholds for reasonableness
+- Identify missing counter-arguments
+- Suggest framework improvements
+
+**Focus questions:**
+- Are thresholds defendible and realistic?
+- Have key objections been addressed?
+- Are trade-offs clearly articulated?
+
+---
+
+## Change Log #1 Process
+
+---
+
+### Documentation Purpose
+
+**Track your learning evolution:**
+- How has your understanding changed?
+- What methods did you refine or abandon?
+- Where did peer feedback redirect your work?
+- What assumptions proved incorrect?
+
+**Demonstrate adaptability:**
+- Show systematic response to new information
+- Document problem-solving approaches
+- Highlight integration of feedback
+- Reflect professional research practices
+
+---
+
+### Change Log Format
+
+**Date | Change Description | Reason | Impact**
+
+*Oct 15 | Simplified simulation model from detailed to basic | Software learning curve too steep for semester scope | Focus on key relationships rather than comprehensive analysis*
+
+*Oct 20 | Added uncertainty analysis to results | Peer review feedback on overconfidence | More realistic recommendations with confidence ranges*
+
+---
+
+### Reflection Questions
+
+1. **What's different about your approach now vs. Week 1?**
+2. **Which changes were forced vs. chosen?**
+3. **What would you do differently if starting over?**
+4. **How has your confidence in the results evolved?**
+5. **What skills have you developed through adaptation?**
+
+---
+
+## Professional Decision-Making Integration
+
+---
+
+### Architecture Firm Decision Processes
+
+**Design phase integration:**
+- Concept development evidence requirements
+- Design development validation needs
+- Construction document specification support
+
+**Client communication strategies:**
+- Technical evidence translation
+- Risk and benefit communication
+- Alternative evaluation presentation
+
+---
+
+### Regulatory and Compliance Context
+
+**Building approval processes:**
+- Code compliance demonstration
+- Performance-based design justification
+- Alternative solution documentation
+
+**Post-occupancy validation:**
+- Performance monitoring and verification
+- User feedback integration
+- Continuous improvement processes
+
+---
+
+## A4 Development Strategy
+
+---
+
+### Integration Across Components
+
+**Research Brief recommendations:**
+- Clear thresholds and decision criteria
+- Counter-argument acknowledgment
+- Trade-off analysis and stakeholder guidance
+
+**Practice Case actionability:**
+- Specific implementation recommendations
+- Timeline and resource requirements
+- Risk mitigation strategies
+
+**Object Card clarity:**
+- Key threshold visually prominent
+- Decision recommendation clear
+- Confidence level indicated
+
+---
+
+### Timeline to Object Fair
+
+**Week 8:** Mentor consultations and workflow documentation
+**Week 9:** Practice Case development and narrative refinement  
+**Week 10:** Draft defense and feedback integration
+**Week 11:** Final polish and presentation preparation
+**Week 12:** Object Fair presentations and final submission
+
+---
+
+## Next Steps
+
+---
+
+### This Week's Tasks
+
+1. **Complete Change Log #1** - document evolution of your approach
+2. **Revise A4 draft** - integrate peer feedback and decision frameworks
+3. **Develop decision thresholds** - specific, defendible, stakeholder-relevant
+4. **Address counter-arguments** - anticipate and respond to objections
+
+---
+
+### Week 8 Preview
+
+**Light Workflow Help**
+- Documenting processes for reproducibility
+- Automation ethics and appropriate tool use
+- Individual mentor consultations (30-45 min each)
+- Workflow optimization strategies
+
+---
+
+## Key Takeaways
+
+1. **Evidence must connect to decisions** - thresholds make findings actionable
+2. **Anticipate counter-arguments** - strengthen credibility through honest assessment
+3. **Trade-offs are inevitable** - help stakeholders understand choices
+4. **Document your learning** - change logs show professional growth
+5. **Adapt based on feedback** - peer input strengthens research quality
+
+---
+
+*Next week: From manual processes to reproducible workflows*

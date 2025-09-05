@@ -1,0 +1,392 @@
+---
+title: "Week 12: Object Fair"
+subtitle: "Final Presentations and Course Celebration"
+format: 
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+---
+
+## Welcome to the Object Fair
+
+**Celebrating Evidence-Based Generative Design**
+
+*A showcase of systematic design research and professional communication*
+
+---
+
+## Today's Program
+
+**Setup and Preparation** (15 minutes)
+- Technology testing and Object Card display
+- Final material organization
+- Networking with critics and early arrivals
+
+**Opening Remarks** (10 minutes)
+- Course overview and learning objectives
+- Introduction of external critics and guests
+- Presentation format and evaluation approach
+
+**Student Presentations** (90 minutes)
+- Individual presentations: 6-8 minutes + 4 minutes Q&A
+- Professional critic evaluation and feedback
+- Peer engagement and support
+
+**Closing and Networking** (25 minutes)
+- Course reflection and achievement recognition
+- Informal networking and career conversations
+- Contact information exchange and future collaboration
+
+---
+
+## Presentation Excellence
+
+---
+
+### Professional Standards
+
+**Content quality:**
+- Clear research question and stakeholder relevance
+- Appropriate methods and systematic analysis  
+- Evidence-based findings with uncertainty acknowledgment
+- Specific, actionable recommendations
+
+**Communication effectiveness:**
+- Confident, professional presentation style
+- Clear visual aids and effective Object Card use
+- Stakeholder-appropriate language and framing
+- Thoughtful responses to questions and discussion
+
+---
+
+### Evaluation Criteria
+
+**Research competence (40%):**
+- Problem framing and method appropriateness
+- Analysis quality and interpretation
+- Evidence integration and critical thinking
+- Professional research documentation
+
+**Communication skills (35%):**
+- Presentation clarity and organization
+- Visual design and stakeholder focus
+- Professional delivery and confidence
+- Effective response to questions
+
+**Professional development (25%):**
+- Integration of course learning
+- Evidence-based design thinking demonstration
+- Networking and professional engagement
+- Reflection on skill development and future application
+
+---
+
+## External Critic Introductions
+
+*[To be customized based on actual invited critics]*
+
+**[Critic Name]** - [Title and Organization]
+- [Background and expertise]
+- [Relevance to evidence-based design]
+- [What they'll be looking for in presentations]
+
+**[Critic Name]** - [Title and Organization]
+- [Background and expertise]
+- [Relevance to evidence-based design]
+- [What they'll be looking for in presentations]
+
+---
+
+## Student Presentations
+
+---
+
+### Presentation Order
+
+*[To be determined by random selection or alphabetical order]*
+
+**Presentation format:**
+- 6-8 minute presentation of research findings
+- 4 minute question and discussion period
+- Object Card display throughout session
+- Professional evaluation by critics and instructor
+
+**While waiting to present:**
+- Support classmates as engaged audience members
+- Take notes on effective presentation techniques
+- Prepare thoughtful questions for peers
+- Network professionally with critics and guests
+
+---
+
+### Audience Engagement Guidelines
+
+**As presenters:**
+- Speak clearly and maintain good eye contact
+- Use Object Card as visual aid when appropriate
+- Welcome questions and engage thoughtfully with feedback
+- Thank audience and critics for attention and input
+
+**As audience members:**
+- Give full attention to each presentation
+- Ask thoughtful, constructive questions
+- Provide supportive professional environment
+- Learn from diverse approaches and findings
+
+---
+
+## Individual Student Showcases
+
+*[This section will be filled during the actual Object Fair with brief highlights from each presentation]*
+
+---
+
+## Course Learning Integration
+
+---
+
+### Skills Development Achieved
+
+**Research capabilities:**
+- Problem framing and research question development
+- Systematic literature review and evidence evaluation
+- Method design, pilot testing, and systematic investigation
+- Data analysis, visualization, and uncertainty communication
+
+**Professional competencies:**
+- Stakeholder analysis and audience-appropriate communication
+- Professional presentation and visual design
+- Project management and adaptive planning
+- Ethical research conduct and reproducible documentation
+
+---
+
+### Evidence-Based Design Thinking
+
+**Mindset shifts:**
+- From intuition-only to evidence-informed decision making
+- From single solutions to systematic alternative evaluation
+- From perfect knowledge to appropriate confidence levels
+- From isolated design to stakeholder-centered research
+
+**Practical applications:**
+- Integration with architectural design process
+- Client communication and decision support
+- Performance optimization and validation
+- Professional development and career advancement
+
+---
+
+### Mixed Audience Success
+
+**Undergraduate achievements:**
+- Systematic research approach development
+- Professional communication skill building
+- Introduction to building performance analysis
+- Foundation for advanced study or practice
+
+**MArch accomplishments:**
+- Practice-relevant research competence
+- Client communication and presentation skills
+- Evidence-based design portfolio development
+- Professional networking and career preparation
+
+**PhD contributions:**
+- Methodological rigor and innovation
+- Research contribution to evidence-based design field
+- Academic and professional presentation experience
+- Foundation for continued research collaboration
+
+---
+
+## Professional Critic Feedback
+
+*[This section will be filled during the Object Fair with key insights and observations from external critics]*
+
+**Common strengths observed:**
+
+**Areas for continued development:**
+
+**Industry relevance and applications:**
+
+**Career guidance and opportunities:**
+
+---
+
+## Networking and Professional Development
+
+---
+
+### Connections Made Today
+
+**Professional contacts:**
+- Exchange information with critics and industry professionals
+- Connect with classmates for future collaboration
+- Maintain relationships with course instructor and mentors
+- Build network for career development and ongoing learning
+
+**Collaboration opportunities:**
+- Research partnerships for future projects
+- Professional referrals and recommendations
+- Shared resources and expertise exchange
+- Continued learning and skill development
+
+---
+
+### Continued Growth Strategies
+
+**Immediate applications:**
+- Apply course skills to current projects and coursework
+- Share methods and insights with colleagues and supervisors
+- Build evidence-based design portfolio for job applications
+- Seek opportunities to present work at conferences or professional meetings
+
+**Long-term development:**
+- Advanced training in specific tools and methods
+- Graduate study or research opportunities
+- Professional certification and continuing education
+- Leadership roles in evidence-based design practice
+
+---
+
+## Course Reflection and Achievement
+
+---
+
+### Journey from Week 1 to Week 12
+
+**Assignment progression:**
+- A1 Decision Claims: From initial ideas to testable research questions
+- A2 Evidence Maps: From scattered information to systematic knowledge synthesis
+- A3 Test Plans + Pilots: From theory to practical implementation and learning
+- A4 Final Packages: From data to actionable professional recommendations
+
+**Skill development:**
+- Technical competence in research methods and analysis
+- Professional communication and presentation capabilities
+- Critical thinking and systematic problem-solving
+- Stakeholder awareness and audience-appropriate communication
+
+---
+
+### Individual and Collective Achievement
+
+**Personal growth:**
+- Development of evidence-based design thinking
+- Confidence in systematic research and analysis
+- Professional presentation and networking skills
+- Foundation for continued learning and career development
+
+**Collective learning:**
+- Diverse approaches to similar challenges
+- Peer collaboration and mutual support
+- Professional network development
+- Contribution to evidence-based design field
+
+---
+
+### Impact Beyond the Course
+
+**Immediate influence:**
+- Enhanced approach to current design projects
+- Improved analytical and decision-making capabilities
+- Professional portfolio and networking development
+- Contribution to evidence-based design awareness
+
+**Long-term contribution:**
+- Career development and professional advancement
+- Continued research and practice innovation
+- Mentorship and knowledge sharing with future students
+- Advancement of evidence-based design in architectural practice
+
+---
+
+## Looking Forward
+
+---
+
+### Continued Learning Opportunities
+
+**Advanced coursework:**
+- Specialized training in building performance simulation
+- Statistical analysis and research methods
+- User experience research and behavioral observation
+- Policy analysis and implementation research
+
+**Professional development:**
+- Industry workshops and certification programs
+- Conference presentations and publication opportunities
+- Professional organization membership and leadership
+- Continuing education and skill advancement
+
+---
+
+### Contributing to the Field
+
+**Research and practice:**
+- Apply methods to real-world projects and challenges
+- Document and share successful approaches and innovations
+- Collaborate with practitioners and researchers
+- Contribute to evidence-based design literature and resources
+
+**Education and mentorship:**
+- Share knowledge with colleagues and future students
+- Mentor emerging professionals in evidence-based design
+- Contribute to course development and improvement
+- Build institutional capacity for systematic design research
+
+---
+
+## Final Appreciation
+
+---
+
+### Acknowledgments
+
+**External critics and guests:**
+- Thank you for professional time and expertise
+- Your insights enrich student learning and career development
+- Your participation validates the importance of evidence-based design
+- We welcome continued collaboration and networking
+
+**Student achievement:**
+- Recognition of significant learning and skill development
+- Appreciation for professional presentation and peer support
+- Celebration of diverse approaches and innovative thinking
+- Pride in contribution to evidence-based design advancement
+
+---
+
+### Course Completion
+
+**Semester accomplishments:**
+- Development of systematic research and analysis capabilities
+- Professional communication and presentation skill building
+- Evidence-based design thinking integration
+- Professional network and career development foundation
+
+**Future success:**
+- Application of skills to ongoing projects and career development
+- Continued learning and professional advancement
+- Contribution to evidence-based design practice and research
+- Mentorship and knowledge sharing with others
+
+---
+
+## Celebration and Network
+
+**Congratulations on completing ARCH7476: Evidence-Based Generative Design!**
+
+*Please join us for networking, refreshments, and continued conversation*
+
+**Contact information:**
+- Course instructor: Wednesdays 4-6pm, KB722, or by appointment
+- Course website and resources remain available
+- Professional network established through course collaboration
+- Ongoing support for career development and continued learning
+
+---
+
+*Thank you for your dedication to evidence-based design excellence and professional development*

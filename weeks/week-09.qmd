@@ -1,0 +1,410 @@
+---
+title: "Week 9: Storytelling & Figures"
+subtitle: "Crafting Compelling Narratives and Polishing Presentations"
+format: 
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+---
+
+## Today's Agenda
+
+- Practice Case development workshop
+- Narrative structure and flow
+- Figure and presentation clinic
+- Peer Review Session #2
+- Object Card finalization
+
+---
+
+## The Two-Slide Challenge
+
+---
+
+### Practice Case Purpose
+
+**Distill your entire semester into two slides** that communicate:
+- What problem you investigated
+- What evidence you found
+- What stakeholders should do about it
+- Why they should trust your recommendation
+
+**Audience:** Busy decision-makers with 2-3 minutes maximum
+
+---
+
+### Slide 1: The Problem and Evidence
+
+**Visual elements:**
+- Clear image of your design object
+- Key performance data or findings
+- Before/after or alternative comparisons
+- Confidence indicators or error bars
+
+**Text elements:**
+- One-sentence problem statement
+- 2-3 key findings with metrics
+- Stakeholder relevance statement
+
+---
+
+### Slide 2: Decision Recommendations
+
+**Visual elements:**
+- Decision matrix or recommendation summary
+- Implementation timeline or process diagram
+- Contact information and next steps
+- Professional branding/identity
+
+**Text elements:**
+- Specific actionable recommendations
+- Implementation requirements or considerations
+- Success criteria or monitoring approach
+
+---
+
+## Narrative Structure Workshop
+
+---
+
+### The Research Story Arc
+
+**Setup:** What problem needs solving and why?
+**Investigation:** How did you systematically study it?
+**Discovery:** What did you find that was surprising or important?
+**Resolution:** What should stakeholders do with this knowledge?
+**Future:** What questions remain and what comes next?
+
+---
+
+### Stakeholder-Centered Narrative
+
+**Start with their problem:**
+- What decision are they trying to make?
+- What constraints or pressures do they face?
+- What information do they currently lack?
+
+**Show your solution:**
+- How does your evidence address their specific needs?
+- What confidence can they have in your findings?
+- How does this compare to their current approach?
+
+**End with their action:**
+- What specific steps should they take?
+- What resources or support do they need?
+- How will they know if it's working?
+
+---
+
+### Exercise: Elevator Pitch Development
+
+**Individual work (15 minutes):**
+Create 60-second verbal summary covering:
+1. **Hook:** Why should they care? (15 seconds)
+2. **Evidence:** What did you find? (30 seconds)  
+3. **Action:** What should they do? (15 seconds)
+
+**Partner practice (15 minutes):**
+- Deliver pitch to classmate
+- Get feedback on clarity and persuasiveness
+- Refine based on listener questions
+
+---
+
+## Figure and Presentation Clinic
+
+---
+
+### Individual Consultation Sessions
+
+**5-minute sessions with instructor:**
+- Bring 1-2 key figures needing improvement
+- Focus on clarity and stakeholder relevance
+- Get specific suggestions for enhancement
+- Plan implementation priorities
+
+**While waiting:**
+- Work on Object Card layout refinement
+- Practice elevator pitch delivery
+- Review and polish existing figures
+
+---
+
+### Common Figure Issues and Solutions
+
+**Problem:** "Chart shows data but no clear message"
+**Solution:** Add annotation highlighting key finding, use color to emphasize important data
+
+**Problem:** "Too much information crammed into one figure"
+**Solution:** Split into multiple focused figures, use small multiples approach
+
+**Problem:** "Uncertainty not communicated"
+**Solution:** Add error bars, confidence intervals, or scenario ranges
+
+**Problem:** "Not relevant to architectural decisions"  
+**Solution:** Connect to building elements, show spatial relationships, include human scale
+
+---
+
+## Peer Review Session #2
+
+---
+
+### Review Focus Areas
+
+**Narrative coherence:**
+- Does the story flow logically from problem to solution?
+- Are transitions clear between sections?
+- Is the stakeholder relevance obvious throughout?
+
+**Evidence quality:**
+- Are claims supported by appropriate evidence?
+- Is uncertainty acknowledged and communicated?
+- Are limitations addressed honestly?
+
+**Communication effectiveness:**
+- Would busy practitioners understand key points quickly?
+- Are figures clear and professionally presented?
+- Are recommendations specific and actionable?
+
+---
+
+### Review Process
+
+**Phase 1: Exchange materials (5 minutes)**
+- Share A4 draft and Practice Case slides
+- Provide context for reviewer about your stakeholder audience
+- Specify what kind of feedback would be most helpful
+
+**Phase 2: Review and feedback (25 minutes)**
+- Read through materials carefully
+- Focus on clarity and stakeholder relevance
+- Note specific suggestions for improvement
+- Identify strongest elements to maintain
+
+**Phase 3: Discussion and clarification (15 minutes)**
+- Discuss feedback verbally
+- Clarify any confusing points
+- Brainstorm solutions for identified problems
+
+---
+
+### Review Checklist
+
+**Story clarity:**
+- [ ] Problem statement clear and compelling
+- [ ] Methods appropriate and well-explained
+- [ ] Findings presented clearly with appropriate detail
+- [ ] Recommendations specific and actionable
+
+**Professional presentation:**
+- [ ] Figures clear and well-designed
+- [ ] Writing clear and error-free
+- [ ] Formatting consistent and professional
+- [ ] Citations and references appropriate
+
+**Stakeholder relevance:**
+- [ ] Audience needs clearly understood
+- [ ] Evidence directly addresses stakeholder concerns
+- [ ] Recommendations feasible for stakeholder context
+- [ ] Communication style appropriate for audience
+
+---
+
+## Object Card Finalization
+
+---
+
+### Design Refinement Process
+
+**Content finalization:**
+- Key message prominently featured
+- Supporting evidence clearly displayed
+- Decision recommendation explicit
+- Contact information included
+
+**Visual polish:**
+- Professional typography and layout
+- Consistent color scheme and branding
+- High-quality images and graphics
+- Appropriate white space and balance
+
+---
+
+### Production Considerations
+
+**File formats:**
+- High-resolution PDF for printing (300 DPI minimum)
+- PNG or JPG for digital display
+- Editable format (PowerPoint, Illustrator) for future updates
+
+**Print testing:**
+- Test print at actual size to check readability
+- Verify color accuracy and contrast
+- Check that text is large enough for poster viewing
+- Ensure professional appearance at arm's length
+
+---
+
+### Portfolio Integration
+
+**Documentation for portfolio:**
+- Process documentation and iteration sketches
+- Final high-resolution files
+- Usage context and audience description
+- Reflection on design decisions and effectiveness
+
+---
+
+## Change Log #2 Documentation
+
+---
+
+### Tracking Recent Evolution
+
+**Since Week 7 peer review:**
+- What major revisions have you made?
+- How has mentor feedback influenced your approach?
+- What figure improvements have enhanced communication?
+- How has narrative structure evolved?
+
+**Integration of feedback:**
+- Which peer suggestions did you implement?
+- How did mentor consultation change your perspective?
+- What instructor feedback influenced your revisions?
+- Where did you choose not to follow suggestions and why?
+
+---
+
+### Professional Reflection
+
+**Skills development:**
+- What communication skills have you strengthened?
+- How has your design thinking evolved?
+- What technical capabilities have you developed?
+- How has your stakeholder awareness improved?
+
+**Research process insights:**
+- What would you do differently if starting over?
+- Which methods proved most/least effective?
+- How did your understanding of the problem evolve?
+- What surprised you most about the research process?
+
+---
+
+## Presentation Skills Development
+
+---
+
+### Object Fair Preparation Strategy
+
+**Content preparation:**
+- Key points outline with timing
+- Transition phrases and connective language
+- Anticipated questions and responses
+- Backup slides or materials
+
+**Delivery practice:**
+- Record yourself to identify improvement areas
+- Practice with timer to ensure appropriate pacing
+- Rehearse with classmates for feedback
+- Test presentation technology and setup
+
+---
+
+### Handling Questions and Discussion
+
+**Preparation strategies:**
+- Anticipate likely questions from different audience types
+- Prepare honest responses about limitations
+- Practice saying "I don't know, but here's how I'd find out"
+- Have specific examples ready to illustrate points
+
+**During Q&A:**
+- Listen carefully to full question before responding
+- Acknowledge good questions and thank questioners
+- Be honest about uncertainties and limitations
+- Connect responses back to stakeholder needs
+
+---
+
+## Final Week Planning
+
+---
+
+### A4 Final Assembly
+
+**Component integration:**
+- Ensure consistent findings across all components
+- Cross-reference between Research Brief and Practice Case
+- Align Object Card with detailed analysis
+- Complete Reproducibility Capsule documentation
+
+**Quality assurance:**
+- Proofread all text for errors and clarity
+- Check all figures for professional appearance
+- Verify citations and references are complete
+- Test all links and file formats
+
+---
+
+### Object Fair Logistics
+
+**Presentation format:**
+- 6-8 minute presentation + 4 minutes Q&A
+- PowerPoint or equivalent presentation slides
+- Object Card displayed as poster
+- Professional attire and demeanor expected
+
+**Audience composition:**
+- Classmates and instructor
+- External practitioners and critics
+- Possibly other faculty and graduate students
+- Potential industry professionals and alumni
+
+---
+
+## Next Steps
+
+---
+
+### This Week's Tasks
+
+1. **Complete Peer Review #2** - provide thorough, constructive feedback
+2. **Implement feedback** - revise A4 components based on peer input
+3. **Finalize Object Card** - ready for printing and display
+4. **Practice presentation** - aim for smooth 6-8 minute delivery
+
+---
+
+### Week 10 Preview
+
+**Draft Defense**
+- Individual 6-8 minute presentations to class
+- Structured peer and instructor feedback
+- Identification of final polish priorities
+- Preparation for Object Fair
+
+---
+
+## Questions & Discussion
+
+- What aspects of your narrative need strengthening?
+- How can your figures better support your story?
+- What questions are you most concerned about for the Object Fair?
+
+---
+
+## Key Takeaways
+
+1. **Story matters as much as evidence** - narrative structure guides understanding
+2. **Two slides force clarity** - constraints improve communication
+3. **Peer feedback strengthens work** - outside perspectives identify blind spots
+4. **Professional presentation builds credibility** - polish reflects content quality
+5. **Practice improves performance** - rehearsal reduces anxiety and increases confidence
+
+---
+
+*Next week: Testing your presentation - draft defenses and final feedback*
