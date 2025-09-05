@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "ARCH7476: Evidence-Based Design"
+  title: "ARCH7476: Evidence-Based Generative Design"
   navbar:
     logo: "assets/ARCH7476_HONGSHAN GUO.pdf"
     left:

@@ -8,7 +8,7 @@ format:
 
 ## Course Overview
 
-**ARCH7476: Evidence-Based Design** explores how architects can make better design decisions through systematic data collection, analysis, and interpretation. This course bridges the gap between intuitive design thinking and empirical evidence, preparing students to justify design choices with quantitative and qualitative data.
+**ARCH7476: Evidence-Based Generative Design** explores how architects can make better design decisions through systematic data collection, analysis, and interpretation. This course bridges the gap between intuitive design thinking and empirical evidence, preparing students to justify design choices with quantitative and qualitative data.
 
 ### Course Philosophy
 
