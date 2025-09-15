@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(quarto clean:*)",
-      "Bash(quarto:*)"
+      "Bash(quarto:*)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []
