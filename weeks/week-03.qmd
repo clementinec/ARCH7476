@@ -1,10 +1,8 @@
 ---
-title: "Week 3: Planning a Test"
-subtitle: "Systematic Test Design and Pre-Registration"
+title: "Week 3: Finding and Framing Data"
 format: 
   revealjs:
     theme: simple
-    transition: zoom
     slide-number: true
     incremental: true
     center: true
@@ -153,6 +151,7 @@ Common patterns:
   - "Adding 15-foot wide covered walkways around the plaza perimeter will triple foot traffic during rainy seasons"
   - "Neighborhoods with continuous street walls and 8-foot wide sidewalks will have 3x more pedestrian activity than those with setback buildings and 4-foot sidewalks"
 
+
 ## Why This Matters in Architecture
 
 Questions help you identify design problems and user needs. They're essential for research and understanding context.
@@ -185,6 +184,7 @@ Not just "trying things out" — but structured investigation with:
 :::
 
 <span style='color: cyan'>_"Think about your A1 claim - do you have clear hypotheses? Measurable outcomes?"_</span>
+
 
 ---
 
@@ -238,28 +238,7 @@ Not just "trying things out" — but structured investigation with:
 
 ---
 
-**Advantages:**
 
-- Validated algorithms and physics
-- Industry-standard metrics
-- Comprehensive analysis capabilities
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Key point: "Preset = professional tools with established credibility"
-- Students often intimidated by complexity - reassure about learning curve
-- Good for: detailed analysis, industry validation, comparing to standards
-- Bad for: novel concepts, quick exploration, limited time/expertise
-- Mention: many have free/student versions available
-:::
-
-**Questions for students:**
-
-- "Which of these tools have you heard of? Used before?"
-- "What would make preset simulation worth the extra learning time for your claim?"
-
----
 
 ## The Pre-Registration Mindset
 
@@ -290,7 +269,7 @@ Not just "trying things out" — but structured investigation with:
 - Architecture parallel: competitions have criteria set before designs submitted
 :::
 
-**Student reality check:** "How many of you have ever changed your argument after seeing disappointing results?"
+**Reality check:** "How many of you have ever changed your argument after seeing disappointing results?"
 
 ---
 
@@ -322,47 +301,31 @@ Not just "trying things out" — but structured investigation with:
 
 **Reflection prompt:** "For your A1 claim, what would count as 'success'? Be specific with numbers."
 
----
+**Advantages:**
 
-### Hot take: Assumption Audit (prepare for 3min)
-
-**Examine a person's A1 claim:**
-
-**Research Question:** What exactly are you testing?
-
-**Hypotheses:** What do you predict will happen?
-
-**Hidden Assumptions:** What are you taking for granted?
-
-**Methods:** How will you conduct the test?
-
-**Analysis Plan:** How will you interpret results?
-
-**Success Criteria:** What results would support/refute your claim?
-
-**Limitations:** What factors might affect validity?
-
-**Time:** 10 minutes per person (20 minutes total)
+- Validated algorithms and physics
+- Industry-standard metrics
+- Comprehensive analysis capabilities
 
 ::: {.notes}
-
 **Speaker Cheat Sheet:**
 
-- Pair students with different project types if possible
-- Circulate and listen - jump in if conversations stall
-- "Hidden assumptions" is the hardest part - help students dig deeper
-- Common assumptions: "Users will behave rationally," "Weather will be typical," "Materials perform as specified"
-- If pairs finish early, have them switch to another pair
-- Save last 5 minutes for large group insights
+- Key point: "Preset = professional tools with established credibility"
+- Students often intimidated by complexity - reassure about learning curve
+- Good for: detailed analysis, industry validation, comparing to standards
+- Bad for: novel concepts, quick exploration, limited time/expertise
+- Mention: many have free/student versions available
 :::
 
-**Guiding questions to share with pairs:**
+**Questions for students:**
 
-- "What are you assuming about user behavior?"
-- "What could make your test completely wrong?"
-- "What external factors could mess up your results?"
+- "Which of these tools have you heard of? Used before?"
+- "What would make preset simulation worth the extra learning time for your claim?"
 
 ---
+
+
+
 
 ## Building Performance Simulation Basics
 
@@ -470,7 +433,7 @@ Not just "trying things out" — but structured investigation with:
 
 ---
 
-### Simulation Best Practices
+## Simulation Best Practices
 
 **Start simple:**
 
@@ -483,6 +446,8 @@ Not just "trying things out" — but structured investigation with:
 - Model assumptions and simplifications
 - Input parameter sources
 - Version numbers and settings
+
+---
 
 **Check results:**
 
@@ -508,9 +473,7 @@ Not just "trying things out" — but structured investigation with:
 
 ---
 
-### Interactive Workshop: Design Your Test
-
-**Individual work (10 minutes):**
+### Individual Workshop: Design Your Test (10min)
 
 Using your A1 decision claim, draft:
 
@@ -520,7 +483,6 @@ Using your A1 decision claim, draft:
 4. **Success metrics** - how will you measure outcomes?
 5. **Potential challenges** - what could go wrong?
 
-**Live polling:** Share one challenge on shared document
 
 ::: {.notes}
 **Speaker Cheat Sheet:**
@@ -533,7 +495,7 @@ Using your A1 decision claim, draft:
 - Keep energy up - this is hard thinking work!
 :::
 
-**Mid-way check-in:** "Raise your hand if you're struggling with measurable outcomes"
+<!-- **Mid-way check-in:** "Ping me into break-out room if you're struggling with measurable outcomes" -->
 
 ---
 
@@ -548,6 +510,8 @@ Exchange test plans and provide feedback:
 - **Round 3:** What assumptions might need validation?
 
 **Group synthesis:** Common patterns and solutions
+
+---
 
 ::: {.notes}
 **Speaker Cheat Sheet:**
@@ -567,6 +531,7 @@ Exchange test plans and provide feedback:
 - "Who got helpful advice they want to share?"
 - "What's the biggest 'aha' moment from peer feedback?"
 
+
 ---
 
 ### Common Test Design Challenges
@@ -582,6 +547,8 @@ Exchange test plans and provide feedback:
 - Complex tools for simple questions
 - Simple tools for complex questions
 - Unfamiliar software with steep learning curves
+
+---
 
 **Validation gaps:**
 
@@ -604,6 +571,8 @@ Exchange test plans and provide feedback:
 
 ---
 
+
+
 ## A3 Development Strategy
 
 ---
@@ -611,12 +580,14 @@ Exchange test plans and provide feedback:
 ### A3 Structure Preview
 
 **Part 1: Research Design**
+
 - Refined research questions and hypotheses
 - Method selection and justification
 - Data collection protocol
 - Analysis plan
 
 **Part 2: Pilot Implementation**
+
 - Small-scale test of your method
 - Documentation of what worked/didn't work
 - Refined approach based on pilot learning
@@ -626,12 +597,14 @@ Exchange test plans and provide feedback:
 ### Pilot Study Planning
 
 **Purpose of pilot testing:**
+
 - Validate that your method actually works
 - Identify unexpected challenges
 - Refine protocols and procedures
 - Estimate time and resource requirements
 
 **What to pilot:**
+
 - Data collection procedures
 - Software workflows
 - Analysis approaches
@@ -642,71 +615,25 @@ Exchange test plans and provide feedback:
 ### Time Management for A3
 
 **Week 3 (this week):**
+
 - Finalize research design approach
 - Set up software and tools
 - Plan pilot study scope
 
 **Week 4:**
+
 - Conduct pilot testing
 - Document challenges and solutions
 - Refine method based on learning
 
+---
+
 **Week 5:**
+
 - Complete A3 writeup
 - Submit test plan + pilot results
 
 ---
-<!-- 
-## Building Performance Tool Demo
-
-:::{.callout-important}
-**Hybrid Mode Adaptation:** Online participants will receive demo recordings + step-by-step guides. In-person participants follow along live.
-:::
-
----
-
-### EnergyPlus Simple Glazing
-
-**Live demonstration:**
-- Setting up a basic building model
-- **Typhoon scenario:** How do extreme wind loads affect results?
-- Comparing window alternatives
-- Interpreting energy results
-- Exporting data for further analysis
-
-**Your turn:** Test with your A1 design object parameters
-
----
-
-### VELUX Daylight Visualizer
-
-**Live demonstration:**
-- Creating room geometry
-- **Storm conditions:** Overcast sky modeling
-- Analyzing daylight distribution under extreme weather
-- Generating performance metrics
-
-**Your turn:** Model your A1 space under different sky conditions
-
----
-
-## Guest Speaker Introduction
-
-**Next week's guest:** [Professional building performance consultant]
-
-**Topics:**
-- Real-world simulation workflows
-- Common challenges and solutions
-- Integration with design practice
-- Quality assurance and validation
-
-**Prepare questions about:**
-- Tool selection strategies
-- Client communication approaches
-- Verification and validation methods
-- Career paths in building performance
-
---- -->
 
 ## Next Steps
 
