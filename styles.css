@@ -457,21 +457,34 @@ table tr:hover {
   color: var(--accent-orange);
 }
 
+/* Full width layout override - content only */
+.quarto-container {
+  max-width: none !important;
+}
+
+.content {
+  max-width: none !important;
+}
+
+.page-columns .page-columns-contents {
+  max-width: none !important;
+}
+
 /* Print styling */
 @media print {
   .sidebar, .navbar, footer {
     display: none;
   }
-  
+
   body {
     font-size: 12pt;
     line-height: 1.4;
   }
-  
+
   h1, h2, h3 {
     page-break-after: avoid;
   }
-  
+
   table {
     page-break-inside: avoid;
   }
