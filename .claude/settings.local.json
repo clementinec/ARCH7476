@@ -3,7 +3,9 @@
     "allow": [
       "Bash(quarto clean:*)",
       "Bash(quarto:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(pandoc:*)",
+      "Bash(unzip:*)"
     ],
     "deny": [],
     "ask": []
