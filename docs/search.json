@@ -252,6 +252,30 @@
     ]
   },
   {
+    "objectID": "weeks/week-03.html#a1-elevator-pitches",
+    "href": "weeks/week-03.html#a1-elevator-pitches",
+    "title": "Week 3: Finding and Framing Data",
+    "section": "A1 Elevator Pitches 🚀",
+    "text": "A1 Elevator Pitches 🚀\n30-second lightning round: Present your A1 decision claims\n\nDesign object + testable claim\nWhy it matters (impact/stakes)\nBiggest uncertainty/assumption\n\nGround rules: No slides, just you and your ideas!\n\nSpeaker Cheat Sheet:\n\nSet timer for 30 seconds per student\nModel first with your own example: “Operable windows in student housing increase satisfaction by 20%”\nEncourage applause after each pitch\nNote interesting claims for later reference\nIf student goes over time, gentle “wrap up” signal\nListen for: vague claims, untestable assumptions, interesting methods\n\n\nQuestions to prep for (1min):\n\n“What assumptions are you making there?”\n“How would you measure that?”\n“What could go wrong with that test?”",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W3: Planning a Test"
+    ]
+  },
+  {
+    "objectID": "weeks/week-03.html#quick-poll-a1-reflection",
+    "href": "weeks/week-03.html#quick-poll-a1-reflection",
+    "title": "Week 3: Finding and Framing Data",
+    "section": "Quick Poll: A1 Reflection",
+    "text": "Quick Poll: A1 Reflection\nRank these three options:\n\nChanging design claim significantly while writing A1?\nDiscovered their claim was harder to test than expected?\nFound surprising gaps in existing evidence?\n\nSetting the stage for why systematic testing matters…\n\nSpeaker Cheat Sheet:\n\nLook for patterns in results\nIf few hands raised on first question: “Come on, be honest! Design is iterative”\nIf many hands on second question: “Perfect! That’s exactly why we need systematic approaches”\nBridge to A2: “Those gaps you found? That’s your A2 starting point”\nTransition: “So now you know testing is hard - let’s learn how to do it right”\n\n\nFollow-up questions:\n\n“What surprised you most about the A1 writing process?”\n“Whose claim here seems most challenging to test?”",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W3: Planning a Test"
+    ]
+  },
+  {
     "objectID": "weeks/week-03.html#a2-progress-check",
     "href": "weeks/week-03.html#a2-progress-check",
     "title": "Week 3: Finding and Framing Data",
@@ -269,6 +293,54 @@
     "title": "Week 3: Finding and Framing Data",
     "section": "Testing Approaches: Proxy vs. Preset",
     "text": "Testing Approaches: Proxy vs. Preset\n\n\n\n\n\n\nNote\n\n\nCoffee Break (5 min): Think about what’s the difference between a proxy and a preset test.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W3: Planning a Test"
+    ]
+  },
+  {
+    "objectID": "weeks/week-03.html#questions-exploration-design-questions",
+    "href": "weeks/week-03.html#questions-exploration-design-questions",
+    "title": "Week 3: Finding and Framing Data",
+    "section": "Questions = Exploration (Design Questions)",
+    "text": "Questions = Exploration (Design Questions)\n\nQuestions are your initial observations that spark investigation:\n\n“How does natural light affect user behavior in this library?”\n“Why do people avoid using this public plaza?”\n“What makes some neighborhoods more walkable than others?”",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W3: Planning a Test"
+    ]
+  },
+  {
+    "objectID": "weeks/week-03.html#hypotheses-design-predictions",
+    "href": "weeks/week-03.html#hypotheses-design-predictions",
+    "title": "Week 3: Finding and Framing Data",
+    "section": "Hypotheses = Design Predictions",
+    "text": "Hypotheses = Design Predictions\n\nHypotheses are your specific, testable design theories:\n\n“Increasing window area by 40% on the south facade will increase study time in the library by 25% during winter months”\n“Adding 15-foot wide covered walkways around the plaza perimeter will triple foot traffic during rainy seasons”\n“Neighborhoods with continuous street walls and 8-foot wide sidewalks will have 3x more pedestrian activity than those with setback buildings and 4-foot sidewalks”",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W3: Planning a Test"
+    ]
+  },
+  {
+    "objectID": "weeks/week-03.html#why-this-matters-in-architecture",
+    "href": "weeks/week-03.html#why-this-matters-in-architecture",
+    "title": "Week 3: Finding and Framing Data",
+    "section": "Why This Matters in Architecture",
+    "text": "Why This Matters in Architecture\nQuestions help you identify design problems and user needs. They’re essential for research and understanding context. Hypotheses help you make design decisions with intention. They force you to:\n\nPredict specific outcomes from your design choices\nMeasure success objectively (occupancy rates, dwell time, user satisfaction scores)\nTest and refine your design theories through post-occupancy evaluation\nCommunicate design intent clearly to clients and colleagues",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W3: Planning a Test"
+    ]
+  },
+  {
+    "objectID": "weeks/week-03.html#what-is-a-test-in-design-research",
+    "href": "weeks/week-03.html#what-is-a-test-in-design-research",
+    "title": "Week 3: Finding and Framing Data",
+    "section": "What is a “Test” in Design Research?",
+    "text": "What is a “Test” in Design Research?\nA systematic comparison designed to evaluate competing alternatives or validate design assumptions.\nNot just “trying things out” — but structured investigation with:\n\nClear hypotheses\nControlled comparisons\nMeasurable outcomes\nDocumented methods\n\n\nSpeaker Cheat Sheet:\n\nEmphasize “systematic” vs “casual experimentation”\nAsk: “What’s the difference between testing and just trying stuff?”\nCommon student confusion: thinking any comparison is a “test”\nExamples of bad “tests”: changing everything at once, no clear metrics\nGood example: A/B testing specific window sizes with energy consumption metrics\n\n\n“Think about your A1 claim - do you have clear hypotheses? Measurable outcomes?”",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -300,6 +372,18 @@
     ]
   },
   {
+    "objectID": "weeks/week-03.html#simulation-best-practices",
+    "href": "weeks/week-03.html#simulation-best-practices",
+    "title": "Week 3: Finding and Framing Data",
+    "section": "Simulation Best Practices",
+    "text": "Simulation Best Practices\nStart simple:\n\nUse default values for secondary parameters\nFocus on key design variables\nValidate with known cases\n\nDocument everything:\n\nModel assumptions and simplifications\nInput parameter sources\nVersion numbers and settings",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W3: Planning a Test"
+    ]
+  },
+  {
     "objectID": "weeks/week-03.html#test-design-workshop",
     "href": "weeks/week-03.html#test-design-workshop",
     "title": "Week 3: Finding and Framing Data",
@@ -317,30 +401,6 @@
     "title": "Week 3: Finding and Framing Data",
     "section": "A3 Development Strategy",
     "text": "A3 Development Strategy",
-    "crumbs": [
-      "Home",
-      "Weekly Content",
-      "W3: Planning a Test"
-    ]
-  },
-  {
-    "objectID": "weeks/week-03.html#building-performance-tool-demo",
-    "href": "weeks/week-03.html#building-performance-tool-demo",
-    "title": "Week 3: Planning a Test",
-    "section": "Building Performance Tool Demo",
-    "text": "Building Performance Tool Demo\n\n\n\n\n\n\nImportant\n\n\nHybrid Mode Adaptation: Online participants will receive demo recordings + step-by-step guides. In-person participants follow along live.",
-    "crumbs": [
-      "Home",
-      "Weekly Content",
-      "W3: Planning a Test"
-    ]
-  },
-  {
-    "objectID": "weeks/week-03.html#guest-speaker-introduction",
-    "href": "weeks/week-03.html#guest-speaker-introduction",
-    "title": "Week 3: Planning a Test",
-    "section": "Guest Speaker Introduction",
-    "text": "Guest Speaker Introduction\nNext week’s guest: [Professional building performance consultant]\nTopics: - Real-world simulation workflows - Common challenges and solutions - Integration with design practice - Quality assurance and validation\nPrepare questions about: - Tool selection strategies - Client communication approaches - Verification and validation methods - Career paths in building performance",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -808,7 +868,7 @@
     "href": "weeks/week-04.html#todays-agenda",
     "title": "Week 4: Sensitivity & Peer Check",
     "section": "Today’s Agenda",
-    "text": "Today’s Agenda\n\nA2 Evidence Map presentations\nSensitivity analysis concepts\nUncertainty quantification\nPeer review workshop\nData visualization for uncertainty",
+    "text": "Today’s Agenda\n\nA2 Evidence Map presentations\nThe Stakeholder Reality Check - lessons from A1\nStakeholder engagement frameworks\nDefining measurable success for community-facing design\nSensitivity analysis for social outcomes\nPeer review workshop with stakeholder lens\nBuilding trust through transparent uncertainty communication",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -820,7 +880,7 @@
     "href": "weeks/week-04.html#a2-evidence-map-gallery-walk",
     "title": "Week 4: Sensitivity & Peer Check",
     "section": "A2 Evidence Map Gallery Walk",
-    "text": "A2 Evidence Map Gallery Walk\nFormat: 5-minute poster presentations\nWhat to listen for: - What evidence gaps are most critical? - Where do sources contradict each other? - What methods show most promise? - What contextual factors matter most?",
+    "text": "A2 Evidence Map Gallery Walk\nFormat: 5-minute poster presentations\nWhat to listen for:\n\nWhat evidence gaps are most critical?\nWhere do sources contradict each other?\nWhat methods show most promise?\nWhat contextual factors matter most?",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -832,7 +892,7 @@
     "href": "weeks/week-04.html#understanding-sensitivity",
     "title": "Week 4: Sensitivity & Peer Check",
     "section": "Understanding Sensitivity",
-    "text": "Understanding Sensitivity",
+    "text": "Understanding Sensitivity\nBut now with a stakeholder lens",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -856,7 +916,7 @@
     "href": "weeks/week-04.html#peer-review-workshop",
     "title": "Week 4: Sensitivity & Peer Check",
     "section": "Peer Review Workshop",
-    "text": "Peer Review Workshop",
+    "text": "Peer Review Workshop\nNow with stakeholder accountability",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -916,7 +976,7 @@
     "href": "weeks/week-04.html#questions-discussion",
     "title": "Week 4: Sensitivity & Peer Check",
     "section": "Questions & Discussion",
-    "text": "Questions & Discussion\n\nWhat aspects of your method feel most uncertain?\nHow might you test the sensitivity of your key assumptions?\nWhat would increase your confidence in your results?",
+    "text": "Questions & Discussion\n\nWhat aspects of your method feel most uncertain?\nHow might you test the sensitivity of your key assumptions?\nWho are your actual stakeholders and how will you engage them?\nWhat specific metrics matter most to your stakeholders?\nWhat would increase your confidence in your results?",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -928,7 +988,7 @@
     "href": "weeks/week-04.html#key-takeaways",
     "title": "Week 4: Sensitivity & Peer Check",
     "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nTest key assumptions - don’t assume your parameters are correct\nAcknowledge uncertainty - ranges are more honest than point estimates\nPeer review strengthens research - embrace constructive criticism\nVisualize variability - show uncertainty in your figures\nPilot before full implementation - small tests prevent big failures",
+    "text": "Key Takeaways\n\nIdentify real stakeholders with names and contact plans - not just categories\nDefine specific, measurable success criteria - that stakeholders actually care about\nTest sensitivity across stakeholder priorities - not just technical parameters\nBuild engagement into your research method - not just consultation\nAcknowledge uncertainty - ranges build trust, false precision destroys it\nPilot with stakeholder feedback - iterate based on their input",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -1750,6 +1810,62 @@
       "Assignments",
       "A4: Final Package"
     ]
+  },
+  {
+    "objectID": "supervision-presentation.html#my-role-technical-coach",
+    "href": "supervision-presentation.html#my-role-technical-coach",
+    "title": "Thesis Supervision Approach",
+    "section": "My Role: Technical Coach",
+    "text": "My Role: Technical Coach\nNot a research director\n\nYou develop research questions & architectural concepts\nI provide computational implementation guidance\nFocus: making ambitious ideas achievable\n\nRequirements:\n\nProgramming capability (Python)\nWillingness to learn tools\nPersistence through technical obstacles"
+  },
+  {
+    "objectID": "supervision-presentation.html#what-i-supervise",
+    "href": "supervision-presentation.html#what-i-supervise",
+    "title": "Thesis Supervision Approach",
+    "section": "What I Supervise",
+    "text": "What I Supervise\n✅ YES - Data-driven computational projects:\n\nML for building energy prediction/optimization\nTime series analysis of occupant behavior\nDeep learning for thermal comfort prediction\nIoT + predictive analytics for responsive buildings\nValidated simulations with working code"
+  },
+  {
+    "objectID": "supervision-presentation.html#what-i-actually-do",
+    "href": "supervision-presentation.html#what-i-actually-do",
+    "title": "Thesis Supervision Approach",
+    "section": "What I actually do",
+    "text": "What I actually do\n\nWheel of Research"
+  },
+  {
+    "objectID": "supervision-presentation.html#another-quick-example",
+    "href": "supervision-presentation.html#another-quick-example",
+    "title": "Thesis Supervision Approach",
+    "section": "Another quick example",
+    "text": "Another quick example\n\nProbablistic Thermal Comfort"
+  },
+  {
+    "objectID": "supervision-presentation.html#project-requirements",
+    "href": "supervision-presentation.html#project-requirements",
+    "title": "Thesis Supervision Approach",
+    "section": "Project Requirements",
+    "text": "Project Requirements\nMust include ALL three:\n\nActual datasets - not hypothetical data\nWorking code - functional implementation\nValidation - measurable outcomes\n\nSuitable building types:\n\nResidential, commercial, institutional\nWhere performance optimization is central\nTechnology focus: hardware OR software"
+  },
+  {
+    "objectID": "supervision-presentation.html#solve",
+    "href": "supervision-presentation.html#solve",
+    "title": "Thesis Supervision Approach",
+    "section": "Solve",
+    "text": "Solve\nProblem: Multiple disconnected ambitions\n\nComprehensive lineup of technologies across IoT, AI and spatial design\nMultiple “AI tools” without domain challenge mapped out clearly\n\nReality check:\n\nWhich specific problem are you actually solving?\nWhere is your training data coming from?\nWhat makes this better than current/stock methods?"
+  },
+  {
+    "objectID": "supervision-presentation.html#focused-alternative-hypothetical",
+    "href": "supervision-presentation.html#focused-alternative-hypothetical",
+    "title": "Thesis Supervision Approach",
+    "section": "Focused Alternative (Hypothetical)",
+    "text": "Focused Alternative (Hypothetical)\nInstead of: “AI workflow for better design”\nConsider: “Can ML predict degredation horizon of cultral heritage buildings better than traditional methods?”\nThis is:\n\n✅ Specific and testable\n✅ Has available datasets (government energy data)\n✅ Stakeholder-relevant (heritage + sustainability)\n✅ Achievable in one thesis"
+  },
+  {
+    "objectID": "supervision-presentation.html#takeaways-for-all",
+    "href": "supervision-presentation.html#takeaways-for-all",
+    "title": "Thesis Supervision Approach",
+    "section": "Takeaways for all",
+    "text": "Takeaways for all\n\nDefine ONE specific research question\nConfirm data availability before proposing\nDemonstrate technical feasibility early\nConnect to real stakeholder needs\n\nMy commitment: Technical coaching to make your focused idea work\nOffice hours: Wednesday 4-6pm/by appointment (Zoom/Teams)"
   },
   {
     "objectID": "assignments.html",
@@ -3504,207 +3620,63 @@
     ]
   },
   {
-    "objectID": "supervision-presentation.html#my-role-technical-coach",
-    "href": "supervision-presentation.html#my-role-technical-coach",
-    "title": "Thesis Supervision Approach",
-    "section": "My Role: Technical Coach",
-    "text": "My Role: Technical Coach\nNot a research director\n\nYou develop research questions & architectural concepts\nI provide computational implementation guidance\nFocus: making ambitious ideas achievable\n\nRequirements:\n\nProgramming capability (Python)\nWillingness to learn tools\nPersistence through technical obstacles"
-  },
-  {
-    "objectID": "supervision-presentation.html#what-i-supervise",
-    "href": "supervision-presentation.html#what-i-supervise",
-    "title": "Thesis Supervision Approach",
-    "section": "What I Supervise",
-    "text": "What I Supervise\n✅ YES - Data-driven computational projects:\n\nML for building energy prediction/optimization\nTime series analysis of occupant behavior\nDeep learning for thermal comfort prediction\nIoT + predictive analytics for responsive buildings\nValidated simulations with working code"
-  },
-  {
-    "objectID": "supervision-presentation.html#project-requirements",
-    "href": "supervision-presentation.html#project-requirements",
-    "title": "Thesis Supervision Approach",
-    "section": "Project Requirements",
-    "text": "Project Requirements\nMust include ALL three:\n\nActual datasets - not hypothetical data\nWorking code - functional implementation\nValidation - measurable outcomes\n\nSuitable building types:\n\nResidential, commercial, institutional\nWhere performance optimization is central\nTechnology focus: hardware OR software"
-  },
-  {
-    "objectID": "supervision-presentation.html#martins-current-proposal",
-    "href": "supervision-presentation.html#martins-current-proposal",
-    "title": "Thesis Supervision Approach",
-    "section": "Martin’s Current Proposal",
-    "text": "Martin’s Current Proposal\nProblem: Multiple disconnected ambitions\n\n“Comprehensive sustainability guidelines” (thesis statement)\n“Multiple AI tools chained together” (email)\nTong Lau form generation\n\nReality check:\n\nWhich specific problem are you solving?\nWhere is your training data coming from?\nWhat makes this better than current methods?"
-  },
-  {
-    "objectID": "supervision-presentation.html#focused-alternative-for-martin",
-    "href": "supervision-presentation.html#focused-alternative-for-martin",
-    "title": "Thesis Supervision Approach",
-    "section": "Focused Alternative for Martin",
-    "text": "Focused Alternative for Martin\nInstead of: “AI workflow for new design forms”\nConsider: “Can ML predict energy performance in heritage Tong Lau renovations better than traditional methods?”\nThis is:\n\n✅ Specific and testable\n✅ Has available datasets (government energy data)\n✅ Stakeholder-relevant (heritage + sustainability)\n✅ Achievable in one thesis"
-  },
-  {
-    "objectID": "supervision-presentation.html#next-steps",
-    "href": "supervision-presentation.html#next-steps",
-    "title": "ARCH7476: Evidence-Based Generative Design",
-    "section": "Next Steps",
-    "text": "Next Steps\nFor all students:\n\nDefine ONE specific research question\nConfirm data availability before proposing\nDemonstrate technical feasibility early\nConnect to real stakeholder needs\n\nMy commitment: Technical coaching to make your focused idea work\nOffice hours: Wednesday 4-6pm, KB722 or by appointment (Zoom/Teams)"
-  },
-  {
-    "objectID": "supervision-presentation.html#takeaways-for-all",
-    "href": "supervision-presentation.html#takeaways-for-all",
-    "title": "Thesis Supervision Approach",
-    "section": "Takeaways for all",
-    "text": "Takeaways for all\n\nDefine ONE specific research question\nConfirm data availability before proposing\nDemonstrate technical feasibility early\nConnect to real stakeholder needs\n\nMy commitment: Technical coaching to make your focused idea work\nOffice hours: Wednesday 4-6pm/by appointment (Zoom/Teams)"
-  },
-  {
-    "objectID": "supervision-presentation.html#ai-solving-them-all",
-    "href": "supervision-presentation.html#ai-solving-them-all",
-    "title": "Thesis Supervision Approach",
-    "section": "AI-Solving them all…?",
-    "text": "AI-Solving them all…?\nProblem: Multiple disconnected ambitions\n\nComprehensive lineup of technologies across IoT, AI and spatial design\nMultiple “AI tools” without domain challenge mapped out clearly\n\nReality check:\n\nWhich specific problem are you actually solving?\nWhere is your training data coming from?\nWhat makes this better than current/stock methods?"
-  },
-  {
-    "objectID": "supervision-presentation.html#focused-alternative-hypothetical",
-    "href": "supervision-presentation.html#focused-alternative-hypothetical",
-    "title": "Thesis Supervision Approach",
-    "section": "Focused Alternative (Hypothetical)",
-    "text": "Focused Alternative (Hypothetical)\nInstead of: “AI workflow for better design”\nConsider: “Can ML predict degredation horizon of cultral heritage buildings better than traditional methods?”\nThis is:\n\n✅ Specific and testable\n✅ Has available datasets (government energy data)\n✅ Stakeholder-relevant (heritage + sustainability)\n✅ Achievable in one thesis"
-  },
-  {
-    "objectID": "supervision-presentation.html#solve",
-    "href": "supervision-presentation.html#solve",
-    "title": "Thesis Supervision Approach",
-    "section": "Solve",
-    "text": "Solve\nProblem: Multiple disconnected ambitions\n\nComprehensive lineup of technologies across IoT, AI and spatial design\nMultiple “AI tools” without domain challenge mapped out clearly\n\nReality check:\n\nWhich specific problem are you actually solving?\nWhere is your training data coming from?\nWhat makes this better than current/stock methods?"
-  },
-  {
-    "objectID": "supervision-presentation.html#what-i-actually-do",
-    "href": "supervision-presentation.html#what-i-actually-do",
-    "title": "Thesis Supervision Approach",
-    "section": "What I actually do",
-    "text": "What I actually do\n\nWheel of Research"
-  },
-  {
-    "objectID": "supervision-presentation.html#another-quick-example",
-    "href": "supervision-presentation.html#another-quick-example",
-    "title": "Thesis Supervision Approach",
-    "section": "Another quick example",
-    "text": "Another quick example\n\nProbablistic Thermal Comfort"
-  },
-  {
-    "objectID": "weeks/week-03.html#a1-elevator-pitches",
-    "href": "weeks/week-03.html#a1-elevator-pitches",
-    "title": "Week 3: Finding and Framing Data",
-    "section": "A1 Elevator Pitches 🚀",
-    "text": "A1 Elevator Pitches 🚀\n30-second lightning round: Present your A1 decision claims\n\nDesign object + testable claim\nWhy it matters (impact/stakes)\nBiggest uncertainty/assumption\n\nGround rules: No slides, just you and your ideas!\n\nSpeaker Cheat Sheet:\n\nSet timer for 30 seconds per student\nModel first with your own example: “Operable windows in student housing increase satisfaction by 20%”\nEncourage applause after each pitch\nNote interesting claims for later reference\nIf student goes over time, gentle “wrap up” signal\nListen for: vague claims, untestable assumptions, interesting methods\n\n\nQuestions to prep for (1min):\n\n“What assumptions are you making there?”\n“How would you measure that?”\n“What could go wrong with that test?”",
+    "objectID": "weeks/week-04.html#the-stakeholder-reality-check",
+    "href": "weeks/week-04.html#the-stakeholder-reality-check",
+    "title": "Week 4: Sensitivity & Peer Check",
+    "section": "The Stakeholder Reality Check",
+    "text": "The Stakeholder Reality Check\nLessons from A1: Decision Claims",
     "crumbs": [
       "Home",
       "Weekly Content",
-      "W3: Planning a Test"
+      "W4: Sensitivity & Peer Check"
     ]
   },
   {
-    "objectID": "weeks/week-03.html#quick-poll-a1-reflection",
-    "href": "weeks/week-03.html#quick-poll-a1-reflection",
-    "title": "Week 3: Finding and Framing Data",
-    "section": "Quick Poll: A1 Reflection",
-    "text": "Quick Poll: A1 Reflection\nRank these three options:\n\nChanging design claim significantly while writing A1?\nDiscovered their claim was harder to test than expected?\nFound surprising gaps in existing evidence?\n\nSetting the stage for why systematic testing matters…\n\nSpeaker Cheat Sheet:\n\nLook for patterns in results\nIf few hands raised on first question: “Come on, be honest! Design is iterative”\nIf many hands on second question: “Perfect! That’s exactly why we need systematic approaches”\nBridge to A2: “Those gaps you found? That’s your A2 starting point”\nTransition: “So now you know testing is hard - let’s learn how to do it right”\n\n\nFollow-up questions:\n\n“What surprised you most about the A1 writing process?”\n“Whose claim here seems most challenging to test?”",
+    "objectID": "weeks/week-04.html#stakeholder-mapping-for-real-projects",
+    "href": "weeks/week-04.html#stakeholder-mapping-for-real-projects",
+    "title": "Week 4: Sensitivity & Peer Check",
+    "section": "Stakeholder Mapping for Real Projects",
+    "text": "Stakeholder Mapping for Real Projects",
     "crumbs": [
       "Home",
       "Weekly Content",
-      "W3: Planning a Test"
+      "W4: Sensitivity & Peer Check"
     ]
   },
   {
-    "objectID": "weeks/week-03.html#what-is-a-test-in-design-research",
-    "href": "weeks/week-03.html#what-is-a-test-in-design-research",
-    "title": "Week 3: Finding and Framing Data",
-    "section": "What is a “Test” in Design Research?",
-    "text": "What is a “Test” in Design Research?\nA systematic comparison designed to evaluate competing alternatives or validate design assumptions.\nNot just “trying things out” — but structured investigation with:\n\nClear hypotheses\nControlled comparisons\nMeasurable outcomes\nDocumented methods\n\n\nSpeaker Cheat Sheet:\n\nEmphasize “systematic” vs “casual experimentation”\nAsk: “What’s the difference between testing and just trying stuff?”\nCommon student confusion: thinking any comparison is a “test”\nExamples of bad “tests”: changing everything at once, no clear metrics\nGood example: A/B testing specific window sizes with energy consumption metrics\n\n\n“Think about your A1 claim - do you have clear hypotheses? Measurable outcomes?”",
+    "objectID": "weeks/week-04.html#metrics-that-matter-to-real-people",
+    "href": "weeks/week-04.html#metrics-that-matter-to-real-people",
+    "title": "Week 4: Sensitivity & Peer Check",
+    "section": "Metrics That Matter to Real People",
+    "text": "Metrics That Matter to Real People",
     "crumbs": [
       "Home",
       "Weekly Content",
-      "W3: Planning a Test"
+      "W4: Sensitivity & Peer Check"
     ]
   },
   {
-    "objectID": "weeks/week-03.html#do-we-dig-deeper-into-hypothesis",
-    "href": "weeks/week-03.html#do-we-dig-deeper-into-hypothesis",
-    "title": "Week 3: Planning a Test",
-    "section": "Do we dig deeper into Hypothesis?",
-    "text": "Do we dig deeper into Hypothesis?\nQuestions = Exploration\n\nQuestions are your initial observations that spark investigation:\n\n“How does natural light affect user behavior in this library?”\n“Why do people avoid using this public plaza?”\n“What makes some neighborhoods more walkable than others?”\n\n\nHypotheses = Design Predictions\n\nHypotheses are your specific, testable design theories:\n\n“Increasing window area by 40% on the south facade will increase study time in the library by 25% during winter months”\n“Adding 15-foot wide covered walkways around the plaza perimeter will triple foot traffic during rainy seasons”\n“Neighborhoods with continuous street walls and 8-foot wide sidewalks will have 3x more pedestrian activity than those with setback buildings and 4-foot sidewalks”",
+    "objectID": "weeks/week-04.html#community-engagement-planning-framework",
+    "href": "weeks/week-04.html#community-engagement-planning-framework",
+    "title": "Week 4: Sensitivity & Peer Check",
+    "section": "Community Engagement Planning Framework",
+    "text": "Community Engagement Planning Framework\nMoving from “engaging communities” to measurable engagement",
     "crumbs": [
       "Home",
       "Weekly Content",
-      "W3: Planning a Test"
+      "W4: Sensitivity & Peer Check"
     ]
   },
   {
-    "objectID": "weeks/week-03.html#why-this-matters-in-architecture",
-    "href": "weeks/week-03.html#why-this-matters-in-architecture",
-    "title": "Week 3: Finding and Framing Data",
-    "section": "Why This Matters in Architecture",
-    "text": "Why This Matters in Architecture\nQuestions help you identify design problems and user needs. They’re essential for research and understanding context. Hypotheses help you make design decisions with intention. They force you to:\n\nPredict specific outcomes from your design choices\nMeasure success objectively (occupancy rates, dwell time, user satisfaction scores)\nTest and refine your design theories through post-occupancy evaluation\nCommunicate design intent clearly to clients and colleagues",
+    "objectID": "weeks/week-04.html#a2-evidence-map-gallery-walk-almost-ready",
+    "href": "weeks/week-04.html#a2-evidence-map-gallery-walk-almost-ready",
+    "title": "Week 4: Sensitivity & Peer Check",
+    "section": "A2 Evidence Map Gallery Walk (Almost ready?)",
+    "text": "A2 Evidence Map Gallery Walk (Almost ready?)\nFormat: 5-minute poster presentations (Self)\n\nStep 1: Record yourself presenting on camera\nStep 2: Listen to yourself presenting in the video\n\nWhat to listen for:\n\nWhat evidence gaps are most critical?\nWhere do sources contradict each other?\nWhat methods show most promise?\nWhat contextual factors matter most?",
     "crumbs": [
       "Home",
       "Weekly Content",
-      "W3: Planning a Test"
-    ]
-  },
-  {
-    "objectID": "weeks/week-03.html#questions-exploration-design-questions",
-    "href": "weeks/week-03.html#questions-exploration-design-questions",
-    "title": "Week 3: Finding and Framing Data",
-    "section": "Questions = Exploration (Design Questions)",
-    "text": "Questions = Exploration (Design Questions)\n\nQuestions are your initial observations that spark investigation:\n\n“How does natural light affect user behavior in this library?”\n“Why do people avoid using this public plaza?”\n“What makes some neighborhoods more walkable than others?”",
-    "crumbs": [
-      "Home",
-      "Weekly Content",
-      "W3: Planning a Test"
-    ]
-  },
-  {
-    "objectID": "weeks/week-03.html#hypotheses-design-predictions",
-    "href": "weeks/week-03.html#hypotheses-design-predictions",
-    "title": "Week 3: Finding and Framing Data",
-    "section": "Hypotheses = Design Predictions",
-    "text": "Hypotheses = Design Predictions\n\nHypotheses are your specific, testable design theories:\n\n“Increasing window area by 40% on the south facade will increase study time in the library by 25% during winter months”\n“Adding 15-foot wide covered walkways around the plaza perimeter will triple foot traffic during rainy seasons”\n“Neighborhoods with continuous street walls and 8-foot wide sidewalks will have 3x more pedestrian activity than those with setback buildings and 4-foot sidewalks”",
-    "crumbs": [
-      "Home",
-      "Weekly Content",
-      "W3: Planning a Test"
-    ]
-  },
-  {
-    "objectID": "weeks/week-03.html#hot-take-assumption-audit-prepare-for-3min",
-    "href": "weeks/week-03.html#hot-take-assumption-audit-prepare-for-3min",
-    "title": "Week 3: Finding and Framing Data",
-    "section": "Hot take: Assumption Audit (prepare for 3min)",
-    "text": "Hot take: Assumption Audit (prepare for 3min)\nExamine a person’s A1 claim:\nResearch Question: What exactly are you testing?\nHypotheses: What do you predict will happen?\nHidden Assumptions: What are you taking for granted?\nMethods: How will you conduct the test?\nAnalysis Plan: How will you interpret results?\nSuccess Criteria: What results would support/refute your claim?\nLimitations: What factors might affect validity?\nTime: 10 minutes per person (20 minutes total)\n\nSpeaker Cheat Sheet:\n\nPair students with different project types if possible\nCirculate and listen - jump in if conversations stall\n“Hidden assumptions” is the hardest part - help students dig deeper\nCommon assumptions: “Users will behave rationally,” “Weather will be typical,” “Materials perform as specified”\nIf pairs finish early, have them switch to another pair\nSave last 5 minutes for large group insights\n\n\nGuiding questions to share with pairs:\n\n“What are you assuming about user behavior?”\n“What could make your test completely wrong?”\n“What external factors could mess up your results?”",
-    "crumbs": [
-      "Home",
-      "Weekly Content",
-      "W3: Planning a Test"
-    ]
-  },
-  {
-    "objectID": "weeks/week-03.html#hot-take-assumption-audit",
-    "href": "weeks/week-03.html#hot-take-assumption-audit",
-    "title": "Week 3: Finding and Framing Data",
-    "section": "Hot take: Assumption Audit",
-    "text": "Hot take: Assumption Audit\nExamine a person’s A1 claim:\nResearch Question: What exactly are you testing?\nHypotheses: What do you predict will happen?\nHidden Assumptions: What are you taking for granted?\nMethods: How will you conduct the test?\nAnalysis Plan: How will you interpret results?\nSuccess Criteria: What results would support/refute your claim?\nLimitations: What factors might affect validity?\nTime: 10 minutes per person (20 minutes total)\n\nSpeaker Cheat Sheet:\n\nPair students with different project types if possible\nCirculate and listen - jump in if conversations stall\n“Hidden assumptions” is the hardest part - help students dig deeper\nCommon assumptions: “Users will behave rationally,” “Weather will be typical,” “Materials perform as specified”\nIf pairs finish early, have them switch to another pair\nSave last 5 minutes for large group insights\n\n\nGuiding questions to share with pairs:\n\n“What are you assuming about user behavior?”\n“What could make your test completely wrong?”\n“What external factors could mess up your results?”",
-    "crumbs": [
-      "Home",
-      "Weekly Content",
-      "W3: Planning a Test"
-    ]
-  },
-  {
-    "objectID": "weeks/week-03.html#simulation-best-practices",
-    "href": "weeks/week-03.html#simulation-best-practices",
-    "title": "Week 3: Finding and Framing Data",
-    "section": "Simulation Best Practices",
-    "text": "Simulation Best Practices\nStart simple:\n\nUse default values for secondary parameters\nFocus on key design variables\nValidate with known cases\n\nDocument everything:\n\nModel assumptions and simplifications\nInput parameter sources\nVersion numbers and settings",
-    "crumbs": [
-      "Home",
-      "Weekly Content",
-      "W3: Planning a Test"
+      "W4: Sensitivity & Peer Check"
     ]
   }
 ]
