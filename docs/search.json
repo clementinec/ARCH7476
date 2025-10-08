@@ -3678,5 +3678,362 @@
       "Weekly Content",
       "W4: Sensitivity & Peer Check"
     ]
+  },
+  {
+    "objectID": "weeks/interlab.html#welcome-to-the-lab",
+    "href": "weeks/interlab.html#welcome-to-the-lab",
+    "title": "Interactive Lab Sessions",
+    "section": "Welcome to the Lab!",
+    "text": "Welcome to the Lab!\nToday’s Mission: Transform your pilot struggles into research superpowers\nWhat we’re doing:\n\n🔧 Troubleshooting Stations (rotating)\n📝 Method Iteration Workshop\n📊 Data Analysis Preview Lab\n📄 Documentation Sprint\n💬 Stakeholder Communication Exercise\n🎯 Failure Analysis Framework\n\nTotal time: ~2 hours | Your role: Active participant, not passive listener"
+  },
+  {
+    "objectID": "weeks/interlab.html#troubleshooting-stations-overview",
+    "href": "weeks/interlab.html#troubleshooting-stations-overview",
+    "title": "Interactive Lab Sessions",
+    "section": "🔧 Troubleshooting Stations: Overview",
+    "text": "🔧 Troubleshooting Stations: Overview\nThe concept: Rotating 15-minute problem-solving sessions\nFour stations:\n\nStation A: Software & Simulation Debugging\nStation B: Data Collection Challenges\nStation C: Analysis & Interpretation Issues\nStation D: Scope & Feasibility Reality Check"
+  },
+  {
+    "objectID": "weeks/interlab.html#how-troubleshooting-stations-work",
+    "href": "weeks/interlab.html#how-troubleshooting-stations-work",
+    "title": "Interactive Lab Sessions",
+    "section": "How Troubleshooting Stations Work",
+    "text": "How Troubleshooting Stations Work\nBefore you rotate:\n\nChoose the station that matches your biggest challenge\nBring your laptop/notes/error messages\nBe ready to explain your problem in 2 minutes"
+  },
+  {
+    "objectID": "weeks/interlab.html#example-software-debugging-station",
+    "href": "weeks/interlab.html#example-software-debugging-station",
+    "title": "Interactive Lab Sessions",
+    "section": "Example: Software Debugging Station",
+    "text": "Example: Software Debugging Station\nStudent A: “My Rhino Grasshopper keeps crashing when I run daylighting analysis”\nGroup response:\n\nCheck file size - maybe too many surfaces?\nTry simpler geometry first\nExport to other tools (ClimateStudio, DIVA)?\nShare working example files\n\nOutcome: Three alternative approaches, one working example file shared"
+  },
+  {
+    "objectID": "weeks/interlab.html#station-guide-keep-this-visible",
+    "href": "weeks/interlab.html#station-guide-keep-this-visible",
+    "title": "Interactive Lab Sessions",
+    "section": "🔧 Station Guide: Keep This Visible!",
+    "text": "🔧 Station Guide: Keep This Visible!\n\n\n\nTroubleshooting Station Protocol\n\n\nYour 15 minutes:\n\nProblem statement (2 min): What breaks? When? Error messages?\nContext sharing (2 min): What have you tried? What works elsewhere?\nBrainstorm solutions (8 min):\n\nNo idea is too simple\nShare similar experiences\nTry solutions live if possible\n\nDocument outcomes (3 min):\n\nWhat worked?\nWhat to try next?\nWho can help further?\n\n\nStuck? Call instructor over for expert intervention"
+  },
+  {
+    "objectID": "weeks/interlab.html#method-iteration-workshop-overview",
+    "href": "weeks/interlab.html#method-iteration-workshop-overview",
+    "title": "Interactive Lab Sessions",
+    "section": "📝 Method Iteration Workshop: Overview",
+    "text": "📝 Method Iteration Workshop: Overview\nThe challenge: Your pilot revealed problems - now what?\nThe activity: Structured revision of your research design"
+  },
+  {
+    "objectID": "weeks/interlab.html#method-iteration-framework",
+    "href": "weeks/interlab.html#method-iteration-framework",
+    "title": "Interactive Lab Sessions",
+    "section": "Method Iteration Framework",
+    "text": "Method Iteration Framework\nUse this template:\n\n\n\n\n\n\n\n\n\n\nAspect\nOriginal Plan\nPilot Reality\nRevised Approach\nWhy This Works Better\n\n\n\n\nData source\n\n\n\n\n\n\nSample size\n\n\n\n\n\n\nTools/software\n\n\n\n\n\n\nTimeline\n\n\n\n\n\n\nAnalysis method\n\n\n\n\n\n\n\nThe magic: Making implicit learning explicit"
+  },
+  {
+    "objectID": "weeks/interlab.html#example-method-iteration-in-action",
+    "href": "weeks/interlab.html#example-method-iteration-in-action",
+    "title": "Interactive Lab Sessions",
+    "section": "Example: Method Iteration in Action",
+    "text": "Example: Method Iteration in Action\nOriginal plan: Survey 50 building occupants about thermal comfort\nPilot reality: Got 3 responses after 1 week of emails"
+  },
+  {
+    "objectID": "weeks/interlab.html#workshop-guide-keep-this-visible",
+    "href": "weeks/interlab.html#workshop-guide-keep-this-visible",
+    "title": "Interactive Lab Sessions",
+    "section": "📝 Workshop Guide: Keep This Visible!",
+    "text": "📝 Workshop Guide: Keep This Visible!\n\n\n\nMethod Iteration Protocol\n\n\nStep 1: Individual reflection (15 min)\n\nFill out the Before/After/Revised table\nBe brutally honest about what didn’t work\nConsider 2-3 alternatives for each problem\n\nStep 2: Peer review pairs (15 min)\n\nExchange tables with a partner\nChallenge each other: “But what if…?”\nSuggest alternatives they might not see\n\nStep 3: Finalize (5 min)\n\nIntegrate feedback\nHighlight biggest changes\nFlag anything still uncertain\n\nOutput: Revised research design for A3 Part 2"
+  },
+  {
+    "objectID": "weeks/interlab.html#data-analysis-preview-lab-overview",
+    "href": "weeks/interlab.html#data-analysis-preview-lab-overview",
+    "title": "Interactive Lab Sessions",
+    "section": "📊 Data Analysis Preview Lab: Overview",
+    "text": "📊 Data Analysis Preview Lab: Overview\nThe fear: “I have data… now what?”\nThe solution: Hands-on practice with analysis tools"
+  },
+  {
+    "objectID": "weeks/interlab.html#sample-dataset-office-thermal-comfort",
+    "href": "weeks/interlab.html#sample-dataset-office-thermal-comfort",
+    "title": "Interactive Lab Sessions",
+    "section": "Sample Dataset: Office Thermal Comfort",
+    "text": "Sample Dataset: Office Thermal Comfort\nWe’ll analyze: Temperature, humidity, and satisfaction ratings from 30 office workers\nQuestions we’ll answer:\n\nDoes temperature correlate with satisfaction?\nIs there a significant difference between morning vs. afternoon comfort?\nWhat’s the confidence interval for average satisfaction?\nHow do we visualize this uncertainty?"
+  },
+  {
+    "objectID": "weeks/interlab.html#analysis-walkthrough-the-big-picture",
+    "href": "weeks/interlab.html#analysis-walkthrough-the-big-picture",
+    "title": "Interactive Lab Sessions",
+    "section": "Analysis Walkthrough: The Big Picture",
+    "text": "Analysis Walkthrough: The Big Picture\nRaw Data → Descriptive Stats → Statistical Tests → Visualizations\n    ↓              ↓                   ↓                ↓\n  CSV file    Mean, SD, Range    t-test, r-value    Charts with\n  30 rows     Quartiles          p-values           error bars\nWe’ll do each step together, then you practice on your data"
+  },
+  {
+    "objectID": "weeks/interlab.html#example-creating-uncertainty-visualizations",
+    "href": "weeks/interlab.html#example-creating-uncertainty-visualizations",
+    "title": "Interactive Lab Sessions",
+    "section": "Example: Creating Uncertainty Visualizations",
+    "text": "Example: Creating Uncertainty Visualizations\nQuestion: What’s the average satisfaction rating?\nBad answer: “7.2”\nGood answer: “7.2 ± 0.8 (95% CI: 6.4-8.0)”"
+  },
+  {
+    "objectID": "weeks/interlab.html#analysis-lab-guide-keep-this-visible",
+    "href": "weeks/interlab.html#analysis-lab-guide-keep-this-visible",
+    "title": "Interactive Lab Sessions",
+    "section": "📊 Analysis Lab Guide: Keep This Visible!",
+    "text": "📊 Analysis Lab Guide: Keep This Visible!\n\n\n\nData Analysis Checklist\n\n\nPart 1: Descriptive statistics (10 min)\n\nCalculate mean, median, standard deviation\nIdentify outliers and data quality issues\nCheck sample sizes and missing data\nCreate basic histograms/scatter plots\n\nPart 2: Statistical tests (10 min)\n\nChoose appropriate test for your question\nRun test and interpret p-values\nCalculate effect sizes and confidence intervals\nDocument assumptions and limitations\n\nPart 3: Visualization (10 min)\n\nCreate charts with error bars\nLabel axes clearly with units\nAdd sample sizes and confidence levels\nExport publication-ready versions\n\nInstructor available for: Software questions, test selection, interpretation help"
+  },
+  {
+    "objectID": "weeks/interlab.html#documentation-sprint-overview",
+    "href": "weeks/interlab.html#documentation-sprint-overview",
+    "title": "Interactive Lab Sessions",
+    "section": "📄 Documentation Sprint: Overview",
+    "text": "📄 Documentation Sprint: Overview\nThe problem: “I know what I did, but can’t explain it clearly”\nThe solution: Structured documentation protocol"
+  },
+  {
+    "objectID": "weeks/interlab.html#documentation-template-structure",
+    "href": "weeks/interlab.html#documentation-template-structure",
+    "title": "Interactive Lab Sessions",
+    "section": "Documentation Template Structure",
+    "text": "Documentation Template Structure\nSection 1: Overview (2-3 sentences)\n\nWhat are you measuring/analyzing?\nWhy this method?\n\nSection 2: Step-by-Step Protocol\n\nExact procedures with screenshots/diagrams\nSoftware settings and parameters\nDecision points and alternative paths"
+  },
+  {
+    "objectID": "weeks/interlab.html#example-documentation-that-works",
+    "href": "weeks/interlab.html#example-documentation-that-works",
+    "title": "Interactive Lab Sessions",
+    "section": "Example: Documentation That Works",
+    "text": "Example: Documentation That Works\nBad documentation: &gt; “I used Grasshopper to analyze daylighting. I set up the model and ran simulations.”\nGood documentation: &gt; “Daylighting Analysis Protocol &gt; &gt; 1. Import geometry to Rhino 7 (File → Import → .3dm) &gt; 2. Assign material properties using Honeybee materials library &gt; - Walls: Concrete (ρ=0.4) &gt; - Glazing: Double clear (τ=0.7) &gt; 3. Set up DIVA daylight simulation &gt; - Sky model: CIE overcast &gt; - Grid resolution: 0.5m &gt; - Analysis plane: 0.75m height (desk level) &gt; 4. Run simulation (expect 5-10 min for 50m² space) &gt; 5. Export results to CSV for analysis &gt; &gt; Common issues: &gt; - Simulation crashes: Reduce grid resolution to 1m &gt; - Results seem wrong: Check north direction and material assignments”"
+  },
+  {
+    "objectID": "weeks/interlab.html#peer-testing-your-documentation",
+    "href": "weeks/interlab.html#peer-testing-your-documentation",
+    "title": "Interactive Lab Sessions",
+    "section": "Peer Testing Your Documentation",
+    "text": "Peer Testing Your Documentation\nPartner exchange (10 min):\n\nSwap documentation with someone who uses different methods\nTry to follow their protocol without asking questions\nNote anywhere you get confused or stuck"
+  },
+  {
+    "objectID": "weeks/interlab.html#documentation-sprint-guide-keep-this-visible",
+    "href": "weeks/interlab.html#documentation-sprint-guide-keep-this-visible",
+    "title": "Interactive Lab Sessions",
+    "section": "📄 Documentation Sprint Guide: Keep This Visible!",
+    "text": "📄 Documentation Sprint Guide: Keep This Visible!\n\n\n\nDocumentation Quality Checklist\n\n\nCompleteness test:\n\nCould a classmate replicate this without asking you questions?\nAre all software versions and settings specified?\nAre data sources and access methods clear?\nIs expected time/difficulty indicated?\n\nTroubleshooting test:\n\nCommon errors documented with solutions?\nWarning signs of problems identified?\nQuality control checks specified?\nKnown limitations acknowledged?\n\nUsability test:\n\nScreenshots or diagrams for complex steps?\nClear section headings and numbering?\nTechnical terms defined or linked?\nContact info for questions?\n\nPeer review: Have someone unfamiliar try to follow it"
+  },
+  {
+    "objectID": "weeks/interlab.html#stakeholder-communication-overview",
+    "href": "weeks/interlab.html#stakeholder-communication-overview",
+    "title": "Interactive Lab Sessions",
+    "section": "💬 Stakeholder Communication: Overview",
+    "text": "💬 Stakeholder Communication: Overview\nThe disconnect: You understand your pilot findings… but will your stakeholders?\nThe activity: Translate technical results into stakeholder-friendly formats"
+  },
+  {
+    "objectID": "weeks/interlab.html#the-translation-challenge",
+    "href": "weeks/interlab.html#the-translation-challenge",
+    "title": "Interactive Lab Sessions",
+    "section": "The Translation Challenge",
+    "text": "The Translation Challenge\nTechnical version: &gt; “Pilot study revealed 23% variation in daylighting performance (σ=45 lux) across tested orientations, with south-facing conditions exceeding targets by 1.3 standard deviations (p&lt;0.05).”\nStakeholder version: &gt; “South-facing spaces get significantly more natural light than other orientations - enough that we may need blinds to prevent glare. North-facing spaces would need supplemental electric lighting.”\nThe shift: From proving you’re smart → helping others make decisions"
+  },
+  {
+    "objectID": "weeks/interlab.html#stakeholder-personas-exercise",
+    "href": "weeks/interlab.html#stakeholder-personas-exercise",
+    "title": "Interactive Lab Sessions",
+    "section": "Stakeholder Personas Exercise",
+    "text": "Stakeholder Personas Exercise\nPick your stakeholder:\n\n🏢 Building owner - cares about costs and property value\n👥 End users - care about comfort and usability\n🌱 Sustainability consultant - cares about environmental metrics\n🔨 Contractor - cares about constructability and schedule\n🏛️ Planning board - cares about compliance and community impact\n\nCreate 1-slide summary customized for their priorities"
+  },
+  {
+    "objectID": "weeks/interlab.html#one-slide-summary-template",
+    "href": "weeks/interlab.html#one-slide-summary-template",
+    "title": "Interactive Lab Sessions",
+    "section": "One-Slide Summary Template",
+    "text": "One-Slide Summary Template\n\n\n\nProject Name: Pilot Findings\n\n\nWhat we tested: [One sentence in plain language]\nKey findings: [3 bullet points, no jargon] 1. Finding 1 with practical implication 2. Finding 2 with practical implication 3. Finding 3 with practical implication\nWhat this means for you: [Stakeholder-specific takeaway]\nNext steps: [What you’ll do next, what you need from them]\nQuestions? [Your contact info]"
+  },
+  {
+    "objectID": "weeks/interlab.html#communication-guide-keep-this-visible",
+    "href": "weeks/interlab.html#communication-guide-keep-this-visible",
+    "title": "Interactive Lab Sessions",
+    "section": "💬 Communication Guide: Keep This Visible!",
+    "text": "💬 Communication Guide: Keep This Visible!\n\n\n\nStakeholder Communication Protocol\n\n\nStep 1: Know your audience (5 min)\n\nWho are they? What do they care about?\nWhat decisions do they need to make?\nWhat’s their technical background?\n\nStep 2: Create 1-slide summary (10 min)\n\nUse template provided\nNo jargon unless defined\nFocus on implications, not methods\nInclude clear visuals if possible\n\nStep 3: Peer review (5 min each)\n\nPartner plays stakeholder role\nRead aloud without additional explanation\nPartner identifies: “I understood ” and ”I’m confused about ”\n\nStep 4: Revise (5 min)\n\nSimplify confusing parts\nAdd missing context\nMake action items clearer\n\nTest: Could your non-architect friend understand this?"
+  },
+  {
+    "objectID": "weeks/interlab.html#failure-analysis-framework-overview",
+    "href": "weeks/interlab.html#failure-analysis-framework-overview",
+    "title": "Interactive Lab Sessions",
+    "section": "🎯 Failure Analysis Framework: Overview",
+    "text": "🎯 Failure Analysis Framework: Overview\nThe mindset shift: From “what went wrong” → “what could still go wrong”\nThe activity: Pre-mortem thinking for A4"
+  },
+  {
+    "objectID": "weeks/interlab.html#pre-mortem-exercise",
+    "href": "weeks/interlab.html#pre-mortem-exercise",
+    "title": "Interactive Lab Sessions",
+    "section": "Pre-Mortem Exercise",
+    "text": "Pre-Mortem Exercise\nImagine it’s Week 12. Your A4 project failed. Why?\nCommon failure modes:\n\n🚫 Couldn’t get the data you needed\n💥 Software crashed repeatedly\n⏰ Ran out of time for analysis\n🤷 Results made no sense\n📉 Quality too low to be credible\n🎯 Answered wrong question\n\nFor each potential failure: What would cause it? How can you prevent it?"
+  },
+  {
+    "objectID": "weeks/interlab.html#risk-register-template",
+    "href": "weeks/interlab.html#risk-register-template",
+    "title": "Interactive Lab Sessions",
+    "section": "Risk Register Template",
+    "text": "Risk Register Template\n\n\n\n\n\n\n\n\n\n\n\nRisk\nLikelihood\nImpact\nWarning Signs\nPrevention\nBackup Plan\n\n\n\n\nData access denied\nMedium\nHigh\nNo response to emails\nContact multiple sources\nUse public datasets\n\n\nSoftware too complex\nHigh\nMedium\nPilot took 8+ hours\nFind simpler tools\nManual calculations\n\n\nResults unclear\nLow\nHigh\nHigh variability\nRun quality checks\nConsult with expert\n\n\n\nThe goal: Plan B (and C, and D) ready before you need them"
+  },
+  {
+    "objectID": "weeks/interlab.html#contingency-planning",
+    "href": "weeks/interlab.html#contingency-planning",
+    "title": "Interactive Lab Sessions",
+    "section": "Contingency Planning",
+    "text": "Contingency Planning\nFor each major risk, develop:\nPrevention strategy: What can you do NOW to reduce likelihood?\nEarly warning system: How will you know it’s becoming a problem?\nBackup plan: What’s your alternative if prevention fails?\nDecision trigger: At what point do you switch to Plan B?"
+  },
+  {
+    "objectID": "weeks/interlab.html#example-contingency-in-action",
+    "href": "weeks/interlab.html#example-contingency-in-action",
+    "title": "Interactive Lab Sessions",
+    "section": "Example: Contingency in Action",
+    "text": "Example: Contingency in Action\nRisk: Survey responses too low for analysis\nPrevention:\n\nOffer incentives\nPartner with building manager\nIn-person recruitment"
+  },
+  {
+    "objectID": "weeks/interlab.html#failure-analysis-guide-keep-this-visible",
+    "href": "weeks/interlab.html#failure-analysis-guide-keep-this-visible",
+    "title": "Interactive Lab Sessions",
+    "section": "🎯 Failure Analysis Guide: Keep This Visible!",
+    "text": "🎯 Failure Analysis Guide: Keep This Visible!\n\n\n\nPre-Mortem Protocol\n\n\nStep 1: Brainstorm failure modes (5 min)\n\nList everything that could go wrong\nBe pessimistic - this is the time for it\nConsider data, tools, time, skills, access\n\nStep 2: Risk assessment (8 min)\n\nRate each risk: Likelihood (H/M/L) × Impact (H/M/L)\nFocus on High Impact risks first\nIdentify early warning signs\n\nStep 3: Contingency planning (7 min)\n\nFor top 3-5 risks, develop backup plans\nMake plans specific and actionable\nSet decision triggers\n\nStep 4: Peer challenge (10 min)\n\nPartner reviews your risks: “What about…?”\nPressure-test your contingencies\nAdd overlooked risks\n\nOutput: Risk register to include in A3 Part 2"
+  },
+  {
+    "objectID": "weeks/interlab.html#what-youve-accomplished-today",
+    "href": "weeks/interlab.html#what-youve-accomplished-today",
+    "title": "Interactive Lab Sessions",
+    "section": "What You’ve Accomplished Today",
+    "text": "What You’ve Accomplished Today\nSix powerful tools:\n\n🔧 Troubleshooting network - you’re not alone in problems\n📝 Revised methods - learning from pilot integrated\n📊 Analysis confidence - you can handle your data\n📄 Replicable protocols - others can follow your work\n💬 Clear communication - stakeholders understand findings\n🎯 Risk management - ready for challenges ahead\n\nMost importantly: You’ve transformed from “pilot failed” → “pilot taught me”"
+  },
+  {
+    "objectID": "weeks/interlab.html#integration-using-these-tools-in-a3",
+    "href": "weeks/interlab.html#integration-using-these-tools-in-a3",
+    "title": "Interactive Lab Sessions",
+    "section": "Integration: Using These Tools in A3",
+    "text": "Integration: Using These Tools in A3\nIn your A3 Part 2 (Pilot Results), include:\n\nRevised method from Station 2\nDocumentation protocol from Station 4\nRisk register from Station 6\nExample stakeholder communication from Station 5"
+  },
+  {
+    "objectID": "weeks/interlab.html#looking-ahead-a4-success",
+    "href": "weeks/interlab.html#looking-ahead-a4-success",
+    "title": "Interactive Lab Sessions",
+    "section": "Looking Ahead: A4 Success",
+    "text": "Looking Ahead: A4 Success\nYou’re now prepared for:\n\nFull data collection with realistic expectations\nAnalysis with tools you’ve practiced\nDocumentation others can replicate\nCommunication stakeholders can understand\nBackup plans when things go sideways"
+  },
+  {
+    "objectID": "weeks/interlab.html#final-reflections",
+    "href": "weeks/interlab.html#final-reflections",
+    "title": "Interactive Lab Sessions",
+    "section": "Final Reflections",
+    "text": "Final Reflections\nThink about:\n\nWhich station challenged you most? Why?\nWhat’s one specific change you’ll make to your A4 approach?\nWhat backup plan makes you feel most prepared?\nWho can you partner with for mutual support?\n\nShare one takeaway with a neighbor"
+  },
+  {
+    "objectID": "weeks/interlab.html#questions-concerns-aha-moments",
+    "href": "weeks/interlab.html#questions-concerns-aha-moments",
+    "title": "Interactive Lab Sessions",
+    "section": "Questions? Concerns? Aha Moments?",
+    "text": "Questions? Concerns? Aha Moments?\nOffice hours this week:\n\nMethod revision review\nAnalysis tool support\nDocumentation feedback\nRisk assessment reality check\n\nYou’ve got this. The pilot taught you what you needed to know."
+  },
+  {
+    "objectID": "weeks/interlab.html#section",
+    "href": "weeks/interlab.html#section",
+    "title": "Interactive Lab Sessions",
+    "section": "",
+    "text": "Now go make A4 amazing!\n\nEnd with encouraging GIF of someone confidently working/succeeding - you can replace the URL with a preferred gif"
+  },
+  {
+    "objectID": "weeks/interlab.html#troubleshooting-stations-overview-cont.",
+    "href": "weeks/interlab.html#troubleshooting-stations-overview-cont.",
+    "title": "Interactive Lab Sessions",
+    "section": "🔧 Troubleshooting Stations: Overview (cont.)",
+    "text": "🔧 Troubleshooting Stations: Overview (cont.)\nYou’ll visit 2-3 stations based on your needs"
+  },
+  {
+    "objectID": "weeks/interlab.html#how-troubleshooting-stations-work-cont.",
+    "href": "weeks/interlab.html#how-troubleshooting-stations-work-cont.",
+    "title": "Interactive Lab Sessions",
+    "section": "How Troubleshooting Stations Work (cont.)",
+    "text": "How Troubleshooting Stations Work (cont.)\nAt the station (15 min):\n\nQuick introductions (2 min)\nProblem presentations (1-2 min each person)\nGroup brainstorming (remaining time)\nDocument solutions\n\nBell rings: Rotate to next station or stay if solving something"
+  },
+  {
+    "objectID": "weeks/interlab.html#method-iteration-workshop-what-youll-create",
+    "href": "weeks/interlab.html#method-iteration-workshop-what-youll-create",
+    "title": "Interactive Lab Sessions",
+    "section": "📝 Method Iteration Workshop: What You’ll Create",
+    "text": "📝 Method Iteration Workshop: What You’ll Create\nWhat you’ll create:\n\nBefore/After comparison of your method\nJustification for each change\nRisk assessment for revised approach\n\nTime: 20-25 minutes individual work + 15 minutes peer feedback"
+  },
+  {
+    "objectID": "weeks/interlab.html#example-method-iteration-in-action-cont.",
+    "href": "weeks/interlab.html#example-method-iteration-in-action-cont.",
+    "title": "Interactive Lab Sessions",
+    "section": "Example: Method Iteration in Action (cont.)",
+    "text": "Example: Method Iteration in Action (cont.)\nRevised approach:\n\nIn-person intercept surveys (15 responses target)\nPartner with building manager for introduction\nOffer coffee gift cards as incentive\nBackup: Observation study if survey fails\n\nWhy better: Realistic, has backup, addresses engagement problem"
+  },
+  {
+    "objectID": "weeks/interlab.html#data-analysis-preview-lab-what-well-do",
+    "href": "weeks/interlab.html#data-analysis-preview-lab-what-well-do",
+    "title": "Interactive Lab Sessions",
+    "section": "📊 Data Analysis Preview Lab: What We’ll Do",
+    "text": "📊 Data Analysis Preview Lab: What We’ll Do\nWhat we’ll do:\n\nWork through a sample dataset together\nPractice basic statistical tests (t-tests, correlation, regression)\nCreate uncertainty visualizations (error bars, confidence intervals)\nUse tools you already have (Excel/Google Sheets)\n\nGoal: Confidence, not mastery"
+  },
+  {
+    "objectID": "weeks/interlab.html#sample-dataset-logistics",
+    "href": "weeks/interlab.html#sample-dataset-logistics",
+    "title": "Interactive Lab Sessions",
+    "section": "Sample Dataset: Logistics",
+    "text": "Sample Dataset: Logistics\nTools: Excel (or Google Sheets if you prefer)\nTime: 30 minutes guided tutorial"
+  },
+  {
+    "objectID": "weeks/interlab.html#example-creating-uncertainty-visualizations-cont.",
+    "href": "weeks/interlab.html#example-creating-uncertainty-visualizations-cont.",
+    "title": "Interactive Lab Sessions",
+    "section": "Example: Creating Uncertainty Visualizations (cont.)",
+    "text": "Example: Creating Uncertainty Visualizations (cont.)\nGreat answer: Chart showing:\n\nMean value (7.2)\nStandard error bars\nIndividual data points\nSample size noted\n\nWe’ll create all three versions together"
+  },
+  {
+    "objectID": "weeks/interlab.html#documentation-sprint-what-youll-create",
+    "href": "weeks/interlab.html#documentation-sprint-what-youll-create",
+    "title": "Interactive Lab Sessions",
+    "section": "📄 Documentation Sprint: What You’ll Create",
+    "text": "📄 Documentation Sprint: What You’ll Create\nWhat you’ll create:\n\nStep-by-step methods someone else could follow\nTroubleshooting guide for common problems\nResource list (tools, data sources, skills needed)\nQuality control checklist\n\nTime: 25 minutes writing + 10 minutes peer testing"
+  },
+  {
+    "objectID": "weeks/interlab.html#documentation-template-structure-cont.",
+    "href": "weeks/interlab.html#documentation-template-structure-cont.",
+    "title": "Interactive Lab Sessions",
+    "section": "Documentation Template Structure (cont.)",
+    "text": "Documentation Template Structure (cont.)\nSection 3: Troubleshooting\n\nCommon errors and solutions\nWarning signs of problems\nWhen to start over vs. fix\n\nSection 4: Resources\n\nRequired tools (with versions)\nData sources and access\nTime and skill requirements"
+  },
+  {
+    "objectID": "weeks/interlab.html#peer-testing-your-documentation-cont.",
+    "href": "weeks/interlab.html#peer-testing-your-documentation-cont.",
+    "title": "Interactive Lab Sessions",
+    "section": "Peer Testing Your Documentation (cont.)",
+    "text": "Peer Testing Your Documentation (cont.)\nFeedback format:\n\n✅ Clear and complete steps\n❓ Where I got confused\n💡 Suggestions for improvement\n\nOutcome: Documentation others can actually use"
+  },
+  {
+    "objectID": "weeks/interlab.html#stakeholder-communication-what-youll-create",
+    "href": "weeks/interlab.html#stakeholder-communication-what-youll-create",
+    "title": "Interactive Lab Sessions",
+    "section": "💬 Stakeholder Communication: What You’ll Create",
+    "text": "💬 Stakeholder Communication: What You’ll Create\nWhat you’ll create:\n\n1-slide summary for non-technical audience\nEmail update for project stakeholders\n3 key findings in plain language\nNext steps stakeholders can understand\n\nTime: 20 minutes creation + 15 minutes peer feedback"
+  },
+  {
+    "objectID": "weeks/interlab.html#failure-analysis-framework-what-youll-create",
+    "href": "weeks/interlab.html#failure-analysis-framework-what-youll-create",
+    "title": "Interactive Lab Sessions",
+    "section": "🎯 Failure Analysis Framework: What You’ll Create",
+    "text": "🎯 Failure Analysis Framework: What You’ll Create\nWhat you’ll create:\n\nRisk register of potential problems\nContingency plans for each risk\nEarly warning signs to watch for\nDecision tree for when to pivot\n\nTime: 20 minutes individual + 10 minutes peer challenge"
+  },
+  {
+    "objectID": "weeks/interlab.html#example-contingency-in-action-cont.",
+    "href": "weeks/interlab.html#example-contingency-in-action-cont.",
+    "title": "Interactive Lab Sessions",
+    "section": "Example: Contingency in Action (cont.)",
+    "text": "Example: Contingency in Action (cont.)\nEarly warning: Fewer than 5 responses in first week\nBackup plan: Shift to observation study or expert interviews\nDecision trigger: If &lt;10 responses by Week 8, activate backup\nOutcome: Confident, not panicking, when challenges emerge"
+  },
+  {
+    "objectID": "weeks/interlab.html#integration-using-these-tools-in-a3-cont.",
+    "href": "weeks/interlab.html#integration-using-these-tools-in-a3-cont.",
+    "title": "Interactive Lab Sessions",
+    "section": "Integration: Using These Tools in A3 (cont.)",
+    "text": "Integration: Using These Tools in A3 (cont.)\nThese aren’t extra work - they’re evidence of your learning!"
+  },
+  {
+    "objectID": "weeks/interlab.html#looking-ahead-a4-success-cont.",
+    "href": "weeks/interlab.html#looking-ahead-a4-success-cont.",
+    "title": "Interactive Lab Sessions",
+    "section": "Looking Ahead: A4 Success (cont.)",
+    "text": "Looking Ahead: A4 Success (cont.)\nThe research spiral:\nPlan → Test → Learn → Revise → Execute with confidence"
   }
 ]

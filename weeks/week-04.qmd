@@ -8,6 +8,8 @@ format:
     slide-number: true
     incremental: true
     center: true
+    width: 1600
+    height: 1200
 ---
 
 ## Today's Agenda
@@ -576,6 +578,8 @@ This scenario plays out repeatedly in community-facing projects: Architects cond
 - Do you know what evidence would convince them?
 - Have you planned concrete engagement activities?
 
+---
+
 **Measurement specificity:**
 
 - Can you measure what you claim to be testing?
@@ -608,11 +612,21 @@ This scenario plays out repeatedly in community-facing projects: Architects cond
 - Shows uncertainty around point estimates
 - Good for comparing multiple alternatives
 
+  <span class="tooltip-image">
+    ![](https://data.europa.eu/apps/data-visualisation-guide/Visualising%20uncertainty%208aa5c9e663864767aaa41986a5a6f96c/bars-with-error-bars.png)
+  </span>
+
+---
+
 **Box plots:**
 
 - Shows distribution shape, outliers, quartiles
 - Good for comparing groups or conditions
 - Reveals data quality issues
+<span class="tooltip-image">
+![](https://www.simplypsychology.org/wp-content/uploads/box-whisker-plot.jpg)</span>
+
+---
 
 **Scatter plots with trend lines:**
 
@@ -620,6 +634,10 @@ This scenario plays out repeatedly in community-facing projects: Architects cond
 - Confidence bands around regression lines
 - Individual data points visible
 
+<span class="tooltip-image">
+![](https://i.sstatic.net/xGqew.png){width=45%}
+![](https://r-charts.com/en/correlation/scatter-plot-regression-line_files/figure-html/smooth-regression.png){width=33%}
+</span>
 ---
 
 ### Scenario Visualization
@@ -629,12 +647,19 @@ This scenario plays out repeatedly in community-facing projects: Architects cond
 - Shows impact of different parameter assumptions
 - Horizontal bars showing sensitivity ranges
 - Quick identification of key variables
+<span class="tooltip-image">
+  ![](https://zebrabi.com/wp-content/uploads/2015/05/Population-pyramid-Slovenia-1951-2013-2053.png){width=100%}
+</span>
+
+---
 
 **Scenario comparison charts:**
 
 - Best case, base case, worst case outcomes
 - Multiple bars or lines for different assumptions
 - Clear labeling of scenario definitions
+- Example Scenario Chart: Fig SPM1(a) from AR6 Synthesis Report, Climate Change 2023
+![](extentscenarios.png)
 
 ---
 
@@ -667,6 +692,7 @@ This scenario plays out repeatedly in community-facing projects: Architects cond
 - Vary two parameters simultaneously
 - Use conditional formatting for heat maps
 - Identify interaction effects
+- Give it a try at [Geekforgeeks](https://www.geeksforgeeks.org/excel/how-to-create-a-two-variable-data-table-in-excel/)
 
 ---
 
