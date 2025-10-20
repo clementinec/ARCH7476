@@ -215,6 +215,17 @@ Each assignment builds directly on the previous one
 
 ---
 
+### Optional: Python Primer
+
+Interested in coding? Try the beginner notebooks:
+
+- Python + ML Basics — `notebooks/01_python_ml_basics.ipynb`
+- Architecture Viz + Analysis — `notebooks/02_arch_viz_analysis.ipynb`
+
+Open in Jupyter (see Resources for setup). These use fake datasets you can later swap with your own.
+
+---
+
 ## Tools and Technology
 
 ---

@@ -33,6 +33,43 @@ format:
 
 ---
 
+# Python Primer Notebooks (Optional)
+
+Two beginner-friendly notebooks with fake datasets you can run locally:
+
+- Python + ML Basics: `notebooks/01_python_ml_basics.ipynb`
+- Architecture Viz + Analysis: `notebooks/02_arch_viz_analysis.ipynb`
+
+Quick start (terminal):
+
+1) Create environment and install packages
+
+```bash
+# From repo root
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+2) Launch Jupyter Lab/Notebook and open the files under `notebooks/`
+
+```bash
+jupyter lab
+# or
+jupyter notebook
+```
+
+Notes:
+- Fake CSVs live in `data/`. Replace with your data using the same column names to reuse code.
+- The word cloud will gracefully fall back to a bar chart if the `wordcloud` package isn’t installed.
+- Error bars compute 95% CIs; if SciPy isn’t available, a standard 1.96 z-score fallback is used.
+
+Suggested alignment with the course:
+- Week 1–2: Run the ML Basics to grasp train/test splits and cross-validation.
+- Week 5–7: Use the Viz + Analysis notebook to turn pilot results into stakeholder-ready figures (with uncertainty).
+
+---
+
 # Key Readings
 
 ## Core Texts

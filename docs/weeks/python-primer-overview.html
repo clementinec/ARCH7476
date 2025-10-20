@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
-  <title>ARCH7476: Evidence-Based Generative Design – Week 6: Making Results Readable</title>
+  <title>ARCH7476: Evidence-Based Generative Design – Python Primer: Evidence + ML for Architects</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -325,352 +390,192 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 6: Making Results Readable</h1>
-  <p class="subtitle">Data Visualization and Communication for Architecture</p>
+  <h1 class="title">Python Primer: Evidence + ML for Architects</h1>
+  <p class="subtitle">Fun, pragmatic, no-magic overview</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="todays-agenda" class="slide level2">
-<h2>Today’s Agenda</h2>
+<section id="welcome" class="slide level2 center">
+<h2>Welcome</h2>
+<p>Evidence-based design meets beginner-friendly Python and machine learning.</p>
+<p>What you’ll get: - What ML really is (in plain language) - Why train/test splits and cross-validation matter - Visuals that persuade stakeholders (error bars, small multiples) - A tiny taste of “neural nets” without the hype</p>
+</section>
+<section id="why-this-primer" class="slide level2 center">
+<h2>Why This Primer?</h2>
 <ul>
-<li class="fragment">Data visualization principles for architecture</li>
-<li class="fragment">From numbers to compelling figures</li>
-<li class="fragment">Object Card design workshop</li>
-<li class="fragment">A4 figure development</li>
-<li class="fragment">Guest speaker: Data visualization designer</li>
+<li class="fragment">Bridge the gap between the notebooks and the big ideas</li>
+<li class="fragment">Make sense of results you’ll present in A3/A4</li>
+<li class="fragment">Give you vocabulary to talk with clients and mentors</li>
+<li class="fragment">Show how “generative” ≠ magic — just structured decisions</li>
 </ul>
 </section>
-<section id="the-communication-challenge" class="slide level2">
-<h2>The Communication Challenge</h2>
-<p><strong>Your stakeholders are busy:</strong></p>
+<section id="what-is-machine-learning" class="slide level2 center">
+<h2>What Is Machine Learning?</h2>
+<p>“A way to learn patterns from data to make predictions or decisions.”</p>
 <ul>
-<li class="fragment">30 seconds to grab attention</li>
-<li class="fragment">2 minutes to understand key points</li>
-<li class="fragment">5 minutes for detailed evidence</li>
-<li class="fragment">Must be actionable and memorable</li>
+<li class="fragment">Supervised learning:
+<ul>
+<li class="fragment">Regression → predict a number (e.g., cooling kWh/m²)</li>
+<li class="fragment">Classification → predict a label (e.g., comfortable vs.&nbsp;not)</li>
+</ul></li>
+<li class="fragment">Unsupervised learning → find structure (not used here)</li>
+<li class="fragment">Key idea: generalize beyond data you trained on</li>
 </ul>
-<p><strong>Your data is complex:</strong> - Multiple variables and conditions</p>
+<aside class="notes">
+<p>Example mappings from our notebooks: - Regression: wwr + shading + orientation → cooling energy - Classification: wwr + shading + orientation → daylight comfort label</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-mini-pipeline" class="slide level2 center">
+<h2>The Mini Pipeline</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource mermaid number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>graph LR</span>
+<span id="cb1-2"><a></a>  A[Collect / Prepare Data] --&gt; B[Split: Train / Test]</span>
+<span id="cb1-3"><a></a>  B --&gt; C[Train Model]</span>
+<span id="cb1-4"><a></a>  C --&gt; D[Validate (CV)]</span>
+<span id="cb1-5"><a></a>  D --&gt; E[Test Once]</span>
+<span id="cb1-6"><a></a>  E --&gt; F[Communicate w/ Figures]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li class="fragment">Uncertainty and limitations</li>
-<li class="fragment">Technical details and context</li>
-<li class="fragment">Competing priorities and trade-offs</li>
+<li class="fragment">Train: model learns from a subset (the “past”)</li>
+<li class="fragment">Validate: check on unseen folds to tune complexity</li>
+<li class="fragment">Test: final untouched check to assess generalization</li>
 </ul>
 </section>
-<section id="visualization-principles-for-architecture" class="slide level2">
-<h2>Visualization Principles for Architecture</h2>
+<section id="overfitting-vs.-underfitting" class="slide level2 center">
+<h2>Overfitting vs.&nbsp;Underfitting</h2>
+<ul>
+<li class="fragment">Underfitting: model too simple → misses real patterns</li>
+<li class="fragment">Overfitting: model too complex → memorizes noise</li>
+<li class="fragment">Sweet spot: best cross-validation score (not minimum training error)</li>
+</ul>
+<p>Key symptom: training score ↑ while validation score ↓ as complexity ↑</p>
 </section>
-<section class="slide level2">
-
-<h3 id="architecture-specific-considerations">Architecture-Specific Considerations</h3>
-<p><strong>Spatial thinking:</strong></p>
+<section id="cross-validation-cv" class="slide level2 center">
+<h2>Cross-Validation (CV)</h2>
 <ul>
-<li class="fragment">Use plans, sections, and 3D views</li>
-<li class="fragment">Show scale and proportion clearly</li>
-<li class="fragment">Connect data to familiar building elements</li>
+<li class="fragment">K-fold CV: split data into K parts, rotate which part is “test”</li>
+<li class="fragment">Average performance across folds = robust estimate</li>
 </ul>
-<p><strong>Performance focus:</strong></p>
-<ul>
-<li class="fragment">Emphasize outcomes that matter to users</li>
-<li class="fragment">Show before/after or alternative comparisons</li>
-<li class="fragment">Include relevant benchmarks and targets</li>
-</ul>
-<p><strong>Decision support:</strong></p>
-<ul>
-<li class="fragment">Highlight actionable insights</li>
-<li class="fragment">Show confidence levels and uncertainty</li>
-<li class="fragment">Provide clear recommendations</li>
-</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a></a>Fold 1: [TRAIN][TRAIN][TRAIN][TEST]</span>
+<span id="cb2-2"><a></a>Fold 2: [TRAIN][TRAIN][TEST][TRAIN]</span>
+<span id="cb2-3"><a></a>Fold 3: [TRAIN][TEST][TRAIN][TRAIN]</span>
+<span id="cb2-4"><a></a>Fold 4: [TEST][TRAIN][TRAIN][TRAIN]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Benefits: - Uses all data for both training and validation - Reduces luck of a single split</p>
 </section>
-<section class="slide level2">
-
-<h3 id="hierarchy-and-focus">Hierarchy and Focus</h3>
-<p><strong>Primary message:</strong></p>
+<section id="essential-libraries" class="slide level2 center">
+<h2>Essential Libraries</h2>
 <ul>
-<li class="fragment">What’s the most important finding?</li>
-<li class="fragment">How can you make this immediately visible?</li>
-<li class="fragment">What should viewers remember if they see nothing else?</li>
-</ul>
-<p><strong>Supporting details:</strong></p>
-<ul>
-<li class="fragment">What context helps interpret the main finding?</li>
-<li class="fragment">What evidence supports your conclusions?</li>
-<li class="fragment">What limitations should be acknowledged?</li>
+<li class="fragment">pandas: tidy tables, cleaning, grouping, CSV I/O</li>
+<li class="fragment">seaborn + matplotlib: charts with sensible defaults and control</li>
+<li class="fragment">scikit-learn: train/test split, models, cross-validation</li>
+<li class="fragment">scipy: stats (CIs, tests)</li>
+<li class="fragment">wordcloud: quick survey-text visuals (with bar-chart fallback in our code)</li>
 </ul>
 </section>
-<section id="object-card-design-workshop" class="slide level2">
-<h2>Object Card Design Workshop</h2>
+<section id="visualization-that-persuades" class="slide level2 center">
+<h2>Visualization That Persuades</h2>
+<ul>
+<li class="fragment">Error bars (95% CI) → show uncertainty honestly</li>
+<li class="fragment">Small multiples → clean comparisons across scenarios</li>
+<li class="fragment">Color strategy → accessible palettes; consistent meanings</li>
+<li class="fragment">Object Card → single-page “at-a-glance” story</li>
+</ul>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Don’t bury the lede: lead with the stakeholder-relevant outcome.</p>
+</div>
+</div>
+</div>
 </section>
-<section class="slide level2">
-
-<h3 id="what-is-an-object-card">What is an Object Card?</h3>
-<p><strong>Single-page visual summary</strong> of your entire research project:</p>
+<section id="a-tiny-neural-net-taste-only" class="slide level2 center">
+<h2>A Tiny Neural Net (Taste Only)</h2>
 <ul>
-<li class="fragment">Design object with key findings</li>
-<li class="fragment">Decision recommendations</li>
-<li class="fragment">Method transparency</li>
-<li class="fragment">Contact information for details</li>
+<li class="fragment">MLP (multi-layer perceptron) = stacked logistic regressions</li>
+<li class="fragment">Good for non-linear boundaries; needs care to avoid overfitting</li>
+<li class="fragment">For this course: useful as a demo, not a requirement</li>
 </ul>
-<p><strong>Purpose:</strong></p>
-<ul>
-<li class="fragment">Portfolio piece demonstrating research skills</li>
-<li class="fragment">Conference poster or presentation slide</li>
-<li class="fragment">Client handout or summary document</li>
-<li class="fragment">Professional networking tool</li>
-</ul>
+<p>Takeaway: fancy ≠ better; validated simplicity beats unvalidated complexity.</p>
 </section>
-<section class="slide level2">
-
-<h3 id="object-card-elements">Object Card Elements</h3>
-<p><strong>Visual identity:</strong></p>
+<section id="reproducibility-habits" class="slide level2 center">
+<h2>Reproducibility Habits</h2>
 <ul>
-<li class="fragment">High-quality image of your design object</li>
-<li class="fragment">Consistent typography and color scheme</li>
-<li class="fragment">Clear title and subtitle</li>
-<li class="fragment">Professional layout and composition</li>
-</ul>
-<p><strong>Evidence summary:</strong></p>
-<ul>
-<li class="fragment">Key performance metrics prominently displayed</li>
-<li class="fragment">Before/after or alternative comparisons</li>
-<li class="fragment">Clear indication of confidence levels</li>
-<li class="fragment">Most important findings highlighted</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="design-process">Design Process</h3>
-<p><strong>Step 1: Content hierarchy</strong></p>
-<ul>
-<li class="fragment">List all information you want to include</li>
-<li class="fragment">Rank by importance to stakeholders</li>
-<li class="fragment">Eliminate bottom 50% ruthlessly</li>
-</ul>
-<p><strong>Step 2: Visual sketching</strong></p>
-<ul>
-<li class="fragment">Try 3-4 completely different layouts</li>
-<li class="fragment">Vary emphasis and organization</li>
-<li class="fragment">Test readability at poster scale</li>
-</ul>
-<p><strong>Step 3: Refinement</strong></p>
-<ul>
-<li class="fragment">Choose strongest layout concept</li>
-<li class="fragment">Polish typography and alignment</li>
-<li class="fragment">Check color accessibility and printing</li>
+<li class="fragment">Fix random seeds for repeatable runs</li>
+<li class="fragment">Save code + figures with version notes</li>
+<li class="fragment">Record assumptions, data sources, and units</li>
+<li class="fragment">Keep a short “what changed” log</li>
 </ul>
 </section>
-<section id="excelsheets-visualization-excellence" class="slide level2">
-<h2>Excel/Sheets Visualization Excellence</h2>
-</section>
-<section class="slide level2">
-
-<h3 id="beyond-basic-charts">Beyond Basic Charts</h3>
-<p><strong>Heat maps for spatial data:</strong></p>
+<section id="hands-on-where-to-start" class="slide level2 center">
+<h2>Hands-On: Where To Start</h2>
+<p>Run these (optionally in Colab):</p>
 <ul>
-<li class="fragment">Use conditional formatting for performance zones</li>
-<li class="fragment">Show building floor plans with performance overlay</li>
-<li class="fragment">Color-code performance levels intuitively</li>
-</ul>
-<p><strong>Small multiples for comparisons:</strong></p>
+<li class="fragment">Python + ML Basics → <code>notebooks/01_python_ml_basics.ipynb</code>
 <ul>
-<li class="fragment">Multiple small charts showing different conditions</li>
-<li class="fragment">Consistent scales and formatting across charts</li>
-<li class="fragment">Easy visual comparison of patterns</li>
-</ul>
-<p><strong>Error bars and confidence intervals:</strong></p>
+<li class="fragment">Train/test split, regression, classification, CV &amp; overfitting</li>
+</ul></li>
+<li class="fragment">Arch Viz + Analysis → <code>notebooks/02_arch_viz_analysis.ipynb</code>
 <ul>
-<li class="fragment">Show uncertainty in your measurements</li>
-<li class="fragment">Use standard deviation or confidence ranges</li>
-<li class="fragment">Label uncertainty sources clearly</li>
+<li class="fragment">Error bars, distributions, bootstrap CIs, word cloud, exportable figures</li>
+</ul></li>
 </ul>
 </section>
-<section class="slide level2">
-
-<h3 id="professional-chart-design">Professional Chart Design</h3>
-<p><strong>Typography:</strong></p>
+<section id="colab-quick-start" class="slide level2 center">
+<h2>Colab Quick Start</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="op">!</span>pip install <span class="op">-</span>r <span class="op">/</span>content<span class="op">/</span>ARCH7476<span class="op">/</span>requirements.txt</span>
+<span id="cb3-2"><a></a><span class="im">import</span> sys</span>
+<span id="cb3-3"><a></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb3-4"><a></a>ROOT <span class="op">=</span> Path(<span class="st">'/content/ARCH7476'</span>)  <span class="co"># adjust to your path</span></span>
+<span id="cb3-5"><a></a>scripts <span class="op">=</span> ROOT <span class="op">/</span> <span class="st">'scripts'</span></span>
+<span id="cb3-6"><a></a><span class="cf">if</span> <span class="bu">str</span>(scripts) <span class="kw">not</span> <span class="kw">in</span> sys.path:</span>
+<span id="cb3-7"><a></a>    sys.path.append(<span class="bu">str</span>(scripts))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Open the notebooks from <code>/content/ARCH7476/notebooks/</code> and run.</p>
+</section>
+<section id="mini-quiz-discuss" class="slide level2 center">
+<h2>Mini Quiz (Discuss!)</h2>
+<ol type="1">
+<li class="fragment">Why is a single train/test split sometimes misleading?</li>
+<li class="fragment">What does it mean if your training score improves but CV score worsens?</li>
+<li class="fragment">When would you prefer a bar chart with error bars over a line chart?</li>
+</ol>
+</section>
+<section id="takeaways" class="slide level2 center">
+<h2>Takeaways</h2>
 <ul>
-<li class="fragment">Sans-serif fonts for readability</li>
-<li class="fragment">Consistent font sizes and hierarchy</li>
-<li class="fragment">No unnecessary text or labels</li>
-</ul>
-<p><strong>Color strategy:</strong></p>
-<ul>
-<li class="fragment">Use color to highlight key findings</li>
-<li class="fragment">Maintain accessibility (colorblind-friendly)</li>
-<li class="fragment">Consistent color meanings across charts</li>
-</ul>
-<p><strong>Clarity over decoration:</strong></p>
-<ul>
-<li class="fragment">Remove unnecessary gridlines and backgrounds</li>
-<li class="fragment">Simplify legends and annotations</li>
-<li class="fragment">Make data the visual focus</li>
-</ul>
-<p>–<!-- -
-
-<!-- ## Guest Speaker Session
-
-**Professional Data Visualization Designer**
-
-*[30-minute presentation + Q&A]*
-
-**Topics:**
-
-- Real-world architectural visualization projects
-- Client communication strategies
-- Tool workflows and efficiency tips
-- Portfolio development for design research --> –&gt;</p>
-</section>
-<section id="hands-on-visualization-lab" class="slide level2">
-<h2>Hands-On Visualization Lab</h2>
-</section>
-<section class="slide level2">
-
-<h3 id="exercise-1-chart-makeover">Exercise 1: Chart Makeover</h3>
-<p><strong>Individual work (20 minutes):</strong> - Take one chart from your current analysis - Apply professional design principles - Focus on clarity and stakeholder relevance - Prepare 1-minute presentation of improvement</p>
-</section>
-<section class="slide level2">
-
-<h3 id="exercise-2-object-card-sketch">Exercise 2: Object Card Sketch</h3>
-<p><strong>Individual work (25 minutes):</strong> - Create hand-drawn layout sketch for your Object Card - Include all required elements - Test visual hierarchy and balance - Consider how it would look at poster scale</p>
-</section>
-<section class="slide level2">
-
-<h3 id="exercise-3-peer-critique">Exercise 3: Peer Critique</h3>
-<p><strong>Pairs (15 minutes):</strong> - Exchange sketches and provide feedback - Focus on clarity and visual impact - Suggest improvements for stakeholder communication - Identify strongest elements to develop further</p>
-</section>
-<section id="a4-package-integration" class="slide level2">
-<h2>A4 Package Integration</h2>
-</section>
-<section class="slide level2">
-
-<h3 id="four-component-synergy">Four Component Synergy</h3>
-<p><strong>Research Brief:</strong> Comprehensive analysis and recommendations <strong>Practice Case:</strong> Two-slide executive summary <strong>Object Card:</strong> Visual poster for broad audiences <strong>Reproducibility Capsule:</strong> Complete method documentation</p>
-<p><strong>Key:</strong> All components must tell consistent story with appropriate detail level</p>
-</section>
-<section class="slide level2">
-
-<h3 id="visual-consistency-strategy">Visual Consistency Strategy</h3>
-<p><strong>Develop visual identity:</strong> - Consistent color palette across components - Standard typography and layout principles - Unified style for charts and graphics - Professional presentation standards</p>
-<p><strong>Content coordination:</strong> - Same key findings emphasized across formats - Consistent terminology and metrics - Aligned recommendations and action items - Cross-references between components</p>
-</section>
-<section id="advanced-visualization-techniques" class="slide level2">
-<h2>Advanced Visualization Techniques</h2>
-</section>
-<section class="slide level2">
-
-<h3 id="showing-change-over-time">Showing Change Over Time</h3>
-<p><strong>Before/after comparisons:</strong></p>
-<ul>
-<li class="fragment">Side-by-side layouts for clear contrast</li>
-<li class="fragment">Arrows or visual connections showing change</li>
-<li class="fragment">Quantified improvement metrics</li>
-</ul>
-<p><strong>Time series analysis:</strong></p>
-<ul>
-<li class="fragment">Line charts for continuous monitoring data</li>
-<li class="fragment">Seasonal patterns and trend identification</li>
-<li class="fragment">Baseline and intervention periods marked clearly</li>
+<li class="fragment">ML here = structured predictions for design decisions</li>
+<li class="fragment">Cross-validation prevents fooling ourselves</li>
+<li class="fragment">Error bars build trust with stakeholders</li>
+<li class="fragment">Simple models often beat complex ones (when validated)</li>
+<li class="fragment">Reproducibility = credibility</li>
 </ul>
 </section>
-<section class="slide level2">
-
-<h3 id="spatial-performance-visualization">Spatial Performance Visualization</h3>
-<p><strong>Building section analysis:</strong></p>
-<ul>
-<li class="fragment">Overlay performance data on architectural drawings</li>
-<li class="fragment">Color-code zones by performance levels</li>
-<li class="fragment">Show user experience at human scale</li>
-</ul>
-<p><strong>Neighborhood scale mapping:</strong></p>
-<ul>
-<li class="fragment">Use GIS tools for urban context</li>
-<li class="fragment">Show building location relative to infrastructure</li>
-<li class="fragment">Include demographic and environmental context</li>
-</ul>
-</section>
-<section id="communication-strategy-development" class="slide level2">
-<h2>Communication Strategy Development</h2>
-</section>
-<section class="slide level2">
-
-<h3 id="stakeholder-specific-formatting">Stakeholder-Specific Formatting</h3>
-<p><strong>For developers:</strong></p>
-<ul>
-<li class="fragment">ROI and financial performance emphasis</li>
-<li class="fragment">Risk mitigation and market advantage</li>
-<li class="fragment">Regulatory compliance confirmation</li>
-<li class="fragment">Implementation timeline and costs</li>
-</ul>
-<p><strong>For architects:</strong></p>
-<ul>
-<li class="fragment">Design flexibility and creative opportunities</li>
-<li class="fragment">Integration with design process</li>
-<li class="fragment">Technical specifications and details</li>
-<li class="fragment">Performance optimization strategies</li>
-</ul>
-<p><strong>For users:</strong></p>
-<ul>
-<li class="fragment">Comfort and satisfaction impacts</li>
-<li class="fragment">Health and wellbeing benefits</li>
-<li class="fragment">Usability and accessibility improvements</li>
-<li class="fragment">Environmental quality enhancements</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="presentation-adaptation">Presentation Adaptation</h3>
-<p><strong>Executive summary (2 minutes):</strong></p>
-<ul>
-<li class="fragment">Single key finding and recommendation</li>
-<li class="fragment">Financial or performance impact quantified</li>
-<li class="fragment">Clear next steps for decision-makers</li>
-</ul>
-<p><strong>Technical briefing (15 minutes):</strong></p>
-<ul>
-<li class="fragment">Method overview and validation</li>
-<li class="fragment">Detailed results with uncertainty ranges</li>
-<li class="fragment">Alternative scenarios and sensitivity analysis</li>
-<li class="fragment">Implementation guidance and considerations</li>
-</ul>
-</section>
-<section id="next-steps" class="slide level2">
+<section id="next-steps" class="slide level2 center">
 <h2>Next Steps</h2>
-</section>
-<section class="slide level2">
-
-<h3 id="this-weeks-tasks">This Week’s Tasks</h3>
-<ol type="1">
-<li class="fragment"><strong>Develop Object Card concept</strong> - sketch and refine layout</li>
-<li class="fragment"><strong>Create professional figures</strong> - apply design principles to key charts</li>
-<li class="fragment"><strong>Draft Practice Case slides</strong> - two-slide executive summary</li>
-<li class="fragment"><strong>Continue A4 analysis</strong> - implement lessons from visualization workshop</li>
-</ol>
-</section>
-<section class="slide level2">
-
-<h3 id="week-7-preview">Week 7 Preview</h3>
-<p><strong>Decide with Numbers</strong></p>
 <ul>
-<li class="fragment">Setting thresholds for design decisions</li>
-<li class="fragment">Addressing counter-arguments and alternatives</li>
-<li class="fragment">Peer Review Session #1 feedback integration</li>
-<li class="fragment">Decision framework development</li>
+<li class="fragment">Run both notebooks and replace the fake CSVs with your pilot data</li>
+<li class="fragment">Export figures for your A3/A4 drafts</li>
+<li class="fragment">Bring questions to office hours or post in Slack</li>
 </ul>
 </section>
-<section id="key-takeaways" class="slide level2">
-<h2>Key Takeaways</h2>
-<ol type="1">
-<li class="fragment"><strong>Visual hierarchy guides attention</strong> - design for busy stakeholders</li>
-<li class="fragment"><strong>Architecture needs spatial visualization</strong> - connect data to building elements</li>
-<li class="fragment"><strong>Consistency builds credibility</strong> - unified visual identity across components</li>
-<li class="fragment"><strong>Uncertainty must be communicated</strong> - show confidence levels clearly</li>
-<li class="fragment"><strong>Less is more</strong> - eliminate unnecessary elements ruthlessly</li>
-</ol>
-</section>
-<section class="slide level2">
-
-<p><em>Next week: From evidence to recommendations - making decisions with data</em></p>
+<section id="credits" class="slide level2 center">
+<h2>Credits</h2>
+<p>Built for ARCH7476 — Evidence-Based Generative Design. Have fun, experiment, and document!</p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
@@ -758,7 +663,7 @@
         disableLayout: false,
 
         // Vertical centering of slides
-        center: false,
+        center: true,
 
         // Enables touch navigation on devices with touch input
         touch: true,

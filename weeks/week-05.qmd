@@ -7,6 +7,7 @@ format:
     transition: slide
     slide-number: true
     incremental: true
+    center: true
 ---
 
 ## Today's Agenda
@@ -24,6 +25,7 @@ format:
 **Round Robin Sharing (20 minutes)**
 
 **3 minutes per person:**
+
 1. **What you tested** - brief method overview
 2. **What worked** - successes and good surprises
 3. **What didn't work** - challenges and failures
@@ -86,12 +88,14 @@ format:
 ### Common Pilot Challenges
 
 **Software issues:**
+
 - Installation and compatibility problems
 - Learning curve steeper than expected
 - Output formats difficult to analyze
 - Results don't match expectations
 
 **Data collection problems:**
+
 - Access permissions denied
 - Data quality lower than anticipated
 - Sample sizes smaller than planned
@@ -102,12 +106,14 @@ format:
 ### Problem-Solving Strategies
 
 **Software troubles:**
+
 - Try simpler alternatives or web-based tools
 - Focus on key analyses rather than comprehensive modeling
 - Partner with classmates who have complementary skills
 - Use preset examples to validate your approach
 
 **Data access issues:**
+
 - Shift to publicly available datasets
 - Use case studies from literature
 - Create synthetic examples for method testing
@@ -118,6 +124,7 @@ format:
 ### Adaptive Research Design
 
 **The research spiral:**
+
 1. Plan based on best available information
 2. Test with small pilot study
 3. Learn from unexpected results
@@ -135,6 +142,7 @@ format:
 ### Breakout Sessions
 
 **Self-organize by challenge type:**
+
 - **Software/simulation issues** 
 - **Data access and collection**
 - **Analysis and interpretation**
@@ -149,12 +157,16 @@ format:
 ### Resource Sharing
 
 **What's working well:**
+
 - Which tools/approaches are user-friendly?
 - Where have you found good data sources?
 - What shortcuts save time without losing quality?
 - Who has expertise to share?
 
+---
+
 **Mutual aid opportunities:**
+
 - Data collection partnerships
 - Software skill sharing
 - Access permission sharing
@@ -169,12 +181,17 @@ format:
 ### A3 Structure Reminder
 
 **Part 1: Research Design** (1.5-2 pages)
+
 - Refined research questions and hypotheses
 - Method selection and justification
 - Data collection protocol
 - Analysis plan
 
+---
+
+
 **Part 2: Pilot Study Results** (1-1.5 pages)
+
 - What you actually did
 - What worked and what didn't
 - Key learning and insights
@@ -185,16 +202,21 @@ format:
 ### Writing Your Pilot Results
 
 **Be honest about challenges:**
+
 - Document problems you encountered
 - Explain what you tried to solve them
 - Acknowledge limitations of your pilot
 
 **Focus on learning:**
+
 - What did you discover about your method?
 - How did pilot results change your understanding?
 - What would you do differently next time?
 
+---
+
 **Show adaptability:**
+
 - How did you revise your approach?
 - What alternative strategies did you develop?
 - How will pilot learning inform your A4?
@@ -220,12 +242,14 @@ format:
 ### Reproducibility Requirements
 
 **Step-by-step protocols:**
+
 - Exact software versions and settings
 - Data sources and collection procedures
 - Analysis workflows and decision rules
 - Quality control and validation steps
 
 **Materials and resources:**
+
 - Required tools and their alternatives
 - Time and skill requirements
 - Access permissions and constraints
@@ -236,12 +260,14 @@ format:
 ### Documentation Templates
 
 **For simulation studies:**
+
 - Model setup parameters and assumptions
 - Input data sources and processing
 - Analysis scripts or procedures
 - Output validation and interpretation
 
 **For survey/observational studies:**
+
 - Recruitment and sampling procedures
 - Data collection instruments and protocols
 - Analysis approaches and coding schemes
@@ -258,6 +284,7 @@ format:
 **Week 6-7:** Exchange A3 drafts for peer review
 
 **Review focus:**
+
 - Method clarity and feasibility
 - Pilot learning integration
 - Research design strength
@@ -272,6 +299,7 @@ format:
 **Random pairing:** You'll be assigned a classmate's A3 to review
 
 **Timeline:**
+
 - **Monday Week 6:** Receive partner assignment and A3 draft
 - **Wednesday Week 6:** Submit peer review memo
 - **Friday Week 6:** Receive feedback on your A3
@@ -283,11 +311,13 @@ format:
 ### Effective Peer Review Guidelines
 
 **Read for understanding first:**
+
 - What is the research question?
 - What method did they use?
 - What did they learn from their pilot?
 
 **Provide constructive feedback:**
+
 - What works well in their approach?
 - What could be clearer or stronger?
 - What questions do you have about their method?
@@ -302,6 +332,7 @@ format:
 ### From Pilot to Full Analysis
 
 **Scale up what worked:**
+
 - Expand successful pilot procedures
 - Apply lessons learned to larger dataset
 - Maintain quality controls that proved effective
@@ -316,11 +347,13 @@ format:
 ### Analysis Planning
 
 **Statistical analysis:**
+
 - What comparisons will you make?
 - What statistical tests are appropriate?
 - How will you handle uncertainty and variability?
 
 **Visualization planning:**
+
 - What charts/graphs will best show your results?
 - How will you communicate uncertainty?
 - What format will stakeholders find most useful?
@@ -330,11 +363,13 @@ format:
 ### Quality Assurance
 
 **Sanity checks:**
+
 - Do results fall within expected ranges?
 - Are patterns consistent with theory/literature?
 - Do different analysis approaches give similar results?
 
 **Peer validation:**
+
 - Can others understand and replicate your approach?
 - Do independent analyses reach similar conclusions?
 - Are interpretations reasonable and justified?
@@ -357,6 +392,7 @@ format:
 ### Week 6 Preview
 
 **Making Results Readable**
+
 - Data visualization principles for architecture
 - From numbers to clear, compelling figures
 - Object Card design workshop
@@ -367,6 +403,7 @@ format:
 ### Office Hours Focus
 
 **A3 finalization support:**
+
 - Writing pilot results effectively
 - Method documentation review
 - Reproducibility requirements

@@ -1,0 +1,196 @@
+---
+title: "Python Primer: Evidence + ML for Architects"
+subtitle: "Fun, pragmatic, no-magic overview"
+format:
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+    center: true
+---
+
+## Welcome
+
+Evidence-based design meets beginner-friendly Python and machine learning.
+
+What you’ll get:
+- What ML really is (in plain language)
+- Why train/test splits and cross-validation matter
+- Visuals that persuade stakeholders (error bars, small multiples)
+- A tiny taste of “neural nets” without the hype
+
+---
+
+## Why This Primer?
+
+- Bridge the gap between the notebooks and the big ideas
+- Make sense of results you’ll present in A3/A4
+- Give you vocabulary to talk with clients and mentors
+- Show how “generative” ≠ magic — just structured decisions
+
+---
+
+## What Is Machine Learning?
+
+"A way to learn patterns from data to make predictions or decisions."
+
+- Supervised learning:
+  - Regression → predict a number (e.g., cooling kWh/m²)
+  - Classification → predict a label (e.g., comfortable vs. not)
+- Unsupervised learning → find structure (not used here)
+- Key idea: generalize beyond data you trained on
+
+::: notes
+Example mappings from our notebooks:
+- Regression: wwr + shading + orientation → cooling energy
+- Classification: wwr + shading + orientation → daylight comfort label
+:::
+
+---
+
+## The Mini Pipeline
+
+```mermaid
+graph LR
+  A[Collect / Prepare Data] --> B[Split: Train / Test]
+  B --> C[Train Model]
+  C --> D[Validate (CV)]
+  D --> E[Test Once]
+  E --> F[Communicate w/ Figures]
+```
+
+- Train: model learns from a subset (the “past”)
+- Validate: check on unseen folds to tune complexity
+- Test: final untouched check to assess generalization
+
+---
+
+## Overfitting vs. Underfitting
+
+- Underfitting: model too simple → misses real patterns
+- Overfitting: model too complex → memorizes noise
+- Sweet spot: best cross-validation score (not minimum training error)
+
+Key symptom: training score ↑ while validation score ↓ as complexity ↑
+
+---
+
+## Cross-Validation (CV)
+
+- K-fold CV: split data into K parts, rotate which part is “test”
+- Average performance across folds = robust estimate
+
+```text
+Fold 1: [TRAIN][TRAIN][TRAIN][TEST]
+Fold 2: [TRAIN][TRAIN][TEST][TRAIN]
+Fold 3: [TRAIN][TEST][TRAIN][TRAIN]
+Fold 4: [TEST][TRAIN][TRAIN][TRAIN]
+```
+
+Benefits:
+- Uses all data for both training and validation
+- Reduces luck of a single split
+
+---
+
+## Essential Libraries
+
+- pandas: tidy tables, cleaning, grouping, CSV I/O
+- seaborn + matplotlib: charts with sensible defaults and control
+- scikit-learn: train/test split, models, cross-validation
+- scipy: stats (CIs, tests)
+- wordcloud: quick survey-text visuals (with bar-chart fallback in our code)
+
+---
+
+## Visualization That Persuades
+
+- Error bars (95% CI) → show uncertainty honestly
+- Small multiples → clean comparisons across scenarios
+- Color strategy → accessible palettes; consistent meanings
+- Object Card → single-page “at-a-glance” story
+
+::: callout-tip
+Don’t bury the lede: lead with the stakeholder-relevant outcome.
+:::
+
+---
+
+## A Tiny Neural Net (Taste Only)
+
+- MLP (multi-layer perceptron) = stacked logistic regressions
+- Good for non-linear boundaries; needs care to avoid overfitting
+- For this course: useful as a demo, not a requirement
+
+Takeaway: fancy ≠ better; validated simplicity beats unvalidated complexity.
+
+---
+
+## Reproducibility Habits
+
+- Fix random seeds for repeatable runs
+- Save code + figures with version notes
+- Record assumptions, data sources, and units
+- Keep a short “what changed” log
+
+---
+
+## Hands-On: Where To Start
+
+Run these (optionally in Colab):
+
+- Python + ML Basics → `notebooks/01_python_ml_basics.ipynb`
+  - Train/test split, regression, classification, CV & overfitting
+- Arch Viz + Analysis → `notebooks/02_arch_viz_analysis.ipynb`
+  - Error bars, distributions, bootstrap CIs, word cloud, exportable figures
+
+---
+
+## Colab Quick Start
+
+```python
+!pip install -r /content/ARCH7476/requirements.txt
+import sys
+from pathlib import Path
+ROOT = Path('/content/ARCH7476')  # adjust to your path
+scripts = ROOT / 'scripts'
+if str(scripts) not in sys.path:
+    sys.path.append(str(scripts))
+```
+
+Open the notebooks from `/content/ARCH7476/notebooks/` and run.
+
+---
+
+## Mini Quiz (Discuss!)
+
+1) Why is a single train/test split sometimes misleading?
+2) What does it mean if your training score improves but CV score worsens?
+3) When would you prefer a bar chart with error bars over a line chart?
+
+---
+
+## Takeaways
+
+- ML here = structured predictions for design decisions
+- Cross-validation prevents fooling ourselves
+- Error bars build trust with stakeholders
+- Simple models often beat complex ones (when validated)
+- Reproducibility = credibility
+
+---
+
+## Next Steps
+
+- Run both notebooks and replace the fake CSVs with your pilot data
+- Export figures for your A3/A4 drafts
+- Bring questions to office hours or post in Slack
+
+---
+
+## Credits
+
+Built for ARCH7476 — Evidence-Based Generative Design.
+Have fun, experiment, and document!
+

@@ -67,6 +67,14 @@ website:
       - section: "Resources"
         contents:
           - resources.qmd
+      - section: "Python Notebooks"
+        contents:
+          - text: "Python + ML Basics"
+            href: notebooks/01_python_ml_basics.ipynb
+          - text: "Architecture Viz + Analysis"
+            href: notebooks/02_arch_viz_analysis.ipynb
+          - text: "Python Primer Slides"
+            href: weeks/python-primer-overview.qmd
 
 format:
   html:
