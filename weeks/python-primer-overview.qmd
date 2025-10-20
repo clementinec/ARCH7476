@@ -15,6 +15,7 @@ format:
 Evidence-based design meets beginner-friendly Python and machine learning.
 
 What you’ll get:
+
 - What ML really is (in plain language)
 - Why train/test splits and cross-validation matter
 - Visuals that persuade stakeholders (error bars, small multiples)
