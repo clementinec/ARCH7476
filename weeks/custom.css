@@ -1,0 +1,36 @@
+.tooltip {
+  position: relative;
+  cursor: pointer;
+  border-bottom: 1px dotted #999;
+}
+
+.tooltip .tooltip-image {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.tooltip .tooltip-image.side-by-side {
+  display: none;
+  flex-direction: row;
+  gap: 10px;
+  max-width: 600px;  /* Adjust based on your needs */
+}
+
+.tooltip .tooltip-image.side-by-side img {
+  width: 50%;
+  height: auto;
+  display: block;
+}
+
+.tooltip:hover .tooltip-image {
+  display: flex;  /* Use flex for side-by-side */
+}
