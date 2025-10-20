@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
-  <title>ARCH7476: Evidence-Based Generative Design – Week 7: Decide with Numbers</title>
+  <title>ARCH7476: Evidence-Based Generative Design – Python Primer: Evidence + ML for Architects</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -325,270 +390,198 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 7: Decide with Numbers</h1>
-  <p class="subtitle">Thresholds, Trade-offs, and Decision Frameworks</p>
+  <h1 class="title">Python Primer: Evidence + ML for Architects</h1>
+  <p class="subtitle">Fun, pragmatic, no-magic overview</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="todays-agenda" class="slide level2">
-<h2>Today’s Agenda</h2>
+<section id="welcome" class="slide level2 center">
+<h2>Welcome</h2>
+<p>Evidence-based design meets beginner-friendly Python and machine learning.</p>
+<p>What you’ll get:</p>
 <ul>
-<li class="fragment">Peer Review #1 feedback integration</li>
-<li class="fragment">Setting decision thresholds</li>
-<li class="fragment">Addressing counter-arguments</li>
-<li class="fragment">Trade-off analysis frameworks</li>
-<li class="fragment">Change Log #1 documentation</li>
+<li class="fragment">What ML really is (in plain language)</li>
+<li class="fragment">Why train/test splits and cross-validation matter</li>
+<li class="fragment">Visuals that persuade stakeholders (error bars, small multiples)</li>
+<li class="fragment">A tiny taste of “neural nets” without the hype</li>
 </ul>
 </section>
-<section id="peer-review-debrief" class="slide level2">
-<h2>Peer Review Debrief</h2>
-<p><strong>What patterns emerged from peer feedback?</strong></p>
-<p><strong>Common strengths:</strong> - Clear research questions - Appropriate methods - Good pilot learning integration</p>
-<p><strong>Common improvement areas:</strong> - Method documentation clarity - Uncertainty acknowledgment - Stakeholder relevance</p>
-<p><strong>How will you use this feedback to strengthen A4?</strong></p>
+<section id="why-this-primer" class="slide level2 center">
+<h2>Why This Primer?</h2>
+<ul>
+<li class="fragment">Bridge the gap between the notebooks and the big ideas</li>
+<li class="fragment">Make sense of results you’ll present in A3/A4</li>
+<li class="fragment">Give you vocabulary to talk with clients and mentors</li>
+<li class="fragment">Show how “generative” ≠ magic — just structured decisions</li>
+</ul>
 </section>
-<section id="from-evidence-to-decisions" class="slide level2">
-<h2>From Evidence to Decisions</h2>
+<section id="what-is-machine-learning" class="slide level2 center">
+<h2>What Is Machine Learning?</h2>
+<p>“A way to learn patterns from data to make predictions or decisions.”</p>
+<ul>
+<li class="fragment">Supervised learning:
+<ul>
+<li class="fragment">Regression → predict a number (e.g., cooling kWh/m²)</li>
+<li class="fragment">Classification → predict a label (e.g., comfortable vs.&nbsp;not)</li>
+</ul></li>
+<li class="fragment">Unsupervised learning → find structure (not used here)</li>
+<li class="fragment">Key idea: generalize beyond data you trained on</li>
+</ul>
+<aside class="notes">
+<p>Example mappings from our notebooks: - Regression: wwr + shading + orientation → cooling energy - Classification: wwr + shading + orientation → daylight comfort label</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section class="slide level2">
-
-<h3 id="the-decision-making-challenge">The Decision-Making Challenge</h3>
-<p><strong>Your evidence shows:</strong> - Performance differences between alternatives - Uncertainty ranges and confidence levels - Context-specific factors and limitations</p>
-<p><strong>Your stakeholders need:</strong> - Clear recommendations for action - Decision criteria and thresholds - Understanding of trade-offs and risks - Implementation guidance</p>
+<section id="the-mini-pipeline" class="slide level2 center">
+<h2>The Mini Pipeline</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource mermaid number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>graph LR</span>
+<span id="cb1-2"><a></a>  A[Collect / Prepare Data] --&gt; B[Split: Train / Test]</span>
+<span id="cb1-3"><a></a>  B --&gt; C[Train Model]</span>
+<span id="cb1-4"><a></a>  C --&gt; D[Validate (CV)]</span>
+<span id="cb1-5"><a></a>  D --&gt; E[Test Once]</span>
+<span id="cb1-6"><a></a>  E --&gt; F[Communicate w/ Figures]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li class="fragment">Train: model learns from a subset (the “past”)</li>
+<li class="fragment">Validate: check on unseen folds to tune complexity</li>
+<li class="fragment">Test: final untouched check to assess generalization</li>
+</ul>
 </section>
-<section class="slide level2">
-
-<h3 id="decision-thresholds">Decision Thresholds</h3>
-<p><strong>Performance thresholds:</strong> - At what point is performance “good enough”? - What improvement level justifies investment? - How do you handle uncertainty in threshold setting?</p>
-<p><strong>Cost-benefit thresholds:</strong> - What return on investment is required? - How do you value non-monetary benefits? - What risk tolerance do stakeholders have?</p>
+<section id="overfitting-vs.-underfitting" class="slide level2 center">
+<h2>Overfitting vs.&nbsp;Underfitting</h2>
+<ul>
+<li class="fragment">Underfitting: model too simple → misses real patterns</li>
+<li class="fragment">Overfitting: model too complex → memorizes noise</li>
+<li class="fragment">Sweet spot: best cross-validation score (not minimum training error)</li>
+</ul>
+<p>Key symptom: training score ↑ while validation score ↓ as complexity ↑</p>
 </section>
-<section id="setting-appropriate-thresholds" class="slide level2">
-<h2>Setting Appropriate Thresholds</h2>
+<section id="cross-validation-cv" class="slide level2 center">
+<h2>Cross-Validation (CV)</h2>
+<ul>
+<li class="fragment">K-fold CV: split data into K parts, rotate which part is “test”</li>
+<li class="fragment">Average performance across folds = robust estimate</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a></a>Fold 1: [TRAIN][TRAIN][TRAIN][TEST]</span>
+<span id="cb2-2"><a></a>Fold 2: [TRAIN][TRAIN][TEST][TRAIN]</span>
+<span id="cb2-3"><a></a>Fold 3: [TRAIN][TEST][TRAIN][TRAIN]</span>
+<span id="cb2-4"><a></a>Fold 4: [TEST][TRAIN][TRAIN][TRAIN]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Benefits: - Uses all data for both training and validation - Reduces luck of a single split</p>
 </section>
-<section class="slide level2">
-
-<h3 id="regulatory-and-standards-based">Regulatory and Standards-Based</h3>
-<p><strong>Building code compliance:</strong> - Minimum performance requirements - Safety factors and margins - Local vs.&nbsp;international standards</p>
-<p><strong>Green building standards:</strong> - LEED, BREEAM, Green Mark thresholds - Point systems and credit requirements - Market expectations and norms</p>
+<section id="essential-libraries" class="slide level2 center">
+<h2>Essential Libraries</h2>
+<ul>
+<li class="fragment">pandas: tidy tables, cleaning, grouping, CSV I/O</li>
+<li class="fragment">seaborn + matplotlib: charts with sensible defaults and control</li>
+<li class="fragment">scikit-learn: train/test split, models, cross-validation</li>
+<li class="fragment">scipy: stats (CIs, tests)</li>
+<li class="fragment">wordcloud: quick survey-text visuals (with bar-chart fallback in our code)</li>
+</ul>
 </section>
-<section class="slide level2">
-
-<h3 id="performance-benchmarking">Performance Benchmarking</h3>
-<p><strong>Peer building comparison:</strong> - Industry average performance levels - Best-in-class examples - Worst acceptable performance</p>
-<p><strong>User satisfaction benchmarks:</strong> - Survey response thresholds (e.g., 4.0/5.0 satisfaction) - Complaint rates and frequencies - Productivity impact measurements</p>
+<section id="visualization-that-persuades" class="slide level2 center">
+<h2>Visualization That Persuades</h2>
+<ul>
+<li class="fragment">Error bars (95% CI) → show uncertainty honestly</li>
+<li class="fragment">Small multiples → clean comparisons across scenarios</li>
+<li class="fragment">Color strategy → accessible palettes; consistent meanings</li>
+<li class="fragment">Object Card → single-page “at-a-glance” story</li>
+</ul>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Don’t bury the lede: lead with the stakeholder-relevant outcome.</p>
+</div>
+</div>
+</div>
 </section>
-<section class="slide level2">
-
-<h3 id="stakeholder-specific-thresholds">Stakeholder-Specific Thresholds</h3>
-<p><strong>Developer criteria:</strong> - ROI minimums and payback periods - Risk tolerance and market positioning - Competitive advantage requirements</p>
-<p><strong>User-focused criteria:</strong> - Comfort and satisfaction minimums - Health and safety thresholds - Accessibility and inclusion requirements</p>
+<section id="a-tiny-neural-net-taste-only" class="slide level2 center">
+<h2>A Tiny Neural Net (Taste Only)</h2>
+<ul>
+<li class="fragment">MLP (multi-layer perceptron) = stacked logistic regressions</li>
+<li class="fragment">Good for non-linear boundaries; needs care to avoid overfitting</li>
+<li class="fragment">For this course: useful as a demo, not a requirement</li>
+</ul>
+<p>Takeaway: fancy ≠ better; validated simplicity beats unvalidated complexity.</p>
 </section>
-<section id="counter-argument-analysis" class="slide level2">
-<h2>Counter-Argument Analysis</h2>
+<section id="reproducibility-habits" class="slide level2 center">
+<h2>Reproducibility Habits</h2>
+<ul>
+<li class="fragment">Fix random seeds for repeatable runs</li>
+<li class="fragment">Save code + figures with version notes</li>
+<li class="fragment">Record assumptions, data sources, and units</li>
+<li class="fragment">Keep a short “what changed” log</li>
+</ul>
 </section>
-<section class="slide level2">
-
-<h3 id="anticipating-objections">Anticipating Objections</h3>
-<p><strong>“Too expensive”</strong> - Life-cycle cost analysis - Non-monetary benefit quantification - Financing and incentive options - Risk cost of not implementing</p>
-<p><strong>“Unproven technology”</strong> - Precedent examples and case studies - Gradual implementation strategies - Pilot testing and monitoring plans - Backup and contingency options</p>
+<section id="hands-on-where-to-start" class="slide level2 center">
+<h2>Hands-On: Where To Start</h2>
+<p>Run these (optionally in Colab):</p>
+<ul>
+<li class="fragment">Python + ML Basics → <code>notebooks/01_python_ml_basics.ipynb</code>
+<ul>
+<li class="fragment">Train/test split, regression, classification, CV &amp; overfitting</li>
+</ul></li>
+<li class="fragment">Arch Viz + Analysis → <code>notebooks/02_arch_viz_analysis.ipynb</code>
+<ul>
+<li class="fragment">Error bars, distributions, bootstrap CIs, word cloud, exportable figures</li>
+</ul></li>
+</ul>
 </section>
-<section class="slide level2">
-
-<h3 id="alternative-explanations">Alternative Explanations</h3>
-<p><strong>“Results could be due to other factors”</strong> - Sensitivity analysis across variables - Control for confounding factors - Multiple validation approaches - Transparent limitation acknowledgment</p>
-<p><strong>“Context may not transfer”</strong> - Boundary condition analysis - Similar context identification - Adaptation strategies - Local validation recommendations</p>
+<section id="colab-quick-start" class="slide level2 center">
+<h2>Colab Quick Start</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="op">!</span>pip install <span class="op">-</span>r <span class="op">/</span>content<span class="op">/</span>ARCH7476<span class="op">/</span>requirements.txt</span>
+<span id="cb3-2"><a></a><span class="im">import</span> sys</span>
+<span id="cb3-3"><a></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb3-4"><a></a>ROOT <span class="op">=</span> Path(<span class="st">'/content/ARCH7476'</span>)  <span class="co"># adjust to your path</span></span>
+<span id="cb3-5"><a></a>scripts <span class="op">=</span> ROOT <span class="op">/</span> <span class="st">'scripts'</span></span>
+<span id="cb3-6"><a></a><span class="cf">if</span> <span class="bu">str</span>(scripts) <span class="kw">not</span> <span class="kw">in</span> sys.path:</span>
+<span id="cb3-7"><a></a>    sys.path.append(<span class="bu">str</span>(scripts))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Open the notebooks from <code>/content/ARCH7476/notebooks/</code> and run.</p>
 </section>
-<section id="trade-off-analysis-frameworks" class="slide level2">
-<h2>Trade-Off Analysis Frameworks</h2>
-</section>
-<section class="slide level2">
-
-<h3 id="multi-criteria-decision-analysis">Multi-Criteria Decision Analysis</h3>
-<p><strong>Identify competing objectives:</strong> - Energy performance vs.&nbsp;cost - User satisfaction vs.&nbsp;maintenance - Sustainability vs.&nbsp;aesthetics - Privacy vs.&nbsp;collaboration</p>
-<p><strong>Weight criteria by stakeholder priority:</strong> - Survey stakeholders for preference ranking - Use revealed preferences from past decisions - Apply regulatory or market requirements</p>
-</section>
-<section class="slide level2">
-
-<h3 id="decision-matrix-development">Decision Matrix Development</h3>
-<table class="caption-top" style="width:100%;">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 16%">
-<col style="width: 14%">
-<col style="width: 18%">
-<col style="width: 22%">
-<col style="width: 12%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Alternative</th>
-<th>Energy (30%)</th>
-<th>Cost (25%)</th>
-<th>User Sat (25%)</th>
-<th>Maintenance (20%)</th>
-<th><strong>Total</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Option A</td>
-<td>8</td>
-<td>6</td>
-<td>9</td>
-<td>7</td>
-<td><strong>7.5</strong></td>
-</tr>
-<tr class="even">
-<td>Option B</td>
-<td>9</td>
-<td>4</td>
-<td>8</td>
-<td>8</td>
-<td><strong>7.25</strong></td>
-</tr>
-<tr class="odd">
-<td>Option C</td>
-<td>7</td>
-<td>9</td>
-<td>7</td>
-<td>9</td>
-<td><strong>7.8</strong></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="slide level2">
-
-<h3 id="scenario-planning">Scenario Planning</h3>
-<p><strong>Best case scenario:</strong> - All assumptions optimistic - Maximum benefits realized - Minimal implementation challenges</p>
-<p><strong>Worst case scenario:</strong> - Conservative assumptions - Implementation difficulties - External factors unfavorable</p>
-<p><strong>Most likely scenario:</strong> - Realistic assumptions - Expected challenges and solutions - Moderate benefit realization</p>
-</section>
-<section id="workshop-decision-framework-development" class="slide level2">
-<h2>Workshop: Decision Framework Development</h2>
-</section>
-<section class="slide level2">
-
-<h3 id="individual-exercise-20-minutes">Individual Exercise (20 minutes)</h3>
-<p><strong>For your research project:</strong></p>
+<section id="mini-quiz-discuss" class="slide level2 center">
+<h2>Mini Quiz (Discuss!)</h2>
 <ol type="1">
-<li class="fragment"><strong>Identify key performance thresholds</strong>
-<ul>
-<li class="fragment">What levels constitute success?</li>
-<li class="fragment">What benchmarks or standards apply?</li>
-<li class="fragment">How do you handle uncertainty?</li>
-</ul></li>
-<li class="fragment"><strong>List potential objections</strong>
-<ul>
-<li class="fragment">What might stakeholders resist?</li>
-<li class="fragment">What alternative explanations exist?</li>
-<li class="fragment">How can you address concerns?</li>
-</ul></li>
-<li class="fragment"><strong>Define trade-offs</strong>
-<ul>
-<li class="fragment">What competing objectives exist?</li>
-<li class="fragment">How should they be weighted?</li>
-<li class="fragment">What scenarios should be considered?</li>
-</ul></li>
+<li class="fragment">Why is a single train/test split sometimes misleading?</li>
+<li class="fragment">What does it mean if your training score improves but CV score worsens?</li>
+<li class="fragment">When would you prefer a bar chart with error bars over a line chart?</li>
 </ol>
 </section>
-<section class="slide level2">
-
-<h3 id="peer-discussion-15-minutes">Peer Discussion (15 minutes)</h3>
-<p><strong>Small groups:</strong> - Share decision frameworks - Test thresholds for reasonableness - Identify missing counter-arguments - Suggest framework improvements</p>
-<p><strong>Focus questions:</strong> - Are thresholds defendible and realistic? - Have key objections been addressed? - Are trade-offs clearly articulated?</p>
+<section id="takeaways" class="slide level2 center">
+<h2>Takeaways</h2>
+<ul>
+<li class="fragment">ML here = structured predictions for design decisions</li>
+<li class="fragment">Cross-validation prevents fooling ourselves</li>
+<li class="fragment">Error bars build trust with stakeholders</li>
+<li class="fragment">Simple models often beat complex ones (when validated)</li>
+<li class="fragment">Reproducibility = credibility</li>
+</ul>
 </section>
-<section id="change-log-1-process" class="slide level2">
-<h2>Change Log #1 Process</h2>
-</section>
-<section class="slide level2">
-
-<h3 id="documentation-purpose">Documentation Purpose</h3>
-<p><strong>Track your learning evolution:</strong> - How has your understanding changed? - What methods did you refine or abandon? - Where did peer feedback redirect your work? - What assumptions proved incorrect?</p>
-<p><strong>Demonstrate adaptability:</strong> - Show systematic response to new information - Document problem-solving approaches - Highlight integration of feedback - Reflect professional research practices</p>
-</section>
-<section class="slide level2">
-
-<h3 id="change-log-format">Change Log Format</h3>
-<p><strong>Date | Change Description | Reason | Impact</strong></p>
-<p><em>Oct 15 | Simplified simulation model from detailed to basic | Software learning curve too steep for semester scope | Focus on key relationships rather than comprehensive analysis</em></p>
-<p><em>Oct 20 | Added uncertainty analysis to results | Peer review feedback on overconfidence | More realistic recommendations with confidence ranges</em></p>
-</section>
-<section class="slide level2">
-
-<h3 id="reflection-questions">Reflection Questions</h3>
-<ol type="1">
-<li class="fragment"><strong>What’s different about your approach now vs.&nbsp;Week 1?</strong></li>
-<li class="fragment"><strong>Which changes were forced vs.&nbsp;chosen?</strong></li>
-<li class="fragment"><strong>What would you do differently if starting over?</strong></li>
-<li class="fragment"><strong>How has your confidence in the results evolved?</strong></li>
-<li class="fragment"><strong>What skills have you developed through adaptation?</strong></li>
-</ol>
-</section>
-<section id="professional-decision-making-integration" class="slide level2">
-<h2>Professional Decision-Making Integration</h2>
-</section>
-<section class="slide level2">
-
-<h3 id="architecture-firm-decision-processes">Architecture Firm Decision Processes</h3>
-<p><strong>Design phase integration:</strong> - Concept development evidence requirements - Design development validation needs - Construction document specification support</p>
-<p><strong>Client communication strategies:</strong> - Technical evidence translation - Risk and benefit communication - Alternative evaluation presentation</p>
-</section>
-<section class="slide level2">
-
-<h3 id="regulatory-and-compliance-context">Regulatory and Compliance Context</h3>
-<p><strong>Building approval processes:</strong> - Code compliance demonstration - Performance-based design justification - Alternative solution documentation</p>
-<p><strong>Post-occupancy validation:</strong> - Performance monitoring and verification - User feedback integration - Continuous improvement processes</p>
-</section>
-<section id="a4-development-strategy" class="slide level2">
-<h2>A4 Development Strategy</h2>
-</section>
-<section class="slide level2">
-
-<h3 id="integration-across-components">Integration Across Components</h3>
-<p><strong>Research Brief recommendations:</strong> - Clear thresholds and decision criteria - Counter-argument acknowledgment - Trade-off analysis and stakeholder guidance</p>
-<p><strong>Practice Case actionability:</strong> - Specific implementation recommendations - Timeline and resource requirements - Risk mitigation strategies</p>
-<p><strong>Object Card clarity:</strong> - Key threshold visually prominent - Decision recommendation clear - Confidence level indicated</p>
-</section>
-<section class="slide level2">
-
-<h3 id="timeline-to-object-fair">Timeline to Object Fair</h3>
-<p><strong>Week 8:</strong> Mentor consultations and workflow documentation <strong>Week 9:</strong> Practice Case development and narrative refinement<br>
-<strong>Week 10:</strong> Draft defense and feedback integration <strong>Week 11:</strong> Final polish and presentation preparation <strong>Week 12:</strong> Object Fair presentations and final submission</p>
-</section>
-<section id="next-steps" class="slide level2">
+<section id="next-steps" class="slide level2 center">
 <h2>Next Steps</h2>
+<ul>
+<li class="fragment">Run both notebooks and replace the fake CSVs with your pilot data</li>
+<li class="fragment">Export figures for your A3/A4 drafts</li>
+<li class="fragment">Bring questions to office hours or post in Slack</li>
+</ul>
 </section>
-<section class="slide level2">
-
-<h3 id="this-weeks-tasks">This Week’s Tasks</h3>
-<ol type="1">
-<li class="fragment"><strong>Complete Change Log #1</strong> - document evolution of your approach</li>
-<li class="fragment"><strong>Revise A4 draft</strong> - integrate peer feedback and decision frameworks</li>
-<li class="fragment"><strong>Develop decision thresholds</strong> - specific, defendible, stakeholder-relevant</li>
-<li class="fragment"><strong>Address counter-arguments</strong> - anticipate and respond to objections</li>
-</ol>
-</section>
-<section class="slide level2">
-
-<h3 id="week-8-preview">Week 8 Preview</h3>
-<p><strong>Light Workflow Help</strong> - Documenting processes for reproducibility - Automation ethics and appropriate tool use - Individual mentor consultations (30-45 min each) - Workflow optimization strategies</p>
-</section>
-<section id="key-takeaways" class="slide level2">
-<h2>Key Takeaways</h2>
-<ol type="1">
-<li class="fragment"><strong>Evidence must connect to decisions</strong> - thresholds make findings actionable</li>
-<li class="fragment"><strong>Anticipate counter-arguments</strong> - strengthen credibility through honest assessment</li>
-<li class="fragment"><strong>Trade-offs are inevitable</strong> - help stakeholders understand choices</li>
-<li class="fragment"><strong>Document your learning</strong> - change logs show professional growth</li>
-<li class="fragment"><strong>Adapt based on feedback</strong> - peer input strengthens research quality</li>
-</ol>
-</section>
-<section class="slide level2">
-
-<p><em>Next week: From manual processes to reproducible workflows</em></p>
+<section id="credits" class="slide level2 center">
+<h2>Credits</h2>
+<p>Built for ARCH7476 — Evidence-Based Generative Design. Have fun, experiment, and document!</p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
@@ -676,7 +669,7 @@
         disableLayout: false,
 
         // Vertical centering of slides
-        center: false,
+        center: true,
 
         // Enables touch navigation on devices with touch input
         touch: true,
