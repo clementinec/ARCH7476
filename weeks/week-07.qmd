@@ -16,11 +16,140 @@ format:
 Today involves **team challenges**, **case study battles**, and **threshold setting competitions**. Come ready to defend your decisions and challenge others!
 :::
 
+- **Statistics Refresher**: Hypothesis testing, t-tests, and sample sizes (super simple!)
 - **Warm-up**: Peer Review #1 feedback integration
 - **Case Study Battle**: Real-world threshold disasters vs. successes
 - **Team Challenge**: Competitive decision framework development
 - **Hot Seat**: Counter-argument rapid-fire session
 - **Change Log Workshop**: Document your learning evolution
+
+---
+
+## Quick Statistics Refresher 
+### (Because A3 Showed We Need This!)
+
+---
+
+### Slide 1: Hypotheses - Like Design Claims You Can Test
+
+**🏗️ Think of a hypothesis like saying: "My design will work better than existing solutions"**
+
+::: {.columns}
+
+::: {.column width="50%"}
+**In Architecture:**
+- "This office layout will improve productivity"
+- "Better lighting will reduce eye strain"
+- "Open spaces will increase collaboration"
+:::
+
+::: {.column width="50%"}
+**In Statistics:**
+- **H0 (Null)**: "No difference" (old design = new design)
+- **H1 (Alternative)**: "There IS a difference" (new design > old design)
+:::
+
+:::
+
+**🎯 Your job**: Collect enough evidence to **reject H0** (prove the old way is NOT as good)
+
+::: {.callout-note}
+## Analogy: Court Trial
+- **H0** = "Defendant is innocent" (default assumption)
+- **H1** = "Defendant is guilty" (what you're trying to prove)
+- You need **overwhelming evidence** to reject innocence
+:::
+
+**Real Example**: "Biophilic design increases worker satisfaction by >0.5 points on 5-point scale"
+- **H0**: Biophilic = Traditional (no difference)
+- **H1**: Biophilic > Traditional (satisfaction increase ≥0.5)
+
+---
+
+### Slide 2: T-tests - Your Evidence Judge
+
+**🎯 T-test = "Is this difference REAL or just random luck?"**
+
+::: {.columns}
+
+::: {.column width="60%"}
+**What it does:**
+- Compares two groups (old vs. new design)
+- Accounts for natural variation in data
+- Gives you a **p-value** (probability it's just luck)
+
+**The Magic Number**: p < 0.05
+- "Less than 5% chance this is random"
+- "Pretty confident the difference is real"
+:::
+
+::: {.column width="40%"}
+**Architecture Example:**
+- Test 20 people in old office
+- Test 20 people in new office  
+- Productivity scores: 6.2 vs 7.1
+- **Question**: Is 0.9 difference real?
+- **T-test says**: p = 0.032 ✅
+- **Conclusion**: Yes, probably real!
+:::
+
+:::
+
+::: {.callout-warning}
+## Analogy: Coin Flipping
+If you flip 10 heads in a row, is the coin rigged? 
+- **Probability of this by chance**: 1/1024 = 0.001
+- **Way less than 0.05** → Coin is probably rigged!
+:::
+
+**Common Mistake**: "My 3 test users liked it better" ≠ statistical significance!
+
+---
+
+### Slide 3: Sample Size - How Many People Do You Actually Need?
+
+**🎲 The Goldilocks Problem: Not too few, not too many, just right**
+
+::: {.columns}
+
+::: {.column width="50%"}
+**Too Small (n < 10):**
+- ❌ Can't detect real differences
+- ❌ Results change drastically with one more person
+- ❌ No statistical power
+
+**Too Large (n > 100):**
+- ✅ Very reliable BUT...
+- 💰 Expensive and time-consuming
+- 🤯 May detect differences that don't matter practically
+:::
+
+::: {.column width="50%"}
+**Just Right (n = 20-50 for most studies):**
+- ✅ Can detect meaningful differences
+- ✅ Manageable cost and time
+- ✅ Reliable enough for decisions
+
+**Quick Rules of Thumb:**
+- **Pilot studies**: 10-15 people minimum
+- **User testing**: 20-30 people
+- **Survey research**: 30+ people
+- **Big differences**: Fewer people needed
+- **Small differences**: More people needed
+:::
+
+:::
+
+::: {.callout-tip}
+## Analogy: Restaurant Reviews
+- **3 reviews**: Not enough to trust
+- **30 reviews**: Pretty reliable picture
+- **300 reviews**: Overkill for most decisions, but very reliable
+:::
+
+**Power Calculation Tools**: G*Power (free software) - tells you exactly how many you need!
+
+**A3 Reality Check**: Most of you needed 20-30 people minimum, not 8-12! 📊
 
 ---
 

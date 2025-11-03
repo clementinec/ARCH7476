@@ -5,7 +5,12 @@
       "Bash(quarto:*)",
       "WebSearch",
       "Bash(pandoc:*)",
-      "Bash(unzip:*)"
+      "Bash(unzip:*)",
+      "Bash(python:*)",
+      "Bash(pip3 install:*)",
+      "Bash(rg:*)",
+      "Bash(grep:*)",
+      "Bash(sed:*)"
     ],
     "deny": [],
     "ask": []

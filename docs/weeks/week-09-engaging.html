@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.4.544">
+
+  <title>ARCH7476: Evidence-Based Generative Design - Week 9: The Story Wars &amp; Figure Championships</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #f07178; background-color: #2a0f15; font-weight: bold; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #00e0e0; } /* Attribute */
+    code span.bn { color: #d4d0ab; } /* BaseN */
+    code span.bu { color: #abe338; } /* BuiltIn */
+    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffd700; } /* Constant */
+    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
+    code span.cv { color: #ffd700; } /* CommentVar */
+    code span.do { color: #f8f8f2; } /* Documentation */
+    code span.dt { color: #ffa07a; } /* DataType */
+    code span.dv { color: #d4d0ab; } /* DecVal */
+    code span.er { color: #f07178; text-decoration: underline; } /* Error */
+    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
+    code span.fl { color: #d4d0ab; } /* Float */
+    code span.fu { color: #ffa07a; } /* Function */
+    code span.im { color: #abe338; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
+    code span.op { color: #ffa07a; } /* Operator */
+    code span.ot { color: #00e0e0; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
+    code span.sc { color: #abe338; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #00e0e0; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #dcc6e0; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-dark">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Week 9: The Story Wars &amp; Figure Championships</h1>
+  <p class="subtitle">Narrative Battles, Visualization Showdowns, and Presentation Olympics</p>
+
+<div class="quarto-title-authors">
+</div>
+
+</section>
+<section id="welcome-to-the-story-wars" class="slide level2 center">
+<h2>🎬 Welcome to the Story Wars!</h2>
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Today’s Epic Battle: Who Tells the Best Story?</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>The Ultimate Challenge</strong>: Transform your semester of hard work into a story so compelling that busy decision-makers will stop scrolling social media to listen</p>
+<p><strong>The Weapons</strong>: Two slides, killer visuals, and narrative superpowers</p>
+<p><strong>The Stakes</strong>: Professional credibility, stakeholder buy-in, and Object Fair domination</p>
+</div>
+</div>
+</div>
+<p><strong>🏆 Today’s Championship Events:</strong></p>
+<p>🎭 <strong>Story Structure Showdown</strong> | 📊 <strong>Figure Design Olympics</strong> | 🎤 <strong>Elevator Pitch Battle Royale</strong> | 👥 <strong>Peer Review Arena</strong> | 🎨 <strong>Object Card Design Wars</strong></p>
+</section>
+<section class="slide level2 center">
+
+</section>
+<section>
+<section id="round-1-the-great-story-disasters" class="title-slide slide level1 center" data-background-color="#8B0000">
+<h1>Round 1: The Great Story Disasters</h1>
+
+</section>
+<section id="when-good-research-goes-bad-story-edition" class="slide level2 center">
+<h2>💀 When Good Research Goes Bad (Story Edition)</h2>
+<p><strong>Before we become storytelling champions, let’s learn from the narrative graveyard…</strong></p>
+<div class="callout callout-warning no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Real-World Presentation Disasters</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>🏢 Case 1: The $50M Miscommunication</strong></p>
+<ul>
+<li>PhD researcher presents brilliant energy analysis to Hong Kong developer board</li>
+<li><strong>45 minutes</strong> of technical methodology explanation</li>
+<li><strong>30 seconds</strong> on what this means for their bottom line</li>
+<li><strong>Board’s response</strong>: “Interesting… but what should we actually DO?”</li>
+<li><strong>Result</strong>: No adoption, project shelved, researcher never invited back</li>
+</ul>
+<p><strong>📊 Case 2: The Chart Catastrophe</strong></p>
+<ul>
+<li>Consultant shows 47 different charts to planning committee</li>
+<li><strong>Every chart</strong> technically perfect, statistically sound</li>
+<li><strong>No chart</strong> tells decision-makers what action to take</li>
+<li><strong>Committee response</strong>: “We’re more confused than when we started”</li>
+<li><strong>Result</strong>: Status quo wins, innovative solution dies</li>
+</ul>
+</div>
+</div>
+</div>
+<p><strong>🤔 Reality Check</strong>: How many of your presentations focus more on HOW you did it than WHY anyone should care?</p>
+</section>
+<section id="the-two-slide-death-match" class="slide level2 center">
+<h2>🎯 The Two-Slide Death Match</h2>
+<p><strong>⚡ The challenge</strong>: Distill your ENTIRE semester into exactly 2 slides that would make a busy stakeholder stop what they’re doing and take action</p>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Battle Stations: Choose Your Story Structure</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Move to corners of the room based on your current approach:</strong></p>
+<p><strong>🔥 Action Corner</strong>: “I start with what they should DO”</p>
+<p><strong>📊 Evidence Corner</strong>: “I start with what I FOUND”</p>
+<p><strong>😰 Problem Corner</strong>: “I start with what’s WRONG”</p>
+<p><strong>🤷 Confusion Corner</strong>: “I honestly have NO IDEA how to start”</p>
+<p><strong>3 minutes to convince other corners why YOUR approach wins!</strong></p>
+</div>
+</div>
+</div>
+<p><strong>Plot twist</strong>: We’ll test which structure actually WORKS with real stakeholders!</p>
+</section>
+<section id="the-story-structure-science" class="slide level2 center">
+<h2>🎬 The Story Structure Science</h2>
+<p><strong>🧠 Cognitive Science Reality</strong>: Human brains process stories in predictable patterns</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource mermaid number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>graph TD</span>
+<span id="cb1-2"><a></a>    A[😴 Stakeholder: Busy &amp; Distracted] --&gt; B{🎯 Hook: Why Should I Care?}</span>
+<span id="cb1-3"><a></a>    B --&gt;|Interested| C[📊 Evidence: What Did You Find?]</span>
+<span id="cb1-4"><a></a>    B --&gt;|Bored| D[💀 Lost Forever]</span>
+<span id="cb1-5"><a></a>    C --&gt; E[💡 Action: What Should I Do?]</span>
+<span id="cb1-6"><a></a>    E --&gt; F[✅ Success: Stakeholder Convinced]</span>
+<span id="cb1-7"><a></a>    C --&gt;|Confused| G[😵 Overloaded &amp; Confused]</span>
+<span id="cb1-8"><a></a>    E --&gt;|Vague| H[🤔 Interested But No Action]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>⏰ You have 15 seconds</strong> to grab attention or lose them forever!</p>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="round-2-narrative-structure-wars" class="title-slide slide level1 center" data-background-color="#4B0082">
+<h1>Round 2: Narrative Structure Wars</h1>
+
+</section>
+<section id="the-structure-showdown-3-competing-frameworks" class="slide level2 center">
+<h2>🥊 The Structure Showdown: 3 Competing Frameworks</h2>
+<h3 id="framework-a-stakeholder-first-structure">🎯 Framework A: “Stakeholder-First” Structure</h3>
+<p><strong>Slide 1</strong>: “Here’s YOUR problem and why it costs you money/time/reputation”</p>
+<p><strong>Slide 2</strong>: “Here’s exactly what to DO about it (with confidence levels)”</p>
+<h3 id="framework-b-evidence-first-structure">📊 Framework B: “Evidence-First” Structure</h3>
+<p><strong>Slide 1</strong>: “Here’s the surprising thing I discovered in the data”</p>
+<p><strong>Slide 2</strong>: “Here’s what this means for your decisions”</p>
+<h3 id="framework-c-story-arc-structure">🎭 Framework C: “Story Arc” Structure</h3>
+<p><strong>Slide 1</strong>: “The journey from problem to discovery to solution”</p>
+<p><strong>Slide 2</strong>: “Your roadmap to implementation and success”</p>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Live Testing Laboratory</strong></p>
+</div>
+<div class="callout-content">
+<p>We’re going to TEST these frameworks with REAL scenarios! Each team gets 5 minutes to create the same content using different structures, then we vote on which is most convincing!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="the-structure-laboratory-experiment" class="slide level2 center">
+<h2>🧪 The Structure Laboratory Experiment</h2>
+<p><strong>🎲 Scenario Assignment</strong> (roll dice for your test case):</p>
+<p><strong>1-2: Hong Kong Housing Developer</strong> - Problem: Rising construction costs vs.&nbsp;resident satisfaction - Stakeholder: Profit-focused, time-pressed, skeptical of research - Decision: Whether to invest in evidence-based design optimization</p>
+<p><strong>3-4: Hospital Facility Manager</strong> - Problem: Patient complaints about lighting and noise - Stakeholder: Budget-constrained, regulation-focused, risk-averse - Decision: Whether to implement design changes between renovations</p>
+<p><strong>5-6: Government Planning Official</strong> - Problem: New sustainability requirements vs.&nbsp;development pressure - Stakeholder: Policy-focused, public accountability, political constraints - Decision: Whether to approve innovative building performance standards</p>
+<p><strong>⏰ 15 minutes</strong>: Create 2-slide pitch using assigned framework</p>
+<p><strong>🎯 Test</strong>: Present to “stakeholder” (classmate in role), get real feedback</p>
+</section>
+<section id="live-results-dashboard" class="slide level2 center">
+<h2>📊 Live Results Dashboard</h2>
+<p><strong>Vote in real-time</strong>: Which presentations would actually change stakeholder behavior?</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 20%">
+<col style="width: 27%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Framework</th>
+<th>Clarity Score</th>
+<th>Action Score</th>
+<th>Credibility Score</th>
+<th><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Stakeholder-First</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td><strong>?</strong></td>
+</tr>
+<tr class="even">
+<td>Evidence-First</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td><strong>?</strong></td>
+</tr>
+<tr class="odd">
+<td>Story Arc</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td><strong>?</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>🏆 Winner gets</strong>: Professional storytelling bragging rights + Mystery prize!</p>
+</section>
+<section id="the-science-behind-the-winner" class="slide level2 callout-success center">
+<h2>The Science Behind the Winner</h2>
+<p><strong>Why did the winning structure work better?</strong></p>
+<ul>
+<li>Cognitive load theory: _____________</li>
+<li>Stakeholder psychology: _____________</li>
+<li>Decision-making science: _____________</li>
+</ul>
+<p><strong>How can you apply this to YOUR real presentations?</strong></p>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="round-3-figure-design-olympics" class="title-slide slide level1 center" data-background-color="#006400">
+<h1>Round 3: Figure Design Olympics</h1>
+
+</section>
+<section id="the-visualization-gladiator-arena" class="slide level2 center">
+<h2>🎨 The Visualization Gladiator Arena</h2>
+<p><strong>🏆 Championship Categories:</strong></p>
+<h3 id="speed-chart-challenge-10-minutes">📊 <strong>Speed Chart Challenge</strong> (10 minutes)</h3>
+<p>Transform this terrible chart into presentation gold!</p>
+<p><em>[Show intentionally awful chart: cluttered, unclear, no message]</em></p>
+<p><strong>Rules</strong>: Same data, maximum impact, stakeholder-friendly</p>
+<h3 id="message-clarity-championships-15-minutes">🎯 <strong>Message Clarity Championships</strong> (15 minutes)</h3>
+<p>Create a figure where the key insight is obvious in <strong>3 seconds</strong></p>
+<h3 id="uncertainty-communication-olympics-12-minutes">🔥 <strong>Uncertainty Communication Olympics</strong> (12 minutes)</h3>
+<p>Show confidence levels without confusing non-experts</p>
+<h3 id="professional-polish-finals-18-minutes">💎 <strong>Professional Polish Finals</strong> (18 minutes)</h3>
+<p>Make one figure so beautiful it could be in Harvard Business Review</p>
+</section>
+<section id="speed-chart-battle-royale" class="slide level2 center">
+<h2>⚡ Speed Chart Battle Royale</h2>
+<p><strong>🚨 Current Disaster</strong>:</p>
+
+<img data-src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZjBmMGYwIi8+CiAgICA8dGV4dCB4PSIyMDAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5UZXJyaWJsZSBDaGFydCBXaXRoIFRvbyBNdWNoIERhdGE8L3RleHQ+Cjwvc3ZnPg==" class="r-stretch quarto-figure-center"><p class="caption">Terrible Chart Example</p><p><strong>Problems with this chart:</strong> - 47 different data series (seriously!) - No clear message or takeaway - Tiny text, confusing colors - Overwhelming for stakeholders</p>
+<p><strong>⏰ 10-minute transformation challenge!</strong></p>
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Speed Chart Rescue Formula</strong></p>
+</div>
+<div class="callout-content">
+<ol type="1">
+<li><strong>One Message Rule</strong>: What’s the ONE thing stakeholders need to know?</li>
+<li><strong>3-Second Test</strong>: Key insight obvious immediately?</li>
+<li><strong>Annotation Strategy</strong>: Use text to guide interpretation</li>
+<li><strong>Color Purpose</strong>: Every color choice supports the message</li>
+<li><strong>Context Connection</strong>: How does this relate to stakeholder decisions?</li>
+</ol>
+</div>
+</div>
+</div>
+<p><strong>🏆 Judging</strong>: Present your transformation in 60 seconds!</p>
+</section>
+<section id="the-3-second-message-test" class="slide level2 center">
+<h2>🎯 The 3-Second Message Test</h2>
+<p><strong>🧠 Brain Science</strong>: Stakeholders form first impressions in 3 seconds</p>
+<p><strong>Challenge</strong>: Create figures that pass the “conference coffee break test”</p>
+<p><em>Scenario: Busy stakeholder walks past your poster with coffee, glances for 3 seconds while walking. Do they “get it”?</em></p>
+<h3 id="live-testing-protocol">🏃 Live Testing Protocol</h3>
+<ol type="1">
+<li><strong>Create your figure</strong> (10 minutes)</li>
+<li><strong>Speed dating rounds</strong> (30 seconds each):
+<ul>
+<li>Show figure to classmate for exactly 3 seconds</li>
+<li>They write down what they understood</li>
+<li>Compare to your intended message</li>
+</ul></li>
+<li><strong>Iterate rapidly</strong> based on feedback</li>
+<li><strong>Championship round</strong>: Best 3-second clarity wins!</li>
+</ol>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Common 3-Second Failures</strong></p>
+</div>
+<div class="callout-content">
+<p>❌ <strong>Chart Title</strong>: “Analysis of Building Performance Metrics Across Various Scenarios”</p>
+<p>✅ <strong>Chart Title</strong>: “South-facing offices need blinds to prevent glare”</p>
+<p>❌ <strong>Chart Message</strong>: Hidden in data, requires interpretation</p>
+<p>✅ <strong>Chart Message</strong>: Annotated, highlighted, impossible to miss</p>
+</div>
+</div>
+</div>
+</section>
+<section id="professional-polish-transformation-lab" class="slide level2 center">
+<h2>📐 Professional Polish Transformation Lab</h2>
+<p><strong>🎨 Design Clinic Format</strong>: 5-minute individual consultations while others work</p>
+<p><strong>Bring your WORST figure</strong> (we all have one!) for emergency makeover:</p>
+<h3 id="figure-emergency-room">🚑 Figure Emergency Room</h3>
+<p><strong>Triage Categories:</strong></p>
+<p><strong>🔴 Critical</strong>: Completely incomprehensible, multiple fatal errors <strong>🟡 Urgent</strong>: Technically correct but unprofessional presentation<br>
+<strong>🟢 Stable</strong>: Good content, needs minor polish for Object Fair</p>
+<p><strong>Treatment Plans:</strong></p>
+<ul>
+<li><strong>Typography therapy</strong>: Font hierarchy, readability, professionalism</li>
+<li><strong>Color surgery</strong>: Strategic use, accessibility, brand consistency<br>
+</li>
+<li><strong>Layout operation</strong>: White space, alignment, visual flow</li>
+<li><strong>Message transplant</strong>: Clear communication of key insights</li>
+</ul>
+</section>
+<section id="beforeafter-showcase" class="slide level2 callout-success center">
+<h2>Before/After Showcase</h2>
+<p><strong>Share your transformation!</strong></p>
+<ul>
+<li>30 seconds: Show before version (no shame, we’ve all been there!)</li>
+<li>30 seconds: Reveal after version</li>
+<li>30 seconds: Explain what changed and why it works better</li>
+</ul>
+<p><strong>Vote</strong>: Most dramatic improvement wins the “Phoenix Award” 🔥→🦋</p>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="round-4-elevator-pitch-battle-royale" class="title-slide slide level1 center" data-background-color="#FF4500">
+<h1>Round 4: Elevator Pitch Battle Royale</h1>
+
+</section>
+<section id="second-pitch-championship" class="slide level2 center">
+<h2>🥊 60-Second Pitch Championship</h2>
+<p><strong>🎬 The Ultimate Test</strong>: Convince a stranger to care about your work in 60 seconds</p>
+<h3 id="the-formula-for-victory">🎯 The Formula for Victory</h3>
+<p><strong>15 seconds</strong>: Hook (Why should they care RIGHT NOW?) <strong>30 seconds</strong>: Evidence (What did you discover that changes everything?) <strong>15 seconds</strong>: Action (What should they do about it?)</p>
+<h3 id="battle-arena-format">🎪 Battle Arena Format</h3>
+<p><strong>Round 1: Speed Dating Pitches</strong> (15 minutes) - 2 minutes per pair - 60-second pitch + 60-second feedback - Rotate through 6 different “stakeholders”</p>
+<p><strong>Round 2: Gladiator Elimination</strong> (20 minutes) - Class votes for top 6 pitches - Semi-finals: 3 head-to-head battles - Finals: Champion vs.&nbsp;Champion</p>
+<p><strong>Round 3: Stakeholder Jury</strong> (10 minutes) - Final 3 pitches to “real” stakeholder panel (instructor + volunteers) - Professional feedback and winner selection</p>
+</section>
+<section id="stakeholder-role-playing-cards" class="slide level2 center">
+<h2>🎭 Stakeholder Role Playing Cards</h2>
+<p><strong>Draw a card, become that stakeholder for pitch testing:</strong></p>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>🃏 Stakeholder Personas</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>🏢 The Busy Developer</strong> - Cares about: ROI, timeline, risk reduction - Hates: Academic jargon, uncertain recommendations - Wants: Clear numbers, specific actions, confidence levels</p>
+<p><strong>🏥 The Facility Manager</strong> - Cares about: User complaints, maintenance costs, operational efficiency - Hates: Theoretical solutions, complex technology - Wants: Practical fixes, proven approaches, measurable improvements</p>
+<p><strong>🏛️ The Policy Maker</strong> - Cares about: Public benefit, regulatory compliance, political feasibility - Hates: Single building focus, industry bias - Wants: Scalable solutions, stakeholder consensus, evidence-based policy</p>
+<p><strong>💰 The Investor</strong> - Cares about: Market returns, competitive advantage, risk management - Hates: Unquantified benefits, long payback periods - Wants: Financial models, market positioning, exit strategies</p>
+<p><strong>👥 The Community Representative</strong> - Cares about: Resident needs, equity, long-term impact - Hates: Top-down decisions, gentrification risk - Wants: Community control, local benefits, transparent process</p>
+</div>
+</div>
+</div>
+<p><strong>🎯 Your mission</strong>: Adapt your pitch to each stakeholder type!</p>
+</section>
+<section id="championship-judging-criteria" class="slide level2 center">
+<h2>🏆 Championship Judging Criteria</h2>
+<p><strong>Live scoring on phones</strong> (1-10 scale):</p>
+<table>
+<thead>
+<tr class="header">
+<th>Criteria</th>
+<th>Weight</th>
+<th>Your Score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Clarity</strong>: Did I understand the problem immediately?</td>
+<td>25%</td>
+<td>?</td>
+</tr>
+<tr class="even">
+<td><strong>Evidence</strong>: Was I convinced by the findings?</td>
+<td>25%</td>
+<td>?</td>
+</tr>
+<tr class="odd">
+<td><strong>Action</strong>: Do I know exactly what to do next?</td>
+<td>25%</td>
+<td>?</td>
+</tr>
+<tr class="even">
+<td><strong>Confidence</strong>: Would I bet my reputation on this?</td>
+<td>25%</td>
+<td>?</td>
+</tr>
+</tbody>
+</table>
+<h3 id="live-leaderboard">🎪 Live Leaderboard</h3>
+<p><em>Real-time results displayed as voting happens!</em></p>
+<p><strong>🥇 Current Champion</strong>: _______________</p>
+<p><strong>🔥 Best Hook</strong>: _______________</p>
+<p><strong>📊 Most Convincing Evidence</strong>: _______________</p>
+<p><strong>🎯 Clearest Action</strong>: _______________</p>
+</section>
+<section id="victory-analysis" class="slide level2 callout-success center">
+<h2>Victory Analysis</h2>
+<p><strong>What made the winning pitches work?</strong></p>
+<ol type="1">
+<li><strong>Hook Strategy</strong>: _______________</li>
+<li><strong>Evidence Presentation</strong>: _______________<br>
+</li>
+<li><strong>Action Clarity</strong>: _______________</li>
+<li><strong>Delivery Style</strong>: _______________</li>
+</ol>
+<p><strong>How can everyone apply these insights?</strong></p>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="round-5-peer-review-arena" class="title-slide slide level1 center" data-background-color="#800080">
+<h1>Round 5: Peer Review Arena</h1>
+
+</section>
+<section id="the-constructive-criticism-championships" class="slide level2 center">
+<h2>⚔️ The Constructive Criticism Championships</h2>
+<p><strong>🎯 Mission</strong>: Make each other’s work so good that competitors will weep</p>
+<h3 id="review-battle-format">🔥 Review Battle Format</h3>
+<p><strong>Phase 1: Material Exchange</strong> (5 minutes) - Share complete A4 draft + practice case slides - Provide context: “What feedback would help most?” - Set expectations: “My biggest worry is…”</p>
+<p><strong>Phase 2: Deep Dive Analysis</strong> (25 minutes) - <strong>Silent review period</strong>: Take detailed notes - <strong>Focus areas</strong>: Story clarity, evidence strength, stakeholder relevance - <strong>Document specific suggestions</strong>: Not just “make it better”</p>
+<p><strong>Phase 3: Feedback Face-Off</strong> (15 minutes)<br>
+- <strong>5 minutes</strong>: Present your feedback clearly - <strong>5 minutes</strong>: Discuss solutions and improvements - <strong>5 minutes</strong>: Plan implementation strategy</p>
+</section>
+<section id="the-professional-feedback-framework" class="slide level2 center">
+<h2>📋 The Professional Feedback Framework</h2>
+<h3 id="the-sos-method">🎯 The “SOS” Method</h3>
+<p><strong>🌟 Strengths</strong> (2 minutes): - What’s working really well that should be emphasized? - What would you steal for your own project? - What makes this memorable and compelling?</p>
+<p><strong>🔍 Opportunities</strong> (2 minutes): - Where could clarity be improved? - What connections could be stronger? - Which evidence needs more development?</p>
+<p><strong>🚀 Strategies</strong> (1 minute): - Specific, actionable suggestions - Prioritized by impact and feasibility - Connected to Object Fair success</p>
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Advanced Review Challenges</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>🏆 Best Feedback Awards</strong>:</p>
+<ul>
+<li><strong>🎯 Most Actionable</strong>: Specific suggestions with implementation steps</li>
+<li><strong>💡 Most Insightful</strong>: Identified issues author didn’t see</li>
+<li><strong>🤝 Most Helpful</strong>: Feedback that dramatically improves the work</li>
+<li><strong>🎭 Best Role-Play</strong>: Gave feedback from true stakeholder perspective</li>
+</ul>
+<p><strong>Voting</strong>: Authors choose which feedback was most valuable!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="the-peer-review-laboratory" class="slide level2 center">
+<h2>🔬 The Peer Review Laboratory</h2>
+<h3 id="diagnostic-questions-for-reviewers">💊 Diagnostic Questions for Reviewers</h3>
+<p><strong>Story Health Check:</strong> - [ ] Can I explain their project to someone else in 60 seconds? - [ ] Is the stakeholder relevance obvious throughout? - [ ] Would I make the decision they recommend based on this evidence?</p>
+<p><strong>Evidence Stress Test:</strong> - [ ] Are the key findings supported by appropriate evidence? - [ ] Is uncertainty communicated appropriately? - [ ] Would stakeholders find this credible and actionable?</p>
+<p><strong>Professional Polish Assessment:</strong> - [ ] Could this be presented to real industry professionals? - [ ] Are figures clear and compelling at presentation scale? - [ ] Is the overall package cohesive and professional?</p>
+<h3 id="live-review-quality-meter">🎪 Live Review Quality Meter</h3>
+<p><strong>Track the quality of feedback across the room:</strong></p>
+<ul>
+<li>👀 <strong>Depth of Analysis</strong>: How thoroughly did reviewers engage?</li>
+<li>🎯 <strong>Actionability</strong>: How specific and useful were suggestions?</li>
+<li>🤝 <strong>Professional Tone</strong>: How constructive and supportive?</li>
+<li>💡 <strong>Insight Generation</strong>: Did reviews reveal new perspectives?</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="round-6-object-card-design-wars" class="title-slide slide level1 center" data-background-color="#DC143C">
+<h1>Round 6: Object Card Design Wars</h1>
+
+</section>
+<section id="the-ultimate-visual-communication-challenge" class="slide level2 center">
+<h2>🎨 The Ultimate Visual Communication Challenge</h2>
+<p><strong>🏆 Mission</strong>: Create a poster so compelling that people fight over who gets to work with you</p>
+<h3 id="the-30-second-poster-test">⚡ The 30-Second Poster Test</h3>
+<p><strong>Scenario</strong>: Object Fair networking break. Stakeholder walks past your poster with coffee and phone. You have 30 seconds to make them:</p>
+<ol type="1">
+<li><strong>Stop walking</strong> (3 seconds)</li>
+<li><strong>Read your message</strong> (15 seconds)<br>
+</li>
+<li><strong>Take action</strong> (contact you, ask questions, offer collaboration)</li>
+</ol>
+<h3 id="design-challenge-rounds">🎯 Design Challenge Rounds</h3>
+<p><strong>Round 1: Message Hierarchy</strong> (10 minutes) - One clear message dominates the design - Supporting evidence visible but secondary - Contact/action information findable but not cluttered</p>
+<p><strong>Round 2: Visual Impact</strong> (15 minutes) - Compelling from 6 feet away (networking distance) - Professional quality suitable for career portfolio - Memorable enough to be recognized later</p>
+<p><strong>Round 3: Stakeholder Test</strong> (12 minutes) - Works for multiple stakeholder types - Language appropriate for non-experts - Action items clear and specific</p>
+</section>
+<section id="live-design-laboratory" class="slide level2 center">
+<h2>🔥 Live Design Laboratory</h2>
+<h3 id="current-object-card-emergency-room">🚨 Current Object Card Emergency Room</h3>
+<p><strong>Triage your existing design:</strong></p>
+<p><strong>🟢 Green Zone</strong>: Professional quality, clear message, ready for Object Fair <strong>🟡 Yellow Zone</strong>: Good content, needs design polish and clarity improvement <strong>🔴 Red Zone</strong>: Complete redesign needed, unclear message, unprofessional appearance</p>
+<h3 id="speed-design-clinic">⚡ Speed Design Clinic</h3>
+<p><strong>15-minute individual consultations</strong> while others work:</p>
+<p><strong>Bring</strong>: Current Object Card draft (any stage) <strong>Get</strong>: Specific design feedback and rapid improvement strategies <strong>Focus</strong>: Maximum impact changes for minimum time investment</p>
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Object Card Success Formula</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>🎯 Message Dominance</strong>: - ONE key finding/recommendation as hero - Everything else supports this message - 3-second understanding test</p>
+<p><strong>👁️ Visual Hierarchy</strong>: - Size, color, position guide attention - Most important = biggest, boldest, best position - Less important = smaller, neutral, secondary position</p>
+<p><strong>🎨 Professional Polish</strong>: - Consistent fonts, colors, spacing - High-quality images and graphics - Print-test at actual size</p>
+<p><strong>📞 Action Orientation</strong>: - Clear contact information - Specific next steps for interested stakeholders - Memorable personal branding</p>
+</div>
+</div>
+</div>
+</section>
+<section id="object-card-championship-judging" class="slide level2 center">
+<h2>🏆 Object Card Championship Judging</h2>
+<h3 id="live-voting-categories">📊 Live Voting Categories</h3>
+<p><strong>Vote with phones for real-time results:</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Winner</th>
+<th>Why They Won</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>🎯 Clearest Message</strong></td>
+<td>?</td>
+<td>?</td>
+</tr>
+<tr class="even">
+<td><strong>👁️ Best Visual Impact</strong></td>
+<td>?</td>
+<td>?</td>
+</tr>
+<tr class="odd">
+<td><strong>💼 Most Professional</strong></td>
+<td>?</td>
+<td>?</td>
+</tr>
+<tr class="even">
+<td><strong>🤝 Most Stakeholder-Friendly</strong></td>
+<td>?</td>
+<td>?</td>
+</tr>
+<tr class="odd">
+<td><strong>🔥 Most Memorable</strong></td>
+<td>?</td>
+<td>?</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hall-of-fame-gallery">🎪 Hall of Fame Gallery</h3>
+<p><strong>Photo documentation of winning strategies:</strong></p>
+<ul>
+<li><strong>Message hierarchy examples</strong>: How winners made key points dominant</li>
+<li><strong>Visual impact techniques</strong>: Color, layout, typography strategies</li>
+<li><strong>Professional polish details</strong>: What separates good from great</li>
+<li><strong>Stakeholder-friendly language</strong>: How to communicate without jargon</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="victory-celebration-integration" class="title-slide slide level1 center" data-background-color="#FFD700">
+<h1>Victory Celebration &amp; Integration</h1>
+
+</section>
+<section id="what-you-conquered-today" class="slide level2 center">
+<h2>🎉 What You Conquered Today</h2>
+</section>
+<section id="your-new-storytelling-superpowers" class="slide level2 callout-success center" data-icon="false">
+<h2>Your New Storytelling Superpowers</h2>
+<p><strong>🎭 Narrative Mastery</strong>: You know which story structure actually changes stakeholder behavior</p>
+<p><strong>📊 Visual Command</strong>: Your figures now communicate clearly in 3 seconds</p>
+<p><strong>🎤 Pitch Perfection</strong>: You can convince strangers to care about your work in 60 seconds</p>
+<p><strong>🤝 Review Excellence</strong>: You give and receive feedback like a professional</p>
+<p><strong>🎨 Design Dominance</strong>: Your Object Card will stop stakeholders in their tracks</p>
+<p><strong>Most importantly</strong>: You’ve transformed from researcher to professional communicator!</p>
+</section>
+<section id="object-fair-preparation-mastery" class="slide level2 center">
+<h2>🚀 Object Fair Preparation Mastery</h2>
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Week 9 Victory Checklist</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Level 1: Presentation Survival</strong> ✅</p>
+<ol type="1">
+<li><strong>Complete Peer Review #2</strong> - Use today’s professional feedback framework</li>
+<li><strong>Implement story structure</strong> - Apply winning narrative framework</li>
+<li><strong>Polish key figures</strong> - Make them pass the 3-second test</li>
+</ol>
+<p><strong>Level 2: Presentation Excellence</strong> 🎖️</p>
+<ol start="4" type="1">
+<li><strong>Master elevator pitch</strong> - Practice until you can deliver in your sleep</li>
+<li><strong>Object Card perfection</strong> - Battle-tested design ready for printing</li>
+<li><strong>Stakeholder validation</strong> - Test your story with someone outside class</li>
+</ol>
+<p><strong>Level 3: Communication Ninja</strong> 🥷</p>
+<ol start="7" type="1">
+<li><strong>Multi-stakeholder adaptation</strong> - Prepare pitch variants for different audiences<br>
+</li>
+<li><strong>Q&amp;A preparation</strong> - Anticipate and practice responses to likely questions</li>
+<li><strong>Professional networking prep</strong> - Business cards, LinkedIn, follow-up strategy</li>
+</ol>
+<p><strong>Commitment check</strong>: Choose your level and announce it to your neighbor! 📣</p>
+</div>
+</div>
+</div>
+</section>
+<section id="week-10-preview-draft-defense-gladiator-arena" class="slide level2 center">
+<h2>🔮 Week 10 Preview: Draft Defense Gladiator Arena</h2>
+<p><strong>Get ready for</strong>: - Individual presentations to full professional panel - Real-time feedback and improvement suggestions<br>
+- Final polish identification and strategy development - Object Fair logistics and networking preparation</p>
+<p><strong>The stakes</strong>: This is your dress rehearsal before the real show!</p>
+</section>
+<section id="exit-victory-ritual" class="slide level2 center">
+<h2>🎊 Exit Victory Ritual</h2>
+<div class="callout callout-warning no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>The Storyteller’s Oath</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Stand up and repeat after me:</strong></p>
+<p><em>“I solemnly swear to tell stories that make stakeholders stop what they’re doing and listen.”</em></p>
+<p><em>“I will create visuals so clear that the message jumps off the page in 3 seconds.”</em></p>
+<p><em>“I will pitch my work with such clarity and confidence that opportunities will seek me out.”</em></p>
+<p><em>“I will remember that great research means nothing if it can’t change the world.”</em></p>
+<p><strong>Now high-five someone and promise to help each other dominate at Object Fair!</strong> 🙌</p>
+</div>
+</div>
+</div>
+<p><strong>🎯 Your mission</strong>: Go forth and tell stories that change the built environment!</p>
+</section>
+<section class="slide level2 center">
+
+<p><em>“Great research without great storytelling is just expensive data. Great storytelling without great research is just marketing. You now have both!”</em> ⭐</p>
+<p><strong>Next week: The final gladiator test before Object Fair glory!</strong> 🏆</p>
+
+<div class="quarto-auto-generated-content">
+<div class="footer footer-default">
+
+</div>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'convex',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
