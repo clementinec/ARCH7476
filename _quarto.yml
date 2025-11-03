@@ -43,16 +43,16 @@ website:
             href: weeks/week-06.qmd
           - text: "W7: Decide with Numbers"
             href: weeks/week-07.qmd
-          - text: "W8: Light Workflow Help"
-            href: weeks/week-08.qmd
-          - text: "W9: Storytelling & Figures"
-            href: weeks/week-09.qmd
-          - text: "W10: Draft Defense"
-            href: weeks/week-10.qmd
-          - text: "W11: Final Polish"
-            href: weeks/week-11.qmd
-          - text: "W12: Object Fair"
-            href: weeks/week-12.qmd
+          - text: "W8: Documentation Olympics"
+            href: weeks/week-08-engaging.qmd
+          - text: "W9: Story Wars & Figure Championships"
+            href: weeks/week-09-engaging.qmd
+          - text: "W10: Gladiator Arena Tournament"
+            href: weeks/week-10-engaging.qmd
+          - text: "W11: Championship Training Camp"
+            href: weeks/week-11-engaging.qmd
+          - text: "W12: Grand Finale Championship"
+            href: weeks/week-12-engaging.qmd
       - section: "Assignments"
         contents:
           - assignments.qmd

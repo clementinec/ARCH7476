@@ -348,12 +348,109 @@
 </div>
 </div>
 <ul>
+<li class="fragment"><strong>Statistics Refresher</strong>: Hypothesis testing, t-tests, and sample sizes (super simple!)</li>
 <li class="fragment"><strong>Warm-up</strong>: Peer Review #1 feedback integration</li>
 <li class="fragment"><strong>Case Study Battle</strong>: Real-world threshold disasters vs.&nbsp;successes</li>
 <li class="fragment"><strong>Team Challenge</strong>: Competitive decision framework development</li>
 <li class="fragment"><strong>Hot Seat</strong>: Counter-argument rapid-fire session</li>
 <li class="fragment"><strong>Change Log Workshop</strong>: Document your learning evolution</li>
 </ul>
+</section>
+<section id="quick-statistics-refresher" class="slide level2">
+<h2>Quick Statistics Refresher</h2>
+<h3 id="because-a3-showed-we-need-this">(Because A3 Showed We Need This!)</h3>
+</section>
+<section class="slide level2">
+
+<h3 id="slide-1-hypotheses---like-design-claims-you-can-test">Slide 1: Hypotheses - Like Design Claims You Can Test</h3>
+<p><strong>🏗️ Think of a hypothesis like saying: “My design will work better than existing solutions”</strong></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>In Architecture:</strong> - “This office layout will improve productivity” - “Better lighting will reduce eye strain” - “Open spaces will increase collaboration”</p>
+</div><div class="column" style="width:50%;">
+<p><strong>In Statistics:</strong> - <strong>H0 (Null)</strong>: “No difference” (old design = new design) - <strong>H1 (Alternative)</strong>: “There IS a difference” (new design &gt; old design)</p>
+</div>
+</div>
+<p><strong>🎯 Your job</strong>: Collect enough evidence to <strong>reject H0</strong> (prove the old way is NOT as good)</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Analogy: Court Trial</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li class="fragment"><strong>H0</strong> = “Defendant is innocent” (default assumption)</li>
+<li class="fragment"><strong>H1</strong> = “Defendant is guilty” (what you’re trying to prove)</li>
+<li class="fragment">You need <strong>overwhelming evidence</strong> to reject innocence</li>
+</ul>
+</div>
+</div>
+</div>
+<p><strong>Real Example</strong>: “Biophilic design increases worker satisfaction by &gt;0.5 points on 5-point scale” - <strong>H0</strong>: Biophilic = Traditional (no difference) - <strong>H1</strong>: Biophilic &gt; Traditional (satisfaction increase ≥0.5)</p>
+</section>
+<section class="slide level2">
+
+<h3 id="slide-2-t-tests---your-evidence-judge">Slide 2: T-tests - Your Evidence Judge</h3>
+<p><strong>🎯 T-test = “Is this difference REAL or just random luck?”</strong></p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><strong>What it does:</strong> - Compares two groups (old vs.&nbsp;new design) - Accounts for natural variation in data - Gives you a <strong>p-value</strong> (probability it’s just luck)</p>
+<p><strong>The Magic Number</strong>: p &lt; 0.05 - “Less than 5% chance this is random” - “Pretty confident the difference is real”</p>
+</div><div class="column" style="width:40%;">
+<p><strong>Architecture Example:</strong> - Test 20 people in old office - Test 20 people in new office<br>
+- Productivity scores: 6.2 vs 7.1 - <strong>Question</strong>: Is 0.9 difference real? - <strong>T-test says</strong>: p = 0.032 ✅ - <strong>Conclusion</strong>: Yes, probably real!</p>
+</div>
+</div>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Analogy: Coin Flipping</strong></p>
+</div>
+<div class="callout-content">
+<p>If you flip 10 heads in a row, is the coin rigged? - <strong>Probability of this by chance</strong>: 1/1024 = 0.001 - <strong>Way less than 0.05</strong> → Coin is probably rigged!</p>
+</div>
+</div>
+</div>
+<p><strong>Common Mistake</strong>: “My 3 test users liked it better” ≠ statistical significance!</p>
+</section>
+<section class="slide level2">
+
+<h3 id="slide-3-sample-size---how-many-people-do-you-actually-need">Slide 3: Sample Size - How Many People Do You Actually Need?</h3>
+<p><strong>🎲 The Goldilocks Problem: Not too few, not too many, just right</strong></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Too Small (n &lt; 10):</strong> - ❌ Can’t detect real differences - ❌ Results change drastically with one more person - ❌ No statistical power</p>
+<p><strong>Too Large (n &gt; 100):</strong> - ✅ Very reliable BUT… - 💰 Expensive and time-consuming - 🤯 May detect differences that don’t matter practically</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Just Right (n = 20-50 for most studies):</strong> - ✅ Can detect meaningful differences - ✅ Manageable cost and time - ✅ Reliable enough for decisions</p>
+<p><strong>Quick Rules of Thumb:</strong> - <strong>Pilot studies</strong>: 10-15 people minimum - <strong>User testing</strong>: 20-30 people - <strong>Survey research</strong>: 30+ people - <strong>Big differences</strong>: Fewer people needed - <strong>Small differences</strong>: More people needed</p>
+</div>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Analogy: Restaurant Reviews</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li class="fragment"><strong>3 reviews</strong>: Not enough to trust</li>
+<li class="fragment"><strong>30 reviews</strong>: Pretty reliable picture</li>
+<li class="fragment"><strong>300 reviews</strong>: Overkill for most decisions, but very reliable</li>
+</ul>
+</div>
+</div>
+</div>
+<p><strong>Power Calculation Tools</strong>: G*Power (free software) - tells you exactly how many you need!</p>
+<p><strong>A3 Reality Check</strong>: Most of you needed 20-30 people minimum, not 8-12! 📊</p>
 </section>
 <section id="peer-review-lightning-round" class="slide level2">
 <h2>Peer Review Lightning Round</h2>

@@ -10,7 +10,8 @@
       "Bash(pip3 install:*)",
       "Bash(rg:*)",
       "Bash(grep:*)",
-      "Bash(sed:*)"
+      "Bash(sed:*)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []
