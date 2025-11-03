@@ -11,62 +11,83 @@ format:
 
 ## Today's Agenda
 
-- Peer Review #1 feedback integration
-- Setting decision thresholds
-- Addressing counter-arguments
-- Trade-off analysis frameworks
-- Change Log #1 documentation
+::: {.callout-tip}
+## Interactive Session Alert!
+Today involves **team challenges**, **case study battles**, and **threshold setting competitions**. Come ready to defend your decisions and challenge others!
+:::
+
+- **Warm-up**: Peer Review #1 feedback integration
+- **Case Study Battle**: Real-world threshold disasters vs. successes
+- **Team Challenge**: Competitive decision framework development
+- **Hot Seat**: Counter-argument rapid-fire session
+- **Change Log Workshop**: Document your learning evolution
 
 ---
 
-## Peer Review Debrief
+## Peer Review Lightning Round
 
-**What patterns emerged from peer feedback?**
+**🔥 2-Minute Partner Share** 
+*Find someone you haven't worked with yet*
 
-**Common strengths:**
-- Clear research questions
-- Appropriate methods
-- Good pilot learning integration
+**Round 1**: What was the **most surprising** piece of feedback you received? 
+**Round 2**: What was the **most actionable** suggestion?
+**Round 3**: What feedback did you **respectfully disagree** with and why?
 
-**Common improvement areas:**
-- Method documentation clarity
-- Uncertainty acknowledgment
-- Stakeholder relevance
+::: {.callout-warning}
+## Class Poll Time!
+Raise your hand if peer feedback made you:
+- 🔄 Change your method significantly
+- 🎯 Refocus on different stakeholders  
+- 📊 Redesign your data visualization
+- 🤔 Question your original claim
+:::
 
-**How will you use this feedback to strengthen A4?**
-
----
-
-## From Evidence to Decisions
-
----
-
-### The Decision-Making Challenge
-
-**Your evidence shows:**
-- Performance differences between alternatives
-- Uncertainty ranges and confidence levels
-- Context-specific factors and limitations
-
-**Your stakeholders need:**
-- Clear recommendations for action
-- Decision criteria and thresholds
-- Understanding of trade-offs and risks
-- Implementation guidance
+**Now let's see what patterns we can spot across all projects...**
 
 ---
 
-### Decision Thresholds
+## The Great Threshold Disasters of Architecture
 
-**Performance thresholds:**
-- At what point is performance "good enough"?
-- What improvement level justifies investment?
-- How do you handle uncertainty in threshold setting?
+---
 
-**Cost-benefit thresholds:**
-- What return on investment is required?
-- How do you value non-monetary benefits?
-- What risk tolerance do stakeholders have?
+### Case Study Battle: When Good Evidence Goes Bad
+
+**🏗️ The Pruitt-Igoe Housing Complex (1954-1976)**
+- **Evidence**: "High-density housing improves urban efficiency"
+- **Threshold**: "500+ units per acre is optimal"
+- **Reality**: Social dysfunction, crime, eventual demolition
+- **Missing**: Social interaction thresholds, community scale limits
+
+**❄️ The Champlain Towers South Collapse (2021)**
+- **Evidence**: "Concrete structures last 50+ years with basic maintenance"
+- **Threshold**: "Visual inspection every 10 years is sufficient"
+- **Reality**: Catastrophic failure after 40 years
+- **Missing**: Accelerated corrosion thresholds in coastal environments
+
+::: {.callout-note}
+## Discussion Prompt
+**Think-Pair-Share (5 mins)**: What architectural decision in your own project could go catastrophically wrong if you set the wrong threshold? What's your "Pruitt-Igoe" scenario?
+:::
+
+---
+
+### Threshold Reality Check: The Hong Kong Context
+
+**🏙️ Local Case Study: Hong Kong's Plot Ratio Limits**
+- **Current threshold**: 5:1-8:1 in urban areas
+- **Evidence basis**: Transportation capacity, infrastructure load
+- **Controversy**: Does this create housing shortage vs. livability?
+
+**💡 Your Turn - Rapid Fire Questions:**
+
+*Stand up and move to different corners of the room:*
+
+**Corner A**: "My threshold is based on regulations/codes"
+**Corner B**: "My threshold is based on user satisfaction data" 
+**Corner C**: "My threshold is based on economic analysis"
+**Corner D**: "My threshold is... honestly, I'm not sure yet"
+
+*Now defend your corner choice to the other groups! (3 mins each)*
 
 ---
 
@@ -171,102 +192,200 @@ format:
 
 ---
 
-### Decision Matrix Development
+### 📊 Live Decision Matrix Showdown
 
-| Alternative | Energy (30%) | Cost (25%) | User Sat (25%) | Maintenance (20%) | **Total** |
-|-------------|--------------|------------|----------------|-------------------|-----------|
-| Option A    | 8            | 6          | 9              | 7                 | **7.5**   |
-| Option B    | 9            | 4          | 8              | 8                 | **7.25**  |
-| Option C    | 7            | 9          | 7              | 9                 | **7.8**   |
+**Real-time class voting on trade-off weights!**
 
----
+*Use your phones to vote on Mentimeter/Kahoot:*
 
-### Scenario Planning
+**Question 1**: For a Hong Kong residential developer, rank importance (1-5):
+- Energy performance: ?
+- Construction cost: ?
+- User satisfaction: ?
+- Maintenance ease: ?
+- Resale value: ?
 
-**Best case scenario:**
-- All assumptions optimistic
-- Maximum benefits realized
-- Minimal implementation challenges
+**Live Results Display**:
 
-**Worst case scenario:**
-- Conservative assumptions
-- Implementation difficulties
-- External factors unfavorable
+| Alternative | Energy (X%) | Cost (Y%) | User Sat (Z%) | Maintenance (W%) | **Total** |
+|-------------|-------------|-----------|---------------|------------------|-----------|
+| High-tech   | 9           | 3         | 8             | 6                | **?**     |
+| Standard    | 6           | 8         | 7             | 8                | **?**     |
+| Budget      | 4           | 10        | 5             | 9                | **?**     |
 
-**Most likely scenario:**
-- Realistic assumptions
-- Expected challenges and solutions
-- Moderate benefit realization
+**Plot twist**: Now recalculate with class-voted weights!
 
----
-
-## Workshop: Decision Framework Development
+::: {.callout-important}
+## Reality Check
+How different are the results with class weights vs. your individual assumptions? What does this tell us about stakeholder engagement?
+:::
 
 ---
 
-### Individual Exercise (20 minutes)
+### 🎯 The Scenario Planning War Games
 
-**For your research project:**
+**🎲 Choose Your Adventure Format**
 
-1. **Identify key performance thresholds**
-   - What levels constitute success?
-   - What benchmarks or standards apply?
-   - How do you handle uncertainty?
+*Each student rolls a die to get their scenario assignment:*
 
-2. **List potential objections**
-   - What might stakeholders resist?
-   - What alternative explanations exist?
-   - How can you address concerns?
+**🌟 Best Case (Roll 1-2)**: "Everything Goes Perfect"
+- All assumptions optimistic, technology works flawlessly
+- Stakeholders embrace change, funding flows freely
+- **Your mission**: Sell this vision BUT acknowledge it's optimistic
 
-3. **Define trade-offs**
-   - What competing objectives exist?
-   - How should they be weighted?
-   - What scenarios should be considered?
+**⚡ Worst Case (Roll 3-4)**: "Murphy's Law Strikes"
+- Technology fails, budgets get cut, regulations change
+- Users resist, maintenance breaks down, economy crashes
+- **Your mission**: Plan for disaster WITHOUT being paralyzed
 
----
+**🎯 Most Likely (Roll 5-6)**: "Reality Check"
+- Some things work, some don't, typical implementation friction
+- Mixed stakeholder response, moderate budget pressure
+- **Your mission**: Balance optimism with pragmatism
 
-### Peer Discussion (15 minutes)
+**The Challenge**: Present your scenario in 90 seconds with:
+1. What happens in your scenario
+2. How your recommendation changes
+3. What contingency plans you need
 
-**Small groups:**
-- Share decision frameworks
-- Test thresholds for reasonableness
-- Identify missing counter-arguments
-- Suggest framework improvements
+**Class votes**: Which scenario team was most convincing?
 
-**Focus questions:**
-- Are thresholds defendible and realistic?
-- Have key objections been addressed?
-- Are trade-offs clearly articulated?
-
----
-
-## Change Log #1 Process
+::: {.callout-warning}
+## Professional Reality
+Real clients want to know you've thought through all scenarios. Being overly optimistic OR pessimistic kills credibility.
+:::
 
 ---
 
-### Documentation Purpose
-
-**Track your learning evolution:**
-- How has your understanding changed?
-- What methods did you refine or abandon?
-- Where did peer feedback redirect your work?
-- What assumptions proved incorrect?
-
-**Demonstrate adaptability:**
-- Show systematic response to new information
-- Document problem-solving approaches
-- Highlight integration of feedback
-- Reflect professional research practices
+## The Decision Framework Speed Dating
 
 ---
 
-### Change Log Format
+### 💖 Musical Chairs Decision Development
 
-**Date | Change Description | Reason | Impact**
+**Round 1: Threshold Speed Dating (15 minutes)**
 
-*Oct 15 | Simplified simulation model from detailed to basic | Software learning curve too steep for semester scope | Focus on key relationships rather than comprehensive analysis*
+*Students rotate every 3 minutes*
 
-*Oct 20 | Added uncertainty analysis to results | Peer review feedback on overconfidence | More realistic recommendations with confidence ranges*
+**Station A**: "Threshold Reality Check" 
+- Share your key threshold with partner
+- Partner plays devil's advocate: "That's too high/low because..."
+- Defend or revise your threshold
+
+**Station B**: "Objection Preparation" 
+- List 3 likely objections to your recommendation
+- Partner adds 2 more objections you didn't think of
+- Brainstorm rapid responses
+
+**Station C**: "Trade-off Mapping"
+- Identify your biggest trade-off dilemma
+- Partner suggests creative ways to minimize the trade-off
+- Test different stakeholder weighting scenarios
+
+**Station D**: "Evidence Stress Test"
+- Present your strongest evidence
+- Partner identifies the weakest link
+- Develop backup evidence or acknowledge limitations
+
+**Station E**: "Implementation Reality"
+- Describe how your recommendation would actually happen
+- Partner identifies practical barriers
+- Problem-solve implementation strategies
+
+---
+
+### 💥 The Framework Peer Review Arena
+
+**Battle Royale Format**: Groups of 4 students
+
+**Round 1: The Threshold Challenge** (5 minutes)
+- Each person shares one key threshold
+- Group collectively attacks each threshold: "But what if..."
+- Threshold survives = 1 point
+- Threshold gets improved = 2 points
+- Threshold gets completely revised = 3 points (best learning!)
+
+**Round 2: The Objection Olympics** (5 minutes)
+- Each person presents their worst-case objection scenario
+- Group brainstorms rapid-fire solutions
+- Most creative solution wins the round
+
+**Round 3: The Trade-off Twist** (5 minutes)
+- Each person presents their biggest trade-off dilemma
+- Group suggests "third option" solutions that minimize trade-offs
+- Vote on most innovative compromise
+
+**Scoring**: Track points across all rounds. Winning group shares best insights with class!
+
+::: {.callout-note}
+## Reflection Moment
+**Quick whip-around**: What's one insight from peer review that **changed your mind** about something?
+:::
+
+---
+
+## The Learning Evolution Showcase
+
+---
+
+### 💫 Change Log Speed Sharing
+
+**Before we document, let's celebrate the learning!**
+
+**🔄 The Evolution Stations** (3 minutes each station)
+
+**Station 1: "My Biggest Pivot"**
+- Share the most significant change you made to your approach
+- What triggered this change?
+- How do you feel about abandoning your original idea?
+
+**Station 2: "My Stubborn Stand"** 
+- Share something you REFUSED to change despite feedback
+- Why did you stick to your guns?
+- Are you still confident in this decision?
+
+**Station 3: "My Surprise Discovery"**
+- What did you learn that completely surprised you?
+- How did this discovery change your perspective?
+- What would you have done differently knowing this from the start?
+
+**Station 4: "My Method Makeover"**
+- What tool/method did you completely overhaul?
+- What forced this change?
+- Is the new approach actually better?
+
+::: {.callout-tip}
+## Documentation Strategy
+After sharing, you'll have great material for your Change Log! Use these conversations to write more authentic, specific entries.
+:::
+
+---
+
+### 📝 Change Log Competition: Most Honest Documentation
+
+**The Challenge**: Write the most authentic, insightful change log entries
+
+**Categories for Voting**:
+- 🏆 **Most Honest Failure**: Best documentation of something that didn't work
+- 💡 **Best Plot Twist**: Most surprising mid-course discovery
+- 🌱 **Greatest Growth**: Most impressive skill/thinking development
+- 🤝 **Best Collaboration**: How peer feedback created breakthrough
+
+**Format Template**:
+**Date | Change | Trigger | Impact | Lesson Learned**
+
+**Example Entries**:
+
+*Oct 15 | Abandoned fancy simulation for simple Excel model | Spent 20 hours on software that crashed constantly | Actually got better insights from simpler approach | Complexity ≠ Quality*
+
+*Oct 22 | Completely changed target stakeholder from architects to facility managers | Realized architects don't actually make operational decisions | Research became 10x more relevant and actionable | Always validate your assumptions about decision-makers*
+
+**Sharing Format**: Read your best entry aloud (1 min max). Class votes in each category!
+
+::: {.callout-important}
+## Professional Reality
+Change logs are becoming standard in consulting and research. Clients love seeing transparent documentation of learning and adaptation - it builds trust!
+:::
 
 ---
 
@@ -345,16 +464,33 @@ format:
 
 ---
 
-## Next Steps
+## Your Mission for This Week
 
 ---
 
-### This Week's Tasks
+### 🎯 The Week 7 Challenge Checklist
 
-1. **Complete Change Log #1** - document evolution of your approach
-2. **Revise A4 draft** - integrate peer feedback and decision frameworks
-3. **Develop decision thresholds** - specific, defendible, stakeholder-relevant
-4. **Address counter-arguments** - anticipate and respond to objections
+**Level 1: Survival Mode** ✅
+1. **Change Log #1** - Document your evolution (use today's insights!)
+2. **Threshold Setting** - Get specific numbers with solid justification
+3. **Counter-argument Prep** - List and respond to 5 likely objections
+
+**Level 2: Excellence Mode** 🎖️
+4. **Stakeholder Validation** - Actually ask a real stakeholder about your thresholds
+5. **Sensitivity Analysis** - Test how robust your recommendations are
+6. **Implementation Roadmap** - How would this actually happen?
+
+**Level 3: Ninja Mode** 🥷
+7. **Alternative Scenario Planning** - What if key assumptions are wrong?
+8. **Peer Collaboration** - Help a classmate strengthen their weakest argument
+9. **Professional Polish** - Make one figure publication-ready
+
+::: {.callout-warning}
+## Accountability Check
+**Next week starts with a 2-minute "threshold defense" - be ready to justify your numbers with confidence!**
+:::
+
+**Which level are you committing to? Say it out loud to the person next to you!**
 
 ---
 
@@ -368,14 +504,39 @@ format:
 
 ---
 
-## Key Takeaways
+## Your Evidence-Based Design Superpowers
 
-1. **Evidence must connect to decisions** - thresholds make findings actionable
-2. **Anticipate counter-arguments** - strengthen credibility through honest assessment
-3. **Trade-offs are inevitable** - help stakeholders understand choices
-4. **Document your learning** - change logs show professional growth
-5. **Adapt based on feedback** - peer input strengthens research quality
+::: {.callout-important}
+## What You Conquered Today
+
+🎯 **Threshold Setting Mastery** - You can now set defensible performance standards
+
+🔥 **Counter-Argument Immunity** - You're prepared for professional skepticism
+
+⚖️ **Trade-off Navigation** - You can help stakeholders understand difficult choices
+
+📝 **Learning Documentation** - You can show professional growth and adaptability
+
+🤝 **Peer Collaboration** - You've strengthened your work through collective intelligence
+:::
+
+### 🔮 Fortune Cookie Wisdom
+
+*Pull a random "evidence-based design fortune" from the hat before you leave:*
+
+- "A threshold without justification is just a guess with confidence"
+- "The best counter-argument comes from your harshest critic - embrace them"
+- "Trade-offs reveal values - make yours explicit"
+- "Document failures as carefully as successes - both teach"
+- "Peer feedback is free consulting - use it wisely"
+
+**Your fortune for the week**: _______________
+
+::: {.callout-tip}
+## Exit Ticket
+**Before you leave, tell the person next to you**: What's the ONE thing from today that will change how you approach your project this week?
+:::
 
 ---
 
-*Next week: From manual processes to reproducible workflows*
+*Next week: Workflow documentation and mentor consultations - plus the legendary "Method Reproducibility Challenge"! 🏆*

@@ -1,0 +1,700 @@
+---
+title: "Week 9: The Story Wars & Figure Championships"
+subtitle: "Narrative Battles, Visualization Showdowns, and Presentation Olympics"
+format: 
+  revealjs:
+    theme: dark
+    transition: convex
+    slide-number: true
+    incremental: false
+    center: true
+---
+
+## 🎬 Welcome to the Story Wars! {.center}
+
+::: {.callout-important icon=false}
+## Today's Epic Battle: Who Tells the Best Story?
+
+**The Ultimate Challenge**: Transform your semester of hard work into a story so compelling that busy decision-makers will stop scrolling social media to listen
+
+**The Weapons**: Two slides, killer visuals, and narrative superpowers
+
+**The Stakes**: Professional credibility, stakeholder buy-in, and Object Fair domination
+:::
+
+**🏆 Today's Championship Events:**
+
+🎭 **Story Structure Showdown** | 📊 **Figure Design Olympics** | 🎤 **Elevator Pitch Battle Royale** | 👥 **Peer Review Arena** | 🎨 **Object Card Design Wars**
+
+---
+
+# Round 1: The Great Story Disasters {background-color="#8B0000"}
+
+---
+
+## 💀 When Good Research Goes Bad (Story Edition)
+
+**Before we become storytelling champions, let's learn from the narrative graveyard...**
+
+::: {.callout-warning icon=false}
+## Real-World Presentation Disasters
+
+**🏢 Case 1: The $50M Miscommunication**
+
+- PhD researcher presents brilliant energy analysis to Hong Kong developer board
+- **45 minutes** of technical methodology explanation
+- **30 seconds** on what this means for their bottom line
+- **Board's response**: "Interesting... but what should we actually DO?"
+- **Result**: No adoption, project shelved, researcher never invited back
+
+**📊 Case 2: The Chart Catastrophe**
+
+- Consultant shows 47 different charts to planning committee
+- **Every chart** technically perfect, statistically sound
+- **No chart** tells decision-makers what action to take
+- **Committee response**: "We're more confused than when we started"
+- **Result**: Status quo wins, innovative solution dies
+:::
+
+**🤔 Reality Check**: How many of your presentations focus more on HOW you did it than WHY anyone should care?
+
+---
+
+## 🎯 The Two-Slide Death Match
+
+**⚡ The challenge**: Distill your ENTIRE semester into exactly 2 slides that would make a busy stakeholder stop what they're doing and take action
+
+::: {.callout-note icon=false}
+## Battle Stations: Choose Your Story Structure
+
+**Move to corners of the room based on your current approach:**
+
+**🔥 Action Corner**: "I start with what they should DO"
+
+**📊 Evidence Corner**: "I start with what I FOUND"
+
+**😰 Problem Corner**: "I start with what's WRONG"
+
+**🤷 Confusion Corner**: "I honestly have NO IDEA how to start"
+
+**3 minutes to convince other corners why YOUR approach wins!**
+:::
+
+**Plot twist**: We'll test which structure actually WORKS with real stakeholders!
+
+---
+
+## 🎬 The Story Structure Science
+
+**🧠 Cognitive Science Reality**: Human brains process stories in predictable patterns
+
+```mermaid
+graph TD
+    A[😴 Stakeholder: Busy & Distracted] --> B{🎯 Hook: Why Should I Care?}
+    B -->|Interested| C[📊 Evidence: What Did You Find?]
+    B -->|Bored| D[💀 Lost Forever]
+    C --> E[💡 Action: What Should I Do?]
+    E --> F[✅ Success: Stakeholder Convinced]
+    C -->|Confused| G[😵 Overloaded & Confused]
+    E -->|Vague| H[🤔 Interested But No Action]
+```
+
+**⏰ You have 15 seconds** to grab attention or lose them forever!
+
+---
+
+# Round 2: Narrative Structure Wars {background-color="#4B0082"}
+
+---
+
+## 🥊 The Structure Showdown: 3 Competing Frameworks
+
+### 🎯 Framework A: "Stakeholder-First" Structure
+
+**Slide 1**: "Here's YOUR problem and why it costs you money/time/reputation"
+
+**Slide 2**: "Here's exactly what to DO about it (with confidence levels)"
+
+### 📊 Framework B: "Evidence-First" Structure
+
+**Slide 1**: "Here's the surprising thing I discovered in the data"
+
+**Slide 2**: "Here's what this means for your decisions"
+
+### 🎭 Framework C: "Story Arc" Structure
+
+**Slide 1**: "The journey from problem to discovery to solution"
+
+**Slide 2**: "Your roadmap to implementation and success"
+
+::: {.callout-important}
+## Live Testing Laboratory
+
+We're going to TEST these frameworks with REAL scenarios! Each team gets 5 minutes to create the same content using different structures, then we vote on which is most convincing!
+:::
+
+---
+
+## 🧪 The Structure Laboratory Experiment
+
+**🎲 Scenario Assignment** (roll dice for your test case):
+
+**1-2: Hong Kong Housing Developer**
+- Problem: Rising construction costs vs. resident satisfaction
+- Stakeholder: Profit-focused, time-pressed, skeptical of research
+- Decision: Whether to invest in evidence-based design optimization
+
+**3-4: Hospital Facility Manager** 
+- Problem: Patient complaints about lighting and noise
+- Stakeholder: Budget-constrained, regulation-focused, risk-averse
+- Decision: Whether to implement design changes between renovations
+
+**5-6: Government Planning Official**
+- Problem: New sustainability requirements vs. development pressure
+- Stakeholder: Policy-focused, public accountability, political constraints
+- Decision: Whether to approve innovative building performance standards
+
+**⏰ 15 minutes**: Create 2-slide pitch using assigned framework
+
+**🎯 Test**: Present to "stakeholder" (classmate in role), get real feedback
+
+---
+
+## 📊 Live Results Dashboard
+
+**Vote in real-time**: Which presentations would actually change stakeholder behavior?
+
+| Framework | Clarity Score | Action Score | Credibility Score | **Total** |
+|-----------|---------------|--------------|-------------------|-----------|
+| Stakeholder-First | ? | ? | ? | **?** |
+| Evidence-First | ? | ? | ? | **?** |
+| Story Arc | ? | ? | ? | **?** |
+
+**🏆 Winner gets**: Professional storytelling bragging rights + Mystery prize!
+
+::: {.callout-success}
+## The Science Behind the Winner
+
+**Why did the winning structure work better?**
+
+- Cognitive load theory: _____________
+- Stakeholder psychology: _____________
+- Decision-making science: _____________
+
+**How can you apply this to YOUR real presentations?**
+:::
+
+---
+
+# Round 3: Figure Design Olympics {background-color="#006400"}
+
+---
+
+## 🎨 The Visualization Gladiator Arena
+
+**🏆 Championship Categories:**
+
+### 📊 **Speed Chart Challenge** (10 minutes)
+Transform this terrible chart into presentation gold!
+
+*[Show intentionally awful chart: cluttered, unclear, no message]*
+
+**Rules**: Same data, maximum impact, stakeholder-friendly
+
+### 🎯 **Message Clarity Championships** (15 minutes) 
+Create a figure where the key insight is obvious in **3 seconds**
+
+### 🔥 **Uncertainty Communication Olympics** (12 minutes)
+Show confidence levels without confusing non-experts
+
+### 💎 **Professional Polish Finals** (18 minutes)
+Make one figure so beautiful it could be in Harvard Business Review
+
+---
+
+## ⚡ Speed Chart Battle Royale
+
+**🚨 Current Disaster**: 
+
+![Terrible Chart Example](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZjBmMGYwIi8+CiAgICA8dGV4dCB4PSIyMDAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5UZXJyaWJsZSBDaGFydCBXaXRoIFRvbyBNdWNoIERhdGE8L3RleHQ+Cjwvc3ZnPg==)
+
+**Problems with this chart:**
+- 47 different data series (seriously!)
+- No clear message or takeaway
+- Tiny text, confusing colors
+- Overwhelming for stakeholders
+
+**⏰ 10-minute transformation challenge!**
+
+::: {.callout-tip icon=false}
+## Speed Chart Rescue Formula
+
+1. **One Message Rule**: What's the ONE thing stakeholders need to know?
+2. **3-Second Test**: Key insight obvious immediately?
+3. **Annotation Strategy**: Use text to guide interpretation
+4. **Color Purpose**: Every color choice supports the message
+5. **Context Connection**: How does this relate to stakeholder decisions?
+:::
+
+**🏆 Judging**: Present your transformation in 60 seconds!
+
+---
+
+## 🎯 The 3-Second Message Test
+
+**🧠 Brain Science**: Stakeholders form first impressions in 3 seconds
+
+**Challenge**: Create figures that pass the "conference coffee break test"
+
+*Scenario: Busy stakeholder walks past your poster with coffee, glances for 3 seconds while walking. Do they "get it"?*
+
+### 🏃 Live Testing Protocol
+
+1. **Create your figure** (10 minutes)
+2. **Speed dating rounds** (30 seconds each):
+   - Show figure to classmate for exactly 3 seconds
+   - They write down what they understood
+   - Compare to your intended message
+3. **Iterate rapidly** based on feedback
+4. **Championship round**: Best 3-second clarity wins!
+
+::: {.callout-warning}
+## Common 3-Second Failures
+
+❌ **Chart Title**: "Analysis of Building Performance Metrics Across Various Scenarios"
+
+✅ **Chart Title**: "South-facing offices need blinds to prevent glare"
+
+❌ **Chart Message**: Hidden in data, requires interpretation
+
+✅ **Chart Message**: Annotated, highlighted, impossible to miss
+:::
+
+---
+
+## 📐 Professional Polish Transformation Lab
+
+**🎨 Design Clinic Format**: 5-minute individual consultations while others work
+
+**Bring your WORST figure** (we all have one!) for emergency makeover:
+
+### 🚑 Figure Emergency Room
+
+**Triage Categories:**
+
+**🔴 Critical**: Completely incomprehensible, multiple fatal errors
+**🟡 Urgent**: Technically correct but unprofessional presentation  
+**🟢 Stable**: Good content, needs minor polish for Object Fair
+
+**Treatment Plans:**
+
+- **Typography therapy**: Font hierarchy, readability, professionalism
+- **Color surgery**: Strategic use, accessibility, brand consistency  
+- **Layout operation**: White space, alignment, visual flow
+- **Message transplant**: Clear communication of key insights
+
+::: {.callout-success}
+## Before/After Showcase
+
+**Share your transformation!**
+
+- 30 seconds: Show before version (no shame, we've all been there!)
+- 30 seconds: Reveal after version
+- 30 seconds: Explain what changed and why it works better
+
+**Vote**: Most dramatic improvement wins the "Phoenix Award" 🔥→🦋
+:::
+
+---
+
+# Round 4: Elevator Pitch Battle Royale {background-color="#FF4500"}
+
+---
+
+## 🥊 60-Second Pitch Championship
+
+**🎬 The Ultimate Test**: Convince a stranger to care about your work in 60 seconds
+
+### 🎯 The Formula for Victory
+
+**15 seconds**: Hook (Why should they care RIGHT NOW?)
+**30 seconds**: Evidence (What did you discover that changes everything?)
+**15 seconds**: Action (What should they do about it?)
+
+### 🎪 Battle Arena Format
+
+**Round 1: Speed Dating Pitches** (15 minutes)
+- 2 minutes per pair
+- 60-second pitch + 60-second feedback
+- Rotate through 6 different "stakeholders"
+
+**Round 2: Gladiator Elimination** (20 minutes)
+- Class votes for top 6 pitches
+- Semi-finals: 3 head-to-head battles
+- Finals: Champion vs. Champion
+
+**Round 3: Stakeholder Jury** (10 minutes)
+- Final 3 pitches to "real" stakeholder panel (instructor + volunteers)
+- Professional feedback and winner selection
+
+---
+
+## 🎭 Stakeholder Role Playing Cards
+
+**Draw a card, become that stakeholder for pitch testing:**
+
+::: {.callout-note icon=false}
+## 🃏 Stakeholder Personas
+
+**🏢 The Busy Developer**
+- Cares about: ROI, timeline, risk reduction
+- Hates: Academic jargon, uncertain recommendations
+- Wants: Clear numbers, specific actions, confidence levels
+
+**🏥 The Facility Manager** 
+- Cares about: User complaints, maintenance costs, operational efficiency
+- Hates: Theoretical solutions, complex technology
+- Wants: Practical fixes, proven approaches, measurable improvements
+
+**🏛️ The Policy Maker**
+- Cares about: Public benefit, regulatory compliance, political feasibility
+- Hates: Single building focus, industry bias
+- Wants: Scalable solutions, stakeholder consensus, evidence-based policy
+
+**💰 The Investor**
+- Cares about: Market returns, competitive advantage, risk management
+- Hates: Unquantified benefits, long payback periods
+- Wants: Financial models, market positioning, exit strategies
+
+**👥 The Community Representative**
+- Cares about: Resident needs, equity, long-term impact
+- Hates: Top-down decisions, gentrification risk
+- Wants: Community control, local benefits, transparent process
+:::
+
+**🎯 Your mission**: Adapt your pitch to each stakeholder type!
+
+---
+
+## 🏆 Championship Judging Criteria
+
+**Live scoring on phones** (1-10 scale):
+
+| Criteria | Weight | Your Score |
+|----------|--------|------------|
+| **Clarity**: Did I understand the problem immediately? | 25% | ? |
+| **Evidence**: Was I convinced by the findings? | 25% | ? |
+| **Action**: Do I know exactly what to do next? | 25% | ? |
+| **Confidence**: Would I bet my reputation on this? | 25% | ? |
+
+### 🎪 Live Leaderboard
+
+*Real-time results displayed as voting happens!*
+
+**🥇 Current Champion**: _______________
+
+**🔥 Best Hook**: _______________
+
+**📊 Most Convincing Evidence**: _______________
+
+**🎯 Clearest Action**: _______________
+
+::: {.callout-success}
+## Victory Analysis
+
+**What made the winning pitches work?**
+
+1. **Hook Strategy**: _______________
+2. **Evidence Presentation**: _______________  
+3. **Action Clarity**: _______________
+4. **Delivery Style**: _______________
+
+**How can everyone apply these insights?**
+:::
+
+---
+
+# Round 5: Peer Review Arena {background-color="#800080"}
+
+---
+
+## ⚔️ The Constructive Criticism Championships
+
+**🎯 Mission**: Make each other's work so good that competitors will weep
+
+### 🔥 Review Battle Format
+
+**Phase 1: Material Exchange** (5 minutes)
+- Share complete A4 draft + practice case slides
+- Provide context: "What feedback would help most?"
+- Set expectations: "My biggest worry is..."
+
+**Phase 2: Deep Dive Analysis** (25 minutes)
+- **Silent review period**: Take detailed notes
+- **Focus areas**: Story clarity, evidence strength, stakeholder relevance
+- **Document specific suggestions**: Not just "make it better"
+
+**Phase 3: Feedback Face-Off** (15 minutes)  
+- **5 minutes**: Present your feedback clearly
+- **5 minutes**: Discuss solutions and improvements
+- **5 minutes**: Plan implementation strategy
+
+---
+
+## 📋 The Professional Feedback Framework
+
+### 🎯 The "SOS" Method
+
+**🌟 Strengths** (2 minutes):
+- What's working really well that should be emphasized?
+- What would you steal for your own project?
+- What makes this memorable and compelling?
+
+**🔍 Opportunities** (2 minutes):
+- Where could clarity be improved?
+- What connections could be stronger?
+- Which evidence needs more development?
+
+**🚀 Strategies** (1 minute):
+- Specific, actionable suggestions
+- Prioritized by impact and feasibility
+- Connected to Object Fair success
+
+::: {.callout-important icon=false}
+## Advanced Review Challenges
+
+**🏆 Best Feedback Awards**:
+
+- **🎯 Most Actionable**: Specific suggestions with implementation steps
+- **💡 Most Insightful**: Identified issues author didn't see
+- **🤝 Most Helpful**: Feedback that dramatically improves the work
+- **🎭 Best Role-Play**: Gave feedback from true stakeholder perspective
+
+**Voting**: Authors choose which feedback was most valuable!
+:::
+
+---
+
+## 🔬 The Peer Review Laboratory
+
+### 💊 Diagnostic Questions for Reviewers
+
+**Story Health Check:**
+- [ ] Can I explain their project to someone else in 60 seconds?
+- [ ] Is the stakeholder relevance obvious throughout?
+- [ ] Would I make the decision they recommend based on this evidence?
+
+**Evidence Stress Test:**
+- [ ] Are the key findings supported by appropriate evidence?
+- [ ] Is uncertainty communicated appropriately?
+- [ ] Would stakeholders find this credible and actionable?
+
+**Professional Polish Assessment:**
+- [ ] Could this be presented to real industry professionals?
+- [ ] Are figures clear and compelling at presentation scale?
+- [ ] Is the overall package cohesive and professional?
+
+### 🎪 Live Review Quality Meter
+
+**Track the quality of feedback across the room:**
+
+- 👀 **Depth of Analysis**: How thoroughly did reviewers engage?
+- 🎯 **Actionability**: How specific and useful were suggestions?
+- 🤝 **Professional Tone**: How constructive and supportive?
+- 💡 **Insight Generation**: Did reviews reveal new perspectives?
+
+---
+
+# Round 6: Object Card Design Wars {background-color="#DC143C"}
+
+---
+
+## 🎨 The Ultimate Visual Communication Challenge
+
+**🏆 Mission**: Create a poster so compelling that people fight over who gets to work with you
+
+### ⚡ The 30-Second Poster Test
+
+**Scenario**: Object Fair networking break. Stakeholder walks past your poster with coffee and phone. You have 30 seconds to make them:
+
+1. **Stop walking** (3 seconds)
+2. **Read your message** (15 seconds)  
+3. **Take action** (contact you, ask questions, offer collaboration)
+
+### 🎯 Design Challenge Rounds
+
+**Round 1: Message Hierarchy** (10 minutes)
+- One clear message dominates the design
+- Supporting evidence visible but secondary
+- Contact/action information findable but not cluttered
+
+**Round 2: Visual Impact** (15 minutes)
+- Compelling from 6 feet away (networking distance)
+- Professional quality suitable for career portfolio
+- Memorable enough to be recognized later
+
+**Round 3: Stakeholder Test** (12 minutes)
+- Works for multiple stakeholder types
+- Language appropriate for non-experts
+- Action items clear and specific
+
+---
+
+## 🔥 Live Design Laboratory
+
+### 🚨 Current Object Card Emergency Room
+
+**Triage your existing design:**
+
+**🟢 Green Zone**: Professional quality, clear message, ready for Object Fair
+**🟡 Yellow Zone**: Good content, needs design polish and clarity improvement
+**🔴 Red Zone**: Complete redesign needed, unclear message, unprofessional appearance
+
+### ⚡ Speed Design Clinic
+
+**15-minute individual consultations** while others work:
+
+**Bring**: Current Object Card draft (any stage)
+**Get**: Specific design feedback and rapid improvement strategies
+**Focus**: Maximum impact changes for minimum time investment
+
+::: {.callout-tip icon=false}
+## Object Card Success Formula
+
+**🎯 Message Dominance**: 
+- ONE key finding/recommendation as hero
+- Everything else supports this message
+- 3-second understanding test
+
+**👁️ Visual Hierarchy**:
+- Size, color, position guide attention
+- Most important = biggest, boldest, best position
+- Less important = smaller, neutral, secondary position
+
+**🎨 Professional Polish**:
+- Consistent fonts, colors, spacing
+- High-quality images and graphics
+- Print-test at actual size
+
+**📞 Action Orientation**:
+- Clear contact information
+- Specific next steps for interested stakeholders
+- Memorable personal branding
+:::
+
+---
+
+## 🏆 Object Card Championship Judging
+
+### 📊 Live Voting Categories
+
+**Vote with phones for real-time results:**
+
+| Category | Winner | Why They Won |
+|----------|--------|--------------|
+| **🎯 Clearest Message** | ? | ? |
+| **👁️ Best Visual Impact** | ? | ? |
+| **💼 Most Professional** | ? | ? |
+| **🤝 Most Stakeholder-Friendly** | ? | ? |
+| **🔥 Most Memorable** | ? | ? |
+
+### 🎪 Hall of Fame Gallery
+
+**Photo documentation of winning strategies:**
+
+- **Message hierarchy examples**: How winners made key points dominant
+- **Visual impact techniques**: Color, layout, typography strategies
+- **Professional polish details**: What separates good from great
+- **Stakeholder-friendly language**: How to communicate without jargon
+
+---
+
+# Victory Celebration & Integration {background-color="#FFD700"}
+
+---
+
+## 🎉 What You Conquered Today
+
+::: {.callout-success icon=false}
+## Your New Storytelling Superpowers
+
+**🎭 Narrative Mastery**: You know which story structure actually changes stakeholder behavior
+
+**📊 Visual Command**: Your figures now communicate clearly in 3 seconds
+
+**🎤 Pitch Perfection**: You can convince strangers to care about your work in 60 seconds
+
+**🤝 Review Excellence**: You give and receive feedback like a professional
+
+**🎨 Design Dominance**: Your Object Card will stop stakeholders in their tracks
+
+**Most importantly**: You've transformed from researcher to professional communicator!
+:::
+
+---
+
+## 🚀 Object Fair Preparation Mastery
+
+::: {.callout-important icon=false}
+## Week 9 Victory Checklist
+
+**Level 1: Presentation Survival** ✅
+
+1. **Complete Peer Review #2** - Use today's professional feedback framework
+2. **Implement story structure** - Apply winning narrative framework
+3. **Polish key figures** - Make them pass the 3-second test
+
+**Level 2: Presentation Excellence** 🎖️
+
+4. **Master elevator pitch** - Practice until you can deliver in your sleep
+5. **Object Card perfection** - Battle-tested design ready for printing
+6. **Stakeholder validation** - Test your story with someone outside class
+
+**Level 3: Communication Ninja** 🥷
+
+7. **Multi-stakeholder adaptation** - Prepare pitch variants for different audiences  
+8. **Q&A preparation** - Anticipate and practice responses to likely questions
+9. **Professional networking prep** - Business cards, LinkedIn, follow-up strategy
+
+**Commitment check**: Choose your level and announce it to your neighbor! 📣
+:::
+
+---
+
+## 🔮 Week 10 Preview: Draft Defense Gladiator Arena
+
+**Get ready for**: 
+- Individual presentations to full professional panel
+- Real-time feedback and improvement suggestions  
+- Final polish identification and strategy development
+- Object Fair logistics and networking preparation
+
+**The stakes**: This is your dress rehearsal before the real show!
+
+---
+
+## 🎊 Exit Victory Ritual
+
+::: {.callout-warning icon=false}
+## The Storyteller's Oath
+
+**Stand up and repeat after me:**
+
+*"I solemnly swear to tell stories that make stakeholders stop what they're doing and listen."*
+
+*"I will create visuals so clear that the message jumps off the page in 3 seconds."*
+
+*"I will pitch my work with such clarity and confidence that opportunities will seek me out."*
+
+*"I will remember that great research means nothing if it can't change the world."*
+
+**Now high-five someone and promise to help each other dominate at Object Fair!** 🙌
+:::
+
+**🎯 Your mission**: Go forth and tell stories that change the built environment!
+
+---
+
+*"Great research without great storytelling is just expensive data. Great storytelling without great research is just marketing. You now have both!"* ⭐
+
+**Next week: The final gladiator test before Object Fair glory!** 🏆

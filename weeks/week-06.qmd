@@ -189,7 +189,7 @@ format:
 
 --<!-- -
 
-<!-- ## Guest Speaker Session
+<!- ## Guest Speaker Session
 
 **Professional Data Visualization Designer**
 
@@ -201,7 +201,6 @@ format:
 - Client communication strategies
 - Tool workflows and efficiency tips
 - Portfolio development for design research -->
- -->
 ---
 
 ## Hands-On Visualization Lab

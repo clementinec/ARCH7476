@@ -89,6 +89,44 @@ The course emphasizes **tool flexibility** rather than software mastery:
 | 11 | Final Polish | Final revisions | Near-final A4 |
 | 12 | Object Fair | Final presentations | **Submit A4 Final** |
 
+## Key Course Materials
+
+### Machine Learning & Python Resources
+
+**Recent Additions:**
+
+- **[ML for Architecture Primer](data/ML_for_Architecture_Combined.pdf)** (PDF) — Foundational concepts in machine learning for design applications
+- **[ML to Python Overview Slides](lectures/ml-to-python-overview.html)** — Interactive lecture connecting theory to practice
+
+**Python Notebooks:**
+
+::: {.callout-note}
+## How to Access the Notebooks
+
+**Option 1: Download from Course Repository**
+
+Download the notebooks from the course GitHub repository (link on Slack) in the `notebooks/` folder:
+
+- `01_python_ml_basics.ipynb` — Python fundamentals, regression, classification, and overfitting
+- `02_arch_viz_analysis.ipynb` — Data visualization and pilot study analysis for A3/A4
+
+**Option 2: Google Colab** (No installation required!)
+
+Open directly in Google Colab and make a copy to your Drive:
+
+- [Open ML Basics Notebook in Colab](https://colab.research.google.com/) → Upload `01_python_ml_basics.ipynb`
+- [Open Visualization Notebook in Colab](https://colab.research.google.com/) → Upload `02_arch_viz_analysis.ipynb`
+
+**Option 3: Google Drive**
+
+All notebooks and sample data are available in the shared Google Drive folder (link posted on Slack and in lecture slides).
+:::
+
+::: {.callout-tip}
+## For Python Beginners
+Start with the visualization notebook (`02_arch_viz_analysis.ipynb`) to get comfortable with data manipulation and plotting before diving into ML concepts.
+:::
+
 ## Getting Started
 
 ### Preparation
