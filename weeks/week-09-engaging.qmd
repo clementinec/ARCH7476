@@ -7,6 +7,8 @@ format:
     transition: convex
     slide-number: true
     incremental: false
+    width: 1400
+    height: 900
     center: true
 ---
 

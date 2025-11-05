@@ -9,6 +9,7 @@ format:
     incremental: true
     width: 1400
     height: 900
+    center: true
 ---
 
 ## Today's Agenda

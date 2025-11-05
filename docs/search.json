@@ -1021,7 +1021,7 @@
     "href": "weeks/week-07.html#peer-review-lightning-round",
     "title": "Week 7: Decide with Numbers",
     "section": "Peer Review Lightning Round",
-    "text": "Peer Review Lightning Round\n🔥 2-Minute Partner Share Find someone you haven’t worked with yet\nRound 1: What was the most surprising piece of feedback you received? Round 2: What was the most actionable suggestion? Round 3: What feedback did you respectfully disagree with and why?\n\n\n\n\n\n\nClass Poll Time!\n\n\nRaise your hand if peer feedback made you: - 🔄 Change your method significantly - 🎯 Refocus on different stakeholders\n- 📊 Redesign your data visualization - 🤔 Question your original claim\n\n\n\nNow let’s see what patterns we can spot across all projects…",
+    "text": "Peer Review Lightning Round\n🔥 2-Minute Partner Share Find someone you haven’t worked with yet\nRound 1: What was the most surprising piece of feedback you received? Round 2: What was the most actionable suggestion? Round 3: What feedback did you respectfully disagree with and why?\n\n\n\n\n\n\nClass Poll Time!\n\n\nRaise your hand if peer feedback made you:\n\n🔄 Change your method significantly\n🎯 Refocus on different stakeholders\n📊 Redesign your data visualization\n🤔 Question your original claim\n\n\n\n\nNow let’s see what patterns we can spot across all projects…",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4519,7 +4519,7 @@
     "href": "weeks/week-06.html#the-communication-challenge",
     "title": "Week 6: Making Results Readable",
     "section": "The Communication Challenge",
-    "text": "The Communication Challenge\nYour stakeholders are busy:\n\n30 seconds to grab attention\n2 minutes to understand key points\n5 minutes for detailed evidence\nMust be actionable and memorable\n\nYour data is complex: - Multiple variables and conditions\n\nUncertainty and limitations\nTechnical details and context\nCompeting priorities and trade-offs",
+    "text": "The Communication Challenge\nYour stakeholders are busy:\n\n30 seconds to grab attention\n2 minutes to understand key points\n5 minutes for detailed evidence\nMust be actionable and memorable\n\nYour data is complex:\n\nMultiple variables and conditions\nUncertainty and limitations\nTechnical details and context\nCompeting priorities and trade-offs",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4604,6 +4604,18 @@
     "title": "Week 6: Making Results Readable",
     "section": "Communication Strategy Development",
     "text": "Communication Strategy Development",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W6: Making Results Readable"
+    ]
+  },
+  {
+    "objectID": "weeks/week-06.html#ml-enthusiasts-challenge-generative-design-object-hunt",
+    "href": "weeks/week-06.html#ml-enthusiasts-challenge-generative-design-object-hunt",
+    "title": "Week 6: Making Results Readable",
+    "section": "🤖 ML Enthusiasts Challenge: Generative Design Object Hunt",
+    "text": "🤖 ML Enthusiasts Challenge: Generative Design Object Hunt\n(10 minutes - Machine Learning Focus)",
     "crumbs": [
       "Home",
       "Weekly Content",
