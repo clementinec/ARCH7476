@@ -7,6 +7,8 @@ format:
     transition: slide
     slide-number: true
     incremental: true
+    width: 1400
+    height: 900
 ---
 
 ## Today's Agenda
@@ -16,11 +18,18 @@ format:
 Today involves **team challenges**, **case study battles**, and **threshold setting competitions**. Come ready to defend your decisions and challenge others!
 :::
 
+
+
 - **Statistics Refresher**: Hypothesis testing, t-tests, and sample sizes (super simple!)
+
 - **Warm-up**: Peer Review #1 feedback integration
+
 - **Case Study Battle**: Real-world threshold disasters vs. successes
+
 - **Team Challenge**: Competitive decision framework development
+
 - **Hot Seat**: Counter-argument rapid-fire session
+
 - **Change Log Workshop**: Document your learning evolution
 
 ---
@@ -38,14 +47,21 @@ Today involves **team challenges**, **case study battles**, and **threshold sett
 
 ::: {.column width="50%"}
 **In Architecture:**
+
+
 - "This office layout will improve productivity"
+
 - "Better lighting will reduce eye strain"
+
 - "Open spaces will increase collaboration"
 :::
 
 ::: {.column width="50%"}
 **In Statistics:**
+
+
 - **H0 (Null)**: "No difference" (old design = new design)
+
 - **H1 (Alternative)**: "There IS a difference" (new design > old design)
 :::
 
@@ -55,13 +71,18 @@ Today involves **team challenges**, **case study battles**, and **threshold sett
 
 ::: {.callout-note}
 ## Analogy: Court Trial
+
 - **H0** = "Defendant is innocent" (default assumption)
+
 - **H1** = "Defendant is guilty" (what you're trying to prove)
+
 - You need **overwhelming evidence** to reject innocence
 :::
 
 **Real Example**: "Biophilic design increases worker satisfaction by >0.5 points on 5-point scale"
+
 - **H0**: Biophilic = Traditional (no difference)
+
 - **H1**: Biophilic > Traditional (satisfaction increase ≥0.5)
 
 ---
@@ -74,22 +95,35 @@ Today involves **team challenges**, **case study battles**, and **threshold sett
 
 ::: {.column width="60%"}
 **What it does:**
+
+
 - Compares two groups (old vs. new design)
+
 - Accounts for natural variation in data
+
 - Gives you a **p-value** (probability it's just luck)
 
 **The Magic Number**: p < 0.05
+
 - "Less than 5% chance this is random"
+
 - "Pretty confident the difference is real"
 :::
 
 ::: {.column width="40%"}
 **Architecture Example:**
+
+
 - Test 20 people in old office
+
 - Test 20 people in new office  
+
 - Productivity scores: 6.2 vs 7.1
+
 - **Question**: Is 0.9 difference real?
+
 - **T-test says**: p = 0.032 ✅
+
 - **Conclusion**: Yes, probably real!
 :::
 
@@ -98,7 +132,9 @@ Today involves **team challenges**, **case study battles**, and **threshold sett
 ::: {.callout-warning}
 ## Analogy: Coin Flipping
 If you flip 10 heads in a row, is the coin rigged? 
+
 - **Probability of this by chance**: 1/1024 = 0.001
+
 - **Way less than 0.05** → Coin is probably rigged!
 :::
 
@@ -114,27 +150,42 @@ If you flip 10 heads in a row, is the coin rigged?
 
 ::: {.column width="50%"}
 **Too Small (n < 10):**
+
 - ❌ Can't detect real differences
+
 - ❌ Results change drastically with one more person
+
 - ❌ No statistical power
 
 **Too Large (n > 100):**
+
 - ✅ Very reliable BUT...
+
 - 💰 Expensive and time-consuming
+
 - 🤯 May detect differences that don't matter practically
 :::
 
 ::: {.column width="50%"}
 **Just Right (n = 20-50 for most studies):**
+
 - ✅ Can detect meaningful differences
+
 - ✅ Manageable cost and time
+
 - ✅ Reliable enough for decisions
 
 **Quick Rules of Thumb:**
+
+
 - **Pilot studies**: 10-15 people minimum
+
 - **User testing**: 20-30 people
+
 - **Survey research**: 30+ people
+
 - **Big differences**: Fewer people needed
+
 - **Small differences**: More people needed
 :::
 
@@ -142,8 +193,11 @@ If you flip 10 heads in a row, is the coin rigged?
 
 ::: {.callout-tip}
 ## Analogy: Restaurant Reviews
+
 - **3 reviews**: Not enough to trust
+
 - **30 reviews**: Pretty reliable picture
+
 - **300 reviews**: Overkill for most decisions, but very reliable
 :::
 
@@ -165,9 +219,13 @@ If you flip 10 heads in a row, is the coin rigged?
 ::: {.callout-warning}
 ## Class Poll Time!
 Raise your hand if peer feedback made you:
+
 - 🔄 Change your method significantly
+
 - 🎯 Refocus on different stakeholders  
+
 - 📊 Redesign your data visualization
+
 - 🤔 Question your original claim
 :::
 
@@ -182,15 +240,23 @@ Raise your hand if peer feedback made you:
 ### Case Study Battle: When Good Evidence Goes Bad
 
 **🏗️ The Pruitt-Igoe Housing Complex (1954-1976)**
+
 - **Evidence**: "High-density housing improves urban efficiency"
+
 - **Threshold**: "500+ units per acre is optimal"
+
 - **Reality**: Social dysfunction, crime, eventual demolition
+
 - **Missing**: Social interaction thresholds, community scale limits
 
 **❄️ The Champlain Towers South Collapse (2021)**
+
 - **Evidence**: "Concrete structures last 50+ years with basic maintenance"
+
 - **Threshold**: "Visual inspection every 10 years is sufficient"
+
 - **Reality**: Catastrophic failure after 40 years
+
 - **Missing**: Accelerated corrosion thresholds in coastal environments
 
 ::: {.callout-note}
@@ -203,8 +269,11 @@ Raise your hand if peer feedback made you:
 ### Threshold Reality Check: The Hong Kong Context
 
 **🏙️ Local Case Study: Hong Kong's Plot Ratio Limits**
+
 - **Current threshold**: 5:1-8:1 in urban areas
+
 - **Evidence basis**: Transportation capacity, infrastructure load
+
 - **Controversy**: Does this create housing shortage vs. livability?
 
 **💡 Your Turn - Rapid Fire Questions:**
@@ -227,13 +296,19 @@ Raise your hand if peer feedback made you:
 ### Regulatory and Standards-Based
 
 **Building code compliance:**
+
 - Minimum performance requirements
+
 - Safety factors and margins
+
 - Local vs. international standards
 
 **Green building standards:**
+
 - LEED, BREEAM, Green Mark thresholds
+
 - Point systems and credit requirements
+
 - Market expectations and norms
 
 ---
@@ -241,13 +316,19 @@ Raise your hand if peer feedback made you:
 ### Performance Benchmarking
 
 **Peer building comparison:**
+
 - Industry average performance levels
+
 - Best-in-class examples
+
 - Worst acceptable performance
 
 **User satisfaction benchmarks:**
+
 - Survey response thresholds (e.g., 4.0/5.0 satisfaction)
+
 - Complaint rates and frequencies
+
 - Productivity impact measurements
 
 ---
@@ -255,13 +336,19 @@ Raise your hand if peer feedback made you:
 ### Stakeholder-Specific Thresholds
 
 **Developer criteria:**
+
 - ROI minimums and payback periods
+
 - Risk tolerance and market positioning
+
 - Competitive advantage requirements
 
 **User-focused criteria:**
+
 - Comfort and satisfaction minimums
+
 - Health and safety thresholds
+
 - Accessibility and inclusion requirements
 
 ---
@@ -273,15 +360,23 @@ Raise your hand if peer feedback made you:
 ### Anticipating Objections
 
 **"Too expensive"**
+
 - Life-cycle cost analysis
+
 - Non-monetary benefit quantification
+
 - Financing and incentive options
+
 - Risk cost of not implementing
 
 **"Unproven technology"**
+
 - Precedent examples and case studies
+
 - Gradual implementation strategies
+
 - Pilot testing and monitoring plans
+
 - Backup and contingency options
 
 ---
@@ -289,15 +384,23 @@ Raise your hand if peer feedback made you:
 ### Alternative Explanations
 
 **"Results could be due to other factors"**
+
 - Sensitivity analysis across variables
+
 - Control for confounding factors
+
 - Multiple validation approaches
+
 - Transparent limitation acknowledgment
 
 **"Context may not transfer"**
+
 - Boundary condition analysis
+
 - Similar context identification
+
 - Adaptation strategies
+
 - Local validation recommendations
 
 ---
@@ -309,14 +412,21 @@ Raise your hand if peer feedback made you:
 ### Multi-Criteria Decision Analysis
 
 **Identify competing objectives:**
+
 - Energy performance vs. cost
+
 - User satisfaction vs. maintenance
+
 - Sustainability vs. aesthetics
+
 - Privacy vs. collaboration
 
 **Weight criteria by stakeholder priority:**
+
 - Survey stakeholders for preference ranking
+
 - Use revealed preferences from past decisions
+
 - Apply regulatory or market requirements
 
 ---
@@ -328,10 +438,15 @@ Raise your hand if peer feedback made you:
 *Use your phones to vote on Mentimeter/Kahoot:*
 
 **Question 1**: For a Hong Kong residential developer, rank importance (1-5):
+
 - Energy performance: ?
+
 - Construction cost: ?
+
 - User satisfaction: ?
+
 - Maintenance ease: ?
+
 - Resale value: ?
 
 **Live Results Display**:
@@ -358,18 +473,27 @@ How different are the results with class weights vs. your individual assumptions
 *Each student rolls a die to get their scenario assignment:*
 
 **🌟 Best Case (Roll 1-2)**: "Everything Goes Perfect"
+
 - All assumptions optimistic, technology works flawlessly
+
 - Stakeholders embrace change, funding flows freely
+
 - **Your mission**: Sell this vision BUT acknowledge it's optimistic
 
 **⚡ Worst Case (Roll 3-4)**: "Murphy's Law Strikes"
+
 - Technology fails, budgets get cut, regulations change
+
 - Users resist, maintenance breaks down, economy crashes
+
 - **Your mission**: Plan for disaster WITHOUT being paralyzed
 
 **🎯 Most Likely (Roll 5-6)**: "Reality Check"
+
 - Some things work, some don't, typical implementation friction
+
 - Mixed stakeholder response, moderate budget pressure
+
 - **Your mission**: Balance optimism with pragmatism
 
 **The Challenge**: Present your scenario in 90 seconds with:
@@ -397,28 +521,43 @@ Real clients want to know you've thought through all scenarios. Being overly opt
 *Students rotate every 3 minutes*
 
 **Station A**: "Threshold Reality Check" 
+
 - Share your key threshold with partner
+
 - Partner plays devil's advocate: "That's too high/low because..."
+
 - Defend or revise your threshold
 
 **Station B**: "Objection Preparation" 
+
 - List 3 likely objections to your recommendation
+
 - Partner adds 2 more objections you didn't think of
+
 - Brainstorm rapid responses
 
 **Station C**: "Trade-off Mapping"
+
 - Identify your biggest trade-off dilemma
+
 - Partner suggests creative ways to minimize the trade-off
+
 - Test different stakeholder weighting scenarios
 
 **Station D**: "Evidence Stress Test"
+
 - Present your strongest evidence
+
 - Partner identifies the weakest link
+
 - Develop backup evidence or acknowledge limitations
 
 **Station E**: "Implementation Reality"
+
 - Describe how your recommendation would actually happen
+
 - Partner identifies practical barriers
+
 - Problem-solve implementation strategies
 
 ---
@@ -428,20 +567,31 @@ Real clients want to know you've thought through all scenarios. Being overly opt
 **Battle Royale Format**: Groups of 4 students
 
 **Round 1: The Threshold Challenge** (5 minutes)
+
 - Each person shares one key threshold
+
 - Group collectively attacks each threshold: "But what if..."
+
 - Threshold survives = 1 point
+
 - Threshold gets improved = 2 points
+
 - Threshold gets completely revised = 3 points (best learning!)
 
 **Round 2: The Objection Olympics** (5 minutes)
+
 - Each person presents their worst-case objection scenario
+
 - Group brainstorms rapid-fire solutions
+
 - Most creative solution wins the round
 
 **Round 3: The Trade-off Twist** (5 minutes)
+
 - Each person presents their biggest trade-off dilemma
+
 - Group suggests "third option" solutions that minimize trade-offs
+
 - Vote on most innovative compromise
 
 **Scoring**: Track points across all rounds. Winning group shares best insights with class!
@@ -464,23 +614,35 @@ Real clients want to know you've thought through all scenarios. Being overly opt
 **🔄 The Evolution Stations** (3 minutes each station)
 
 **Station 1: "My Biggest Pivot"**
+
 - Share the most significant change you made to your approach
+
 - What triggered this change?
+
 - How do you feel about abandoning your original idea?
 
 **Station 2: "My Stubborn Stand"** 
+
 - Share something you REFUSED to change despite feedback
+
 - Why did you stick to your guns?
+
 - Are you still confident in this decision?
 
 **Station 3: "My Surprise Discovery"**
+
 - What did you learn that completely surprised you?
+
 - How did this discovery change your perspective?
+
 - What would you have done differently knowing this from the start?
 
 **Station 4: "My Method Makeover"**
+
 - What tool/method did you completely overhaul?
+
 - What forced this change?
+
 - Is the new approach actually better?
 
 ::: {.callout-tip}
@@ -495,9 +657,13 @@ After sharing, you'll have great material for your Change Log! Use these convers
 **The Challenge**: Write the most authentic, insightful change log entries
 
 **Categories for Voting**:
+
 - 🏆 **Most Honest Failure**: Best documentation of something that didn't work
+
 - 💡 **Best Plot Twist**: Most surprising mid-course discovery
+
 - 🌱 **Greatest Growth**: Most impressive skill/thinking development
+
 - 🤝 **Best Collaboration**: How peer feedback created breakthrough
 
 **Format Template**:
@@ -535,13 +701,19 @@ Change logs are becoming standard in consulting and research. Clients love seein
 ### Architecture Firm Decision Processes
 
 **Design phase integration:**
+
 - Concept development evidence requirements
+
 - Design development validation needs
+
 - Construction document specification support
 
 **Client communication strategies:**
+
 - Technical evidence translation
+
 - Risk and benefit communication
+
 - Alternative evaluation presentation
 
 ---
@@ -549,13 +721,19 @@ Change logs are becoming standard in consulting and research. Clients love seein
 ### Regulatory and Compliance Context
 
 **Building approval processes:**
+
 - Code compliance demonstration
+
 - Performance-based design justification
+
 - Alternative solution documentation
 
 **Post-occupancy validation:**
+
 - Performance monitoring and verification
+
 - User feedback integration
+
 - Continuous improvement processes
 
 ---
@@ -567,18 +745,27 @@ Change logs are becoming standard in consulting and research. Clients love seein
 ### Integration Across Components
 
 **Research Brief recommendations:**
+
 - Clear thresholds and decision criteria
+
 - Counter-argument acknowledgment
+
 - Trade-off analysis and stakeholder guidance
 
 **Practice Case actionability:**
+
 - Specific implementation recommendations
+
 - Timeline and resource requirements
+
 - Risk mitigation strategies
 
 **Object Card clarity:**
+
 - Key threshold visually prominent
+
 - Decision recommendation clear
+
 - Confidence level indicated
 
 ---
@@ -626,9 +813,13 @@ Change logs are becoming standard in consulting and research. Clients love seein
 ### Week 8 Preview
 
 **Light Workflow Help**
+
 - Documenting processes for reproducibility
+
 - Automation ethics and appropriate tool use
+
 - Individual mentor consultations (30-45 min each)
+
 - Workflow optimization strategies
 
 ---
@@ -653,10 +844,15 @@ Change logs are becoming standard in consulting and research. Clients love seein
 
 *Pull a random "evidence-based design fortune" from the hat before you leave:*
 
+
 - "A threshold without justification is just a guess with confidence"
+
 - "The best counter-argument comes from your harshest critic - embrace them"
+
 - "Trade-offs reveal values - make yours explicit"
+
 - "Document failures as carefully as successes - both teach"
+
 - "Peer feedback is free consulting - use it wisely"
 
 **Your fortune for the week**: _______________

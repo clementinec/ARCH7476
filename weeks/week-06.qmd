@@ -7,14 +7,22 @@ format:
     transition: slide
     slide-number: true
     incremental: true
+    width: 1400
+    height: 900
 ---
 
 ## Today's Agenda
 
+
+
 - Data visualization principles for architecture
+
 - From numbers to compelling figures
+
 - Object Card design workshop
+
 - A4 figure development
+
 - Guest speaker: Data visualization designer
 
 ---
@@ -23,16 +31,26 @@ format:
 
 **Your stakeholders are busy:**
 
+
+
 - 30 seconds to grab attention
+
 - 2 minutes to understand key points
+
 - 5 minutes for detailed evidence
+
 - Must be actionable and memorable
 
 **Your data is complex:**
+
+
 - Multiple variables and conditions
 
+
 - Uncertainty and limitations
+
 - Technical details and context
+
 - Competing priorities and trade-offs
 
 ---
@@ -45,20 +63,30 @@ format:
 
 **Spatial thinking:**
 
+
+
 - Use plans, sections, and 3D views
+
 - Show scale and proportion clearly
+
 - Connect data to familiar building elements
 
 **Performance focus:**
 
+
 - Emphasize outcomes that matter to users
+
 - Show before/after or alternative comparisons
+
 - Include relevant benchmarks and targets
 
 **Decision support:**
 
+
 - Highlight actionable insights
+
 - Show confidence levels and uncertainty
+
 - Provide clear recommendations
 
 ---
@@ -67,14 +95,20 @@ format:
 
 **Primary message:**
 
+
 - What's the most important finding?
+
 - How can you make this immediately visible?
+
 - What should viewers remember if they see nothing else?
 
 **Supporting details:**
 
+
 - What context helps interpret the main finding?
+
 - What evidence supports your conclusions?
+
 - What limitations should be acknowledged?
 
 ---
@@ -87,16 +121,24 @@ format:
 
 **Single-page visual summary** of your entire research project:
 
+
 - Design object with key findings
+
 - Decision recommendations
+
 - Method transparency
+
 - Contact information for details
 
 **Purpose:**
 
+
 - Portfolio piece demonstrating research skills
+
 - Conference poster or presentation slide
+
 - Client handout or summary document
+
 - Professional networking tool
 
 ---
@@ -105,16 +147,24 @@ format:
 
 **Visual identity:**
 
+
 - High-quality image of your design object
+
 - Consistent typography and color scheme
+
 - Clear title and subtitle
+
 - Professional layout and composition
 
 **Evidence summary:**
 
+
 - Key performance metrics prominently displayed
+
 - Before/after or alternative comparisons
+
 - Clear indication of confidence levels
+
 - Most important findings highlighted
 
 ---
@@ -123,20 +173,29 @@ format:
 
 **Step 1: Content hierarchy**
 
+
 - List all information you want to include
+
 - Rank by importance to stakeholders
+
 - Eliminate bottom 50% ruthlessly
 
 **Step 2: Visual sketching**
 
+
 - Try 3-4 completely different layouts
+
 - Vary emphasis and organization
+
 - Test readability at poster scale
 
 **Step 3: Refinement**
 
+
 - Choose strongest layout concept
+
 - Polish typography and alignment
+
 - Check color accessibility and printing
 
 ---
@@ -149,20 +208,29 @@ format:
 
 **Heat maps for spatial data:**
 
+
 - Use conditional formatting for performance zones
+
 - Show building floor plans with performance overlay
+
 - Color-code performance levels intuitively
 
 **Small multiples for comparisons:**
 
+
 - Multiple small charts showing different conditions
+
 - Consistent scales and formatting across charts
+
 - Easy visual comparison of patterns
 
 **Error bars and confidence intervals:**
 
+
 - Show uncertainty in your measurements
+
 - Use standard deviation or confidence ranges
+
 - Label uncertainty sources clearly
 
 ---
@@ -171,20 +239,29 @@ format:
 
 **Typography:**
 
+
 - Sans-serif fonts for readability
+
 - Consistent font sizes and hierarchy
+
 - No unnecessary text or labels
 
 **Color strategy:**
 
+
 - Use color to highlight key findings
+
 - Maintain accessibility (colorblind-friendly)
+
 - Consistent color meanings across charts
 
 **Clarity over decoration:**
 
+
 - Remove unnecessary gridlines and backgrounds
+
 - Simplify legends and annotations
+
 - Make data the visual focus
 
 --<!-- -
@@ -197,9 +274,13 @@ format:
 
 **Topics:**
 
+
 - Real-world architectural visualization projects
+
 - Client communication strategies
+
 - Tool workflows and efficiency tips
+
 - Portfolio development for design research -->
 ---
 
@@ -210,9 +291,13 @@ format:
 ### Exercise 1: Chart Makeover
 
 **Individual work (20 minutes):**
+
 - Take one chart from your current analysis
+
 - Apply professional design principles
+
 - Focus on clarity and stakeholder relevance
+
 - Prepare 1-minute presentation of improvement
 
 ---
@@ -220,9 +305,13 @@ format:
 ### Exercise 2: Object Card Sketch
 
 **Individual work (25 minutes):**
+
 - Create hand-drawn layout sketch for your Object Card
+
 - Include all required elements
+
 - Test visual hierarchy and balance
+
 - Consider how it would look at poster scale
 
 ---
@@ -230,9 +319,13 @@ format:
 ### Exercise 3: Peer Critique
 
 **Pairs (15 minutes):**
+
 - Exchange sketches and provide feedback
+
 - Focus on clarity and visual impact
+
 - Suggest improvements for stakeholder communication
+
 - Identify strongest elements to develop further
 
 ---
@@ -255,15 +348,23 @@ format:
 ### Visual Consistency Strategy
 
 **Develop visual identity:**
+
 - Consistent color palette across components
+
 - Standard typography and layout principles
+
 - Unified style for charts and graphics
+
 - Professional presentation standards
 
 **Content coordination:**
+
 - Same key findings emphasized across formats
+
 - Consistent terminology and metrics
+
 - Aligned recommendations and action items
+
 - Cross-references between components
 
 ---
@@ -276,14 +377,20 @@ format:
 
 **Before/after comparisons:**
 
+
 - Side-by-side layouts for clear contrast
+
 - Arrows or visual connections showing change
+
 - Quantified improvement metrics
 
 **Time series analysis:**
 
+
 - Line charts for continuous monitoring data
+
 - Seasonal patterns and trend identification
+
 - Baseline and intervention periods marked clearly
 
 ---
@@ -292,14 +399,20 @@ format:
 
 **Building section analysis:**
 
+
 - Overlay performance data on architectural drawings
+
 - Color-code zones by performance levels
+
 - Show user experience at human scale
 
 **Neighborhood scale mapping:**
 
+
 - Use GIS tools for urban context
+
 - Show building location relative to infrastructure
+
 - Include demographic and environmental context
 
 ---
@@ -312,23 +425,35 @@ format:
 
 **For developers:**
 
+
 - ROI and financial performance emphasis
+
 - Risk mitigation and market advantage
+
 - Regulatory compliance confirmation
+
 - Implementation timeline and costs
 
 **For architects:**
 
+
 - Design flexibility and creative opportunities
+
 - Integration with design process
+
 - Technical specifications and details
+
 - Performance optimization strategies
 
 **For users:**
 
+
 - Comfort and satisfaction impacts
+
 - Health and wellbeing benefits
+
 - Usability and accessibility improvements
+
 - Environmental quality enhancements
 
 ---
@@ -337,16 +462,68 @@ format:
 
 **Executive summary (2 minutes):**
 
+
 - Single key finding and recommendation
+
 - Financial or performance impact quantified
+
 - Clear next steps for decision-makers
 
 **Technical briefing (15 minutes):**
 
+
 - Method overview and validation
+
 - Detailed results with uncertainty ranges
+
 - Alternative scenarios and sensitivity analysis
+
 - Implementation guidance and considerations
+
+---
+
+## 🤖 ML Enthusiasts Challenge: Generative Design Object Hunt
+### (10 minutes - Machine Learning Focus)
+
+---
+
+### 🏗️ Object Card Competition: Find YOUR Generative Design
+
+**The Challenge**: Identify the most innovative example of machine learning/deep learning being used in generative design - then create an Instagram-style object card to share with the class!
+
+**🎯 Your Mission (10 minutes):**
+
+1. **Find an ML/DL generative design example** (3 minutes)
+
+   - Architecture projects using AI/ML for form generation
+   - Computational design tools with deep learning
+   - Performance optimization through neural networks
+   - Creative AI applications in spatial design
+
+2. **Create an Object Card** (7 minutes)
+
+   - Use **Figma's Instagram UI Kit** template
+   - Include: Project image, key ML technique, why it's innovative
+   - Post to class Slack channel with #GenerativeDesignHunt
+
+**🏆 Class Voting**: Most liked post wins and we'll dissect how the ML/DL essence gets absorbed in our evidence-based design approach!
+
+::: {.callout-note}
+## Resources for Object Hunt
+
+**Quick Search Tips:**
+- "Machine learning architecture design"
+- "Neural networks generative design" 
+- "AI computational design tools"
+- "Deep learning building optimization"
+
+**Figma Template**: Search "Instagram UI Kit" in Figma Community (free)
+:::
+
+::: {.callout-tip}
+## Note for Future Classes
+This 10-minute ML challenge will become a regular feature - spotting cutting-edge generative design applications and connecting them to our evidence-based methodology!
+:::
 
 ---
 
@@ -367,9 +544,13 @@ format:
 
 **Decide with Numbers**
 
+
 - Setting thresholds for design decisions
+
 - Addressing counter-arguments and alternatives
+
 - Peer Review Session #1 feedback integration
+
 - Decision framework development
 
 ---
