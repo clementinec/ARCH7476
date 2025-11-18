@@ -4049,11 +4049,11 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#the-structure-showdown-3-competing-frameworks",
-    "href": "weeks/week-09-engaging.html#the-structure-showdown-3-competing-frameworks",
+    "objectID": "weeks/week-09-engaging.html#what-are-bim-and-bem",
+    "href": "weeks/week-09-engaging.html#what-are-bim-and-bem",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "🥊 The Structure Showdown: 3 Competing Frameworks",
-    "text": "🥊 The Structure Showdown: 3 Competing Frameworks\n🎯 Framework A: “Stakeholder-First” Structure\nSlide 1: “Here’s YOUR problem and why it costs you money/time/reputation”\nSlide 2: “Here’s exactly what to DO about it (with confidence levels)”\n📊 Framework B: “Evidence-First” Structure\nSlide 1: “Here’s the surprising thing I discovered in the data”\nSlide 2: “Here’s what this means for your decisions”\n🎭 Framework C: “Story Arc” Structure\nSlide 1: “The journey from problem to discovery to solution”\nSlide 2: “Your roadmap to implementation and success”\n\n\n\n\n\n\nLive Testing Laboratory\n\n\nWe’re going to TEST these frameworks with REAL scenarios! Each team gets 5 minutes to create the same content using different structures, then we vote on which is most convincing!",
+    "section": "🏗️ What Are BIM and BEM?",
+    "text": "🏗️ What Are BIM and BEM?\nUnderstanding the two critical data ecosystems in modern architecture\n\n\n\nBuilding Information Modeling (BIM)\n\n\nDefinition: A digital representation of physical and functional characteristics of a building\nPrimary Purpose: Design, construction, and facility management\nKey Focus: Geometry, materials, spatial relationships, construction sequences\nPrimary Users: Architects, engineers, contractors, facility managers\nTypical File Formats: IFC (.ifc), Revit (.rvt), ArchiCAD (.pln), gbXML (.xml)\n\n\n\n\n\n\nBuilding Energy Modeling (BEM)\n\n\nDefinition: A computational representation of a building’s energy flows and thermal behavior\nPrimary Purpose: Energy performance analysis, optimization, and compliance\nKey Focus: Thermal zones, HVAC systems, schedules, weather data, energy consumption\nPrimary Users: Energy analysts, sustainability consultants, MEP engineers\nTypical File Formats: EnergyPlus (.idf), OpenStudio (.osm), eQuest (.inp), TRNSYS (.dck)",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4061,11 +4061,11 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#the-structure-laboratory-experiment",
-    "href": "weeks/week-09-engaging.html#the-structure-laboratory-experiment",
+    "objectID": "weeks/week-09-engaging.html#the-bim-data-structure",
+    "href": "weeks/week-09-engaging.html#the-bim-data-structure",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "🧪 The Structure Laboratory Experiment",
-    "text": "🧪 The Structure Laboratory Experiment\n🎲 Scenario Assignment (roll dice for your test case):\n1-2: Hong Kong Housing Developer - Problem: Rising construction costs vs. resident satisfaction - Stakeholder: Profit-focused, time-pressed, skeptical of research - Decision: Whether to invest in evidence-based design optimization\n3-4: Hospital Facility Manager - Problem: Patient complaints about lighting and noise - Stakeholder: Budget-constrained, regulation-focused, risk-averse - Decision: Whether to implement design changes between renovations\n5-6: Government Planning Official - Problem: New sustainability requirements vs. development pressure - Stakeholder: Policy-focused, public accountability, political constraints - Decision: Whether to approve innovative building performance standards\n⏰ 15 minutes: Create 2-slide pitch using assigned framework\n🎯 Test: Present to “stakeholder” (classmate in role), get real feedback",
+    "section": "📊 The BIM Data Structure",
+    "text": "📊 The BIM Data Structure\nHow is geometric and construction information actually organized?\n🏛️ Hierarchical Organization\nBuilding Information Models follow a structured hierarchy:\n\nProject → Contains all building information\n\nSite → Location, orientation, context\n\nBuilding → One or more structures\n\nStories/Levels → Floor-by-floor organization\n\nSpaces/Rooms → Individual zones\n\nBuilding Elements → Walls, floors, windows, doors\n\nComponents → Materials, layers, properties\n\nProperties → Thermal, structural, cost data\n\n\n\n\n\n\n\n\n🔗 Key BIM Data Components\n1. Geometry\n\n3D coordinates and shapes\nParametric relationships (walls connect to floors)\nTopological connections between elements\n\n2. Attributes\n\nMaterial properties (conductivity, density, specific heat)\nConstruction details (layer thickness, assembly type)\nPerformance data (R-values, U-values, SHGC)\n\n3. Relationships\n\nSpatial containment (window within wall)\nConnections (wall joins floor)\nSystems (window part of exterior envelope system)",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4073,11 +4073,11 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#live-results-dashboard",
-    "href": "weeks/week-09-engaging.html#live-results-dashboard",
+    "objectID": "weeks/week-09-engaging.html#the-bem-data-structure",
+    "href": "weeks/week-09-engaging.html#the-bem-data-structure",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "📊 Live Results Dashboard",
-    "text": "📊 Live Results Dashboard\nVote in real-time: Which presentations would actually change stakeholder behavior?\n\n\n\n\n\n\n\n\n\n\nFramework\nClarity Score\nAction Score\nCredibility Score\nTotal\n\n\n\n\nStakeholder-First\n?\n?\n?\n?\n\n\nEvidence-First\n?\n?\n?\n?\n\n\nStory Arc\n?\n?\n?\n?\n\n\n\n🏆 Winner gets: Professional storytelling bragging rights + Mystery prize!",
+    "section": "⚡ The BEM Data Structure",
+    "text": "⚡ The BEM Data Structure\nHow is energy performance actually calculated?\n🌡️ Zone-Based Organization\nEnergy models organize buildings by thermal zones, not just geometry:\n\nBuilding → Overall energy system\n\nThermal Zones → Spaces with similar thermal behavior\n\nSurfaces → Walls, roofs, floors (heat transfer boundaries)\n\nConstructions → Material layers with thermal properties\n\nInternal Loads → People, lights, equipment\nHVAC Systems → Heating, cooling, ventilation\nSchedules → Occupancy, equipment usage patterns\n\nSite Context\n\nWeather Data → Hourly temperature, solar radiation, wind\nShading → Adjacent buildings, landscape\n\n\n\n📈 Critical BEM Data Elements\n1. Thermal Zones\n\nVolume and floor area\nThermostat setpoints (heating/cooling)\nVentilation requirements\n\n2. Constructions\n\nMaterial layers (inside → outside)\nThermal resistance of each layer\nThermal mass and heat capacity\n\n3. Schedules\n\nOccupancy patterns (hourly, daily, seasonal)\nEquipment operation times\nLighting schedules\n\n4. Systems\n\nHVAC equipment types and efficiencies\nDistribution systems (ductwork, pipes)\nControl strategies",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4085,11 +4085,23 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#the-science-behind-the-winner",
-    "href": "weeks/week-09-engaging.html#the-science-behind-the-winner",
+    "objectID": "weeks/week-09-engaging.html#quick-check-bim-vs-bem-thinking",
+    "href": "weeks/week-09-engaging.html#quick-check-bim-vs-bem-thinking",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "The Science Behind the Winner",
-    "text": "The Science Behind the Winner\nWhy did the winning structure work better?\n\nCognitive load theory: _____________\nStakeholder psychology: _____________\nDecision-making science: _____________\n\nHow can you apply this to YOUR real presentations?",
+    "section": "🔄 Quick Check: BIM vs BEM Thinking",
+    "text": "🔄 Quick Check: BIM vs BEM Thinking\n💡 5-Minute Partner Challenge\nScenario: You’re modeling a south-facing office with a large window.\nQuestion 1: What would a BIM model care about?\n\n\nWindow size, frame material, glass type, cost\n\n\nSolar heat gain coefficient, U-value, thermal mass\n\n\nBoth equally\n\n\nNeither - just the visual appearance\n\n\nQuestion 2: What would a BEM model care about?\n\n\nExact window manufacturer and product code\n\n\nWindow thermal properties and solar transmission\n\n\nConstruction sequencing and installation method\n\n\nVisual aesthetics and daylighting quality\n\n\nQuestion 3: Which model needs to know about occupancy schedules?\n\n\nBIM only\n\n\nBEM only\n\n\nBoth\n\n\nNeither\n\n\n🎯 Discuss answers with partner - we’ll reveal the correct answers and why they matter!",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#quick-check-answers",
+    "href": "weeks/week-09-engaging.html#quick-check-answers",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "✅ Quick Check Answers",
+    "text": "✅ Quick Check Answers\nQuestion 1: A - BIM cares about physical/construction properties\n\nBIM focuses on what to build and how to build it\nMaterial specifications, dimensions, costs, constructability\n\nQuestion 2: B - BEM cares about thermal/energy properties\n\nBEM focuses on how the building performs energetically\nHeat flows, solar gains, thermal resistance matter for energy calculations\n\nQuestion 3: B - BEM needs schedules for energy calculations\n\nBIM might document space programs, but doesn’t need hourly schedules\nBEM requires schedules to calculate time-varying energy use\n\n🤔 Key Insight: Same building, completely different data priorities!",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4157,11 +4169,11 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#second-pitch-championship",
-    "href": "weeks/week-09-engaging.html#second-pitch-championship",
+    "objectID": "weeks/week-09-engaging.html#where-do-these-files-come-from",
+    "href": "weeks/week-09-engaging.html#where-do-these-files-come-from",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "🥊 60-Second Pitch Championship",
-    "text": "🥊 60-Second Pitch Championship\n🎬 The Ultimate Test: Convince a stranger to care about your work in 60 seconds\n🎯 The Formula for Victory\n15 seconds: Hook (Why should they care RIGHT NOW?) 30 seconds: Evidence (What did you discover that changes everything?) 15 seconds: Action (What should they do about it?)\n🎪 Battle Arena Format\nRound 1: Speed Dating Pitches (15 minutes) - 2 minutes per pair - 60-second pitch + 60-second feedback - Rotate through 6 different “stakeholders”\nRound 2: Gladiator Elimination (20 minutes) - Class votes for top 6 pitches - Semi-finals: 3 head-to-head battles - Finals: Champion vs. Champion\nRound 3: Stakeholder Jury (10 minutes) - Final 3 pitches to “real” stakeholder panel (instructor + volunteers) - Professional feedback and winner selection",
+    "section": "🔨 Where Do These Files Come From?",
+    "text": "🔨 Where Do These Files Come From?\nUnderstanding the complete workflow from design intent to energy analysis\n🏗️ The BIM Generation Pathway\n1. Manual Creation (Traditional BIM authoring)\n\nOrigin: Designer creates geometry in BIM software (Revit, ArchiCAD, etc.)\nProcess:\n\nDraw walls, place windows, define materials\nAssign properties and parameters\nOrganize into spaces and systems\n\nOutput: Native BIM file (.rvt, .pln) or neutral format (IFC)\nPros: Full design control, rich detail, integrated workflow\nCons: Time-intensive, requires BIM expertise, manual updates\n\n2. 3D Model Import and Enrichment\n\nOrigin: Import from other 3D tools (SketchUp, Rhino, etc.)\nProcess:\n\nImport geometry as “dumb” 3D shapes\nAdd semantic information (this surface is a wall, not just a polygon)\nAssign materials and properties\n\nOutput: Enriched BIM model\nPros: Leverages existing 3D models, design freedom\nCons: Requires significant cleanup and semantic tagging\n\n3. Point Cloud and Reality Capture\n\nOrigin: 3D scanning of existing buildings\nProcess:\n\nLaser scan or photogrammetry creates point cloud\nConvert points to BIM geometry (walls, floors, etc.)\nEstimate materials and conditions\n\nOutput: As-built BIM model\nPros: Accurate existing conditions, useful for renovations\nCons: Estimates required for hidden properties, labor-intensive",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4169,11 +4181,11 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#stakeholder-role-playing-cards",
-    "href": "weeks/week-09-engaging.html#stakeholder-role-playing-cards",
+    "objectID": "weeks/week-09-engaging.html#the-bem-generation-pathway",
+    "href": "weeks/week-09-engaging.html#the-bem-generation-pathway",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "🎭 Stakeholder Role Playing Cards",
-    "text": "🎭 Stakeholder Role Playing Cards\nDraw a card, become that stakeholder for pitch testing:\n\n\n\n🃏 Stakeholder Personas\n\n\n🏢 The Busy Developer - Cares about: ROI, timeline, risk reduction - Hates: Academic jargon, uncertain recommendations - Wants: Clear numbers, specific actions, confidence levels\n🏥 The Facility Manager - Cares about: User complaints, maintenance costs, operational efficiency - Hates: Theoretical solutions, complex technology - Wants: Practical fixes, proven approaches, measurable improvements\n🏛️ The Policy Maker - Cares about: Public benefit, regulatory compliance, political feasibility - Hates: Single building focus, industry bias - Wants: Scalable solutions, stakeholder consensus, evidence-based policy\n💰 The Investor - Cares about: Market returns, competitive advantage, risk management - Hates: Unquantified benefits, long payback periods - Wants: Financial models, market positioning, exit strategies\n👥 The Community Representative - Cares about: Resident needs, equity, long-term impact - Hates: Top-down decisions, gentrification risk - Wants: Community control, local benefits, transparent process\n\n\n\n🎯 Your mission: Adapt your pitch to each stakeholder type!",
+    "section": "⚡ The BEM Generation Pathway",
+    "text": "⚡ The BEM Generation Pathway\nHow do we get from buildings to energy models?\n🔄 Primary Generation Methods\n1. BIM-to-BEM Translation (Automated)\n\nOrigin: Existing BIM model\nProcess:\n\nExport BIM to gbXML or IFC format\nImport into energy modeling tool (OpenStudio, eQuest, etc.)\nSoftware automatically:\n\nIdentifies thermal zones from spaces\nExtracts surface geometry and constructions\nAssigns default schedules and systems\n\n\nOutput: Initial BEM file (.idf, .osm, .inp)\nPros: Fast, leverages existing BIM work, reduces duplication\nCons: Often requires extensive cleanup, missing critical energy data\n\n2. Direct Energy Model Creation (Manual)\n\nOrigin: Design documents, specifications, or simplified geometry\nProcess:\n\nEnergy analyst creates simplified geometric model\nManually defines thermal zones (often simplified from actual rooms)\nAssigns detailed schedules, systems, and controls\n\nOutput: Purpose-built BEM file\nPros: Energy-focused, appropriate level of detail, analyst control\nCons: Disconnected from BIM, duplicate effort, manual updates\n\n3. Template-Based Modeling\n\nOrigin: Building archetype or prototype model\nProcess:\n\nStart with reference model (office building template, etc.)\nModify geometry to match actual design\nAdjust systems and schedules for project specifics\n\nOutput: Customized BEM from template\nPros: Fast, proven assumptions, reduced errors\nCons: May not capture unique design features, less accurate for unusual buildings",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4181,11 +4193,11 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#championship-judging-criteria",
-    "href": "weeks/week-09-engaging.html#championship-judging-criteria",
+    "objectID": "weeks/week-09-engaging.html#the-complete-bimbem-workflow-map",
+    "href": "weeks/week-09-engaging.html#the-complete-bimbem-workflow-map",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "🏆 Championship Judging Criteria",
-    "text": "🏆 Championship Judging Criteria\nLive scoring on phones (1-10 scale):\n\n\n\nCriteria\nWeight\nYour Score\n\n\n\n\nClarity: Did I understand the problem immediately?\n25%\n?\n\n\nEvidence: Was I convinced by the findings?\n25%\n?\n\n\nAction: Do I know exactly what to do next?\n25%\n?\n\n\nConfidence: Would I bet my reputation on this?\n25%\n?\n\n\n\n🎪 Live Leaderboard\nReal-time results displayed as voting happens!\n🥇 Current Champion: _______________\n🔥 Best Hook: _______________\n📊 Most Convincing Evidence: _______________\n🎯 Clearest Action: _______________",
+    "section": "🗺️ The Complete BIM/BEM Workflow Map",
+    "text": "🗺️ The Complete BIM/BEM Workflow Map\nReal-world data flow in an integrated building project\ngraph TB\n    A[Design Intent] --&gt; B[BIM Authoring Tool]\n    B --&gt; C[Native BIM File .rvt/.pln]\n    C --&gt; D{Export Format}\n    D --&gt; E[IFC .ifc]\n    D --&gt; F[gbXML .xml]\n    E --&gt; G[Archive/Sharing]\n    F --&gt; H[Energy Modeling Tool]\n    H --&gt; I[Initial BEM File]\n    I --&gt; J[Manual Cleanup & Enrichment]\n    J --&gt; K{Add Missing Data}\n    K --&gt; L[Schedules]\n    K --&gt; M[HVAC Systems]\n    K --&gt; N[Controls]\n    K --&gt; O[Weather File]\n    L --&gt; P[Complete BEM Model]\n    M --&gt; P\n    N --&gt; P\n    O --&gt; P\n    P --&gt; Q[Simulation Engine]\n    Q --&gt; R[Energy Results]\n    R --&gt; S{Results OK?}\n    S --&gt;|No| T[Revise BEM]\n    S --&gt;|Yes| U[Design Decisions]\n    T --&gt; P\n    U --&gt; V[Update BIM]\n    V --&gt; C",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4193,11 +4205,11 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#victory-analysis",
-    "href": "weeks/week-09-engaging.html#victory-analysis",
+    "objectID": "weeks/week-09-engaging.html#the-critical-translation-gap-problem",
+    "href": "weeks/week-09-engaging.html#the-critical-translation-gap-problem",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "Victory Analysis",
-    "text": "Victory Analysis\nWhat made the winning pitches work?\n\nHook Strategy: _______________\nEvidence Presentation: _______________\n\nAction Clarity: _______________\nDelivery Style: _______________\n\nHow can everyone apply these insights?",
+    "section": "📝 The Critical “Translation Gap” Problem",
+    "text": "📝 The Critical “Translation Gap” Problem\nWhat gets lost when converting BIM → BEM?\n❌ Commonly Missing or Wrong After Translation\nGeometry Issues:\n\nSimplified too much: Curved facades become straight walls\nSimplified too little: Every door frame exported as thermal zone\nWrong orientation: Building rotates during export\nMissing context: Adjacent buildings and shading lost\n\nThermal Zoning Problems:\n\nBIM spaces ≠ Thermal zones: Conference room divided into 4 spaces in BIM exports as 4 zones\nOpen plans fail: Open office should be one zone, exports as dozens\nMissing plenum zones: Return air paths not captured\n\nMaterial/Construction Gaps:\n\nGeneric assignments: “Exterior wall” without actual layers or R-value\nMissing internal mass: Furniture, partition walls, structural mass ignored\nNo thermal bridges: Connections and penetrations simplified\n\nOperational Data Missing:\n\nNo schedules: BIM doesn’t know when lights turn on or off\nNo HVAC systems: BIM has architectural spaces, not mechanical systems\nNo controls: Thermostat strategies, sensor locations absent\nNo set points: Heating/cooling temperatures undefined\n\n✅ What Translates Well\nBasic geometry (walls, floors, windows), surface areas, window-to-wall ratios, orientation, building footprint",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4205,11 +4217,11 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#the-constructive-criticism-championships",
-    "href": "weeks/week-09-engaging.html#the-constructive-criticism-championships",
+    "objectID": "weeks/week-09-engaging.html#hands-on-translation-detective-challenge",
+    "href": "weeks/week-09-engaging.html#hands-on-translation-detective-challenge",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "⚔️ The Constructive Criticism Championships",
-    "text": "⚔️ The Constructive Criticism Championships\n🎯 Mission: Make each other’s work so good that competitors will weep\n🔥 Review Battle Format\nPhase 1: Material Exchange (5 minutes) - Share complete A4 draft + practice case slides - Provide context: “What feedback would help most?” - Set expectations: “My biggest worry is…”\nPhase 2: Deep Dive Analysis (25 minutes) - Silent review period: Take detailed notes - Focus areas: Story clarity, evidence strength, stakeholder relevance - Document specific suggestions: Not just “make it better”\nPhase 3: Feedback Face-Off (15 minutes)\n- 5 minutes: Present your feedback clearly - 5 minutes: Discuss solutions and improvements - 5 minutes: Plan implementation strategy",
+    "section": "🎯 Hands-On: Translation Detective Challenge",
+    "text": "🎯 Hands-On: Translation Detective Challenge\n⏰ 10-Minute Group Activity\nScenario: You’ve exported a BIM model to gbXML and opened it in an energy modeling tool. The initial results show the building uses 3× more energy than expected!\nYour Mission: Identify what likely went wrong in the translation.\nGiven Information:\n\nBuilding: 5-story office building with open floor plan\nBIM model: Very detailed architectural model with every furniture piece modeled\nTranslation: Automated gbXML export with default settings\nBEM result: 450 kWh/m²/year (expected: 150 kWh/m²/year)\n\nDetective Questions:\n\nHow many thermal zones do you think were created? (Hint: Think about all those furniture pieces and room divisions)\nWhat might be wrong with the HVAC system in the energy model?\nWhat schedules are likely being used?\nWhat’s probably missing that would reduce the energy use?\n\n🎯 Groups report out findings - let’s debug this together!",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4217,11 +4229,11 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#the-professional-feedback-framework",
-    "href": "weeks/week-09-engaging.html#the-professional-feedback-framework",
+    "objectID": "weeks/week-09-engaging.html#why-cant-bim-and-bem-just-talk-to-each-other",
+    "href": "weeks/week-09-engaging.html#why-cant-bim-and-bem-just-talk-to-each-other",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "📋 The Professional Feedback Framework",
-    "text": "📋 The Professional Feedback Framework\n🎯 The “SOS” Method\n🌟 Strengths (2 minutes): - What’s working really well that should be emphasized? - What would you steal for your own project? - What makes this memorable and compelling?\n🔍 Opportunities (2 minutes): - Where could clarity be improved? - What connections could be stronger? - Which evidence needs more development?\n🚀 Strategies (1 minute): - Specific, actionable suggestions - Prioritized by impact and feasibility - Connected to Object Fair success\n\n\n\nAdvanced Review Challenges\n\n\n🏆 Best Feedback Awards:\n\n🎯 Most Actionable: Specific suggestions with implementation steps\n💡 Most Insightful: Identified issues author didn’t see\n🤝 Most Helpful: Feedback that dramatically improves the work\n🎭 Best Role-Play: Gave feedback from true stakeholder perspective\n\nVoting: Authors choose which feedback was most valuable!",
+    "section": "🔗 Why Can’t BIM and BEM Just Talk to Each Other?",
+    "text": "🔗 Why Can’t BIM and BEM Just Talk to Each Other?\nThe fundamental challenge: Two models, same building, completely different purposes\n🤔 The Core Problem\nBIM and BEM are optimized for different questions:\nBIM asks: “What do we build and how?”\n\nDetailed geometry for construction\nMaterial specifications for procurement\nCost data for budgeting\nSchedule for sequencing\n\nBEM asks: “How will it perform energetically?”\n\nSimplified geometry for calculation speed\nThermal properties for heat flow\nOperational assumptions for usage patterns\nWeather data for climate response\n\n🎯 The conflict: Detail needed for construction ≠ Detail needed for energy analysis",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4229,11 +4241,59 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#the-peer-review-laboratory",
-    "href": "weeks/week-09-engaging.html#the-peer-review-laboratory",
+    "objectID": "weeks/week-09-engaging.html#the-translation-bridges-ifc-vs-gbxml",
+    "href": "weeks/week-09-engaging.html#the-translation-bridges-ifc-vs-gbxml",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "🔬 The Peer Review Laboratory",
-    "text": "🔬 The Peer Review Laboratory\n💊 Diagnostic Questions for Reviewers\nStory Health Check: - [ ] Can I explain their project to someone else in 60 seconds? - [ ] Is the stakeholder relevance obvious throughout? - [ ] Would I make the decision they recommend based on this evidence?\nEvidence Stress Test: - [ ] Are the key findings supported by appropriate evidence? - [ ] Is uncertainty communicated appropriately? - [ ] Would stakeholders find this credible and actionable?\nProfessional Polish Assessment: - [ ] Could this be presented to real industry professionals? - [ ] Are figures clear and compelling at presentation scale? - [ ] Is the overall package cohesive and professional?\n🎪 Live Review Quality Meter\nTrack the quality of feedback across the room:\n\n👀 Depth of Analysis: How thoroughly did reviewers engage?\n🎯 Actionability: How specific and useful were suggestions?\n🤝 Professional Tone: How constructive and supportive?\n💡 Insight Generation: Did reviews reveal new perspectives?",
+    "section": "🌉 The Translation Bridges: IFC vs gbXML",
+    "text": "🌉 The Translation Bridges: IFC vs gbXML\nTwo competing standards for BIM-to-BEM data exchange\n\n\n\nIFC (Industry Foundation Classes)\n\n\nCreated by: buildingSMART International (1990s)\nPrimary Purpose: Comprehensive BIM data exchange across all disciplines\nScope: Entire building lifecycle (design, construction, operation, demolition)\nEnergy Focus: Originally minimal, gradually improving with “MVDs” (Model View Definitions)\nStrengths:\n\nVendor-neutral, open standard\nComprehensive building information\nWell-established in architecture and construction\nSupports complex geometric relationships\n\nWeaknesses for Energy:\n\nToo much information (slow to process)\nEnergy-specific data often missing or inconsistent\nThermal zoning unclear or wrong\nHVAC systems poorly defined for energy analysis\n\nCommon Use: Archiving, collaboration between architects/engineers/contractors\n\n\n\n\n\n\ngbXML (Green Building XML)\n\n\nCreated by: Green Building XML Schema Inc. (2000)\nPrimary Purpose: Specifically for BIM-to-energy model translation\nScope: Building geometry, materials, and context for energy analysis\nEnergy Focus: Designed explicitly for energy simulation tools\nStrengths:\n\nPurpose-built for energy analysis\nCleaner thermal zone definitions\nFaster to process than IFC\nBetter support for HVAC system basics\n\nWeaknesses:\n\nLimited to energy analysis (not full BIM)\nVendor implementations inconsistent\nLess detailed than IFC for construction\nProprietary governance (less open than IFC)\n\nCommon Use: Exporting from Revit/ArchiCAD to OpenStudio/eQuest/IES-VE",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#ifc-vs-gbxml-head-to-head-comparison",
+    "href": "weeks/week-09-engaging.html#ifc-vs-gbxml-head-to-head-comparison",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "📊 IFC vs gbXML: Head-to-Head Comparison",
+    "text": "📊 IFC vs gbXML: Head-to-Head Comparison\n\n\n\n\n\n\n\n\n\nFeature\nIFC\ngbXML\nWinner\n\n\n\n\nGeometric Accuracy\nVery high (construction-grade)\nMedium (energy-grade)\nIFC\n\n\nThermal Zone Definition\nPoor (not its focus)\nGood (designed for this)\ngbXML\n\n\nMaterial Properties\nComprehensive (but not thermal)\nThermal-focused\ngbXML\n\n\nHVAC Systems\nDetailed (but not for energy calc)\nSimplified (but usable)\ngbXML\n\n\nFile Size / Speed\nLarge, slow\nSmaller, faster\ngbXML\n\n\nIndustry Adoption (BIM)\nVery high\nMedium\nIFC\n\n\nIndustry Adoption (Energy)\nGrowing\nHigh\ngbXML\n\n\nOpen Standard\nYes (buildingSMART)\nSemi-open\nIFC\n\n\n\n🎯 Reality Check: Neither is perfect! Most workflows require manual cleanup after translation.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#how-models-stay-updated-or-dont",
+    "href": "weeks/week-09-engaging.html#how-models-stay-updated-or-dont",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🛠️ How Models Stay Updated (Or Don’t!)",
+    "text": "🛠️ How Models Stay Updated (Or Don’t!)\nThe lifecycle synchronization challenge\n🔄 The Ideal World (Rarely Achieved)\nSingle Source of Truth:\n\nDesign in BIM → Update geometry, materials, systems\nAuto-export to BEM → Translation with minimal manual fixes\nRun energy simulation → Get performance results\nDesign iteration → Make changes in BIM\nRepeat → BEM automatically updates\n\nWhy this rarely works:\n\nTranslation errors require manual BEM fixes\nManual fixes get overwritten on next export\nBIM and BEM diverge over project lifecycle\nNo clear “version control” between models\n\n😰 The Real World (More Common)\nDivergent Models:\n\nInitial BIM → Create architectural model\nExport to BEM → One-time translation\nManual BEM refinement → Energy analyst fixes zones, adds schedules/systems\nBIM continues evolving → Architect makes design changes\nBEM frozen → Energy model not updated (too much manual work to redo)\nFinal disconnect → As-built BIM ≠ Energy model used for analysis\n\nConsequences:\n\nEnergy performance predictions may not match as-built reality\nDifficulty tracking which design changes were analyzed\nWasted effort recreating models\nCompliance documentation doesn’t match construction\n\n🔧 Current Industry Approaches\nApproach 1: Periodic Re-synchronization\n\nMajor design milestones trigger new BIM → BEM export\nEnergy analyst maintains spreadsheet of manual adjustments\nReapply manual fixes to new export (tedious but doable)\n\nApproach 2: Parallel Development\n\nMaintain BIM and BEM separately\nUse BIM as reference, manually update BEM geometry\nTreat them as related but independent models\n\nApproach 3: BEM-First Simplification\n\nCreate simplified “energy massing model” early\nUse this for energy analysis throughout project\nAccept that it won’t match detailed BIM exactly",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#case-study-when-translation-goes-wrong",
+    "href": "weeks/week-09-engaging.html#case-study-when-translation-goes-wrong",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🎯 Case Study: When Translation Goes Wrong",
+    "text": "🎯 Case Study: When Translation Goes Wrong\nReal project example (anonymized)\n📋 The Setup\nProject: New university research building, 6 stories, 15,000 m²\nBIM Tool: Revit (architectural model with MEP coordination)\nEnergy Tool: OpenStudio/EnergyPlus\nGoal: LEED Gold certification, energy modeling required\n💥 What Happened\nWeek 1: Architect exports Revit model to gbXML\n\nFile exports successfully\nOpenStudio imports without errors\nTeam celebrates “seamless interoperability”\n\nWeek 2: Energy analyst reviews imported model\n\n465 thermal zones created (expected: ~30)\n\nEvery small space (closets, corridors) became separate zone\nOpen office areas fragmented into dozens of zones\n\nNo HVAC systems defined (all zones “unconditioned”)\nGeneric wall constructions (no R-values, all same type)\nWindow properties missing (no SHGC, U-value, or visible transmittance)\nBuilding rotated 90 degrees (orientation error)\n\nWeek 3-4: Manual cleanup required\n\nManually merge zones (465 → 32)\nResearch and input all construction assemblies\nDefine HVAC systems from MEP drawings\nCreate occupancy and equipment schedules\nFix orientation and add context shading\nTime spent: 40+ hours\n\nWeek 8: Architect makes design changes\n\nWindow sizes change\nInterior walls move\nRoof design modified\n\nDilemma: Re-export and lose 40 hours of work? Or manually update BEM?\nSolution: Manual updates to BEM, document discrepancies, hope nothing major changes again\n🤔 Lessons Learned\nWhat went wrong:\n\nDefault gbXML export settings inappropriate for energy modeling\nBIM not created with energy analysis in mind\nMissing data not flagged until after export\nNo workflow for managing updates\n\nWhat should have happened:\n\nPre-export BIM cleanup (consolidate spaces for thermal zones)\nDefine construction assemblies in BIM before export\nCoordinate with MEP for HVAC system info\nPlan for iterative updates with version control",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#hands-on-challenge-bim-bem-divergence-detective",
+    "href": "weeks/week-09-engaging.html#hands-on-challenge-bim-bem-divergence-detective",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🎮 Hands-On Challenge: BIM-BEM Divergence Detective",
+    "text": "🎮 Hands-On Challenge: BIM-BEM Divergence Detective\n⏰ 12-Minute Group Activity\nScenario: You’re consulting on a project where the energy model and BIM have diverged. The facility manager reports actual energy use is 30% higher than the energy model predicted. Time to investigate!\nGiven Information:\n\nBIM Model (as-built): Updated through construction, includes all changes\nEnergy Model: Based on Design Development stage, not updated after schematic\nTime Gap: 14 months between energy model freeze and building operation\n\nYour Mission: For each category, identify what likely diverged and WHY it matters for energy performance.\n🔍 Investigation Categories\n1. Geometry Changes\n\nWhat building features might have changed during design development/construction?\nWhich changes would significantly affect energy use?\n\n2. Construction/Materials\n\nWhat “value engineering” commonly happens during construction?\nHow would this affect thermal performance?\n\n3. Systems\n\nHow might the actual HVAC differ from what was modeled?\nWhat controls or sequences might have changed?\n\n4. Operations\n\nWhat operational assumptions might not match reality?\nWhat schedules or usage patterns might differ?\n\n🎯 Groups present their top 3 divergence suspects and impact on energy performance!",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4277,6 +4337,42 @@
     ]
   },
   {
+    "objectID": "weeks/week-09-engaging.html#the-ultimate-integration-question",
+    "href": "weeks/week-09-engaging.html#the-ultimate-integration-question",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🧩 The Ultimate Integration Question",
+    "text": "🧩 The Ultimate Integration Question\nWhy can’t we just have ONE model that does everything?\nThink about it: We have the technology to model buildings in extraordinary detail. We can simulate physics, manage construction, track costs, coordinate trades. So why do we maintain separate BIM and BEM models?\n🎯 Group Challenge: Defend or Critique\n⏰ 15-Minute Structured Debate\nSplit into three positions:\n🔵 Team “Unified Model”\nArgument: “We SHOULD combine BIM and BEM into one integrated model”\nYour job:\n\nArgue benefits of single source of truth\nExplain how technology could bridge the gap\nPropose what a unified model would look like\nAddress efficiency and workflow improvements\n\n🔴 Team “Separate Forever”\nArgument: “BIM and BEM MUST remain separate specialized tools”\nYour job:\n\nArgue why different purposes require different tools\nExplain computational and practical limitations\nDefend current industry practice\nAddress why integration attempts fail\n\n🟡 Team “Hybrid Future”\nArgument: “We need BETTER integration, not full unification”\nYour job:\n\nPropose specific improvements to current workflow\nIdentify what should be shared vs. what should remain separate\nDesign realistic interoperability enhancements\nBalance idealism with practical constraints",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#the-fundamental-differences-revealed",
+    "href": "weeks/week-09-engaging.html#the-fundamental-differences-revealed",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🔬 The Fundamental Differences Revealed",
+    "text": "🔬 The Fundamental Differences Revealed\nAfter the debate, let’s examine the core reasons BIM ≠ BEM:\n1️⃣ Computational Complexity\nBIM Priority: Visual accuracy, construction detail, documentation clarity\n\nCan handle millions of polygons\nFocuses on representing what you see\nRendering speed matters more than calculation speed\n\nBEM Priority: Simulation speed, numerical stability, annual calculations\n\nMust run 8,760 hours of calculations\nSimplified geometry = faster simulation\nTrade visual accuracy for computational efficiency\n\n💡 Key Insight: A photorealistic model with every screw and bolt is useless for energy analysis if it takes 40 hours to simulate one design option.\n2️⃣ Temporal Resolution\nBIM: Mostly static snapshot\n\nDocuments building at specific design phases\nChanges tracked as versions, not continuous time\nDoesn’t model how building operates over time\n\nBEM: Inherently time-dynamic\n\nSimulates every hour of the year (8,760 timesteps)\nModels changing weather, occupancy, solar angles\nCaptures thermal mass, system cycling, seasonal variation\n\n💡 Key Insight: BIM says “this is the wall,” BEM says “this is how the wall performs differently at 2am in January vs. 2pm in July”\n3️⃣ Data Precision vs. Assumptions\nBIM: Strives for precision and specification\n\nExact dimensions (150mm thick wall, not ~150mm)\nSpecific products (Brand X window, Model 123)\nAs-specified or as-built documentation\n\nBEM: Embraces necessary assumptions\n\nTypical occupancy patterns (not actual future behavior)\nRepresentative weather data (not next year’s actual weather)\nEstimated operation (not guaranteed user behavior)\n\n💡 Key Insight: BIM pretends to certainty (we will build this). BEM acknowledges uncertainty (we predict this will probably happen).\n4️⃣ Geometry Philosophy\nBIM: Parametric, relationship-based, construction-logical\n\nWalls connect to floors at specific relationships\nChanges propagate through dependencies\nMaintains constructability rules\n\nBEM: Thermal boundary-based, physics-logical\n\nSurfaces define heat flow boundaries\nZones organized by thermal similarity, not construction\nMaintains energy balance requirements\n\n💡 Key Insight: BIM thinks in building elements (wall, window, door). BEM thinks in heat transfer surfaces (opaque boundary, transparent boundary, internal partition).",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#the-synthesis-when-should-they-align",
+    "href": "weeks/week-09-engaging.html#the-synthesis-when-should-they-align",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🏆 The Synthesis: When Should They Align?",
+    "text": "🏆 The Synthesis: When Should They Align?\nCritical Alignment Points (where BIM and BEM MUST match):\n✅ Basic geometry (footprint, height, orientation, major massing)\n✅ Envelope areas (total wall area, window area, roof area)\n✅ Material thermal properties (U-values, SHGC for specified assemblies)\n✅ Space programs (square footage by use type)\nAcceptable Divergence Points (where differences are necessary):\n⚠️ Thermal zoning (BEM zones ≠ BIM spaces)\n⚠️ Geometric detail (BEM simplified, BIM detailed)\n⚠️ Systems representation (BEM parametric, BIM documented)\n⚠️ Temporal information (BEM schedules, BIM mostly static)\n🎯 Your Project Application\nReflection (write this down):\n1. For YOUR semester project:\n\nWhich aspects of BIM and BEM need to align precisely?\nWhere can you accept simplification or divergence?\nHow will you document the relationship between models?\n\n2. For YOUR stakeholder communication:\n\nHow will you explain model differences to non-experts?\nWhat uncertainties must you communicate?\nHow do you build confidence despite model limitations?\n\n3. For YOUR future practice:\n\nWhat workflow lessons will you take forward?\nWhat tools or skills do you need to develop?\nHow will you manage integrated modeling projects?",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
     "objectID": "weeks/week-09-engaging.html#what-you-conquered-today",
     "href": "weeks/week-09-engaging.html#what-you-conquered-today",
     "title": "Week 9: The Story Wars & Figure Championships",
@@ -4289,11 +4385,11 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#your-new-storytelling-superpowers",
-    "href": "weeks/week-09-engaging.html#your-new-storytelling-superpowers",
+    "objectID": "weeks/week-09-engaging.html#your-new-bimbem-superpowers",
+    "href": "weeks/week-09-engaging.html#your-new-bimbem-superpowers",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "Your New Storytelling Superpowers",
-    "text": "Your New Storytelling Superpowers\n🎭 Narrative Mastery: You know which story structure actually changes stakeholder behavior\n📊 Visual Command: Your figures now communicate clearly in 3 seconds\n🎤 Pitch Perfection: You can convince strangers to care about your work in 60 seconds\n🤝 Review Excellence: You give and receive feedback like a professional\n🎨 Design Dominance: Your Object Card will stop stakeholders in their tracks\nMost importantly: You’ve transformed from researcher to professional communicator!",
+    "section": "Your New BIM/BEM Superpowers",
+    "text": "Your New BIM/BEM Superpowers\n🏗️ Data Structure Mastery: You understand how BIM and BEM organize building information differently\n🔄 Workflow Wisdom: You know where these files come from and how they’re generated\n🌉 Translation Insight: You can anticipate what gets lost when converting BIM → BEM\n⚠️ Interoperability Reality: You understand why “seamless” integration is rarely seamless\n🧩 Critical Thinking: You can articulate WHY BIM and BEM must be different (and where they should align)\n📊 Visual Communication: You can design figures that pass the 3-second test\n🎨 Presentation Skills: Your Object Card will effectively communicate complex technical work\nMost importantly: You understand the data foundations that enable (and limit) building performance analysis!",
     "crumbs": [
       "Home",
       "Weekly Content",
