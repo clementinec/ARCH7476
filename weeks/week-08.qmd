@@ -1,12 +1,14 @@
 ---
 title: "Week 8: Light Workflow Help"
 subtitle: "Documentation, Automation, and Individual Consultations"
-format: 
+format:
   revealjs:
     theme: simple
     transition: slide
     slide-number: true
     incremental: true
+    width: 1600
+    height: 900
 ---
 
 ## Today's Agenda
@@ -26,12 +28,18 @@ format:
 ### Why Document Workflows?
 
 **For others:**
+
 - Enable replication and verification
 - Allow adaptation to new contexts
 - Build on your methods and findings
 - Learn from your successes and failures
 
+---
+
+### Why Document Workflows? (cont'd)
+
 **For yourself:**
+
 - Remember what you did 6 months later
 - Adapt methods for future projects
 - Identify improvement opportunities
@@ -56,6 +64,7 @@ format:
 ### Step-by-Step Process Documentation
 
 **For each major workflow step:**
+
 1. **Purpose:** Why is this step necessary?
 2. **Inputs:** What do you need to start?
 3. **Process:** Exactly what do you do?
@@ -68,12 +77,18 @@ format:
 ### Tool and Software Documentation
 
 **Version control:**
+
 - Software versions and build numbers
 - Operating system and hardware specs
 - Plugin/package versions and dependencies
 - Settings and configuration files
 
+---
+
+### Tool and Software Documentation (cont'd)
+
 **Alternative approaches:**
+
 - What tools could substitute?
 - What's essential vs. convenient?
 - How to adapt for different skill levels?
@@ -84,12 +99,18 @@ format:
 ### Decision Documentation
 
 **Document judgment calls:**
+
 - Parameter selections and justifications
 - Assumption choices and alternatives considered
 - Quality thresholds and acceptability criteria
 - Trade-off decisions and reasoning
 
+---
+
+### Decision Documentation (cont'd)
+
 **Make implicit knowledge explicit:**
+
 - When do you know results "look right"?
 - How do you prioritize when time is limited?
 - What shortcuts are acceptable vs. problematic?
@@ -103,12 +124,18 @@ format:
 ### Appropriate Automation
 
 **Good automation targets:**
+
 - Repetitive calculations and data processing
 - Quality control checks and validation
 - Report generation and formatting
 - Data visualization and chart creation
 
+---
+
+### Appropriate Automation (cont'd)
+
 **Benefits:**
+
 - Reduces human error
 - Increases consistency
 - Saves time for analysis and interpretation
@@ -119,12 +146,18 @@ format:
 ### Automation Cautions
 
 **Maintain human oversight:**
+
 - Automated results still need interpretation
 - Algorithms can perpetuate biases
 - Context and nuance require human judgment
 - Stakeholder communication needs human touch
 
+---
+
+### Automation Cautions (cont'd)
+
 **Transparency requirements:**
+
 - Document automated processes clearly
 - Explain algorithm choices and limitations
 - Maintain ability to do manual checks
@@ -135,12 +168,18 @@ format:
 ### AI and LLM Integration
 
 **Appropriate uses:**
+
 - Code debugging and syntax help
 - Literature search and summarization
 - Writing assistance and clarity improvement
 - Method explanation and documentation
 
+---
+
+### AI and LLM Integration (cont'd)
+
 **Inappropriate uses:**
+
 - Generating fake data or results
 - Making design recommendations without human validation
 - Replacing critical thinking and analysis
@@ -157,12 +196,18 @@ format:
 **30-45 minutes per student with external practitioner**
 
 **Preparation required:**
+
 - Brief project summary (1 page)
 - Specific questions for practitioner
 - Draft results or findings to discuss
 - Implementation context questions
 
+---
+
+### Consultation Structure (cont'd)
+
 **Documentation:**
+
 - Take notes during consultation
 - Follow up with thank you and summary
 - Integrate insights into A4 development
@@ -172,12 +217,18 @@ format:
 ### Maximizing Consultation Value
 
 **Come prepared with specific questions:**
+
 - How do practitioners handle similar problems?
 - What evidence would be most convincing to clients?
 - How do you communicate uncertainty to decision-makers?
 - What implementation barriers should be anticipated?
 
+---
+
+### Maximizing Consultation Value (cont'd)
+
 **Focus on practical application:**
+
 - How would your findings be used in practice?
 - What format would be most useful for practitioners?
 - How can research be integrated into design workflows?
@@ -192,16 +243,27 @@ format:
 ### Report Structure (1-2 pages)
 
 **Consultation summary:**
+
 - Who you spoke with and their background
 - Key questions you asked
 - Main insights and advice received
 
+---
+
+### Report Structure (cont'd)
+
 **Integration plan:**
+
 - How will mentor feedback influence your A4?
 - What recommendations will you incorporate?
 - What new perspectives did you gain?
 
+---
+
+### Report Structure (cont'd)
+
 **Implementation considerations:**
+
 - What practical barriers were identified?
 - How might you address these in future work?
 - What follow-up or validation would be needed?
@@ -211,12 +273,18 @@ format:
 ### Professional Networking
 
 **Building relationships:**
+
 - Connect on LinkedIn with permission
 - Follow up with project results when complete
 - Ask about informational interviews for career planning
 - Consider mentorship opportunities
 
+---
+
+### Professional Networking (cont'd)
+
 **Giving back:**
+
 - Acknowledge mentor contributions in final report
 - Share interesting findings that might help their practice
 - Offer to present results to their team if relevant
@@ -231,17 +299,24 @@ format:
 ### Capsule Components
 
 **Method protocol (2-3 pages):**
+
 - Step-by-step procedures
 - Tool requirements and alternatives
 - Quality control and validation
 - Troubleshooting guide
 
+---
+
+### Capsule Components (cont'd)
+
 **Implementation guide (1-2 pages):**
+
 - Adaptation for different contexts
 - Scaling and resource considerations
 - Common problems and solutions
 
 **Supporting materials:**
+
 - Data collection templates
 - Analysis code or procedures
 - Example datasets and outputs
@@ -251,12 +326,18 @@ format:
 ### Hands-On Documentation
 
 **Individual work (30 minutes):**
+
 1. **Choose one key workflow** from your project
 2. **Document step-by-step** using template provided
 3. **Include quality checks** and troubleshooting
 4. **Test clarity** by having classmate review
 
+---
+
+### Hands-On Documentation (cont'd)
+
 **Peer testing (20 minutes):**
+
 - Exchange workflow documentation
 - Try to understand and follow procedures
 - Identify unclear or missing steps
@@ -271,16 +352,27 @@ format:
 ### Skills Development Assessment
 
 **Research skills:**
+
 - How has your ability to frame research questions evolved?
 - What analysis capabilities have you developed?
 - How has your critical evaluation of evidence improved?
 
+---
+
+### Skills Development Assessment (cont'd)
+
 **Technical skills:**
+
 - What software or tools have you learned?
 - How has your data visualization improved?
 - What automation or efficiency gains have you made?
 
+---
+
+### Skills Development Assessment (cont'd)
+
 **Professional skills:**
+
 - How has your stakeholder communication developed?
 - What project management lessons have you learned?
 - How has your collaboration and peer review improved?
@@ -290,11 +382,17 @@ format:
 ### Knowledge Integration
 
 **Connections across assignments:**
+
 - How did A1 influence your A2 literature review?
 - How did A2 gaps shape your A3 method design?
 - How are pilot lessons improving your A4 analysis?
 
+---
+
+### Knowledge Integration (cont'd)
+
 **Theory-practice integration:**
+
 - How do course concepts apply to your specific project?
 - What real-world insights have emerged from your research?
 - How might your findings influence future practice?
@@ -308,12 +406,18 @@ format:
 ### Version Control for Research
 
 **File organization:**
+
 - Consistent naming conventions
 - Version numbering systems
 - Archive and backup procedures
 - Collaboration file sharing
 
+---
+
+### Version Control for Research (cont'd)
+
 **Change tracking:**
+
 - Document major methodology changes
 - Track data processing decisions
 - Archive intermediate results
@@ -324,12 +428,18 @@ format:
 ### Efficiency and Automation
 
 **Spreadsheet automation:**
+
 - Template development for repeated analyses
 - Formula and function optimization
 - Data validation and quality checks
 - Chart and report templates
 
+---
+
+### Efficiency and Automation (cont'd)
+
 **Simple scripting:**
+
 - Basic automation for file processing
 - Repeated calculation procedures
 - Data cleaning and formatting
@@ -348,7 +458,12 @@ format:
 **Week 11:** Final polish based on defense feedback
 **Week 12:** Object Fair presentation and final submission
 
+---
+
+### A4 Development Timeline (cont'd)
+
 **Key milestones:**
+
 - Complete data collection by end of Week 8
 - Draft all A4 components by Week 10
 - Integrate defense feedback by Week 11
@@ -358,12 +473,18 @@ format:
 ### Presentation Preparation
 
 **Object Fair format:**
+
 - 6-8 minute presentation + 4 minutes Q&A
 - External critics and practitioners invited
 - Professional presentation standards expected
 - Portfolio-quality materials required
 
+---
+
+### Presentation Preparation (cont'd)
+
 **Preparation strategy:**
+
 - Practice with classmates and get feedback
 - Prepare for common questions and challenges
 - Test presentation technology and setup
@@ -387,6 +508,7 @@ format:
 ### Week 9 Preview
 
 **Storytelling & Figures**
+
 - Crafting compelling two-slide Practice Case
 - Narrative structure and flow optimization
 - Peer Review Session #2
