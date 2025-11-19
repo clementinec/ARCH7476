@@ -184,7 +184,7 @@
     "href": "notebooks/02_arch_viz_analysis.html",
     "title": "Architecture Data Analysis + Visualization Primer",
     "section": "",
-    "text": "Designed for complete Python beginners. Load pilot study data, compute simple summaries, and make figures you can reuse in A3/A4 (charts with uncertainty, multi-panel layouts, and a word cloud).",
+    "text": "Designed for complete Python beginners. Load pilot study data, compute simple summaries, and make figures you can reuse in A3/A4 (charts with uncertainty, multi-panel layouts, and a word cloud).\n\n\n# !pip install pandas numpy matplotlib seaborn scipy wordcloud\nThis assumes the repo root contains data/ and scripts/.\n\nfrom pathlib import Path\nimport sys\nif '__file__' in globals():\n    ROOT = Path(__file__).resolve().parents[1]\nelse:\n    candidate = Path.cwd()\n    if (candidate / 'scripts').exists():\n        ROOT = candidate\n    elif candidate.name == 'notebooks' and (candidate.parent / 'scripts').exists():\n        ROOT = candidate.parent\n    else:\n        ROOT = candidate\nif str(ROOT / 'scripts') not in sys.path:\n    sys.path.append(str(ROOT / 'scripts'))\n\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nfrom scipy import stats\n\nfrom plotting_utils import set_style, plot_error_bars, wordcloud_from_series\nimport data_simulation as sim\nset_style()\n\n\n\n\nWe compare two conditions (A vs. B) for a space.\n\npilot_path = ROOT / 'data' / 'pilot_observations_fake.csv'\nif not pilot_path.exists():\n    sim.save_default_fake_data(ROOT)\npilot = pd.read_csv(pilot_path, parse_dates=['timestamp'])\npilot.head()\n\n\n\nSummaries and a first line chart.\n\npilot.describe(include='all')\n\n\nplt.figure(figsize=(9,4))\nsns.lineplot(data=pilot, x='timestamp', y='occupancy_count', hue='condition')\nplt.title('Occupancy over time (pilot)')\nplt.tight_layout(); plt.show()\n\n\n\n\n\nMean dwell time by condition with 95% CIs.\n\n_ = plot_error_bars(pilot, group_col='condition', value_col='dwell_time_mean_min', title='Dwell time (mean ± 95% CI)')\nplt.show()\n\n\n\nIndependent t-test on dwell time between A and B (pilot scale).\n\na = pilot.loc[pilot.condition=='A', 'dwell_time_mean_min']\nb = pilot.loc[pilot.condition=='B', 'dwell_time_mean_min']\nstats.ttest_ind(a, b, equal_var=False)\n\n\n\n\n\nBox/violin charts communicate variability quickly.\n\nfig, ax = plt.subplots(1,2, figsize=(10,4))\nsns.boxplot(data=pilot, x='condition', y='occupancy_count', ax=ax[0])\nsns.violinplot(data=pilot, x='condition', y='dwell_time_mean_min', ax=ax[1])\nax[0].set_title('Occupancy distribution')\nax[1].set_title('Dwell time distribution')\nplt.tight_layout(); plt.show()\n\n\n\n\nResample with replacement to estimate uncertainty without heavy math.\n\ndef bootstrap_ci(x, n_boot=2000, ci=0.95, seed=42):\n    rng = np.random.default_rng(seed)\n    means = []\n    for _ in range(n_boot):\n        sample = rng.choice(x, size=len(x), replace=True)\n        means.append(np.mean(sample))\n    lo = np.percentile(means, (1-ci)/2*100)\n    hi = np.percentile(means, (1+(ci))/2*100)\n    return float(np.mean(means)), float(lo), float(hi)\n\nfor cond in ['A','B']:\n    m, lo, hi = bootstrap_ci(pilot.loc[pilot.condition==cond, 'dwell_time_mean_min'].values)\n    print(cond, 'mean≈', round(m,2), 'CI', (round(lo,2), round(hi,2)))\n\n\n\n\nTurn open-text feedback into a quick visual.\n\nsurvey_path = ROOT / 'data' / 'survey_responses_fake.csv'\nif not survey_path.exists():\n    sim.save_default_fake_data(ROOT)\nsurvey = pd.read_csv(survey_path)\n_ = wordcloud_from_series(survey['response_text'])\nplt.show()\n\n\n\n\nExamples you can export directly to your A4: add thresholds, annotations, and save to PNG.\n\nfig, ax = plt.subplots(figsize=(7,4))\nsns.barplot(data=pilot, x='condition', y='occupancy_count', estimator=np.mean, ci=95, ax=ax, color='#64B5F6')\nax.axhline(24, ls='--', c='red', label='Target ≥ 24 users')\nax.set_title('Occupancy (mean ± 95% CI) with target line')\nax.legend()\nplt.tight_layout()\nout = ROOT / 'docs' / 'fig_occupancy_bar.png'\nplt.savefig(out, dpi=200)\nout\n\n\n\n\nA compact layout combining key visuals. Replace with your own charts later.\n\nfig, axs = plt.subplots(2,2, figsize=(10,7))\nsns.lineplot(data=pilot, x='timestamp', y='occupancy_count', hue='condition', ax=axs[0,0])\naxs[0,0].set_title('Occupancy over time')\nsns.boxplot(data=pilot, x='condition', y='dwell_time_mean_min', ax=axs[0,1])\naxs[0,1].set_title('Dwell time distribution')\nsns.scatterplot(data=pilot, x='temp_c', y='humidity_pct', hue='condition', ax=axs[1,0])\naxs[1,0].set_title('Env. conditions')\nsns.barplot(data=pilot, x='condition', y='occupancy_count', estimator=np.mean, ci=95, ax=axs[1,1])\naxs[1,1].set_title('Occupancy mean ± CI')\nplt.tight_layout()\nout = ROOT / 'docs' / 'object_card_starter.png'\nplt.savefig(out, dpi=200)\nout\n\n\n\n\n\nLoad data, summarize, and plot with uncertainty\nUse word clouds or top-word bars for survey text\nSave ready-to-drop figures for A4 and presentations\n\nTip: replace the fake CSVs in data/ with your own using the same column names to reuse these cells without edits.",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -195,8 +195,8 @@
     "objectID": "notebooks/02_arch_viz_analysis.html#setup",
     "href": "notebooks/02_arch_viz_analysis.html#setup",
     "title": "Architecture Data Analysis + Visualization Primer",
-    "section": "Setup",
-    "text": "Setup\n# !pip install pandas numpy matplotlib seaborn scipy wordcloud\nThis assumes the repo root contains data/ and scripts/.\n\nfrom pathlib import Path\nimport sys\nif '__file__' in globals():\n    ROOT = Path(__file__).resolve().parents[1]\nelse:\n    candidate = Path.cwd()\n    if (candidate / 'scripts').exists():\n        ROOT = candidate\n    elif candidate.name == 'notebooks' and (candidate.parent / 'scripts').exists():\n        ROOT = candidate.parent\n    else:\n        ROOT = candidate\nif str(ROOT / 'scripts') not in sys.path:\n    sys.path.append(str(ROOT / 'scripts'))\n\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nfrom scipy import stats\n\nfrom plotting_utils import set_style, plot_error_bars, wordcloud_from_series\nimport data_simulation as sim\nset_style()",
+    "section": "",
+    "text": "# !pip install pandas numpy matplotlib seaborn scipy wordcloud\nThis assumes the repo root contains data/ and scripts/.\n\nfrom pathlib import Path\nimport sys\nif '__file__' in globals():\n    ROOT = Path(__file__).resolve().parents[1]\nelse:\n    candidate = Path.cwd()\n    if (candidate / 'scripts').exists():\n        ROOT = candidate\n    elif candidate.name == 'notebooks' and (candidate.parent / 'scripts').exists():\n        ROOT = candidate.parent\n    else:\n        ROOT = candidate\nif str(ROOT / 'scripts') not in sys.path:\n    sys.path.append(str(ROOT / 'scripts'))\n\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nfrom scipy import stats\n\nfrom plotting_utils import set_style, plot_error_bars, wordcloud_from_series\nimport data_simulation as sim\nset_style()",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -207,8 +207,8 @@
     "objectID": "notebooks/02_arch_viz_analysis.html#load-pilot-observations",
     "href": "notebooks/02_arch_viz_analysis.html#load-pilot-observations",
     "title": "Architecture Data Analysis + Visualization Primer",
-    "section": "Load pilot observations",
-    "text": "Load pilot observations\nWe compare two conditions (A vs. B) for a space.\n\npilot_path = ROOT / 'data' / 'pilot_observations_fake.csv'\nif not pilot_path.exists():\n    sim.save_default_fake_data(ROOT)\npilot = pd.read_csv(pilot_path, parse_dates=['timestamp'])\npilot.head()\n\n\nSimple EDA\nSummaries and a first line chart.\n\npilot.describe(include='all')\n\n\nplt.figure(figsize=(9,4))\nsns.lineplot(data=pilot, x='timestamp', y='occupancy_count', hue='condition')\nplt.title('Occupancy over time (pilot)')\nplt.tight_layout(); plt.show()",
+    "section": "",
+    "text": "We compare two conditions (A vs. B) for a space.\n\npilot_path = ROOT / 'data' / 'pilot_observations_fake.csv'\nif not pilot_path.exists():\n    sim.save_default_fake_data(ROOT)\npilot = pd.read_csv(pilot_path, parse_dates=['timestamp'])\npilot.head()\n\n\n\nSummaries and a first line chart.\n\npilot.describe(include='all')\n\n\nplt.figure(figsize=(9,4))\nsns.lineplot(data=pilot, x='timestamp', y='occupancy_count', hue='condition')\nplt.title('Occupancy over time (pilot)')\nplt.tight_layout(); plt.show()",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -219,8 +219,8 @@
     "objectID": "notebooks/02_arch_viz_analysis.html#bar-chart-with-error-bars",
     "href": "notebooks/02_arch_viz_analysis.html#bar-chart-with-error-bars",
     "title": "Architecture Data Analysis + Visualization Primer",
-    "section": "Bar chart with error bars",
-    "text": "Bar chart with error bars\nMean dwell time by condition with 95% CIs.\n\n_ = plot_error_bars(pilot, group_col='condition', value_col='dwell_time_mean_min', title='Dwell time (mean ± 95% CI)')\nplt.show()\n\n\nOptional: quick statistical comparison\nIndependent t-test on dwell time between A and B (pilot scale).\n\na = pilot.loc[pilot.condition=='A', 'dwell_time_mean_min']\nb = pilot.loc[pilot.condition=='B', 'dwell_time_mean_min']\nstats.ttest_ind(a, b, equal_var=False)",
+    "section": "",
+    "text": "Mean dwell time by condition with 95% CIs.\n\n_ = plot_error_bars(pilot, group_col='condition', value_col='dwell_time_mean_min', title='Dwell time (mean ± 95% CI)')\nplt.show()\n\n\n\nIndependent t-test on dwell time between A and B (pilot scale).\n\na = pilot.loc[pilot.condition=='A', 'dwell_time_mean_min']\nb = pilot.loc[pilot.condition=='B', 'dwell_time_mean_min']\nstats.ttest_ind(a, b, equal_var=False)",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -231,8 +231,8 @@
     "objectID": "notebooks/02_arch_viz_analysis.html#distribution-plots",
     "href": "notebooks/02_arch_viz_analysis.html#distribution-plots",
     "title": "Architecture Data Analysis + Visualization Primer",
-    "section": "Distribution plots",
-    "text": "Distribution plots\nBox/violin charts communicate variability quickly.\n\nfig, ax = plt.subplots(1,2, figsize=(10,4))\nsns.boxplot(data=pilot, x='condition', y='occupancy_count', ax=ax[0])\nsns.violinplot(data=pilot, x='condition', y='dwell_time_mean_min', ax=ax[1])\nax[0].set_title('Occupancy distribution')\nax[1].set_title('Dwell time distribution')\nplt.tight_layout(); plt.show()",
+    "section": "",
+    "text": "Box/violin charts communicate variability quickly.\n\nfig, ax = plt.subplots(1,2, figsize=(10,4))\nsns.boxplot(data=pilot, x='condition', y='occupancy_count', ax=ax[0])\nsns.violinplot(data=pilot, x='condition', y='dwell_time_mean_min', ax=ax[1])\nax[0].set_title('Occupancy distribution')\nax[1].set_title('Dwell time distribution')\nplt.tight_layout(); plt.show()",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -243,8 +243,8 @@
     "objectID": "notebooks/02_arch_viz_analysis.html#bootstrapped-confidence-intervals-beginner-friendly",
     "href": "notebooks/02_arch_viz_analysis.html#bootstrapped-confidence-intervals-beginner-friendly",
     "title": "Architecture Data Analysis + Visualization Primer",
-    "section": "Bootstrapped confidence intervals (beginner-friendly)",
-    "text": "Bootstrapped confidence intervals (beginner-friendly)\nResample with replacement to estimate uncertainty without heavy math.\n\ndef bootstrap_ci(x, n_boot=2000, ci=0.95, seed=42):\n    rng = np.random.default_rng(seed)\n    means = []\n    for _ in range(n_boot):\n        sample = rng.choice(x, size=len(x), replace=True)\n        means.append(np.mean(sample))\n    lo = np.percentile(means, (1-ci)/2*100)\n    hi = np.percentile(means, (1+(ci))/2*100)\n    return float(np.mean(means)), float(lo), float(hi)\n\nfor cond in ['A','B']:\n    m, lo, hi = bootstrap_ci(pilot.loc[pilot.condition==cond, 'dwell_time_mean_min'].values)\n    print(cond, 'mean≈', round(m,2), 'CI', (round(lo,2), round(hi,2)))",
+    "section": "",
+    "text": "Resample with replacement to estimate uncertainty without heavy math.\n\ndef bootstrap_ci(x, n_boot=2000, ci=0.95, seed=42):\n    rng = np.random.default_rng(seed)\n    means = []\n    for _ in range(n_boot):\n        sample = rng.choice(x, size=len(x), replace=True)\n        means.append(np.mean(sample))\n    lo = np.percentile(means, (1-ci)/2*100)\n    hi = np.percentile(means, (1+(ci))/2*100)\n    return float(np.mean(means)), float(lo), float(hi)\n\nfor cond in ['A','B']:\n    m, lo, hi = bootstrap_ci(pilot.loc[pilot.condition==cond, 'dwell_time_mean_min'].values)\n    print(cond, 'mean≈', round(m,2), 'CI', (round(lo,2), round(hi,2)))",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -255,8 +255,8 @@
     "objectID": "notebooks/02_arch_viz_analysis.html#survey-text-word-cloud-with-fallback",
     "href": "notebooks/02_arch_viz_analysis.html#survey-text-word-cloud-with-fallback",
     "title": "Architecture Data Analysis + Visualization Primer",
-    "section": "Survey text → Word cloud (with fallback)",
-    "text": "Survey text → Word cloud (with fallback)\nTurn open-text feedback into a quick visual.\n\nsurvey_path = ROOT / 'data' / 'survey_responses_fake.csv'\nif not survey_path.exists():\n    sim.save_default_fake_data(ROOT)\nsurvey = pd.read_csv(survey_path)\n_ = wordcloud_from_series(survey['response_text'])\nplt.show()",
+    "section": "",
+    "text": "Turn open-text feedback into a quick visual.\n\nsurvey_path = ROOT / 'data' / 'survey_responses_fake.csv'\nif not survey_path.exists():\n    sim.save_default_fake_data(ROOT)\nsurvey = pd.read_csv(survey_path)\n_ = wordcloud_from_series(survey['response_text'])\nplt.show()",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -267,8 +267,8 @@
     "objectID": "notebooks/02_arch_viz_analysis.html#stakeholder-ready-figures",
     "href": "notebooks/02_arch_viz_analysis.html#stakeholder-ready-figures",
     "title": "Architecture Data Analysis + Visualization Primer",
-    "section": "Stakeholder-ready figures",
-    "text": "Stakeholder-ready figures\nExamples you can export directly to your A4: add thresholds, annotations, and save to PNG.\n\nfig, ax = plt.subplots(figsize=(7,4))\nsns.barplot(data=pilot, x='condition', y='occupancy_count', estimator=np.mean, ci=95, ax=ax, color='#64B5F6')\nax.axhline(24, ls='--', c='red', label='Target ≥ 24 users')\nax.set_title('Occupancy (mean ± 95% CI) with target line')\nax.legend()\nplt.tight_layout()\nout = ROOT / 'docs' / 'fig_occupancy_bar.png'\nplt.savefig(out, dpi=200)\nout",
+    "section": "",
+    "text": "Examples you can export directly to your A4: add thresholds, annotations, and save to PNG.\n\nfig, ax = plt.subplots(figsize=(7,4))\nsns.barplot(data=pilot, x='condition', y='occupancy_count', estimator=np.mean, ci=95, ax=ax, color='#64B5F6')\nax.axhline(24, ls='--', c='red', label='Target ≥ 24 users')\nax.set_title('Occupancy (mean ± 95% CI) with target line')\nax.legend()\nplt.tight_layout()\nout = ROOT / 'docs' / 'fig_occupancy_bar.png'\nplt.savefig(out, dpi=200)\nout",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -279,8 +279,8 @@
     "objectID": "notebooks/02_arch_viz_analysis.html#multi-panel-object-card-starter",
     "href": "notebooks/02_arch_viz_analysis.html#multi-panel-object-card-starter",
     "title": "Architecture Data Analysis + Visualization Primer",
-    "section": "Multi-panel “Object Card” starter",
-    "text": "Multi-panel “Object Card” starter\nA compact layout combining key visuals. Replace with your own charts later.\n\nfig, axs = plt.subplots(2,2, figsize=(10,7))\nsns.lineplot(data=pilot, x='timestamp', y='occupancy_count', hue='condition', ax=axs[0,0])\naxs[0,0].set_title('Occupancy over time')\nsns.boxplot(data=pilot, x='condition', y='dwell_time_mean_min', ax=axs[0,1])\naxs[0,1].set_title('Dwell time distribution')\nsns.scatterplot(data=pilot, x='temp_c', y='humidity_pct', hue='condition', ax=axs[1,0])\naxs[1,0].set_title('Env. conditions')\nsns.barplot(data=pilot, x='condition', y='occupancy_count', estimator=np.mean, ci=95, ax=axs[1,1])\naxs[1,1].set_title('Occupancy mean ± CI')\nplt.tight_layout()\nout = ROOT / 'docs' / 'object_card_starter.png'\nplt.savefig(out, dpi=200)\nout",
+    "section": "",
+    "text": "A compact layout combining key visuals. Replace with your own charts later.\n\nfig, axs = plt.subplots(2,2, figsize=(10,7))\nsns.lineplot(data=pilot, x='timestamp', y='occupancy_count', hue='condition', ax=axs[0,0])\naxs[0,0].set_title('Occupancy over time')\nsns.boxplot(data=pilot, x='condition', y='dwell_time_mean_min', ax=axs[0,1])\naxs[0,1].set_title('Dwell time distribution')\nsns.scatterplot(data=pilot, x='temp_c', y='humidity_pct', hue='condition', ax=axs[1,0])\naxs[1,0].set_title('Env. conditions')\nsns.barplot(data=pilot, x='condition', y='occupancy_count', estimator=np.mean, ci=95, ax=axs[1,1])\naxs[1,1].set_title('Occupancy mean ± CI')\nplt.tight_layout()\nout = ROOT / 'docs' / 'object_card_starter.png'\nplt.savefig(out, dpi=200)\nout",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -291,8 +291,8 @@
     "objectID": "notebooks/02_arch_viz_analysis.html#recap",
     "href": "notebooks/02_arch_viz_analysis.html#recap",
     "title": "Architecture Data Analysis + Visualization Primer",
-    "section": "Recap",
-    "text": "Recap\n\nLoad data, summarize, and plot with uncertainty\nUse word clouds or top-word bars for survey text\nSave ready-to-drop figures for A4 and presentations\n\nTip: replace the fake CSVs in data/ with your own using the same column names to reuse these cells without edits.",
+    "section": "",
+    "text": "Load data, summarize, and plot with uncertainty\nUse word clouds or top-word bars for survey text\nSave ready-to-drop figures for A4 and presentations\n\nTip: replace the fake CSVs in data/ with your own using the same column names to reuse these cells without edits.",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -339,7 +339,7 @@
     "href": "lectures/ml-to-python-overview.html#overfitting-the-villain",
     "title": "From ML Theory to Python Practice",
     "section": "Overfitting: The Villain",
-    "text": "Overfitting: The Villain\n\n\n\n\nToo Simple: Misses patterns (underfitting)\nJust Right: Captures true relationships\nToo Complex: Memorizes noise (overfitting)\n\n\nSolution: Cross-validation + hold-out test set"
+    "text": "Overfitting: The Villain\n\n\n\n\nToo Simple: Misses patterns (underfitting)\nJust Right: Captures true relationships\nToo Complex: Memorizes noise (overfitting)\n\n\n\nSolution: Cross-validation + hold-out test set"
   },
   {
     "objectID": "lectures/ml-to-python-overview.html#cross-validation-in-30-seconds",
@@ -409,7 +409,7 @@
     "href": "lectures/ml-to-python-overview.html#reproducibility-capsule-prep",
     "title": "From ML Theory to Python Practice",
     "section": "Reproducibility Capsule Prep",
-    "text": "Reproducibility Capsule Prep\n\n\nWhat to document:\n\nPython version (e.g., 3.11)\nLibrary versions (pip freeze)\nRandom seeds (np.random.seed(42))\nData file paths\nProcessing steps in order\n\n\nWhere to save:\n\nNotebooks in notebooks/\nData in data/\nFigures in docs/ or outputs/\nREADME with instructions\n\n\n\nPhD students: Consider version control (Git) and computational environments (Docker, conda)"
+    "text": "Reproducibility Capsule Prep\n\n\nWhat to document:\n\nPython version (e.g., 3.11)\nLibrary versions (pip freeze)\nRandom seeds (np.random.seed(42))\nData file paths\nProcessing steps in order\n\n\nWhere to save:\n\nNotebooks in notebooks/\nData in data/\nFigures in docs/ or outputs/\nREADME with instructions\n\n\n\n\nPhD students: Consider version control (Git) and computational environments (Docker, conda)"
   },
   {
     "objectID": "lectures/ml-to-python-overview.html#common-pitfalls-and-fixes",
@@ -4017,7 +4017,19 @@
     "href": "weeks/week-09-engaging.html#when-good-research-goes-bad-story-edition",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "💀 When Good Research Goes Bad (Story Edition)",
-    "text": "💀 When Good Research Goes Bad (Story Edition)\nBefore we become storytelling champions, let’s learn from the narrative graveyard…\n\n\n\nReal-World Presentation Disasters\n\n\n🏢 Case 1: The $50M Miscommunication\n\nPhD researcher presents brilliant energy analysis to Hong Kong developer board\n45 minutes of technical methodology explanation\n30 seconds on what this means for their bottom line\nBoard’s response: “Interesting… but what should we actually DO?”\nResult: No adoption, project shelved, researcher never invited back\n\n📊 Case 2: The Chart Catastrophe\n\nConsultant shows 47 different charts to planning committee\nEvery chart technically perfect, statistically sound\nNo chart tells decision-makers what action to take\nCommittee response: “We’re more confused than when we started”\nResult: Status quo wins, innovative solution dies\n\n\n\n\n🤔 Reality Check: How many of your presentations focus more on HOW you did it than WHY anyone should care?",
+    "text": "💀 When Good Research Goes Bad (Story Edition)\nBefore we become storytelling champions, let’s learn from the narrative graveyard…\n\n\n\n🏢 Case 1: The $50M Miscommunication\n\n\n\nPhD researcher presents brilliant energy analysis to a Hong Kong developer board\n45 minutes on methodology vs 30 seconds on business impact\nBoard: “Interesting… but what should we actually DO?”\nResult: No adoption, project shelved, researcher benched",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#when-good-research-goes-bad-case-2",
+    "href": "weeks/week-09-engaging.html#when-good-research-goes-bad-case-2",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "💀 When Good Research Goes Bad — Case 2",
+    "text": "💀 When Good Research Goes Bad — Case 2\n\n\n\n📊 The Chart Catastrophe\n\n\n\nConsultant shows 47 different charts to a planning committee\nEvery chart technically perfect yet offers no clear action\nCommittee: “We’re more confused than when we started”\nResult: Status quo wins and the innovative solution dies",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4029,7 +4041,19 @@
     "href": "weeks/week-09-engaging.html#the-two-slide-death-match",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "🎯 The Two-Slide Death Match",
-    "text": "🎯 The Two-Slide Death Match\n⚡ The challenge: Distill your ENTIRE semester into exactly 2 slides that would make a busy stakeholder stop what they’re doing and take action\n\n\n\nBattle Stations: Choose Your Story Structure\n\n\nMove to corners of the room based on your current approach:\n🔥 Action Corner: “I start with what they should DO”\n📊 Evidence Corner: “I start with what I FOUND”\n😰 Problem Corner: “I start with what’s WRONG”\n🤷 Confusion Corner: “I honestly have NO IDEA how to start”\n3 minutes to convince other corners why YOUR approach wins!\n\n\n\nPlot twist: We’ll test which structure actually WORKS with real stakeholders!",
+    "text": "🎯 The Two-Slide Death Match\n⚡ The challenge: Distill your ENTIRE semester into exactly 2 slides that would make a busy stakeholder stop what they’re doing and take action.\nPlot twist: We’ll test which structure actually WORKS with real stakeholders!",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#choose-your-story-structure",
+    "href": "weeks/week-09-engaging.html#choose-your-story-structure",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Choose Your Story Structure",
+    "text": "Choose Your Story Structure\n\n\n\nBattle Stations\n\n\n\nMove to corners of the room based on your current approach\n🔥 Action Corner: “I start with what they should DO”\n📊 Evidence Corner: “I start with what I FOUND”\n😰 Problem Corner: “I start with what’s WRONG”\n🤷 Confusion Corner: “I honestly have NO IDEA how to start”\n3 minutes to convince other corners why YOUR approach wins!",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4041,7 +4065,31 @@
     "href": "weeks/week-09-engaging.html#the-story-structure-science",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "🎬 The Story Structure Science",
-    "text": "🎬 The Story Structure Science\n🧠 Cognitive Science Reality: Human brains process stories in predictable patterns\ngraph TD\n    A[😴 Stakeholder: Busy & Distracted] --&gt; B{🎯 Hook: Why Should I Care?}\n    B --&gt;|Interested| C[📊 Evidence: What Did You Find?]\n    B --&gt;|Bored| D[💀 Lost Forever]\n    C --&gt; E[💡 Action: What Should I Do?]\n    E --&gt; F[✅ Success: Stakeholder Convinced]\n    C --&gt;|Confused| G[😵 Overloaded & Confused]\n    E --&gt;|Vague| H[🤔 Interested But No Action]\n⏰ You have 15 seconds to grab attention or lose them forever!",
+    "text": "🎬 The Story Structure Science\n🧠 Cognitive Science Reality: Human brains process stories in predictable patterns.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#story-flow",
+    "href": "weeks/week-09-engaging.html#story-flow",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Story Flow",
+    "text": "Story Flow\ngraph TD\n    A[😴 Stakeholder: Busy & Distracted] --&gt; B{🎯 Hook: Why Should I Care?}\n    B --&gt;|Interested| C[📊 Evidence: What Did You Find?]\n    B --&gt;|Bored| D[💀 Lost Forever]\n    C --&gt; E[💡 Action: What Should I Do?]\n    E --&gt; F[✅ Success: Stakeholder Convinced]\n    C --&gt;|Confused| G[😵 Overloaded & Confused]; E --&gt;|Vague| H[🤔 Interested But No Action]",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#hook-them-fast",
+    "href": "weeks/week-09-engaging.html#hook-them-fast",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "⏰ Hook Them Fast",
+    "text": "⏰ Hook Them Fast\nYou have 15 seconds to grab attention or lose them forever!",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4053,7 +4101,31 @@
     "href": "weeks/week-09-engaging.html#what-are-bim-and-bem",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "🏗️ What Are BIM and BEM?",
-    "text": "🏗️ What Are BIM and BEM?\nUnderstanding the two critical data ecosystems in modern architecture\n\n\n\nBuilding Information Modeling (BIM)\n\n\nDefinition: A digital representation of physical and functional characteristics of a building\nPrimary Purpose: Design, construction, and facility management\nKey Focus: Geometry, materials, spatial relationships, construction sequences\nPrimary Users: Architects, engineers, contractors, facility managers\nTypical File Formats: IFC (.ifc), Revit (.rvt), ArchiCAD (.pln), gbXML (.xml)\n\n\n\n\n\n\nBuilding Energy Modeling (BEM)\n\n\nDefinition: A computational representation of a building’s energy flows and thermal behavior\nPrimary Purpose: Energy performance analysis, optimization, and compliance\nKey Focus: Thermal zones, HVAC systems, schedules, weather data, energy consumption\nPrimary Users: Energy analysts, sustainability consultants, MEP engineers\nTypical File Formats: EnergyPlus (.idf), OpenStudio (.osm), eQuest (.inp), TRNSYS (.dck)",
+    "text": "🏗️ What Are BIM and BEM?\nUnderstanding the two critical data ecosystems in modern architecture",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#building-information-modeling-bim",
+    "href": "weeks/week-09-engaging.html#building-information-modeling-bim",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Building Information Modeling (BIM)",
+    "text": "Building Information Modeling (BIM)\n\n\n\nNote\n\n\n\nDefinition: Digital representation of a building’s physical and functional characteristics\nPurpose: Supports design, construction, and facility management\nFocus: Geometry, materials, spatial relationships, construction sequences\nUsers: Architects, engineers, contractors, facility managers\nFormats: IFC (.ifc), Revit (.rvt), ArchiCAD (.pln), gbXML (.xml)",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#building-energy-modeling-bem",
+    "href": "weeks/week-09-engaging.html#building-energy-modeling-bem",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Building Energy Modeling (BEM)",
+    "text": "Building Energy Modeling (BEM)\n\n\n\nNote\n\n\n\nDefinition: Computational representation of a building’s energy flows and thermal behavior\nPurpose: Energy performance analysis, optimization, and compliance\nFocus: Thermal zones, HVAC systems, schedules, weather data, energy consumption\nUsers: Energy analysts, sustainability consultants, MEP engineers\nFormats: EnergyPlus (.idf), OpenStudio (.osm), eQuest (.inp), TRNSYS (.dck)",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4065,7 +4137,55 @@
     "href": "weeks/week-09-engaging.html#the-bim-data-structure",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "📊 The BIM Data Structure",
-    "text": "📊 The BIM Data Structure\nHow is geometric and construction information actually organized?\n🏛️ Hierarchical Organization\nBuilding Information Models follow a structured hierarchy:\n\nProject → Contains all building information\n\nSite → Location, orientation, context\n\nBuilding → One or more structures\n\nStories/Levels → Floor-by-floor organization\n\nSpaces/Rooms → Individual zones\n\nBuilding Elements → Walls, floors, windows, doors\n\nComponents → Materials, layers, properties\n\nProperties → Thermal, structural, cost data\n\n\n\n\n\n\n\n\n🔗 Key BIM Data Components\n1. Geometry\n\n3D coordinates and shapes\nParametric relationships (walls connect to floors)\nTopological connections between elements\n\n2. Attributes\n\nMaterial properties (conductivity, density, specific heat)\nConstruction details (layer thickness, assembly type)\nPerformance data (R-values, U-values, SHGC)\n\n3. Relationships\n\nSpatial containment (window within wall)\nConnections (wall joins floor)\nSystems (window part of exterior envelope system)",
+    "text": "📊 The BIM Data Structure\nHow is geometric and construction information actually organized?",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#bim-hierarchy-macro-view",
+    "href": "weeks/week-09-engaging.html#bim-hierarchy-macro-view",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "BIM Hierarchy — Macro View",
+    "text": "BIM Hierarchy — Macro View\n\nProject → Contains all building information\nSite → Location, orientation, context\nBuilding → One or more structures\nStories/Levels → Floor-by-floor organization",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#bim-hierarchy-detailed-view",
+    "href": "weeks/week-09-engaging.html#bim-hierarchy-detailed-view",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "BIM Hierarchy — Detailed View",
+    "text": "BIM Hierarchy — Detailed View\n\nSpaces/Rooms → Individual zones\nBuilding Elements → Walls, floors, windows, doors\nComponents → Materials, layers, properties\nProperties → Thermal, structural, cost data",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#key-bim-data-components-geometry-attributes",
+    "href": "weeks/week-09-engaging.html#key-bim-data-components-geometry-attributes",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Key BIM Data Components — Geometry & Attributes",
+    "text": "Key BIM Data Components — Geometry & Attributes\n1. Geometry\n\n3D coordinates and shapes\nParametric relationships (walls connect to floors)\nTopological connections between elements\n\n2. Attributes\n\nMaterial properties (conductivity, density, specific heat)\nConstruction details (layer thickness, assembly type)\nPerformance data (R-values, U-values, SHGC)",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#key-bim-data-components-relationships",
+    "href": "weeks/week-09-engaging.html#key-bim-data-components-relationships",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Key BIM Data Components — Relationships",
+    "text": "Key BIM Data Components — Relationships\n3. Relationships\n\nSpatial containment (window within wall)\nConnections (wall joins floor)\nSystems (window part of exterior envelope system)",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4077,7 +4197,55 @@
     "href": "weeks/week-09-engaging.html#the-bem-data-structure",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "⚡ The BEM Data Structure",
-    "text": "⚡ The BEM Data Structure\nHow is energy performance actually calculated?\n🌡️ Zone-Based Organization\nEnergy models organize buildings by thermal zones, not just geometry:\n\nBuilding → Overall energy system\n\nThermal Zones → Spaces with similar thermal behavior\n\nSurfaces → Walls, roofs, floors (heat transfer boundaries)\n\nConstructions → Material layers with thermal properties\n\nInternal Loads → People, lights, equipment\nHVAC Systems → Heating, cooling, ventilation\nSchedules → Occupancy, equipment usage patterns\n\nSite Context\n\nWeather Data → Hourly temperature, solar radiation, wind\nShading → Adjacent buildings, landscape\n\n\n\n📈 Critical BEM Data Elements\n1. Thermal Zones\n\nVolume and floor area\nThermostat setpoints (heating/cooling)\nVentilation requirements\n\n2. Constructions\n\nMaterial layers (inside → outside)\nThermal resistance of each layer\nThermal mass and heat capacity\n\n3. Schedules\n\nOccupancy patterns (hourly, daily, seasonal)\nEquipment operation times\nLighting schedules\n\n4. Systems\n\nHVAC equipment types and efficiencies\nDistribution systems (ductwork, pipes)\nControl strategies",
+    "text": "⚡ The BEM Data Structure\nHow is energy performance actually calculated?",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#bem-zone-based-organization",
+    "href": "weeks/week-09-engaging.html#bem-zone-based-organization",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "BEM Zone-Based Organization",
+    "text": "BEM Zone-Based Organization\n\nBuilding → Overall energy system\nThermal Zones → Spaces with similar thermal behavior\nSurfaces → Walls, roofs, floors (heat transfer boundaries)\nConstructions → Material layers with thermal properties\nInternal Loads → People, lights, equipment\nHVAC Systems → Heating, cooling, ventilation\nSchedules → Occupancy, equipment usage patterns",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#site-context-inputs",
+    "href": "weeks/week-09-engaging.html#site-context-inputs",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Site Context Inputs",
+    "text": "Site Context Inputs\n\nWeather Data → Hourly temperature, solar radiation, wind\nShading → Adjacent buildings, landscape",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#critical-bem-elements-zones-constructions",
+    "href": "weeks/week-09-engaging.html#critical-bem-elements-zones-constructions",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Critical BEM Elements — Zones & Constructions",
+    "text": "Critical BEM Elements — Zones & Constructions\n1. Thermal Zones\n\nVolume and floor area\nThermostat setpoints (heating/cooling)\nVentilation requirements 2. Constructions\nMaterial layers (inside → outside)\nThermal resistance of each layer\nThermal mass and heat capacity",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#critical-bem-elements-schedules-systems",
+    "href": "weeks/week-09-engaging.html#critical-bem-elements-schedules-systems",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Critical BEM Elements — Schedules & Systems",
+    "text": "Critical BEM Elements — Schedules & Systems\n3. Schedules\n\nOccupancy patterns (hourly, daily, seasonal)\nEquipment operation times\nLighting schedules\n\n4. Systems\n\nHVAC equipment types and efficiencies\nDistribution systems (ductwork, pipes)\nControl strategies",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4089,7 +4257,43 @@
     "href": "weeks/week-09-engaging.html#quick-check-bim-vs-bem-thinking",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "🔄 Quick Check: BIM vs BEM Thinking",
-    "text": "🔄 Quick Check: BIM vs BEM Thinking\n💡 5-Minute Partner Challenge\nScenario: You’re modeling a south-facing office with a large window.\nQuestion 1: What would a BIM model care about?\n\n\nWindow size, frame material, glass type, cost\n\n\nSolar heat gain coefficient, U-value, thermal mass\n\n\nBoth equally\n\n\nNeither - just the visual appearance\n\n\nQuestion 2: What would a BEM model care about?\n\n\nExact window manufacturer and product code\n\n\nWindow thermal properties and solar transmission\n\n\nConstruction sequencing and installation method\n\n\nVisual aesthetics and daylighting quality\n\n\nQuestion 3: Which model needs to know about occupancy schedules?\n\n\nBIM only\n\n\nBEM only\n\n\nBoth\n\n\nNeither\n\n\n🎯 Discuss answers with partner - we’ll reveal the correct answers and why they matter!",
+    "text": "🔄 Quick Check: BIM vs BEM Thinking\n💡 5-Minute Partner Challenge\nScenario: You’re modeling a south-facing office with a large window.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#quick-check-question-1",
+    "href": "weeks/week-09-engaging.html#quick-check-question-1",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Quick Check – Question 1",
+    "text": "Quick Check – Question 1\nWhat would a BIM model care about?\n\n\nWindow size, frame material, glass type, cost\n\n\nSolar heat gain coefficient, U-value, thermal mass\n\n\nBoth equally\n\n\nNeither - just the visual appearance",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#quick-check-question-2",
+    "href": "weeks/week-09-engaging.html#quick-check-question-2",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Quick Check – Question 2",
+    "text": "Quick Check – Question 2\nWhat would a BEM model care about?\n\n\nExact window manufacturer and product code\n\n\nWindow thermal properties and solar transmission\n\n\nConstruction sequencing and installation method\n\n\nVisual aesthetics and daylighting quality",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#quick-check-question-3",
+    "href": "weeks/week-09-engaging.html#quick-check-question-3",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Quick Check – Question 3",
+    "text": "Quick Check – Question 3\nWhich model needs to know about occupancy schedules?\n\n\nBIM only\n\n\nBEM only\n\n\nBoth\n\n\nNeither\n\n\n🎯 Discuss answers with partner - we’ll reveal the correct answers and why they matter!",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4101,7 +4305,7 @@
     "href": "weeks/week-09-engaging.html#quick-check-answers",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "✅ Quick Check Answers",
-    "text": "✅ Quick Check Answers\nQuestion 1: A - BIM cares about physical/construction properties\n\nBIM focuses on what to build and how to build it\nMaterial specifications, dimensions, costs, constructability\n\nQuestion 2: B - BEM cares about thermal/energy properties\n\nBEM focuses on how the building performs energetically\nHeat flows, solar gains, thermal resistance matter for energy calculations\n\nQuestion 3: B - BEM needs schedules for energy calculations\n\nBIM might document space programs, but doesn’t need hourly schedules\nBEM requires schedules to calculate time-varying energy use\n\n🤔 Key Insight: Same building, completely different data priorities!",
+    "text": "✅ Quick Check Answers\nQuestion 1: A - BIM cares about physical/construction properties\n\nBIM focuses on what to build and how to build it\nMaterial specifications, dimensions, costs, constructability",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4109,11 +4313,11 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#the-visualization-gladiator-arena",
-    "href": "weeks/week-09-engaging.html#the-visualization-gladiator-arena",
+    "objectID": "weeks/week-09-engaging.html#quick-check-answers-q2",
+    "href": "weeks/week-09-engaging.html#quick-check-answers-q2",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "🎨 The Visualization Gladiator Arena",
-    "text": "🎨 The Visualization Gladiator Arena\n🏆 Championship Categories:\n📊 Speed Chart Challenge (10 minutes)\nTransform this terrible chart into presentation gold!\n[Show intentionally awful chart: cluttered, unclear, no message]\nRules: Same data, maximum impact, stakeholder-friendly\n🎯 Message Clarity Championships (15 minutes)\nCreate a figure where the key insight is obvious in 3 seconds\n🔥 Uncertainty Communication Olympics (12 minutes)\nShow confidence levels without confusing non-experts\n💎 Professional Polish Finals (18 minutes)\nMake one figure so beautiful it could be in Harvard Business Review",
+    "section": "✅ Quick Check Answers — Q2",
+    "text": "✅ Quick Check Answers — Q2\nQuestion 2: B - BEM cares about thermal/energy properties\n\nBEM focuses on how the building performs energetically\nHeat flows, solar gains, thermal resistance matter for energy calculations",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4121,47 +4325,11 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#speed-chart-battle-royale",
-    "href": "weeks/week-09-engaging.html#speed-chart-battle-royale",
+    "objectID": "weeks/week-09-engaging.html#quick-check-answers-q3",
+    "href": "weeks/week-09-engaging.html#quick-check-answers-q3",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "⚡ Speed Chart Battle Royale",
-    "text": "⚡ Speed Chart Battle Royale\n🚨 Current Disaster:\n\nTerrible Chart ExampleProblems with this chart: - 47 different data series (seriously!) - No clear message or takeaway - Tiny text, confusing colors - Overwhelming for stakeholders\n⏰ 10-minute transformation challenge!\n\n\n\nSpeed Chart Rescue Formula\n\n\n\nOne Message Rule: What’s the ONE thing stakeholders need to know?\n3-Second Test: Key insight obvious immediately?\nAnnotation Strategy: Use text to guide interpretation\nColor Purpose: Every color choice supports the message\nContext Connection: How does this relate to stakeholder decisions?\n\n\n\n\n🏆 Judging: Present your transformation in 60 seconds!",
-    "crumbs": [
-      "Home",
-      "Weekly Content",
-      "W9: Story Wars & Figure Championships"
-    ]
-  },
-  {
-    "objectID": "weeks/week-09-engaging.html#the-3-second-message-test",
-    "href": "weeks/week-09-engaging.html#the-3-second-message-test",
-    "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "🎯 The 3-Second Message Test",
-    "text": "🎯 The 3-Second Message Test\n🧠 Brain Science: Stakeholders form first impressions in 3 seconds\nChallenge: Create figures that pass the “conference coffee break test”\nScenario: Busy stakeholder walks past your poster with coffee, glances for 3 seconds while walking. Do they “get it”?\n🏃 Live Testing Protocol\n\nCreate your figure (10 minutes)\nSpeed dating rounds (30 seconds each):\n\nShow figure to classmate for exactly 3 seconds\nThey write down what they understood\nCompare to your intended message\n\nIterate rapidly based on feedback\nChampionship round: Best 3-second clarity wins!\n\n\n\n\n\n\n\nCommon 3-Second Failures\n\n\n❌ Chart Title: “Analysis of Building Performance Metrics Across Various Scenarios”\n✅ Chart Title: “South-facing offices need blinds to prevent glare”\n❌ Chart Message: Hidden in data, requires interpretation\n✅ Chart Message: Annotated, highlighted, impossible to miss",
-    "crumbs": [
-      "Home",
-      "Weekly Content",
-      "W9: Story Wars & Figure Championships"
-    ]
-  },
-  {
-    "objectID": "weeks/week-09-engaging.html#professional-polish-transformation-lab",
-    "href": "weeks/week-09-engaging.html#professional-polish-transformation-lab",
-    "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "📐 Professional Polish Transformation Lab",
-    "text": "📐 Professional Polish Transformation Lab\n🎨 Design Clinic Format: 5-minute individual consultations while others work\nBring your WORST figure (we all have one!) for emergency makeover:\n🚑 Figure Emergency Room\nTriage Categories:\n🔴 Critical: Completely incomprehensible, multiple fatal errors 🟡 Urgent: Technically correct but unprofessional presentation\n🟢 Stable: Good content, needs minor polish for Object Fair\nTreatment Plans:\n\nTypography therapy: Font hierarchy, readability, professionalism\nColor surgery: Strategic use, accessibility, brand consistency\n\nLayout operation: White space, alignment, visual flow\nMessage transplant: Clear communication of key insights",
-    "crumbs": [
-      "Home",
-      "Weekly Content",
-      "W9: Story Wars & Figure Championships"
-    ]
-  },
-  {
-    "objectID": "weeks/week-09-engaging.html#beforeafter-showcase",
-    "href": "weeks/week-09-engaging.html#beforeafter-showcase",
-    "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "Before/After Showcase",
-    "text": "Before/After Showcase\nShare your transformation!\n\n30 seconds: Show before version (no shame, we’ve all been there!)\n30 seconds: Reveal after version\n30 seconds: Explain what changed and why it works better\n\nVote: Most dramatic improvement wins the “Phoenix Award” 🔥→🦋",
+    "section": "✅ Quick Check Answers — Q3",
+    "text": "✅ Quick Check Answers — Q3\nQuestion 3: B - BEM needs schedules for energy calculations\n\nBIM might document space programs, but doesn’t need hourly schedules\nBEM requires schedules to calculate time-varying energy use\n\n🤔 Key Insight: Same building, completely different data priorities!",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4173,7 +4341,43 @@
     "href": "weeks/week-09-engaging.html#where-do-these-files-come-from",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "🔨 Where Do These Files Come From?",
-    "text": "🔨 Where Do These Files Come From?\nUnderstanding the complete workflow from design intent to energy analysis\n🏗️ The BIM Generation Pathway\n1. Manual Creation (Traditional BIM authoring)\n\nOrigin: Designer creates geometry in BIM software (Revit, ArchiCAD, etc.)\nProcess:\n\nDraw walls, place windows, define materials\nAssign properties and parameters\nOrganize into spaces and systems\n\nOutput: Native BIM file (.rvt, .pln) or neutral format (IFC)\nPros: Full design control, rich detail, integrated workflow\nCons: Time-intensive, requires BIM expertise, manual updates\n\n2. 3D Model Import and Enrichment\n\nOrigin: Import from other 3D tools (SketchUp, Rhino, etc.)\nProcess:\n\nImport geometry as “dumb” 3D shapes\nAdd semantic information (this surface is a wall, not just a polygon)\nAssign materials and properties\n\nOutput: Enriched BIM model\nPros: Leverages existing 3D models, design freedom\nCons: Requires significant cleanup and semantic tagging\n\n3. Point Cloud and Reality Capture\n\nOrigin: 3D scanning of existing buildings\nProcess:\n\nLaser scan or photogrammetry creates point cloud\nConvert points to BIM geometry (walls, floors, etc.)\nEstimate materials and conditions\n\nOutput: As-built BIM model\nPros: Accurate existing conditions, useful for renovations\nCons: Estimates required for hidden properties, labor-intensive",
+    "text": "🔨 Where Do These Files Come From?\nUnderstanding the complete workflow from design intent to energy analysis",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#bim-generation-manual-creation",
+    "href": "weeks/week-09-engaging.html#bim-generation-manual-creation",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "BIM Generation: Manual Creation",
+    "text": "BIM Generation: Manual Creation\n\nOrigin: Designer creates geometry in BIM software (Revit, ArchiCAD, etc.)\nProcess: Draw walls, place windows, define materials; assign properties; organize spaces and systems\nOutput: Native BIM file (.rvt, .pln) or neutral format (IFC)\nPros: Full design control, rich detail, integrated workflow\nCons: Time-intensive, requires BIM expertise, manual updates",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#bim-generation-3d-model-import",
+    "href": "weeks/week-09-engaging.html#bim-generation-3d-model-import",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "BIM Generation: 3D Model Import",
+    "text": "BIM Generation: 3D Model Import\n\nOrigin: Import from other 3D tools (SketchUp, Rhino, etc.)\nProcess: Bring in “dumb” geometry, add semantic tags, assign materials and properties\nOutput: Enriched BIM model\nPros: Leverages existing 3D models, design freedom\nCons: Requires significant cleanup and semantic tagging",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#bim-generation-point-cloud-capture",
+    "href": "weeks/week-09-engaging.html#bim-generation-point-cloud-capture",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "BIM Generation: Point Cloud Capture",
+    "text": "BIM Generation: Point Cloud Capture\n\nOrigin: 3D scanning of existing buildings\nProcess: Collect laser scan/photogrammetry point clouds, convert to BIM geometry, estimate materials and conditions\nOutput: As-built BIM model\nPros: Accurate existing conditions, useful for renovations\nCons: Estimates required for hidden properties, labor-intensive",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4185,7 +4389,7 @@
     "href": "weeks/week-09-engaging.html#the-bem-generation-pathway",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "⚡ The BEM Generation Pathway",
-    "text": "⚡ The BEM Generation Pathway\nHow do we get from buildings to energy models?\n🔄 Primary Generation Methods\n1. BIM-to-BEM Translation (Automated)\n\nOrigin: Existing BIM model\nProcess:\n\nExport BIM to gbXML or IFC format\nImport into energy modeling tool (OpenStudio, eQuest, etc.)\nSoftware automatically:\n\nIdentifies thermal zones from spaces\nExtracts surface geometry and constructions\nAssigns default schedules and systems\n\n\nOutput: Initial BEM file (.idf, .osm, .inp)\nPros: Fast, leverages existing BIM work, reduces duplication\nCons: Often requires extensive cleanup, missing critical energy data\n\n2. Direct Energy Model Creation (Manual)\n\nOrigin: Design documents, specifications, or simplified geometry\nProcess:\n\nEnergy analyst creates simplified geometric model\nManually defines thermal zones (often simplified from actual rooms)\nAssigns detailed schedules, systems, and controls\n\nOutput: Purpose-built BEM file\nPros: Energy-focused, appropriate level of detail, analyst control\nCons: Disconnected from BIM, duplicate effort, manual updates\n\n3. Template-Based Modeling\n\nOrigin: Building archetype or prototype model\nProcess:\n\nStart with reference model (office building template, etc.)\nModify geometry to match actual design\nAdjust systems and schedules for project specifics\n\nOutput: Customized BEM from template\nPros: Fast, proven assumptions, reduced errors\nCons: May not capture unique design features, less accurate for unusual buildings",
+    "text": "⚡ The BEM Generation Pathway\nHow do we get from buildings to energy models?",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4193,11 +4397,59 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#the-complete-bimbem-workflow-map",
-    "href": "weeks/week-09-engaging.html#the-complete-bimbem-workflow-map",
+    "objectID": "weeks/week-09-engaging.html#bem-generation-bim-to-bem-translation",
+    "href": "weeks/week-09-engaging.html#bem-generation-bim-to-bem-translation",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "🗺️ The Complete BIM/BEM Workflow Map",
-    "text": "🗺️ The Complete BIM/BEM Workflow Map\nReal-world data flow in an integrated building project\ngraph TB\n    A[Design Intent] --&gt; B[BIM Authoring Tool]\n    B --&gt; C[Native BIM File .rvt/.pln]\n    C --&gt; D{Export Format}\n    D --&gt; E[IFC .ifc]\n    D --&gt; F[gbXML .xml]\n    E --&gt; G[Archive/Sharing]\n    F --&gt; H[Energy Modeling Tool]\n    H --&gt; I[Initial BEM File]\n    I --&gt; J[Manual Cleanup & Enrichment]\n    J --&gt; K{Add Missing Data}\n    K --&gt; L[Schedules]\n    K --&gt; M[HVAC Systems]\n    K --&gt; N[Controls]\n    K --&gt; O[Weather File]\n    L --&gt; P[Complete BEM Model]\n    M --&gt; P\n    N --&gt; P\n    O --&gt; P\n    P --&gt; Q[Simulation Engine]\n    Q --&gt; R[Energy Results]\n    R --&gt; S{Results OK?}\n    S --&gt;|No| T[Revise BEM]\n    S --&gt;|Yes| U[Design Decisions]\n    T --&gt; P\n    U --&gt; V[Update BIM]\n    V --&gt; C",
+    "section": "BEM Generation: BIM-to-BEM Translation",
+    "text": "BEM Generation: BIM-to-BEM Translation\n\nOrigin: Existing BIM model\nProcess: Export to gbXML/IFC, import into energy tool, auto-detect zones, surfaces, and default schedules/systems\nOutput: Initial BEM file (.idf, .osm, .inp)\nPros: Fast, leverages BIM work, reduces duplication\nCons: Requires extensive cleanup, often missing critical energy data",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#bem-generation-direct-energy-modeling",
+    "href": "weeks/week-09-engaging.html#bem-generation-direct-energy-modeling",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "BEM Generation: Direct Energy Modeling",
+    "text": "BEM Generation: Direct Energy Modeling\n\nOrigin: Design documents, specifications, or simplified geometry\nProcess: Analyst builds simplified geometry, defines thermal zones, assigns detailed schedules, systems, and controls\nOutput: Purpose-built BEM file\nPros: Energy-focused detail, analyst control\nCons: Disconnected from BIM, duplicate effort, manual updates",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#bem-generation-template-based-modeling",
+    "href": "weeks/week-09-engaging.html#bem-generation-template-based-modeling",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "BEM Generation: Template-Based Modeling",
+    "text": "BEM Generation: Template-Based Modeling\n\nOrigin: Building archetype or prototype models\nProcess: Start with reference, adjust geometry, systems, and schedules to match project specifics\nOutput: Customized BEM from template\nPros: Fast, proven assumptions, reduced errors\nCons: Unique design features may be lost, less accurate for unusual buildings",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#workflow-map-modeling-phase",
+    "href": "weeks/week-09-engaging.html#workflow-map-modeling-phase",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🗺️ Workflow Map — Modeling Phase",
+    "text": "🗺️ Workflow Map — Modeling Phase\ngraph TB\n    A[Design Intent] --&gt; B[BIM Authoring Tool] --&gt; C[Native BIM File .rvt/.pln]\n    C --&gt; D{Export Format}; D --&gt; E[IFC .ifc]; D --&gt; F[gbXML .xml]; E --&gt; G[Archive/Sharing]\n    F --&gt; H[Energy Modeling Tool] --&gt; I[Initial BEM File]; I --&gt; J[Manual Cleanup & Enrichment]\n    J --&gt; K{Add Missing Data}\n    K --&gt; L[Schedules]; K --&gt; M[HVAC Systems]; K --&gt; N[Controls]; K --&gt; O[Weather File]\n    L --&gt; P[Complete BEM Model]; M --&gt; P; N --&gt; P; O --&gt; P",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#workflow-map-iteration-loop",
+    "href": "weeks/week-09-engaging.html#workflow-map-iteration-loop",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🗺️ Workflow Map — Iteration Loop",
+    "text": "🗺️ Workflow Map — Iteration Loop\ngraph TB\n    P[Complete BEM Model] --&gt; Q[Simulation Engine] --&gt; R[Energy Results]\n    R --&gt; S{Results OK?}\n    S --&gt;|No| T[Revise BEM] --&gt; P\n    S --&gt;|Yes| U[Design Decisions] --&gt; V[Update BIM] --&gt; C[Native BIM File]",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4209,7 +4461,67 @@
     "href": "weeks/week-09-engaging.html#the-critical-translation-gap-problem",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "📝 The Critical “Translation Gap” Problem",
-    "text": "📝 The Critical “Translation Gap” Problem\nWhat gets lost when converting BIM → BEM?\n❌ Commonly Missing or Wrong After Translation\nGeometry Issues:\n\nSimplified too much: Curved facades become straight walls\nSimplified too little: Every door frame exported as thermal zone\nWrong orientation: Building rotates during export\nMissing context: Adjacent buildings and shading lost\n\nThermal Zoning Problems:\n\nBIM spaces ≠ Thermal zones: Conference room divided into 4 spaces in BIM exports as 4 zones\nOpen plans fail: Open office should be one zone, exports as dozens\nMissing plenum zones: Return air paths not captured\n\nMaterial/Construction Gaps:\n\nGeneric assignments: “Exterior wall” without actual layers or R-value\nMissing internal mass: Furniture, partition walls, structural mass ignored\nNo thermal bridges: Connections and penetrations simplified\n\nOperational Data Missing:\n\nNo schedules: BIM doesn’t know when lights turn on or off\nNo HVAC systems: BIM has architectural spaces, not mechanical systems\nNo controls: Thermostat strategies, sensor locations absent\nNo set points: Heating/cooling temperatures undefined\n\n✅ What Translates Well\nBasic geometry (walls, floors, windows), surface areas, window-to-wall ratios, orientation, building footprint",
+    "text": "📝 The Critical “Translation Gap” Problem\nWhat gets lost when converting BIM → BEM?",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#geometry-issues",
+    "href": "weeks/week-09-engaging.html#geometry-issues",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Geometry Issues",
+    "text": "Geometry Issues\n\nSimplified too much: Curved facades become straight walls\nSimplified too little: Every door frame exported as a thermal zone\nWrong orientation: Building rotates during export\nMissing context: Adjacent buildings and shading lost",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#thermal-zoning-problems",
+    "href": "weeks/week-09-engaging.html#thermal-zoning-problems",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Thermal Zoning Problems",
+    "text": "Thermal Zoning Problems\n\nBIM spaces ≠ Thermal zones: Conference room becomes four separate zones\nOpen office areas fragment into dozens of zones\nMissing plenum zones: Return air paths not captured",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#material-construction-gaps",
+    "href": "weeks/week-09-engaging.html#material-construction-gaps",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Material & Construction Gaps",
+    "text": "Material & Construction Gaps\n\nGeneric assignments: “Exterior wall” without layers or R-value\nMissing internal mass: Furniture and partitions ignored\nNo thermal bridges: Connections and penetrations simplified",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#operational-data-missing",
+    "href": "weeks/week-09-engaging.html#operational-data-missing",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Operational Data Missing",
+    "text": "Operational Data Missing\n\nNo schedules: BIM doesn’t know when lights turn on or off\nNo HVAC systems: Architectural spaces lack mechanical definitions\nNo controls or set points: Thermostat strategies undefined",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#what-translates-well",
+    "href": "weeks/week-09-engaging.html#what-translates-well",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "✅ What Translates Well",
+    "text": "✅ What Translates Well\n\nBasic geometry (walls, floors, windows)\nSurface areas and window-to-wall ratios\nOrientation and overall building footprint",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4221,7 +4533,31 @@
     "href": "weeks/week-09-engaging.html#hands-on-translation-detective-challenge",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "🎯 Hands-On: Translation Detective Challenge",
-    "text": "🎯 Hands-On: Translation Detective Challenge\n⏰ 10-Minute Group Activity\nScenario: You’ve exported a BIM model to gbXML and opened it in an energy modeling tool. The initial results show the building uses 3× more energy than expected!\nYour Mission: Identify what likely went wrong in the translation.\nGiven Information:\n\nBuilding: 5-story office building with open floor plan\nBIM model: Very detailed architectural model with every furniture piece modeled\nTranslation: Automated gbXML export with default settings\nBEM result: 450 kWh/m²/year (expected: 150 kWh/m²/year)\n\nDetective Questions:\n\nHow many thermal zones do you think were created? (Hint: Think about all those furniture pieces and room divisions)\nWhat might be wrong with the HVAC system in the energy model?\nWhat schedules are likely being used?\nWhat’s probably missing that would reduce the energy use?\n\n🎯 Groups report out findings - let’s debug this together!",
+    "text": "🎯 Hands-On: Translation Detective Challenge\n⏰ 10-Minute Group Activity\nScenario: You’ve exported a BIM model to gbXML and opened it in an energy modeling tool. The initial results show the building uses 3× more energy than expected!\nYour Mission: Identify what likely went wrong in the translation.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#translation-detective-given-info",
+    "href": "weeks/week-09-engaging.html#translation-detective-given-info",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Translation Detective — Given Info",
+    "text": "Translation Detective — Given Info\n\nBuilding: 5-story office building with open floor plan\nBIM model: Very detailed architectural model with every furniture piece modeled\nTranslation: Automated gbXML export with default settings\nBEM result: 450 kWh/m²/year (expected: 150 kWh/m²/year)",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#detective-questions",
+    "href": "weeks/week-09-engaging.html#detective-questions",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Detective Questions",
+    "text": "Detective Questions\n\nHow many thermal zones were likely created?\nWhat might be wrong with the HVAC system in the energy model?\nWhat schedules are likely being used?\nWhat’s probably missing that would reduce the energy use?\n\n🎯 Groups report out findings - let’s debug this together!",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4233,7 +4569,43 @@
     "href": "weeks/week-09-engaging.html#why-cant-bim-and-bem-just-talk-to-each-other",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "🔗 Why Can’t BIM and BEM Just Talk to Each Other?",
-    "text": "🔗 Why Can’t BIM and BEM Just Talk to Each Other?\nThe fundamental challenge: Two models, same building, completely different purposes\n🤔 The Core Problem\nBIM and BEM are optimized for different questions:\nBIM asks: “What do we build and how?”\n\nDetailed geometry for construction\nMaterial specifications for procurement\nCost data for budgeting\nSchedule for sequencing\n\nBEM asks: “How will it perform energetically?”\n\nSimplified geometry for calculation speed\nThermal properties for heat flow\nOperational assumptions for usage patterns\nWeather data for climate response\n\n🎯 The conflict: Detail needed for construction ≠ Detail needed for energy analysis",
+    "text": "🔗 Why Can’t BIM and BEM Just Talk to Each Other?\nFundamental challenge: Two models, same building, completely different purposes.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#bims-core-question",
+    "href": "weeks/week-09-engaging.html#bims-core-question",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "BIM’s Core Question",
+    "text": "BIM’s Core Question\n“What do we build and how?”\n\nDetailed geometry for construction\nMaterial specifications for procurement\nCost data for budgeting\nSchedule for sequencing",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#bems-core-question",
+    "href": "weeks/week-09-engaging.html#bems-core-question",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "BEM’s Core Question",
+    "text": "BEM’s Core Question\n“How will it perform energetically?”\n\nSimplified geometry for calculation speed\nThermal properties for heat flow\nOperational assumptions for usage patterns\nWeather data for climate response",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#detail-mismatch",
+    "href": "weeks/week-09-engaging.html#detail-mismatch",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Detail Mismatch",
+    "text": "Detail Mismatch\n🎯 Construction detail needs ≠ Energy analysis detail needs",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4245,7 +4617,7 @@
     "href": "weeks/week-09-engaging.html#the-translation-bridges-ifc-vs-gbxml",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "🌉 The Translation Bridges: IFC vs gbXML",
-    "text": "🌉 The Translation Bridges: IFC vs gbXML\nTwo competing standards for BIM-to-BEM data exchange\n\n\n\nIFC (Industry Foundation Classes)\n\n\nCreated by: buildingSMART International (1990s)\nPrimary Purpose: Comprehensive BIM data exchange across all disciplines\nScope: Entire building lifecycle (design, construction, operation, demolition)\nEnergy Focus: Originally minimal, gradually improving with “MVDs” (Model View Definitions)\nStrengths:\n\nVendor-neutral, open standard\nComprehensive building information\nWell-established in architecture and construction\nSupports complex geometric relationships\n\nWeaknesses for Energy:\n\nToo much information (slow to process)\nEnergy-specific data often missing or inconsistent\nThermal zoning unclear or wrong\nHVAC systems poorly defined for energy analysis\n\nCommon Use: Archiving, collaboration between architects/engineers/contractors\n\n\n\n\n\n\ngbXML (Green Building XML)\n\n\nCreated by: Green Building XML Schema Inc. (2000)\nPrimary Purpose: Specifically for BIM-to-energy model translation\nScope: Building geometry, materials, and context for energy analysis\nEnergy Focus: Designed explicitly for energy simulation tools\nStrengths:\n\nPurpose-built for energy analysis\nCleaner thermal zone definitions\nFaster to process than IFC\nBetter support for HVAC system basics\n\nWeaknesses:\n\nLimited to energy analysis (not full BIM)\nVendor implementations inconsistent\nLess detailed than IFC for construction\nProprietary governance (less open than IFC)\n\nCommon Use: Exporting from Revit/ArchiCAD to OpenStudio/eQuest/IES-VE",
+    "text": "🌉 The Translation Bridges: IFC vs gbXML\nTwo competing standards for BIM-to-BEM data exchange",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4253,11 +4625,71 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#ifc-vs-gbxml-head-to-head-comparison",
-    "href": "weeks/week-09-engaging.html#ifc-vs-gbxml-head-to-head-comparison",
+    "objectID": "weeks/week-09-engaging.html#ifc-basics",
+    "href": "weeks/week-09-engaging.html#ifc-basics",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "📊 IFC vs gbXML: Head-to-Head Comparison",
-    "text": "📊 IFC vs gbXML: Head-to-Head Comparison\n\n\n\n\n\n\n\n\n\nFeature\nIFC\ngbXML\nWinner\n\n\n\n\nGeometric Accuracy\nVery high (construction-grade)\nMedium (energy-grade)\nIFC\n\n\nThermal Zone Definition\nPoor (not its focus)\nGood (designed for this)\ngbXML\n\n\nMaterial Properties\nComprehensive (but not thermal)\nThermal-focused\ngbXML\n\n\nHVAC Systems\nDetailed (but not for energy calc)\nSimplified (but usable)\ngbXML\n\n\nFile Size / Speed\nLarge, slow\nSmaller, faster\ngbXML\n\n\nIndustry Adoption (BIM)\nVery high\nMedium\nIFC\n\n\nIndustry Adoption (Energy)\nGrowing\nHigh\ngbXML\n\n\nOpen Standard\nYes (buildingSMART)\nSemi-open\nIFC\n\n\n\n🎯 Reality Check: Neither is perfect! Most workflows require manual cleanup after translation.",
+    "section": "IFC Basics",
+    "text": "IFC Basics\n\n\n\nNote\n\n\n\nCreated by buildingSMART International (1990s)\nPurpose: Comprehensive BIM data exchange across disciplines\nScope: Entire building lifecycle\nEnergy focus: Minimal originally, improving with Model View Definitions",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#ifc-strengths-weaknesses",
+    "href": "weeks/week-09-engaging.html#ifc-strengths-weaknesses",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "IFC Strengths & Weaknesses",
+    "text": "IFC Strengths & Weaknesses\n\nStrengths: Vendor-neutral, comprehensive information, widely adopted, supports complex geometry\nWeaknesses: Data overload, inconsistent energy values, unclear thermal zoning, poorly defined HVAC for analysis\nCommon use: Archiving and coordination between architects, engineers, and contractors",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#gbxml-basics",
+    "href": "weeks/week-09-engaging.html#gbxml-basics",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "gbXML Basics",
+    "text": "gbXML Basics\n\n\n\nNote\n\n\n\nCreated by Green Building XML Schema Inc. (2000)\nPurpose: BIM-to-energy model translation\nScope: Geometry, materials, and context for energy analysis\nEnergy focus: Designed explicitly for simulation tools",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#gbxml-strengths-weaknesses",
+    "href": "weeks/week-09-engaging.html#gbxml-strengths-weaknesses",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "gbXML Strengths & Weaknesses",
+    "text": "gbXML Strengths & Weaknesses\n\nStrengths: Purpose-built for energy analysis, cleaner thermal zones, faster processing, better baseline HVAC support\nWeaknesses: Limited to energy data, inconsistent vendor implementations, less construction detail, semi-open governance\nCommon use: Exporting from Revit/ArchiCAD to OpenStudio, eQuest, or IES-VE",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#ifc-vs-gbxml-technical-focus",
+    "href": "weeks/week-09-engaging.html#ifc-vs-gbxml-technical-focus",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "📊 IFC vs gbXML — Technical Focus",
+    "text": "📊 IFC vs gbXML — Technical Focus\n\n\n\n\n\n\n\n\n\nFeature\nIFC\ngbXML\nWinner\n\n\n\n\nGeometric Accuracy\nVery high (construction-grade)\nMedium (energy-grade)\nIFC\n\n\nThermal Zone Definition\nPoor (not its focus)\nGood (designed for this)\ngbXML\n\n\nMaterial Properties\nComprehensive (but not thermal)\nThermal-focused\ngbXML\n\n\nHVAC Systems\nDetailed (but not for energy calc)\nSimplified (but usable)\ngbXML",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#ifc-vs-gbxml-adoption-speed",
+    "href": "weeks/week-09-engaging.html#ifc-vs-gbxml-adoption-speed",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "📊 IFC vs gbXML — Adoption & Speed",
+    "text": "📊 IFC vs gbXML — Adoption & Speed\n\n\n\nFeature\nIFC\ngbXML\nWinner\n\n\n\n\nFile Size / Speed\nLarge, slow\nSmaller, faster\ngbXML\n\n\nIndustry Adoption (BIM)\nVery high\nMedium\nIFC\n\n\nIndustry Adoption (Energy)\nGrowing\nHigh\ngbXML\n\n\nOpen Standard\nYes (buildingSMART)\nSemi-open\nIFC\n\n\n\n🎯 Reality Check: Neither is perfect! Most workflows require manual cleanup after translation.",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4269,7 +4701,7 @@
     "href": "weeks/week-09-engaging.html#how-models-stay-updated-or-dont",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "🛠️ How Models Stay Updated (Or Don’t!)",
-    "text": "🛠️ How Models Stay Updated (Or Don’t!)\nThe lifecycle synchronization challenge\n🔄 The Ideal World (Rarely Achieved)\nSingle Source of Truth:\n\nDesign in BIM → Update geometry, materials, systems\nAuto-export to BEM → Translation with minimal manual fixes\nRun energy simulation → Get performance results\nDesign iteration → Make changes in BIM\nRepeat → BEM automatically updates\n\nWhy this rarely works:\n\nTranslation errors require manual BEM fixes\nManual fixes get overwritten on next export\nBIM and BEM diverge over project lifecycle\nNo clear “version control” between models\n\n😰 The Real World (More Common)\nDivergent Models:\n\nInitial BIM → Create architectural model\nExport to BEM → One-time translation\nManual BEM refinement → Energy analyst fixes zones, adds schedules/systems\nBIM continues evolving → Architect makes design changes\nBEM frozen → Energy model not updated (too much manual work to redo)\nFinal disconnect → As-built BIM ≠ Energy model used for analysis\n\nConsequences:\n\nEnergy performance predictions may not match as-built reality\nDifficulty tracking which design changes were analyzed\nWasted effort recreating models\nCompliance documentation doesn’t match construction\n\n🔧 Current Industry Approaches\nApproach 1: Periodic Re-synchronization\n\nMajor design milestones trigger new BIM → BEM export\nEnergy analyst maintains spreadsheet of manual adjustments\nReapply manual fixes to new export (tedious but doable)\n\nApproach 2: Parallel Development\n\nMaintain BIM and BEM separately\nUse BIM as reference, manually update BEM geometry\nTreat them as related but independent models\n\nApproach 3: BEM-First Simplification\n\nCreate simplified “energy massing model” early\nUse this for energy analysis throughout project\nAccept that it won’t match detailed BIM exactly",
+    "text": "🛠️ How Models Stay Updated (Or Don’t!)\nLifecycle synchronization challenge",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4277,11 +4709,167 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#case-study-when-translation-goes-wrong",
-    "href": "weeks/week-09-engaging.html#case-study-when-translation-goes-wrong",
+    "objectID": "weeks/week-09-engaging.html#ideal-world-workflow",
+    "href": "weeks/week-09-engaging.html#ideal-world-workflow",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "🎯 Case Study: When Translation Goes Wrong",
-    "text": "🎯 Case Study: When Translation Goes Wrong\nReal project example (anonymized)\n📋 The Setup\nProject: New university research building, 6 stories, 15,000 m²\nBIM Tool: Revit (architectural model with MEP coordination)\nEnergy Tool: OpenStudio/EnergyPlus\nGoal: LEED Gold certification, energy modeling required\n💥 What Happened\nWeek 1: Architect exports Revit model to gbXML\n\nFile exports successfully\nOpenStudio imports without errors\nTeam celebrates “seamless interoperability”\n\nWeek 2: Energy analyst reviews imported model\n\n465 thermal zones created (expected: ~30)\n\nEvery small space (closets, corridors) became separate zone\nOpen office areas fragmented into dozens of zones\n\nNo HVAC systems defined (all zones “unconditioned”)\nGeneric wall constructions (no R-values, all same type)\nWindow properties missing (no SHGC, U-value, or visible transmittance)\nBuilding rotated 90 degrees (orientation error)\n\nWeek 3-4: Manual cleanup required\n\nManually merge zones (465 → 32)\nResearch and input all construction assemblies\nDefine HVAC systems from MEP drawings\nCreate occupancy and equipment schedules\nFix orientation and add context shading\nTime spent: 40+ hours\n\nWeek 8: Architect makes design changes\n\nWindow sizes change\nInterior walls move\nRoof design modified\n\nDilemma: Re-export and lose 40 hours of work? Or manually update BEM?\nSolution: Manual updates to BEM, document discrepancies, hope nothing major changes again\n🤔 Lessons Learned\nWhat went wrong:\n\nDefault gbXML export settings inappropriate for energy modeling\nBIM not created with energy analysis in mind\nMissing data not flagged until after export\nNo workflow for managing updates\n\nWhat should have happened:\n\nPre-export BIM cleanup (consolidate spaces for thermal zones)\nDefine construction assemblies in BIM before export\nCoordinate with MEP for HVAC system info\nPlan for iterative updates with version control",
+    "section": "Ideal World Workflow",
+    "text": "Ideal World Workflow\n\nDesign in BIM → update geometry, materials, systems\nAuto-export to BEM with minimal manual fixes\nRun energy simulation and review performance\nIterate design changes back in BIM\nRepeat as BEM updates automatically",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#why-ideal-workflow-fails",
+    "href": "weeks/week-09-engaging.html#why-ideal-workflow-fails",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Why Ideal Workflow Fails",
+    "text": "Why Ideal Workflow Fails\n\nTranslation errors require manual BEM fixes\nManual fixes get overwritten on the next export\nModels diverge over the project lifecycle\nNo clear version control between BIM and BEM",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#real-world-workflow",
+    "href": "weeks/week-09-engaging.html#real-world-workflow",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Real-World Workflow",
+    "text": "Real-World Workflow\n\nInitial BIM: create architectural model\nExport to BEM: one-time translation\nManual BEM refinement: zones, schedules, systems\nBIM continues evolving with design changes\nBEM freezes because rework is too expensive\nFinal disconnect: As-built BIM ≠ simulated model",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#divergence-consequences",
+    "href": "weeks/week-09-engaging.html#divergence-consequences",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Divergence Consequences",
+    "text": "Divergence Consequences\n\nEnergy predictions may not match as-built reality\nHard to track which design changes were analyzed\nWasted effort recreating models\nCompliance documentation can misalign with construction",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#current-industry-approaches",
+    "href": "weeks/week-09-engaging.html#current-industry-approaches",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Current Industry Approaches",
+    "text": "Current Industry Approaches\nApproach 1: Periodic Re-synchronization\n\nMajor milestones trigger new BIM → BEM exports\nAnalyst tracks manual adjustments and reapplies them",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#parallel-development",
+    "href": "weeks/week-09-engaging.html#parallel-development",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Parallel Development",
+    "text": "Parallel Development\n\nMaintain BIM and BEM separately\nUse BIM as reference while manually updating BEM geometry\nTreat them as related but independent models",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#bem-first-simplification",
+    "href": "weeks/week-09-engaging.html#bem-first-simplification",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "BEM-First Simplification",
+    "text": "BEM-First Simplification\n\nCreate a simplified energy massing model early\nUse it for analysis throughout the project\nAccept it won’t match detailed BIM exactly",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#case-study-translation-gone-wrong",
+    "href": "weeks/week-09-engaging.html#case-study-translation-gone-wrong",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🎯 Case Study: Translation Gone Wrong",
+    "text": "🎯 Case Study: Translation Gone Wrong\n\nProject: New university research building, 6 stories, 15,000 m²\nBIM Tool: Revit with MEP coordination\nEnergy Tool: OpenStudio/EnergyPlus\nGoal: LEED Gold energy modeling",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#week-1-success",
+    "href": "weeks/week-09-engaging.html#week-1-success",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Week 1: “Success”",
+    "text": "Week 1: “Success”\n\nArchitect exports Revit model to gbXML\nOpenStudio imports without errors\nTeam celebrates the “seamless” workflow",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#week-2-problems-surface",
+    "href": "weeks/week-09-engaging.html#week-2-problems-surface",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Week 2: Problems Surface",
+    "text": "Week 2: Problems Surface\n\n465 thermal zones created (expected ~30); closets and corridors become separate zones\nNo HVAC systems defined (everything unconditioned)\nGeneric wall constructions with identical R-values\nWindow properties missing and the building rotated 90°",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#week-3-4-manual-cleanup",
+    "href": "weeks/week-09-engaging.html#week-3-4-manual-cleanup",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Week 3-4: Manual Cleanup",
+    "text": "Week 3-4: Manual Cleanup\n\nMerge zones from 465 down to 32\nInput construction assemblies and material properties\nDefine HVAC systems from MEP drawings\nCreate occupancy and equipment schedules\nFix orientation and add context shading\nTime spent: 40+ hours",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#week-8-design-changes",
+    "href": "weeks/week-09-engaging.html#week-8-design-changes",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Week 8: Design Changes",
+    "text": "Week 8: Design Changes\n\nWindow sizes change, interior walls move, roof design shifts\nDilemma: Re-export and lose 40 hours or manually update BEM?\nSolution: Manual BEM updates with documentation, hope nothing drastic changes again",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#lessons-learned-what-went-wrong",
+    "href": "weeks/week-09-engaging.html#lessons-learned-what-went-wrong",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Lessons Learned — What Went Wrong",
+    "text": "Lessons Learned — What Went Wrong\n\nDefault gbXML export settings were inappropriate for energy modeling\nBIM was not created with energy analysis in mind\nMissing data went unnoticed until after export\nNo workflow existed to manage updates",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#lessons-learned-what-should-happen",
+    "href": "weeks/week-09-engaging.html#lessons-learned-what-should-happen",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Lessons Learned — What Should Happen",
+    "text": "Lessons Learned — What Should Happen\n\nClean up BIM before export and consolidate zones\nDefine construction assemblies inside BIM prior to translation\nCoordinate with MEP for HVAC system information\nPlan iterative updates with version control",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4293,7 +4881,31 @@
     "href": "weeks/week-09-engaging.html#hands-on-challenge-bim-bem-divergence-detective",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "🎮 Hands-On Challenge: BIM-BEM Divergence Detective",
-    "text": "🎮 Hands-On Challenge: BIM-BEM Divergence Detective\n⏰ 12-Minute Group Activity\nScenario: You’re consulting on a project where the energy model and BIM have diverged. The facility manager reports actual energy use is 30% higher than the energy model predicted. Time to investigate!\nGiven Information:\n\nBIM Model (as-built): Updated through construction, includes all changes\nEnergy Model: Based on Design Development stage, not updated after schematic\nTime Gap: 14 months between energy model freeze and building operation\n\nYour Mission: For each category, identify what likely diverged and WHY it matters for energy performance.\n🔍 Investigation Categories\n1. Geometry Changes\n\nWhat building features might have changed during design development/construction?\nWhich changes would significantly affect energy use?\n\n2. Construction/Materials\n\nWhat “value engineering” commonly happens during construction?\nHow would this affect thermal performance?\n\n3. Systems\n\nHow might the actual HVAC differ from what was modeled?\nWhat controls or sequences might have changed?\n\n4. Operations\n\nWhat operational assumptions might not match reality?\nWhat schedules or usage patterns might differ?\n\n🎯 Groups present their top 3 divergence suspects and impact on energy performance!",
+    "text": "🎮 Hands-On Challenge: BIM-BEM Divergence Detective\n⏰ 12-Minute Group Activity\nScenario: Actual energy use is 30% higher than the model predicted because BIM and BEM diverged. Investigate why!",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#divergence-detective-given-info",
+    "href": "weeks/week-09-engaging.html#divergence-detective-given-info",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Divergence Detective — Given Info",
+    "text": "Divergence Detective — Given Info\n\nBIM model (as-built) is fully updated through construction\nEnergy model froze at Design Development\n14-month gap between the frozen model and building operation\n\nYour mission: Find what diverged and why it matters.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#investigation-categories",
+    "href": "weeks/week-09-engaging.html#investigation-categories",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Investigation Categories",
+    "text": "Investigation Categories\n\nGeometry changes: Which design tweaks could spike energy use?\nConstruction/materials: What value engineering degraded performance?\nSystems: How might HVAC equipment or controls differ?\nOperations: Where do real schedules differ from assumptions?\n\n🎯 Present your top three suspects and impacts!",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4305,7 +4917,55 @@
     "href": "weeks/week-09-engaging.html#the-ultimate-visual-communication-challenge",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "🎨 The Ultimate Visual Communication Challenge",
-    "text": "🎨 The Ultimate Visual Communication Challenge\n🏆 Mission: Create a poster so compelling that people fight over who gets to work with you\n⚡ The 30-Second Poster Test\nScenario: Object Fair networking break. Stakeholder walks past your poster with coffee and phone. You have 30 seconds to make them:\n\nStop walking (3 seconds)\nRead your message (15 seconds)\n\nTake action (contact you, ask questions, offer collaboration)\n\n🎯 Design Challenge Rounds\nRound 1: Message Hierarchy (10 minutes) - One clear message dominates the design - Supporting evidence visible but secondary - Contact/action information findable but not cluttered\nRound 2: Visual Impact (15 minutes) - Compelling from 6 feet away (networking distance) - Professional quality suitable for career portfolio - Memorable enough to be recognized later\nRound 3: Stakeholder Test (12 minutes) - Works for multiple stakeholder types - Language appropriate for non-experts - Action items clear and specific",
+    "text": "🎨 The Ultimate Visual Communication Challenge\n🏆 Mission: Create a poster so compelling that people fight over who gets to work with you.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#the-30-second-poster-test",
+    "href": "weeks/week-09-engaging.html#the-30-second-poster-test",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "⚡ The 30-Second Poster Test",
+    "text": "⚡ The 30-Second Poster Test\nScenario: During Object Fair, a stakeholder glances at your poster for 30 seconds while walking.\n\nStop walking (3 seconds)\nRead your message (15 seconds)\nTake action (contact you, ask questions, offer collaboration)",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#design-challenge-message-hierarchy",
+    "href": "weeks/week-09-engaging.html#design-challenge-message-hierarchy",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Design Challenge — Message Hierarchy",
+    "text": "Design Challenge — Message Hierarchy\n\nOne clear message dominates the design (10 minutes)\nSupporting evidence stays visible but secondary\nContact/action information is easy to find without clutter",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#design-challenge-visual-impact",
+    "href": "weeks/week-09-engaging.html#design-challenge-visual-impact",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Design Challenge — Visual Impact",
+    "text": "Design Challenge — Visual Impact\n\nCompelling from 6 feet away (15 minutes)\nProfessional quality suitable for your portfolio\nMemorable enough to be recognized later",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#design-challenge-stakeholder-test",
+    "href": "weeks/week-09-engaging.html#design-challenge-stakeholder-test",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Design Challenge — Stakeholder Test",
+    "text": "Design Challenge — Stakeholder Test\n\nWorks for multiple stakeholder types (12 minutes)\nLanguage stays friendly for non-experts\nAction items remain clear and specific",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4317,7 +4977,79 @@
     "href": "weeks/week-09-engaging.html#live-design-laboratory",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "🔥 Live Design Laboratory",
-    "text": "🔥 Live Design Laboratory\n🚨 Current Object Card Emergency Room\nTriage your existing design:\n🟢 Green Zone: Professional quality, clear message, ready for Object Fair 🟡 Yellow Zone: Good content, needs design polish and clarity improvement 🔴 Red Zone: Complete redesign needed, unclear message, unprofessional appearance\n⚡ Speed Design Clinic\n15-minute individual consultations while others work:\nBring: Current Object Card draft (any stage) Get: Specific design feedback and rapid improvement strategies Focus: Maximum impact changes for minimum time investment\n\n\n\nObject Card Success Formula\n\n\n🎯 Message Dominance: - ONE key finding/recommendation as hero - Everything else supports this message - 3-second understanding test\n👁️ Visual Hierarchy: - Size, color, position guide attention - Most important = biggest, boldest, best position - Less important = smaller, neutral, secondary position\n🎨 Professional Polish: - Consistent fonts, colors, spacing - High-quality images and graphics - Print-test at actual size\n📞 Action Orientation: - Clear contact information - Specific next steps for interested stakeholders - Memorable personal branding",
+    "text": "🔥 Live Design Laboratory\n\n15-minute individual consultations while others work\nBring your Object Card draft for rapid feedback",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#object-card-emergency-room",
+    "href": "weeks/week-09-engaging.html#object-card-emergency-room",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🚨 Object Card Emergency Room",
+    "text": "🚨 Object Card Emergency Room\n\n🟢 Green Zone: Professional quality, clear message, ready for Object Fair\n🟡 Yellow Zone: Good content, needs polish and clarity improvement\n🔴 Red Zone: Complete redesign needed, unclear message, unprofessional appearance",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#speed-design-clinic",
+    "href": "weeks/week-09-engaging.html#speed-design-clinic",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "⚡ Speed Design Clinic",
+    "text": "⚡ Speed Design Clinic\n\nBring: Current Object Card draft (any stage)\nGet: Specific design feedback and rapid improvement strategies\nFocus: Maximum impact changes for minimum time investment",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#object-card-success-message-dominance",
+    "href": "weeks/week-09-engaging.html#object-card-success-message-dominance",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Object Card Success — Message Dominance",
+    "text": "Object Card Success — Message Dominance\n\n\n\nTip\n\n\n\nONE key finding or recommendation as the hero\nEverything else supports that primary message\nPass the 3-second understanding test",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#object-card-success-visual-hierarchy",
+    "href": "weeks/week-09-engaging.html#object-card-success-visual-hierarchy",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Object Card Success — Visual Hierarchy",
+    "text": "Object Card Success — Visual Hierarchy\n\n\n\nTip\n\n\n\nUse size, color, and position to guide attention\nMost important = biggest, boldest, best position\nLess important = smaller, neutral, secondary placement",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#object-card-success-professional-polish",
+    "href": "weeks/week-09-engaging.html#object-card-success-professional-polish",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Object Card Success — Professional Polish",
+    "text": "Object Card Success — Professional Polish\n\n\n\nTip\n\n\n\nMaintain consistent fonts, colors, and spacing\nUse high-quality images and graphics\nPrint-test at actual size before finalizing",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#object-card-success-action-orientation",
+    "href": "weeks/week-09-engaging.html#object-card-success-action-orientation",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Object Card Success — Action Orientation",
+    "text": "Object Card Success — Action Orientation\n\n\n\nTip\n\n\n\nProvide clear contact information\nOffer specific next steps for interested stakeholders\nHighlight memorable personal branding",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4329,7 +5061,19 @@
     "href": "weeks/week-09-engaging.html#object-card-championship-judging",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "🏆 Object Card Championship Judging",
-    "text": "🏆 Object Card Championship Judging\n📊 Live Voting Categories\nVote with phones for real-time results:\n\n\n\nCategory\nWinner\nWhy They Won\n\n\n\n\n🎯 Clearest Message\n?\n?\n\n\n👁️ Best Visual Impact\n?\n?\n\n\n💼 Most Professional\n?\n?\n\n\n🤝 Most Stakeholder-Friendly\n?\n?\n\n\n🔥 Most Memorable\n?\n?\n\n\n\n🎪 Hall of Fame Gallery\nPhoto documentation of winning strategies:\n\nMessage hierarchy examples: How winners made key points dominant\nVisual impact techniques: Color, layout, typography strategies\nProfessional polish details: What separates good from great\nStakeholder-friendly language: How to communicate without jargon",
+    "text": "🏆 Object Card Championship Judging\nVote with phones for real-time results and record why each winner succeeded.\n\n🎯 Clearest Message\n👁️ Best Visual Impact\n💼 Most Professional\n🤝 Most Stakeholder-Friendly\n🔥 Most Memorable",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#hall-of-fame-gallery",
+    "href": "weeks/week-09-engaging.html#hall-of-fame-gallery",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🎪 Hall of Fame Gallery",
+    "text": "🎪 Hall of Fame Gallery\n\nCapture message hierarchy examples that made key points dominant\nDocument visual impact techniques (color, layout, typography)\nNote professional polish details that separated good from great\nHighlight stakeholder-friendly language that avoided jargon",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4341,7 +5085,7 @@
     "href": "weeks/week-09-engaging.html#the-ultimate-integration-question",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "🧩 The Ultimate Integration Question",
-    "text": "🧩 The Ultimate Integration Question\nWhy can’t we just have ONE model that does everything?\nThink about it: We have the technology to model buildings in extraordinary detail. We can simulate physics, manage construction, track costs, coordinate trades. So why do we maintain separate BIM and BEM models?\n🎯 Group Challenge: Defend or Critique\n⏰ 15-Minute Structured Debate\nSplit into three positions:\n🔵 Team “Unified Model”\nArgument: “We SHOULD combine BIM and BEM into one integrated model”\nYour job:\n\nArgue benefits of single source of truth\nExplain how technology could bridge the gap\nPropose what a unified model would look like\nAddress efficiency and workflow improvements\n\n🔴 Team “Separate Forever”\nArgument: “BIM and BEM MUST remain separate specialized tools”\nYour job:\n\nArgue why different purposes require different tools\nExplain computational and practical limitations\nDefend current industry practice\nAddress why integration attempts fail\n\n🟡 Team “Hybrid Future”\nArgument: “We need BETTER integration, not full unification”\nYour job:\n\nPropose specific improvements to current workflow\nIdentify what should be shared vs. what should remain separate\nDesign realistic interoperability enhancements\nBalance idealism with practical constraints",
+    "text": "🧩 The Ultimate Integration Question\nWhy can’t we just have ONE model that does everything?\nThink about it: We can simulate physics, manage construction, track costs, and coordinate trades. So why keep BIM and BEM separate?",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4349,11 +5093,11 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#the-fundamental-differences-revealed",
-    "href": "weeks/week-09-engaging.html#the-fundamental-differences-revealed",
+    "objectID": "weeks/week-09-engaging.html#group-challenge-defend-or-critique",
+    "href": "weeks/week-09-engaging.html#group-challenge-defend-or-critique",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "🔬 The Fundamental Differences Revealed",
-    "text": "🔬 The Fundamental Differences Revealed\nAfter the debate, let’s examine the core reasons BIM ≠ BEM:\n1️⃣ Computational Complexity\nBIM Priority: Visual accuracy, construction detail, documentation clarity\n\nCan handle millions of polygons\nFocuses on representing what you see\nRendering speed matters more than calculation speed\n\nBEM Priority: Simulation speed, numerical stability, annual calculations\n\nMust run 8,760 hours of calculations\nSimplified geometry = faster simulation\nTrade visual accuracy for computational efficiency\n\n💡 Key Insight: A photorealistic model with every screw and bolt is useless for energy analysis if it takes 40 hours to simulate one design option.\n2️⃣ Temporal Resolution\nBIM: Mostly static snapshot\n\nDocuments building at specific design phases\nChanges tracked as versions, not continuous time\nDoesn’t model how building operates over time\n\nBEM: Inherently time-dynamic\n\nSimulates every hour of the year (8,760 timesteps)\nModels changing weather, occupancy, solar angles\nCaptures thermal mass, system cycling, seasonal variation\n\n💡 Key Insight: BIM says “this is the wall,” BEM says “this is how the wall performs differently at 2am in January vs. 2pm in July”\n3️⃣ Data Precision vs. Assumptions\nBIM: Strives for precision and specification\n\nExact dimensions (150mm thick wall, not ~150mm)\nSpecific products (Brand X window, Model 123)\nAs-specified or as-built documentation\n\nBEM: Embraces necessary assumptions\n\nTypical occupancy patterns (not actual future behavior)\nRepresentative weather data (not next year’s actual weather)\nEstimated operation (not guaranteed user behavior)\n\n💡 Key Insight: BIM pretends to certainty (we will build this). BEM acknowledges uncertainty (we predict this will probably happen).\n4️⃣ Geometry Philosophy\nBIM: Parametric, relationship-based, construction-logical\n\nWalls connect to floors at specific relationships\nChanges propagate through dependencies\nMaintains constructability rules\n\nBEM: Thermal boundary-based, physics-logical\n\nSurfaces define heat flow boundaries\nZones organized by thermal similarity, not construction\nMaintains energy balance requirements\n\n💡 Key Insight: BIM thinks in building elements (wall, window, door). BEM thinks in heat transfer surfaces (opaque boundary, transparent boundary, internal partition).",
+    "section": "🎯 Group Challenge: Defend or Critique",
+    "text": "🎯 Group Challenge: Defend or Critique\n\n⏰ 15-minute structured debate\nSplit into three positions and prepare arguments",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4361,11 +5105,143 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#the-synthesis-when-should-they-align",
-    "href": "weeks/week-09-engaging.html#the-synthesis-when-should-they-align",
+    "objectID": "weeks/week-09-engaging.html#team-unified-model",
+    "href": "weeks/week-09-engaging.html#team-unified-model",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "🏆 The Synthesis: When Should They Align?",
-    "text": "🏆 The Synthesis: When Should They Align?\nCritical Alignment Points (where BIM and BEM MUST match):\n✅ Basic geometry (footprint, height, orientation, major massing)\n✅ Envelope areas (total wall area, window area, roof area)\n✅ Material thermal properties (U-values, SHGC for specified assemblies)\n✅ Space programs (square footage by use type)\nAcceptable Divergence Points (where differences are necessary):\n⚠️ Thermal zoning (BEM zones ≠ BIM spaces)\n⚠️ Geometric detail (BEM simplified, BIM detailed)\n⚠️ Systems representation (BEM parametric, BIM documented)\n⚠️ Temporal information (BEM schedules, BIM mostly static)\n🎯 Your Project Application\nReflection (write this down):\n1. For YOUR semester project:\n\nWhich aspects of BIM and BEM need to align precisely?\nWhere can you accept simplification or divergence?\nHow will you document the relationship between models?\n\n2. For YOUR stakeholder communication:\n\nHow will you explain model differences to non-experts?\nWhat uncertainties must you communicate?\nHow do you build confidence despite model limitations?\n\n3. For YOUR future practice:\n\nWhat workflow lessons will you take forward?\nWhat tools or skills do you need to develop?\nHow will you manage integrated modeling projects?",
+    "section": "🔵 Team “Unified Model”",
+    "text": "🔵 Team “Unified Model”\n\nArgue that BIM and BEM should combine into one integrated model\nHighlight benefits of a single source of truth\nExplain how technology could bridge the gap\nDescribe what a unified model looks like and its efficiencies",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#team-separate-forever",
+    "href": "weeks/week-09-engaging.html#team-separate-forever",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🔴 Team “Separate Forever”",
+    "text": "🔴 Team “Separate Forever”\n\nArgue why different purposes require different tools\nExplain computational and practical limitations\nDefend existing industry practice\nDescribe why integration attempts often fail",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#team-hybrid-future",
+    "href": "weeks/week-09-engaging.html#team-hybrid-future",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🟡 Team “Hybrid Future”",
+    "text": "🟡 Team “Hybrid Future”\n\nAdvocate for better integration without full unification\nIdentify what data should be shared vs. remain separate\nDesign realistic interoperability enhancements\nBalance big ideas with practical constraints",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#fundamental-difference-1-computational-complexity",
+    "href": "weeks/week-09-engaging.html#fundamental-difference-1-computational-complexity",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🔬 Fundamental Difference 1: Computational Complexity",
+    "text": "🔬 Fundamental Difference 1: Computational Complexity\nBIM Priority: Visual accuracy, construction detail, documentation clarity - Can handle millions of polygons - Focuses on representing what you see - Rendering speed matters more than calculation speed BEM Priority: Simulation speed, numerical stability, annual calculations - Must run 8,760 hours of calculations - Simplified geometry keeps simulations fast - Trades visual accuracy for computational efficiency 💡 Insight: A photorealistic model is useless if it takes 40 hours to simulate one option.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#fundamental-difference-2-temporal-resolution",
+    "href": "weeks/week-09-engaging.html#fundamental-difference-2-temporal-resolution",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🔬 Fundamental Difference 2: Temporal Resolution",
+    "text": "🔬 Fundamental Difference 2: Temporal Resolution\nBIM: Mostly static snapshot - Documents specific design phases - Tracks changes as versions, not continuous time - Doesn’t model operations across the year BEM: Inherently time-dynamic - Simulates every hour of the year - Accounts for weather, occupancy, solar angles - Captures thermal mass, system cycling, seasonal variations 💡 Insight: BIM says “this is the wall”; BEM says “here’s how it behaves at 2 AM vs. 2 PM.”",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#fundamental-difference-3-data-precision-vs.-assumptions",
+    "href": "weeks/week-09-engaging.html#fundamental-difference-3-data-precision-vs.-assumptions",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🔬 Fundamental Difference 3: Data Precision vs. Assumptions",
+    "text": "🔬 Fundamental Difference 3: Data Precision vs. Assumptions\nBIM: Strives for precision and specification\n\nExact dimensions and thicknesses\nSpecific products (Brand X window, Model 123)\nAs-specified or as-built documentation\n\nBEM: Embraces necessary assumptions\n\nTypical occupancy patterns and usage\nRepresentative weather data\nEstimated operations rather than guaranteed behavior\n\n💡 Insight: BIM pretends to certainty; BEM communicates probability.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#fundamental-difference-4-geometry-philosophy",
+    "href": "weeks/week-09-engaging.html#fundamental-difference-4-geometry-philosophy",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🔬 Fundamental Difference 4: Geometry Philosophy",
+    "text": "🔬 Fundamental Difference 4: Geometry Philosophy\nBIM: Parametric, relationship-based, construction-logical\n\nWalls connect to floors with defined relationships\nChanges propagate through dependencies\nMaintains constructability rules\n\nBEM: Thermal boundary-based, physics-logical\n\nSurfaces define heat flow boundaries\nZones organized by thermal similarity\nMaintains energy balance requirements 💡 Insight: BIM thinks in elements; BEM thinks in heat-transfer surfaces.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#critical-alignment-points",
+    "href": "weeks/week-09-engaging.html#critical-alignment-points",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🏆 Critical Alignment Points",
+    "text": "🏆 Critical Alignment Points\n\n✅ Basic geometry (footprint, height, orientation, massing)\n✅ Envelope areas (total wall, window, and roof surface)\n✅ Material thermal properties (U-values, SHGC)\n✅ Space programs (square footage by use type)",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#acceptable-divergence-points",
+    "href": "weeks/week-09-engaging.html#acceptable-divergence-points",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Acceptable Divergence Points",
+    "text": "Acceptable Divergence Points\n\n⚠️ Thermal zoning (BEM zones ≠ BIM spaces)\n⚠️ Geometric detail (BEM simplified, BIM detailed)\n⚠️ Systems representation (BEM parametric, BIM documented)\n⚠️ Temporal information (BEM schedules vs. mostly static BIM)",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#reflection-semester-project",
+    "href": "weeks/week-09-engaging.html#reflection-semester-project",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Reflection — Semester Project",
+    "text": "Reflection — Semester Project\n\nWhich aspects of BIM and BEM must align precisely?\nWhere can you accept simplification or divergence?\nHow will you document the relationship between models?",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#reflection-stakeholder-communication",
+    "href": "weeks/week-09-engaging.html#reflection-stakeholder-communication",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Reflection — Stakeholder Communication",
+    "text": "Reflection — Stakeholder Communication\n\nHow will you explain model differences to non-experts?\nWhat uncertainties must you communicate?\nHow do you build confidence despite limitations?",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#reflection-future-practice",
+    "href": "weeks/week-09-engaging.html#reflection-future-practice",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Reflection — Future Practice",
+    "text": "Reflection — Future Practice\n\nWhat workflow lessons will you take forward?\nWhich tools or skills do you need to develop?\nHow will you manage integrated modeling projects?",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4377,7 +5253,7 @@
     "href": "weeks/week-09-engaging.html#what-you-conquered-today",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "🎉 What You Conquered Today",
-    "text": "🎉 What You Conquered Today",
+    "text": "🎉 What You Conquered Today\n\n\n🏗️ Data Structure Mastery: You understand how BIM and BEM organize building information differently\n🔄 Workflow Wisdom: You know where these files come from and how they’re generated\n🌉 Translation Insight: You can anticipate what gets lost when converting BIM → BEM\n⚠️ Interoperability Reality: You understand why “seamless” integration is rarely seamless",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4385,11 +5261,11 @@
     ]
   },
   {
-    "objectID": "weeks/week-09-engaging.html#your-new-bimbem-superpowers",
-    "href": "weeks/week-09-engaging.html#your-new-bimbem-superpowers",
+    "objectID": "weeks/week-09-engaging.html#more-bimbem-superpowers",
+    "href": "weeks/week-09-engaging.html#more-bimbem-superpowers",
     "title": "Week 9: The Story Wars & Figure Championships",
-    "section": "Your New BIM/BEM Superpowers",
-    "text": "Your New BIM/BEM Superpowers\n🏗️ Data Structure Mastery: You understand how BIM and BEM organize building information differently\n🔄 Workflow Wisdom: You know where these files come from and how they’re generated\n🌉 Translation Insight: You can anticipate what gets lost when converting BIM → BEM\n⚠️ Interoperability Reality: You understand why “seamless” integration is rarely seamless\n🧩 Critical Thinking: You can articulate WHY BIM and BEM must be different (and where they should align)\n📊 Visual Communication: You can design figures that pass the 3-second test\n🎨 Presentation Skills: Your Object Card will effectively communicate complex technical work\nMost importantly: You understand the data foundations that enable (and limit) building performance analysis!",
+    "section": "More BIM/BEM Superpowers",
+    "text": "More BIM/BEM Superpowers\n\n\n🧩 Critical Thinking: You can articulate why BIM and BEM must be different (and where they should align)\n📊 Visual Communication: You can design figures that pass the 3-second test\n🎨 Presentation Skills: Your Object Card effectively communicates complex technical work\nMost importantly: You understand the data foundations behind performance analysis",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4401,7 +5277,31 @@
     "href": "weeks/week-09-engaging.html#object-fair-preparation-mastery",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "🚀 Object Fair Preparation Mastery",
-    "text": "🚀 Object Fair Preparation Mastery\n\n\n\nWeek 9 Victory Checklist\n\n\nLevel 1: Presentation Survival ✅\n\nComplete Peer Review #2 - Use today’s professional feedback framework\nImplement story structure - Apply winning narrative framework\nPolish key figures - Make them pass the 3-second test\n\nLevel 2: Presentation Excellence 🎖️\n\nMaster elevator pitch - Practice until you can deliver in your sleep\nObject Card perfection - Battle-tested design ready for printing\nStakeholder validation - Test your story with someone outside class\n\nLevel 3: Communication Ninja 🥷\n\nMulti-stakeholder adaptation - Prepare pitch variants for different audiences\n\nQ&A preparation - Anticipate and practice responses to likely questions\nProfessional networking prep - Business cards, LinkedIn, follow-up strategy\n\nCommitment check: Choose your level and announce it to your neighbor! 📣",
+    "text": "🚀 Object Fair Preparation Mastery\n\n\n\nLevel 1 — Presentation Survival ✅\n\n\n\nComplete Peer Review #2 using today’s feedback framework\nImplement the winning story structure\nPolish key figures until they pass the 3-second test",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#victory-checklist-level-2",
+    "href": "weeks/week-09-engaging.html#victory-checklist-level-2",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Victory Checklist — Level 2 🎖️",
+    "text": "Victory Checklist — Level 2 🎖️\n\n\n\nImportant\n\n\n\nMaster your elevator pitch until it’s effortless\nFinalize an Object Card worthy of printing\nValidate your story with someone outside class",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#victory-checklist-level-3",
+    "href": "weeks/week-09-engaging.html#victory-checklist-level-3",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "Victory Checklist — Level 3 🥷",
+    "text": "Victory Checklist — Level 3 🥷\n\n\n\nImportant\n\n\n\nPrepare pitch variants for different stakeholders\nPractice Q&A responses to likely questions\nPrep networking assets (business cards, LinkedIn, follow-up plan)\n\n\n\n\nCommitment check: Choose your level and announce it to your neighbor! 📣",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -4425,7 +5325,19 @@
     "href": "weeks/week-09-engaging.html#exit-victory-ritual",
     "title": "Week 9: The Story Wars & Figure Championships",
     "section": "🎊 Exit Victory Ritual",
-    "text": "🎊 Exit Victory Ritual\n\n\n\nThe Storyteller’s Oath\n\n\nStand up and repeat after me:\n“I solemnly swear to tell stories that make stakeholders stop what they’re doing and listen.”\n“I will create visuals so clear that the message jumps off the page in 3 seconds.”\n“I will pitch my work with such clarity and confidence that opportunities will seek me out.”\n“I will remember that great research means nothing if it can’t change the world.”\nNow high-five someone and promise to help each other dominate at Object Fair! 🙌\n\n\n\n🎯 Your mission: Go forth and tell stories that change the built environment!",
+    "text": "🎊 Exit Victory Ritual\n\n\n\nThe Storyteller’s Oath\n\n\nStand up and repeat after me:\n“I solemnly swear to tell stories that make stakeholders stop what they’re doing and listen.”\n“I will create visuals so clear that the message jumps off the page in 3 seconds.”\n“I will pitch my work with such clarity and confidence that opportunities will seek me out.”\n“I will remember that great research means nothing if it can’t change the world.”\nNow high-five someone and promise to help each other dominate at Object Fair! 🙌",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W9: Story Wars & Figure Championships"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09-engaging.html#final-mission",
+    "href": "weeks/week-09-engaging.html#final-mission",
+    "title": "Week 9: The Story Wars & Figure Championships",
+    "section": "🎯 Final Mission",
+    "text": "🎯 Final Mission\nGo forth and tell stories that change the built environment!",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -5323,7 +6235,7 @@
     "href": "notebooks/01_python_ml_basics.html",
     "title": "Python + ML Basics for Architects",
     "section": "",
-    "text": "A fast, friendly introduction to Python, data handling, and simple machine learning — using fake but architecture-flavored data.\nGoals: - Learn Python + pandas basics - Load and explore a dataset about windows/daylight/energy - Split into train/test, fit simple models, and evaluate - Understand cross-validation and overfitting with visuals - Get a small taste of neural nets via an MLP (“deep learning vibe”)",
+    "text": "A fast, friendly introduction to Python, data handling, and simple machine learning — using fake but architecture-flavored data.\nGoals: - Learn Python + pandas basics - Load and explore a dataset about windows/daylight/energy - Split into train/test, fit simple models, and evaluate - Understand cross-validation and overfitting with visuals - Get a small taste of neural nets via an MLP (“deep learning vibe”)\n\n\nIf you are on a fresh environment, you may need to install packages (run one by one if needed):\n# !pip install pandas numpy matplotlib seaborn scikit-learn scipy wordcloud\nThis notebook expects the repository structure with a data/ and scripts/ folder.\n\nfrom pathlib import Path\nimport sys, warnings\n\n# Add repo root and scripts to import path when running from notebooks/\nif '__file__' in globals():\n    ROOT = Path(__file__).resolve().parents[1]\nelse:\n    candidate = Path.cwd()\n    if (candidate / 'scripts').exists():\n        ROOT = candidate\n    elif candidate.name == 'notebooks' and (candidate.parent / 'scripts').exists():\n        ROOT = candidate.parent\n    else:\n        ROOT = candidate\nif str(ROOT / 'scripts') not in sys.path:\n    sys.path.append(str(ROOT / 'scripts'))\n\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nfrom sklearn.model_selection import train_test_split, KFold, cross_val_score\nfrom sklearn.preprocessing import OneHotEncoder, PolynomialFeatures\nfrom sklearn.compose import ColumnTransformer\nfrom sklearn.pipeline import Pipeline\nfrom sklearn.linear_model import LinearRegression, Ridge\nfrom sklearn.metrics import r2_score, mean_absolute_error\nfrom sklearn.metrics import accuracy_score, confusion_matrix\nfrom sklearn.neighbors import KNeighborsClassifier\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.neural_network import MLPClassifier\n\nfrom plotting_utils import set_style, plot_cv_folds, confusion_matrix_plot, learning_curve_plot, validation_curve_plot\nimport data_simulation as sim\n\nset_style()\nnp.random.seed(42)\n\n\n\n\nPython stores numbers, strings, lists, and dictionaries. You’ll mostly use lists/dicts and then pandas DataFrames.\n\n# Lists and dicts\nsizes = [10, 20, 30]\nroom = {\"name\": \"Studio A\", \"area_m2\": 120, \"seats\": 40}\nsizes.append(40)\n{\"sizes\": sizes, \"room\": room}\n\n\n# Numpy and pandas basics\nimport numpy as np, pandas as pd\na = np.array([1,2,3])\ndf = pd.DataFrame({\"x\": [1,2,3], \"y\": [3,2,1]})\ndf.describe()\n\n\n\n\nWe use fake data that mimics window-to-wall ratio (wwr), shading depth, orientation, and energy/daylight outcomes.\n\ndata_path = ROOT / 'data' / 'building_performance_fake.csv'\nif not data_path.exists():\n    # Generate defaults if missing\n    sim.save_default_fake_data(ROOT)\n\ndf = pd.read_csv(data_path)\ndf.head()\n\n\ndf.describe(include='all')\n\n\nsns.pairplot(df[['wwr','shading_depth_m','daylit_area','glare_probability','cooling_kwh_m2']])\nplt.suptitle('Quick relationships', y=1.02);\n\n\n\n\nWe fit a simple linear model and evaluate on a held-out test set.\n\nfeatures = ['wwr','shading_depth_m','orientation','glazing_u_w_m2k']\ntarget = 'cooling_kwh_m2'\nX = df[features]\ny = df[target]\n\ncat = ['orientation']\nnum = ['wwr','shading_depth_m','glazing_u_w_m2k']\npre = ColumnTransformer([\n    (\"cat\", OneHotEncoder(drop='first'), cat),\n    (\"num\", 'passthrough', num)\n])\n\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)\nreg = Pipeline([('pre', pre), ('model', LinearRegression())])\nreg.fit(X_train, y_train)\npred = reg.predict(X_test)\nr2 = r2_score(y_test, pred)\nmae = mean_absolute_error(y_test, pred)\nr2, mae\n\n\nplt.scatter(y_test, pred, alpha=0.8)\nplt.xlabel('Actual cooling kWh/m²')\nplt.ylabel('Predicted')\nplt.title(f'Linear Regression: R²={r2:.2f}, MAE={mae:.1f}')\nm = np.array([y_test.min(), y_test.max()])\nplt.plot(m, m, 'k--', alpha=0.5)\nplt.tight_layout()\nplt.show()\n\n\n\n\nDefine a simple label: comfortable if glare_probability &lt; 0.35 and daylit_area &gt; 0.5.\n\ndf['comfortable'] = ((df['glare_probability'] &lt; 0.35) & (df['daylit_area'] &gt; 0.5)).astype(int)\nXc = df[['wwr','shading_depth_m','orientation']]\nyc = df['comfortable']\npre_c = ColumnTransformer([\n    (\"cat\", OneHotEncoder(drop='first'), ['orientation']),\n    (\"num\", 'passthrough', ['wwr','shading_depth_m'])\n])\nXtr, Xte, ytr, yte = train_test_split(Xc, yc, test_size=0.25, random_state=42, stratify=yc)\nclf = Pipeline([('pre', pre_c), ('model', LogisticRegression(max_iter=1000))])\nclf.fit(Xtr, ytr)\npredc = clf.predict(Xte)\nacc = accuracy_score(yte, predc)\ncm = confusion_matrix(yte, predc)\nacc, cm\n\n\nconfusion_matrix_plot(cm, class_names=(\"Not Comfortable\",\"Comfortable\"), title=f'Logistic Regression (Accuracy={acc:.2f})');\n\n\n\n\nWe vary model complexity (polynomial degree) and show CV scores.\n\ndeg_scores = []\ncv = KFold(n_splits=5, shuffle=True, random_state=42)\nfor deg in range(1,7):\n    poly = PolynomialFeatures(degree=deg, include_bias=False)\n    pipe = Pipeline([('pre', pre), ('poly', poly), ('ridge', Ridge(alpha=1.0))])\n    scores = cross_val_score(pipe, X, y, cv=cv, scoring='r2')\n    deg_scores.append((deg, scores.mean(), scores.std()))\n\nds = pd.DataFrame(deg_scores, columns=['degree','cv_mean','cv_std'])\nplt.errorbar(ds['degree'], ds['cv_mean'], yerr=ds['cv_std'], fmt='o-')\nplt.xlabel('Polynomial degree (complexity)')\nplt.ylabel('CV R²')\nplt.title('Overfitting demo: watch CV score peak then drop')\nplt.tight_layout(); plt.show()\nds\n\n\n\nEach row is a fold; green cells are train, red cells are test.\n\ncv2 = KFold(n_splits=5, shuffle=True, random_state=7)\n_ = plot_cv_folds(n_samples=len(X), cv_splits=cv2.split(np.arange(len(X))), title='5-fold CV: train vs test membership')\nplt.show()\n\n\n\n\n\nA small neural network classifier. This is just to build intuition — it’s not magic, and simple models are often enough.\n\nmlp = Pipeline([('pre', pre_c), ('mlp', MLPClassifier(hidden_layer_sizes=(16,8), max_iter=1000, random_state=42))])\nmlp.fit(Xtr, ytr)\nacc_mlp = accuracy_score(yte, mlp.predict(Xte))\nacc, acc_mlp\n\n\n\nHow performance improves with more data.\n\n_ = learning_curve_plot(clf, Xc, yc, cv=5, scoring='accuracy')\nplt.show()\n\n\n\n\n\n\nAlways hold out test data or use cross-validation\nStart simple; only add complexity if it improves validated performance\nDocument random seeds and settings for reproducibility\n“Deep” models need more data and care; don’t overfit\n\nNext: a richer notebook focused on visualizing pilot results and making figures for stakeholders.",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -5334,8 +6246,8 @@
     "objectID": "notebooks/01_python_ml_basics.html#setup",
     "href": "notebooks/01_python_ml_basics.html#setup",
     "title": "Python + ML Basics for Architects",
-    "section": "Setup",
-    "text": "Setup\nIf you are on a fresh environment, you may need to install packages (run one by one if needed):\n# !pip install pandas numpy matplotlib seaborn scikit-learn scipy wordcloud\nThis notebook expects the repository structure with a data/ and scripts/ folder.\n\nfrom pathlib import Path\nimport sys, warnings\n\n# Add repo root and scripts to import path when running from notebooks/\nif '__file__' in globals():\n    ROOT = Path(__file__).resolve().parents[1]\nelse:\n    candidate = Path.cwd()\n    if (candidate / 'scripts').exists():\n        ROOT = candidate\n    elif candidate.name == 'notebooks' and (candidate.parent / 'scripts').exists():\n        ROOT = candidate.parent\n    else:\n        ROOT = candidate\nif str(ROOT / 'scripts') not in sys.path:\n    sys.path.append(str(ROOT / 'scripts'))\n\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nfrom sklearn.model_selection import train_test_split, KFold, cross_val_score\nfrom sklearn.preprocessing import OneHotEncoder, PolynomialFeatures\nfrom sklearn.compose import ColumnTransformer\nfrom sklearn.pipeline import Pipeline\nfrom sklearn.linear_model import LinearRegression, Ridge\nfrom sklearn.metrics import r2_score, mean_absolute_error\nfrom sklearn.metrics import accuracy_score, confusion_matrix\nfrom sklearn.neighbors import KNeighborsClassifier\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.neural_network import MLPClassifier\n\nfrom plotting_utils import set_style, plot_cv_folds, confusion_matrix_plot, learning_curve_plot, validation_curve_plot\nimport data_simulation as sim\n\nset_style()\nnp.random.seed(42)",
+    "section": "",
+    "text": "If you are on a fresh environment, you may need to install packages (run one by one if needed):\n# !pip install pandas numpy matplotlib seaborn scikit-learn scipy wordcloud\nThis notebook expects the repository structure with a data/ and scripts/ folder.\n\nfrom pathlib import Path\nimport sys, warnings\n\n# Add repo root and scripts to import path when running from notebooks/\nif '__file__' in globals():\n    ROOT = Path(__file__).resolve().parents[1]\nelse:\n    candidate = Path.cwd()\n    if (candidate / 'scripts').exists():\n        ROOT = candidate\n    elif candidate.name == 'notebooks' and (candidate.parent / 'scripts').exists():\n        ROOT = candidate.parent\n    else:\n        ROOT = candidate\nif str(ROOT / 'scripts') not in sys.path:\n    sys.path.append(str(ROOT / 'scripts'))\n\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nfrom sklearn.model_selection import train_test_split, KFold, cross_val_score\nfrom sklearn.preprocessing import OneHotEncoder, PolynomialFeatures\nfrom sklearn.compose import ColumnTransformer\nfrom sklearn.pipeline import Pipeline\nfrom sklearn.linear_model import LinearRegression, Ridge\nfrom sklearn.metrics import r2_score, mean_absolute_error\nfrom sklearn.metrics import accuracy_score, confusion_matrix\nfrom sklearn.neighbors import KNeighborsClassifier\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.neural_network import MLPClassifier\n\nfrom plotting_utils import set_style, plot_cv_folds, confusion_matrix_plot, learning_curve_plot, validation_curve_plot\nimport data_simulation as sim\n\nset_style()\nnp.random.seed(42)",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -5346,8 +6258,8 @@
     "objectID": "notebooks/01_python_ml_basics.html#python-crashlet",
     "href": "notebooks/01_python_ml_basics.html#python-crashlet",
     "title": "Python + ML Basics for Architects",
-    "section": "Python crashlet",
-    "text": "Python crashlet\nPython stores numbers, strings, lists, and dictionaries. You’ll mostly use lists/dicts and then pandas DataFrames.\n\n# Lists and dicts\nsizes = [10, 20, 30]\nroom = {\"name\": \"Studio A\", \"area_m2\": 120, \"seats\": 40}\nsizes.append(40)\n{\"sizes\": sizes, \"room\": room}\n\n\n# Numpy and pandas basics\nimport numpy as np, pandas as pd\na = np.array([1,2,3])\ndf = pd.DataFrame({\"x\": [1,2,3], \"y\": [3,2,1]})\ndf.describe()",
+    "section": "",
+    "text": "Python stores numbers, strings, lists, and dictionaries. You’ll mostly use lists/dicts and then pandas DataFrames.\n\n# Lists and dicts\nsizes = [10, 20, 30]\nroom = {\"name\": \"Studio A\", \"area_m2\": 120, \"seats\": 40}\nsizes.append(40)\n{\"sizes\": sizes, \"room\": room}\n\n\n# Numpy and pandas basics\nimport numpy as np, pandas as pd\na = np.array([1,2,3])\ndf = pd.DataFrame({\"x\": [1,2,3], \"y\": [3,2,1]})\ndf.describe()",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -5358,8 +6270,8 @@
     "objectID": "notebooks/01_python_ml_basics.html#load-or-generate-architecture-flavored-dataset",
     "href": "notebooks/01_python_ml_basics.html#load-or-generate-architecture-flavored-dataset",
     "title": "Python + ML Basics for Architects",
-    "section": "Load (or generate) architecture-flavored dataset",
-    "text": "Load (or generate) architecture-flavored dataset\nWe use fake data that mimics window-to-wall ratio (wwr), shading depth, orientation, and energy/daylight outcomes.\n\ndata_path = ROOT / 'data' / 'building_performance_fake.csv'\nif not data_path.exists():\n    # Generate defaults if missing\n    sim.save_default_fake_data(ROOT)\n\ndf = pd.read_csv(data_path)\ndf.head()\n\n\ndf.describe(include='all')\n\n\nsns.pairplot(df[['wwr','shading_depth_m','daylit_area','glare_probability','cooling_kwh_m2']])\nplt.suptitle('Quick relationships', y=1.02);",
+    "section": "",
+    "text": "We use fake data that mimics window-to-wall ratio (wwr), shading depth, orientation, and energy/daylight outcomes.\n\ndata_path = ROOT / 'data' / 'building_performance_fake.csv'\nif not data_path.exists():\n    # Generate defaults if missing\n    sim.save_default_fake_data(ROOT)\n\ndf = pd.read_csv(data_path)\ndf.head()\n\n\ndf.describe(include='all')\n\n\nsns.pairplot(df[['wwr','shading_depth_m','daylit_area','glare_probability','cooling_kwh_m2']])\nplt.suptitle('Quick relationships', y=1.02);",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -5370,8 +6282,8 @@
     "objectID": "notebooks/01_python_ml_basics.html#regression-predict-cooling-energy-from-design-inputs",
     "href": "notebooks/01_python_ml_basics.html#regression-predict-cooling-energy-from-design-inputs",
     "title": "Python + ML Basics for Architects",
-    "section": "Regression: predict cooling energy from design inputs",
-    "text": "Regression: predict cooling energy from design inputs\nWe fit a simple linear model and evaluate on a held-out test set.\n\nfeatures = ['wwr','shading_depth_m','orientation','glazing_u_w_m2k']\ntarget = 'cooling_kwh_m2'\nX = df[features]\ny = df[target]\n\ncat = ['orientation']\nnum = ['wwr','shading_depth_m','glazing_u_w_m2k']\npre = ColumnTransformer([\n    (\"cat\", OneHotEncoder(drop='first'), cat),\n    (\"num\", 'passthrough', num)\n])\n\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)\nreg = Pipeline([('pre', pre), ('model', LinearRegression())])\nreg.fit(X_train, y_train)\npred = reg.predict(X_test)\nr2 = r2_score(y_test, pred)\nmae = mean_absolute_error(y_test, pred)\nr2, mae\n\n\nplt.scatter(y_test, pred, alpha=0.8)\nplt.xlabel('Actual cooling kWh/m²')\nplt.ylabel('Predicted')\nplt.title(f'Linear Regression: R²={r2:.2f}, MAE={mae:.1f}')\nm = np.array([y_test.min(), y_test.max()])\nplt.plot(m, m, 'k--', alpha=0.5)\nplt.tight_layout()\nplt.show()",
+    "section": "",
+    "text": "We fit a simple linear model and evaluate on a held-out test set.\n\nfeatures = ['wwr','shading_depth_m','orientation','glazing_u_w_m2k']\ntarget = 'cooling_kwh_m2'\nX = df[features]\ny = df[target]\n\ncat = ['orientation']\nnum = ['wwr','shading_depth_m','glazing_u_w_m2k']\npre = ColumnTransformer([\n    (\"cat\", OneHotEncoder(drop='first'), cat),\n    (\"num\", 'passthrough', num)\n])\n\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)\nreg = Pipeline([('pre', pre), ('model', LinearRegression())])\nreg.fit(X_train, y_train)\npred = reg.predict(X_test)\nr2 = r2_score(y_test, pred)\nmae = mean_absolute_error(y_test, pred)\nr2, mae\n\n\nplt.scatter(y_test, pred, alpha=0.8)\nplt.xlabel('Actual cooling kWh/m²')\nplt.ylabel('Predicted')\nplt.title(f'Linear Regression: R²={r2:.2f}, MAE={mae:.1f}')\nm = np.array([y_test.min(), y_test.max()])\nplt.plot(m, m, 'k--', alpha=0.5)\nplt.tight_layout()\nplt.show()",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -5382,8 +6294,8 @@
     "objectID": "notebooks/01_python_ml_basics.html#classification-comfortable-daylight",
     "href": "notebooks/01_python_ml_basics.html#classification-comfortable-daylight",
     "title": "Python + ML Basics for Architects",
-    "section": "Classification: comfortable daylight?",
-    "text": "Classification: comfortable daylight?\nDefine a simple label: comfortable if glare_probability &lt; 0.35 and daylit_area &gt; 0.5.\n\ndf['comfortable'] = ((df['glare_probability'] &lt; 0.35) & (df['daylit_area'] &gt; 0.5)).astype(int)\nXc = df[['wwr','shading_depth_m','orientation']]\nyc = df['comfortable']\npre_c = ColumnTransformer([\n    (\"cat\", OneHotEncoder(drop='first'), ['orientation']),\n    (\"num\", 'passthrough', ['wwr','shading_depth_m'])\n])\nXtr, Xte, ytr, yte = train_test_split(Xc, yc, test_size=0.25, random_state=42, stratify=yc)\nclf = Pipeline([('pre', pre_c), ('model', LogisticRegression(max_iter=1000))])\nclf.fit(Xtr, ytr)\npredc = clf.predict(Xte)\nacc = accuracy_score(yte, predc)\ncm = confusion_matrix(yte, predc)\nacc, cm\n\n\nconfusion_matrix_plot(cm, class_names=(\"Not Comfortable\",\"Comfortable\"), title=f'Logistic Regression (Accuracy={acc:.2f})');",
+    "section": "",
+    "text": "Define a simple label: comfortable if glare_probability &lt; 0.35 and daylit_area &gt; 0.5.\n\ndf['comfortable'] = ((df['glare_probability'] &lt; 0.35) & (df['daylit_area'] &gt; 0.5)).astype(int)\nXc = df[['wwr','shading_depth_m','orientation']]\nyc = df['comfortable']\npre_c = ColumnTransformer([\n    (\"cat\", OneHotEncoder(drop='first'), ['orientation']),\n    (\"num\", 'passthrough', ['wwr','shading_depth_m'])\n])\nXtr, Xte, ytr, yte = train_test_split(Xc, yc, test_size=0.25, random_state=42, stratify=yc)\nclf = Pipeline([('pre', pre_c), ('model', LogisticRegression(max_iter=1000))])\nclf.fit(Xtr, ytr)\npredc = clf.predict(Xte)\nacc = accuracy_score(yte, predc)\ncm = confusion_matrix(yte, predc)\nacc, cm\n\n\nconfusion_matrix_plot(cm, class_names=(\"Not Comfortable\",\"Comfortable\"), title=f'Logistic Regression (Accuracy={acc:.2f})');",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -5394,8 +6306,8 @@
     "objectID": "notebooks/01_python_ml_basics.html#cross-validation-and-overfitting",
     "href": "notebooks/01_python_ml_basics.html#cross-validation-and-overfitting",
     "title": "Python + ML Basics for Architects",
-    "section": "Cross-validation and overfitting",
-    "text": "Cross-validation and overfitting\nWe vary model complexity (polynomial degree) and show CV scores.\n\ndeg_scores = []\ncv = KFold(n_splits=5, shuffle=True, random_state=42)\nfor deg in range(1,7):\n    poly = PolynomialFeatures(degree=deg, include_bias=False)\n    pipe = Pipeline([('pre', pre), ('poly', poly), ('ridge', Ridge(alpha=1.0))])\n    scores = cross_val_score(pipe, X, y, cv=cv, scoring='r2')\n    deg_scores.append((deg, scores.mean(), scores.std()))\n\nds = pd.DataFrame(deg_scores, columns=['degree','cv_mean','cv_std'])\nplt.errorbar(ds['degree'], ds['cv_mean'], yerr=ds['cv_std'], fmt='o-')\nplt.xlabel('Polynomial degree (complexity)')\nplt.ylabel('CV R²')\nplt.title('Overfitting demo: watch CV score peak then drop')\nplt.tight_layout(); plt.show()\nds\n\n\nVisualizing CV folds (“crazily simple”)\nEach row is a fold; green cells are train, red cells are test.\n\ncv2 = KFold(n_splits=5, shuffle=True, random_state=7)\n_ = plot_cv_folds(n_samples=len(X), cv_splits=cv2.split(np.arange(len(X))), title='5-fold CV: train vs test membership')\nplt.show()",
+    "section": "",
+    "text": "We vary model complexity (polynomial degree) and show CV scores.\n\ndeg_scores = []\ncv = KFold(n_splits=5, shuffle=True, random_state=42)\nfor deg in range(1,7):\n    poly = PolynomialFeatures(degree=deg, include_bias=False)\n    pipe = Pipeline([('pre', pre), ('poly', poly), ('ridge', Ridge(alpha=1.0))])\n    scores = cross_val_score(pipe, X, y, cv=cv, scoring='r2')\n    deg_scores.append((deg, scores.mean(), scores.std()))\n\nds = pd.DataFrame(deg_scores, columns=['degree','cv_mean','cv_std'])\nplt.errorbar(ds['degree'], ds['cv_mean'], yerr=ds['cv_std'], fmt='o-')\nplt.xlabel('Polynomial degree (complexity)')\nplt.ylabel('CV R²')\nplt.title('Overfitting demo: watch CV score peak then drop')\nplt.tight_layout(); plt.show()\nds\n\n\n\nEach row is a fold; green cells are train, red cells are test.\n\ncv2 = KFold(n_splits=5, shuffle=True, random_state=7)\n_ = plot_cv_folds(n_samples=len(X), cv_splits=cv2.split(np.arange(len(X))), title='5-fold CV: train vs test membership')\nplt.show()",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -5406,8 +6318,8 @@
     "objectID": "notebooks/01_python_ml_basics.html#a-tiny-taste-of-deep-learning-mlp",
     "href": "notebooks/01_python_ml_basics.html#a-tiny-taste-of-deep-learning-mlp",
     "title": "Python + ML Basics for Architects",
-    "section": "A tiny taste of “deep learning”: MLP",
-    "text": "A tiny taste of “deep learning”: MLP\nA small neural network classifier. This is just to build intuition — it’s not magic, and simple models are often enough.\n\nmlp = Pipeline([('pre', pre_c), ('mlp', MLPClassifier(hidden_layer_sizes=(16,8), max_iter=1000, random_state=42))])\nmlp.fit(Xtr, ytr)\nacc_mlp = accuracy_score(yte, mlp.predict(Xte))\nacc, acc_mlp\n\n\nLearning curve (optional)\nHow performance improves with more data.\n\n_ = learning_curve_plot(clf, Xc, yc, cv=5, scoring='accuracy')\nplt.show()",
+    "section": "",
+    "text": "A small neural network classifier. This is just to build intuition — it’s not magic, and simple models are often enough.\n\nmlp = Pipeline([('pre', pre_c), ('mlp', MLPClassifier(hidden_layer_sizes=(16,8), max_iter=1000, random_state=42))])\nmlp.fit(Xtr, ytr)\nacc_mlp = accuracy_score(yte, mlp.predict(Xte))\nacc, acc_mlp\n\n\n\nHow performance improves with more data.\n\n_ = learning_curve_plot(clf, Xc, yc, cv=5, scoring='accuracy')\nplt.show()",
     "crumbs": [
       "Home",
       "Python Notebooks",
@@ -5418,8 +6330,8 @@
     "objectID": "notebooks/01_python_ml_basics.html#key-ideas",
     "href": "notebooks/01_python_ml_basics.html#key-ideas",
     "title": "Python + ML Basics for Architects",
-    "section": "Key ideas",
-    "text": "Key ideas\n\nAlways hold out test data or use cross-validation\nStart simple; only add complexity if it improves validated performance\nDocument random seeds and settings for reproducibility\n“Deep” models need more data and care; don’t overfit\n\nNext: a richer notebook focused on visualizing pilot results and making figures for stakeholders.",
+    "section": "",
+    "text": "Always hold out test data or use cross-validation\nStart simple; only add complexity if it improves validated performance\nDocument random seeds and settings for reproducibility\n“Deep” models need more data and care; don’t overfit\n\nNext: a richer notebook focused on visualizing pilot results and making figures for stakeholders.",
     "crumbs": [
       "Home",
       "Python Notebooks",
