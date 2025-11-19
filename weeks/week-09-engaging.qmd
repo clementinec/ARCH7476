@@ -39,24 +39,28 @@ format:
 **Before we become storytelling champions, let's learn from the narrative graveyard...**
 
 ::: {.callout-warning icon=false}
-## Real-World Presentation Disasters
+## 🏢 Case 1: The $50M Miscommunication
 
-**🏢 Case 1: The $50M Miscommunication**
-
-- PhD researcher presents brilliant energy analysis to Hong Kong developer board
-- **45 minutes** of technical methodology explanation
-- **30 seconds** on what this means for their bottom line
-- **Board's response**: "Interesting... but what should we actually DO?"
-- **Result**: No adoption, project shelved, researcher never invited back
-
-**📊 Case 2: The Chart Catastrophe**
-
-- Consultant shows 47 different charts to planning committee
-- **Every chart** technically perfect, statistically sound
-- **No chart** tells decision-makers what action to take
-- **Committee response**: "We're more confused than when we started"
-- **Result**: Status quo wins, innovative solution dies
+- PhD researcher presents brilliant energy analysis to a Hong Kong developer board
+- 45 minutes on methodology vs 30 seconds on business impact
+- Board: "Interesting... but what should we actually DO?"
+- Result: No adoption, project shelved, researcher benched
 :::
+
+---
+
+## 💀 When Good Research Goes Bad — Case 2
+
+::: {.callout-warning icon=false}
+## 📊 The Chart Catastrophe
+
+- Consultant shows 47 different charts to a planning committee
+- Every chart technically perfect yet offers no clear action
+- Committee: "We're more confused than when we started"
+- Result: Status quo wins and the innovative solution dies
+:::
+
+---
 
 **🤔 Reality Check**: How many of your presentations focus more on HOW you did it than WHY anyone should care?
 
@@ -64,31 +68,34 @@ format:
 
 ## 🎯 The Two-Slide Death Match
 
-**⚡ The challenge**: Distill your ENTIRE semester into exactly 2 slides that would make a busy stakeholder stop what they're doing and take action
-
-::: {.callout-note icon=false}
-## Battle Stations: Choose Your Story Structure
-
-**Move to corners of the room based on your current approach:**
-
-**🔥 Action Corner**: "I start with what they should DO"
-
-**📊 Evidence Corner**: "I start with what I FOUND"
-
-**😰 Problem Corner**: "I start with what's WRONG"
-
-**🤷 Confusion Corner**: "I honestly have NO IDEA how to start"
-
-**3 minutes to convince other corners why YOUR approach wins!**
-:::
+**⚡ The challenge**: Distill your ENTIRE semester into exactly 2 slides that would make a busy stakeholder stop what they're doing and take action.
 
 **Plot twist**: We'll test which structure actually WORKS with real stakeholders!
 
 ---
 
+## Choose Your Story Structure
+
+::: {.callout-note icon=false}
+## Battle Stations
+
+- Move to corners of the room based on your current approach
+- **🔥 Action Corner**: "I start with what they should DO"
+- **📊 Evidence Corner**: "I start with what I FOUND"
+- **😰 Problem Corner**: "I start with what's WRONG"
+- **🤷 Confusion Corner**: "I honestly have NO IDEA how to start"
+- 3 minutes to convince other corners why YOUR approach wins!
+:::
+
+---
+
 ## 🎬 The Story Structure Science
 
-**🧠 Cognitive Science Reality**: Human brains process stories in predictable patterns
+**🧠 Cognitive Science Reality**: Human brains process stories in predictable patterns.
+
+---
+
+## Story Flow
 
 ```mermaid
 graph TD
@@ -97,11 +104,14 @@ graph TD
     B -->|Bored| D[💀 Lost Forever]
     C --> E[💡 Action: What Should I Do?]
     E --> F[✅ Success: Stakeholder Convinced]
-    C -->|Confused| G[😵 Overloaded & Confused]
-    E -->|Vague| H[🤔 Interested But No Action]
+    C -->|Confused| G[😵 Overloaded & Confused]; E -->|Vague| H[🤔 Interested But No Action]
 ```
 
-**⏰ You have 15 seconds** to grab attention or lose them forever!
+---
+
+## ⏰ Hook Them Fast
+
+**You have 15 seconds** to grab attention or lose them forever!
 
 ---
 
@@ -113,32 +123,28 @@ graph TD
 
 **Understanding the two critical data ecosystems in modern architecture**
 
-::: {.callout-note icon=false}
+---
+
 ## Building Information Modeling (BIM)
 
-**Definition**: A digital representation of physical and functional characteristics of a building
-
-**Primary Purpose**: Design, construction, and facility management
-
-**Key Focus**: Geometry, materials, spatial relationships, construction sequences
-
-**Primary Users**: Architects, engineers, contractors, facility managers
-
-**Typical File Formats**: IFC (.ifc), Revit (.rvt), ArchiCAD (.pln), gbXML (.xml)
+::: {.callout-note icon=false}
+- Definition: Digital representation of a building's physical and functional characteristics
+- Purpose: Supports design, construction, and facility management
+- Focus: Geometry, materials, spatial relationships, construction sequences
+- Users: Architects, engineers, contractors, facility managers
+- Formats: IFC (.ifc), Revit (.rvt), ArchiCAD (.pln), gbXML (.xml)
 :::
 
-::: {.callout-note icon=false}
+---
+
 ## Building Energy Modeling (BEM)
 
-**Definition**: A computational representation of a building's energy flows and thermal behavior
-
-**Primary Purpose**: Energy performance analysis, optimization, and compliance
-
-**Key Focus**: Thermal zones, HVAC systems, schedules, weather data, energy consumption
-
-**Primary Users**: Energy analysts, sustainability consultants, MEP engineers
-
-**Typical File Formats**: EnergyPlus (.idf), OpenStudio (.osm), eQuest (.inp), TRNSYS (.dck)
+::: {.callout-note icon=false}
+- Definition: Computational representation of a building's energy flows and thermal behavior
+- Purpose: Energy performance analysis, optimization, and compliance
+- Focus: Thermal zones, HVAC systems, schedules, weather data, energy consumption
+- Users: Energy analysts, sustainability consultants, MEP engineers
+- Formats: EnergyPlus (.idf), OpenStudio (.osm), eQuest (.inp), TRNSYS (.dck)
 :::
 
 ---
@@ -147,20 +153,27 @@ graph TD
 
 **How is geometric and construction information actually organized?**
 
-### 🏛️ Hierarchical Organization
+---
 
-**Building Information Models follow a structured hierarchy:**
+## BIM Hierarchy — Macro View
 
 - **Project** → Contains all building information
-  - **Site** → Location, orientation, context
-    - **Building** → One or more structures
-      - **Stories/Levels** → Floor-by-floor organization
-        - **Spaces/Rooms** → Individual zones
-          - **Building Elements** → Walls, floors, windows, doors
-            - **Components** → Materials, layers, properties
-              - **Properties** → Thermal, structural, cost data
+- **Site** → Location, orientation, context
+- **Building** → One or more structures
+- **Stories/Levels** → Floor-by-floor organization
 
-### 🔗 Key BIM Data Components
+---
+
+## BIM Hierarchy — Detailed View
+
+- **Spaces/Rooms** → Individual zones
+- **Building Elements** → Walls, floors, windows, doors
+- **Components** → Materials, layers, properties
+- **Properties** → Thermal, structural, cost data
+
+---
+
+## Key BIM Data Components — Geometry & Attributes
 
 **1. Geometry**
 
@@ -174,6 +187,10 @@ graph TD
 - Construction details (layer thickness, assembly type)
 - Performance data (R-values, U-values, SHGC)
 
+---
+
+## Key BIM Data Components — Relationships
+
 **3. Relationships**
 
 - Spatial containment (window within wall)
@@ -186,34 +203,43 @@ graph TD
 
 **How is energy performance actually calculated?**
 
-### 🌡️ Zone-Based Organization
+---
 
-**Energy models organize buildings by thermal zones, not just geometry:**
+## BEM Zone-Based Organization
 
 - **Building** → Overall energy system
-  - **Thermal Zones** → Spaces with similar thermal behavior
-    - **Surfaces** → Walls, roofs, floors (heat transfer boundaries)
-      - **Constructions** → Material layers with thermal properties
-    - **Internal Loads** → People, lights, equipment
-    - **HVAC Systems** → Heating, cooling, ventilation
-    - **Schedules** → Occupancy, equipment usage patterns
-  - **Site Context**
-    - **Weather Data** → Hourly temperature, solar radiation, wind
-    - **Shading** → Adjacent buildings, landscape
+- **Thermal Zones** → Spaces with similar thermal behavior
+- **Surfaces** → Walls, roofs, floors (heat transfer boundaries)
+- **Constructions** → Material layers with thermal properties
+- **Internal Loads** → People, lights, equipment
+- **HVAC Systems** → Heating, cooling, ventilation
+- **Schedules** → Occupancy, equipment usage patterns
 
-### 📈 Critical BEM Data Elements
+---
+
+## Site Context Inputs
+
+- **Weather Data** → Hourly temperature, solar radiation, wind
+- **Shading** → Adjacent buildings, landscape
+
+---
+
+## Critical BEM Elements — Zones & Constructions
 
 **1. Thermal Zones**
 
 - Volume and floor area
 - Thermostat setpoints (heating/cooling)
 - Ventilation requirements
-
 **2. Constructions**
 
 - Material layers (inside → outside)
 - Thermal resistance of each layer
 - Thermal mass and heat capacity
+
+---
+
+## Critical BEM Elements — Schedules & Systems
 
 **3. Schedules**
 
@@ -235,21 +261,33 @@ graph TD
 
 **Scenario**: You're modeling a south-facing office with a large window.
 
-**Question 1**: What would a BIM model care about?
+---
+
+## Quick Check – Question 1
+
+**What would a BIM model care about?**
 
 - A) Window size, frame material, glass type, cost
 - B) Solar heat gain coefficient, U-value, thermal mass
 - C) Both equally
 - D) Neither - just the visual appearance
 
-**Question 2**: What would a BEM model care about?
+---
+
+## Quick Check – Question 2
+
+**What would a BEM model care about?**
 
 - A) Exact window manufacturer and product code
 - B) Window thermal properties and solar transmission
 - C) Construction sequencing and installation method
 - D) Visual aesthetics and daylighting quality
 
-**Question 3**: Which model needs to know about occupancy schedules?
+---
+
+## Quick Check – Question 3
+
+**Which model needs to know about occupancy schedules?**
 
 - A) BIM only
 - B) BEM only
@@ -267,10 +305,18 @@ graph TD
 - BIM focuses on what to build and how to build it
 - Material specifications, dimensions, costs, constructability
 
+---
+
+## ✅ Quick Check Answers — Q2
+
 **Question 2**: **B** - BEM cares about thermal/energy properties
 
 - BEM focuses on how the building performs energetically
 - Heat flows, solar gains, thermal resistance matter for energy calculations
+
+---
+
+## ✅ Quick Check Answers — Q3
 
 **Question 3**: **B** - BEM needs schedules for energy calculations
 
@@ -281,37 +327,32 @@ graph TD
 
 ---
 
+<!-- 
 # Round 3: Figure Design Olympics {background-color="#006400"}
 
 ---
 
 ## 🎨 The Visualization Gladiator Arena
 
-**🏆 Championship Categories:**
+**🏆 Championship Categories**
+- 📊 Speed Chart Challenge (10 minutes)
+- 🎯 Message Clarity Championships (15 minutes)
+- 🔥 Uncertainty Communication Olympics (12 minutes)
+- 💎 Professional Polish Finals (18 minutes)
 
-### 📊 **Speed Chart Challenge** (10 minutes)
+---
+
+## 📊 Speed Chart Challenge
+
 Transform this terrible chart into presentation gold!
 
-*[Show intentionally awful chart: cluttered, unclear, no message]*
+![Terrible Chart Example](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZjBmMGYwIi8+CiAgICA8dGV4dCB4PSIyMDAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5UZXJyaWJsZSBDaGFydCBXaXRoIFRvbyBNdWNoIERhdGE8L3RleHQ+Cjwvc3ZnPg==)
 
 **Rules**: Same data, maximum impact, stakeholder-friendly
-
-### 🎯 **Message Clarity Championships** (15 minutes) 
-Create a figure where the key insight is obvious in **3 seconds**
-
-### 🔥 **Uncertainty Communication Olympics** (12 minutes)
-Show confidence levels without confusing non-experts
-
-### 💎 **Professional Polish Finals** (18 minutes)
-Make one figure so beautiful it could be in Harvard Business Review
 
 ---
 
 ## ⚡ Speed Chart Battle Royale
-
-**🚨 Current Disaster**: 
-
-![Terrible Chart Example](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZjBmMGYwIi8+CiAgICA8dGV4dCB4PSIyMDAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5UZXJyaWJsZSBDaGFydCBXaXRoIFRvbyBNdWNoIERhdGE8L3RleHQ+Cjwvc3ZnPg==)
 
 **Problems with this chart:**
 - 47 different data series (seriously!)
@@ -321,9 +362,11 @@ Make one figure so beautiful it could be in Harvard Business Review
 
 **⏰ 10-minute transformation challenge!**
 
-::: {.callout-tip icon=false}
+---
+
 ## Speed Chart Rescue Formula
 
+::: {.callout-tip icon=false}
 1. **One Message Rule**: What's the ONE thing stakeholders need to know?
 2. **3-Second Test**: Key insight obvious immediately?
 3. **Annotation Strategy**: Use text to guide interpretation
@@ -343,50 +386,53 @@ Make one figure so beautiful it could be in Harvard Business Review
 
 *Scenario: Busy stakeholder walks past your poster with coffee, glances for 3 seconds while walking. Do they "get it"?*
 
-### 🏃 Live Testing Protocol
+---
 
-1. **Create your figure** (10 minutes)
-2. **Speed dating rounds** (30 seconds each):
-   - Show figure to classmate for exactly 3 seconds
-   - They write down what they understood
-   - Compare to your intended message
-3. **Iterate rapidly** based on feedback
-4. **Championship round**: Best 3-second clarity wins!
+## 🏃 Live Testing Protocol
 
-::: {.callout-warning}
+1. Create your figure (10 minutes)
+2. Speed dating rounds (30 seconds each): show the figure for 3 seconds and capture what your partner understood
+3. Compare to your intended message and iterate rapidly
+4. Championship round: Best 3-second clarity wins!
+
+---
+
 ## Common 3-Second Failures
 
-❌ **Chart Title**: "Analysis of Building Performance Metrics Across Various Scenarios"
-
-✅ **Chart Title**: "South-facing offices need blinds to prevent glare"
-
-❌ **Chart Message**: Hidden in data, requires interpretation
-
-✅ **Chart Message**: Annotated, highlighted, impossible to miss
+::: {.callout-warning}
+- ❌ Chart Title: "Analysis of Building Performance Metrics Across Various Scenarios"
+- ✅ Chart Title: "South-facing offices need blinds to prevent glare"
+- ❌ Chart Message: Hidden in data, requires interpretation
+- ✅ Chart Message: Annotated, highlighted, impossible to miss
 :::
 
 ---
 
 ## 📐 Professional Polish Transformation Lab
 
-**🎨 Design Clinic Format**: 5-minute individual consultations while others work
+**🎨 Design Clinic Format**: 5-minute individual consultations while others work.
 
-**Bring your WORST figure** (we all have one!) for emergency makeover:
+**Bring your WORST figure** (we all have one!) for emergency makeover.
 
-### 🚑 Figure Emergency Room
+---
 
-**Triage Categories:**
+## 🚑 Figure Emergency Room
 
-**🔴 Critical**: Completely incomprehensible, multiple fatal errors
-**🟡 Urgent**: Technically correct but unprofessional presentation  
-**🟢 Stable**: Good content, needs minor polish for Object Fair
+**Triage Categories**
+- 🔴 Critical: Completely incomprehensible, multiple fatal errors
+- 🟡 Urgent: Technically correct but unprofessional presentation
+- 🟢 Stable: Good content, needs minor polish for Object Fair
 
-**Treatment Plans:**
+---
+
+## Treatment Plans
 
 - **Typography therapy**: Font hierarchy, readability, professionalism
-- **Color surgery**: Strategic use, accessibility, brand consistency  
+- **Color surgery**: Strategic use, accessibility, brand consistency
 - **Layout operation**: White space, alignment, visual flow
 - **Message transplant**: Clear communication of key insights
+
+---
 
 ::: {.callout-success}
 ## Before/After Showcase
@@ -400,9 +446,9 @@ Make one figure so beautiful it could be in Harvard Business Review
 **Vote**: Most dramatic improvement wins the "Phoenix Award" 🔥→🦋
 :::
 
----
+-->
 
-# Round 4: From Design to Data - BIM/BEM File Generation {background-color="#FF4500"}
+# Round 3: From Design to Data - BIM/BEM File Generation {background-color="#FF4500"}
 
 ---
 
@@ -410,37 +456,32 @@ Make one figure so beautiful it could be in Harvard Business Review
 
 **Understanding the complete workflow from design intent to energy analysis**
 
-### 🏗️ The BIM Generation Pathway
+---
 
-**1. Manual Creation (Traditional BIM authoring)**
+## BIM Generation: Manual Creation
 
 - **Origin**: Designer creates geometry in BIM software (Revit, ArchiCAD, etc.)
-- **Process**:
-  - Draw walls, place windows, define materials
-  - Assign properties and parameters
-  - Organize into spaces and systems
+- **Process**: Draw walls, place windows, define materials; assign properties; organize spaces and systems
 - **Output**: Native BIM file (.rvt, .pln) or neutral format (IFC)
 - **Pros**: Full design control, rich detail, integrated workflow
 - **Cons**: Time-intensive, requires BIM expertise, manual updates
 
-**2. 3D Model Import and Enrichment**
+---
+
+## BIM Generation: 3D Model Import
 
 - **Origin**: Import from other 3D tools (SketchUp, Rhino, etc.)
-- **Process**:
-  - Import geometry as "dumb" 3D shapes
-  - Add semantic information (this surface is a wall, not just a polygon)
-  - Assign materials and properties
+- **Process**: Bring in "dumb" geometry, add semantic tags, assign materials and properties
 - **Output**: Enriched BIM model
 - **Pros**: Leverages existing 3D models, design freedom
 - **Cons**: Requires significant cleanup and semantic tagging
 
-**3. Point Cloud and Reality Capture**
+---
+
+## BIM Generation: Point Cloud Capture
 
 - **Origin**: 3D scanning of existing buildings
-- **Process**:
-  - Laser scan or photogrammetry creates point cloud
-  - Convert points to BIM geometry (walls, floors, etc.)
-  - Estimate materials and conditions
+- **Process**: Collect laser scan/photogrammetry point clouds, convert to BIM geometry, estimate materials and conditions
 - **Output**: As-built BIM model
 - **Pros**: Accurate existing conditions, useful for renovations
 - **Cons**: Estimates required for hidden properties, labor-intensive
@@ -451,78 +492,60 @@ Make one figure so beautiful it could be in Harvard Business Review
 
 **How do we get from buildings to energy models?**
 
-### 🔄 Primary Generation Methods
+---
 
-**1. BIM-to-BEM Translation (Automated)**
+## BEM Generation: BIM-to-BEM Translation
 
 - **Origin**: Existing BIM model
-- **Process**:
-  - Export BIM to gbXML or IFC format
-  - Import into energy modeling tool (OpenStudio, eQuest, etc.)
-  - Software automatically:
-    - Identifies thermal zones from spaces
-    - Extracts surface geometry and constructions
-    - Assigns default schedules and systems
+- **Process**: Export to gbXML/IFC, import into energy tool, auto-detect zones, surfaces, and default schedules/systems
 - **Output**: Initial BEM file (.idf, .osm, .inp)
-- **Pros**: Fast, leverages existing BIM work, reduces duplication
-- **Cons**: Often requires extensive cleanup, missing critical energy data
-
-**2. Direct Energy Model Creation (Manual)**
-
-- **Origin**: Design documents, specifications, or simplified geometry
-- **Process**:
-  - Energy analyst creates simplified geometric model
-  - Manually defines thermal zones (often simplified from actual rooms)
-  - Assigns detailed schedules, systems, and controls
-- **Output**: Purpose-built BEM file
-- **Pros**: Energy-focused, appropriate level of detail, analyst control
-- **Cons**: Disconnected from BIM, duplicate effort, manual updates
-
-**3. Template-Based Modeling**
-
-- **Origin**: Building archetype or prototype model
-- **Process**:
-  - Start with reference model (office building template, etc.)
-  - Modify geometry to match actual design
-  - Adjust systems and schedules for project specifics
-- **Output**: Customized BEM from template
-- **Pros**: Fast, proven assumptions, reduced errors
-- **Cons**: May not capture unique design features, less accurate for unusual buildings
+- **Pros**: Fast, leverages BIM work, reduces duplication
+- **Cons**: Requires extensive cleanup, often missing critical energy data
 
 ---
 
-## 🗺️ The Complete BIM/BEM Workflow Map
+## BEM Generation: Direct Energy Modeling
 
-**Real-world data flow in an integrated building project**
+- **Origin**: Design documents, specifications, or simplified geometry
+- **Process**: Analyst builds simplified geometry, defines thermal zones, assigns detailed schedules, systems, and controls
+- **Output**: Purpose-built BEM file
+- **Pros**: Energy-focused detail, analyst control
+- **Cons**: Disconnected from BIM, duplicate effort, manual updates
+
+---
+
+## BEM Generation: Template-Based Modeling
+
+- **Origin**: Building archetype or prototype models
+- **Process**: Start with reference, adjust geometry, systems, and schedules to match project specifics
+- **Output**: Customized BEM from template
+- **Pros**: Fast, proven assumptions, reduced errors
+- **Cons**: Unique design features may be lost, less accurate for unusual buildings
+
+---
+
+## 🗺️ Workflow Map — Modeling Phase
 
 ```mermaid
 graph TB
-    A[Design Intent] --> B[BIM Authoring Tool]
-    B --> C[Native BIM File .rvt/.pln]
-    C --> D{Export Format}
-    D --> E[IFC .ifc]
-    D --> F[gbXML .xml]
-    E --> G[Archive/Sharing]
-    F --> H[Energy Modeling Tool]
-    H --> I[Initial BEM File]
-    I --> J[Manual Cleanup & Enrichment]
+    A[Design Intent] --> B[BIM Authoring Tool] --> C[Native BIM File .rvt/.pln]
+    C --> D{Export Format}; D --> E[IFC .ifc]; D --> F[gbXML .xml]; E --> G[Archive/Sharing]
+    F --> H[Energy Modeling Tool] --> I[Initial BEM File]; I --> J[Manual Cleanup & Enrichment]
     J --> K{Add Missing Data}
-    K --> L[Schedules]
-    K --> M[HVAC Systems]
-    K --> N[Controls]
-    K --> O[Weather File]
-    L --> P[Complete BEM Model]
-    M --> P
-    N --> P
-    O --> P
-    P --> Q[Simulation Engine]
-    Q --> R[Energy Results]
+    K --> L[Schedules]; K --> M[HVAC Systems]; K --> N[Controls]; K --> O[Weather File]
+    L --> P[Complete BEM Model]; M --> P; N --> P; O --> P
+```
+
+---
+
+## 🗺️ Workflow Map — Iteration Loop
+
+```mermaid
+graph TB
+    P[Complete BEM Model] --> Q[Simulation Engine] --> R[Energy Results]
     R --> S{Results OK?}
-    S -->|No| T[Revise BEM]
-    S -->|Yes| U[Design Decisions]
-    T --> P
-    U --> V[Update BIM]
-    V --> C
+    S -->|No| T[Revise BEM] --> P
+    S -->|Yes| U[Design Decisions] --> V[Update BIM] --> C[Native BIM File]
 ```
 
 ---
@@ -531,37 +554,46 @@ graph TB
 
 **What gets lost when converting BIM → BEM?**
 
-### ❌ Commonly Missing or Wrong After Translation
+---
 
-**Geometry Issues:**
+## Geometry Issues
 
-- **Simplified too much**: Curved facades become straight walls
-- **Simplified too little**: Every door frame exported as thermal zone
-- **Wrong orientation**: Building rotates during export
-- **Missing context**: Adjacent buildings and shading lost
+- Simplified too much: Curved facades become straight walls
+- Simplified too little: Every door frame exported as a thermal zone
+- Wrong orientation: Building rotates during export
+- Missing context: Adjacent buildings and shading lost
 
-**Thermal Zoning Problems:**
+---
 
-- **BIM spaces ≠ Thermal zones**: Conference room divided into 4 spaces in BIM exports as 4 zones
-- **Open plans fail**: Open office should be one zone, exports as dozens
-- **Missing plenum zones**: Return air paths not captured
+## Thermal Zoning Problems
 
-**Material/Construction Gaps:**
+- BIM spaces ≠ Thermal zones: Conference room becomes four separate zones
+- Open office areas fragment into dozens of zones
+- Missing plenum zones: Return air paths not captured
 
-- **Generic assignments**: "Exterior wall" without actual layers or R-value
-- **Missing internal mass**: Furniture, partition walls, structural mass ignored
-- **No thermal bridges**: Connections and penetrations simplified
+---
 
-**Operational Data Missing:**
+## Material & Construction Gaps
 
-- **No schedules**: BIM doesn't know when lights turn on or off
-- **No HVAC systems**: BIM has architectural spaces, not mechanical systems
-- **No controls**: Thermostat strategies, sensor locations absent
-- **No set points**: Heating/cooling temperatures undefined
+- Generic assignments: "Exterior wall" without layers or R-value
+- Missing internal mass: Furniture and partitions ignored
+- No thermal bridges: Connections and penetrations simplified
 
-### ✅ What Translates Well
+---
 
-**Basic geometry** (walls, floors, windows), **surface areas**, **window-to-wall ratios**, **orientation**, **building footprint**
+## Operational Data Missing
+
+- No schedules: BIM doesn't know when lights turn on or off
+- No HVAC systems: Architectural spaces lack mechanical definitions
+- No controls or set points: Thermostat strategies undefined
+
+---
+
+## ✅ What Translates Well
+
+- Basic geometry (walls, floors, windows)
+- Surface areas and window-to-wall ratios
+- Orientation and overall building footprint
 
 ---
 
@@ -573,17 +605,20 @@ graph TB
 
 **Your Mission**: Identify what likely went wrong in the translation.
 
-**Given Information:**
+---
+
+## Translation Detective — Given Info
 
 - Building: 5-story office building with open floor plan
 - BIM model: Very detailed architectural model with every furniture piece modeled
 - Translation: Automated gbXML export with default settings
 - BEM result: 450 kWh/m²/year (expected: 150 kWh/m²/year)
 
-**Detective Questions:**
+---
 
-1. How many thermal zones do you think were created? (Hint: Think about all those furniture pieces and room divisions)
+## Detective Questions
 
+1. How many thermal zones were likely created?
 2. What might be wrong with the HVAC system in the energy model?
 
 3. What schedules are likely being used?
@@ -594,33 +629,41 @@ graph TB
 
 ---
 
-# Round 5: BIM-BEM Interoperability - The Integration Challenge {background-color="#800080"}
+# Round 4: BIM-BEM Interoperability - The Integration Challenge {background-color="#800080"}
 
 ---
 
 ## 🔗 Why Can't BIM and BEM Just Talk to Each Other?
 
-**The fundamental challenge: Two models, same building, completely different purposes**
+**Fundamental challenge**: Two models, same building, completely different purposes.
 
-### 🤔 The Core Problem
+---
 
-**BIM and BEM are optimized for different questions:**
+## BIM's Core Question
 
-**BIM asks**: "What do we build and how?"
+**"What do we build and how?"**
 
 - Detailed geometry for construction
 - Material specifications for procurement
 - Cost data for budgeting
 - Schedule for sequencing
 
-**BEM asks**: "How will it perform energetically?"
+---
+
+## BEM's Core Question
+
+**"How will it perform energetically?"**
 
 - Simplified geometry for calculation speed
 - Thermal properties for heat flow
 - Operational assumptions for usage patterns
 - Weather data for climate response
 
-**🎯 The conflict**: Detail needed for construction ≠ Detail needed for energy analysis
+---
+
+## Detail Mismatch
+
+**🎯 Construction detail needs ≠ Energy analysis detail needs**
 
 ---
 
@@ -628,65 +671,47 @@ graph TB
 
 **Two competing standards for BIM-to-BEM data exchange**
 
-::: {.callout-note icon=false}
-## IFC (Industry Foundation Classes)
+---
 
-**Created by**: buildingSMART International (1990s)
-
-**Primary Purpose**: Comprehensive BIM data exchange across all disciplines
-
-**Scope**: Entire building lifecycle (design, construction, operation, demolition)
-
-**Energy Focus**: Originally minimal, gradually improving with "MVDs" (Model View Definitions)
-
-**Strengths:**
-
-- Vendor-neutral, open standard
-- Comprehensive building information
-- Well-established in architecture and construction
-- Supports complex geometric relationships
-
-**Weaknesses for Energy:**
-
-- Too much information (slow to process)
-- Energy-specific data often missing or inconsistent
-- Thermal zoning unclear or wrong
-- HVAC systems poorly defined for energy analysis
-
-**Common Use**: Archiving, collaboration between architects/engineers/contractors
-:::
+## IFC Basics
 
 ::: {.callout-note icon=false}
-## gbXML (Green Building XML)
-
-**Created by**: Green Building XML Schema Inc. (2000)
-
-**Primary Purpose**: Specifically for BIM-to-energy model translation
-
-**Scope**: Building geometry, materials, and context for energy analysis
-
-**Energy Focus**: Designed explicitly for energy simulation tools
-
-**Strengths:**
-
-- Purpose-built for energy analysis
-- Cleaner thermal zone definitions
-- Faster to process than IFC
-- Better support for HVAC system basics
-
-**Weaknesses:**
-
-- Limited to energy analysis (not full BIM)
-- Vendor implementations inconsistent
-- Less detailed than IFC for construction
-- Proprietary governance (less open than IFC)
-
-**Common Use**: Exporting from Revit/ArchiCAD to OpenStudio/eQuest/IES-VE
+- Created by buildingSMART International (1990s)
+- Purpose: Comprehensive BIM data exchange across disciplines
+- Scope: Entire building lifecycle
+- Energy focus: Minimal originally, improving with Model View Definitions
 :::
 
 ---
 
-## 📊 IFC vs gbXML: Head-to-Head Comparison
+## IFC Strengths & Weaknesses
+
+- Strengths: Vendor-neutral, comprehensive information, widely adopted, supports complex geometry
+- Weaknesses: Data overload, inconsistent energy values, unclear thermal zoning, poorly defined HVAC for analysis
+- Common use: Archiving and coordination between architects, engineers, and contractors
+
+---
+
+## gbXML Basics
+
+::: {.callout-note icon=false}
+- Created by Green Building XML Schema Inc. (2000)
+- Purpose: BIM-to-energy model translation
+- Scope: Geometry, materials, and context for energy analysis
+- Energy focus: Designed explicitly for simulation tools
+:::
+
+---
+
+## gbXML Strengths & Weaknesses
+
+- Strengths: Purpose-built for energy analysis, cleaner thermal zones, faster processing, better baseline HVAC support
+- Weaknesses: Limited to energy data, inconsistent vendor implementations, less construction detail, semi-open governance
+- Common use: Exporting from Revit/ArchiCAD to OpenStudio, eQuest, or IES-VE
+
+---
+
+## 📊 IFC vs gbXML — Technical Focus
 
 | Feature | IFC | gbXML | Winner |
 |---------|-----|-------|--------|
@@ -694,6 +719,13 @@ graph TB
 | **Thermal Zone Definition** | Poor (not its focus) | Good (designed for this) | gbXML |
 | **Material Properties** | Comprehensive (but not thermal) | Thermal-focused | gbXML |
 | **HVAC Systems** | Detailed (but not for energy calc) | Simplified (but usable) | gbXML |
+
+---
+
+## 📊 IFC vs gbXML — Adoption & Speed
+
+| Feature | IFC | gbXML | Winner |
+|---------|-----|-------|--------|
 | **File Size / Speed** | Large, slow | Smaller, faster | gbXML |
 | **Industry Adoption (BIM)** | Very high | Medium | IFC |
 | **Industry Adoption (Energy)** | Growing | High | gbXML |
@@ -705,131 +737,134 @@ graph TB
 
 ## 🛠️ How Models Stay Updated (Or Don't!)
 
-**The lifecycle synchronization challenge**
-
-### 🔄 The Ideal World (Rarely Achieved)
-
-**Single Source of Truth:**
-
-1. **Design in BIM** → Update geometry, materials, systems
-2. **Auto-export to BEM** → Translation with minimal manual fixes
-3. **Run energy simulation** → Get performance results
-4. **Design iteration** → Make changes in BIM
-5. **Repeat** → BEM automatically updates
-
-**Why this rarely works:**
-
-- Translation errors require manual BEM fixes
-- Manual fixes get overwritten on next export
-- BIM and BEM diverge over project lifecycle
-- No clear "version control" between models
-
-### 😰 The Real World (More Common)
-
-**Divergent Models:**
-
-1. **Initial BIM** → Create architectural model
-2. **Export to BEM** → One-time translation
-3. **Manual BEM refinement** → Energy analyst fixes zones, adds schedules/systems
-4. **BIM continues evolving** → Architect makes design changes
-5. **BEM frozen** → Energy model not updated (too much manual work to redo)
-6. **Final disconnect** → As-built BIM ≠ Energy model used for analysis
-
-**Consequences:**
-
-- Energy performance predictions may not match as-built reality
-- Difficulty tracking which design changes were analyzed
-- Wasted effort recreating models
-- Compliance documentation doesn't match construction
-
-### 🔧 Current Industry Approaches
-
-**Approach 1: Periodic Re-synchronization**
-
-- Major design milestones trigger new BIM → BEM export
-- Energy analyst maintains spreadsheet of manual adjustments
-- Reapply manual fixes to new export (tedious but doable)
-
-**Approach 2: Parallel Development**
-
-- Maintain BIM and BEM separately
-- Use BIM as reference, manually update BEM geometry
-- Treat them as related but independent models
-
-**Approach 3: BEM-First Simplification**
-
-- Create simplified "energy massing model" early
-- Use this for energy analysis throughout project
-- Accept that it won't match detailed BIM exactly
+**Lifecycle synchronization challenge**
 
 ---
 
-## 🎯 Case Study: When Translation Goes Wrong
+## Ideal World Workflow
 
-**Real project example** (anonymized)
+1. Design in BIM → update geometry, materials, systems
+2. Auto-export to BEM with minimal manual fixes
+3. Run energy simulation and review performance
+4. Iterate design changes back in BIM
+5. Repeat as BEM updates automatically
 
-### 📋 The Setup
+---
 
-**Project**: New university research building, 6 stories, 15,000 m²
+## Why Ideal Workflow Fails
 
-**BIM Tool**: Revit (architectural model with MEP coordination)
+- Translation errors require manual BEM fixes
+- Manual fixes get overwritten on the next export
+- Models diverge over the project lifecycle
+- No clear version control between BIM and BEM
 
-**Energy Tool**: OpenStudio/EnergyPlus
+---
 
-**Goal**: LEED Gold certification, energy modeling required
+## Real-World Workflow
 
-### 💥 What Happened
+1. Initial BIM: create architectural model
+2. Export to BEM: one-time translation
+3. Manual BEM refinement: zones, schedules, systems
+4. BIM continues evolving with design changes
+5. BEM freezes because rework is too expensive
+6. Final disconnect: As-built BIM ≠ simulated model
 
-**Week 1**: Architect exports Revit model to gbXML
+---
 
-- File exports successfully
+## Divergence Consequences
+
+- Energy predictions may not match as-built reality
+- Hard to track which design changes were analyzed
+- Wasted effort recreating models
+- Compliance documentation can misalign with construction
+
+---
+
+## Current Industry Approaches
+
+**Approach 1: Periodic Re-synchronization**
+
+- Major milestones trigger new BIM → BEM exports
+- Analyst tracks manual adjustments and reapplies them
+
+---
+
+## Parallel Development
+
+- Maintain BIM and BEM separately
+- Use BIM as reference while manually updating BEM geometry
+- Treat them as related but independent models
+
+---
+
+## BEM-First Simplification
+
+- Create a simplified energy massing model early
+- Use it for analysis throughout the project
+- Accept it won't match detailed BIM exactly
+
+---
+
+## 🎯 Case Study: Translation Gone Wrong
+
+- Project: New university research building, 6 stories, 15,000 m²
+- BIM Tool: Revit with MEP coordination
+- Energy Tool: OpenStudio/EnergyPlus
+- Goal: LEED Gold energy modeling
+
+---
+
+## Week 1: "Success"
+
+- Architect exports Revit model to gbXML
 - OpenStudio imports without errors
-- Team celebrates "seamless interoperability"
+- Team celebrates the "seamless" workflow
 
-**Week 2**: Energy analyst reviews imported model
+---
 
-- **465 thermal zones** created (expected: ~30)
-  - Every small space (closets, corridors) became separate zone
-  - Open office areas fragmented into dozens of zones
-- **No HVAC systems** defined (all zones "unconditioned")
-- **Generic wall constructions** (no R-values, all same type)
-- **Window properties missing** (no SHGC, U-value, or visible transmittance)
-- **Building rotated 90 degrees** (orientation error)
+## Week 2: Problems Surface
 
-**Week 3-4**: Manual cleanup required
+- 465 thermal zones created (expected ~30); closets and corridors become separate zones
+- No HVAC systems defined (everything unconditioned)
+- Generic wall constructions with identical R-values
+- Window properties missing and the building rotated 90°
 
-- Manually merge zones (465 → 32)
-- Research and input all construction assemblies
+---
+
+## Week 3-4: Manual Cleanup
+
+- Merge zones from 465 down to 32
+- Input construction assemblies and material properties
 - Define HVAC systems from MEP drawings
 - Create occupancy and equipment schedules
 - Fix orientation and add context shading
-- **Time spent**: 40+ hours
+- Time spent: 40+ hours
 
-**Week 8**: Architect makes design changes
+---
 
-- Window sizes change
-- Interior walls move
-- Roof design modified
+## Week 8: Design Changes
 
-**Dilemma**: Re-export and lose 40 hours of work? Or manually update BEM?
+- Window sizes change, interior walls move, roof design shifts
+- Dilemma: Re-export and lose 40 hours or manually update BEM?
+- Solution: Manual BEM updates with documentation, hope nothing drastic changes again
 
-**Solution**: Manual updates to BEM, document discrepancies, hope nothing major changes again
+---
 
-### 🤔 Lessons Learned
+## Lessons Learned — What Went Wrong
 
-**What went wrong:**
+- Default gbXML export settings were inappropriate for energy modeling
+- BIM was not created with energy analysis in mind
+- Missing data went unnoticed until after export
+- No workflow existed to manage updates
 
-1. Default gbXML export settings inappropriate for energy modeling
-2. BIM not created with energy analysis in mind
-3. Missing data not flagged until after export
-4. No workflow for managing updates
+---
 
-**What should have happened:**
+## Lessons Learned — What Should Happen
 
-1. Pre-export BIM cleanup (consolidate spaces for thermal zones)
-2. Define construction assemblies in BIM before export
-3. Coordinate with MEP for HVAC system info
-4. Plan for iterative updates with version control
+- Clean up BIM before export and consolidate zones
+- Define construction assemblies inside BIM prior to translation
+- Coordinate with MEP for HVAC system information
+- Plan iterative updates with version control
 
 ---
 
@@ -837,143 +872,156 @@ graph TB
 
 **⏰ 12-Minute Group Activity**
 
-**Scenario**: You're consulting on a project where the energy model and BIM have diverged. The facility manager reports actual energy use is **30% higher** than the energy model predicted. Time to investigate!
-
-**Given Information:**
-
-- **BIM Model** (as-built): Updated through construction, includes all changes
-- **Energy Model**: Based on Design Development stage, not updated after schematic
-- **Time Gap**: 14 months between energy model freeze and building operation
-
-**Your Mission**: For each category, identify what likely diverged and WHY it matters for energy performance.
-
-### 🔍 Investigation Categories
-
-**1. Geometry Changes**
-
-- What building features might have changed during design development/construction?
-- Which changes would significantly affect energy use?
-
-**2. Construction/Materials**
-
-- What "value engineering" commonly happens during construction?
-- How would this affect thermal performance?
-
-**3. Systems**
-
-- How might the actual HVAC differ from what was modeled?
-- What controls or sequences might have changed?
-
-**4. Operations**
-
-- What operational assumptions might not match reality?
-- What schedules or usage patterns might differ?
-
-**🎯 Groups present their top 3 divergence suspects and impact on energy performance!**
+**Scenario**: Actual energy use is 30% higher than the model predicted because BIM and BEM diverged. Investigate why!
 
 ---
 
-# Round 6: Object Card Design Wars {background-color="#DC143C"}
+## Divergence Detective — Given Info
+
+- BIM model (as-built) is fully updated through construction
+- Energy model froze at Design Development
+- 14-month gap between the frozen model and building operation
+
+**Your mission**: Find what diverged and why it matters.
+
+---
+
+## Investigation Categories
+
+- Geometry changes: Which design tweaks could spike energy use?
+- Construction/materials: What value engineering degraded performance?
+- Systems: How might HVAC equipment or controls differ?
+- Operations: Where do real schedules differ from assumptions?
+
+**🎯 Present your top three suspects and impacts!**
+
+---
+
+# Round 5: Object Card Design Wars {background-color="#DC143C"}
 
 ---
 
 ## 🎨 The Ultimate Visual Communication Challenge
 
-**🏆 Mission**: Create a poster so compelling that people fight over who gets to work with you
+**🏆 Mission**: Create a poster so compelling that people fight over who gets to work with you.
 
-### ⚡ The 30-Second Poster Test
+---
 
-**Scenario**: Object Fair networking break. Stakeholder walks past your poster with coffee and phone. You have 30 seconds to make them:
+## ⚡ The 30-Second Poster Test
+
+**Scenario**: During Object Fair, a stakeholder glances at your poster for 30 seconds while walking.
 
 1. **Stop walking** (3 seconds)
-2. **Read your message** (15 seconds)  
+2. **Read your message** (15 seconds)
 3. **Take action** (contact you, ask questions, offer collaboration)
 
-### 🎯 Design Challenge Rounds
+---
 
-**Round 1: Message Hierarchy** (10 minutes)
-- One clear message dominates the design
-- Supporting evidence visible but secondary
-- Contact/action information findable but not cluttered
+## Design Challenge — Message Hierarchy
 
-**Round 2: Visual Impact** (15 minutes)
-- Compelling from 6 feet away (networking distance)
-- Professional quality suitable for career portfolio
+- One clear message dominates the design (10 minutes)
+- Supporting evidence stays visible but secondary
+- Contact/action information is easy to find without clutter
+
+---
+
+## Design Challenge — Visual Impact
+
+- Compelling from 6 feet away (15 minutes)
+- Professional quality suitable for your portfolio
 - Memorable enough to be recognized later
 
-**Round 3: Stakeholder Test** (12 minutes)
-- Works for multiple stakeholder types
-- Language appropriate for non-experts
-- Action items clear and specific
+---
+
+## Design Challenge — Stakeholder Test
+
+- Works for multiple stakeholder types (12 minutes)
+- Language stays friendly for non-experts
+- Action items remain clear and specific
 
 ---
 
 ## 🔥 Live Design Laboratory
 
-### 🚨 Current Object Card Emergency Room
+- 15-minute individual consultations while others work
+- Bring your Object Card draft for rapid feedback
 
-**Triage your existing design:**
+---
 
-**🟢 Green Zone**: Professional quality, clear message, ready for Object Fair
-**🟡 Yellow Zone**: Good content, needs design polish and clarity improvement
-**🔴 Red Zone**: Complete redesign needed, unclear message, unprofessional appearance
+## 🚨 Object Card Emergency Room
 
-### ⚡ Speed Design Clinic
+- 🟢 Green Zone: Professional quality, clear message, ready for Object Fair
+- 🟡 Yellow Zone: Good content, needs polish and clarity improvement
+- 🔴 Red Zone: Complete redesign needed, unclear message, unprofessional appearance
 
-**15-minute individual consultations** while others work:
+---
 
-**Bring**: Current Object Card draft (any stage)
-**Get**: Specific design feedback and rapid improvement strategies
-**Focus**: Maximum impact changes for minimum time investment
+## ⚡ Speed Design Clinic
+
+- Bring: Current Object Card draft (any stage)
+- Get: Specific design feedback and rapid improvement strategies
+- Focus: Maximum impact changes for minimum time investment
+
+---
+
+## Object Card Success — Message Dominance
 
 ::: {.callout-tip icon=false}
-## Object Card Success Formula
+- ONE key finding or recommendation as the hero
+- Everything else supports that primary message
+- Pass the 3-second understanding test
+:::
 
-**🎯 Message Dominance**: 
-- ONE key finding/recommendation as hero
-- Everything else supports this message
-- 3-second understanding test
+---
 
-**👁️ Visual Hierarchy**:
-- Size, color, position guide attention
+## Object Card Success — Visual Hierarchy
+
+::: {.callout-tip icon=false}
+- Use size, color, and position to guide attention
 - Most important = biggest, boldest, best position
-- Less important = smaller, neutral, secondary position
+- Less important = smaller, neutral, secondary placement
+:::
 
-**🎨 Professional Polish**:
-- Consistent fonts, colors, spacing
-- High-quality images and graphics
-- Print-test at actual size
+---
 
-**📞 Action Orientation**:
-- Clear contact information
-- Specific next steps for interested stakeholders
-- Memorable personal branding
+## Object Card Success — Professional Polish
+
+::: {.callout-tip icon=false}
+- Maintain consistent fonts, colors, and spacing
+- Use high-quality images and graphics
+- Print-test at actual size before finalizing
+:::
+
+---
+
+## Object Card Success — Action Orientation
+
+::: {.callout-tip icon=false}
+- Provide clear contact information
+- Offer specific next steps for interested stakeholders
+- Highlight memorable personal branding
 :::
 
 ---
 
 ## 🏆 Object Card Championship Judging
 
-### 📊 Live Voting Categories
+**Vote with phones for real-time results and record why each winner succeeded.**
 
-**Vote with phones for real-time results:**
+- 🎯 Clearest Message
+- 👁️ Best Visual Impact
+- 💼 Most Professional
+- 🤝 Most Stakeholder-Friendly
+- 🔥 Most Memorable
 
-| Category | Winner | Why They Won |
-|----------|--------|--------------|
-| **🎯 Clearest Message** | ? | ? |
-| **👁️ Best Visual Impact** | ? | ? |
-| **💼 Most Professional** | ? | ? |
-| **🤝 Most Stakeholder-Friendly** | ? | ? |
-| **🔥 Most Memorable** | ? | ? |
+---
 
-### 🎪 Hall of Fame Gallery
+## 🎪 Hall of Fame Gallery
 
-**Photo documentation of winning strategies:**
-
-- **Message hierarchy examples**: How winners made key points dominant
-- **Visual impact techniques**: Color, layout, typography strategies
-- **Professional polish details**: What separates good from great
-- **Stakeholder-friendly language**: How to communicate without jargon
+- Capture message hierarchy examples that made key points dominant
+- Document visual impact techniques (color, layout, typography)
+- Note professional polish details that separated good from great
+- Highlight stakeholder-friendly language that avoided jargon
 
 ---
 
@@ -985,161 +1033,145 @@ graph TB
 
 **Why can't we just have ONE model that does everything?**
 
-**Think about it**: We have the technology to model buildings in extraordinary detail. We can simulate physics, manage construction, track costs, coordinate trades. So why do we maintain separate BIM and BEM models?
-
-### 🎯 Group Challenge: Defend or Critique
-
-**⏰ 15-Minute Structured Debate**
-
-**Split into three positions:**
-
-### 🔵 Team "Unified Model"
-
-**Argument**: "We SHOULD combine BIM and BEM into one integrated model"
-
-**Your job:**
-
-- Argue benefits of single source of truth
-- Explain how technology could bridge the gap
-- Propose what a unified model would look like
-- Address efficiency and workflow improvements
-
-### 🔴 Team "Separate Forever"
-
-**Argument**: "BIM and BEM MUST remain separate specialized tools"
-
-**Your job:**
-
-- Argue why different purposes require different tools
-- Explain computational and practical limitations
-- Defend current industry practice
-- Address why integration attempts fail
-
-### 🟡 Team "Hybrid Future"
-
-**Argument**: "We need BETTER integration, not full unification"
-
-**Your job:**
-
-- Propose specific improvements to current workflow
-- Identify what should be shared vs. what should remain separate
-- Design realistic interoperability enhancements
-- Balance idealism with practical constraints
+**Think about it**: We can simulate physics, manage construction, track costs, and coordinate trades. So why keep BIM and BEM separate?
 
 ---
 
-## 🔬 The Fundamental Differences Revealed
+## 🎯 Group Challenge: Defend or Critique
 
-**After the debate, let's examine the core reasons BIM ≠ BEM:**
+- ⏰ 15-minute structured debate
+- Split into three positions and prepare arguments
 
-### 1️⃣ **Computational Complexity**
+---
+
+## 🔵 Team "Unified Model"
+
+- Argue that BIM and BEM should combine into one integrated model
+- Highlight benefits of a single source of truth
+- Explain how technology could bridge the gap
+- Describe what a unified model looks like and its efficiencies
+
+---
+
+## 🔴 Team "Separate Forever"
+
+- Argue why different purposes require different tools
+- Explain computational and practical limitations
+- Defend existing industry practice
+- Describe why integration attempts often fail
+
+---
+
+## 🟡 Team "Hybrid Future"
+
+- Advocate for better integration without full unification
+- Identify what data should be shared vs. remain separate
+- Design realistic interoperability enhancements
+- Balance big ideas with practical constraints
+
+---
+
+## 🔬 Fundamental Difference 1: Computational Complexity
 
 **BIM Priority**: Visual accuracy, construction detail, documentation clarity
-
 - Can handle millions of polygons
 - Focuses on representing what you see
 - Rendering speed matters more than calculation speed
-
 **BEM Priority**: Simulation speed, numerical stability, annual calculations
-
 - Must run 8,760 hours of calculations
-- Simplified geometry = faster simulation
-- Trade visual accuracy for computational efficiency
+- Simplified geometry keeps simulations fast
+- Trades visual accuracy for computational efficiency
+**💡 Insight**: A photorealistic model is useless if it takes 40 hours to simulate one option.
 
-**💡 Key Insight**: A photorealistic model with every screw and bolt is useless for energy analysis if it takes 40 hours to simulate one design option.
+---
 
-### 2️⃣ **Temporal Resolution**
+## 🔬 Fundamental Difference 2: Temporal Resolution
 
 **BIM**: Mostly static snapshot
-
-- Documents building at specific design phases
-- Changes tracked as versions, not continuous time
-- Doesn't model how building operates over time
-
+- Documents specific design phases
+- Tracks changes as versions, not continuous time
+- Doesn't model operations across the year
 **BEM**: Inherently time-dynamic
+- Simulates every hour of the year
+- Accounts for weather, occupancy, solar angles
+- Captures thermal mass, system cycling, seasonal variations
+**💡 Insight**: BIM says "this is the wall"; BEM says "here's how it behaves at 2 AM vs. 2 PM."
 
-- Simulates every hour of the year (8,760 timesteps)
-- Models changing weather, occupancy, solar angles
-- Captures thermal mass, system cycling, seasonal variation
+---
 
-**💡 Key Insight**: BIM says "this is the wall," BEM says "this is how the wall performs differently at 2am in January vs. 2pm in July"
-
-### 3️⃣ **Data Precision vs. Assumptions**
+## 🔬 Fundamental Difference 3: Data Precision vs. Assumptions
 
 **BIM**: Strives for precision and specification
 
-- Exact dimensions (150mm thick wall, not ~150mm)
+- Exact dimensions and thicknesses
 - Specific products (Brand X window, Model 123)
 - As-specified or as-built documentation
 
 **BEM**: Embraces necessary assumptions
 
-- Typical occupancy patterns (not actual future behavior)
-- Representative weather data (not next year's actual weather)
-- Estimated operation (not guaranteed user behavior)
+- Typical occupancy patterns and usage
+- Representative weather data
+- Estimated operations rather than guaranteed behavior
 
-**💡 Key Insight**: BIM pretends to certainty (we will build this). BEM acknowledges uncertainty (we predict this will probably happen).
+**💡 Insight**: BIM pretends to certainty; BEM communicates probability.
 
-### 4️⃣ **Geometry Philosophy**
+---
+
+## 🔬 Fundamental Difference 4: Geometry Philosophy
 
 **BIM**: Parametric, relationship-based, construction-logical
 
-- Walls connect to floors at specific relationships
+- Walls connect to floors with defined relationships
 - Changes propagate through dependencies
 - Maintains constructability rules
 
 **BEM**: Thermal boundary-based, physics-logical
 
 - Surfaces define heat flow boundaries
-- Zones organized by thermal similarity, not construction
+- Zones organized by thermal similarity
 - Maintains energy balance requirements
-
-**💡 Key Insight**: BIM thinks in building elements (wall, window, door). BEM thinks in heat transfer surfaces (opaque boundary, transparent boundary, internal partition).
+**💡 Insight**: BIM thinks in elements; BEM thinks in heat-transfer surfaces.
 
 ---
 
-## 🏆 The Synthesis: When Should They Align?
+## 🏆 Critical Alignment Points
 
-**Critical Alignment Points** (where BIM and BEM MUST match):
+- ✅ Basic geometry (footprint, height, orientation, massing)
+- ✅ Envelope areas (total wall, window, and roof surface)
+- ✅ Material thermal properties (U-values, SHGC)
+- ✅ Space programs (square footage by use type)
 
-✅ **Basic geometry** (footprint, height, orientation, major massing)
+---
 
-✅ **Envelope areas** (total wall area, window area, roof area)
+## Acceptable Divergence Points
 
-✅ **Material thermal properties** (U-values, SHGC for specified assemblies)
+- ⚠️ Thermal zoning (BEM zones ≠ BIM spaces)
+- ⚠️ Geometric detail (BEM simplified, BIM detailed)
+- ⚠️ Systems representation (BEM parametric, BIM documented)
+- ⚠️ Temporal information (BEM schedules vs. mostly static BIM)
 
-✅ **Space programs** (square footage by use type)
+---
 
-**Acceptable Divergence Points** (where differences are necessary):
+## Reflection — Semester Project
 
-⚠️ **Thermal zoning** (BEM zones ≠ BIM spaces)
-
-⚠️ **Geometric detail** (BEM simplified, BIM detailed)
-
-⚠️ **Systems representation** (BEM parametric, BIM documented)
-
-⚠️ **Temporal information** (BEM schedules, BIM mostly static)
-
-### 🎯 Your Project Application
-
-**Reflection** (write this down):
-
-**1. For YOUR semester project:**
-
-- Which aspects of BIM and BEM need to align precisely?
+- Which aspects of BIM and BEM must align precisely?
 - Where can you accept simplification or divergence?
 - How will you document the relationship between models?
 
-**2. For YOUR stakeholder communication:**
+---
+
+## Reflection — Stakeholder Communication
 
 - How will you explain model differences to non-experts?
 - What uncertainties must you communicate?
-- How do you build confidence despite model limitations?
+- How do you build confidence despite limitations?
 
-**3. For YOUR future practice:**
+---
+
+## Reflection — Future Practice
 
 - What workflow lessons will you take forward?
-- What tools or skills do you need to develop?
+- Which tools or skills do you need to develop?
 - How will you manage integrated modeling projects?
 
 ---
@@ -1151,23 +1183,21 @@ graph TB
 ## 🎉 What You Conquered Today
 
 ::: {.callout-success icon=false}
-## Your New BIM/BEM Superpowers
+- **🏗️ Data Structure Mastery**: You understand how BIM and BEM organize building information differently
+- **🔄 Workflow Wisdom**: You know where these files come from and how they're generated
+- **🌉 Translation Insight**: You can anticipate what gets lost when converting BIM → BEM
+- **⚠️ Interoperability Reality**: You understand why "seamless" integration is rarely seamless
+:::
 
-**🏗️ Data Structure Mastery**: You understand how BIM and BEM organize building information differently
+---
 
-**🔄 Workflow Wisdom**: You know where these files come from and how they're generated
+## More BIM/BEM Superpowers
 
-**🌉 Translation Insight**: You can anticipate what gets lost when converting BIM → BEM
-
-**⚠️ Interoperability Reality**: You understand why "seamless" integration is rarely seamless
-
-**🧩 Critical Thinking**: You can articulate WHY BIM and BEM must be different (and where they should align)
-
-**📊 Visual Communication**: You can design figures that pass the 3-second test
-
-**🎨 Presentation Skills**: Your Object Card will effectively communicate complex technical work
-
-**Most importantly**: You understand the data foundations that enable (and limit) building performance analysis!
+::: {.callout-success icon=false}
+- **🧩 Critical Thinking**: You can articulate why BIM and BEM must be different (and where they should align)
+- **📊 Visual Communication**: You can design figures that pass the 3-second test
+- **🎨 Presentation Skills**: Your Object Card effectively communicates complex technical work
+- **Most importantly**: You understand the data foundations behind performance analysis
 :::
 
 ---
@@ -1175,28 +1205,34 @@ graph TB
 ## 🚀 Object Fair Preparation Mastery
 
 ::: {.callout-important icon=false}
-## Week 9 Victory Checklist
+## Level 1 — Presentation Survival ✅
 
-**Level 1: Presentation Survival** ✅
+1. Complete Peer Review #2 using today's feedback framework
+2. Implement the winning story structure
+3. Polish key figures until they pass the 3-second test
+:::
 
-1. **Complete Peer Review #2** - Use today's professional feedback framework
-2. **Implement story structure** - Apply winning narrative framework
-3. **Polish key figures** - Make them pass the 3-second test
+---
 
-**Level 2: Presentation Excellence** 🎖️
+## Victory Checklist — Level 2 🎖️
 
-4. **Master elevator pitch** - Practice until you can deliver in your sleep
-5. **Object Card perfection** - Battle-tested design ready for printing
-6. **Stakeholder validation** - Test your story with someone outside class
+::: {.callout-important icon=false}
+4. Master your elevator pitch until it's effortless
+5. Finalize an Object Card worthy of printing
+6. Validate your story with someone outside class
+:::
 
-**Level 3: Communication Ninja** 🥷
+---
 
-7. **Multi-stakeholder adaptation** - Prepare pitch variants for different audiences  
-8. **Q&A preparation** - Anticipate and practice responses to likely questions
-9. **Professional networking prep** - Business cards, LinkedIn, follow-up strategy
+## Victory Checklist — Level 3 🥷
+
+::: {.callout-important icon=false}
+7. Prepare pitch variants for different stakeholders
+8. Practice Q&A responses to likely questions
+9. Prep networking assets (business cards, LinkedIn, follow-up plan)
+:::
 
 **Commitment check**: Choose your level and announce it to your neighbor! 📣
-:::
 
 ---
 
@@ -1230,7 +1266,11 @@ graph TB
 **Now high-five someone and promise to help each other dominate at Object Fair!** 🙌
 :::
 
-**🎯 Your mission**: Go forth and tell stories that change the built environment!
+---
+
+## 🎯 Final Mission
+
+**Go forth and tell stories that change the built environment!**
 
 ---
 
