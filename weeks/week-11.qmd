@@ -1,361 +1,2378 @@
 ---
-title: "Week 11: Final Polish"
-subtitle: "Integration, Refinement, and Object Fair Preparation"
-format: 
+title: "Week 11: Final Integration & Spatial Analysis Tools"
+subtitle: "GIS Fundamentals for Architecture + Course Reflection"
+format:
   revealjs:
-    theme: simple
+    theme: night
     transition: slide
     slide-number: true
-    incremental: true
+    incremental: false
+    width: 1400
+    height: 900
+    center: true
 ---
 
-## Today's Agenda
+## 🗺️ Today's Agenda {.center}
 
-- Draft defense feedback integration
-- Final A4 package assembly and review
-- Object Fair presentation rehearsals
-- Professional networking preparation
-- Final submission logistics
+::: {.callout-note icon=false}
+## Two-Part Session
 
----
+**Part 1: GIS for Architects (60 minutes)**
 
-## Feedback Integration Workshop
+- What is GIS and why architects should care
+- Four approaches: QGIS, ESRI, Code-driven, Google Earth Engine
+- Data sources: Where to get spatial data
+- Workflows, trade-offs, and when to use what
 
----
+**Part 2: Course Reflection & Final Submission (30 minutes)**
 
-### Systematic Response to Draft Defense
-
-**Individual analysis (15 minutes):**
-1. **Categorize feedback** - content vs. presentation vs. technical
-2. **Prioritize changes** - essential vs. nice-to-have improvements  
-3. **Plan implementation** - what can be completed this week vs. next week
-4. **Identify resources needed** - help, tools, or clarification required
-
-**Common feedback themes:**
-- Presentation timing and pacing
-- Stakeholder relevance and connection
-- Figure clarity and professional design
-- Recommendation specificity and actionability
+- Journey from A1 to A4
+- Skills you've developed
+- Evidence-based design thinking
+- Final submission requirements
+:::
 
 ---
 
-### Integration Strategy Session
-
-**Small group consultation (20 minutes):**
-- Share prioritized revision plans with 2-3 classmates
-- Get input on revision strategies and resource needs
-- Offer assistance and collaboration opportunities
-- Refine implementation timeline based on peer input
-
-**Instructor consultation available:**
-- Sign up for 5-minute individual meetings
-- Focus on highest-priority revision needs
-- Get clarification on feedback interpretation
-- Confirm final submission requirements
+# Part 1: Geographic Information Systems for Architecture {background-color="#1A472A"}
 
 ---
 
-## A4 Package Final Assembly
+## 🌍 What is GIS? {.center}
+
+**Geographic Information System**
+
+Software for capturing, storing, analyzing, and managing spatial/geographic data
+
+**Beyond mapping:** GIS is analytical infrastructure for spatial decision-making
 
 ---
 
-### Component Integration Review
+## 📍 GIS: Not Just Digital Cartography
 
-**Consistency across components:**
-- **Key findings** aligned across Research Brief, Practice Case, and Object Card
-- **Terminology and metrics** used consistently throughout
-- **Stakeholder framing** coherent across different formats
-- **Visual identity** unified across all materials
+::: {.columns}
+::: {.column width="50%"}
+### Traditional mapping
 
-**Quality assurance checklist:**
-- All citations and references complete and accurate
-- Figures professionally designed and clearly labeled
-- Writing clear, error-free, and appropriately formatted
-- File formats correct for submission and presentation
+- Representing space visually
+- Static documentation of existing conditions
+- Communication tool
+:::
 
----
+::: {.column width="50%"}
+### GIS analysis
 
-### Professional Presentation Standards
-
-**Research Brief (8-12 pages):**
-- Executive summary compelling and complete
-- Methods clearly documented and reproducible
-- Results presented with appropriate uncertainty
-- Recommendations specific and implementable
-
-**Practice Case (2 slides + 2-page memo):**
-- Key findings immediately apparent
-- Decision criteria and thresholds clear
-- Implementation guidance specific
-- Professional formatting and design
+- Querying spatial relationships
+- Modeling phenomena over space and time
+- Decision support through spatial reasoning
+- Generating insight from location data
+:::
+:::
 
 ---
 
-**Object Card (single page poster):**
-- Visually compelling at arm's length viewing
-- Key message prominent and clear
-- Professional design quality suitable for portfolio
-- Contact information and next steps included
+## 🏛️ Why Architects Need GIS Thinking
 
-**Reproducibility Capsule (3-5 pages + materials):**
-- Step-by-step procedures clear and complete
-- Tool requirements and alternatives specified
-- Quality control and troubleshooting included
-- Adaptation guidance for different contexts
+### Site analysis and selection
+
+- Environmental context (topography, hydrology, climate)
+- Urban context (infrastructure, demographics, zoning)
+- Accessibility analysis (walksheds, transit proximity)
+- Multi-criteria site evaluation
 
 ---
 
-## Presentation Rehearsal Sessions
+### Performance-based design
+
+- Solar access and shading studies
+- Microclimate and urban heat island analysis
+- Viewshed and visual impact assessment
+- Noise propagation and acoustic environment
 
 ---
 
-### Structured Practice Format
+### Urban design and planning
 
-**Individual presentation (6-8 minutes):**
-- Complete Object Fair presentation as planned
-- Use final slides and materials
-- Practice with timer for pacing
-- Focus on smooth transitions and confident delivery
-
-**Peer feedback (3-4 minutes):**
-- Content clarity and logical flow
-- Visual aid effectiveness  
-- Professional presentation style
-- Suggestions for final improvement
-
-**Immediate revision (2-3 minutes):**
-- Note key improvement areas
-- Plan specific changes for final week
-- Practice problem areas immediately
+- Neighborhood-scale spatial analysis
+- Infrastructure capacity and service area mapping
+- Growth modeling and scenario planning
+- Public space quality and equity assessment
 
 ---
 
-### Common Presentation Challenges
+### Parametric urbanism
 
-**Timing issues:**
-- Too much content for time limit
-- Uneven pacing across sections
-- Rushing through important points
-- Inadequate time for questions
-
-**Solutions:**
-- Prioritize most important 2-3 points
-- Practice with timer multiple times
-- Build in natural pause points
-- Prepare concise responses to likely questions
+- Site data extraction for generative design
+- Context-aware algorithmic design
+- Multi-objective spatial optimization
+- Data-driven master planning
 
 ---
 
-### Question and Answer Preparation
+## 🔧 The Four GIS Paradigms
 
-**Anticipate common question types:**
-- **Clarification:** "Can you explain how you..."
-- **Validation:** "How do you know that..."  
-- **Application:** "How would this work in..."
-- **Limitation:** "What about situations where..."
-
-**Preparation strategies:**
-- Practice honest acknowledgment of limitations
-- Prepare specific examples to illustrate points
-- Know your data and methods well enough for detailed questions
-- Practice redirecting off-topic questions back to your findings
+| Approach | Philosophy | Best For | Learning Curve |
+|----------|-----------|----------|----------------|
+| **QGIS** | Open source, GUI-based | Exploration, visualization, standard workflows | Moderate |
+| **ESRI Suite** | Industry standard, enterprise | Professional practice, collaboration, comprehensive tools | Moderate-High |
+| **Code-driven** | Programmatic, reproducible | Custom analysis, automation, integration with design tools | High |
+| **Google Earth Engine** | Cloud-based, massive data | Large-scale environmental analysis, satellite imagery | Moderate-High |
 
 ---
 
-## Professional Networking Preparation
+# Approach 1: QGIS (Open Source) {background-color="#2C1810"}
 
 ---
 
-### Object Fair as Networking Opportunity
+## 🆓 QGIS: The Community-Driven Option
 
-**External critic participation:**
-- Industry practitioners and potential employers
-- Faculty from architecture, engineering, and planning
-- Alumni working in evidence-based design
-- Professional colleagues and potential collaborators
+### What it is
 
-**Networking goals:**
-- Share your work and demonstrate professional competence
-- Learn about career opportunities and industry trends
-- Build relationships for future collaboration
-- Get advice for continued professional development
+- Free and open source desktop GIS application
+- Cross-platform (Windows, Mac, Linux)
+- Extensible through plugins (Python-based)
+- Active community development
 
 ---
 
-### Networking Skills Development
+### Underlying philosophy
 
-**Elevator pitch refinement:**
-- 30-second version for quick introductions
-- 2-minute version for interested parties
-- Focus on stakeholder value rather than technical details
-- Practice confident, enthusiastic delivery
-
-**Business card and contact strategy:**
-- Professional contact information ready
-- LinkedIn profile updated and professional
-- Portfolio or website link available
-- Follow-up plan for interesting connections
+- Democratic access to spatial analysis tools
+- Transparency in algorithms and processes
+- Community knowledge sharing and collaboration
+- Interoperability through open standards
 
 ---
 
-### Professional Presentation Behaviors
+## 💪 QGIS Strengths for Architects
 
-**Before presentations:**
-- Arrive early and test technology setup
-- Review Object Card placement and visibility
-- Practice confident posture and voice projection
-- Network casually with early arrivals
+### Accessibility
 
-**During presentations:**
-- Professional attire and confident demeanor
-- Clear articulation and appropriate pacing
-- Eye contact with audience members
-- Gracious response to questions and feedback
-
-**After presentations:**
-- Thank critics and audience members
-- Follow up on interesting conversations
-- Exchange contact information appropriately
-- Reflect on feedback for future improvement
+- Zero cost - ideal for students and small practices
+- No licensing barriers for exploration and learning
+- Easy installation and experimentation
+- Extensive free tutorials and community resources
 
 ---
 
-## Final Logistics and Submission
+### Integration capabilities
+
+- Reads virtually any spatial data format
+- Strong interoperability with other open source tools
+- Python console for scripting and automation
+- Export to common formats (PDF, PNG, DXF, etc.)
 
 ---
 
-### Submission Requirements
+### Visualization power
 
-**Digital submission (due before Object Fair):**
-- Complete A4 package as single PDF
+- Sophisticated cartographic styling
+- Layer blending and transparency controls
+- Print composer for professional map layouts
+- Time-series animation capabilities
+
+---
+
+### Analysis breadth
+
+- Core spatial analysis tools included
+- GRASS GIS integration for advanced terrain analysis
+- Processing toolbox with hundreds of algorithms
+- Custom workflow automation through graphical modeler
+
+---
+
+## ⚠️ QGIS Limitations
+
+### Performance at scale
+
+- Can be slow with very large datasets
+- Less optimized than commercial alternatives
+- Limited cloud/server integration
+
+---
+
+### Professional workflow
+
+- Less common in professional practice (US)
+- Collaboration challenges if clients use ESRI
+- Fewer industry-specific toolsets
+- UI can be less polished than commercial options
+
+---
+
+### Support
+
+- Community-based (no guaranteed support)
+- Documentation can lag behind development
+- Plugin quality varies widely
+
+---
+
+## 🔄 Typical QGIS Workflow for Architecture
+
+### 1. Data acquisition
+
+- Download municipal GIS data (parcels, zoning, infrastructure)
+- Access open data portals (OpenStreetMap, USGS, etc.)
+- Georeferenced CAD drawings or site survey data
+- Satellite/aerial imagery basemaps
+
+---
+
+### 2. Exploratory analysis
+
+- Layer stacking and visual exploration
+- Buffer analysis (walkability, noise impact zones)
+- Spatial queries (find all parcels within X distance of transit)
+- Terrain analysis (slope, aspect, watershed delineation)
+
+---
+
+### 3. Visualization and export
+
+- Create analytical maps for presentations
+- Export site context data for CAD/Rhino
+- Generate PDF map series for reports
+- Extract elevation data for 3D modeling
+
+---
+
+### 4. When to stop and switch tools
+
+- Complex custom analysis → Move to Python/R
+- Integration with parametric design → Move to code-driven approach
+- Professional deliverables requiring ESRI format → Convert to ArcGIS
+
+---
+
+## 🏘️ QGIS in Practice: Example Use Case
+
+**Scenario:** Site analysis for multi-family housing development
+
+### QGIS workflow
+
+1. Load parcel boundary and topographic data
+2. Buffer transit stops (400m walkable distance)
+3. Perform viewshed analysis from key vantage points
+4. Overlay zoning regulations and height restrictions
+
+---
+
+5. Analyze solar access through shadow modeling
+6. Create slope analysis for grading constraints
+7. Export 2D site context to CAD
+8. Export elevation grid for Rhino/Grasshopper
+
+**Output:** Comprehensive site analysis maps + data for design tools
+
+---
+
+# Approach 2: ESRI Suite (Industry Standard) {background-color="#1A472A"}
+
+---
+
+## 🏢 ESRI: The Professional Enterprise Platform
+
+### What it is
+
+- ArcGIS Desktop (ArcGIS Pro, ArcMap legacy)
+- ArcGIS Online (cloud-based mapping and collaboration)
+- Comprehensive suite of specialized tools
+- Dominant commercial GIS platform globally
+
+---
+
+### Underlying philosophy
+
+- Enterprise-scale spatial data infrastructure
+- Standardized workflows and best practices
+- Professional support and training
+- Ecosystem integration (servers, mobile, cloud)
+
+---
+
+## 💼 ESRI Strengths for Architecture Firms
+
+### Industry standard
+
+- Expected by many clients and collaborators
+- Common language for multi-disciplinary teams
+- Compatibility with government and utility data
+- Recognized professional credential (GISP certification)
+
+---
+
+### Performance and scale
+
+- Optimized for large datasets
+- Geodatabase architecture for data integrity
+- Server-based processing for intensive analysis
+- Cloud integration (ArcGIS Online)
+
+---
+
+### Comprehensive toolsets
+
+- Specialized tools for every domain
+- 3D analysis and visualization (ArcGIS Pro)
+- Network analysis (routing, service areas)
+- Spatial statistics and modeling
+- Extensive model builder for workflow automation
+
+---
+
+### Professional support
+
+- Technical support from ESRI
+- Extensive official documentation
+- Professional training programs
+- Industry-specific solution templates
+
+---
+
+## 💸 ESRI Limitations
+
+### Cost
+
+- Expensive licensing (individual and organizational)
+- Subscription model with ongoing costs
+- Additional costs for advanced extensions
+- Barrier for students (though educational licenses available)
+
+---
+
+### Proprietary lock-in
+
+- Ecosystem designed to keep you in ESRI world
+- Proprietary file formats (though improving)
+- License management complexity
+- Vendor dependency for tools and updates
+
+---
+
+### Complexity
+
+- Steeper learning curve for full capabilities
+- Interface can be overwhelming for beginners
+- Many tools have confusing parameter settings
+- Workflow documentation often enterprise-focused
+
+---
+
+### Flexibility
+
+- Less flexible than code-driven approaches
+- Scripting (Python) exists but secondary to GUI
+- Custom tools require ArcPy learning
+- Harder to integrate with cutting-edge methods
+
+---
+
+## 🔄 Typical ESRI Workflow for Architecture
+
+### 1. Enterprise data management
+
+- Geodatabase creation and management
+- Multi-user editing and version control
+- Data quality control and validation
+- Integration with firm's data infrastructure
+
+---
+
+### 2. Standard analysis
+
+- Built-in tools for common spatial operations
+- Model builder for repeatable workflows
+- Geoprocessing services for team sharing
+- Network analysis for accessibility studies
+
+---
+
+### 3. Professional deliverables
+
+- High-quality map production
+- Layout templates for consistent branding
+- Multi-page map books
+- Web maps for client interaction
+
+---
+
+### 4. Collaboration
+
+- ArcGIS Online for sharing with clients
+- Web apps for stakeholder engagement
+- Mobile data collection (ArcGIS Field Maps)
+- Real-time collaboration on shared projects
+
+---
+
+## 🏙️ ESRI in Practice: Example Use Case
+
+**Scenario:** Regional master planning for large development
+
+### ESRI workflow
+
+1. Enterprise geodatabase with all regional data
+2. Network analysis for transit service areas
+3. Demographic analysis using ArcGIS Business Analyst
+4. Scenario planning with multiple development alternatives
+
+---
+
+5. 3D visualization in ArcGIS Pro
+6. Web app for stakeholder feedback (ArcGIS Online)
+7. Automated report generation with Python
+8. Professional map series for planning documents
+
+**Output:** Comprehensive planning package with collaboration tools
+
+---
+
+# Approach 3: Code-Driven GIS (geopandas, etc.) {background-color="#2C1810"}
+
+---
+
+## 💻 Code-Driven: The Programmatic Approach
+
+### What it is
+
+- Python libraries: geopandas, shapely, rasterio, folium
+- R packages: sf, terra, tmap, leaflet
+- Direct manipulation of spatial data through code
+- Integration with data science ecosystem
+
+---
+
+### Underlying philosophy
+
+- Reproducibility through scripts
+- Flexibility through programming
+- Integration with analysis and design workflows
+- Automation of repetitive tasks
+- Version control and documentation
+
+---
+
+## 🐍 Core Python Geospatial Stack
+
+### Data handling
+
+- `geopandas` - GeoDataFrames (pandas + geometry)
+- `shapely` - Geometric operations
+- `pyproj` - Coordinate system transformations
+- `fiona` - Reading/writing vector data
+
+---
+
+### Raster processing
+
+- `rasterio` - Raster data I/O and processing
+- `rasterstats` - Zonal statistics
+- `numpy` - Array-based raster calculations
+
+---
+
+### Visualization
+
+- `matplotlib` - Static maps and plots
+- `folium` - Interactive web maps (Leaflet.js wrapper)
+- `contextily` - Basemap tiles
+- `plotly` - Interactive 3D visualization
+
+---
+
+### Analysis
+
+- `scipy.spatial` - Spatial algorithms and optimization
+- `scikit-learn` - Machine learning on spatial data
+- `networkx` - Network analysis
+- `PySAL` - Spatial econometrics and statistics
+
+---
+
+## 🚀 Code-Driven Strengths for Design Research
+
+### Reproducibility
+
+- Scripts document every step of analysis
+- Version control tracks methodological changes
+- Easy to re-run with updated data
+- Transparent methodology for peer review
+
+---
+
+### Automation
+
+- Process hundreds of scenarios programmatically
+- Batch process multiple sites or alternatives
+- Schedule regular analysis updates
+- Eliminate repetitive GUI clicking
+
+---
+
+### Integration
+
+- Direct connection to parametric design tools (Rhino/Grasshopper)
+- Combine GIS with machine learning and optimization
+- Web scraping and API integration for data collection
+- Export directly to design software formats
+
+---
+
+### Customization
+
+- Write exactly the analysis you need
+- Combine tools in novel ways
+- Implement cutting-edge methods from research
+- Build discipline-specific toolsets
+
+---
+
+### Cost and openness
+
+- Free and open source
+- No licensing restrictions
+- Use anywhere (laptop, server, cloud)
+- Share code freely with collaborators
+
+---
+
+## ⚠️ Code-Driven Limitations
+
+### Learning curve
+
+- Requires programming proficiency
+- Must understand both GIS concepts and coding
+- Debugging can be time-consuming
+- Less intuitive than GUI exploration
+
+---
+
+### Visualization
+
+- Static maps require more code than GUI tools
+- Cartographic refinement more tedious
+- Professional map layouts require additional tools
+- Less "out of the box" polish
+
+---
+
+### No GUI fallback
+
+- Can't "click around" to explore
+- Harder to catch data errors visually
+- Every operation must be scripted
+- Initial exploration slower than QGIS/ESRI
+
+---
+
+### Ecosystem fragmentation
+
+- Multiple libraries with overlapping functions
+- API changes and deprecation
+- Less cohesive than commercial platforms
+- Requires more troubleshooting skills
+
+---
+
+## 🔄 Typical Code-Driven Workflow
+
+### 1. Data preparation
+
+```python
+import geopandas as gpd
+import rasterio as rio
+
+# Load vector data
+parcels = gpd.read_file("parcels.shp")
+transit = gpd.read_file("transit_stops.geojson")
+
+# Load raster data
+with rio.open("elevation.tif") as src:
+    elevation = src.read(1)
+```
+
+---
+
+### 2. Spatial analysis
+
+```python
+# Buffer transit stops (400m)
+transit_buffers = transit.buffer(400)
+
+# Find parcels within transit buffer
+accessible_parcels = parcels[
+    parcels.intersects(transit_buffers.unary_union)
+]
+
+# Calculate slopes from elevation
+slopes = calculate_slope(elevation)
+```
+
+---
+
+### 3. Parametric integration
+
+```python
+# Export site boundary to Rhino
+site_boundary = accessible_parcels.iloc[0].geometry
+export_to_rhino_3dm(site_boundary, "site.3dm")
+
+# Create elevation grid for Grasshopper
+elevation_grid = extract_grid_for_gh(
+    elevation, site_boundary
+)
+np.save("elevation_grid.npy", elevation_grid)
+```
+
+---
+
+### 4. Iterative analysis
+
+```python
+# Analyze 100 design alternatives
+results = []
+for alt in design_alternatives:
+    solar_exposure = calculate_solar(alt, elevation)
+    view_quality = calculate_views(alt, viewpoints)
+    results.append({
+        'alternative': alt.id,
+        'solar': solar_exposure,
+        'views': view_quality
+    })
+
+results_df = pd.DataFrame(results)
+```
+
+---
+
+## 🏗️ Code-Driven in Practice: Example
+
+**Scenario:** Automated site selection for 50 potential locations
+
+### Code-driven workflow
+
+1. Scrape parcel data from city GIS portal
+2. Download OpenStreetMap data (transit, amenities, roads)
+3. Load climate data and elevation models
+
+---
+
+4. For each site, calculate:
+   - Walkability scores
+   - Solar potential
+   - View quality
+   - Environmental constraints
+
+---
+
+5. Multi-objective optimization to rank sites
+6. Generate automated report PDFs
+7. Create interactive web map of results
+8. Export top 5 sites to Rhino for design development
+
+**Output:** Ranked list + data-driven design starting points
+
+---
+
+# Approach 4: Google Earth Engine (Cloud Platform) {background-color="#1A472A"}
+
+---
+
+## ☁️ Google Earth Engine: Cloud-Scale Geospatial
+
+### What it is
+
+- Cloud-based platform for planetary-scale geospatial analysis
+- Access to petabytes of satellite imagery and geospatial datasets
+- JavaScript or Python API for analysis
+- No local data storage or processing required
+
+---
+
+### Underlying philosophy
+
+- Bring computation to data (not data to computation)
+- Democratize access to Earth observation data
+- Enable large-scale environmental monitoring
+- Cloud-based collaboration and sharing
+
+---
+
+## 🛰️ GEE Strengths for Environmental Design
+
+### Massive data catalog
+
+- Landsat archive (1970s-present): 40+ years of Earth observation
+- Sentinel imagery: High-resolution, frequently updated
+- MODIS, ASTER, and other satellite products
+- Climate data: Temperature, precipitation, vegetation indices
+- Terrain: Global elevation models (SRTM, ALOS)
+
+---
+
+### Cloud processing power
+
+- Process terabytes of data without local downloads
+- Parallel processing across Google's infrastructure
+- Time-series analysis across decades
+- Regional to global scale analysis
+
+---
+
+### No local infrastructure needed
+
+- No massive data downloads
+- No powerful local computer required
+- All processing happens in cloud
+- Export results when ready
+
+---
+
+### Analysis capabilities
+
+- Multi-temporal analysis (change over time)
+- Machine learning on satellite imagery
+- Climate and environmental modeling
+- Urban heat island analysis
+- Vegetation and land cover classification
+
+---
+
+## ⚠️ GEE Limitations
+
+### Learning curve
+
+- Requires JavaScript or Python coding
+- Different mental model (cloud-based, lazy evaluation)
+- GEE-specific API and data structures
+- Debugging can be challenging
+
+---
+
+### Architecture focus
+
+- Better for regional/environmental analysis than site-scale
+- Less useful for detailed building-scale work
+- Focused on raster (satellite) data, less vector support
+- May be overkill for small site analysis
+
+---
+
+### Data resolution
+
+- Satellite imagery resolution limits (10m-30m for most free data)
+- Not suitable for detailed site features
+- Temporal resolution varies by satellite
+- Cloud cover can limit usable imagery
+
+---
+
+### Export limitations
+
+- Processing quotas for free tier
+- Results must be exported (not live integration)
+- Large exports can be slow
+- Limited real-time interaction
+
+---
+
+## 🔄 Typical GEE Workflow for Architecture
+
+### 1. Define study area
+
+```javascript
+// Define site or region of interest
+var site = ee.Geometry.Point([114.1095, 22.3964]); // Hong Kong
+var region = site.buffer(5000); // 5km radius
+```
+
+---
+
+### 2. Load and filter data
+
+```javascript
+// Load Landsat 8 imagery
+var imagery = ee.ImageCollection('LANDSAT/LC08/C02/T1_L2')
+  .filterBounds(region)
+  .filterDate('2020-01-01', '2023-12-31')
+  .filter(ee.Filter.lt('CLOUD_COVER', 20));
+```
+
+---
+
+### 3. Analyze and compute
+
+```javascript
+// Calculate NDVI (vegetation index)
+var ndvi = imagery.map(function(image) {
+  return image.normalizedDifference(['SR_B5', 'SR_B4'])
+    .rename('NDVI');
+});
+
+// Get mean NDVI over time period
+var meanNDVI = ndvi.mean();
+```
+
+---
+
+### 4. Visualize and export
+
+```javascript
+// Visualize on map
+Map.addLayer(meanNDVI, {min: 0, max: 1, palette: ['brown', 'yellow', 'green']});
+
+// Export to Google Drive
+Export.image.toDrive({
+  image: meanNDVI,
+  description: 'site_vegetation_analysis',
+  scale: 30,
+  region: region
+});
+```
+
+---
+
+## 🌡️ GEE in Practice: Example Use Case
+
+**Scenario:** Urban heat island analysis for climate-responsive design
+
+### GEE workflow
+
+1. Load 10 years of Landsat thermal imagery for city
+2. Calculate land surface temperature (LST) for each image
+3. Analyze seasonal and annual LST patterns
+4. Identify urban heat island hotspots
+
+---
+
+5. Correlate with land cover (vegetation, built-up areas)
+6. Analyze temporal changes (urbanization impact)
+7. Export heat maps and statistics
+8. Use results to inform site selection and cooling strategies
+
+**Output:** Climate analysis at city/regional scale informing design decisions
+
+---
+
+## 🎓 When to Use GEE
+
+### Ideal for
+
+- Regional climate and environmental analysis
+- Multi-year trend analysis (urban growth, climate change)
+- Large-scale site comparison (dozens of potential sites)
+- Environmental context for master planning
+- Urban heat island and microclimate studies
+
+---
+
+### Not ideal for
+
+- Detailed site-scale analysis (<100m)
+- Real-time or interactive analysis
+- Building-scale precision
+- Projects requiring immediate results
+- Vector-heavy workflows (parcels, buildings)
+
+---
+
+### Learning path
+
+- Start with Code Editor (JavaScript, web-based)
+- Use Python API if already familiar with Python
+- Leverage example scripts and tutorials (extensive community)
+- Focus on environmental/climate applications for architecture
+
+---
+
+## 🎮 Try It Now: Beginner GEE Example
+
+### Get Hong Kong Building Footprints
+
+**Copy-paste this into GEE Code Editor (code.earthengine.google.com):**
+
+```javascript
+// Define area of interest: HKU campus area
+var hku = ee.Geometry.Point([114.1361, 22.2831]);
+var area = hku.buffer(500); // 500m radius around HKU
+
+// Center map on area
+Map.centerObject(area, 16);
+
+// Add basemap
+Map.addLayer(area, {color: 'red'}, 'Study Area');
+
+// Load OpenStreetMap building footprints
+// (buildings with height/levels attributes where available)
+var buildings = ee.FeatureCollection('GOOGLE/Research/open-buildings/v3/polygons')
+  .filterBounds(area);
+
+print('Number of buildings:', buildings.size());
+print('First 5 buildings:', buildings.limit(5));
+
+// Visualize buildings
+Map.addLayer(buildings, {color: 'blue'}, 'Buildings');
+
+// For OSM building attributes (height, levels), use:
+// OpenStreetMap QA Tiles (if available in your region)
+```
+
+---
+
+### What this code does
+
+1. **Defines area:** 500m around HKU campus
+2. **Centers map:** Zooms to your study area
+3. **Loads buildings:** Google's Open Buildings dataset
+4. **Prints info:** Number of buildings and attributes
+5. **Visualizes:** Shows buildings in blue on map
+
+**Next steps:**
+
+- Change coordinates to your site
+- Adjust buffer distance (100m-5000m)
+- Explore building attributes in Console
+- Export results to Google Drive
+
+---
+
+::: {.callout-tip icon=false}
+## GEE Pro Tip for HK Buildings
+
+For detailed building attributes (height, stories, type), combine:
+
+1. **Google Open Buildings** (footprints, coverage)
+2. **OSM QA Tiles** (building metadata where tagged)
+3. **data.gov.hk building age dataset** (import as asset)
+
+Then use `spatialFilter` to join datasets by location!
+:::
+
+---
+
+# Data Sources for Architectural GIS {background-color="#2C1810"}
+
+---
+
+## 📦 Major Data Sources Overview
+
+**The tools are only as good as the data you feed them**
+
+Key data categories for architects:
+
+- Satellite and aerial imagery
+- Elevation and terrain
+- Climate and weather
+- Demographics and census
+- Infrastructure and transportation
+- Buildings and parcels
+
+---
+
+# ESRI Data Sources {background-color="#1A472A"}
+
+---
+
+## 🗺️ ESRI Living Atlas
+
+### What it is
+
+- Curated collection of geographic data
+- Accessible through ArcGIS Online
+- Constantly updated by ESRI and partners
+- Free for many layers (some require subscription)
+
+---
+
+### Key datasets for architecture
+
+**Basemaps and imagery:**
+
+- World Imagery (recent satellite imagery)
+- Topographic maps
+- Street maps and navigation
+- Historical imagery (temporal comparison)
+
+---
+
+**Demographics and socioeconomics:**
+
+- Population density and distribution
+- Income and housing data (via Business Analyst)
+- Age, education, employment statistics
+- Consumer spending patterns
+
+---
+
+**Environmental data:**
+
+- Land cover and land use
+- Ecological marine units
+- Protected areas and conservation
+- Disaster risk data (floods, earthquakes)
+
+---
+
+**Infrastructure:**
+
+- Street networks and transportation
+- Utilities and services
+- Administrative boundaries
+- Property parcels (regional availability)
+
+---
+
+## 💼 ArcGIS Online Content
+
+### Community data
+
+- User-contributed datasets
+- City and regional open data
+- Organizational data sharing
+- Public sector data
+
+### How to access
+
+- Browse Living Atlas at living-atlas.arcgis.com
+- Search in ArcGIS Online or ArcGIS Pro
+- Filter by region, topic, data type
+- Check licensing and attribution requirements
+
+---
+
+::: {.callout-tip icon=false}
+## HKU Students: ArcGIS License Available
+
+**You have access to full ArcGIS Suite through the faculty license!**
+
+- ArcGIS Pro desktop software
+- ArcGIS Online cloud platform
+- Access to ESRI Living Atlas
+- Available throughout your studies
+
+Contact IT or check faculty GIS resources for installation and activation.
+:::
+
+---
+
+# Google Earth Engine Data Catalog {background-color="#2C1810"}
+
+---
+
+## 🛰️ GEE Massive Data Archive
+
+### What makes GEE special
+
+**Petabytes of data, zero download:**
+
+- All data pre-loaded in cloud
+- No storage on your computer
+- Instant access to decades of imagery
+- Regularly updated with new data
+
+---
+
+## 📡 Satellite Imagery Collections
+
+### Landsat (1972-present)
+
+- 40+ years of Earth observation
+- 30m resolution multispectral
+- Thermal bands for temperature
+- Free and open access
+- Ideal for long-term change analysis
+
+---
+
+### Sentinel (2014-present)
+
+- European Space Agency satellites
+- 10m resolution optical imagery
+- Frequent revisit (every 5 days)
+- Radar imagery (cloud-penetrating)
+- Excellent for recent detailed analysis
+
+---
+
+### MODIS (2000-present)
+
+- Daily global coverage
+- Lower resolution (250m-1km)
+- Excellent for climate and vegetation
+- Wide range of products (LST, NDVI, snow cover)
+
+---
+
+## 🌍 Climate and Environmental Data
+
+### Temperature and precipitation
+
+- ERA5 climate reanalysis (hourly, 1979-present)
+- CHIRPS precipitation (daily, global)
+- TerraClimate (monthly climate and water balance)
+- Weather station observations
+
+---
+
+### Vegetation and land cover
+
+- NDVI and vegetation indices
+- Global land cover maps
+- Forest cover and loss (Hansen et al.)
+- Crop type and agriculture
+
+---
+
+### Terrain and topography
+
+- SRTM (30m global elevation)
+- ALOS (30m global elevation, higher accuracy)
+- National elevation datasets (higher resolution)
+
+---
+
+## 🏙️ Built Environment Data
+
+### Urban and built-up areas
+
+- Global Human Settlement Layer
+- World Settlement Footprint
+- Night lights (VIIRS, indicating development)
+- OpenStreetMap buildings (in GEE)
+
+---
+
+# NOAA Data Sources {background-color="#1A472A"}
+
+---
+
+## 🌊 NOAA: Climate, Ocean, Weather
+
+### What NOAA provides
+
+- National Oceanic and Atmospheric Administration (USA)
+- Authoritative climate and weather data
+- Long-term climate records
+- Coastal and marine data
+- Severe weather and hazards
+
+---
+
+## ⛈️ Key NOAA Datasets
+
+### Climate data
+
+- Historical weather station data (ISD, GHCN)
+- Climate normals (30-year averages)
+- Extreme weather events
+- Climate projections and scenarios
+
+---
+
+### Coastal and ocean
+
+- Sea level rise projections
+- Coastal flood risk
+- Bathymetry (ocean depth)
+- Tide predictions
+- Coastal erosion data
+
+---
+
+### Imagery and maps
+
+- High-resolution aerial imagery (coastal regions)
+- LIDAR elevation data (very high accuracy)
+- Land cover and habitat maps
+- Storm surge inundation maps
+
+---
+
+## 📥 How to Access NOAA Data
+
+**Main portals:**
+
+- data.noaa.gov (central data catalog)
+- Climate Data Online (CDO)
+- National Centers for Environmental Information (NCEI)
+- Digital Coast (coastal data portal)
+
+**Integration:**
+
+- Download directly
+- API access for programmatic retrieval
+- Some datasets available in GEE
+- WMS/WFS services for GIS integration
+
+---
+
+# Other Essential Data Sources {background-color="#2C1810"}
+
+---
+
+## 🗺️ OpenStreetMap (OSM)
+
+### The community-built map
+
+- Global, free, open-source map data
+- Buildings, roads, amenities, land use
+- Crowdsourced, continuously updated
+- Used worldwide, especially in areas with limited commercial data
+
+---
+
+### For architecture
+
+- Building footprints and heights (where available)
+- Street networks and transportation
+- Points of interest (shops, parks, transit)
+- Land use and zoning (varies by region)
+
+---
+
+### How to access
+
+- Download extracts (GeoFabrik, BBBike)
+- Overpass API for custom queries
+- QGIS plugins (QuickOSM)
+- Pre-processed in many GIS platforms
+
+---
+
+## 🏛️ Government Open Data Portals
+
+### Municipal and regional data
+
+**Common datasets:**
+
+- Parcels and property boundaries
+- Zoning and land use regulations
+- Building permits and assessments
+- Infrastructure (water, sewer, utilities)
+
+---
+
+- Trees and street furniture
+- Historic districts and landmarks
+- Planned developments and projects
+- Environmental assessments
+
+---
+
+### How to find
+
+- City/county GIS or open data portals
+- data.gov (USA federal and local)
+- European Data Portal (EU)
+- National geoportals (varies by country)
+
+**Examples:**
+
+- NYC Open Data (New York)
+- DataSF (San Francisco)
+- London Datastore (UK)
+- Data.gov.hk (Hong Kong)
+
+---
+
+## 📊 Census and Demographics
+
+### Population and socioeconomic data
+
+**USA:**
+
+- US Census Bureau (decennial census, ACS)
+- TIGER/Line shapefiles (boundaries)
+- Census tract and block group data
+
+**International:**
+
+- National statistical offices
+- UN demographic data
+- World Bank development indicators
+
+---
+
+## 🌲 Environmental and Conservation Data
+
+### Natural resources
+
+- Protected Planet (protected areas)
+- Global Forest Watch (forest data)
+- WWF, IUCN conservation datasets
+- National park and conservation agency data
+
+---
+
+## 🚇 Transportation Networks
+
+### Infrastructure data
+
+- National transportation datasets
+- Transit agency GTFS data (routes, schedules)
+- OpenStreetMap (comprehensive street networks)
+- Aviation and railway networks
+
+---
+
+# GIS Data Sources for Hong Kong {background-color="#1A472A"}
+
+---
+
+## 🇭🇰 Hong Kong-Specific Data Sources
+
+### Government and Official Sources
+
+::: {.callout-important icon=false}
+## 🌟 CSDI Portal - Your Primary HK Spatial Data Source
+
+**Common Spatial Data Infrastructure Portal**
+
+**URL: portal.csdi.gov.hk**
+
+**What it is:**
+
+- Official Hong Kong government spatial data portal (launched Dec 2022)
+- **500+ spatial datasets** from all government departments
+- Map-based one-stop platform with 3D digital maps
+- 1.22 million+ downloads in 2024 (highly active!)
+- **API access** for programmatic data retrieval
+
+**Key datasets for architecture:**
+
+- Planning, lands, and building data
+- Infrastructure and utilities
+- Transport networks (roads, MTR, bus)
+- Population and demographics
+- Environmental data (air quality, climate from HK Observatory)
+- Topography and terrain
+:::
+
+---
+
+**Hong Kong Government Data Portal (data.gov.hk)**
+
+- Building age and height data
+- District boundaries and planning areas
+- Transport networks (MTR, bus routes)
+- Land use zoning
+- Tree locations
+- Public facilities
+
+**Note:** CSDI Portal is more comprehensive; data.gov.hk has some overlapping datasets but different interface
+
+---
+
+**Lands Department**
+
+- Survey and mapping data
+- Cadastral parcels (limited public access)
+- Topographic maps
+- Orthophotos (aerial imagery)
+
+**Planning Department**
+
+- Statutory plans and zoning
+- Planning applications
+- Urban design guidelines
+- Development schemes
+
+---
+
+**Environmental Data**
+
+**Environmental Protection Department (EPD):**
+
+- Air quality monitoring stations
+- Noise monitoring data
+- Waste facilities locations
+- Water quality data
+
+**Hong Kong Observatory:**
+
+- Climate data (temperature, rainfall, humidity)
+- Historical weather records
+- Severe weather warnings
+- Climate change projections
+
+---
+
+### Regional Satellite Data (via GEE)
+
+**Available for Hong Kong analysis:**
+
+**Landsat archive (1980s-present):**
+
+- Urban growth analysis
+- Land use change detection
+- Coastal reclamation history
+- Vegetation changes
+
+---
+
+**Sentinel (2015-present):**
+
+- 10m resolution for detailed urban analysis
+- Frequent updates (every 5 days)
+- Urban heat island mapping
+- Building density analysis
+
+**MODIS:**
+
+- Daily air quality (aerosol optical depth)
+- Temperature trends
+- Regional climate patterns
+
+---
+
+### OpenStreetMap for Hong Kong
+
+**Rich Hong Kong OSM data:**
+
+- Comprehensive building footprints
+- Detailed street networks
+- Public transport (MTR, tram, ferry)
+- Points of interest (restaurants, shops, parks)
+- Building heights (for many structures)
+- Pedestrian paths and walkways
+
+**Access via:**
+
+- GeoFabrik downloads (Hong Kong extract)
+- Overpass API queries
+- QGIS QuickOSM plugin
+
+---
+
+### OSMBuildings for Hong Kong
+
+**3D building models from OSM:**
+
+- Extruded building footprints with heights
+- Visual 3D context for design
+- Building shapes and geometries
+- Roof types (where tagged)
+
+**Access:**
+
+- OSMBuildings.org (web viewer and data export)
+- QGIS OSM-3D plugins
+- Direct OSM data with height tags processed
+
+**Use cases:** 3D urban context modeling, shadow studies, view analysis
+
+---
+
+### Census and Demographics
+
+**Hong Kong Census Data:**
+
+- Population by district and tertiary planning unit
+- Age distribution and household size
+- Income and employment
+- Housing characteristics
+
+**Access through:**
+
+- Census and Statistics Department
+- DATA.GOV.HK
+- ESRI Demographics (partial coverage)
+
+---
+
+### Terrain and Elevation
+
+**Available sources:**
+
+**High resolution:**
+
+- Lands Department 2m contours (official)
+- Survey and Mapping Office DTM
+- LIDAR data (limited coverage)
+
+**Global coverage:**
+
+- SRTM 30m (via GEE or other sources)
+- ALOS 30m (higher accuracy than SRTM)
+- OpenTopography (research access)
+
+---
+
+## 🎯 Common HK Architecture Use Cases
+
+### Site analysis workflow
+
+**Question:** Site selection for housing development in New Territories
+
+**Data sources:**
+
+1. **Parcels and zoning:** CSDI Portal (primary) or Planning Department
+2. **Topography:** CSDI Portal or SRTM/ALOS from GEE
+3. **Transport:** CSDI Portal (MTR + bus routes) or OSM
+4. **Environment:** CSDI Portal (EPD + HK Observatory data)
+5. **Context:** CSDI Portal 3D buildings + OSM + Google/ESRI basemap
+
+---
+
+**Tools:**
+
+- QGIS for visual exploration and local data integration
+- Google Earth Engine for terrain and environmental analysis
+- Code-driven (Python) if automating multiple sites
+- CSDI Portal API for programmatic access
+
+---
+
+### Urban heat island study
+
+**Question:** Identify cool/hot spots in Kowloon for passive cooling design
+
+**Data sources:**
+
+1. **Thermal imagery:** Landsat 8 thermal bands (via GEE)
+2. **Land cover:** Sentinel 2 for vegetation index
+3. **Urban form:** OSM buildings + planning data
+4. **Weather:** HK Observatory temperature records
+
+**Tool:** Google Earth Engine (multi-temporal thermal analysis)
+
+---
+
+### Transit accessibility analysis
+
+**Question:** 15-minute walkshed from MTR stations
+
+**Data sources:**
+
+1. **MTR stations:** data.gov.hk or OSM
+2. **Street network:** OSM (pedestrian-accessible routes)
+3. **Building footprints:** OSM
+4. **Elevation:** SRTM or Lands Dept (for slope-adjusted walking)
+
+**Tools:** QGIS (network analysis plugin) or code-driven (Python + OSMnx)
+
+---
+
+## 📥 Where to Download Hong Kong GIS Data
+
+### Direct Download Portals
+
+**1. CSDI Portal (PRIMARY - Start Here!)**
+
+- URL: **portal.csdi.gov.hk**
+- Navigate: Use map interface or browse catalog
+- Formats: Shapefile, GeoJSON, KML, WMS/WFS services, **API access**
+- No account required
+- **Most comprehensive HK government spatial data**
+
+**Key datasets to download:**
+
+- All government spatial data (planning, lands, transport, environment)
+- 3D building models
+- Infrastructure and utilities
+- Topography and elevation
+- Demographics and population
+- Real-time updates from various departments
+
+---
+
+**2. DATA.GOV.HK (Alternative/Supplementary)**
+
+- URL: **data.gov.hk**
+- Navigate: "Datasets" → Filter by "GIS" or "Geospatial"
+- Formats: Shapefile, GeoJSON, KML, CSV with coordinates
+- No account required
+- Some overlap with CSDI, different interface
+
+**When to use:**
+
+- If you prefer non-map interface
+- For specific datasets not yet on CSDI
+- For non-spatial data with coordinates
+
+---
+
+**2. GeoFabrik (OpenStreetMap Extracts)**
+
+- URL: **download.geofabrik.de/asia/china/hong-kong.html**
+- Updated daily
+- Formats: Shapefile, PBF (raw OSM), GeoJSON
+- Complete Hong Kong OSM data extract
+- Free, no account needed
+
+**What you get:**
+
+- Buildings (with heights where tagged)
+- Roads (all types, pedestrian paths)
+- Railways (MTR, tram)
+- Amenities and POIs
+- Land use polygons
+
+---
+
+**3. Google Earth Engine Code Editor**
+
+- URL: **code.earthengine.google.com**
+- Requires: Google account (free signup)
+- Access to petabytes of satellite data
+- No download needed (cloud-based)
+
+**For Hong Kong:**
+
+- Draw polygon around Hong Kong
+- Access Landsat, Sentinel, MODIS
+- Export results to Google Drive
+- Then download and use in QGIS/other tools
+
+---
+
+**4. HKU Library - Government Publications**
+
+- Access: Through HKU Library portal
+- Lands Department maps and data
+- Planning Department reports with spatial data
+- Some datasets available to HKU students only
+
+**Check library for:**
+
+- High-resolution topographic maps
+- Historical maps and imagery
+- Planning scheme maps
+- Official survey data
+
+---
+
+**5. Humanitarian Data Exchange (HDX)**
+
+- URL: **data.humdata.org**
+- Search: "Hong Kong"
+- Regional datasets, population, infrastructure
+- Open license, free download
+
+---
+
+### Step-by-Step: Getting Started with HK Data
+
+**Beginner workflow (30 minutes):**
+
+1. **Go to portal.csdi.gov.hk (START HERE)**
+   - Browse map or search catalog
+   - Find "District Boundaries" and download
+   - Find "MTR Stations" and download
+   - Download "Building Footprints" (if available)
+   - Format: Choose Shapefile or GeoJSON
+
+---
+
+2. **Go to download.geofabrik.de**
+   - Navigate to Asia → China → Hong Kong
+   - Download "hong-kong-latest-free.shp.zip"
+   - Unzip to get buildings, roads, etc.
+
+---
+
+3. **Open QGIS**
+   - Drag and drop the downloaded files
+   - Add basemap (OpenStreetMap or Google Satellite via QuickMapServices plugin)
+   - Start exploring!
+
+---
+
+4. **For satellite data:**
+   - Sign up for Google Earth Engine at **signup.earthengine.google.com**
+   - Wait for approval (usually 1-2 days)
+   - Explore HK with Code Editor examples
+
+---
+
+### 🎯 Hands-On: Extract HK Building Data with GEE
+
+**Complete workflow to get buildings for your site:**
+
+```javascript
+// STEP 1: Define your site (change these coordinates!)
+var mySite = ee.Geometry.Rectangle([
+  114.130, 22.280,  // Lower left [lon, lat]
+  114.145, 22.290   // Upper right [lon, lat]
+]); // This covers part of Western District
+
+Map.centerObject(mySite, 15);
+Map.addLayer(mySite, {color: 'red'}, 'My Site');
+
+// STEP 2: Get building footprints
+var buildings = ee.FeatureCollection(
+  'GOOGLE/Research/open-buildings/v3/polygons'
+).filterBounds(mySite);
+
+print('Buildings found:', buildings.size());
+
+// STEP 3: Add some analysis (building area)
+var buildingsWithArea = buildings.map(function(feature) {
+  var area = feature.geometry().area();
+  return feature.set('area_sqm', area);
+});
+
+// STEP 4: Visualize
+Map.addLayer(buildingsWithArea, {color: '0000FF'}, 'Buildings');
+
+// STEP 5: Export to Google Drive
+Export.table.toDrive({
+  collection: buildingsWithArea,
+  description: 'HK_Buildings_Export',
+  fileFormat: 'GeoJSON',  // or 'SHP' for Shapefile
+  folder: 'GEE_Exports'
+});
+
+// Click "Run" in Tasks tab to start export!
+```
+
+---
+
+**After export:**
+
+1. Go to Google Drive → "GEE_Exports" folder
+2. Download the GeoJSON file
+3. Open in QGIS
+4. You now have building footprints with calculated areas!
+
+---
+
+### Quick Data Finder Table
+
+| What You Need | Where to Get It | Format | Account? |
+|---------------|-----------------|--------|----------|
+| District boundaries | **CSDI Portal** (first choice) | SHP, GeoJSON, API | No |
+| MTR stations | **CSDI Portal** or OSM | SHP, GeoJSON | No |
+| Building footprints | **CSDI Portal** or GeoFabrik OSM | SHP, GeoJSON | No |
+| 3D buildings | **CSDI Portal** (official) or OSMBuildings | Various | No |
+| Planning/zoning | **CSDI Portal** | SHP, GeoJSON | No |
+| Infrastructure | **CSDI Portal** | SHP, GeoJSON, WMS/WFS | No |
+| Satellite imagery | Google Earth Engine | GeoTIFF (export) | Yes (free) |
+| Elevation | **CSDI Portal** or GEE | Various | No |
+| Climate data | **CSDI Portal** (HKO data) | Various | No |
+
+---
+
+::: {.callout-warning icon=false}
+## Data License and Attribution
+
+**Always check:**
+
+- License terms (most HK govt data is open, but verify)
+- Attribution requirements (especially OSM: "© OpenStreetMap contributors")
+- Usage restrictions (some data may be for non-commercial use only)
+- Currency of data (when was it last updated?)
+
+**For academic work:** Most sources are fine, but document your sources properly!
+:::
+
+---
+
+## 🔌 Advanced: CSDI Portal API Access
+
+### For code-driven workflows
+
+**CSDI Portal provides APIs for programmatic data access**
+
+**Why use APIs?**
+
+- Automate data downloads
+- Get real-time updates
+- Integrate with Python/R workflows
+- Batch process multiple datasets
+
+---
+
+### Example: Access CSDI data via API
+
+**WMS/WFS services available for most datasets**
+
+```python
+import geopandas as gpd
+
+# Example: Load HK district boundaries via WFS
+wfs_url = "https://portal.csdi.gov.hk/server/services/[dataset]/WFSServer"
+
+# Read directly into geopandas
+gdf = gpd.read_file(wfs_url)
+
+# Now you have the data in Python for analysis!
+```
+
+**Check CSDI Portal metadata for specific API endpoints**
+
+---
+
+## 🔗 Connecting Tools and Data
+
+### The complete picture
+
+**Tools** → **Data** → **Analysis** → **Design Decisions**
+
+- **QGIS**: Works with all data sources, best for local/municipal data
+- **ESRI**: Native integration with Living Atlas, enterprise data
+- **Code-driven**: Direct API access to OSM, census, custom sources
+- **GEE**: Built-in access to satellite and climate data
+
+---
+
+### Practical workflow
+
+1. **Identify question** (What do you need to know?)
+2. **Find data source** (Where is the data?)
+3. **Choose tool** (What's best for this task?)
+4. **Analyze** (Process and interpret)
+5. **Apply to design** (Inform decisions)
+
+---
+
+## 🎯 Matching Questions to Data Sources
+
+| Design Question | Data Source | Tool |
+|----------------|-------------|------|
+| Is site in flood zone? | NOAA coastal data | QGIS or ESRI |
+| Urban heat island effect? | GEE (Landsat thermal) | Google Earth Engine |
+| Transit accessibility? | GTFS + OSM | QGIS or code-driven |
+| Site vegetation over time? | GEE (NDVI time series) | Google Earth Engine |
+| Demographics of area? | Census + ESRI Atlas | ESRI or QGIS |
+| Parcel boundaries? | City open data portal | QGIS or ESRI |
+
+---
+
+# Comparison: When to Use What? {background-color="#1A472A"}
+
+---
+
+## 🤔 Decision Framework
+
+```
+START HERE:
+↓
+Is this regional/environmental analysis over large area?
+YES → Google Earth Engine (satellite data)
+NO → Continue
+↓
+Are you exploring unfamiliar data/area?
+YES → QGIS (visual exploration)
+NO → Continue
+```
+
+---
+
+```
+↓
+Do you need professional deliverables for clients?
+YES → ESRI (if they use it) or QGIS (with polish)
+NO → Continue
+↓
+Do you need custom analysis or automation?
+YES → Code-driven (Python/R)
+NO → Continue
+↓
+Are you integrating with parametric design?
+YES → Code-driven + Grasshopper/Dynamo
+NO → Use whatever you're comfortable with
+```
+
+---
+
+## 🔀 Hybrid Workflows: The Reality
+
+Most architects use combinations:
+
+### GEE → QGIS → Design
+
+- Google Earth Engine for regional climate analysis
+- Export results to QGIS for refinement
+- Integrate with local site data
+- Inform design decisions
+
+---
+
+### QGIS → Python → QGIS
+
+- Quick visual exploration of data
+- Custom Python script for specific analysis
+- Back to QGIS for map production
+
+---
+
+### ESRI → Python → ArcGIS Pro
+
+- Enterprise geodatabase in ESRI
+- ArcPy scripts for batch processing
+- Professional maps in ArcGIS Pro
+
+---
+
+### Code → QGIS/Illustrator
+
+- All analysis in geopandas/Python
+- Export to formats QGIS can read
+- Final cartographic refinement in QGIS or Illustrator
+
+---
+
+### Python/GEE → Grasshopper
+
+- Python or GEE for site context data
+- Export geometries and attributes
+- Grasshopper reads data for context-aware design
+
+---
+
+## 🎓 Learning Path Recommendations
+
+### For beginners
+
+1. Start with QGIS (free, visual, forgiving)
+2. Learn core GIS concepts (projections, buffers, joins, etc.)
+3. Add Python scripting in QGIS console
+4. Explore GEE for environmental analysis
+5. Transition to full code-driven when ready
+
+---
+
+### For those with programming background
+
+1. Start with geopandas (familiar pandas syntax)
+2. Learn by replicating common GIS operations
+3. Try Google Earth Engine (JavaScript or Python API)
+4. Use QGIS for quick visualization checks
+5. Build custom tools for your specific needs
+
+---
+
+### For climate/environmental focus
+
+1. Start with Google Earth Engine tutorials
+2. Focus on satellite imagery and climate data
+3. Combine GEE with local data in QGIS
+4. Build regional analysis skills
+5. Integrate with design decision-making
+
+---
+
+### For professional practice
+
+1. Learn ESRI basics (industry standard)
+2. Understand enterprise workflows
+3. Add Python/ArcPy for automation
+4. Supplement with open source tools for flexibility
+
+---
+
+### For computational design
+
+1. Focus on code-driven approach (geopandas)
+2. Learn data exchange formats (GeoJSON, CityJSON)
+3. Explore GEE for context data extraction
+4. Practice integration with Rhino/Grasshopper
+5. Build custom site analysis components
+
+---
+
+## 📊 GIS and Your A4 Projects
+
+### Potential GIS Applications
+
+**If you're working on:**
+
+- **Site selection** - Use GIS for multi-criteria evaluation
+- **Solar analysis** - Extract elevation and context geometry
+- **Accessibility** - Network analysis and walkshed calculation
+- **Urban design** - Spatial pattern analysis and metrics
+- **Climate adaptation** - Terrain analysis and flood modeling
+
+---
+
+### Consider incorporating
+
+- Spatial data as design inputs
+- GIS-derived constraints or opportunities
+- Location-based optimization criteria
+
+---
+
+## ⚡ Quick Integration Opportunities
+
+### Even in final week, you can
+
+- Add context maps using QGIS (1-2 hours)
+- Extract elevation data for site modeling
+- Show transit accessibility analysis
+- Include demographic/environmental context
+- Demonstrate site selection methodology
+
+---
+
+### Keep it simple
+
+- Don't learn entire GIS platform this week
+- Focus on one clear spatial insight
+- Use it to strengthen your story
+- Document data sources and methods
+
+---
+
+# Part 2: Course Reflection & Final Submission {background-color="#2C1810"}
+
+---
+
+## 🎯 Your Journey This Semester
+
+### From Week 1 to Week 11
+
+**Assignment progression:**
+
+- **A1 Decision Claims:** From initial ideas to testable research questions
+- **A2 Evidence Maps:** From scattered information to systematic knowledge synthesis
+- **A3 Test Plans + Pilots:** From theory to practical implementation and learning
+- **A4 Final Packages:** From data to actionable professional recommendations
+
+---
+
+### The arc of learning
+
+Week 1: "What is evidence-based design?"
+
+Week 11: "Here's how I systematically investigate design decisions"
+
+---
+
+## 🛠️ Skills You've Developed
+
+### Technical competence
+
+- Research question development and problem framing
+- Literature review and evidence synthesis
+- Method design, pilot testing, and systematic investigation
+- Data analysis, visualization, and uncertainty communication
+- Reproducible documentation and workflow transparency
+
+---
+
+### Professional capabilities
+
+- Stakeholder analysis and audience-appropriate communication
+- Professional presentation and visual design
+- Project management and adaptive planning
+- Ethical research conduct
+- Decision frameworks and threshold setting
+
+---
+
+## 🧠 Evidence-Based Design Thinking
+
+### Mindset shifts accomplished
+
+- From intuition-only → evidence-informed decision making
+- From single solutions → systematic alternative evaluation
+- From perfect knowledge → appropriate confidence levels
+- From isolated design → stakeholder-centered research
+- From "trust me" → "here's the data"
+
+---
+
+### You can now
+
+- Ask better questions about design performance
+- Systematically investigate those questions
+- Communicate findings with appropriate uncertainty
+- Make defendable recommendations to stakeholders
+
+---
+
+## ✅ A4 Package Integration
+
+### Essential Integration Checklist
+
+**Cross-component consistency:**
+
+- [ ] Key findings align across Research Brief, Practice Case, Object Card
+- [ ] Metrics and terminology consistent throughout
+- [ ] Visual identity unified (fonts, colors, layout)
+- [ ] Stakeholder framing coherent
+
+---
+
+**Quality assurance:**
+
+- [ ] All citations complete and accurate
+- [ ] Figures clearly labeled with sources
+- [ ] Writing clear and error-free
+- [ ] File formats correct for submission
+
+---
+
+## 🎯 Priority Improvements from Draft Defense
+
+### Focus on
+
+1. **Highest-impact feedback** - changes that strengthen core argument
+2. **Stakeholder relevance** - ensure recommendations are actionable
+3. **Figure clarity** - professional quality visualizations
+4. **Threshold justification** - clear decision criteria
+
+---
+
+### Let go of
+
+- Perfect polish on minor details
+- Extensive additional analysis
+- Scope expansion beyond current work
+- Perfectionism that prevents completion
+
+---
+
+## 📦 Final Submission Requirements
+
+### A4 Complete Package Due Next Week
+
+**Digital submission includes:**
+
+1. **Research Brief** (8-12 pages)
+   - Executive summary
+   - Methods clearly documented
+   - Results with appropriate uncertainty
+   - Specific, actionable recommendations
+
+---
+
+2. **Practice Case** (2 slides + 2-page memo)
+   - Key findings immediately apparent
+   - Decision criteria clear
+   - Implementation guidance specific
+
+---
+
+3. **Object Card** (single-page poster)
+   - Visually compelling
+   - Key message prominent
+   - Professional design quality
+   - Suitable for portfolio
+
+---
+
+4. **Reproducibility Capsule** (3-5 pages + materials)
+   - Step-by-step procedures
+   - Tool requirements specified
+   - Quality control included
+   - Adaptation guidance provided
+
+---
+
+5. **Self-Assessment Reflection** (1 page)
+   - Learning integration
+   - Skill development
+   - Future applications
+   - Course impact
+
+---
+
+## 📋 Submission Logistics
+
+**Due:** [Specific date/time TBD]
+
+**Format:**
+
+- Single combined PDF (all components)
 - Individual component files for reference
-- Presentation slides in PowerPoint format
-- Self-assessment reflection (1 page)
+- Submitted via Canvas/email as specified
 
-**Physical materials for Object Fair:**
-- Printed Object Card at appropriate size
-- Backup presentation files on USB drive
-- Professional business cards or contact information
-- Any demonstration materials or props
+**File naming:**
+
+`ARCH7476_A4_[YourLastName]_[YourFirstName].pdf`
 
 ---
 
-### Object Fair Day Timeline
+### Before you submit
 
-**Setup period (30 minutes):**
-- Technology testing and troubleshooting
-- Object Card display arrangement
-- Final material organization
-- Networking with early arrivals
-
-**Presentation period (90 minutes):**
-- Individual presentations (6-8 min + 4 min Q&A)
-- Active audience participation and feedback
-- Professional critic evaluation and input
-- Peer support and engagement
-
-**Networking period (30 minutes):**
-- Informal conversations with critics and peers
-- Contact information exchange
-- Career advice and opportunity discussion
-- Course celebration and reflection
+- Check all links and references work
+- Verify all figures are visible and high-quality
+- Confirm page limits are met
+- Proofread one final time
 
 ---
 
-### Self-Assessment Reflection
+## 🚀 Looking Forward
 
-**Required reflection topics:**
-1. **Learning integration:** How did the four assignments build your research capabilities?
-2. **Skill development:** What evidence-based design competencies did you develop?
-3. **Professional growth:** How will you apply these skills in future work?
-4. **Course impact:** What was most valuable about this learning experience?
+### Immediate Applications
 
-**Format:** 1 page, professional writing, submitted with A4 package
+**In your other courses:**
 
----
-
-## Course Completion and Beyond
+- Apply systematic thinking to studio projects
+- Use evidence to support design decisions
+- Document and test assumptions
+- Communicate with data visualizations
 
 ---
 
-### Continued Professional Development
+**In practice or research:**
 
-**Immediate next steps:**
-- Apply skills to current projects and coursework
-- Share methods and insights with colleagues
-- Continue building evidence-based design portfolio
-- Maintain connections made through Object Fair networking
-
-**Long-term development:**
-- Consider advanced coursework in research methods
-- Explore internship or job opportunities using these skills
-- Contribute to professional publications or conferences
-- Build research collaboration networks
+- Client communication with data
+- Performance-based design optimization
+- Portfolio showcasing analytical capabilities
+- Research methodology for thesis work
 
 ---
 
-### Resource Access and Support
+### Long-Term Development
 
-**Ongoing resources:**
-- Course materials remain available for reference
-- Office hours continue for follow-up questions
-- Peer network for continued collaboration
-- Professional mentor relationships developed
+**Career paths enabled:**
 
-**Future learning opportunities:**
-- Advanced workshops in specific tools or methods
-- Professional development through industry organizations
-- Graduate research opportunities in evidence-based design
-- Continuing education and certification programs
+- Evidence-based design consultant
+- Building performance analyst
+- Research-oriented architectural practice
+- Graduate research in built environment
+- Policy analysis and building standards development
 
 ---
 
-## Final Week Priorities
+**Continuing education:**
+
+- Advanced simulation tools and methods
+- Statistical analysis for design research
+- Machine learning for design optimization
+- GIS and spatial analysis specialization
 
 ---
 
-### This Week's Essential Tasks
+### Contributing to the Field
 
-1. **Implement draft defense feedback** - focus on highest-priority improvements
-2. **Complete final A4 assembly** - ensure all components are polished and integrated  
-3. **Practice presentation extensively** - aim for smooth, confident delivery
-4. **Prepare networking materials** - business cards, contact information, elevator pitch
+**You are now equipped to:**
 
-### Next Week's Object Fair Tasks
-
-1. **Submit complete A4 package** - all components and reflection
-2. **Deliver professional presentation** - demonstrate semester learning effectively
-3. **Engage with critics and peers** - maximize networking and learning opportunities
-4. **Celebrate achievement** - acknowledge significant skill development and hard work
+- Advance evidence-based design in practice
+- Mentor others in systematic thinking
+- Contribute to design research literature
+- Bridge gap between research and practice
+- Advocate for data-informed design decisions
 
 ---
 
-## Questions and Final Support
+**The field needs:**
 
-**Individual consultation available:**
-- Office hours: Wednesday 4-6pm, KB722, or by appointment
-- Focus on specific revision needs and presentation preparation
-- Technical assistance with final formatting and submission
-- Career guidance and networking strategy discussion
-
-**Peer support opportunities:**
-- Study group formation for final week preparation
-- Presentation practice partnerships
-- Resource sharing and collaboration
-- Mutual encouragement and motivation
+- More designers who can critically evaluate evidence
+- Better communication of performance data
+- Reproducible research in architectural contexts
+- Integration of evidence into design pedagogy
 
 ---
 
-## Key Takeaways
+## 📅 Final Week Priorities
 
-1. **Integration creates coherence** - align all components for maximum impact
-2. **Practice builds confidence** - extensive rehearsal improves presentation quality
-3. **Professional presentation opens doors** - Object Fair offers real networking value
-4. **Feedback drives improvement** - systematic response to input strengthens work
-5. **Skills transfer beyond course** - evidence-based design thinking applies broadly
+### This Week's Focus
+
+**Must do:**
+
+1. Implement highest-priority feedback from draft defense
+2. Complete final A4 package assembly
+3. Polish all components to professional standard
+4. Complete self-assessment reflection
 
 ---
 
-*Next week: Object Fair - Celebrating Evidence-Based Design Achievement*
+**Nice to have:**
 
-**Final preparation resources available through course website and office hours**
+- GIS integration (if relevant and feasible)
+- Enhanced visualizations
+- Additional sensitivity analysis
+- Extended literature review
+
+---
+
+### Time Management
+
+**Prioritize ruthlessly:**
+
+- Focus on what strengthens your argument most
+- Good enough is better than perfect but late
+- Quality over perfection on minor details
+- Ask for help if you're stuck
+
+---
+
+**Get feedback:**
+
+- Peer review before final submission
+- Office hours for specific questions
+- Check requirements against checklist
+- Test all links and files work
+
+---
+
+## 🎓 Key Takeaways
+
+::: {.callout-important icon=false}
+## GIS Platforms for Architects
+
+1. **QGIS** - Free exploration and learning, good visualization
+2. **ESRI** - Industry standard, professional workflows, expensive
+3. **Code-driven** - Reproducible, customizable, integrates with design tools
+4. **Google Earth Engine** - Cloud-based, massive satellite data, regional analysis
+5. **Reality** - Most workflows are hybrid, choose based on task
+:::
+
+---
+
+::: {.callout-note icon=false}
+## Essential Data Sources
+
+1. **ESRI Living Atlas** - Curated global datasets, basemaps, demographics
+2. **Google Earth Engine** - Decades of satellite imagery, climate data
+3. **NOAA** - Climate, weather, coastal, and ocean data
+4. **OpenStreetMap** - Community-built global map data
+5. **Government portals** - Local parcels, zoning, infrastructure
+:::
+
+---
+
+::: {.callout-success icon=false}
+## Your semester achievement
+
+1. You've developed systematic research capabilities
+2. You can now do evidence-based design research
+3. You have professional communication skills
+4. You're equipped for practice, research, or advanced study
+:::
+
+---
+
+## ❓ Questions and Support
+
+**Office hours:** Wednesday 4-6pm, KB722, or by appointment
+
+### This week's priorities
+
+- Individual consultations on A4 feedback integration
+- GIS tool recommendations for specific projects
+- Technical assistance with formatting and submission
+- General troubleshooting and support
+
+---
+
+### Resources
+
+- Course website for submission guidelines
+- GIS tutorials and quick-start guides posted
+- Peer practice partnerships encouraged
+- Final checklist available on Canvas
+
+---
+
+## 🎉 Congratulations
+
+### You've come a long way
+
+- From "What is evidence-based design?" to doing it professionally
+- From uncertain beginnings to confident recommendations
+- From isolated ideas to systematic investigation
+- From novice to competent design researcher
+
+**Next week:** Semester recap and looking ahead
+
+---
+
+*Thank you for your hard work and dedication this semester* 🙏

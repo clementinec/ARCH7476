@@ -7,10 +7,10 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.56">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.4.544">
 
-  <title>ARCH7476: Evidence-Based Generative Design – Week 11: Final Polish</title>
+  <title>ARCH7476: Evidence-Based Generative Design - Week 11: Final Integration &amp; Spatial Analysis Tools</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #f07178; background-color: #2a0f15; font-weight: bold; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #00e0e0; } /* Attribute */
+    code span.bn { color: #d4d0ab; } /* BaseN */
+    code span.bu { color: #abe338; } /* BuiltIn */
+    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffd700; } /* Constant */
+    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
+    code span.cv { color: #ffd700; } /* CommentVar */
+    code span.do { color: #f8f8f2; } /* Documentation */
+    code span.dt { color: #ffa07a; } /* DataType */
+    code span.dv { color: #d4d0ab; } /* DecVal */
+    code span.er { color: #f07178; text-decoration: underline; } /* Error */
+    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
+    code span.fl { color: #d4d0ab; } /* Float */
+    code span.fu { color: #ffa07a; } /* Function */
+    code span.im { color: #abe338; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
+    code span.op { color: #ffa07a; } /* Operator */
+    code span.ot { color: #00e0e0; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
+    code span.sc { color: #abe338; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #00e0e0; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #dcc6e0; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -320,194 +385,2589 @@
     }
   </style>
 </head>
-<body class="quarto-light">
+<body class="quarto-dark">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 11: Final Polish</h1>
-  <p class="subtitle">Integration, Refinement, and Object Fair Preparation</p>
+  <h1 class="title">Week 11: Final Integration &amp; Spatial Analysis Tools</h1>
+  <p class="subtitle">GIS Fundamentals for Architecture + Course Reflection</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="todays-agenda" class="slide level2">
-<h2>Today’s Agenda</h2>
+<section id="todays-agenda" class="slide level2 center">
+<h2>🗺️ Today’s Agenda</h2>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Two-Part Session</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Part 1: GIS for Architects (60 minutes)</strong></p>
 <ul>
-<li class="fragment">Draft defense feedback integration</li>
-<li class="fragment">Final A4 package assembly and review</li>
-<li class="fragment">Object Fair presentation rehearsals</li>
-<li class="fragment">Professional networking preparation</li>
-<li class="fragment">Final submission logistics</li>
+<li>What is GIS and why architects should care</li>
+<li>Four approaches: QGIS, ESRI, Code-driven, Google Earth Engine</li>
+<li>Data sources: Where to get spatial data</li>
+<li>Workflows, trade-offs, and when to use what</li>
+</ul>
+<p><strong>Part 2: Course Reflection &amp; Final Submission (30 minutes)</strong></p>
+<ul>
+<li>Journey from A1 to A4</li>
+<li>Skills you’ve developed</li>
+<li>Evidence-based design thinking</li>
+<li>Final submission requirements</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
+</section>
+<section>
+<section id="part-1-geographic-information-systems-for-architecture" class="title-slide slide level1 center" data-background-color="#1A472A">
+<h1>Part 1: Geographic Information Systems for Architecture</h1>
+
+</section>
+<section id="what-is-gis" class="slide level2 center">
+<h2>🌍 What is GIS?</h2>
+<p><strong>Geographic Information System</strong></p>
+<p>Software for capturing, storing, analyzing, and managing spatial/geographic data</p>
+<p><strong>Beyond mapping:</strong> GIS is analytical infrastructure for spatial decision-making</p>
+</section>
+<section id="gis-not-just-digital-cartography" class="slide level2 center">
+<h2>📍 GIS: Not Just Digital Cartography</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="traditional-mapping">Traditional mapping</h3>
+<ul>
+<li>Representing space visually</li>
+<li>Static documentation of existing conditions</li>
+<li>Communication tool</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="gis-analysis">GIS analysis</h3>
+<ul>
+<li>Querying spatial relationships</li>
+<li>Modeling phenomena over space and time</li>
+<li>Decision support through spatial reasoning</li>
+<li>Generating insight from location data</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="why-architects-need-gis-thinking" class="slide level2 center">
+<h2>🏛️ Why Architects Need GIS Thinking</h2>
+<h3 id="site-analysis-and-selection">Site analysis and selection</h3>
+<ul>
+<li>Environmental context (topography, hydrology, climate)</li>
+<li>Urban context (infrastructure, demographics, zoning)</li>
+<li>Accessibility analysis (walksheds, transit proximity)</li>
+<li>Multi-criteria site evaluation</li>
 </ul>
 </section>
-<section id="feedback-integration-workshop" class="slide level2">
-<h2>Feedback Integration Workshop</h2>
-</section>
-<section class="slide level2">
+<section class="slide level2 center">
 
-<h3 id="systematic-response-to-draft-defense">Systematic Response to Draft Defense</h3>
-<p><strong>Individual analysis (15 minutes):</strong> 1. <strong>Categorize feedback</strong> - content vs.&nbsp;presentation vs.&nbsp;technical 2. <strong>Prioritize changes</strong> - essential vs.&nbsp;nice-to-have improvements<br>
-3. <strong>Plan implementation</strong> - what can be completed this week vs.&nbsp;next week 4. <strong>Identify resources needed</strong> - help, tools, or clarification required</p>
-<p><strong>Common feedback themes:</strong> - Presentation timing and pacing - Stakeholder relevance and connection - Figure clarity and professional design - Recommendation specificity and actionability</p>
+<h3 id="performance-based-design">Performance-based design</h3>
+<ul>
+<li>Solar access and shading studies</li>
+<li>Microclimate and urban heat island analysis</li>
+<li>Viewshed and visual impact assessment</li>
+<li>Noise propagation and acoustic environment</li>
+</ul>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
-<h3 id="integration-strategy-session">Integration Strategy Session</h3>
-<p><strong>Small group consultation (20 minutes):</strong> - Share prioritized revision plans with 2-3 classmates - Get input on revision strategies and resource needs - Offer assistance and collaboration opportunities - Refine implementation timeline based on peer input</p>
-<p><strong>Instructor consultation available:</strong> - Sign up for 5-minute individual meetings - Focus on highest-priority revision needs - Get clarification on feedback interpretation - Confirm final submission requirements</p>
+<h3 id="urban-design-and-planning">Urban design and planning</h3>
+<ul>
+<li>Neighborhood-scale spatial analysis</li>
+<li>Infrastructure capacity and service area mapping</li>
+<li>Growth modeling and scenario planning</li>
+<li>Public space quality and equity assessment</li>
+</ul>
 </section>
-<section id="a4-package-final-assembly" class="slide level2">
-<h2>A4 Package Final Assembly</h2>
-</section>
-<section class="slide level2">
+<section class="slide level2 center">
 
-<h3 id="component-integration-review">Component Integration Review</h3>
-<p><strong>Consistency across components:</strong> - <strong>Key findings</strong> aligned across Research Brief, Practice Case, and Object Card - <strong>Terminology and metrics</strong> used consistently throughout - <strong>Stakeholder framing</strong> coherent across different formats - <strong>Visual identity</strong> unified across all materials</p>
-<p><strong>Quality assurance checklist:</strong> - All citations and references complete and accurate - Figures professionally designed and clearly labeled - Writing clear, error-free, and appropriately formatted - File formats correct for submission and presentation</p>
+<h3 id="parametric-urbanism">Parametric urbanism</h3>
+<ul>
+<li>Site data extraction for generative design</li>
+<li>Context-aware algorithmic design</li>
+<li>Multi-objective spatial optimization</li>
+<li>Data-driven master planning</li>
+</ul>
 </section>
-<section class="slide level2">
+<section id="the-four-gis-paradigms" class="slide level2 center">
+<h2>🔧 The Four GIS Paradigms</h2>
+<table>
+<colgroup>
+<col style="width: 21%">
+<col style="width: 23%">
+<col style="width: 21%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Approach</th>
+<th>Philosophy</th>
+<th>Best For</th>
+<th>Learning Curve</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>QGIS</strong></td>
+<td>Open source, GUI-based</td>
+<td>Exploration, visualization, standard workflows</td>
+<td>Moderate</td>
+</tr>
+<tr class="even">
+<td><strong>ESRI Suite</strong></td>
+<td>Industry standard, enterprise</td>
+<td>Professional practice, collaboration, comprehensive tools</td>
+<td>Moderate-High</td>
+</tr>
+<tr class="odd">
+<td><strong>Code-driven</strong></td>
+<td>Programmatic, reproducible</td>
+<td>Custom analysis, automation, integration with design tools</td>
+<td>High</td>
+</tr>
+<tr class="even">
+<td><strong>Google Earth Engine</strong></td>
+<td>Cloud-based, massive data</td>
+<td>Large-scale environmental analysis, satellite imagery</td>
+<td>Moderate-High</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="slide level2 center">
 
-<h3 id="professional-presentation-standards">Professional Presentation Standards</h3>
-<p><strong>Research Brief (8-12 pages):</strong> - Executive summary compelling and complete - Methods clearly documented and reproducible - Results presented with appropriate uncertainty - Recommendations specific and implementable</p>
-<p><strong>Practice Case (2 slides + 2-page memo):</strong> - Key findings immediately apparent - Decision criteria and thresholds clear - Implementation guidance specific - Professional formatting and design</p>
-</section>
-<section class="slide level2">
+</section></section>
+<section>
+<section id="approach-1-qgis-open-source" class="title-slide slide level1 center" data-background-color="#2C1810">
+<h1>Approach 1: QGIS (Open Source)</h1>
 
-<p><strong>Object Card (single page poster):</strong> - Visually compelling at arm’s length viewing - Key message prominent and clear - Professional design quality suitable for portfolio - Contact information and next steps included</p>
-<p><strong>Reproducibility Capsule (3-5 pages + materials):</strong> - Step-by-step procedures clear and complete - Tool requirements and alternatives specified - Quality control and troubleshooting included - Adaptation guidance for different contexts</p>
 </section>
-<section id="presentation-rehearsal-sessions" class="slide level2">
-<h2>Presentation Rehearsal Sessions</h2>
+<section id="qgis-the-community-driven-option" class="slide level2 center">
+<h2>🆓 QGIS: The Community-Driven Option</h2>
+<h3 id="what-it-is">What it is</h3>
+<ul>
+<li>Free and open source desktop GIS application</li>
+<li>Cross-platform (Windows, Mac, Linux)</li>
+<li>Extensible through plugins (Python-based)</li>
+<li>Active community development</li>
+</ul>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
-<h3 id="structured-practice-format">Structured Practice Format</h3>
-<p><strong>Individual presentation (6-8 minutes):</strong> - Complete Object Fair presentation as planned - Use final slides and materials - Practice with timer for pacing - Focus on smooth transitions and confident delivery</p>
-<p><strong>Peer feedback (3-4 minutes):</strong> - Content clarity and logical flow - Visual aid effectiveness<br>
-- Professional presentation style - Suggestions for final improvement</p>
-<p><strong>Immediate revision (2-3 minutes):</strong> - Note key improvement areas - Plan specific changes for final week - Practice problem areas immediately</p>
+<h3 id="underlying-philosophy">Underlying philosophy</h3>
+<ul>
+<li>Democratic access to spatial analysis tools</li>
+<li>Transparency in algorithms and processes</li>
+<li>Community knowledge sharing and collaboration</li>
+<li>Interoperability through open standards</li>
+</ul>
 </section>
-<section class="slide level2">
+<section id="qgis-strengths-for-architects" class="slide level2 center">
+<h2>💪 QGIS Strengths for Architects</h2>
+<h3 id="accessibility">Accessibility</h3>
+<ul>
+<li>Zero cost - ideal for students and small practices</li>
+<li>No licensing barriers for exploration and learning</li>
+<li>Easy installation and experimentation</li>
+<li>Extensive free tutorials and community resources</li>
+</ul>
+</section>
+<section class="slide level2 center">
 
-<h3 id="common-presentation-challenges">Common Presentation Challenges</h3>
-<p><strong>Timing issues:</strong> - Too much content for time limit - Uneven pacing across sections - Rushing through important points - Inadequate time for questions</p>
-<p><strong>Solutions:</strong> - Prioritize most important 2-3 points - Practice with timer multiple times - Build in natural pause points - Prepare concise responses to likely questions</p>
+<h3 id="integration-capabilities">Integration capabilities</h3>
+<ul>
+<li>Reads virtually any spatial data format</li>
+<li>Strong interoperability with other open source tools</li>
+<li>Python console for scripting and automation</li>
+<li>Export to common formats (PDF, PNG, DXF, etc.)</li>
+</ul>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
-<h3 id="question-and-answer-preparation">Question and Answer Preparation</h3>
-<p><strong>Anticipate common question types:</strong> - <strong>Clarification:</strong> “Can you explain how you…” - <strong>Validation:</strong> “How do you know that…”<br>
-- <strong>Application:</strong> “How would this work in…” - <strong>Limitation:</strong> “What about situations where…”</p>
-<p><strong>Preparation strategies:</strong> - Practice honest acknowledgment of limitations - Prepare specific examples to illustrate points - Know your data and methods well enough for detailed questions - Practice redirecting off-topic questions back to your findings</p>
+<h3 id="visualization-power">Visualization power</h3>
+<ul>
+<li>Sophisticated cartographic styling</li>
+<li>Layer blending and transparency controls</li>
+<li>Print composer for professional map layouts</li>
+<li>Time-series animation capabilities</li>
+</ul>
 </section>
-<section id="professional-networking-preparation" class="slide level2">
-<h2>Professional Networking Preparation</h2>
-</section>
-<section class="slide level2">
+<section class="slide level2 center">
 
-<h3 id="object-fair-as-networking-opportunity">Object Fair as Networking Opportunity</h3>
-<p><strong>External critic participation:</strong> - Industry practitioners and potential employers - Faculty from architecture, engineering, and planning - Alumni working in evidence-based design - Professional colleagues and potential collaborators</p>
-<p><strong>Networking goals:</strong> - Share your work and demonstrate professional competence - Learn about career opportunities and industry trends - Build relationships for future collaboration - Get advice for continued professional development</p>
+<h3 id="analysis-breadth">Analysis breadth</h3>
+<ul>
+<li>Core spatial analysis tools included</li>
+<li>GRASS GIS integration for advanced terrain analysis</li>
+<li>Processing toolbox with hundreds of algorithms</li>
+<li>Custom workflow automation through graphical modeler</li>
+</ul>
 </section>
-<section class="slide level2">
+<section id="qgis-limitations" class="slide level2 center">
+<h2>⚠️ QGIS Limitations</h2>
+<h3 id="performance-at-scale">Performance at scale</h3>
+<ul>
+<li>Can be slow with very large datasets</li>
+<li>Less optimized than commercial alternatives</li>
+<li>Limited cloud/server integration</li>
+</ul>
+</section>
+<section class="slide level2 center">
 
-<h3 id="networking-skills-development">Networking Skills Development</h3>
-<p><strong>Elevator pitch refinement:</strong> - 30-second version for quick introductions - 2-minute version for interested parties - Focus on stakeholder value rather than technical details - Practice confident, enthusiastic delivery</p>
-<p><strong>Business card and contact strategy:</strong> - Professional contact information ready - LinkedIn profile updated and professional - Portfolio or website link available - Follow-up plan for interesting connections</p>
+<h3 id="professional-workflow">Professional workflow</h3>
+<ul>
+<li>Less common in professional practice (US)</li>
+<li>Collaboration challenges if clients use ESRI</li>
+<li>Fewer industry-specific toolsets</li>
+<li>UI can be less polished than commercial options</li>
+</ul>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
-<h3 id="professional-presentation-behaviors">Professional Presentation Behaviors</h3>
-<p><strong>Before presentations:</strong> - Arrive early and test technology setup - Review Object Card placement and visibility - Practice confident posture and voice projection - Network casually with early arrivals</p>
-<p><strong>During presentations:</strong> - Professional attire and confident demeanor - Clear articulation and appropriate pacing - Eye contact with audience members - Gracious response to questions and feedback</p>
-<p><strong>After presentations:</strong> - Thank critics and audience members - Follow up on interesting conversations - Exchange contact information appropriately - Reflect on feedback for future improvement</p>
+<h3 id="support">Support</h3>
+<ul>
+<li>Community-based (no guaranteed support)</li>
+<li>Documentation can lag behind development</li>
+<li>Plugin quality varies widely</li>
+</ul>
 </section>
-<section id="final-logistics-and-submission" class="slide level2">
-<h2>Final Logistics and Submission</h2>
+<section id="typical-qgis-workflow-for-architecture" class="slide level2 center">
+<h2>🔄 Typical QGIS Workflow for Architecture</h2>
+<h3 id="data-acquisition">1. Data acquisition</h3>
+<ul>
+<li>Download municipal GIS data (parcels, zoning, infrastructure)</li>
+<li>Access open data portals (OpenStreetMap, USGS, etc.)</li>
+<li>Georeferenced CAD drawings or site survey data</li>
+<li>Satellite/aerial imagery basemaps</li>
+</ul>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
-<h3 id="submission-requirements">Submission Requirements</h3>
-<p><strong>Digital submission (due before Object Fair):</strong> - Complete A4 package as single PDF - Individual component files for reference - Presentation slides in PowerPoint format - Self-assessment reflection (1 page)</p>
-<p><strong>Physical materials for Object Fair:</strong> - Printed Object Card at appropriate size - Backup presentation files on USB drive - Professional business cards or contact information - Any demonstration materials or props</p>
+<h3 id="exploratory-analysis">2. Exploratory analysis</h3>
+<ul>
+<li>Layer stacking and visual exploration</li>
+<li>Buffer analysis (walkability, noise impact zones)</li>
+<li>Spatial queries (find all parcels within X distance of transit)</li>
+<li>Terrain analysis (slope, aspect, watershed delineation)</li>
+</ul>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
-<h3 id="object-fair-day-timeline">Object Fair Day Timeline</h3>
-<p><strong>Setup period (30 minutes):</strong> - Technology testing and troubleshooting - Object Card display arrangement - Final material organization - Networking with early arrivals</p>
-<p><strong>Presentation period (90 minutes):</strong> - Individual presentations (6-8 min + 4 min Q&amp;A) - Active audience participation and feedback - Professional critic evaluation and input - Peer support and engagement</p>
-<p><strong>Networking period (30 minutes):</strong> - Informal conversations with critics and peers - Contact information exchange - Career advice and opportunity discussion - Course celebration and reflection</p>
+<h3 id="visualization-and-export">3. Visualization and export</h3>
+<ul>
+<li>Create analytical maps for presentations</li>
+<li>Export site context data for CAD/Rhino</li>
+<li>Generate PDF map series for reports</li>
+<li>Extract elevation data for 3D modeling</li>
+</ul>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
-<h3 id="self-assessment-reflection">Self-Assessment Reflection</h3>
-<p><strong>Required reflection topics:</strong> 1. <strong>Learning integration:</strong> How did the four assignments build your research capabilities? 2. <strong>Skill development:</strong> What evidence-based design competencies did you develop? 3. <strong>Professional growth:</strong> How will you apply these skills in future work? 4. <strong>Course impact:</strong> What was most valuable about this learning experience?</p>
-<p><strong>Format:</strong> 1 page, professional writing, submitted with A4 package</p>
+<h3 id="when-to-stop-and-switch-tools">4. When to stop and switch tools</h3>
+<ul>
+<li>Complex custom analysis → Move to Python/R</li>
+<li>Integration with parametric design → Move to code-driven approach</li>
+<li>Professional deliverables requiring ESRI format → Convert to ArcGIS</li>
+</ul>
 </section>
-<section id="course-completion-and-beyond" class="slide level2">
-<h2>Course Completion and Beyond</h2>
-</section>
-<section class="slide level2">
-
-<h3 id="continued-professional-development">Continued Professional Development</h3>
-<p><strong>Immediate next steps:</strong> - Apply skills to current projects and coursework - Share methods and insights with colleagues - Continue building evidence-based design portfolio - Maintain connections made through Object Fair networking</p>
-<p><strong>Long-term development:</strong> - Consider advanced coursework in research methods - Explore internship or job opportunities using these skills - Contribute to professional publications or conferences - Build research collaboration networks</p>
-</section>
-<section class="slide level2">
-
-<h3 id="resource-access-and-support">Resource Access and Support</h3>
-<p><strong>Ongoing resources:</strong> - Course materials remain available for reference - Office hours continue for follow-up questions - Peer network for continued collaboration - Professional mentor relationships developed</p>
-<p><strong>Future learning opportunities:</strong> - Advanced workshops in specific tools or methods - Professional development through industry organizations - Graduate research opportunities in evidence-based design - Continuing education and certification programs</p>
-</section>
-<section id="final-week-priorities" class="slide level2">
-<h2>Final Week Priorities</h2>
-</section>
-<section class="slide level2">
-
-<h3 id="this-weeks-essential-tasks">This Week’s Essential Tasks</h3>
+<section id="qgis-in-practice-example-use-case" class="slide level2 center">
+<h2>🏘️ QGIS in Practice: Example Use Case</h2>
+<p><strong>Scenario:</strong> Site analysis for multi-family housing development</p>
+<h3 id="qgis-workflow">QGIS workflow</h3>
 <ol type="1">
-<li class="fragment"><strong>Implement draft defense feedback</strong> - focus on highest-priority improvements</li>
-<li class="fragment"><strong>Complete final A4 assembly</strong> - ensure all components are polished and integrated<br>
-</li>
-<li class="fragment"><strong>Practice presentation extensively</strong> - aim for smooth, confident delivery</li>
-<li class="fragment"><strong>Prepare networking materials</strong> - business cards, contact information, elevator pitch</li>
-</ol>
-<h3 id="next-weeks-object-fair-tasks">Next Week’s Object Fair Tasks</h3>
-<ol type="1">
-<li class="fragment"><strong>Submit complete A4 package</strong> - all components and reflection</li>
-<li class="fragment"><strong>Deliver professional presentation</strong> - demonstrate semester learning effectively</li>
-<li class="fragment"><strong>Engage with critics and peers</strong> - maximize networking and learning opportunities</li>
-<li class="fragment"><strong>Celebrate achievement</strong> - acknowledge significant skill development and hard work</li>
+<li>Load parcel boundary and topographic data</li>
+<li>Buffer transit stops (400m walkable distance)</li>
+<li>Perform viewshed analysis from key vantage points</li>
+<li>Overlay zoning regulations and height restrictions</li>
 </ol>
 </section>
-<section id="questions-and-final-support" class="slide level2">
-<h2>Questions and Final Support</h2>
-<p><strong>Individual consultation available:</strong> - Office hours: Wednesday 4-6pm, KB722, or by appointment - Focus on specific revision needs and presentation preparation - Technical assistance with final formatting and submission - Career guidance and networking strategy discussion</p>
-<p><strong>Peer support opportunities:</strong> - Study group formation for final week preparation - Presentation practice partnerships - Resource sharing and collaboration - Mutual encouragement and motivation</p>
-</section>
-<section id="key-takeaways" class="slide level2">
-<h2>Key Takeaways</h2>
-<ol type="1">
-<li class="fragment"><strong>Integration creates coherence</strong> - align all components for maximum impact</li>
-<li class="fragment"><strong>Practice builds confidence</strong> - extensive rehearsal improves presentation quality</li>
-<li class="fragment"><strong>Professional presentation opens doors</strong> - Object Fair offers real networking value</li>
-<li class="fragment"><strong>Feedback drives improvement</strong> - systematic response to input strengthens work</li>
-<li class="fragment"><strong>Skills transfer beyond course</strong> - evidence-based design thinking applies broadly</li>
-</ol>
-</section>
-<section class="slide level2">
+<section class="slide level2 center">
 
-<p><em>Next week: Object Fair - Celebrating Evidence-Based Design Achievement</em></p>
-<p><strong>Final preparation resources available through course website and office hours</strong></p>
+<ol start="5" type="1">
+<li>Analyze solar access through shadow modeling</li>
+<li>Create slope analysis for grading constraints</li>
+<li>Export 2D site context to CAD</li>
+<li>Export elevation grid for Rhino/Grasshopper</li>
+</ol>
+<p><strong>Output:</strong> Comprehensive site analysis maps + data for design tools</p>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="approach-2-esri-suite-industry-standard" class="title-slide slide level1 center" data-background-color="#1A472A">
+<h1>Approach 2: ESRI Suite (Industry Standard)</h1>
+
+</section>
+<section id="esri-the-professional-enterprise-platform" class="slide level2 center">
+<h2>🏢 ESRI: The Professional Enterprise Platform</h2>
+<h3 id="what-it-is-1">What it is</h3>
+<ul>
+<li>ArcGIS Desktop (ArcGIS Pro, ArcMap legacy)</li>
+<li>ArcGIS Online (cloud-based mapping and collaboration)</li>
+<li>Comprehensive suite of specialized tools</li>
+<li>Dominant commercial GIS platform globally</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="underlying-philosophy-1">Underlying philosophy</h3>
+<ul>
+<li>Enterprise-scale spatial data infrastructure</li>
+<li>Standardized workflows and best practices</li>
+<li>Professional support and training</li>
+<li>Ecosystem integration (servers, mobile, cloud)</li>
+</ul>
+</section>
+<section id="esri-strengths-for-architecture-firms" class="slide level2 center">
+<h2>💼 ESRI Strengths for Architecture Firms</h2>
+<h3 id="industry-standard">Industry standard</h3>
+<ul>
+<li>Expected by many clients and collaborators</li>
+<li>Common language for multi-disciplinary teams</li>
+<li>Compatibility with government and utility data</li>
+<li>Recognized professional credential (GISP certification)</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="performance-and-scale">Performance and scale</h3>
+<ul>
+<li>Optimized for large datasets</li>
+<li>Geodatabase architecture for data integrity</li>
+<li>Server-based processing for intensive analysis</li>
+<li>Cloud integration (ArcGIS Online)</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="comprehensive-toolsets">Comprehensive toolsets</h3>
+<ul>
+<li>Specialized tools for every domain</li>
+<li>3D analysis and visualization (ArcGIS Pro)</li>
+<li>Network analysis (routing, service areas)</li>
+<li>Spatial statistics and modeling</li>
+<li>Extensive model builder for workflow automation</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="professional-support">Professional support</h3>
+<ul>
+<li>Technical support from ESRI</li>
+<li>Extensive official documentation</li>
+<li>Professional training programs</li>
+<li>Industry-specific solution templates</li>
+</ul>
+</section>
+<section id="esri-limitations" class="slide level2 center">
+<h2>💸 ESRI Limitations</h2>
+<h3 id="cost">Cost</h3>
+<ul>
+<li>Expensive licensing (individual and organizational)</li>
+<li>Subscription model with ongoing costs</li>
+<li>Additional costs for advanced extensions</li>
+<li>Barrier for students (though educational licenses available)</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="proprietary-lock-in">Proprietary lock-in</h3>
+<ul>
+<li>Ecosystem designed to keep you in ESRI world</li>
+<li>Proprietary file formats (though improving)</li>
+<li>License management complexity</li>
+<li>Vendor dependency for tools and updates</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="complexity">Complexity</h3>
+<ul>
+<li>Steeper learning curve for full capabilities</li>
+<li>Interface can be overwhelming for beginners</li>
+<li>Many tools have confusing parameter settings</li>
+<li>Workflow documentation often enterprise-focused</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="flexibility">Flexibility</h3>
+<ul>
+<li>Less flexible than code-driven approaches</li>
+<li>Scripting (Python) exists but secondary to GUI</li>
+<li>Custom tools require ArcPy learning</li>
+<li>Harder to integrate with cutting-edge methods</li>
+</ul>
+</section>
+<section id="typical-esri-workflow-for-architecture" class="slide level2 center">
+<h2>🔄 Typical ESRI Workflow for Architecture</h2>
+<h3 id="enterprise-data-management">1. Enterprise data management</h3>
+<ul>
+<li>Geodatabase creation and management</li>
+<li>Multi-user editing and version control</li>
+<li>Data quality control and validation</li>
+<li>Integration with firm’s data infrastructure</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="standard-analysis">2. Standard analysis</h3>
+<ul>
+<li>Built-in tools for common spatial operations</li>
+<li>Model builder for repeatable workflows</li>
+<li>Geoprocessing services for team sharing</li>
+<li>Network analysis for accessibility studies</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="professional-deliverables">3. Professional deliverables</h3>
+<ul>
+<li>High-quality map production</li>
+<li>Layout templates for consistent branding</li>
+<li>Multi-page map books</li>
+<li>Web maps for client interaction</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="collaboration">4. Collaboration</h3>
+<ul>
+<li>ArcGIS Online for sharing with clients</li>
+<li>Web apps for stakeholder engagement</li>
+<li>Mobile data collection (ArcGIS Field Maps)</li>
+<li>Real-time collaboration on shared projects</li>
+</ul>
+</section>
+<section id="esri-in-practice-example-use-case" class="slide level2 center">
+<h2>🏙️ ESRI in Practice: Example Use Case</h2>
+<p><strong>Scenario:</strong> Regional master planning for large development</p>
+<h3 id="esri-workflow">ESRI workflow</h3>
+<ol type="1">
+<li>Enterprise geodatabase with all regional data</li>
+<li>Network analysis for transit service areas</li>
+<li>Demographic analysis using ArcGIS Business Analyst</li>
+<li>Scenario planning with multiple development alternatives</li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<ol start="5" type="1">
+<li>3D visualization in ArcGIS Pro</li>
+<li>Web app for stakeholder feedback (ArcGIS Online)</li>
+<li>Automated report generation with Python</li>
+<li>Professional map series for planning documents</li>
+</ol>
+<p><strong>Output:</strong> Comprehensive planning package with collaboration tools</p>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="approach-3-code-driven-gis-geopandas-etc." class="title-slide slide level1 center" data-background-color="#2C1810">
+<h1>Approach 3: Code-Driven GIS (geopandas, etc.)</h1>
+
+</section>
+<section id="code-driven-the-programmatic-approach" class="slide level2 center">
+<h2>💻 Code-Driven: The Programmatic Approach</h2>
+<h3 id="what-it-is-2">What it is</h3>
+<ul>
+<li>Python libraries: geopandas, shapely, rasterio, folium</li>
+<li>R packages: sf, terra, tmap, leaflet</li>
+<li>Direct manipulation of spatial data through code</li>
+<li>Integration with data science ecosystem</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="underlying-philosophy-2">Underlying philosophy</h3>
+<ul>
+<li>Reproducibility through scripts</li>
+<li>Flexibility through programming</li>
+<li>Integration with analysis and design workflows</li>
+<li>Automation of repetitive tasks</li>
+<li>Version control and documentation</li>
+</ul>
+</section>
+<section id="core-python-geospatial-stack" class="slide level2 center">
+<h2>🐍 Core Python Geospatial Stack</h2>
+<h3 id="data-handling">Data handling</h3>
+<ul>
+<li><code>geopandas</code> - GeoDataFrames (pandas + geometry)</li>
+<li><code>shapely</code> - Geometric operations</li>
+<li><code>pyproj</code> - Coordinate system transformations</li>
+<li><code>fiona</code> - Reading/writing vector data</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="raster-processing">Raster processing</h3>
+<ul>
+<li><code>rasterio</code> - Raster data I/O and processing</li>
+<li><code>rasterstats</code> - Zonal statistics</li>
+<li><code>numpy</code> - Array-based raster calculations</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="visualization">Visualization</h3>
+<ul>
+<li><code>matplotlib</code> - Static maps and plots</li>
+<li><code>folium</code> - Interactive web maps (Leaflet.js wrapper)</li>
+<li><code>contextily</code> - Basemap tiles</li>
+<li><code>plotly</code> - Interactive 3D visualization</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="analysis">Analysis</h3>
+<ul>
+<li><code>scipy.spatial</code> - Spatial algorithms and optimization</li>
+<li><code>scikit-learn</code> - Machine learning on spatial data</li>
+<li><code>networkx</code> - Network analysis</li>
+<li><code>PySAL</code> - Spatial econometrics and statistics</li>
+</ul>
+</section>
+<section id="code-driven-strengths-for-design-research" class="slide level2 center">
+<h2>🚀 Code-Driven Strengths for Design Research</h2>
+<h3 id="reproducibility">Reproducibility</h3>
+<ul>
+<li>Scripts document every step of analysis</li>
+<li>Version control tracks methodological changes</li>
+<li>Easy to re-run with updated data</li>
+<li>Transparent methodology for peer review</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="automation">Automation</h3>
+<ul>
+<li>Process hundreds of scenarios programmatically</li>
+<li>Batch process multiple sites or alternatives</li>
+<li>Schedule regular analysis updates</li>
+<li>Eliminate repetitive GUI clicking</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="integration">Integration</h3>
+<ul>
+<li>Direct connection to parametric design tools (Rhino/Grasshopper)</li>
+<li>Combine GIS with machine learning and optimization</li>
+<li>Web scraping and API integration for data collection</li>
+<li>Export directly to design software formats</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="customization">Customization</h3>
+<ul>
+<li>Write exactly the analysis you need</li>
+<li>Combine tools in novel ways</li>
+<li>Implement cutting-edge methods from research</li>
+<li>Build discipline-specific toolsets</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="cost-and-openness">Cost and openness</h3>
+<ul>
+<li>Free and open source</li>
+<li>No licensing restrictions</li>
+<li>Use anywhere (laptop, server, cloud)</li>
+<li>Share code freely with collaborators</li>
+</ul>
+</section>
+<section id="code-driven-limitations" class="slide level2 center">
+<h2>⚠️ Code-Driven Limitations</h2>
+<h3 id="learning-curve">Learning curve</h3>
+<ul>
+<li>Requires programming proficiency</li>
+<li>Must understand both GIS concepts and coding</li>
+<li>Debugging can be time-consuming</li>
+<li>Less intuitive than GUI exploration</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="visualization-1">Visualization</h3>
+<ul>
+<li>Static maps require more code than GUI tools</li>
+<li>Cartographic refinement more tedious</li>
+<li>Professional map layouts require additional tools</li>
+<li>Less “out of the box” polish</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="no-gui-fallback">No GUI fallback</h3>
+<ul>
+<li>Can’t “click around” to explore</li>
+<li>Harder to catch data errors visually</li>
+<li>Every operation must be scripted</li>
+<li>Initial exploration slower than QGIS/ESRI</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="ecosystem-fragmentation">Ecosystem fragmentation</h3>
+<ul>
+<li>Multiple libraries with overlapping functions</li>
+<li>API changes and deprecation</li>
+<li>Less cohesive than commercial platforms</li>
+<li>Requires more troubleshooting skills</li>
+</ul>
+</section>
+<section id="typical-code-driven-workflow" class="slide level2 center">
+<h2>🔄 Typical Code-Driven Workflow</h2>
+<h3 id="data-preparation">1. Data preparation</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
+<span id="cb1-2"><a></a><span class="im">import</span> rasterio <span class="im">as</span> rio</span>
+<span id="cb1-3"><a></a></span>
+<span id="cb1-4"><a></a><span class="co"># Load vector data</span></span>
+<span id="cb1-5"><a></a>parcels <span class="op">=</span> gpd.read_file(<span class="st">"parcels.shp"</span>)</span>
+<span id="cb1-6"><a></a>transit <span class="op">=</span> gpd.read_file(<span class="st">"transit_stops.geojson"</span>)</span>
+<span id="cb1-7"><a></a></span>
+<span id="cb1-8"><a></a><span class="co"># Load raster data</span></span>
+<span id="cb1-9"><a></a><span class="cf">with</span> rio.<span class="bu">open</span>(<span class="st">"elevation.tif"</span>) <span class="im">as</span> src:</span>
+<span id="cb1-10"><a></a>    elevation <span class="op">=</span> src.read(<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section class="slide level2 center">
+
+<h3 id="spatial-analysis">2. Spatial analysis</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="co"># Buffer transit stops (400m)</span></span>
+<span id="cb2-2"><a></a>transit_buffers <span class="op">=</span> transit.<span class="bu">buffer</span>(<span class="dv">400</span>)</span>
+<span id="cb2-3"><a></a></span>
+<span id="cb2-4"><a></a><span class="co"># Find parcels within transit buffer</span></span>
+<span id="cb2-5"><a></a>accessible_parcels <span class="op">=</span> parcels[</span>
+<span id="cb2-6"><a></a>    parcels.intersects(transit_buffers.unary_union)</span>
+<span id="cb2-7"><a></a>]</span>
+<span id="cb2-8"><a></a></span>
+<span id="cb2-9"><a></a><span class="co"># Calculate slopes from elevation</span></span>
+<span id="cb2-10"><a></a>slopes <span class="op">=</span> calculate_slope(elevation)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section class="slide level2 center">
+
+<h3 id="parametric-integration">3. Parametric integration</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="co"># Export site boundary to Rhino</span></span>
+<span id="cb3-2"><a></a>site_boundary <span class="op">=</span> accessible_parcels.iloc[<span class="dv">0</span>].geometry</span>
+<span id="cb3-3"><a></a>export_to_rhino_3dm(site_boundary, <span class="st">"site.3dm"</span>)</span>
+<span id="cb3-4"><a></a></span>
+<span id="cb3-5"><a></a><span class="co"># Create elevation grid for Grasshopper</span></span>
+<span id="cb3-6"><a></a>elevation_grid <span class="op">=</span> extract_grid_for_gh(</span>
+<span id="cb3-7"><a></a>    elevation, site_boundary</span>
+<span id="cb3-8"><a></a>)</span>
+<span id="cb3-9"><a></a>np.save(<span class="st">"elevation_grid.npy"</span>, elevation_grid)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section class="slide level2 center">
+
+<h3 id="iterative-analysis">4. Iterative analysis</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="co"># Analyze 100 design alternatives</span></span>
+<span id="cb4-2"><a></a>results <span class="op">=</span> []</span>
+<span id="cb4-3"><a></a><span class="cf">for</span> alt <span class="kw">in</span> design_alternatives:</span>
+<span id="cb4-4"><a></a>    solar_exposure <span class="op">=</span> calculate_solar(alt, elevation)</span>
+<span id="cb4-5"><a></a>    view_quality <span class="op">=</span> calculate_views(alt, viewpoints)</span>
+<span id="cb4-6"><a></a>    results.append({</span>
+<span id="cb4-7"><a></a>        <span class="st">'alternative'</span>: alt.<span class="bu">id</span>,</span>
+<span id="cb4-8"><a></a>        <span class="st">'solar'</span>: solar_exposure,</span>
+<span id="cb4-9"><a></a>        <span class="st">'views'</span>: view_quality</span>
+<span id="cb4-10"><a></a>    })</span>
+<span id="cb4-11"><a></a></span>
+<span id="cb4-12"><a></a>results_df <span class="op">=</span> pd.DataFrame(results)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="code-driven-in-practice-example" class="slide level2 center">
+<h2>🏗️ Code-Driven in Practice: Example</h2>
+<p><strong>Scenario:</strong> Automated site selection for 50 potential locations</p>
+<h3 id="code-driven-workflow">Code-driven workflow</h3>
+<ol type="1">
+<li>Scrape parcel data from city GIS portal</li>
+<li>Download OpenStreetMap data (transit, amenities, roads)</li>
+<li>Load climate data and elevation models</li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<ol start="4" type="1">
+<li>For each site, calculate:
+<ul>
+<li>Walkability scores</li>
+<li>Solar potential</li>
+<li>View quality</li>
+<li>Environmental constraints</li>
+</ul></li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<ol start="5" type="1">
+<li>Multi-objective optimization to rank sites</li>
+<li>Generate automated report PDFs</li>
+<li>Create interactive web map of results</li>
+<li>Export top 5 sites to Rhino for design development</li>
+</ol>
+<p><strong>Output:</strong> Ranked list + data-driven design starting points</p>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="approach-4-google-earth-engine-cloud-platform" class="title-slide slide level1 center" data-background-color="#1A472A">
+<h1>Approach 4: Google Earth Engine (Cloud Platform)</h1>
+
+</section>
+<section id="google-earth-engine-cloud-scale-geospatial" class="slide level2 center">
+<h2>☁️ Google Earth Engine: Cloud-Scale Geospatial</h2>
+<h3 id="what-it-is-3">What it is</h3>
+<ul>
+<li>Cloud-based platform for planetary-scale geospatial analysis</li>
+<li>Access to petabytes of satellite imagery and geospatial datasets</li>
+<li>JavaScript or Python API for analysis</li>
+<li>No local data storage or processing required</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="underlying-philosophy-3">Underlying philosophy</h3>
+<ul>
+<li>Bring computation to data (not data to computation)</li>
+<li>Democratize access to Earth observation data</li>
+<li>Enable large-scale environmental monitoring</li>
+<li>Cloud-based collaboration and sharing</li>
+</ul>
+</section>
+<section id="gee-strengths-for-environmental-design" class="slide level2 center">
+<h2>🛰️ GEE Strengths for Environmental Design</h2>
+<h3 id="massive-data-catalog">Massive data catalog</h3>
+<ul>
+<li>Landsat archive (1970s-present): 40+ years of Earth observation</li>
+<li>Sentinel imagery: High-resolution, frequently updated</li>
+<li>MODIS, ASTER, and other satellite products</li>
+<li>Climate data: Temperature, precipitation, vegetation indices</li>
+<li>Terrain: Global elevation models (SRTM, ALOS)</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="cloud-processing-power">Cloud processing power</h3>
+<ul>
+<li>Process terabytes of data without local downloads</li>
+<li>Parallel processing across Google’s infrastructure</li>
+<li>Time-series analysis across decades</li>
+<li>Regional to global scale analysis</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="no-local-infrastructure-needed">No local infrastructure needed</h3>
+<ul>
+<li>No massive data downloads</li>
+<li>No powerful local computer required</li>
+<li>All processing happens in cloud</li>
+<li>Export results when ready</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="analysis-capabilities">Analysis capabilities</h3>
+<ul>
+<li>Multi-temporal analysis (change over time)</li>
+<li>Machine learning on satellite imagery</li>
+<li>Climate and environmental modeling</li>
+<li>Urban heat island analysis</li>
+<li>Vegetation and land cover classification</li>
+</ul>
+</section>
+<section id="gee-limitations" class="slide level2 center">
+<h2>⚠️ GEE Limitations</h2>
+<h3 id="learning-curve-1">Learning curve</h3>
+<ul>
+<li>Requires JavaScript or Python coding</li>
+<li>Different mental model (cloud-based, lazy evaluation)</li>
+<li>GEE-specific API and data structures</li>
+<li>Debugging can be challenging</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="architecture-focus">Architecture focus</h3>
+<ul>
+<li>Better for regional/environmental analysis than site-scale</li>
+<li>Less useful for detailed building-scale work</li>
+<li>Focused on raster (satellite) data, less vector support</li>
+<li>May be overkill for small site analysis</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="data-resolution">Data resolution</h3>
+<ul>
+<li>Satellite imagery resolution limits (10m-30m for most free data)</li>
+<li>Not suitable for detailed site features</li>
+<li>Temporal resolution varies by satellite</li>
+<li>Cloud cover can limit usable imagery</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="export-limitations">Export limitations</h3>
+<ul>
+<li>Processing quotas for free tier</li>
+<li>Results must be exported (not live integration)</li>
+<li>Large exports can be slow</li>
+<li>Limited real-time interaction</li>
+</ul>
+</section>
+<section id="typical-gee-workflow-for-architecture" class="slide level2 center">
+<h2>🔄 Typical GEE Workflow for Architecture</h2>
+<h3 id="define-study-area">1. Define study area</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource javascript number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb5-1"><a></a><span class="co">// Define site or region of interest</span></span>
+<span id="cb5-2"><a></a><span class="kw">var</span> site <span class="op">=</span> ee<span class="op">.</span><span class="at">Geometry</span><span class="op">.</span><span class="fu">Point</span>([<span class="fl">114.1095</span><span class="op">,</span> <span class="fl">22.3964</span>])<span class="op">;</span> <span class="co">// Hong Kong</span></span>
+<span id="cb5-3"><a></a><span class="kw">var</span> region <span class="op">=</span> site<span class="op">.</span><span class="fu">buffer</span>(<span class="dv">5000</span>)<span class="op">;</span> <span class="co">// 5km radius</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section class="slide level2 center">
+
+<h3 id="load-and-filter-data">2. Load and filter data</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource javascript number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb6-1"><a></a><span class="co">// Load Landsat 8 imagery</span></span>
+<span id="cb6-2"><a></a><span class="kw">var</span> imagery <span class="op">=</span> ee<span class="op">.</span><span class="fu">ImageCollection</span>(<span class="st">'LANDSAT/LC08/C02/T1_L2'</span>)</span>
+<span id="cb6-3"><a></a>  <span class="op">.</span><span class="fu">filterBounds</span>(region)</span>
+<span id="cb6-4"><a></a>  <span class="op">.</span><span class="fu">filterDate</span>(<span class="st">'2020-01-01'</span><span class="op">,</span> <span class="st">'2023-12-31'</span>)</span>
+<span id="cb6-5"><a></a>  <span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">lt</span>(<span class="st">'CLOUD_COVER'</span><span class="op">,</span> <span class="dv">20</span>))<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section class="slide level2 center">
+
+<h3 id="analyze-and-compute">3. Analyze and compute</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource javascript number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb7-1"><a></a><span class="co">// Calculate NDVI (vegetation index)</span></span>
+<span id="cb7-2"><a></a><span class="kw">var</span> ndvi <span class="op">=</span> imagery<span class="op">.</span><span class="fu">map</span>(<span class="kw">function</span>(image) {</span>
+<span id="cb7-3"><a></a>  <span class="cf">return</span> image<span class="op">.</span><span class="fu">normalizedDifference</span>([<span class="st">'SR_B5'</span><span class="op">,</span> <span class="st">'SR_B4'</span>])</span>
+<span id="cb7-4"><a></a>    <span class="op">.</span><span class="fu">rename</span>(<span class="st">'NDVI'</span>)<span class="op">;</span></span>
+<span id="cb7-5"><a></a>})<span class="op">;</span></span>
+<span id="cb7-6"><a></a></span>
+<span id="cb7-7"><a></a><span class="co">// Get mean NDVI over time period</span></span>
+<span id="cb7-8"><a></a><span class="kw">var</span> meanNDVI <span class="op">=</span> ndvi<span class="op">.</span><span class="fu">mean</span>()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section class="slide level2 center">
+
+<h3 id="visualize-and-export">4. Visualize and export</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource javascript number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb8-1"><a></a><span class="co">// Visualize on map</span></span>
+<span id="cb8-2"><a></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(meanNDVI<span class="op">,</span> {<span class="dt">min</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">max</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">palette</span><span class="op">:</span> [<span class="st">'brown'</span><span class="op">,</span> <span class="st">'yellow'</span><span class="op">,</span> <span class="st">'green'</span>]})<span class="op">;</span></span>
+<span id="cb8-3"><a></a></span>
+<span id="cb8-4"><a></a><span class="co">// Export to Google Drive</span></span>
+<span id="cb8-5"><a></a>Export<span class="op">.</span><span class="at">image</span><span class="op">.</span><span class="fu">toDrive</span>({</span>
+<span id="cb8-6"><a></a>  <span class="dt">image</span><span class="op">:</span> meanNDVI<span class="op">,</span></span>
+<span id="cb8-7"><a></a>  <span class="dt">description</span><span class="op">:</span> <span class="st">'site_vegetation_analysis'</span><span class="op">,</span></span>
+<span id="cb8-8"><a></a>  <span class="dt">scale</span><span class="op">:</span> <span class="dv">30</span><span class="op">,</span></span>
+<span id="cb8-9"><a></a>  <span class="dt">region</span><span class="op">:</span> region</span>
+<span id="cb8-10"><a></a>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="gee-in-practice-example-use-case" class="slide level2 center">
+<h2>🌡️ GEE in Practice: Example Use Case</h2>
+<p><strong>Scenario:</strong> Urban heat island analysis for climate-responsive design</p>
+<h3 id="gee-workflow">GEE workflow</h3>
+<ol type="1">
+<li>Load 10 years of Landsat thermal imagery for city</li>
+<li>Calculate land surface temperature (LST) for each image</li>
+<li>Analyze seasonal and annual LST patterns</li>
+<li>Identify urban heat island hotspots</li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<ol start="5" type="1">
+<li>Correlate with land cover (vegetation, built-up areas)</li>
+<li>Analyze temporal changes (urbanization impact)</li>
+<li>Export heat maps and statistics</li>
+<li>Use results to inform site selection and cooling strategies</li>
+</ol>
+<p><strong>Output:</strong> Climate analysis at city/regional scale informing design decisions</p>
+</section>
+<section id="when-to-use-gee" class="slide level2 center">
+<h2>🎓 When to Use GEE</h2>
+<h3 id="ideal-for">Ideal for</h3>
+<ul>
+<li>Regional climate and environmental analysis</li>
+<li>Multi-year trend analysis (urban growth, climate change)</li>
+<li>Large-scale site comparison (dozens of potential sites)</li>
+<li>Environmental context for master planning</li>
+<li>Urban heat island and microclimate studies</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="not-ideal-for">Not ideal for</h3>
+<ul>
+<li>Detailed site-scale analysis (&lt;100m)</li>
+<li>Real-time or interactive analysis</li>
+<li>Building-scale precision</li>
+<li>Projects requiring immediate results</li>
+<li>Vector-heavy workflows (parcels, buildings)</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="learning-path">Learning path</h3>
+<ul>
+<li>Start with Code Editor (JavaScript, web-based)</li>
+<li>Use Python API if already familiar with Python</li>
+<li>Leverage example scripts and tutorials (extensive community)</li>
+<li>Focus on environmental/climate applications for architecture</li>
+</ul>
+</section>
+<section id="try-it-now-beginner-gee-example" class="slide level2 center">
+<h2>🎮 Try It Now: Beginner GEE Example</h2>
+<h3 id="get-hong-kong-building-footprints">Get Hong Kong Building Footprints</h3>
+<p><strong>Copy-paste this into GEE Code Editor (code.earthengine.google.com):</strong></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource javascript number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb9-1"><a></a><span class="co">// Define area of interest: HKU campus area</span></span>
+<span id="cb9-2"><a></a><span class="kw">var</span> hku <span class="op">=</span> ee<span class="op">.</span><span class="at">Geometry</span><span class="op">.</span><span class="fu">Point</span>([<span class="fl">114.1361</span><span class="op">,</span> <span class="fl">22.2831</span>])<span class="op">;</span></span>
+<span id="cb9-3"><a></a><span class="kw">var</span> area <span class="op">=</span> hku<span class="op">.</span><span class="fu">buffer</span>(<span class="dv">500</span>)<span class="op">;</span> <span class="co">// 500m radius around HKU</span></span>
+<span id="cb9-4"><a></a></span>
+<span id="cb9-5"><a></a><span class="co">// Center map on area</span></span>
+<span id="cb9-6"><a></a><span class="bu">Map</span><span class="op">.</span><span class="fu">centerObject</span>(area<span class="op">,</span> <span class="dv">16</span>)<span class="op">;</span></span>
+<span id="cb9-7"><a></a></span>
+<span id="cb9-8"><a></a><span class="co">// Add basemap</span></span>
+<span id="cb9-9"><a></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(area<span class="op">,</span> {<span class="dt">color</span><span class="op">:</span> <span class="st">'red'</span>}<span class="op">,</span> <span class="st">'Study Area'</span>)<span class="op">;</span></span>
+<span id="cb9-10"><a></a></span>
+<span id="cb9-11"><a></a><span class="co">// Load OpenStreetMap building footprints</span></span>
+<span id="cb9-12"><a></a><span class="co">// (buildings with height/levels attributes where available)</span></span>
+<span id="cb9-13"><a></a><span class="kw">var</span> buildings <span class="op">=</span> ee<span class="op">.</span><span class="fu">FeatureCollection</span>(<span class="st">'GOOGLE/Research/open-buildings/v3/polygons'</span>)</span>
+<span id="cb9-14"><a></a>  <span class="op">.</span><span class="fu">filterBounds</span>(area)<span class="op">;</span></span>
+<span id="cb9-15"><a></a></span>
+<span id="cb9-16"><a></a><span class="fu">print</span>(<span class="st">'Number of buildings:'</span><span class="op">,</span> buildings<span class="op">.</span><span class="fu">size</span>())<span class="op">;</span></span>
+<span id="cb9-17"><a></a><span class="fu">print</span>(<span class="st">'First 5 buildings:'</span><span class="op">,</span> buildings<span class="op">.</span><span class="fu">limit</span>(<span class="dv">5</span>))<span class="op">;</span></span>
+<span id="cb9-18"><a></a></span>
+<span id="cb9-19"><a></a><span class="co">// Visualize buildings</span></span>
+<span id="cb9-20"><a></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(buildings<span class="op">,</span> {<span class="dt">color</span><span class="op">:</span> <span class="st">'blue'</span>}<span class="op">,</span> <span class="st">'Buildings'</span>)<span class="op">;</span></span>
+<span id="cb9-21"><a></a></span>
+<span id="cb9-22"><a></a><span class="co">// For OSM building attributes (height, levels), use:</span></span>
+<span id="cb9-23"><a></a><span class="co">// OpenStreetMap QA Tiles (if available in your region)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section class="slide level2 center">
+
+<h3 id="what-this-code-does">What this code does</h3>
+<ol type="1">
+<li><strong>Defines area:</strong> 500m around HKU campus</li>
+<li><strong>Centers map:</strong> Zooms to your study area</li>
+<li><strong>Loads buildings:</strong> Google’s Open Buildings dataset</li>
+<li><strong>Prints info:</strong> Number of buildings and attributes</li>
+<li><strong>Visualizes:</strong> Shows buildings in blue on map</li>
+</ol>
+<p><strong>Next steps:</strong></p>
+<ul>
+<li>Change coordinates to your site</li>
+<li>Adjust buffer distance (100m-5000m)</li>
+<li>Explore building attributes in Console</li>
+<li>Export results to Google Drive</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>GEE Pro Tip for HK Buildings</strong></p>
+</div>
+<div class="callout-content">
+<p>For detailed building attributes (height, stories, type), combine:</p>
+<ol type="1">
+<li><strong>Google Open Buildings</strong> (footprints, coverage)</li>
+<li><strong>OSM QA Tiles</strong> (building metadata where tagged)</li>
+<li><strong>data.gov.hk building age dataset</strong> (import as asset)</li>
+</ol>
+<p>Then use <code>spatialFilter</code> to join datasets by location!</p>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="data-sources-for-architectural-gis" class="title-slide slide level1 center" data-background-color="#2C1810">
+<h1>Data Sources for Architectural GIS</h1>
+
+</section>
+<section id="major-data-sources-overview" class="slide level2 center">
+<h2>📦 Major Data Sources Overview</h2>
+<p><strong>The tools are only as good as the data you feed them</strong></p>
+<p>Key data categories for architects:</p>
+<ul>
+<li>Satellite and aerial imagery</li>
+<li>Elevation and terrain</li>
+<li>Climate and weather</li>
+<li>Demographics and census</li>
+<li>Infrastructure and transportation</li>
+<li>Buildings and parcels</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="esri-data-sources" class="title-slide slide level1 center" data-background-color="#1A472A">
+<h1>ESRI Data Sources</h1>
+
+</section>
+<section id="esri-living-atlas" class="slide level2 center">
+<h2>🗺️ ESRI Living Atlas</h2>
+<h3 id="what-it-is-4">What it is</h3>
+<ul>
+<li>Curated collection of geographic data</li>
+<li>Accessible through ArcGIS Online</li>
+<li>Constantly updated by ESRI and partners</li>
+<li>Free for many layers (some require subscription)</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="key-datasets-for-architecture">Key datasets for architecture</h3>
+<p><strong>Basemaps and imagery:</strong></p>
+<ul>
+<li>World Imagery (recent satellite imagery)</li>
+<li>Topographic maps</li>
+<li>Street maps and navigation</li>
+<li>Historical imagery (temporal comparison)</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<p><strong>Demographics and socioeconomics:</strong></p>
+<ul>
+<li>Population density and distribution</li>
+<li>Income and housing data (via Business Analyst)</li>
+<li>Age, education, employment statistics</li>
+<li>Consumer spending patterns</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<p><strong>Environmental data:</strong></p>
+<ul>
+<li>Land cover and land use</li>
+<li>Ecological marine units</li>
+<li>Protected areas and conservation</li>
+<li>Disaster risk data (floods, earthquakes)</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<p><strong>Infrastructure:</strong></p>
+<ul>
+<li>Street networks and transportation</li>
+<li>Utilities and services</li>
+<li>Administrative boundaries</li>
+<li>Property parcels (regional availability)</li>
+</ul>
+</section>
+<section id="arcgis-online-content" class="slide level2 center">
+<h2>💼 ArcGIS Online Content</h2>
+<h3 id="community-data">Community data</h3>
+<ul>
+<li>User-contributed datasets</li>
+<li>City and regional open data</li>
+<li>Organizational data sharing</li>
+<li>Public sector data</li>
+</ul>
+<h3 id="how-to-access">How to access</h3>
+<ul>
+<li>Browse Living Atlas at living-atlas.arcgis.com</li>
+<li>Search in ArcGIS Online or ArcGIS Pro</li>
+<li>Filter by region, topic, data type</li>
+<li>Check licensing and attribution requirements</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>HKU Students: ArcGIS License Available</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>You have access to full ArcGIS Suite through the faculty license!</strong></p>
+<ul>
+<li>ArcGIS Pro desktop software</li>
+<li>ArcGIS Online cloud platform</li>
+<li>Access to ESRI Living Atlas</li>
+<li>Available throughout your studies</li>
+</ul>
+<p>Contact IT or check faculty GIS resources for installation and activation.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="google-earth-engine-data-catalog" class="title-slide slide level1 center" data-background-color="#2C1810">
+<h1>Google Earth Engine Data Catalog</h1>
+
+</section>
+<section id="gee-massive-data-archive" class="slide level2 center">
+<h2>🛰️ GEE Massive Data Archive</h2>
+<h3 id="what-makes-gee-special">What makes GEE special</h3>
+<p><strong>Petabytes of data, zero download:</strong></p>
+<ul>
+<li>All data pre-loaded in cloud</li>
+<li>No storage on your computer</li>
+<li>Instant access to decades of imagery</li>
+<li>Regularly updated with new data</li>
+</ul>
+</section>
+<section id="satellite-imagery-collections" class="slide level2 center">
+<h2>📡 Satellite Imagery Collections</h2>
+<h3 id="landsat-1972-present">Landsat (1972-present)</h3>
+<ul>
+<li>40+ years of Earth observation</li>
+<li>30m resolution multispectral</li>
+<li>Thermal bands for temperature</li>
+<li>Free and open access</li>
+<li>Ideal for long-term change analysis</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="sentinel-2014-present">Sentinel (2014-present)</h3>
+<ul>
+<li>European Space Agency satellites</li>
+<li>10m resolution optical imagery</li>
+<li>Frequent revisit (every 5 days)</li>
+<li>Radar imagery (cloud-penetrating)</li>
+<li>Excellent for recent detailed analysis</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="modis-2000-present">MODIS (2000-present)</h3>
+<ul>
+<li>Daily global coverage</li>
+<li>Lower resolution (250m-1km)</li>
+<li>Excellent for climate and vegetation</li>
+<li>Wide range of products (LST, NDVI, snow cover)</li>
+</ul>
+</section>
+<section id="climate-and-environmental-data" class="slide level2 center">
+<h2>🌍 Climate and Environmental Data</h2>
+<h3 id="temperature-and-precipitation">Temperature and precipitation</h3>
+<ul>
+<li>ERA5 climate reanalysis (hourly, 1979-present)</li>
+<li>CHIRPS precipitation (daily, global)</li>
+<li>TerraClimate (monthly climate and water balance)</li>
+<li>Weather station observations</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="vegetation-and-land-cover">Vegetation and land cover</h3>
+<ul>
+<li>NDVI and vegetation indices</li>
+<li>Global land cover maps</li>
+<li>Forest cover and loss (Hansen et al.)</li>
+<li>Crop type and agriculture</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="terrain-and-topography">Terrain and topography</h3>
+<ul>
+<li>SRTM (30m global elevation)</li>
+<li>ALOS (30m global elevation, higher accuracy)</li>
+<li>National elevation datasets (higher resolution)</li>
+</ul>
+</section>
+<section id="built-environment-data" class="slide level2 center">
+<h2>🏙️ Built Environment Data</h2>
+<h3 id="urban-and-built-up-areas">Urban and built-up areas</h3>
+<ul>
+<li>Global Human Settlement Layer</li>
+<li>World Settlement Footprint</li>
+<li>Night lights (VIIRS, indicating development)</li>
+<li>OpenStreetMap buildings (in GEE)</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="noaa-data-sources" class="title-slide slide level1 center" data-background-color="#1A472A">
+<h1>NOAA Data Sources</h1>
+
+</section>
+<section id="noaa-climate-ocean-weather" class="slide level2 center">
+<h2>🌊 NOAA: Climate, Ocean, Weather</h2>
+<h3 id="what-noaa-provides">What NOAA provides</h3>
+<ul>
+<li>National Oceanic and Atmospheric Administration (USA)</li>
+<li>Authoritative climate and weather data</li>
+<li>Long-term climate records</li>
+<li>Coastal and marine data</li>
+<li>Severe weather and hazards</li>
+</ul>
+</section>
+<section id="key-noaa-datasets" class="slide level2 center">
+<h2>⛈️ Key NOAA Datasets</h2>
+<h3 id="climate-data">Climate data</h3>
+<ul>
+<li>Historical weather station data (ISD, GHCN)</li>
+<li>Climate normals (30-year averages)</li>
+<li>Extreme weather events</li>
+<li>Climate projections and scenarios</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="coastal-and-ocean">Coastal and ocean</h3>
+<ul>
+<li>Sea level rise projections</li>
+<li>Coastal flood risk</li>
+<li>Bathymetry (ocean depth)</li>
+<li>Tide predictions</li>
+<li>Coastal erosion data</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="imagery-and-maps">Imagery and maps</h3>
+<ul>
+<li>High-resolution aerial imagery (coastal regions)</li>
+<li>LIDAR elevation data (very high accuracy)</li>
+<li>Land cover and habitat maps</li>
+<li>Storm surge inundation maps</li>
+</ul>
+</section>
+<section id="how-to-access-noaa-data" class="slide level2 center">
+<h2>📥 How to Access NOAA Data</h2>
+<p><strong>Main portals:</strong></p>
+<ul>
+<li>data.noaa.gov (central data catalog)</li>
+<li>Climate Data Online (CDO)</li>
+<li>National Centers for Environmental Information (NCEI)</li>
+<li>Digital Coast (coastal data portal)</li>
+</ul>
+<p><strong>Integration:</strong></p>
+<ul>
+<li>Download directly</li>
+<li>API access for programmatic retrieval</li>
+<li>Some datasets available in GEE</li>
+<li>WMS/WFS services for GIS integration</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="other-essential-data-sources" class="title-slide slide level1 center" data-background-color="#2C1810">
+<h1>Other Essential Data Sources</h1>
+
+</section>
+<section id="openstreetmap-osm" class="slide level2 center">
+<h2>🗺️ OpenStreetMap (OSM)</h2>
+<h3 id="the-community-built-map">The community-built map</h3>
+<ul>
+<li>Global, free, open-source map data</li>
+<li>Buildings, roads, amenities, land use</li>
+<li>Crowdsourced, continuously updated</li>
+<li>Used worldwide, especially in areas with limited commercial data</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="for-architecture">For architecture</h3>
+<ul>
+<li>Building footprints and heights (where available)</li>
+<li>Street networks and transportation</li>
+<li>Points of interest (shops, parks, transit)</li>
+<li>Land use and zoning (varies by region)</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="how-to-access-1">How to access</h3>
+<ul>
+<li>Download extracts (GeoFabrik, BBBike)</li>
+<li>Overpass API for custom queries</li>
+<li>QGIS plugins (QuickOSM)</li>
+<li>Pre-processed in many GIS platforms</li>
+</ul>
+</section>
+<section id="government-open-data-portals" class="slide level2 center">
+<h2>🏛️ Government Open Data Portals</h2>
+<h3 id="municipal-and-regional-data">Municipal and regional data</h3>
+<p><strong>Common datasets:</strong></p>
+<ul>
+<li>Parcels and property boundaries</li>
+<li>Zoning and land use regulations</li>
+<li>Building permits and assessments</li>
+<li>Infrastructure (water, sewer, utilities)</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<ul>
+<li>Trees and street furniture</li>
+<li>Historic districts and landmarks</li>
+<li>Planned developments and projects</li>
+<li>Environmental assessments</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="how-to-find">How to find</h3>
+<ul>
+<li>City/county GIS or open data portals</li>
+<li>data.gov (USA federal and local)</li>
+<li>European Data Portal (EU)</li>
+<li>National geoportals (varies by country)</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>NYC Open Data (New York)</li>
+<li>DataSF (San Francisco)</li>
+<li>London Datastore (UK)</li>
+<li>Data.gov.hk (Hong Kong)</li>
+</ul>
+</section>
+<section id="census-and-demographics" class="slide level2 center">
+<h2>📊 Census and Demographics</h2>
+<h3 id="population-and-socioeconomic-data">Population and socioeconomic data</h3>
+<p><strong>USA:</strong></p>
+<ul>
+<li>US Census Bureau (decennial census, ACS)</li>
+<li>TIGER/Line shapefiles (boundaries)</li>
+<li>Census tract and block group data</li>
+</ul>
+<p><strong>International:</strong></p>
+<ul>
+<li>National statistical offices</li>
+<li>UN demographic data</li>
+<li>World Bank development indicators</li>
+</ul>
+</section>
+<section id="environmental-and-conservation-data" class="slide level2 center">
+<h2>🌲 Environmental and Conservation Data</h2>
+<h3 id="natural-resources">Natural resources</h3>
+<ul>
+<li>Protected Planet (protected areas)</li>
+<li>Global Forest Watch (forest data)</li>
+<li>WWF, IUCN conservation datasets</li>
+<li>National park and conservation agency data</li>
+</ul>
+</section>
+<section id="transportation-networks" class="slide level2 center">
+<h2>🚇 Transportation Networks</h2>
+<h3 id="infrastructure-data">Infrastructure data</h3>
+<ul>
+<li>National transportation datasets</li>
+<li>Transit agency GTFS data (routes, schedules)</li>
+<li>OpenStreetMap (comprehensive street networks)</li>
+<li>Aviation and railway networks</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="gis-data-sources-for-hong-kong" class="title-slide slide level1 center" data-background-color="#1A472A">
+<h1>GIS Data Sources for Hong Kong</h1>
+
+</section>
+<section id="hong-kong-specific-data-sources" class="slide level2 center">
+<h2>🇭🇰 Hong Kong-Specific Data Sources</h2>
+<h3 id="government-and-official-sources">Government and Official Sources</h3>
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>🌟 CSDI Portal - Your Primary HK Spatial Data Source</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Common Spatial Data Infrastructure Portal</strong></p>
+<p><strong>URL: portal.csdi.gov.hk</strong></p>
+<p><strong>What it is:</strong></p>
+<ul>
+<li>Official Hong Kong government spatial data portal (launched Dec 2022)</li>
+<li><strong>500+ spatial datasets</strong> from all government departments</li>
+<li>Map-based one-stop platform with 3D digital maps</li>
+<li>1.22 million+ downloads in 2024 (highly active!)</li>
+<li><strong>API access</strong> for programmatic data retrieval</li>
+</ul>
+<p><strong>Key datasets for architecture:</strong></p>
+<ul>
+<li>Planning, lands, and building data</li>
+<li>Infrastructure and utilities</li>
+<li>Transport networks (roads, MTR, bus)</li>
+<li>Population and demographics</li>
+<li>Environmental data (air quality, climate from HK Observatory)</li>
+<li>Topography and terrain</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><strong>Hong Kong Government Data Portal (data.gov.hk)</strong></p>
+<ul>
+<li>Building age and height data</li>
+<li>District boundaries and planning areas</li>
+<li>Transport networks (MTR, bus routes)</li>
+<li>Land use zoning</li>
+<li>Tree locations</li>
+<li>Public facilities</li>
+</ul>
+<p><strong>Note:</strong> CSDI Portal is more comprehensive; data.gov.hk has some overlapping datasets but different interface</p>
+</section>
+<section class="slide level2 center">
+
+<p><strong>Lands Department</strong></p>
+<ul>
+<li>Survey and mapping data</li>
+<li>Cadastral parcels (limited public access)</li>
+<li>Topographic maps</li>
+<li>Orthophotos (aerial imagery)</li>
+</ul>
+<p><strong>Planning Department</strong></p>
+<ul>
+<li>Statutory plans and zoning</li>
+<li>Planning applications</li>
+<li>Urban design guidelines</li>
+<li>Development schemes</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<p><strong>Environmental Data</strong></p>
+<p><strong>Environmental Protection Department (EPD):</strong></p>
+<ul>
+<li>Air quality monitoring stations</li>
+<li>Noise monitoring data</li>
+<li>Waste facilities locations</li>
+<li>Water quality data</li>
+</ul>
+<p><strong>Hong Kong Observatory:</strong></p>
+<ul>
+<li>Climate data (temperature, rainfall, humidity)</li>
+<li>Historical weather records</li>
+<li>Severe weather warnings</li>
+<li>Climate change projections</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="regional-satellite-data-via-gee">Regional Satellite Data (via GEE)</h3>
+<p><strong>Available for Hong Kong analysis:</strong></p>
+<p><strong>Landsat archive (1980s-present):</strong></p>
+<ul>
+<li>Urban growth analysis</li>
+<li>Land use change detection</li>
+<li>Coastal reclamation history</li>
+<li>Vegetation changes</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<p><strong>Sentinel (2015-present):</strong></p>
+<ul>
+<li>10m resolution for detailed urban analysis</li>
+<li>Frequent updates (every 5 days)</li>
+<li>Urban heat island mapping</li>
+<li>Building density analysis</li>
+</ul>
+<p><strong>MODIS:</strong></p>
+<ul>
+<li>Daily air quality (aerosol optical depth)</li>
+<li>Temperature trends</li>
+<li>Regional climate patterns</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="openstreetmap-for-hong-kong">OpenStreetMap for Hong Kong</h3>
+<p><strong>Rich Hong Kong OSM data:</strong></p>
+<ul>
+<li>Comprehensive building footprints</li>
+<li>Detailed street networks</li>
+<li>Public transport (MTR, tram, ferry)</li>
+<li>Points of interest (restaurants, shops, parks)</li>
+<li>Building heights (for many structures)</li>
+<li>Pedestrian paths and walkways</li>
+</ul>
+<p><strong>Access via:</strong></p>
+<ul>
+<li>GeoFabrik downloads (Hong Kong extract)</li>
+<li>Overpass API queries</li>
+<li>QGIS QuickOSM plugin</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="osmbuildings-for-hong-kong">OSMBuildings for Hong Kong</h3>
+<p><strong>3D building models from OSM:</strong></p>
+<ul>
+<li>Extruded building footprints with heights</li>
+<li>Visual 3D context for design</li>
+<li>Building shapes and geometries</li>
+<li>Roof types (where tagged)</li>
+</ul>
+<p><strong>Access:</strong></p>
+<ul>
+<li>OSMBuildings.org (web viewer and data export)</li>
+<li>QGIS OSM-3D plugins</li>
+<li>Direct OSM data with height tags processed</li>
+</ul>
+<p><strong>Use cases:</strong> 3D urban context modeling, shadow studies, view analysis</p>
+</section>
+<section class="slide level2 center">
+
+<h3 id="census-and-demographics-1">Census and Demographics</h3>
+<p><strong>Hong Kong Census Data:</strong></p>
+<ul>
+<li>Population by district and tertiary planning unit</li>
+<li>Age distribution and household size</li>
+<li>Income and employment</li>
+<li>Housing characteristics</li>
+</ul>
+<p><strong>Access through:</strong></p>
+<ul>
+<li>Census and Statistics Department</li>
+<li>DATA.GOV.HK</li>
+<li>ESRI Demographics (partial coverage)</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="terrain-and-elevation">Terrain and Elevation</h3>
+<p><strong>Available sources:</strong></p>
+<p><strong>High resolution:</strong></p>
+<ul>
+<li>Lands Department 2m contours (official)</li>
+<li>Survey and Mapping Office DTM</li>
+<li>LIDAR data (limited coverage)</li>
+</ul>
+<p><strong>Global coverage:</strong></p>
+<ul>
+<li>SRTM 30m (via GEE or other sources)</li>
+<li>ALOS 30m (higher accuracy than SRTM)</li>
+<li>OpenTopography (research access)</li>
+</ul>
+</section>
+<section id="common-hk-architecture-use-cases" class="slide level2 center">
+<h2>🎯 Common HK Architecture Use Cases</h2>
+<h3 id="site-analysis-workflow">Site analysis workflow</h3>
+<p><strong>Question:</strong> Site selection for housing development in New Territories</p>
+<p><strong>Data sources:</strong></p>
+<ol type="1">
+<li><strong>Parcels and zoning:</strong> CSDI Portal (primary) or Planning Department</li>
+<li><strong>Topography:</strong> CSDI Portal or SRTM/ALOS from GEE</li>
+<li><strong>Transport:</strong> CSDI Portal (MTR + bus routes) or OSM</li>
+<li><strong>Environment:</strong> CSDI Portal (EPD + HK Observatory data)</li>
+<li><strong>Context:</strong> CSDI Portal 3D buildings + OSM + Google/ESRI basemap</li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<p><strong>Tools:</strong></p>
+<ul>
+<li>QGIS for visual exploration and local data integration</li>
+<li>Google Earth Engine for terrain and environmental analysis</li>
+<li>Code-driven (Python) if automating multiple sites</li>
+<li>CSDI Portal API for programmatic access</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="urban-heat-island-study">Urban heat island study</h3>
+<p><strong>Question:</strong> Identify cool/hot spots in Kowloon for passive cooling design</p>
+<p><strong>Data sources:</strong></p>
+<ol type="1">
+<li><strong>Thermal imagery:</strong> Landsat 8 thermal bands (via GEE)</li>
+<li><strong>Land cover:</strong> Sentinel 2 for vegetation index</li>
+<li><strong>Urban form:</strong> OSM buildings + planning data</li>
+<li><strong>Weather:</strong> HK Observatory temperature records</li>
+</ol>
+<p><strong>Tool:</strong> Google Earth Engine (multi-temporal thermal analysis)</p>
+</section>
+<section class="slide level2 center">
+
+<h3 id="transit-accessibility-analysis">Transit accessibility analysis</h3>
+<p><strong>Question:</strong> 15-minute walkshed from MTR stations</p>
+<p><strong>Data sources:</strong></p>
+<ol type="1">
+<li><strong>MTR stations:</strong> data.gov.hk or OSM</li>
+<li><strong>Street network:</strong> OSM (pedestrian-accessible routes)</li>
+<li><strong>Building footprints:</strong> OSM</li>
+<li><strong>Elevation:</strong> SRTM or Lands Dept (for slope-adjusted walking)</li>
+</ol>
+<p><strong>Tools:</strong> QGIS (network analysis plugin) or code-driven (Python + OSMnx)</p>
+</section>
+<section id="where-to-download-hong-kong-gis-data" class="slide level2 center">
+<h2>📥 Where to Download Hong Kong GIS Data</h2>
+<h3 id="direct-download-portals">Direct Download Portals</h3>
+<p><strong>1. CSDI Portal (PRIMARY - Start Here!)</strong></p>
+<ul>
+<li>URL: <strong>portal.csdi.gov.hk</strong></li>
+<li>Navigate: Use map interface or browse catalog</li>
+<li>Formats: Shapefile, GeoJSON, KML, WMS/WFS services, <strong>API access</strong></li>
+<li>No account required</li>
+<li><strong>Most comprehensive HK government spatial data</strong></li>
+</ul>
+<p><strong>Key datasets to download:</strong></p>
+<ul>
+<li>All government spatial data (planning, lands, transport, environment)</li>
+<li>3D building models</li>
+<li>Infrastructure and utilities</li>
+<li>Topography and elevation</li>
+<li>Demographics and population</li>
+<li>Real-time updates from various departments</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<p><strong>2. DATA.GOV.HK (Alternative/Supplementary)</strong></p>
+<ul>
+<li>URL: <strong>data.gov.hk</strong></li>
+<li>Navigate: “Datasets” → Filter by “GIS” or “Geospatial”</li>
+<li>Formats: Shapefile, GeoJSON, KML, CSV with coordinates</li>
+<li>No account required</li>
+<li>Some overlap with CSDI, different interface</li>
+</ul>
+<p><strong>When to use:</strong></p>
+<ul>
+<li>If you prefer non-map interface</li>
+<li>For specific datasets not yet on CSDI</li>
+<li>For non-spatial data with coordinates</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<p><strong>2. GeoFabrik (OpenStreetMap Extracts)</strong></p>
+<ul>
+<li>URL: <strong>download.geofabrik.de/asia/china/hong-kong.html</strong></li>
+<li>Updated daily</li>
+<li>Formats: Shapefile, PBF (raw OSM), GeoJSON</li>
+<li>Complete Hong Kong OSM data extract</li>
+<li>Free, no account needed</li>
+</ul>
+<p><strong>What you get:</strong></p>
+<ul>
+<li>Buildings (with heights where tagged)</li>
+<li>Roads (all types, pedestrian paths)</li>
+<li>Railways (MTR, tram)</li>
+<li>Amenities and POIs</li>
+<li>Land use polygons</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<p><strong>3. Google Earth Engine Code Editor</strong></p>
+<ul>
+<li>URL: <strong>code.earthengine.google.com</strong></li>
+<li>Requires: Google account (free signup)</li>
+<li>Access to petabytes of satellite data</li>
+<li>No download needed (cloud-based)</li>
+</ul>
+<p><strong>For Hong Kong:</strong></p>
+<ul>
+<li>Draw polygon around Hong Kong</li>
+<li>Access Landsat, Sentinel, MODIS</li>
+<li>Export results to Google Drive</li>
+<li>Then download and use in QGIS/other tools</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<p><strong>4. HKU Library - Government Publications</strong></p>
+<ul>
+<li>Access: Through HKU Library portal</li>
+<li>Lands Department maps and data</li>
+<li>Planning Department reports with spatial data</li>
+<li>Some datasets available to HKU students only</li>
+</ul>
+<p><strong>Check library for:</strong></p>
+<ul>
+<li>High-resolution topographic maps</li>
+<li>Historical maps and imagery</li>
+<li>Planning scheme maps</li>
+<li>Official survey data</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<p><strong>5. Humanitarian Data Exchange (HDX)</strong></p>
+<ul>
+<li>URL: <strong>data.humdata.org</strong></li>
+<li>Search: “Hong Kong”</li>
+<li>Regional datasets, population, infrastructure</li>
+<li>Open license, free download</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="step-by-step-getting-started-with-hk-data">Step-by-Step: Getting Started with HK Data</h3>
+<p><strong>Beginner workflow (30 minutes):</strong></p>
+<ol type="1">
+<li><strong>Go to portal.csdi.gov.hk (START HERE)</strong>
+<ul>
+<li>Browse map or search catalog</li>
+<li>Find “District Boundaries” and download</li>
+<li>Find “MTR Stations” and download</li>
+<li>Download “Building Footprints” (if available)</li>
+<li>Format: Choose Shapefile or GeoJSON</li>
+</ul></li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<ol start="2" type="1">
+<li><strong>Go to download.geofabrik.de</strong>
+<ul>
+<li>Navigate to Asia → China → Hong Kong</li>
+<li>Download “hong-kong-latest-free.shp.zip”</li>
+<li>Unzip to get buildings, roads, etc.</li>
+</ul></li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<ol start="3" type="1">
+<li><strong>Open QGIS</strong>
+<ul>
+<li>Drag and drop the downloaded files</li>
+<li>Add basemap (OpenStreetMap or Google Satellite via QuickMapServices plugin)</li>
+<li>Start exploring!</li>
+</ul></li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<ol start="4" type="1">
+<li><strong>For satellite data:</strong>
+<ul>
+<li>Sign up for Google Earth Engine at <strong>signup.earthengine.google.com</strong></li>
+<li>Wait for approval (usually 1-2 days)</li>
+<li>Explore HK with Code Editor examples</li>
+</ul></li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<h3 id="hands-on-extract-hk-building-data-with-gee">🎯 Hands-On: Extract HK Building Data with GEE</h3>
+<p><strong>Complete workflow to get buildings for your site:</strong></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource javascript number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb10-1"><a></a><span class="co">// STEP 1: Define your site (change these coordinates!)</span></span>
+<span id="cb10-2"><a></a><span class="kw">var</span> mySite <span class="op">=</span> ee<span class="op">.</span><span class="at">Geometry</span><span class="op">.</span><span class="fu">Rectangle</span>([</span>
+<span id="cb10-3"><a></a>  <span class="fl">114.130</span><span class="op">,</span> <span class="fl">22.280</span><span class="op">,</span>  <span class="co">// Lower left [lon, lat]</span></span>
+<span id="cb10-4"><a></a>  <span class="fl">114.145</span><span class="op">,</span> <span class="fl">22.290</span>   <span class="co">// Upper right [lon, lat]</span></span>
+<span id="cb10-5"><a></a>])<span class="op">;</span> <span class="co">// This covers part of Western District</span></span>
+<span id="cb10-6"><a></a></span>
+<span id="cb10-7"><a></a><span class="bu">Map</span><span class="op">.</span><span class="fu">centerObject</span>(mySite<span class="op">,</span> <span class="dv">15</span>)<span class="op">;</span></span>
+<span id="cb10-8"><a></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(mySite<span class="op">,</span> {<span class="dt">color</span><span class="op">:</span> <span class="st">'red'</span>}<span class="op">,</span> <span class="st">'My Site'</span>)<span class="op">;</span></span>
+<span id="cb10-9"><a></a></span>
+<span id="cb10-10"><a></a><span class="co">// STEP 2: Get building footprints</span></span>
+<span id="cb10-11"><a></a><span class="kw">var</span> buildings <span class="op">=</span> ee<span class="op">.</span><span class="fu">FeatureCollection</span>(</span>
+<span id="cb10-12"><a></a>  <span class="st">'GOOGLE/Research/open-buildings/v3/polygons'</span></span>
+<span id="cb10-13"><a></a>)<span class="op">.</span><span class="fu">filterBounds</span>(mySite)<span class="op">;</span></span>
+<span id="cb10-14"><a></a></span>
+<span id="cb10-15"><a></a><span class="fu">print</span>(<span class="st">'Buildings found:'</span><span class="op">,</span> buildings<span class="op">.</span><span class="fu">size</span>())<span class="op">;</span></span>
+<span id="cb10-16"><a></a></span>
+<span id="cb10-17"><a></a><span class="co">// STEP 3: Add some analysis (building area)</span></span>
+<span id="cb10-18"><a></a><span class="kw">var</span> buildingsWithArea <span class="op">=</span> buildings<span class="op">.</span><span class="fu">map</span>(<span class="kw">function</span>(feature) {</span>
+<span id="cb10-19"><a></a>  <span class="kw">var</span> area <span class="op">=</span> feature<span class="op">.</span><span class="fu">geometry</span>()<span class="op">.</span><span class="fu">area</span>()<span class="op">;</span></span>
+<span id="cb10-20"><a></a>  <span class="cf">return</span> feature<span class="op">.</span><span class="fu">set</span>(<span class="st">'area_sqm'</span><span class="op">,</span> area)<span class="op">;</span></span>
+<span id="cb10-21"><a></a>})<span class="op">;</span></span>
+<span id="cb10-22"><a></a></span>
+<span id="cb10-23"><a></a><span class="co">// STEP 4: Visualize</span></span>
+<span id="cb10-24"><a></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(buildingsWithArea<span class="op">,</span> {<span class="dt">color</span><span class="op">:</span> <span class="st">'0000FF'</span>}<span class="op">,</span> <span class="st">'Buildings'</span>)<span class="op">;</span></span>
+<span id="cb10-25"><a></a></span>
+<span id="cb10-26"><a></a><span class="co">// STEP 5: Export to Google Drive</span></span>
+<span id="cb10-27"><a></a>Export<span class="op">.</span><span class="at">table</span><span class="op">.</span><span class="fu">toDrive</span>({</span>
+<span id="cb10-28"><a></a>  <span class="dt">collection</span><span class="op">:</span> buildingsWithArea<span class="op">,</span></span>
+<span id="cb10-29"><a></a>  <span class="dt">description</span><span class="op">:</span> <span class="st">'HK_Buildings_Export'</span><span class="op">,</span></span>
+<span id="cb10-30"><a></a>  <span class="dt">fileFormat</span><span class="op">:</span> <span class="st">'GeoJSON'</span><span class="op">,</span>  <span class="co">// or 'SHP' for Shapefile</span></span>
+<span id="cb10-31"><a></a>  <span class="dt">folder</span><span class="op">:</span> <span class="st">'GEE_Exports'</span></span>
+<span id="cb10-32"><a></a>})<span class="op">;</span></span>
+<span id="cb10-33"><a></a></span>
+<span id="cb10-34"><a></a><span class="co">// Click "Run" in Tasks tab to start export!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section class="slide level2 center">
+
+<p><strong>After export:</strong></p>
+<ol type="1">
+<li>Go to Google Drive → “GEE_Exports” folder</li>
+<li>Download the GeoJSON file</li>
+<li>Open in QGIS</li>
+<li>You now have building footprints with calculated areas!</li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<h3 id="quick-data-finder-table">Quick Data Finder Table</h3>
+<table>
+<colgroup>
+<col style="width: 30%">
+<col style="width: 34%">
+<col style="width: 16%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>What You Need</th>
+<th>Where to Get It</th>
+<th>Format</th>
+<th>Account?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>District boundaries</td>
+<td><strong>CSDI Portal</strong> (first choice)</td>
+<td>SHP, GeoJSON, API</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td>MTR stations</td>
+<td><strong>CSDI Portal</strong> or OSM</td>
+<td>SHP, GeoJSON</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td>Building footprints</td>
+<td><strong>CSDI Portal</strong> or GeoFabrik OSM</td>
+<td>SHP, GeoJSON</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td>3D buildings</td>
+<td><strong>CSDI Portal</strong> (official) or OSMBuildings</td>
+<td>Various</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td>Planning/zoning</td>
+<td><strong>CSDI Portal</strong></td>
+<td>SHP, GeoJSON</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td>Infrastructure</td>
+<td><strong>CSDI Portal</strong></td>
+<td>SHP, GeoJSON, WMS/WFS</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td>Satellite imagery</td>
+<td>Google Earth Engine</td>
+<td>GeoTIFF (export)</td>
+<td>Yes (free)</td>
+</tr>
+<tr class="even">
+<td>Elevation</td>
+<td><strong>CSDI Portal</strong> or GEE</td>
+<td>Various</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td>Climate data</td>
+<td><strong>CSDI Portal</strong> (HKO data)</td>
+<td>Various</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="slide level2 center">
+
+<div class="callout callout-warning no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Data License and Attribution</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Always check:</strong></p>
+<ul>
+<li>License terms (most HK govt data is open, but verify)</li>
+<li>Attribution requirements (especially OSM: “© OpenStreetMap contributors”)</li>
+<li>Usage restrictions (some data may be for non-commercial use only)</li>
+<li>Currency of data (when was it last updated?)</li>
+</ul>
+<p><strong>For academic work:</strong> Most sources are fine, but document your sources properly!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="advanced-csdi-portal-api-access" class="slide level2 center">
+<h2>🔌 Advanced: CSDI Portal API Access</h2>
+<h3 id="for-code-driven-workflows">For code-driven workflows</h3>
+<p><strong>CSDI Portal provides APIs for programmatic data access</strong></p>
+<p><strong>Why use APIs?</strong></p>
+<ul>
+<li>Automate data downloads</li>
+<li>Get real-time updates</li>
+<li>Integrate with Python/R workflows</li>
+<li>Batch process multiple datasets</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="example-access-csdi-data-via-api">Example: Access CSDI data via API</h3>
+<p><strong>WMS/WFS services available for most datasets</strong></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
+<span id="cb11-2"><a></a></span>
+<span id="cb11-3"><a></a><span class="co"># Example: Load HK district boundaries via WFS</span></span>
+<span id="cb11-4"><a></a>wfs_url <span class="op">=</span> <span class="st">"https://portal.csdi.gov.hk/server/services/[dataset]/WFSServer"</span></span>
+<span id="cb11-5"><a></a></span>
+<span id="cb11-6"><a></a><span class="co"># Read directly into geopandas</span></span>
+<span id="cb11-7"><a></a>gdf <span class="op">=</span> gpd.read_file(wfs_url)</span>
+<span id="cb11-8"><a></a></span>
+<span id="cb11-9"><a></a><span class="co"># Now you have the data in Python for analysis!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Check CSDI Portal metadata for specific API endpoints</strong></p>
+</section>
+<section id="connecting-tools-and-data" class="slide level2 center">
+<h2>🔗 Connecting Tools and Data</h2>
+<h3 id="the-complete-picture">The complete picture</h3>
+<p><strong>Tools</strong> → <strong>Data</strong> → <strong>Analysis</strong> → <strong>Design Decisions</strong></p>
+<ul>
+<li><strong>QGIS</strong>: Works with all data sources, best for local/municipal data</li>
+<li><strong>ESRI</strong>: Native integration with Living Atlas, enterprise data</li>
+<li><strong>Code-driven</strong>: Direct API access to OSM, census, custom sources</li>
+<li><strong>GEE</strong>: Built-in access to satellite and climate data</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="practical-workflow">Practical workflow</h3>
+<ol type="1">
+<li><strong>Identify question</strong> (What do you need to know?)</li>
+<li><strong>Find data source</strong> (Where is the data?)</li>
+<li><strong>Choose tool</strong> (What’s best for this task?)</li>
+<li><strong>Analyze</strong> (Process and interpret)</li>
+<li><strong>Apply to design</strong> (Inform decisions)</li>
+</ol>
+</section>
+<section id="matching-questions-to-data-sources" class="slide level2 center">
+<h2>🎯 Matching Questions to Data Sources</h2>
+<table>
+<colgroup>
+<col style="width: 45%">
+<col style="width: 37%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Design Question</th>
+<th>Data Source</th>
+<th>Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Is site in flood zone?</td>
+<td>NOAA coastal data</td>
+<td>QGIS or ESRI</td>
+</tr>
+<tr class="even">
+<td>Urban heat island effect?</td>
+<td>GEE (Landsat thermal)</td>
+<td>Google Earth Engine</td>
+</tr>
+<tr class="odd">
+<td>Transit accessibility?</td>
+<td>GTFS + OSM</td>
+<td>QGIS or code-driven</td>
+</tr>
+<tr class="even">
+<td>Site vegetation over time?</td>
+<td>GEE (NDVI time series)</td>
+<td>Google Earth Engine</td>
+</tr>
+<tr class="odd">
+<td>Demographics of area?</td>
+<td>Census + ESRI Atlas</td>
+<td>ESRI or QGIS</td>
+</tr>
+<tr class="even">
+<td>Parcel boundaries?</td>
+<td>City open data portal</td>
+<td>QGIS or ESRI</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="comparison-when-to-use-what" class="title-slide slide level1 center" data-background-color="#1A472A">
+<h1>Comparison: When to Use What?</h1>
+
+</section>
+<section id="decision-framework" class="slide level2 center">
+<h2>🤔 Decision Framework</h2>
+<pre><code>START HERE:
+↓
+Is this regional/environmental analysis over large area?
+YES → Google Earth Engine (satellite data)
+NO → Continue
+↓
+Are you exploring unfamiliar data/area?
+YES → QGIS (visual exploration)
+NO → Continue</code></pre>
+</section>
+<section class="slide level2 center">
+
+<pre><code>↓
+Do you need professional deliverables for clients?
+YES → ESRI (if they use it) or QGIS (with polish)
+NO → Continue
+↓
+Do you need custom analysis or automation?
+YES → Code-driven (Python/R)
+NO → Continue
+↓
+Are you integrating with parametric design?
+YES → Code-driven + Grasshopper/Dynamo
+NO → Use whatever you're comfortable with</code></pre>
+</section>
+<section id="hybrid-workflows-the-reality" class="slide level2 center">
+<h2>🔀 Hybrid Workflows: The Reality</h2>
+<p>Most architects use combinations:</p>
+<h3 id="gee-qgis-design">GEE → QGIS → Design</h3>
+<ul>
+<li>Google Earth Engine for regional climate analysis</li>
+<li>Export results to QGIS for refinement</li>
+<li>Integrate with local site data</li>
+<li>Inform design decisions</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="qgis-python-qgis">QGIS → Python → QGIS</h3>
+<ul>
+<li>Quick visual exploration of data</li>
+<li>Custom Python script for specific analysis</li>
+<li>Back to QGIS for map production</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="esri-python-arcgis-pro">ESRI → Python → ArcGIS Pro</h3>
+<ul>
+<li>Enterprise geodatabase in ESRI</li>
+<li>ArcPy scripts for batch processing</li>
+<li>Professional maps in ArcGIS Pro</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="code-qgisillustrator">Code → QGIS/Illustrator</h3>
+<ul>
+<li>All analysis in geopandas/Python</li>
+<li>Export to formats QGIS can read</li>
+<li>Final cartographic refinement in QGIS or Illustrator</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="pythongee-grasshopper">Python/GEE → Grasshopper</h3>
+<ul>
+<li>Python or GEE for site context data</li>
+<li>Export geometries and attributes</li>
+<li>Grasshopper reads data for context-aware design</li>
+</ul>
+</section>
+<section id="learning-path-recommendations" class="slide level2 center">
+<h2>🎓 Learning Path Recommendations</h2>
+<h3 id="for-beginners">For beginners</h3>
+<ol type="1">
+<li>Start with QGIS (free, visual, forgiving)</li>
+<li>Learn core GIS concepts (projections, buffers, joins, etc.)</li>
+<li>Add Python scripting in QGIS console</li>
+<li>Explore GEE for environmental analysis</li>
+<li>Transition to full code-driven when ready</li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<h3 id="for-those-with-programming-background">For those with programming background</h3>
+<ol type="1">
+<li>Start with geopandas (familiar pandas syntax)</li>
+<li>Learn by replicating common GIS operations</li>
+<li>Try Google Earth Engine (JavaScript or Python API)</li>
+<li>Use QGIS for quick visualization checks</li>
+<li>Build custom tools for your specific needs</li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<h3 id="for-climateenvironmental-focus">For climate/environmental focus</h3>
+<ol type="1">
+<li>Start with Google Earth Engine tutorials</li>
+<li>Focus on satellite imagery and climate data</li>
+<li>Combine GEE with local data in QGIS</li>
+<li>Build regional analysis skills</li>
+<li>Integrate with design decision-making</li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<h3 id="for-professional-practice">For professional practice</h3>
+<ol type="1">
+<li>Learn ESRI basics (industry standard)</li>
+<li>Understand enterprise workflows</li>
+<li>Add Python/ArcPy for automation</li>
+<li>Supplement with open source tools for flexibility</li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<h3 id="for-computational-design">For computational design</h3>
+<ol type="1">
+<li>Focus on code-driven approach (geopandas)</li>
+<li>Learn data exchange formats (GeoJSON, CityJSON)</li>
+<li>Explore GEE for context data extraction</li>
+<li>Practice integration with Rhino/Grasshopper</li>
+<li>Build custom site analysis components</li>
+</ol>
+</section>
+<section id="gis-and-your-a4-projects" class="slide level2 center">
+<h2>📊 GIS and Your A4 Projects</h2>
+<h3 id="potential-gis-applications">Potential GIS Applications</h3>
+<p><strong>If you’re working on:</strong></p>
+<ul>
+<li><strong>Site selection</strong> - Use GIS for multi-criteria evaluation</li>
+<li><strong>Solar analysis</strong> - Extract elevation and context geometry</li>
+<li><strong>Accessibility</strong> - Network analysis and walkshed calculation</li>
+<li><strong>Urban design</strong> - Spatial pattern analysis and metrics</li>
+<li><strong>Climate adaptation</strong> - Terrain analysis and flood modeling</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="consider-incorporating">Consider incorporating</h3>
+<ul>
+<li>Spatial data as design inputs</li>
+<li>GIS-derived constraints or opportunities</li>
+<li>Location-based optimization criteria</li>
+</ul>
+</section>
+<section id="quick-integration-opportunities" class="slide level2 center">
+<h2>⚡ Quick Integration Opportunities</h2>
+<h3 id="even-in-final-week-you-can">Even in final week, you can</h3>
+<ul>
+<li>Add context maps using QGIS (1-2 hours)</li>
+<li>Extract elevation data for site modeling</li>
+<li>Show transit accessibility analysis</li>
+<li>Include demographic/environmental context</li>
+<li>Demonstrate site selection methodology</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="keep-it-simple">Keep it simple</h3>
+<ul>
+<li>Don’t learn entire GIS platform this week</li>
+<li>Focus on one clear spatial insight</li>
+<li>Use it to strengthen your story</li>
+<li>Document data sources and methods</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="part-2-course-reflection-final-submission" class="title-slide slide level1 center" data-background-color="#2C1810">
+<h1>Part 2: Course Reflection &amp; Final Submission</h1>
+
+</section>
+<section id="your-journey-this-semester" class="slide level2 center">
+<h2>🎯 Your Journey This Semester</h2>
+<h3 id="from-week-1-to-week-11">From Week 1 to Week 11</h3>
+<p><strong>Assignment progression:</strong></p>
+<ul>
+<li><strong>A1 Decision Claims:</strong> From initial ideas to testable research questions</li>
+<li><strong>A2 Evidence Maps:</strong> From scattered information to systematic knowledge synthesis</li>
+<li><strong>A3 Test Plans + Pilots:</strong> From theory to practical implementation and learning</li>
+<li><strong>A4 Final Packages:</strong> From data to actionable professional recommendations</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="the-arc-of-learning">The arc of learning</h3>
+<p>Week 1: “What is evidence-based design?”</p>
+<p>Week 11: “Here’s how I systematically investigate design decisions”</p>
+</section>
+<section id="skills-youve-developed" class="slide level2 center">
+<h2>🛠️ Skills You’ve Developed</h2>
+<h3 id="technical-competence">Technical competence</h3>
+<ul>
+<li>Research question development and problem framing</li>
+<li>Literature review and evidence synthesis</li>
+<li>Method design, pilot testing, and systematic investigation</li>
+<li>Data analysis, visualization, and uncertainty communication</li>
+<li>Reproducible documentation and workflow transparency</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="professional-capabilities">Professional capabilities</h3>
+<ul>
+<li>Stakeholder analysis and audience-appropriate communication</li>
+<li>Professional presentation and visual design</li>
+<li>Project management and adaptive planning</li>
+<li>Ethical research conduct</li>
+<li>Decision frameworks and threshold setting</li>
+</ul>
+</section>
+<section id="evidence-based-design-thinking" class="slide level2 center">
+<h2>🧠 Evidence-Based Design Thinking</h2>
+<h3 id="mindset-shifts-accomplished">Mindset shifts accomplished</h3>
+<ul>
+<li>From intuition-only → evidence-informed decision making</li>
+<li>From single solutions → systematic alternative evaluation</li>
+<li>From perfect knowledge → appropriate confidence levels</li>
+<li>From isolated design → stakeholder-centered research</li>
+<li>From “trust me” → “here’s the data”</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="you-can-now">You can now</h3>
+<ul>
+<li>Ask better questions about design performance</li>
+<li>Systematically investigate those questions</li>
+<li>Communicate findings with appropriate uncertainty</li>
+<li>Make defendable recommendations to stakeholders</li>
+</ul>
+</section>
+<section id="a4-package-integration" class="slide level2 center">
+<h2>✅ A4 Package Integration</h2>
+<h3 id="essential-integration-checklist">Essential Integration Checklist</h3>
+<p><strong>Cross-component consistency:</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">Key findings align across Research Brief, Practice Case, Object Card</label></li>
+<li><label><input type="checkbox">Metrics and terminology consistent throughout</label></li>
+<li><label><input type="checkbox">Visual identity unified (fonts, colors, layout)</label></li>
+<li><label><input type="checkbox">Stakeholder framing coherent</label></li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<p><strong>Quality assurance:</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">All citations complete and accurate</label></li>
+<li><label><input type="checkbox">Figures clearly labeled with sources</label></li>
+<li><label><input type="checkbox">Writing clear and error-free</label></li>
+<li><label><input type="checkbox">File formats correct for submission</label></li>
+</ul>
+</section>
+<section id="priority-improvements-from-draft-defense" class="slide level2 center">
+<h2>🎯 Priority Improvements from Draft Defense</h2>
+<h3 id="focus-on">Focus on</h3>
+<ol type="1">
+<li><strong>Highest-impact feedback</strong> - changes that strengthen core argument</li>
+<li><strong>Stakeholder relevance</strong> - ensure recommendations are actionable</li>
+<li><strong>Figure clarity</strong> - professional quality visualizations</li>
+<li><strong>Threshold justification</strong> - clear decision criteria</li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<h3 id="let-go-of">Let go of</h3>
+<ul>
+<li>Perfect polish on minor details</li>
+<li>Extensive additional analysis</li>
+<li>Scope expansion beyond current work</li>
+<li>Perfectionism that prevents completion</li>
+</ul>
+</section>
+<section id="final-submission-requirements" class="slide level2 center">
+<h2>📦 Final Submission Requirements</h2>
+<h3 id="a4-complete-package-due-next-week">A4 Complete Package Due Next Week</h3>
+<p><strong>Digital submission includes:</strong></p>
+<ol type="1">
+<li><strong>Research Brief</strong> (8-12 pages)
+<ul>
+<li>Executive summary</li>
+<li>Methods clearly documented</li>
+<li>Results with appropriate uncertainty</li>
+<li>Specific, actionable recommendations</li>
+</ul></li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<ol start="2" type="1">
+<li><strong>Practice Case</strong> (2 slides + 2-page memo)
+<ul>
+<li>Key findings immediately apparent</li>
+<li>Decision criteria clear</li>
+<li>Implementation guidance specific</li>
+</ul></li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<ol start="3" type="1">
+<li><strong>Object Card</strong> (single-page poster)
+<ul>
+<li>Visually compelling</li>
+<li>Key message prominent</li>
+<li>Professional design quality</li>
+<li>Suitable for portfolio</li>
+</ul></li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<ol start="4" type="1">
+<li><strong>Reproducibility Capsule</strong> (3-5 pages + materials)
+<ul>
+<li>Step-by-step procedures</li>
+<li>Tool requirements specified</li>
+<li>Quality control included</li>
+<li>Adaptation guidance provided</li>
+</ul></li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<ol start="5" type="1">
+<li><strong>Self-Assessment Reflection</strong> (1 page)
+<ul>
+<li>Learning integration</li>
+<li>Skill development</li>
+<li>Future applications</li>
+<li>Course impact</li>
+</ul></li>
+</ol>
+</section>
+<section id="submission-logistics" class="slide level2 center">
+<h2>📋 Submission Logistics</h2>
+<p><strong>Due:</strong> [Specific date/time TBD]</p>
+<p><strong>Format:</strong></p>
+<ul>
+<li>Single combined PDF (all components)</li>
+<li>Individual component files for reference</li>
+<li>Submitted via Canvas/email as specified</li>
+</ul>
+<p><strong>File naming:</strong></p>
+<p><code>ARCH7476_A4_[YourLastName]_[YourFirstName].pdf</code></p>
+</section>
+<section class="slide level2 center">
+
+<h3 id="before-you-submit">Before you submit</h3>
+<ul>
+<li>Check all links and references work</li>
+<li>Verify all figures are visible and high-quality</li>
+<li>Confirm page limits are met</li>
+<li>Proofread one final time</li>
+</ul>
+</section>
+<section id="looking-forward" class="slide level2 center">
+<h2>🚀 Looking Forward</h2>
+<h3 id="immediate-applications">Immediate Applications</h3>
+<p><strong>In your other courses:</strong></p>
+<ul>
+<li>Apply systematic thinking to studio projects</li>
+<li>Use evidence to support design decisions</li>
+<li>Document and test assumptions</li>
+<li>Communicate with data visualizations</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<p><strong>In practice or research:</strong></p>
+<ul>
+<li>Client communication with data</li>
+<li>Performance-based design optimization</li>
+<li>Portfolio showcasing analytical capabilities</li>
+<li>Research methodology for thesis work</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="long-term-development">Long-Term Development</h3>
+<p><strong>Career paths enabled:</strong></p>
+<ul>
+<li>Evidence-based design consultant</li>
+<li>Building performance analyst</li>
+<li>Research-oriented architectural practice</li>
+<li>Graduate research in built environment</li>
+<li>Policy analysis and building standards development</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<p><strong>Continuing education:</strong></p>
+<ul>
+<li>Advanced simulation tools and methods</li>
+<li>Statistical analysis for design research</li>
+<li>Machine learning for design optimization</li>
+<li>GIS and spatial analysis specialization</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="contributing-to-the-field">Contributing to the Field</h3>
+<p><strong>You are now equipped to:</strong></p>
+<ul>
+<li>Advance evidence-based design in practice</li>
+<li>Mentor others in systematic thinking</li>
+<li>Contribute to design research literature</li>
+<li>Bridge gap between research and practice</li>
+<li>Advocate for data-informed design decisions</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<p><strong>The field needs:</strong></p>
+<ul>
+<li>More designers who can critically evaluate evidence</li>
+<li>Better communication of performance data</li>
+<li>Reproducible research in architectural contexts</li>
+<li>Integration of evidence into design pedagogy</li>
+</ul>
+</section>
+<section id="final-week-priorities" class="slide level2 center">
+<h2>📅 Final Week Priorities</h2>
+<h3 id="this-weeks-focus">This Week’s Focus</h3>
+<p><strong>Must do:</strong></p>
+<ol type="1">
+<li>Implement highest-priority feedback from draft defense</li>
+<li>Complete final A4 package assembly</li>
+<li>Polish all components to professional standard</li>
+<li>Complete self-assessment reflection</li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+<p><strong>Nice to have:</strong></p>
+<ul>
+<li>GIS integration (if relevant and feasible)</li>
+<li>Enhanced visualizations</li>
+<li>Additional sensitivity analysis</li>
+<li>Extended literature review</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="time-management">Time Management</h3>
+<p><strong>Prioritize ruthlessly:</strong></p>
+<ul>
+<li>Focus on what strengthens your argument most</li>
+<li>Good enough is better than perfect but late</li>
+<li>Quality over perfection on minor details</li>
+<li>Ask for help if you’re stuck</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<p><strong>Get feedback:</strong></p>
+<ul>
+<li>Peer review before final submission</li>
+<li>Office hours for specific questions</li>
+<li>Check requirements against checklist</li>
+<li>Test all links and files work</li>
+</ul>
+</section>
+<section id="key-takeaways" class="slide level2 center">
+<h2>🎓 Key Takeaways</h2>
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>GIS Platforms for Architects</strong></p>
+</div>
+<div class="callout-content">
+<ol type="1">
+<li><strong>QGIS</strong> - Free exploration and learning, good visualization</li>
+<li><strong>ESRI</strong> - Industry standard, professional workflows, expensive</li>
+<li><strong>Code-driven</strong> - Reproducible, customizable, integrates with design tools</li>
+<li><strong>Google Earth Engine</strong> - Cloud-based, massive satellite data, regional analysis</li>
+<li><strong>Reality</strong> - Most workflows are hybrid, choose based on task</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Essential Data Sources</strong></p>
+</div>
+<div class="callout-content">
+<ol type="1">
+<li><strong>ESRI Living Atlas</strong> - Curated global datasets, basemaps, demographics</li>
+<li><strong>Google Earth Engine</strong> - Decades of satellite imagery, climate data</li>
+<li><strong>NOAA</strong> - Climate, weather, coastal, and ocean data</li>
+<li><strong>OpenStreetMap</strong> - Community-built global map data</li>
+<li><strong>Government portals</strong> - Local parcels, zoning, infrastructure</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
+</section>
+<section id="your-semester-achievement" class="slide level2 callout-success center" data-icon="false">
+<h2>Your semester achievement</h2>
+<ol type="1">
+<li>You’ve developed systematic research capabilities</li>
+<li>You can now do evidence-based design research</li>
+<li>You have professional communication skills</li>
+<li>You’re equipped for practice, research, or advanced study</li>
+</ol>
+</section>
+<section id="questions-and-support" class="slide level2 center">
+<h2>❓ Questions and Support</h2>
+<p><strong>Office hours:</strong> Wednesday 4-6pm, KB722, or by appointment</p>
+<h3 id="this-weeks-priorities">This week’s priorities</h3>
+<ul>
+<li>Individual consultations on A4 feedback integration</li>
+<li>GIS tool recommendations for specific projects</li>
+<li>Technical assistance with formatting and submission</li>
+<li>General troubleshooting and support</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<h3 id="resources">Resources</h3>
+<ul>
+<li>Course website for submission guidelines</li>
+<li>GIS tutorials and quick-start guides posted</li>
+<li>Peer practice partnerships encouraged</li>
+<li>Final checklist available on Canvas</li>
+</ul>
+</section>
+<section id="congratulations" class="slide level2 center">
+<h2>🎉 Congratulations</h2>
+<h3 id="youve-come-a-long-way">You’ve come a long way</h3>
+<ul>
+<li>From “What is evidence-based design?” to doing it professionally</li>
+<li>From uncertain beginnings to confident recommendations</li>
+<li>From isolated ideas to systematic investigation</li>
+<li>From novice to competent design researcher</li>
+</ul>
+<p><strong>Next week:</strong> Semester recap and looking ahead</p>
+</section>
+<section class="slide level2 center">
+
+<p><em>Thank you for your hard work and dedication this semester</em> 🙏</p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -588,7 +3048,7 @@
         disableLayout: false,
 
         // Vertical centering of slides
-        center: false,
+        center: true,
 
         // Enables touch navigation on devices with touch input
         touch: true,
@@ -684,9 +3144,9 @@
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1050,
+        width: 1400,
 
-        height: 700,
+        height: 900,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
@@ -750,7 +3210,18 @@
         }
         return false;
       }
-      const onCopySuccess = function(e) {
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -782,47 +3253,7 @@
         }, 1000);
         // clear code selection
         e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
       });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        // For code content inside modals, clipBoardJS needs to be initialized with a container option
-        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp("https:\/\/clementinec\.github\.io\/ARCH7476\/");
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-        }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
-            }
-          }
-        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -859,11 +3290,7 @@
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
+          return note.innerHTML;
         });
       }
       const findCites = (el) => {

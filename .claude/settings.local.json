@@ -15,7 +15,8 @@
       "Bash(for:*)",
       "Bash(do)",
       "Bash(done)",
-      "Read(///**)"
+      "Read(///**)",
+      "WebFetch(domain:portal.csdi.gov.hk)"
     ],
     "deny": [],
     "ask": []
