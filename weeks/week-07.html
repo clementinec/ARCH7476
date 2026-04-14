@@ -8,9 +8,9 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.544">
+  <meta name="generator" content="quarto-1.4.549">
 
-  <title>ARCH7476: Evidence-Based Generative Design - Week 7: Decide with Numbers</title>
+  <title>ARCH7476: Evidence-Based Generative Design - Week 7: Method Prototype Studio</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -325,8 +325,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 7: Decide with Numbers</h1>
-  <p class="subtitle">Thresholds, Trade-offs, and Decision Frameworks</p>
+  <h1 class="title">Week 7: Method Prototype Studio</h1>
+  <p class="subtitle">Build the Smallest Workflow That Can Answer Something Real</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -334,788 +334,72 @@
 </section>
 <section id="todays-agenda" class="slide level2 center">
 <h2>Today’s Agenda</h2>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Interactive Session Alert!</strong></p>
-</div>
-<div class="callout-content">
-<p>Today involves <strong>team challenges</strong>, <strong>case study battles</strong>, and <strong>threshold setting competitions</strong>. Come ready to defend your decisions and challenge others!</p>
-</div>
-</div>
-</div>
 <ul>
-<li class="fragment"><p><strong>Statistics Refresher</strong>: Hypothesis testing, t-tests, and sample sizes (super simple!)</p></li>
-<li class="fragment"><p><strong>Warm-up</strong>: Peer Review #1 feedback integration</p></li>
-<li class="fragment"><p><strong>Case Study Battle</strong>: Real-world threshold disasters vs.&nbsp;successes</p></li>
-<li class="fragment"><p><strong>Team Challenge</strong>: Competitive decision framework development</p></li>
-<li class="fragment"><p><strong>Hot Seat</strong>: Counter-argument rapid-fire session</p></li>
-<li class="fragment"><p><strong>Change Log Workshop</strong>: Document your learning evolution</p></li>
+<li class="fragment">what a method prototype is</li>
+<li class="fragment">pathway breakouts</li>
+<li class="fragment">workflow documentation</li>
+<li class="fragment">quality control and assumptions</li>
+<li class="fragment">A3 drafting</li>
 </ul>
 </section>
-<section id="quick-statistics-refresher" class="slide level2 center">
-<h2>Quick Statistics Refresher</h2>
-<h3 id="because-a3-showed-we-need-this">(Because A3 Showed We Need This!)</h3>
-</section>
-<section class="slide level2 center">
-
-<h3 id="slide-1-hypotheses---like-design-claims-you-can-test">Slide 1: Hypotheses - Like Design Claims You Can Test</h3>
-<p><strong>🏗️ Think of a hypothesis like saying: “My design will work better than existing solutions”</strong></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>In Architecture:</strong></p>
+<section id="minimal-viable-workflow" class="slide level2 center">
+<h2>Minimal Viable Workflow</h2>
+<p>Your prototype is successful if it can:</p>
 <ul>
-<li class="fragment"><p>“This office layout will improve productivity”</p></li>
-<li class="fragment"><p>“Better lighting will reduce eye strain”</p></li>
-<li class="fragment"><p>“Open spaces will increase collaboration”</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>In Statistics:</strong></p>
-<ul>
-<li class="fragment"><p><strong>H0 (Null)</strong>: “No difference” (old design = new design)</p></li>
-<li class="fragment"><p><strong>H1 (Alternative)</strong>: “There IS a difference” (new design &gt; old design)</p></li>
-</ul>
-</div>
-</div>
-<p><strong>🎯 Your job</strong>: Collect enough evidence to <strong>reject H0</strong> (prove the old way is NOT as good)</p>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Analogy: Court Trial</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li class="fragment"><p><strong>H0</strong> = “Defendant is innocent” (default assumption)</p></li>
-<li class="fragment"><p><strong>H1</strong> = “Defendant is guilty” (what you’re trying to prove)</p></li>
-<li class="fragment"><p>You need <strong>overwhelming evidence</strong> to reject innocence</p></li>
-</ul>
-</div>
-</div>
-</div>
-<p><strong>Real Example</strong>: “Biophilic design increases worker satisfaction by &gt;0.5 points on 5-point scale”</p>
-<ul>
-<li class="fragment"><p><strong>H0</strong>: Biophilic = Traditional (no difference)</p></li>
-<li class="fragment"><p><strong>H1</strong>: Biophilic &gt; Traditional (satisfaction increase ≥0.5)</p></li>
+<li class="fragment">take in real inputs</li>
+<li class="fragment">run through a clear process</li>
+<li class="fragment">produce one interpretable output</li>
+<li class="fragment">reveal where the method still breaks</li>
 </ul>
 </section>
-<section class="slide level2 center">
-
-<h3 id="slide-2-t-tests---your-evidence-judge">Slide 2: T-tests - Your Evidence Judge</h3>
-<p><strong>🎯 T-test = “Is this difference REAL or just random luck?”</strong></p>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p><strong>What it does:</strong></p>
+<section id="pathway-breakout-prompt" class="slide level2 center">
+<h2>Pathway Breakout Prompt</h2>
+<h3 id="spreadsheet">Spreadsheet</h3>
 <ul>
-<li class="fragment"><p>Compares two groups (old vs.&nbsp;new design)</p></li>
-<li class="fragment"><p>Accounts for natural variation in data</p></li>
-<li class="fragment"><p>Gives you a <strong>p-value</strong> (probability it’s just luck)</p></li>
+<li class="fragment">what table structure do you need?</li>
+<li class="fragment">what comparison will the chart actually show?</li>
 </ul>
-<p><strong>The Magic Number</strong>: p &lt; 0.05</p>
+<h3 id="gis">GIS</h3>
 <ul>
-<li class="fragment"><p>“Less than 5% chance this is random”</p></li>
-<li class="fragment"><p>“Pretty confident the difference is real”</p></li>
+<li class="fragment">what layers are essential?</li>
+<li class="fragment">what operation answers the question: buffer, join, overlay, filter?</li>
 </ul>
-</div><div class="column" style="width:40%;">
-<p><strong>Architecture Example:</strong></p>
+<h3 id="python">Python</h3>
 <ul>
-<li class="fragment"><p>Test 20 people in old office</p></li>
-<li class="fragment"><p>Test 20 people in new office</p></li>
-<li class="fragment"><p>Productivity scores: 6.2 vs 7.1</p></li>
-<li class="fragment"><p><strong>Question</strong>: Is 0.9 difference real?</p></li>
-<li class="fragment"><p><strong>T-test says</strong>: p = 0.032 ✅</p></li>
-<li class="fragment"><p><strong>Conclusion</strong>: Yes, probably real!</p></li>
-</ul>
-</div>
-</div>
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Analogy: Coin Flipping</strong></p>
-</div>
-<div class="callout-content">
-<p>If you flip 10 heads in a row, is the coin rigged?</p>
-<ul>
-<li class="fragment"><p><strong>Probability of this by chance</strong>: 1/1024 = 0.001</p></li>
-<li class="fragment"><p><strong>Way less than 0.05</strong> → Coin is probably rigged!</p></li>
-</ul>
-</div>
-</div>
-</div>
-<p><strong>Common Mistake</strong>: “My 3 test users liked it better” ≠ statistical significance!</p>
-</section>
-<section class="slide level2 center">
-
-<h3 id="slide-3-sample-size---how-many-people-do-you-actually-need">Slide 3: Sample Size - How Many People Do You Actually Need?</h3>
-<p><strong>🎲 The Goldilocks Problem: Not too few, not too many, just right</strong></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Too Small (n &lt; 10):</strong></p>
-<ul>
-<li class="fragment"><p>❌ Can’t detect real differences</p></li>
-<li class="fragment"><p>❌ Results change drastically with one more person</p></li>
-<li class="fragment"><p>❌ No statistical power</p></li>
-</ul>
-<p><strong>Too Large (n &gt; 100):</strong></p>
-<ul>
-<li class="fragment"><p>✅ Very reliable BUT…</p></li>
-<li class="fragment"><p>💰 Expensive and time-consuming</p></li>
-<li class="fragment"><p>🤯 May detect differences that don’t matter practically</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Just Right (n = 20-50 for most studies):</strong></p>
-<ul>
-<li class="fragment"><p>✅ Can detect meaningful differences</p></li>
-<li class="fragment"><p>✅ Manageable cost and time</p></li>
-<li class="fragment"><p>✅ Reliable enough for decisions</p></li>
-</ul>
-<p><strong>Quick Rules of Thumb:</strong></p>
-<ul>
-<li class="fragment"><p><strong>Pilot studies</strong>: 10-15 people minimum</p></li>
-<li class="fragment"><p><strong>User testing</strong>: 20-30 people</p></li>
-<li class="fragment"><p><strong>Survey research</strong>: 30+ people</p></li>
-<li class="fragment"><p><strong>Big differences</strong>: Fewer people needed</p></li>
-<li class="fragment"><p><strong>Small differences</strong>: More people needed</p></li>
-</ul>
-</div>
-</div>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Analogy: Restaurant Reviews</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li class="fragment"><p><strong>3 reviews</strong>: Not enough to trust</p></li>
-<li class="fragment"><p><strong>30 reviews</strong>: Pretty reliable picture</p></li>
-<li class="fragment"><p><strong>300 reviews</strong>: Overkill for most decisions, but very reliable</p></li>
-</ul>
-</div>
-</div>
-</div>
-<p><strong>Power Calculation Tools</strong>: G*Power (free software) - tells you exactly how many you need!</p>
-<p><strong>A3 Reality Check</strong>: Most of you needed 20-30 people minimum, not 8-12! 📊</p>
-</section>
-<section id="peer-review-lightning-round" class="slide level2 center">
-<h2>Peer Review Lightning Round</h2>
-<p><strong>🔥 2-Minute Partner Share</strong> <em>Find someone you haven’t worked with yet</em></p>
-<p><strong>Round 1</strong>: What was the <strong>most surprising</strong> piece of feedback you received? <strong>Round 2</strong>: What was the <strong>most actionable</strong> suggestion? <strong>Round 3</strong>: What feedback did you <strong>respectfully disagree</strong> with and why?</p>
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Class Poll Time!</strong></p>
-</div>
-<div class="callout-content">
-<p>Raise your hand if peer feedback made you:</p>
-<ul>
-<li class="fragment"><p>🔄 Change your method significantly</p></li>
-<li class="fragment"><p>🎯 Refocus on different stakeholders</p></li>
-<li class="fragment"><p>📊 Redesign your data visualization</p></li>
-<li class="fragment"><p>🤔 Question your original claim</p></li>
-</ul>
-</div>
-</div>
-</div>
-<p><strong>Now let’s see what patterns we can spot across all projects…</strong></p>
-</section>
-<section id="the-great-threshold-disasters-of-architecture" class="slide level2 center">
-<h2>The Great Threshold Disasters of Architecture</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="case-study-battle-when-good-evidence-goes-bad">Case Study Battle: When Good Evidence Goes Bad</h3>
-<p><strong>🏗️ The Pruitt-Igoe Housing Complex (1954-1976)</strong></p>
-<ul>
-<li class="fragment"><p><strong>Evidence</strong>: “High-density housing improves urban efficiency”</p></li>
-<li class="fragment"><p><strong>Threshold</strong>: “500+ units per acre is optimal”</p></li>
-<li class="fragment"><p><strong>Reality</strong>: Social dysfunction, crime, eventual demolition</p></li>
-<li class="fragment"><p><strong>Missing</strong>: Social interaction thresholds, community scale limits</p></li>
-</ul>
-<p><strong>❄️ The Champlain Towers South Collapse (2021)</strong></p>
-<ul>
-<li class="fragment"><p><strong>Evidence</strong>: “Concrete structures last 50+ years with basic maintenance”</p></li>
-<li class="fragment"><p><strong>Threshold</strong>: “Visual inspection every 10 years is sufficient”</p></li>
-<li class="fragment"><p><strong>Reality</strong>: Catastrophic failure after 40 years</p></li>
-<li class="fragment"><p><strong>Missing</strong>: Accelerated corrosion thresholds in coastal environments</p></li>
-</ul>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Discussion Prompt</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Think-Pair-Share (5 mins)</strong>: What architectural decision in your own project could go catastrophically wrong if you set the wrong threshold? What’s your “Pruitt-Igoe” scenario?</p>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2 center">
-
-<h3 id="threshold-reality-check-the-hong-kong-context">Threshold Reality Check: The Hong Kong Context</h3>
-<p><strong>🏙️ Local Case Study: Hong Kong’s Plot Ratio Limits</strong></p>
-<ul>
-<li class="fragment"><p><strong>Current threshold</strong>: 5:1-8:1 in urban areas</p></li>
-<li class="fragment"><p><strong>Evidence basis</strong>: Transportation capacity, infrastructure load</p></li>
-<li class="fragment"><p><strong>Controversy</strong>: Does this create housing shortage vs.&nbsp;livability?</p></li>
-</ul>
-<p><strong>💡 Your Turn - Rapid Fire Questions:</strong></p>
-<p><em>Stand up and move to different corners of the room:</em></p>
-<p><strong>Corner A</strong>: “My threshold is based on regulations/codes” <strong>Corner B</strong>: “My threshold is based on user satisfaction data” <strong>Corner C</strong>: “My threshold is based on economic analysis” <strong>Corner D</strong>: “My threshold is… honestly, I’m not sure yet”</p>
-<p><em>Now defend your corner choice to the other groups! (3 mins each)</em></p>
-</section>
-<section id="setting-appropriate-thresholds" class="slide level2 center">
-<h2>Setting Appropriate Thresholds</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="regulatory-and-standards-based">Regulatory and Standards-Based</h3>
-<p><strong>Building code compliance:</strong></p>
-<ul>
-<li class="fragment"><p>Minimum performance requirements</p></li>
-<li class="fragment"><p>Safety factors and margins</p></li>
-<li class="fragment"><p>Local vs.&nbsp;international standards</p></li>
-</ul>
-<p><strong>Green building standards:</strong></p>
-<ul>
-<li class="fragment"><p>LEED, BREEAM, Green Mark thresholds</p></li>
-<li class="fragment"><p>Point systems and credit requirements</p></li>
-<li class="fragment"><p>Market expectations and norms</p></li>
+<li class="fragment">what notebook steps need to exist end to end?</li>
+<li class="fragment">what chart or exported table proves the workflow is working?</li>
 </ul>
 </section>
-<section class="slide level2 center">
-
-<h3 id="performance-benchmarking">Performance Benchmarking</h3>
-<p><strong>Peer building comparison:</strong></p>
+<section id="document-while-you-build" class="slide level2 center">
+<h2>Document While You Build</h2>
+<p>Capture:</p>
 <ul>
-<li class="fragment"><p>Industry average performance levels</p></li>
-<li class="fragment"><p>Best-in-class examples</p></li>
-<li class="fragment"><p>Worst acceptable performance</p></li>
+<li class="fragment">file names</li>
+<li class="fragment">assumptions</li>
+<li class="fragment">parameter choices</li>
+<li class="fragment">what failed</li>
+<li class="fragment">what you changed and why</li>
 </ul>
-<p><strong>User satisfaction benchmarks:</strong></p>
+<p>Do not wait until the end to remember it.</p>
+</section>
+<section id="prototype-quality-check" class="slide level2 center">
+<h2>Prototype Quality Check</h2>
 <ul>
-<li class="fragment"><p>Survey response thresholds (e.g., 4.0/5.0 satisfaction)</p></li>
-<li class="fragment"><p>Complaint rates and frequencies</p></li>
-<li class="fragment"><p>Productivity impact measurements</p></li>
+<li class="fragment">can another person tell what goes in?</li>
+<li class="fragment">can they tell what comes out?</li>
+<li class="fragment">can they see what judgment calls mattered?</li>
+<li class="fragment">can they tell whether the output is already useful?</li>
 </ul>
 </section>
-<section class="slide level2 center">
-
-<h3 id="stakeholder-specific-thresholds">Stakeholder-Specific Thresholds</h3>
-<p><strong>Developer criteria:</strong></p>
+<section id="by-the-end-of-this-week" class="slide level2 center">
+<h2>By the End of This Week</h2>
+<p>You should have:</p>
 <ul>
-<li class="fragment"><p>ROI minimums and payback periods</p></li>
-<li class="fragment"><p>Risk tolerance and market positioning</p></li>
-<li class="fragment"><p>Competitive advantage requirements</p></li>
+<li class="fragment">a first working artifact</li>
+<li class="fragment">screenshots or exports</li>
+<li class="fragment">notes on assumptions and errors</li>
+<li class="fragment">a clear story for A3</li>
 </ul>
-<p><strong>User-focused criteria:</strong></p>
-<ul>
-<li class="fragment"><p>Comfort and satisfaction minimums</p></li>
-<li class="fragment"><p>Health and safety thresholds</p></li>
-<li class="fragment"><p>Accessibility and inclusion requirements</p></li>
-</ul>
-</section>
-<section id="counter-argument-analysis" class="slide level2 center">
-<h2>Counter-Argument Analysis</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="anticipating-objections">Anticipating Objections</h3>
-<p><strong>“Too expensive”</strong></p>
-<ul>
-<li class="fragment"><p>Life-cycle cost analysis</p></li>
-<li class="fragment"><p>Non-monetary benefit quantification</p></li>
-<li class="fragment"><p>Financing and incentive options</p></li>
-<li class="fragment"><p>Risk cost of not implementing</p></li>
-</ul>
-<p><strong>“Unproven technology”</strong></p>
-<ul>
-<li class="fragment"><p>Precedent examples and case studies</p></li>
-<li class="fragment"><p>Gradual implementation strategies</p></li>
-<li class="fragment"><p>Pilot testing and monitoring plans</p></li>
-<li class="fragment"><p>Backup and contingency options</p></li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="alternative-explanations">Alternative Explanations</h3>
-<p><strong>“Results could be due to other factors”</strong></p>
-<ul>
-<li class="fragment"><p>Sensitivity analysis across variables</p></li>
-<li class="fragment"><p>Control for confounding factors</p></li>
-<li class="fragment"><p>Multiple validation approaches</p></li>
-<li class="fragment"><p>Transparent limitation acknowledgment</p></li>
-</ul>
-<p><strong>“Context may not transfer”</strong></p>
-<ul>
-<li class="fragment"><p>Boundary condition analysis</p></li>
-<li class="fragment"><p>Similar context identification</p></li>
-<li class="fragment"><p>Adaptation strategies</p></li>
-<li class="fragment"><p>Local validation recommendations</p></li>
-</ul>
-</section>
-<section id="trade-off-analysis-frameworks" class="slide level2 center">
-<h2>Trade-Off Analysis Frameworks</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="multi-criteria-decision-analysis">Multi-Criteria Decision Analysis</h3>
-<p><strong>Identify competing objectives:</strong></p>
-<ul>
-<li class="fragment"><p>Energy performance vs.&nbsp;cost</p></li>
-<li class="fragment"><p>User satisfaction vs.&nbsp;maintenance</p></li>
-<li class="fragment"><p>Sustainability vs.&nbsp;aesthetics</p></li>
-<li class="fragment"><p>Privacy vs.&nbsp;collaboration</p></li>
-</ul>
-<p><strong>Weight criteria by stakeholder priority:</strong></p>
-<ul>
-<li class="fragment"><p>Survey stakeholders for preference ranking</p></li>
-<li class="fragment"><p>Use revealed preferences from past decisions</p></li>
-<li class="fragment"><p>Apply regulatory or market requirements</p></li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="live-decision-matrix-showdown">📊 Live Decision Matrix Showdown</h3>
-<p><strong>Real-time class voting on trade-off weights!</strong></p>
-<p><em>Use your phones to vote on Mentimeter/Kahoot:</em></p>
-<p><strong>Question 1</strong>: For a Hong Kong residential developer, rank importance (1-5):</p>
-<ul>
-<li class="fragment"><p>Energy performance: ?</p></li>
-<li class="fragment"><p>Construction cost: ?</p></li>
-<li class="fragment"><p>User satisfaction: ?</p></li>
-<li class="fragment"><p>Maintenance ease: ?</p></li>
-<li class="fragment"><p>Resale value: ?</p></li>
-</ul>
-<p><strong>Live Results Display</strong>:</p>
-<table>
-<colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 13%">
-<col style="width: 18%">
-<col style="width: 22%">
-<col style="width: 13%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Alternative</th>
-<th>Energy (X%)</th>
-<th>Cost (Y%)</th>
-<th>User Sat (Z%)</th>
-<th>Maintenance (W%)</th>
-<th><strong>Total</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>High-tech</td>
-<td>9</td>
-<td>3</td>
-<td>8</td>
-<td>6</td>
-<td><strong>?</strong></td>
-</tr>
-<tr class="even">
-<td>Standard</td>
-<td>6</td>
-<td>8</td>
-<td>7</td>
-<td>8</td>
-<td><strong>?</strong></td>
-</tr>
-<tr class="odd">
-<td>Budget</td>
-<td>4</td>
-<td>10</td>
-<td>5</td>
-<td>9</td>
-<td><strong>?</strong></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Plot twist</strong>: Now recalculate with class-voted weights!</p>
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Reality Check</strong></p>
-</div>
-<div class="callout-content">
-<p>How different are the results with class weights vs.&nbsp;your individual assumptions? What does this tell us about stakeholder engagement?</p>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2 center">
-
-<h3 id="the-scenario-planning-war-games">🎯 The Scenario Planning War Games</h3>
-<p><strong>🎲 Choose Your Adventure Format</strong></p>
-<p><em>Each student rolls a die to get their scenario assignment:</em></p>
-<p><strong>🌟 Best Case (Roll 1-2)</strong>: “Everything Goes Perfect”</p>
-<ul>
-<li class="fragment"><p>All assumptions optimistic, technology works flawlessly</p></li>
-<li class="fragment"><p>Stakeholders embrace change, funding flows freely</p></li>
-<li class="fragment"><p><strong>Your mission</strong>: Sell this vision BUT acknowledge it’s optimistic</p></li>
-</ul>
-<p><strong>⚡ Worst Case (Roll 3-4)</strong>: “Murphy’s Law Strikes”</p>
-<ul>
-<li class="fragment"><p>Technology fails, budgets get cut, regulations change</p></li>
-<li class="fragment"><p>Users resist, maintenance breaks down, economy crashes</p></li>
-<li class="fragment"><p><strong>Your mission</strong>: Plan for disaster WITHOUT being paralyzed</p></li>
-</ul>
-<p><strong>🎯 Most Likely (Roll 5-6)</strong>: “Reality Check”</p>
-<ul>
-<li class="fragment"><p>Some things work, some don’t, typical implementation friction</p></li>
-<li class="fragment"><p>Mixed stakeholder response, moderate budget pressure</p></li>
-<li class="fragment"><p><strong>Your mission</strong>: Balance optimism with pragmatism</p></li>
-</ul>
-<p><strong>The Challenge</strong>: Present your scenario in 90 seconds with: 1. What happens in your scenario 2. How your recommendation changes 3. What contingency plans you need</p>
-<p><strong>Class votes</strong>: Which scenario team was most convincing?</p>
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Professional Reality</strong></p>
-</div>
-<div class="callout-content">
-<p>Real clients want to know you’ve thought through all scenarios. Being overly optimistic OR pessimistic kills credibility.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="the-decision-framework-speed-dating" class="slide level2 center">
-<h2>The Decision Framework Speed Dating</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="musical-chairs-decision-development">💖 Musical Chairs Decision Development</h3>
-<p><strong>Round 1: Threshold Speed Dating (15 minutes)</strong></p>
-<p><em>Students rotate every 3 minutes</em></p>
-<p><strong>Station A</strong>: “Threshold Reality Check”</p>
-<ul>
-<li class="fragment"><p>Share your key threshold with partner</p></li>
-<li class="fragment"><p>Partner plays devil’s advocate: “That’s too high/low because…”</p></li>
-<li class="fragment"><p>Defend or revise your threshold</p></li>
-</ul>
-<p><strong>Station B</strong>: “Objection Preparation”</p>
-<ul>
-<li class="fragment"><p>List 3 likely objections to your recommendation</p></li>
-<li class="fragment"><p>Partner adds 2 more objections you didn’t think of</p></li>
-<li class="fragment"><p>Brainstorm rapid responses</p></li>
-</ul>
-<p><strong>Station C</strong>: “Trade-off Mapping”</p>
-<ul>
-<li class="fragment"><p>Identify your biggest trade-off dilemma</p></li>
-<li class="fragment"><p>Partner suggests creative ways to minimize the trade-off</p></li>
-<li class="fragment"><p>Test different stakeholder weighting scenarios</p></li>
-</ul>
-<p><strong>Station D</strong>: “Evidence Stress Test”</p>
-<ul>
-<li class="fragment"><p>Present your strongest evidence</p></li>
-<li class="fragment"><p>Partner identifies the weakest link</p></li>
-<li class="fragment"><p>Develop backup evidence or acknowledge limitations</p></li>
-</ul>
-<p><strong>Station E</strong>: “Implementation Reality”</p>
-<ul>
-<li class="fragment"><p>Describe how your recommendation would actually happen</p></li>
-<li class="fragment"><p>Partner identifies practical barriers</p></li>
-<li class="fragment"><p>Problem-solve implementation strategies</p></li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="the-framework-peer-review-arena">💥 The Framework Peer Review Arena</h3>
-<p><strong>Battle Royale Format</strong>: Groups of 4 students</p>
-<p><strong>Round 1: The Threshold Challenge</strong> (5 minutes)</p>
-<ul>
-<li class="fragment"><p>Each person shares one key threshold</p></li>
-<li class="fragment"><p>Group collectively attacks each threshold: “But what if…”</p></li>
-<li class="fragment"><p>Threshold survives = 1 point</p></li>
-<li class="fragment"><p>Threshold gets improved = 2 points</p></li>
-<li class="fragment"><p>Threshold gets completely revised = 3 points (best learning!)</p></li>
-</ul>
-<p><strong>Round 2: The Objection Olympics</strong> (5 minutes)</p>
-<ul>
-<li class="fragment"><p>Each person presents their worst-case objection scenario</p></li>
-<li class="fragment"><p>Group brainstorms rapid-fire solutions</p></li>
-<li class="fragment"><p>Most creative solution wins the round</p></li>
-</ul>
-<p><strong>Round 3: The Trade-off Twist</strong> (5 minutes)</p>
-<ul>
-<li class="fragment"><p>Each person presents their biggest trade-off dilemma</p></li>
-<li class="fragment"><p>Group suggests “third option” solutions that minimize trade-offs</p></li>
-<li class="fragment"><p>Vote on most innovative compromise</p></li>
-</ul>
-<p><strong>Scoring</strong>: Track points across all rounds. Winning group shares best insights with class!</p>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Reflection Moment</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Quick whip-around</strong>: What’s one insight from peer review that <strong>changed your mind</strong> about something?</p>
-</div>
-</div>
-</div>
-</section>
-<section id="the-learning-evolution-showcase" class="slide level2 center">
-<h2>The Learning Evolution Showcase</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="change-log-speed-sharing">💫 Change Log Speed Sharing</h3>
-<p><strong>Before we document, let’s celebrate the learning!</strong></p>
-<p><strong>🔄 The Evolution Stations</strong> (3 minutes each station)</p>
-<p><strong>Station 1: “My Biggest Pivot”</strong></p>
-<ul>
-<li class="fragment"><p>Share the most significant change you made to your approach</p></li>
-<li class="fragment"><p>What triggered this change?</p></li>
-<li class="fragment"><p>How do you feel about abandoning your original idea?</p></li>
-</ul>
-<p><strong>Station 2: “My Stubborn Stand”</strong></p>
-<ul>
-<li class="fragment"><p>Share something you REFUSED to change despite feedback</p></li>
-<li class="fragment"><p>Why did you stick to your guns?</p></li>
-<li class="fragment"><p>Are you still confident in this decision?</p></li>
-</ul>
-<p><strong>Station 3: “My Surprise Discovery”</strong></p>
-<ul>
-<li class="fragment"><p>What did you learn that completely surprised you?</p></li>
-<li class="fragment"><p>How did this discovery change your perspective?</p></li>
-<li class="fragment"><p>What would you have done differently knowing this from the start?</p></li>
-</ul>
-<p><strong>Station 4: “My Method Makeover”</strong></p>
-<ul>
-<li class="fragment"><p>What tool/method did you completely overhaul?</p></li>
-<li class="fragment"><p>What forced this change?</p></li>
-<li class="fragment"><p>Is the new approach actually better?</p></li>
-</ul>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Documentation Strategy</strong></p>
-</div>
-<div class="callout-content">
-<p>After sharing, you’ll have great material for your Change Log! Use these conversations to write more authentic, specific entries.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2 center">
-
-<h3 id="change-log-competition-most-honest-documentation">📝 Change Log Competition: Most Honest Documentation</h3>
-<p><strong>The Challenge</strong>: Write the most authentic, insightful change log entries</p>
-<p><strong>Categories for Voting</strong>:</p>
-<ul>
-<li class="fragment"><p>🏆 <strong>Most Honest Failure</strong>: Best documentation of something that didn’t work</p></li>
-<li class="fragment"><p>💡 <strong>Best Plot Twist</strong>: Most surprising mid-course discovery</p></li>
-<li class="fragment"><p>🌱 <strong>Greatest Growth</strong>: Most impressive skill/thinking development</p></li>
-<li class="fragment"><p>🤝 <strong>Best Collaboration</strong>: How peer feedback created breakthrough</p></li>
-</ul>
-<p><strong>Format Template</strong>: <strong>Date | Change | Trigger | Impact | Lesson Learned</strong></p>
-<p><strong>Example Entries</strong>:</p>
-<p><em>Oct 15 | Abandoned fancy simulation for simple Excel model | Spent 20 hours on software that crashed constantly | Actually got better insights from simpler approach | Complexity ≠ Quality</em></p>
-<p><em>Oct 22 | Completely changed target stakeholder from architects to facility managers | Realized architects don’t actually make operational decisions | Research became 10x more relevant and actionable | Always validate your assumptions about decision-makers</em></p>
-<p><strong>Sharing Format</strong>: Read your best entry aloud (1 min max). Class votes in each category!</p>
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Professional Reality</strong></p>
-</div>
-<div class="callout-content">
-<p>Change logs are becoming standard in consulting and research. Clients love seeing transparent documentation of learning and adaptation - it builds trust!</p>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2 center">
-
-<h3 id="reflection-questions">Reflection Questions</h3>
-<ol type="1">
-<li class="fragment"><strong>What’s different about your approach now vs.&nbsp;Week 1?</strong></li>
-<li class="fragment"><strong>Which changes were forced vs.&nbsp;chosen?</strong></li>
-<li class="fragment"><strong>What would you do differently if starting over?</strong></li>
-<li class="fragment"><strong>How has your confidence in the results evolved?</strong></li>
-<li class="fragment"><strong>What skills have you developed through adaptation?</strong></li>
-</ol>
-</section>
-<section id="professional-decision-making-integration" class="slide level2 center">
-<h2>Professional Decision-Making Integration</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="architecture-firm-decision-processes">Architecture Firm Decision Processes</h3>
-<p><strong>Design phase integration:</strong></p>
-<ul>
-<li class="fragment"><p>Concept development evidence requirements</p></li>
-<li class="fragment"><p>Design development validation needs</p></li>
-<li class="fragment"><p>Construction document specification support</p></li>
-</ul>
-<p><strong>Client communication strategies:</strong></p>
-<ul>
-<li class="fragment"><p>Technical evidence translation</p></li>
-<li class="fragment"><p>Risk and benefit communication</p></li>
-<li class="fragment"><p>Alternative evaluation presentation</p></li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="regulatory-and-compliance-context">Regulatory and Compliance Context</h3>
-<p><strong>Building approval processes:</strong></p>
-<ul>
-<li class="fragment"><p>Code compliance demonstration</p></li>
-<li class="fragment"><p>Performance-based design justification</p></li>
-<li class="fragment"><p>Alternative solution documentation</p></li>
-</ul>
-<p><strong>Post-occupancy validation:</strong></p>
-<ul>
-<li class="fragment"><p>Performance monitoring and verification</p></li>
-<li class="fragment"><p>User feedback integration</p></li>
-<li class="fragment"><p>Continuous improvement processes</p></li>
-</ul>
-</section>
-<section id="a4-development-strategy" class="slide level2 center">
-<h2>A4 Development Strategy</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="integration-across-components">Integration Across Components</h3>
-<p><strong>Research Brief recommendations:</strong></p>
-<ul>
-<li class="fragment"><p>Clear thresholds and decision criteria</p></li>
-<li class="fragment"><p>Counter-argument acknowledgment</p></li>
-<li class="fragment"><p>Trade-off analysis and stakeholder guidance</p></li>
-</ul>
-<p><strong>Practice Case actionability:</strong></p>
-<ul>
-<li class="fragment"><p>Specific implementation recommendations</p></li>
-<li class="fragment"><p>Timeline and resource requirements</p></li>
-<li class="fragment"><p>Risk mitigation strategies</p></li>
-</ul>
-<p><strong>Object Card clarity:</strong></p>
-<ul>
-<li class="fragment"><p>Key threshold visually prominent</p></li>
-<li class="fragment"><p>Decision recommendation clear</p></li>
-<li class="fragment"><p>Confidence level indicated</p></li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="timeline-to-object-fair">Timeline to Object Fair</h3>
-<p><strong>Week 8:</strong> Mentor consultations and workflow documentation <strong>Week 9:</strong> Practice Case development and narrative refinement<br>
-<strong>Week 10:</strong> Draft defense and feedback integration <strong>Week 11:</strong> Final polish and presentation preparation <strong>Week 12:</strong> Object Fair presentations and final submission</p>
-</section>
-<section id="your-mission-for-this-week" class="slide level2 center">
-<h2>Your Mission for This Week</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="the-week-7-challenge-checklist">🎯 The Week 7 Challenge Checklist</h3>
-<p><strong>Level 1: Survival Mode</strong> ✅ 1. <strong>Change Log #1</strong> - Document your evolution (use today’s insights!) 2. <strong>Threshold Setting</strong> - Get specific numbers with solid justification 3. <strong>Counter-argument Prep</strong> - List and respond to 5 likely objections</p>
-<p><strong>Level 2: Excellence Mode</strong> 🎖️ 4. <strong>Stakeholder Validation</strong> - Actually ask a real stakeholder about your thresholds 5. <strong>Sensitivity Analysis</strong> - Test how robust your recommendations are 6. <strong>Implementation Roadmap</strong> - How would this actually happen?</p>
-<p><strong>Level 3: Ninja Mode</strong> 🥷 7. <strong>Alternative Scenario Planning</strong> - What if key assumptions are wrong? 8. <strong>Peer Collaboration</strong> - Help a classmate strengthen their weakest argument 9. <strong>Professional Polish</strong> - Make one figure publication-ready</p>
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Accountability Check</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Next week starts with a 2-minute “threshold defense” - be ready to justify your numbers with confidence!</strong></p>
-</div>
-</div>
-</div>
-<p><strong>Which level are you committing to? Say it out loud to the person next to you!</strong></p>
-</section>
-<section class="slide level2 center">
-
-<h3 id="week-8-preview">Week 8 Preview</h3>
-<p><strong>Light Workflow Help</strong></p>
-<ul>
-<li class="fragment"><p>Documenting processes for reproducibility</p></li>
-<li class="fragment"><p>Automation ethics and appropriate tool use</p></li>
-<li class="fragment"><p>Individual mentor consultations (30-45 min each)</p></li>
-<li class="fragment"><p>Workflow optimization strategies</p></li>
-</ul>
-</section>
-<section id="your-evidence-based-design-superpowers" class="slide level2 center">
-<h2>Your Evidence-Based Design Superpowers</h2>
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>What You Conquered Today</strong></p>
-</div>
-<div class="callout-content">
-<p>🎯 <strong>Threshold Setting Mastery</strong> - You can now set defensible performance standards</p>
-<p>🔥 <strong>Counter-Argument Immunity</strong> - You’re prepared for professional skepticism</p>
-<p>⚖️ <strong>Trade-off Navigation</strong> - You can help stakeholders understand difficult choices</p>
-<p>📝 <strong>Learning Documentation</strong> - You can show professional growth and adaptability</p>
-<p>🤝 <strong>Peer Collaboration</strong> - You’ve strengthened your work through collective intelligence</p>
-</div>
-</div>
-</div>
-<h3 id="fortune-cookie-wisdom">🔮 Fortune Cookie Wisdom</h3>
-<p><em>Pull a random “evidence-based design fortune” from the hat before you leave:</em></p>
-<ul>
-<li class="fragment"><p>“A threshold without justification is just a guess with confidence”</p></li>
-<li class="fragment"><p>“The best counter-argument comes from your harshest critic - embrace them”</p></li>
-<li class="fragment"><p>“Trade-offs reveal values - make yours explicit”</p></li>
-<li class="fragment"><p>“Document failures as carefully as successes - both teach”</p></li>
-<li class="fragment"><p>“Peer feedback is free consulting - use it wisely”</p></li>
-</ul>
-<p><strong>Your fortune for the week</strong>: _______________</p>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Exit Ticket</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Before you leave, tell the person next to you</strong>: What’s the ONE thing from today that will change how you approach your project this week?</p>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2 center">
-
-<p><em>Next week: Workflow documentation and mentor consultations - plus the legendary “Method Reproducibility Challenge”! 🏆</em></p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
@@ -1299,9 +583,9 @@
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1600,
+        width: 1400,
 
-        height: 1200,
+        height: 900,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,

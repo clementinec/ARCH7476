@@ -8,9 +8,9 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.544">
+  <meta name="generator" content="quarto-1.4.549">
 
-  <title>ARCH7476: Evidence-Based Generative Design - Week 3: Finding and Framing Data</title>
+  <title>ARCH7476: Evidence-Based Generative Design - Week 3: Spreadsheet as Baseline Workflow</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -325,7 +325,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 3: Finding and Framing Data</h1>
+  <h1 class="title">Week 3: Spreadsheet as Baseline Workflow</h1>
+  <p class="subtitle">Transparent Comparison, Charting, and Decision Logic</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -334,960 +335,143 @@
 <section id="todays-agenda" class="slide level2 center">
 <h2>Today’s Agenda</h2>
 <ul>
-<li class="fragment"><strong>A1 Elevator Pitches</strong> - 30-second decision claim presentations</li>
-<li class="fragment">A2 Evidence Map progress check</li>
-<li class="fragment">Proxy vs.&nbsp;preset simulations <em>(with video examples)</em></li>
-<li class="fragment">Pre-registration mindset <em>(interactive workshop)</em></li>
-<li class="fragment">Building performance simulation basics <em>(live demos)</em></li>
-<li class="fragment">A3 test plan development <em>(peer feedback)</em></li>
-</ul>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Start energetically - students just submitted A1 3 days ago</li>
-<li>Emphasize hands-on nature of today’s session</li>
-<li>Remind about typhoon affecting hybrid format</li>
-<li>Total time: 2 hours with breaks</li>
-<li>Key transition: Move from A1 reflection → systematic testing need</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Opening question:</strong> “How many of you are feeling confident about testing your A1 claim right now?”</p>
-</section>
-<section id="a1-elevator-pitches" class="slide level2 center">
-<h2>A1 Elevator Pitches 🚀</h2>
-<p><strong>30-second lightning round:</strong> Present your A1 decision claims</p>
-<ul>
-<li class="fragment">Design object + testable claim</li>
-<li class="fragment">Why it matters (impact/stakes)</li>
-<li class="fragment">Biggest uncertainty/assumption</li>
-</ul>
-<p><strong>Ground rules:</strong> <span style="color: orange"><strong>No slides, just you and your ideas!</strong></span></p>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Set timer for 30 seconds per student</li>
-<li>Model first with your own example: “Operable windows in student housing increase satisfaction by 20%”</li>
-<li>Encourage applause after each pitch</li>
-<li>Note interesting claims for later reference</li>
-<li>If student goes over time, gentle “wrap up” signal</li>
-<li>Listen for: vague claims, untestable assumptions, interesting methods</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Questions to prep for (1min):</strong></p>
-<ul>
-<li class="fragment">“What assumptions are you making there?”</li>
-<li class="fragment">“How would you measure that?”</li>
-<li class="fragment">“What could go wrong with that test?”</li>
+<li class="fragment">why spreadsheet is the baseline pathway</li>
+<li class="fragment">structure data around a decision</li>
+<li class="fragment">charts that do not overclaim</li>
+<li class="fragment">decision matrices</li>
+<li class="fragment">what spreadsheet cannot do well</li>
 </ul>
 </section>
-<section id="quick-poll-a1-reflection" class="slide level2 center">
-<h2>Quick Poll: A1 Reflection</h2>
-<p><strong>Rank these three options:</strong></p>
+<section id="spreadsheet-is-not-the-weak-option" class="slide level2 center">
+<h2>Spreadsheet Is Not the Weak Option</h2>
+<p>It is the <strong>default professional option</strong> when you need:</p>
 <ul>
-<li class="fragment">Changing design claim significantly while writing A1?</li>
-<li class="fragment">Discovered their claim was harder to test than expected?</li>
-<li class="fragment">Found surprising gaps in existing evidence?</li>
-</ul>
-<p><em>Setting the stage for why systematic testing matters…</em></p>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Look for patterns in results</li>
-<li>If few hands raised on first question: “Come on, be honest! Design is iterative”</li>
-<li>If many hands on second question: “Perfect! That’s exactly why we need systematic approaches”</li>
-<li>Bridge to A2: “Those gaps you found? That’s your A2 starting point”</li>
-<li>Transition: “So now you know testing is hard - let’s learn how to do it right”</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Follow-up questions:</strong></p>
-<ul>
-<li class="fragment">“What surprised you most about the A1 writing process?”</li>
-<li class="fragment">“Whose claim here seems most challenging to test?”</li>
+<li class="fragment">visible assumptions</li>
+<li class="fragment">editable comparison tables</li>
+<li class="fragment">fast iteration</li>
+<li class="fragment">simple reproducible logic</li>
 </ul>
 </section>
-<section id="a2-progress-check" class="slide level2 center">
-<h2>A2 Progress Check</h2>
-<p><strong>Quick sharing:</strong> What’s the most surprising thing you’ve found in your literature review so far?</p>
-<p>Common patterns:</p>
+<section id="start-with-the-decision" class="slide level2 center">
+<h2>Start With the Decision</h2>
+<p>Bad spreadsheet:</p>
 <ul>
-<li class="fragment">Less evidence than expected?</li>
-<li class="fragment">Contradictory findings?</li>
-<li class="fragment">Methodological limitations?</li>
-<li class="fragment">Contextual gaps?</li>
+<li class="fragment">endless columns</li>
+<li class="fragment">no clear units</li>
+<li class="fragment">no clear alternatives</li>
+<li class="fragment">no clear audience</li>
 </ul>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
+<p>Better spreadsheet:</p>
 <ul>
-<li>Take 2-3 responses max (time management!)</li>
-<li>Look for: empty literature spaces, conflicting studies, poor methods</li>
-<li>Validate feelings: “Yes, literature reviews are humbling”</li>
-<li>Common student discoveries: “Everyone tests differently,” “No one tests my specific thing”</li>
-<li>Pivot: “This is exactly why YOUR test matters”</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<!-- **Discussion prompts:**
-
-- "How many sources have you found that directly test your claim?"
-- "What research methods keep showing up in your field?"
-- "Where are the biggest evidence gaps?" -->
-</section>
-<section id="testing-approaches-proxy-vs.-preset" class="slide level2 center">
-<h2>Testing Approaches: Proxy vs.&nbsp;Preset</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Coffee Break (5 min):</strong> Think about what’s the difference between a proxy and a preset test.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2 center">
-
-<!-- # Hypotheses -->
-<div title="What is a hypothesis?">
-<div class="callout callout-caution callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>What is a hypothesis?</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li class="fragment">How is it different from a questions?
-<ul>
-<li class="fragment">“if-then” format vs.&nbsp;complete open-endedness</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section>
-<section id="need-we-dig-into-hypothesis-further" class="title-slide slide level1 center">
-<h1>Need we dig into hypothesis further?</h1>
-
-</section>
-<section id="questions-exploration-design-questions" class="slide level2 center">
-<h2>Questions = Exploration (Design Questions)</h2>
-<ul>
-<li class="fragment"><p>Questions are your initial observations that spark investigation:</p>
-<ul>
-<li class="fragment">“How does natural light affect user behavior in this library?”</li>
-<li class="fragment">“Why do people avoid using this public plaza?”</li>
-<li class="fragment">“What makes some neighborhoods more walkable than others?”</li>
-</ul></li>
+<li class="fragment">rows = cases or options</li>
+<li class="fragment">columns = criteria</li>
+<li class="fragment">one sheet = one purpose</li>
 </ul>
 </section>
-<section id="hypotheses-design-predictions" class="slide level2 center">
-<h2>Hypotheses = Design Predictions</h2>
+<section id="typical-architecture-spreadsheet-uses" class="slide level2 center">
+<h2>Typical Architecture Spreadsheet Uses</h2>
 <ul>
-<li class="fragment"><p>Hypotheses are your specific, testable design theories:</p>
-<ul>
-<li class="fragment">“Increasing window area by 40% on the south facade will increase study time in the library by 25% during winter months”</li>
-<li class="fragment">“Adding 15-foot wide covered walkways around the plaza perimeter will triple foot traffic during rainy seasons”</li>
-<li class="fragment">“Neighborhoods with continuous street walls and 8-foot wide sidewalks will have 3x more pedestrian activity than those with setback buildings and 4-foot sidewalks”</li>
-</ul></li>
+<li class="fragment">precedent comparison</li>
+<li class="fragment">evidence matrix</li>
+<li class="fragment">occupancy or observation logs</li>
+<li class="fragment">option scoring</li>
+<li class="fragment">uncertainty range charts</li>
+<li class="fragment">summary tables for final briefs</li>
 </ul>
 </section>
-<section id="why-this-matters-in-architecture" class="slide level2 center">
-<h2>Why This Matters in Architecture</h2>
-<p>Questions help you identify design problems and user needs. They’re essential for research and understanding context. Hypotheses help you make design decisions with intention. They force you to:</p>
+<section id="show-uncertainty-honestly" class="slide level2 center">
+<h2>Show Uncertainty Honestly</h2>
+<p>Avoid:</p>
 <ul>
-<li class="fragment">Predict specific outcomes from your design choices</li>
-<li class="fragment">Measure success objectively (occupancy rates, dwell time, user satisfaction scores)</li>
-<li class="fragment">Test and refine your design theories through post-occupancy evaluation</li>
-<li class="fragment">Communicate design intent clearly to clients and colleagues</li>
+<li class="fragment">fake precision</li>
+<li class="fragment">overly smooth charts</li>
+<li class="fragment">missing units</li>
+<li class="fragment">unexplained scoring systems</li>
+</ul>
+<p>Prefer:</p>
+<ul>
+<li class="fragment">ranges</li>
+<li class="fragment">scenario labels</li>
+<li class="fragment">simple comparison charts</li>
+<li class="fragment">clear note fields for assumptions</li>
 </ul>
 </section>
-<section id="what-is-a-test-in-design-research" class="slide level2 center">
-<h2>What is a “Test” in Design Research?</h2>
-<p><strong>A systematic comparison</strong> designed to evaluate competing alternatives or validate design assumptions.</p>
-<p>Not just “trying things out” — but structured investigation with:</p>
-<ul>
-<li class="fragment">Clear hypotheses</li>
-<li class="fragment">Controlled comparisons</li>
-<li class="fragment">Measurable outcomes</li>
-<li class="fragment">Documented methods</li>
-</ul>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Emphasize “systematic” vs “casual experimentation”</li>
-<li>Ask: “What’s the difference between testing and just trying stuff?”</li>
-<li>Common student confusion: thinking any comparison is a “test”</li>
-<li>Examples of bad “tests”: changing everything at once, no clear metrics</li>
-<li>Good example: A/B testing specific window sizes with energy consumption metrics</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><span style="color: cyan"><em>“Think about your A1 claim - do you have clear hypotheses? Measurable outcomes?”</em></span></p>
+<section id="decision-matrix-example" class="slide level2 center">
+<h2>Decision Matrix Example</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th style="text-align: right;">daylight</th>
+<th style="text-align: right;">access</th>
+<th style="text-align: right;">cost</th>
+<th style="text-align: right;">risk</th>
+<th>overall note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td style="text-align: right;">high</td>
+<td style="text-align: right;">medium</td>
+<td style="text-align: right;">medium</td>
+<td style="text-align: right;">medium</td>
+<td>balanced</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td style="text-align: right;">medium</td>
+<td style="text-align: right;">high</td>
+<td style="text-align: right;">low</td>
+<td style="text-align: right;">high</td>
+<td>cheap but weak long-term</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td style="text-align: right;">high</td>
+<td style="text-align: right;">high</td>
+<td style="text-align: right;">high</td>
+<td style="text-align: right;">low</td>
+<td>strongest but costly</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section class="slide level2 center">
-
-<h3 id="proxy-testing">Proxy Testing</h3>
-<p><strong>Using simplified models or representations</strong> to understand performance relationships</p>
-<p><strong>Examples:</strong></p>
+<section id="what-spreadsheet-cannot-replace" class="slide level2 center">
+<h2>What Spreadsheet Cannot Replace</h2>
 <ul>
-<li class="fragment">Physical scale models in wind tunnel</li>
-<li class="fragment">Simple energy models with key variables</li>
-<li class="fragment">Mock-ups of spatial configurations</li>
-<li class="fragment">User testing with prototypes or scenarios</li>
+<li class="fragment">spatial reasoning at city or site scale</li>
+<li class="fragment">complex geospatial operations</li>
+<li class="fragment">reusable code workflows</li>
+<li class="fragment">simulation-specific modeling</li>
 </ul>
+<p>That is why the course still surveys GIS and Python.</p>
 </section>
-<section class="slide level2 center">
-
-<p><strong>Advantages:</strong></p>
-<ul>
-<li class="fragment">Lower cost and faster iteration</li>
-<li class="fragment">Focus on key relationships</li>
-<li class="fragment">Easier to control variables</li>
-</ul>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Key point: “Proxy = simpler version that captures essential relationships”</li>
-<li>Students often worry proxies aren’t “real enough” - address this fear</li>
-<li>Good for: early design phases, limited budgets, exploring concepts</li>
-<li>Bad for: final validation, detailed optimization</li>
-<li>Examples from their A1s: cardboard models, simple sketches, basic calculations</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Questions to carry along:</strong></p>
-<ul>
-<li class="fragment">“How could you test your A1 claim with a proxy method?”</li>
-<li class="fragment">“What’s the simplest version of your test that could still give useful results?”</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="preset-simulation-testing">Preset Simulation Testing</h3>
-<p><strong>Using established software tools</strong> with validated models and standard inputs</p>
-<p><strong>Examples:</strong></p>
-<ul>
-<li class="fragment">EnergyPlus(Honeybee) for building energy analysis</li>
-<li class="fragment">Ladybug for visualizing weather interactions</li>
-<li class="fragment">Radiance for daylighting simulation</li>
-<li class="fragment">CFD(Butterfly) for airflow and thermal comfort</li>
-<li class="fragment">Acoustic modeling for sound performance</li>
-</ul>
-</section>
-<section id="the-pre-registration-mindset" class="slide level2 center">
-<h2>The Pre-Registration Mindset</h2>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Current Events Connection:</strong> With the typhoon sliding away, think about how weather assumptions affect building performance predictions - what if your assumptions are wrong?</p>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2 center">
-
-<h3 id="what-is-pre-registration">What is Pre-Registration?</h3>
-<p><strong>Documenting your research plan</strong> before conducting the study, including:</p>
-<ul>
-<li class="fragment">Research questions and hypotheses</li>
-<li class="fragment">Methods and analysis approach</li>
-<li class="fragment">Success criteria and interpretation rules</li>
-<li class="fragment">Potential limitations and biases</li>
-</ul>
-<p><strong>Purpose:</strong> Prevent cherry-picking results and ensure transparent research</p>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Key concept: “Deciding how you’ll interpret results BEFORE you see them”</li>
-<li>Common resistance: “But I might discover something unexpected!”</li>
-<li>Response: “You can still discover things, but document your original plan”</li>
-<li>Real-world example: clinical trials must pre-register or can’t be published</li>
-<li>Architecture parallel: competitions have criteria set before designs submitted</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Reality check:</strong> “How many of you have ever changed your argument after seeing disappointing results?”</p>
-</section>
-<section class="slide level2 center">
-
-<h3 id="pre-registration-for-design-research">Pre-Registration for Design Research</h3>
-<p><strong>Document before testing:</strong></p>
+<section id="practice-exercise" class="slide level2 center">
+<h2>Practice Exercise</h2>
+<p>Build a starter workbook with:</p>
 <ol type="1">
-<li class="fragment"><strong>Specific claims</strong> you’re testing</li>
-<li class="fragment"><strong>Alternative explanations</strong> you’ll consider</li>
-<li class="fragment"><strong>Metrics and thresholds</strong> for decision-making</li>
-<li class="fragment"><strong>Analysis approach</strong> you’ll use</li>
-<li class="fragment"><strong>Potential confounding factors</strong></li>
+<li class="fragment">one sheet for evidence sources</li>
+<li class="fragment">one sheet for alternative comparison</li>
+<li class="fragment">one chart that makes a trade-off visible</li>
 </ol>
-<p><strong>Benefits:</strong></p>
-<ul>
-<li class="fragment">Clearer thinking about research design</li>
-<li class="fragment">More credible results</li>
-<li class="fragment">Better documentation for replication</li>
-</ul>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Emphasize #3: “What counts as success? Decide NOW, not after seeing results”</li>
-<li>Common student mistake: vague success criteria like “performs better”</li>
-<li>Good example: “20% reduction in energy use” vs “some improvement”</li>
-<li>Alternative explanations: “If your hypothesis is wrong, what else could explain results?”</li>
-<li>Point #5 often overlooked: weather, user behavior, measurement errors</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Reflection prompt:</strong> “For your A1 claim, what would count as ‘success’? Be specific with numbers.”</p>
-<p><strong>Advantages:</strong></p>
-<ul>
-<li class="fragment">Validated algorithms and physics</li>
-<li class="fragment">Industry-standard metrics</li>
-<li class="fragment">Comprehensive analysis capabilities</li>
-</ul>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Key point: “Preset = professional tools with established credibility”</li>
-<li>Students often intimidated by complexity - reassure about learning curve</li>
-<li>Good for: detailed analysis, industry validation, comparing to standards</li>
-<li>Bad for: novel concepts, quick exploration, limited time/expertise</li>
-<li>Mention: many have free/student versions available</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Questions for students:</strong></p>
-<ul>
-<li class="fragment">“Which of these tools have you heard of? Used before?”</li>
-<li class="fragment">“What would make preset simulation worth the extra learning time for your claim?”</li>
-</ul>
 </section>
-<section id="building-performance-simulation-basics" class="slide level2 center">
-<h2>Building Performance Simulation Basics</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Video Break (7 min):</strong> Ladybug/Honeybee workflow visualization - from Rhino geometry to performance results</p>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2 center">
-
-<h3 id="energy-simulation-energyplus">Energy Simulation: EnergyPlus</h3>
-<p><strong>What it does:</strong> - Calculates heating/cooling loads - Models HVAC system performance - Estimates energy consumption - Simulates thermal comfort</p>
-<p><strong>Key inputs:</strong></p>
+<section id="if-you-stay-on-spreadsheet" class="slide level2 center">
+<h2>If You Stay on Spreadsheet</h2>
+<p>You can still do the course very well if you:</p>
 <ul>
-<li class="fragment"><strong>Weather data</strong> <em>(whataboutism: typhoon conditions?)</em></li>
-<li class="fragment">Building geometry and materials</li>
-<li class="fragment">HVAC systems and schedules</li>
-<li class="fragment">Occupancy and equipment loads</li>
+<li class="fragment">keep the logic clean</li>
+<li class="fragment">tie the table to a real decision</li>
+<li class="fragment">avoid decorative charts</li>
+<li class="fragment">document what the spreadsheet cannot tell you</li>
 </ul>
-<p><strong>Real-world relevance:</strong> How do extreme weather events like today’s typhoon affect these simulations?</p>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Connect to current typhoon: “Weather data isn’t just annual averages”</li>
-<li>EnergyPlus uses hourly weather data for entire year</li>
-<li>Extreme events test building resilience, not just efficiency</li>
-<li>Student misconception: “Simulation = perfect prediction”</li>
-<li>Reality: “Simulation = structured comparison under defined conditions”</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Discussion starter:</strong> “If you could only change ONE input to test your A1 claim, which would it be?”</p>
-</section>
-<section class="slide level2 center">
-
-<h3 id="daylighting-simulation-radiance">Daylighting Simulation: Radiance</h3>
-<p><strong>What it does:</strong> - Models natural light distribution - Calculates illuminance levels - Evaluates glare probability - Optimizes daylight strategies</p>
-<p><strong>Key inputs:</strong></p>
-<ul>
-<li class="fragment">Building geometry and materials</li>
-<li class="fragment">Window properties and shading</li>
-<li class="fragment">Sky conditions and sun angles</li>
-<li class="fragment">Interior surface reflectances</li>
-</ul>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Radiance = ray-tracing for lighting (like video game graphics but for science)</li>
-<li>Most accurate daylighting simulation available</li>
-<li>Sky conditions: clear, overcast, intermediate - typhoon = extreme overcast</li>
-<li>Common student question: “How accurate is accurate enough?”</li>
-<li>Answer depends on decision stakes and alternatives being compared</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Quick poll:</strong> “Who has natural lighting concerns in their A1 claim?”</p>
-</section>
-<section class="slide level2 center">
-
-<h3 id="simulation-tool-selection">Simulation Tool Selection</h3>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Beginner-Friendly:</strong></p>
-<ul>
-<li class="fragment">EnergyPlus GUI interfaces</li>
-<li class="fragment">VELUX Daylight Visualizer</li>
-<li class="fragment">Climate Consultant</li>
-<li class="fragment">Simple web-based calculators</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Advanced Options:</strong></p>
-<ul>
-<li class="fragment">Grasshopper + Ladybug/Honeybee</li>
-<li class="fragment">Python scripting interfaces</li>
-<li class="fragment">Custom analysis workflows</li>
-<li class="fragment">Parametric optimization</li>
-</ul>
-</div>
-</div>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Reassure beginners: “GUI interfaces are perfectly valid for research”</li>
-<li>Advanced ≠ better, just different capabilities</li>
-<li>Choice factors: learning time vs.&nbsp;semester timeline</li>
-<li>Most important: understanding what the tool is doing, not mastering interface</li>
-<li>Suggest: start simple, add complexity only if needed</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Reality check question:</strong> “How much time can you realistically spend learning new software this semester?”</p>
-</section>
-<section id="simulation-best-practices" class="slide level2 center">
-<h2>Simulation Best Practices</h2>
-<p><strong>Start simple:</strong></p>
-<ul>
-<li class="fragment">Use default values for secondary parameters</li>
-<li class="fragment">Focus on key design variables</li>
-<li class="fragment">Validate with known cases</li>
-</ul>
-<p><strong>Document everything:</strong></p>
-<ul>
-<li class="fragment">Model assumptions and simplifications</li>
-<li class="fragment">Input parameter sources</li>
-<li class="fragment">Version numbers and settings</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<p><strong>Check results:</strong></p>
-<ul>
-<li class="fragment">Do outputs make physical sense?</li>
-<li class="fragment">Compare to benchmarks or rules of thumb</li>
-<li class="fragment">Identify sensitivity to key assumptions</li>
-</ul>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>“Start simple” = biggest student challenge (perfectionism)</li>
-<li>“Document everything” = future you will thank present you</li>
-<li>Common sanity checks: building using more energy in winter? Daylight coming from north?</li>
-<li>Benchmarks: ASHRAE standards, local building codes, similar buildings</li>
-<li>Version numbers matter: software updates can change results</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Sanity check exercise:</strong> “If your simulation showed a house using NO energy in winter, what would you check first?”</p>
-</section>
-<section id="test-design-workshop" class="slide level2 center">
-<h2>Test Design Workshop</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="individual-workshop-design-your-test-10min">Individual Workshop: Design Your Test (10min)</h3>
-<p>Using your A1 decision claim, draft:</p>
-<ol type="1">
-<li class="fragment"><strong>Specific hypothesis</strong> - what exactly are you predicting?</li>
-<li class="fragment"><strong>Test approach</strong> - proxy, preset, or hybrid method?</li>
-<li class="fragment"><strong>Key variables</strong> - what will you compare or vary?</li>
-<li class="fragment"><strong>Success metrics</strong> - how will you measure outcomes?</li>
-<li class="fragment"><strong>Potential challenges</strong> - what could go wrong?</li>
-</ol>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Give students handout with these questions</li>
-<li>Circulate and help with specific hypothesis wording</li>
-<li>Watch for: vague predictions, unmeasurable outcomes, scope too broad</li>
-<li>Common challenges: time constraints, software learning, data access</li>
-<li>Collect challenges in shared doc for later discussion</li>
-<li>Keep energy up - this is hard thinking work!</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<!-- **Mid-way check-in:** "Ping me into break-out room if you're struggling with measurable outcomes" -->
-</section>
-<section class="slide level2 center">
-
-<h3 id="speed-peer-review-breakout-rooms">Speed Peer Review (Breakout rooms)</h3>
-<p><strong>Musical chairs (but random draw) format (3 rounds x 5 minutes):</strong></p>
-<p>Exchange test plans and provide feedback:</p>
-<ul>
-<li class="fragment"><strong>Round 1:</strong> Is the hypothesis testable with the proposed method?</li>
-<li class="fragment"><strong>Round 2:</strong> Are the variables and metrics appropriate?</li>
-<li class="fragment"><strong>Round 3:</strong> What assumptions might need validation?</li>
-</ul>
-<p><strong>Group synthesis:</strong> Common patterns and solutions</p>
-</section>
-<section class="slide level2 center">
-
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Set up chairs in circle, move clockwise each round</li>
-<li>Ring bell/timer for rotations - be strict about timing</li>
-<li>Give specific prompts for each round (post on screen)</li>
-<li>Round 1 focus: “Can you actually test this with proposed method?”</li>
-<li>Round 2 focus: “Are success metrics specific enough?”</li>
-<li>Round 3 focus: “What could mess up the results?”</li>
-<li>Final 5 min: collect insights from whole group</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Synthesis questions:</strong></p>
-<ul>
-<li class="fragment">“What patterns do you see in the challenges people are facing?”</li>
-<li class="fragment">“Who got helpful advice they want to share?”</li>
-<li class="fragment">“What’s the biggest ‘aha’ moment from peer feedback?”</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="common-test-design-challenges">Common Test Design Challenges</h3>
-<p><strong>Scope creep:</strong></p>
-<ul>
-<li class="fragment">Trying to test too many variables at once</li>
-<li class="fragment">Expanding beyond semester constraints</li>
-<li class="fragment">Perfect vs.&nbsp;good enough analysis</li>
-</ul>
-<p><strong>Method mismatch:</strong></p>
-<ul>
-<li class="fragment">Complex tools for simple questions</li>
-<li class="fragment">Simple tools for complex questions</li>
-<li class="fragment">Unfamiliar software with steep learning curves</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<p><strong>Validation gaps:</strong></p>
-<ul>
-<li class="fragment">No way to check if results make sense</li>
-<li class="fragment">Missing baseline or comparison cases</li>
-<li class="fragment">Insufficient documentation for replication</li>
-</ul>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>These are THE most common issues every semester</li>
-<li>Scope creep: students want to test everything - focus them on ONE key variable</li>
-<li>Method mismatch: help students match method complexity to question complexity</li>
-<li>Validation gaps: emphasize comparison cases, not absolute accuracy</li>
-<li>Share examples from shared document of challenges students identified</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Prevention strategies discussion:</strong> “How can you avoid these pitfalls in your A3 planning?”</p>
-</section>
-<section id="a3-development-strategy" class="slide level2 center">
-<h2>A3 Development Strategy</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="a3-structure-preview">A3 Structure Preview</h3>
-<p><strong>Part 1: Research Design</strong></p>
-<ul>
-<li class="fragment">Refined research questions and hypotheses</li>
-<li class="fragment">Method selection and justification</li>
-<li class="fragment">Data collection protocol</li>
-<li class="fragment">Analysis plan</li>
-</ul>
-<p><strong>Part 2: Pilot Implementation</strong></p>
-<ul>
-<li class="fragment">Small-scale test of your method</li>
-<li class="fragment">Documentation of what worked/didn’t work</li>
-<li class="fragment">Refined approach based on pilot learning</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="pilot-study-planning">Pilot Study Planning</h3>
-<p><strong>Purpose of pilot testing:</strong></p>
-<ul>
-<li class="fragment">Validate that your method actually works</li>
-<li class="fragment">Identify unexpected challenges</li>
-<li class="fragment">Refine protocols and procedures</li>
-<li class="fragment">Estimate time and resource requirements</li>
-</ul>
-<p><strong>What to pilot:</strong></p>
-<ul>
-<li class="fragment">Data collection procedures</li>
-<li class="fragment">Software workflows</li>
-<li class="fragment">Analysis approaches</li>
-<li class="fragment">Documentation systems</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="time-management-for-a3">Time Management for A3</h3>
-<p><strong>Week 3 (this week):</strong></p>
-<ul>
-<li class="fragment">Finalize research design approach</li>
-<li class="fragment">Set up software and tools</li>
-<li class="fragment">Plan pilot study scope</li>
-</ul>
-<p><strong>Week 4:</strong></p>
-<ul>
-<li class="fragment">Conduct pilot testing</li>
-<li class="fragment">Document challenges and solutions</li>
-<li class="fragment">Refine method based on learning</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<p><strong>Week 5:</strong></p>
-<ul>
-<li class="fragment">Complete A3 writeup</li>
-<li class="fragment">Submit test plan + pilot results</li>
-</ul>
-</section>
-<section id="next-steps" class="slide level2 center">
-<h2>Next Steps</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="this-weeks-tasks">This Week’s Tasks</h3>
-<ol type="1">
-<li class="fragment"><strong>Wrap up A2 literature review</strong> - target 15+ sources</li>
-<li class="fragment"><strong>Set up computational tools</strong> - download and test basic functionality</li>
-<li class="fragment"><strong>Draft A3 research design</strong> - hypothesis, methods, analysis plan</li>
-<li class="fragment"><strong>Plan pilot study</strong> - what will you test and how?</li>
-</ol>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Emphasize: pilot study = small test of your method, not full research</li>
-<li>A2 target: quality over quantity, but 15+ shows you’ve done thorough search</li>
-<li>Tool setup: even if you don’t use it, understand what it does</li>
-<li>A3 draft: doesn’t need to be perfect, just needs to be testable</li>
-<li>Remind: office hours available for individual consultation</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Planning check:</strong> “What’s your biggest obstacle to starting A3 this week?”</p>
-</section>
-<section class="slide level2 center">
-
-<h3 id="office-hours-focus">Office Hours Focus</h3>
-<p><strong>Research design consultation:</strong></p>
-<ul>
-<li class="fragment">Method selection and justification</li>
-<li class="fragment">Pilot study scope and feasibility</li>
-<li class="fragment">Software setup and troubleshooting</li>
-<li class="fragment">Integration with A2 literature findings</li>
-</ul>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Book office hours appointments soon - spots fill up quickly before A3 due date</li>
-<li>Come with specific questions, not just “I’m stuck”</li>
-<li>Bring: A1 claim, A2 progress, draft A3 outline</li>
-<li>Most helpful: “I’m choosing between X and Y approaches because…”</li>
-<li>Can’t do: write your assignment for you, Can do: help you think through decisions</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Encouragement:</strong> “Office hours are for helping you think through decisions, not for giving you answers”</p>
-</section>
-<section class="slide level2 center">
-
-<h3 id="week-4-preview">Week 4 Preview</h3>
-<p><strong>Sensitivity &amp; Peer Check</strong></p>
-<ul>
-<li class="fragment">Understanding how results change with assumptions</li>
-<li class="fragment">Uncertainty analysis and confidence intervals</li>
-<li class="fragment">Peer review of research approaches</li>
-<li class="fragment">A2 Evidence Map submission</li>
-</ul>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Next week = A2 due date (remind students!)</li>
-<li>Sensitivity analysis = “what if your assumptions are wrong?”</li>
-<li>Confidence intervals = “how certain can you be?”</li>
-<li>Peer review = structured feedback on draft A3 approaches</li>
-<li>Emphasize: come prepared with A2 nearly complete</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Looking ahead:</strong> “What questions about uncertainty keep you up at night regarding your testing approach?”</p>
-</section>
-<section id="discussion-questions" class="slide level2 center">
-<h2>Discussion Questions</h2>
-<ul>
-<li class="fragment">How do you decide between proxy and preset approaches?</li>
-<li class="fragment">What aspects of your research design feel most uncertain?</li>
-<li class="fragment">What would convince you that your test results are reliable?</li>
-</ul>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Use these if you have extra time or need to fill gaps</li>
-<li>First question: good for wrapping up method selection discussion</li>
-<li>Second question: leads into next week’s uncertainty topic</li>
-<li>Third question: gets at validation and credibility concerns</li>
-<li>Can also use as small group discussion if energy is low</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Alternative framing:</strong> “Let’s end with one final reflection - turn to someone near you and discuss…”</p>
-</section>
-<section id="key-takeaways" class="slide level2 center">
-<h2>Key Takeaways</h2>
-<ol type="1">
-<li class="fragment"><strong>Choose testing approach</strong> based on question, resources, and timeline</li>
-<li class="fragment"><strong>Pre-register your approach</strong> to ensure transparent, credible research</li>
-<li class="fragment"><strong>Start simple</strong> with simulation tools - focus on key relationships</li>
-<li class="fragment"><strong>Plan to pilot</strong> - small tests prevent big failures</li>
-<li class="fragment"><strong>Document everything</strong> - your future self will thank you</li>
-</ol>
-<aside class="notes">
-<p><strong>Speaker Cheat Sheet:</strong></p>
-<ul>
-<li>Emphasize these are the 5 most important points from today</li>
-<li>#1: No “right” choice, just informed choices</li>
-<li>#2: Decide success criteria before seeing results</li>
-<li>#3: Resist perfectionism, focus on key variables</li>
-<li>#4: Pilot = mini-test of your method, not full study</li>
-<li>#5: Documentation enables replication and builds credibility</li>
-<li>End on encouraging note about A3 development</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><strong>Final question:</strong> “Which of these takeaways feels most challenging for your A3 planning?”</p>
-</section>
-<section class="slide level2 center">
-
-<p><em>Next week: Testing your tests - sensitivity analysis and peer review</em></p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
@@ -1444,7 +628,7 @@
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
+        transition: 'slide',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
@@ -1464,9 +648,9 @@
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1050,
+        width: 1400,
 
-        height: 700,
+        height: 900,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,

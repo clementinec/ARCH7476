@@ -7,10 +7,10 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.544">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.4.549">
 
-  <title>ARCH7476: Evidence-Based Generative Design - Week 1: Why Evidence Matters</title>
+  <title>ARCH7476: Evidence-Based Generative Design - Week 1: Why Evidence Needs a Workflow</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,71 +28,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-      }
-    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-    div.sourceCode
-      { color: #f8f8f2;  }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #f8f8f2; } /* Normal */
-    code span.al { color: #f07178; background-color: #2a0f15; font-weight: bold; } /* Alert */
-    code span.an { color: #d4d0ab; } /* Annotation */
-    code span.at { color: #00e0e0; } /* Attribute */
-    code span.bn { color: #d4d0ab; } /* BaseN */
-    code span.bu { color: #abe338; } /* BuiltIn */
-    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #abe338; } /* Char */
-    code span.cn { color: #ffd700; } /* Constant */
-    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
-    code span.cv { color: #ffd700; } /* CommentVar */
-    code span.do { color: #f8f8f2; } /* Documentation */
-    code span.dt { color: #ffa07a; } /* DataType */
-    code span.dv { color: #d4d0ab; } /* DecVal */
-    code span.er { color: #f07178; text-decoration: underline; } /* Error */
-    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
-    code span.fl { color: #d4d0ab; } /* Float */
-    code span.fu { color: #ffa07a; } /* Function */
-    code span.im { color: #abe338; } /* Import */
-    code span.in { color: #d4d0ab; } /* Information */
-    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
-    code span.op { color: #ffa07a; } /* Operator */
-    code span.ot { color: #00e0e0; } /* Other */
-    code span.pp { color: #dcc6e0; } /* Preprocessor */
-    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
-    code span.sc { color: #abe338; } /* SpecialChar */
-    code span.ss { color: #abe338; } /* SpecialString */
-    code span.st { color: #abe338; } /* String */
-    code span.va { color: #00e0e0; } /* Variable */
-    code span.vs { color: #abe338; } /* VerbatimString */
-    code span.wa { color: #dcc6e0; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -385,524 +320,161 @@
     }
   </style>
 </head>
-<body class="quarto-dark">
+<body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 1: Why Evidence Matters</h1>
-  <p class="subtitle">Course Introduction and Foundations</p>
+  <h1 class="title">Week 1: Why Evidence Needs a Workflow</h1>
+  <p class="subtitle">Course Reset and A1 Kickoff</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="welcome-to-arch7476" class="slide level2 center">
-<h2>Welcome to ARCH7476</h2>
-<p><strong>Evidence-Based Generative Design</strong></p>
-<p><em>Data-Driven Decision Making in Architecture</em></p>
-</section>
 <section id="todays-agenda" class="slide level2 center">
 <h2>Today’s Agenda</h2>
 <ul>
-<li class="fragment">Course introduction and expectations</li>
-<li class="fragment">“Generative design is not magic”</li>
-<li class="fragment">Why evidence matters in architecture<br>
-</li>
-<li class="fragment">Examples in plain language</li>
-<li class="fragment">Setting up for semester success</li>
+<li class="fragment">what this course is now actually about</li>
+<li class="fragment">why architecture students need tool choice to be explicit</li>
+<li class="fragment">mixed-cohort expectations</li>
+<li class="fragment">visual case examples</li>
+<li class="fragment">A1 kickoff</li>
 </ul>
 </section>
-<section id="course-philosophy" class="slide level2 center">
-<h2>Course Philosophy</h2>
-<blockquote>
-<p>“Generative design is not magic” — it requires evidence, testing, and systematic evaluation.</p>
-</blockquote>
+<section id="the-reset" class="slide level2 center">
+<h2>The Reset</h2>
+<p>This course is not organized around random software demos.</p>
+<p>It is organized around one question:</p>
+<p><strong>What evidence would make a design decision more defensible?</strong></p>
 </section>
-<section id="the-current-reality" class="slide level2 center">
-<h2>The Current Reality</h2>
+<section id="evidence-without-workflow-fails" class="slide level2 center">
+<h2>Evidence Without Workflow Fails</h2>
+<ul>
+<li class="fragment">precedent images look convincing but may prove very little</li>
+<li class="fragment">simulation numbers look precise but may hide bad assumptions</li>
+<li class="fragment">survey comments feel rich but may not generalize</li>
+<li class="fragment">data only becomes useful when the path from input to decision is legible</li>
+</ul>
+</section>
+<section id="the-semester-spine" class="slide level2 center">
+<h2>The Semester Spine</h2>
+<ol type="1">
+<li class="fragment">Survey the landscape</li>
+<li class="fragment">Pick one pathway</li>
+<li class="fragment">Build a method prototype</li>
+<li class="fragment">Deliver a studio-facing evidence package</li>
+</ol>
+</section>
+<section id="the-three-primary-pathways" class="slide level2 center">
+<h2>The Three Primary Pathways</h2>
+<ul>
+<li class="fragment"><strong>Spreadsheet</strong>: low-friction comparison, charting, decision matrices</li>
+<li class="fragment"><strong>GIS</strong>: spatial evidence and map-based reasoning</li>
+<li class="fragment"><strong>Python</strong>: notebook-based analysis and reproducible workflows</li>
+</ul>
+<p><strong>Shared literacy for everyone:</strong> BIM, BEM, and performance simulation</p>
+</section>
+<section id="mixed-cohort-shared-course" class="slide level2 center">
+<h2>Mixed Cohort, Shared Course</h2>
+<table>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Group</th>
+<th>Shared outcome</th>
+<th>Main difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Undergraduate</td>
+<td>complete the same assignment arc</td>
+<td>more scaffolding, tighter scope</td>
+</tr>
+<tr class="even">
+<td>MArch</td>
+<td>complete the same assignment arc</td>
+<td>stronger practice and studio fit</td>
+</tr>
+<tr class="odd">
+<td>PhD</td>
+<td>complete the same assignment arc</td>
+<td>stronger rigor and reproducibility</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="visual-case-gallery" class="slide level2 center">
+<h2>Visual Case Gallery</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>How decisions are made now:</strong></p>
-<ul>
-<li class="fragment">Precedent and intuition</li>
-<li class="fragment">“Best practices”</li>
-<li class="fragment">Aesthetic preference</li>
-<li class="fragment">Client demands</li>
-<li class="fragment">Budget constraints</li>
-</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../assets/examples/the-edge-amsterdam.jpg" height="250"></p>
+<figcaption>The Edge, Amsterdam</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../assets/examples/high-line-park.jpg" height="250"></p>
+<figcaption>High Line, New York</figcaption>
+</figure>
+</div>
 </div><div class="column" style="width:50%;">
-<p><strong>What’s missing:</strong></p>
-<ul>
-<li class="fragment">Systematic testing</li>
-<li class="fragment">Performance validation</li>
-<li class="fragment">User feedback integration</li>
-<li class="fragment">Data-driven optimization</li>
-<li class="fragment">Evidence documentation</li>
-</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../assets/examples/california-academy-of-sciences.jpg" height="250"></p>
+<figcaption>California Academy of Sciences</figcaption>
+</figure>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../assets/examples/kai-tak-sports-park.jpg" height="250"></p>
+<figcaption>Kai Tak Sports Park</figcaption>
+</figure>
 </div>
-</section>
-<section id="why-evidence-matters-now" class="slide level2 center">
-<h2>Why Evidence Matters Now</h2>
-<ul>
-<li class="fragment"><strong>Climate crisis</strong> demands performance optimization</li>
-<li class="fragment"><strong>Complex buildings</strong> need systematic analysis</li>
-<li class="fragment"><strong>Diverse users</strong> require inclusive design validation</li>
-<li class="fragment"><strong>Tight budgets</strong> need justified decisions</li>
-<li class="fragment"><strong>Professional liability</strong> requires documented reasoning</li>
-</ul>
-</section>
-<section id="evidence-based-design-examples" class="slide level2 center">
-<h2>Evidence-Based Design Examples</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="example-1-window-design">Example 1: Window Design</h3>
-<p><strong>Traditional approach:</strong></p>
-<ul>
-<li class="fragment">Copy successful precedents</li>
-<li class="fragment">Apply rules of thumb</li>
-<li class="fragment">Adjust based on complaints</li>
-</ul>
-<p><strong>Evidence-based approach:</strong></p>
-<ul>
-<li class="fragment">Measure daylight performance</li>
-<li class="fragment">Survey user satisfaction</li>
-<li class="fragment">Compare energy consumption</li>
-<li class="fragment">Optimize based on data</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="example-2-workplace-layout">Example 2: Workplace Layout</h3>
-<p><strong>Traditional approach:</strong></p>
-<ul>
-<li class="fragment">Follow space planning standards</li>
-<li class="fragment">Design for average user</li>
-<li class="fragment">Adjust post-occupancy</li>
-</ul>
-<p><strong>Evidence-based approach:</strong></p>
-<ul>
-<li class="fragment">Observe actual usage patterns</li>
-<li class="fragment">Test alternative configurations</li>
-<li class="fragment">Measure productivity impacts</li>
-<li class="fragment">Iterate based on evidence</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="example-3-public-space-design">Example 3: Public Space Design</h3>
-<p><strong>Traditional approach:</strong></p>
-<ul>
-<li class="fragment">Apply urban design principles</li>
-<li class="fragment">Design for intended use</li>
-<li class="fragment">Hope for the best</li>
-</ul>
-<p><strong>Evidence-based approach:</strong></p>
-<ul>
-<li class="fragment">Study user behavior patterns</li>
-<li class="fragment">Test design interventions</li>
-<li class="fragment">Measure social outcomes</li>
-<li class="fragment">Scale successful strategies</li>
-</ul>
-</section>
-<section id="what-youll-learn-this-semester" class="slide level2 center">
-<h2>What You’ll Learn This Semester</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="core-skills">Core Skills</h3>
-<ol type="1">
-<li class="fragment"><strong>Frame design problems</strong> as testable research questions</li>
-<li class="fragment"><strong>Collect and analyze data</strong> relevant to design decisions</li>
-<li class="fragment"><strong>Design and conduct tests</strong> to evaluate alternatives</li>
-<li class="fragment"><strong>Communicate findings</strong> effectively to stakeholders</li>
-<li class="fragment"><strong>Document workflows</strong> for reproducible research</li>
-</ol>
-</section>
-<section class="slide level2 center">
-
-<h3 id="mixed-audience-approach">Mixed Audience Approach</h3>
-<div class="columns">
-<div class="column" style="width:33%;">
-<p><strong>Undergraduate</strong></p>
-<ul>
-<li class="fragment">Guided scaffolding</li>
-<li class="fragment">Low-code tools</li>
-<li class="fragment">Clear templates</li>
-</ul>
-</div><div class="column" style="width:33%;">
-<p><strong>MArch</strong></p>
-<ul>
-<li class="fragment">Practice applications</li>
-<li class="fragment">Client communication</li>
-<li class="fragment">Professional formats</li>
-</ul>
-</div><div class="column" style="width:33%;">
-<p><strong>PhD</strong></p>
-<ul>
-<li class="fragment">Advanced methods</li>
-<li class="fragment">Statistical rigor</li>
-<li class="fragment">Research contributions</li>
-</ul>
 </div>
 </div>
 </section>
-<section id="course-structure" class="slide level2 center">
-<h2>Course Structure</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="four-major-assignments">Four Major Assignments</h3>
-<dl>
-<dt class="fragment"><strong>A1: Decision Claim</strong> (Week 2)</dt>
-<dd class="fragment">
-Identify design object + testable claim
-</dd>
-<dt class="fragment"><strong>A2: Evidence Map</strong> (Week 4)</dt>
-<dd class="fragment">
-Map existing evidence + identify gaps
-</dd>
-<dt class="fragment"><strong>A3: Test Plan + Pilot</strong> (Week 5)</dt>
-<dd class="fragment">
-Design method + pilot test
-</dd>
-<dt class="fragment"><strong>A4: Final Package</strong> (Week 12)</dt>
-<dd class="fragment">
-Complete research brief for stakeholders
-</dd>
-</dl>
-</section>
-<section class="slide level2 center">
-
-<h3 id="assignment-progression">Assignment Progression</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource mermaid number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>graph LR</span>
-<span id="cb1-2"><a></a>    A1[Decision&lt;br/&gt;Claim] --&gt; A2[Evidence&lt;br/&gt;Map]</span>
-<span id="cb1-3"><a></a>    A2 --&gt; A3[Test Plan&lt;br/&gt;+ Pilot]</span>
-<span id="cb1-4"><a></a>    A3 --&gt; A4[Final&lt;br/&gt;Package]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Each assignment builds directly on the previous one</p>
-</section>
-<section class="slide level2 center">
-
-<h3 id="support-structure">Support Structure</h3>
+<section id="what-makes-these-useful" class="slide level2 center">
+<h2>What Makes These Useful</h2>
 <ul>
-<li class="fragment"><strong>Office hours</strong>: Wednesdays 4-6pm, KB722</li>
-<li class="fragment"><strong>Peer review</strong>: Built into schedule</li>
-<li class="fragment"><strong>Mentor dialogue</strong>: Week 8 external consultation</li>
-<li class="fragment"><strong>Object Fair</strong>: Week 12 public presentation</li>
+<li class="fragment">each project invites strong claims</li>
+<li class="fragment">each claim could be supported by different evidence types</li>
+<li class="fragment">each evidence type points toward a different workflow</li>
+</ul>
+<p><strong>The course task:</strong> stop treating all evidence as interchangeable</p>
+</section>
+<section id="a1-starts-here" class="slide level2 center">
+<h2>A1 Starts Here</h2>
+<p>Bring in <strong>one prior design decision</strong> you already made and believed was evidence-based.</p>
+<p>Then ask:</p>
+<ul>
+<li class="fragment">what was the decision?</li>
+<li class="fragment">what actually counted as evidence?</li>
+<li class="fragment">where was confidence stronger than the evidence?</li>
+<li class="fragment">what will I need for my next studio decision?</li>
 </ul>
 </section>
-<section class="slide level2 center">
-
-<h3 id="optional-python-primer">Optional: Python Primer</h3>
-<p>Interested in coding? Try the beginner notebooks:</p>
+<section id="week-1-exit-prompt" class="slide level2 center">
+<h2>Week 1 Exit Prompt</h2>
+<p>Before next class, identify:</p>
 <ul>
-<li class="fragment">Python + ML Basics — <code>notebooks/01_python_ml_basics.ipynb</code></li>
-<li class="fragment">Architecture Viz + Analysis — <code>notebooks/02_arch_viz_analysis.ipynb</code></li>
-</ul>
-<p>Open in Jupyter (see Resources for setup). These use fake datasets you can later swap with your own.</p>
-</section>
-<section id="tools-and-technology" class="slide level2 center">
-<h2>Tools and Technology</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="tool-flexibility-philosophy">Tool Flexibility Philosophy</h3>
-<p>We emphasize <strong>solving problems</strong>, not <strong>mastering software</strong></p>
-<p>Choose tools that match:</p>
-<ul>
-<li class="fragment">Your experience level</li>
-<li class="fragment">Your research question<br>
-</li>
-<li class="fragment">Available time/resources</li>
-<li class="fragment">Stakeholder needs</li>
+<li class="fragment">one prior decision</li>
+<li class="fragment">one image or drawing that represents it</li>
+<li class="fragment">one upcoming studio decision you want to investigate</li>
 </ul>
 </section>
-<section class="slide level2 center">
-
-<h3 id="low-code-options">Low-Code Options</h3>
-<p><strong>Spreadsheets</strong>: Excel, Google Sheets</p>
-<ul>
-<li class="fragment">Data organization and basic analysis</li>
-<li class="fragment">Charts and simple visualizations</li>
-<li class="fragment">Decision matrices and comparisons</li>
-</ul>
-<p><strong>QGIS</strong>: Free GIS software</p>
-<ul>
-<li class="fragment">Spatial analysis and mapping</li>
-<li class="fragment">Buffer/clip operations</li>
-<li class="fragment">Data visualization on maps</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="code-heavy-options">Code-Heavy Options</h3>
-<p><strong>Python/Jupyter</strong>: For advanced analysis</p>
-<ul>
-<li class="fragment">Automated data processing</li>
-<li class="fragment">Statistical analysis and machine learning</li>
-<li class="fragment">Custom visualization and reporting</li>
-</ul>
-<p><strong>GitHub</strong>: For reproducible workflows</p>
-<ul>
-<li class="fragment">Version control for research</li>
-<li class="fragment">Collaboration and sharing</li>
-<li class="fragment">Documentation and transparency</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="building-performance-tools">Building Performance Tools</h3>
-<p><strong>Simulation Presets</strong>:</p>
-<ul>
-<li class="fragment">Radiance/VELUX (daylighting)</li>
-<li class="fragment">EnergyPlus Simple Glazing (energy)</li>
-<li class="fragment">Climate Consultant (weather analysis)</li>
-</ul>
-<p><strong>Measurement Tools</strong>:</p>
-<ul>
-<li class="fragment">Environmental sensors</li>
-<li class="fragment">Building management systems</li>
-<li class="fragment">User survey platforms</li>
-</ul>
-</section>
-<section id="generative-design-is-not-magic" class="slide level2 center">
-<h2>Generative Design is not Magic</h2>
-
-<img data-src="https://upload.wikimedia.org/wikipedia/commons/3/37/Magic_circle.png" width="400" class="r-stretch"><blockquote>
-<p>It’s about making design decisions with evidence — data, simulations, and thresholds.</p>
-</blockquote>
-<aside class="notes">
-<p>Students often think “generative” = black-box AI magic. Clarify from the start: this course is about reproducibility, clarity, and decision usefulness.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="section" class="slide level2 center" data-background-image="https://upload.wikimedia.org/wikipedia/commons/5/5a/Aerial_view_of_Apple_Park_dllu.jpg" data-background-size="contain" data-background-position="center" data-background-repeat="no-repeat">
-<h2></h2>
-</section>
-<section id="case-1-apple-park-glass-walls" class="slide level2 center">
-<h2>Case 1 – Apple Park Glass Walls</h2>
-<p><em>Employees at Apple Park kept walking into the pristine curved glass walls.</em></p>
-<aside class="notes">
-<p>NYT (2018) reported multiple incidents. A design that looked flawless in renders failed human factors testing.<br>
-If the object is “transparent façade,” a decision claim might be: <em>“Does a subtle coating reduce accidents without losing daylight?”</em></p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section class="slide level2 center">
-
-<!-- ## Daylight Atrium (AMNH – Gilder Center) -->
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/5/59/Central_atrium_of_the_Richard_Gilder_Center_for_Science%2C_Education%2C_and_Innovation_-_skylight_view.jpg"> <!-- {.stretch} --></p>
-</section>
-<section id="case-2-daylight-as-a-design-asset" class="slide level2 center">
-<h2>Case 2 – Daylight as a Design Asset</h2>
-<!-- ![](https://images.adsttc.com/media/images/5db0/cf95/3312/fd6d/4500/003f/newsletter/feature_1.jpg?1571887372){width=600} -->
-<p><em>WELL Building Standard pushes daylight for health. Tech firms compete for daylight-rich workspaces.</em></p>
-<aside class="notes">
-<p>Wired &amp; Architectural Digest covered how big firms prioritize daylight to boost productivity and health.<br>
-Evidence links daylight exposure to sleep and wellbeing.<br>
-Prompt: <em>“If your object is window size, how do you test daylight vs.&nbsp;glare trade-offs?”</em></p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="section-1" class="slide level2 center" data-background-image="https://upload.wikimedia.org/wikipedia/commons/2/28/Chaleur_Paris_19e_juin_2022.jpg" data-background-size="contain" data-background-position="center" data-background-repeat="no-repeat">
-<h2></h2>
-</section>
-<section id="case-3-heat-resilience-in-cities" class="slide level2 center">
-<h2>Case 3 – Heat Resilience in Cities</h2>
-<p><em>Paris 2022: heatwaves forced rethink of shade, airflow, and public space.</em></p>
-<aside class="notes">
-<p>Architectural press documented how shade structures and surface materials affect thermal comfort.<br>
-Evidence can guide claims like: <em>“Does increasing tree cover by 20% reduce perceived heat stress?”</em></p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section class="slide level2 center">
-
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/6/66/Onda_architettonica.jpg"> <!-- {.stretch} --></p>
-</section>
-<section id="case-4-ai-hype-vs.-evidence" class="slide level2 center">
-<h2>Case 4 – AI Hype vs.&nbsp;Evidence</h2>
-
-<img data-src="https://cdn.vox-cdn.com/thumbor/hIhuwl3Rj2kXYB0UGkoCj5Uuf10=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/72556493/DSCF4084.0.jpg" width="600" class="r-stretch"><p><em>Generative AI renders go viral — but few are tested for buildability.</em></p>
-<aside class="notes">
-<p>Dezeen and WIRED highlight seductive AI-generated architecture images.<br>
-But are they ventilated? Do they meet comfort codes?<br>
-Prompt: <em>“If your object is an AI render, what evidence claim would you test first?”</em></p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section class="slide level2 center">
-
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Midtown_Manhattan_from_Weehawken_September_2021_panorama_1.jpg"> <!-- {.stretch} --></p>
-</section>
-<section id="case-5-energy-retrofits-as-evidence" class="slide level2 center">
-<h2>Case 5 – Energy Retrofits as Evidence</h2>
-
-<img data-src="https://s3-prod.crainsnewyork.com/styles/width_792/s3/Law97-062719.jpg" width="600" class="r-stretch"><p><em>NYC Local Law 97 sets strict emission thresholds for buildings.</em></p>
-<aside class="notes">
-<p>Architectural Record covered how retrofits must now meet numeric CO₂ caps.<br>
-Policy itself provides evidence: thresholds like <em>≤ 0.9 W/m²K</em> for adoption.<br>
-Ask students: <em>“If your object is insulation, what’s your adopt/defer threshold?”</em></p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="activity-your-first-object-claim" class="slide level2 center">
-<h2>Activity: Your First Object Claim</h2>
-<ul>
-<li class="fragment">Sketch 2–3 possible <strong>objects</strong> from your studio or interest<br>
-</li>
-<li class="fragment">Draft one <strong>decision claim</strong> (1–2 sentences)<br>
-</li>
-<li class="fragment">Share with a peer, refine, and keep notes</li>
-</ul>
-<aside class="notes">
-<p>This activity seeds A1 (Decision Claim). Encourage variety: glazing, HVAC rules, shading devices, workflow scripts. Students leave Week 1 with a concrete starting point.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section class="slide level2 center">
-
-<h3 id="this-weeks-tasks">This Week’s Tasks</h3>
-<p><strong>Before next class:</strong></p>
-<ol type="1">
-<li class="fragment">Install basic tools (Excel/Sheets, QGIS - where applicable)</li>
-<li class="fragment">Read: <em>Craft of Research</em> excerpts (available online)</li>
-<li class="fragment"><strong>Draft seed idea for A1</strong> - design object + initial claim</li>
-<li class="fragment">Explore course website and resources</li>
-</ol>
-</section>
-<section class="slide level2 center">
-
-<h3 id="brainstorming-your-a1-topic">Brainstorming Your A1 Topic</h3>
-<p>Think about design decisions that intrigue you:</p>
-<ul>
-<li class="fragment">What performance questions do you have?</li>
-<li class="fragment">What design “rules” would you like to test?</li>
-<li class="fragment">What stakeholders need better evidence?</li>
-<li class="fragment">What decisions are architects struggling with?</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="good-a1-topics">Good A1 Topics</h3>
-<p><strong>Window-to-wall ratios</strong> in Hong Kong residential towers</p>
-<ul>
-<li class="fragment">Testable performance impacts</li>
-<li class="fragment">Clear stakeholders (developers, residents)</li>
-<li class="fragment">Available data sources</li>
-</ul>
-<p><strong>Ceiling height</strong> in collaborative workspaces</p>
-<ul>
-<li class="fragment">Measurable user outcomes</li>
-<li class="fragment">Industry relevance</li>
-<li class="fragment">Feasible testing approach</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="topic-development-questions">Topic Development Questions</h3>
-<ol type="1">
-<li class="fragment"><strong>What specifically</strong> are you investigating?</li>
-<li class="fragment"><strong>Who</strong> would use this evidence to make decisions?</li>
-<li class="fragment"><strong>How</strong> could you test your ideas this semester?</li>
-<li class="fragment"><strong>Why</strong> does this matter for architectural practice?</li>
-</ol>
-</section>
-<section id="questions-discussion" class="slide level2 center">
-<h2>Questions &amp; Discussion</h2>
-<p>What design decisions are you curious about?</p>
-<p>What evidence would help you make better design choices?</p>
-</section>
-<section id="next-week-preview" class="slide level2 center">
-<h2>Next Week Preview</h2>
-<p><strong>Week 2: Finding and Framing Data</strong></p>
-<ul>
-<li class="fragment">Data sources for architecture</li>
-<li class="fragment">Ethics and privacy considerations</li>
-<li class="fragment">Setting ranges and parameters</li>
-<li class="fragment"><strong>A1 Decision Claim due</strong></li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="office-hours">Office Hours</h3>
-<p><strong>Wednesdays 4-6pm, KB722</strong> <em>Or by appointment</em></p>
-<p>Come discuss:</p>
-<ul>
-<li class="fragment">A1 topic development</li>
-<li class="fragment">Tool selection and setup</li>
-<li class="fragment">Research question refinement</li>
-<li class="fragment">Technical challenges</li>
-</ul>
-</section>
-<section id="welcome-to-evidence-based-design" class="slide level2 center">
-<h2>Welcome to Evidence-Based Design!</h2>
-<p><em>Let’s make architecture more systematic, more effective, and more responsive to the people who use our buildings.</em></p>
+<section id="what-success-looks-like" class="slide level2 center">
+<h2>What Success Looks Like</h2>
+<p>By Week 12, you should not just know more tools.</p>
+<p>You should be better at saying:</p>
+<p><strong>This is the decision, this is the evidence, this is the method, and this is how confident I am.</strong></p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
@@ -1086,9 +658,9 @@ Ask students: <em>“If your object is insulation, what’s your adopt/defer thr
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1050,
+        width: 1400,
 
-        height: 700,
+        height: 900,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,

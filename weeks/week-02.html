@@ -8,9 +8,9 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.544">
+  <meta name="generator" content="quarto-1.4.549">
 
-  <title>ARCH7476: Evidence-Based Generative Design - Week 2: Finding and Framing Data</title>
+  <title>ARCH7476: Evidence-Based Generative Design - Week 2: Audit the Evidence You Already Use</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -325,8 +325,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 2: Finding and Framing Data</h1>
-  <p class="subtitle">Data Sources, Collection Methods, and Ethics</p>
+  <h1 class="title">Week 2: Audit the Evidence You Already Use</h1>
+  <p class="subtitle">Prior Decisions, Weak Links, and the Next Studio Question</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -335,535 +335,140 @@
 <section id="todays-agenda" class="slide level2 center">
 <h2>Today’s Agenda</h2>
 <ul>
-<li class="fragment">Review A1 Decision Claims</li>
-<li class="fragment">Architectural data landscape</li>
-<li class="fragment">Ethics and privacy in data collection</li>
-<li class="fragment">Setting appropriate ranges and parameters</li>
-<li class="fragment">Framing for different stakeholder audiences</li>
+<li class="fragment">review A1 directions</li>
+<li class="fragment">what counts as evidence in architecture</li>
+<li class="fragment">how confidence gets overstated</li>
+<li class="fragment">workshop: prior decision audit</li>
+<li class="fragment">workshop: next decision brief</li>
 </ul>
 </section>
-<section id="a1-check-in" class="slide level2 center">
-<h2>A1 Check-In</h2>
-<p><strong>Quick sharing:</strong> 30-second pitch of your design object + claim</p>
-<p>Listen for: - Clarity of the design object - Testability of the claim<br>
-- Relevance to real stakeholders - Feasibility for semester scope</p>
-</section>
-<section id="the-architectural-data-landscape" class="slide level2 center">
-<h2>The Architectural Data Landscape</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="traditional-data-sources">Traditional Data Sources</h3>
-<p><strong>Building codes and standards</strong></p>
+<section id="architecture-uses-many-evidence-types" class="slide level2 center">
+<h2>Architecture Uses Many Evidence Types</h2>
 <ul>
-<li class="fragment">ASHRAE thermal comfort guidelines</li>
-<li class="fragment">Hong Kong Building Code requirements</li>
-<li class="fragment">LEED/BREEAM performance benchmarks</li>
-<li class="fragment">Industry best practice guidelines</li>
+<li class="fragment">precedent</li>
+<li class="fragment">standards and code</li>
+<li class="fragment">site observation</li>
+<li class="fragment">stakeholder input</li>
+<li class="fragment">simulation</li>
+<li class="fragment">measurement</li>
+<li class="fragment">published research</li>
+<li class="fragment">benchmarks and case comparisons</li>
 </ul>
 </section>
-<section class="slide level2 center">
-
-<h3 id="building-performance-data">Building Performance Data</h3>
-<p><strong>Energy and environmental</strong></p>
+<section id="not-all-inputs-are-equal" class="slide level2 center">
+<h2>Not All Inputs Are Equal</h2>
+<p><strong>Useful question:</strong><br>
+Did this input actually reduce uncertainty for the decision?</p>
+<p>If not, it may have been:</p>
 <ul>
-<li class="fragment">Utility bills and energy monitoring</li>
-<li class="fragment">Building management system data</li>
-<li class="fragment">Weather files and climate data</li>
-<li class="fragment">Indoor environmental quality measurements</li>
-</ul>
-<p><strong>Usage and occupancy</strong></p>
-<ul>
-<li class="fragment">Space utilization rates</li>
-<li class="fragment">Occupancy sensor data</li>
-<li class="fragment">User behavior observations</li>
-<li class="fragment">Post-occupancy evaluation surveys</li>
+<li class="fragment">inspiration</li>
+<li class="fragment">convention</li>
+<li class="fragment">assumption</li>
+<li class="fragment">noise</li>
 </ul>
 </section>
-<section class="slide level2 center">
-
-<h3 id="spatial-and-urban-data">Spatial and Urban Data</h3>
-<p><strong>Geographic information</strong></p>
+<section id="a1-core-move" class="slide level2 center">
+<h2>A1 Core Move</h2>
+<p>Do not prove that your earlier design was right.</p>
+<p>Do this instead:</p>
 <ul>
-<li class="fragment">DATA.GOV.HK open data portal</li>
-<li class="fragment">Planning Department GIS datasets (ESRI)</li>
-<li class="fragment">OpenStreetMap and satellite imagery</li>
-<li class="fragment">Transport and accessibility data</li>
-</ul>
-<p><strong>Built environment databases</strong></p>
-<ul>
-<li class="fragment">Building inventory and characteristics</li>
-<li class="fragment">Construction cost databases</li>
-<li class="fragment">Real estate and market data</li>
-<li class="fragment">Infrastructure and services mapping</li>
+<li class="fragment">name the decision clearly</li>
+<li class="fragment">separate evidence from assumption</li>
+<li class="fragment">admit what was missing</li>
+<li class="fragment">define what you would need next time</li>
 </ul>
 </section>
-<section class="slide level2 center">
-
-<h3 id="human-experience-data">Human Experience Data</h3>
-<p><strong>User feedback</strong></p>
+<section id="fast-audit-template" class="slide level2 center">
+<h2>Fast Audit Template</h2>
+<table>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Input used then</th>
+<th>Type</th>
+<th>Strength</th>
+<th>What it really supported</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>precedent image</td>
+<td>visual precedent</td>
+<td>low-medium</td>
+<td>form and atmosphere, not performance</td>
+</tr>
+<tr class="even">
+<td>simulation screenshot</td>
+<td>model output</td>
+<td>medium</td>
+<td>comparison only if assumptions were sound</td>
+</tr>
+<tr class="odd">
+<td>code requirement</td>
+<td>standard</td>
+<td>high within its scope</td>
+<td>compliance, not overall quality</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="common-overclaims" class="slide level2 center">
+<h2>Common Overclaims</h2>
 <ul>
-<li class="fragment">Occupant satisfaction surveys</li>
-<li class="fragment">Focus groups and interviews</li>
-<li class="fragment">Social media and review data</li>
-<li class="fragment">Complaint and maintenance records</li>
-</ul>
-<p><strong>Behavioral observation</strong></p>
-<ul>
-<li class="fragment">Activity mapping and time studies</li>
-<li class="fragment">Movement pattern tracking</li>
-<li class="fragment">Social interaction documentation</li>
-<li class="fragment">Space usage photography/video</li>
+<li class="fragment">“there was evidence” when there was only precedent</li>
+<li class="fragment">“the model proved it” when the assumptions were weak</li>
+<li class="fragment">“users prefer this” from a tiny or biased sample</li>
+<li class="fragment">“this is best practice” without context</li>
 </ul>
 </section>
-<section>
-<section id="section" class="title-slide slide level1 center">
-<h1></h1>
-<div class="callout callout-note no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>The Open Office “Collaboration” Paradox</strong></p>
-</div>
-<div class="callout-content">
-<p>Harvard study of 100,000 employees moving to open offices: face-to-face interaction dropped 70%, email use increased 50%.</p>
+<section id="pivot-to-the-next-decision" class="slide level2 center">
+<h2>Pivot to the Next Decision</h2>
+<p>The second half of A1 asks:</p>
 <ul>
-<li class="fragment"><strong>Who:</strong> Ethan Bernstein &amp; Stephen Turban (Harvard Business School, 2018)</li>
-<li class="fragment"><strong>Method:</strong> Sociometric badges tracking 150 employees for 6 weeks</li>
-<li class="fragment"><strong>Published:</strong> Philosophical Transactions of Royal Society B</li>
-</ul>
-<p><em>Sometimes the data tells a different story than expected.</em></p>
-</div>
-</div>
-</div>
-</section>
-<section id="data-collection-ethics" class="slide level2 center">
-<h2>Data Collection Ethics</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="core-principles">Core Principles</h3>
-<p><strong>Respect for persons</strong></p>
-<ul>
-<li class="fragment">Informed consent for data collection</li>
-<li class="fragment">Right to withdraw participation</li>
-<li class="fragment">Protection of vulnerable populations</li>
-<li class="fragment">Transparent research purposes</li>
-</ul>
-<p><strong>Beneficence</strong></p>
-<ul>
-<li class="fragment">Maximize benefits, minimize harms</li>
-<li class="fragment">Consider broader societal impacts</li>
-<li class="fragment">Share findings appropriately</li>
-<li class="fragment">Respect cultural sensitivities</li>
+<li class="fragment">what is the next real design decision?</li>
+<li class="fragment">who needs to be convinced?</li>
+<li class="fragment">what evidence would matter?</li>
+<li class="fragment">which pathway might help most?</li>
 </ul>
 </section>
-<section class="slide level2 center">
-
-<h3 id="privacy-considerations">Privacy Considerations</h3>
-<p><strong>Personal data protection</strong></p>
+<section id="pathway-sniff-test" class="slide level2 center">
+<h2>Pathway Sniff Test</h2>
+<p>Choose <strong>provisionally</strong>:</p>
 <ul>
-<li class="fragment">Anonymize individual responses</li>
-<li class="fragment">Secure data storage and transmission</li>
-<li class="fragment">Limited access to sensitive information</li>
-<li class="fragment">Clear data retention and deletion policies</li>
-</ul>
-<p><strong>Spatial privacy</strong></p>
-<ul>
-<li class="fragment">Respect private vs.&nbsp;public spaces</li>
-<li class="fragment">Obtain permissions for data collection</li>
-<li class="fragment">Consider surveillance implications</li>
-<li class="fragment">Protect location-based privacy</li>
+<li class="fragment"><code>spreadsheet</code> if you mainly need comparison, ranking, or visible logic</li>
+<li class="fragment"><code>GIS</code> if space, site, access, zoning, or context is central</li>
+<li class="fragment"><code>Python</code> if the question needs repeatable analysis or notebook-based workflow</li>
 </ul>
 </section>
-<section class="slide level2 center">
-
-<h3 id="hku-research-ethics">HKU Research Ethics</h3>
-<p><strong>When do you need approval?</strong></p>
-<ul>
-<li class="fragment">Human subjects research (surveys, interviews)</li>
-<li class="fragment">Identifiable personal data collection</li>
-<li class="fragment">Sensitive or private space documentation</li>
-<li class="fragment">Publication of identifiable information</li>
-</ul>
-<p><strong>What’s typically exempt?</strong></p>
-<ul>
-<li class="fragment">Anonymous observation in public spaces</li>
-<li class="fragment">Published data and literature review</li>
-<li class="fragment">Building performance measurement</li>
-<li class="fragment">Design process documentation</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="practical-ethics-guidelines">Practical Ethics Guidelines</h3>
+<section id="studio-exercise" class="slide level2 center">
+<h2>Studio Exercise</h2>
+<p>In pairs:</p>
 <ol type="1">
-<li class="fragment"><strong>Be transparent</strong> about data collection purposes</li>
-<li class="fragment"><strong>Get permission</strong> before photographing people or private spaces</li>
-<li class="fragment"><strong>Anonymize</strong> personal information whenever possible</li>
-<li class="fragment"><strong>Store securely</strong> using HKU-approved systems</li>
-<li class="fragment"><strong>Document clearly</strong> what you collected and how</li>
+<li class="fragment">Explain your prior decision in one minute</li>
+<li class="fragment">Let your partner identify the weak evidence link</li>
+<li class="fragment">Rewrite your “next decision” as one question the semester could realistically address</li>
 </ol>
 </section>
-<section id="setting-ranges-and-parameters" class="slide level2 center">
-<h2>Setting Ranges and Parameters</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="defining-your-investigation-scope">Defining Your Investigation Scope</h3>
-<p><strong>Spatial boundaries</strong></p>
+<section id="a1-submission-check" class="slide level2 center">
+<h2>A1 Submission Check</h2>
 <ul>
-<li class="fragment">What buildings, neighborhoods, or regions?</li>
-<li class="fragment">Indoor vs.&nbsp;outdoor conditions?</li>
-<li class="fragment">Public vs.&nbsp;private spaces?</li>
-<li class="fragment">Scale of analysis (room, building, district)?</li>
+<li class="fragment">one prior decision, clearly described</li>
+<li class="fragment">one evidence audit</li>
+<li class="fragment">one next studio decision</li>
+<li class="fragment">one visual page that makes the transition visible</li>
 </ul>
-<p><strong>Temporal boundaries</strong></p>
-<ul>
-<li class="fragment">What time periods (seasons, daily cycles)?</li>
-<li class="fragment">Historical vs.&nbsp;contemporary data?</li>
-<li class="fragment">Snapshot vs.&nbsp;longitudinal analysis?</li>
-<li class="fragment">Peak vs.&nbsp;average conditions?</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="parameter-selection">Parameter Selection</h3>
-<p><strong>Performance metrics</strong></p>
-<ul>
-<li class="fragment">Energy use intensity (kWh/m²/year)</li>
-<li class="fragment">Thermal comfort (temperature, humidity, air speed)</li>
-<li class="fragment">Daylighting (illuminance, daylight factor, glare)</li>
-<li class="fragment">User satisfaction (Likert scales, preference ratings)</li>
-</ul>
-<p><strong>Design variables</strong></p>
-<ul>
-<li class="fragment">Building characteristics (age, size, orientation)</li>
-<li class="fragment">System specifications (HVAC, lighting, envelope)</li>
-<li class="fragment">Spatial configurations (layout, ceiling height, windows)</li>
-<li class="fragment">Usage patterns (occupancy, activities, schedules)</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="quality-control-considerations">Quality Control Considerations</h3>
-<p><strong>Data reliability</strong></p>
-<ul>
-<li class="fragment">Measurement accuracy and calibration</li>
-<li class="fragment">Sample size and representativeness</li>
-<li class="fragment">Missing data and outlier handling</li>
-<li class="fragment">Consistency across different sources</li>
-</ul>
-<p><strong>Validity checks</strong></p>
-<ul>
-<li class="fragment">Do measurements match expected ranges?</li>
-<li class="fragment">Are user responses consistent and logical?</li>
-<li class="fragment">Do findings align with known relationships?</li>
-<li class="fragment">Can results be replicated or verified?</li>
-</ul>
-</section>
-<section id="framing-for-stakeholder-audiences" class="slide level2 center">
-<h2>Framing for Stakeholder Audiences</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="understanding-your-stakeholders">Understanding Your Stakeholders</h3>
-<p><strong>Primary decision-makers</strong></p>
-<ul>
-<li class="fragment">Who will directly use your evidence?</li>
-<li class="fragment">What decisions are they trying to make?</li>
-<li class="fragment">What constraints and pressures do they face?</li>
-<li class="fragment">How do they currently evaluate alternatives?</li>
-</ul>
-<p><strong>Secondary audiences</strong></p>
-<ul>
-<li class="fragment">Who else is affected by these decisions?</li>
-<li class="fragment">What outcomes matter most to different groups?</li>
-<li class="fragment">Where might priorities conflict?</li>
-<li class="fragment">How can you address multiple perspectives?</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="stakeholder-specific-framing">Stakeholder-Specific Framing</h3>
-<p><strong>For developers and owners</strong></p>
-<ul>
-<li class="fragment">Financial performance and ROI</li>
-<li class="fragment">Risk mitigation and compliance</li>
-<li class="fragment">Market differentiation and value</li>
-<li class="fragment">Operational efficiency and maintenance</li>
-</ul>
-<p><strong>For facility managers</strong></p>
-<ul>
-<li class="fragment">User satisfaction and productivity</li>
-<li class="fragment">Energy costs and system performance</li>
-<li class="fragment">Maintenance requirements and reliability</li>
-<li class="fragment">Occupant health and safety</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<p><strong>For designers and architects</strong></p>
-<ul>
-<li class="fragment">Design flexibility and creativity</li>
-<li class="fragment">Performance optimization strategies</li>
-<li class="fragment">Best practices and guidelines</li>
-<li class="fragment">Innovation opportunities and precedents</li>
-</ul>
-<p><strong>For users and occupants</strong></p>
-<ul>
-<li class="fragment">Comfort and satisfaction</li>
-<li class="fragment">Health and wellbeing impacts</li>
-<li class="fragment">Usability and accessibility</li>
-<li class="fragment">Social and environmental quality</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="communication-strategies">Communication Strategies</h3>
-<p><strong>Language and terminology</strong></p>
-<ul>
-<li class="fragment">Use stakeholder-familiar terms</li>
-<li class="fragment">Define technical concepts clearly</li>
-<li class="fragment">Avoid unnecessary jargon</li>
-<li class="fragment">Provide context and comparisons</li>
-</ul>
-<p><strong>Evidence presentation</strong></p>
-<ul>
-<li class="fragment">Lead with stakeholder-relevant outcomes</li>
-<li class="fragment">Use familiar units and scales</li>
-<li class="fragment">Show uncertainty and confidence levels</li>
-<li class="fragment">Provide actionable recommendations</li>
-</ul>
-</section>
-<section id="data-source-deep-dive" class="slide level2 center">
-<h2>Data Source Deep Dive</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="building-management-systems-bms">Building Management Systems (BMS)</h3>
-<p><strong>What’s available:</strong></p>
-<ul>
-<li class="fragment">Real-time HVAC performance data</li>
-<li class="fragment">Energy consumption by system/zone</li>
-<li class="fragment">Indoor environmental conditions</li>
-<li class="fragment">Occupancy and usage patterns</li>
-</ul>
-<p><strong>Access considerations:</strong></p>
-<ul>
-<li class="fragment">Building owner permissions required</li>
-<li class="fragment">Data format and export capabilities</li>
-<li class="fragment">Historical data availability</li>
-<li class="fragment">Privacy and proprietary concerns</li>
-</ul>
-</section></section>
-<section>
-<section id="section-1" class="title-slide slide level1 center">
-<h1></h1>
-<div class="callout callout-note no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>The McDonald’s Ice Cream Machine Mystery</strong></p>
-</div>
-<div class="callout-content">
-<p>Franchise owners couldn’t access diagnostic data from their own machines. A 24-year-old built a device to decode error messages - revealing machines weren’t broken, just had confusing interfaces.</p>
-<ul>
-<li class="fragment"><strong>Who:</strong> Rashiq Zahid (24, Berlin) created mcbroken.com tracking tool (2020)</li>
-<li class="fragment"><strong>Device:</strong> Kytch by Melissa Nelson &amp; Jeremy O’Sullivan</li>
-<li class="fragment"><strong>Outcome:</strong> $900M lawsuit, FTC investigation, right-to-repair victory (2024)</li>
-</ul>
-<p><em>Data access challenges aren’t unique to buildings.</em></p>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2 center">
-
-<h3 id="government-open-data">Government Open Data</h3>
-<p><strong>Hong Kong DATA.GOV.HK</strong></p>
-<ul>
-<li class="fragment">Air quality and weather monitoring</li>
-<li class="fragment">Traffic and transport statistics</li>
-<li class="fragment">Planning and development data</li>
-<li class="fragment">Population and demographic information</li>
-</ul>
-<p><strong>Advantages:</strong></p>
-<ul>
-<li class="fragment">Free and publicly available</li>
-<li class="fragment">Regularly updated and quality-controlled</li>
-<li class="fragment">Comprehensive geographic coverage</li>
-<li class="fragment">Official and authoritative sources</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="sensor-networks-and-iot">Sensor Networks and IoT</h3>
-<p><strong>Environmental monitoring</strong></p>
-<ul>
-<li class="fragment">Temperature, humidity, air quality sensors</li>
-<li class="fragment">Light levels and acoustic measurements</li>
-<li class="fragment">Occupancy detection and counting</li>
-<li class="fragment">Energy use monitoring devices</li>
-</ul>
-<p><strong>Deployment considerations:</strong></p>
-<ul>
-<li class="fragment">Equipment costs and availability</li>
-<li class="fragment">Installation permissions and access</li>
-<li class="fragment">Data logging and retrieval systems</li>
-<li class="fragment">Maintenance and calibration requirements</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="user-generated-data">User-Generated Data</h3>
-<p><strong>Survey platforms</strong></p>
-<ul>
-<li class="fragment">Google Forms, Qualtrics, SurveyMonkey</li>
-<li class="fragment">Mobile apps for real-time feedback</li>
-<li class="fragment">QR codes for location-based surveys</li>
-<li class="fragment">Incentive strategies for participation</li>
-</ul>
-<p><strong>Social media and reviews</strong></p>
-<ul>
-<li class="fragment">Location-based social media posts</li>
-<li class="fragment">Review platforms (Google, Yelp, Facebook)</li>
-<li class="fragment">Photo and video user-generated content</li>
-<li class="fragment">Sentiment analysis of text data</li>
-</ul>
-</section>
-<section id="practical-exercise" class="slide level2 center">
-<h2>Practical Exercise</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="data-source-mapping">Data Source Mapping</h3>
-<p><strong>Individual work (10 minutes):</strong></p>
-<p>For your A1 decision claim, identify:</p>
-<ol type="1">
-<li class="fragment"><strong>3 potential data sources</strong> for testing your claim</li>
-<li class="fragment"><strong>Key parameters</strong> you would need to measure</li>
-<li class="fragment"><strong>Stakeholder concerns</strong> that would shape your approach</li>
-<li class="fragment"><strong>Ethical considerations</strong> for your data collection</li>
-</ol>
-</section>
-<section class="slide level2 center">
-
-<h3 id="peer-discussion">Peer Discussion</h3>
-<p><strong>Small groups (15 minutes):</strong></p>
-<p>Share your data source ideas and get feedback:</p>
-<ul>
-<li class="fragment">Are the sources realistic and accessible?</li>
-<li class="fragment">Do the parameters match the research question?</li>
-<li class="fragment">Are there alternative or better data sources?</li>
-<li class="fragment">What challenges might you encounter?</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="group-report-out">Group Report-Out</h3>
-<p><strong>Brief sharing (10 minutes):</strong></p>
-<p>Each group shares:</p>
-<ul>
-<li class="fragment">One particularly creative data source idea</li>
-<li class="fragment">One common challenge across multiple projects</li>
-<li class="fragment">One ethical consideration that emerged</li>
-<li class="fragment">One suggestion for a classmate’s project</li>
-</ul>
-</section>
-<section id="a2-preview-evidence-map" class="slide level2 center">
-<h2>A2 Preview: Evidence Map</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="whats-coming">What’s Coming</h3>
-<p><strong>Due Week 4:</strong></p>
-<ul>
-<li class="fragment">Systematic literature/existing work review of your topic</li>
-<li class="fragment">Quality assessment of existing evidence</li>
-<li class="fragment">Gap analysis identifying what’s missing</li>
-<li class="fragment">Strategic plan for filling critical gaps</li>
-</ul>
-<p><strong>Key skills:</strong></p>
-<ul>
-<li class="fragment">Database searching and source evaluation</li>
-<li class="fragment">Evidence synthesis and organization</li>
-<li class="fragment">Critical analysis of research methods</li>
-<li class="fragment">Research planning and prioritization</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="getting-started-on-a2">Getting Started on A2</h3>
-<p><strong>This week:</strong></p>
-<ol type="1">
-<li class="fragment"><strong>Finalize and submit A1</strong> - due end of week</li>
-<li class="fragment"><strong>Begin literature search</strong> - key terms and databases</li>
-<li class="fragment"><strong>Set up reference management</strong> - Zotero, Mendeley, or EndNote</li>
-<li class="fragment"><strong>Start evidence collection</strong> - academic and industry sources</li>
-</ol>
-</section>
-<section id="next-steps" class="slide level2 center">
-<h2>Next Steps</h2>
-</section>
-<section class="slide level2 center">
-
-<h3 id="this-weeks-tasks">This Week’s Tasks</h3>
-<ol type="1">
-<li class="fragment"><strong>Polish A1 submission</strong> - due end of Week 2</li>
-<li class="fragment"><strong>Begin A2 literature search</strong> - find 5-10 initial sources</li>
-<li class="fragment"><strong>Set up data tools</strong> - reference management, basic analysis</li>
-<li class="fragment"><strong>Draft mentor questions</strong> - what would you ask a practitioner/senior?</li>
-</ol>
-</section>
-<section class="slide level2 center">
-
-<h3 id="office-hours-focus">Office Hours Focus</h3>
-<p>Come discuss:</p>
-<ul>
-<li class="fragment"><strong>Data source validation</strong> - are your ideas realistic?</li>
-<li class="fragment"><strong>Ethical approval needs</strong> - do you need HKU research ethics review?</li>
-<li class="fragment"><strong>Tool selection</strong> - what software matches your approach?</li>
-<li class="fragment"><strong>Literature search strategy</strong> - where to find the best evidence?</li>
-</ul>
-</section>
-<section class="slide level2 center">
-
-<h3 id="looking-ahead-week-3">Looking Ahead: Week 3</h3>
-<p><strong>Planning a Test</strong></p>
-<ul>
-<li class="fragment">Proxy vs.&nbsp;preset simulations</li>
-<li class="fragment">Research design and pre-registration</li>
-<li class="fragment">Introduction to building performance tools</li>
-<li class="fragment">A3 test plan development</li>
-</ul>
-</section>
-<section id="questions-discussion" class="slide level2 center">
-<h2>Questions &amp; Discussion</h2>
-<ul>
-<li class="fragment">What data sources seem most promising for your projects?</li>
-<li class="fragment">What ethical considerations hadn’t you thought of?</li>
-<li class="fragment">How might different stakeholders interpret the same evidence differently?</li>
-</ul>
-</section>
-<section id="key-takeaways" class="slide level2 center">
-<h2>Key Takeaways</h2>
-<ol type="1">
-<li class="fragment"><strong>Multiple data sources</strong> exist for most architectural questions</li>
-<li class="fragment"><strong>Ethics matter</strong> - get permissions, protect privacy, be transparent</li>
-<li class="fragment"><strong>Stakeholder framing</strong> shapes how you collect and present evidence</li>
-<li class="fragment"><strong>Quality control</strong> is essential for reliable findings</li>
-<li class="fragment"><strong>Start broad, then focus</strong> on the most critical evidence gaps</li>
-</ol>
-</section>
-<section class="slide level2 center">
-
-<p><em>Next week: From data to testing - designing systematic investigations</em></p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
@@ -1020,7 +625,7 @@
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'convex',
+        transition: 'slide',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
@@ -1040,9 +645,9 @@
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1050,
+        width: 1400,
 
-        height: 700,
+        height: 900,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
