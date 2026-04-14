@@ -1,373 +1,236 @@
 ---
 title: "Course Schedule"
-subtitle: "12-Week Teaching Roadmap"
-format: 
+subtitle: "12-Week Tool-to-Evidence Roadmap"
+format:
   html:
     toc: true
 ---
 
 # Weekly Schedule Overview
 
-This schedule accommodates a mixed audience of MArch, undergraduate, and PhD students through differentiated technical depth while maintaining equivalent learning outcomes.
+The semester now has a clear sequence:
 
-## Week 1: Why Evidence Matters
+1. survey the tool landscape
+2. choose one primary pathway
+3. prototype a method
+4. turn evidence into a studio-facing decision brief
+
+## At a Glance
+
+| Week | Focus | In-class emphasis | Assignment alignment |
+|---|---|---|---|
+| 1 | Why Evidence Needs a Workflow | course reset, evidence examples, A1 kickoff | A1 launch |
+| 2 | Audit the Evidence You Already Use | prior decisions, evidence types, next studio question | **A1 due** |
+| 3 | Spreadsheet as Baseline Workflow | tables, charts, comparison logic, transparent reasoning | pathway survey |
+| 4 | GIS Choices for Architects | QGIS vs ArcGIS vs geopandas, Jupyter setup | pathway survey |
+| 5 | BIM, BEM, and Building Performance | model types, translation loss, simulation as evidence | pathway commitment |
+| 6 | Evidence and Pathway Mapping | source quality, scoping, tool choice, work plan | **A2 due** |
+| 7 | Method Prototype Studio | minimal viable workflow, data inputs, outputs, QC | A3 draft |
+| 8 | Pilot, Compare, and Quantify Uncertainty | pilot review, uncertainty, peer critique | **A3 due** |
+| 9 | Thresholds and Decisions | decision criteria, trade-offs, counter-arguments | A4 analysis |
+| 10 | Visualize and Document the Workflow | figures, process capture, reproducibility | A4 draft |
+| 11 | Studio Evidence Package Workshop | review, refinement, audience fit | A4 near-final |
+| 12 | Object Fair and Transfer Forward | presentation, critique, next-studio handoff | **A4 due** |
+
+## Week 1: Why Evidence Needs a Workflow
 
 ### Focus
-Course introduction and the foundations of evidence-based design thinking.
+Reset the course around decisions, evidence, and tool choice instead of disconnected software demos.
 
 ### In Class
-- Course introduction and expectations
-- "Generative design is not magic" — demystifying data-driven design
-- Why data and evidence matter in architecture
-- Examples of evidence-based design in plain language
-- Introduction to the semester-long research brief format
+- course overview and new pathway model
+- architecture examples that appear evidence-based but hide weak reasoning
+- introduction to A1: prior decision audit plus next decision brief
+- mixed-cohort expectations for undergraduates, MArch, and PhD students
 
 ### Out of Class
-- Draft seed idea for A1 (design object + testable claim)
-- **Reading**: *The Craft of Research* (selected excerpts)
-- Set up basic tools (spreadsheet software, QGIS)
-
-### Deliverable Alignment
-Prepares foundation for **A1: Decision Claim**
+- identify one prior design decision you already made
+- gather the images, notes, and sources you used at the time
+- identify one upcoming studio decision worth investigating
 
 ### Tools Introduced
-- Excel/Google Sheets for basic data organization
-- QGIS for spatial data (introductory level)
+- overview only: `spreadsheet`, `GIS`, `Python`, `BIM/BEM`
 
----
-
-## Week 2: Finding and Framing Data
+## Week 2: Audit the Evidence You Already Use
 
 ### Focus
-Data sources, collection methods, and ethical considerations in architectural research.
+Make existing habits explicit: what counted as evidence, what was missing, and what confidence was overstated.
 
 ### In Class
-- Architectural data sources: sensors, BIM/GIS, building standards
-- Ethics and privacy in data collection
-- Setting appropriate ranges and parameters for testing
-- Framing research questions for different audiences
+- evidence types: precedent, measurement, simulation, standards, observation, stakeholder input
+- how architects confuse confidence with evidence
+- workshop: convert a prior decision into an evidence audit
+- workshop: define the next studio question
 
 ### Out of Class
-- **Submit A1: Decision Claim**
-- Draft mentor consultation questions
-- Begin preliminary data exploration
+- **submit A1**
+- shortlist two possible pathways for your next question
+- gather 3-5 precedent or data sources for Week 3
 
-### Deliverable Alignment
-**Submit A1** (Design object and testable claim)
+### Tools Introduced
+- spreadsheet as universal audit tool
 
-### Tools Focus
-- QGIS buffer and clip operations
-- HKU data storage and privacy protocols
-- Introduction to building performance databases
-
-### Required Reading
-HKU data privacy guidelines and research ethics notes
-
----
-
-## Week 3: Planning a Test
+## Week 3: Spreadsheet as Baseline Workflow
 
 ### Focus
-Systematic test design and the pre-registration mindset.
+Use spreadsheets as the common baseline for organizing evidence and comparing alternatives.
 
 ### In Class
-- Proxy vs. preset simulations: when to use each approach
-- Designing a test plan with clear hypotheses
-- Pre-registration mindset: documenting assumptions before testing
-- Introduction to building performance simulation basics
+- structure a worksheet around a design decision
+- move from raw observations to comparable fields
+- make charts that show uncertainty instead of false precision
+- build a simple decision matrix
 
 ### Out of Class
-- Draft A3 test plan outline
-- Begin A2 evidence mapping exercise
-- Explore relevant simulation tools for your project
+- create a starter workbook for your own project
+- prepare one comparison table and one chart
 
-### Deliverable Alignment
-Progress toward **A2: Evidence Map** and **A3: Test Plan**
+### Tools Introduced
+- Excel / Google Sheets
 
-### Tools Focus
-- Radiance/VELUX daylight presets
-- EnergyPlus Simple Glazing GUI
-- Basic parametric thinking
-
-### Readings
-Introductory handouts for Radiance and EnergyPlus workflows
-
----
-
-## Week 4: Sensitivity & Peer Check
+## Week 4: GIS Choices for Architects
 
 ### Focus
-Understanding how results change with different inputs and assumptions.
+Compare `QGIS`, `ArcGIS`, and `geopandas`, then situate code-based GIS inside a practical notebook workflow.
 
 ### In Class
-- Sensitivity analysis: how results shift with parameter ranges
-- Uncertainty quantification and confidence intervals
-- Mini peer review session: testing each other's assumptions
-- Data visualization for uncertainty
+- when to use `QGIS`
+- when `ArcGIS` matters in professional ecosystems
+- why `geopandas` is the course anchor for code-based GIS
+- `Jupyter Notebook`, `Anaconda` / `Miniconda`, and `Colab`: what each one does
+- minimal `geopandas` demo: load, inspect CRS, filter, buffer, plot, export
 
 ### Out of Class
-- **Complete and submit A2: Evidence Map** (3-5 pages)
-- Refine A3 test plan based on peer feedback
+- decide whether GIS is still in contention for your primary pathway
+- run the sample notebook or attend setup support
 
-### Deliverable Alignment
-**Submit A2** (Evidence Map with literature review and gap analysis)
+### Tools Introduced
+- QGIS
+- ArcGIS
+- Jupyter Notebook
+- geopandas
 
-### Tools Focus
-- Excel charting and statistical functions
-- Simple plotting and uncertainty visualization
-- Introduction to error bars and confidence ranges
-
-### Reading
-Edward Tufte excerpts on statistical graphics and uncertainty visualization
-
----
-
-## Week 5: Pilot Week
+## Week 5: BIM, BEM, and Building Performance
 
 ### Focus
-Conducting pilot tests and learning from early results.
+Teach BIM/BEM and simulation as shared literacy, especially what gets lost when models travel between workflows.
 
 ### In Class
-- Pilot testing strategies and documentation
-- Logging surprises and unexpected results
-- Adjusting plans based on pilot findings
-- Troubleshooting common simulation and data collection issues
+- BIM vs BEM: different data structures and different priorities
+- why translation breaks
+- what performance tools can and cannot tell you
+- how simulation fits inside evidence-based design without pretending certainty
+- pathway selection check-in
 
 ### Out of Class
-- Conduct pilot test using your chosen method
-- Draft A3 Pilot Memo documenting process and initial findings
+- lock your primary pathway
+- collect candidate evidence sources and method ideas for A2
 
-### Deliverable Alignment
-**Submit A3** (Test Plan + Pilot Note) and begin **Peer Review #1**
+### Tools Introduced
+- BIM/BEM concepts
+- building performance simulation examples
 
-### Tools Application
-Execute chosen testing approach:
-- Physical measurements and sensors
-- Preset building simulations
-- Survey data collection
-- Spatial analysis workflows
-
-### Reading
-Pilot memo template and examples from previous semesters
-
----
-
-## Week 6: Making Results Readable
+## Week 6: Evidence and Pathway Mapping
 
 ### Focus
-Data visualization and communication for architectural audiences.
+Translate the studio question into a realistic evidence plan and commit to one primary pathway.
 
 ### In Class
-- Data visualization principles for architecture
-- From raw numbers to clear, compelling figures
-- Designing your Object Card figure (key visual summary)
-- Critique session: what makes results readable?
+- evidence source quality and relevance
+- compare pathway fit: `spreadsheet`, `GIS`, `Python`
+- define inputs, outputs, constraints, and likely failure points
+- A2 work session and feedback
 
 ### Out of Class
-- Draft A4 figures and visualizations
-- Continue data collection and analysis
-- Develop Object Card visual concept
+- **submit A2**
+- start a minimal folder/workbook/notebook structure for A3
 
-### Deliverable Alignment
-**Object Card** development and A4 progress
-
-### Tools Focus
-- Advanced Excel/Sheets visualization
-- Introduction to design-quality graphics
-- Layout and composition for technical communication
-
-### Reading
-Andy Kirk's *Data Visualization Handbook* (selected chapters)
-
----
-
-## Week 7: Decide with Numbers
+## Week 7: Method Prototype Studio
 
 ### Focus
-Setting thresholds for design decisions and addressing counter-arguments.
+Build the smallest workflow that can answer a real piece of the question.
 
 ### In Class
-- Establishing thresholds for adopt/defer decisions
-- Addressing counter-arguments and alternative interpretations
-- **Peer Review Session #1**: structured feedback on draft work
-- Decision frameworks and trade-off analysis
+- minimal viable method design
+- pathway breakout support
+- documenting assumptions before running the workflow
+- quality checks and version discipline
 
 ### Out of Class
-- Revise A4 based on peer feedback
-- **Complete Change Log #1** (documenting revisions)
-- Strengthen argument structure
+- run the first full prototype
+- capture screenshots, exports, and notes
 
-### Deliverable Alignment
-Significant progress on **A4 draft** with peer feedback integration
-
-### Tools Application
-- Excel/Sheets for decision matrices
-- Optional: Colab/GitHub for more advanced analysis
-- Argument mapping and logic checking
-
-### Reading
-Example practice memos and decision frameworks
-
----
-
-## Week 8: Light Workflow Help
+## Week 8: Pilot, Compare, and Quantify Uncertainty
 
 ### Focus
-Documenting processes for reproducibility and addressing automation ethics.
+Use pilot work to refine the method and express confidence honestly.
 
 ### In Class
-- Documenting workflows: from manual processes to scripts
-- Ethical limits of automation in design research
-- **Individual mentor consultations** (30-45 minutes each)
-- Reproducibility and research transparency
+- what counts as a useful pilot
+- uncertainty ranges, scenario comparison, and data quality checks
+- peer critique focused on method fit and overclaiming
+- A3 refinement clinic
 
 ### Out of Class
-- **Complete Mentor Report** (1-2 pages summarizing consultation)
-- Document your workflow for A4 Reproducibility Capsule
-- Refine analysis methods
+- **submit A3**
+- decide what evidence will appear in the final package
 
-### Deliverable Alignment
-**Mentor Dialogue** task and reproducibility documentation
-
-### Tools Introduction
-- Optional: Python/Colab for interested students
-- GitHub for version control and documentation
-- Workflow diagramming tools
-
-### Reading
-Workflow documentation template and reproducibility guidelines
-
----
-
-## Week 9: Storytelling & Figures
+## Week 9: Thresholds and Decisions
 
 ### Focus
-Crafting compelling narratives and polishing visualizations.
+Move from “interesting findings” to a decision rule someone can actually use.
 
 ### In Class
-- Crafting the two-slide Practice Case presentation
-- Figure and narrative clinic: individual consultation time
-- **Peer Review Session #2**: near-final feedback
-- Presentation skills for technical audiences
+- set thresholds and ranges
+- compare alternatives without hiding trade-offs
+- define stakeholder-facing recommendations
+- address counter-arguments and weak spots
 
 ### Out of Class
-- Polish A4 draft incorporating all feedback
-- **Complete Change Log #2** (tracking all revisions)
-- Finalize Object Card design
+- draft A4 recommendation logic
+- refine charts, maps, or notebook outputs
 
-### Deliverable Alignment
-Near-final **A4 package** ready for defense
-
-### Tools Focus
-- Presentation software optimization
-- Final figure polishing in Excel/design software
-- Narrative structure and flow
-
-### Reading
-Course style guide and presentation examples
-
----
-
-## Week 10: Draft Defense
+## Week 10: Visualize and Document the Workflow
 
 ### Focus
-Practice presentations with constructive feedback.
+Make the method and the evidence legible to others.
 
 ### In Class
-- **Short in-class defenses** (6-8 minutes per student + Q&A)
-- Collective feedback and discussion
-- Identifying final polishing priorities
-- Final presentation logistics and expectations
+- figure design for architectural audiences
+- workflow diagrams and reproducibility notes
+- what to show from a spreadsheet, GIS map, or notebook
+- draft evidence board / object card review
 
 ### Out of Class
-- Integrate defense feedback into final package
-- Address any identified gaps or weaknesses
-- Prepare for final Object Fair
+- assemble A4 draft package
+- prepare review materials for Week 11
 
-### Deliverable Alignment
-**A4 draft defense** with clear revision priorities
-
-### Assessment
-Formative assessment preparing for final evaluation
-
----
-
-## Week 11: Final Polish
+## Week 11: Studio Evidence Package Workshop
 
 ### Focus
-Integration of all feedback and final preparation.
+Pressure-test the near-final decision brief against its audience.
 
 ### In Class
-- **Mentor feedback integration workshop**
-- Finalizing decision thresholds and recommendations
-- Final preparation for Object Fair presentation
-- Technical troubleshooting and last-minute support
+- peer review of argument, evidence, and visual clarity
+- pathway-specific troubleshooting
+- tighten the link between evidence and next-studio action
+- polish final package structure
 
 ### Out of Class
-- **Final polish of A4 complete package**
-- Practice final presentation
-- Prepare for public Object Fair event
+- finalize A4
+- prepare final presentation materials
 
-### Deliverable Alignment
-Final **A4 package** due next week
-
-### Support
-Individual consultation time for final questions and technical issues
-
----
-
-## Week 12: Object Fair (Final Review)
+## Week 12: Object Fair and Transfer Forward
 
 ### Focus
-Public presentation of semester work with external evaluation.
+Present the work as something that can move into the next project, not just end the semester.
 
-### Event Structure
-**Object Fair Format:**
-- 6-8 minute presentation per student
-- 4 minute Q&A with jurors and peers  
-- External critics and guest jurors invited
-- Professional presentation setting
+### In Class
+- final presentations and critique
+- object fair / evidence board display
+- reflection: what changed in how you justify design moves
+- transfer plan for the next studio project
 
-### Final Submission
-**Submit A4: Complete Final Package** including:
-- Research Brief (main document)
-- Practice Case (two-slide summary)
-- Object Card (visual summary)
-- Reproducibility Capsule (workflow documentation)
-
-### Assessment
-Final evaluation by instructor and external jurors based on:
-- Clarity and rigor of research question
-- Appropriateness of methods and analysis
-- Quality of evidence and reasoning
-- Effectiveness of communication
-- Reproducibility and transparency
-
----
-
-# Notes for Mixed Audience Integration
-
-## Differentiated Approaches
-
-### MArch Students
-- Focus on practical design decision memos
-- Emphasize real-world client communication
-- Connect to professional practice standards
-
-### Undergraduate Students  
-- Guided scaffolding with templates and examples
-- Low-code tools (spreadsheets, preset simulations)
-- Extra support sessions available
-
-### PhD Students
-- Deeper engagement with uncertainty analysis and statistical methods
-- Advanced reproducibility requirements
-- Code-heavy workflow options encouraged
-- Additional methodological rigor expected
-
-## Equivalent Outcomes
-All students produce the same core deliverables (A1-A4) but with technical depth and methodological sophistication appropriate to their program level and experience.
-
----
-
-*Schedule subject to minor adjustments based on class needs and guest speaker availability.*
+### Out of Class
+- **submit A4**
+- archive your pathway files and documentation for future reuse

@@ -290,8 +290,8 @@ def main():
         sections.append('\n'.join(sec))
 
     header = '''---
-title: "A3 Assessment: Test Plan + Pilot Study"
-subtitle: "Automated first-pass feedback aligned to rubric"
+title: "A3 Assessment: Method Prototype"
+subtitle: "Automated first-pass feedback aligned to the current rubric"
 format:
   html:
     toc: true
@@ -301,7 +301,7 @@ format:
 
 # Assessment Notes
 
-This document provides a structured first-pass assessment generated from each submission’s text, aligned to the Assignment 3 rubric (Research Design 40%, Pilot 30%, Documentation 20%, Communication 10%). It should be reviewed by the instructor for final grading.
+This document provides a structured first-pass assessment generated from each submission’s text, aligned to the current Assignment 3 rubric (Workflow Coherence 35%, Pilot Utility 25%, Transparency About Limits 25%, Communication and Documentation 15%). It should be reviewed by the instructor for final grading.
 
 ---
 
@@ -312,4 +312,3 @@ This document provides a structured first-pass assessment generated from each su
 
 if __name__ == '__main__':
     main()
-

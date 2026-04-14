@@ -1,753 +1,120 @@
 ---
-title: "Week 3: Finding and Framing Data"
-format: 
+title: "Week 3: Spreadsheet as Baseline Workflow"
+subtitle: "Transparent Comparison, Charting, and Decision Logic"
+format:
   revealjs:
     theme: simple
+    transition: slide
     slide-number: true
     incremental: true
+    width: 1400
+    height: 900
     center: true
 ---
 
 ## Today's Agenda
 
-- **A1 Elevator Pitches** - 30-second decision claim presentations
-- A2 Evidence Map progress check
-- Proxy vs. preset simulations *(with video examples)*
-- Pre-registration mindset *(interactive workshop)*
-- Building performance simulation basics *(live demos)*
-- A3 test plan development *(peer feedback)*
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Start energetically - students just submitted A1 3 days ago
-- Emphasize hands-on nature of today's session
-- Remind about typhoon affecting hybrid format
-- Total time: 2 hours with breaks
-- Key transition: Move from A1 reflection → systematic testing need
-:::
-
-**Opening question:** "How many of you are feeling confident about testing your A1 claim right now?"
+- why spreadsheet is the baseline pathway
+- structure data around a decision
+- charts that do not overclaim
+- decision matrices
+- what spreadsheet cannot do well
 
 ---
 
-## A1 Elevator Pitches 🚀
+## Spreadsheet Is Not the Weak Option
 
-**30-second lightning round:** Present your A1 decision claims
+It is the **default professional option** when you need:
 
-- Design object + testable claim
-- Why it matters (impact/stakes)
-- Biggest uncertainty/assumption
-
-**Ground rules:** <span style="color: orange">**No slides, just you and your ideas!**</span>
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Set timer for 30 seconds per student
-- Model first with your own example: "Operable windows in student housing increase satisfaction by 20%"
-- Encourage applause after each pitch
-- Note interesting claims for later reference
-- If student goes over time, gentle "wrap up" signal
-- Listen for: vague claims, untestable assumptions, interesting methods
-:::
-
-**Questions to prep for (1min):**
-
-- "What assumptions are you making there?"
-- "How would you measure that?"
-- "What could go wrong with that test?"
+- visible assumptions
+- editable comparison tables
+- fast iteration
+- simple reproducible logic
 
 ---
 
-## Quick Poll: A1 Reflection
+## Start With the Decision
 
-**Rank these three options:**
+Bad spreadsheet:
 
-- Changing design claim significantly while writing A1?
-- Discovered their claim was harder to test than expected?
-- Found surprising gaps in existing evidence?
+- endless columns
+- no clear units
+- no clear alternatives
+- no clear audience
 
-*Setting the stage for why systematic testing matters...*
+Better spreadsheet:
 
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Look for patterns in results
-- If few hands raised on first question: "Come on, be honest! Design is iterative"
-- If many hands on second question: "Perfect! That's exactly why we need systematic approaches"
-- Bridge to A2: "Those gaps you found? That's your A2 starting point"
-- Transition: "So now you know testing is hard - let's learn how to do it right"
-:::
-
-**Follow-up questions:**
-
-- "What surprised you most about the A1 writing process?"
-- "Whose claim here seems most challenging to test?"
+- rows = cases or options
+- columns = criteria
+- one sheet = one purpose
 
 ---
 
-## A2 Progress Check
+## Typical Architecture Spreadsheet Uses
 
-**Quick sharing:** What's the most surprising thing you've found in your literature review so far?
-
-Common patterns:
-
-- Less evidence than expected?
-- Contradictory findings?
-- Methodological limitations?
-- Contextual gaps?
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Take 2-3 responses max (time management!)
-- Look for: empty literature spaces, conflicting studies, poor methods
-- Validate feelings: "Yes, literature reviews are humbling"
-- Common student discoveries: "Everyone tests differently," "No one tests my specific thing"
-- Pivot: "This is exactly why YOUR test matters"
-:::
-
-<!-- **Discussion prompts:**
-
-- "How many sources have you found that directly test your claim?"
-- "What research methods keep showing up in your field?"
-- "Where are the biggest evidence gaps?" -->
+- precedent comparison
+- evidence matrix
+- occupancy or observation logs
+- option scoring
+- uncertainty range charts
+- summary tables for final briefs
 
 ---
 
-## Testing Approaches: Proxy vs. Preset
+## Show Uncertainty Honestly
 
-:::{.callout-note}
-**Coffee Break (5 min):** Think about what's the difference between a proxy and a preset test.
-:::
+Avoid:
 
----
+- fake precision
+- overly smooth charts
+- missing units
+- unexplained scoring systems
 
-<!-- # Hypotheses -->
+Prefer:
 
-:::{.callout-caution title="What is a hypothesis?"}
-
-- How is it different from a questions?
-  - "if-then" format vs. complete open-endedness
-
-:::
-
-# Need we dig into hypothesis further?
-
-## Questions = Exploration (Design Questions)
-
-- Questions are your initial observations that spark investigation:
-
-  - "How does natural light affect user behavior in this library?"
-  - "Why do people avoid using this public plaza?"
-  - "What makes some neighborhoods more walkable than others?"
-
-## Hypotheses = Design Predictions
-
-- Hypotheses are your specific, testable design theories:
-
-  - "Increasing window area by 40% on the south facade will increase study time in the library by 25% during winter months"
-  - "Adding 15-foot wide covered walkways around the plaza perimeter will triple foot traffic during rainy seasons"
-  - "Neighborhoods with continuous street walls and 8-foot wide sidewalks will have 3x more pedestrian activity than those with setback buildings and 4-foot sidewalks"
-
-
-## Why This Matters in Architecture
-
-Questions help you identify design problems and user needs. They're essential for research and understanding context.
-Hypotheses help you make design decisions with intention. They force you to:
-
-- Predict specific outcomes from your design choices
-- Measure success objectively (occupancy rates, dwell time, user satisfaction scores)
-- Test and refine your design theories through post-occupancy evaluation
-- Communicate design intent clearly to clients and colleagues
-
-## What is a "Test" in Design Research?
-
-**A systematic comparison** designed to evaluate competing alternatives or validate design assumptions.
-
-Not just "trying things out" — but structured investigation with:
-
-- Clear hypotheses
-- Controlled comparisons
-- Measurable outcomes
-- Documented methods
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Emphasize "systematic" vs "casual experimentation"
-- Ask: "What's the difference between testing and just trying stuff?"
-- Common student confusion: thinking any comparison is a "test"
-- Examples of bad "tests": changing everything at once, no clear metrics
-- Good example: A/B testing specific window sizes with energy consumption metrics
-:::
-
-<span style='color: cyan'>_"Think about your A1 claim - do you have clear hypotheses? Measurable outcomes?"_</span>
-
+- ranges
+- scenario labels
+- simple comparison charts
+- clear note fields for assumptions
 
 ---
 
-### Proxy Testing
+## Decision Matrix Example
 
-**Using simplified models or representations** to understand performance relationships
-
-**Examples:**
-
-- Physical scale models in wind tunnel
-- Simple energy models with key variables
-- Mock-ups of spatial configurations
-- User testing with prototypes or scenarios
+| Option | daylight | access | cost | risk | overall note |
+|---|---:|---:|---:|---:|---|
+| A | high | medium | medium | medium | balanced |
+| B | medium | high | low | high | cheap but weak long-term |
+| C | high | high | high | low | strongest but costly |
 
 ---
 
-**Advantages:**
+## What Spreadsheet Cannot Replace
 
-- Lower cost and faster iteration
-- Focus on key relationships
-- Easier to control variables
+- spatial reasoning at city or site scale
+- complex geospatial operations
+- reusable code workflows
+- simulation-specific modeling
 
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Key point: "Proxy = simpler version that captures essential relationships"
-- Students often worry proxies aren't "real enough" - address this fear
-- Good for: early design phases, limited budgets, exploring concepts
-- Bad for: final validation, detailed optimization
-- Examples from their A1s: cardboard models, simple sketches, basic calculations
-:::
-
-**Questions to carry along:**
-
-- "How could you test your A1 claim with a proxy method?"
-- "What's the simplest version of your test that could still give useful results?"
+That is why the course still surveys GIS and Python.
 
 ---
 
-### Preset Simulation Testing
+## Practice Exercise
 
-**Using established software tools** with validated models and standard inputs
+Build a starter workbook with:
 
-**Examples:**
-
-- EnergyPlus(Honeybee) for building energy analysis
-- Ladybug for visualizing weather interactions
-- Radiance for daylighting simulation
-- CFD(Butterfly) for airflow and thermal comfort
-- Acoustic modeling for sound performance
+1. one sheet for evidence sources
+2. one sheet for alternative comparison
+3. one chart that makes a trade-off visible
 
 ---
 
+## If You Stay on Spreadsheet
 
+You can still do the course very well if you:
 
-## The Pre-Registration Mindset
-
-:::{.callout-tip}
-**Current Events Connection:** With the typhoon sliding away, think about how weather assumptions affect building performance predictions - what if your assumptions are wrong?
-:::
-
----
-
-### What is Pre-Registration?
-
-**Documenting your research plan** before conducting the study, including:
-
-- Research questions and hypotheses
-- Methods and analysis approach
-- Success criteria and interpretation rules
-- Potential limitations and biases
-
-**Purpose:** Prevent cherry-picking results and ensure transparent research
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Key concept: "Deciding how you'll interpret results BEFORE you see them"
-- Common resistance: "But I might discover something unexpected!"
-- Response: "You can still discover things, but document your original plan"
-- Real-world example: clinical trials must pre-register or can't be published
-- Architecture parallel: competitions have criteria set before designs submitted
-:::
-
-**Reality check:** "How many of you have ever changed your argument after seeing disappointing results?"
-
----
-
-### Pre-Registration for Design Research
-
-**Document before testing:**
-
-1. **Specific claims** you're testing
-2. **Alternative explanations** you'll consider
-3. **Metrics and thresholds** for decision-making
-4. **Analysis approach** you'll use
-5. **Potential confounding factors**
-
-**Benefits:**
-
-- Clearer thinking about research design
-- More credible results
-- Better documentation for replication
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Emphasize #3: "What counts as success? Decide NOW, not after seeing results"
-- Common student mistake: vague success criteria like "performs better"
-- Good example: "20% reduction in energy use" vs "some improvement"
-- Alternative explanations: "If your hypothesis is wrong, what else could explain results?"
-- Point #5 often overlooked: weather, user behavior, measurement errors
-:::
-
-**Reflection prompt:** "For your A1 claim, what would count as 'success'? Be specific with numbers."
-
-**Advantages:**
-
-- Validated algorithms and physics
-- Industry-standard metrics
-- Comprehensive analysis capabilities
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Key point: "Preset = professional tools with established credibility"
-- Students often intimidated by complexity - reassure about learning curve
-- Good for: detailed analysis, industry validation, comparing to standards
-- Bad for: novel concepts, quick exploration, limited time/expertise
-- Mention: many have free/student versions available
-:::
-
-**Questions for students:**
-
-- "Which of these tools have you heard of? Used before?"
-- "What would make preset simulation worth the extra learning time for your claim?"
-
----
-
-
-
-
-## Building Performance Simulation Basics
-
-:::{.callout-note}
-**Video Break (7 min):** Ladybug/Honeybee workflow visualization - from Rhino geometry to performance results
-:::
-
----
-
-### Energy Simulation: EnergyPlus
-
-**What it does:**
-- Calculates heating/cooling loads
-- Models HVAC system performance
-- Estimates energy consumption
-- Simulates thermal comfort
-
-**Key inputs:**
-
-- **Weather data** *(whataboutism: typhoon conditions?)*
-- Building geometry and materials
-- HVAC systems and schedules
-- Occupancy and equipment loads
-
-**Real-world relevance:** How do extreme weather events like today's typhoon affect these simulations?
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Connect to current typhoon: "Weather data isn't just annual averages"
-- EnergyPlus uses hourly weather data for entire year
-- Extreme events test building resilience, not just efficiency
-- Student misconception: "Simulation = perfect prediction"
-- Reality: "Simulation = structured comparison under defined conditions"
-:::
-
-**Discussion starter:** "If you could only change ONE input to test your A1 claim, which would it be?"
-
----
-
-### Daylighting Simulation: Radiance
-
-**What it does:**
-- Models natural light distribution
-- Calculates illuminance levels
-- Evaluates glare probability
-- Optimizes daylight strategies
-
-**Key inputs:**
-
-- Building geometry and materials
-- Window properties and shading
-- Sky conditions and sun angles
-- Interior surface reflectances
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Radiance = ray-tracing for lighting (like video game graphics but for science)
-- Most accurate daylighting simulation available
-- Sky conditions: clear, overcast, intermediate - typhoon = extreme overcast
-- Common student question: "How accurate is accurate enough?"
-- Answer depends on decision stakes and alternatives being compared
-:::
-
-**Quick poll:** "Who has natural lighting concerns in their A1 claim?"
-
----
-
-### Simulation Tool Selection
-
-:::: {.columns}
-
-::: {.column width="50%"}
-**Beginner-Friendly:**
-
-- EnergyPlus GUI interfaces
-- VELUX Daylight Visualizer
-- Climate Consultant
-- Simple web-based calculators
-:::
-
-::: {.column width="50%"}
-**Advanced Options:**
-
-- Grasshopper + Ladybug/Honeybee
-- Python scripting interfaces
-- Custom analysis workflows
-- Parametric optimization
-:::
-
-::::
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Reassure beginners: "GUI interfaces are perfectly valid for research"
-- Advanced ≠ better, just different capabilities
-- Choice factors: learning time vs. semester timeline
-- Most important: understanding what the tool is doing, not mastering interface
-- Suggest: start simple, add complexity only if needed
-:::
-
-**Reality check question:** "How much time can you realistically spend learning new software this semester?"
-
----
-
-## Simulation Best Practices
-
-**Start simple:**
-
-- Use default values for secondary parameters
-- Focus on key design variables
-- Validate with known cases
-
-**Document everything:**
-
-- Model assumptions and simplifications
-- Input parameter sources
-- Version numbers and settings
-
----
-
-**Check results:**
-
-- Do outputs make physical sense?
-- Compare to benchmarks or rules of thumb
-- Identify sensitivity to key assumptions
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- "Start simple" = biggest student challenge (perfectionism)
-- "Document everything" = future you will thank present you
-- Common sanity checks: building using more energy in winter? Daylight coming from north?
-- Benchmarks: ASHRAE standards, local building codes, similar buildings
-- Version numbers matter: software updates can change results
-:::
-
-**Sanity check exercise:** "If your simulation showed a house using NO energy in winter, what would you check first?"
-
----
-
-## Test Design Workshop
-
----
-
-### Individual Workshop: Design Your Test (10min)
-
-Using your A1 decision claim, draft:
-
-1. **Specific hypothesis** - what exactly are you predicting?
-2. **Test approach** - proxy, preset, or hybrid method?
-3. **Key variables** - what will you compare or vary?
-4. **Success metrics** - how will you measure outcomes?
-5. **Potential challenges** - what could go wrong?
-
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Give students handout with these questions
-- Circulate and help with specific hypothesis wording
-- Watch for: vague predictions, unmeasurable outcomes, scope too broad
-- Common challenges: time constraints, software learning, data access
-- Collect challenges in shared doc for later discussion
-- Keep energy up - this is hard thinking work!
-:::
-
-<!-- **Mid-way check-in:** "Ping me into break-out room if you're struggling with measurable outcomes" -->
-
----
-
-### Speed Peer Review (Breakout rooms)
-
-**Musical chairs (but random draw) format (3 rounds x 5 minutes):**
-
-Exchange test plans and provide feedback:
-
-- **Round 1:** Is the hypothesis testable with the proposed method?
-- **Round 2:** Are the variables and metrics appropriate?
-- **Round 3:** What assumptions might need validation?
-
-**Group synthesis:** Common patterns and solutions
-
----
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Set up chairs in circle, move clockwise each round
-- Ring bell/timer for rotations - be strict about timing
-- Give specific prompts for each round (post on screen)
-- Round 1 focus: "Can you actually test this with proposed method?"
-- Round 2 focus: "Are success metrics specific enough?"
-- Round 3 focus: "What could mess up the results?"
-- Final 5 min: collect insights from whole group
-:::
-
-**Synthesis questions:**
-
-- "What patterns do you see in the challenges people are facing?"
-- "Who got helpful advice they want to share?"
-- "What's the biggest 'aha' moment from peer feedback?"
-
-
----
-
-### Common Test Design Challenges
-
-**Scope creep:**
-
-- Trying to test too many variables at once
-- Expanding beyond semester constraints
-- Perfect vs. good enough analysis
-
-**Method mismatch:**
-
-- Complex tools for simple questions
-- Simple tools for complex questions
-- Unfamiliar software with steep learning curves
-
----
-
-**Validation gaps:**
-
-- No way to check if results make sense
-- Missing baseline or comparison cases
-- Insufficient documentation for replication
-
-::: {.notes}
-
-**Speaker Cheat Sheet:**
-
-- These are THE most common issues every semester
-- Scope creep: students want to test everything - focus them on ONE key variable
-- Method mismatch: help students match method complexity to question complexity
-- Validation gaps: emphasize comparison cases, not absolute accuracy
-- Share examples from shared document of challenges students identified
-:::
-
-**Prevention strategies discussion:** "How can you avoid these pitfalls in your A3 planning?"
-
----
-
-
-
-## A3 Development Strategy
-
----
-
-### A3 Structure Preview
-
-**Part 1: Research Design**
-
-- Refined research questions and hypotheses
-- Method selection and justification
-- Data collection protocol
-- Analysis plan
-
-**Part 2: Pilot Implementation**
-
-- Small-scale test of your method
-- Documentation of what worked/didn't work
-- Refined approach based on pilot learning
-
----
-
-### Pilot Study Planning
-
-**Purpose of pilot testing:**
-
-- Validate that your method actually works
-- Identify unexpected challenges
-- Refine protocols and procedures
-- Estimate time and resource requirements
-
-**What to pilot:**
-
-- Data collection procedures
-- Software workflows
-- Analysis approaches
-- Documentation systems
-
----
-
-### Time Management for A3
-
-**Week 3 (this week):**
-
-- Finalize research design approach
-- Set up software and tools
-- Plan pilot study scope
-
-**Week 4:**
-
-- Conduct pilot testing
-- Document challenges and solutions
-- Refine method based on learning
-
----
-
-**Week 5:**
-
-- Complete A3 writeup
-- Submit test plan + pilot results
-
----
-
-## Next Steps
-
----
-
-### This Week's Tasks
-
-1. **Wrap up A2 literature review** - target 15+ sources
-2. **Set up computational tools** - download and test basic functionality
-3. **Draft A3 research design** - hypothesis, methods, analysis plan
-4. **Plan pilot study** - what will you test and how?
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Emphasize: pilot study = small test of your method, not full research
-- A2 target: quality over quantity, but 15+ shows you've done thorough search
-- Tool setup: even if you don't use it, understand what it does
-- A3 draft: doesn't need to be perfect, just needs to be testable
-- Remind: office hours available for individual consultation
-:::
-
-**Planning check:** "What's your biggest obstacle to starting A3 this week?"
-
----
-
-### Office Hours Focus
-
-**Research design consultation:**
-
-- Method selection and justification
-- Pilot study scope and feasibility
-- Software setup and troubleshooting
-- Integration with A2 literature findings
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Book office hours appointments soon - spots fill up quickly before A3 due date
-- Come with specific questions, not just "I'm stuck"
-- Bring: A1 claim, A2 progress, draft A3 outline
-- Most helpful: "I'm choosing between X and Y approaches because..."
-- Can't do: write your assignment for you, Can do: help you think through decisions
-:::
-
-**Encouragement:** "Office hours are for helping you think through decisions, not for giving you answers"
-
----
-
-### Week 4 Preview
-
-**Sensitivity & Peer Check**
-
-- Understanding how results change with assumptions
-- Uncertainty analysis and confidence intervals
-- Peer review of research approaches
-- A2 Evidence Map submission
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Next week = A2 due date (remind students!)
-- Sensitivity analysis = "what if your assumptions are wrong?"
-- Confidence intervals = "how certain can you be?"
-- Peer review = structured feedback on draft A3 approaches
-- Emphasize: come prepared with A2 nearly complete
-:::
-
-**Looking ahead:** "What questions about uncertainty keep you up at night regarding your testing approach?"
-
----
-
-## Discussion Questions
-
-- How do you decide between proxy and preset approaches?
-- What aspects of your research design feel most uncertain?
-- What would convince you that your test results are reliable?
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Use these if you have extra time or need to fill gaps
-- First question: good for wrapping up method selection discussion
-- Second question: leads into next week's uncertainty topic
-- Third question: gets at validation and credibility concerns
-- Can also use as small group discussion if energy is low
-:::
-
-**Alternative framing:** "Let's end with one final reflection - turn to someone near you and discuss..."
-
----
-
-## Key Takeaways
-
-1. **Choose testing approach** based on question, resources, and timeline
-2. **Pre-register your approach** to ensure transparent, credible research
-3. **Start simple** with simulation tools - focus on key relationships
-4. **Plan to pilot** - small tests prevent big failures
-5. **Document everything** - your future self will thank you
-
-::: {.notes}
-**Speaker Cheat Sheet:**
-
-- Emphasize these are the 5 most important points from today
-- #1: No "right" choice, just informed choices
-- #2: Decide success criteria before seeing results
-- #3: Resist perfectionism, focus on key variables
-- #4: Pilot = mini-test of your method, not full study
-- #5: Documentation enables replication and builds credibility
-- End on encouraging note about A3 development
-:::
-
-**Final question:** "Which of these takeaways feels most challenging for your A3 planning?"
-
----
-
-*Next week: Testing your tests - sensitivity analysis and peer review*
+- keep the logic clean
+- tie the table to a real decision
+- avoid decorative charts
+- document what the spreadsheet cannot tell you

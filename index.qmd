@@ -1,149 +1,152 @@
 ---
 title: "ARCH7476: Evidence-Based Generative Design"
-subtitle: "Data-Driven Decision Making in Architecture"
-format: 
+subtitle: "Tool Pathways for Studio Decisions"
+format:
   html:
     toc: true
 ---
 
 ## Course Overview
 
-**ARCH7476: Evidence-Based Generative Design** explores how architects can make better design decisions through systematic data collection, analysis, and interpretation. This course bridges the gap between intuitive design thinking and empirical evidence, preparing students to justify design choices with quantitative and qualitative data.
+**ARCH7476** is a mixed-cohort course for architecture students who need a clearer way to move from intuition to evidence. The course now starts by making the tool landscape explicit, then asks each student to choose one primary pathway for the semester:
 
-### Course Philosophy
+- **Spreadsheet** for transparent low-code comparison, charting, and decision matrices
+- **GIS** for spatial evidence, map-based reasoning, and geospatial workflows
+- **Python** for notebook-based analysis, scripting, and reproducible evidence building
 
-> "Generative design is not magic" — it requires evidence, testing, and systematic evaluation.
+The course keeps **BIM/BEM and building performance** as shared literacy for everyone, but the assessed semester pathway is chosen from `spreadsheet`, `GIS`, or `Python`.
 
-Modern architectural practice increasingly demands evidence-based decision making. Whether optimizing building performance, validating design assumptions, or communicating with clients and stakeholders, architects need skills in data collection, analysis, and presentation.
+## What Students Leave With
 
-### Learning Outcomes
+By the end of the semester, students will be able to:
 
-By the end of this course, students will be able to:
+1. Frame a design decision as an evidence problem rather than a vague preference
+2. Audit what counted as evidence in a prior project and identify missing evidence
+3. Choose a tool pathway that actually fits the decision being made
+4. Run one primary workflow with enough independence to keep using it after the course
+5. Communicate findings with clear limits, confidence, and next steps for studio or practice
 
-1. **Frame architectural problems** as testable research questions
-2. **Collect and analyze data** relevant to design decisions
-3. **Design and conduct tests** to evaluate design alternatives
-4. **Communicate findings** effectively to diverse audiences
-5. **Document workflows** for reproducible design research
-6. **Apply ethical frameworks** to data collection and use in architecture
+## Mixed-Cohort Design
 
-### Mixed Audience Approach
+This course is designed for **undergraduates**, **MArch students**, and occasional **PhD students** in the same room.
 
-This course serves students across different programs:
+| Student level | What stays common | What scales by level |
+|---|---|---|
+| Undergraduate | Same weekly structure and assignments | More scaffolding, narrower scope, simpler analysis |
+| MArch | Same weekly structure and assignments | Stronger stakeholder fit, more independence, practice-ready outputs |
+| PhD | Same weekly structure and assignments | Higher rigor, deeper uncertainty treatment, stronger reproducibility |
 
-- **MArch students**: Focus on practical design decision memos and real-world applications
-- **Undergraduate students**: Guided scaffolding with low-code tools and preset simulations
-- **PhD students**: Deeper engagement with uncertainty analysis, reproducibility, and advanced workflows
+The difference is **depth and independence**, not separate coursework.
 
-All students produce equivalent deliverables, but technical depth and methodological rigor flex according to experience and program requirements.
+## Semester Structure
 
-## Course Structure
+### Phase 1: Survey the Landscape
 
-### Core Assignments
+Weeks 1-5 introduce the tool families and the decisions they support:
 
-The course centers around four major assignments that build toward a comprehensive research brief:
+- spreadsheet workflows for comparison and traceable reasoning
+- GIS alternatives: `QGIS`, `ArcGIS`, and `geopandas`
+- notebook workflows in `Jupyter`
+- BIM/BEM and simulation literacy
 
-**A1: Decision Claim** (Week 2)
-: Identify a design object and articulate a testable claim about its performance or impact.
+### Phase 2: Choose a Pathway
 
-**A2: Evidence Map** (Week 4)  
-: Map existing evidence and identify gaps requiring new data collection.
+By the middle of the semester, each student formally chooses one primary pathway and uses it to:
 
-**A3: Test Plan + Pilot** (Week 5)
-: Design and pilot a systematic test of your design claim.
+- define evidence sources
+- prototype a method
+- run a pilot workflow
+- build a studio-facing evidence package
 
-**A4: Final Package** (Week 12)
-: Complete research brief including Practice Case, Object Card, and Reproducibility Capsule.
+### Phase 3: Apply It to Studio
 
-### Pedagogical Approach
+The back half of the semester focuses on:
 
-- **Learning by doing**: Each week combines conceptual frameworks with hands-on application
-- **Peer review**: Multiple opportunities for peer feedback and collaborative learning
-- **Mentor dialogue**: Mid-course consultation with external practitioners
-- **Public presentation**: Final "Object Fair" with invited critics
+- evidence quality and uncertainty
+- decision thresholds
+- visual communication
+- workflow documentation
+- transfer into the next studio project
 
-### Tools and Technology
+## Tool Pathways
 
-The course emphasizes **tool flexibility** rather than software mastery:
+### Spreadsheet Pathway
 
-**Low-code options**: Excel/Sheets, QGIS, preset simulations (Radiance/VELUX, EnergyPlus Simple Glazing)
+Best for students who need a strong, professional baseline without heavy setup.
 
-**Code-heavy options**: Python/Colab, GitHub workflows, custom analysis scripts
+- organize precedent and observation data
+- compare alternatives
+- build uncertainty-aware charts
+- produce decision matrices and summary tables
 
-**Universal tools**: Visualization software, presentation platforms, documentation systems
+### GIS Pathway
 
-## Schedule at a Glance
+Best for site analysis, urban context, access, zoning, and spatial comparison.
 
-| Week | Focus | Key Activity | Deliverable |
-|------|-------|--------------|-------------|
-| 1 | Why Evidence Matters | Course introduction, seed ideas | Draft A1 concept |
-| 2 | Finding and Framing Data | Data sources, ethics | **Submit A1** |
-| 3 | Planning a Test | Test design, pre-registration | Draft A3 plan |
-| 4 | Sensitivity & Peer Check | Uncertainty analysis | **Submit A2** |
-| 5 | Pilot Week | Conduct pilot test | **Submit A3** |
-| 6 | Making Results Readable | Data visualization | Draft A4 figures |
-| 7 | Decide with Numbers | Thresholds, peer review | Revise A4 |
-| 8 | Light Workflow Help | Documentation, mentor consults | Mentor Report |
-| 9 | Storytelling & Figures | Practice Case narrative | Polish A4 |
-| 10 | Draft Defense | In-class presentations | Feedback integration |
-| 11 | Final Polish | Final revisions | Near-final A4 |
-| 12 | Object Fair | Final presentations | **Submit A4 Final** |
+- learn when `QGIS` is the fastest choice
+- understand where `ArcGIS` fits in practice
+- run a minimal code-based workflow in `geopandas`
+- connect map outputs back to architectural decisions
 
-## Key Course Materials
+### Python Pathway
 
-### Machine Learning & Python Resources
+Best for students who need more automation, reuse, or analytical control.
 
-**Recent Additions:**
-
-- **[ML for Architecture Primer](data/ML_for_Architecture_Combined.pdf)** (PDF) — Foundational concepts in machine learning for design applications
-- **[ML to Python Overview Slides](lectures/ml-to-python-overview.html)** — Interactive lecture connecting theory to practice
-
-**Python Notebooks:**
+- work in `Jupyter Notebook`
+- use `pandas` and plotting for evidence building
+- adapt the provided notebooks to project-specific data
+- document a reproducible workflow others can inspect
 
 ::: {.callout-note}
-## How to Access the Notebooks
+## Why Spreadsheet Matters
 
-**Option 1: Download from Course Repository**
-
-Download the notebooks from the course GitHub repository (link on Slack) in the `notebooks/` folder:
-
-- `01_python_ml_basics.ipynb` — Python fundamentals, regression, classification, and overfitting
-- `02_arch_viz_analysis.ipynb` — Data visualization and pilot study analysis for A3/A4
-
-**Option 2: Google Colab** (No installation required!)
-
-Open directly in Google Colab and make a copy to your Drive:
-
-- [Open ML Basics Notebook in Colab](https://colab.research.google.com/) → Upload `01_python_ml_basics.ipynb`
-- [Open Visualization Notebook in Colab](https://colab.research.google.com/) → Upload `02_arch_viz_analysis.ipynb`
-
-**Option 3: Google Drive**
-
-All notebooks and sample data are available in the shared Google Drive folder (link posted on Slack and in lecture slides).
+`Spreadsheet` is the baseline exit pathway for the course. It is not remedial. It is the lowest-friction route to a credible, transparent, decision-ready workflow, and a student can complete the course very well through it.
 :::
 
-::: {.callout-tip}
-## For Python Beginners
-Start with the visualization notebook (`02_arch_viz_analysis.ipynb`) to get comfortable with data manipulation and plotting before diving into ML concepts.
+## Local Visual Example Bank
+
+The rebuilt course uses downloaded case-study images stored locally so the site does not depend on fragile remote URLs.
+
+:::: {.columns}
+::: {.column width="50%"}
+![The Edge, Amsterdam: a useful case for workplace performance and systems claims](assets/examples/the-edge-amsterdam.jpg)
+
+![High Line, New York: a useful case for public-space observation and GIS framing](assets/examples/high-line-park.jpg)
 :::
 
-## Getting Started
+::: {.column width="50%"}
+![California Academy of Sciences: a useful case for environmental performance and envelope claims](assets/examples/california-academy-of-sciences.jpg)
 
-### Preparation
+![Kai Tak Sports Park: a local case for site, access, and urban evidence questions](assets/examples/kai-tak-sports-park.jpg)
+:::
+::::
 
-Before our first meeting:
+Source metadata is stored in `assets/examples/sources.csv`.
 
-1. **Review the syllabus** and assignment descriptions
-2. **Install basic tools**: Spreadsheet software, QGIS (free)
-3. **Identify a potential design object** for your semester-long investigation
-4. **Read**: Selected excerpts from *The Craft of Research* (available on course site)
+## Assignment Arc
 
-### Questions?
+| Assignment | Due | Weight | Purpose |
+|---|---:|---:|---|
+| [A1: Evidence Audit + Next Decision Brief](assignments/assignment-01.qmd) | Week 2 | 15% | Audit a prior decision and define evidence needed for the next studio decision |
+| [A2: Evidence and Pathway Map](assignments/assignment-02.qmd) | Week 6 | 20% | Map evidence sources, compare tools, and choose a primary pathway |
+| [A3: Method Prototype](assignments/assignment-03.qmd) | Week 8 | 25% | Build and test a pilot workflow in the chosen pathway |
+| [A4: Studio Evidence Package](assignments/assignment-04.qmd) | Week 12 | 40% | Deliver a studio-facing decision brief with pathway artifact and method appendix |
 
-- Check the [Resources](resources.qmd) page for software installation guides
-- Review [Assignment Details](assignments.qmd) for complete rubrics and timelines
-- Browse the [Weekly Schedule](schedule.qmd) for detailed session plans
+## Setup Guidance
 
----
+### Everyone
 
-*This course website is built with [Quarto](https://quarto.org) and hosted via GitHub Pages. Source code available on [GitHub](https://github.com/).*
+- spreadsheet software: Excel or Google Sheets
+- browser access to course materials and downloads
+
+### If You Choose GIS or Python
+
+- `Jupyter Notebook` as the main notebook interface
+- `Anaconda` or `Miniconda` as the supported local Python environment
+- `Google Colab` as the no-install fallback
+
+See [Resources](resources.qmd) for the setup ladder and tool chooser.
+
+## Course Position
+
+This course is not trying to turn every architecture student into a software specialist. It is trying to make tool choice, evidence quality, and decision logic explicit enough that students can justify design moves with more than instinct.

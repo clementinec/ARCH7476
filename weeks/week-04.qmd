@@ -1,835 +1,119 @@
 ---
-title: "Week 4: Sensitivity & Peer Check"
-subtitle: "Understanding Uncertainty and Validation"
-format: 
+title: "Week 4: GIS Choices for Architects"
+subtitle: "QGIS, ArcGIS, geopandas, and the Jupyter Setup Ladder"
+format:
   revealjs:
-    theme: serif
-    transition: fade
+    theme: simple
+    transition: slide
     slide-number: true
     incremental: true
+    width: 1500
+    height: 900
     center: true
-    width: 1600
-    height: 1200
 ---
 
 ## Today's Agenda
 
-- A2 Evidence Map presentations
-- **The Stakeholder Reality Check** - lessons from A1
-- Stakeholder engagement frameworks
-- Defining measurable success for community-facing design
-- Sensitivity analysis for social outcomes
-- Peer review workshop with stakeholder lens
-- Building trust through transparent uncertainty communication
+- GIS is not one thing
+- compare QGIS, ArcGIS, and geopandas
+- understand Jupyter, Anaconda, Miniconda, and Colab
+- run a minimal code-based GIS workflow
+- decide whether GIS should be your pathway
 
 ---
 
-## A2 Evidence Map Gallery Walk (Almost ready?)
+## A GIS Question Looks Like This
 
-**Format:** 5-minute poster presentations (Self)
-
-- Step 1: Record yourself presenting on camera
-- Step 2: Listen to yourself presenting in the video
-
-**What to listen for:**
-
-- What evidence gaps are most critical?
-- Where do sources contradict each other?
-- What methods show most promise?
-- What contextual factors matter most?
+- which site is better connected?
+- what falls within a walkable radius?
+- how do zoning, topography, and transit overlap?
+- what is the spatial trade-off between access and environmental exposure?
 
 ---
 
-## The Stakeholder Reality Check
+## Three GIS Paradigms
 
-*Lessons from A1: Decision Claims*
-
----
-
-### What We Observed in A1
-
-**The Good:**
-
-- Creative design objects with clear potential
-- Strong technical focus and performance awareness
-- Genuine interest in evidence-based design
-
-**The Gap:**
-
-- "Community engagement" without community voices
-- Studio briefs mention "users" but no contact plan
-- Metrics missing entirely, or too vague to measure
-- Stakeholders identified but not **actually engaged**
+| Tool | Best for | Typical strength | Typical weakness |
+|---|---|---|---|
+| QGIS | quick exploration and map production | visual and forgiving | less reproducible |
+| ArcGIS | enterprise / professional ecosystems | collaboration and platform depth | licensing and overhead |
+| geopandas | notebook-based spatial analysis | reproducible and scriptable | steeper setup |
 
 ---
 
-### The "Community Engagement" Trap
+## Why `geopandas` Matters Here
 
-::: {.callout-warning icon=false}
-## The Engagement Trap: A Common Pattern
-This scenario plays out repeatedly in community-facing projects: Architects conduct "community workshops" asking what spaces people want, then design accordingly.
+The course needs one concrete code-GIS reference point.
 
-**The missing piece:** No one defines what "success" looks like or how it will be measured.
+That reference point is:
 
-**Typical result:** Beautiful buildings that don't get used as intended because the engagement process focused on preferences, not performance criteria.
-
-**Real examples:** Post-occupancy studies consistently show that community buildings designed through consultation alone often underperform compared to those that establish shared success metrics upfront.
-:::
-
-**The lesson:** Engagement isn't just asking opinions—it's building shared metrics for success.
+- `geopandas`
+- in `Jupyter Notebook`
+- beside `pandas` and simple plotting
 
 ---
 
-### Studio Projects vs. Real Stakeholders
+## The Setup Ladder
 
-**Your current studio brief probably says:**
-
-- "Design for the community"
-- "Consider user needs"
-- "Engage with local context"
-
-**But ask yourself:**
-
-- Who exactly is "the community"? Demographics/Interests/Socio-economics?
-- What do they actually need evidence about? Accessibility/Acoustic/Thermal Comfort/Lighting?
-- How would **they** measure if your design succeeds?
-- When was the last time you talked to them?
+- `Anaconda` / `Miniconda` = local Python environment
+- `Jupyter Notebook` = interactive notebook interface
+- `geopandas` = spatial analysis library
+- `Google Colab` = browser fallback if local setup is not ready
 
 ---
 
-## Stakeholder Mapping for Real Projects
+## Minimal `geopandas` Workflow
+
+```python
+import geopandas as gpd
+
+sites = gpd.read_file("candidate_sites.geojson")
+sites = sites.to_crs(3857)
+sites["buffer_400m"] = sites.buffer(400)
+sites.plot()
+```
+
+The point is not the syntax alone. The point is the structure:
+
+- load
+- inspect
+- project
+- operate
+- visualize
 
 ---
 
-### The Stakeholder Ecosystem
+## Example Prompt
 
-**Power/Interest Grid Exercise**
+![Kai Tak Sports Park as a site/context example](../assets/examples/kai-tak-sports-park.jpg){height="450"}
 
-:::: {.columns}
+Possible GIS questions:
 
-::: {.column width="50%"}
-**High Power, High Interest**
-
-- Decision makers
-- Funding bodies
-- Primary users
-
-*These are your champions or biggest obstacles*
-:::
-
-::: {.column width="50%"}
-**High Interest, Low Power**
-
-- End users
-- Community groups
-- Future occupants
-
-*These are your insight sources*
-:::
-
-::::
-
-**Key insight:** Different stakeholders need different evidence, presented differently.
+- transit access
+- event-day catchments
+- surrounding land-use conflicts
+- neighborhood service overlap
 
 ---
 
-### Stakeholder Engagement Methods
+## When GIS Is the Right Pathway
 
-**Level 1: Research Stakeholders** *(most A1 projects are here)*
+Choose GIS if your evidence depends on:
 
-- Literature review of user needs
-- Precedent studies of similar projects
-- Assumptions about what matters
+- location
+- proximity
+- overlap
+- boundaries
+- movement through space
 
-**Level 2: Consult Stakeholders** *(where you should be)*
-
-- Direct interviews about priorities
-- Surveys about current challenges
-- Observation of existing behaviors
+Do not choose GIS just because maps look persuasive.
 
 ---
 
-**Level 3: Collaborate with Stakeholders** *(advanced projects)*
+## Today’s Decision
 
-- Co-design workshops
-- Iterative feedback loops
-- Shared measurement frameworks
+By the end of this week, you should know:
 
----
-
-### Converting Studio Briefs to Stakeholder Questions
-
-::: {.callout-tip icon=false}
-## Exercise: Reframe Your Brief
-
-**Instead of:** "Design affordable housing for young professionals"
-
-**Ask:**
-
-- What do young professionals actually spend money on vs. save on?
-- What housing features would they trade off for location/cost?
-- How do they currently find and evaluate housing options?
-- What would make them stay in a neighborhood long-term?
-:::
-
-**The shift:** From designing FOR stakeholders to designing WITH stakeholder evidence.
-
----
-
-## Metrics That Matter to Real People
-
----
-
-### The Measurement Problem
-
-**Common in A1:**
-
-- "User satisfaction will improve"
-- "Community engagement will increase"
-- "The space will be well-used"
-
-**Missing:**
-
-- How exactly will you measure this?
-- What counts as "improvement"?
-- Who decides if it's working?
-
----
-
-### Three Types of Stakeholder Metrics
-
-**1. Outcome Metrics** *(What stakeholders ultimately care about)*
-
-- Property values, health outcomes, social cohesion
-- Hard to measure, but highest impact
-
-**2. Process Metrics** *(How the design affects daily experience)*
-
-- Usage patterns, maintenance costs, comfort levels
-- Measurable, directly linked to design decisions
-
----
-
-**3. Perception Metrics** *(How stakeholders feel about the design)*
-
-- Satisfaction surveys, preference studies, sense of ownership
-- Subjective but essential for adoption
-
----
-
-### Real Metrics for MArch Studio Projects
-
-::: {.callout-note icon=false}
-## Example: Community Library Renovation
-
-**Instead of:** "The design will better serve the community"
-
-**Specific metrics:**
-
-- **Usage:** Hours of operation possible with new lighting/HVAC
-- **Access:** % of collection accessible to mobility-impaired users
-- **Programming:** Number of simultaneous activities the space can support
-- **Maintenance:** Annual cleaning/repair hours required
-- **Community ownership:** % of local residents who can name one thing they like about the space
-:::
-
----
-
-### Metrics You Can Actually Measure (This Semester)
-
-**Spatial Analysis:**
-
-- Square footage efficiency, circulation distances
-- Natural light levels, acoustic performance
-- Storage capacity, flexibility configurations
-
-**User Behavior Observation:**
-
-- Space utilization patterns, dwell times
-- Movement flows, gathering locations
-- Peak usage times, conflict points
-
----
-
-**Stakeholder Surveys:**
-
-- Preference rankings, trade-off priorities
-- Current frustrations, unmet needs
-- Success criteria and deal-breakers
-
----
-
-## Understanding Sensitivity
-
-*But now with a stakeholder lens*
-
----
-
-### What is Sensitivity Analysis?
-
-**Testing how results change** when you vary input assumptions, parameters, or methods.
-
-**Purpose:**
-
-- Understand which factors matter most to **different stakeholders**
-- Identify robust vs. fragile conclusions **across stakeholder priorities**
-- Guide data collection priorities **based on stakeholder concerns**
-- Communicate confidence appropriately **to build stakeholder trust**
-
-**The stakeholder dimension:** Same design change can be "successful" to some stakeholders, "problematic" to others.
-
----
-
-### Types of Sensitivity
-
-**Parameter sensitivity:**
-
-- How do results change with different input values?
-- Which parameters have the largest impact **on stakeholder priorities**?
-
-**Method sensitivity:**
-
-- Do different analysis approaches give similar results?
-- How do modeling choices affect conclusions **stakeholders draw**?
-
-
----
-
-**Stakeholder sensitivity:** *(New dimension for A3)*
-
-- Do findings hold across different stakeholder groups?
-- What factors matter most to which stakeholders?
-- Where do stakeholder priorities conflict?
-
-**Context sensitivity:**
-
-- Do findings hold across different buildings, climates, user groups?
-- What local factors might change the results?
-
----
-
-### Example: Window Performance Analysis
-
-**Key parameters to test:**
-
-- Window-to-wall ratio (30%, 40%, 50%, 60%)
-- Glass type (single, double, low-e, tinted)
-- Orientation (north, south, east, west)
-- Shading (none, overhangs, side fins, both)
-
-**Traditional sensitivity questions:**
-
-- Which parameter has the biggest energy impact?
-- Do rankings change across different climates?
-- How sensitive are results to occupancy assumptions?
-
----
-
-**Stakeholder sensitivity questions:**
-
-- Do developers care more about construction cost or operating cost?
-- How do occupant preferences vary by age/culture/work style?
-- Which factors matter most to building managers vs. tenants?
-
----
-
-### Real Example: The View vs. Comfort Dilemma
-
-::: {.callout-important icon=false}
-## Case Study: Hong Kong Office Tower
-
-**Technical analysis:** South-facing windows cause overheating, reduce energy efficiency
-
-**Stakeholder analysis:**
-
-- **Tenants:** Want prestigious views, willing to pay premium
-- **Property manager:** Worried about cooling costs and complaints
-- **Sustainability consultant:** Focused on energy performance
-- **Developer:** Wants maximum rentable premium space
-
-**Sensitivity insight:** Solution depends entirely on whose priorities dominate the decision.
-:::
-
----
-
----
-
-## Uncertainty Quantification
-
----
-
-### Sources of Uncertainty
-
-**Measurement uncertainty:**
-
-- Sensor accuracy and calibration
-- Sampling limitations and bias
-- Missing or incomplete data
-
-**Model uncertainty:**
-
-- Simplified physics and assumptions
-- Parameter estimation errors
-- Validation limitations
-
----
-
-**Context uncertainty:**
-
-- Different building types, climates, users
-- Changing conditions over time
-- Scaling from specific to general cases
-
----
-
-### Expressing Uncertainty
-
-**Confidence intervals:**
-
-- "Energy savings: 15-25% (95% confidence)"
-- Range that likely contains true value
-
-**Sensitivity ranges:**
-
-- "Results vary from 10-30% depending on occupancy assumptions"
-- Shows impact of key uncertainties
-
-**Scenario analysis:**
-
-- Best case, worst case, most likely outcomes
-- "Under optimistic assumptions... under conservative assumptions..."
-
----
-
-### Uncertainty Communication
-
-:::: {.columns}
-
-::: {.column width="50%"}
-**Good practices:**
-
-- Report ranges, not point estimates
-- Explain sources of uncertainty
-- Use error bars or confidence bands
-- Acknowledge limitations explicitly
-:::
-
-::: {.column width="50%"}
-**Avoid:**
-
-- False precision (e.g., "23.7% savings")
-- Hiding uncertainty or limitations
-- Overconfident claims from limited data
-- Ignoring context sensitivity
-:::
-
-::::
-
----
-
-## Community Engagement Planning Framework
-
-*Moving from "engaging communities" to measurable engagement*
-
----
-
-### The Engagement Spectrum
-
-**Information Sharing** *(Where most projects start)*
-
-- Present design to community
-- Share technical analysis results
-- Explain why decisions were made
-
-**Consultation** *(Where most projects think they are)*
-
-- Ask for community opinions
-- Survey preferences and concerns
-- Hold public meetings and workshops
-
-**Collaboration** *(Where evidence-based projects should be)*
-
-- Co-define success metrics with community
-- Shared data collection and analysis
-- Joint interpretation of results
-
----
-
-### Building Your Engagement Plan
-
-::: {.callout-tip icon=false}
-## The 5-Question Framework
-
-1. **Who** specifically needs to be engaged? (Names, not categories)
-2. **What** decisions do they influence? (Specific choices, not general input)
-3. **When** in your process do they need to be involved? (Before/during/after analysis)
-4. **How** will you measure successful engagement? (Evidence of influence on your work)
-5. **Why** should they participate? (What's in it for them)
-:::
-
-**Key insight:** Community engagement is a research method, not just a requirement.
-
----
-
-### Practical Engagement for A3 Projects
-
-**Before you design:**
-
-- Interview 3-5 stakeholders about current challenges
-- Observe how they currently use similar spaces
-- Document their success criteria and concerns
-
-**During design development:**
-
-- Test key assumptions with stakeholder feedback
-- Share preliminary analysis results for validation
-- Iterate based on stakeholder priorities
-
-**After initial analysis:**
-
-- Present findings in stakeholder-friendly formats
-- Get feedback on interpretation and implications
-- Plan implementation strategies together
-
----
-
-## Peer Review Workshop
-
-*Now with stakeholder accountability*
-
----
-
-### Peer Review Purpose
-
-**For authors:**
-
-- Identify blind spots and weaknesses
-- Get feedback from different perspectives
-- Practice explaining complex methods
-- Build confidence through validation
-
-**For reviewers:**
-
-- Learn from others' approaches
-- Develop critical evaluation skills
-- Practice professional feedback
-- Contribute to collective learning
-
----
-
-### Review Structure
-
-**Phase 1: Method exchange** (15 minutes)
-
-- Present your A3 research design to partner
-- Focus on approach, not results
-- Ask clarifying questions about method
-
-**Phase 2: Stakeholder reality check** (10 minutes)
-
-- Who are your actual stakeholders? (Names, not categories)
-- How will you measure success from their perspective?
-- What evidence would convince them to change their practice?
-
----
-
-**Phase 3: Critical feedback** (10 minutes)
-
-- What assumptions need testing?
-- What could go wrong with this approach?
-- What alternative explanations exist?
-- How could the method be strengthened?
-
----
-
-### Effective Peer Review
-
-**Be specific:**
-
-- "Consider testing occupancy sensitivity" vs. "Think about assumptions"
-- Point to particular sections or claims
-- Suggest concrete improvements
-
-**Be constructive:**
-
-- Identify both strengths and areas for improvement
-- Suggest solutions, not just problems
-- Focus on helping the research succeed
-
-**Be professional:**
-
-- Critique the work, not the person
-- Use "I" statements: "I'm unclear about..." 
-- Acknowledge limitations of your own expertise
-
----
-
-### Review Checklist
-
-**Research design clarity:**
-
-- Are research questions specific and testable?
-- Is the method appropriate for the questions?
-- Are key assumptions stated explicitly?
-
-**Stakeholder connection:**
-
-- Are stakeholders real people with names/contact info?
-- Do you know what evidence would convince them?
-- Have you planned concrete engagement activities?
-
----
-
-**Measurement specificity:**
-
-- Can you measure what you claim to be testing?
-- Do your metrics match stakeholder priorities?
-- Do you have realistic success criteria?
-
-**Feasibility assessment:**
-
-- Can this actually be completed this semester?
-- Are required resources available?
-- Are technical skills realistic?
-
-**Validity concerns:**
-
-- What factors might confound results?
-- How will quality be ensured?
-- What are the main limitations?
-
----
-
-## Data Visualization for Uncertainty
-
----
-
-### Showing Variability
-
-**Error bars:**
-
-- Standard deviation or confidence intervals
-- Shows uncertainty around point estimates
-- Good for comparing multiple alternatives
-
-  <span class="tooltip-image">
-    ![](https://data.europa.eu/apps/data-visualisation-guide/Visualising%20uncertainty%208aa5c9e663864767aaa41986a5a6f96c/bars-with-error-bars.png)
-  </span>
-
----
-
-**Box plots:**
-
-- Shows distribution shape, outliers, quartiles
-- Good for comparing groups or conditions
-- Reveals data quality issues
-<span class="tooltip-image">
-![](https://www.simplypsychology.org/wp-content/uploads/box-whisker-plot.jpg)</span>
-
----
-
-**Scatter plots with trend lines:**
-
-- Shows relationship strength and variability
-- Confidence bands around regression lines
-- Individual data points visible
-
-<span class="tooltip-image">
-![](https://i.sstatic.net/xGqew.png){width=45%}
-![](https://r-charts.com/en/correlation/scatter-plot-regression-line_files/figure-html/smooth-regression.png){width=33%}
-</span>
----
-
-### Scenario Visualization
-
-**Tornado diagrams:**
-
-- Shows impact of different parameter assumptions
-- Horizontal bars showing sensitivity ranges
-- Quick identification of key variables
-<span class="tooltip-image">
-  ![](https://zebrabi.com/wp-content/uploads/2015/05/Population-pyramid-Slovenia-1951-2013-2053.png){width=100%}
-</span>
-
----
-
-**Scenario comparison charts:**
-
-- Best case, base case, worst case outcomes
-- Multiple bars or lines for different assumptions
-- Clear labeling of scenario definitions
-- Example Scenario Chart: Fig SPM1(a) from AR6 Synthesis Report, Climate Change 2023
-![](extentscenarios.png)
-
----
-
-### Uncertainty Communication Examples
-
-**Good:** "Energy savings range from 15-25% across different occupancy scenarios, with 20% most likely under typical conditions"
-
-**Bad:** "Energy savings are 19.7%"
-
-**Good:** "User satisfaction improved in 7 of 9 tested configurations (confidence: moderate)"
-
-**Bad:** "User satisfaction improved"
-
----
-
-## Excel/Sheets Uncertainty Analysis
-
----
-
-### Simple Sensitivity Analysis
-
-**Parameter tables:**
-
-- Vary one parameter across different values
-- Calculate outcomes for each scenario
-- Create charts showing relationships
-
-**Two-way tables:**
-
-- Vary two parameters simultaneously
-- Use conditional formatting for heat maps
-- Identify interaction effects
-- Give it a try at [Geekforgeeks](https://www.geeksforgeeks.org/excel/how-to-create-a-two-variable-data-table-in-excel/)
-
----
-
-### Monte Carlo in Spreadsheets
-
-**Basic approach:**
-
-- Use RAND() functions to generate input variations
-- Calculate many scenarios (100-1000 trials)
-- Analyze distribution of outcomes
-- Report percentiles or confidence intervals
-
-**Example application:**
-
-- Uncertain occupancy schedules
-- Variable weather conditions
-- Range of user preferences
-
----
-
-## Mini Case Study: Uncertainty in Practice
-
----
-
-### The Problem
-
-**Client question:** "Will this daylighting strategy work in our office building?"
-
-**Initial analysis:** Average daylight levels meet targets
-
-**Stakeholder complications emerged:**
-
-- **Facility manager:** Worried about glare complaints
-- **IT department:** Concerned about screen visibility
-- **HR:** Wants employee satisfaction data
-- **Sustainability team:** Focused on energy savings
-
-**Sensitivity analysis revealed:**
-
-- Results highly sensitive to furniture layout assumptions
-- Performance varies dramatically by floor and orientation
-- Weather variability creates 30% performance range
-- **Different stakeholders prioritized different metrics**
-
----
-
-### The Solution
-
-**Multi-stakeholder recommendation:**
-
-- Strategy works well on south-facing floors **with adjustable blinds** (facility manager)
-- North floors need supplementary electric lighting **but save energy overall** (sustainability)
-- Flexible furniture layouts essential **with user control options** (HR)
-- **Pilot testing on one floor first** to validate assumptions (all stakeholders)
-
-**Key insight:** Technical uncertainty was manageable; stakeholder uncertainty was the real challenge.
-
----
-
-## Looking Ahead: A3 Pilot Studies
-
----
-
-### Pilot Study Goals
-
-**Validate your method:**
-
-- Does your approach actually work?
-- Can you collect the data you planned?
-- Do results make sense?
-
-**Identify challenges:**
-
-- What takes longer than expected?
-- What skills/tools do you need?
-- Where do you need help?
-
-**Refine approach:**
-
-- What can be simplified?
-- What needs to be expanded?
-- How can quality be improved?
-
----
-
-### Pilot Study Scope
-
-**Keep it small:**
-
-- 1-2 test cases, not comprehensive analysis
-- Focus on method validation, not complete results
-- 2-3 hours of work maximum
-
-**Document everything:**
-
-- What you actually did vs. what you planned
-- Problems encountered and solutions tried
-- Time required for each step
-- Lessons learned and revisions needed
-
----
-
-### Next Week: Pilot Implementation
-
-**Monday-Wednesday:**
-
-- Conduct pilot studies
-- Document challenges and solutions
-- Revise methods based on learning
-
-**Class session:**
-
-- Pilot results sharing
-- Troubleshooting workshop
-- A3 finalization
-
----
-
-## Questions & Discussion
-
-- What aspects of your method feel most uncertain?
-- How might you test the sensitivity of your key assumptions?
-- **Who are your actual stakeholders and how will you engage them?**
-- **What specific metrics matter most to your stakeholders?**
-- What would increase your confidence in your results?
-
----
-
-## Key Takeaways
-
-1. **Identify real stakeholders with names and contact plans** - not just categories
-2. **Define specific, measurable success criteria** - that stakeholders actually care about
-3. **Test sensitivity across stakeholder priorities** - not just technical parameters
-4. **Build engagement into your research method** - not just consultation
-5. **Acknowledge uncertainty** - ranges build trust, false precision destroys it
-6. **Pilot with stakeholder feedback** - iterate based on their input
-
----
-
-*Next week: Putting methods into practice - pilot study implementation and troubleshooting*
+- whether GIS belongs in your short list
+- whether you prefer GUI-heavy or notebook-heavy work
+- whether `geopandas` feels manageable with support

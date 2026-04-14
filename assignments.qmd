@@ -1,129 +1,116 @@
 ---
 title: "Assignments Overview"
-subtitle: "Four Major Deliverables Building Toward a Research Brief"
-format: 
+subtitle: "Four Deliverables Built Around Tool Pathways"
+format:
   html:
     toc: true
 ---
 
 # Assignment Structure
 
-The course is organized around **four major assignments** that build systematically toward a comprehensive evidence-based design research brief. Each assignment scaffolds skills and knowledge needed for the next, culminating in a professional-quality research package.
+The course is organized around **four major assignments** that move from reflection to action:
+
+1. audit a prior decision
+2. choose a pathway for the next one
+3. prototype a method
+4. deliver a studio-facing evidence package
 
 ## Assignment Timeline
 
-| Assignment | Due Week | Weight | Focus |
-|------------|----------|---------|-------|
-| [A1: Decision Claim](assignments/assignment-01.qmd) | Week 2 | 15% | Problem framing |
-| [A2: Evidence Map](assignments/assignment-02.qmd) | Week 4 | 20% | Literature & gap analysis |
-| [A3: Test Plan + Pilot](assignments/assignment-03.qmd) | Week 5 | 25% | Method design & pilot |
-| [A4: Final Package](assignments/assignment-04.qmd) | Week 12 | 40% | Complete research brief |
+| Assignment | Due Week | Weight | Main question |
+|---|---:|---:|---|
+| [A1: Evidence Audit + Next Decision Brief](assignments/assignment-01.qmd) | Week 2 | 15% | What evidence did I really have before, and what evidence will I need next? |
+| [A2: Evidence and Pathway Map](assignments/assignment-02.qmd) | Week 6 | 20% | Which sources and which workflow best fit my question? |
+| [A3: Method Prototype](assignments/assignment-03.qmd) | Week 8 | 25% | Can I run a credible pilot workflow in my chosen pathway? |
+| [A4: Studio Evidence Package](assignments/assignment-04.qmd) | Week 12 | 40% | Can I turn this workflow into a decision-ready studio brief? |
 
-## Assignment Progression
+## The Three Primary Pathways
 
-### Building Knowledge Systematically
+Every student surveys the broader tool landscape, but each student completes the semester through **one primary pathway**:
 
-Each assignment builds directly on previous work:
+- **Spreadsheet**
+- **GIS**
+- **Python**
 
-**A1 → A2**: Your decision claim from A1 becomes the focus of your evidence mapping in A2
+`BIM/BEM` and simulation remain important shared literacy, but they are taught as common supporting knowledge rather than as the required semester-long primary pathway.
 
-**A2 → A3**: Gaps identified in A2 inform the testing approach designed in A3  
+## Mixed-Cohort Expectations
 
-**A3 → A4**: Pilot results from A3 guide the full analysis and recommendations in A4
+All students complete the same assignments. What changes by level is the expected **scope**, **rigor**, and **independence**.
 
-### Accommodating Different Backgrounds
+| Level | Typical profile | Expected performance |
+|---|---|---|
+| Undergraduate | Newer to design research and tool workflows | Clear scope, honest use of simple methods, visible scaffolding |
+| MArch | Closer to practice and studio decision-making | Stronger stakeholder fit, tighter argument, more independent judgment |
+| PhD | Higher research maturity, sometimes stronger coding/statistics | More rigorous uncertainty treatment, stronger reproducibility, deeper method critique |
 
-While all students complete equivalent assignments, expectations for technical depth vary:
+## Pathway Logic
 
-- **Undergraduate students**: Guided templates, low-code tools, extra scaffolding
-- **MArch students**: Professional memo format, practical decision focus  
-- **PhD students**: Advanced methodological rigor, code-heavy options encouraged
+### Spreadsheet
 
-## Core Skills Developed
+The baseline professional route.
 
-### A1: Decision Claim
-- **Problem identification**: Recognizing design decisions that benefit from evidence
-- **Question framing**: Converting design intuitions into testable claims
-- **Stakeholder analysis**: Understanding who needs to be convinced and why
+- best when the question depends on comparison, summary, ranking, or accessible charting
+- lowest setup burden
+- fully legitimate as a complete semester pathway
 
-### A2: Evidence Map  
-- **Literature review**: Finding and synthesizing relevant existing evidence
-- **Gap analysis**: Identifying what evidence is missing or inadequate
-- **Research planning**: Setting up systematic investigation of gaps
+### GIS
 
-### A3: Test Plan + Pilot
-- **Method design**: Choosing appropriate data collection and analysis approaches
-- **Pilot execution**: Testing methods on a small scale before full implementation
-- **Iteration**: Adjusting plans based on pilot results and constraints
+The spatial analysis route.
 
-### A4: Final Package
-- **Analysis**: Systematic evaluation of evidence against decision criteria
-- **Communication**: Presenting findings to different audiences effectively  
-- **Reproducibility**: Documenting process for verification and replication
-- **Decision support**: Making clear recommendations with stated confidence levels
+- best for site, access, zoning, morphology, environmental context, and map-based reasoning
+- draws on the comparative GIS module: `QGIS`, `ArcGIS`, and `geopandas`
+- may combine GUI work with notebook-based processing
+
+### Python
+
+The reproducible notebook route.
+
+- best for students who need scripting, reuse, or slightly more complex analysis
+- uses `Jupyter Notebook`
+- supported through the existing beginner notebooks and small starter examples
 
 ## Assessment Philosophy
 
-### Evidence-Based Grading
-Assignments are evaluated using the same evidence-based thinking taught in the course:
+Students are not rewarded for choosing the most technically intimidating tool. They are rewarded for:
 
-- **Clear criteria**: Rubrics specify exactly what constitutes different performance levels
-- **Multiple perspectives**: Peer review, self-assessment, and instructor evaluation
-- **Iterative improvement**: Change logs track learning and revision processes
-- **Transparent reasoning**: Feedback explains the evidence behind grades
+- selecting a pathway that fits the question
+- being clear about assumptions and limits
+- producing evidence someone else can follow
+- communicating decisions without overclaiming
 
-### Professional Standards
-All assignments prepare students for real-world architectural practice:
+## Quality Standards Across All Assignments
 
-- **Client communication**: Practice explaining technical findings to non-experts
-- **Professional formatting**: Industry-standard document structure and presentation
-- **Ethical responsibility**: Transparent limitations and appropriate confidence claims
-- **Collaborative process**: Peer review mirrors professional design team dynamics
+Successful work, regardless of pathway, should show:
+
+1. A specific design decision with a real audience
+2. Evidence sources that are relevant and interpretable
+3. A workflow that can actually be rerun or explained
+4. Honest treatment of missing evidence and uncertainty
+5. Visual and written communication that helps someone act
+
+## Common Failure Modes
+
+- choosing a tool because it looks advanced rather than because it fits
+- confusing precedent images with evidence
+- hiding weak data behind polished graphics
+- making claims stronger than the method allows
+- building a workflow no one, including the student, can rerun
+
+## Assignment Progression
+
+```mermaid
+graph LR
+    A1[Audit Prior Decision] --> A2[Choose Evidence + Pathway]
+    A2 --> A3[Prototype Method]
+    A3 --> A4[Deliver Studio Evidence Package]
+```
 
 ## Support Structure
 
-### Ongoing Support
-- **Office hours**: Wednesdays 4-6pm at KB722, or by appointment
-- **Peer review**: Structured feedback sessions built into the schedule
-- **Mentor dialogue**: Mid-semester consultation with external practitioner
-- **Technical workshops**: Just-in-time support for tools and methods
+- office hours for pathway-specific troubleshooting
+- in-class reviews and feedback sessions
+- notebook and setup support for GIS/Python students
+- low-friction spreadsheet templates for students who need a stable baseline
 
-### Flexibility and Accommodation
-- **Tool choice**: Low-code and code-heavy options for different comfort levels
-- **Topic flexibility**: Wide range of design objects and scales acceptable
-- **Timeline accommodation**: Extensions available for documented need
-- **Alternative formats**: Accessibility accommodations available on request
-
-## Quality Standards
-
-### Research Brief Excellence
-By the end of A4, successful work demonstrates:
-
-1. **Clear problem definition** with stakeholder needs understood
-2. **Systematic evidence collection** using appropriate methods  
-3. **Rigorous analysis** with uncertainty appropriately acknowledged
-4. **Actionable recommendations** with clear decision thresholds
-5. **Professional communication** accessible to intended audiences
-6. **Reproducible process** documented for verification
-
-### Common Pitfalls to Avoid
-- **Confirmation bias**: Testing only ideas you already believe
-- **Method mismatch**: Using complex tools for simple questions (or vice versa)
-- **Communication gaps**: Technical accuracy without audience awareness
-- **Overconfidence**: Making strong claims from limited evidence
-- **Irreproducibility**: Methods too vague or idiosyncratic to replicate
-
----
-
-## Individual Assignment Details
-
-For complete assignment descriptions, rubrics, and submission guidelines, see:
-
-- [A1: Decision Claim](assignments/assignment-01.qmd) — Identify and frame your design research question
-- [A2: Evidence Map](assignments/assignment-02.qmd) — Map existing knowledge and identify gaps  
-- [A3: Test Plan + Pilot](assignments/assignment-03.qmd) — Design and test your research method
-- [A4: Final Package](assignments/assignment-04.qmd) — Complete research brief with recommendations
-
----
-
-*All assignments support the development of evidence-based design thinking skills essential for contemporary architectural practice.*
+For full instructions, rubrics, and deliverable requirements, use the assignment pages linked above.

@@ -1,347 +1,172 @@
 ---
-title: "Assignment 2: Evidence Map"
-subtitle: "Mapping Existing Knowledge and Identifying Research Gaps"
-format: 
+title: "Assignment 2: Evidence and Pathway Map"
+subtitle: "Choose the Sources and Workflow That Fit Your Next Decision"
+format:
   html:
     toc: true
 ---
 
-**Due:** End of Week 4  
+**Due:** End of Week 6  
 **Weight:** 20% of final grade  
-**Length:** 3-5 pages + evidence matrix  
+**Length:** 4-5 pages + evidence/pathway matrix  
 **Format:** PDF submission via course portal
 
 ---
 
 # Assignment Overview
 
-**A2: Evidence Map** builds directly on your A1 Decision Claim by systematically surveying existing evidence related to your design question. You will map what is already known, identify gaps where new evidence is needed, and develop a strategic plan for filling those gaps. This assignment develops **critical evaluation skills** and **research planning** essential for evidence-based design.
+`A2` turns the next decision from A1 into a workable plan. You will map the evidence landscape around that question, compare the relevant tools, and choose one primary pathway for the rest of the semester:
+
+- `spreadsheet`
+- `GIS`
+- `Python`
+
+This is the point where pathway choice becomes explicit.
 
 ## Learning Objectives
 
-By completing this assignment, you will:
+By completing A2, you will be able to:
 
-1. **Conduct systematic literature review** relevant to your decision claim
-2. **Evaluate evidence quality** using appropriate criteria for design research
-3. **Identify knowledge gaps** where new evidence could make a meaningful contribution  
-4. **Map evidence to stakeholder needs** connecting research findings to decision requirements
-5. **Plan targeted investigation** focusing your A3 testing on highest-impact gaps
+1. Identify the most relevant evidence sources for your question
+2. Evaluate whether those sources are actually accessible and useful
+3. Compare pathways based on methodological fit, not fashion
+4. Choose one primary workflow with a realistic scope
+5. Define the inputs, outputs, and limits of that workflow
 
----
+# Core Deliverables
 
-# What Is an "Evidence Map"?
+## Part 1: Decision Context Recap (about 0.5 page)
 
-An **evidence map** visualizes the landscape of existing knowledge around your design question, showing:
-- What evidence already exists and its quality/reliability
-- How existing evidence relates to your specific decision context  
-- Where gaps exist that new research could address
-- Which gaps are most critical for your stakeholders' decisions
+Briefly restate:
 
-Think of it as a **strategic reconnaissance mission** before designing your own research study.
+- the upcoming design decision
+- the stakeholder or audience
+- the specific claim or comparison you want to support
+- why the decision matters now
 
----
+## Part 2: Evidence Landscape (about 1.5-2 pages)
 
-# Assignment Requirements
+Identify and categorize the evidence relevant to your question.
 
-## Core Deliverables
+Possible categories:
 
-### Part 1: Literature Search Strategy (0.5 pages)
+- precedents and case studies
+- standards and codes
+- published research
+- site observations
+- government or open datasets
+- surveys or interviews
+- simulation outputs
+- spatial layers and maps
 
-Document your systematic approach to finding relevant evidence:
+For each category, explain:
 
-**Search Terms and Databases**
-- Key terms, synonyms, and combinations you used
-- Databases searched (academic, industry, government sources)
-- Time period covered and why
-- Language and geographic scope of your search
+- what it can tell you
+- what it cannot tell you
+- how trustworthy it is
+- how easy or hard it is to access
 
-**Inclusion/Exclusion Criteria**  
-- What types of studies/reports did you include?
-- What did you exclude and why?
-- How did you handle different study types (experimental, observational, case studies)?
-- Quality thresholds you applied
+## Part 3: Pathway Comparison (about 1-1.5 pages)
 
-**Search Results Summary**
-- How many sources did you initially identify?
-- How many did you include after screening?
-- What types of evidence did you find (academic studies, industry reports, case studies, etc.)?
+Compare the three semester pathways for your question, even if one is obviously best.
 
-### Part 2: Evidence Synthesis (2-3 pages)
+Address:
 
-Organize and synthesize your findings around key themes:
+- what `spreadsheet` would let you do
+- what `GIS` would let you do
+- what `Python` would let you do
+- why one pathway is the best fit right now
+- what the chosen pathway still cannot solve on its own
 
-**Existing Knowledge**
-- What do we already know about your design object and claim?
-- Where is there strong consensus in the literature?
-- What are the key findings most relevant to your stakeholders?
-- How confident can we be in existing evidence?
+If you choose `GIS`, be specific about whether the workflow will lean more on:
 
-**Methodological Approaches**  
-- What research methods have been used to study your question?
-- Which methods produced the most reliable/useful results?
-- What are the strengths and limitations of different approaches?
-- How do methodological choices affect findings?
+- `QGIS`
+- `ArcGIS`
+- `geopandas`
 
-**Contradictions and Uncertainties**
-- Where do sources disagree or produce conflicting results?
-- What factors might explain these contradictions?
-- What assumptions or contexts vary between studies?
-- Where does uncertainty remain highest?
+The course expectation is that code-based GIS references should sit concretely in `geopandas`, not in generic “maybe I will code later” language.
 
-**Contextual Relevance**
-- How well does existing evidence match your specific context (climate, building type, user group, etc.)?
-- What evidence comes from similar contexts vs. very different ones?
-- How transferable are findings from other contexts to yours?
-- What context-specific factors might change the conclusions?
+## Part 4: Primary Pathway Selection (about 1 page)
 
-### Part 3: Gap Analysis (1-1.5 pages)
+Commit to one primary pathway and describe the workflow you expect to build.
 
-Identify and prioritize the most important knowledge gaps:
+Define:
 
-**Critical Evidence Gaps**
-- What questions remain unanswered by existing research?
-- Which gaps are most important for your stakeholder decisions?
-- What evidence would most strengthen confidence in your claim?
-- Where could new research make the biggest practical contribution?
+- likely input files or sources
+- likely intermediate steps
+- expected outputs
+- what a minimal successful pilot would look like
+- what may fail or slow you down
 
-**Methodological Gaps**
-- What research approaches haven't been tried?
-- Where do existing methods have significant limitations?
-- What new data sources or measurement approaches could be valuable?
-- How might new tools/technologies enable better evidence collection?
+## Part 5: Evidence and Pathway Matrix
 
-**Contextual Gaps**  
-- What contexts, building types, or user groups are understudied?
-- Where do local conditions (climate, culture, regulations) create unique needs?
-- What scale of investigation (building, neighborhood, city) needs more evidence?
-- How might changing conditions (climate change, new technologies) create new evidence needs?
+Create a visual matrix with rows for evidence sources and columns such as:
 
-**Feasibility Assessment**
-- Which gaps could you realistically address in A3/A4?
-- What gaps would require resources beyond the course scope?
-- Where would pilot testing be most valuable?
-- What gaps should be addressed by future research?
+- source type
+- relevance to the decision
+- access level
+- quality / reliability
+- best supporting pathway
+- likely role in A3 / A4
 
-### Part 4: Evidence Matrix (Visual Summary)
+Use symbols or color coding to show:
 
-Create a structured matrix showing:
-
-**Rows:** Key sources you reviewed (10-15 most important)
-**Columns:** 
-- Source type (academic study, industry report, case study, etc.)
-- Study context (location, building type, scale)
-- Methods used
-- Key findings relevant to your claim
-- Evidence quality/reliability rating
-- Relevance to your stakeholders
-
-Use color coding or symbols to quickly show:
-- Strong vs. weak evidence quality
-- High vs. low relevance to your context
-- Supporting vs. contradicting your initial claim
-- Gaps where no evidence exists
-
----
-
-# Evidence Quality Assessment
-
-## Academic Sources
-**Strong Evidence:**
-- Peer-reviewed studies with appropriate sample sizes
-- Clear methodology and statistical analysis
-- Results replicated in multiple contexts
-- Transparent reporting of limitations
-
-**Moderate Evidence:**
-- Conference papers or reports with good methodology
-- Case studies with detailed documentation
-- Industry research with transparent methods
-- Gray literature from reputable organizations
-
-**Weak Evidence:**
-- Anecdotal reports without systematic data
-- Studies with serious methodological flaws
-- Promotional materials or biased sources
-- Outdated research in rapidly changing fields
-
-## Industry Sources
-**Strong Evidence:**
-- Multi-project databases with standardized metrics
-- Third-party evaluations and post-occupancy studies
-- Professional organization research reports
-- Building performance monitoring data
-
-**Moderate Evidence:**
-- Single-project case studies with good documentation
-- Manufacturer research with clear methodology
-- Professional surveys and practitioner reports
-- Regulatory agency analysis
-
-**Weak Evidence:**
-- Marketing materials and promotional case studies
-- Unsupported claims or testimonials
-- Outdated technical reports
-- Sources with clear commercial bias
-
----
+- high vs low relevance
+- easy vs hard access
+- strong vs weak confidence
 
 # Differentiated Expectations
 
-## Undergraduate Students
-- **Literature scope:** 8-12 high-quality sources minimum
-- **Evidence types:** Mix of academic and professional sources
-- **Analysis depth:** Clear summary of main findings and obvious gaps
-- **Gap focus:** 2-3 well-defined gaps suitable for simple investigation
+## Undergraduate
 
-## MArch Students
-- **Literature scope:** 12-15 sources including recent industry reports
-- **Evidence types:** Emphasis on practice-relevant sources and standards
-- **Analysis depth:** Professional-level synthesis with stakeholder focus
-- **Gap focus:** Gaps that address real practice challenges and decision needs
+- narrower source set
+- cleaner pathway choice
+- strong emphasis on feasibility and clarity
 
-## PhD Students  
-- **Literature scope:** 15+ sources with comprehensive coverage
-- **Evidence types:** Methodologically diverse with critical evaluation
-- **Analysis depth:** Scholarly analysis of research approaches and limitations
-- **Gap focus:** Methodological innovations and theoretical contributions
+## MArch
 
----
+- stronger stakeholder logic
+- pathway choice tied more directly to practice or studio use
+- better judgment about what evidence is decision-relevant
 
-# Example Evidence Categories
+## PhD
 
-## Building Performance Evidence
-- **Energy simulation studies**: Comparative analysis of design alternatives
-- **Post-occupancy evaluations**: Real building performance vs. predictions
-- **Sensor data analysis**: Long-term monitoring of actual conditions
-- **Benchmark databases**: Industry performance comparisons
-
-## User Experience Evidence  
-- **Occupant surveys**: Satisfaction, comfort, productivity measures
-- **Behavioral observation**: Space usage patterns and preferences
-- **Physiological studies**: Stress, cognitive performance, health outcomes
-- **Focus groups**: Qualitative insights into user needs and preferences
-
-## Economic Evidence
-- **Life-cycle cost analysis**: Construction, operation, maintenance costs
-- **Market analysis**: Premium/discount for performance features
-- **Productivity studies**: Workplace performance and business outcomes
-- **Policy analysis**: Regulatory costs and compliance requirements
-
-## Environmental Evidence
-- **Life-cycle assessment**: Material and energy impacts over time
-- **Urban heat island**: Building contributions to microclimate
-- **Biodiversity impact**: Green infrastructure ecological benefits
-- **Resource efficiency**: Water, waste, material optimization studies
-
----
+- deeper method critique
+- more explicit treatment of limitations, transferability, and uncertainty
+- clearer rationale for why the chosen workflow is analytically defensible
 
 # Assessment Criteria
 
-## Literature Search Quality (25%)
-- **Comprehensiveness**: Did you find the most relevant and important sources?
-- **Strategy**: Was your search systematic and well-documented?  
-- **Source diversity**: Appropriate mix of academic, industry, and case study evidence?
-- **Currency**: Are your sources appropriately recent for a fast-changing field?
+## Evidence Mapping Quality (35%)
 
-## Evidence Synthesis (35%)
-- **Organization**: Are findings clearly organized around key themes?
-- **Critical analysis**: Do you evaluate evidence quality and identify limitations?
-- **Relevance**: Is the synthesis focused on your decision claim and stakeholders?
-- **Integration**: Do you identify patterns and contradictions across sources?
+- Are the important evidence categories identified?
+- Is relevance separated from mere availability?
+- Are gaps and weak spots named clearly?
 
-## Gap Analysis (25%)
-- **Strategic focus**: Do you identify the most important gaps for your research?
-- **Feasibility**: Are your proposed investigations realistic for the course context?
-- **Stakeholder alignment**: Are gaps connected to real decision needs?
-- **Methodological insight**: Do you understand what approaches would fill each gap?
+## Pathway Reasoning (35%)
 
-## Communication Quality (15%)
-- **Professional presentation**: Clear writing, good organization, error-free
-- **Visual effectiveness**: Does your evidence matrix communicate key patterns clearly?
-- **Appropriate depth**: Right level of detail for your intended audience
-- **Citations**: Proper attribution following architectural research conventions
+- Is the chosen pathway justified against the alternatives?
+- Does the student select a workflow that fits the question?
+- If GIS is chosen, is the role of `QGIS`, `ArcGIS`, or `geopandas` stated clearly?
 
----
+## Feasibility and Scope (20%)
 
-# Common Challenges and Solutions
+- Can the proposed workflow realistically be prototyped in A3?
+- Are likely failure points acknowledged?
+- Is the student avoiding tool overreach?
 
-## Challenge: "I can't find enough relevant sources"
-**Solutions:**
-- Broaden search terms (use synonyms, related concepts)
-- Include gray literature (industry reports, case studies)
-- Look at adjacent fields (psychology, engineering, urban planning)
-- Search international sources and different databases
-- Consider different scales (component → building → district)
+## Communication Quality (10%)
 
-## Challenge: "All the sources contradict each other"
-**Solutions:**
-- This IS evidence! Document the contradictions systematically
-- Look for methodological differences that might explain variations
-- Consider contextual factors (climate, culture, building type)
-- Identify what additional evidence would resolve disagreements
-- Frame contradictions as research opportunities
+- Is the matrix legible and useful?
+- Is the writing structured and decision-oriented?
 
-## Challenge: "The evidence doesn't match my claim"
-**Solutions:**
-- Revise your claim based on what you learned (this is good science!)
-- Reframe your claim more narrowly or precisely
-- Identify what conditions would make your claim true
-- Focus on unstudied contexts where your claim might hold
-- Consider alternative claims suggested by the evidence
+# Common Failure Modes
 
-## Challenge: "Everything has already been studied"
-**Solutions:**
-- Look for contextual gaps (different climates, building types, user groups)
-- Consider methodological improvements (better tools, longer studies)  
-- Focus on implementation and practice gaps
-- Look at changing conditions (new technologies, climate change)
-- Scale gaps (building-level vs. district-level analysis)
+- choosing the most technical pathway without a real need
+- confusing software awareness with workflow design
+- failing to say what the output will actually be
+- choosing GIS without naming whether the work is GUI-based or `geopandas`-based
 
----
+# What a Strong Submission Looks Like
 
-# Resources and Tools
-
-## Search Databases
-**Academic:** Google Scholar, Web of Science, Scopus, JSTOR
-**Architecture-specific:** Avery Index, Architectural Database  
-**Industry:** BuildingGreen, ASHRAE Research, manufacturer databases
-**Government:** DOE Building Technologies, EPA databases, local building departments
-
-## Citation Management
-- **Zotero** (free): Good for mixed academic/industry sources
-- **Mendeley** (free): Strong PDF annotation features
-- **EndNote** (HKU license): Professional reference management
-
-## Evidence Quality Assessment
-- **GRADE system**: For systematic reviews (adapted for design research)
-- **Building research guidelines**: CIB, AIVC research quality criteria
-- **Industry standards**: ASHRAE research report guidelines
-
----
-
-# Getting Started
-
-## Week 2-3 Activities
-1. **Develop search strategy**: List key terms, databases, inclusion criteria
-2. **Initial broad search**: Cast a wide net to understand the landscape
-3. **Screen and prioritize**: Focus on most relevant, highest-quality sources
-4. **Begin synthesis**: Identify themes and patterns as you read
-
-## Time Management  
-- **Week 2:** Search strategy and initial source collection
-- **Week 3:** Detailed reading and evidence synthesis
-- **Week 4:** Gap analysis and evidence matrix creation
-
-## Getting Help
-- **Librarian consultation**: HKU research librarians for search strategy
-- **Office hours**: Wednesdays 4-6pm at KB722, or by appointment
-- **Peer review**: Week 4 in-class workshop for feedback on drafts
-- **Writing support**: HKU academic writing center for organization and clarity
-
----
-
-**Remember:** Your Evidence Map directly informs your A3 Test Plan. The gaps you identify here become the focus of your empirical investigation. Invest time in strategic gap analysis — it will make your research contribution much stronger and more focused.
-
----
-
-*Strong evidence mapping is the foundation of all good research. You're learning to stand on the shoulders of giants before building something new.*
+A strong A2 submission makes a hard choice. It shows why one pathway is fit for purpose, what evidence it will rely on, and how the student will turn that pathway into a workable prototype in A3.

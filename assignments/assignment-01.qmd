@@ -1,268 +1,168 @@
 ---
-title: "Assignment 1: Decision Claim"
-subtitle: "Identifying and Framing Your Design Research Question"
-format: 
+title: "Assignment 1: Evidence Audit + Next Decision Brief"
+subtitle: "From a Prior Design Decision to the Evidence You Need Next"
+format:
   html:
     toc: true
 ---
 
 **Due:** End of Week 2  
 **Weight:** 15% of final grade  
-**Length:** 2-3 pages + 1 visual summary  
+**Length:** 3-4 pages + 1 visual audit sheet  
 **Format:** PDF submission via course portal
 
 ---
 
 # Assignment Overview
 
-**A1: Decision Claim** establishes the foundation for your semester-long research brief. You will identify a specific design object (building element, space type, or system) and articulate a testable claim about its performance, impact, or optimal configuration. This assignment focuses on **problem framing** — converting design intuitions into questions that evidence can answer.
+This first assignment replaces the old generic decision-claim brief. The goal is to start from a design decision you already made, inspect what actually counted as evidence at the time, and then pivot toward the next studio decision you expect to face.
+
+You are not being asked to pretend you already worked scientifically. You are being asked to make your existing decision process visible and then improve it.
 
 ## Learning Objectives
 
-By completing this assignment, you will:
+By completing A1, you will be able to:
 
-1. **Identify a suitable design object** at an appropriate scale for evidence-based investigation
-2. **Frame a testable claim** that can be evaluated with available data and methods
-3. **Define stakeholders** who would benefit from evidence about your claim
-4. **Articulate the decision context** where your evidence would be applied
-5. **Scope your investigation** realistically within course constraints
+1. Describe a prior design decision in concrete terms
+2. Distinguish intuition, precedent, assumption, and evidence
+3. Audit where confidence was justified and where it was overstated
+4. Define a new decision that would benefit from stronger evidence
+5. Identify which pathway might support that next decision
 
----
+# Core Deliverables
 
-# What Is a "Decision Claim"?
+## Part 1: Prior Decision Description (about 1 page)
 
-A **decision claim** connects a specific design choice to a measurable outcome that matters to identifiable stakeholders. It moves beyond aesthetic preference to ask: *What evidence would help us choose between alternatives?*
+Choose **one decision you already made** in studio, research, or practice. It should be specific enough that someone could understand what alternatives existed.
 
-## Good Decision Claims Have Four Elements:
+Address:
 
-### 1. **Design Object** (What you're investigating)
-- Specific enough to test systematically
-- Broad enough to generate useful evidence
-- Accessible for data collection within semester timeframe
+- what the design decision was
+- when it was made
+- what alternatives were in play
+- who the decision was for
+- what constraints mattered most
 
-**Examples:**
-- Window-to-wall ratios in Hong Kong residential towers
-- Ceiling height in collaborative workspaces  
-- Green roof configurations for urban buildings
-- Wayfinding signage systems in hospital environments
+Examples:
 
-### 2. **Performance Dimension** (What you're measuring)
-- Clearly defined and measurable
-- Connected to stakeholder concerns
-- Achievable with available tools and methods
+- choosing a facade proportion
+- locating an entrance
+- deciding between two site strategies
+- selecting a shading or glazing approach
+- choosing a circulation layout or public-space arrangement
 
-**Examples:**
-- Energy performance, daylighting quality, thermal comfort
-- User satisfaction, space utilization, productivity metrics
-- Construction cost, maintenance requirements, lifecycle impact
+## Part 2: Evidence Audit (about 1-1.5 pages)
 
-### 3. **Stakeholder Group** (Who needs this evidence)
-- Specific decision-makers who would use your findings
-- Clear understanding of their constraints and priorities
-- Realistic access for validation and feedback
+Break down what informed that decision at the time.
 
-**Examples:**
-- Residential developers in dense urban markets
-- Corporate facility managers optimizing workplace design
-- Hospital administrators balancing patient outcomes and costs
-- Municipal planners developing green infrastructure policies
+For each input, explain:
 
-### 4. **Decision Context** (When/how evidence would be applied)
-- Real situations where choices must be made
-- Clear alternatives being compared
-- Specific decision criteria and trade-offs
+- what it was
+- where it came from
+- whether it was measured, observed, simulated, cited, assumed, or inferred
+- how strongly it really supported the final move
 
-**Examples:**
-- Early design phase when major systems are being selected
-- Retrofit decisions for existing building portfolios
-- Policy development requiring performance standards
-- Post-occupancy evaluation informing future projects
+Your audit should identify:
 
----
+- evidence that was genuinely useful
+- evidence that was weak but treated as strong
+- gaps that you ignored or could not address
+- places where aesthetic judgment or convenience filled the gap
 
-# Assignment Requirements
+## Part 3: Confidence and Limits (about 0.5-1 page)
 
-## Core Deliverables
+Reflect on the quality of the earlier decision.
 
-### Part 1: Problem Statement (1 page)
+Address:
 
-Write a clear, concise problem statement addressing:
+- what you would still defend
+- what you would now question
+- what evidence would have changed the decision
+- whether the decision was reversible, risky, or consequential
 
-**Design Object Description**
-- What specifically are you investigating? (Be precise about scale, typology, context)
-- Why is this object/system/space important in contemporary practice?
-- What design variables or alternatives will you focus on?
+## Part 4: Next Decision Brief (about 1 page)
 
-**Current Decision-Making Process**
-- How are decisions about this object typically made now?
-- What information do decision-makers currently use?
-- What gaps or uncertainties exist in current practice?
+Now pivot to an upcoming studio or design question.
 
-**Proposed Claim**
-- State your testable claim in one clear sentence
-- Explain why you believe this claim might be true (initial hypothesis)
-- Identify what evidence would support or refute your claim
+Define:
 
-### Part 2: Stakeholder Analysis (1 page)
+- the next decision you expect to make
+- the main stakeholder or audience
+- why evidence would help
+- what kind of evidence would matter most
+- which of the three course pathways seems most promising right now:
+  `spreadsheet`, `GIS`, or `Python`
 
-Identify and analyze your primary stakeholders:
+You are not locking the pathway yet. You are making an early judgment that A2 will test.
 
-**Primary Decision-Makers**
-- Who would directly use your evidence to make design decisions?
-- What are their main concerns, constraints, and success criteria?
-- How do they currently evaluate alternatives for your design object?
+## Part 5: Visual Audit Sheet
 
-**Secondary Stakeholders**
-- Who else is affected by decisions about your design object?
-- What outcomes matter most to these groups?
-- How might their priorities conflict with primary decision-makers?
+Create one visual page that shows:
 
-**Evidence Requirements**
-- What type of evidence would be most convincing to your stakeholders?
-- What level of precision/confidence would they require?
-- What format would make your findings most actionable for them?
+- the original design decision
+- the evidence types that informed it
+- the weak links or missing evidence
+- the next decision you now want to investigate
 
-### Part 3: Scope and Constraints (0.5-1 page)
+Acceptable formats:
 
-Realistically assess what you can accomplish this semester:
-
-**Available Resources**
-- What data sources are accessible to you?
-- What tools and methods can you realistically learn and apply?
-- What time and budget constraints will shape your approach?
-
-**Manageable Scope**
-- How will you narrow your investigation to be achievable?
-- What limitations will you acknowledge upfront?
-- What would constitute "success" for this project?
-
-### Part 4: Visual Summary (1 page)
-
-Create a single-page visual that communicates:
-- Your design object with key variables highlighted
-- Your proposed claim as a testable question
-- Your primary stakeholders and their decision context
-- The type of evidence you plan to collect
-
-This can be a diagram, infographic, or annotated photographs — choose the format that best communicates your concept.
-
----
+- annotated diagrams
+- a table with color coding
+- a process map
+- a one-page evidence matrix
 
 # Differentiated Expectations
 
-While all students complete the same core deliverables, expectations vary by program level:
+## Undergraduate
 
-## Undergraduate Students
-- **Focus:** Clear problem identification with instructor guidance
-- **Scope:** Well-defined, smaller-scale objects (single building element or system)
-- **Stakeholders:** Primary focus on one main stakeholder group
-- **Evidence:** Straightforward metrics accessible through existing data or simple measurement
+- choose a tightly bounded decision
+- be explicit about uncertainty even if the evidence is simple
+- use clear categories and straightforward reflection
 
-## MArch Students  
-- **Focus:** Professional memo format suitable for practice contexts
-- **Scope:** Building-scale or neighborhood-scale investigations
-- **Stakeholders:** Multiple stakeholder groups with competing priorities
-- **Evidence:** Industry-relevant metrics and decision criteria
+## MArch
 
-## PhD Students
-- **Focus:** Research question suitable for systematic investigation
-- **Scope:** Multi-building or policy-scale questions
-- **Stakeholders:** Complex stakeholder networks including regulatory bodies
-- **Evidence:** Methodologically rigorous approaches with uncertainty quantification
+- connect the decision to a real design or stakeholder context
+- show stronger judgment about what evidence would actually change practice
+- articulate why the next decision matters in studio or professional terms
 
----
+## PhD
 
-# Examples of Strong Decision Claims
-
-## Example 1: Residential Energy Performance
-**Design Object:** Window-to-wall ratios in Hong Kong high-rise residential buildings  
-**Claim:** "Optimizing window-to-wall ratios can reduce residential cooling energy by 15-25% while maintaining acceptable daylighting levels"  
-**Stakeholders:** Residential developers, building owners, energy policy makers  
-**Decision Context:** Early design phase for new residential developments
-
-## Example 2: Workplace Productivity
-**Design Object:** Open office acoustics and spatial configuration  
-**Claim:** "Strategic placement of acoustic treatments can improve reported productivity by 20% without major space reallocation"  
-**Stakeholders:** Corporate facility managers, workplace designers, HR departments  
-**Decision Context:** Office renovation decisions and workplace strategy planning
-
-## Example 3: Public Space Usage
-**Design Object:** Seating arrangements in urban plazas  
-**Claim:** "Flexible seating configurations increase space utilization by 40% compared to fixed bench arrangements"  
-**Stakeholders:** Urban planners, park departments, public space designers  
-**Decision Context:** Public space design guidelines and renovation priorities
-
----
+- treat the audit as a method critique, not only a reflection
+- distinguish evidence quality more sharply
+- define a next decision that can support a more rigorous investigation
 
 # Assessment Criteria
 
-Your assignment will be evaluated on:
+## Specificity and Honesty (35%)
 
-## Clarity and Feasibility (40%)
-- **Clear problem definition**: Is your design object specific and well-bounded?
-- **Testable claim**: Can your claim be evaluated with evidence?
-- **Realistic scope**: Is your investigation achievable within course constraints?
+- Is the prior decision concrete and understandable?
+- Does the audit avoid hindsight theatrics and describe the process honestly?
+- Are evidence and assumption clearly separated?
 
-## Stakeholder Understanding (30%)
-- **Relevant stakeholders**: Have you identified appropriate decision-makers?
-- **Decision context**: Do you understand when/how your evidence would be used?
-- **Evidence requirements**: Do you know what would convince your stakeholders?
+## Quality of Reflection (30%)
 
-## Communication Quality (20%)
-- **Professional presentation**: Is your document clear, well-organized, and error-free?
-- **Visual effectiveness**: Does your visual summary communicate key concepts clearly?
-- **Appropriate audience**: Is your writing suitable for your intended stakeholders?
+- Does the student identify where confidence exceeded the evidence?
+- Are missing inputs and weak links clearly named?
+- Is the critique useful rather than vague?
 
-## Research Potential (10%)
-- **Interesting question**: Will investigating this claim generate useful knowledge?
-- **Methodological feasibility**: Can you reasonably collect relevant evidence?
-- **Broader relevance**: Could your findings inform similar decisions elsewhere?
+## Strength of the Next Decision Brief (25%)
 
----
+- Is the next decision specific and relevant?
+- Is the case for needing evidence convincing?
+- Is the tentative pathway choice plausible?
 
-# Common Pitfalls to Avoid
+## Communication Quality (10%)
 
-## Scope Issues
-- **Too broad**: "How to design sustainable buildings" (instead: focus on one specific system/element)
-- **Too narrow**: "The optimal paint color for my bedroom" (instead: scale up to stakeholder relevance)
-- **Too abstract**: "How to make beautiful architecture" (instead: focus on measurable performance)
+- Is the writing clear and structured?
+- Does the visual audit sheet help rather than decorate?
 
-## Claim Problems
-- **Untestable**: Claims about aesthetic preference or cultural meaning
-- **Already proven**: Well-established relationships documented in literature
-- **Impossible to measure**: Outcomes requiring unavailable data or methods
+# Common Failure Modes
 
-## Stakeholder Misalignment
-- **No real stakeholders**: Academic exercise without practical application
-- **Unrealistic access**: Stakeholders who won't engage with student research
-- **Mismatched priorities**: Evidence that doesn't address stakeholder concerns
+- choosing a decision that is too broad to audit
+- pretending precedent images alone were sufficient evidence
+- using generic statements like “more data is needed” without specifying what data
+- treating software choice as the decision instead of the evidence problem
 
----
+# What a Strong Submission Looks Like
 
-# Getting Started
-
-## Week 1 Activities
-1. **Browse examples**: Look at evidence-based design studies in journals and practice
-2. **Identify interests**: What design decisions intrigue you? What performance questions do you have?
-3. **Talk to practitioners**: What design decisions do working architects struggle with?
-4. **Check feasibility**: What data and methods are realistically available to you?
-
-## Resources for Topic Development
-- **Building performance databases**: Energy Star, LEED project database, local building surveys
-- **User experience research**: POE studies, occupant satisfaction surveys, space utilization data
-- **Professional publications**: Architectural Record, Journal of Green Building, Environment and Behavior
-- **Local contexts**: Hong Kong buildings, climate, regulations, and construction practices
-
-## Getting Help
-- **Office hours**: Wednesdays 4-6pm at KB722, or by appointment
-- **Peer discussion**: Week 1 in-class workshop for topic development
-- **Online forum**: Course Slack for questions and idea sharing
-- **Writing center**: HKU academic support for clear technical writing
-
----
-
-**Remember:** A strong Decision Claim sets up your entire semester project. Invest time in getting this foundation right — it will make all subsequent assignments clearer and more focused.
-
----
-
-*This assignment launches your journey into evidence-based design thinking. Choose a question that genuinely interests you and matters to real decision-makers.*
+A strong A1 submission makes one real decision legible, admits where the earlier reasoning was weak, and sets up a next question that the rest of the semester can answer through a clearly scoped evidence pathway.
