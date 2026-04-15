@@ -326,7 +326,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Week 7: Method Prototype Studio</h1>
-  <p class="subtitle">Build the Smallest Workflow That Can Answer Something Real</p>
+  <p class="subtitle">Build It, Document It, and Make It Reproducible Enough to Trust</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -336,10 +336,10 @@
 <h2>Today’s Agenda</h2>
 <ul>
 <li class="fragment">what a method prototype is</li>
-<li class="fragment">pathway breakouts</li>
-<li class="fragment">workflow documentation</li>
-<li class="fragment">quality control and assumptions</li>
-<li class="fragment">A3 drafting</li>
+<li class="fragment">why documentation matters before the final package</li>
+<li class="fragment">the 10-minute method challenge</li>
+<li class="fragment">documentation swap</li>
+<li class="fragment">mentor consultation prep for weak spots</li>
 </ul>
 </section>
 <section id="minimal-viable-workflow" class="slide level2 center">
@@ -352,35 +352,132 @@
 <li class="fragment">reveal where the method still breaks</li>
 </ul>
 </section>
-<section id="pathway-breakout-prompt" class="slide level2 center">
-<h2>Pathway Breakout Prompt</h2>
+<section id="horror-stories-from-practice" class="slide level2 center">
+<h2>Horror Stories from Practice</h2>
+<ul>
+<li class="fragment">the analyst leaves and no one can rerun the method</li>
+<li class="fragment">the spreadsheet works on one machine only</li>
+<li class="fragment">the GIS layers were clipped somehow but nobody remembers how</li>
+<li class="fragment">the notebook runs, but only if you know which file was silently edited</li>
+</ul>
+<p>If you cannot reproduce your own work, nobody else can trust it.</p>
+</section>
+<section id="the-reproducibility-graveyard" class="slide level2 center">
+<h2>The Reproducibility Graveyard</h2>
+<p>Typical student versions:</p>
+<ul>
+<li class="fragment">“I used some plugin, but I forgot which one.”</li>
+<li class="fragment">“I changed the settings until it looked right.”</li>
+<li class="fragment">“The chart came from another file, I think.”</li>
+<li class="fragment">“The model worked last week.”</li>
+</ul>
+</section>
+<section id="the-10-minute-method-challenge" class="slide level2 center">
+<h2>The 10-Minute Method Challenge</h2>
+<p>Choose one workflow from your project and document it so clearly that another team could reproduce it.</p>
+<p>Pick one:</p>
+<ul>
+<li class="fragment">spreadsheet comparison</li>
+<li class="fragment">GIS operation sequence</li>
+<li class="fragment">notebook analysis</li>
+<li class="fragment">simulation setup</li>
+<li class="fragment">visualization workflow</li>
+</ul>
+</section>
+<section id="documentation-template" class="slide level2 center">
+<h2>Documentation Template</h2>
+<p><strong>Workflow</strong></p>
+<ul>
+<li class="fragment">what the method is for</li>
+<li class="fragment">what files or inputs are required</li>
+<li class="fragment">what tools are required</li>
+</ul>
+<p><strong>Step-by-step</strong></p>
+<ol type="1">
+<li class="fragment">do this</li>
+<li class="fragment">check this</li>
+<li class="fragment">if this fails, try this</li>
+<li class="fragment">export this</li>
+</ol>
+</section>
+<section id="documentation-template-contd" class="slide level2 center">
+<h2>Documentation Template (cont’d)</h2>
+<p><strong>Troubleshooting</strong></p>
+<ul>
+<li class="fragment">common error</li>
+<li class="fragment">warning sign</li>
+<li class="fragment">likely fix</li>
+</ul>
+<p><strong>Quality check</strong></p>
+<ul>
+<li class="fragment">what success looks like</li>
+<li class="fragment">what a red flag looks like</li>
+</ul>
+</section>
+<section id="documentation-swap-challenge" class="slide level2 center">
+<h2>Documentation Swap Challenge</h2>
+<ol type="1">
+<li class="fragment">swap instructions with someone using a different pathway</li>
+<li class="fragment">no verbal explanation</li>
+<li class="fragment">try to follow their method</li>
+<li class="fragment">record what is missing, unclear, or fragile</li>
+</ol>
+<p>This is the fastest way to find out if your workflow is real or only familiar to you.</p>
+</section>
+<section id="the-harsh-truth-moment" class="slide level2 center">
+<h2>The Harsh Truth Moment</h2>
+<p>If another student cannot follow your documentation, the method is not ready for A3.</p>
+<p>That does not mean the project is bad.</p>
+<p>It means the workflow still lives too much in your head.</p>
+</section>
+<section id="pathway-breakout-prompts" class="slide level2 center">
+<h2>Pathway Breakout Prompts</h2>
 <h3 id="spreadsheet">Spreadsheet</h3>
 <ul>
-<li class="fragment">what table structure do you need?</li>
-<li class="fragment">what comparison will the chart actually show?</li>
+<li class="fragment">what table structure does the method depend on?</li>
+<li class="fragment">which formula or chart is most fragile?</li>
 </ul>
 <h3 id="gis">GIS</h3>
 <ul>
-<li class="fragment">what layers are essential?</li>
-<li class="fragment">what operation answers the question: buffer, join, overlay, filter?</li>
+<li class="fragment">what layer preparation is essential?</li>
+<li class="fragment">which operation sequence must be documented exactly?</li>
 </ul>
 <h3 id="python">Python</h3>
 <ul>
-<li class="fragment">what notebook steps need to exist end to end?</li>
-<li class="fragment">what chart or exported table proves the workflow is working?</li>
+<li class="fragment">what notebook cells define the real logic?</li>
+<li class="fragment">what package, path, or file assumptions must be stated?</li>
 </ul>
 </section>
-<section id="document-while-you-build" class="slide level2 center">
-<h2>Document While You Build</h2>
-<p>Capture:</p>
+<section id="capture-the-decision-logic-too" class="slide level2 center">
+<h2>Capture the Decision Logic Too</h2>
+<p>Do not document only button clicks.</p>
+<p>Also document:</p>
 <ul>
-<li class="fragment">file names</li>
-<li class="fragment">assumptions</li>
-<li class="fragment">parameter choices</li>
-<li class="fragment">what failed</li>
-<li class="fragment">what you changed and why</li>
+<li class="fragment">why this step exists</li>
+<li class="fragment">what assumption it encodes</li>
+<li class="fragment">what judgment call it contains</li>
+<li class="fragment">how the output connects back to the question</li>
 </ul>
-<p>Do not wait until the end to remember it.</p>
+</section>
+<section id="mentor-consultation-bootcamp" class="slide level2 center">
+<h2>Mentor Consultation Bootcamp</h2>
+<p>Use the prototype to prepare stronger questions:</p>
+<ul>
+<li class="fragment">where is the workflow weakest?</li>
+<li class="fragment">what assumption am I least confident about?</li>
+<li class="fragment">what output would most strengthen the project?</li>
+<li class="fragment">what would a practitioner immediately challenge?</li>
+</ul>
+</section>
+<section id="mentor-question-development-sprint" class="slide level2 center">
+<h2>Mentor Question Development Sprint</h2>
+<p>Write three questions:</p>
+<ol type="1">
+<li class="fragment">one technical question</li>
+<li class="fragment">one methodological question</li>
+<li class="fragment">one strategic question about scope or decision relevance</li>
+</ol>
+<p>If the question is generic, it is not ready.</p>
 </section>
 <section id="prototype-quality-check" class="slide level2 center">
 <h2>Prototype Quality Check</h2>
@@ -396,9 +493,9 @@
 <p>You should have:</p>
 <ul>
 <li class="fragment">a first working artifact</li>
-<li class="fragment">screenshots or exports</li>
-<li class="fragment">notes on assumptions and errors</li>
-<li class="fragment">a clear story for A3</li>
+<li class="fragment">documentation that survives a swap test</li>
+<li class="fragment">a list of fragile steps and assumptions</li>
+<li class="fragment">a clearer story for A3</li>
 </ul>
 
 <div class="quarto-auto-generated-content">

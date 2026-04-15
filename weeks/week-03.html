@@ -336,64 +336,151 @@
 <h2>Today’s Agenda</h2>
 <ul>
 <li class="fragment">why spreadsheet is the baseline pathway</li>
-<li class="fragment">structure data around a decision</li>
-<li class="fragment">charts that do not overclaim</li>
-<li class="fragment">decision matrices</li>
-<li class="fragment">what spreadsheet cannot do well</li>
+<li class="fragment">how to structure a workbook around a decision</li>
+<li class="fragment">chart rescue and the 3-second message test</li>
+<li class="fragment">decision matrices and uncertainty</li>
+<li class="fragment">in-class build exercise</li>
 </ul>
 </section>
 <section id="spreadsheet-is-not-the-weak-option" class="slide level2 center">
 <h2>Spreadsheet Is Not the Weak Option</h2>
-<p>It is the <strong>default professional option</strong> when you need:</p>
+<p>It is the most portable professional workflow when you need:</p>
 <ul>
 <li class="fragment">visible assumptions</li>
-<li class="fragment">editable comparison tables</li>
-<li class="fragment">fast iteration</li>
-<li class="fragment">simple reproducible logic</li>
+<li class="fragment">editable comparison logic</li>
+<li class="fragment">traceable calculations</li>
+<li class="fragment">fast iteration without complicated setup</li>
 </ul>
 </section>
-<section id="start-with-the-decision" class="slide level2 center">
-<h2>Start With the Decision</h2>
-<p>Bad spreadsheet:</p>
+<section id="start-with-the-decision-not-the-software" class="slide level2 center">
+<h2>Start With the Decision, Not the Software</h2>
+<p>Bad workbook:</p>
 <ul>
-<li class="fragment">endless columns</li>
-<li class="fragment">no clear units</li>
-<li class="fragment">no clear alternatives</li>
+<li class="fragment">one giant sheet</li>
+<li class="fragment">no units</li>
 <li class="fragment">no clear audience</li>
+<li class="fragment">no reason for each column to exist</li>
 </ul>
-<p>Better spreadsheet:</p>
+<p>Better workbook:</p>
 <ul>
-<li class="fragment">rows = cases or options</li>
-<li class="fragment">columns = criteria</li>
-<li class="fragment">one sheet = one purpose</li>
+<li class="fragment">one question per structure</li>
+<li class="fragment">one row type per sheet</li>
+<li class="fragment">one clear output in mind</li>
 </ul>
 </section>
 <section id="typical-architecture-spreadsheet-uses" class="slide level2 center">
 <h2>Typical Architecture Spreadsheet Uses</h2>
 <ul>
 <li class="fragment">precedent comparison</li>
-<li class="fragment">evidence matrix</li>
-<li class="fragment">occupancy or observation logs</li>
+<li class="fragment">evidence/source logging</li>
+<li class="fragment">observation sheets</li>
 <li class="fragment">option scoring</li>
 <li class="fragment">uncertainty range charts</li>
-<li class="fragment">summary tables for final briefs</li>
+<li class="fragment">summary tables for decision briefs</li>
 </ul>
+</section>
+<section id="stand-alone-prompt" class="slide level2 center">
+<h2>Stand-Alone Prompt</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../assets/examples/high-line-park.jpg" height="500"></p>
+<figcaption>High Line, New York</figcaption>
+</figure>
+</div>
+<p>If you claimed this public-space strategy works, what would your spreadsheet need to track?</p>
+</section>
+<section id="from-image-to-variables" class="slide level2 center">
+<h2>From Image to Variables</h2>
+<p>Possible spreadsheet columns:</p>
+<ul>
+<li class="fragment">location and context</li>
+<li class="fragment">observed activity type</li>
+<li class="fragment">time of day and duration</li>
+<li class="fragment">seating / circulation condition</li>
+<li class="fragment">weather</li>
+<li class="fragment">evidence source and confidence</li>
+</ul>
+<p>The point is to move from atmosphere to comparable fields.</p>
+</section>
+<section id="a-useful-workbook-pattern" class="slide level2 center">
+<h2>A Useful Workbook Pattern</h2>
+<h3 id="sheet-1-evidence-log">Sheet 1: Evidence Log</h3>
+<ul>
+<li class="fragment">source</li>
+<li class="fragment">date</li>
+<li class="fragment">evidence type</li>
+<li class="fragment">relevance</li>
+<li class="fragment">confidence</li>
+</ul>
+<h3 id="sheet-2-alternatives">Sheet 2: Alternatives</h3>
+<ul>
+<li class="fragment">option</li>
+<li class="fragment">criteria</li>
+<li class="fragment">scores or ranges</li>
+<li class="fragment">comments</li>
+</ul>
+<h3 id="sheet-3-outputs">Sheet 3: Outputs</h3>
+<ul>
+<li class="fragment">charts</li>
+<li class="fragment">matrices</li>
+<li class="fragment">summary text</li>
+</ul>
+</section>
+<section id="spreadsheet-failure-modes" class="slide level2 center">
+<h2>Spreadsheet Failure Modes</h2>
+<ul>
+<li class="fragment">“misc notes” columns that swallow everything</li>
+<li class="fragment">numbers without units</li>
+<li class="fragment">color coding with no legend</li>
+<li class="fragment">formulas no one else can read</li>
+<li class="fragment">charts with no visible message</li>
+</ul>
+</section>
+<section id="chart-catastrophe" class="slide level2 center">
+<h2>Chart Catastrophe</h2>
+<p>What makes a chart fail for stakeholders?</p>
+<ul>
+<li class="fragment">too many series</li>
+<li class="fragment">no dominant takeaway</li>
+<li class="fragment">labels too small</li>
+<li class="fragment">colors doing decoration instead of work</li>
+<li class="fragment">title describing data instead of the message</li>
+</ul>
+</section>
+<section id="the-3-second-message-test" class="slide level2 center">
+<h2>The 3-Second Message Test</h2>
+<p>If a critic glances at a chart for three seconds, can they tell:</p>
+<ul>
+<li class="fragment">what is being compared?</li>
+<li class="fragment">which option is better or riskier?</li>
+<li class="fragment">what they are supposed to notice?</li>
+</ul>
+<p>If not, the chart is not finished.</p>
+</section>
+<section id="rescue-formula" class="slide level2 center">
+<h2>Rescue Formula</h2>
+<ol type="1">
+<li class="fragment">Decide the one message</li>
+<li class="fragment">Remove what does not support it</li>
+<li class="fragment">Use annotation or labeling to force clarity</li>
+<li class="fragment">Show uncertainty where it matters</li>
+<li class="fragment">Connect the chart back to the design decision</li>
+</ol>
 </section>
 <section id="show-uncertainty-honestly" class="slide level2 center">
 <h2>Show Uncertainty Honestly</h2>
 <p>Avoid:</p>
 <ul>
 <li class="fragment">fake precision</li>
-<li class="fragment">overly smooth charts</li>
-<li class="fragment">missing units</li>
-<li class="fragment">unexplained scoring systems</li>
+<li class="fragment">unexplained weighted scores</li>
+<li class="fragment">single-point claims when the inputs are weak</li>
 </ul>
 <p>Prefer:</p>
 <ul>
 <li class="fragment">ranges</li>
 <li class="fragment">scenario labels</li>
-<li class="fragment">simple comparison charts</li>
-<li class="fragment">clear note fields for assumptions</li>
+<li class="fragment">note fields for assumptions</li>
+<li class="fragment">charts that make limits visible</li>
 </ul>
 </section>
 <section id="decision-matrix-example" class="slide level2 center">
@@ -406,7 +493,7 @@
 <th style="text-align: right;">access</th>
 <th style="text-align: right;">cost</th>
 <th style="text-align: right;">risk</th>
-<th>overall note</th>
+<th>recommendation note</th>
 </tr>
 </thead>
 <tbody>
@@ -424,7 +511,7 @@
 <td style="text-align: right;">high</td>
 <td style="text-align: right;">low</td>
 <td style="text-align: right;">high</td>
-<td>cheap but weak long-term</td>
+<td>cheaper but riskier</td>
 </tr>
 <tr class="odd">
 <td>C</td>
@@ -432,38 +519,50 @@
 <td style="text-align: right;">high</td>
 <td style="text-align: right;">high</td>
 <td style="text-align: right;">low</td>
-<td>strongest but costly</td>
+<td>strongest, but costly</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="what-spreadsheet-cannot-replace" class="slide level2 center">
-<h2>What Spreadsheet Cannot Replace</h2>
-<ul>
-<li class="fragment">spatial reasoning at city or site scale</li>
-<li class="fragment">complex geospatial operations</li>
-<li class="fragment">reusable code workflows</li>
-<li class="fragment">simulation-specific modeling</li>
-</ul>
-<p>That is why the course still surveys GIS and Python.</p>
-</section>
-<section id="practice-exercise" class="slide level2 center">
-<h2>Practice Exercise</h2>
+<section id="workbook-build-sprint" class="slide level2 center">
+<h2>Workbook Build Sprint</h2>
+<p><strong>15 minutes</strong></p>
 <p>Build a starter workbook with:</p>
 <ol type="1">
 <li class="fragment">one sheet for evidence sources</li>
 <li class="fragment">one sheet for alternative comparison</li>
 <li class="fragment">one chart that makes a trade-off visible</li>
 </ol>
+<p>Use your A1 topic, not a generic example.</p>
+</section>
+<section id="peer-swap-test" class="slide level2 center">
+<h2>Peer Swap Test</h2>
+<p>Swap screens with a classmate and ask:</p>
+<ul>
+<li class="fragment">can they understand the workbook logic quickly?</li>
+<li class="fragment">can they tell what each column means?</li>
+<li class="fragment">can they identify the decision being supported?</li>
+<li class="fragment">can they read the chart without verbal explanation?</li>
+</ul>
+</section>
+<section id="what-spreadsheet-cannot-replace" class="slide level2 center">
+<h2>What Spreadsheet Cannot Replace</h2>
+<ul>
+<li class="fragment">spatial reasoning at city or site scale</li>
+<li class="fragment">repeated geospatial operations</li>
+<li class="fragment">more complex notebook automation</li>
+<li class="fragment">simulation-specific modeling</li>
+</ul>
+<p>That is why the course still surveys GIS and Python.</p>
 </section>
 <section id="if-you-stay-on-spreadsheet" class="slide level2 center">
 <h2>If You Stay on Spreadsheet</h2>
 <p>You can still do the course very well if you:</p>
 <ul>
 <li class="fragment">keep the logic clean</li>
-<li class="fragment">tie the table to a real decision</li>
-<li class="fragment">avoid decorative charts</li>
-<li class="fragment">document what the spreadsheet cannot tell you</li>
+<li class="fragment">tie every sheet to a decision</li>
+<li class="fragment">avoid decorative graphics</li>
+<li class="fragment">document what the workbook cannot tell you</li>
 </ul>
 
 <div class="quarto-auto-generated-content">
