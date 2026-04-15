@@ -1,6 +1,7 @@
 ---
-title: "Week 8: The Method Reproducibility Challenge"
-subtitle: "Documentation Olympics, Automation Ethics Showdown, and Workflow Wars"
+title: "Week 8: Reproducibility and Mentor Prep"
+subtitle: "Documentation Challenge, Automation Ethics, and Workflow Strategy"
+output-file: week-08.html
 format: 
   revealjs:
     theme: solarized

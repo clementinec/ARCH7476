@@ -18,7 +18,7 @@ format:
 - why architecture students need tool choice to be explicit
 - mixed-cohort expectations
 - visual case examples
-- A1 kickoff
+- A1 kickoff and in-class working session
 
 ---
 
@@ -38,6 +38,19 @@ It is organized around one question:
 - simulation numbers look precise but may hide bad assumptions
 - survey comments feel rich but may not generalize
 - data only becomes useful when the path from input to decision is legible
+
+---
+
+## The Current Reality in Studio
+
+Decisions are often shaped by:
+
+- precedent and intuition
+- tutor pressure or taste
+- untested assumptions
+- last-minute “evidence” added after the fact
+
+The course is trying to make that process more explicit and more defensible.
 
 ---
 
@@ -98,6 +111,33 @@ It is organized around one question:
 
 ---
 
+## Evidence Type Sorting Exercise
+
+In small groups, sort example inputs into:
+
+- precedent
+- observation
+- standard
+- simulation
+- measurement
+- assumption
+
+Then argue about which ones are strong enough to change a design decision.
+
+---
+
+## The First Question to Ask
+
+Not:
+
+“What software should I use?”
+
+But:
+
+“What evidence would reduce uncertainty around this decision?”
+
+---
+
 ## A1 Starts Here
 
 Bring in **one prior design decision** you already made and believed was evidence-based.
@@ -111,13 +151,150 @@ Then ask:
 
 ---
 
+## A1 Has Two Moves
+
+### Move 1: Audit a prior decision
+
+- what did you decide?
+- what evidence did you think you had?
+- what was actually doing the work?
+
+### Move 2: Set up the next one
+
+- what decision is coming next?
+- what evidence would actually help?
+- who needs to be convinced?
+
+---
+
+## Pair Exercise 1: State the Decision Clearly
+
+Work in pairs.
+
+Partner A has 60 seconds to explain:
+
+- the prior design decision
+- the alternatives that were on the table
+- why the decision mattered
+
+Partner B listens for one problem:
+
+- the decision is too broad
+- the alternatives are unclear
+- the audience is unclear
+- the “evidence” is still vague
+
+Then switch.
+
+---
+
+## Pair Exercise 2: What Counted as Evidence?
+
+For the same decision, list the actual inputs used at the time:
+
+- precedent images
+- tutor advice
+- code or standards
+- measurements
+- simulations
+- observations
+- user or stakeholder input
+- assumptions and taste
+
+Do not clean this up yet. Get the real list down first.
+
+---
+
+## Pair Exercise 3: Sort the Inputs
+
+Now sort those inputs into:
+
+- evidence strong enough to matter
+- evidence weak but treated as strong
+- assumptions disguised as evidence
+- gaps that were never addressed
+
+Your partner’s job is to challenge overconfidence.
+
+---
+
+## Fast A1 Worksheet
+
+By the middle of class, each student should be able to fill in:
+
+| Prompt | Your answer |
+|---|---|
+| Prior decision | |
+| Main alternatives | |
+| Main audience or stakeholder | |
+| Strongest evidence actually used | |
+| Weakest link in the argument | |
+| Next studio decision | |
+
+---
+
+## Stand-Alone Prompt
+
+![The Edge, Amsterdam](../assets/examples/the-edge-amsterdam.jpg){height="420"}
+
+If a student claimed this project proved a design idea works, what would you ask to separate branding, precedent, and actual evidence?
+
+---
+
+## Whole-Class Debrief
+
+Common problems we should expect in A1:
+
+- the “decision” is really a whole project theme
+- precedent is standing in for performance evidence
+- one simulation screenshot is being treated as proof
+- the next decision is still too abstract to investigate
+
+---
+
+## Week 1 A1 Milestone
+
+Leave class with:
+
+- one prior decision chosen
+- one rough list of actual inputs or evidence
+- one weak link identified
+- one next studio decision drafted
+
+If you do not have these four things, A1 has not really started.
+
+---
+
 ## Week 1 Exit Prompt
 
 Before next class, identify:
 
 - one prior decision
 - one image or drawing that represents it
+- one evidence list expanded from today’s worksheet
 - one upcoming studio decision you want to investigate
+- one sentence on where the original decision was under-evidenced
+
+---
+
+## Workshop Prompt
+
+Take five minutes and write:
+
+- one design decision you still feel confident about
+- one design decision you now suspect was under-evidenced
+- one decision you know is coming in the next studio
+
+---
+
+## Optional Week 1 Homework Structure for A1
+
+If you want a clean start before Week 2, draft:
+
+1. one paragraph describing the prior decision
+2. one bullet list of evidence and assumptions
+3. one paragraph on confidence and limits
+4. one paragraph on the next decision
 
 ---
 

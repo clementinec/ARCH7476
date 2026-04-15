@@ -26,11 +26,11 @@ The semester now has a clear sequence:
 | 5 | BIM, BEM, and Building Performance | model types, translation loss, simulation as evidence | pathway commitment |
 | 6 | Evidence and Pathway Mapping | source quality, scoping, tool choice, work plan | **A2 due** |
 | 7 | Method Prototype Studio | minimal viable workflow, data inputs, outputs, QC | A3 draft |
-| 8 | Pilot, Compare, and Quantify Uncertainty | pilot review, uncertainty, peer critique | **A3 due** |
-| 9 | Thresholds and Decisions | decision criteria, trade-offs, counter-arguments | A4 analysis |
-| 10 | Visualize and Document the Workflow | figures, process capture, reproducibility | A4 draft |
-| 11 | Studio Evidence Package Workshop | review, refinement, audience fit | A4 near-final |
-| 12 | Object Fair and Transfer Forward | presentation, critique, next-studio handoff | **A4 due** |
+| 8 | Reproducibility and Mentor Prep | documentation challenge, automation ethics, mentor strategy | **A3 due** |
+| 9 | Storytelling, Figures, and Decisions | narrative structure, figure rescue, recommendation framing | A4 analysis |
+| 10 | Draft Defense | presentations, live feedback, improvement strategy | A4 draft |
+| 11 | Final Polish | package refinement, rehearsal, Object Fair prep | A4 near-final |
+| 12 | Object Fair | presentation, critique, next-studio handoff | **A4 due** |
 
 ## Week 1: Why Evidence Needs a Workflow
 
@@ -41,12 +41,16 @@ Reset the course around decisions, evidence, and tool choice instead of disconne
 - course overview and new pathway model
 - architecture examples that appear evidence-based but hide weak reasoning
 - introduction to A1: prior decision audit plus next decision brief
+- pair exercise: articulate one prior design decision and its alternatives
+- worksheet exercise: sort what counted as evidence, assumption, and missing evidence
+- draft the next studio decision in class so A1 is already underway
 - mixed-cohort expectations for undergraduates, MArch, and PhD students
 
 ### Out of Class
 - identify one prior design decision you already made
 - gather the images, notes, and sources you used at the time
 - identify one upcoming studio decision worth investigating
+- expand the in-class A1 worksheet into a draft evidence audit
 
 ### Tools Introduced
 - overview only: `spreadsheet`, `GIS`, `Python`, `BIM/BEM`
@@ -160,70 +164,71 @@ Build the smallest workflow that can answer a real piece of the question.
 - run the first full prototype
 - capture screenshots, exports, and notes
 
-## Week 8: Pilot, Compare, and Quantify Uncertainty
+## Week 8: Reproducibility and Mentor Prep
 
 ### Focus
-Use pilot work to refine the method and express confidence honestly.
+Stress-test the method by forcing it to be documented, explained, and critiqued by others before it becomes final-course evidence.
 
 ### In Class
-- what counts as a useful pilot
-- uncertainty ranges, scenario comparison, and data quality checks
-- peer critique focused on method fit and overclaiming
-- A3 refinement clinic
+- documentation speed trials
+- reproducibility swap challenge
+- automation ethics and data provenance
+- mentor consultation strategy and question development
 
 ### Out of Class
 - **submit A3**
-- decide what evidence will appear in the final package
+- revise your workflow notes based on what broke during the swap test
+- prepare mentor questions and final-package priorities
 
-## Week 9: Thresholds and Decisions
+## Week 9: Storytelling, Figures, and Decisions
 
 ### Focus
-Move from “interesting findings” to a decision rule someone can actually use.
+Turn analysis into a convincing story, a clear figure set, and a recommendation someone can act on.
 
 ### In Class
-- set thresholds and ranges
-- compare alternatives without hiding trade-offs
-- define stakeholder-facing recommendations
-- address counter-arguments and weak spots
+- story structure for busy stakeholders
+- figure rescue and the 3-second message test
+- object card / evidence board iteration
+- recommendation framing with thresholds and trade-offs
 
 ### Out of Class
 - draft A4 recommendation logic
 - refine charts, maps, or notebook outputs
 
-## Week 10: Visualize and Document the Workflow
+## Week 10: Draft Defense
 
 ### Focus
-Make the method and the evidence legible to others.
+Pressure-test the near-final package in live presentation conditions.
 
 ### In Class
-- figure design for architectural audiences
-- workflow diagrams and reproducibility notes
-- what to show from a spreadsheet, GIS map, or notebook
-- draft evidence board / object card review
+- timed presentations
+- live scoring and structured critique
+- feedback triage and revision planning
+- object fair readiness check
 
 ### Out of Class
 - assemble A4 draft package
 - prepare review materials for Week 11
 
-## Week 11: Studio Evidence Package Workshop
+## Week 11: Final Polish
 
 ### Focus
-Pressure-test the near-final decision brief against its audience.
+Polish the package, rehearse delivery, and close the gap between good work and public-facing work.
 
 ### In Class
-- peer review of argument, evidence, and visual clarity
-- pathway-specific troubleshooting
-- tighten the link between evidence and next-studio action
-- polish final package structure
+- professional polish lab
+- figure and message clarity clinic
+- networking and Q&A rehearsal
+- final submission assembly
 
 ### Out of Class
 - finalize A4
 - prepare final presentation materials
 
-## Week 12: Object Fair and Transfer Forward
+## Week 12: Object Fair
 
 ### Focus
-Present the work as something that can move into the next project, not just end the semester.
+Present the work publicly, receive critique, and convert the semester output into something reusable for the next project.
 
 ### In Class
 - final presentations and critique

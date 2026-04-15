@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -326,7 +391,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Week 5: BIM, BEM, and Building Performance</h1>
-  <p class="subtitle">Shared Literacy Before Pathway Commitment</p>
+  <p class="subtitle">What Changes When a Building Becomes an Energy Model</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -336,108 +401,358 @@
 <h2>Today’s Agenda</h2>
 <ul>
 <li class="fragment">BIM and BEM are not the same model</li>
-<li class="fragment">why translation between them breaks</li>
-<li class="fragment">what simulation can and cannot support</li>
-<li class="fragment">how performance workflows fit evidence-based design</li>
-<li class="fragment">primary pathway commitment</li>
+<li class="fragment">how BIM files become BEM files</li>
+<li class="fragment">what gets lost in translation</li>
+<li class="fragment">IFC vs <code>gbXML</code></li>
+<li class="fragment">debugging exercises and pathway commitment</li>
 </ul>
 </section>
-<section id="bim-vs-bem" class="slide level2 center">
-<h2>BIM vs BEM</h2>
-<p><strong>BIM</strong></p>
+<section id="why-this-week-matters" class="slide level2 center">
+<h2>Why This Week Matters</h2>
+<p>Even if your semester pathway is not simulation-heavy, you still need to understand:</p>
 <ul>
-<li class="fragment">construction logic</li>
-<li class="fragment">geometry, assemblies, coordination</li>
-</ul>
-<p><strong>BEM</strong></p>
-<ul>
-<li class="fragment">thermal zones</li>
-<li class="fragment">schedules, systems, simulation assumptions</li>
+<li class="fragment">what performance claims are built from</li>
+<li class="fragment">why some model outputs are more trustworthy than others</li>
+<li class="fragment">where BIM/BEM workflows break in practice</li>
 </ul>
 </section>
-<section id="why-they-diverge" class="slide level2 center">
-<h2>Why They Diverge</h2>
-<ul>
-<li class="fragment">one model is detailed for making and coordinating</li>
-<li class="fragment">one model is simplified for calculation</li>
-<li class="fragment">the same building is being described for different purposes</li>
-</ul>
-<p><strong>Result:</strong> translation is always selective</p>
-</section>
-<section id="what-gets-lost" class="slide level2 center">
-<h2>What Gets Lost</h2>
-<ul>
-<li class="fragment">thermal zoning logic</li>
-<li class="fragment">schedules and operation assumptions</li>
-<li class="fragment">simplified geometry for calculation</li>
-<li class="fragment">system abstraction</li>
-</ul>
-</section>
-<section id="simulation-is-evidence-not-authority" class="slide level2 center">
-<h2>Simulation Is Evidence, Not Authority</h2>
-<p>Simulation can support decisions when:</p>
-<ul>
-<li class="fragment">assumptions are stated</li>
-<li class="fragment">alternatives are comparable</li>
-<li class="fragment">scope is appropriate</li>
-</ul>
-<p>Simulation misleads when:</p>
-<ul>
-<li class="fragment">inputs are hidden</li>
-<li class="fragment">the model is treated as reality</li>
-<li class="fragment">false precision replaces judgment</li>
-</ul>
-</section>
-<section id="example-cases" class="slide level2 center">
-<h2>Example Cases</h2>
+<section id="stand-alone-case-prompts" class="slide level2 center">
+<h2>Stand-Alone Case Prompts</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../assets/examples/the-edge-amsterdam.jpg" height="260"></p>
+<p><img data-src="../assets/examples/the-edge-amsterdam.jpg" height="280"></p>
 <figcaption>The Edge, Amsterdam</figcaption>
 </figure>
 </div>
-<p>Office/workplace claims:</p>
-<ul>
-<li class="fragment">systems performance</li>
-<li class="fragment">workplace comfort</li>
-<li class="fragment">operational assumptions</li>
-</ul>
+<p>What kinds of evidence would support a claim about workplace performance here?</p>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../assets/examples/california-academy-of-sciences.jpg" height="260"></p>
+<p><img data-src="../assets/examples/california-academy-of-sciences.jpg" height="280"></p>
 <figcaption>California Academy of Sciences</figcaption>
 </figure>
 </div>
-<p>Environmental performance claims:</p>
-<ul>
-<li class="fragment">envelope and roof strategies</li>
-<li class="fragment">public environmental narratives</li>
-<li class="fragment">what is measured vs what is marketed</li>
-</ul>
+<p>What kinds of evidence would support a claim about environmental performance here?</p>
 </div>
 </div>
 </section>
-<section id="why-everyone-sees-this-module" class="slide level2 center">
-<h2>Why Everyone Sees This Module</h2>
-<p>Even if your primary pathway is not simulation-heavy, you still need to know:</p>
+<section id="what-are-bim-and-bem" class="slide level2 center">
+<h2>🏗️ What Are BIM and BEM?</h2>
+<p><strong>BIM</strong></p>
 <ul>
-<li class="fragment">how performance claims are constructed</li>
-<li class="fragment">where BIM/BEM workflows break</li>
-<li class="fragment">when a metric should be trusted cautiously</li>
+<li class="fragment">digital model of physical and functional building characteristics</li>
+<li class="fragment">serves design, construction, coordination, and facility management</li>
+<li class="fragment">prioritizes geometry, materials, relationships, and documentation</li>
+</ul>
+<p><strong>BEM</strong></p>
+<ul>
+<li class="fragment">computational model of thermal behavior and energy flows</li>
+<li class="fragment">serves analysis, optimization, and compliance</li>
+<li class="fragment">prioritizes zones, schedules, systems, weather, and performance assumptions</li>
 </ul>
 </section>
-<section id="pathway-commitment" class="slide level2 center">
-<h2>Pathway Commitment</h2>
-<p>After this week, choose one:</p>
+<section id="same-building-different-core-questions" class="slide level2 center">
+<h2>Same Building, Different Core Questions</h2>
+<p><strong>BIM asks:</strong><br>
+What do we build, where does it go, and how is it put together?</p>
+<p><strong>BEM asks:</strong><br>
+How will it behave over time when weather, people, and systems act on it?</p>
+</section>
+<section id="bim-data-priorities" class="slide level2 center">
+<h2>BIM Data Priorities</h2>
 <ul>
-<li class="fragment"><code>spreadsheet</code></li>
-<li class="fragment"><code>GIS</code></li>
-<li class="fragment"><code>Python</code></li>
+<li class="fragment">project, site, building, levels</li>
+<li class="fragment">spaces and rooms</li>
+<li class="fragment">walls, windows, floors, roofs, doors</li>
+<li class="fragment">material layers and product attributes</li>
+<li class="fragment">element relationships and construction logic</li>
 </ul>
-<p>Choose the path that best fits the decision. Not the one that looks most advanced.</p>
+</section>
+<section id="bem-data-priorities" class="slide level2 center">
+<h2>BEM Data Priorities</h2>
+<ul>
+<li class="fragment">thermal zones</li>
+<li class="fragment">heat-transfer surfaces</li>
+<li class="fragment">internal loads</li>
+<li class="fragment">occupancy schedules</li>
+<li class="fragment">HVAC systems and control logic</li>
+<li class="fragment">weather and shading context</li>
+</ul>
+</section>
+<section id="quick-check-bim-or-bem" class="slide level2 center">
+<h2>Quick Check: BIM or BEM?</h2>
+<ol type="1">
+<li class="fragment">Exact window manufacturer and product code</li>
+<li class="fragment">Occupancy schedule by hour</li>
+<li class="fragment">Thermal resistance of an assembly</li>
+<li class="fragment">Construction sequencing</li>
+<li class="fragment">Cooling setpoint and operating hours</li>
+</ol>
+<p><strong>Pair task:</strong> label each item <code>BIM</code>, <code>BEM</code>, or <code>both</code>.</p>
+</section>
+<section id="quick-check-answers" class="slide level2 center">
+<h2>Quick Check Answers</h2>
+<ul>
+<li class="fragment">exact manufacturer and product code: mostly <code>BIM</code></li>
+<li class="fragment">occupancy schedule by hour: <code>BEM</code></li>
+<li class="fragment">thermal resistance of an assembly: often <code>both</code>, but used differently</li>
+<li class="fragment">construction sequencing: <code>BIM</code></li>
+<li class="fragment">cooling setpoint and operation hours: <code>BEM</code></li>
+</ul>
+<p><strong>Key insight:</strong> the same wall can exist in both models, but not for the same reason.</p>
+</section>
+<section id="how-bim-files-get-made" class="slide level2 center">
+<h2>How BIM Files Get Made</h2>
+<ul>
+<li class="fragment"><strong>manual BIM authoring</strong> in Revit / ArchiCAD / similar</li>
+<li class="fragment"><strong>3D import</strong> from Rhino, SketchUp, or other geometric models</li>
+<li class="fragment"><strong>point cloud capture</strong> for as-built conditions and renovation work</li>
+</ul>
+<p>Each path changes how much cleanup is needed before any energy analysis begins.</p>
+</section>
+<section id="how-bem-files-get-made" class="slide level2 center">
+<h2>How BEM Files Get Made</h2>
+<ul>
+<li class="fragment">translate from an existing BIM model</li>
+<li class="fragment">build a direct energy model from drawings and assumptions</li>
+<li class="fragment">start from a template or archetype and adapt it</li>
+</ul>
+<p>All three approaches are common. None is frictionless.</p>
+</section>
+<section id="workflow-map-design-to-analysis" class="slide level2 center">
+<h2>Workflow Map — Design to Analysis</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource mermaid number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>graph TB</span>
+<span id="cb1-2"><a></a>    A[Design Intent] --&gt; B[BIM Authoring Tool]</span>
+<span id="cb1-3"><a></a>    B --&gt; C[Native BIM File]</span>
+<span id="cb1-4"><a></a>    C --&gt; D{Export Format}</span>
+<span id="cb1-5"><a></a>    D --&gt; E[IFC]</span>
+<span id="cb1-6"><a></a>    D --&gt; F[gbXML]</span>
+<span id="cb1-7"><a></a>    F --&gt; G[Energy Modeling Tool]</span>
+<span id="cb1-8"><a></a>    G --&gt; H[Initial BEM]</span>
+<span id="cb1-9"><a></a>    H --&gt; I[Manual Cleanup]</span>
+<span id="cb1-10"><a></a>    I --&gt; J[Schedules, Systems, Controls, Weather]</span>
+<span id="cb1-11"><a></a>    J --&gt; K[Complete BEM]</span>
+<span id="cb1-12"><a></a>    K --&gt; L[Simulation Results]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="the-translation-gap" class="slide level2 center">
+<h2>The Translation Gap</h2>
+<p>When BIM becomes BEM, problems usually come from four categories:</p>
+<ul>
+<li class="fragment">geometry</li>
+<li class="fragment">zoning</li>
+<li class="fragment">constructions</li>
+<li class="fragment">operations</li>
+</ul>
+</section>
+<section id="geometry-issues" class="slide level2 center">
+<h2>Geometry Issues</h2>
+<ul>
+<li class="fragment">curved facades oversimplified into straight planes</li>
+<li class="fragment">tiny modeled objects exported as meaningful surfaces</li>
+<li class="fragment">orientation or context errors</li>
+<li class="fragment">missing adjacent buildings and shading</li>
+</ul>
+</section>
+<section id="thermal-zoning-issues" class="slide level2 center">
+<h2>Thermal Zoning Issues</h2>
+<ul>
+<li class="fragment">BIM spaces do not map neatly to thermal zones</li>
+<li class="fragment">open offices become fragmented or over-zoned</li>
+<li class="fragment">plenums, circulation zones, or mixed-use spaces disappear or split badly</li>
+</ul>
+</section>
+<section id="construction-and-material-gaps" class="slide level2 center">
+<h2>Construction and Material Gaps</h2>
+<ul>
+<li class="fragment">walls export as generic “exterior wall”</li>
+<li class="fragment">layers, R-values, SHGC, and internal mass are incomplete</li>
+<li class="fragment">thermal bridges and details are ignored</li>
+</ul>
+</section>
+<section id="operational-data-missing" class="slide level2 center">
+<h2>Operational Data Missing</h2>
+<ul>
+<li class="fragment">no occupancy schedules</li>
+<li class="fragment">no equipment or lighting schedules</li>
+<li class="fragment">no setpoints or control strategies</li>
+<li class="fragment">no HVAC system definitions</li>
+</ul>
+<p><strong>This is why a clean-looking import can still be analytically useless.</strong></p>
+</section>
+<section id="translation-detective-challenge" class="slide level2 center">
+<h2>🎯 Translation Detective Challenge</h2>
+<p><strong>Scenario:</strong> You exported a 5-story office building to <code>gbXML</code> and the first model run shows energy use at <strong>3x</strong> what you expected.</p>
+<p><strong>In groups, identify likely causes:</strong></p>
+<ol type="1">
+<li class="fragment">What probably happened to the thermal zones?</li>
+<li class="fragment">What is likely wrong with the HVAC assumptions?</li>
+<li class="fragment">What data probably failed to translate?</li>
+<li class="fragment">What would you inspect first before trusting any output?</li>
+</ol>
+</section>
+<section id="ifc-vs-gbxml" class="slide level2 center">
+<h2>IFC vs <code>gbXML</code></h2>
+<p>Both are bridges. Neither is a perfect bridge.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>IFC</th>
+<th><code>gbXML</code></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Primary purpose</td>
+<td>broad BIM exchange</td>
+<td>energy model translation</td>
+</tr>
+<tr class="even">
+<td>Geometry detail</td>
+<td>high</td>
+<td>moderate</td>
+</tr>
+<tr class="odd">
+<td>Thermal zoning support</td>
+<td>weak</td>
+<td>better</td>
+</tr>
+<tr class="even">
+<td>File size / speed</td>
+<td>heavier</td>
+<td>lighter</td>
+</tr>
+<tr class="odd">
+<td>Construction detail</td>
+<td>stronger</td>
+<td>narrower</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-each-bridge-is-good-at" class="slide level2 center">
+<h2>What Each Bridge Is Good At</h2>
+<p><strong>IFC</strong></p>
+<ul>
+<li class="fragment">archiving and coordination</li>
+<li class="fragment">multi-disciplinary interoperability</li>
+<li class="fragment">detailed building information</li>
+</ul>
+<p><strong><code>gbXML</code></strong></p>
+<ul>
+<li class="fragment">getting geometry and basic constructions into energy tools</li>
+<li class="fragment">faster processing</li>
+<li class="fragment">better starting point for thermal-zone workflows</li>
+</ul>
+</section>
+<section id="why-neither-solves-the-whole-problem" class="slide level2 center">
+<h2>Why Neither Solves the Whole Problem</h2>
+<ul>
+<li class="fragment">manual cleanup is still required</li>
+<li class="fragment">vendor implementations vary</li>
+<li class="fragment">updates overwrite hand fixes</li>
+<li class="fragment">building design logic and energy logic are not the same thing</li>
+</ul>
+</section>
+<section id="ideal-workflow-vs-real-workflow" class="slide level2 center">
+<h2>Ideal Workflow vs Real Workflow</h2>
+<p><strong>Ideal</strong></p>
+<ol type="1">
+<li class="fragment">update BIM</li>
+<li class="fragment">export cleanly</li>
+<li class="fragment">update BEM automatically</li>
+<li class="fragment">rerun analysis</li>
+<li class="fragment">feed changes back into design</li>
+</ol>
+<p><strong>Real</strong></p>
+<ol type="1">
+<li class="fragment">export once</li>
+<li class="fragment">spend days cleaning the BEM</li>
+<li class="fragment">design changes continue</li>
+<li class="fragment">model diverges</li>
+<li class="fragment">everyone hopes the gap is still “small enough”</li>
+</ol>
+</section>
+<section id="case-study-translation-gone-wrong" class="slide level2 center">
+<h2>Case Study: Translation Gone Wrong</h2>
+<ul>
+<li class="fragment">new 15,000 m² university research building</li>
+<li class="fragment">BIM in Revit with MEP coordination</li>
+<li class="fragment">energy model in OpenStudio / EnergyPlus</li>
+<li class="fragment">goal: LEED Gold energy analysis</li>
+</ul>
+</section>
+<section id="case-study-timeline" class="slide level2 center">
+<h2>Case Study Timeline</h2>
+<p><strong>Week 1</strong></p>
+<ul>
+<li class="fragment">export appears successful</li>
+<li class="fragment">team believes the workflow is seamless</li>
+</ul>
+<p><strong>Week 2</strong></p>
+<ul>
+<li class="fragment">465 thermal zones created instead of about 30</li>
+<li class="fragment">HVAC missing</li>
+<li class="fragment">generic constructions everywhere</li>
+<li class="fragment">orientation wrong</li>
+</ul>
+</section>
+<section id="case-study-timeline-contd" class="slide level2 center">
+<h2>Case Study Timeline (cont’d)</h2>
+<p><strong>Weeks 3-4</strong></p>
+<ul>
+<li class="fragment">merge zones manually</li>
+<li class="fragment">define constructions and material properties</li>
+<li class="fragment">build schedules and HVAC systems</li>
+<li class="fragment">fix context and shading</li>
+</ul>
+<p><strong>Week 8</strong></p>
+<ul>
+<li class="fragment">design changes arrive</li>
+<li class="fragment">re-export means losing cleanup work</li>
+<li class="fragment">manual updates begin and divergence starts</li>
+</ul>
+</section>
+<section id="lessons-learned" class="slide level2 center">
+<h2>Lessons Learned</h2>
+<ul>
+<li class="fragment">BIM was not authored with energy analysis in mind</li>
+<li class="fragment">missing data only became obvious after export</li>
+<li class="fragment">there was no workflow for iterative updates</li>
+<li class="fragment">“the file opened” did not mean “the model is valid”</li>
+</ul>
+</section>
+<section id="divergence-detective" class="slide level2 center">
+<h2>🎮 Divergence Detective</h2>
+<p><strong>Scenario:</strong> Actual energy use is 30% higher than predicted because BIM and BEM drifted apart.</p>
+<p>Investigate in groups:</p>
+<ul>
+<li class="fragment">what geometry changes could explain the increase?</li>
+<li class="fragment">what material substitutions matter?</li>
+<li class="fragment">what system or control changes matter?</li>
+<li class="fragment">what operation schedules may differ from assumptions?</li>
+</ul>
+<p>Come back with your top three suspects.</p>
+</section>
+<section id="shared-literacy-takeaways" class="slide level2 center">
+<h2>Shared Literacy Takeaways</h2>
+<ul>
+<li class="fragment">BIM and BEM must stay related, but they should not be confused</li>
+<li class="fragment">simulation outputs are only as good as the assumptions and cleanup behind them</li>
+<li class="fragment">translation loss is normal, not an edge case</li>
+<li class="fragment">performance claims need method transparency, not just metrics</li>
+</ul>
+</section>
+<section id="pathway-commitment-check" class="slide level2 center">
+<h2>Pathway Commitment Check</h2>
+<p>After this week, you should be able to say:</p>
+<ul>
+<li class="fragment">whether your project needs only literacy in BIM/BEM</li>
+<li class="fragment">whether simulation evidence will support your question</li>
+<li class="fragment">whether your primary semester pathway is still <code>spreadsheet</code>, <code>GIS</code>, or <code>Python</code></li>
+</ul>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">

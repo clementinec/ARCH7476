@@ -103,9 +103,9 @@ Best for students who need more automation, reuse, or analytical control.
 `Spreadsheet` is the baseline exit pathway for the course. It is not remedial. It is the lowest-friction route to a credible, transparent, decision-ready workflow, and a student can complete the course very well through it.
 :::
 
-## Local Visual Example Bank
+## Course Precedents
 
-The rebuilt course uses downloaded case-study images stored locally so the site does not depend on fragile remote URLs.
+These are some of the case studies and project types we will keep returning to when we ask what counts as evidence, what different tools can actually tell us, and how a design claim becomes defensible.
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -121,7 +121,7 @@ The rebuilt course uses downloaded case-study images stored locally so the site 
 :::
 ::::
 
-Source metadata is stored in `assets/examples/sources.csv`.
+Image credits are recorded in `assets/examples/sources.csv`.
 
 ## Assignment Arc
 

@@ -17,11 +17,11 @@ project:
     - weeks/week-05.qmd
     - weeks/week-06.qmd
     - weeks/week-07.qmd
-    - weeks/week-08.qmd
+    - weeks/week-08-engaging.qmd
     - weeks/week-09.qmd
-    - weeks/week-10.qmd
-    - weeks/week-11.qmd
-    - weeks/week-12.qmd
+    - weeks/week-10-engaging.qmd
+    - weeks/week-11-engaging.qmd
+    - weeks/week-12-engaging.qmd
     - weeks/python-primer-overview.qmd
     - notebooks/01_python_ml_basics.ipynb
     - notebooks/02_arch_viz_analysis.ipynb
@@ -69,16 +69,16 @@ website:
             href: weeks/week-06.qmd
           - text: "W7: Method Prototype Studio"
             href: weeks/week-07.qmd
-          - text: "W8: Pilot, Compare, and Quantify Uncertainty"
-            href: weeks/week-08.qmd
+          - text: "W8: Reproducibility and Mentor Prep"
+            href: weeks/week-08-engaging.qmd
           - text: "W9: Thresholds and Decisions"
             href: weeks/week-09.qmd
-          - text: "W10: Visualize and Document the Workflow"
-            href: weeks/week-10.qmd
-          - text: "W11: Studio Evidence Package Workshop"
-            href: weeks/week-11.qmd
-          - text: "W12: Object Fair and Transfer Forward"
-            href: weeks/week-12.qmd
+          - text: "W10: Draft Defense"
+            href: weeks/week-10-engaging.qmd
+          - text: "W11: Final Polish"
+            href: weeks/week-11-engaging.qmd
+          - text: "W12: Object Fair"
+            href: weeks/week-12-engaging.qmd
       - section: "Assignments"
         contents:
           - text: "A1: Evidence Audit + Next Decision Brief"

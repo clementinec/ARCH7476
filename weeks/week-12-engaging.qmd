@@ -1,6 +1,7 @@
 ---
-title: "Week 12: Object Fair Championship"
-subtitle: "The Grand Finale - Evidence-Based Design Excellence Showcase"
+title: "Week 12: Object Fair"
+subtitle: "Final Presentations, Critique, and Transfer Forward"
+output-file: week-12.html
 format: 
   revealjs:
     theme: serif

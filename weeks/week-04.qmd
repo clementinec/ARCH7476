@@ -1,6 +1,6 @@
 ---
 title: "Week 4: GIS Choices for Architects"
-subtitle: "QGIS, ArcGIS, geopandas, and the Jupyter Setup Ladder"
+subtitle: "QGIS, ArcGIS, geopandas, and Spatial Evidence Workflows"
 format:
   revealjs:
     theme: simple
@@ -14,51 +14,113 @@ format:
 
 ## Today's Agenda
 
-- GIS is not one thing
-- compare QGIS, ArcGIS, and geopandas
-- understand Jupyter, Anaconda, Miniconda, and Colab
-- run a minimal code-based GIS workflow
-- decide whether GIS should be your pathway
+- what counts as a GIS question
+- three GIS paradigms for architecture
+- `Jupyter`, `Anaconda`, `Miniconda`, and `Colab`
+- `geopandas` as the code-GIS anchor
+- Hong Kong data sources and pathway choice
 
 ---
 
-## A GIS Question Looks Like This
+## GIS Is Not Just Digital Mapping
 
-- which site is better connected?
-- what falls within a walkable radius?
-- how do zoning, topography, and transit overlap?
-- what is the spatial trade-off between access and environmental exposure?
+GIS matters when your question depends on:
+
+- location
+- proximity
+- overlap
+- boundaries
+- access
+- context over space and time
+
+---
+
+## Stand-Alone Site Prompt
+
+![Kai Tak Sports Park](../assets/examples/kai-tak-sports-park.jpg){height="520"}
+
+If this were your project, what spatial questions would matter first?
+
+---
+
+## Typical GIS Questions for Architecture
+
+- which site is better connected to transit?
+- which parcels fall inside a flood or noise risk zone?
+- how much of a site lies within a 5-minute walking catchment?
+- where do zoning, topography, and infrastructure collide?
+- how can context be exported into a design workflow?
 
 ---
 
 ## Three GIS Paradigms
 
-| Tool | Best for | Typical strength | Typical weakness |
+| Path | Best for | Strength | Risk |
 |---|---|---|---|
-| QGIS | quick exploration and map production | visual and forgiving | less reproducible |
-| ArcGIS | enterprise / professional ecosystems | collaboration and platform depth | licensing and overhead |
-| geopandas | notebook-based spatial analysis | reproducible and scriptable | steeper setup |
+| `QGIS` | visual exploration and map production | free, flexible, fast to start | harder to reproduce step by step |
+| `ArcGIS` | institutional and enterprise workflows | strong ecosystem, client compatibility | licensing, overhead, platform dependence |
+| `geopandas` | notebook-based spatial analysis | reproducible, scriptable, integrates with Python | setup and debugging overhead |
 
 ---
 
-## Why `geopandas` Matters Here
+## `QGIS`: The Fast Visual Option
 
-The course needs one concrete code-GIS reference point.
+- ideal for loading many layers quickly
+- good for buffers, clips, joins, styling, and export
+- strong when you need to inspect data before deciding what matters
+- often the easiest starting point for students new to GIS
+
+---
+
+## `ArcGIS`: The Professional Ecosystem Option
+
+- useful when offices, clients, or institutions already depend on it
+- stronger for enterprise sharing, web maps, and standardized workflows
+- relevant if students need to read the logic of professional practice
+- not the default course anchor because the license and platform matter
+
+---
+
+## `geopandas`: The Reproducible Option
+
+- sits inside `Jupyter Notebook`
+- keeps spatial data close to `pandas`, plotting, and exported tables
+- supports documented reruns and small pipeline automation
+- makes code-driven GIS concrete rather than hypothetical
+
+---
+
+## Why `geopandas` Sits at the Center
+
+The course needs one code-based GIS reference point that students can actually see and reason through.
 
 That reference point is:
 
 - `geopandas`
-- in `Jupyter Notebook`
-- beside `pandas` and simple plotting
+- in a notebook
+- beside simple plotting and tabular analysis
 
 ---
 
 ## The Setup Ladder
 
 - `Anaconda` / `Miniconda` = local Python environment
-- `Jupyter Notebook` = interactive notebook interface
-- `geopandas` = spatial analysis library
-- `Google Colab` = browser fallback if local setup is not ready
+- `Jupyter Notebook` = the interface where code, outputs, and notes live
+- `geopandas` = the spatial analysis library
+- `Google Colab` = fallback if local setup is not ready
+
+---
+
+## Notebook Anatomy
+
+In a GIS notebook, students should be able to identify:
+
+- imports
+- file loading
+- coordinate reference system checks
+- geometry operations
+- quick plots or exports
+- notes about what the output means
 
 ---
 
@@ -70,10 +132,10 @@ import geopandas as gpd
 sites = gpd.read_file("candidate_sites.geojson")
 sites = sites.to_crs(3857)
 sites["buffer_400m"] = sites.buffer(400)
-sites.plot()
+sites.plot(column="score", legend=True)
 ```
 
-The point is not the syntax alone. The point is the structure:
+The logic matters more than the syntax:
 
 - load
 - inspect
@@ -83,37 +145,136 @@ The point is not the syntax alone. The point is the structure:
 
 ---
 
-## Example Prompt
+## Core GIS Operations Students Should Recognize
 
-![Kai Tak Sports Park as a site/context example](../assets/examples/kai-tak-sports-park.jpg){height="450"}
+- **buffer**: what lies within a distance?
+- **clip**: what lies inside a boundary?
+- **spatial join**: what overlaps what?
+- **dissolve**: what can be combined by rule?
+- **overlay**: where do constraints and opportunities intersect?
 
-Possible GIS questions:
+---
+
+## GIS Outputs That Actually Help Design
+
+- simple site-comparison maps
+- walkshed / transit-access maps
+- zoning and restriction overlays
+- exposure / proximity summaries
+- exported site context for further design work
+
+If the output does not inform a decision, it is just map decoration.
+
+---
+
+## Hong Kong Data Sources
+
+- `DATA.GOV.HK`
+- Planning Department datasets
+- Transport Department data
+- Hong Kong Observatory climate records
+- site-specific base drawings, counts, and photographs
+
+Students should learn where to look before they start modeling.
+
+---
+
+## Example Workflow 1: Site Selection
+
+Question:
+
+Which of three candidate sites best balances:
 
 - transit access
-- event-day catchments
-- surrounding land-use conflicts
-- neighborhood service overlap
+- development constraints
+- environmental exposure
+
+Possible pathway:
+
+- `QGIS` for first-pass layer exploration
+- `geopandas` if repeated comparisons or automation become useful
 
 ---
 
-## When GIS Is the Right Pathway
+## Example Workflow 2: Public-Space Access
 
-Choose GIS if your evidence depends on:
+Question:
 
-- location
-- proximity
-- overlap
-- boundaries
-- movement through space
+How does a proposal change access within a 5-minute or 10-minute walk?
 
-Do not choose GIS just because maps look persuasive.
+Possible pathway:
+
+- GIS for network and catchment logic
+- spreadsheet later for ranking alternatives
+
+This is a good reminder that pathways can support each other even when one remains primary.
 
 ---
 
-## Today’s Decision
+## Example Workflow 3: Context for Studio Modeling
+
+Question:
+
+What context data should be brought into Rhino / Grasshopper or another design environment?
+
+Possible pathway:
+
+- use GIS to select, simplify, and export
+- avoid importing the entire city when only a few layers matter
+
+---
+
+## Tool Choice Drill
+
+For each question, choose the first tool you would reach for:
+
+1. “I need to inspect zoning, roads, and transit stops quickly.”
+2. “I need a client-facing web map tomorrow.”
+3. “I need to rerun the same buffer/join workflow across multiple sites.”
+
+Discuss in pairs, then justify the choice.
+
+---
+
+## Suggested Answers
+
+1. `QGIS`
+2. often `ArcGIS`
+3. `geopandas`
+
+**The point:** not one tool wins everything. Fit matters.
+
+---
+
+## 15-Minute GIS Scoping Sprint
+
+Choose your own project and write down:
+
+- the spatial question
+- the smallest useful spatial output
+- the minimum input layers needed
+- whether you would start in `QGIS`, `ArcGIS`, or `geopandas`
+- what would make GIS the wrong pathway
+
+---
+
+## When GIS Is the Right Semester Pathway
+
+Choose GIS if your decision genuinely depends on:
+
+- spatial comparison
+- distance or travel logic
+- boundaries and overlaps
+- site or urban context evidence
+
+Do not choose GIS because maps look professional.
+
+---
+
+## Exit Check
 
 By the end of this week, you should know:
 
 - whether GIS belongs in your short list
-- whether you prefer GUI-heavy or notebook-heavy work
-- whether `geopandas` feels manageable with support
+- whether you are more comfortable starting visually or in notebooks
+- what role `geopandas` would play if you choose the GIS pathway

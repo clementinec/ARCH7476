@@ -1,6 +1,6 @@
 ---
 title: "Week 7: Method Prototype Studio"
-subtitle: "Build the Smallest Workflow That Can Answer Something Real"
+subtitle: "Build It, Document It, and Make It Reproducible Enough to Trust"
 format:
   revealjs:
     theme: simple
@@ -15,10 +15,10 @@ format:
 ## Today's Agenda
 
 - what a method prototype is
-- pathway breakouts
-- workflow documentation
-- quality control and assumptions
-- A3 drafting
+- why documentation matters before the final package
+- the 10-minute method challenge
+- documentation swap
+- mentor consultation prep for weak spots
 
 ---
 
@@ -33,36 +33,147 @@ Your prototype is successful if it can:
 
 ---
 
-## Pathway Breakout Prompt
+## Horror Stories from Practice
 
-### Spreadsheet
+- the analyst leaves and no one can rerun the method
+- the spreadsheet works on one machine only
+- the GIS layers were clipped somehow but nobody remembers how
+- the notebook runs, but only if you know which file was silently edited
 
-- what table structure do you need?
-- what comparison will the chart actually show?
-
-### GIS
-
-- what layers are essential?
-- what operation answers the question: buffer, join, overlay, filter?
-
-### Python
-
-- what notebook steps need to exist end to end?
-- what chart or exported table proves the workflow is working?
+If you cannot reproduce your own work, nobody else can trust it.
 
 ---
 
-## Document While You Build
+## The Reproducibility Graveyard
 
-Capture:
+Typical student versions:
 
-- file names
-- assumptions
-- parameter choices
-- what failed
-- what you changed and why
+- “I used some plugin, but I forgot which one.”
+- “I changed the settings until it looked right.”
+- “The chart came from another file, I think.”
+- “The model worked last week.”
 
-Do not wait until the end to remember it.
+---
+
+## The 10-Minute Method Challenge
+
+Choose one workflow from your project and document it so clearly that another team could reproduce it.
+
+Pick one:
+
+- spreadsheet comparison
+- GIS operation sequence
+- notebook analysis
+- simulation setup
+- visualization workflow
+
+---
+
+## Documentation Template
+
+**Workflow**
+
+- what the method is for
+- what files or inputs are required
+- what tools are required
+
+**Step-by-step**
+
+1. do this
+2. check this
+3. if this fails, try this
+4. export this
+
+---
+
+## Documentation Template (cont'd)
+
+**Troubleshooting**
+
+- common error
+- warning sign
+- likely fix
+
+**Quality check**
+
+- what success looks like
+- what a red flag looks like
+
+---
+
+## Documentation Swap Challenge
+
+1. swap instructions with someone using a different pathway
+2. no verbal explanation
+3. try to follow their method
+4. record what is missing, unclear, or fragile
+
+This is the fastest way to find out if your workflow is real or only familiar to you.
+
+---
+
+## The Harsh Truth Moment
+
+If another student cannot follow your documentation, the method is not ready for A3.
+
+That does not mean the project is bad.
+
+It means the workflow still lives too much in your head.
+
+---
+
+## Pathway Breakout Prompts
+
+### Spreadsheet
+
+- what table structure does the method depend on?
+- which formula or chart is most fragile?
+
+### GIS
+
+- what layer preparation is essential?
+- which operation sequence must be documented exactly?
+
+### Python
+
+- what notebook cells define the real logic?
+- what package, path, or file assumptions must be stated?
+
+---
+
+## Capture the Decision Logic Too
+
+Do not document only button clicks.
+
+Also document:
+
+- why this step exists
+- what assumption it encodes
+- what judgment call it contains
+- how the output connects back to the question
+
+---
+
+## Mentor Consultation Bootcamp
+
+Use the prototype to prepare stronger questions:
+
+- where is the workflow weakest?
+- what assumption am I least confident about?
+- what output would most strengthen the project?
+- what would a practitioner immediately challenge?
+
+---
+
+## Mentor Question Development Sprint
+
+Write three questions:
+
+1. one technical question
+2. one methodological question
+3. one strategic question about scope or decision relevance
+
+If the question is generic, it is not ready.
 
 ---
 
@@ -80,6 +191,6 @@ Do not wait until the end to remember it.
 You should have:
 
 - a first working artifact
-- screenshots or exports
-- notes on assumptions and errors
-- a clear story for A3
+- documentation that survives a swap test
+- a list of fragile steps and assumptions
+- a clearer story for A3

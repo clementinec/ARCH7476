@@ -1,6 +1,7 @@
 ---
-title: "Week 11: The Championship Finals Prep"
-subtitle: "Polish, Perfect, and Prepare for Object Fair Glory"
+title: "Week 11: Final Polish"
+subtitle: "Refine the Package and Prepare for Object Fair"
+output-file: week-11.html
 format: 
   revealjs:
     theme: night

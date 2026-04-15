@@ -49,6 +49,22 @@ If not, it may have been:
 
 ---
 
+## A Fast Evidence Ladder
+
+Usually stronger:
+
+- measured performance
+- well-matched comparative evidence
+- relevant standards and verified constraints
+
+Usually weaker:
+
+- isolated precedent images
+- vague “best practice”
+- unsupported confidence from the designer
+
+---
+
 ## A1 Core Move
 
 Do not prove that your earlier design was right.
@@ -81,6 +97,14 @@ Do this instead:
 
 ---
 
+## Stand-Alone Prompt
+
+![California Academy of Sciences](../assets/examples/california-academy-of-sciences.jpg){height="500"}
+
+If you were defending one design claim about this project, what evidence would you want before making that claim in public?
+
+---
+
 ## Pivot to the Next Decision
 
 The second half of A1 asks:
@@ -109,6 +133,17 @@ In pairs:
 1. Explain your prior decision in one minute
 2. Let your partner identify the weak evidence link
 3. Rewrite your “next decision” as one question the semester could realistically address
+
+---
+
+## A1 Reality Check
+
+If your A1 is still vague, it is usually because:
+
+- the original decision was too broad
+- the evidence types are mixed together
+- the next decision is still a theme instead of a choice
+- the audience for the evidence is still unclear
 
 ---
 
