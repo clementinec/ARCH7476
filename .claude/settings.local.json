@@ -16,7 +16,10 @@
       "Bash(do)",
       "Bash(done)",
       "Read(///**)",
-      "WebFetch(domain:portal.csdi.gov.hk)"
+      "WebFetch(domain:portal.csdi.gov.hk)",
+      "Bash(git checkout *)",
+      "Bash(git add *)",
+      "Bash(git commit -q -m 'checkpoint: state before visual-language refresh *)"
     ],
     "deny": [],
     "ask": []

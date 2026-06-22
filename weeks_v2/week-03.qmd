@@ -1,0 +1,245 @@
+---
+title: "Week 3: Spreadsheet as Baseline Workflow"
+subtitle: "Transparent Comparison, Charting, and Decision Logic"
+format:
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1400
+    height: 900
+    center: true
+---
+
+## Today's Agenda
+
+- why spreadsheet is the baseline pathway
+- how to structure a workbook around a decision
+- chart rescue and the 3-second message test
+- decision matrices and uncertainty
+- in-class build exercise
+
+---
+
+## Session 2: Project Reasoning Round Table
+
+Upload one rough material to Slack before Session 2:
+
+- comparison table
+- chart
+- decision matrix
+- sketch of variants or scenarios
+
+Speak for 60-90 seconds:
+
+**What variants or scenarios could be compared, and what would make the trade-off visible?**
+
+This feeds **A1: final Total Recall board** and **A2: Decision Recap**.
+
+Volunteers go first; random draw may fill the remaining examples.
+
+---
+
+## Spreadsheet Is Not the Weak Option
+
+It is the most portable professional workflow when you need:
+
+- visible assumptions
+- editable comparison logic
+- traceable calculations
+- fast iteration without complicated setup
+
+---
+
+## Start With the Decision, Not the Software
+
+Bad workbook:
+
+- one giant sheet
+- no units
+- no clear audience
+- no reason for each column to exist
+
+Better workbook:
+
+- one question per structure
+- one row type per sheet
+- one clear output in mind
+
+---
+
+## Typical Architecture Spreadsheet Uses
+
+- precedent comparison
+- evidence/source logging
+- observation sheets
+- option scoring
+- uncertainty range charts
+- summary tables for decision briefs
+
+---
+
+## Stand-Alone Prompt
+
+![High Line, New York](../assets/examples/high-line-park.jpg){height="500"}
+
+If you claimed this public-space strategy works, what would your spreadsheet need to track?
+
+---
+
+## From Image to Variables
+
+Possible spreadsheet columns:
+
+- location and context
+- observed activity type
+- time of day and duration
+- seating / circulation condition
+- weather
+- evidence source and confidence
+
+The point is to move from atmosphere to comparable fields.
+
+---
+
+## A Useful Workbook Pattern
+
+### Sheet 1: Evidence Log
+
+- source
+- date
+- evidence type
+- relevance
+- confidence
+
+### Sheet 2: Alternatives
+
+- option
+- criteria
+- scores or ranges
+- comments
+
+### Sheet 3: Outputs
+
+- charts
+- matrices
+- summary text
+
+---
+
+## Spreadsheet Failure Modes
+
+- “misc notes” columns that swallow everything
+- numbers without units
+- color coding with no legend
+- formulas no one else can read
+- charts with no visible message
+
+---
+
+## Chart Catastrophe
+
+What makes a chart fail for stakeholders?
+
+- too many series
+- no dominant takeaway
+- labels too small
+- colors doing decoration instead of work
+- title describing data instead of the message
+
+---
+
+## The 3-Second Message Test
+
+If a critic glances at a chart for three seconds, can they tell:
+
+- what is being compared?
+- which option is better or riskier?
+- what they are supposed to notice?
+
+If not, the chart is not finished.
+
+---
+
+## Rescue Formula
+
+1. Decide the one message
+2. Remove what does not support it
+3. Use annotation or labeling to force clarity
+4. Show uncertainty where it matters
+5. Connect the chart back to the design decision
+
+---
+
+## Show Uncertainty Honestly
+
+Avoid:
+
+- fake precision
+- unexplained weighted scores
+- single-point claims when the inputs are weak
+
+Prefer:
+
+- ranges
+- scenario labels
+- note fields for assumptions
+- charts that make limits visible
+
+---
+
+## Decision Matrix Example
+
+| Option | daylight | access | cost | risk | recommendation note |
+|---|---:|---:|---:|---:|---|
+| A | high | medium | medium | medium | balanced |
+| B | medium | high | low | high | cheaper but riskier |
+| C | high | high | high | low | strongest, but costly |
+
+---
+
+## Workbook Build Sprint
+
+**15 minutes**
+
+Build a starter workbook with:
+
+1. one sheet for evidence sources
+2. one sheet for alternative comparison
+3. one chart that makes a trade-off visible
+
+Use your A1 topic, not a generic example.
+
+---
+
+## Peer Swap Test
+
+Swap screens with a classmate and ask:
+
+- can they understand the workbook logic quickly?
+- can they tell what each column means?
+- can they identify the decision being supported?
+- can they read the chart without verbal explanation?
+
+---
+
+## What Spreadsheet Cannot Replace
+
+- spatial reasoning at city or site scale
+- repeated geospatial operations
+- more complex notebook automation
+- simulation-specific modeling
+
+That is why the course still surveys GIS, BIM/BEM, GH, Python, and AI-assisted workflows.
+
+---
+
+## If You Stay on Spreadsheet
+
+You can still do the course very well if you:
+
+- keep the logic clean
+- tie every sheet to a decision
+- avoid decorative graphics
+- document what the workbook cannot tell you

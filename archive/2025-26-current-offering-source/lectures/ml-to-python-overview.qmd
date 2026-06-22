@@ -1,0 +1,453 @@
+---
+title: "From ML Theory to Python Practice"
+subtitle: "ARCH7476: Evidence-Based Generative Design"
+author: ""
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    transition: slide
+    slide-number: true
+    chalkboard: true
+    code-fold: false
+    code-line-numbers: false
+---
+
+# Course Context {.smaller}
+
+## Where We Are
+
+::: {.incremental}
+- **Course Goal**: Make design decisions with evidence, not just intuition
+- **Your Journey**: Design Object → Evidence Map → Test Plan → Final Package
+- **Recent Work**: Understanding how ML can support design decision-making
+- **Today**: Bridge theory to practice with Python
+:::
+
+## Why This Matters for Your Project
+
+::: {.columns}
+::: {.column width="50%"}
+**A4 Applications**
+
+- Analyze pilot test results
+- Visualize design alternatives
+- Quantify uncertainty
+- Communicate findings to stakeholders
+:::
+
+::: {.column width="50%"}
+**Skills You'll Build**
+
+- Load and explore data
+- Train simple models
+- Evaluate predictions
+- Create publication-ready figures
+:::
+:::
+
+---
+
+# ML Primer Recap {background-color="#1a1a1a"}
+
+## What We Covered: The Big Picture
+
+::: {.incremental}
+1. **Supervised Learning**: Teaching computers from examples (input → output)
+2. **Key Concepts**: Features, labels, training, testing, generalization
+3. **Common Pitfalls**: Overfitting, underfitting, data leakage
+4. **Validation**: How to trust your model's predictions
+:::
+
+## Regression vs Classification
+
+::: {.columns}
+::: {.column width="50%"}
+**Regression**
+
+Predict continuous values
+
+*Examples:*
+
+- Cooling energy (kWh/m²)
+- Daylight factor (%)
+- Construction cost ($)
+:::
+
+::: {.column width="50%"}
+**Classification**
+
+Predict categories/labels
+
+*Examples:*
+
+- Comfortable/Uncomfortable
+- Pass/Fail code compliance
+- Design type A/B/C
+:::
+:::
+
+## The ML Workflow {.smaller}
+
+```{mermaid}
+%%| fig-width: 10
+graph LR
+    A[Collect Data] --> B[Clean & Explore]
+    B --> C[Split: Train/Test]
+    C --> D[Choose Model]
+    D --> E[Train on Training Set]
+    E --> F[Validate]
+    F --> G{Good enough?}
+    G -->|No| D
+    G -->|Yes| H[Test on Hold-out]
+    H --> I[Deploy/Report]
+```
+
+::: {.fragment}
+**Key Idea**: Never let your model see the test data until the very end!
+:::
+
+## Overfitting: The Villain
+
+::: {.columns}
+::: {.column width="60%"}
+![](https://scikit-learn.org/stable/_images/sphx_glr_plot_underfitting_overfitting_001.png){width=100%}
+:::
+
+::: {.column width="40%"}
+**Too Simple**: Misses patterns (underfitting)
+
+**Just Right**: Captures true relationships
+
+**Too Complex**: Memorizes noise (overfitting)
+:::
+:::
+
+::: {.fragment}
+**Solution**: Cross-validation + hold-out test set
+:::
+
+## Cross-Validation in 30 Seconds {.smaller}
+
+::: {.incremental}
+- **Problem**: You don't want to waste data on a single validation split
+- **Solution**: Split data into K "folds", train K times, average the results
+- **Benefit**: More robust estimate of model performance
+- **Standard**: 5-fold or 10-fold CV
+:::
+
+::: {.fragment}
+![K-fold CV: Each fold gets to be the test set once](https://scikit-learn.org/stable/_images/grid_search_cross_validation.png){width=70%}
+:::
+
+## Key Metrics to Know
+
+| Task | Metric | What it means |
+|------|--------|---------------|
+| Regression | **R²** | % variance explained (0-1, higher better) |
+| Regression | **MAE** | Average error in original units |
+| Classification | **Accuracy** | % correct predictions |
+| Classification | **Confusion Matrix** | Breakdown of correct/incorrect by class |
+
+::: {.fragment}
+**Rule of thumb**: Always report uncertainty (±CI or ±std)
+:::
+
+## Neural Networks: Demystified {.smaller}
+
+::: {.incremental}
+- Just another type of model (not magic!)
+- **Good for**: Complex patterns, lots of data, images/text
+- **Bad for**: Small datasets, interpretability, quick experiments
+- **Architecture jargon**: Layers, neurons, activation functions
+- **For this course**: Use when simpler models plateau; document why
+:::
+
+::: {.fragment}
+**MLP** (Multi-Layer Perceptron) = basic "deep learning" architecture
+:::
+
+---
+
+# Python Practical {background-color="#2c5282"}
+
+## Two Notebooks, Two Purposes
+
+::: {.panel-tabset}
+
+### Notebook 1: ML Basics
+
+**`01_python_ml_basics.ipynb`**
+
+- Python crash course (lists, dicts, pandas)
+- Load fake building performance data
+- Train regression model (predict cooling energy)
+- Train classification model (comfort yes/no)
+- Visualize overfitting with polynomial features
+- Tiny neural network demo
+
+### Notebook 2: Visualization
+
+**`02_arch_viz_analysis.ipynb`**
+
+- Load pilot study observations
+- Compute summary statistics
+- Bar charts with error bars
+- Distribution plots (box, violin)
+- Bootstrap confidence intervals
+- Word clouds from survey text
+- Multi-panel "Object Card" layouts
+
+:::
+
+## Architecture-Flavored Data {.smaller}
+
+**You'll work with synthetic datasets that mimic real design scenarios:**
+
+::: {.incremental}
+- **Building Performance**: Window-to-wall ratio, shading depth, orientation → cooling energy, daylight, glare
+- **Pilot Observations**: Occupancy counts, dwell time, environmental conditions across two design alternatives (A vs B)
+- **Survey Responses**: Open-ended text feedback from users
+:::
+
+::: {.fragment}
+**Pro tip**: These CSVs use generic column names. Replace with your own data using the same structure to reuse all the code!
+:::
+
+## Workflow: No Code Fear {.smaller}
+
+::: {.incremental}
+1. **Open Google Colab** (or local Jupyter) — no installation needed
+2. **Upload/clone the notebooks** from the course repo
+3. **Run each cell sequentially** (Shift+Enter)
+4. **Read the markdown explanations** between code cells
+5. **Modify one thing at a time** and re-run to see what changes
+6. **Export your figures** for A4 submissions
+:::
+
+::: {.fragment}
+**Mixed audience**: Code-heavy students can extend the models. Low-code students can focus on interpretation and visualization. Both are valid paths!
+:::
+
+## Key Python Tools {.smaller}
+
+| Library | Purpose | Example Use |
+|---------|---------|-------------|
+| **pandas** | Data tables | `df = pd.read_csv('data.csv')` |
+| **matplotlib** | Plotting | `plt.plot(x, y)` |
+| **seaborn** | Pretty plots | `sns.boxplot(data=df, x='condition', y='value')` |
+| **scikit-learn** | ML models | `model.fit(X_train, y_train)` |
+| **numpy** | Math arrays | `np.mean(values)` |
+
+::: {.fragment}
+**You don't need to memorize syntax.** Use the notebooks as templates and modify as needed.
+:::
+
+## Live Demo Highlights {.smaller}
+
+::: {.callout-tip icon=false}
+## We'll walk through:
+
+1. Loading a CSV with building performance data
+2. Splitting into train/test sets
+3. Fitting a linear regression model
+4. Plotting actual vs predicted values
+5. Interpreting R² and MAE
+6. Creating a bar chart with confidence intervals for your pilot study
+:::
+
+::: {.fragment}
+**Follow along or just watch — recordings will be available!**
+:::
+
+---
+
+# Making It Yours {background-color="#38a169"}
+
+## From Fake Data to Your Project
+
+::: {.incremental}
+1. **A3 Pilot**: Replace `pilot_observations_fake.csv` with your actual observations
+2. **Same columns?** Code runs unchanged
+3. **Different columns?** Minimal edits to variable names
+4. **New analysis?** Copy-paste-modify existing cells
+:::
+
+::: {.fragment}
+**Goal**: You should be able to generate A4 figures directly from these notebooks with your own data.
+:::
+
+## Reproducibility Capsule Prep {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+**What to document:**
+
+- Python version (e.g., 3.11)
+- Library versions (`pip freeze`)
+- Random seeds (`np.random.seed(42)`)
+- Data file paths
+- Processing steps in order
+:::
+
+::: {.column width="50%"}
+**Where to save:**
+
+- Notebooks in `notebooks/`
+- Data in `data/`
+- Figures in `docs/` or `outputs/`
+- README with instructions
+:::
+:::
+
+::: {.fragment}
+**PhD students**: Consider version control (Git) and computational environments (Docker, conda)
+:::
+
+## Common Pitfalls (and Fixes) {.smaller}
+
+| Problem | Solution |
+|---------|----------|
+| "Module not found" | Install with `!pip install <package>` in notebook |
+| "File not found" | Check `ROOT` path setup in cell 2 |
+| Plot looks ugly | Adjust `figsize=(width, height)` or use `set_style()` |
+| Model accuracy is 100% | You leaked test data! Re-split carefully |
+| Too many features, not enough data | Start simple; add complexity only if validated scores improve |
+
+---
+
+# Resources & Next Steps {background-color="#805ad5"}
+
+## Sign up for Slack!
+
+![](../data/ARCH7476_QR.png)
+
+## Where to Find Everything
+
+::: {.callout-note icon=false}
+## Google Drive
+
+📦 **Scripts, Fake Data, Completed Notebooks**
+
+👉 [**GOOGLE DRIVE LINK**](https://drive.google.com/drive/folders/1LuFm3eyGENkYUZz9sDnRkztRmQvC8fEv?usp=share_link)
+
+:::
+
+::: {.fragment}
+::: {.callout-note icon=false}
+## Course Repository
+
+All materials also available on the course GitHub (check Slack for link)
+
+- `notebooks/` — Jupyter/Colab notebooks
+- `data/` — Sample datasets
+- `scripts/` — Helper functions
+:::
+:::
+
+## Practice Suggestions {.smaller}
+
+::: {.incremental}
+- **Absolute beginners**: Work through Notebook 2 first (visualization), then Notebook 1
+- **Some Python experience**: Try both notebooks in order, modify one plot style
+- **Comfortable coders**: Extend the models (e.g., try RandomForest, add new features)
+- **PhD students**: Implement sensitivity analysis or uncertainty propagation
+:::
+
+::: {.fragment}
+**Office hours**: Check Slack for drop-in coding help sessions
+:::
+
+## A3 Connection {.smaller}
+
+**Your Test Plan + Pilot (due Week 5) should:**
+
+::: {.incremental}
+- Specify what data you'll collect and how
+- Include a small pilot (even 10-20 observations)
+- Show at least one figure with uncertainty (error bars, CI, distribution)
+- Justify any simulation parameters or model choices with evidence
+:::
+
+::: {.fragment}
+**These notebooks give you the scaffolding.** Adapt them to your Design Object!
+:::
+
+---
+
+# Wrap-Up {background-color="#1a1a1a"}
+
+## Today's Journey
+
+::: {.incremental}
+1. ✅ Reviewed ML fundamentals (regression, classification, CV, overfitting)
+2. ✅ Introduced Python + pandas + scikit-learn basics
+3. ✅ Showed practical notebooks for your A3/A4 workflow
+4. ✅ Connected theory to your evidence-based design projects
+:::
+
+::: {.fragment}
+**Remember**: You're not training to be data scientists. You're learning to make defensible design decisions with data.
+:::
+
+## Questions?
+
+::: {.columns}
+::: {.column width="50%"}
+**Right now:**
+
+Ask anything about:
+
+- ML concepts
+- Notebook setup
+- A3/A4 applications
+- Tool choices
+:::
+
+::: {.column width="50%"}
+**Later:**
+
+- Slack #python-help
+- Office hours
+- Peer study groups
+:::
+:::
+
+---
+
+# Anonymous Feedback {background-color="#38a169"}
+
+## Help Us Improve
+
+::: {.callout-important icon=false}
+## Quick Survey (2 minutes)
+
+Your honest feedback helps us adjust the course to your needs.
+
+👉 [**FEEDBACK FORM LINK**](https://docs.google.com/forms/d/e/1FAIpQLSd8xb6tXI45_XcS3tDCe8JYO6EL-D4dyqzhhjms_S82zwmtIg/viewform?usp=dialog)
+
+:::
+
+::: {.fragment}
+**Questions we're asking:**
+
+- Was the ML primer clear?
+- Do you feel ready to start the Python notebooks?
+- What topics need more explanation?
+- Pacing too fast/slow?
+:::
+
+---
+
+## Invite to Slack Channel!
+
+---
+
+## Thank You!
+
+**Next week**: Light workflow help + mentor consultations
+
+**See you in the notebooks!**
+
+::: {.fragment}
+*Slides available on course site. Notebooks in Google Drive and GitHub.*
+:::

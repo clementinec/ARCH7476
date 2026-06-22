@@ -1,172 +1,140 @@
 ---
-title: "Assignment 2: Evidence and Pathway Map"
-subtitle: "Choose the Sources and Workflow That Fit Your Next Decision"
+title: "Assignment 2: Evidence + Workflow Map"
+subtitle: "Translate a Studio Decision Into a Buildable Workflow"
 format:
   html:
     toc: true
 ---
 
 **Due:** End of Week 6  
-**Weight:** 20% of final grade  
-**Length:** 4-5 pages + evidence/pathway matrix  
-**Format:** PDF submission via course portal
+**Weight:** 20%  
+**Format:** PDF submission with matrix and A4 branch declaration
 
 ---
 
-# Assignment Overview
+# Purpose
 
-`A2` turns the next decision from A1 into a workable plan. You will map the evidence landscape around that question, compare the relevant tools, and choose one primary pathway for the rest of the semester:
+`A2` turns the Total Recall decision into a forward workflow plan.
 
-- `spreadsheet`
-- `GIS`
-- `Python`
+You will decide what evidence is needed, compare possible workflow routes, and declare whether your final package will use a retrospective or live studio route.
 
-This is the point where pathway choice becomes explicit.
+# Core Question
 
-## Learning Objectives
+> Which evidence and workflow can make this design decision more defensible?
 
-By completing A2, you will be able to:
+# Session 2 Check-Ins That Feed A2
 
-1. Identify the most relevant evidence sources for your question
-2. Evaluate whether those sources are actually accessible and useful
-3. Compare pathways based on methodological fit, not fashion
-4. Choose one primary workflow with a realistic scope
-5. Define the inputs, outputs, and limits of that workflow
+These check-ins should become the working evidence behind your matrix and workflow choice.
 
-# Core Deliverables
+| Week | Bring to Session 2 | Round-table question | A2 component |
+|---:|---|---|---|
+| 4 | site map, plan, context image, route diagram, or spatial layer sketch | Does this decision depend on location, distance, overlap, boundary, or access? | Evidence Map + Tool Translation Matrix |
+| 5 | BIM/BEM screenshot, section, envelope image, model diagram, or performance claim | What would a performance model need to know, and what would it probably simplify? | Tool Translation Matrix + Workflow Feasibility |
+| 6 | workflow sketch, pathway matrix, or A4 branch declaration draft | Which route are you choosing, and what is the smallest useful output? | Primary Workflow Selection + A4 Branch Declaration |
 
-## Part 1: Decision Context Recap (about 0.5 page)
+Use the [Project Reasoning Check-In](../templates/project-reasoning-checkin.md) template if you want a consistent note structure.
 
-Briefly restate:
+# Required Components
 
-- the upcoming design decision
-- the stakeholder or audience
-- the specific claim or comparison you want to support
-- why the decision matters now
+## 1. Decision Recap
 
-## Part 2: Evidence Landscape (about 1.5-2 pages)
+Restate the design decision from A1 or refine it.
 
-Identify and categorize the evidence relevant to your question.
+Include:
 
-Possible categories:
+- decision
+- alternatives or variables
+- audience
+- why evidence matters
+- what action the evidence should support
 
-- precedents and case studies
-- standards and codes
-- published research
-- site observations
-- government or open datasets
-- surveys or interviews
-- simulation outputs
-- spatial layers and maps
+## 2. Evidence Map
 
-For each category, explain:
+Identify relevant sources and classify them by:
 
-- what it can tell you
-- what it cannot tell you
-- how trustworthy it is
-- how easy or hard it is to access
+- evidence type
+- relevance
+- access
+- confidence
+- limits
+- role in the workflow
 
-## Part 3: Pathway Comparison (about 1-1.5 pages)
+Use ranges where possible. Avoid single values when the evidence is uncertain.
 
-Compare the three semester pathways for your question, even if one is obviously best.
+## 3. Tool Translation Matrix
 
-Address:
+Use the [Tool Translation Matrix](../templates/tool-translation-matrix.md) template.
 
-- what `spreadsheet` would let you do
-- what `GIS` would let you do
-- what `Python` would let you do
-- why one pathway is the best fit right now
-- what the chosen pathway still cannot solve on its own
+Compare at least three possible routes:
 
-If you choose `GIS`, be specific about whether the workflow will lean more on:
+- GH / parametric workflow
+- BIM/BEM or preset simulation
+- GIS
+- Python / notebook
+- AI-assisted workflow
+- spreadsheet / low-code
 
-- `QGIS`
-- `ArcGIS`
-- `geopandas`
+For each route, state:
 
-The course expectation is that code-based GIS references should sit concretely in `geopandas`, not in generic “maybe I will code later” language.
+- what it would take as input
+- what operation it would perform
+- what output it would produce
+- what it cannot answer
 
-## Part 4: Primary Pathway Selection (about 1 page)
+## 4. Primary Workflow Selection
 
-Commit to one primary pathway and describe the workflow you expect to build.
+Choose one primary workflow route.
 
 Define:
 
-- likely input files or sources
-- likely intermediate steps
-- expected outputs
-- what a minimal successful pilot would look like
-- what may fail or slow you down
+- input files or sources
+- variable/range
+- workflow steps
+- expected output
+- threshold or comparison rule
+- likely failure point
 
-## Part 5: Evidence and Pathway Matrix
+## 5. A4 Branch Declaration
 
-Create a visual matrix with rows for evidence sources and columns such as:
+Use the [A4 Branch Declaration](../templates/a4-branch-declaration.md) template.
 
-- source type
-- relevance to the decision
-- access level
-- quality / reliability
-- best supporting pathway
-- likely role in A3 / A4
+Choose one:
 
-Use symbols or color coding to show:
+- **Route A: Retrospective Redesign**
+- **Route B: Live Studio Application**
 
-- high vs low relevance
-- easy vs hard access
-- strong vs weak confidence
+# Assessment Criteria
+
+| Criterion | Weight |
+|---|---:|
+| Evidence relevance and quality | 30% |
+| Tool translation reasoning | 25% |
+| Workflow feasibility | 25% |
+| Branch declaration clarity | 10% |
+| Communication quality | 10% |
 
 # Differentiated Expectations
 
 ## Undergraduate
 
-- narrower source set
-- cleaner pathway choice
-- strong emphasis on feasibility and clarity
+- compare routes clearly
+- choose a feasible route
+- keep scope narrow
 
 ## MArch
 
-- stronger stakeholder logic
-- pathway choice tied more directly to practice or studio use
-- better judgment about what evidence is decision-relevant
+- tie the workflow to studio or practice stakes
+- justify why the workflow can affect the design decision
+- show independent judgment about feasibility
 
-## PhD
+## RPg / PhD
 
-- deeper method critique
-- more explicit treatment of limitations, transferability, and uncertainty
-- clearer rationale for why the chosen workflow is analytically defensible
-
-# Assessment Criteria
-
-## Evidence Mapping Quality (35%)
-
-- Are the important evidence categories identified?
-- Is relevance separated from mere availability?
-- Are gaps and weak spots named clearly?
-
-## Pathway Reasoning (35%)
-
-- Is the chosen pathway justified against the alternatives?
-- Does the student select a workflow that fits the question?
-- If GIS is chosen, is the role of `QGIS`, `ArcGIS`, or `geopandas` stated clearly?
-
-## Feasibility and Scope (20%)
-
-- Can the proposed workflow realistically be prototyped in A3?
-- Are likely failure points acknowledged?
-- Is the student avoiding tool overreach?
-
-## Communication Quality (10%)
-
-- Is the matrix legible and useful?
-- Is the writing structured and decision-oriented?
+- give stronger method rationale
+- address uncertainty and transferability more explicitly
 
 # Common Failure Modes
 
-- choosing the most technical pathway without a real need
-- confusing software awareness with workflow design
-- failing to say what the output will actually be
-- choosing GIS without naming whether the work is GUI-based or `geopandas`-based
-
-# What a Strong Submission Looks Like
-
-A strong A2 submission makes a hard choice. It shows why one pathway is fit for purpose, what evidence it will rely on, and how the student will turn that pathway into a workable prototype in A3.
+- choosing a tool because it sounds advanced
+- comparing software names without workflow logic
+- declaring a live studio route without a specific decision
+- proposing a workflow that cannot produce an interpretable output by A3

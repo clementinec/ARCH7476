@@ -1,0 +1,120 @@
+---
+title: "Thesis Supervision Approach"
+subtitle: "Computational Methods for Building Performance"
+author: "Hongshan Guo"
+format:
+  revealjs:
+    theme: moon
+    transition: convex
+    slide-number: true
+    center: true
+---
+
+## My Role: Technical Coach
+
+**Not a research director**
+
+- You develop research questions & architectural concepts
+- I provide computational implementation guidance
+- Focus: making ambitious ideas **achievable**
+
+**Requirements:**
+
+- Programming capability (Python)
+- Willingness to learn tools
+- Persistence through technical obstacles
+
+---
+
+## What I Supervise
+
+**✅ YES - Data-driven computational projects:**
+
+- ML for building energy prediction/optimization
+- Time series analysis of occupant behavior
+- Deep learning for thermal comfort prediction
+- IoT + predictive analytics for responsive buildings
+- Validated simulations with working code
+
+---
+
+**❌ NO - Theoretical or conceptual work:**
+
+- "AI as design inspiration" projects
+- Traditional design without computational core
+- Purely theoretical computational potential
+
+---
+
+## What I actually do
+
+<!-- https://caadfutures2025.hku.hk/ccgl9065/wheel.html -->
+[Wheel of Research](https://caadfutures2025.hku.hk/ccgl9065/wheel.html)
+
+
+---
+
+## Another quick example
+
+
+![Probablistic Thermal Comfort](assets/02MC.png)
+
+---
+
+## Project Requirements
+
+**Must include ALL three:**
+
+1. **Actual datasets** - not hypothetical data
+2. **Working code** - functional implementation
+3. **Validation** - measurable outcomes
+
+**Suitable building types:**
+
+- Residential, commercial, institutional
+- Where performance optimization is central
+- Technology focus: hardware OR software
+
+---
+
+## Solve 
+
+**Problem:** Multiple disconnected ambitions
+
+- Comprehensive lineup of technologies across IoT, AI and spatial design
+- Multiple "AI tools" without domain challenge mapped out clearly
+
+
+**Reality check:**
+
+- Which specific problem are you actually solving?
+- Where is your training data coming from?
+- What makes this better than current/stock methods?
+
+---
+
+## Focused Alternative (Hypothetical)
+
+**Instead of:** "AI workflow for better design"
+
+**Consider:** "Can ML predict degredation horizon of cultral heritage buildings better than traditional methods?"
+
+**This is:**
+
+- ✅ Specific and testable
+- ✅ Has available datasets (government energy data)
+- ✅ Stakeholder-relevant (heritage + sustainability)
+- ✅ Achievable in one thesis
+
+---
+
+## Takeaways for all
+
+1. **Define ONE specific research question**
+2. **Confirm data availability** before proposing
+3. **Demonstrate technical feasibility** early
+4. **Connect to real stakeholder needs**
+
+**My commitment:** Technical coaching to make your focused idea work
+
+**Office hours:** Wednesday 4-6pm/by appointment (Zoom/Teams)

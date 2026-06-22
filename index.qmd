@@ -1,152 +1,118 @@
 ---
-title: "ARCH7476: Evidence-Based Generative Design"
-subtitle: "Tool Pathways for Studio Decisions"
+title: "ARCH7476: Generative Design in Architecture"
+subtitle: "Studio Evidence Workflows"
 format:
   html:
     toc: true
 ---
 
-## Course Overview
+## Course Position
 
-**ARCH7476** is a mixed-cohort course for architecture students who need a clearer way to move from intuition to evidence. The course now starts by making the tool landscape explicit, then asks each student to choose one primary pathway for the semester:
+**ARCH7476** is a MArch-first elective about using generative and evidence-building workflows to make studio decisions more defensible.
 
-- **Spreadsheet** for transparent low-code comparison, charting, and decision matrices
-- **GIS** for spatial evidence, map-based reasoning, and geospatial workflows
-- **Python** for notebook-based analysis, scripting, and reproducible evidence building
+The course starts from a simple premise:
 
-The course keeps **BIM/BEM and building performance** as shared literacy for everyone, but the assessed semester pathway is chosen from `spreadsheet`, `GIS`, or `Python`.
+> Your studio project is the case study. The course gives you a better workflow for one design decision inside it.
+
+Students begin by reconstructing a past studio decision, then build a small workflow that can either redesign that past decision or support a current studio project.
+
+## The Semester Spine
+
+```mermaid
+flowchart LR
+    A[Total Recall] --> B[Tool Translation]
+    B --> C[Workflow Prototype]
+    C --> D[Evidence Threshold]
+    D --> E[Studio Decision Package]
+
+    A1[Past studio decision] -. anchors .- A
+    E1[Past redesign branch] -. option .- E
+    E2[Live studio branch] -. option .- E
+```
+
+## What Makes This Generative Design
+
+The course treats generative design as a method, not a style.
+
+In this course, **generative** means:
+
+> a documented workflow that creates or varies multiple design options and evaluates them against explicit criteria.
+
+Students learn to define:
+
+- what can vary
+- what must remain fixed
+- what evidence can evaluate alternatives
+- what threshold would change a design decision
+- what workflow can be reused by another person
+
+Supported workflow routes include:
+
+| Workflow route | Typical design use |
+|---|---|
+| **Grasshopper / parametric workflow** | create and compare option families |
+| **BIM/BEM and simulation literacy** | test performance assumptions across scenarios |
+| **GIS / spatial workflow** | compare site or context alternatives |
+| **Python / notebook workflow** | evaluate repeated design/data cases |
+| **AI-assisted workflow building** | accelerate script or workflow components, then verify them |
+| **Spreadsheet / low-code workflow** | compare variants, sensitivity, and thresholds transparently |
+
+## Course Format
+
+Each 2-hour class follows a **lecture + studio-lab** structure.
+
+| Block | Time | Purpose |
+|---|---:|---|
+| Lecture / demo | first 50 minutes | one evidence or tooling lens |
+| Studio-lab | second 50 minutes | apply that lens to each student's own project |
+
+The second half is not generic work time. Each week provides prompts, desk crits, peer checks, and selected share-outs.
+
+## A4 Branches
+
+Students choose one final route by Week 6.
+
+### Route A: Retrospective Redesign
+
+Use a past studio project. Rebuild one design decision with better evidence and workflow logic.
+
+### Route B: Live Studio Application
+
+Use a current studio project. Apply the course workflow to one active design decision.
+
+Both routes are assessed with the same standard:
+
+> one design decision improved by one evidence-backed generative workflow.
 
 ## What Students Leave With
 
 By the end of the semester, students will be able to:
 
-1. Frame a design decision as an evidence problem rather than a vague preference
-2. Audit what counted as evidence in a prior project and identify missing evidence
-3. Choose a tool pathway that actually fits the decision being made
-4. Run one primary workflow with enough independence to keep using it after the course
-5. Communicate findings with clear limits, confidence, and next steps for studio or practice
+1. Audit the evidence logic behind a studio decision.
+2. Translate a design decision into variables, ranges, outputs, and thresholds.
+3. Build one small generative workflow that creates or compares multiple variants.
+4. Verify, document, and communicate the workflow without overclaiming.
+5. Produce a practice-facing and research-facing decision package.
 
-## Mixed-Cohort Design
+## Mixed-Cohort Expectations
 
-This course is designed for **undergraduates**, **MArch students**, and occasional **PhD students** in the same room.
+The course is MArch-first, with a scaffolded route for undergraduates and a deeper method route for RPg/PhD students.
 
-| Student level | What stays common | What scales by level |
-|---|---|---|
-| Undergraduate | Same weekly structure and assignments | More scaffolding, narrower scope, simpler analysis |
-| MArch | Same weekly structure and assignments | Stronger stakeholder fit, more independence, practice-ready outputs |
-| PhD | Same weekly structure and assignments | Higher rigor, deeper uncertainty treatment, stronger reproducibility |
+| Student level | Expected scope |
+|---|---|
+| Undergraduate | tightly bounded decision, scaffolded workflow, clear documentation |
+| MArch | stronger studio/practice stakes, independent troubleshooting, actionable recommendation |
+| RPg / PhD | deeper method critique, stronger uncertainty handling, reproducible analysis |
 
-The difference is **depth and independence**, not separate coursework.
+## Final Package
 
-## Semester Structure
+The final package includes:
 
-### Phase 1: Survey the Landscape
+- **Practice Case:** 2-slide decision memo
+- **Research Brief:** 2-page method and evidence report
+- **Object Card:** 1-page key figure and recommendation
+- **Reproducibility Capsule:** README, data/workflow files, figure sources, prompt/code notes where relevant
 
-Weeks 1-5 introduce the tool families and the decisions they support:
+## Archive Note
 
-- spreadsheet workflows for comparison and traceable reasoning
-- GIS alternatives: `QGIS`, `ArcGIS`, and `geopandas`
-- notebook workflows in `Jupyter`
-- BIM/BEM and simulation literacy
-
-### Phase 2: Choose a Pathway
-
-By the middle of the semester, each student formally chooses one primary pathway and uses it to:
-
-- define evidence sources
-- prototype a method
-- run a pilot workflow
-- build a studio-facing evidence package
-
-### Phase 3: Apply It to Studio
-
-The back half of the semester focuses on:
-
-- evidence quality and uncertainty
-- decision thresholds
-- visual communication
-- workflow documentation
-- transfer into the next studio project
-
-## Tool Pathways
-
-### Spreadsheet Pathway
-
-Best for students who need a strong, professional baseline without heavy setup.
-
-- organize precedent and observation data
-- compare alternatives
-- build uncertainty-aware charts
-- produce decision matrices and summary tables
-
-### GIS Pathway
-
-Best for site analysis, urban context, access, zoning, and spatial comparison.
-
-- learn when `QGIS` is the fastest choice
-- understand where `ArcGIS` fits in practice
-- run a minimal code-based workflow in `geopandas`
-- connect map outputs back to architectural decisions
-
-### Python Pathway
-
-Best for students who need more automation, reuse, or analytical control.
-
-- work in `Jupyter Notebook`
-- use `pandas` and plotting for evidence building
-- adapt the provided notebooks to project-specific data
-- document a reproducible workflow others can inspect
-
-::: {.callout-note}
-## Why Spreadsheet Matters
-
-`Spreadsheet` is the baseline exit pathway for the course. It is not remedial. It is the lowest-friction route to a credible, transparent, decision-ready workflow, and a student can complete the course very well through it.
-:::
-
-## Course Precedents
-
-These are some of the case studies and project types we will keep returning to when we ask what counts as evidence, what different tools can actually tell us, and how a design claim becomes defensible.
-
-:::: {.columns}
-::: {.column width="50%"}
-![The Edge, Amsterdam: a useful case for workplace performance and systems claims](assets/examples/the-edge-amsterdam.jpg)
-
-![High Line, New York: a useful case for public-space observation and GIS framing](assets/examples/high-line-park.jpg)
-:::
-
-::: {.column width="50%"}
-![California Academy of Sciences: a useful case for environmental performance and envelope claims](assets/examples/california-academy-of-sciences.jpg)
-
-![Kai Tak Sports Park: a local case for site, access, and urban evidence questions](assets/examples/kai-tak-sports-park.jpg)
-:::
-::::
-
-Image credits are recorded in `assets/examples/sources.csv`.
-
-## Assignment Arc
-
-| Assignment | Due | Weight | Purpose |
-|---|---:|---:|---|
-| [A1: Evidence Audit + Next Decision Brief](assignments/assignment-01.qmd) | Week 2 | 15% | Audit a prior decision and define evidence needed for the next studio decision |
-| [A2: Evidence and Pathway Map](assignments/assignment-02.qmd) | Week 6 | 20% | Map evidence sources, compare tools, and choose a primary pathway |
-| [A3: Method Prototype](assignments/assignment-03.qmd) | Week 8 | 25% | Build and test a pilot workflow in the chosen pathway |
-| [A4: Studio Evidence Package](assignments/assignment-04.qmd) | Week 12 | 40% | Deliver a studio-facing decision brief with pathway artifact and method appendix |
-
-## Setup Guidance
-
-### Everyone
-
-- spreadsheet software: Excel or Google Sheets
-- browser access to course materials and downloads
-
-### If You Choose GIS or Python
-
-- `Jupyter Notebook` as the main notebook interface
-- `Anaconda` or `Miniconda` as the supported local Python environment
-- `Google Colab` as the no-install fallback
-
-See [Resources](resources.qmd) for the setup ladder and tool chooser.
-
-## Course Position
-
-This course is not trying to turn every architecture student into a software specialist. It is trying to make tool choice, evidence quality, and decision logic explicit enough that students can justify design moves with more than instinct.
+The 2025-26 offering has been preserved in `archive/2025-26-current-offering-source/`. Existing lectures, notebooks, and weekly decks are not deleted; they are reused or referenced where they support the rebuilt course spine.

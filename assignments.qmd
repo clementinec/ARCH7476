@@ -1,6 +1,6 @@
 ---
 title: "Assignments Overview"
-subtitle: "Four Deliverables Built Around Tool Pathways"
+subtitle: "From Total Recall to Studio Evidence Workflow"
 format:
   html:
     toc: true
@@ -8,109 +8,89 @@ format:
 
 # Assignment Structure
 
-The course is organized around **four major assignments** that move from reflection to action:
+The assignments move from a past studio decision to a working evidence-backed generative design workflow.
 
-1. audit a prior decision
-2. choose a pathway for the next one
-3. prototype a method
-4. deliver a studio-facing evidence package
+```mermaid
+flowchart LR
+    A1[A1 Total Recall] --> A2[A2 Evidence + Workflow Map]
+    A2 --> A3[A3 Workflow Prototype + Verification]
+    A3 --> A4[A4 Design Workflow Package]
+```
 
 ## Assignment Timeline
 
-| Assignment | Due Week | Weight | Main question |
+| Assignment | Due | Weight | Main question |
 |---|---:|---:|---|
-| [A1: Evidence Audit + Next Decision Brief](assignments/assignment-01.qmd) | Week 2 | 15% | What evidence did I really have before, and what evidence will I need next? |
-| [A2: Evidence and Pathway Map](assignments/assignment-02.qmd) | Week 6 | 20% | Which sources and which workflow best fit my question? |
-| [A3: Method Prototype](assignments/assignment-03.qmd) | Week 8 | 25% | Can I run a credible pilot workflow in my chosen pathway? |
-| [A4: Studio Evidence Package](assignments/assignment-04.qmd) | Week 12 | 40% | Can I turn this workflow into a decision-ready studio brief? |
+| [A1: Total Recall](assignments/assignment-01.qmd) | Week 3 | 15% | What evidence really supported one past studio decision? |
+| [A2: Evidence + Workflow Map](assignments/assignment-02.qmd) | Week 6 | 20% | Which evidence and workflow can rebuild or support the decision? |
+| [A3: Workflow Prototype + Verification](assignments/assignment-03.qmd) | Week 9 | 25% | Can the workflow generate or compare variants and produce one interpretable output? |
+| [A4: Evidence-Backed Design Workflow Package](assignments/assignment-04.qmd) | Week 12 | 40% | What decision does the workflow improve, and what should happen next? |
 
-## The Three Primary Pathways
+## Session 2 Check-Ins
 
-Every student surveys the broader tool landscape, but each student completes the semester through **one primary pathway**:
+Each assignment is developed through weekly **Project Reasoning Round Tables**.
 
-- **Spreadsheet**
-- **GIS**
-- **Python**
+These are not formal presentations. Students upload one rough material to Slack, speak from it for 60-90 seconds, and leave with one next action for the current assignment.
 
-`BIM/BEM` and simulation remain important shared literacy, but they are taught as common supporting knowledge rather than as the required semester-long primary pathway.
+Use the [Project Reasoning Check-In](templates/project-reasoning-checkin.md) template when useful.
 
-## Mixed-Cohort Expectations
+| Assignment | Check-ins that feed it |
+|---|---|
+| A1 | Week 1 prior decision, Week 2 weak evidence, Week 3 comparison logic |
+| A2 | Week 4 spatial evidence, Week 5 model/performance assumptions, Week 6 pathway and A4 branch |
+| A3 | Week 7 prototype logic, Week 8 verification/documentation, Week 9 output and threshold |
+| A4 | Week 9 object-card direction, Week 10 draft package gap, Week 11 final component audit, Week 12 transfer reflection |
 
-All students complete the same assignments. What changes by level is the expected **scope**, **rigor**, and **independence**.
+## Final A4 Routes
 
-| Level | Typical profile | Expected performance |
+Students choose one route by Week 6.
+
+| Route | Project basis | Final action |
 |---|---|---|
-| Undergraduate | Newer to design research and tool workflows | Clear scope, honest use of simple methods, visible scaffolding |
-| MArch | Closer to practice and studio decision-making | Stronger stakeholder fit, tighter argument, more independent judgment |
-| PhD | Higher research maturity, sometimes stronger coding/statistics | More rigorous uncertainty treatment, stronger reproducibility, deeper method critique |
+| Route A: Retrospective Redesign | past studio project | rebuild one decision with better evidence |
+| Route B: Live Studio Application | current studio project | apply workflow to an active design decision |
 
-## Pathway Logic
+Both routes use the same standard:
 
-### Spreadsheet
+> one design decision improved by one evidence-backed generative workflow.
 
-The baseline professional route.
+## Workflow Routes
 
-- best when the question depends on comparison, summary, ranking, or accessible charting
-- lowest setup burden
-- fully legitimate as a complete semester pathway
+Students may work through one primary route and combine support tools as needed.
 
-### GIS
+| Route | Typical output |
+|---|---|
+| GH / parametric workflow | variants, parameter ranges, exported comparisons |
+| BIM/BEM / simulation | model translation critique, preset simulation, performance claim |
+| GIS / spatial workflow | maps, buffers, overlays, spatial summaries |
+| Python / notebook workflow | cleaned data, plots, analysis notebook |
+| AI-assisted workflow | prompt log, generated workflow component, verification notes |
+| Spreadsheet / low-code | decision matrix, sensitivity chart, threshold table |
 
-The spatial analysis route.
+## Assessment Principles
 
-- best for site, access, zoning, morphology, environmental context, and map-based reasoning
-- draws on the comparative GIS module: `QGIS`, `ArcGIS`, and `geopandas`
-- may combine GUI work with notebook-based processing
+Students are assessed on:
 
-### Python
+- decision clarity
+- variant/scenario generation
+- workflow execution
+- evidence quality and uncertainty
+- design impact
+- reproducibility and documentation
 
-The reproducible notebook route.
+Complex tools do not automatically earn higher marks. A simple, transparent workflow that changes a design decision is stronger than an opaque advanced workflow.
 
-- best for students who need scripting, reuse, or slightly more complex analysis
-- uses `Jupyter Notebook`
-- supported through the existing beginner notebooks and small starter examples
+## Level Expectations
 
-## Assessment Philosophy
-
-Students are not rewarded for choosing the most technically intimidating tool. They are rewarded for:
-
-- selecting a pathway that fits the question
-- being clear about assumptions and limits
-- producing evidence someone else can follow
-- communicating decisions without overclaiming
-
-## Quality Standards Across All Assignments
-
-Successful work, regardless of pathway, should show:
-
-1. A specific design decision with a real audience
-2. Evidence sources that are relevant and interpretable
-3. A workflow that can actually be rerun or explained
-4. Honest treatment of missing evidence and uncertainty
-5. Visual and written communication that helps someone act
-
-## Common Failure Modes
-
-- choosing a tool because it looks advanced rather than because it fits
-- confusing precedent images with evidence
-- hiding weak data behind polished graphics
-- making claims stronger than the method allows
-- building a workflow no one, including the student, can rerun
-
-## Assignment Progression
-
-```mermaid
-graph LR
-    A1[Audit Prior Decision] --> A2[Choose Evidence + Pathway]
-    A2 --> A3[Prototype Method]
-    A3 --> A4[Deliver Studio Evidence Package]
-```
+| Level | Expected performance |
+|---|---|
+| Undergraduate | clear scope, scaffolded workflow, honest limits |
+| MArch | stronger studio/practice relevance, more independent troubleshooting, actionable output |
+| RPg / PhD | deeper method critique, stronger uncertainty handling, more reproducible structure |
 
 ## Support Structure
 
-- office hours for pathway-specific troubleshooting
-- in-class reviews and feedback sessions
-- notebook and setup support for GIS/Python students
-- low-friction spreadsheet templates for students who need a stable baseline
-
-For full instructions, rubrics, and deliverable requirements, use the assignment pages linked above.
+- weekly studio-lab time
+- peer checks during workflow development
+- mentor dialogue or external consultation where relevant
+- templates for case board, tool matrix, branch declaration, AI verification, and final package

@@ -1,0 +1,225 @@
+---
+title: "Week 9: Storytelling, Figures, and Decisions"
+subtitle: "Turn Analysis Into a Recommendation People Can Understand"
+format:
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1400
+    height: 900
+    center: true
+---
+
+## Today's Agenda
+
+- when good research goes bad in presentation
+- story structure for busy stakeholders
+- figure rescue and the 3-second test
+- object card design
+- recommendation thresholds and trade-offs
+
+---
+
+## When Good Research Goes Bad
+
+Case 1:
+
+- great method
+- weak message
+- audience hears process, not action
+
+Case 2:
+
+- technically correct charts
+- no clear takeaway
+- status quo survives because the audience stays confused
+
+---
+
+## The Two-Slide Challenge
+
+Could you explain your semester in two slides to a busy critic, client, or studio tutor who gives you three minutes?
+
+If not, your findings are still trapped inside your process.
+
+---
+
+## One Useful Story Structure
+
+1. What problem or decision matters?
+2. What evidence did you gather?
+3. What changed because of that evidence?
+4. What should happen next?
+
+This is not simplification for its own sake. It is decision support.
+
+---
+
+## Start With Their Problem
+
+Do not begin with:
+
+- software
+- methods jargon
+- every intermediate step
+
+Begin with:
+
+- the decision
+- the stake
+- the missing evidence
+
+---
+
+## Stand-Alone Prompt
+
+![The Edge, Amsterdam](../assets/examples/the-edge-amsterdam.jpg){height="500"}
+
+If your recommendation depends on a case like this, what would a skeptical stakeholder ask first?
+
+---
+
+## Figure Rescue: Why Charts Fail
+
+- too many variables at once
+- vague titles
+- no highlighted message
+- uncertainty hidden
+- no connection back to the decision
+
+---
+
+## The 3-Second Message Test
+
+Give your figure three seconds.
+
+Can a viewer tell:
+
+- what is being compared?
+- which side performs better?
+- what the implication is?
+
+If not, it needs revision.
+
+---
+
+## Rescue Formula
+
+1. decide the one message
+2. remove non-essential data
+3. label the takeaway directly
+4. show uncertainty where it matters
+5. connect the figure to the design decision
+
+---
+
+## Figure Rescue Sprint
+
+Bring one weak figure and improve it under these rules:
+
+- one message only
+- readable title
+- no decorative legends if direct labels work
+- one annotation that tells the audience why it matters
+
+Present the before and after in 60 seconds.
+
+---
+
+## Object Card / Evidence Board Test
+
+During Object Fair, a viewer gives your board about 30 seconds.
+
+In that time they should be able to:
+
+1. stop
+2. understand the key message
+3. know what action or question follows
+
+---
+
+## Object Card Priorities
+
+- one dominant message
+- supporting evidence that is legible but secondary
+- clear next action or recommendation
+- contact / follow-up information without clutter
+
+---
+
+## Object Card Clinic
+
+Check your draft for:
+
+- message hierarchy
+- visual hierarchy
+- stakeholder-friendly language
+- print readability from a distance
+
+---
+
+## Evidence Alone Does Not Make the Decision
+
+You still need:
+
+- a threshold
+- a comparison rule
+- a stakeholder frame
+- an explanation of what matters most
+
+---
+
+## Typical Threshold Questions
+
+- how much improvement is enough to justify a change?
+- what cost increase is acceptable?
+- what travel-time difference matters?
+- how much uncertainty can the decision tolerate?
+
+---
+
+## Trade-Off Table
+
+| Option | strongest benefit | main cost | biggest risk | recommendation |
+|---|---|---|---|---|
+| A | access | cost | moderate | good if budget is stable |
+| B | performance | complexity | high | only if support is available |
+| C | speed | lower upside | low | safest baseline |
+
+---
+
+## Counter-Arguments Matter
+
+A strong recommendation also says:
+
+- what could change the conclusion
+- where the evidence is weakest
+- why another option may still be reasonable
+- what additional evidence would strengthen confidence
+
+---
+
+## Recommendation Sentence Drill
+
+Write one sentence:
+
+**Given this evidence, for this audience, I would do X under conditions Y and Z.**
+
+Then test whether the sentence:
+
+- names the decision
+- reflects uncertainty
+- implies a next move
+
+---
+
+## Exit Task
+
+Before next week, each student should have:
+
+- one improved figure
+- one clearer object card draft
+- one recommendation sentence
+- one explicit note on limits and confidence

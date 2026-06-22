@@ -1,0 +1,181 @@
+---
+title: "Assignment 1: Evidence Audit + Next Decision Brief"
+subtitle: "From a Prior Design Decision to the Evidence You Need Next"
+format:
+  html:
+    toc: true
+---
+
+**Due:** End of Week 2  
+**Weight:** 15% of final grade  
+**Length:** 3-4 pages + 1 visual audit sheet  
+**Format:** PDF submission via course portal
+
+---
+
+# Assignment Overview
+
+This first assignment replaces the old generic decision-claim brief. The goal is to start from a design decision you already made, inspect what actually counted as evidence at the time, and then pivot toward the next studio decision you expect to face.
+
+You are not being asked to pretend you already worked scientifically. You are being asked to make your existing decision process visible and then improve it.
+
+## Learning Objectives
+
+By completing A1, you will be able to:
+
+1. Describe a prior design decision in concrete terms
+2. Distinguish intuition, precedent, assumption, and evidence
+3. Audit where confidence was justified and where it was overstated
+4. Define a new decision that would benefit from stronger evidence
+5. Identify which pathway might support that next decision
+
+## Week 1 In-Class Milestone
+
+Week 1 is not only an introduction to the assignment. It is the first working session for A1.
+
+Students should leave that class with:
+
+- one prior decision selected
+- one rough inventory of what counted as evidence at the time
+- one weak link or missing evidence gap identified
+- one upcoming studio decision drafted
+
+Use that material as the starting draft for the submission rather than beginning from scratch later.
+
+# Core Deliverables
+
+## Part 1: Prior Decision Description (about 1 page)
+
+Choose **one decision you already made** in studio, research, or practice. It should be specific enough that someone could understand what alternatives existed.
+
+Address:
+
+- what the design decision was
+- when it was made
+- what alternatives were in play
+- who the decision was for
+- what constraints mattered most
+
+Examples:
+
+- choosing a facade proportion
+- locating an entrance
+- deciding between two site strategies
+- selecting a shading or glazing approach
+- choosing a circulation layout or public-space arrangement
+
+## Part 2: Evidence Audit (about 1-1.5 pages)
+
+Break down what informed that decision at the time.
+
+For each input, explain:
+
+- what it was
+- where it came from
+- whether it was measured, observed, simulated, cited, assumed, or inferred
+- how strongly it really supported the final move
+
+Your audit should identify:
+
+- evidence that was genuinely useful
+- evidence that was weak but treated as strong
+- gaps that you ignored or could not address
+- places where aesthetic judgment or convenience filled the gap
+
+## Part 3: Confidence and Limits (about 0.5-1 page)
+
+Reflect on the quality of the earlier decision.
+
+Address:
+
+- what you would still defend
+- what you would now question
+- what evidence would have changed the decision
+- whether the decision was reversible, risky, or consequential
+
+## Part 4: Next Decision Brief (about 1 page)
+
+Now pivot to an upcoming studio or design question.
+
+Define:
+
+- the next decision you expect to make
+- the main stakeholder or audience
+- why evidence would help
+- what kind of evidence would matter most
+- which of the three course pathways seems most promising right now:
+  `spreadsheet`, `GIS`, or `Python`
+
+You are not locking the pathway yet. You are making an early judgment that A2 will test.
+
+## Part 5: Visual Audit Sheet
+
+Create one visual page that shows:
+
+- the original design decision
+- the evidence types that informed it
+- the weak links or missing evidence
+- the next decision you now want to investigate
+
+Acceptable formats:
+
+- annotated diagrams
+- a table with color coding
+- a process map
+- a one-page evidence matrix
+
+# Differentiated Expectations
+
+## Undergraduate
+
+- choose a tightly bounded decision
+- be explicit about uncertainty even if the evidence is simple
+- use clear categories and straightforward reflection
+
+## MArch
+
+- connect the decision to a real design or stakeholder context
+- show stronger judgment about what evidence would actually change practice
+- articulate why the next decision matters in studio or professional terms
+
+## PhD
+
+- treat the audit as a method critique, not only a reflection
+- distinguish evidence quality more sharply
+- define a next decision that can support a more rigorous investigation
+
+# Assessment Criteria
+
+## Specificity and Honesty (35%)
+
+- Is the prior decision concrete and understandable?
+- Does the audit avoid hindsight theatrics and describe the process honestly?
+- Are evidence and assumption clearly separated?
+
+## Quality of Reflection (30%)
+
+- Does the student identify where confidence exceeded the evidence?
+- Are missing inputs and weak links clearly named?
+- Is the critique useful rather than vague?
+
+## Strength of the Next Decision Brief (25%)
+
+- Is the next decision specific and relevant?
+- Is the case for needing evidence convincing?
+- Is the tentative pathway choice plausible?
+
+## Communication Quality (10%)
+
+- Is the writing clear and structured?
+- Does the visual audit sheet help rather than decorate?
+
+# Common Failure Modes
+
+- choosing a decision that is too broad to audit
+- pretending precedent images alone were sufficient evidence
+- using generic statements like “more data is needed” without specifying what data
+- treating software choice as the decision instead of the evidence problem
+
+# What a Strong Submission Looks Like
+
+A strong A1 submission makes one real decision legible, admits where the earlier reasoning was weak, and sets up a next question that the rest of the semester can answer through a clearly scoped evidence pathway.

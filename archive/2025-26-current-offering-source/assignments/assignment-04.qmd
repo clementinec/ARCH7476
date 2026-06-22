@@ -1,0 +1,167 @@
+---
+title: "Assignment 4: Studio Evidence Package"
+subtitle: "Turn Your Workflow Into a Decision-Ready Brief"
+format:
+  html:
+    toc: true
+---
+
+**Due:** End of Week 12  
+**Weight:** 40% of final grade  
+**Format:** Multi-part package plus presentation materials  
+**Submission:** PDF + pathway artifact + visuals
+
+---
+
+# Assignment Overview
+
+`A4` is the final synthesis of the semester. You will take the question, evidence sources, and prototype workflow developed earlier and turn them into a **studio evidence package** that someone could realistically use in the next design project.
+
+This is not just a report. It is a decision-support package.
+
+## Learning Objectives
+
+By completing A4, you will be able to:
+
+1. Produce a decision-facing argument supported by evidence
+2. Show what your chosen pathway contributed to the decision
+3. Communicate recommendations and limits clearly
+4. Package visuals, workflow notes, and outputs for reuse
+5. Transfer the semester work into a future studio context
+
+# Required Components
+
+## Component 1: Studio Decision Brief
+
+**Length:** 6-10 pages  
+**Audience:** studio critics, instructors, or practice-facing stakeholders
+
+Include:
+
+- the decision context
+- the question or comparison
+- the evidence base
+- the chosen pathway and why it was used
+- key findings
+- decision implications
+- limitations and confidence level
+
+## Component 2: Evidence Board / Object Card
+
+**Format:** single poster or infographic page
+
+Show:
+
+- the decision at stake
+- the most important visual evidence
+- the key comparison or threshold
+- the recommendation or next action
+
+## Component 3: Pathway Artifact
+
+Submit the working artifact that underpins the package:
+
+- spreadsheet workbook or exported sheets
+- GIS map output and supporting files
+- Jupyter notebook or exported notebook output
+
+This component proves the package was built from a workflow, not just from slides.
+
+## Component 4: Method Appendix
+
+**Length:** 2-4 pages
+
+Explain:
+
+- what inputs were used
+- what the main steps were
+- what assumptions shaped the results
+- what someone would need to rerun or extend the work
+
+# Suggested Structure for the Studio Decision Brief
+
+## 1. Decision Context
+
+- what the upcoming design decision is
+- who the decision is for
+- why the decision matters now
+
+## 2. Evidence Question
+
+- what exactly you investigated
+- what alternatives or variables were compared
+- what counts as success
+
+## 3. Workflow and Evidence
+
+- what pathway you chose
+- why it was the right fit
+- what sources and data were used
+- how the workflow operated
+
+## 4. Findings
+
+- the main outputs
+- what they show
+- what remains uncertain
+- where the evidence is strongest or weakest
+
+## 5. Recommendation
+
+- what you would do next
+- under what conditions that recommendation holds
+- what additional evidence would strengthen confidence
+
+# Differentiated Expectations
+
+## Undergraduate
+
+- decision brief is coherent and specific
+- visuals are legible and connected to the argument
+- method appendix is understandable and honest
+
+## MArch
+
+- package reads as something usable in studio or practice
+- recommendations are more actionable
+- pathway artifact supports a clearer design decision
+
+## PhD
+
+- stronger methodological framing
+- clearer limits on transfer and generalization
+- more rigorous explanation of evidence quality
+
+# Assessment Criteria
+
+## Decision Support Quality (35%)
+
+- Does the package help someone make or frame a real decision?
+- Is the recommendation tied to evidence rather than preference alone?
+
+## Use of the Chosen Pathway (25%)
+
+- Does the pathway artifact materially support the brief?
+- Is the workflow appropriate and visible in the final package?
+
+## Communication and Visual Clarity (25%)
+
+- Are the core figures, maps, tables, or notebook outputs readable?
+- Does the evidence board / object card communicate quickly?
+- Is the package structured for an audience that needs to act?
+
+## Method Transparency (15%)
+
+- Are assumptions and limitations plainly stated?
+- Could another student understand how the result was produced?
+
+# Common Failure Modes
+
+- turning A4 into a generic studio presentation with little evidence logic
+- hiding the pathway artifact because it is messy
+- making a recommendation stronger than the evidence allows
+- producing nice visuals that do not answer the stated question
+
+# What a Strong Submission Looks Like
+
+A strong A4 package makes a studio decision more explicit, more defensible, and more portable into the next project. It shows what the pathway achieved, where the evidence is still weak, and what action should follow from the work.

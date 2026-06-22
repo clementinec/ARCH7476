@@ -1,0 +1,175 @@
+---
+title: "Week 2: Audit the Evidence You Already Use"
+subtitle: "Prior Decisions, Weak Links, and the Next Studio Question"
+format:
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1400
+    height: 900
+    center: true
+---
+
+## Today's Agenda
+
+- review A1 directions
+- what counts as evidence in architecture
+- how confidence gets overstated
+- workshop: prior decision audit
+- workshop: next decision brief
+
+---
+
+## Session 2: Project Reasoning Round Table
+
+Upload one rough material to Slack before Session 2:
+
+- the Week 1 decision image, diagram, or board fragment
+- evidence, precedent, assumption, and uncertainty marked directly on it
+
+Speak for 60-90 seconds:
+
+**What does this evidence actually support, and what does it not show yet?**
+
+This feeds **A1: Evidence Critique**.
+
+Volunteers go first; random draw may fill the remaining examples.
+
+---
+
+## Architecture Uses Many Evidence Types
+
+- precedent
+- standards and code
+- site observation
+- stakeholder input
+- simulation
+- measurement
+- published research
+- benchmarks and case comparisons
+
+---
+
+## Not All Inputs Are Equal
+
+**Useful question:**  
+Did this input actually reduce uncertainty for the decision?
+
+If not, it may have been:
+
+- inspiration
+- convention
+- assumption
+- noise
+
+---
+
+## A Fast Evidence Ladder
+
+Usually stronger:
+
+- measured performance
+- well-matched comparative evidence
+- relevant standards and verified constraints
+
+Usually weaker:
+
+- isolated precedent images
+- vague “best practice”
+- unsupported confidence from the designer
+
+---
+
+## A1 Core Move
+
+Do not prove that your earlier design was right.
+
+Do this instead:
+
+- name the decision clearly
+- separate evidence from assumption
+- admit what was missing
+- define what you would need next time
+
+---
+
+## Fast Audit Template
+
+| Input used then | Type | Strength | What it really supported |
+|---|---|---|---|
+| precedent image | visual precedent | low-medium | form and atmosphere, not performance |
+| simulation screenshot | model output | medium | comparison only if assumptions were sound |
+| code requirement | standard | high within its scope | compliance, not overall quality |
+
+---
+
+## Common Overclaims
+
+- “there was evidence” when there was only precedent
+- “the model proved it” when the assumptions were weak
+- “users prefer this” from a tiny or biased sample
+- “this is best practice” without context
+
+---
+
+## Stand-Alone Prompt
+
+![California Academy of Sciences](../assets/examples/california-academy-of-sciences.jpg){height="500"}
+
+If you were defending one design claim about this project, what evidence would you want before making that claim in public?
+
+---
+
+## Pivot to the Next Decision
+
+The second half of A1 asks:
+
+- what is the next real design decision?
+- who needs to be convinced?
+- what evidence would matter?
+- which pathway might help most?
+
+---
+
+## Pathway Sniff Test
+
+Choose **provisionally**:
+
+- `spreadsheet` if you mainly need comparison, ranking, or visible logic
+- `GIS` if space, site, access, zoning, or context is central
+- `Python` if the question needs repeatable analysis or notebook-based workflow
+- `GH / parametric` if the decision depends on design variables and option families
+- `BIM/BEM / simulation` if the claim depends on model translation or performance assumptions
+- `AI-assisted` if you need help building part of a workflow and can verify the output
+
+---
+
+## Studio Exercise
+
+In pairs:
+
+1. Explain your prior decision in one minute
+2. Let your partner identify the weak evidence link
+3. Rewrite your “next decision” as one question the semester could realistically address
+
+---
+
+## A1 Reality Check
+
+If your A1 is still vague, it is usually because:
+
+- the original decision was too broad
+- the evidence types are mixed together
+- the next decision is still a theme instead of a choice
+- the audience for the evidence is still unclear
+
+---
+
+## A1 Submission Check
+
+- one prior decision, clearly described
+- one evidence audit
+- one next studio decision
+- one visual page that makes the transition visible

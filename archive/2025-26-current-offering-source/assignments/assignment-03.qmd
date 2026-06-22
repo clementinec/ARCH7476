@@ -1,0 +1,162 @@
+---
+title: "Assignment 3: Method Prototype"
+subtitle: "Build a Small but Real Workflow in Your Chosen Pathway"
+format:
+  html:
+    toc: true
+---
+
+**Due:** End of Week 8  
+**Weight:** 25% of final grade  
+**Length:** 4-6 pages + pilot artifact  
+**Format:** PDF submission plus working files or exported artifact
+
+---
+
+# Assignment Overview
+
+`A3` is where your chosen pathway has to do real work. You will build a **method prototype**: the smallest credible workflow that can generate useful evidence for your studio question.
+
+The purpose is not scale. The purpose is proof that your pathway can produce decision-relevant output.
+
+## Learning Objectives
+
+By completing A3, you will be able to:
+
+1. Turn a pathway choice into a concrete workflow
+2. Run a pilot using real or realistically structured data
+3. Identify failure points, missing inputs, and weak assumptions
+4. Express uncertainty without collapsing the argument
+5. Document the workflow clearly enough that someone else could follow it
+
+# Core Deliverables
+
+## Part 1: Prototype Goal and Scope (about 1 page)
+
+Define:
+
+- the specific question the prototype will test
+- why this is the right slice of the larger project
+- what counts as success for the pilot
+- what is intentionally out of scope
+
+## Part 2: Workflow Description (about 1.5-2 pages)
+
+Describe the workflow step by step.
+
+Include:
+
+- input sources and file types
+- how data is cleaned or structured
+- core analysis steps
+- the final output the workflow produces
+- where judgment enters the process
+
+Examples by pathway:
+
+### Spreadsheet
+
+- comparison table
+- filtering and grouping
+- charting with error ranges or scenario bands
+- decision matrix
+
+### GIS
+
+- load layers
+- confirm CRS and geometry validity
+- select, join, buffer, or overlay
+- plot or export a map / spatial summary
+
+### Python
+
+- open notebook
+- load and inspect data
+- transform, summarize, or compare
+- create plots or exported tables
+
+## Part 3: Pilot Results (about 1-1.5 pages)
+
+Show what the workflow actually produced.
+
+Include:
+
+- one or more outputs from the workflow
+- what those outputs suggest
+- whether they are already useful for the decision
+- what remains too weak, noisy, partial, or unresolved
+
+## Part 4: Assumptions, Risks, and Uncertainty (about 1 page)
+
+State clearly:
+
+- what assumptions the workflow depends on
+- which inputs are incomplete or low confidence
+- what errors or ambiguities appeared
+- how those issues affect the strength of the output
+
+## Part 5: Prototype Artifact
+
+Submit one working artifact appropriate to the pathway:
+
+- spreadsheet workbook or export
+- GIS project output or exported map
+- Jupyter notebook or equivalent export
+
+The artifact does not need to be polished. It needs to be interpretable.
+
+# Differentiated Expectations
+
+## Undergraduate
+
+- small but complete prototype
+- clear workflow description
+- honest acknowledgement of problems
+
+## MArch
+
+- stronger connection between prototype output and design decision
+- better explanation of what a practitioner could do with the result
+- more independent troubleshooting
+
+## PhD
+
+- sharper method rationale
+- stronger uncertainty treatment
+- more reproducible structure and documentation
+
+# Assessment Criteria
+
+## Workflow Coherence (35%)
+
+- Does the prototype form a real end-to-end workflow?
+- Are inputs, steps, and outputs clearly connected?
+- Is the pathway being used appropriately?
+
+## Utility of the Pilot (25%)
+
+- Does the output help answer the decision question?
+- Is the prototype informative even if incomplete?
+- Are success and failure interpreted thoughtfully?
+
+## Transparency About Limits (25%)
+
+- Are assumptions and uncertainties named directly?
+- Does the student avoid overclaiming from a partial prototype?
+- Are next refinements logically motivated?
+
+## Communication and Documentation (15%)
+
+- Can another student or reviewer understand the workflow?
+- Is the prototype artifact readable and organized?
+
+# Common Failure Modes
+
+- building something technically busy that answers no clear question
+- hiding workflow gaps behind screenshots only
+- submitting an artifact without explaining how it was produced
+- treating pilot output as final proof
+
+# What a Strong Submission Looks Like
+
+A strong A3 submission demonstrates that the chosen pathway can produce a credible first piece of evidence, and that the student understands both the value and the limitations of what the prototype currently does.

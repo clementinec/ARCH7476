@@ -1,0 +1,69 @@
+---
+title: "Week 12: Object Fair and Transfer Forward"
+subtitle: "Present the Work, Then Carry It Into the Next Studio"
+format:
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1400
+    height: 900
+    center: true
+---
+
+## Today's Agenda
+
+- final presentations
+- evidence board review
+- reflection on pathway choice
+- transfer into the next project
+
+---
+
+## Final Prompt
+
+You are not only submitting a class project.
+
+You are handing yourself a better starting point for the next studio decision.
+
+---
+
+## What to Present Clearly
+
+- the decision
+- the pathway
+- the evidence
+- the recommendation
+- the limit
+
+---
+
+## What “Transfer Forward” Means
+
+After today, you should be able to reuse:
+
+- your evidence structure
+- your spreadsheet, map, or notebook workflow
+- your decision criteria
+- your language for uncertainty
+
+---
+
+## Reflection Questions
+
+- what kind of evidence do you trust differently now?
+- did your chosen pathway fit the question?
+- what would you still need before making the decision at full scale?
+
+---
+
+## Closing Standard
+
+The strongest work in this course does not sound like:
+
+“I used a tool.”
+
+It sounds like:
+
+“I used this workflow to reduce uncertainty around a real design decision.”

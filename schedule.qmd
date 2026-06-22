@@ -1,6 +1,6 @@
 ---
 title: "Course Schedule"
-subtitle: "12-Week Tool-to-Evidence Roadmap"
+subtitle: "12-Week Studio Evidence Workflow"
 format:
   html:
     toc: true
@@ -8,234 +8,302 @@ format:
 
 # Weekly Schedule Overview
 
-The semester now has a clear sequence:
+Every week has two parts:
 
-1. survey the tool landscape
-2. choose one primary pathway
-3. prototype a method
-4. turn evidence into a studio-facing decision brief
+1. a focused lecture or tool demonstration
+2. a studio-lab where students apply that week's lens to their own project
+
+## Session 2 Format
+
+The second half of class is a **Project Reasoning Round Table**, not a formal presentation.
+
+Before Session 2, each student uploads one rough material to Slack:
+
+- plan, section, render, massing image, or site photo
+- precedent image or evidence source
+- table, chart, GIS map, GH canvas, BIM/BEM screenshot, notebook output, or prompt log
+- draft object card, presentation slide, or reproducibility note
+
+Selected students speak for **60-90 seconds**:
+
+1. I brought ________.
+2. I chose or questioned this evidence/tool because ________.
+3. It supports ________.
+4. It does not yet show ________.
+5. My question to the room is ________.
+
+Volunteers go first and receive participation credit. If more examples are needed, the instructor may use random draw or select materials that make the week's concept visible. The draw is for a short reasoning check-in, not a polished presentation.
 
 ## At a Glance
 
-| Week | Focus | In-class emphasis | Assignment alignment |
+| Week | Lecture / demo lens | Session 2 material and check-in | Assignment alignment |
 |---|---|---|---|
-| 1 | Why Evidence Needs a Workflow | course reset, evidence examples, A1 kickoff | A1 launch |
-| 2 | Audit the Evidence You Already Use | prior decisions, evidence types, next studio question | **A1 due** |
-| 3 | Spreadsheet as Baseline Workflow | tables, charts, comparison logic, transparent reasoning | pathway survey |
-| 4 | GIS Choices for Architects | QGIS vs ArcGIS vs geopandas, Jupyter setup | pathway survey |
-| 5 | BIM, BEM, and Building Performance | model types, translation loss, simulation as evidence | pathway commitment |
-| 6 | Evidence and Pathway Mapping | source quality, scoping, tool choice, work plan | **A2 due** |
-| 7 | Method Prototype Studio | minimal viable workflow, data inputs, outputs, QC | A3 draft |
-| 8 | Reproducibility and Mentor Prep | documentation challenge, automation ethics, mentor strategy | **A3 due** |
-| 9 | Storytelling, Figures, and Decisions | narrative structure, figure rescue, recommendation framing | A4 analysis |
-| 10 | Draft Defense | presentations, live feedback, improvement strategy | A4 draft |
-| 11 | Final Polish | package refinement, rehearsal, Object Fair prep | A4 near-final |
-| 12 | Object Fair | presentation, critique, next-studio handoff | **A4 due** |
+| 1 | Total Recall: evidence behind a past studio decision | past project visual: what decision and evidence are visible? | A1 decision + evidence recall |
+| 2 | Evidence audit: weak links, overclaims, and next decision | marked evidence: what does it support, and what does it not show yet? | A1 evidence critique |
+| 3 | Spreadsheet as baseline workflow | table/chart/matrix: what variants or trade-offs could be compared? | A1 due / A2 decision recap |
+| 4 | GIS choices for architects | site/map/context image: is this decision spatial? | A2 evidence map + tool matrix |
+| 5 | BIM/BEM and performance model translation | model/performance material: what assumptions would dominate? | A2 tool matrix + feasibility |
+| 6 | Evidence and pathway mapping | workflow sketch or branch declaration: what route and output are you choosing? | A2 due / A4 branch |
+| 7 | Method prototype studio | artifact/canvas/notebook/map: what goes in, varies, and comes out? | A3 prototype scope |
+| 8 | Reproducibility, automation ethics, and mentor prep | prompt log/error/README: what must be verified or documented? | A3 verification log |
+| 9 | Thresholds, recommendations, and counter-arguments | figure/output/object-card draft: what result changes the action? | A3 due / A4 launch |
+| 10 | Draft workflow review | draft package: can reviewers trace the full evidence loop? | A4 draft |
+| 11 | Final package polish | final component draft: which A4 component is weakest? | A4 near-final |
+| 12 | Object Fair | final object card/reflection: what reasoning transfers forward? | A4 due |
 
-## Week 1: Why Evidence Needs a Workflow
+## Week 1: Total Recall
 
-### Focus
-Reset the course around decisions, evidence, and tool choice instead of disconnected software demos.
+### Lecture / Demo
 
-### In Class
-- course overview and new pathway model
-- architecture examples that appear evidence-based but hide weak reasoning
-- introduction to A1: prior decision audit plus next decision brief
-- pair exercise: articulate one prior design decision and its alternatives
-- worksheet exercise: sort what counted as evidence, assumption, and missing evidence
-- draft the next studio decision in class so A1 is already underway
-- mixed-cohort expectations for undergraduates, MArch, and PhD students
+- what counts as evidence in studio
+- how design claims get justified after the fact
+- precedent, assumption, intuition, tutor preference, and workflow output
 
-### Out of Class
-- identify one prior design decision you already made
-- gather the images, notes, and sources you used at the time
-- identify one upcoming studio decision worth investigating
-- expand the in-class A1 worksheet into a draft evidence audit
+### Studio-Lab
 
-### Tools Introduced
-- overview only: `spreadsheet`, `GIS`, `Python`, `BIM/BEM`
+Students build a one-page case board from a prior studio decision.
 
-## Week 2: Audit the Evidence You Already Use
+Core prompts:
 
-### Focus
-Make existing habits explicit: what counted as evidence, what was missing, and what confidence was overstated.
+- What was one design decision you made?
+- What alternatives existed?
+- What evidence did you use?
+- What did that evidence actually prove?
+- What was assumption or preference?
+- What evidence would have changed the decision?
 
-### In Class
-- evidence types: precedent, measurement, simulation, standards, observation, stakeholder input
-- how architects confuse confidence with evidence
-- workshop: convert a prior decision into an evidence audit
-- workshop: define the next studio question
+**Session 2 material:** upload one image, diagram, or board fragment from the past project.
 
-### Out of Class
-- **submit A1**
-- shortlist two possible pathways for your next question
-- gather 3-5 precedent or data sources for Week 3
+**Round-table check-in:** What decision is visible here, and what evidence did you think supported it?
 
-### Tools Introduced
-- spreadsheet as universal audit tool
+**Feeds:** A1 Prior Studio Decision + Evidence Recall.
+
+## Week 2: Evidence Audit
+
+### Lecture / Demo
+
+- evidence types used in studio
+- weak links, overclaims, and confidence levels
+- what precedent, simulation, survey, and standards can actually support
+- how A1 moves from recollection to diagnosis
+
+### Studio-Lab
+
+Students revise their A1 evidence audit and identify what evidence would be needed for the next design decision.
+
+**Session 2 material:** upload the same decision with evidence, precedent, assumption, and uncertainty marked.
+
+**Round-table check-in:** What does this evidence actually support, and what does it not show yet?
+
+**Feeds:** A1 Evidence Critique.
 
 ## Week 3: Spreadsheet as Baseline Workflow
 
-### Focus
-Use spreadsheets as the common baseline for organizing evidence and comparing alternatives.
+### Lecture / Demo
 
-### In Class
-- structure a worksheet around a design decision
-- move from raw observations to comparable fields
-- make charts that show uncertainty instead of false precision
-- build a simple decision matrix
+- transparent comparison logic
+- evidence logs, decision matrices, and uncertainty ranges
+- chart rescue and the 3-second message test
+- how simple tables can support generative comparison
 
-### Out of Class
-- create a starter workbook for your own project
-- prepare one comparison table and one chart
+### Studio-Lab
 
-### Tools Introduced
-- Excel / Google Sheets
+Students turn one A1/A2 decision into a comparison table, chart, or decision matrix.
+
+Minimum lab deliverable:
+
+- one decision
+- two or more options, variants, or scenarios
+- one comparison structure
+- one output that could make a trade-off visible
+
+**Session 2 material:** upload a rough table, chart, matrix, or sketch of comparable variants.
+
+**Round-table check-in:** What variants or scenarios could be compared, and what would make the trade-off visible?
+
+**Feeds:** A1 final board + A2 Decision Recap.
 
 ## Week 4: GIS Choices for Architects
 
-### Focus
-Compare `QGIS`, `ArcGIS`, and `geopandas`, then situate code-based GIS inside a practical notebook workflow.
+### Lecture / Demo
 
-### In Class
-- when to use `QGIS`
-- when `ArcGIS` matters in professional ecosystems
-- why `geopandas` is the course anchor for code-based GIS
-- `Jupyter Notebook`, `Anaconda` / `Miniconda`, and `Colab`: what each one does
-- minimal `geopandas` demo: load, inspect CRS, filter, buffer, plot, export
+- when a design decision is genuinely spatial
+- `QGIS`, `ArcGIS`, and `geopandas`
+- site, access, boundary, and overlay evidence
+- Hong Kong data sources and setup routes
 
-### Out of Class
-- decide whether GIS is still in contention for your primary pathway
-- run the sample notebook or attend setup support
+### Studio-Lab
 
-### Tools Introduced
-- QGIS
-- ArcGIS
-- Jupyter Notebook
-- geopandas
+Students decide whether their project needs GIS and, if so, define the smallest useful spatial output.
 
-## Week 5: BIM, BEM, and Building Performance
+**Session 2 material:** upload a site map, plan, context image, route diagram, or spatial layer sketch.
 
-### Focus
-Teach BIM/BEM and simulation as shared literacy, especially what gets lost when models travel between workflows.
+**Round-table check-in:** Does this decision depend on location, distance, overlap, boundary, or access?
 
-### In Class
-- BIM vs BEM: different data structures and different priorities
-- why translation breaks
-- what performance tools can and cannot tell you
-- how simulation fits inside evidence-based design without pretending certainty
-- pathway selection check-in
+**Feeds:** A2 Evidence Map + Tool Translation Matrix.
 
-### Out of Class
-- lock your primary pathway
-- collect candidate evidence sources and method ideas for A2
+## Week 5: BIM, BEM, and Performance Model Translation
 
-### Tools Introduced
-- BIM/BEM concepts
-- building performance simulation examples
+### Lecture / Demo
+
+- BIM vs BEM as a model-translation problem
+- how geometry, zoning, construction, and operations change in energy modeling
+- `IFC` vs `gbXML`
+- what performance claims need before they are credible
+
+### Studio-Lab
+
+Students identify whether their project needs model/performance evidence, a proxy test, or only BIM/BEM literacy.
+
+**Session 2 material:** upload a BIM/BEM screenshot, section, envelope image, model diagram, or performance claim.
+
+**Round-table check-in:** What would a performance model need to know, and what would it probably simplify?
+
+**Feeds:** A2 Tool Translation Matrix + Workflow Feasibility.
+
+Before course launch, this week still benefits from a named runnable demo asset. Candidate demos:
+
+- GH + Ladybug solar/shading comparison
+- VELUX/Radiance daylight preset
+- EnergyPlus Simple Glazing scenario comparison
+- spreadsheet-based proxy test when simulation setup is not available
 
 ## Week 6: Evidence and Pathway Mapping
 
-### Focus
-Translate the studio question into a realistic evidence plan and commit to one primary pathway.
+### Lecture / Demo
 
-### In Class
-- evidence source quality and relevance
-- compare pathway fit: `spreadsheet`, `GIS`, `Python`
-- define inputs, outputs, constraints, and likely failure points
-- A2 work session and feedback
+- evidence source triage
+- pathway choice across spreadsheet, GIS, Python, BIM/BEM, GH, and AI-assisted routes
+- Retrospective Redesign vs Live Studio Application
+- scope discipline: one decision, not the whole project
 
-### Out of Class
-- **submit A2**
-- start a minimal folder/workbook/notebook structure for A3
+### Studio-Lab
+
+Students submit A2 and declare their provisional A4 branch and workflow plan.
+
+**Session 2 material:** upload a workflow sketch, pathway matrix, or A4 branch declaration draft.
+
+**Round-table check-in:** Which route are you choosing, and what is the smallest useful output?
+
+**Feeds:** A2 Primary Workflow Selection + A4 Branch Declaration.
 
 ## Week 7: Method Prototype Studio
 
-### Focus
-Build the smallest workflow that can answer a real piece of the question.
+### Lecture / Demo
 
-### In Class
-- minimal viable method design
-- pathway breakout support
-- documenting assumptions before running the workflow
-- quality checks and version discipline
+- inputs, operations, outputs, quality checks
+- failure logs
+- how to debug without hiding uncertainty
 
-### Out of Class
-- run the first full prototype
-- capture screenshots, exports, and notes
+### Studio-Lab
 
-## Week 8: Reproducibility and Mentor Prep
+Students assemble or run the first version of their workflow artifact.
 
-### Focus
-Stress-test the method by forcing it to be documented, explained, and critiqued by others before it becomes final-course evidence.
+**Session 2 material:** upload a workflow artifact, GH canvas, notebook output, spreadsheet, GIS map, simulation screenshot, or AI-assisted component.
 
-### In Class
-- documentation speed trials
-- reproducibility swap challenge
-- automation ethics and data provenance
-- mentor consultation strategy and question development
+**Round-table check-in:** What goes in, what varies, what comes out, and what quality check proves it ran?
 
-### Out of Class
-- **submit A3**
-- revise your workflow notes based on what broke during the swap test
-- prepare mentor questions and final-package priorities
+**Feeds:** A3 Prototype Scope + Workflow Description.
 
-## Week 9: Storytelling, Figures, and Decisions
+## Week 8: Reproducibility, Automation Ethics, and Mentor Prep
 
-### Focus
-Turn analysis into a convincing story, a clear figure set, and a recommendation someone can act on.
+### Lecture / Demo
 
-### In Class
-- story structure for busy stakeholders
-- figure rescue and the 3-second message test
-- object card / evidence board iteration
-- recommendation framing with thresholds and trade-offs
+- workflow documentation
+- automation ethics and data awareness
+- prompt logs
+- manual verification and disclosure
+- mentor consultation preparation
 
-### Out of Class
-- draft A4 recommendation logic
-- refine charts, maps, or notebook outputs
+### Studio-Lab
 
-## Week 10: Draft Defense
+Students test whether one workflow component, AI-assisted or not, is documented well enough to be inspected by someone else.
 
-### Focus
-Pressure-test the near-final package in live presentation conditions.
+**Session 2 material:** upload a prompt log, error message, output, README fragment, verification note, or workflow checklist.
 
-### In Class
-- timed presentations
-- live scoring and structured critique
-- feedback triage and revision planning
-- object fair readiness check
+**Round-table check-in:** What must someone else inspect before they trust this output?
 
-### Out of Class
-- assemble A4 draft package
-- prepare review materials for Week 11
+**Feeds:** A3 Verification and Failure Log.
 
-## Week 11: Final Polish
+## Week 9: Thresholds and Recommendations
 
-### Focus
-Polish the package, rehearse delivery, and close the gap between good work and public-facing work.
+### Lecture / Demo
 
-### In Class
-- professional polish lab
-- figure and message clarity clinic
-- networking and Q&A rehearsal
-- final submission assembly
+- adopt/defer thresholds
+- uncertainty language
+- counter-arguments
+- decision memo framing
 
-### Out of Class
-- finalize A4
-- prepare final presentation materials
+### Studio-Lab
+
+Students write a threshold statement and one counter-argument.
+
+**Session 2 material:** upload a figure, output table, comparison chart, or object-card draft.
+
+**Round-table check-in:** What result changes the design action, and what uncertainty remains visible?
+
+**Feeds:** A3 Prototype Output + A4 Practice Case/Object Card.
+
+## Week 10: Draft Workflow Review
+
+### Lecture / Demo
+
+- how to present a workflow-backed design decision
+- how reviewers inspect decision, evidence, workflow, output, threshold, and limit
+
+### Studio-Lab
+
+Small-panel draft reviews. No tournament scoring; the emphasis is professional critique.
+
+**Session 2 material:** upload a draft presentation, object card, package outline, or reproducibility capsule index.
+
+**Round-table check-in:** Can a reviewer trace decision -> variants/scenarios -> workflow -> output -> threshold -> limit?
+
+**Feeds:** A4 Draft Package.
+
+## Week 11: Final Package Polish
+
+### Lecture / Demo
+
+- Practice Case
+- Research Brief
+- Object Card
+- Reproducibility Capsule
+
+### Studio-Lab
+
+Students run a package audit and complete final revisions.
+
+**Session 2 material:** upload the weakest A4 component or the component most in need of peer review.
+
+**Round-table check-in:** Which A4 component is weakest, and what must be fixed before submission?
+
+**Feeds:** A4 Final Package.
+
+The package must show the full loop:
+
+1. decision
+2. variants or scenarios
+3. workflow
+4. evaluation
+5. threshold
+6. design action
 
 ## Week 12: Object Fair
 
-### Focus
-Present the work publicly, receive critique, and convert the semester output into something reusable for the next project.
-
 ### In Class
-- final presentations and critique
-- object fair / evidence board display
-- reflection: what changed in how you justify design moves
-- transfer plan for the next studio project
 
-### Out of Class
-- **submit A4**
-- archive your pathway files and documentation for future reuse
+- 6-8 minute final presentation
+- 4 minute Q&A
+- object card / evidence board review
+- final reflection on workflow transfer
+
+**Session 2 material:** use the final object card or reflection note.
+
+**Round-table check-in:** What design reasoning can transfer to another studio project?
+
+**Feeds:** A4 Reflection Note.
+
+### Final Prompt
+
+What design decision did your workflow improve, what did the evidence change, and what should happen next?

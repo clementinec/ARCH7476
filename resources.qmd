@@ -1,188 +1,155 @@
 ---
 title: "Course Resources"
-subtitle: "Setup Ladder, Pathway Guide, and Data Sources"
+subtitle: "Workflow Tracks, Templates, and Reuse Map"
 format:
   html:
     toc: true
 ---
 
-# Setup Ladder
+# Resource Logic
 
-The course supports different levels of technical comfort. Use the lightest setup that still lets you complete your chosen pathway well.
+Use the lightest setup that can produce a credible workflow for your design decision.
 
-## Baseline for Everyone
+The course does not reward technical intimidation. It rewards a clear relationship between:
 
-- **Spreadsheet software**: Excel (HKU license) or Google Sheets
-- **Web browser**: Chrome, Firefox, or Safari
-- **Course downloads**: notebooks, sample data, and local image assets
+```mermaid
+flowchart LR
+    A[Design decision] --> B[Variable / evidence]
+    B --> C[Workflow]
+    C --> D[Output]
+    D --> E[Threshold / recommendation]
+```
 
-## GIS / Python Local Setup
+## Core Templates
 
-### 1. Python Environment
+| Template | Use |
+|---|---|
+| [Project Reasoning Check-In](templates/project-reasoning-checkin.md) | weekly Session 2 Slack upload and round-table note |
+| [Total Recall Board](templates/total-recall-board.md) | A1 past studio evidence audit |
+| [Tool Translation Matrix](templates/tool-translation-matrix.md) | A2 workflow route comparison |
+| [A4 Branch Declaration](templates/a4-branch-declaration.md) | Week 6 route and scope lock |
+| [AI Workflow Verification Card](templates/ai-workflow-verification-card.md) | AI-assisted GH/Python/workflow documentation |
+| [Final Package Checklist](templates/final-package-checklist.md) | A4 Practice Case, Research Brief, Object Card, Capsule |
 
-Use **Anaconda** or **Miniconda** if you want a managed local environment.
+## Starter Kits
 
-- `Anaconda`: bigger install, more batteries included
-- `Miniconda`: lighter install, better if you only want what the course uses
+Starter kits are tracked in [Starter Kits](starter_kits/README.md).
 
-### 2. Notebook Interface
+Launch-critical kits:
 
-Use **Jupyter Notebook** as the main interactive environment.
+- [GH Parametric Variants](starter_kits/gh-parametric-variants/README.md)
+- [Preset Simulation / Proxy Test](starter_kits/preset-simulation-proxy/README.md)
+- [AI-Assisted Workflow](starter_kits/ai-assisted-workflow/README.md)
 
-- run provided examples
-- edit cells and notes in one place
-- keep code, charts, and interpretation together
+The rebuild should not be treated as student-ready until those three kits are runnable.
 
-### 3. Browser Fallback
+## Supported Workflow Tracks
 
-Use **Google Colab** if local installation is not ready yet.
+### GH / Parametric Workflow
 
-- good for quick starts
-- lower setup burden
-- less control over local files and environments
+Best when the decision depends on geometry variation or option families.
 
-::: {.callout-note}
-## What These Names Mean
+Typical outputs:
 
-- `Anaconda` / `Miniconda` = Python environment and package manager
-- `Jupyter Notebook` = the interface where you run and annotate code
-- `pandas` / `geopandas` = the libraries used inside notebooks
-- `Colab` = browser-based fallback if you do not want a local install yet
-:::
+- GH definition
+- exported variants
+- parameter table
+- comparison chart or object card
 
-## Suggested Install Order
+Current status: **needs new starter definitions and screenshots**.
 
-1. Confirm spreadsheet access
-2. Install `QGIS` if you want the GIS route
-3. Install `Anaconda` or `Miniconda` if you want GIS code or Python
-4. Open `Jupyter Notebook`
-5. Run one sample notebook before modifying anything
+### BIM/BEM and Simulation
 
-## Pathway Chooser
+Best when the decision depends on building performance, model translation, daylight, energy, facade logic, or environmental assumptions.
 
-| Pathway | Best when your question is about | Common outputs | Typical student fit |
-|---|---|---|---|
-| Spreadsheet | comparisons, ranking, observations, literature/evidence tables | charts, matrices, summary tables | anyone; best baseline |
-| GIS | site, zoning, access, urban context, spatial trade-offs | maps, buffers, overlays, spatial comparisons | students with site or urban questions |
-| Python | repeatable analysis, plotting, lightweight modeling, reusable scripts | notebooks, charts, cleaned datasets, export tables | students who want more control or reuse |
+Typical outputs:
 
-## GIS Alternatives for Architects
+- model-translation critique
+- preset simulation output
+- sensitivity table
+- performance threshold
 
-The course explicitly introduces three GIS paradigms:
+Current status: **BIM/BEM lecture exists; preset simulation handout still needed**.
 
-### QGIS
+### GIS / Spatial Workflow
 
-- free and open-source
-- good for visual exploration, layering, and manual map production
-- useful when you need fast spatial inspection without writing code
+Best when the decision depends on site, access, zoning, context, exposure, or spatial comparison.
 
-### ArcGIS
+Typical outputs:
 
-- important professional ecosystem
-- useful for enterprise, client, and institutional contexts
-- relevant if your collaborators or office already use it
+- map
+- buffer/overlay output
+- spatial summary table
+- exported design criteria
 
-### geopandas
+Current status: **existing GIS material can be reused**.
 
-- the course anchor for code-based GIS
-- useful when you need reproducible spatial analysis in notebooks
-- sits naturally beside `pandas`, plotting libraries, and exported CSV data
+### Python / Notebook Workflow
 
-### Why `geopandas` Sits at the Center
+Best when the decision depends on repeated data analysis, visualization, or lightweight modeling.
 
-The course does not treat code-driven GIS as an abstract option. It teaches a small, concrete `geopandas` workflow in `Jupyter Notebook` so students understand:
-
-- how spatial data looks in code
-- how projections and geometry affect analysis
-- how to move from raw layers to a decision-support plot or export
-
-## Building Performance Literacy
-
-All students get shared literacy in:
-
-- **BIM vs BEM**: different data structures, different priorities
-- **simulation workflows**: useful, but never automatically authoritative
-- **translation loss**: what breaks between design models and performance models
-- **uncertainty**: why numerical output still needs judgment
-
-These support the whole course even if they are not the student's chosen primary pathway.
-
-## Notebook Resources
-
-### Existing Course Notebooks
+Existing notebooks:
 
 - `notebooks/01_python_ml_basics.ipynb`
 - `notebooks/02_arch_viz_analysis.ipynb`
 
-Recommended use:
+Current status: **existing notebooks can support optional code-heavy work**.
 
-- use the second notebook first if you are new to Python
-- use the first notebook if you want a broader introduction to modeling concepts
-- adapt them rather than starting from a blank notebook
+### AI-Assisted Workflow Building
 
-## Example Bank
+Best when AI can help build a small workflow component, script, prompt sequence, or documentation scaffold.
 
-The course now stores visual examples locally in `assets/examples/` to avoid remote failures in slides and pages.
+Required documentation:
 
-Included examples currently support:
+- prompt log
+- generated output
+- failure notes
+- manual verification
+- disclosure statement
 
-- workplace and systems claims
-- public-space observation
-- environmental performance examples
-- Hong Kong site and access questions
+Current status: **verification checklist template exists; concrete examples still needed**.
 
-Attribution and source links are recorded in `assets/examples/sources.csv`.
+### Spreadsheet / Low-Code Workflow
 
-## Data Sources
+Best when the decision depends on transparent comparison, sensitivity, or threshold logic.
 
-### Hong Kong / Local
+Typical outputs:
 
-- `DATA.GOV.HK`
-- Planning Department datasets
-- Transport Department data
-- Hong Kong Observatory climate records
-- site-specific images, counts, notes, and precedent material collected by students
+- evidence table
+- decision matrix
+- sensitivity chart
+- threshold statement
 
-### Global / Open
+Current status: **existing spreadsheet logic can be reused as baseline support**.
 
-- OpenStreetMap
-- municipal open data portals
-- EnergyPlus weather files
-- professional standards and benchmark sources
+## Setup Ladder
 
-## Support
+| Level | Setup |
+|---|---|
+| Everyone | Excel or Google Sheets, browser, PDF/image export |
+| GIS route | QGIS, project layers, export workflow |
+| Python route | Jupyter Notebook, Anaconda/Miniconda or Colab |
+| GH route | Rhino + Grasshopper, supported plugins stated by instructor |
+| Simulation route | preset tool selected for the class example |
+| AI-assisted route | approved AI tool access, prompt log, verification notes |
 
-### During the Semester
+## Archive and Reuse
 
-- office hours for setup and pathway troubleshooting
-- in-class work sessions for assignment development
-- peer review for method fit and clarity
+The previous offering is preserved in:
 
-### When to Ask for Help
+`archive/2025-26-current-offering-source/`
 
-Ask early if:
+High-value reusable materials:
 
-- you cannot run the provided notebook example
-- your GIS data will not open or align correctly
-- your spreadsheet structure is collapsing under too many ad hoc columns
-- your chosen method does not yet produce a decision-relevant output
+- Week 1 evidence audit material
+- Week 5 BIM/BEM deck
+- GIS overview material
+- Python and visualization notebooks
+- object card / figure rescue content
 
-## Quick Start
+Materials still needed:
 
-### If You Want the Safest Start
-
-1. Choose `spreadsheet`
-2. Build a clean comparison table for A1 and A2
-3. Add GIS or Python only if the question truly needs it
-
-### If You Want GIS
-
-1. Install `QGIS`
-2. Run the `geopandas` starter notebook in `Jupyter` or `Colab`
-3. Compare the GUI and code workflows before choosing how far to automate
-
-### If You Want Python
-
-1. Install `Anaconda` or `Miniconda`
-2. Open the provided notebook in `Jupyter`
-3. Reproduce one chart using your own small dataset before scaling up
+- GH starter workflows
+- preset simulation demo
+- AI-assisted workflow examples
+- final package templates in downloadable format

@@ -1,162 +1,147 @@
 ---
-title: "Assignment 3: Method Prototype"
-subtitle: "Build a Small but Real Workflow in Your Chosen Pathway"
+title: "Assignment 3: Workflow Prototype + Verification"
+subtitle: "Generate or Compare Variants, Then Verify the Output"
 format:
   html:
     toc: true
 ---
 
-**Due:** End of Week 8  
-**Weight:** 25% of final grade  
-**Length:** 4-6 pages + pilot artifact  
-**Format:** PDF submission plus working files or exported artifact
+**Due:** End of Week 9  
+**Weight:** 25%  
+**Format:** PDF submission plus workflow artifact
 
 ---
 
-# Assignment Overview
+# Purpose
 
-`A3` is where your chosen pathway has to do real work. You will build a **method prototype**: the smallest credible workflow that can generate useful evidence for your studio question.
+`A3` is where the workflow becomes real.
 
-The purpose is not scale. The purpose is proof that your pathway can produce decision-relevant output.
+You will build the smallest working version of your chosen workflow, generate or compare multiple variants/scenarios, produce one output, and document how you verified or debugged it.
 
-## Learning Objectives
+# Core Question
 
-By completing A3, you will be able to:
+> Can this workflow generate or compare variants and produce an output that helps the design decision?
 
-1. Turn a pathway choice into a concrete workflow
-2. Run a pilot using real or realistically structured data
-3. Identify failure points, missing inputs, and weak assumptions
-4. Express uncertainty without collapsing the argument
-5. Document the workflow clearly enough that someone else could follow it
+# Session 2 Check-Ins That Feed A3
 
-# Core Deliverables
+These check-ins should make the prototype visible before the deadline. Bring rough artifacts; the point is to expose workflow reasoning early.
 
-## Part 1: Prototype Goal and Scope (about 1 page)
+| Week | Bring to Session 2 | Round-table question | A3 component |
+|---:|---|---|---|
+| 7 | workflow artifact, GH canvas, notebook output, spreadsheet, GIS map, simulation screenshot, or AI-assisted component | What goes in, what varies, what comes out, and what quality check proves it ran? | Prototype Scope + Workflow Description |
+| 8 | prompt log, error message, output, README fragment, verification note, or workflow checklist | What must someone else inspect before they trust this output? | Verification and Failure Log |
+| 9 | figure, output table, comparison chart, or object-card draft | What result changes the design action, and what uncertainty remains visible? | Prototype Output + threshold language |
+
+Use the [Project Reasoning Check-In](../templates/project-reasoning-checkin.md) template if you want a consistent note structure.
+
+# Required Components
+
+## 1. Prototype Scope
 
 Define:
 
-- the specific question the prototype will test
-- why this is the right slice of the larger project
-- what counts as success for the pilot
+- design decision
+- workflow route
+- input sources
+- variable or range
+- minimum of three variants, scenarios, or alternatives
+- output target
 - what is intentionally out of scope
 
-## Part 2: Workflow Description (about 1.5-2 pages)
+## 2. Workflow Artifact
 
-Describe the workflow step by step.
+Submit the relevant artifact:
 
-Include:
+- GH definition or screenshots/export
+- simulation setup or preset output
+- GIS project output and supporting files
+- Python notebook or exported notebook
+- spreadsheet workbook
+- AI-assisted generated component plus verification notes
 
-- input sources and file types
-- how data is cleaned or structured
-- core analysis steps
-- the final output the workflow produces
-- where judgment enters the process
+## 3. Workflow Description
 
-Examples by pathway:
+Explain the workflow in inspectable steps.
 
-### Spreadsheet
+Use this structure:
 
-- comparison table
-- filtering and grouping
-- charting with error ranges or scenario bands
-- decision matrix
+1. input
+2. operation
+3. output
+4. quality check
+5. design interpretation
 
-### GIS
+## 4. Generative Loop
 
-- load layers
-- confirm CRS and geometry validity
-- select, join, buffer, or overlay
-- plot or export a map / spatial summary
+Show the loop:
 
-### Python
+1. input condition
+2. variable/range
+3. variants, scenarios, or alternatives
+4. evaluation metric
+5. output
+6. threshold or comparison rule
+7. design action
 
-- open notebook
-- load and inspect data
-- transform, summarize, or compare
-- create plots or exported tables
+## 5. Prototype Output
 
-## Part 3: Pilot Results (about 1-1.5 pages)
+Show one interpretable output from the workflow.
 
-Show what the workflow actually produced.
+Examples:
 
-Include:
+- variant comparison
+- map or spatial summary
+- daylight/solar/energy result
+- parameter table
+- chart with ranges
+- generated script/component with verified result
 
-- one or more outputs from the workflow
-- what those outputs suggest
-- whether they are already useful for the decision
-- what remains too weak, noisy, partial, or unresolved
+## 6. Verification and Failure Log
 
-## Part 4: Assumptions, Risks, and Uncertainty (about 1 page)
+Document:
 
-State clearly:
+- what worked
+- what failed
+- what you checked manually
+- what assumption matters most
+- what remains untrusted
 
-- what assumptions the workflow depends on
-- which inputs are incomplete or low confidence
-- what errors or ambiguities appeared
-- how those issues affect the strength of the output
+If AI assisted any part of the workflow, include the [AI Workflow Verification Card](../templates/ai-workflow-verification-card.md).
 
-## Part 5: Prototype Artifact
+# Assessment Criteria
 
-Submit one working artifact appropriate to the pathway:
-
-- spreadsheet workbook or export
-- GIS project output or exported map
-- Jupyter notebook or equivalent export
-
-The artifact does not need to be polished. It needs to be interpretable.
+| Criterion | Weight |
+|---|---:|
+| Generative loop coherence | 30% |
+| Utility of variant/scenario output | 25% |
+| Verification and debugging | 20% |
+| Treatment of uncertainty | 15% |
+| Documentation quality | 10% |
 
 # Differentiated Expectations
 
 ## Undergraduate
 
-- small but complete prototype
-- clear workflow description
-- honest acknowledgement of problems
+- small but complete workflow
+- clear explanation
+- honest failure log
 
 ## MArch
 
-- stronger connection between prototype output and design decision
-- better explanation of what a practitioner could do with the result
+- stronger connection between output and studio decision
 - more independent troubleshooting
+- output should inform a real design action
 
-## PhD
+## RPg / PhD
 
 - sharper method rationale
-- stronger uncertainty treatment
-- more reproducible structure and documentation
-
-# Assessment Criteria
-
-## Workflow Coherence (35%)
-
-- Does the prototype form a real end-to-end workflow?
-- Are inputs, steps, and outputs clearly connected?
-- Is the pathway being used appropriately?
-
-## Utility of the Pilot (25%)
-
-- Does the output help answer the decision question?
-- Is the prototype informative even if incomplete?
-- Are success and failure interpreted thoughtfully?
-
-## Transparency About Limits (25%)
-
-- Are assumptions and uncertainties named directly?
-- Does the student avoid overclaiming from a partial prototype?
-- Are next refinements logically motivated?
-
-## Communication and Documentation (15%)
-
-- Can another student or reviewer understand the workflow?
-- Is the prototype artifact readable and organized?
+- stronger reproducibility
+- deeper uncertainty treatment
 
 # Common Failure Modes
 
-- building something technically busy that answers no clear question
-- hiding workflow gaps behind screenshots only
-- submitting an artifact without explaining how it was produced
-- treating pilot output as final proof
-
-# What a Strong Submission Looks Like
-
-A strong A3 submission demonstrates that the chosen pathway can produce a credible first piece of evidence, and that the student understands both the value and the limitations of what the prototype currently does.
+- submitting screenshots without workflow logic
+- building a tool artifact that answers no decision question
+- hiding broken steps
+- using AI-generated code without verification
+- treating one weak output as final proof

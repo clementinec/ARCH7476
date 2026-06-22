@@ -1,0 +1,112 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - schedule.qmd
+    - assignments.qmd
+    - resources.qmd
+    - assignments/assignment-01.qmd
+    - assignments/assignment-02.qmd
+    - assignments/assignment-03.qmd
+    - assignments/assignment-04.qmd
+    - weeks/week-01.qmd
+    - weeks/week-02.qmd
+    - weeks/week-03.qmd
+    - weeks/week-04.qmd
+    - weeks/week-05.qmd
+    - weeks/week-06.qmd
+    - weeks/week-07.qmd
+    - weeks/week-08-engaging.qmd
+    - weeks/week-09.qmd
+    - weeks/week-10-engaging.qmd
+    - weeks/week-11-engaging.qmd
+    - weeks/week-12-engaging.qmd
+    - weeks/python-primer-overview.qmd
+    - notebooks/01_python_ml_basics.ipynb
+    - notebooks/02_arch_viz_analysis.ipynb
+
+website:
+  title: "ARCH7476: Evidence-Based Generative Design"
+  navbar:
+    logo: "assets/ARCH7476_HONGSHAN GUO.pdf"
+    left:
+      - href: index.qmd
+        text: Home
+      - href: schedule.qmd
+        text: Schedule
+      - href: assignments.qmd
+        text: Assignments
+      - href: resources.qmd
+        text: Resources
+    right:
+      - icon: github
+        href: https://github.com/
+        aria-label: GitHub
+  sidebar:
+    style: docked
+    search: true
+    contents:
+      - section: "Course Overview"
+        contents:
+          - index.qmd
+          - schedule.qmd
+          - assignments.qmd
+          - resources.qmd
+      - section: "Weekly Content"
+        contents:
+          - text: "W1: Why Evidence Needs a Workflow"
+            href: weeks/week-01.qmd
+          - text: "W2: Audit the Evidence You Already Use"
+            href: weeks/week-02.qmd
+          - text: "W3: Spreadsheet as Baseline Workflow"
+            href: weeks/week-03.qmd
+          - text: "W4: GIS Choices for Architects"
+            href: weeks/week-04.qmd
+          - text: "W5: BIM, BEM, and Building Performance"
+            href: weeks/week-05.qmd
+          - text: "W6: Evidence and Pathway Mapping"
+            href: weeks/week-06.qmd
+          - text: "W7: Method Prototype Studio"
+            href: weeks/week-07.qmd
+          - text: "W8: Reproducibility and Mentor Prep"
+            href: weeks/week-08-engaging.qmd
+          - text: "W9: Thresholds and Decisions"
+            href: weeks/week-09.qmd
+          - text: "W10: Draft Defense"
+            href: weeks/week-10-engaging.qmd
+          - text: "W11: Final Polish"
+            href: weeks/week-11-engaging.qmd
+          - text: "W12: Object Fair"
+            href: weeks/week-12-engaging.qmd
+      - section: "Assignments"
+        contents:
+          - text: "A1: Evidence Audit + Next Decision Brief"
+            href: assignments/assignment-01.qmd
+          - text: "A2: Evidence and Pathway Map"
+            href: assignments/assignment-02.qmd
+          - text: "A3: Method Prototype"
+            href: assignments/assignment-03.qmd
+          - text: "A4: Studio Evidence Package"
+            href: assignments/assignment-04.qmd
+      - section: "Python Notebooks"
+        contents:
+          - text: "Python + ML Basics"
+            href: notebooks/01_python_ml_basics.ipynb
+          - text: "Architecture Viz + Analysis"
+            href: notebooks/02_arch_viz_analysis.ipynb
+          - text: "Python + Notebook Primer"
+            href: weeks/python-primer-overview.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    code-fold: false
+    code-tools: true
+
+execute:
+  freeze: auto
+  cache: true
