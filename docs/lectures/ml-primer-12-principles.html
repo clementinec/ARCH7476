@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.544">
 
-  <title>ARCH7476: Generative Design in Architecture - Week 9: Storytelling, Figures, and Decisions</title>
+  <title>ARCH7476: Generative Design in Architecture - ML Primer: The 12 Principles</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -325,433 +325,308 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 9: Storytelling, Figures, and Decisions</h1>
-  <p class="subtitle">Turn Analysis Into a Recommendation People Can Understand</p>
+  <h1 class="title">ML Primer: The 12 Principles</h1>
+  <p class="subtitle">A plain-language mental model of machine learning for studio work</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="todays-agenda" class="slide level2 center">
-<h2>Today’s Agenda</h2>
+<section id="what-youll-learn" class="slide level2 center">
+<h2>What you’ll learn</h2>
+<div class="concept-card">
+<p><span class="card-title">In plain language</span> A clear mental model of how ML works without math overload — and where it helps (and where it doesn’t) in architectural workflows.</p>
+</div>
+<ul>
+<li class="fragment">the 12 principles that make ML predictable, not mysterious</li>
+<li class="fragment">how to use generative tools responsibly for studio work</li>
+<li class="fragment">everything reproducible: prompts, seeds, masks, versions</li>
+</ul>
+<div class="grading-note">
+<p>This is the skinned summary. The full detailed deck — pipeline, diffusion, segmentation, surrogate modeling, GH/Honeybee tooling — is the <a href="../data/ML_for_Architecture_Combined.pdf">original ML for Architecture PDF</a>.</p>
+</div>
+</section>
+<section id="how-to-read-each-principle" class="slide level2 center">
+<h2>How to read each principle</h2>
+<p>Every principle uses the same four-part frame — the same shape as the course’s own evidence logic:</p>
 <div class="two-col">
 <div class="concept-card">
-<p><span class="label concept">Session 1</span></p>
-<p><span class="card-title">Lecture / demo</span></p>
-<ul>
-<li class="fragment">when good research goes bad in presentation</li>
-<li class="fragment">story structure for busy stakeholders</li>
-<li class="fragment">figure rescue and the 3-second test</li>
-<li class="fragment">object-card design and thresholds</li>
-</ul>
-</div>
-<div class="activity-card">
-<p><span class="label activity">Session 2</span></p>
-<p><span class="card-title">Round table on YOUR work</span></p>
-<ul>
-<li class="fragment">upload one rough figure or object-card draft</li>
-<li class="fragment">reconstruct it in four steps</li>
-<li class="fragment">name the result and the design action it changes</li>
-</ul>
-</div>
+<p><span class="card-title">Idea</span> the principle itself</p>
 </div>
 <div class="reflection-card">
-<p>This is decision support, not decoration. We help each other turn finished analysis into something a busy reader can act on.</p>
+<p><span class="card-title">Why it matters</span> what it changes for you</p>
 </div>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">The problem</span></p>
-</section>
-<section id="when-good-research-goes-bad" class="slide level2 center">
-<h2>When good research goes bad</h2>
-<p>Strong work can still fail at the moment it reaches an audience.</p>
+</div>
 <div class="two-col">
-<div class="warning-card">
-<p><span class="card-title">Case 1 · method over message</span> - great method - weak message - the audience hears process, not action</p>
-</div>
-<div class="warning-card">
-<p><span class="card-title">Case 2 · correct but unclear</span> - technically correct charts - no clear takeaway - the status quo survives because the room stays confused</p>
-</div>
-</div>
-</section>
-<section id="the-two-slide-challenge" class="slide level2 center">
-<h2>The two-slide challenge</h2>
-<div class="concept-card">
-<p><span class="card-title">The test</span> Could you explain your semester in <strong>two slides</strong> to a busy critic, client, or studio tutor who gives you three minutes?</p>
-</div>
-<p>If not, your findings are still trapped inside your process.</p>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Story structure</span></p>
-</section>
-<section id="one-useful-story-structure-for-busy-stakeholders" class="slide level2 center">
-<h2>One useful story structure for busy stakeholders</h2>
-<div class="concept-card">
-<ol type="1">
-<li class="fragment">What problem or decision matters?</li>
-<li class="fragment">What evidence did you gather?</li>
-<li class="fragment">What changed because of that evidence?</li>
-<li class="fragment">What should happen next?</li>
-</ol>
-</div>
-<p>This is not simplification for its own sake. It is decision support.</p>
-</section>
-<section id="start-with-their-problem" class="slide level2 center">
-<h2>Start with their problem</h2>
-<div class="two-col">
-<div class="warning-card">
-<p><span class="card-title">Do not begin with</span> - software - methods jargon - every intermediate step</p>
+<div class="example-card">
+<p><span class="card-title">Studio example</span> how it shows up in design</p>
 </div>
 <div class="activity-card">
-<p><span class="card-title">Begin with</span> - the decision - the stake - the missing evidence</p>
+<p><span class="card-title">Quick activity · 2 min</span> apply it to your project</p>
 </div>
 </div>
 </section>
-<section id="stand-alone-prompt" class="slide level2 center">
-<h2>Stand-alone prompt</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../assets/examples/the-edge-amsterdam.jpg" height="460"></p>
-<figcaption>The Edge, Amsterdam</figcaption>
-</figure>
-</div>
-<p>If your recommendation depends on a case like this, what would a skeptical stakeholder ask first?</p>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Figure rescue</span></p>
-</section>
-<section id="why-charts-fail" class="slide level2 center">
-<h2>Why charts fail</h2>
-<div class="warning-card">
-<ul>
-<li class="fragment">too many variables at once</li>
-<li class="fragment">vague titles</li>
-<li class="fragment">no highlighted message</li>
-<li class="fragment">uncertainty hidden</li>
-<li class="fragment">no connection back to the decision</li>
-</ul>
-</div>
-</section>
-<section id="the-3-second-message-test" class="slide level2 center">
-<h2>The 3-second message test</h2>
-<p>Give your figure three seconds. Can a viewer tell:</p>
+<section id="principle-1-ml-learns-a-mapping-from-examples-not-rules" class="slide level2 center">
+<h2>Principle 1 — ML learns a mapping from examples, not rules</h2>
 <div class="concept-card">
-<ul>
-<li class="fragment">what is being compared?</li>
-<li class="fragment">which side performs better?</li>
-<li class="fragment">what the implication is?</li>
-</ul>
+<p><span class="card-title">Idea</span> An ML model is a function f(x) → y whose parameters are fit from examples (x, y).</p>
 </div>
-<p>If not, it needs revision.</p>
-</section>
-<section id="figure-rescue-before-and-after" class="slide level2 center">
-<h2>Figure rescue: before and after</h2>
 <div class="two-col">
-<div class="warning-card">
-<p><span class="card-title">Before · the weak figure</span> - five series, no focus - title reads “Results — Final” - legend the reader must decode - error bars buried or absent - nothing ties it to a decision</p>
-</div>
-<div class="activity-card">
-<p><span class="card-title">After · the cleaned figure</span> - one message, two series compared - title states the takeaway in words - the winning option labelled directly - uncertainty shown where it matters - a caption naming the design action</p>
-</div>
-</div>
-</section>
-<section id="rescue-formula" class="slide level2 center">
-<h2>Rescue formula</h2>
-<div class="concept-card">
-<ol type="1">
-<li class="fragment">decide the one message</li>
-<li class="fragment">remove non-essential data</li>
-<li class="fragment">label the takeaway directly</li>
-<li class="fragment">show uncertainty where it matters</li>
-<li class="fragment">connect the figure to the design decision</li>
-</ol>
-</div>
-</section>
-<section id="figure-rescue-sprint" class="slide level2 center">
-<h2>Figure rescue sprint</h2>
-<div class="activity-card">
-<p><span class="card-title">Do this now</span> Bring one weak figure and improve it under these rules:</p>
-<ul>
-<li class="fragment">one message only</li>
-<li class="fragment">readable title</li>
-<li class="fragment">no decorative legends if direct labels work</li>
-<li class="fragment">one annotation that tells the audience why it matters</li>
-</ul>
-</div>
-<p>Present the before and after in 60 seconds.</p>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Object cards</span></p>
-</section>
-<section id="the-30-second-board-test" class="slide level2 center">
-<h2>The 30-second board test</h2>
-<p>During the Object Fair, a viewer gives your board about 30 seconds. In that time they should be able to:</p>
-<div class="concept-card">
-<ol type="1">
-<li class="fragment">stop</li>
-<li class="fragment">understand the key message</li>
-<li class="fragment">know what action or question follows</li>
-</ol>
-</div>
-</section>
-<section id="object-card-anatomy" class="slide level2 center">
-<h2>Object-card anatomy</h2>
-<p>The whole card is built around one dominant recommendation. Everything else supports it.</p>
-<div class="two-col">
-<div class="concept-card">
-<p><span class="card-title">1 · The dominant recommendation</span> The one sentence the viewer must leave with. Largest, first, unmissable.</p>
+<div class="reflection-card">
+<p><span class="card-title">Why it matters</span> Expect pattern recognition, not hand-coded logic. The model learns regularities present in the data.</p>
 </div>
 <div class="example-card">
-<p><span class="card-title">2 · One comparison figure</span> A single legible chart that shows the comparison behind the recommendation — secondary to the headline, never competing with it.</p>
+<p><span class="card-title">Studio example</span> (massing image) → predicted daylight metric; (facade photo) → style label.</p>
 </div>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Quick activity · 2 min</span> Name three inputs you could give a model in your current studio project. What output would you want?</p>
+</div>
+</section>
+<section id="principle-2-data-is-the-design-brief" class="slide level2 center">
+<h2>Principle 2 — Data is the design brief</h2>
+<div class="concept-card">
+<p><span class="card-title">Idea</span> The dataset defines what the model can and cannot learn.</p>
 </div>
 <div class="two-col">
-<div class="concept-card">
-<p><span class="card-title">3 · One threshold sentence</span> The rule that turns the comparison into a decision: “we prefer X once the gain clears Y.”</p>
+<div class="reflection-card">
+<p><span class="card-title">Why it matters</span> Better data beats fancier models — curate for coverage and quality, not just quantity.</p>
 </div>
-<div class="warning-card">
-<p><span class="card-title">4 · One limitations note</span> Where the evidence is weakest and what would change the conclusion — small, honest, present.</p>
+<div class="example-card">
+<p><span class="card-title">Studio example</span> A facade-style classifier fails if trained only on one region or era.</p>
 </div>
 </div>
-</section>
-<section id="object-card-priorities" class="slide level2 center">
-<h2>Object-card priorities</h2>
-<div class="concept-card">
-<ul>
-<li class="fragment">one dominant message</li>
-<li class="fragment">supporting evidence that is legible but secondary</li>
-<li class="fragment">clear next action or recommendation</li>
-<li class="fragment">contact / follow-up information without clutter</li>
-</ul>
-</div>
-</section>
-<section id="object-card-clinic" class="slide level2 center">
-<h2>Object-card clinic</h2>
 <div class="activity-card">
-<p><span class="card-title">Check your draft for</span> - message hierarchy - visual hierarchy - stakeholder-friendly language - print readability from a distance</p>
+<p><span class="card-title">Quick activity · 2 min</span> List two gaps in a “facade” dataset that would cause failures on your campus. How would you fill them?</p>
 </div>
 </section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Thresholds</span></p>
-</section>
-<section id="evidence-alone-does-not-make-the-decision" class="slide level2 center">
-<h2>Evidence alone does not make the decision</h2>
-<p>You still need:</p>
+<section id="principle-3-representation-shapes-what-can-be-learned" class="slide level2 center">
+<h2>Principle 3 — Representation shapes what can be learned</h2>
 <div class="concept-card">
-<ul>
-<li class="fragment">a threshold</li>
-<li class="fragment">a comparison rule</li>
-<li class="fragment">a stakeholder frame</li>
-<li class="fragment">an explanation of what matters most</li>
-</ul>
+<p><span class="card-title">Idea</span> How we encode inputs (pixels, meshes, graphs, text) determines what the model can “see”.</p>
+</div>
+<div class="two-col">
+<div class="reflection-card">
+<p><span class="card-title">Why it matters</span> Choosing a representation is like selecting a drawing type: plan vs section vs perspective.</p>
+</div>
+<div class="example-card">
+<p><span class="card-title">Studio example</span> Street photos (pixels) for segmentation vs adjacency graphs for layout optimization.</p>
+</div>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Quick activity · 2 min</span> For your task, would pixels, vectors, meshes, or text be best — and why?</p>
 </div>
 </section>
-<section id="typical-threshold-questions" class="slide level2 center">
-<h2>Typical threshold questions</h2>
+<section id="principle-4-loss-what-better-means" class="slide level2 center">
+<h2>Principle 4 — Loss = what “better” means</h2>
 <div class="concept-card">
-<ul>
-<li class="fragment">how much improvement is enough to justify a change?</li>
-<li class="fragment">what cost increase is acceptable?</li>
-<li class="fragment">what travel-time difference matters?</li>
-<li class="fragment">how much uncertainty can the decision tolerate?</li>
-</ul>
+<p><span class="card-title">Idea</span> The loss function translates “good” into math; models only improve on what loss rewards.</p>
+</div>
+<div class="two-col">
+<div class="reflection-card">
+<p><span class="card-title">Why it matters</span> If the loss ignores safety or legibility, the model will too. This is your threshold, made explicit.</p>
+</div>
+<div class="example-card">
+<p><span class="card-title">Studio example</span> A daylight surrogate with MSE learns averages; worst-case glare needs a different objective.</p>
+</div>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Quick activity · 2 min</span> Write a one-line “loss” for your project (e.g., minimize peak glare while keeping daylight autonomy above target).</p>
 </div>
 </section>
-<section id="threshold-examples-across-project-types" class="slide level2 center">
-<h2>Threshold examples across project types</h2>
-<p>A threshold turns a number into a decision rule. It looks different in each domain:</p>
-<table>
-<thead>
-<tr class="header">
-<th>Project type</th>
-<th>Quantity</th>
-<th>Example threshold</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Transit / access</td>
-<td>access time</td>
-<td>within 10 min of a stop</td>
-</tr>
-<tr class="even">
-<td>Daylight study</td>
-<td>daylight hours</td>
-<td>≥ 50% of area meets sDA 300/50%</td>
-</tr>
-<tr class="odd">
-<td>Cost trade-off</td>
-<td>cost premium</td>
-<td>accept ≤ 8% over baseline</td>
-</tr>
-<tr class="even">
-<td>Facade / envelope</td>
-<td>heat gain</td>
-<td>reduce peak gain by ≥ 15%</td>
-</tr>
-<tr class="odd">
-<td>Post-occupancy</td>
-<td>survey confidence</td>
-<td>≥ 70% agreement, n ≥ 30</td>
-</tr>
-</tbody>
-</table>
+<section id="principle-5-training-reduce-loss-gradient-descent" class="slide level2 center">
+<h2>Principle 5 — Training = reduce loss (gradient descent)</h2>
+<div class="concept-card">
+<p><span class="card-title">Idea</span> Training iteratively adjusts parameters in the direction that reduces loss.</p>
+</div>
+<div class="two-col">
+<div class="reflection-card">
+<p><span class="card-title">Why it matters</span> Explains learning rate, convergence, and why training looks rough before it stabilizes.</p>
+</div>
+<div class="example-card">
+<p><span class="card-title">Studio example</span> Don’t judge early iterations; monitor the validation curve, not the first guesses.</p>
+</div>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Quick activity · 2 min</span> Sketch how you’d know training is “done” (hint: validation loss / early stopping).</p>
+</div>
 </section>
-<section id="trade-off-table" class="slide level2 center">
-<h2>Trade-off table</h2>
+<section id="principle-6-generalization-is-the-goal" class="slide level2 center">
+<h2>Principle 6 — Generalization is the goal</h2>
+<div class="concept-card">
+<p><span class="card-title">Idea</span> We care about performance on new, unseen data — not just the training set.</p>
+</div>
+<div class="two-col">
+<div class="reflection-card">
+<p><span class="card-title">Why it matters</span> Overfitting = memorization; good models transfer to the next site or city.</p>
+</div>
+<div class="example-card">
+<p><span class="card-title">Studio example</span> A roof-type detector perfect on your curated set fails on cloudy days.</p>
+</div>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Quick activity · 2 min</span> Name two differences between training images and deployment images. How will you test generalization?</p>
+</div>
+</section>
+<section id="principle-7-biasvariance-too-simple-vs-too-specific" class="slide level2 center">
+<h2>Principle 7 — Bias–variance: too simple vs too specific</h2>
+<div class="concept-card">
+<p><span class="card-title">Idea</span> Underfit models are too simple; overfit models memorize noise.</p>
+</div>
+<div class="two-col">
+<div class="reflection-card">
+<p><span class="card-title">Why it matters</span> You control this via model capacity, augmentation, and regularization.</p>
+</div>
+<div class="example-card">
+<p><span class="card-title">Studio example</span> A tiny model misses brick vs terracotta; a huge model memorizes specific buildings.</p>
+</div>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Quick activity · 2 min</span> Which knob would you turn first to reduce overfit — augmentation, regularization, or more data?</p>
+</div>
+</section>
+<section id="principle-8-uncertainty-is-real-treat-outputs-as-suggestions" class="slide level2 center">
+<h2>Principle 8 — Uncertainty is real: treat outputs as suggestions</h2>
+<div class="concept-card">
+<p><span class="card-title">Idea</span> Predictions are probabilistic; confidence varies by context and input quality.</p>
+</div>
+<div class="two-col">
+<div class="reflection-card">
+<p><span class="card-title">Why it matters</span> This is the course thesis in ML form: sample multiple outputs and critique; avoid single-image “truth”.</p>
+</div>
+<div class="example-card">
+<p><span class="card-title">Studio example</span> Use seeds and A/B comparisons for renders, not one lucky frame.</p>
+</div>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Quick activity · 2 min</span> Generate 3 variations (same seed + small prompt tweaks); choose and justify one.</p>
+</div>
+</section>
+<section id="principle-9-distribution-shift-breaks-models" class="slide level2 center">
+<h2>Principle 9 — Distribution shift breaks models</h2>
+<div class="concept-card">
+<p><span class="card-title">Idea</span> When deployment data differ from training (climate, culture, camera), expect failure.</p>
+</div>
+<div class="two-col">
+<div class="reflection-card">
+<p><span class="card-title">Why it matters</span> Plan pilots on real sites; monitor drift; retrain when needed.</p>
+</div>
+<div class="example-card">
+<p><span class="card-title">Studio example</span> A Berlin-trained segmenter struggles in Bangkok (materials, colors, sky).</p>
+</div>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Quick activity · 2 min</span> Write one “shift” you expect in your project and a way to detect it.</p>
+</div>
+</section>
+<section id="principle-10-generative-models-distributions-conditioning" class="slide level2 center">
+<h2>Principle 10 — Generative models = distributions + conditioning</h2>
+<div class="concept-card">
+<p><span class="card-title">Idea</span> Diffusion models learn a distribution and sample from it; prompts/masks/refs condition the sampling.</p>
+</div>
+<div class="two-col">
+<div class="reflection-card">
+<p><span class="card-title">Why it matters</span> Prompts steer; seeds give reproducibility; masks and references preserve geometry and identity.</p>
+</div>
+<div class="example-card">
+<p><span class="card-title">Studio example</span> Keep geometry via masks; change cladding via prompt; reuse the same seed for versions.</p>
+</div>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Quick activity · 2 min</span> Take a white-model view; list what you’d mask vs what you’d let the model change.</p>
+</div>
+</section>
+<section id="principle-11-evaluation-must-match-the-task" class="slide level2 center">
+<h2>Principle 11 — Evaluation must match the task</h2>
+<div class="concept-card">
+<p><span class="card-title">Idea</span> Pick metrics that reflect the goal and pair them with human A/B judgment for visuals.</p>
+</div>
+<div class="two-col">
+<div class="reflection-card">
+<p><span class="card-title">Why it matters</span> Numbers alone can reward “pretty wrong” results.</p>
+</div>
+<div class="example-card">
+<p><span class="card-title">Studio example</span> For concept imagery, use pairwise preference + a rubric (material legibility, camera plausibility).</p>
+</div>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Quick activity · 2 min</span> Draft two rubric criteria to compare two generated facade images.</p>
+</div>
+</section>
+<section id="principle-12-ethics-ip-and-human-in-the-loop" class="slide level2 center">
+<h2>Principle 12 — Ethics, IP, and human-in-the-loop</h2>
+<div class="concept-card">
+<p><span class="card-title">Idea</span> Datasets carry bias; licenses and privacy matter; designers remain accountable.</p>
+</div>
+<div class="two-col">
+<div class="reflection-card">
+<p><span class="card-title">Why it matters</span> You choose sources, cite them, disclose process, and keep clients safe.</p>
+</div>
+<div class="example-card">
+<p><span class="card-title">Studio example</span> Use open/owned references; document prompts, seeds, masks; avoid identifying people without consent.</p>
+</div>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Quick activity · 2 min</span> Pick one slide of your own and add a visible credit line for every image source.</p>
+</div>
+</section>
+<section id="where-this-connects-to-the-course" class="slide level2 center">
+<h2>Where this connects to the course</h2>
+<div class="spine-rail">
+<p><span class="node">Decision</span> <span class="node">Evidence</span> <span class="node is-current">Variation</span> <span class="node">Output</span> <span class="node is-current">Threshold</span> <span class="node">Action</span></p>
+</div>
 <table>
 <colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Option</th>
-<th>strongest benefit</th>
-<th>main cost</th>
-<th>biggest risk</th>
-<th>recommendation</th>
+<th>Principle</th>
+<th>Lands in</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>A</td>
-<td>access</td>
-<td>cost</td>
-<td>moderate</td>
-<td>good if budget is stable</td>
+<td>P2 Data is the design brief</td>
+<td>Week 2 — evidence audit</td>
 </tr>
 <tr class="even">
-<td>B</td>
-<td>performance</td>
-<td>complexity</td>
-<td>high</td>
-<td>only if support is available</td>
+<td>P3 Representation / P4 Loss</td>
+<td>Week 3 — variables and what “better” means</td>
 </tr>
 <tr class="odd">
-<td>C</td>
-<td>speed</td>
-<td>lower upside</td>
-<td>low</td>
-<td>safest baseline</td>
+<td>P6 Generalization / P9 Shift</td>
+<td>Week 5 — model assumptions and limits</td>
+</tr>
+<tr class="even">
+<td>P8 Uncertainty / P11 Evaluation</td>
+<td>Week 9 — thresholds and figures</td>
+</tr>
+<tr class="odd">
+<td>P10 Generative / P12 Ethics</td>
+<td>Week 8 — AI-assisted workflow and verification</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="counter-arguments-matter" class="slide level2 center">
-<h2>Counter-arguments matter</h2>
-<p>A strong recommendation also says:</p>
-<div class="reflection-card">
+<section id="beyond-the-principles-in-the-full-deck" class="slide level2 center">
+<h2>Beyond the principles (in the full deck)</h2>
+<p>The <a href="../data/ML_for_Architecture_Combined.pdf">original PDF</a> carries the applied half:</p>
 <ul>
-<li class="fragment">what could change the conclusion</li>
-<li class="fragment">where the evidence is weakest</li>
-<li class="fragment">why another option may still be reasonable</li>
-<li class="fragment">what additional evidence would strengthen confidence</li>
+<li class="fragment">the supervised-learning pipeline, gradient descent, and diffusion, with diagrams</li>
+<li class="fragment">parametric vs ML vs optimization, and how to combine them</li>
+<li class="fragment">generative AI operations and a Midjourney vs Nano Banana comparison</li>
+<li class="fragment">hybrid workflows: massing → render, site analysis via segmentation</li>
+<li class="fragment"><strong>surrogate modeling</strong> and real tooling: Honeybee/Ladybug, the Owl GH ML plugin</li>
 </ul>
-</div>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">ML principle connection</span></p>
-</section>
-<section id="treat-a-model-output-as-a-suggestion-and-match-the-metric-to-the-task" class="slide level2 center">
-<h2>Treat a model output as a suggestion, and match the metric to the task</h2>
-<div class="two-col">
-<div class="concept-card">
-<p><span class="card-title">Principle 8 — Uncertainty is real</span> Predictions are probabilistic. Sample multiple outputs and critique; avoid presenting one lucky frame as truth.</p>
-</div>
-<div class="concept-card">
-<p><span class="card-title">Principle 11 — Evaluation must match the task</span> Numbers alone can reward “pretty wrong” results. Pair a metric with human A/B judgment for visuals.</p>
-</div>
-</div>
 <div class="reflection-card">
-<p><span class="card-title">So</span> State your threshold WITH its uncertainty, and make the figure show the comparison — not a single hero result.</p>
-</div>
-<p>See <a href="../lectures/ml-primer-12-principles.html">ML Primer · Principles 8 &amp; 11</a>.</p>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">The drill</span></p>
-</section>
-<section id="recommendation-sentence-drill" class="slide level2 center">
-<h2>Recommendation sentence drill</h2>
-<p>Write one sentence:</p>
-<div class="concept-card">
-<p><span class="card-title">The recommendation sentence</span> <strong>Given this evidence, for this audience, I would do X under conditions Y and Z.</strong></p>
-</div>
-<p>Then test whether the sentence:</p>
-<div class="activity-card">
-<ul>
-<li class="fragment">names the decision</li>
-<li class="fragment">reflects uncertainty</li>
-<li class="fragment">implies a next move</li>
-</ul>
-</div>
-</section>
-<section id="exit-task" class="slide level2 center">
-<h2>Exit task</h2>
-<p>Before next week, each student should have:</p>
-<div class="reflection-card">
-<ul>
-<li class="fragment">one improved figure</li>
-<li class="fragment">one clearer object-card draft</li>
-<li class="fragment">one recommendation sentence</li>
-<li class="fragment">one explicit note on limits and confidence</li>
-</ul>
-</div>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Session 2 · Round table</span></p>
-</section>
-<section id="round-table-on-your-work" class="slide level2 center">
-<h2>Round table on YOUR work</h2>
-<div class="spine-rail">
-<p><span class="node">Decision</span> <span class="node">Evidence</span> <span class="node">Variation</span> <span class="node">Output</span> <span class="node is-current">Threshold</span> <span class="node">Action</span></p>
-</div>
-<p>Upload one rough material to Slack before Session 2 — a figure, output table, comparison chart, or object-card draft. <span class="feeds-tag">feeds A3 + A4</span></p>
-</section>
-<section id="reconstruct-your-figure-in-four-steps" class="slide level2 center">
-<h2>Reconstruct your figure in four steps</h2>
-<p><strong>Object this week: your result/figure and the design action it changes.</strong></p>
-<div class="recall-4step">
-<div class="step">
-<p><strong>Did</strong> What does this figure currently show, and what is its one message?</p>
-</div>
-<div class="step">
-<p><strong>Assumed</strong> What does the reader have to already know for it to land?</p>
-</div>
-<div class="step">
-<p><strong>Risk</strong> Where is the takeaway unclear, or the uncertainty hidden?</p>
-</div>
-<div class="step">
-<p><strong>Verify</strong> What threshold or label would tie it to a design action?</p>
-</div>
-</div>
-<div class="grading-note">
-<p>Post your four-step under your figure. Posting + an honest reconstruction is the graded unit — not how you spoke. Speak for 60–90 seconds: what result changes the design action, and what uncertainty remains visible?</p>
-</div>
-</section>
-<section id="order-and-the-waiting-role" class="slide level2 center">
-<h2>Order and the waiting role</h2>
-<div class="activity-card">
-<p><span class="card-title">How we run it</span> Volunteers go first; a random draw may fill the remaining examples.</p>
-</div>
-<div class="example-card">
-<p><span class="card-title">While others present</span> You are not waiting your turn — you are reading. Note one clear move and one missing link per figure. Those notes are your participation record.</p>
+<p>Use it as the reference when a studio decision actually needs an ML or generative step — then bring the result to a Session 2 walk-through and audit it.</p>
 </div>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-<p>Week 9 · feeds A3 + A4</p>
+<p>ML Primer · 12 Principles</p>
 </div>
 </div>
 </section>

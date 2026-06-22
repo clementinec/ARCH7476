@@ -268,6 +268,24 @@ The note column is doing the real work: it converts scores back into a defensibl
 
 ---
 
+[ML principle connection]{.kicker}
+
+## When you weight a decision matrix, you are writing a loss function
+
+::: {.concept-card}
+[Principle 4 — Loss = what "better" means]{.card-title}
+An ML model only improves on what its loss rewards. Your spreadsheet's weights are the same thing: they define what "better" means before you compare anything.
+:::
+
+::: {.reflection-card}
+[So]{.card-title}
+If your weighting ignores a real constraint (cost, daylight, legibility), the "winning" variant will too. Make the criterion explicit, like a loss.
+:::
+
+See [ML Primer · Principles 3–4](../lectures/ml-primer-12-principles.html).
+
+---
+
 ## BREAK {.big-break}
 
 Take 10 minutes.

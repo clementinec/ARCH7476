@@ -20,6 +20,29 @@ flowchart LR
     D --> E[Threshold / recommendation]
 ```
 
+::: {.hub-grid}
+::: {.hub-card}
+### Templates
+Reusable worksheets for each assignment and weekly Session 2.
+[Jump to templates →](#core-templates)
+:::
+::: {.hub-card}
+### Starter Kits
+Pathway starting points: GH, simulation, GIS, Python, AI, spreadsheet.
+[Jump to starter kits →](#starter-kits)
+:::
+::: {.hub-card}
+### ML Primer
+The 12 Principles of ML for architecture, in plain language.
+[Open the primer →](lectures/ml-primer-12-principles.qmd)
+:::
+::: {.hub-card}
+### Lectures & Notebooks
+ML-to-Python overview and the two analysis notebooks.
+[Jump to supporting materials →](#lectures-and-supporting-materials)
+:::
+:::
+
 ## Core Templates
 
 | Template | Use |
@@ -42,6 +65,16 @@ Launch-critical kits:
 - [AI-Assisted Workflow](starter_kits/ai-assisted-workflow/README.md)
 
 The rebuild should not be treated as student-ready until those three kits are runnable.
+
+## Lectures and Supporting Materials
+
+| Material | Use |
+|---|---|
+| [ML Primer · 12 Principles](lectures/ml-primer-12-principles.qmd) | plain-language ML mental model, skinned to the course visual language |
+| [ML for Architecture — full deck (PDF)](data/ML_for_Architecture_Combined.pdf) | the detailed version: pipeline, diffusion, segmentation, surrogate modeling, GH/Honeybee tooling |
+| [ML to Python Overview](lectures/ml-to-python-overview.qmd) | bridge from ML concepts to runnable Python |
+| [Python + ML Basics](notebooks/01_python_ml_basics.ipynb) | starter notebook |
+| [Architecture Viz + Analysis](notebooks/02_arch_viz_analysis.ipynb) | starter notebook |
 
 ## Supported Workflow Tracks
 

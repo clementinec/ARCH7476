@@ -16,6 +16,29 @@ The course starts from a simple premise:
 
 Students begin by reconstructing a past studio decision, then build a small workflow that can either redesign that past decision or support a current studio project.
 
+::: {.hub-grid}
+::: {.hub-card}
+### Schedule
+Twelve weeks, two-session classes, what is due when.
+[Open schedule →](schedule.qmd)
+:::
+::: {.hub-card}
+### Weekly Studio-Labs
+The 12 decks: lecture + Session 2 round table.
+[Start at Week 1 →](weeks_v2/week-01.qmd)
+:::
+::: {.hub-card}
+### Assignments
+A1 → A4, the cumulative package arc.
+[See assignments →](assignments.qmd)
+:::
+::: {.hub-card}
+### Resources
+Templates, starter kits, the ML primer, and notebooks.
+[Open the hub →](resources.qmd)
+:::
+:::
+
 ## The Semester Spine
 
 ```mermaid

@@ -23,6 +23,7 @@ project:
     - weeks_v2/week-10.qmd
     - weeks_v2/week-11.qmd
     - weeks_v2/week-12.qmd
+    - templates/project-reasoning-checkin.md
     - templates/total-recall-board.md
     - templates/tool-translation-matrix.md
     - templates/a4-branch-declaration.md
@@ -36,6 +37,7 @@ project:
     - starter_kits/python-notebook-analysis/README.md
     - starter_kits/spreadsheet-thresholds/README.md
     - lectures/ml-to-python-overview.qmd
+    - lectures/ml-primer-12-principles.qmd
     - notebooks/01_python_ml_basics.ipynb
     - notebooks/02_arch_viz_analysis.ipynb
 
@@ -58,6 +60,7 @@ website:
   sidebar:
     style: docked
     search: true
+    collapse-level: 1
     contents:
       - section: "Course Overview"
         contents:
@@ -101,44 +104,12 @@ website:
             href: assignments/assignment-03.qmd
           - text: "A4: Workflow Package"
             href: assignments/assignment-04.qmd
-      - section: "Templates"
+      - section: "Resources"
         contents:
-          - text: "Project Reasoning Check-In"
-            href: templates/project-reasoning-checkin.md
-          - text: "Total Recall Board"
-            href: templates/total-recall-board.md
-          - text: "Tool Translation Matrix"
-            href: templates/tool-translation-matrix.md
-          - text: "A4 Branch Declaration"
-            href: templates/a4-branch-declaration.md
-          - text: "AI Verification Card"
-            href: templates/ai-workflow-verification-card.md
-          - text: "Final Package Checklist"
-            href: templates/final-package-checklist.md
-      - section: "Starter Kits"
-        contents:
-          - text: "Starter Kit Overview"
-            href: starter_kits/README.md
-          - text: "GH Parametric Variants"
-            href: starter_kits/gh-parametric-variants/README.md
-          - text: "Preset Simulation / Proxy"
-            href: starter_kits/preset-simulation-proxy/README.md
-          - text: "AI-Assisted Workflow"
-            href: starter_kits/ai-assisted-workflow/README.md
-          - text: "GIS Spatial Comparison"
-            href: starter_kits/gis-spatial-comparison/README.md
-          - text: "Python Notebook Analysis"
-            href: starter_kits/python-notebook-analysis/README.md
-          - text: "Spreadsheet Thresholds"
-            href: starter_kits/spreadsheet-thresholds/README.md
-      - section: "Supporting Materials"
-        contents:
-          - text: "ML to Python Overview"
-            href: lectures/ml-to-python-overview.qmd
-          - text: "Python + ML Basics"
-            href: notebooks/01_python_ml_basics.ipynb
-          - text: "Architecture Viz + Analysis"
-            href: notebooks/02_arch_viz_analysis.ipynb
+          - text: "Resource Hub"
+            href: resources.qmd
+          - text: "ML Primer · 12 Principles"
+            href: lectures/ml-primer-12-principles.qmd
 
 format:
   html:

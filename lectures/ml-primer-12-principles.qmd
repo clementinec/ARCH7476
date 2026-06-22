@@ -1,0 +1,313 @@
+---
+title: "ML Primer: The 12 Principles"
+subtitle: "A plain-language mental model of machine learning for studio work"
+output-file: ml-primer-12-principles.html
+format:
+  revealjs:
+    theme: [default, ../weeks_v2/arch7476.scss]
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1400
+    height: 900
+    center: true
+    footer: "ML Primer · 12 Principles"
+---
+
+## What you'll learn
+
+::: {.concept-card}
+[In plain language]{.card-title}
+A clear mental model of how ML works without math overload — and where it helps (and where it doesn't) in architectural workflows.
+:::
+
+- the 12 principles that make ML predictable, not mysterious
+- how to use generative tools responsibly for studio work
+- everything reproducible: prompts, seeds, masks, versions
+
+::: {.grading-note}
+This is the skinned summary. The full detailed deck — pipeline, diffusion, segmentation, surrogate modeling, GH/Honeybee tooling — is the [original ML for Architecture PDF](../data/ML_for_Architecture_Combined.pdf).
+:::
+
+---
+
+## How to read each principle
+
+Every principle uses the same four-part frame — the same shape as the course's own evidence logic:
+
+:::: {.two-col}
+::: {.concept-card}
+[Idea]{.card-title} the principle itself
+:::
+::: {.reflection-card}
+[Why it matters]{.card-title} what it changes for you
+:::
+::::
+:::: {.two-col}
+::: {.example-card}
+[Studio example]{.card-title} how it shows up in design
+:::
+::: {.activity-card}
+[Quick activity · 2 min]{.card-title} apply it to your project
+:::
+::::
+
+---
+
+## Principle 1 — ML learns a mapping from examples, not rules
+
+::: {.concept-card}
+[Idea]{.card-title} An ML model is a function f(x) → y whose parameters are fit from examples (x, y).
+:::
+:::: {.two-col}
+::: {.reflection-card}
+[Why it matters]{.card-title} Expect pattern recognition, not hand-coded logic. The model learns regularities present in the data.
+:::
+::: {.example-card}
+[Studio example]{.card-title} (massing image) → predicted daylight metric; (facade photo) → style label.
+:::
+::::
+::: {.activity-card}
+[Quick activity · 2 min]{.card-title} Name three inputs you could give a model in your current studio project. What output would you want?
+:::
+
+---
+
+## Principle 2 — Data is the design brief
+
+::: {.concept-card}
+[Idea]{.card-title} The dataset defines what the model can and cannot learn.
+:::
+:::: {.two-col}
+::: {.reflection-card}
+[Why it matters]{.card-title} Better data beats fancier models — curate for coverage and quality, not just quantity.
+:::
+::: {.example-card}
+[Studio example]{.card-title} A facade-style classifier fails if trained only on one region or era.
+:::
+::::
+::: {.activity-card}
+[Quick activity · 2 min]{.card-title} List two gaps in a "facade" dataset that would cause failures on your campus. How would you fill them?
+:::
+
+---
+
+## Principle 3 — Representation shapes what can be learned
+
+::: {.concept-card}
+[Idea]{.card-title} How we encode inputs (pixels, meshes, graphs, text) determines what the model can "see".
+:::
+:::: {.two-col}
+::: {.reflection-card}
+[Why it matters]{.card-title} Choosing a representation is like selecting a drawing type: plan vs section vs perspective.
+:::
+::: {.example-card}
+[Studio example]{.card-title} Street photos (pixels) for segmentation vs adjacency graphs for layout optimization.
+:::
+::::
+::: {.activity-card}
+[Quick activity · 2 min]{.card-title} For your task, would pixels, vectors, meshes, or text be best — and why?
+:::
+
+---
+
+## Principle 4 — Loss = what "better" means
+
+::: {.concept-card}
+[Idea]{.card-title} The loss function translates "good" into math; models only improve on what loss rewards.
+:::
+:::: {.two-col}
+::: {.reflection-card}
+[Why it matters]{.card-title} If the loss ignores safety or legibility, the model will too. This is your threshold, made explicit.
+:::
+::: {.example-card}
+[Studio example]{.card-title} A daylight surrogate with MSE learns averages; worst-case glare needs a different objective.
+:::
+::::
+::: {.activity-card}
+[Quick activity · 2 min]{.card-title} Write a one-line "loss" for your project (e.g., minimize peak glare while keeping daylight autonomy above target).
+:::
+
+---
+
+## Principle 5 — Training = reduce loss (gradient descent)
+
+::: {.concept-card}
+[Idea]{.card-title} Training iteratively adjusts parameters in the direction that reduces loss.
+:::
+:::: {.two-col}
+::: {.reflection-card}
+[Why it matters]{.card-title} Explains learning rate, convergence, and why training looks rough before it stabilizes.
+:::
+::: {.example-card}
+[Studio example]{.card-title} Don't judge early iterations; monitor the validation curve, not the first guesses.
+:::
+::::
+::: {.activity-card}
+[Quick activity · 2 min]{.card-title} Sketch how you'd know training is "done" (hint: validation loss / early stopping).
+:::
+
+---
+
+## Principle 6 — Generalization is the goal
+
+::: {.concept-card}
+[Idea]{.card-title} We care about performance on new, unseen data — not just the training set.
+:::
+:::: {.two-col}
+::: {.reflection-card}
+[Why it matters]{.card-title} Overfitting = memorization; good models transfer to the next site or city.
+:::
+::: {.example-card}
+[Studio example]{.card-title} A roof-type detector perfect on your curated set fails on cloudy days.
+:::
+::::
+::: {.activity-card}
+[Quick activity · 2 min]{.card-title} Name two differences between training images and deployment images. How will you test generalization?
+:::
+
+---
+
+## Principle 7 — Bias–variance: too simple vs too specific
+
+::: {.concept-card}
+[Idea]{.card-title} Underfit models are too simple; overfit models memorize noise.
+:::
+:::: {.two-col}
+::: {.reflection-card}
+[Why it matters]{.card-title} You control this via model capacity, augmentation, and regularization.
+:::
+::: {.example-card}
+[Studio example]{.card-title} A tiny model misses brick vs terracotta; a huge model memorizes specific buildings.
+:::
+::::
+::: {.activity-card}
+[Quick activity · 2 min]{.card-title} Which knob would you turn first to reduce overfit — augmentation, regularization, or more data?
+:::
+
+---
+
+## Principle 8 — Uncertainty is real: treat outputs as suggestions
+
+::: {.concept-card}
+[Idea]{.card-title} Predictions are probabilistic; confidence varies by context and input quality.
+:::
+:::: {.two-col}
+::: {.reflection-card}
+[Why it matters]{.card-title} This is the course thesis in ML form: sample multiple outputs and critique; avoid single-image "truth".
+:::
+::: {.example-card}
+[Studio example]{.card-title} Use seeds and A/B comparisons for renders, not one lucky frame.
+:::
+::::
+::: {.activity-card}
+[Quick activity · 2 min]{.card-title} Generate 3 variations (same seed + small prompt tweaks); choose and justify one.
+:::
+
+---
+
+## Principle 9 — Distribution shift breaks models
+
+::: {.concept-card}
+[Idea]{.card-title} When deployment data differ from training (climate, culture, camera), expect failure.
+:::
+:::: {.two-col}
+::: {.reflection-card}
+[Why it matters]{.card-title} Plan pilots on real sites; monitor drift; retrain when needed.
+:::
+::: {.example-card}
+[Studio example]{.card-title} A Berlin-trained segmenter struggles in Bangkok (materials, colors, sky).
+:::
+::::
+::: {.activity-card}
+[Quick activity · 2 min]{.card-title} Write one "shift" you expect in your project and a way to detect it.
+:::
+
+---
+
+## Principle 10 — Generative models = distributions + conditioning
+
+::: {.concept-card}
+[Idea]{.card-title} Diffusion models learn a distribution and sample from it; prompts/masks/refs condition the sampling.
+:::
+:::: {.two-col}
+::: {.reflection-card}
+[Why it matters]{.card-title} Prompts steer; seeds give reproducibility; masks and references preserve geometry and identity.
+:::
+::: {.example-card}
+[Studio example]{.card-title} Keep geometry via masks; change cladding via prompt; reuse the same seed for versions.
+:::
+::::
+::: {.activity-card}
+[Quick activity · 2 min]{.card-title} Take a white-model view; list what you'd mask vs what you'd let the model change.
+:::
+
+---
+
+## Principle 11 — Evaluation must match the task
+
+::: {.concept-card}
+[Idea]{.card-title} Pick metrics that reflect the goal and pair them with human A/B judgment for visuals.
+:::
+:::: {.two-col}
+::: {.reflection-card}
+[Why it matters]{.card-title} Numbers alone can reward "pretty wrong" results.
+:::
+::: {.example-card}
+[Studio example]{.card-title} For concept imagery, use pairwise preference + a rubric (material legibility, camera plausibility).
+:::
+::::
+::: {.activity-card}
+[Quick activity · 2 min]{.card-title} Draft two rubric criteria to compare two generated facade images.
+:::
+
+---
+
+## Principle 12 — Ethics, IP, and human-in-the-loop
+
+::: {.concept-card}
+[Idea]{.card-title} Datasets carry bias; licenses and privacy matter; designers remain accountable.
+:::
+:::: {.two-col}
+::: {.reflection-card}
+[Why it matters]{.card-title} You choose sources, cite them, disclose process, and keep clients safe.
+:::
+::: {.example-card}
+[Studio example]{.card-title} Use open/owned references; document prompts, seeds, masks; avoid identifying people without consent.
+:::
+::::
+::: {.activity-card}
+[Quick activity · 2 min]{.card-title} Pick one slide of your own and add a visible credit line for every image source.
+:::
+
+---
+
+## Where this connects to the course
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node .is-current} [Output]{.node} [Threshold]{.node .is-current} [Action]{.node}
+:::
+
+| Principle | Lands in |
+|---|---|
+| P2 Data is the design brief | Week 2 — evidence audit |
+| P3 Representation / P4 Loss | Week 3 — variables and what "better" means |
+| P6 Generalization / P9 Shift | Week 5 — model assumptions and limits |
+| P8 Uncertainty / P11 Evaluation | Week 9 — thresholds and figures |
+| P10 Generative / P12 Ethics | Week 8 — AI-assisted workflow and verification |
+
+---
+
+## Beyond the principles (in the full deck)
+
+The [original PDF](../data/ML_for_Architecture_Combined.pdf) carries the applied half:
+
+- the supervised-learning pipeline, gradient descent, and diffusion, with diagrams
+- parametric vs ML vs optimization, and how to combine them
+- generative AI operations and a Midjourney vs Nano Banana comparison
+- hybrid workflows: massing → render, site analysis via segmentation
+- **surrogate modeling** and real tooling: Honeybee/Ladybug, the Owl GH ML plugin
+
+::: {.reflection-card}
+Use it as the reference when a studio decision actually needs an ML or generative step — then bring the result to a Session 2 walk-through and audit it.
+:::

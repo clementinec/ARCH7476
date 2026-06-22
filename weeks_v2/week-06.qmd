@@ -260,6 +260,24 @@ If you cannot finish the sentence clearly, the pathway is not chosen yet — and
 
 ---
 
+[ML principle connection]{.kicker}
+
+## Does your route generalize, or only fit this one case?
+
+::: {.concept-card}
+[Principle 6 — Generalization is the goal]{.card-title}
+In ML, a model that is perfect on its training set but fails on new data has overfit. A workflow is the same: it must hold up beyond the single case you tuned it on.
+:::
+
+::: {.reflection-card}
+[So]{.card-title}
+Pick a route whose smallest useful output would still be defensible on a second site, season, or scenario — not just the one that looks good today.
+:::
+
+See [ML Primer · Principle 6](../lectures/ml-primer-12-principles.html).
+
+---
+
 ## BREAK {.big-break}
 
 Take 10 minutes.

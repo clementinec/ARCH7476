@@ -333,6 +333,30 @@ A strong recommendation also says:
 
 ---
 
+[ML principle connection]{.kicker}
+
+## Treat a model output as a suggestion, and match the metric to the task
+
+:::: {.two-col}
+::: {.concept-card}
+[Principle 8 — Uncertainty is real]{.card-title}
+Predictions are probabilistic. Sample multiple outputs and critique; avoid presenting one lucky frame as truth.
+:::
+::: {.concept-card}
+[Principle 11 — Evaluation must match the task]{.card-title}
+Numbers alone can reward "pretty wrong" results. Pair a metric with human A/B judgment for visuals.
+:::
+::::
+
+::: {.reflection-card}
+[So]{.card-title}
+State your threshold WITH its uncertainty, and make the figure show the comparison — not a single hero result.
+:::
+
+See [ML Primer · Principles 8 & 11](../lectures/ml-primer-12-principles.html).
+
+---
+
 [The drill]{.kicker}
 
 ## Recommendation sentence drill
