@@ -397,33 +397,41 @@
 </div>
 
 </section>
-<section id="todays-agenda" class="slide level2 center">
+<section id="todays-agenda" class="slide level2">
 <h2>Today’s Agenda</h2>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="label concept">Session 1</span></p>
+<p><span class="card-title">Lecture / demo</span></p>
 <ul>
 <li class="fragment">what counts as a GIS question</li>
 <li class="fragment">three GIS paradigms for architecture</li>
-<li class="fragment"><code>Jupyter</code>, <code>Anaconda</code>, <code>Miniconda</code>, and <code>Colab</code></li>
+<li class="fragment">the setup ladder: <code>Jupyter</code>, <code>Anaconda</code>, <code>Miniconda</code>, <code>Colab</code></li>
 <li class="fragment"><code>geopandas</code> as the code-GIS anchor</li>
 <li class="fragment">Hong Kong data sources and pathway choice</li>
 </ul>
-</section>
-<section id="session-2-project-reasoning-round-table" class="slide level2 center">
-<h2>Session 2: Project Reasoning Round Table</h2>
-<p>Upload one rough material to Slack before Session 2:</p>
+</div>
+<div class="activity-card">
+<p><span class="label activity">Session 2</span></p>
+<p><span class="card-title">Round table on YOUR site</span></p>
 <ul>
-<li class="fragment">site map</li>
-<li class="fragment">plan or context image</li>
-<li class="fragment">route diagram</li>
-<li class="fragment">spatial layer sketch</li>
+<li class="fragment">upload one rough spatial material</li>
+<li class="fragment">name the spatial claim it depends on</li>
+<li class="fragment">reconstruct your layers in four steps</li>
 </ul>
-<p>Speak for 60-90 seconds:</p>
-<p><strong>Does this decision depend on location, distance, overlap, boundary, or access?</strong></p>
-<p>This feeds <strong>A2: Evidence Map</strong> and <strong>A2: Tool Translation Matrix</strong>.</p>
-<p>Volunteers go first; random draw may fill the remaining examples.</p>
+</div>
+</div>
+<div class="reflection-card">
+<p>A tool week is still an evidence week. We choose a GIS path only when the <strong>decision</strong> needs one — not because the maps look professional.</p>
+</div>
 </section>
-<section id="gis-is-not-just-digital-mapping" class="slide level2 center">
-<h2>GIS Is Not Just Digital Mapping</h2>
-<p>GIS matters when your question depends on:</p>
+<section class="slide level2">
+
+<p><span class="kicker">The framing</span></p>
+</section>
+<section id="gis-is-not-just-digital-mapping" class="slide level2">
+<h2>GIS is not just digital mapping</h2>
+<p>GIS earns a place in your workflow only when your question depends on:</p>
 <ul>
 <li class="fragment">location</li>
 <li class="fragment">proximity</li>
@@ -432,19 +440,26 @@
 <li class="fragment">access</li>
 <li class="fragment">context over space and time</li>
 </ul>
+<div class="concept-card">
+<p>If the question is not spatial, a beautiful map is decoration, not evidence.</p>
+</div>
 </section>
-<section id="stand-alone-site-prompt" class="slide level2 center">
-<h2>Stand-Alone Site Prompt</h2>
+<section class="slide level2">
+
+<p><span class="kicker">Read the site first</span></p>
+</section>
+<section id="stand-alone-site-prompt" class="slide level2">
+<h2>Stand-alone site prompt</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../assets/examples/kai-tak-sports-park.jpg" height="520"></p>
+<p><img data-src="../assets/examples/kai-tak-sports-park.jpg" height="480"></p>
 <figcaption>Kai Tak Sports Park</figcaption>
 </figure>
 </div>
-<p>If this were your project, what spatial questions would matter first?</p>
+<p>If this were your project, what spatial questions would matter <strong>first</strong>?</p>
 </section>
-<section id="typical-gis-questions-for-architecture" class="slide level2 center">
-<h2>Typical GIS Questions for Architecture</h2>
+<section id="typical-gis-questions-for-architecture" class="slide level2">
+<h2>Typical GIS questions for architecture</h2>
 <ul>
 <li class="fragment">which site is better connected to transit?</li>
 <li class="fragment">which parcels fall inside a flood or noise risk zone?</li>
@@ -452,9 +467,16 @@
 <li class="fragment">where do zoning, topography, and infrastructure collide?</li>
 <li class="fragment">how can context be exported into a design workflow?</li>
 </ul>
+<div class="concept-card">
+<p>Each one names a <strong>spatial claim</strong> you would have to defend with evidence.</p>
+</div>
 </section>
-<section id="three-gis-paradigms" class="slide level2 center">
-<h2>Three GIS Paradigms</h2>
+<section class="slide level2">
+
+<p><span class="kicker">Three paths, one decision</span></p>
+</section>
+<section id="three-gis-paradigms" class="slide level2">
+<h2>Three GIS paradigms</h2>
 <table>
 <colgroup>
 <col style="width: 25%">
@@ -492,8 +514,8 @@
 </tbody>
 </table>
 </section>
-<section id="qgis-the-fast-visual-option" class="slide level2 center">
-<h2><code>QGIS</code>: The Fast Visual Option</h2>
+<section id="qgis-the-fast-visual-option" class="slide level2">
+<h2><code>QGIS</code>: the fast visual option</h2>
 <ul>
 <li class="fragment">ideal for loading many layers quickly</li>
 <li class="fragment">good for buffers, clips, joins, styling, and export</li>
@@ -501,8 +523,8 @@
 <li class="fragment">often the easiest starting point for students new to GIS</li>
 </ul>
 </section>
-<section id="arcgis-the-professional-ecosystem-option" class="slide level2 center">
-<h2><code>ArcGIS</code>: The Professional Ecosystem Option</h2>
+<section id="arcgis-the-professional-ecosystem-option" class="slide level2">
+<h2><code>ArcGIS</code>: the professional ecosystem option</h2>
 <ul>
 <li class="fragment">useful when offices, clients, or institutions already depend on it</li>
 <li class="fragment">stronger for enterprise sharing, web maps, and standardized workflows</li>
@@ -510,8 +532,8 @@
 <li class="fragment">not the default course anchor because the license and platform matter</li>
 </ul>
 </section>
-<section id="geopandas-the-reproducible-option" class="slide level2 center">
-<h2><code>geopandas</code>: The Reproducible Option</h2>
+<section id="geopandas-the-reproducible-option" class="slide level2">
+<h2><code>geopandas</code>: the reproducible option</h2>
 <ul>
 <li class="fragment">sits inside <code>Jupyter Notebook</code></li>
 <li class="fragment">keeps spatial data close to <code>pandas</code>, plotting, and exported tables</li>
@@ -519,9 +541,11 @@
 <li class="fragment">makes code-driven GIS concrete rather than hypothetical</li>
 </ul>
 </section>
-<section id="why-geopandas-sits-at-the-center" class="slide level2 center">
-<h2>Why <code>geopandas</code> Sits at the Center</h2>
-<p>The course needs one code-based GIS reference point that students can actually see and reason through.</p>
+<section id="why-geopandas-sits-at-the-center" class="slide level2">
+<h2>Why <code>geopandas</code> sits at the center</h2>
+<div class="concept-card">
+<p>The course needs <strong>one</strong> code-based GIS reference point students can see and reason through.</p>
+</div>
 <p>That reference point is:</p>
 <ul>
 <li class="fragment"><code>geopandas</code></li>
@@ -529,56 +553,87 @@
 <li class="fragment">beside simple plotting and tabular analysis</li>
 </ul>
 </section>
-<section id="the-setup-ladder" class="slide level2 center">
-<h2>The Setup Ladder</h2>
-<ul>
-<li class="fragment"><code>Anaconda</code> / <code>Miniconda</code> = local Python environment</li>
-<li class="fragment"><code>Jupyter Notebook</code> = the interface where code, outputs, and notes live</li>
-<li class="fragment"><code>geopandas</code> = the spatial analysis library</li>
-<li class="fragment"><code>Google Colab</code> = fallback if local setup is not ready</li>
-</ul>
+<section class="slide level2">
+
+<p><span class="kicker">The setup ladder</span></p>
 </section>
-<section id="notebook-anatomy" class="slide level2 center">
-<h2>Notebook Anatomy</h2>
-<p>In a GIS notebook, students should be able to identify:</p>
+<section id="from-nothing-to-a-running-notebook" class="slide level2">
+<h2>From nothing to a running notebook</h2>
+<div class="activity-card">
+<p><span class="card-title">Climb only as far as you need</span></p>
+<ul>
+<li class="fragment"><code>Anaconda</code> / <code>Miniconda</code> — local Python environment</li>
+<li class="fragment"><code>Jupyter Notebook</code> — where code, outputs, and notes live together</li>
+<li class="fragment"><code>geopandas</code> — the spatial analysis library</li>
+<li class="fragment"><code>Google Colab</code> — fallback if local setup is not ready</li>
+</ul>
+</div>
+<p>If local install stalls, start in <code>Colab</code> so the analysis is never blocked by the environment.</p>
+</section>
+<section id="notebook-anatomy" class="slide level2">
+<h2>Notebook anatomy</h2>
+<p>In a GIS notebook, you should be able to point to:</p>
 <ul>
 <li class="fragment">imports</li>
 <li class="fragment">file loading</li>
-<li class="fragment">coordinate reference system checks</li>
+<li class="fragment">coordinate reference system (CRS) checks</li>
 <li class="fragment">geometry operations</li>
 <li class="fragment">quick plots or exports</li>
 <li class="fragment">notes about what the output means</li>
 </ul>
 </section>
-<section id="minimal-geopandas-workflow" class="slide level2 center">
-<h2>Minimal <code>geopandas</code> Workflow</h2>
+<section class="slide level2">
+
+<p><span class="kicker">Tool panel · capture comes later</span></p>
+</section>
+<section id="a-geopandas-operation-as-a-tool" class="slide level2">
+<h2>A <code>geopandas</code> operation as a tool</h2>
+<div class="tool-panel demo-pending">
+<p>::: {.zone .input}<strong>Input</strong> site polygon + a transit / amenity layer ::: ::: {.zone .operation}<strong>What varies</strong> buffer distance (e.g.&nbsp;200–600 m) ::: ::: {.zone .output}<strong>Output</strong> coverage % per option (per site or per layer) ::: ::: {.zone .check}<strong>Quality check</strong> CRS stated, feature counts spot-checked :::</p>
+</div>
+<p>The dashed frame means the live capture does not exist yet — we will drop a real cell in, not a faked screenshot.</p>
+</section>
+<section id="minimal-geopandas-workflow" class="slide level2">
+<h2>Minimal <code>geopandas</code> workflow</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
 <span id="cb1-2"><a></a></span>
 <span id="cb1-3"><a></a>sites <span class="op">=</span> gpd.read_file(<span class="st">"candidate_sites.geojson"</span>)</span>
-<span id="cb1-4"><a></a>sites <span class="op">=</span> sites.to_crs(<span class="dv">3857</span>)</span>
+<span id="cb1-4"><a></a>sites <span class="op">=</span> sites.to_crs(<span class="dv">3857</span>)          <span class="co"># state the CRS explicitly</span></span>
 <span id="cb1-5"><a></a>sites[<span class="st">"buffer_400m"</span>] <span class="op">=</span> sites.<span class="bu">buffer</span>(<span class="dv">400</span>)</span>
-<span id="cb1-6"><a></a>sites.plot(column<span class="op">=</span><span class="st">"score"</span>, legend<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>The logic matters more than the syntax:</p>
+<span id="cb1-6"><a></a><span class="bu">print</span>(<span class="bu">len</span>(sites))                   <span class="co"># spot-check the count</span></span>
+<span id="cb1-7"><a></a>sites.plot(column<span class="op">=</span><span class="st">"score"</span>, legend<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The logic matters more than the syntax: <strong>load → inspect → project → operate → visualize.</strong></p>
+</section>
+<section id="core-gis-operations-to-recognize" class="slide level2">
+<h2>Core GIS operations to recognize</h2>
 <ul>
-<li class="fragment">load</li>
-<li class="fragment">inspect</li>
-<li class="fragment">project</li>
-<li class="fragment">operate</li>
-<li class="fragment">visualize</li>
+<li class="fragment"><strong>buffer</strong> — what lies within a distance?</li>
+<li class="fragment"><strong>clip</strong> — what lies inside a boundary?</li>
+<li class="fragment"><strong>spatial join</strong> — what overlaps what?</li>
+<li class="fragment"><strong>dissolve</strong> — what can be combined by rule?</li>
+<li class="fragment"><strong>overlay</strong> — where do constraints and opportunities intersect?</li>
 </ul>
 </section>
-<section id="core-gis-operations-students-should-recognize" class="slide level2 center">
-<h2>Core GIS Operations Students Should Recognize</h2>
-<ul>
-<li class="fragment"><strong>buffer</strong>: what lies within a distance?</li>
-<li class="fragment"><strong>clip</strong>: what lies inside a boundary?</li>
-<li class="fragment"><strong>spatial join</strong>: what overlaps what?</li>
-<li class="fragment"><strong>dissolve</strong>: what can be combined by rule?</li>
-<li class="fragment"><strong>overlay</strong>: where do constraints and opportunities intersect?</li>
-</ul>
+<section class="slide level2">
+
+<p><span class="kicker">The honest test</span></p>
 </section>
-<section id="gis-outputs-that-actually-help-design" class="slide level2 center">
-<h2>GIS Outputs That Actually Help Design</h2>
+<section id="decorative-map-vs-decision-map" class="slide level2">
+<h2>Decorative map vs decision map</h2>
+<div class="two-col">
+<div class="example-card">
+<p><span class="card-title">Decorative map</span> Many layers, rich styling, looks professional — but no claim attached. If you removed it, the argument would not change.</p>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Decision map</span> States CRS, names the inputs, reports a number (coverage %, count, distance), and points to one decision it changes.</p>
+</div>
+</div>
+<div class="warning-card">
+<p>If the output does not inform a decision, it is just map decoration.</p>
+</div>
+</section>
+<section id="gis-outputs-that-actually-help-design" class="slide level2">
+<h2>GIS outputs that actually help design</h2>
 <ul>
 <li class="fragment">simple site-comparison maps</li>
 <li class="fragment">walkshed / transit-access maps</li>
@@ -586,10 +641,13 @@
 <li class="fragment">exposure / proximity summaries</li>
 <li class="fragment">exported site context for further design work</li>
 </ul>
-<p>If the output does not inform a decision, it is just map decoration.</p>
 </section>
-<section id="hong-kong-data-sources" class="slide level2 center">
-<h2>Hong Kong Data Sources</h2>
+<section class="slide level2">
+
+<p><span class="kicker">Where to look first</span></p>
+</section>
+<section id="hong-kong-data-sources" class="slide level2">
+<h2>Hong Kong data sources</h2>
 <ul>
 <li class="fragment"><code>DATA.GOV.HK</code></li>
 <li class="fragment">Planning Department datasets</li>
@@ -597,46 +655,38 @@
 <li class="fragment">Hong Kong Observatory climate records</li>
 <li class="fragment">site-specific base drawings, counts, and photographs</li>
 </ul>
-<p>Students should learn where to look before they start modeling.</p>
+<div class="concept-card">
+<p>Learn where to look <strong>before</strong> you start modeling — the data you can get shapes the claim you can make.</p>
+</div>
 </section>
-<section id="example-workflow-1-site-selection" class="slide level2 center">
-<h2>Example Workflow 1: Site Selection</h2>
-<p>Question:</p>
-<p>Which of three candidate sites best balances:</p>
-<ul>
-<li class="fragment">transit access</li>
-<li class="fragment">development constraints</li>
-<li class="fragment">environmental exposure</li>
-</ul>
-<p>Possible pathway:</p>
-<ul>
-<li class="fragment"><code>QGIS</code> for first-pass layer exploration</li>
-<li class="fragment"><code>geopandas</code> if repeated comparisons or automation become useful</li>
-</ul>
+<section id="example-workflow-1-site-selection" class="slide level2">
+<h2>Example workflow 1: site selection</h2>
+<p><strong>Question:</strong> which of three candidate sites best balances transit access, development constraints, and environmental exposure?</p>
+<div class="example-card">
+<p><span class="card-title">Possible pathway</span> - <code>QGIS</code> for first-pass layer exploration - <code>geopandas</code> if repeated comparisons or automation become useful</p>
+</div>
 </section>
-<section id="example-workflow-2-public-space-access" class="slide level2 center">
-<h2>Example Workflow 2: Public-Space Access</h2>
-<p>Question:</p>
-<p>How does a proposal change access within a 5-minute or 10-minute walk?</p>
-<p>Possible pathway:</p>
-<ul>
-<li class="fragment">GIS for network and catchment logic</li>
-<li class="fragment">spreadsheet later for ranking alternatives</li>
-</ul>
-<p>This is a good reminder that pathways can support each other even when one remains primary.</p>
+<section id="example-workflow-2-public-space-access" class="slide level2">
+<h2>Example workflow 2: public-space access</h2>
+<p><strong>Question:</strong> how does a proposal change access within a 5-minute or 10-minute walk?</p>
+<div class="example-card">
+<p><span class="card-title">Possible pathway</span> - GIS for network and catchment logic - spreadsheet later for ranking alternatives</p>
+</div>
+<p>Pathways can support each other even when one remains primary.</p>
 </section>
-<section id="example-workflow-3-context-for-studio-modeling" class="slide level2 center">
-<h2>Example Workflow 3: Context for Studio Modeling</h2>
-<p>Question:</p>
-<p>What context data should be brought into Rhino / Grasshopper or another design environment?</p>
-<p>Possible pathway:</p>
-<ul>
-<li class="fragment">use GIS to select, simplify, and export</li>
-<li class="fragment">avoid importing the entire city when only a few layers matter</li>
-</ul>
+<section id="example-workflow-3-context-for-studio-modeling" class="slide level2">
+<h2>Example workflow 3: context for studio modeling</h2>
+<p><strong>Question:</strong> what context data should be brought into Rhino / Grasshopper or another design environment?</p>
+<div class="example-card">
+<p><span class="card-title">Possible pathway</span> - use GIS to select, simplify, and export - avoid importing the entire city when only a few layers matter</p>
+</div>
 </section>
-<section id="tool-choice-drill" class="slide level2 center">
-<h2>Tool Choice Drill</h2>
+<section class="slide level2">
+
+<p><span class="kicker">Practice</span></p>
+</section>
+<section id="tool-choice-drill" class="slide level2">
+<h2>Tool choice drill</h2>
 <p>For each question, choose the first tool you would reach for:</p>
 <ol type="1">
 <li class="fragment">“I need to inspect zoning, roads, and transit stops quickly.”</li>
@@ -645,28 +695,29 @@
 </ol>
 <p>Discuss in pairs, then justify the choice.</p>
 </section>
-<section id="suggested-answers" class="slide level2 center">
-<h2>Suggested Answers</h2>
+<section id="suggested-answers" class="slide level2">
+<h2>Suggested answers</h2>
+<div class="two-col">
+<div class="concept-card">
 <ol type="1">
 <li class="fragment"><code>QGIS</code></li>
 <li class="fragment">often <code>ArcGIS</code></li>
 <li class="fragment"><code>geopandas</code></li>
 </ol>
-<p><strong>The point:</strong> not one tool wins everything. Fit matters.</p>
+</div>
+<div class="reflection-card">
+<p><span class="card-title">The point</span> No one tool wins everything. <strong>Fit</strong> to the decision is what matters.</p>
+</div>
+</div>
 </section>
-<section id="minute-gis-scoping-sprint" class="slide level2 center">
-<h2>15-Minute GIS Scoping Sprint</h2>
-<p>Choose your own project and write down:</p>
-<ul>
-<li class="fragment">the spatial question</li>
-<li class="fragment">the smallest useful spatial output</li>
-<li class="fragment">the minimum input layers needed</li>
-<li class="fragment">whether you would start in <code>QGIS</code>, <code>ArcGIS</code>, or <code>geopandas</code></li>
-<li class="fragment">what would make GIS the wrong pathway</li>
-</ul>
+<section id="minute-gis-scoping-sprint" class="slide level2">
+<h2>15-minute GIS scoping sprint</h2>
+<div class="activity-card">
+<p><span class="card-title">Choose your own project and write down</span> - the spatial question - the smallest useful spatial output - the minimum input layers needed - whether you would start in <code>QGIS</code>, <code>ArcGIS</code>, or <code>geopandas</code> - what would make GIS the <strong>wrong</strong> pathway</p>
+</div>
 </section>
-<section id="when-gis-is-the-right-semester-pathway" class="slide level2 center">
-<h2>When GIS Is the Right Semester Pathway</h2>
+<section id="when-gis-is-the-right-semester-pathway" class="slide level2">
+<h2>When GIS is the right semester pathway</h2>
 <p>Choose GIS if your decision genuinely depends on:</p>
 <ul>
 <li class="fragment">spatial comparison</li>
@@ -674,20 +725,63 @@
 <li class="fragment">boundaries and overlaps</li>
 <li class="fragment">site or urban context evidence</li>
 </ul>
-<p>Do not choose GIS because maps look professional.</p>
+<div class="warning-card">
+<p>Do not choose GIS because the maps look professional.</p>
+</div>
 </section>
-<section id="exit-check" class="slide level2 center">
-<h2>Exit Check</h2>
+<section id="break" class="slide level2 big-break">
+<h2>BREAK</h2>
+<p>Take 10 minutes.</p>
+<p>When you return, post one rough spatial material to Slack for Session 2.</p>
+</section>
+<section class="slide level2">
+
+<p><span class="kicker">Session 2 · Round table</span></p>
+</section>
+<section id="round-table-on-your-site" class="slide level2">
+<h2>Round table on YOUR site</h2>
+<div class="spine-rail">
+<p><span class="node">Decision</span> <span class="node is-current">Evidence</span> <span class="node">Variation</span> <span class="node">Output</span> <span class="node">Threshold</span> <span class="node">Action</span></p>
+</div>
+<p>Upload one rough spatial material to Slack before Session 2 — site map, plan or context image, route diagram, or spatial layer sketch. <span class="feeds-tag">feeds A2</span></p>
+</section>
+<section id="name-the-spatial-claim" class="slide level2">
+<h2>Name the spatial claim</h2>
+<p>Speak for 60–90 seconds about your material:</p>
+<div class="concept-card">
+<p><span class="card-title">The Session 2 question</span> <strong>Does this decision depend on location, distance, overlap, boundary, or access?</strong></p>
+</div>
+<p>If yes, it is a spatial claim GIS could help defend. If no, GIS is likely the wrong pathway — and saying so is a strong move.</p>
+</section>
+<section id="reconstruct-your-site-in-four-steps" class="slide level2">
+<h2>Reconstruct your site in four steps</h2>
+<p><strong>Object this week: your site’s spatial layers and the spatial claim they support.</strong></p>
+<div class="recall-4step">
+<p>::: {.step}<strong>Did</strong> Which layers did I gather, and what claim do they make? ::: ::: {.step}<strong>Assumed</strong> What did I assume about CRS, coverage, or completeness? ::: ::: {.step}<strong>Risk</strong> Where could the spatial claim break or mislead? ::: ::: {.step}<strong>Verify</strong> What would I check — counts, CRS, a buffer recomputed? :::</p>
+</div>
+<div class="grading-note">
+<p>Post your filled four-step to Slack under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Volunteers go first; random draw may fill the remaining examples.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<p><span class="kicker">Exit</span></p>
+</section>
+<section id="week-4-exit-check" class="slide level2">
+<h2>Week 4 exit check</h2>
 <p>By the end of this week, you should know:</p>
+<div class="concept-card">
 <ul>
 <li class="fragment">whether GIS belongs in your short list</li>
 <li class="fragment">whether you are more comfortable starting visually or in notebooks</li>
 <li class="fragment">what role <code>geopandas</code> would play if you choose the GIS pathway</li>
 </ul>
+</div>
+<p>Week 5 builds the Evidence + Workflow Map from the claim you named today.</p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-
+<p>Week 4 · feeds A2: Evidence + Workflow Map</p>
 </div>
 </div>
 </section>
@@ -771,7 +865,7 @@
         disableLayout: false,
 
         // Vertical centering of slides
-        center: true,
+        center: false,
 
         // Enables touch navigation on devices with touch input
         touch: true,

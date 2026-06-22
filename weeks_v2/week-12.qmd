@@ -1,522 +1,252 @@
 ---
 title: "Week 12: Object Fair"
-subtitle: "Final Presentations, Critique, and Transfer Forward"
+subtitle: "Final Review, Synthesis, and Transfer Forward"
 output-file: week-12.html
-format: 
+format:
   revealjs:
-    theme: serif
-    transition: fade
+    theme: [default, arch7476.scss]
+    transition: slide
     slide-number: true
-    incremental: false
+    incremental: true
     width: 1400
     height: 900
-    center: true
+    center: false
+    footer: "Week 12 · feeds A4: Workflow Package"
 ---
 
-## 🏆 Welcome to the Object Fair Championship! {.center}
+## Today's Agenda
 
-::: {.callout-important icon=false}
-## The Grand Finale: Evidence-Based Design Excellence
+:::: {.two-col}
+::: {.concept-card}
+[Session 1]{.label .concept}
 
-**Today's Mission**: Celebrate your transformation from student to evidence-based design professional
+[Final review]{.card-title}
 
-**The Stage**: Industry professionals, peers, and faculty witnesses to your achievement
-
-**The Legacy**: You represent the future of systematic, stakeholder-centered design
+- present your A4 package to the room and invited critics
+- timed presentations, then questions
+- read every project against the same evaluation loop
+- capture the feedback that matters
 :::
 
-**🎪 Today's Championship Events:**
+::: {.activity-card}
+[Session 2]{.label .activity}
 
-🎖️ **Professional Presentation Championship** | 🤝 **Industry Networking Excellence** | 🌟 **Peer Celebration & Recognition** | 🚀 **Professional Development Launch**
+[Reasoning round table]{.card-title}
 
----
+- synthesis, not a second formal presentation
+- reconstruct the reasoning you can carry forward
+- name what transfers to your next project
+:::
+::::
 
-## Session 2: Project Reasoning Round Table
-
-Use your final object card or reflection note.
-
-Speak for 60-90 seconds:
-
-**What design reasoning can transfer to another studio project?**
-
-This feeds **A4: Reflection Note**.
-
-The purpose is synthesis, not a second formal presentation.
+::: {.reflection-card}
+This is a final review, not a contest. We read each package carefully, name what it shows, and help each other see what carries forward.
+:::
 
 ---
 
-# Championship Opening Ceremony {background-color="#1A1A2E"}
+[The arc]{.kicker}
 
----
+## Where this sits in the semester
 
-## 🎺 Welcome to Excellence
+The Object Fair closes the loop. It is the last review of A4, read against the same spine we have used since Week 1.
 
-### 🌟 The Journey from Week 1 to Champion
-
-```mermaid
-graph LR
-    A[🤔 Week 1: Curiosity] --> B[📚 A1: Evidence Claims]
-    B --> C[🔍 A2: Literature Mastery]
-    C --> D[🧪 A3: Method Testing]
-    D --> E[📊 A4: Professional Analysis]
-    E --> F[🏆 Object Fair Champion]
-    
-    A --> G[❓ Questions]
-    B --> H[🎯 Focus] 
-    C --> I[📖 Knowledge]
-    D --> J[🛠️ Skills]
-    E --> K[💼 Competence]
-    F --> L[👑 Professional Excellence]
+```{mermaid}
+flowchart LR
+    A[A1: Total Recall<br/>Weeks 1-3] --> B[A2: Evidence + Workflow Map<br/>Weeks 4-6]
+    B --> C[A3: Prototype + Verification<br/>Weeks 7-9]
+    C --> D[A4: Workflow Package<br/>Weeks 10-12]
+    D --> E{Final review}
+    E --> F[Object Fair: present & defend]
+    E --> G[Transfer: reasoning you keep]
 ```
 
-**🎯 What You've Achieved**: Transformation from curious students to evidence-based design professionals ready to change the built environment
-
----
-
-## 🎪 Championship Format & Excellence Standards
-
-### 🏆 Professional Competition Structure
-
-**🕒 Championship Timeline**:
-- **Setup & Final Preparation** (15 minutes)
-- **Opening Ceremony** (10 minutes)  
-- **Professional Presentation Championship** (90 minutes)
-- **Industry Networking & Recognition** (25 minutes)
-
-**👨‍⚖️ Championship Panel**:
-- **Industry Professionals**: Real-world application experts
-- **Academic Leaders**: Research methodology specialists
-- **Practice Innovators**: Evidence-based design pioneers
-- **Career Development Mentors**: Professional growth advisors
-
-**🎯 Excellence Evaluation**:
-- **Professional Competence**: Research quality and stakeholder relevance
-- **Communication Mastery**: Presentation skills and industry engagement
-- **Innovation Leadership**: Creative approaches and novel insights
-- **Professional Readiness**: Career preparation and network development
-
----
-
-# Professional Presentation Championship {background-color="#0F4C75"}
-
----
-
-## ⚔️ Individual Championship Presentations
-
-### 🏆 Championship Performance Standards
-
-**🎤 Professional Presentation Excellence**:
-- **6-8 minutes**: Core presentation demonstrating professional competence
-- **4 minutes**: Q&A with industry panel showing expertise
-- **Professional Standards**: Industry-appropriate communication and presence
-- **Object Card Integration**: Visual aid supporting professional messaging
-
-**🎯 Champion Qualities Being Evaluated**:
-
-**Research Excellence**: 
-- Systematic approach to design problems
-- Evidence-based findings with appropriate confidence
-- Stakeholder-centered analysis and recommendations
-
-**Professional Communication**:
-- Clear, compelling presentation to industry audience
-- Confident response to challenging questions
-- Effective visual design supporting key messages
-
-**Industry Readiness**:
-- Understanding of real-world application context
-- Professional presence and networking capability
-- Contribution to evidence-based design advancement
-
----
-
-## 🎭 Championship Presentation Showcase
-
-### 🌟 Individual Excellence Demonstrations
-
-*During actual Object Fair, this section will document highlights from each presentation*
-
-**🏆 Championship Presentations**:
-
-**Presentation 1**: [Student Name]
-- **Project Focus**: _______________
-- **Key Innovation**: _______________
-- **Industry Relevance**: _______________
-- **Champion Quality**: _______________
-
-**Presentation 2**: [Student Name]  
-- **Project Focus**: _______________
-- **Key Innovation**: _______________
-- **Industry Relevance**: _______________
-- **Champion Quality**: _______________
-
-*[Continue for all presentations...]*
-
-::: {.callout-success icon=false}
-## Live Championship Recognition
-
-**Outstanding Performance Awards**:
-
-🥇 **Research Excellence Champion**: _______________
-*Recognition for*: _______________
-
-🎤 **Communication Master**: _______________  
-*Recognition for*: _______________
-
-💡 **Innovation Leader**: _______________
-*Recognition for*: _______________
-
-🤝 **Industry Impact Champion**: _______________
-*Recognition for*: _______________
-
-🌟 **Peer Choice Award**: _______________
-*Recognition for*: _______________
+::: {.concept-card}
+One method, four objects. Today you hand over the **package** — and then you keep the **reasoning**.
 :::
 
 ---
 
-## 📊 Industry Panel Excellence Feedback
+[The session]{.kicker}
 
-### 💼 Professional Perspective on Student Achievement
+## Run of show
 
-*This section will capture real-time feedback from industry professionals*
+A calm, predictable order so no one over-prepares for a slot.
 
-::: {.callout-note icon=false}
-## Industry Professional Insights
+| Segment | Time | What happens |
+|---|---|---|
+| Setup & final check | 15 min | files loaded, object cards posted, timing confirmed |
+| Welcome & framing | 5 min | the evaluation loop we all read against |
+| Final presentations | ~90 min | timed, with questions after each |
+| Invited critic notes | 20 min | practice and method perspectives |
+| Session 2: round table | 30 min | synthesis and transfer forward |
 
-**[Industry Professional Name]** - [Title & Organization]
-
-**Overall Impression**: _______________
-
-**Standout Presentations**: _______________
-
-**Industry Application Potential**: _______________
-
-**Career Readiness Assessment**: _______________
-
-**Advice for Continued Development**: _______________
-
----
-
-**[Academic Professional Name]** - [Title & Institution]
-
-**Research Quality Assessment**: _______________
-
-**Methodological Innovation Observed**: _______________
-
-**Professional Communication Excellence**: _______________
-
-**Recommendations for Academic/Research Pathways**: _______________
+::: {.example-card}
+[While others present]{.card-title}
+You are not waiting your turn — you are reviewing. Note one strong move and one open question per presenter. Those notes are your participation record.
 :::
 
 ---
 
-# Industry Networking Excellence {background-color="#2E8B57"}
+## Presentation format
+
+::: {.activity-card}
+[Per person]{.card-title}
+- **6–8 min** — final presentation of your A4 package
+- **4 min** — questions from the room and invited critics
+- **2 min** — notes captured, one carry-forward noted
+:::
+
+Use your object card as the single visual that carries the recommendation and the one figure. Volunteers go first; a random draw may fill the remaining slots.
 
 ---
 
-## 🤝 Professional Relationship Building Championship
+[The criteria]{.kicker}
 
-### 🌟 Networking Excellence in Action
+## What every presentation is read against
 
-**🎯 Professional Networking Objectives**:
-- **Demonstrate Competence**: Show evidence-based design mastery to industry
-- **Build Relationships**: Create connections for career development
-- **Learn Industry Insights**: Gain real-world perspective on applications
-- **Represent Excellence**: Showcase program quality and student achievement
+Each package is read against one evaluation loop — the same logic your A4 must let a stranger trace.
 
-### 🏆 Networking Success Stories
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node} [Threshold]{.node} [Action]{.node}
+:::
 
-*To be documented during actual networking sessions*
+```{mermaid}
+flowchart LR
+    A[design decision] --> B[variants / scenarios]
+    B --> C[workflow]
+    C --> D[evidence output]
+    D --> E{threshold}
+    E --> F[design action]
+    F --> G[limit]
+```
 
-**🤝 Professional Connections Made**:
+::: {.concept-card}
+[The reviewer's question]{.card-title}
+Can I trace **decision → variants/scenarios → workflow → evidence output → threshold → action → limit** without you explaining it out loud?
+:::
 
-**Career Development Opportunities**:
-- **Internship Discussions**: _______________
-- **Job Opportunity Mentions**: _______________
-- **Mentorship Offers**: _______________
-- **Collaboration Proposals**: _______________
-
-**Industry Learning Insights**:
-- **Real-World Application Feedback**: _______________
-- **Industry Challenge Identification**: _______________
-- **Professional Development Guidance**: _______________
-- **Market Opportunity Awareness**: _______________
-
----
-
-## 💼 Professional Development Launch Platform
-
-### 🚀 Career Advancement Strategy Session
-
-**🎯 Immediate Professional Development Opportunities**:
-
-**Industry Connections for Follow-Up**:
-- **Mentor Relationship Development**: Scheduled informational interviews
-- **Project Collaboration Exploration**: Research partnership discussions  
-- **Career Guidance Conversations**: Professional development planning
-- **Industry Network Expansion**: Professional organization introductions
-
-**Academic and Research Pathways**:
-- **Graduate Research Opportunities**: PhD program discussions
-- **Publication and Conference Potential**: Academic contribution planning
-- **Research Collaboration Networks**: Inter-institutional partnership development
-- **Grant and Funding Guidance**: Research funding strategy discussions
-
-### 📈 Professional Portfolio Enhancement
-
-**🏆 Object Fair Achievement Integration**:
-- **Portfolio Documentation**: Professional presentation materials and feedback
-- **LinkedIn Profile Enhancement**: Professional competence demonstration
-- **Resume Development**: Evidence-based design skills and accomplishments  
-- **Reference Network Building**: Professional endorsements and recommendations
+If a link is missing, that is feedback — not a verdict.
 
 ---
 
-# Peer Recognition & Celebration {background-color="#8B0000"}
+## Invited critics: three reading positions
+
+Not judges with scores — three perspectives, so the feedback is varied rather than repetitive.
+
+:::: {.three-step}
+::: {.step-box}
+[Practice lens]{.card-title}
+Would this convince a studio tutor or client? Is the recommendation usable?
+:::
+::: {.step-box}
+[Method lens]{.card-title}
+Is the workflow sound? Are assumptions, thresholds, and limits stated?
+:::
+::: {.step-box}
+[Communication lens]{.card-title}
+Can a busy reader get the message in 30 seconds?
+:::
+::::
 
 ---
 
-## 🎊 Collective Achievement Celebration
+## Q&A that helps the presenter
 
-### 🌟 Peer Excellence Recognition
+The questions that help most are the ones that test a link in the loop, not the person.
 
-**🏆 Peer Choice Awards** (Class Voting):
+::: {.activity-card}
+[Useful questions sound like]{.card-title}
+- "What would have changed the recommendation?" (threshold)
+- "How would someone rerun this?" (workflow)
+- "Where does this stop being true?" (limit)
+:::
 
-**🎯 Most Inspiring Research**: Whose work made you most excited about evidence-based design?
-
-**🤝 Most Collaborative**: Who most helped others achieve excellence?
-
-**💡 Most Creative Approach**: Who found the most innovative solution to their challenge?
-
-**📊 Best Technical Execution**: Who demonstrated the highest research quality?
-
-**🎤 Most Professional Presentation**: Who set the standard for communication excellence?
-
-**🚀 Most Industry-Ready**: Who seems most prepared for professional practice?
-
-### 🎭 Individual Growth Recognition
-
-**🌱 Transformation Stories**:
-
-*Students share brief reflections on their learning journey*
-
-**"Biggest Learning Surprise"**: What unexpected insight changed your approach?
-
-**"Proudest Achievement"**: What accomplishment means most to you?
-
-**"Future Application"**: How will you use these skills in your career?
-
-**"Advice for Future Students"**: What wisdom would you share?
-
----
-
-## 📚 Collective Learning Integration
-
-### 🔍 Course Impact Assessment
-
-**🎯 Skills Development Achieved Across Class**:
-
-**Research Capabilities**:
-- **Problem Framing Excellence**: Systematic approach to design challenges
-- **Evidence Evaluation Mastery**: Critical assessment of information quality
-- **Method Design Innovation**: Creative approaches to systematic investigation
-- **Data Analysis Competence**: Professional-quality analysis and visualization
-
-**Professional Competencies**:
-- **Stakeholder Communication**: Audience-appropriate presentation and engagement
-- **Project Management Excellence**: Systematic planning and adaptive execution
-- **Peer Collaboration Mastery**: Professional teamwork and mutual support
-- **Industry Readiness**: Professional presence and networking capability
-
-### 🌍 Evidence-Based Design Impact
-
-**🏆 Collective Contribution to the Field**:
-
-**Knowledge Generation**: Original research contributing to evidence-based design
-**Method Innovation**: New approaches to systematic design investigation  
-**Professional Network**: Industry connections advancing evidence-based practice
-**Academic Excellence**: Research quality suitable for publication and application
-
-**🎯 Program Representation**: Outstanding demonstration of evidence-based design education quality
-
----
-
-# Professional Development Launch {background-color="#4B0082"}
-
----
-
-## 🚀 Beyond Object Fair: Professional Excellence Continuation
-
-### 🎯 Immediate Next Steps for Champions
-
-**📧 Professional Follow-Up Excellence**:
-- **Industry Contact Communication**: Professional follow-up with networking connections
-- **Mentor Relationship Development**: Scheduling informational interviews and guidance sessions
-- **Collaboration Opportunity Exploration**: Research partnerships and project discussions
-- **Professional Organization Engagement**: Membership and involvement in evidence-based design networks
-
-**📁 Portfolio and Professional Presence Enhancement**:
-- **LinkedIn Profile Optimization**: Evidence-based design competence demonstration
-- **Portfolio Development**: Object Fair materials integration and presentation quality
-- **Resume Enhancement**: Skills and accomplishments professional documentation
-- **Reference Network Building**: Professional endorsements and recommendation development
-
----
-
-## 🌟 Long-Term Professional Development Strategy
-
-### 🏆 Career Excellence Pathway
-
-**🎓 Academic and Research Advancement**:
-- **Graduate Study Preparation**: PhD programs and research opportunities
-- **Publication and Conference Development**: Academic contribution and professional recognition
-- **Research Network Expansion**: Collaboration and partnership building
-- **Grant and Funding Pursuit**: Research support and project development
-
-**💼 Industry Leadership Development**:
-- **Evidence-Based Design Practice Integration**: Professional application and innovation
-- **Client Communication Excellence**: Stakeholder engagement and project success
-- **Industry Thought Leadership**: Conference speaking and professional publication
-- **Mentorship and Knowledge Sharing**: Supporting future evidence-based design professionals
-
-### 🔮 Future Impact Vision
-
-**🌍 Contribution to Built Environment Excellence**:
-- **Practice Innovation**: Evidence-based approaches in professional work
-- **Industry Standards Development**: Contributing to professional practice evolution
-- **Education and Training**: Sharing knowledge with future professionals
-- **Policy and Regulation Influence**: Evidence-based approaches to building standards
-
----
-
-# Championship Closing Ceremony {background-color="#DAA520"}
-
----
-
-## 🏆 Champion Recognition and Legacy
-
-### 🎖️ Official Achievement Recognition
-
-::: {.callout-success icon=false}
-## ARCH7476 Evidence-Based Generative Design Champions
-
-**🌟 Class Achievement**: Outstanding demonstration of evidence-based design competence
-
-**🎯 Individual Excellence**: Professional-quality research and presentation achievement
-
-**🤝 Peer Collaboration**: Mutual support and collective learning excellence
-
-**💼 Industry Readiness**: Professional presence and networking success
-
-**🚀 Future Leadership**: Prepared to advance evidence-based design practice
-
-**Certification**: Each champion has demonstrated competence in:
-- Systematic design research methodology
-- Evidence evaluation and critical analysis  
-- Professional stakeholder communication
-- Industry-appropriate presentation and networking
-- Collaborative professional development
+::: {.warning-card}
+We examine the artifact and its claim, never the presenter's competence.
 :::
 
 ---
 
-## 🌟 Legacy and Continuing Impact
+## Capture feedback as you go
 
-### 📚 Knowledge Contribution
+You will hear more than you can hold. Sort it while it is fresh.
 
-**🔍 Research Contribution to Evidence-Based Design**:
-- **Original Investigation**: Unique research questions and systematic analysis
-- **Method Innovation**: Creative approaches to design investigation
-- **Industry Application**: Real-world relevance and implementation potential
-- **Academic Quality**: Research suitable for publication and professional application
+| Note type | Meaning | What to do |
+|---|---|---|
+| **Trace gap** | a link in the loop is unclear | record it for the final package edit |
+| **Carry-forward** | a move worth reusing next time | add to your transfer list |
+| **Polish** | small clarity improvement | note if time allows |
 
-**🎓 Educational Excellence Demonstration**:
-- **Program Quality**: Outstanding representation of evidence-based design education
-- **Professional Preparation**: Industry-ready competence and communication
-- **Peer Learning**: Collaborative excellence and mutual support
-- **Future Leadership**: Prepared to advance the field through professional practice
-
-### 🚀 Professional Network Launch
-
-**🤝 Industry Connection Success**:
-- **Professional Relationships**: Meaningful connections with industry leaders
-- **Career Development**: Mentorship and opportunity identification
-- **Collaboration Potential**: Research partnerships and project opportunities
-- **Network Expansion**: Professional organization engagement and leadership
-
----
-
-## 🎊 Celebration of Excellence
-
-### 👑 Champion Achievement Celebration
-
-**🏆 Individual Achievement Recognition**: Each student has transformed from curious learner to evidence-based design professional
-
-**🤝 Collective Success Celebration**: Outstanding peer collaboration and mutual support throughout the semester
-
-**💼 Professional Readiness**: Demonstrated competence for industry engagement and career advancement
-
-**🌟 Future Impact Potential**: Prepared to lead evidence-based design practice innovation and education
-
-### 🎯 Final Champion Commitment
-
-::: {.callout-warning icon=false}
-## The Evidence-Based Design Professional Pledge
-
-**All champions stand for final commitment:**
-
-*"As evidence-based design professionals, we commit to:"*
-
-*"Systematic investigation of design problems and stakeholder-centered solutions."*
-
-*"Professional communication of findings with appropriate confidence and humility."*
-
-*"Collaborative advancement of evidence-based design practice and education."*
-
-*"Mentorship and knowledge sharing with future professionals in our field."*
-
-*"Ethical application of evidence-based approaches to improve the built environment."*
-
-**Congratulations, Evidence-Based Design Champions!** 🏆👑
+::: {.reflection-card}
+The skill is not defending everything. It is hearing one true note and knowing what to do with it.
 :::
 
 ---
 
-## 🌈 Thank You and Continued Excellence
+## BREAK {.big-break}
 
-### 🎓 Course Completion and Appreciation
+Take 10 minutes.
 
-**👨‍🏫 Instructor Appreciation**: Thank you for your dedication, curiosity, and professional excellence throughout this semester
-
-**🤝 Peer Recognition**: Thank you for supporting each other's learning and celebrating collective achievement
-
-**💼 Industry Professional Gratitude**: Thank you to our critics and mentors for sharing expertise and advancing student development
-
-**🏆 Champion Achievement**: You have exceeded expectations and represented evidence-based design excellence
-
-### 🚀 Continuing Professional Development
-
-**📧 Ongoing Connection**: Course instructor available for continued professional development support
-
-**🌐 Resource Access**: Course materials and resources remain available for professional reference
-
-**🤝 Professional Network**: Peer connections for collaboration and mutual career support
-
-**🎯 Future Opportunities**: Advanced coursework, research collaboration, and professional development pathways
+When you return, we move from presenting to synthesis — what reasoning you keep.
 
 ---
 
-**🎊 Congratulations on completing ARCH7476: Evidence-Based Generative Design with championship excellence!**
+[Session 2 · Round table]{.kicker}
 
-*Please join us for networking, celebration, and continued professional relationship building*
+## The reasoning you can transfer
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node} [Threshold]{.node} [Action]{.node .is-current}
+:::
+
+This is synthesis, not a second formal presentation. Using your final object card or reflection note, speak for 60–90 seconds on the reasoning you would carry into another project. [feeds A4]{.feeds-tag}
+
+Volunteers go first; a random draw may fill the remaining turns.
 
 ---
 
-**🏆 You are now Evidence-Based Design Champions. Go forth and transform the built environment with systematic excellence!** 👑
+## Reconstruct what transfers
 
-**🌟 The future of evidence-based design is in your capable, professional hands.** ⭐
+**Object this week: the reasoning you can transfer to another project.**
+
+::: {.recall-4step}
+::: {.step}**Did** What was the core reasoning move in your A4 workflow? :::
+::: {.step}**Assumed** What did it depend on that was specific to this project? :::
+::: {.step}**Risk** Where might that reasoning break on a different problem? :::
+::: {.step}**Verify** What would you check before reusing it next time? :::
+:::
+
+::: {.grading-note}
+Post your four-step under your object card. Posting + an honest reconstruction is the graded unit — not how you spoke. Session 2 today is synthesis; there is no second graded presentation.
+:::
 
 ---
 
-*Thank you for your excellence, your collaboration, and your commitment to advancing evidence-based design practice and education!* 🙏
+## Transfer forward
+
+::: {.reflection-card}
+[What do you keep?]{.card-title}
+Take three minutes and write:
+
+- which reasoning move from A4 will I reuse in studio?
+- what evidence habit is now part of how I work?
+- where will I still need to slow down and check?
+- what is one decision I will treat differently next time?
+:::
+
+Keep it in notes or post it as a Slack thread under your object card.
+
+---
+
+[Exit]{.kicker}
+
+## Your transfer line, in one sentence
+
+Before you leave, write and post:
+
+::: {.reflection-card}
+**The one reasoning move I am keeping from this course is ___, and the next project I will use it on is ___.**
+:::
+
+Thank you for the work, the honesty, and for examining each other's reasoning rather than each other. That habit is the part that travels with you.

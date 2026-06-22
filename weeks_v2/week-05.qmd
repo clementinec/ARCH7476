@@ -1,101 +1,123 @@
 ---
 title: "Week 5: BIM, BEM, and Building Performance"
 subtitle: "What Changes When a Building Becomes an Energy Model"
+output-file: week-05.html
 format:
   revealjs:
-    theme: simple
+    theme: [default, arch7476.scss]
     transition: slide
     slide-number: true
     incremental: true
     width: 1500
     height: 900
-    center: true
+    center: false
+    footer: "Week 5 · feeds A2: Evidence + Workflow Map"
 ---
 
 ## Today's Agenda
+
+:::: {.two-col}
+::: {.concept-card}
+[Session 1]{.label .concept}
+
+[Lecture / tool demo]{.card-title}
 
 - BIM and BEM are not the same model
 - how BIM files become BEM files
 - what gets lost in translation
 - IFC vs `gbXML`
-- debugging exercises and pathway commitment
+:::
+
+::: {.activity-card}
+[Session 2]{.label .activity}
+
+[Round table on YOUR model]{.card-title}
+
+- upload one BIM/BEM material to Slack
+- reconstruct it in four steps
+- name one performance claim and its weakest link
+:::
+::::
+
+::: {.reflection-card}
+This is a tool week, but the question stays the same: what would make a performance claim defensible, and where does the workflow quietly break?
+:::
 
 ---
 
-## Session 2: Project Reasoning Round Table
+[Why this week matters]{.kicker}
 
-Upload one rough material to Slack before Session 2:
+## Even if you never run a simulation
 
-- BIM/BEM screenshot
-- section or envelope image
-- model diagram
-- performance claim from your project
-
-Speak for 60-90 seconds:
-
-**What would a performance model need to know, and what would it probably simplify?**
-
-This feeds **A2: Tool Translation Matrix** and **A2: Workflow Feasibility**.
-
-Volunteers go first; random draw may fill the remaining examples.
-
----
-
-## Why This Week Matters
-
-Even if your semester pathway is not simulation-heavy, you still need to understand:
+You still need to read performance claims with care.
 
 - what performance claims are built from
 - why some model outputs are more trustworthy than others
 - where BIM/BEM workflows break in practice
 
----
-
-## Stand-Alone Case Prompts
-
-:::: {.columns}
-::: {.column width="50%"}
-![The Edge, Amsterdam](../assets/examples/the-edge-amsterdam.jpg){height="280"}
-
-What kinds of evidence would support a claim about workplace performance here?
+::: {.concept-card}
+A simulation number is only as good as the assumptions and cleanup behind it.
 :::
 
-::: {.column width="50%"}
-![California Academy of Sciences](../assets/examples/california-academy-of-sciences.jpg){height="280"}
+---
 
-What kinds of evidence would support a claim about environmental performance here?
+[The core distinction]{.kicker}
+
+## What are BIM and BEM?
+
+:::: {.two-col}
+::: {.concept-card}
+[BIM]{.card-title}
+
+- digital model of physical and functional building characteristics
+- serves design, construction, coordination, and facility management
+- prioritizes geometry, materials, relationships, and documentation
+:::
+
+::: {.concept-card}
+[BEM]{.card-title}
+
+- computational model of thermal behavior and energy flows
+- serves analysis, optimization, and compliance
+- prioritizes zones, schedules, systems, weather, and performance assumptions
 :::
 ::::
 
 ---
 
-## 🏗️ What Are BIM and BEM?
+## Same building, different core questions
 
-**BIM**
-
-- digital model of physical and functional building characteristics
-- serves design, construction, coordination, and facility management
-- prioritizes geometry, materials, relationships, and documentation
-
-**BEM**
-
-- computational model of thermal behavior and energy flows
-- serves analysis, optimization, and compliance
-- prioritizes zones, schedules, systems, weather, and performance assumptions
-
----
-
-## Same Building, Different Core Questions
-
-**BIM asks:**  
+:::: {.two-col}
+::: {.concept-card}
+[BIM asks]{.card-title}
 What do we build, where does it go, and how is it put together?
+:::
 
-**BEM asks:**  
+::: {.concept-card}
+[BEM asks]{.card-title}
 How will it behave over time when weather, people, and systems act on it?
+:::
+::::
 
 ---
 
-## BIM Data Priorities
+## Same building, two models
+
+::: {.tool-panel .demo-pending}
+::: {.zone .input}**BIM view** walls · rooms · floors · doors · material layers · element relationships :::
+::: {.zone .operation}**BEM view** thermal zones · heat-transfer surfaces · schedules · weather · HVAC systems :::
+::: {.zone .output}**Shared object** the same wall exists in both — but not for the same reason :::
+::: {.zone .check}**Quality check** does each model carry what its analysis actually needs? :::
+:::
+
+::: {.warning-card}
+[Commonly fails to translate]{.card-title}
+Thermal **zoning**, occupancy and system **schedules**, real **constructions** (R-value, SHGC, mass), and building **orientation**.
+:::
+
+---
+
+## BIM data priorities
 
 - project, site, building, levels
 - spaces and rooms
@@ -105,7 +127,7 @@ How will it behave over time when weather, people, and systems act on it?
 
 ---
 
-## BEM Data Priorities
+## BEM data priorities
 
 - thermal zones
 - heat-transfer surfaces
@@ -116,7 +138,7 @@ How will it behave over time when weather, people, and systems act on it?
 
 ---
 
-## Quick Check: BIM or BEM?
+## Quick check: BIM or BEM?
 
 1. Exact window manufacturer and product code
 2. Occupancy schedule by hour
@@ -124,11 +146,14 @@ How will it behave over time when weather, people, and systems act on it?
 4. Construction sequencing
 5. Cooling setpoint and operating hours
 
-**Pair task:** label each item `BIM`, `BEM`, or `both`.
+::: {.activity-card}
+[Pair task]{.card-title}
+Label each item `BIM`, `BEM`, or `both`.
+:::
 
 ---
 
-## Quick Check Answers
+## Quick check answers
 
 - exact manufacturer and product code: mostly `BIM`
 - occupancy schedule by hour: `BEM`
@@ -136,11 +161,15 @@ How will it behave over time when weather, people, and systems act on it?
 - construction sequencing: `BIM`
 - cooling setpoint and operation hours: `BEM`
 
-**Key insight:** the same wall can exist in both models, but not for the same reason.
+::: {.concept-card}
+The same wall can exist in both models, but not for the same reason.
+:::
 
 ---
 
-## How BIM Files Get Made
+[How the files come to exist]{.kicker}
+
+## How BIM files get made
 
 - **manual BIM authoring** in Revit / ArchiCAD / similar
 - **3D import** from Rhino, SketchUp, or other geometric models
@@ -150,7 +179,7 @@ Each path changes how much cleanup is needed before any energy analysis begins.
 
 ---
 
-## How BEM Files Get Made
+## How BEM files get made
 
 - translate from an existing BIM model
 - build a direct energy model from drawings and assumptions
@@ -160,9 +189,9 @@ All three approaches are common. None is frictionless.
 
 ---
 
-## Workflow Map — Design to Analysis
+## Workflow map — design to analysis
 
-```mermaid
+```{mermaid}
 graph TB
     A[Design Intent] --> B[BIM Authoring Tool]
     B --> C[Native BIM File]
@@ -179,58 +208,77 @@ graph TB
 
 ---
 
-## The Translation Gap
+[The translation gap]{.kicker}
 
-When BIM becomes BEM, problems usually come from four categories:
+## When BIM becomes BEM
+
+Problems usually come from four categories:
 
 - geometry
 - zoning
 - constructions
 - operations
 
+::: {.concept-card}
+Translation loss is normal, not an edge case. The skill is anticipating it.
+:::
+
 ---
 
-## Geometry Issues
+## Geometry issues
 
+::: {.warning-card}
 - curved facades oversimplified into straight planes
 - tiny modeled objects exported as meaningful surfaces
 - orientation or context errors
 - missing adjacent buildings and shading
+:::
 
 ---
 
-## Thermal Zoning Issues
+## Thermal zoning issues
 
+::: {.warning-card}
 - BIM spaces do not map neatly to thermal zones
 - open offices become fragmented or over-zoned
 - plenums, circulation zones, or mixed-use spaces disappear or split badly
+:::
 
 ---
 
-## Construction and Material Gaps
+## Construction and material gaps
 
-- walls export as generic “exterior wall”
+::: {.warning-card}
+- walls export as generic "exterior wall"
 - layers, R-values, SHGC, and internal mass are incomplete
 - thermal bridges and details are ignored
+:::
 
 ---
 
-## Operational Data Missing
+## Operational data missing
 
+::: {.warning-card}
 - no occupancy schedules
 - no equipment or lighting schedules
 - no setpoints or control strategies
 - no HVAC system definitions
+:::
 
-**This is why a clean-looking import can still be analytically useless.**
+This is why a clean-looking import can still be analytically useless.
 
 ---
 
-## 🎯 Translation Detective Challenge
+[Translation diagnosis]{.kicker}
 
-**Scenario:** You exported a 5-story office building to `gbXML` and the first model run shows energy use at **3x** what you expected.
+## Read the broken translation
 
-**In groups, identify likely causes:**
+::: {.activity-card}
+[Scenario]{.card-title}
+You exported a 5-story office building to `gbXML` and the first model run shows energy use at **3x** what you expected.
+:::
+
+In small groups, work through:
 
 1. What probably happened to the thermal zones?
 2. What is likely wrong with the HVAC assumptions?
@@ -238,6 +286,8 @@ When BIM becomes BEM, problems usually come from four categories:
 4. What would you inspect first before trusting any output?
 
 ---
+
+[The two bridges]{.kicker}
 
 ## IFC vs `gbXML`
 
@@ -253,52 +303,66 @@ Both are bridges. Neither is a perfect bridge.
 
 ---
 
-## What Each Bridge Is Good At
+## What each bridge is good at
 
-**IFC**
+:::: {.two-col}
+::: {.concept-card}
+[IFC]{.card-title}
 
 - archiving and coordination
 - multi-disciplinary interoperability
 - detailed building information
+:::
 
-**`gbXML`**
+::: {.concept-card}
+[`gbXML`]{.card-title}
 
 - getting geometry and basic constructions into energy tools
 - faster processing
 - better starting point for thermal-zone workflows
+:::
+::::
 
 ---
 
-## Why Neither Solves the Whole Problem
+## Why neither solves the whole problem
 
+::: {.warning-card}
 - manual cleanup is still required
 - vendor implementations vary
 - updates overwrite hand fixes
 - building design logic and energy logic are not the same thing
+:::
 
 ---
 
-## Ideal Workflow vs Real Workflow
+## Ideal workflow vs real workflow
 
-**Ideal**
-
+:::: {.two-col}
+::: {.example-card}
+[Ideal]{.card-title}
 1. update BIM
 2. export cleanly
 3. update BEM automatically
 4. rerun analysis
 5. feed changes back into design
+:::
 
-**Real**
-
+::: {.warning-card}
+[Real]{.card-title}
 1. export once
 2. spend days cleaning the BEM
 3. design changes continue
 4. model diverges
-5. everyone hopes the gap is still “small enough”
+5. everyone hopes the gap is still "small enough"
+:::
+::::
 
 ---
 
-## Case Study: Translation Gone Wrong
+[A real case]{.kicker}
+
+## Case study: translation gone wrong
 
 - new 15,000 m² university research building
 - BIM in Revit with MEP coordination
@@ -307,53 +371,68 @@ Both are bridges. Neither is a perfect bridge.
 
 ---
 
-## Case Study Timeline
+## Case study timeline
 
-**Week 1**
-
+:::: {.two-col}
+::: {.example-card}
+[Week 1]{.card-title}
 - export appears successful
 - team believes the workflow is seamless
+:::
 
-**Week 2**
-
+::: {.warning-card}
+[Week 2]{.card-title}
 - 465 thermal zones created instead of about 30
 - HVAC missing
 - generic constructions everywhere
 - orientation wrong
+:::
+::::
 
 ---
 
-## Case Study Timeline (cont'd)
+## Case study timeline (cont'd)
 
-**Weeks 3-4**
-
+:::: {.two-col}
+::: {.activity-card}
+[Weeks 3-4]{.card-title}
 - merge zones manually
 - define constructions and material properties
 - build schedules and HVAC systems
 - fix context and shading
+:::
 
-**Week 8**
-
+::: {.warning-card}
+[Week 8]{.card-title}
 - design changes arrive
 - re-export means losing cleanup work
 - manual updates begin and divergence starts
+:::
+::::
 
 ---
 
-## Lessons Learned
+## Lessons learned
 
+::: {.reflection-card}
 - BIM was not authored with energy analysis in mind
 - missing data only became obvious after export
 - there was no workflow for iterative updates
-- “the file opened” did not mean “the model is valid”
+- "the file opened" did not mean "the model is valid"
+:::
 
 ---
 
-## 🎮 Divergence Detective
+[Translation diagnosis]{.kicker}
 
-**Scenario:** Actual energy use is 30% higher than predicted because BIM and BEM drifted apart.
+## Diagnose the divergence
 
-Investigate in groups:
+::: {.activity-card}
+[Scenario]{.card-title}
+Actual energy use is 30% higher than predicted because the BIM and BEM drifted apart.
+:::
+
+In small groups, investigate:
 
 - what geometry changes could explain the increase?
 - what material substitutions matter?
@@ -364,19 +443,91 @@ Come back with your top three suspects.
 
 ---
 
-## Shared Literacy Takeaways
+## Shared literacy takeaways
 
+::: {.reflection-card}
 - BIM and BEM must stay related, but they should not be confused
 - simulation outputs are only as good as the assumptions and cleanup behind them
 - translation loss is normal, not an edge case
 - performance claims need method transparency, not just metrics
+:::
 
 ---
 
-## Pathway Commitment Check
+## BREAK {.big-break}
+
+Take 10 minutes.
+
+When you return, post one rough BIM/BEM material from your project to Slack for Session 2.
+
+---
+
+[Session 2 · Round table]{.kicker}
+
+## Round table on YOUR model
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node .is-current} [Threshold]{.node} [Action]{.node}
+:::
+
+Upload one rough material to Slack before Session 2 — a BIM/BEM screenshot, a section or envelope image, a model diagram, or a performance claim from your project. [feeds A2]{.feeds-tag}
+
+---
+
+## Speak for 60-90 seconds
+
+::: {.concept-card}
+[The prompt]{.card-title}
+What would a performance model need to know about your building, and what would it probably simplify?
+:::
+
+Volunteers go first; random draw may fill the remaining examples.
+
+---
+
+## Reconstruct your model in four steps
+
+**Object this week: your BIM/BEM model and one performance claim.**
+
+::: {.recall-4step}
+::: {.step}**Did** What does the model claim, and what did you actually build or export? :::
+::: {.step}**Assumed** What zoning, schedules, and constructions did the workflow assume for you? :::
+::: {.step}**Risk** Where could the translation have failed without you noticing? :::
+::: {.step}**Verify** What would you inspect before trusting the output? :::
+:::
+
+::: {.grading-note}
+Post your filled four-step to Slack under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Presenting is welcomed and earns credit; it is never required and never scored as performance.
+:::
+
+---
+
+## Stand-alone case prompts
+
+:::: {.two-col}
+::: {.example-card}
+![The Edge, Amsterdam](../assets/examples/the-edge-amsterdam.jpg){height="280"}
+
+What kinds of evidence would support a claim about workplace performance here?
+:::
+
+::: {.example-card}
+![California Academy of Sciences](../assets/examples/california-academy-of-sciences.jpg){height="280"}
+
+What kinds of evidence would support a claim about environmental performance here?
+:::
+::::
+
+---
+
+[Exit]{.kicker}
+
+## Pathway commitment check
 
 After this week, you should be able to say:
 
+::: {.reflection-card}
 - whether your project needs only literacy in BIM/BEM
 - whether simulation evidence will support your question
 - whether your primary semester pathway is `spreadsheet`, `GIS`, `Python`, `GH`, `BIM/BEM`, or `AI-assisted`
+:::

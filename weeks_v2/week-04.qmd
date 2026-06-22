@@ -1,49 +1,56 @@
 ---
 title: "Week 4: GIS Choices for Architects"
 subtitle: "QGIS, ArcGIS, geopandas, and Spatial Evidence Workflows"
+output-file: week-04.html
 format:
   revealjs:
-    theme: simple
+    theme: [default, arch7476.scss]
     transition: slide
     slide-number: true
     incremental: true
     width: 1500
     height: 900
-    center: true
+    center: false
+    footer: "Week 4 · feeds A2: Evidence + Workflow Map"
 ---
 
 ## Today's Agenda
 
+:::: {.two-col}
+::: {.concept-card}
+[Session 1]{.label .concept}
+
+[Lecture / demo]{.card-title}
+
 - what counts as a GIS question
 - three GIS paradigms for architecture
-- `Jupyter`, `Anaconda`, `Miniconda`, and `Colab`
+- the setup ladder: `Jupyter`, `Anaconda`, `Miniconda`, `Colab`
 - `geopandas` as the code-GIS anchor
 - Hong Kong data sources and pathway choice
+:::
+
+::: {.activity-card}
+[Session 2]{.label .activity}
+
+[Round table on YOUR site]{.card-title}
+
+- upload one rough spatial material
+- name the spatial claim it depends on
+- reconstruct your layers in four steps
+:::
+::::
+
+::: {.reflection-card}
+A tool week is still an evidence week. We choose a GIS path only when the **decision** needs one — not because the maps look professional.
+:::
 
 ---
 
-## Session 2: Project Reasoning Round Table
+[The framing]{.kicker}
 
-Upload one rough material to Slack before Session 2:
+## GIS is not just digital mapping
 
-- site map
-- plan or context image
-- route diagram
-- spatial layer sketch
-
-Speak for 60-90 seconds:
-
-**Does this decision depend on location, distance, overlap, boundary, or access?**
-
-This feeds **A2: Evidence Map** and **A2: Tool Translation Matrix**.
-
-Volunteers go first; random draw may fill the remaining examples.
-
----
-
-## GIS Is Not Just Digital Mapping
-
-GIS matters when your question depends on:
+GIS earns a place in your workflow only when your question depends on:
 
 - location
 - proximity
@@ -52,17 +59,23 @@ GIS matters when your question depends on:
 - access
 - context over space and time
 
----
-
-## Stand-Alone Site Prompt
-
-![Kai Tak Sports Park](../assets/examples/kai-tak-sports-park.jpg){height="520"}
-
-If this were your project, what spatial questions would matter first?
+::: {.concept-card}
+If the question is not spatial, a beautiful map is decoration, not evidence.
+:::
 
 ---
 
-## Typical GIS Questions for Architecture
+[Read the site first]{.kicker}
+
+## Stand-alone site prompt
+
+![Kai Tak Sports Park](../assets/examples/kai-tak-sports-park.jpg){height="480"}
+
+If this were your project, what spatial questions would matter **first**?
+
+---
+
+## Typical GIS questions for architecture
 
 - which site is better connected to transit?
 - which parcels fall inside a flood or noise risk zone?
@@ -70,9 +83,15 @@ If this were your project, what spatial questions would matter first?
 - where do zoning, topography, and infrastructure collide?
 - how can context be exported into a design workflow?
 
+::: {.concept-card}
+Each one names a **spatial claim** you would have to defend with evidence.
+:::
+
 ---
 
-## Three GIS Paradigms
+[Three paths, one decision]{.kicker}
+
+## Three GIS paradigms
 
 | Path | Best for | Strength | Risk |
 |---|---|---|---|
@@ -82,7 +101,7 @@ If this were your project, what spatial questions would matter first?
 
 ---
 
-## `QGIS`: The Fast Visual Option
+## `QGIS`: the fast visual option
 
 - ideal for loading many layers quickly
 - good for buffers, clips, joins, styling, and export
@@ -91,7 +110,7 @@ If this were your project, what spatial questions would matter first?
 
 ---
 
-## `ArcGIS`: The Professional Ecosystem Option
+## `ArcGIS`: the professional ecosystem option
 
 - useful when offices, clients, or institutions already depend on it
 - stronger for enterprise sharing, web maps, and standardized workflows
@@ -100,7 +119,7 @@ If this were your project, what spatial questions would matter first?
 
 ---
 
-## `geopandas`: The Reproducible Option
+## `geopandas`: the reproducible option
 
 - sits inside `Jupyter Notebook`
 - keeps spatial data close to `pandas`, plotting, and exported tables
@@ -109,9 +128,11 @@ If this were your project, what spatial questions would matter first?
 
 ---
 
-## Why `geopandas` Sits at the Center
+## Why `geopandas` sits at the center
 
-The course needs one code-based GIS reference point that students can actually see and reason through.
+::: {.concept-card}
+The course needs **one** code-based GIS reference point students can see and reason through.
+:::
 
 That reference point is:
 
@@ -121,60 +142,100 @@ That reference point is:
 
 ---
 
-## The Setup Ladder
+[The setup ladder]{.kicker}
 
-- `Anaconda` / `Miniconda` = local Python environment
-- `Jupyter Notebook` = the interface where code, outputs, and notes live
-- `geopandas` = the spatial analysis library
-- `Google Colab` = fallback if local setup is not ready
+## From nothing to a running notebook
+
+::: {.activity-card}
+[Climb only as far as you need]{.card-title}
+
+- `Anaconda` / `Miniconda` — local Python environment
+- `Jupyter Notebook` — where code, outputs, and notes live together
+- `geopandas` — the spatial analysis library
+- `Google Colab` — fallback if local setup is not ready
+:::
+
+If local install stalls, start in `Colab` so the analysis is never blocked by the environment.
 
 ---
 
-## Notebook Anatomy
+## Notebook anatomy
 
-In a GIS notebook, students should be able to identify:
+In a GIS notebook, you should be able to point to:
 
 - imports
 - file loading
-- coordinate reference system checks
+- coordinate reference system (CRS) checks
 - geometry operations
 - quick plots or exports
 - notes about what the output means
 
 ---
 
-## Minimal `geopandas` Workflow
+[Tool panel · capture comes later]{.kicker}
+
+## A `geopandas` operation as a tool
+
+::: {.tool-panel .demo-pending}
+::: {.zone .input}**Input** site polygon + a transit / amenity layer :::
+::: {.zone .operation}**What varies** buffer distance (e.g. 200–600 m) :::
+::: {.zone .output}**Output** coverage % per option (per site or per layer) :::
+::: {.zone .check}**Quality check** CRS stated, feature counts spot-checked :::
+:::
+
+The dashed frame means the live capture does not exist yet — we will drop a real cell in, not a faked screenshot.
+
+---
+
+## Minimal `geopandas` workflow
 
 ```python
 import geopandas as gpd
 
 sites = gpd.read_file("candidate_sites.geojson")
-sites = sites.to_crs(3857)
+sites = sites.to_crs(3857)          # state the CRS explicitly
 sites["buffer_400m"] = sites.buffer(400)
+print(len(sites))                   # spot-check the count
 sites.plot(column="score", legend=True)
 ```
 
-The logic matters more than the syntax:
-
-- load
-- inspect
-- project
-- operate
-- visualize
+The logic matters more than the syntax: **load → inspect → project → operate → visualize.**
 
 ---
 
-## Core GIS Operations Students Should Recognize
+## Core GIS operations to recognize
 
-- **buffer**: what lies within a distance?
-- **clip**: what lies inside a boundary?
-- **spatial join**: what overlaps what?
-- **dissolve**: what can be combined by rule?
-- **overlay**: where do constraints and opportunities intersect?
+- **buffer** — what lies within a distance?
+- **clip** — what lies inside a boundary?
+- **spatial join** — what overlaps what?
+- **dissolve** — what can be combined by rule?
+- **overlay** — where do constraints and opportunities intersect?
 
 ---
 
-## GIS Outputs That Actually Help Design
+[The honest test]{.kicker}
+
+## Decorative map vs decision map
+
+:::: {.two-col}
+::: {.example-card}
+[Decorative map]{.card-title}
+Many layers, rich styling, looks professional — but no claim attached. If you removed it, the argument would not change.
+:::
+
+::: {.activity-card}
+[Decision map]{.card-title}
+States CRS, names the inputs, reports a number (coverage %, count, distance), and points to one decision it changes.
+:::
+::::
+
+::: {.warning-card}
+If the output does not inform a decision, it is just map decoration.
+:::
+
+---
+
+## GIS outputs that actually help design
 
 - simple site-comparison maps
 - walkshed / transit-access maps
@@ -182,11 +243,11 @@ The logic matters more than the syntax:
 - exposure / proximity summaries
 - exported site context for further design work
 
-If the output does not inform a decision, it is just map decoration.
-
 ---
 
-## Hong Kong Data Sources
+[Where to look first]{.kicker}
+
+## Hong Kong data sources
 
 - `DATA.GOV.HK`
 - Planning Department datasets
@@ -194,90 +255,95 @@ If the output does not inform a decision, it is just map decoration.
 - Hong Kong Observatory climate records
 - site-specific base drawings, counts, and photographs
 
-Students should learn where to look before they start modeling.
+::: {.concept-card}
+Learn where to look **before** you start modeling — the data you can get shapes the claim you can make.
+:::
 
 ---
 
-## Example Workflow 1: Site Selection
+## Example workflow 1: site selection
 
-Question:
+**Question:** which of three candidate sites best balances transit access, development constraints, and environmental exposure?
 
-Which of three candidate sites best balances:
-
-- transit access
-- development constraints
-- environmental exposure
-
-Possible pathway:
-
+::: {.example-card}
+[Possible pathway]{.card-title}
 - `QGIS` for first-pass layer exploration
 - `geopandas` if repeated comparisons or automation become useful
+:::
 
 ---
 
-## Example Workflow 2: Public-Space Access
+## Example workflow 2: public-space access
 
-Question:
+**Question:** how does a proposal change access within a 5-minute or 10-minute walk?
 
-How does a proposal change access within a 5-minute or 10-minute walk?
-
-Possible pathway:
-
+::: {.example-card}
+[Possible pathway]{.card-title}
 - GIS for network and catchment logic
 - spreadsheet later for ranking alternatives
+:::
 
-This is a good reminder that pathways can support each other even when one remains primary.
+Pathways can support each other even when one remains primary.
 
 ---
 
-## Example Workflow 3: Context for Studio Modeling
+## Example workflow 3: context for studio modeling
 
-Question:
+**Question:** what context data should be brought into Rhino / Grasshopper or another design environment?
 
-What context data should be brought into Rhino / Grasshopper or another design environment?
-
-Possible pathway:
-
+::: {.example-card}
+[Possible pathway]{.card-title}
 - use GIS to select, simplify, and export
 - avoid importing the entire city when only a few layers matter
+:::
 
 ---
 
-## Tool Choice Drill
+[Practice]{.kicker}
+
+## Tool choice drill
 
 For each question, choose the first tool you would reach for:
 
-1. “I need to inspect zoning, roads, and transit stops quickly.”
-2. “I need a client-facing web map tomorrow.”
-3. “I need to rerun the same buffer/join workflow across multiple sites.”
+1. "I need to inspect zoning, roads, and transit stops quickly."
+2. "I need a client-facing web map tomorrow."
+3. "I need to rerun the same buffer/join workflow across multiple sites."
 
 Discuss in pairs, then justify the choice.
 
 ---
 
-## Suggested Answers
+## Suggested answers
 
+:::: {.two-col}
+::: {.concept-card}
 1. `QGIS`
 2. often `ArcGIS`
 3. `geopandas`
+:::
 
-**The point:** not one tool wins everything. Fit matters.
+::: {.reflection-card}
+[The point]{.card-title}
+No one tool wins everything. **Fit** to the decision is what matters.
+:::
+::::
 
 ---
 
-## 15-Minute GIS Scoping Sprint
+## 15-minute GIS scoping sprint
 
-Choose your own project and write down:
-
+::: {.activity-card}
+[Choose your own project and write down]{.card-title}
 - the spatial question
 - the smallest useful spatial output
 - the minimum input layers needed
 - whether you would start in `QGIS`, `ArcGIS`, or `geopandas`
-- what would make GIS the wrong pathway
+- what would make GIS the **wrong** pathway
+:::
 
 ---
 
-## When GIS Is the Right Semester Pathway
+## When GIS is the right semester pathway
 
 Choose GIS if your decision genuinely depends on:
 
@@ -286,14 +352,72 @@ Choose GIS if your decision genuinely depends on:
 - boundaries and overlaps
 - site or urban context evidence
 
-Do not choose GIS because maps look professional.
+::: {.warning-card}
+Do not choose GIS because the maps look professional.
+:::
 
 ---
 
-## Exit Check
+## BREAK {.big-break}
+
+Take 10 minutes.
+
+When you return, post one rough spatial material to Slack for Session 2.
+
+---
+
+[Session 2 · Round table]{.kicker}
+
+## Round table on YOUR site
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node .is-current} [Variation]{.node} [Output]{.node} [Threshold]{.node} [Action]{.node}
+:::
+
+Upload one rough spatial material to Slack before Session 2 — site map, plan or context image, route diagram, or spatial layer sketch. [feeds A2]{.feeds-tag}
+
+---
+
+## Name the spatial claim
+
+Speak for 60–90 seconds about your material:
+
+::: {.concept-card}
+[The Session 2 question]{.card-title}
+**Does this decision depend on location, distance, overlap, boundary, or access?**
+:::
+
+If yes, it is a spatial claim GIS could help defend. If no, GIS is likely the wrong pathway — and saying so is a strong move.
+
+---
+
+## Reconstruct your site in four steps
+
+**Object this week: your site's spatial layers and the spatial claim they support.**
+
+::: {.recall-4step}
+::: {.step}**Did** Which layers did I gather, and what claim do they make? :::
+::: {.step}**Assumed** What did I assume about CRS, coverage, or completeness? :::
+::: {.step}**Risk** Where could the spatial claim break or mislead? :::
+::: {.step}**Verify** What would I check — counts, CRS, a buffer recomputed? :::
+:::
+
+::: {.grading-note}
+Post your filled four-step to Slack under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Volunteers go first; random draw may fill the remaining examples.
+:::
+
+---
+
+[Exit]{.kicker}
+
+## Week 4 exit check
 
 By the end of this week, you should know:
 
+::: {.concept-card}
 - whether GIS belongs in your short list
 - whether you are more comfortable starting visually or in notebooks
 - what role `geopandas` would play if you choose the GIS pathway
+:::
+
+Week 5 builds the Evidence + Workflow Map from the claim you named today.

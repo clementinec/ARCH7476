@@ -1,626 +1,357 @@
 ---
-title: "Week 11: Final Polish"
-subtitle: "Refine the Package and Prepare for Object Fair"
+title: "Week 11: Final Package Clinic"
+subtitle: "Refine the Four A4 Components and Prepare for the Object Fair"
 output-file: week-11.html
-format: 
+format:
   revealjs:
-    theme: night
+    theme: [default, arch7476.scss]
     transition: slide
     slide-number: true
-    incremental: false
+    incremental: true
     width: 1400
     height: 900
-    center: true
+    center: false
+    footer: "Week 11 · feeds A4: Workflow Package"
 ---
 
-## 👑 Welcome to Championship Training Camp! {.center}
+## Today's Agenda
 
-::: {.callout-important icon=false}
-## Today's Mission: Transform from Gladiator to Champion
+:::: {.two-col}
+::: {.concept-card}
+[Session 1]{.label .concept}
 
-**The Goal**: Take your arena-tested presentation and polish it to championship perfection
+[Final package clinic]{.card-title}
 
-**The Challenge**: Every detail must be flawless for Object Fair domination
-
-**The Outcome**: Professional-grade presentation ready for industry experts
+- the four A4 components, side by side
+- visual-polish lab and content refinement
+- the message-clarity clinic
+- Q&A preparation, then the submission checklist
 :::
 
-**🏆 Today's Championship Events:**
+::: {.activity-card}
+[Session 2]{.label .activity}
 
-⚡ **Feedback Integration Mastery** | 💎 **Professional Polish Lab** | 🎤 **Presentation Rehearsal Olympics** | 🤝 **Networking Preparation Academy** | 📋 **Final Submission Perfection**
+[Round table on YOUR weakest component]{.card-title}
 
----
+- upload one rough A4 fragment
+- reconstruct it in four steps
+- agree the one fix before submission
+:::
+::::
 
-## Session 2: Project Reasoning Round Table
-
-Upload one rough material to Slack before Session 2:
-
-- weakest A4 component
-- final object card draft
-- research brief section
-- reproducibility capsule fragment
-
-Speak for 60-90 seconds:
-
-**Which A4 component is weakest, and what must be fixed before submission?**
-
-This feeds **A4: Final Package**.
-
-Volunteers go first; random draw may fill the remaining examples.
+::: {.reflection-card}
+This is a clinic, not a contest. We refine the **work**, find the weakest component early enough to fix it, and make the package legible to a stranger.
+:::
 
 ---
 
-# Championship Training Overview {background-color="#2C1810"}
+[The spine of the week]{.kicker}
+
+## Four components, one package
+
+A4 is not one document. It is four linked components, each answering a different question. Polish here means each one answers its question clearly.
+
+:::: {.two-col}
+::: {.concept-card}
+[1 · Practice Case]{.card-title}
+The applied story: a real decision and what changed because of the evidence.
+
+*Answers:* **what changed?**
+:::
+
+::: {.concept-card}
+[2 · Research Brief]{.card-title}
+The reasoning and evidence behind the recommendation, stated honestly.
+
+*Answers:* **how do you know?**
+:::
+::::
+
+:::: {.two-col}
+::: {.concept-card}
+[3 · Object Card]{.card-title}
+The single readable artifact a viewer meets at the fair.
+
+*Answers:* **what does a viewer see?**
+:::
+
+::: {.concept-card}
+[4 · Reproducibility Capsule]{.card-title}
+The inputs, steps, and files so the method can be inspected.
+
+*Answers:* **how can someone inspect the method?**
+:::
+::::
 
 ---
 
-## 🎯 From Arena Survivor to Object Fair Champion
+## How the components fit together
 
-### 📊 Championship Transformation Plan
+The four components are not parallel deliverables — they answer four questions a reviewer asks in sequence.
 
-```mermaid
-graph LR
-    A[⚔️ Arena Gladiator] --> B[🔧 Feedback Integration]
-    B --> C[💎 Professional Polish]
-    C --> D[🎤 Presentation Mastery]
-    D --> E[🤝 Networking Ready]
-    E --> F[👑 Object Fair Champion]
-    
-    B --> G[📝 Content Refinement]
-    B --> H[🎨 Visual Enhancement]
-    
-    C --> I[📋 Document Polish]
-    C --> J[🖼️ Figure Perfection]
-    
-    D --> K[⏱️ Timing Mastery]
-    D --> L[❓ Q&A Excellence]
-    
-    E --> M[📇 Business Cards]
-    E --> N[💼 Professional Presence]
+```{mermaid}
+flowchart LR
+    PC[Practice Case<br/>what changed?] --> RB[Research Brief<br/>how do you know?]
+    RB --> OC[Object Card<br/>what does a viewer see?]
+    OC --> RC[Reproducibility Capsule<br/>how can someone inspect the method?]
+    RC --> A4[A4: Workflow Package]
 ```
 
-**🎪 Today's Format**: Intensive training camp with rotating skill stations and individual coaching
-
----
-
-## 🏃 Championship Training Schedule
-
-### ⏰ Training Camp Timeline
-
-**Warm-Up** (15 minutes): Arena feedback integration and priority setting
-
-**Training Block 1** (25 minutes): Professional polish laboratories  
-
-**Training Block 2** (25 minutes): Presentation rehearsal olympics
-
-**Training Block 3** (20 minutes): Networking preparation academy
-
-**Cool-Down** (15 minutes): Final submission logistics and commitment ceremony
-
-::: {.callout-tip}
-## Champion Mindset
-
-**Remember**: You survived the gladiator arena! Now we're transforming good presentations into industry-dominating championship performances.
-
-**Key insight**: Championships are won in the details. Every small improvement compounds into unstoppable excellence.
+::: {.reflection-card}
+If a stranger can walk this chain without you in the room, the package is done. Networking is secondary — the package comes first.
 :::
 
 ---
 
-# Training Block 1: Professional Polish Laboratory {background-color="#1A472A"}
+[Final polish]{.kicker}
+
+## The semester spine, one last time
+
+Every component must still let a reader trace the same six-part spine your A4 has carried all along.
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node} [Threshold]{.node} [Action]{.node}
+:::
+
+::: {.concept-card}
+[The reviewer's question]{.card-title}
+Can I trace **decision → variants → workflow → output → threshold → limit** across the four components without asking you to explain it out loud?
+:::
+
+Polish is not decoration. It is making each link legible.
 
 ---
 
-## 💎 The Professional Excellence Transformation
+# Visual-polish lab {.big-break}
 
-### 🔬 Polish Laboratory Stations
-
-**🎨 Station A: Visual Perfection Lab** (8 minutes each)
-- Figure design elevation to publication quality
-- Object Card final refinement and print preparation  
-- Color consistency and professional branding
-
-**📝 Station B: Content Refinement Workshop** (8 minutes each)
-- Writing clarity and professional tone perfection
-- Citation accuracy and reference completion
-- Component integration and consistency checking
-
-**🎯 Station C: Message Clarity Clinic** (8 minutes each)
-- Stakeholder relevance sharpening
-- Key findings prominence and clarity
-- Action items specificity and implementability
-
-**💼 Station D: Professional Package Assembly** (8 minutes each)
-- File format optimization and submission readiness
-- Portfolio-quality material preparation
-- Backup system and contingency planning
+Bring your weakest figure and your Object Card draft.
 
 ---
 
-## 🎨 Visual Perfection Laboratory
+## Visual-polish lab
 
-### 🔥 Figure Transformation Challenge
+Work on one figure at a time. The goal is clarity, not ornament.
 
-**📊 Before/After Championship**:
+::: {.activity-card}
+[Do this now]{.card-title}
+Take your weakest figure and run the four checks below, in order. Stop when the key message is obvious in three seconds.
+:::
 
-**Bring your WORST figure** for emergency transformation into championship quality:
+| Check | Question | Fix if no |
+|---|---|---|
+| Message | Is the key insight obvious in 3 seconds? | cut clutter, label the point |
+| Readability | Legible at fair scale, from a few feet away? | larger type, fewer series |
+| Honesty | Are uncertainty and limits visible? | add range, caveat, or note |
+| Consistency | Same fonts, colours, units across components? | align to one style |
 
-**⚡ 8-Minute Makeover Protocol**:
-1. **Message Clarity** (2 min): Is the key insight obvious in 3 seconds?
-2. **Professional Design** (3 min): Typography, color, layout refinement
-3. **Stakeholder Focus** (2 min): Language and framing optimization
-4. **Print/Display Test** (1 min): Readability at Object Fair scale
+---
 
-### 🏆 Champion Figure Checklist
+## Object Card refinement
 
-- [ ] **3-Second Rule**: Key message immediately apparent
-- [ ] **Professional Quality**: Suitable for industry publication
-- [ ] **Stakeholder Language**: Accessible to non-experts
-- [ ] **Object Fair Scale**: Readable from 6 feet away
-- [ ] **Portfolio Ready**: Impressive enough for job applications
+The Object Card is the one artifact most viewers actually read. It must stand alone.
 
-::: {.callout-success icon=false}
-## Figure Hall of Fame
+:::: {.two-col}
+::: {.concept-card}
+[What it must carry]{.card-title}
+- the decision and who it is for
+- one figure that carries the message
+- the recommendation, in plain language
+- a stated limit
+:::
 
-**Document champion transformations:**
+::: {.activity-card}
+[The 30-second test]{.card-title}
+Hand your draft card to a neighbour. Can they state your recommendation and one limit after 30 seconds, without you speaking?
+:::
+::::
 
-**Most Dramatic Improvement**: _______________
-*What changed*: _______________
+---
 
-**Most Professional Polish**: _______________
-*Success factor*: _______________
+[Content refinement]{.kicker}
 
-**Best Stakeholder Communication**: _______________
-*Key strategy*: _______________
+## Sharpen the writing
+
+The Research Brief and Practice Case carry the argument. Tighten them.
+
+::: {.activity-card}
+[8-minute writing pass]{.card-title}
+1. **Opening** — does the first paragraph state the decision, finding, and action?
+2. **Thread** — is the stakeholder's relevance clear all the way through?
+3. **Evidence** — is confidence matched to the strength of the evidence?
+4. **Citations** — are sources complete and the capsule index linked?
+:::
+
+::: {.warning-card}
+State uncertainty plainly. Overclaiming weakens credibility faster than admitting a limit ever will.
 :::
 
 ---
 
-## 📝 Content Refinement Workshop
+[Message clarity]{.kicker}
 
-### ✨ Professional Writing Excellence
+## The message-clarity clinic
 
-**🔍 Content Quality Assessment**:
+Pair up. One reads as a busy reader; the other presents the core message.
 
-**Championship Writing Standards**:
-- **Clarity**: Every sentence serves the stakeholder message
-- **Precision**: Technical accuracy with accessible language
-- **Flow**: Logical progression from problem to solution
-- **Action**: Clear next steps and implementation guidance
+::: {.activity-card}
+[Role-play, 4 minutes]{.card-title}
+The reader skims, then asks: **"So what should I actually do?"** The presenter must answer in one sentence.
+:::
 
-### ⚡ Rapid Content Enhancement
-
-**8-Minute Writing Clinic**:
-
-1. **Executive Summary Power** (2 min): Hook, findings, action in opening paragraph
-2. **Stakeholder Thread** (2 min): Relevance clear throughout entire document
-3. **Evidence Confidence** (2 min): Uncertainty appropriately communicated
-4. **Professional Tone** (2 min): Industry-appropriate language and style
-
-**🎯 Champion Writer Checklist**:
-- [ ] Executive summary could stand alone as complete story
-- [ ] Every section connects clearly to stakeholder needs  
-- [ ] Evidence presented with appropriate confidence levels
-- [ ] Recommendations specific enough to implement
-- [ ] Writing error-free and professionally formatted
-
----
-
-## 🎯 Message Clarity Clinic
-
-### 🎪 The Ultimate Clarity Challenge
-
-**⚡ 30-Second Stakeholder Test**:
-
-**Partner up and role-play**: One person becomes busy stakeholder, other presents key message
-
-**Stakeholder Instructions**: 
-- Look at phone while "listening"
-- Ask "So what should I actually DO?" after 30 seconds
-- Rate clarity and action-orientation
-
-### 💡 Message Sharpening Protocol
-
-**🔧 Clarity Enhancement Steps**:
-
-1. **Problem Definition** (2 min): Can stakeholder immediately understand why they care?
-2. **Finding Translation** (2 min): Are technical results converted to business impact?
-3. **Action Specification** (2 min): Are next steps concrete and implementable?
-4. **Confidence Communication** (2 min): Is uncertainty level appropriate for decision-making?
-
-::: {.callout-warning}
-## Champion Reality Check
-
-**Question**: If a stakeholder can only remember ONE thing from your presentation, what should it be?
-
-**Your answer**: _______________
-
-**Test**: Does every element of your presentation support this ONE key message?
+::: {.reflection-card}
+[The one-thing test]{.card-title}
+If a reader remembers only one thing, what should it be? Does every part of your package support that one message?
 :::
 
 ---
 
-# Training Block 2: Presentation Rehearsal Olympics {background-color="#4A154B"}
+[Q&A preparation]{.kicker}
 
----
+## Prepare for the likely questions
 
-## 🎤 Championship Presentation Mastery
+Most fair questions fall into three families. Draft one honest answer for each.
 
-### 🏆 Presentation Olympics Events
+:::: {.three-step}
+::: {.step-box}
+[Method]{.card-title}
+"How do you know the sample / model is adequate?" → state your check and its limit.
+:::
+::: {.step-box}
+[Implementation]{.card-title}
+"What would this cost or take to apply?" → give a range, not a guess.
+:::
+::: {.step-box}
+[Alternatives]{.card-title}
+"Could something else explain this?" → name the alternative you ruled out, and how.
+:::
+::::
 
-**Event 1: Speed Pitch Championship** (6 minutes)
-- 90-second elevator pitch perfection
-- Multiple stakeholder type adaptations
-- Networking conversation mastery
-
-**Event 2: Pressure Presentation** (10 minutes)  
-- Full Object Fair presentation under pressure
-- Live audience with challenging questions
-- Professional composure and confidence
-
-**Event 3: Q&A Combat Training** (6 minutes)
-- Rapid-fire question response preparation
-- Professional limitation acknowledgment  
-- Confident redirection to key messages
-
-**Event 4: Object Card Integration** (3 minutes)
-- Visual aid integration and storytelling
-- Physical space management and presence
-- Professional poster presentation skills
-
----
-
-## ⚡ Speed Pitch Championship
-
-### 🥇 Elevator Pitch Olympics
-
-**🎯 Challenge**: Master the 90-second pitch that opens doors
-
-**🏃 Speed Dating Format**:
-- **90 seconds**: Deliver pitch to "stakeholder" (rotating classmates)
-- **30 seconds**: Receive specific improvement feedback
-- **Rotate**: New stakeholder type, adapted pitch
-
-**👥 Stakeholder Types for Practice**:
-- 🏢 **Busy Developer**: Cares about ROI, timeline, risk
-- 🏥 **Facility Manager**: Focuses on operational efficiency
-- 🏛️ **Policy Maker**: Interested in scalable solutions
-- 💰 **Investor**: Wants market opportunity and returns
-- 👥 **Community Rep**: Values equity and local impact
-
-### 🎪 Live Pitch Scoring
-
-**Vote for championship categories**:
-
-| Category | Winner | What Made Them Win |
-|----------|--------|-------------------|
-| **🎯 Most Compelling Hook** | ? | ? |
-| **📊 Clearest Evidence** | ? | ? |
-| **💼 Most Professional** | ? | ? |
-| **🚀 Best Call to Action** | ? | ? |
-| **🔥 Most Adaptable** | ? | ? |
-
----
-
-## 🎭 Pressure Presentation Training
-
-### 🔥 Championship Pressure Simulation
-
-**⚔️ Full Combat Simulation**:
-
-**Setup**: Complete Object Fair environment simulation
-- Professional panel (instructor + 2 volunteers)
-- Timer displayed (6-8 minutes)
-- Q&A pressure with challenging questions
-- Professional presentation expectations
-
-**🎯 Performance Enhancement Focus**:
-- **Confidence Under Pressure**: Maintain composure with difficult questions
-- **Time Management**: Perfect pacing for maximum impact
-- **Professional Presence**: Industry-appropriate demeanor and delivery
-- **Message Mastery**: Key points delivered clearly despite pressure
-
-### 📊 Championship Performance Metrics
-
-**Live evaluation during practice**:
-
-**🎤 Delivery Excellence**:
-- Voice projection and clarity
-- Professional posture and movement
-- Eye contact and audience engagement
-- Confident handling of technology
-
-**📋 Content Mastery**:
-- Clear message progression
-- Evidence presented with conviction
-- Stakeholder relevance obvious
-- Professional limitation acknowledgment
-
-**⚡ Pressure Response**:
-- Composure under challenging questions
-- Professional redirection techniques
-- Confident uncertainty communication
-- Gracious feedback reception
-
----
-
-## ❓ Q&A Combat Advanced Training
-
-### 🥊 Championship Q&A Mastery
-
-**🔥 Likely Challenge Questions for Practice**:
-
-**Category 1: Method Challenges**
-- "How do you know your sample size is adequate?"
-- "What about confounding factors you didn't consider?"
-- "How generalizable are these findings?"
-
-**Category 2: Implementation Reality**
-- "What would this actually cost to implement?"
-- "How long would it take to see results?"
-- "Who would be responsible for making this happen?"
-
-**Category 3: Alternative Explanations**
-- "Couldn't these results be explained by [X] instead?"
-- "What if your assumptions about [Y] are wrong?"
-- "How does this compare to [competitor/alternative]?"
-
-### 🎯 Champion Response Strategies
-
-**The Professional Response Formula**:
-
-1. **Acknowledge** (5 seconds): "That's an excellent question about..."
-2. **Clarify** (10 seconds): "Based on my analysis, here's what I found..."
-3. **Redirect** (10 seconds): "What this means for your decision is..."
-4. **Next Steps** (5 seconds): "I'd be happy to follow up with more detail on..."
-
-::: {.callout-tip}
-## Champion Mindset for Q&A
-
-**Remember**: Questions are opportunities to demonstrate expertise, not attacks to defend against.
-
-**Key**: Confident acknowledgment of limitations builds credibility more than defensive responses.
+::: {.concept-card}
+A question is a chance to show your reasoning, not an attack to defend against. Acknowledging a limit builds more credibility than deflecting.
 :::
 
 ---
 
-# Training Block 3: Networking Academy {background-color="#2E8B57"}
+## A useful answer, in four moves
+
+::: {.activity-card}
+[The response shape]{.card-title}
+1. **Acknowledge** — "Good question about ___."
+2. **Answer** — "Here is what I found / checked."
+3. **Connect** — "What this means for your decision is ___."
+4. **Offer** — "I can follow up with the detail in the capsule."
+:::
+
+Keep it short. A clear, honest answer beats a long defensive one.
 
 ---
 
-## 🤝 Professional Networking Championship Training
+[Session 2 · Round table]{.kicker}
 
-### 🎯 Object Fair Networking Strategy
+## Round table on YOUR weakest component
 
-**🏆 Networking Goals for Object Fair**:
-- **Build Professional Relationships**: Connect with industry experts
-- **Demonstrate Competence**: Show evidence-based design mastery
-- **Create Opportunities**: Open doors for internships, jobs, collaborations
-- **Learn Industry Insights**: Gain perspective on real-world applications
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node} [Threshold]{.node} [Action]{.node .is-current}
+:::
 
-### 🎪 Networking Skills Olympics
-
-**Event 1: Professional Introduction Mastery** (5 minutes)
-- Confident handshake and eye contact
-- Memorable personal branding
-- Clear value proposition communication
-
-**Event 2: Business Card Exchange Excellence** (5 minutes)
-- Professional card design and presentation
-- Follow-up strategy development
-- Contact information management
-
-**Event 3: Industry Conversation Navigation** (10 minutes)
-- Professional small talk and relationship building
-- Technical competence demonstration
-- Career guidance and opportunity exploration
+Upload one rough material to Slack before Session 2 — a Practice Case section, Research Brief fragment, final Object Card draft, or a Reproducibility Capsule index. [feeds A4]{.feeds-tag}
 
 ---
 
-## 💼 Professional Introduction Championship
+## Reconstruct your weakest component in four steps
 
-### 🎭 Introduction Formula Mastery
+**Object this week: your weakest A4 component, as a reviewer will meet it.**
 
-**🔥 The Champion Introduction Structure**:
+::: {.recall-4step}
+::: {.step}**Did** What does this component currently claim and show? :::
+::: {.step}**Assumed** What am I assuming the reader already knows? :::
+::: {.step}**Risk** Why is this the weakest of the four — what is missing? :::
+::: {.step}**Verify** What one fix would most improve it before submission? :::
+:::
 
-**15 seconds**: "Hi, I'm [Name], I'm studying [Program] and I research [Area]"
-
-**15 seconds**: "I just presented my work on [Key Finding/Impact]"
-
-**10 seconds**: "I'd love to hear your perspective on [Relevant Industry Topic]"
-
-### ⚡ Practice Championship Rounds
-
-**Speed Networking Simulation**:
-- **2 minutes per "industry professional"** (rotating classmates)
-- Practice different introduction variations
-- Receive feedback on professional presence
-- Build confidence for real Object Fair networking
-
-**🏆 Champion Categories**:
-- **Most Professional**: Industry-appropriate presence and communication
-- **Most Memorable**: Unique value proposition and personal branding
-- **Best Industry Connection**: Most relevant conversation starters
-- **Most Confident**: Natural and engaging interpersonal skills
-
----
-
-## 📇 Business Card & Follow-Up Strategy
-
-### 🎨 Professional Branding Lab
-
-**⚡ 5-Minute Business Card Clinic**:
-
-**Champion Business Card Elements**:
-- **Clear Contact Information**: Name, email, phone, LinkedIn
-- **Professional Title/Focus**: Evidence-based design researcher/architect
-- **Key Differentiator**: What makes you unique and valuable
-- **Follow-up Prompt**: Reason for continued conversation
-
-### 📧 Professional Follow-Up Mastery
-
-**🔥 Champion Follow-Up Email Template**:
-
-```
-Subject: Thank you for the insights on [specific topic] - [Your name]
-
-Dear [Contact name],
-
-Thank you for the valuable conversation about [specific detail from conversation]. Your point about [specific insight] particularly resonated with my research on [your topic].
-
-I've attached my Object Fair presentation as you suggested, with special attention to [element they were interested in].
-
-I'd welcome the opportunity to [specific next step based on conversation - informational interview, project collaboration, etc.] at your convenience.
-
-Thank you again for your time and insights.
-
-Best regards,
-[Your name]
-[Contact information]
-```
-
-::: {.callout-success}
-## Networking Champion Success Metrics
-
-**Quality over Quantity**: Better to have 3 meaningful conversations than 15 superficial exchanges
-
-**Professional Goals**: 
-- 2-3 industry contact exchanges
-- 1-2 potential mentor relationships  
-- 1 follow-up opportunity (informational interview, project discussion, etc.)
+::: {.grading-note}
+Post your four-step under your component. Posting + an honest reconstruction is the graded unit. Presenting is welcomed and earns credit; it is never required and never scored as performance. Volunteers go first; random draw may fill the remaining examples.
 :::
 
 ---
 
-# Final Submission Perfection & Logistics {background-color="#8B4513"}
+## Triage what you hear
 
----
+You will get more notes than you can act on before submission. Sort first.
 
-## 📋 Championship Package Assembly
+| Priority | Meaning | When to fix |
+|---|---|---|
+| **Critical** | a component fails to answer its question | this week |
+| **Important** | credibility or clarity gap | before submission |
+| **Polish** | would improve, not essential | if time allows |
 
-### 🏆 Complete A4 Package Excellence
-
-**📁 Digital Submission Requirements**:
-
-**Master Document Package**:
-- [ ] **Complete A4 PDF**: All components integrated professionally
-- [ ] **Individual Component Files**: Research Brief, Practice Case, Object Card, Reproducibility Capsule
-- [ ] **Presentation Slides**: PowerPoint format, Object Fair ready
-- [ ] **Self-Assessment Reflection**: 1 page professional development summary
-
-**🎯 Quality Assurance Championship Checklist**:
-
-**Content Excellence**:
-- [ ] All findings consistent across components
-- [ ] Stakeholder relevance clear throughout
-- [ ] Professional writing and error-free presentation
-- [ ] Evidence properly cited and referenced
-
-**Visual Excellence**:
-- [ ] All figures publication-quality and clear
-- [ ] Object Card print-ready at display size
-- [ ] Consistent professional design theme
-- [ ] Portfolio-worthy presentation materials
-
----
-
-## 🎪 Object Fair Day Championship Strategy
-
-### 🏆 Day-of-Competition Excellence Plan
-
-**🕒 Pre-Competition Preparation**:
-- **90 minutes before**: Arrive early for technology testing
-- **60 minutes before**: Object Card display setup and material organization
-- **30 minutes before**: Mental preparation and networking with early arrivals
-- **Competition time**: Professional presentation delivery
-
-**⚔️ Competition Performance Strategy**:
-- **Opening Energy**: Confident introduction and stakeholder relevance
-- **Core Content**: Evidence presentation with professional conviction
-- **Q&A Excellence**: Gracious question handling and expert responses
-- **Closing Impact**: Clear action items and professional networking
-
-**🎊 Post-Competition Excellence**:
-- **Network Like a Champion**: Engage professionals with prepared conversation starters
-- **Learn from Peers**: Study successful strategies from fellow competitors
-- **Document Success**: Collect feedback and contact information for follow-up
-- **Celebrate Achievement**: Acknowledge significant accomplishment and growth
-
----
-
-## 🎯 Championship Commitment Ceremony
-
-### 🏆 Final Preparation Pledge
-
-::: {.callout-important icon=false}
-## Week 11 Championship Checklist
-
-**🥇 Gold Medal Preparation**:
-
-**Competition Content**:
-- [ ] **All Arena Feedback Integrated**: Every improvement implemented
-- [ ] **Professional Polish Complete**: Publication-quality materials
-- [ ] **Presentation Mastered**: Confident 6-8 minute delivery
-- [ ] **Q&A Prepared**: Ready for challenging professional questions
-
-**Professional Presence**:
-- [ ] **Business Cards Ready**: Professional contact and branding
-- [ ] **Networking Strategy**: Conversation starters and follow-up plan
-- [ ] **Industry Presence**: Appropriate attire and professional demeanor
-- [ ] **Champion Mindset**: Confident representation of evidence-based design
-
-**Championship Mindset**:
-- [ ] **Value Demonstration**: Ready to show professional competence
-- [ ] **Learning Orientation**: Open to feedback and industry insights
-- [ ] **Peer Support**: Committed to celebrating collective success
-- [ ] **Professional Growth**: Viewing Object Fair as career investment
-
-**Commitment Level Declaration**: Stand and announce your championship preparation level! 📣
+::: {.warning-card}
+Fix one critical item well rather than ten polish items poorly.
 :::
 
 ---
 
-## 👑 Championship Mindset Final Training
+## Final submission checklist
 
-### 🔥 Champion Psychology
+Run this before you submit the package.
 
-::: {.callout-warning icon=false}
-## The Champion's Creed
-
-**All championship competitors stand and recite:**
-
-*"I have transformed my research into professional excellence."*
-
-*"I will represent evidence-based design with confidence and competence."*
-
-*"I will network professionally and build relationships that advance the field."*
-
-*"I will demonstrate not just what I learned, but who I have become as a professional."*
-
-*"At Object Fair, I compete not just for myself, but for the advancement of evidence-based design."*
-
-**Championship Commitment**: Embrace a fellow competitor and commit to mutual success! 🏆🤝
+::: {.activity-card}
+[Quality assurance — check each]{.card-title}
 :::
 
-### 🌟 Championship Visualization
-
-**Close your eyes and visualize Object Fair success**:
-- You deliver your presentation with confidence and professional presence
-- Industry professionals engage with genuine interest in your work
-- You handle questions with expertise and gracious competence
-- You network effectively and create valuable professional relationships
-- You feel proud of representing evidence-based design excellence
-
-**Open your eyes as Object Fair champions!** 👑
+| Component | Done when |
+|---|---|
+| Practice Case | what changed is clear, and who it was for |
+| Research Brief | the reasoning and evidence are honest and cited |
+| Object Card | recommendation + one figure readable in 30 seconds |
+| Reproducibility Capsule | inputs, steps, and files let a stranger re-run it |
+| Across all four | findings consistent, spine traceable end to end |
 
 ---
 
-**🎯 Object Fair Day Preview**: Championship competition and professional networking celebration
+## Object Fair, the day
 
-*"Champions are not born—they are forged through preparation, polished through practice, and proven through performance!"* ⭐
+A calm checklist, not a performance plan.
 
-**Next week: Championship competition at Object Fair!** 🏆
+:::: {.two-col}
+::: {.activity-card}
+[Before you arrive]{.card-title}
+- test any display or files early
+- set up the Object Card where it reads at a glance
+- have the capsule index ready to point to
+:::
+
+::: {.activity-card}
+[During the fair]{.card-title}
+- open with the decision and who it is for
+- let the one figure do the work
+- answer questions in the four-move shape
+- a few real conversations beat many quick ones
+:::
+::::
 
 ---
 
-*"You are ready. You are prepared. You are champions. Go dominate Object Fair!"* 👑
+## Week 11 milestone
+
+::: {.concept-card}
+[Before the Object Fair]{.card-title}
+1. each component answers its own question clearly
+2. the weakest component you named is fixed
+3. the Object Card reads in 30 seconds
+4. the capsule lets a stranger inspect the method
+:::
+
+---
+
+[Exit]{.kicker}
+
+## Your final fix, in one line
+
+Before you leave, write and post:
+
+::: {.reflection-card}
+**My weakest A4 component is ___, and the one fix I will make before submission is ___.**
+:::
+
+Next week is the Object Fair: you present the package and discuss it with peers and reviewers.

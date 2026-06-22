@@ -1,94 +1,116 @@
 ---
 title: "Week 6: Evidence and Pathway Mapping"
 subtitle: "From a Good Question to a Realistic Workflow Plan"
+output-file: week-06.html
 format:
   revealjs:
-    theme: simple
+    theme: [default, arch7476.scss]
     transition: slide
     slide-number: true
     incremental: true
     width: 1400
     height: 900
-    center: true
+    center: false
+    footer: "Week 6 · feeds A2 + A4 branch"
 ---
 
 ## Today's Agenda
 
-- map evidence sources
-- compare access, quality, and fit
-- commit to one primary pathway
-- identify failure points early
-- finalize A2
+:::: {.two-col}
+::: {.concept-card}
+[Session 1]{.label .concept}
+
+[Lecture / decision gate]{.card-title}
+
+- triage the evidence you already use
+- compare pathways honestly
+- choose Route A or Route B
+- name the failure points early
+:::
+
+::: {.activity-card}
+[Session 2]{.label .activity}
+
+[Round table on YOUR work]{.card-title}
+
+- declare your route and smallest useful output
+- reconstruct that choice in four steps
+- finalize A2, branch A4
+:::
+::::
+
+::: {.reflection-card}
+This is the **A2 decision gate** and your **A4 route declaration**. We commit to one direction together, gently and on purpose.
+:::
 
 ---
 
-## Session 2: Project Reasoning Round Table
+[Strategic, not exhaustive]{.kicker}
 
-Upload one rough material to Slack before Session 2:
+## Evidence mapping is a decision, not a collection
 
-- workflow sketch
-- pathway matrix
-- A4 branch declaration draft
-- diagram of the smallest useful output
+You are not collecting everything. You are deciding:
 
-Speak for 60-90 seconds:
+- what actually matters to this decision
+- what is realistically accessible this semester
+- what is convincing for **your** audience
+- what your chosen pathway can realistically process
 
-**Which route are you choosing, and what is the smallest useful output?**
-
-This feeds **A2: Primary Workflow Selection** and **A4 Branch Declaration**.
-
-Volunteers go first; random draw may fill the remaining examples.
+::: {.concept-card}
+A source earns its place only when it could change the scheme, not decorate the presentation.
+:::
 
 ---
 
-## Evidence Mapping Is Strategic
+## Stand-alone prompt
 
-You are not collecting everything.
+![Kai Tak Sports Park](../assets/examples/kai-tak-sports-park.jpg){height="460"}
 
-You are deciding:
-
-- what matters
-- what is accessible
-- what is convincing for the audience
-- what your pathway can realistically process
+If this were your next studio decision, which evidence sources would actually **change the scheme** rather than merely decorate the presentation?
 
 ---
 
-## Stand-Alone Prompt
+## Evidence categories to sort
 
-![Kai Tak Sports Park](../assets/examples/kai-tak-sports-park.jpg){height="500"}
-
-If this is your next studio decision, which evidence sources would actually change the scheme rather than merely decorate the presentation?
-
----
-
-## Evidence Categories to Sort
-
-- precedent and case studies
+:::: {.two-col}
+::: {.concept-card}
+[Often decisive]{.card-title}
 - published research
 - standards and code
 - site observations
 - open datasets
-- interviews or surveys
 - simulations
 - maps and spatial layers
+:::
+
+::: {.example-card}
+[Often supporting only]{.card-title}
+- precedent and case studies
+- interviews or surveys
+- one-off articles
+
+Useful for framing, rarely enough on their own.
+:::
+::::
 
 Not every category belongs in every project.
 
 ---
 
-## Evaluate Every Source
+## Triage every source
 
-Ask:
+Ask four questions of each one:
 
-- is it relevant?
-- is it trustworthy?
-- is it local enough?
-- can I actually use it this semester?
+::: {.recall-4step}
+::: {.step}**Relevant** Does it bear on *this* decision? :::
+::: {.step}**Trustworthy** Can the source be inspected and trusted? :::
+::: {.step}**Local** Is it close enough to your site and program? :::
+::: {.step}**Usable** Can I actually use it this semester? :::
+:::
 
 ---
 
-## A Simple Source Triage Table
+## A simple source triage table
 
 | Source | relevance | access | confidence | best use |
 |---|---|---|---|---|
@@ -96,9 +118,73 @@ Ask:
 | planning dataset | high | medium | high | site constraints |
 | one-off online article | low | easy | low | not enough on its own |
 
+::: {.concept-card}
+The table is the argument: relevance and confidence decide what leads, access decides what is feasible.
+:::
+
 ---
 
-## Compare the Pathways Directly
+[The key fork]{.kicker}
+
+## Two routes, one set of A4 components
+
+Everyone arrives at the **same A4 package**. You choose *how* you get there.
+
+```{mermaid}
+flowchart LR
+    A[Route A: retrospective redesign<br/>past studio board] --> A2[redesigned decision]
+    B[Route B: live studio application<br/>current studio board] --> B2[active design move]
+    A2 --> C[Same A4 components:<br/>decision · evidence · workflow · output · threshold]
+    B2 --> C
+```
+
+::: {.warning-card}
+[One decision, not the whole project]{.card-title}
+You are mapping a pathway for **one** decision and its smallest useful output — not re-planning your entire studio project.
+:::
+
+---
+
+## The fork, side by side
+
+:::: {.two-col}
+::: {.concept-card}
+[Route A · retrospective redesign]{.card-title}
+- start from a **past studio board**
+- pick one decision you would now redo
+- arrive at a **redesigned decision** with evidence behind it
+- safest when your current studio is too unsettled to instrument
+:::
+
+::: {.activity-card}
+[Route B · live studio application]{.card-title}
+- start from your **current studio board**
+- pick one decision you are facing now
+- arrive at an **active design move** you can apply this term
+- best when a live decision genuinely depends on the analysis
+:::
+::::
+
+Both converge on the same A4 components. Pick the route that lets you do honest work now.
+
+---
+
+## Evidence → pathway matrix
+
+Let the kind of evidence that drives your decision point to a pathway.
+
+| If the deciding evidence is… | …the natural pathway is | strongest when |
+|---|---|---|
+| comparison of options and thresholds | `spreadsheet` | comparison logic is the core task |
+| location, overlap, spatial reach | `GIS` | location drives the decision |
+| repeatable analysis and figures | `Python` | repeatability and flexibility matter |
+| families of design options | `GH / parametric` | design variables are central |
+| performance under assumptions | `BIM/BEM / simulation` | model-based testing is needed |
+| an accelerable, verifiable step | `AI-assisted` | the result can be inspected |
+
+---
+
+## Compare the pathways directly
 
 | Pathway | strongest when | weak when |
 |---|---|---|
@@ -107,67 +193,121 @@ Ask:
 | `Python` | repeatability and flexible analysis matter | setup outweighs the analytical benefit |
 | `GH / parametric` | design variables and option families are central | there is no clear evaluation output |
 | `BIM/BEM / simulation` | performance assumptions need model-based testing | setup or cleanup exceeds the decision value |
-| `AI-assisted` | a workflow component can be accelerated and verified | the result cannot be inspected or reproduced |
+| `AI-assisted` | a component can be accelerated and verified | the result cannot be inspected or reproduced |
 
 ---
 
-## Pathway Choice Should Feel Boring
+## Pathway choice should feel boring
 
 If the pathway is right, it should feel obvious in hindsight.
 
-Wrong reason:
+:::: {.two-col}
+::: {.warning-card}
+[Wrong reason]{.card-title}
+"Python seems more impressive."
+:::
 
-- “Python seems more impressive”
-
-Better reason:
-
-- “The question is spatial, and GIS is the shortest path to a useful output”
+::: {.concept-card}
+[Better reason]{.card-title}
+"The question is spatial, and GIS is the shortest path to a useful output."
+:::
+::::
 
 ---
 
-## A2 Work Session
+## A2 work session
 
 By the end of class, each student should have:
 
 - one clear decision context
-- one evidence/pathway matrix draft
-- one chosen pathway
+- one evidence → pathway matrix draft
+- one chosen route (A or B) and one chosen pathway
 - one minimal pilot target for A3
 
 ---
 
-## Pathway Commitment Drill
+## Pathway commitment drill
 
-Complete this sentence:
+Complete this sentence out loud, then post it:
 
+::: {.concept-card}
 **I am choosing `spreadsheet` / `GIS` / `Python` / `GH` / `BIM-BEM` / `AI-assisted` because my decision depends primarily on ________, and the minimum useful output will be ________.**
+:::
 
-If you cannot finish the sentence clearly, the pathway is not chosen yet.
+::: {.warning-card}
+If you cannot finish the sentence clearly, the pathway is not chosen yet — and that is fine to discover here.
+:::
 
 ---
 
-## Warning Signs
+## Warning signs
 
+::: {.warning-card}
+[Catch these now]{.card-title}
 - too many source types with no hierarchy
 - a pathway choice that does not change the method
 - no clear output format
 - a question still too large for a prototype
+:::
 
 ---
 
-## End-of-Class Deliverables
+## BREAK {.big-break}
+
+Take 10 minutes.
+
+When you return, post one rough material to Slack for Session 2 — workflow sketch, pathway matrix, A4 branch draft, or a diagram of the smallest useful output.
+
+---
+
+[Session 2 · Round table]{.kicker}
+
+## Project Reasoning Round Table
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node .is-current} [Threshold]{.node} [Action]{.node}
+:::
+
+Upload one rough material to Slack before Session 2 — workflow sketch, pathway matrix, A4 branch declaration draft, or a diagram of the smallest useful output. [feeds A2]{.feeds-tag}
+
+---
+
+## Reconstruct your route in four steps
+
+**Object this week: your chosen route and its smallest useful output.**
+
+::: {.recall-4step}
+::: {.step}**Did** Which route did I pick, and what output am I aiming at? :::
+::: {.step}**Assumed** What am I assuming the evidence will show or allow? :::
+::: {.step}**Risk** Where could this route stall or the output stay out of reach? :::
+::: {.step}**Verify** What is the smallest thing I can do to confirm the route works? :::
+:::
+
+::: {.grading-note}
+Speak for 60–90 seconds: **which route are you choosing, and what is the smallest useful output?** Posting + an honest reconstruction is the graded unit — not how you spoke. Volunteers go first; random draw may fill the remaining examples.
+:::
+
+---
+
+## End-of-class deliverables
 
 Leave with:
 
-- one evidence/pathway matrix draft
-- one chosen primary pathway
+- one evidence → pathway matrix draft
+- one chosen primary pathway and route (A or B)
 - one list of necessary input files or sources
 - one description of the smallest viable A3 prototype
 
 ---
 
-## Submission Logic
+[Submission logic]{.kicker}
 
-A strong A2 should make it easy to answer:
+## Make A2 easy to read
+
+::: {.concept-card}
+A strong A2 lets a reader answer three questions without your help:
 
 **Why this evidence? Why this pathway? Why now?**
+:::
+
+Week 7 begins A3: you build the smallest viable prototype of the route you declared today.

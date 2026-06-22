@@ -28,71 +28,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -384,6 +319,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -397,85 +335,96 @@
 </div>
 
 </section>
-<section id="todays-agenda" class="slide level2 center">
+<section id="todays-agenda" class="slide level2">
 <h2>Today’s Agenda</h2>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="label concept">Session 1</span></p>
+<p><span class="card-title">Lecture / tool demo</span></p>
 <ul>
 <li class="fragment">BIM and BEM are not the same model</li>
 <li class="fragment">how BIM files become BEM files</li>
 <li class="fragment">what gets lost in translation</li>
 <li class="fragment">IFC vs <code>gbXML</code></li>
-<li class="fragment">debugging exercises and pathway commitment</li>
 </ul>
-</section>
-<section id="session-2-project-reasoning-round-table" class="slide level2 center">
-<h2>Session 2: Project Reasoning Round Table</h2>
-<p>Upload one rough material to Slack before Session 2:</p>
+</div>
+<div class="activity-card">
+<p><span class="label activity">Session 2</span></p>
+<p><span class="card-title">Round table on YOUR model</span></p>
 <ul>
-<li class="fragment">BIM/BEM screenshot</li>
-<li class="fragment">section or envelope image</li>
-<li class="fragment">model diagram</li>
-<li class="fragment">performance claim from your project</li>
+<li class="fragment">upload one BIM/BEM material to Slack</li>
+<li class="fragment">reconstruct it in four steps</li>
+<li class="fragment">name one performance claim and its weakest link</li>
 </ul>
-<p>Speak for 60-90 seconds:</p>
-<p><strong>What would a performance model need to know, and what would it probably simplify?</strong></p>
-<p>This feeds <strong>A2: Tool Translation Matrix</strong> and <strong>A2: Workflow Feasibility</strong>.</p>
-<p>Volunteers go first; random draw may fill the remaining examples.</p>
+</div>
+</div>
+<div class="reflection-card">
+<p>This is a tool week, but the question stays the same: what would make a performance claim defensible, and where does the workflow quietly break?</p>
+</div>
 </section>
-<section id="why-this-week-matters" class="slide level2 center">
-<h2>Why This Week Matters</h2>
-<p>Even if your semester pathway is not simulation-heavy, you still need to understand:</p>
+<section class="slide level2">
+
+<p><span class="kicker">Why this week matters</span></p>
+</section>
+<section id="even-if-you-never-run-a-simulation" class="slide level2">
+<h2>Even if you never run a simulation</h2>
+<p>You still need to read performance claims with care.</p>
 <ul>
 <li class="fragment">what performance claims are built from</li>
 <li class="fragment">why some model outputs are more trustworthy than others</li>
 <li class="fragment">where BIM/BEM workflows break in practice</li>
 </ul>
-</section>
-<section id="stand-alone-case-prompts" class="slide level2 center">
-<h2>Stand-Alone Case Prompts</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../assets/examples/the-edge-amsterdam.jpg" height="280"></p>
-<figcaption>The Edge, Amsterdam</figcaption>
-</figure>
-</div>
-<p>What kinds of evidence would support a claim about workplace performance here?</p>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../assets/examples/california-academy-of-sciences.jpg" height="280"></p>
-<figcaption>California Academy of Sciences</figcaption>
-</figure>
-</div>
-<p>What kinds of evidence would support a claim about environmental performance here?</p>
-</div>
+<div class="concept-card">
+<p>A simulation number is only as good as the assumptions and cleanup behind it.</p>
 </div>
 </section>
-<section id="what-are-bim-and-bem" class="slide level2 center">
-<h2>🏗️ What Are BIM and BEM?</h2>
-<p><strong>BIM</strong></p>
+<section class="slide level2">
+
+<p><span class="kicker">The core distinction</span></p>
+</section>
+<section id="what-are-bim-and-bem" class="slide level2">
+<h2>What are BIM and BEM?</h2>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="card-title">BIM</span></p>
 <ul>
 <li class="fragment">digital model of physical and functional building characteristics</li>
 <li class="fragment">serves design, construction, coordination, and facility management</li>
 <li class="fragment">prioritizes geometry, materials, relationships, and documentation</li>
 </ul>
-<p><strong>BEM</strong></p>
+</div>
+<div class="concept-card">
+<p><span class="card-title">BEM</span></p>
 <ul>
 <li class="fragment">computational model of thermal behavior and energy flows</li>
 <li class="fragment">serves analysis, optimization, and compliance</li>
 <li class="fragment">prioritizes zones, schedules, systems, weather, and performance assumptions</li>
 </ul>
+</div>
+</div>
 </section>
-<section id="same-building-different-core-questions" class="slide level2 center">
-<h2>Same Building, Different Core Questions</h2>
-<p><strong>BIM asks:</strong><br>
-What do we build, where does it go, and how is it put together?</p>
-<p><strong>BEM asks:</strong><br>
-How will it behave over time when weather, people, and systems act on it?</p>
+<section id="same-building-different-core-questions" class="slide level2">
+<h2>Same building, different core questions</h2>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="card-title">BIM asks</span> What do we build, where does it go, and how is it put together?</p>
+</div>
+<div class="concept-card">
+<p><span class="card-title">BEM asks</span> How will it behave over time when weather, people, and systems act on it?</p>
+</div>
+</div>
 </section>
-<section id="bim-data-priorities" class="slide level2 center">
-<h2>BIM Data Priorities</h2>
+<section id="same-building-two-models" class="slide level2">
+<h2>Same building, two models</h2>
+<div class="tool-panel demo-pending">
+<p>::: {.zone .input}<strong>BIM view</strong> walls · rooms · floors · doors · material layers · element relationships ::: ::: {.zone .operation}<strong>BEM view</strong> thermal zones · heat-transfer surfaces · schedules · weather · HVAC systems ::: ::: {.zone .output}<strong>Shared object</strong> the same wall exists in both — but not for the same reason ::: ::: {.zone .check}<strong>Quality check</strong> does each model carry what its analysis actually needs? :::</p>
+</div>
+<div class="warning-card">
+<p><span class="card-title">Commonly fails to translate</span> Thermal <strong>zoning</strong>, occupancy and system <strong>schedules</strong>, real <strong>constructions</strong> (R-value, SHGC, mass), and building <strong>orientation</strong>.</p>
+</div>
+</section>
+<section id="bim-data-priorities" class="slide level2">
+<h2>BIM data priorities</h2>
 <ul>
 <li class="fragment">project, site, building, levels</li>
 <li class="fragment">spaces and rooms</li>
@@ -484,8 +433,8 @@ How will it behave over time when weather, people, and systems act on it?</p>
 <li class="fragment">element relationships and construction logic</li>
 </ul>
 </section>
-<section id="bem-data-priorities" class="slide level2 center">
-<h2>BEM Data Priorities</h2>
+<section id="bem-data-priorities" class="slide level2">
+<h2>BEM data priorities</h2>
 <ul>
 <li class="fragment">thermal zones</li>
 <li class="fragment">heat-transfer surfaces</li>
@@ -495,8 +444,8 @@ How will it behave over time when weather, people, and systems act on it?</p>
 <li class="fragment">weather and shading context</li>
 </ul>
 </section>
-<section id="quick-check-bim-or-bem" class="slide level2 center">
-<h2>Quick Check: BIM or BEM?</h2>
+<section id="quick-check-bim-or-bem" class="slide level2">
+<h2>Quick check: BIM or BEM?</h2>
 <ol type="1">
 <li class="fragment">Exact window manufacturer and product code</li>
 <li class="fragment">Occupancy schedule by hour</li>
@@ -504,10 +453,12 @@ How will it behave over time when weather, people, and systems act on it?</p>
 <li class="fragment">Construction sequencing</li>
 <li class="fragment">Cooling setpoint and operating hours</li>
 </ol>
-<p><strong>Pair task:</strong> label each item <code>BIM</code>, <code>BEM</code>, or <code>both</code>.</p>
+<div class="activity-card">
+<p><span class="card-title">Pair task</span> Label each item <code>BIM</code>, <code>BEM</code>, or <code>both</code>.</p>
+</div>
 </section>
-<section id="quick-check-answers" class="slide level2 center">
-<h2>Quick Check Answers</h2>
+<section id="quick-check-answers" class="slide level2">
+<h2>Quick check answers</h2>
 <ul>
 <li class="fragment">exact manufacturer and product code: mostly <code>BIM</code></li>
 <li class="fragment">occupancy schedule by hour: <code>BEM</code></li>
@@ -515,10 +466,16 @@ How will it behave over time when weather, people, and systems act on it?</p>
 <li class="fragment">construction sequencing: <code>BIM</code></li>
 <li class="fragment">cooling setpoint and operation hours: <code>BEM</code></li>
 </ul>
-<p><strong>Key insight:</strong> the same wall can exist in both models, but not for the same reason.</p>
+<div class="concept-card">
+<p>The same wall can exist in both models, but not for the same reason.</p>
+</div>
 </section>
-<section id="how-bim-files-get-made" class="slide level2 center">
-<h2>How BIM Files Get Made</h2>
+<section class="slide level2">
+
+<p><span class="kicker">How the files come to exist</span></p>
+</section>
+<section id="how-bim-files-get-made" class="slide level2">
+<h2>How BIM files get made</h2>
 <ul>
 <li class="fragment"><strong>manual BIM authoring</strong> in Revit / ArchiCAD / similar</li>
 <li class="fragment"><strong>3D import</strong> from Rhino, SketchUp, or other geometric models</li>
@@ -526,8 +483,8 @@ How will it behave over time when weather, people, and systems act on it?</p>
 </ul>
 <p>Each path changes how much cleanup is needed before any energy analysis begins.</p>
 </section>
-<section id="how-bem-files-get-made" class="slide level2 center">
-<h2>How BEM Files Get Made</h2>
+<section id="how-bem-files-get-made" class="slide level2">
+<h2>How BEM files get made</h2>
 <ul>
 <li class="fragment">translate from an existing BIM model</li>
 <li class="fragment">build a direct energy model from drawings and assumptions</li>
@@ -535,70 +492,102 @@ How will it behave over time when weather, people, and systems act on it?</p>
 </ul>
 <p>All three approaches are common. None is frictionless.</p>
 </section>
-<section id="workflow-map-design-to-analysis" class="slide level2 center">
-<h2>Workflow Map — Design to Analysis</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource mermaid number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>graph TB</span>
-<span id="cb1-2"><a></a>    A[Design Intent] --&gt; B[BIM Authoring Tool]</span>
-<span id="cb1-3"><a></a>    B --&gt; C[Native BIM File]</span>
-<span id="cb1-4"><a></a>    C --&gt; D{Export Format}</span>
-<span id="cb1-5"><a></a>    D --&gt; E[IFC]</span>
-<span id="cb1-6"><a></a>    D --&gt; F[gbXML]</span>
-<span id="cb1-7"><a></a>    F --&gt; G[Energy Modeling Tool]</span>
-<span id="cb1-8"><a></a>    G --&gt; H[Initial BEM]</span>
-<span id="cb1-9"><a></a>    H --&gt; I[Manual Cleanup]</span>
-<span id="cb1-10"><a></a>    I --&gt; J[Schedules, Systems, Controls, Weather]</span>
-<span id="cb1-11"><a></a>    J --&gt; K[Complete BEM]</span>
-<span id="cb1-12"><a></a>    K --&gt; L[Simulation Results]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="workflow-map-design-to-analysis" class="slide level2">
+<h2>Workflow map — design to analysis</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TB
+    A[Design Intent] --&gt; B[BIM Authoring Tool]
+    B --&gt; C[Native BIM File]
+    C --&gt; D{Export Format}
+    D --&gt; E[IFC]
+    D --&gt; F[gbXML]
+    F --&gt; G[Energy Modeling Tool]
+    G --&gt; H[Initial BEM]
+    H --&gt; I[Manual Cleanup]
+    I --&gt; J[Schedules, Systems, Controls, Weather]
+    J --&gt; K[Complete BEM]
+    K --&gt; L[Simulation Results]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
-<section id="the-translation-gap" class="slide level2 center">
-<h2>The Translation Gap</h2>
-<p>When BIM becomes BEM, problems usually come from four categories:</p>
+<section class="slide level2">
+
+<p><span class="kicker">The translation gap</span></p>
+</section>
+<section id="when-bim-becomes-bem" class="slide level2">
+<h2>When BIM becomes BEM</h2>
+<p>Problems usually come from four categories:</p>
 <ul>
 <li class="fragment">geometry</li>
 <li class="fragment">zoning</li>
 <li class="fragment">constructions</li>
 <li class="fragment">operations</li>
 </ul>
+<div class="concept-card">
+<p>Translation loss is normal, not an edge case. The skill is anticipating it.</p>
+</div>
 </section>
-<section id="geometry-issues" class="slide level2 center">
-<h2>Geometry Issues</h2>
+<section id="geometry-issues" class="slide level2">
+<h2>Geometry issues</h2>
+<div class="warning-card">
 <ul>
 <li class="fragment">curved facades oversimplified into straight planes</li>
 <li class="fragment">tiny modeled objects exported as meaningful surfaces</li>
 <li class="fragment">orientation or context errors</li>
 <li class="fragment">missing adjacent buildings and shading</li>
 </ul>
+</div>
 </section>
-<section id="thermal-zoning-issues" class="slide level2 center">
-<h2>Thermal Zoning Issues</h2>
+<section id="thermal-zoning-issues" class="slide level2">
+<h2>Thermal zoning issues</h2>
+<div class="warning-card">
 <ul>
 <li class="fragment">BIM spaces do not map neatly to thermal zones</li>
 <li class="fragment">open offices become fragmented or over-zoned</li>
 <li class="fragment">plenums, circulation zones, or mixed-use spaces disappear or split badly</li>
 </ul>
+</div>
 </section>
-<section id="construction-and-material-gaps" class="slide level2 center">
-<h2>Construction and Material Gaps</h2>
+<section id="construction-and-material-gaps" class="slide level2">
+<h2>Construction and material gaps</h2>
+<div class="warning-card">
 <ul>
 <li class="fragment">walls export as generic “exterior wall”</li>
 <li class="fragment">layers, R-values, SHGC, and internal mass are incomplete</li>
 <li class="fragment">thermal bridges and details are ignored</li>
 </ul>
+</div>
 </section>
-<section id="operational-data-missing" class="slide level2 center">
-<h2>Operational Data Missing</h2>
+<section id="operational-data-missing" class="slide level2">
+<h2>Operational data missing</h2>
+<div class="warning-card">
 <ul>
 <li class="fragment">no occupancy schedules</li>
 <li class="fragment">no equipment or lighting schedules</li>
 <li class="fragment">no setpoints or control strategies</li>
 <li class="fragment">no HVAC system definitions</li>
 </ul>
-<p><strong>This is why a clean-looking import can still be analytically useless.</strong></p>
+</div>
+<p>This is why a clean-looking import can still be analytically useless.</p>
 </section>
-<section id="translation-detective-challenge" class="slide level2 center">
-<h2>🎯 Translation Detective Challenge</h2>
-<p><strong>Scenario:</strong> You exported a 5-story office building to <code>gbXML</code> and the first model run shows energy use at <strong>3x</strong> what you expected.</p>
-<p><strong>In groups, identify likely causes:</strong></p>
+<section class="slide level2">
+
+<p><span class="kicker">Translation diagnosis</span></p>
+</section>
+<section id="read-the-broken-translation" class="slide level2">
+<h2>Read the broken translation</h2>
+<div class="activity-card">
+<p><span class="card-title">Scenario</span> You exported a 5-story office building to <code>gbXML</code> and the first model run shows energy use at <strong>3x</strong> what you expected.</p>
+</div>
+<p>In small groups, work through:</p>
 <ol type="1">
 <li class="fragment">What probably happened to the thermal zones?</li>
 <li class="fragment">What is likely wrong with the HVAC assumptions?</li>
@@ -606,7 +595,11 @@ How will it behave over time when weather, people, and systems act on it?</p>
 <li class="fragment">What would you inspect first before trusting any output?</li>
 </ol>
 </section>
-<section id="ifc-vs-gbxml" class="slide level2 center">
+<section class="slide level2">
+
+<p><span class="kicker">The two bridges</span></p>
+</section>
+<section id="ifc-vs-gbxml" class="slide level2">
 <h2>IFC vs <code>gbXML</code></h2>
 <p>Both are bridges. Neither is a perfect bridge.</p>
 <table>
@@ -646,51 +639,55 @@ How will it behave over time when weather, people, and systems act on it?</p>
 </tbody>
 </table>
 </section>
-<section id="what-each-bridge-is-good-at" class="slide level2 center">
-<h2>What Each Bridge Is Good At</h2>
-<p><strong>IFC</strong></p>
+<section id="what-each-bridge-is-good-at" class="slide level2">
+<h2>What each bridge is good at</h2>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="card-title">IFC</span></p>
 <ul>
 <li class="fragment">archiving and coordination</li>
 <li class="fragment">multi-disciplinary interoperability</li>
 <li class="fragment">detailed building information</li>
 </ul>
-<p><strong><code>gbXML</code></strong></p>
+</div>
+<div class="concept-card">
+<p><span class="card-title"><code>gbXML</code></span></p>
 <ul>
 <li class="fragment">getting geometry and basic constructions into energy tools</li>
 <li class="fragment">faster processing</li>
 <li class="fragment">better starting point for thermal-zone workflows</li>
 </ul>
+</div>
+</div>
 </section>
-<section id="why-neither-solves-the-whole-problem" class="slide level2 center">
-<h2>Why Neither Solves the Whole Problem</h2>
+<section id="why-neither-solves-the-whole-problem" class="slide level2">
+<h2>Why neither solves the whole problem</h2>
+<div class="warning-card">
 <ul>
 <li class="fragment">manual cleanup is still required</li>
 <li class="fragment">vendor implementations vary</li>
 <li class="fragment">updates overwrite hand fixes</li>
 <li class="fragment">building design logic and energy logic are not the same thing</li>
 </ul>
+</div>
 </section>
-<section id="ideal-workflow-vs-real-workflow" class="slide level2 center">
-<h2>Ideal Workflow vs Real Workflow</h2>
-<p><strong>Ideal</strong></p>
-<ol type="1">
-<li class="fragment">update BIM</li>
-<li class="fragment">export cleanly</li>
-<li class="fragment">update BEM automatically</li>
-<li class="fragment">rerun analysis</li>
-<li class="fragment">feed changes back into design</li>
-</ol>
-<p><strong>Real</strong></p>
-<ol type="1">
-<li class="fragment">export once</li>
-<li class="fragment">spend days cleaning the BEM</li>
-<li class="fragment">design changes continue</li>
-<li class="fragment">model diverges</li>
-<li class="fragment">everyone hopes the gap is still “small enough”</li>
-</ol>
+<section id="ideal-workflow-vs-real-workflow" class="slide level2">
+<h2>Ideal workflow vs real workflow</h2>
+<div class="two-col">
+<div class="example-card">
+<p><span class="card-title">Ideal</span> 1. update BIM 2. export cleanly 3. update BEM automatically 4. rerun analysis 5. feed changes back into design</p>
+</div>
+<div class="warning-card">
+<p><span class="card-title">Real</span> 1. export once 2. spend days cleaning the BEM 3. design changes continue 4. model diverges 5. everyone hopes the gap is still “small enough”</p>
+</div>
+</div>
 </section>
-<section id="case-study-translation-gone-wrong" class="slide level2 center">
-<h2>Case Study: Translation Gone Wrong</h2>
+<section class="slide level2">
+
+<p><span class="kicker">A real case</span></p>
+</section>
+<section id="case-study-translation-gone-wrong" class="slide level2">
+<h2>Case study: translation gone wrong</h2>
 <ul>
 <li class="fragment">new 15,000 m² university research building</li>
 <li class="fragment">BIM in Revit with MEP coordination</li>
@@ -698,50 +695,49 @@ How will it behave over time when weather, people, and systems act on it?</p>
 <li class="fragment">goal: LEED Gold energy analysis</li>
 </ul>
 </section>
-<section id="case-study-timeline" class="slide level2 center">
-<h2>Case Study Timeline</h2>
-<p><strong>Week 1</strong></p>
-<ul>
-<li class="fragment">export appears successful</li>
-<li class="fragment">team believes the workflow is seamless</li>
-</ul>
-<p><strong>Week 2</strong></p>
-<ul>
-<li class="fragment">465 thermal zones created instead of about 30</li>
-<li class="fragment">HVAC missing</li>
-<li class="fragment">generic constructions everywhere</li>
-<li class="fragment">orientation wrong</li>
-</ul>
+<section id="case-study-timeline" class="slide level2">
+<h2>Case study timeline</h2>
+<div class="two-col">
+<div class="example-card">
+<p><span class="card-title">Week 1</span> - export appears successful - team believes the workflow is seamless</p>
+</div>
+<div class="warning-card">
+<p><span class="card-title">Week 2</span> - 465 thermal zones created instead of about 30 - HVAC missing - generic constructions everywhere - orientation wrong</p>
+</div>
+</div>
 </section>
-<section id="case-study-timeline-contd" class="slide level2 center">
-<h2>Case Study Timeline (cont’d)</h2>
-<p><strong>Weeks 3-4</strong></p>
-<ul>
-<li class="fragment">merge zones manually</li>
-<li class="fragment">define constructions and material properties</li>
-<li class="fragment">build schedules and HVAC systems</li>
-<li class="fragment">fix context and shading</li>
-</ul>
-<p><strong>Week 8</strong></p>
-<ul>
-<li class="fragment">design changes arrive</li>
-<li class="fragment">re-export means losing cleanup work</li>
-<li class="fragment">manual updates begin and divergence starts</li>
-</ul>
+<section id="case-study-timeline-contd" class="slide level2">
+<h2>Case study timeline (cont’d)</h2>
+<div class="two-col">
+<div class="activity-card">
+<p><span class="card-title">Weeks 3-4</span> - merge zones manually - define constructions and material properties - build schedules and HVAC systems - fix context and shading</p>
+</div>
+<div class="warning-card">
+<p><span class="card-title">Week 8</span> - design changes arrive - re-export means losing cleanup work - manual updates begin and divergence starts</p>
+</div>
+</div>
 </section>
-<section id="lessons-learned" class="slide level2 center">
-<h2>Lessons Learned</h2>
+<section id="lessons-learned" class="slide level2">
+<h2>Lessons learned</h2>
+<div class="reflection-card">
 <ul>
 <li class="fragment">BIM was not authored with energy analysis in mind</li>
 <li class="fragment">missing data only became obvious after export</li>
 <li class="fragment">there was no workflow for iterative updates</li>
 <li class="fragment">“the file opened” did not mean “the model is valid”</li>
 </ul>
+</div>
 </section>
-<section id="divergence-detective" class="slide level2 center">
-<h2>🎮 Divergence Detective</h2>
-<p><strong>Scenario:</strong> Actual energy use is 30% higher than predicted because BIM and BEM drifted apart.</p>
-<p>Investigate in groups:</p>
+<section class="slide level2">
+
+<p><span class="kicker">Translation diagnosis</span></p>
+</section>
+<section id="diagnose-the-divergence" class="slide level2">
+<h2>Diagnose the divergence</h2>
+<div class="activity-card">
+<p><span class="card-title">Scenario</span> Actual energy use is 30% higher than predicted because the BIM and BEM drifted apart.</p>
+</div>
+<p>In small groups, investigate:</p>
 <ul>
 <li class="fragment">what geometry changes could explain the increase?</li>
 <li class="fragment">what material substitutions matter?</li>
@@ -750,27 +746,91 @@ How will it behave over time when weather, people, and systems act on it?</p>
 </ul>
 <p>Come back with your top three suspects.</p>
 </section>
-<section id="shared-literacy-takeaways" class="slide level2 center">
-<h2>Shared Literacy Takeaways</h2>
+<section id="shared-literacy-takeaways" class="slide level2">
+<h2>Shared literacy takeaways</h2>
+<div class="reflection-card">
 <ul>
 <li class="fragment">BIM and BEM must stay related, but they should not be confused</li>
 <li class="fragment">simulation outputs are only as good as the assumptions and cleanup behind them</li>
 <li class="fragment">translation loss is normal, not an edge case</li>
 <li class="fragment">performance claims need method transparency, not just metrics</li>
 </ul>
+</div>
 </section>
-<section id="pathway-commitment-check" class="slide level2 center">
-<h2>Pathway Commitment Check</h2>
+<section id="break" class="slide level2 big-break">
+<h2>BREAK</h2>
+<p>Take 10 minutes.</p>
+<p>When you return, post one rough BIM/BEM material from your project to Slack for Session 2.</p>
+</section>
+<section class="slide level2">
+
+<p><span class="kicker">Session 2 · Round table</span></p>
+</section>
+<section id="round-table-on-your-model" class="slide level2">
+<h2>Round table on YOUR model</h2>
+<div class="spine-rail">
+<p><span class="node">Decision</span> <span class="node">Evidence</span> <span class="node">Variation</span> <span class="node is-current">Output</span> <span class="node">Threshold</span> <span class="node">Action</span></p>
+</div>
+<p>Upload one rough material to Slack before Session 2 — a BIM/BEM screenshot, a section or envelope image, a model diagram, or a performance claim from your project. <span class="feeds-tag">feeds A2</span></p>
+</section>
+<section id="speak-for-60-90-seconds" class="slide level2">
+<h2>Speak for 60-90 seconds</h2>
+<div class="concept-card">
+<p><span class="card-title">The prompt</span> What would a performance model need to know about your building, and what would it probably simplify?</p>
+</div>
+<p>Volunteers go first; random draw may fill the remaining examples.</p>
+</section>
+<section id="reconstruct-your-model-in-four-steps" class="slide level2">
+<h2>Reconstruct your model in four steps</h2>
+<p><strong>Object this week: your BIM/BEM model and one performance claim.</strong></p>
+<div class="recall-4step">
+<p>::: {.step}<strong>Did</strong> What does the model claim, and what did you actually build or export? ::: ::: {.step}<strong>Assumed</strong> What zoning, schedules, and constructions did the workflow assume for you? ::: ::: {.step}<strong>Risk</strong> Where could the translation have failed without you noticing? ::: ::: {.step}<strong>Verify</strong> What would you inspect before trusting the output? :::</p>
+</div>
+<div class="grading-note">
+<p>Post your filled four-step to Slack under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Presenting is welcomed and earns credit; it is never required and never scored as performance.</p>
+</div>
+</section>
+<section id="stand-alone-case-prompts" class="slide level2">
+<h2>Stand-alone case prompts</h2>
+<div class="two-col">
+<div class="example-card">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../assets/examples/the-edge-amsterdam.jpg" height="280"></p>
+<figcaption>The Edge, Amsterdam</figcaption>
+</figure>
+</div>
+<p>What kinds of evidence would support a claim about workplace performance here?</p>
+</div>
+<div class="example-card">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../assets/examples/california-academy-of-sciences.jpg" height="280"></p>
+<figcaption>California Academy of Sciences</figcaption>
+</figure>
+</div>
+<p>What kinds of evidence would support a claim about environmental performance here?</p>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<p><span class="kicker">Exit</span></p>
+</section>
+<section id="pathway-commitment-check" class="slide level2">
+<h2>Pathway commitment check</h2>
 <p>After this week, you should be able to say:</p>
+<div class="reflection-card">
 <ul>
 <li class="fragment">whether your project needs only literacy in BIM/BEM</li>
 <li class="fragment">whether simulation evidence will support your question</li>
 <li class="fragment">whether your primary semester pathway is <code>spreadsheet</code>, <code>GIS</code>, <code>Python</code>, <code>GH</code>, <code>BIM/BEM</code>, or <code>AI-assisted</code></li>
 </ul>
+</div>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-
+<p>Week 5 · feeds A2: Evidence + Workflow Map</p>
 </div>
 </div>
 </section>
@@ -854,7 +914,7 @@ How will it behave over time when weather, people, and systems act on it?</p>
         disableLayout: false,
 
         // Vertical centering of slides
-        center: true,
+        center: false,
 
         // Enables touch navigation on devices with touch input
         touch: true,

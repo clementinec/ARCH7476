@@ -1,205 +1,316 @@
 ---
 title: "Week 9: Storytelling, Figures, and Decisions"
 subtitle: "Turn Analysis Into a Recommendation People Can Understand"
+output-file: week-09.html
 format:
   revealjs:
-    theme: simple
+    theme: [default, arch7476.scss]
     transition: slide
     slide-number: true
     incremental: true
     width: 1400
     height: 900
-    center: true
+    center: false
+    footer: "Week 9 · feeds A3 + A4"
 ---
 
 ## Today's Agenda
 
+:::: {.two-col}
+::: {.concept-card}
+[Session 1]{.label .concept}
+
+[Lecture / demo]{.card-title}
+
 - when good research goes bad in presentation
 - story structure for busy stakeholders
 - figure rescue and the 3-second test
-- object card design
-- recommendation thresholds and trade-offs
+- object-card design and thresholds
+:::
+
+::: {.activity-card}
+[Session 2]{.label .activity}
+
+[Round table on YOUR work]{.card-title}
+
+- upload one rough figure or object-card draft
+- reconstruct it in four steps
+- name the result and the design action it changes
+:::
+::::
+
+::: {.reflection-card}
+This is decision support, not decoration. We help each other turn finished analysis into something a busy reader can act on.
+:::
 
 ---
 
-## Session 2: Project Reasoning Round Table
+[The problem]{.kicker}
 
-Upload one rough material to Slack before Session 2:
+## When good research goes bad
 
-- figure
-- output table
-- comparison chart
-- object-card draft
+Strong work can still fail at the moment it reaches an audience.
 
-Speak for 60-90 seconds:
-
-**What result changes the design action, and what uncertainty remains visible?**
-
-This feeds **A3: Prototype Output** and **A4: Practice Case / Object Card**.
-
-Volunteers go first; random draw may fill the remaining examples.
-
----
-
-## When Good Research Goes Bad
-
-Case 1:
-
+:::: {.two-col}
+::: {.warning-card}
+[Case 1 · method over message]{.card-title}
 - great method
 - weak message
-- audience hears process, not action
+- the audience hears process, not action
+:::
 
-Case 2:
-
+::: {.warning-card}
+[Case 2 · correct but unclear]{.card-title}
 - technically correct charts
 - no clear takeaway
-- status quo survives because the audience stays confused
+- the status quo survives because the room stays confused
+:::
+::::
 
 ---
 
-## The Two-Slide Challenge
+## The two-slide challenge
 
-Could you explain your semester in two slides to a busy critic, client, or studio tutor who gives you three minutes?
+::: {.concept-card}
+[The test]{.card-title}
+Could you explain your semester in **two slides** to a busy critic, client, or studio tutor who gives you three minutes?
+:::
 
 If not, your findings are still trapped inside your process.
 
 ---
 
-## One Useful Story Structure
+[Story structure]{.kicker}
 
+## One useful story structure for busy stakeholders
+
+::: {.concept-card}
 1. What problem or decision matters?
 2. What evidence did you gather?
 3. What changed because of that evidence?
 4. What should happen next?
+:::
 
 This is not simplification for its own sake. It is decision support.
 
 ---
 
-## Start With Their Problem
+## Start with their problem
 
-Do not begin with:
-
+:::: {.two-col}
+::: {.warning-card}
+[Do not begin with]{.card-title}
 - software
 - methods jargon
 - every intermediate step
+:::
 
-Begin with:
-
+::: {.activity-card}
+[Begin with]{.card-title}
 - the decision
 - the stake
 - the missing evidence
+:::
+::::
 
 ---
 
-## Stand-Alone Prompt
+## Stand-alone prompt
 
-![The Edge, Amsterdam](../assets/examples/the-edge-amsterdam.jpg){height="500"}
+![The Edge, Amsterdam](../assets/examples/the-edge-amsterdam.jpg){height="460"}
 
 If your recommendation depends on a case like this, what would a skeptical stakeholder ask first?
 
 ---
 
-## Figure Rescue: Why Charts Fail
+[Figure rescue]{.kicker}
 
+## Why charts fail
+
+::: {.warning-card}
 - too many variables at once
 - vague titles
 - no highlighted message
 - uncertainty hidden
 - no connection back to the decision
+:::
 
 ---
 
-## The 3-Second Message Test
+## The 3-second message test
 
-Give your figure three seconds.
+Give your figure three seconds. Can a viewer tell:
 
-Can a viewer tell:
-
+::: {.concept-card}
 - what is being compared?
 - which side performs better?
 - what the implication is?
+:::
 
 If not, it needs revision.
 
 ---
 
-## Rescue Formula
+## Figure rescue: before and after
 
+:::: {.two-col}
+::: {.warning-card}
+[Before · the weak figure]{.card-title}
+- five series, no focus
+- title reads "Results — Final"
+- legend the reader must decode
+- error bars buried or absent
+- nothing ties it to a decision
+:::
+
+::: {.activity-card}
+[After · the cleaned figure]{.card-title}
+- one message, two series compared
+- title states the takeaway in words
+- the winning option labelled directly
+- uncertainty shown where it matters
+- a caption naming the design action
+:::
+::::
+
+---
+
+## Rescue formula
+
+::: {.concept-card}
 1. decide the one message
 2. remove non-essential data
 3. label the takeaway directly
 4. show uncertainty where it matters
 5. connect the figure to the design decision
+:::
 
 ---
 
-## Figure Rescue Sprint
+## Figure rescue sprint
 
+::: {.activity-card}
+[Do this now]{.card-title}
 Bring one weak figure and improve it under these rules:
 
 - one message only
 - readable title
 - no decorative legends if direct labels work
 - one annotation that tells the audience why it matters
+:::
 
 Present the before and after in 60 seconds.
 
 ---
 
-## Object Card / Evidence Board Test
+[Object cards]{.kicker}
 
-During Object Fair, a viewer gives your board about 30 seconds.
+## The 30-second board test
 
-In that time they should be able to:
+During the Object Fair, a viewer gives your board about 30 seconds. In that time they should be able to:
 
+::: {.concept-card}
 1. stop
 2. understand the key message
 3. know what action or question follows
+:::
 
 ---
 
-## Object Card Priorities
+## Object-card anatomy
 
+The whole card is built around one dominant recommendation. Everything else supports it.
+
+:::: {.two-col}
+::: {.concept-card}
+[1 · The dominant recommendation]{.card-title}
+The one sentence the viewer must leave with. Largest, first, unmissable.
+:::
+
+::: {.example-card}
+[2 · One comparison figure]{.card-title}
+A single legible chart that shows the comparison behind the recommendation — secondary to the headline, never competing with it.
+:::
+::::
+
+:::: {.two-col}
+::: {.concept-card}
+[3 · One threshold sentence]{.card-title}
+The rule that turns the comparison into a decision: "we prefer X once the gain clears Y."
+:::
+
+::: {.warning-card}
+[4 · One limitations note]{.card-title}
+Where the evidence is weakest and what would change the conclusion — small, honest, present.
+:::
+::::
+
+---
+
+## Object-card priorities
+
+::: {.concept-card}
 - one dominant message
 - supporting evidence that is legible but secondary
 - clear next action or recommendation
 - contact / follow-up information without clutter
+:::
 
 ---
 
-## Object Card Clinic
+## Object-card clinic
 
-Check your draft for:
-
+::: {.activity-card}
+[Check your draft for]{.card-title}
 - message hierarchy
 - visual hierarchy
 - stakeholder-friendly language
 - print readability from a distance
+:::
 
 ---
 
-## Evidence Alone Does Not Make the Decision
+[Thresholds]{.kicker}
+
+## Evidence alone does not make the decision
 
 You still need:
 
+::: {.concept-card}
 - a threshold
 - a comparison rule
 - a stakeholder frame
 - an explanation of what matters most
+:::
 
 ---
 
-## Typical Threshold Questions
+## Typical threshold questions
 
+::: {.concept-card}
 - how much improvement is enough to justify a change?
 - what cost increase is acceptable?
 - what travel-time difference matters?
 - how much uncertainty can the decision tolerate?
+:::
 
 ---
 
-## Trade-Off Table
+## Threshold examples across project types
+
+A threshold turns a number into a decision rule. It looks different in each domain:
+
+| Project type | Quantity | Example threshold |
+|---|---|---|
+| Transit / access | access time | within 10 min of a stop |
+| Daylight study | daylight hours | ≥ 50% of area meets sDA 300/50% |
+| Cost trade-off | cost premium | accept ≤ 8% over baseline |
+| Facade / envelope | heat gain | reduce peak gain by ≥ 15% |
+| Post-occupancy | survey confidence | ≥ 70% agreement, n ≥ 30 |
+
+---
+
+## Trade-off table
 
 | Option | strongest benefit | main cost | biggest risk | recommendation |
 |---|---|---|---|---|
@@ -209,36 +320,90 @@ You still need:
 
 ---
 
-## Counter-Arguments Matter
+## Counter-arguments matter
 
 A strong recommendation also says:
 
+::: {.reflection-card}
 - what could change the conclusion
 - where the evidence is weakest
 - why another option may still be reasonable
 - what additional evidence would strengthen confidence
+:::
 
 ---
 
-## Recommendation Sentence Drill
+[The drill]{.kicker}
+
+## Recommendation sentence drill
 
 Write one sentence:
 
+::: {.concept-card}
+[The recommendation sentence]{.card-title}
 **Given this evidence, for this audience, I would do X under conditions Y and Z.**
+:::
 
 Then test whether the sentence:
 
+::: {.activity-card}
 - names the decision
 - reflects uncertainty
 - implies a next move
+:::
 
 ---
 
-## Exit Task
+## Exit task
 
 Before next week, each student should have:
 
+::: {.reflection-card}
 - one improved figure
-- one clearer object card draft
+- one clearer object-card draft
 - one recommendation sentence
 - one explicit note on limits and confidence
+:::
+
+---
+
+[Session 2 · Round table]{.kicker}
+
+## Round table on YOUR work
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node} [Threshold]{.node .is-current} [Action]{.node}
+:::
+
+Upload one rough material to Slack before Session 2 — a figure, output table, comparison chart, or object-card draft. [feeds A3 + A4]{.feeds-tag}
+
+---
+
+## Reconstruct your figure in four steps
+
+**Object this week: your result/figure and the design action it changes.**
+
+::: {.recall-4step}
+::: {.step}**Did** What does this figure currently show, and what is its one message? :::
+::: {.step}**Assumed** What does the reader have to already know for it to land? :::
+::: {.step}**Risk** Where is the takeaway unclear, or the uncertainty hidden? :::
+::: {.step}**Verify** What threshold or label would tie it to a design action? :::
+:::
+
+::: {.grading-note}
+Post your four-step under your figure. Posting + an honest reconstruction is the graded unit — not how you spoke. Speak for 60–90 seconds: what result changes the design action, and what uncertainty remains visible?
+:::
+
+---
+
+## Order and the waiting role
+
+::: {.activity-card}
+[How we run it]{.card-title}
+Volunteers go first; a random draw may fill the remaining examples.
+:::
+
+::: {.example-card}
+[While others present]{.card-title}
+You are not waiting your turn — you are reading. Note one clear move and one missing link per figure. Those notes are your participation record.
+:::

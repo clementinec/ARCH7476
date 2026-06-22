@@ -319,6 +319,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -332,65 +335,158 @@
 </div>
 
 </section>
-<section id="todays-agenda" class="slide level2 center">
+<section id="todays-agenda" class="slide level2">
 <h2>Today’s Agenda</h2>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="label concept">Session 1</span></p>
+<p><span class="card-title">Lecture / studio-lab</span></p>
 <ul>
-<li class="fragment">what a method prototype is</li>
-<li class="fragment">why documentation matters before the final package</li>
+<li class="fragment">what a minimal viable workflow is</li>
+<li class="fragment">why documentation comes before the package</li>
 <li class="fragment">the 10-minute method challenge</li>
-<li class="fragment">documentation swap</li>
-<li class="fragment">mentor consultation prep for weak spots</li>
+<li class="fragment">the documentation swap</li>
+<li class="fragment">mentor-question prep for weak spots</li>
 </ul>
-</section>
-<section id="session-2-project-reasoning-round-table" class="slide level2 center">
-<h2>Session 2: Project Reasoning Round Table</h2>
-<p>Upload one rough material to Slack before Session 2:</p>
+</div>
+<div class="activity-card">
+<p><span class="label activity">Session 2</span></p>
+<p><span class="card-title">Round table on YOUR prototype</span></p>
 <ul>
-<li class="fragment">workflow artifact</li>
-<li class="fragment">GH canvas</li>
-<li class="fragment">notebook output</li>
-<li class="fragment">spreadsheet, GIS map, or simulation screenshot</li>
-<li class="fragment">AI-assisted component</li>
+<li class="fragment">upload one rough workflow artifact</li>
+<li class="fragment">reconstruct it in four steps</li>
+<li class="fragment">optional walk-through, then a shared audit</li>
 </ul>
-<p>Speak for 60-90 seconds:</p>
-<p><strong>What goes in, what varies, what comes out, and what quality check proves it ran?</strong></p>
-<p>This feeds <strong>A3: Prototype Scope</strong> and <strong>A3: Workflow Description</strong>.</p>
-<p>Volunteers go first; random draw may fill the remaining examples.</p>
+</div>
+</div>
+<div class="reflection-card">
+<p>This week the <strong>object</strong> becomes your prototype workflow. A3 begins here.</p>
+</div>
 </section>
-<section id="minimal-viable-workflow" class="slide level2 center">
+<section class="slide level2">
+
+<p><span class="kicker">The core idea</span></p>
+</section>
+<section id="minimal-viable-workflow" class="slide level2">
 <h2>Minimal Viable Workflow</h2>
-<p>Your prototype is successful if it can:</p>
+<p>A prototype is successful — even when rough — if it can do four things:</p>
+<div class="concept-card">
+<p><span class="card-title">What “working” means</span> <strong>Take real inputs, run a clear process, produce one interpretable output, and reveal where the method still breaks.</strong></p>
+</div>
 <ul>
-<li class="fragment">take in real inputs</li>
-<li class="fragment">run through a clear process</li>
-<li class="fragment">produce one interpretable output</li>
-<li class="fragment">reveal where the method still breaks</li>
+<li class="fragment">it does not need to be polished</li>
+<li class="fragment">it does not need to be complete</li>
+<li class="fragment">it needs to be <strong>legible enough that someone else could rerun it</strong></li>
 </ul>
 </section>
-<section id="reproducibility-lessons-from-practice" class="slide level2 center">
-<h2>Reproducibility Lessons from Practice</h2>
+<section class="slide level2">
+
+<p><span class="kicker">The A3 loop</span></p>
+</section>
+<section id="the-loop-every-prototype-runs" class="slide level2">
+<h2>The loop every prototype runs</h2>
+<p>The same five-node spine, expressed as a runnable loop. Everything you build this week sits inside it.</p>
+<div class="spine-rail">
+<p><span class="node">Decision</span> <span class="node">Evidence</span> <span class="node is-current">Variation</span> <span class="node">Output</span> <span class="node">Threshold</span> <span class="node">Action</span></p>
+</div>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A[Input&lt;br/&gt;real data / model] --&gt; B[Variation&lt;br/&gt;what you change]
+    B --&gt; C[Output&lt;br/&gt;one readable result]
+    C --&gt; D{Threshold&lt;br/&gt;quality check}
+    D --&gt;|passes| E[Action&lt;br/&gt;use / decide]
+    D --&gt;|fails| A
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>The four zones of that loop are what every tool panel below makes concrete.</p>
+</section>
+<section id="the-prototype-frame-four-zones" class="slide level2">
+<h2>The prototype frame — four zones</h2>
+<p>Read any workflow as four zones. If you can fill all four honestly, you have a prototype, not just a file.</p>
+<div class="tool-panel demo-pending">
+<p>::: {.zone .input}<strong>Input</strong> the real files, data, or model the method starts from ::: ::: {.zone .operation}<strong>What varies</strong> the one thing you change between runs ::: ::: {.zone .output}<strong>Output</strong> the single interpretable result it produces ::: ::: {.zone .check}<strong>Quality check</strong> what proves the run was valid, not just that it ran :::</p>
+</div>
+<div class="example-card">
+<p>A screenshot of your tool running drops into this frame once you have one. Until then it stays marked pending — honest, not faked.</p>
+</div>
+</section>
+<section id="reproducibility-lessons-from-practice" class="slide level2">
+<h2>Reproducibility lessons from practice</h2>
+<p>The common failures are not about talent — they are about traceability.</p>
 <ul>
 <li class="fragment">the analyst leaves and no one can rerun the method</li>
 <li class="fragment">the spreadsheet works on one machine only</li>
-<li class="fragment">the GIS layers were clipped somehow but nobody remembers how</li>
+<li class="fragment">the GIS layers were clipped somehow but nobody recorded how</li>
 <li class="fragment">the notebook runs, but only if you know which file was silently edited</li>
 </ul>
-<p>The professional issue is simple: if the workflow cannot be retraced, the result is hard to trust.</p>
+<div class="warning-card">
+<p>If the workflow cannot be retraced, the result is hard to trust — no matter how good the output looks.</p>
+</div>
 </section>
-<section id="common-reproducibility-gaps" class="slide level2 center">
-<h2>Common Reproducibility Gaps</h2>
-<p>Typical student versions:</p>
+<section id="where-the-gaps-usually-hide" class="slide level2">
+<h2>Where the gaps usually hide</h2>
+<p>Typical first-draft descriptions sound like this:</p>
 <ul>
 <li class="fragment">“I used some plugin, but I forgot which one.”</li>
 <li class="fragment">“I changed the settings until it looked right.”</li>
 <li class="fragment">“The chart came from another file, I think.”</li>
 <li class="fragment">“The model worked last week.”</li>
 </ul>
+<div class="reflection-card">
+<p>Each of these is a missing line in one of the four zones. Naming the gap is the first repair.</p>
+</div>
 </section>
-<section id="the-10-minute-method-challenge" class="slide level2 center">
+<section class="slide level2">
+
+<p><span class="kicker">Many valid routes</span></p>
+</section>
+<section id="there-is-no-single-correct-technical-route" class="slide level2">
+<h2>There is no single correct technical route</h2>
+<p>Six routes, same four zones. None is more “advanced” than the others — each is judged only by whether the loop is legible.</p>
+<div class="three-step">
+<div class="step-box">
+<p><span class="card-title">Spreadsheet</span> <strong>In</strong> comparison table · <strong>Varies</strong> parameter ranges · <strong>Out</strong> ranked options · <strong>Check</strong> formulas auditable, units stated</p>
+</div>
+<div class="step-box">
+<p><span class="card-title">GIS</span> <strong>In</strong> layers + CRS · <strong>Varies</strong> operation sequence · <strong>Out</strong> spatial comparison · <strong>Check</strong> CRS stated, counts spot-checked</p>
+</div>
+<div class="step-box">
+<p><span class="card-title">Python / notebook</span> <strong>In</strong> data files + paths · <strong>Varies</strong> analysis parameters · <strong>Out</strong> figure / table · <strong>Check</strong> runs top-to-bottom, paths stated</p>
+</div>
+</div>
+<div class="three-step">
+<div class="step-box">
+<p><span class="card-title">GH / parametric</span> <strong>In</strong> geometry + sliders · <strong>Varies</strong> the design space · <strong>Out</strong> comparable variants · <strong>Check</strong> variants share assumptions</p>
+</div>
+<div class="step-box">
+<p><span class="card-title">BIM/BEM / simulation</span> <strong>In</strong> model + settings · <strong>Varies</strong> scenario assumptions · <strong>Out</strong> performance result · <strong>Check</strong> dominant assumptions documented</p>
+</div>
+<div class="step-box">
+<p><span class="card-title">AI-assisted</span> <strong>In</strong> prompt + source data · <strong>Varies</strong> what AI generates / edits · <strong>Out</strong> drafted component · <strong>Check</strong> a manual review confirms it</p>
+</div>
+</div>
+<div class="reflection-card">
+<p>Pick the route that makes <strong>your</strong> decision more defensible — not the one that looks most impressive.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<p><span class="kicker">Studio-lab · do this now</span></p>
+</section>
+<section id="the-10-minute-method-challenge" class="slide level2">
 <h2>The 10-Minute Method Challenge</h2>
-<p>Choose one workflow from your project and document it so clearly that another team could reproduce it.</p>
-<p>Pick one:</p>
+<div class="activity-card">
+<p><span class="card-title">Do this now</span> Choose one workflow from your project and document it so clearly that another team could rerun it without you in the room.</p>
+</div>
+<p>Pick one route to document:</p>
 <ul>
 <li class="fragment">spreadsheet comparison</li>
 <li class="fragment">GH / parametric option generation</li>
@@ -401,138 +497,170 @@
 <li class="fragment">visualization workflow</li>
 </ul>
 </section>
-<section id="documentation-template" class="slide level2 center">
+<section id="documentation-template" class="slide level2">
 <h2>Documentation Template</h2>
-<p><strong>Workflow</strong></p>
-<ul>
-<li class="fragment">what the method is for</li>
-<li class="fragment">what files or inputs are required</li>
-<li class="fragment">what tools are required</li>
-</ul>
-<p><strong>Step-by-step</strong></p>
-<ol type="1">
-<li class="fragment">do this</li>
-<li class="fragment">check this</li>
-<li class="fragment">if this fails, try this</li>
-<li class="fragment">export this</li>
-</ol>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="card-title">Workflow</span> - what the method is for - what files or inputs are required - what tools are required</p>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Step-by-step</span> 1. do this 2. check this 3. if this fails, try this 4. export this</p>
+</div>
+</div>
 </section>
-<section id="documentation-template-contd" class="slide level2 center">
+<section id="documentation-template-contd" class="slide level2">
 <h2>Documentation Template (cont’d)</h2>
-<p><strong>Troubleshooting</strong></p>
-<ul>
-<li class="fragment">common error</li>
-<li class="fragment">warning sign</li>
-<li class="fragment">likely fix</li>
-</ul>
-<p><strong>Quality check</strong></p>
-<ul>
-<li class="fragment">what success looks like</li>
-<li class="fragment">what a red flag looks like</li>
-</ul>
+<div class="two-col">
+<div class="warning-card">
+<p><span class="card-title">Troubleshooting</span> - common error - warning sign - likely fix</p>
+</div>
+<div class="concept-card">
+<p><span class="card-title">Quality check</span> - what success looks like - what a red flag looks like</p>
+</div>
+</div>
+<div class="reflection-card">
+<p>Notice the template is just the four zones, written out for a stranger.</p>
+</div>
 </section>
-<section id="documentation-swap-challenge" class="slide level2 center">
-<h2>Documentation Swap Challenge</h2>
-<ol type="1">
-<li class="fragment">swap instructions with someone using a different pathway</li>
-<li class="fragment">no verbal explanation</li>
-<li class="fragment">try to follow their method</li>
-<li class="fragment">record what is missing, unclear, or fragile</li>
-</ol>
-<p>This is the fastest way to find out if your workflow is real or only familiar to you.</p>
+<section class="slide level2">
+
+<p><span class="kicker">Studio-lab · do this now</span></p>
 </section>
-<section id="documentation-reality-check" class="slide level2 center">
+<section id="documentation-swap" class="slide level2">
+<h2>Documentation Swap</h2>
+<div class="activity-card">
+<p><span class="card-title">Do this now</span> 1. swap instructions with someone using a <strong>different</strong> route 2. no verbal explanation allowed 3. try to follow their method 4. record what is missing, unclear, or fragile</p>
+</div>
+<p>This is the fastest way to learn whether your workflow is genuinely reproducible or only familiar to you.</p>
+</section>
+<section id="documentation-reality-check" class="slide level2">
 <h2>Documentation Reality Check</h2>
-<p>If another student cannot follow your documentation, the method is not ready for A3.</p>
-<p>That does not mean the project is bad.</p>
-<p>It means the workflow needs one more layer of translation before someone else can inspect it.</p>
+<p>If another student cannot follow your documentation, the method is not yet ready for A3.</p>
+<div class="reflection-card">
+<p>That does not mean the project is weak. It means the workflow needs <strong>one more layer of translation</strong> before someone else can inspect it.</p>
+</div>
 </section>
-<section id="pathway-breakout-prompts" class="slide level2 center">
-<h2>Pathway Breakout Prompts</h2>
-<h3 id="spreadsheet">Spreadsheet</h3>
-<ul>
-<li class="fragment">what table structure does the method depend on?</li>
-<li class="fragment">which formula or chart is most fragile?</li>
-</ul>
-<h3 id="gis">GIS</h3>
-<ul>
-<li class="fragment">what layer preparation is essential?</li>
-<li class="fragment">which operation sequence must be documented exactly?</li>
-</ul>
-<h3 id="python">Python</h3>
-<ul>
-<li class="fragment">what notebook cells define the real logic?</li>
-<li class="fragment">what package, path, or file assumptions must be stated?</li>
-</ul>
-<h3 id="gh-parametric">GH / Parametric</h3>
-<ul>
-<li class="fragment">what sliders, inputs, or constraints define the design space?</li>
-<li class="fragment">what output proves the variants are comparable?</li>
-</ul>
-<h3 id="bimbem-simulation">BIM/BEM / Simulation</h3>
-<ul>
-<li class="fragment">what model assumptions dominate the result?</li>
-<li class="fragment">what setup choices must be documented before the output is trusted?</li>
-</ul>
-<h3 id="ai-assisted">AI-assisted</h3>
-<ul>
-<li class="fragment">what did AI generate or edit?</li>
-<li class="fragment">what manual check confirms that the output is usable?</li>
-</ul>
+<section id="pathway-breakout-prompts" class="slide level2">
+<h2>Pathway breakout prompts</h2>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="card-title">Spreadsheet</span> - what table structure does the method depend on? - which formula or chart is most fragile?</p>
+</div>
+<div class="concept-card">
+<p><span class="card-title">GIS</span> - what layer preparation is essential? - which operation sequence must be documented exactly?</p>
+</div>
+</div>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="card-title">Python</span> - what notebook cells define the real logic? - what package, path, or file assumptions must be stated?</p>
+</div>
+<div class="concept-card">
+<p><span class="card-title">GH / parametric</span> - what sliders or constraints define the design space? - what output proves the variants are comparable?</p>
+</div>
+</div>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="card-title">BIM/BEM / simulation</span> - what model assumptions dominate the result? - what setup choices must be documented first?</p>
+</div>
+<div class="concept-card">
+<p><span class="card-title">AI-assisted</span> - what did AI generate or edit? - what manual check confirms the output is usable?</p>
+</div>
+</div>
 </section>
-<section id="capture-the-decision-logic-too" class="slide level2 center">
-<h2>Capture the Decision Logic Too</h2>
-<p>Do not document only button clicks.</p>
-<p>Also document:</p>
+<section id="capture-the-decision-logic-too" class="slide level2">
+<h2>Capture the decision logic too</h2>
+<p>Do not document only button clicks. Also capture the reasoning:</p>
 <ul>
 <li class="fragment">why this step exists</li>
 <li class="fragment">what assumption it encodes</li>
 <li class="fragment">what judgment call it contains</li>
 <li class="fragment">how the output connects back to the question</li>
 </ul>
+<div class="concept-card">
+<p>A workflow becomes evidence when the <strong>reasoning</strong> travels with the steps, not just the clicks.</p>
+</div>
 </section>
-<section id="mentor-consultation-bootcamp" class="slide level2 center">
-<h2>Mentor Consultation Bootcamp</h2>
-<p>Use the prototype to prepare stronger questions:</p>
+<section class="slide level2">
+
+<p><span class="kicker">Mentor prep</span></p>
+</section>
+<section id="use-the-prototype-to-ask-sharper-questions" class="slide level2">
+<h2>Use the prototype to ask sharper questions</h2>
+<p>The point of a rough prototype is that it surfaces real questions for your mentor.</p>
 <ul>
 <li class="fragment">where is the workflow weakest?</li>
 <li class="fragment">what assumption am I least confident about?</li>
 <li class="fragment">what output would most strengthen the project?</li>
-<li class="fragment">what would a practitioner immediately challenge?</li>
+<li class="fragment">what would a practitioner immediately ask about?</li>
 </ul>
 </section>
-<section id="mentor-question-development-sprint" class="slide level2 center">
-<h2>Mentor Question Development Sprint</h2>
-<p>Write three questions:</p>
-<ol type="1">
-<li class="fragment">one technical question</li>
-<li class="fragment">one methodological question</li>
-<li class="fragment">one strategic question about scope or decision relevance</li>
-</ol>
-<p>If the question is generic, it is not ready.</p>
+<section id="mentor-question-development" class="slide level2">
+<h2>Mentor question development</h2>
+<div class="activity-card">
+<p><span class="card-title">Write three questions</span> 1. one <strong>technical</strong> question 2. one <strong>methodological</strong> question 3. one <strong>strategic</strong> question about scope or decision relevance</p>
+</div>
+<div class="warning-card">
+<p>If the question is generic, it is not ready. A good question points at a specific zone of your loop.</p>
+</div>
 </section>
-<section id="prototype-quality-check" class="slide level2 center">
+<section id="prototype-quality-check" class="slide level2">
 <h2>Prototype Quality Check</h2>
-<ul>
-<li class="fragment">can another person tell what goes in?</li>
-<li class="fragment">can they tell what comes out?</li>
-<li class="fragment">can they see what judgment calls mattered?</li>
-<li class="fragment">can they tell whether the output is already useful?</li>
-</ul>
+<p>The test for “ready for the round table”:</p>
+<div class="tool-panel">
+<p>::: {.zone .input}<strong>Input</strong> can another person tell what goes in? ::: ::: {.zone .operation}<strong>What varies</strong> can they see which judgment calls mattered? ::: ::: {.zone .output}<strong>Output</strong> can they tell what comes out? ::: ::: {.zone .check}<strong>Quality check</strong> can they tell whether the output is already useful? :::</p>
+</div>
 </section>
-<section id="by-the-end-of-this-week" class="slide level2 center">
-<h2>By the End of This Week</h2>
-<p>You should have:</p>
+<section id="break" class="slide level2 big-break">
+<h2>BREAK</h2>
+<p>Take 10 minutes.</p>
+<p>When you return, upload one rough workflow artifact to Slack for the round table.</p>
+</section>
+<section class="slide level2">
+
+<p><span class="kicker">Session 2 · Round table</span></p>
+</section>
+<section id="round-table-on-your-prototype" class="slide level2">
+<h2>Round table on YOUR prototype</h2>
+<div class="spine-rail">
+<p><span class="node">Decision</span> <span class="node">Evidence</span> <span class="node is-current">Variation</span> <span class="node">Output</span> <span class="node">Threshold</span> <span class="node">Action</span></p>
+</div>
+<p>Upload one rough material before Session 2 — a workflow artifact, GH canvas, notebook output, spreadsheet, GIS map, simulation screenshot, or AI-assisted component. <span class="feeds-tag">feeds A3</span></p>
+</section>
+<section id="mode-1-the-walk-through-optional-celebrated" class="slide level2">
+<h2>Mode 1 — the walk-through (optional, celebrated)</h2>
+<div class="walkthrough-card">
+<p><span class="card-title">Teach us your strongest route</span> A volunteer runs the class through one prototype they know well — uninterrupted, 3–4 minutes. Speak for roughly 60–90 seconds on the loop itself.</p>
+</div>
+<p>Narrate the four zones as you go:</p>
 <ul>
-<li class="fragment">a first working artifact</li>
-<li class="fragment">documentation that survives a swap test</li>
-<li class="fragment">a list of fragile steps and assumptions</li>
-<li class="fragment">a clearer story for A3</li>
+<li class="fragment"><strong>what goes in</strong> (input)</li>
+<li class="fragment"><strong>what varies</strong> (the one thing you change)</li>
+<li class="fragment"><strong>what comes out</strong> (output)</li>
+<li class="fragment"><strong>what quality check proves it ran</strong> (threshold)</li>
 </ul>
+<p>No polish required — show the real thing working. Questions wait for Mode 2.</p>
+</section>
+<section id="reconstruct-your-prototype-in-four-steps" class="slide level2">
+<h2>Reconstruct your prototype in four steps</h2>
+<p><strong>Object this week: your prototype workflow as someone else will meet it.</strong></p>
+<div class="recall-4step">
+<p>::: {.step}<strong>Did</strong> What does the workflow actually do, step by step? ::: ::: {.step}<strong>Assumed</strong> What hidden inputs or settings does each step assume? ::: ::: {.step}<strong>Risk</strong> Where did I not check — where could it break or fail to rerun? ::: ::: {.step}<strong>Verify</strong> What quality check would prove the run is valid? :::</p>
+</div>
+<div class="grading-note">
+<p>Post your filled four-step to Slack under your artifact. Posting + an honest reconstruction is the graded unit — not how you spoke. Walking through is welcomed and earns credit; it is never required and never scored as performance. Volunteers go first; a random draw may fill the remaining examples.</p>
+</div>
+</section>
+<section id="by-the-end-of-this-week" class="slide level2">
+<h2>By the End of This Week</h2>
+<p>You should leave with:</p>
+<div class="concept-card">
+<p><span class="card-title">Week 7 milestone</span> - a first working artifact - documentation that survives a swap test - a list of fragile steps and assumptions - three sharp mentor questions - a clearer story for A3</p>
+</div>
+<p>A3 is <strong>started, not finished</strong> — Weeks 8–9 verify the method and build toward the Prototype + Verification package.</p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-
+<p>Week 7 · feeds A3: Prototype + Verification</p>
 </div>
 </div>
 </section>
@@ -616,7 +744,7 @@
         disableLayout: false,
 
         // Vertical centering of slides
-        center: true,
+        center: false,
 
         // Enables touch navigation on devices with touch input
         touch: true,

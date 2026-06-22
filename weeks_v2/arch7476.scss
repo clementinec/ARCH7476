@@ -1,0 +1,466 @@
+/*===========================================================================
+  ARCH7476 — Generative Design in Architecture
+  Reveal.js theme: editorial / Swiss-grid visual language.
+
+  ONE source of truth for every weekly deck. Decks reference it with:
+
+      format:
+        revealjs:
+          theme: [default, arch7476.scss]
+
+  Content stays in the .qmd files; LOOK lives here. To restyle the whole
+  course, edit this file only — no deck markdown changes needed.
+
+  The component vocabulary below is documented in VISUAL-LANGUAGE.md.
+  Students should be able to read a deck's markdown and recognise every
+  class: .recall-4step, .session-block, .spine-rail, .tool-panel, etc.
+===========================================================================*/
+
+/*-- scss:defaults --*/
+
+// --- Typeface system -------------------------------------------------------
+// Archivo  = grotesque display (headings, labels) — the Swiss workhorse.
+// Inter    = humanist body text — quiet, legible.
+// JetBrains Mono = data, code, tool names — anything machine-made.
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !default;
+$presentation-heading-font: "Archivo", $font-family-sans-serif !default;
+$font-family-monospace: "JetBrains Mono", "SFMono-Regular", Menlo, monospace !default;
+
+// --- Canvas ----------------------------------------------------------------
+$body-bg: #FCFCFA !default;          // warm paper, not clinical white
+$body-color: #16181D !default;       // near-black ink
+$link-color: #C8442A !default;       // single signal accent (vermilion)
+$link-color-hover: #16181D !default;
+
+$presentation-heading-color: #16181D !default;
+$presentation-heading-font-weight: 700 !default;
+$presentation-font-size-root: 30px !default;
+$presentation-line-height: 1.5 !default;
+
+$code-block-bg: #16181D !default;
+$code-color: #16181D !default;
+
+/*-- scss:rules --*/
+
+/*---------------------------------------------------------------------------
+  1. DESIGN TOKENS
+  Semantic colour ROLES. Colour means something in this course — it is not
+  decoration. Every component pulls from these, so the palette is consistent
+  and changeable in one place.
+---------------------------------------------------------------------------*/
+:root {
+  --ink:        #16181D;   // primary text
+  --paper:      #FCFCFA;   // background
+  --muted:      #6B7079;   // secondary text, captions
+  --rule:       #16181D;   // hairline rules (Swiss signature)
+  --rule-soft:  #D7D7D1;   // light dividers
+  --signal:     #C8442A;   // the one accent: links, current-state, emphasis
+
+  // Pedagogical roles — used by cards, labels, the spine rail.
+  --role-concept:    #1F5C7A;  // blue   — lecture concept, key term, evidence logic
+  --role-activity:   #2F6F5E;  // green   — student does this now / studio task
+  --role-example:    #9A641F;  // amber   — example, anecdote, break
+  --role-reflect:    #5B4B7A;  // violet  — reflection, synthesis, what changed
+  --role-warn:       #8F3D3D;  // red     — overclaim, weak evidence, risk
+
+  --concept-soft: #E3EEF4;
+  --activity-soft:#E0F0E8;
+  --example-soft: #F6EBD7;
+  --reflect-soft: #E9E3F1;
+  --warn-soft:    #F4DEDE;
+}
+
+/*---------------------------------------------------------------------------
+  2. TYPE & GRID
+  Swiss: left-aligned, strong scale, tight headline leading, thin rules,
+  generous air. Headlines sit under a hairline + kicker, not floating.
+---------------------------------------------------------------------------*/
+.reveal { color: var(--ink); }
+
+.reveal .slides { text-align: left; }
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  font-family: "Archivo", sans-serif;
+  color: var(--ink);
+  text-transform: none;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  margin: 0 0 0.5em 0;
+  text-wrap: balance;
+}
+
+// Section/slide titles get a top hairline — the Swiss "rule above title".
+.reveal section > h2:first-child,
+.reveal section > h1:first-child {
+  padding-top: 0.35em;
+  border-top: 3px solid var(--rule);
+  font-weight: 800;
+}
+
+.reveal h2 { font-size: 1.7em; }
+.reveal h3 { font-size: 1.2em; font-weight: 600; }
+
+.reveal p, .reveal li { font-weight: 400; }
+.reveal strong { font-weight: 600; color: var(--ink); }
+.reveal em { font-style: normal; color: var(--signal); font-weight: 500; }
+
+.reveal a { color: var(--signal); text-decoration: none; border-bottom: 1px solid currentColor; }
+.reveal a:hover { color: var(--ink); }
+
+.reveal ul, .reveal ol { margin-left: 1em; }
+.reveal li { margin-bottom: 0.25em; }
+
+// "Kicker" — small uppercase label above a heading, set in mono.
+.reveal .kicker {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.5em;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 0.4em;
+}
+
+.reveal .muted { color: var(--muted); }
+.reveal .keyword { color: var(--role-concept); font-weight: 600; }
+
+/*---------------------------------------------------------------------------
+  3. LABELS — the session / role chips
+  <span class="label concept">…</span>, .activity, .example, .reflect, .warn
+---------------------------------------------------------------------------*/
+.reveal .label {
+  display: inline-block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.55em;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.18em 0.55em;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+.reveal .label.concept  { background: var(--concept-soft);  color: var(--role-concept); }
+.reveal .label.activity { background: var(--activity-soft); color: var(--role-activity); }
+.reveal .label.example  { background: var(--example-soft);  color: var(--role-example); }
+.reveal .label.reflect  { background: var(--reflect-soft);  color: var(--role-reflect); }
+.reveal .label.warn     { background: var(--warn-soft);     color: var(--role-warn); }
+
+// Back-compat with existing decks' session-label markup.
+.reveal .session-label { @extend .label; }
+.reveal .session-lecture { background: var(--concept-soft); color: var(--role-concept); }
+.reveal .session-lab     { background: var(--activity-soft); color: var(--role-activity); }
+.reveal .session-break   { background: var(--example-soft); color: var(--role-example); }
+.reveal .session-reflection { background: var(--reflect-soft); color: var(--role-reflect); }
+
+/*---------------------------------------------------------------------------
+  4. CARDS — the role-coloured content blocks
+  A card is a left-ruled panel. The rule colour = its role. Flat, no shadow.
+  .activity-card .example-card .reflection-card .warning-card .slack-card .concept-card
+---------------------------------------------------------------------------*/
+.reveal .activity-card,
+.reveal .example-card,
+.reveal .reflection-card,
+.reveal .warning-card,
+.reveal .slack-card,
+.reveal .concept-card {
+  border: 1px solid var(--rule-soft);
+  border-left: 6px solid var(--rule);
+  border-radius: 0;                 // Swiss: square corners
+  padding: 0.7em 0.95em;
+  margin: 0.5em 0;
+  background: #fff;
+  font-size: 0.92em;
+}
+.reveal .concept-card    { border-left-color: var(--role-concept); }
+.reveal .activity-card   { border-left-color: var(--role-activity); }
+.reveal .example-card    { border-left-color: var(--role-example); }
+.reveal .reflection-card { border-left-color: var(--role-reflect); background: var(--reflect-soft); }
+.reveal .warning-card    { border-left-color: var(--role-warn); background: var(--warn-soft); }
+.reveal .slack-card      { border-left-color: var(--role-concept); background: var(--concept-soft); }
+
+.reveal .card-title {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+/*---------------------------------------------------------------------------
+  5. THE FOUR-STEP RECONSTRUCTION  — .recall-4step
+  The course's recurring engine: "look harder at what you already did."
+  Four numbered cells. Same four prompts every week; only the OBJECT changes.
+
+  ::: {.recall-4step}
+  ::: {.step}**Did** What did I actually do? :::
+  ::: {.step}**Assumed** What did I assume at each step? :::
+  ::: {.step}**Risk** Where did I not check — where could it break? :::
+  ::: {.step}**Verify** What would I verify if I did it again? :::
+  :::
+---------------------------------------------------------------------------*/
+.reveal .recall-4step {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6em;
+  margin: 0.6em 0;
+  counter-reset: step;
+}
+.reveal .recall-4step .step {
+  position: relative;
+  background: #fff;
+  border: 1px solid var(--rule-soft);
+  border-top: 3px solid var(--ink);
+  padding: 0.7em 0.85em 0.7em 0.85em;
+  font-size: 0.86em;
+}
+.reveal .recall-4step .step::before {
+  counter-increment: step;
+  content: counter(step);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8em;
+  color: var(--signal);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.15em;
+}
+.reveal .recall-4step .step strong {
+  font-family: "Archivo", sans-serif;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.92em;
+}
+
+/*---------------------------------------------------------------------------
+  6. THE SPINE RAIL  — .spine-rail
+  Persistent semester logic. Two readings:
+    micro: decision -> evidence -> variation -> output -> threshold -> action
+    macro: which A1..A4 package this week feeds.
+  Mark the live node with .is-current.
+
+  ::: {.spine-rail}
+  [Decision]{.node} [Evidence]{.node .is-current} [Variation]{.node} ...
+  :::
+---------------------------------------------------------------------------*/
+.reveal .spine-rail {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35em;
+  margin: 0.5em 0;
+  padding: 0.4em 0;
+  border-top: 1px solid var(--rule-soft);
+  border-bottom: 1px solid var(--rule-soft);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.5em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.reveal .spine-rail .node {
+  color: var(--muted);
+  padding: 0.15em 0.5em;
+  border: 1px solid transparent;
+}
+.reveal .spine-rail .node + .node::before {
+  content: "\2192";              // arrow between nodes
+  color: var(--rule-soft);
+  margin-right: 0.5em;
+  margin-left: -0.35em;
+}
+.reveal .spine-rail .node.is-current {
+  color: #fff;
+  background: var(--signal);
+  font-weight: 500;
+}
+
+/*---------------------------------------------------------------------------
+  7. TOOL / INSTRUMENT PANEL  — .tool-panel
+  The "show a tool actually running" frame. Four labelled zones so a real
+  screenshot, notebook cell, or GH canvas can drop straight in later.
+  This is the slot the skeptical-MArch audit said was missing.
+
+  ::: {.tool-panel}
+  ::: {.zone .input}**Input** … :::
+  ::: {.zone .operation}**What varies** … :::
+  ::: {.zone .output}**Output** … :::
+  ::: {.zone .check}**Quality check** … :::
+  :::
+---------------------------------------------------------------------------*/
+.reveal .tool-panel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin: 0.6em 0;
+  border: 1px solid var(--ink);
+  font-size: 0.8em;
+}
+.reveal .tool-panel .zone {
+  padding: 0.7em 0.8em;
+  border-right: 1px solid var(--rule-soft);
+}
+.reveal .tool-panel .zone:last-child { border-right: 0; }
+.reveal .tool-panel .zone strong {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 0.3em;
+}
+.reveal .tool-panel .zone.output { background: var(--paper); }
+.reveal .tool-panel .zone.check  { background: var(--activity-soft); }
+// A live slot: this tool gets run and captured WITH the class (often from a
+// student walk-through), not a faked screenshot. Honest and pedagogical.
+.reveal .tool-panel.demo-pending { border-style: dashed; }
+.reveal .tool-panel.demo-pending::after {
+  content: "we run and capture this live in class";
+  grid-column: 1 / -1;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7em;
+  color: var(--muted);
+  padding: 0.3em 0.8em;
+  border-top: 1px dashed var(--rule-soft);
+}
+
+/*---------------------------------------------------------------------------
+  8. WALK-THROUGH vs AUDIT  — the two Session-2 modes
+  .walkthrough-card = celebrated, opt-in "teach your strongest tool".
+  .audit-card       = universal, reciprocal "examine the work, not the person".
+  Visually distinct so the room always knows which mode it is in.
+---------------------------------------------------------------------------*/
+.reveal .walkthrough-card {
+  border: 1px solid var(--role-activity);
+  border-radius: 0;
+  padding: 0.75em 0.95em;
+  margin: 0.5em 0;
+  background: var(--activity-soft);
+}
+.reveal .walkthrough-card .card-title::before { content: "\25B6  "; color: var(--role-activity); }
+
+.reveal .audit-card {
+  border: 1px solid var(--rule);
+  border-radius: 0;
+  padding: 0.75em 0.95em;
+  margin: 0.5em 0;
+  background: #fff;
+}
+.reveal .audit-card .card-title::before { content: "?  "; color: var(--signal); font-weight: 700; }
+
+/*---------------------------------------------------------------------------
+  9. SMALL PARTS  — feeds tag, grading note, upload list
+---------------------------------------------------------------------------*/
+.reveal .feeds-tag {
+  display: inline-block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.6em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--signal);
+  border: 1px solid var(--signal);
+  padding: 0.12em 0.5em;
+  border-radius: 3px;
+}
+.reveal .grading-note {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62em;
+  color: var(--muted);
+  border-left: 3px solid var(--rule-soft);
+  padding-left: 0.7em;
+  margin-top: 0.6em;
+}
+
+/*---------------------------------------------------------------------------
+  10. LAYOUT PRIMITIVES
+---------------------------------------------------------------------------*/
+.reveal .two-col, .reveal .two-column-tight {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0.8em; align-items: start;
+}
+.reveal .three-step {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7em;
+}
+.reveal .step-box {
+  background: #fff; border: 1px solid var(--rule-soft);
+  border-top: 3px solid var(--role-concept); padding: 0.65em;
+}
+
+/*---------------------------------------------------------------------------
+  11. TABLES — Swiss: rules only, no fill, no zebra
+---------------------------------------------------------------------------*/
+.reveal table { font-size: 0.78em; border-collapse: collapse; }
+.reveal table th {
+  font-family: "Archivo", sans-serif;
+  text-align: left;
+  border-bottom: 2px solid var(--ink);
+  padding: 0.4em 0.7em;
+  text-transform: none;
+  background: none;
+  color: var(--ink);
+}
+.reveal table td { border-bottom: 1px solid var(--rule-soft); padding: 0.4em 0.7em; }
+.reveal table tr:hover { background: none; }
+
+/*---------------------------------------------------------------------------
+  12. CODE
+---------------------------------------------------------------------------*/
+.reveal pre { font-size: 0.5em; box-shadow: none; border-radius: 0; }
+.reveal pre code { background: var(--ink); color: #F3F3EE; border-radius: 0; padding: 1em; }
+.reveal code:not(pre code) {
+  background: #ECECE6; color: var(--ink);
+  padding: 0.1em 0.35em; border-radius: 3px; font-size: 0.9em;
+}
+
+/*---------------------------------------------------------------------------
+  13. BREAK / FULL-BLEED MOMENT  — .big-break
+---------------------------------------------------------------------------*/
+.reveal .big-break {
+  background: var(--ink);
+  color: var(--paper);
+  min-height: 72vh;
+  display: flex; flex-direction: column;
+  align-items: flex-start; justify-content: center;
+  padding: 0 2rem;
+}
+.reveal .big-break h2 { color: var(--paper); border-top-color: var(--paper); font-size: 2.4em; }
+
+/*---------------------------------------------------------------------------
+  14. VIBE CASE (Week 1)  — image left, reasoning right
+---------------------------------------------------------------------------*/
+.reveal .vibe-case {
+  display: grid; grid-template-columns: minmax(0,1.35fr) minmax(280px,0.8fr);
+  gap: 0.8em; align-items: stretch;
+}
+.reveal .vibe-visual img { width: 100%; height: min(58vh,610px); object-fit: cover; border-radius: 0; }
+.reveal .vibe-panel { display: flex; flex-direction: column; justify-content: center; font-size: 0.72em; }
+.reveal .vibe-kicker {
+  font-family: "JetBrains Mono", monospace;
+  color: var(--muted); font-size: 0.7em; font-weight: 500;
+  text-transform: uppercase; letter-spacing: 0.1em;
+}
+
+/*---------------------------------------------------------------------------
+  15. SLIDE CHROME — running footer (lightweight persistent context)
+  Set per deck via the YAML `footer:` option, e.g. "Week 5 · feeds A2".
+---------------------------------------------------------------------------*/
+.reveal .footer {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.5em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.reveal .slide-number { font-family: "JetBrains Mono", monospace; background: none; color: var(--muted); }
+
+/*---------------------------------------------------------------------------
+  16. RESPONSIVE
+---------------------------------------------------------------------------*/
+@media (max-width: 900px) {
+  .reveal .recall-4step,
+  .reveal .tool-panel,
+  .reveal .two-col, .reveal .two-column-tight,
+  .reveal .three-step,
+  .reveal .vibe-case { grid-template-columns: 1fr; }
+  .reveal .tool-panel .zone { border-right: 0; border-bottom: 1px solid var(--rule-soft); }
+  .reveal .vibe-visual img { height: 34vh; }
+}

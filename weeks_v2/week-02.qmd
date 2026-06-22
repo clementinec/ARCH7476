@@ -1,45 +1,55 @@
 ---
 title: "Week 2: Audit the Evidence You Already Use"
 subtitle: "Prior Decisions, Weak Links, and the Next Studio Question"
+output-file: week-02.html
 format:
   revealjs:
-    theme: simple
+    theme: [default, arch7476.scss]
     transition: slide
     slide-number: true
     incremental: true
     width: 1400
     height: 900
-    center: true
+    center: false
+    footer: "Week 2 · feeds A1: Total Recall"
 ---
 
 ## Today's Agenda
 
+:::: {.two-col}
+::: {.concept-card}
+[Session 1]{.label .concept}
+
+[Lecture / demo]{.card-title}
+
 - review A1 directions
 - what counts as evidence in architecture
 - how confidence gets overstated
-- workshop: prior decision audit
-- workshop: next decision brief
+- the fast evidence audit
+:::
+
+::: {.activity-card}
+[Session 2]{.label .activity}
+
+[Round table on YOUR work]{.card-title}
+
+- upload one marked-up decision image
+- reconstruct the evidence in four steps
+- a shared, gentle audit
+:::
+::::
+
+::: {.reflection-card}
+This week diagnoses the evidence behind work you have **already done**. We examine the argument, not the designer.
+:::
 
 ---
 
-## Session 2: Project Reasoning Round Table
+[The reset]{.kicker}
 
-Upload one rough material to Slack before Session 2:
+## Architecture uses many evidence types
 
-- the Week 1 decision image, diagram, or board fragment
-- evidence, precedent, assumption, and uncertainty marked directly on it
-
-Speak for 60-90 seconds:
-
-**What does this evidence actually support, and what does it not show yet?**
-
-This feeds **A1: Evidence Critique**.
-
-Volunteers go first; random draw may fill the remaining examples.
-
----
-
-## Architecture Uses Many Evidence Types
+Designers draw on a wide range of inputs. None is automatically strong or weak — strength depends on the decision it served.
 
 - precedent
 - standards and code
@@ -52,12 +62,14 @@ Volunteers go first; random draw may fill the remaining examples.
 
 ---
 
-## Not All Inputs Are Equal
+## Not all inputs are equal
 
-**Useful question:**  
-Did this input actually reduce uncertainty for the decision?
+::: {.concept-card}
+[The useful question]{.card-title}
+**Did this input actually reduce uncertainty for the decision?**
+:::
 
-If not, it may have been:
+If it did not, it may have been something else wearing the costume of evidence:
 
 - inspiration
 - convention
@@ -66,25 +78,39 @@ If not, it may have been:
 
 ---
 
-## A Fast Evidence Ladder
+[The recurring engine]{.kicker}
 
-Usually stronger:
+## A fast evidence ladder
 
-- measured performance
-- well-matched comparative evidence
-- relevant standards and verified constraints
+The same input can sit high or low depending on fit. As a rough first sort:
 
-Usually weaker:
+:::: {.three-step}
+::: {.step-box}
+[Usually stronger]{.card-title}
+Measured performance · well-matched comparative evidence · relevant standards and verified constraints
+:::
+::: {.step-box}
+[Often in between]{.card-title}
+Simulation output · stakeholder input · a single relevant precedent — strong **only** if assumptions and context hold
+:::
+::: {.step-box}
+[Usually weaker]{.card-title}
+Isolated precedent images · vague "best practice" · unsupported confidence from the designer
+:::
+::::
 
-- isolated precedent images
-- vague “best practice”
-- unsupported confidence from the designer
+::: {.warning-card}
+A weak input is not forbidden — it just cannot carry a strong claim on its own.
+:::
 
 ---
 
-## A1 Core Move
+## A1 core move
 
-Do not prove that your earlier design was right.
+::: {.concept-card}
+[Not the goal]{.card-title}
+Proving that your earlier design was right.
+:::
 
 Do this instead:
 
@@ -95,68 +121,149 @@ Do this instead:
 
 ---
 
-## Fast Audit Template
+## Fast audit template
+
+For each input you actually used, name its type, its honest strength, and what it really supported.
 
 | Input used then | Type | Strength | What it really supported |
 |---|---|---|---|
-| precedent image | visual precedent | low-medium | form and atmosphere, not performance |
+| precedent image | visual precedent | low–medium | form and atmosphere, not performance |
 | simulation screenshot | model output | medium | comparison only if assumptions were sound |
 | code requirement | standard | high within its scope | compliance, not overall quality |
 
 ---
 
-## Common Overclaims
+## Common overclaims
 
-- “there was evidence” when there was only precedent
-- “the model proved it” when the assumptions were weak
-- “users prefer this” from a tiny or biased sample
-- “this is best practice” without context
+::: {.warning-card}
+[Watch for these in your own A1]{.card-title}
+- "there was evidence" when there was only precedent
+- "the model proved it" when the assumptions were weak
+- "users prefer this" from a tiny or biased sample
+- "this is best practice" without context
+:::
 
----
-
-## Stand-Alone Prompt
-
-![California Academy of Sciences](../assets/examples/california-academy-of-sciences.jpg){height="500"}
-
-If you were defending one design claim about this project, what evidence would you want before making that claim in public?
+The strongest move is catching one of these in your **own** work before anyone else does.
 
 ---
 
-## Pivot to the Next Decision
+## Stand-alone prompt
 
-The second half of A1 asks:
+:::: {.two-col}
+::: {}
+![California Academy of Sciences](../assets/examples/california-academy-of-sciences.jpg){height="460"}
+:::
+::: {.concept-card}
+[Defend one claim]{.card-title}
+If you were defending a single design claim about this project in public, what evidence would you want **before** making it?
 
+Name the claim, then name the evidence that would earn it.
+:::
+::::
+
+---
+
+[Where A1 goes next]{.kicker}
+
+## Pivot to the next decision
+
+The second half of A1 turns from the past to the next real choice.
+
+:::: {.two-col}
+::: {.concept-card}
+[The four questions]{.card-title}
 - what is the next real design decision?
 - who needs to be convinced?
 - what evidence would matter?
 - which pathway might help most?
+:::
+
+::: {.reflection-card}
+This is where A1 stops being a post-mortem and starts pointing at the rest of the semester.
+:::
+::::
 
 ---
 
-## Pathway Sniff Test
+## Pathway sniff test
 
-Choose **provisionally**:
+Choose **provisionally** — you can revise as A2 sharpens the question.
 
-- `spreadsheet` if you mainly need comparison, ranking, or visible logic
-- `GIS` if space, site, access, zoning, or context is central
-- `Python` if the question needs repeatable analysis or notebook-based workflow
-- `GH / parametric` if the decision depends on design variables and option families
-- `BIM/BEM / simulation` if the claim depends on model translation or performance assumptions
-- `AI-assisted` if you need help building part of a workflow and can verify the output
-
----
-
-## Studio Exercise
-
-In pairs:
-
-1. Explain your prior decision in one minute
-2. Let your partner identify the weak evidence link
-3. Rewrite your “next decision” as one question the semester could realistically address
+- **spreadsheet** — comparison, ranking, or visible logic
+- **GIS** — space, site, access, zoning, or context is central
+- **Python / notebook** — repeatable analysis or notebook workflow
+- **GH / parametric** — design variables and option families
+- **BIM/BEM / simulation** — claim depends on model translation or performance
+- **AI-assisted** — help building part of a workflow you can verify
 
 ---
 
-## A1 Reality Check
+## BREAK {.big-break}
+
+Take 10 minutes.
+
+When you return, post one rough decision image from a past project to Slack — evidence, precedent, assumption, and uncertainty marked directly on it.
+
+---
+
+[Session 2 · Round table]{.kicker}
+
+## Round table on YOUR evidence
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node .is-current} [Variation]{.node} [Output]{.node} [Threshold]{.node} [Action]{.node}
+:::
+
+Upload one marked-up decision image (the Week 1 image, diagram, or board fragment), then we audit the evidence together. [feeds A1]{.feeds-tag}
+
+---
+
+## The audit (everyone)
+
+::: {.audit-card}
+[Examine the work, not the person]{.card-title}
+We ask the same question of every artifact, including mine: **what does this evidence actually support, and what does it not show yet?**
+
+Speak for 60–90 seconds. The strongest move is naming your own weakest link first.
+
+Volunteers go first; random draw may fill the remaining examples.
+:::
+
+---
+
+## Reconstruct your decision in four steps
+
+**Object this week: the evidence behind your past decision.**
+
+::: {.recall-4step}
+::: {.step}**Did** What evidence did I actually use, and for which decision? :::
+::: {.step}**Assumed** What did I treat as evidence that was really assumption or precedent? :::
+::: {.step}**Risk** Where was my confidence stronger than the evidence supported? :::
+::: {.step}**Verify** What evidence would I gather before the next decision? :::
+:::
+
+::: {.grading-note}
+Post your filled four-step to Slack under your image. Posting + an honest reconstruction is the graded unit — not how you spoke.
+:::
+
+---
+
+## Fast A1 worksheet
+
+By mid-class you should be able to fill:
+
+| Prompt | Your answer |
+|---|---|
+| Prior decision | |
+| Strongest evidence actually used | |
+| Its honest type and strength | |
+| What it did **not** show | |
+| Weakest link in the argument | |
+| Next studio decision | |
+
+---
+
+## A1 reality check
 
 If your A1 is still vague, it is usually because:
 
@@ -165,11 +272,22 @@ If your A1 is still vague, it is usually because:
 - the next decision is still a theme instead of a choice
 - the audience for the evidence is still unclear
 
+::: {.reflection-card}
+Vague is normal at Week 2. Naming why it is vague is the fix.
+:::
+
 ---
 
-## A1 Submission Check
+## A1 submission check
 
+::: {.concept-card}
+[Leave Week 2 with]{.card-title}
 - one prior decision, clearly described
-- one evidence audit
+- one evidence audit (type, strength, what it supported)
 - one next studio decision
 - one visual page that makes the transition visible
+:::
+
+::: {.warning-card}
+A1 is **diagnosed, not finished.** Week 3 finalizes the Total Recall board.
+:::

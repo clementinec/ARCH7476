@@ -1,656 +1,413 @@
 ---
 title: "Week 8: Reproducibility and Mentor Prep"
-subtitle: "Documentation Challenge, Automation Ethics, and Workflow Strategy"
+subtitle: "A Workflow Documentation Clinic, Automation Ethics, and Mentor Strategy"
 output-file: week-08.html
-format: 
+format:
   revealjs:
-    theme: solarized
-    transition: zoom
+    theme: [default, arch7476.scss]
+    transition: slide
     slide-number: true
-    incremental: false
+    incremental: true
     width: 1400
     height: 900
-    center: true
+    center: false
+    footer: "Week 8 · feeds A3: Prototype + Verification"
 ---
 
-## 🏆 Welcome to the Documentation Olympics! {.center}
+## Today's Agenda
 
-::: {.callout-important icon=false}
-## Today's Mission: Become a Workflow Warrior
+:::: {.two-col}
+::: {.concept-card}
+[Session 1]{.label .concept}
 
-**The Challenge**: Can you document your methods so well that a rival team could beat you using YOUR OWN instructions?
+[Workflow Documentation Clinic]{.card-title}
 
-**The Stakes**: Professional credibility, research reproducibility, and bragging rights
-
-**The Rewards**: Skills that will save your future self countless hours of confusion
+- why your work is only evidence if someone can rerun it
+- document one workflow, then swap and test it
+- automation ethics cases and AI method review
+- prepare strategic questions for your mentor
 :::
 
-**Today's Events:**
+::: {.activity-card}
+[Session 2]{.label .activity}
 
-🥇 **Documentation Speed Trials** | 🤖 **Automation Ethics Showdown** | 📋 **Reproducibility Battle Royale** | 💻 **Mentor Consultation Power Hour**
+[Round table on YOUR workflow]{.card-title}
 
----
-
-## Session 2: Project Reasoning Round Table
-
-Upload one rough material to Slack before Session 2:
-
-- prompt log
-- error message
-- workflow output
-- README fragment
-- verification note or checklist
-
-Speak for 60-90 seconds:
-
-**What must someone else inspect before they trust this output?**
-
-This feeds **A3: Verification and Failure Log**.
-
-Volunteers go first; random draw may fill the remaining examples.
-
----
-
-# Round 1: The Great Documentation Disasters {background-color="#2C3E50"}
-
----
-
-## 🔥 Horror Stories from the Field
-
-**Before we become champions, let's learn from the fallen...**
-
-::: {.callout-warning icon=false}
-## Real Disasters from Professional Practice
-
-**Case 1: The $2M Simulation Disaster**
-
-- Major firm loses client because simulation crashed
-- Original analyst left firm, took all knowledge
-- No documentation = 3 months to recreate work
-- **Client's response**: "How can we trust your process?"
-
-**Case 2: The Plot Ratio Panic**
-
-- Hong Kong development approval based on complex analysis
-- Planning department asks: "How did you calculate this?"
-- **Answer**: "Uh... Jennifer knew, but she's on maternity leave"
-- **Result**: 6-month delay, $10M holding costs
+- upload one rough workflow material
+- reconstruct your verification in four steps
+- agree what a reader must inspect to trust it
 :::
+::::
 
-**📊 Quick Poll**: Raise your hand if you've EVER struggled to remember what you did in a project from 3+ months ago
-
-*[Expected: Most hands up]*
-
-**The reality**: If YOU can't reproduce your work, nobody can!
-
----
-
-## 💀 The Reproducibility Graveyard
-
-**⚰️ Tragic Examples from Your Peers:**
-
-*"I used some version of Grasshopper but I can't remember which plugins..."*
-
-*"The analysis worked perfectly but now the file won't open..."*
-
-*"I know I changed some settings but I can't remember which ones..."*
-
-*"My brilliant Excel formula broke when I opened it on a different computer..."*
-
-::: {.callout-note icon=false}
-## Group Confession Time
-
-**Stand up and share** (30 seconds each): What's YOUR most embarrassing "I can't reproduce my own work" moment?
-
-**Rules**:
-
-- Be honest! 
-- No judgment zone
-- Funniest story gets a prize! 🎁
-:::
-
-**The lesson**: Documentation isn't just nice to have - it's professional survival!
-
----
-
-# Round 2: Documentation Speed Trials {background-color="#8E44AD"}
-
----
-
-## 🏃 The 10-Minute Method Challenge
-
-**⏰ You have 10 minutes to document ONE key workflow so clearly that a competitor could beat you with it!**
-
-::: {.callout-tip icon=false}
-## Challenge Rules
-
-**Pick ONE workflow** from your project (the most complex/critical one):
-
-- 📐 Grasshopper simulation setup
-- 📊 Survey data analysis 
-- 🎨 Visualization creation
-- 📈 Statistical analysis
-- 🔍 Literature review process
-
-**Your mission**: Write step-by-step instructions that a RIVAL TEAM could follow to get exactly your results
-
-**Evil twist**: You'll actually SWAP instructions with someone who has never seen your method!
-:::
-
-**Timer starts... NOW!** ⏱️
-
----
-
-## 📝 Documentation Template for Champions
-
-**Use this structure** (copy to your notes):
-
-**🎯 WORKFLOW**: ________________
-
-**🎪 SETUP (What you need first):**
-
-- Software/tools required: ________
-- Files/data needed: ________
-- Skills/knowledge required: ________
-
-**🎬 ACTION (Step-by-step):**
-
-1. **Step 1**: ________ (Why: ________)
-2. **Step 2**: ________ (Why: ________)
-3. **Step 3**: ________ (If X happens: ________)
-4. **Step 4**: ________ (Check: ________)
-
----
-
-## 📝 Documentation Template (cont'd)
-
-**🚨 TROUBLESHOOTING (When things break):**
-
-- Common error: ________ → Solution: ________
-- Warning signs: ________ → Action: ________
-
-**📋 QUALITY CHECK (How to know it worked):**
-
-- Success looks like: ________
-- Red flags: ________
-
----
-
-## 🔄 The Documentation Swap Challenge
-
-**Phase 1: The Exchange** (2 minutes)
-
-1. **Find someone with a DIFFERENT method** (don't pick your best friend!)
-2. **Swap your documentation**
-3. **NO VERBAL EXPLANATIONS** - instructions must stand alone!
-
-**Phase 2: The Attempt** (8 minutes)
-
-- Try to follow their instructions **exactly**
-- Note where you get confused
-- Document what's missing or unclear
-- **No questions allowed!** (that's the point)
-
----
-
-## 🔄 The Documentation Swap (cont'd)
-
-**Phase 3: The Brutal Feedback** (5 minutes)
-
-- Share what went wrong
-- Rate clarity (1-10)
-- Identify biggest gaps
-
-::: {.callout-important}
-## The Harsh Truth Moment
-
-**Show of hands**: How many of you could successfully follow someone else's instructions?
-
-*[Expected: Very few hands]*
-
-**This is why most research can't be reproduced!**
+::: {.reflection-card}
+This is a clinic, not a contest. We examine the **workflow**, and we help each other find the part a stranger could not yet reproduce.
 :::
 
 ---
 
-# Round 3: Automation Ethics Showdown {background-color="#E74C3C"}
+[The reproducibility frame]{.kicker}
 
----
+## If you can't rerun it, it isn't evidence
 
-## 🧠 Ethics 101: What's the Connection?
+A result becomes evidence only when someone else can inspect how you got it — and ideally reproduce it.
 
-**Quick class discussion**: What overlaps between AI Ethics and Research Ethics?
-
-::: {.callout-note icon=false}
-## Think-Pair-Share (3 minutes)
-
-**Turn to your neighbor and discuss:**
-
-- What ethical principles apply to BOTH AI use and research methods?
-- Remember the **Stanford Prison Experiment** we discussed?
-- What went wrong there, and how does it relate to using AI today?
-
-**Share out**: What connections did you find?
+::: {.concept-card}
+[The week's question]{.card-title}
+**If you left the project tomorrow, could someone trust your output without you in the room to explain it?**
 :::
 
-**Hint**: Both are about power, bias, and... what else?
+Documentation is not paperwork after the fact. It is the part of the method that makes the output legible.
 
 ---
 
-## 🎯 The Golden Rule: KNOW YOUR DATA
+## Where reproducibility quietly fails
 
-**The connection**: Both AI Ethics and Research Ethics boil down to one principle:
+These are ordinary, not dramatic — and they happen to careful people.
 
-::: {.callout-important icon=false}
-## **KNOW YOUR DATA**
+| Failure | What was lost |
+|---|---|
+| Plugin / version not recorded | the file won't reopen or rerun later |
+| Settings changed but not noted | results can't be matched to inputs |
+| One person held the knowledge | nobody else can defend the method |
+| CRS / units left implicit | spatial output is silently wrong |
+| AI-generated step never checked | a claim no one actually understands |
 
-**In Research Ethics:**
-
-- Know who your participants are
-- Know how your data was collected
-- Know the biases in your sample
-- Know the limitations of your methods
-
-**In AI Ethics:**
-
-- Know what data the AI was trained on
-- Know the biases in the training data
-- Know what the AI can and cannot do
-- Know when to trust (and not trust) AI outputs
-:::
-
-**The Stanford Experiment lesson**: When you don't understand the data (human behavior under power dynamics), things go catastrophically wrong.
-
-**The AI parallel**: When you don't understand the training data, your AI perpetuates harm at scale.
-
----
-
-## ⚡ Lightning Round: Ethical or Evil?
-
-**LIVE vote on Slack with EMOJI reactions!**
-
-**React with:** ✅ Totally fine | ⚠️ Okay with disclosure | ❌ Unethical | 🤷 Depends
-
-**Scenario 1**: Using ChatGPT to debug your Python code
-
-**Scenario 2**: Having AI write your literature review summary
-
----
-
-## ⚡ Lightning Round (cont'd)
-
-**React with:** ✅ Totally fine | ⚠️ Okay with disclosure | ❌ Unethical | 🤷 Depends
-
-**Scenario 3**: Using automation to generate "fake" sample data for testing
-
-**Scenario 4**: Automating repetitive calculations without understanding the formula
-
----
-
-## 🎭 The Automation Tribunal
-
-**🏛️ Mock Trial Format**: "The Case of the Overautomated Analysis"
-
-**The accused**: Student who used AI to generate building performance analysis
-
-**The evidence**:
-
-- Beautiful charts and professional-looking results
-- Complex statistical analysis beyond their skill level
-- No understanding of methodology when questioned
-- Used AI without disclosure
-
----
-
-## 🎭 The Automation Tribunal (cont'd)
-
-**Your roles**:
-
-- **👨‍⚖️ Prosecution team** (3 people): Why this is unethical
-- **👩‍💼 Defense team** (3 people): Why this is acceptable
-- **⚖️ Jury** (rest of class): Vote guilty or innocent
-
-**⏰ 15 minutes total**:
-
-- 5 min: Teams prepare arguments
-- 3 min: Prosecution case
-- 3 min: Defense case
-- 2 min: Jury deliberation
-- 2 min: Verdict and reasoning
-
-::: {.callout-warning}
-## Real Stakes
-
-This is happening in professional practice RIGHT NOW. Your opinion matters for your future career!
+::: {.warning-card}
+The risk is not embarrassment. It is presenting a result you can no longer stand behind.
 :::
 
 ---
 
-# 🎬 Break Time: GenAI Workflow Case Hunt {background-color="#16A085"}
+## A quick, honest poll
 
----
+Have you ever struggled to reconstruct what you did on a project from a few months ago?
 
-## 🎯 Instagram Case Hunt: Caption Focus
-
-**The Challenge**: Find a GenAI workflow example - focus on writing a great caption!
-
-**Find & Post (10 minutes - Break Time)**
-
-- Search: AI workflows, automated design processes, computational methods
-- Use Figma Instagram UI Kit
-- **NEW: Write a caption** (2-3 sentences):
-  - What makes this workflow innovative?
-  - How could it improve evidence-based design?
-
-Post to Slack: #WorkflowHunt
-
----
-
-## 👀 Review & Engage (8 minutes)
-
-**Browse classmates' posts**
-
-- Like posts that catch your eye
-- **Optional**: Suggest a hashtag in replies
-- **Optional**: Comment on interesting posts
-
-**Next week preview**: Hashtag strategy!
-
----
-
-## 💡 Caption Writing Tips
-
-**Good captions connect tool to impact:**
-
-- ❌ "This uses machine learning for facade design"
-- ✅ "ML-optimized facades cut energy 30% while keeping views - automation enhancing human priorities"
-
-**Ask yourself:**
-
-- What problem does this solve?
-- Why does automation help (not just what it does)?
-- How could you use this workflow?
-
----
-
-# Round 4: Mentor Consultation Power Hour {background-color="#27AE60"}
-
----
-
-## 💪 Mentor Meeting Preparation Bootcamp
-
-**🎯 Mission**: Transform your mentor consultation from "nice chat" to "career-changing insight"
-
-**⚠️ Problem**: Most students waste their mentor time with vague questions
-
-**💡 Solution**: Strategic preparation and smart questioning
-
-::: {.callout-tip icon=false}
-## The Mentor Maximizer Formula
-
-**BEFORE the meeting** (do this NOW):
-
-1. **🎪 The One-Liner**: Summarize your project in ONE sentence
-2. **🔍 The Specific Ask**: What EXACT advice do you need?
-3. **💼 The Context Check**: What does your mentor actually do?
-4. **📋 The Question Bank**: Prepare 5 strategic questions
-5. **📊 The Show-and-Tell**: What do you want them to see?
+::: {.reflection-card}
+Almost everyone has. The point is not guilt — it is to treat documentation as a normal, expected part of the workflow, starting with one process today.
 :::
 
-**⏰ You have 15 minutes to prep like a pro!**
+---
+
+# Session 1 · Documentation Clinic {background-color="#1a1a1a"}
 
 ---
 
-## 🎯 Strategic Question Development Workshop
+[The clinic]{.kicker}
 
-**🚫 BORING questions that waste time:**
+## Document one workflow so it stands alone
 
+Pick the **most complex or critical** workflow in your project — the one you would least want to lose.
+
+::: {.activity-card}
+[Do this now · 10 minutes]{.card-title}
+Write step-by-step instructions clear enough that a classmate who has never seen your method could follow them and get your result — with no verbal explanation from you.
+:::
+
+Candidates: a Grasshopper setup, a survey-data analysis, a GIS operation, a Python notebook, a statistical step.
+
+---
+
+## Documentation template
+
+Copy this structure into your notes.
+
+| Section | What to fill in |
+|---|---|
+| **Workflow** | the one process you are documenting |
+| **Setup** | software + versions, files/data, prerequisite skills |
+| **Steps** | each step, in order, with the reason for it |
+| **Decisions** | where a choice was made, and why |
+| **Troubleshooting** | common error → what to do |
+| **Quality check** | how to know the result is correct |
+
+---
+
+## The documentation swap
+
+We test documentation the only honest way: someone else follows it cold.
+
+:::: {.three-step}
+::: {.step-box}
+[Exchange · 2 min]{.card-title}
+Swap with someone whose method differs from yours. No verbal notes — the instructions must stand alone.
+:::
+::: {.step-box}
+[Attempt · 8 min]{.card-title}
+Follow their steps exactly. Mark where you get confused, stuck, or have to guess.
+:::
+::: {.step-box}
+[Feedback · 5 min]{.card-title}
+Report what was unclear, what was missing, and the one change that would help most.
+:::
+::::
+
+::: {.reflection-card}
+The gaps you find are the gaps a future reader would hit. This is the most useful feedback you will get all week.
+:::
+
+---
+
+[Automation ethics]{.kicker}
+
+## What AI use and research methods share
+
+::: {.concept-card}
+[The shared root]{.card-title}
+Both come down to one principle: **KNOW YOUR DATA.**
+:::
+
+:::: {.two-col}
+::: {.concept-card}
+[In research ethics]{.card-title}
+- who your participants are
+- how the data was collected
+- the biases in your sample
+- the limits of your method
+:::
+::: {.concept-card}
+[In AI use]{.card-title}
+- what the model was trained on
+- the biases that training carries
+- what the tool can and cannot do
+- when its output should not be trusted
+:::
+::::
+
+When you don't understand the data behind a result, harm propagates quietly and at scale.
+
+---
+
+## Automation Ethics Cases
+
+Read each case and place it: acceptable, acceptable **with disclosure**, or not acceptable — and say why.
+
+| Case | The action |
+|---|---|
+| 1 | Using an AI assistant to debug your Python |
+| 2 | Having AI write your literature-review summary |
+| 3 | Generating synthetic sample data for testing |
+| 4 | Automating a calculation you don't understand |
+
+::: {.warning-card}
+The line is rarely "AI or not." It is **understanding + disclosure**: do you understand the step, and have you said how it was produced?
+:::
+
+---
+
+## AI Method Review
+
+A common situation, examined as a method — not a person.
+
+::: {.concept-card}
+[The artifact]{.card-title}
+A building-performance analysis: polished charts, statistics beyond the author's stated skill, no understanding of the method when questioned, no disclosure of AI use.
+:::
+
+::: {.reflection-card}
+[Review it together]{.card-title}
+- which specific claims can the author actually defend?
+- what should have been disclosed, and where?
+- what verification would have made this trustworthy?
+- what is the minimum honest version of this output?
+:::
+
+We critique the **workflow and its claims**, never the author's ability.
+
+---
+
+[Key visual]{.kicker}
+
+## An AI-assisted workflow, made honest
+
+The same four-zone frame as the rest of the course — but now one zone is an AI draft, and the **manual check** and **disclosure** are not optional.
+
+::: {.tool-panel .demo-pending}
+::: {.zone .input}**Prompt** "Write a geopandas script that buffers transit stops 400 m and reports % of site parcels covered." :::
+::: {.zone .operation}**AI output** a draft script + a Grasshopper Python component stub :::
+::: {.zone .check}**Manual check** CRS is projected (metres, not degrees); buffer distance correct; parcel counts spot-checked by hand :::
+::: {.zone .output}**Disclosure note** "Buffer script drafted with AI; CRS and counts verified manually on DD-MM." :::
+:::
+
+::: {.warning-card}
+AI can draft the step. It cannot verify it or disclose it. Those two zones are your responsibility, every time.
+:::
+
+---
+
+# Session 1 · Mentor Prep {background-color="#1a1a1a"}
+
+---
+
+[Mentor prep]{.kicker}
+
+## Make the mentor meeting count
+
+Most mentor time is lost to vague questions. A little preparation turns a pleasant chat into a useful one.
+
+::: {.activity-card}
+[Prepare now · 15 minutes]{.card-title}
+1. **One-liner** — your project in a single sentence
+2. **Specific ask** — the exact advice you need
+3. **Context check** — what your mentor actually does
+4. **Question bank** — five strategic questions
+5. **Show-and-tell** — the one thing you want them to see
+:::
+
+---
+
+## Weak questions vs strategic questions
+
+:::: {.two-col}
+::: {.warning-card}
+[Weak — wastes the slot]{.card-title}
 - "What do you think of my project?"
 - "Do you have any advice?"
 - "How do I get a job in your field?"
-
-**🔥 STRATEGIC questions that create value:**
-
-- "In your experience, what evidence would convince [specific stakeholder] to change their current practice?"
-- "What implementation barriers do you see that I haven't considered?"
-- "How do practitioners in your field typically validate this type of analysis?"
-- "What would make my findings most useful for someone in your position?"
+:::
+::: {.concept-card}
+[Strategic — creates value]{.card-title}
+- "What evidence would convince [specific stakeholder] to change current practice?"
+- "What implementation barriers am I likely missing?"
+- "How do practitioners here validate this kind of analysis?"
+- "What would make my findings most useful to someone in your position?"
+:::
+::::
 
 ---
 
-## 🎯 Question Development Challenge
+## Question workshop
 
-::: {.callout-note icon=false}
-## Question Development Team Challenge
+::: {.activity-card}
+[In pairs · 10 minutes]{.card-title}
+1. Person A delivers their one-liner + best strategic question
+2. Person B gives specific feedback and one improvement
+3. Swap roles and repeat
+:::
 
-**Pairs** (5 minutes each):
-
-1. **Round 1**: Person A practices their one-liner + their best strategic question
-2. **Round 2**: Person B provides feedback and suggests improvements
-3. **Round 3**: Person B practices their pitch
-4. **Round 4**: Person A provides feedback
-
-**Class vote**: Best strategic question wins a prize! 🏆
+::: {.reflection-card}
+You are not competing for the best question. You are pressure-testing your own so it earns a real answer in the room.
 :::
 
 ---
 
-## 📱 The Mentor Follow-Up Challenge
+## Follow-up email template
 
-**📧 Email Template for Professional Follow-Up:**
+Send within 48 hours. Show that their advice changed something.
 
-::: {.callout-important icon=false}
-## Professional Follow-Up Template
+| Part | What to write |
+|---|---|
+| **Subject** | "Thank you for your insights on [topic] — [Your name]" |
+| **Opening** | the specific point that shifted your thinking |
+| **Action taken** | the concrete change or next step you made |
+| **Progress** | one short paragraph on how it shaped your work |
+| **Next step** | what you'll do next; offer to share results |
 
-**Subject**: Thank you for your insights on [specific topic] - [Your name]
-
-**Dear [Mentor name],**
-
-Thank you for the valuable conversation about [specific insight they shared]. Your point about [specific detail] particularly changed my perspective on [specific aspect].
-
-**I've taken action on your advice:**
-
-- [Specific thing you implemented]
-- [Specific change you made]
-- [Specific next step you planned]
-
-**Brief update on my progress:**
-[One paragraph on how their advice influenced your work]
-
-**Next steps:**
-I'll [specific action] and would be happy to share the results if you're interested.
-
-Thank you again for your time and insights.
-
-Best regards,
-[Your name]
-[Your contact info]
-:::
-
-**⚡ Challenge**: Draft this email NOW for your upcoming mentor meeting!
-
----
-
-# Round 5: Reproducibility Battle Royale {background-color="#F39C12"}
-
----
-
-## ⚔️ The Ultimate Workflow Warfare
-
-**🏆 Team Challenge**: The Reproducibility Olympics
-
-**Format**: Teams of 3-4 students
-
-**Mission**: Create the most bulletproof workflow documentation package
-
-::: {.callout-important icon=false}
-## Battle Royale Rules
-
-**Phase 1: Documentation Creation** (20 minutes)
-
-Each team creates a complete workflow package for ONE complex process:
-
-- 📋 **Step-by-step protocol** (minimum 8 steps)
-- 🛠️ **Tool requirements list** (with alternatives)
-- ⚠️ **Troubleshooting guide** (minimum 3 common problems)
-- ✅ **Quality checklist** (how to verify success)
-- 💡 **Pro tips** (shortcuts and optimizations)
+::: {.activity-card}
+[Draft it now]{.card-title}
+Write the subject line and opening for your upcoming mentor meeting before you leave class.
 :::
 
 ---
 
-## ⚔️ Battle Royale (cont'd)
+# BREAK {.big-break}
 
-::: {.callout-important icon=false}
-**Phase 2: The Challenge Round** (15 minutes)
+Take 10 minutes.
 
-- Teams SWAP documentation packages
-- Attempt to follow another team's instructions
-- Document where instructions fail or succeed
+When you return, post one rough workflow material to Slack for Session 2.
 
-**Phase 3: The Judging** (10 minutes)
+---
 
-- Teams present their attempts using other teams' instructions
-- Vote for: Most Clear, Most Complete, Most Professional
-- **Winners get bragging rights and prizes!** 🏆
+[Session 2 · Round table]{.kicker}
+
+## Round table on YOUR workflow
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node .is-current} [Threshold]{.node} [Action]{.node}
+:::
+
+Upload one rough material to Slack before Session 2 — a prompt log, an error message, a workflow output, a README fragment, or a verification note. [feeds A3]{.feeds-tag}
+
+---
+
+## Reconstruct your verification in four steps
+
+**Object this week: your workflow's verification — what someone must inspect to trust it.**
+
+::: {.recall-4step}
+::: {.step}**Did** What does the workflow produce, and how, step by step? :::
+::: {.step}**Assumed** What inputs or settings are implicit and undocumented? :::
+::: {.step}**Risk** Which step could a reader not reproduce or check? :::
+::: {.step}**Verify** What must someone inspect before they trust this output? :::
+:::
+
+::: {.grading-note}
+Post your four-step under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Volunteers go first; random draw may fill the remaining examples.
 :::
 
 ---
 
-## 📊 Documentation Competition Scorecard
+## Peer Reproducibility Check
 
-**Judge each team's package on:**
+In small groups, run each other's documentation cold — the same test as the swap, on real project material.
 
-| Criteria | Team A | Team B | Team C | Team D |
-|----------|--------|--------|--------|--------|
-| **Clarity** (Can anyone follow it?) | /10 | /10 | /10 | /10 |
-| **Completeness** (All steps included?) | /10 | /10 | /10 | /10 |
-| **Troubleshooting** (Problems anticipated?) | /10 | /10 | /10 | /10 |
-| **Professional Quality** (Ready for work?) | /10 | /10 | /10 | /10 |
-| **Usability** (Actually works?) | /10 | /10 | /10 | /10 |
-| **Total** | /50 | /50 | /50 | /50 |
-
-::: {.callout-tip}
-## Live Judging
-
-Use your phones to score in real-time! Results displayed on screen!
+:::: {.three-step}
+::: {.step-box}
+[Hand over]{.card-title}
+Share your workflow package: steps, tool + version list, troubleshooting notes, quality check.
 :::
-
-**🏆 Prize Categories:**
-
-- 🥇 **Overall Champion**: Best total score
-- 🎯 **Clarity King/Queen**: Easiest to follow
-- 🔧 **Troubleshooting Master**: Best problem-solving
-- 💎 **Professional Polish**: Most work-ready
-
----
-
-## 🌟 Workflow Documentation Hall of Fame
-
-**📸 Document the winning strategies!**
-
-::: {.callout-success icon=false}
-## Today's Champions
-
-**Most Clear Documentation**: ________________
-
-**Key success factor**: ________________
-
-**Most Complete Package**: ________________
-
-**Key success factor**: ________________
-
-**Best Troubleshooting**: ________________
-
-**Key success factor**: ________________
-
-**Most Professional**: ________________
-
-**Key success factor**: ________________
-
-**Class Insights**: What made the difference between good and great documentation?
+::: {.step-box}
+[Attempt]{.card-title}
+A peer follows it without you explaining. They note exactly where it breaks or needs a guess.
 :::
-
-**📝 These insights go directly into your A4 Reproducibility Capsule!**
-
----
-
-# The Learning Victory Lap {background-color="#3498DB"}
-
----
-
-## 🎉 What You Conquered Today
-
-::: {.callout-success icon=false}
-## Your New Superpowers
-
-**💪 Documentation Mastery**: You can now create instructions that actually work
-
-**🤖 Automation Wisdom**: You understand the ethics and limits of AI assistance
-
-**🎯 Mentor Maximization**: You know how to get real value from professional conversations
-
-**⚔️ Workflow Warfare**: You've battle-tested your methods against peer scrutiny
-
-**📈 Professional Growth**: You've leveled up your research reproducibility game
+::: {.step-box}
+[Improve]{.card-title}
+Together, name the single change that would most improve reproducibility.
 :::
+::::
 
-**Most importantly**: You've transformed from "it works on my computer" to "anyone can reproduce this work"
-
----
-
-## 🚀 Mission for This Week
-
-::: {.callout-important icon=false}
-## Week 8 Victory Checklist
-
-**Level 1: Documentation Survival** ✅
-
-1. **Complete your mentor consultation** - use your strategic questions!
-2. **Write killer mentor report** - show how insights changed your approach
-3. **Document ONE workflow perfectly** - use today's battle-tested techniques
-
-**Level 2: Reproducibility Hero** 🎖️
-
-4. **Create full Reproducibility Capsule** - battle-tested methods package
-5. **Test your documentation** - have someone else actually use it
-6. **Prepare troubleshooting FAQ** - anticipate everything that could go wrong
+::: {.reflection-card}
+We are not ranking packages. We are finding, kindly and early, the gap a stranger would fall into.
 :::
 
 ---
 
-## 🚀 Mission for This Week (cont'd)
+## Session 2 reflection
 
-::: {.callout-important icon=false}
-**Level 3: Workflow Warrior** 🥷
+::: {.reflection-card}
+[What changed?]{.card-title}
+Take three minutes and write:
 
-7. **Build automation tools** - create templates and shortcuts for future you
-8. **Mentor follow-up excellence** - professional follow-up that builds relationships
-9. **Help a classmate debug** - spread the reproducibility love
+- which step in my workflow is least reproducible right now?
+- what did a peer get stuck on that I assumed was obvious?
+- where am I using automation I can't fully defend?
+- what is one fix before Week 9?
+:::
 
-**Accountability moment**: Choose your level out loud! 📣
+Keep it in notes or post it as a Slack thread under your material.
+
+---
+
+## Week 8 Checklist
+
+::: {.concept-card}
+[Before Week 9]{.card-title}
+1. complete your mentor consultation using your strategic questions
+2. send the follow-up email showing how their advice changed your approach
+3. document one workflow so a peer can rerun it unaided
+4. disclose and verify any AI-assisted step in your method
+5. fix the weakest reproducibility gap your peer check found
 :::
 
 ---
 
-## 🎊 Exit Challenge: The Reproducibility Pledge
+[Exit]{.kicker}
 
-::: {.callout-warning icon=false}
-## Take the Pledge
+## Your verification, in one line
 
-**Stand up and repeat after me:**
+Before you leave, write and post:
 
-*"I solemnly swear to document my methods so clearly that my future self will thank me, my peers can build on my work, and my professional reputation will be bulletproof."*
-
-*"I will automate wisely, document thoroughly, and always remember that reproducibility is not optional - it's professional."*
-
-*"I will maximize mentor opportunities, follow up professionally, and treat every consultation as a career investment."*
-
-**Now shake hands with someone and promise to hold each other accountable this week!** 🤝
+::: {.reflection-card}
+**The least reproducible step in my workflow is ___, and the one thing a reader must inspect to trust it is ___.**
 :::
 
-**🎯 Next Week Preview**: Storytelling showdown and figure clinic - where your polished methods meet killer presentation skills!
-
----
-
-*"Documentation today, professional credibility forever!"* ⭐
+Week 9 closes A3 — we finalize the prototype and its verification before the workflow package begins.

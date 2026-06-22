@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.544">
 
-  <title>ARCH7476: Generative Design in Architecture - Week 3: Spreadsheet as Baseline Workflow</title>
+  <title>ARCH7476: Generative Design in Architecture - Week 3: Spreadsheet as the Comparison Layer</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -325,180 +325,182 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 3: Spreadsheet as Baseline Workflow</h1>
-  <p class="subtitle">Transparent Comparison, Charting, and Decision Logic</p>
+  <h1 class="title">Week 3: Spreadsheet as the Comparison Layer</h1>
+  <p class="subtitle">Transparent Comparison of Variants, Charting, and Decision Logic</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="todays-agenda" class="slide level2 center">
+<section id="todays-agenda" class="slide level2">
 <h2>Today’s Agenda</h2>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="label concept">Session 1</span></p>
+<p><span class="card-title">Lecture / tool demo</span></p>
 <ul>
-<li class="fragment">why spreadsheet is the baseline pathway</li>
-<li class="fragment">how to structure a workbook around a decision</li>
+<li class="fragment">spreadsheet as the transparent comparison layer</li>
+<li class="fragment">structuring a workbook around a decision</li>
 <li class="fragment">chart rescue and the 3-second message test</li>
-<li class="fragment">decision matrices and uncertainty</li>
-<li class="fragment">in-class build exercise</li>
+<li class="fragment">decision matrices and honest uncertainty</li>
+</ul>
+</div>
+<div class="activity-card">
+<p><span class="label activity">Session 2</span></p>
+<p><span class="card-title">Round table on YOUR comparison</span></p>
+<ul>
+<li class="fragment">upload one rough comparison</li>
+<li class="fragment">reconstruct it in four steps</li>
+<li class="fragment">in-class build, then a peer-swap test</li>
+</ul>
+</div>
+</div>
+<div class="reflection-card">
+<p>A1 finalizes this week. The same comparison logic also seeds A2 — this is where Total Recall hands off to the Workflow Map.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<p><span class="kicker">The reframe</span></p>
+</section>
+<section id="the-spreadsheet-is-the-comparison-layer" class="slide level2">
+<h2>The spreadsheet is the comparison layer</h2>
+<p>This is not remedial Excel. A workbook is the most portable way to make a <strong>generative comparison of variants</strong> legible to someone else.</p>
+<div class="concept-card">
+<p><span class="card-title">Why it earns its place</span> It is the lowest-friction surface where assumptions, options, and trade-offs sit side by side and stay editable.</p>
+</div>
+<ul>
+<li class="fragment">visible assumptions, not hidden ones</li>
+<li class="fragment">editable comparison logic anyone can rerun</li>
+<li class="fragment">traceable calculations from input to claim</li>
+<li class="fragment">fast iteration with no heavy setup</li>
 </ul>
 </section>
-<section id="session-2-project-reasoning-round-table" class="slide level2 center">
-<h2>Session 2: Project Reasoning Round Table</h2>
-<p>Upload one rough material to Slack before Session 2:</p>
-<ul>
-<li class="fragment">comparison table</li>
-<li class="fragment">chart</li>
-<li class="fragment">decision matrix</li>
-<li class="fragment">sketch of variants or scenarios</li>
-</ul>
-<p>Speak for 60-90 seconds:</p>
-<p><strong>What variants or scenarios could be compared, and what would make the trade-off visible?</strong></p>
-<p>This feeds <strong>A1: final Total Recall board</strong> and <strong>A2: Decision Recap</strong>.</p>
-<p>Volunteers go first; random draw may fill the remaining examples.</p>
+<section id="where-it-sits-on-the-spine" class="slide level2">
+<h2>Where it sits on the spine</h2>
+<div class="spine-rail">
+<p><span class="node">Decision</span> <span class="node">Evidence</span> <span class="node is-current">Variation</span> <span class="node">Output</span> <span class="node">Threshold</span> <span class="node">Action</span></p>
+</div>
+<p>The workbook is how <strong>Variation</strong> becomes inspectable: many variants or scenarios, one comparable structure, one readable output.</p>
+<div class="warning-card">
+<p>A1 is <strong>finalized</strong> this week — the Total Recall board. The comparison habit you build here is exactly what A2’s Workflow Map will formalize.</p>
+</div>
 </section>
-<section id="spreadsheet-is-not-the-weak-option" class="slide level2 center">
-<h2>Spreadsheet Is Not the Weak Option</h2>
-<p>It is the most portable professional workflow when you need:</p>
-<ul>
-<li class="fragment">visible assumptions</li>
-<li class="fragment">editable comparison logic</li>
-<li class="fragment">traceable calculations</li>
-<li class="fragment">fast iteration without complicated setup</li>
-</ul>
+<section class="slide level2">
+
+<p><span class="kicker">Tool demo</span></p>
 </section>
-<section id="start-with-the-decision-not-the-software" class="slide level2 center">
-<h2>Start With the Decision, Not the Software</h2>
-<p>Bad workbook:</p>
-<ul>
-<li class="fragment">one giant sheet</li>
-<li class="fragment">no units</li>
-<li class="fragment">no clear audience</li>
-<li class="fragment">no reason for each column to exist</li>
-</ul>
-<p>Better workbook:</p>
-<ul>
-<li class="fragment">one question per structure</li>
-<li class="fragment">one row type per sheet</li>
-<li class="fragment">one clear output in mind</li>
-</ul>
+<section id="workbook-anatomy" class="slide level2">
+<h2>Workbook anatomy</h2>
+<p>The same four-zone frame we use for every tool. A real workbook screenshot drops into this later.</p>
+<div class="tool-panel demo-pending">
+<p>::: {.zone .input}<strong>Input</strong> evidence rows — source, observation, confidence per variant ::: ::: {.zone .operation}<strong>What varies</strong> the option or scenario being compared (A / B / C, or low / mid / high) ::: ::: {.zone .output}<strong>Output</strong> one chart or matrix that makes the trade-off visible ::: ::: {.zone .check}<strong>Quality check</strong> units stated, legend present, formulas readable by a stranger :::</p>
+</div>
+<div class="example-card">
+<p>Screenshot pending — we will capture a live workbook in class rather than fake a polished one.</p>
+</div>
 </section>
-<section id="typical-architecture-spreadsheet-uses" class="slide level2 center">
-<h2>Typical Architecture Spreadsheet Uses</h2>
-<ul>
-<li class="fragment">precedent comparison</li>
-<li class="fragment">evidence/source logging</li>
-<li class="fragment">observation sheets</li>
-<li class="fragment">option scoring</li>
-<li class="fragment">uncertainty range charts</li>
-<li class="fragment">summary tables for decision briefs</li>
-</ul>
+<section id="start-with-the-decision-not-the-software" class="slide level2">
+<h2>Start with the decision, not the software</h2>
+<p>The structure follows the question, never the other way around.</p>
+<div class="two-col">
+<div class="warning-card">
+<p><span class="card-title">Workbook with no decision</span> - one giant undifferentiated sheet - no units, no audience - columns with no reason to exist</p>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Workbook built on a decision</span> - one question per structure - one row type per sheet - one clear output already in mind</p>
+</div>
+</div>
 </section>
-<section id="stand-alone-prompt" class="slide level2 center">
-<h2>Stand-Alone Prompt</h2>
+<section id="a-useful-workbook-pattern" class="slide level2">
+<h2>A useful workbook pattern</h2>
+<p>Three sheets, each tied to one job in the comparison.</p>
+<div class="three-step">
+<div class="step-box">
+<p><span class="card-title">Sheet 1 · Evidence log</span> source · date · evidence type · relevance · confidence</p>
+</div>
+<div class="step-box">
+<p><span class="card-title">Sheet 2 · Alternatives</span> option · criteria · scores or ranges · comments</p>
+</div>
+<div class="step-box">
+<p><span class="card-title">Sheet 3 · Outputs</span> the chart · the matrix · the summary line</p>
+</div>
+</div>
+<div class="concept-card">
+<p>Each sheet answers one question, so the reader never has to reverse-engineer your intent.</p>
+</div>
+</section>
+<section id="from-image-to-comparable-fields" class="slide level2">
+<h2>From image to comparable fields</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../assets/examples/high-line-park.jpg" height="500"></p>
+<p><img data-src="../assets/examples/high-line-park.jpg" height="380"></p>
 <figcaption>High Line, New York</figcaption>
 </figure>
 </div>
-<p>If you claimed this public-space strategy works, what would your spreadsheet need to track?</p>
+<p>If you claimed this public-space strategy works, what would the workbook need to <strong>compare</strong>? Move from atmosphere to comparable fields: location, activity type, time and duration, seating/circulation, weather, evidence source and confidence.</p>
 </section>
-<section id="from-image-to-variables" class="slide level2 center">
-<h2>From Image to Variables</h2>
-<p>Possible spreadsheet columns:</p>
+<section id="typical-comparison-uses" class="slide level2">
+<h2>Typical comparison uses</h2>
 <ul>
-<li class="fragment">location and context</li>
-<li class="fragment">observed activity type</li>
-<li class="fragment">time of day and duration</li>
-<li class="fragment">seating / circulation condition</li>
-<li class="fragment">weather</li>
-<li class="fragment">evidence source and confidence</li>
+<li class="fragment">precedent comparison across variants</li>
+<li class="fragment">evidence and source logging</li>
+<li class="fragment">option scoring with stated criteria</li>
+<li class="fragment">uncertainty-range charts</li>
+<li class="fragment">summary tables for a decision brief</li>
 </ul>
-<p>The point is to move from atmosphere to comparable fields.</p>
+<div class="reflection-card">
+<p>Every one of these is a way of laying variants side by side so the trade-off becomes visible to someone who was not in your head.</p>
+</div>
 </section>
-<section id="a-useful-workbook-pattern" class="slide level2 center">
-<h2>A Useful Workbook Pattern</h2>
-<h3 id="sheet-1-evidence-log">Sheet 1: Evidence Log</h3>
-<ul>
-<li class="fragment">source</li>
-<li class="fragment">date</li>
-<li class="fragment">evidence type</li>
-<li class="fragment">relevance</li>
-<li class="fragment">confidence</li>
-</ul>
-<h3 id="sheet-2-alternatives">Sheet 2: Alternatives</h3>
-<ul>
-<li class="fragment">option</li>
-<li class="fragment">criteria</li>
-<li class="fragment">scores or ranges</li>
-<li class="fragment">comments</li>
-</ul>
-<h3 id="sheet-3-outputs">Sheet 3: Outputs</h3>
-<ul>
-<li class="fragment">charts</li>
-<li class="fragment">matrices</li>
-<li class="fragment">summary text</li>
-</ul>
+<section class="slide level2">
+
+<p><span class="kicker">The chart problem</span></p>
 </section>
-<section id="spreadsheet-failure-modes" class="slide level2 center">
-<h2>Spreadsheet Failure Modes</h2>
-<ul>
-<li class="fragment">“misc notes” columns that swallow everything</li>
-<li class="fragment">numbers without units</li>
-<li class="fragment">color coding with no legend</li>
-<li class="fragment">formulas no one else can read</li>
-<li class="fragment">charts with no visible message</li>
-</ul>
+<section id="bad-chart-vs-cleaned-chart" class="slide level2">
+<h2>Bad chart vs cleaned chart</h2>
+<p>A chart fails when it describes data instead of carrying a message.</p>
+<div class="two-col">
+<div class="warning-card">
+<p><span class="card-title">The chart that fails a stakeholder</span> - too many series, no dominant takeaway - labels too small to read at a glance - colour decorating instead of working - title naming the data, not the message</p>
+</div>
+<div class="activity-card">
+<p><span class="card-title">The cleaned chart</span> - one message, stated in the title - only the series that support it - annotation forcing the eye to the point - uncertainty shown where it matters</p>
+</div>
+</div>
 </section>
-<section id="chart-catastrophe" class="slide level2 center">
-<h2>Chart Catastrophe</h2>
-<p>What makes a chart fail for stakeholders?</p>
-<ul>
-<li class="fragment">too many series</li>
-<li class="fragment">no dominant takeaway</li>
-<li class="fragment">labels too small</li>
-<li class="fragment">colors doing decoration instead of work</li>
-<li class="fragment">title describing data instead of the message</li>
-</ul>
-</section>
-<section id="the-3-second-message-test" class="slide level2 center">
-<h2>The 3-Second Message Test</h2>
-<p>If a critic glances at a chart for three seconds, can they tell:</p>
+<section id="the-3-second-message-test" class="slide level2">
+<h2>The 3-second message test</h2>
+<p>If a critic glances for three seconds, can they tell:</p>
 <ul>
 <li class="fragment">what is being compared?</li>
-<li class="fragment">which option is better or riskier?</li>
-<li class="fragment">what they are supposed to notice?</li>
+<li class="fragment">which option is stronger or riskier?</li>
+<li class="fragment">what they are meant to notice?</li>
 </ul>
-<p>If not, the chart is not finished.</p>
+<div class="warning-card">
+<p>If not, the chart is not finished — that is a clarity gap, not a failure of taste.</p>
+</div>
 </section>
-<section id="rescue-formula" class="slide level2 center">
-<h2>Rescue Formula</h2>
-<ol type="1">
-<li class="fragment">Decide the one message</li>
-<li class="fragment">Remove what does not support it</li>
-<li class="fragment">Use annotation or labeling to force clarity</li>
-<li class="fragment">Show uncertainty where it matters</li>
-<li class="fragment">Connect the chart back to the design decision</li>
-</ol>
+<section id="chart-rescue-formula" class="slide level2">
+<h2>Chart rescue formula</h2>
+<div class="recall-4step">
+<p>::: {.step}<strong>Message</strong> Decide the one thing the chart must say ::: ::: {.step}<strong>Remove</strong> Cut everything that does not support it ::: ::: {.step}<strong>Force</strong> Use annotation or labels to make the point unmissable ::: ::: {.step}<strong>Limit</strong> Show uncertainty, then connect back to the decision :::</p>
+</div>
 </section>
-<section id="show-uncertainty-honestly" class="slide level2 center">
-<h2>Show Uncertainty Honestly</h2>
-<p>Avoid:</p>
-<ul>
-<li class="fragment">fake precision</li>
-<li class="fragment">unexplained weighted scores</li>
-<li class="fragment">single-point claims when the inputs are weak</li>
-</ul>
-<p>Prefer:</p>
-<ul>
-<li class="fragment">ranges</li>
-<li class="fragment">scenario labels</li>
-<li class="fragment">note fields for assumptions</li>
-<li class="fragment">charts that make limits visible</li>
-</ul>
+<section id="show-uncertainty-honestly" class="slide level2">
+<h2>Show uncertainty honestly</h2>
+<div class="two-col">
+<div class="warning-card">
+<p><span class="card-title">Avoid</span> - fake precision - unexplained weighted scores - single-point claims on weak inputs</p>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Prefer</span> - ranges and scenario labels - note fields for assumptions - charts that make limits visible</p>
+</div>
+</div>
 </section>
-<section id="decision-matrix-example" class="slide level2 center">
-<h2>Decision Matrix Example</h2>
+<section id="decision-matrix-example" class="slide level2">
+<h2>Decision matrix example</h2>
+<p>A matrix is a comparison layer in table form — readable as long as the criteria and direction are stated.</p>
 <table>
 <thead>
 <tr class="header">
@@ -537,51 +539,114 @@
 </tr>
 </tbody>
 </table>
+<div class="reflection-card">
+<p>The note column is doing the real work: it converts scores back into a defensible recommendation.</p>
+</div>
 </section>
-<section id="workbook-build-sprint" class="slide level2 center">
-<h2>Workbook Build Sprint</h2>
-<p><strong>15 minutes</strong></p>
-<p>Build a starter workbook with:</p>
+<section id="break" class="slide level2 big-break">
+<h2>BREAK</h2>
+<p>Take 10 minutes.</p>
+<p>When you return, open the workbook you will rebuild — your A1 topic, not a generic example.</p>
+</section>
+<section class="slide level2">
+
+<p><span class="kicker">Session 2 · Round table</span></p>
+</section>
+<section id="round-table-on-your-comparison" class="slide level2">
+<h2>Round table on YOUR comparison</h2>
+<div class="spine-rail">
+<p><span class="node">Decision</span> <span class="node">Evidence</span> <span class="node is-current">Variation</span> <span class="node">Output</span> <span class="node">Threshold</span> <span class="node">Action</span></p>
+</div>
+<p>Upload one rough comparison to Slack before Session 2 — a comparison table, a chart, a decision matrix, or a sketch of variants or scenarios. <span class="feeds-tag">feeds A1 + A2</span></p>
+</section>
+<section id="mode-1-the-walk-through-optional-celebrated" class="slide level2">
+<h2>Mode 1 — the walk-through (optional, celebrated)</h2>
+<p>This is a hands-on tool week, so a live walk-through is especially welcome.</p>
+<div class="walkthrough-card">
+<p><span class="card-title">Show us your workbook running</span> A volunteer opens their actual spreadsheet and walks the class through one comparison — uninterrupted, 3–4 minutes. Messy is fine; we want the real thing working.</p>
+</div>
+<ul>
+<li class="fragment">not graded as a performance; volunteering earns credit, never penalty</li>
+<li class="fragment">the room listens; questions wait for the audit</li>
+<li class="fragment">show how a variant changes the output live, if you can</li>
+</ul>
+</section>
+<section id="reconstruct-your-comparison-in-four-steps" class="slide level2">
+<h2>Reconstruct your comparison in four steps</h2>
+<p><strong>Object this week: your comparison of variants or scenarios in a spreadsheet.</strong></p>
+<div class="recall-4step">
+<p>::: {.step}<strong>Did</strong> What variants did I compare, and how did I structure the sheets? ::: ::: {.step}<strong>Assumed</strong> What scores, weights, or units did I treat as given? ::: ::: {.step}<strong>Risk</strong> Where is the comparison hiding a weak input or a false precision? ::: ::: {.step}<strong>Verify</strong> What would I add to make the trade-off legible to a stranger? :::</p>
+</div>
+<div class="grading-note">
+<p>Post your filled four-step to Slack under your comparison. Posting + an honest reconstruction is the graded unit — not how you spoke or how polished the workbook looks.</p>
+</div>
+<p>Volunteers go first; random draw may fill the remaining examples.</p>
+</section>
+<section id="in-class-build-sprint" class="slide level2">
+<h2>In-class build sprint</h2>
+<div class="activity-card">
+<p><span class="card-title">Do this now — 15 minutes</span> Build a starter workbook on your A1 topic with:</p>
 <ol type="1">
 <li class="fragment">one sheet for evidence sources</li>
 <li class="fragment">one sheet for alternative comparison</li>
 <li class="fragment">one chart that makes a trade-off visible</li>
 </ol>
-<p>Use your A1 topic, not a generic example.</p>
+</div>
+<p>Use your real topic, not a placeholder — this is the comparison your A1 board and A2 map will both lean on.</p>
 </section>
-<section id="peer-swap-test" class="slide level2 center">
-<h2>Peer Swap Test</h2>
-<p>Swap screens with a classmate and ask:</p>
+<section id="peer-swap-test" class="slide level2">
+<h2>Peer-swap test</h2>
+<p>Swap screens with a classmate. They read only what is on the sheet — you stay quiet.</p>
+<div class="audit-card">
+<p><span class="card-title">Examine the workbook, not the author</span> Can a reader, with no narration:</p>
 <ul>
-<li class="fragment">can they understand the workbook logic quickly?</li>
-<li class="fragment">can they tell what each column means?</li>
-<li class="fragment">can they identify the decision being supported?</li>
-<li class="fragment">can they read the chart without verbal explanation?</li>
+<li class="fragment">follow the workbook logic quickly?</li>
+<li class="fragment">tell what each column means?</li>
+<li class="fragment">identify the decision being supported?</li>
+<li class="fragment">read the chart without explanation?</li>
 </ul>
+</div>
+<p>Where the answer is no, that is a fix on the artifact — not a judgment of the person.</p>
 </section>
-<section id="what-spreadsheet-cannot-replace" class="slide level2 center">
-<h2>What Spreadsheet Cannot Replace</h2>
+<section id="what-the-spreadsheet-cannot-replace" class="slide level2">
+<h2>What the spreadsheet cannot replace</h2>
 <ul>
 <li class="fragment">spatial reasoning at city or site scale</li>
 <li class="fragment">repeated geospatial operations</li>
-<li class="fragment">more complex notebook automation</li>
+<li class="fragment">heavier notebook automation</li>
 <li class="fragment">simulation-specific modeling</li>
 </ul>
-<p>That is why the course still surveys GIS, BIM/BEM, GH, Python, and AI-assisted workflows.</p>
+<div class="concept-card">
+<p>That is exactly why the course goes on to survey GIS, BIM/BEM, Grasshopper, Python, and AI-assisted workflows.</p>
+</div>
 </section>
-<section id="if-you-stay-on-spreadsheet" class="slide level2 center">
-<h2>If You Stay on Spreadsheet</h2>
-<p>You can still do the course very well if you:</p>
+<section id="if-you-stay-on-the-spreadsheet" class="slide level2">
+<h2>If you stay on the spreadsheet</h2>
+<p>You can do the course very well on this tool, as long as you:</p>
 <ul>
-<li class="fragment">keep the logic clean</li>
+<li class="fragment">keep the comparison logic clean</li>
 <li class="fragment">tie every sheet to a decision</li>
 <li class="fragment">avoid decorative graphics</li>
 <li class="fragment">document what the workbook cannot tell you</li>
 </ul>
+</section>
+<section class="slide level2">
+
+<p><span class="kicker">Exit</span></p>
+</section>
+<section id="week-3-milestone" class="slide level2">
+<h2>Week 3 milestone</h2>
+<div class="concept-card">
+<p><span class="card-title">Leave class with</span> 1. your A1 Total Recall board finalized 2. a starter workbook comparing real variants 3. one chart that passes the 3-second test 4. one named limit your workbook cannot answer</p>
+</div>
+<div class="reflection-card">
+<p><strong>The trade-off my workbook makes visible is <strong><em>, and the input I least trust is </em></strong>.</strong></p>
+</div>
+<p>Week 4 opens A2: turning this comparison habit into an Evidence + Workflow Map.</p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-
+<p>Week 3 · feeds A1 + A2</p>
 </div>
 </div>
 </section>
@@ -665,7 +730,7 @@
         disableLayout: false,
 
         // Vertical centering of slides
-        center: true,
+        center: false,
 
         // Enables touch navigation on devices with touch input
         touch: true,

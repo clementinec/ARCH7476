@@ -28,71 +28,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -384,6 +319,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -391,312 +329,281 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Week 12: Object Fair</h1>
-  <p class="subtitle">Final Presentations, Critique, and Transfer Forward</p>
+  <p class="subtitle">Final Review, Synthesis, and Transfer Forward</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="welcome-to-the-object-fair-championship" class="slide level2 center">
-<h2>🏆 Welcome to the Object Fair Championship!</h2>
-<div class="callout callout-important no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>The Grand Finale: Evidence-Based Design Excellence</strong></p>
+<section id="todays-agenda" class="slide level2">
+<h2>Today’s Agenda</h2>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="label concept">Session 1</span></p>
+<p><span class="card-title">Final review</span></p>
+<ul>
+<li class="fragment">present your A4 package to the room and invited critics</li>
+<li class="fragment">timed presentations, then questions</li>
+<li class="fragment">read every project against the same evaluation loop</li>
+<li class="fragment">capture the feedback that matters</li>
+</ul>
 </div>
-<div class="callout-content">
-<p><strong>Today’s Mission</strong>: Celebrate your transformation from student to evidence-based design professional</p>
-<p><strong>The Stage</strong>: Industry professionals, peers, and faculty witnesses to your achievement</p>
-<p><strong>The Legacy</strong>: You represent the future of systematic, stakeholder-centered design</p>
+<div class="activity-card">
+<p><span class="label activity">Session 2</span></p>
+<p><span class="card-title">Reasoning round table</span></p>
+<ul>
+<li class="fragment">synthesis, not a second formal presentation</li>
+<li class="fragment">reconstruct the reasoning you can carry forward</li>
+<li class="fragment">name what transfers to your next project</li>
+</ul>
 </div>
 </div>
+<div class="reflection-card">
+<p>This is a final review, not a contest. We read each package carefully, name what it shows, and help each other see what carries forward.</p>
 </div>
-<p><strong>🎪 Today’s Championship Events:</strong></p>
-<p>🎖️ <strong>Professional Presentation Championship</strong> | 🤝 <strong>Industry Networking Excellence</strong> | 🌟 <strong>Peer Celebration &amp; Recognition</strong> | 🚀 <strong>Professional Development Launch</strong></p>
 </section>
-<section id="session-2-project-reasoning-round-table" class="slide level2 center">
-<h2>Session 2: Project Reasoning Round Table</h2>
-<p>Use your final object card or reflection note.</p>
-<p>Speak for 60-90 seconds:</p>
-<p><strong>What design reasoning can transfer to another studio project?</strong></p>
-<p>This feeds <strong>A4: Reflection Note</strong>.</p>
-<p>The purpose is synthesis, not a second formal presentation.</p>
-</section>
-<section class="slide level2 center">
+<section class="slide level2">
 
+<p><span class="kicker">The arc</span></p>
 </section>
-<section>
-<section id="championship-opening-ceremony" class="title-slide slide level1 center" data-background-color="#1A1A2E">
-<h1>Championship Opening Ceremony</h1>
-
-</section>
-<section id="welcome-to-excellence" class="slide level2 center">
-<h2>🎺 Welcome to Excellence</h2>
-<h3 id="the-journey-from-week-1-to-champion">🌟 The Journey from Week 1 to Champion</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource mermaid number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>graph LR</span>
-<span id="cb1-2"><a></a>    A[🤔 Week 1: Curiosity] --&gt; B[📚 A1: Evidence Claims]</span>
-<span id="cb1-3"><a></a>    B --&gt; C[🔍 A2: Literature Mastery]</span>
-<span id="cb1-4"><a></a>    C --&gt; D[🧪 A3: Method Testing]</span>
-<span id="cb1-5"><a></a>    D --&gt; E[📊 A4: Professional Analysis]</span>
-<span id="cb1-6"><a></a>    E --&gt; F[🏆 Object Fair Champion]</span>
-<span id="cb1-7"><a></a>    </span>
-<span id="cb1-8"><a></a>    A --&gt; G[❓ Questions]</span>
-<span id="cb1-9"><a></a>    B --&gt; H[🎯 Focus] </span>
-<span id="cb1-10"><a></a>    C --&gt; I[📖 Knowledge]</span>
-<span id="cb1-11"><a></a>    D --&gt; J[🛠️ Skills]</span>
-<span id="cb1-12"><a></a>    E --&gt; K[💼 Competence]</span>
-<span id="cb1-13"><a></a>    F --&gt; L[👑 Professional Excellence]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>🎯 What You’ve Achieved</strong>: Transformation from curious students to evidence-based design professionals ready to change the built environment</p>
-</section>
-<section id="championship-format-excellence-standards" class="slide level2 center">
-<h2>🎪 Championship Format &amp; Excellence Standards</h2>
-<h3 id="professional-competition-structure">🏆 Professional Competition Structure</h3>
-<p><strong>🕒 Championship Timeline</strong>: - <strong>Setup &amp; Final Preparation</strong> (15 minutes) - <strong>Opening Ceremony</strong> (10 minutes)<br>
-- <strong>Professional Presentation Championship</strong> (90 minutes) - <strong>Industry Networking &amp; Recognition</strong> (25 minutes)</p>
-<p><strong>👨‍⚖️ Championship Panel</strong>: - <strong>Industry Professionals</strong>: Real-world application experts - <strong>Academic Leaders</strong>: Research methodology specialists - <strong>Practice Innovators</strong>: Evidence-based design pioneers - <strong>Career Development Mentors</strong>: Professional growth advisors</p>
-<p><strong>🎯 Excellence Evaluation</strong>: - <strong>Professional Competence</strong>: Research quality and stakeholder relevance - <strong>Communication Mastery</strong>: Presentation skills and industry engagement - <strong>Innovation Leadership</strong>: Creative approaches and novel insights - <strong>Professional Readiness</strong>: Career preparation and network development</p>
-</section>
-<section class="slide level2 center">
-
-</section></section>
-<section>
-<section id="professional-presentation-championship" class="title-slide slide level1 center" data-background-color="#0F4C75">
-<h1>Professional Presentation Championship</h1>
-
-</section>
-<section id="individual-championship-presentations" class="slide level2 center">
-<h2>⚔️ Individual Championship Presentations</h2>
-<h3 id="championship-performance-standards">🏆 Championship Performance Standards</h3>
-<p><strong>🎤 Professional Presentation Excellence</strong>: - <strong>6-8 minutes</strong>: Core presentation demonstrating professional competence - <strong>4 minutes</strong>: Q&amp;A with industry panel showing expertise - <strong>Professional Standards</strong>: Industry-appropriate communication and presence - <strong>Object Card Integration</strong>: Visual aid supporting professional messaging</p>
-<p><strong>🎯 Champion Qualities Being Evaluated</strong>:</p>
-<p><strong>Research Excellence</strong>: - Systematic approach to design problems - Evidence-based findings with appropriate confidence - Stakeholder-centered analysis and recommendations</p>
-<p><strong>Professional Communication</strong>: - Clear, compelling presentation to industry audience - Confident response to challenging questions - Effective visual design supporting key messages</p>
-<p><strong>Industry Readiness</strong>: - Understanding of real-world application context - Professional presence and networking capability - Contribution to evidence-based design advancement</p>
-</section>
-<section id="championship-presentation-showcase" class="slide level2 center">
-<h2>🎭 Championship Presentation Showcase</h2>
-<h3 id="individual-excellence-demonstrations">🌟 Individual Excellence Demonstrations</h3>
-<p><em>During actual Object Fair, this section will document highlights from each presentation</em></p>
-<p><strong>🏆 Championship Presentations</strong>:</p>
-<p><strong>Presentation 1</strong>: [Student Name] - <strong>Project Focus</strong>: _______________ - <strong>Key Innovation</strong>: _______________ - <strong>Industry Relevance</strong>: _______________ - <strong>Champion Quality</strong>: _______________</p>
-<p><strong>Presentation 2</strong>: [Student Name]<br>
-- <strong>Project Focus</strong>: _______________ - <strong>Key Innovation</strong>: _______________ - <strong>Industry Relevance</strong>: _______________ - <strong>Champion Quality</strong>: _______________</p>
-<p><em>[Continue for all presentations…]</em></p>
-</section>
-<section id="live-championship-recognition" class="slide level2 callout-success center" data-icon="false">
-<h2>Live Championship Recognition</h2>
-<p><strong>Outstanding Performance Awards</strong>:</p>
-<p>🥇 <strong>Research Excellence Champion</strong>: _______________ <em>Recognition for</em>: _______________</p>
-<p>🎤 <strong>Communication Master</strong>: _______________<br>
-<em>Recognition for</em>: _______________</p>
-<p>💡 <strong>Innovation Leader</strong>: _______________ <em>Recognition for</em>: _______________</p>
-<p>🤝 <strong>Industry Impact Champion</strong>: _______________ <em>Recognition for</em>: _______________</p>
-<p>🌟 <strong>Peer Choice Award</strong>: _______________ <em>Recognition for</em>: _______________</p>
-</section>
-<section id="industry-panel-excellence-feedback" class="slide level2 center">
-<h2>📊 Industry Panel Excellence Feedback</h2>
-<h3 id="professional-perspective-on-student-achievement">💼 Professional Perspective on Student Achievement</h3>
-<p><em>This section will capture real-time feedback from industry professionals</em></p>
-<div class="callout callout-note no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Industry Professional Insights</strong></p>
+<section id="where-this-sits-in-the-semester" class="slide level2">
+<h2>Where this sits in the semester</h2>
+<p>The Object Fair closes the loop. It is the last review of A4, read against the same spine we have used since Week 1.</p>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A[A1: Total Recall&lt;br/&gt;Weeks 1-3] --&gt; B[A2: Evidence + Workflow Map&lt;br/&gt;Weeks 4-6]
+    B --&gt; C[A3: Prototype + Verification&lt;br/&gt;Weeks 7-9]
+    C --&gt; D[A4: Workflow Package&lt;br/&gt;Weeks 10-12]
+    D --&gt; E{Final review}
+    E --&gt; F[Object Fair: present &amp; defend]
+    E --&gt; G[Transfer: reasoning you keep]
+</pre>
 </div>
-<div class="callout-content">
-<p><strong>[Industry Professional Name]</strong> - [Title &amp; Organization]</p>
-<p><strong>Overall Impression</strong>: _______________</p>
-<p><strong>Standout Presentations</strong>: _______________</p>
-<p><strong>Industry Application Potential</strong>: _______________</p>
-<p><strong>Career Readiness Assessment</strong>: _______________</p>
-<p><strong>Advice for Continued Development</strong>: _______________</p>
-<hr>
-<p><strong>[Academic Professional Name]</strong> - [Title &amp; Institution]</p>
-<p><strong>Research Quality Assessment</strong>: _______________</p>
-<p><strong>Methodological Innovation Observed</strong>: _______________</p>
-<p><strong>Professional Communication Excellence</strong>: _______________</p>
-<p><strong>Recommendations for Academic/Research Pathways</strong>: _______________</p>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
-</section>
-<section class="slide level2 center">
-
-</section></section>
-<section>
-<section id="industry-networking-excellence" class="title-slide slide level1 center" data-background-color="#2E8B57">
-<h1>Industry Networking Excellence</h1>
-
-</section>
-<section id="professional-relationship-building-championship" class="slide level2 center">
-<h2>🤝 Professional Relationship Building Championship</h2>
-<h3 id="networking-excellence-in-action">🌟 Networking Excellence in Action</h3>
-<p><strong>🎯 Professional Networking Objectives</strong>: - <strong>Demonstrate Competence</strong>: Show evidence-based design mastery to industry - <strong>Build Relationships</strong>: Create connections for career development - <strong>Learn Industry Insights</strong>: Gain real-world perspective on applications - <strong>Represent Excellence</strong>: Showcase program quality and student achievement</p>
-<h3 id="networking-success-stories">🏆 Networking Success Stories</h3>
-<p><em>To be documented during actual networking sessions</em></p>
-<p><strong>🤝 Professional Connections Made</strong>:</p>
-<p><strong>Career Development Opportunities</strong>: - <strong>Internship Discussions</strong>: _______________ - <strong>Job Opportunity Mentions</strong>: _______________ - <strong>Mentorship Offers</strong>: _______________ - <strong>Collaboration Proposals</strong>: _______________</p>
-<p><strong>Industry Learning Insights</strong>: - <strong>Real-World Application Feedback</strong>: _______________ - <strong>Industry Challenge Identification</strong>: _______________ - <strong>Professional Development Guidance</strong>: _______________ - <strong>Market Opportunity Awareness</strong>: _______________</p>
-</section>
-<section id="professional-development-launch-platform" class="slide level2 center">
-<h2>💼 Professional Development Launch Platform</h2>
-<h3 id="career-advancement-strategy-session">🚀 Career Advancement Strategy Session</h3>
-<p><strong>🎯 Immediate Professional Development Opportunities</strong>:</p>
-<p><strong>Industry Connections for Follow-Up</strong>: - <strong>Mentor Relationship Development</strong>: Scheduled informational interviews - <strong>Project Collaboration Exploration</strong>: Research partnership discussions<br>
-- <strong>Career Guidance Conversations</strong>: Professional development planning - <strong>Industry Network Expansion</strong>: Professional organization introductions</p>
-<p><strong>Academic and Research Pathways</strong>: - <strong>Graduate Research Opportunities</strong>: PhD program discussions - <strong>Publication and Conference Potential</strong>: Academic contribution planning - <strong>Research Collaboration Networks</strong>: Inter-institutional partnership development - <strong>Grant and Funding Guidance</strong>: Research funding strategy discussions</p>
-<h3 id="professional-portfolio-enhancement">📈 Professional Portfolio Enhancement</h3>
-<p><strong>🏆 Object Fair Achievement Integration</strong>: - <strong>Portfolio Documentation</strong>: Professional presentation materials and feedback - <strong>LinkedIn Profile Enhancement</strong>: Professional competence demonstration - <strong>Resume Development</strong>: Evidence-based design skills and accomplishments<br>
-- <strong>Reference Network Building</strong>: Professional endorsements and recommendations</p>
-</section>
-<section class="slide level2 center">
-
-</section></section>
-<section>
-<section id="peer-recognition-celebration" class="title-slide slide level1 center" data-background-color="#8B0000">
-<h1>Peer Recognition &amp; Celebration</h1>
-
-</section>
-<section id="collective-achievement-celebration" class="slide level2 center">
-<h2>🎊 Collective Achievement Celebration</h2>
-<h3 id="peer-excellence-recognition">🌟 Peer Excellence Recognition</h3>
-<p><strong>🏆 Peer Choice Awards</strong> (Class Voting):</p>
-<p><strong>🎯 Most Inspiring Research</strong>: Whose work made you most excited about evidence-based design?</p>
-<p><strong>🤝 Most Collaborative</strong>: Who most helped others achieve excellence?</p>
-<p><strong>💡 Most Creative Approach</strong>: Who found the most innovative solution to their challenge?</p>
-<p><strong>📊 Best Technical Execution</strong>: Who demonstrated the highest research quality?</p>
-<p><strong>🎤 Most Professional Presentation</strong>: Who set the standard for communication excellence?</p>
-<p><strong>🚀 Most Industry-Ready</strong>: Who seems most prepared for professional practice?</p>
-<h3 id="individual-growth-recognition">🎭 Individual Growth Recognition</h3>
-<p><strong>🌱 Transformation Stories</strong>:</p>
-<p><em>Students share brief reflections on their learning journey</em></p>
-<p><strong>“Biggest Learning Surprise”</strong>: What unexpected insight changed your approach?</p>
-<p><strong>“Proudest Achievement”</strong>: What accomplishment means most to you?</p>
-<p><strong>“Future Application”</strong>: How will you use these skills in your career?</p>
-<p><strong>“Advice for Future Students”</strong>: What wisdom would you share?</p>
-</section>
-<section id="collective-learning-integration" class="slide level2 center">
-<h2>📚 Collective Learning Integration</h2>
-<h3 id="course-impact-assessment">🔍 Course Impact Assessment</h3>
-<p><strong>🎯 Skills Development Achieved Across Class</strong>:</p>
-<p><strong>Research Capabilities</strong>: - <strong>Problem Framing Excellence</strong>: Systematic approach to design challenges - <strong>Evidence Evaluation Mastery</strong>: Critical assessment of information quality - <strong>Method Design Innovation</strong>: Creative approaches to systematic investigation - <strong>Data Analysis Competence</strong>: Professional-quality analysis and visualization</p>
-<p><strong>Professional Competencies</strong>: - <strong>Stakeholder Communication</strong>: Audience-appropriate presentation and engagement - <strong>Project Management Excellence</strong>: Systematic planning and adaptive execution - <strong>Peer Collaboration Mastery</strong>: Professional teamwork and mutual support - <strong>Industry Readiness</strong>: Professional presence and networking capability</p>
-<h3 id="evidence-based-design-impact">🌍 Evidence-Based Design Impact</h3>
-<p><strong>🏆 Collective Contribution to the Field</strong>:</p>
-<p><strong>Knowledge Generation</strong>: Original research contributing to evidence-based design <strong>Method Innovation</strong>: New approaches to systematic design investigation<br>
-<strong>Professional Network</strong>: Industry connections advancing evidence-based practice <strong>Academic Excellence</strong>: Research quality suitable for publication and application</p>
-<p><strong>🎯 Program Representation</strong>: Outstanding demonstration of evidence-based design education quality</p>
-</section>
-<section class="slide level2 center">
-
-</section></section>
-<section>
-<section id="professional-development-launch" class="title-slide slide level1 center" data-background-color="#4B0082">
-<h1>Professional Development Launch</h1>
-
-</section>
-<section id="beyond-object-fair-professional-excellence-continuation" class="slide level2 center">
-<h2>🚀 Beyond Object Fair: Professional Excellence Continuation</h2>
-<h3 id="immediate-next-steps-for-champions">🎯 Immediate Next Steps for Champions</h3>
-<p><strong>📧 Professional Follow-Up Excellence</strong>: - <strong>Industry Contact Communication</strong>: Professional follow-up with networking connections - <strong>Mentor Relationship Development</strong>: Scheduling informational interviews and guidance sessions - <strong>Collaboration Opportunity Exploration</strong>: Research partnerships and project discussions - <strong>Professional Organization Engagement</strong>: Membership and involvement in evidence-based design networks</p>
-<p><strong>📁 Portfolio and Professional Presence Enhancement</strong>: - <strong>LinkedIn Profile Optimization</strong>: Evidence-based design competence demonstration - <strong>Portfolio Development</strong>: Object Fair materials integration and presentation quality - <strong>Resume Enhancement</strong>: Skills and accomplishments professional documentation - <strong>Reference Network Building</strong>: Professional endorsements and recommendation development</p>
-</section>
-<section id="long-term-professional-development-strategy" class="slide level2 center">
-<h2>🌟 Long-Term Professional Development Strategy</h2>
-<h3 id="career-excellence-pathway">🏆 Career Excellence Pathway</h3>
-<p><strong>🎓 Academic and Research Advancement</strong>: - <strong>Graduate Study Preparation</strong>: PhD programs and research opportunities - <strong>Publication and Conference Development</strong>: Academic contribution and professional recognition - <strong>Research Network Expansion</strong>: Collaboration and partnership building - <strong>Grant and Funding Pursuit</strong>: Research support and project development</p>
-<p><strong>💼 Industry Leadership Development</strong>: - <strong>Evidence-Based Design Practice Integration</strong>: Professional application and innovation - <strong>Client Communication Excellence</strong>: Stakeholder engagement and project success - <strong>Industry Thought Leadership</strong>: Conference speaking and professional publication - <strong>Mentorship and Knowledge Sharing</strong>: Supporting future evidence-based design professionals</p>
-<h3 id="future-impact-vision">🔮 Future Impact Vision</h3>
-<p><strong>🌍 Contribution to Built Environment Excellence</strong>: - <strong>Practice Innovation</strong>: Evidence-based approaches in professional work - <strong>Industry Standards Development</strong>: Contributing to professional practice evolution - <strong>Education and Training</strong>: Sharing knowledge with future professionals - <strong>Policy and Regulation Influence</strong>: Evidence-based approaches to building standards</p>
-</section>
-<section class="slide level2 center">
-
-</section></section>
-<section>
-<section id="championship-closing-ceremony" class="title-slide slide level1 center" data-background-color="#DAA520">
-<h1>Championship Closing Ceremony</h1>
-
-</section>
-<section id="champion-recognition-and-legacy" class="slide level2 center">
-<h2>🏆 Champion Recognition and Legacy</h2>
-<h3 id="official-achievement-recognition">🎖️ Official Achievement Recognition</h3>
-</section>
-<section id="arch7476-evidence-based-generative-design-champions" class="slide level2 callout-success center" data-icon="false">
-<h2>ARCH7476 Evidence-Based Generative Design Champions</h2>
-<p><strong>🌟 Class Achievement</strong>: Outstanding demonstration of evidence-based design competence</p>
-<p><strong>🎯 Individual Excellence</strong>: Professional-quality research and presentation achievement</p>
-<p><strong>🤝 Peer Collaboration</strong>: Mutual support and collective learning excellence</p>
-<p><strong>💼 Industry Readiness</strong>: Professional presence and networking success</p>
-<p><strong>🚀 Future Leadership</strong>: Prepared to advance evidence-based design practice</p>
-<p><strong>Certification</strong>: Each champion has demonstrated competence in: - Systematic design research methodology - Evidence evaluation and critical analysis<br>
-- Professional stakeholder communication - Industry-appropriate presentation and networking - Collaborative professional development</p>
-</section>
-<section id="legacy-and-continuing-impact" class="slide level2 center">
-<h2>🌟 Legacy and Continuing Impact</h2>
-<h3 id="knowledge-contribution">📚 Knowledge Contribution</h3>
-<p><strong>🔍 Research Contribution to Evidence-Based Design</strong>: - <strong>Original Investigation</strong>: Unique research questions and systematic analysis - <strong>Method Innovation</strong>: Creative approaches to design investigation - <strong>Industry Application</strong>: Real-world relevance and implementation potential - <strong>Academic Quality</strong>: Research suitable for publication and professional application</p>
-<p><strong>🎓 Educational Excellence Demonstration</strong>: - <strong>Program Quality</strong>: Outstanding representation of evidence-based design education - <strong>Professional Preparation</strong>: Industry-ready competence and communication - <strong>Peer Learning</strong>: Collaborative excellence and mutual support - <strong>Future Leadership</strong>: Prepared to advance the field through professional practice</p>
-<h3 id="professional-network-launch">🚀 Professional Network Launch</h3>
-<p><strong>🤝 Industry Connection Success</strong>: - <strong>Professional Relationships</strong>: Meaningful connections with industry leaders - <strong>Career Development</strong>: Mentorship and opportunity identification - <strong>Collaboration Potential</strong>: Research partnerships and project opportunities - <strong>Network Expansion</strong>: Professional organization engagement and leadership</p>
-</section>
-<section id="celebration-of-excellence" class="slide level2 center">
-<h2>🎊 Celebration of Excellence</h2>
-<h3 id="champion-achievement-celebration">👑 Champion Achievement Celebration</h3>
-<p><strong>🏆 Individual Achievement Recognition</strong>: Each student has transformed from curious learner to evidence-based design professional</p>
-<p><strong>🤝 Collective Success Celebration</strong>: Outstanding peer collaboration and mutual support throughout the semester</p>
-<p><strong>💼 Professional Readiness</strong>: Demonstrated competence for industry engagement and career advancement</p>
-<p><strong>🌟 Future Impact Potential</strong>: Prepared to lead evidence-based design practice innovation and education</p>
-<h3 id="final-champion-commitment">🎯 Final Champion Commitment</h3>
-<div class="callout callout-warning no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>The Evidence-Based Design Professional Pledge</strong></p>
+<div class="concept-card">
+<p>One method, four objects. Today you hand over the <strong>package</strong> — and then you keep the <strong>reasoning</strong>.</p>
 </div>
-<div class="callout-content">
-<p><strong>All champions stand for final commitment:</strong></p>
-<p><em>“As evidence-based design professionals, we commit to:”</em></p>
-<p><em>“Systematic investigation of design problems and stakeholder-centered solutions.”</em></p>
-<p><em>“Professional communication of findings with appropriate confidence and humility.”</em></p>
-<p><em>“Collaborative advancement of evidence-based design practice and education.”</em></p>
-<p><em>“Mentorship and knowledge sharing with future professionals in our field.”</em></p>
-<p><em>“Ethical application of evidence-based approaches to improve the built environment.”</em></p>
-<p><strong>Congratulations, Evidence-Based Design Champions!</strong> 🏆👑</p>
+</section>
+<section class="slide level2">
+
+<p><span class="kicker">The session</span></p>
+</section>
+<section id="run-of-show" class="slide level2">
+<h2>Run of show</h2>
+<p>A calm, predictable order so no one over-prepares for a slot.</p>
+<table>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Segment</th>
+<th>Time</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Setup &amp; final check</td>
+<td>15 min</td>
+<td>files loaded, object cards posted, timing confirmed</td>
+</tr>
+<tr class="even">
+<td>Welcome &amp; framing</td>
+<td>5 min</td>
+<td>the evaluation loop we all read against</td>
+</tr>
+<tr class="odd">
+<td>Final presentations</td>
+<td>~90 min</td>
+<td>timed, with questions after each</td>
+</tr>
+<tr class="even">
+<td>Invited critic notes</td>
+<td>20 min</td>
+<td>practice and method perspectives</td>
+</tr>
+<tr class="odd">
+<td>Session 2: round table</td>
+<td>30 min</td>
+<td>synthesis and transfer forward</td>
+</tr>
+</tbody>
+</table>
+<div class="example-card">
+<p><span class="card-title">While others present</span> You are not waiting your turn — you are reviewing. Note one strong move and one open question per presenter. Those notes are your participation record.</p>
+</div>
+</section>
+<section id="presentation-format" class="slide level2">
+<h2>Presentation format</h2>
+<div class="activity-card">
+<p><span class="card-title">Per person</span> - <strong>6–8 min</strong> — final presentation of your A4 package - <strong>4 min</strong> — questions from the room and invited critics - <strong>2 min</strong> — notes captured, one carry-forward noted</p>
+</div>
+<p>Use your object card as the single visual that carries the recommendation and the one figure. Volunteers go first; a random draw may fill the remaining slots.</p>
+</section>
+<section class="slide level2">
+
+<p><span class="kicker">The criteria</span></p>
+</section>
+<section id="what-every-presentation-is-read-against" class="slide level2">
+<h2>What every presentation is read against</h2>
+<p>Each package is read against one evaluation loop — the same logic your A4 must let a stranger trace.</p>
+<div class="spine-rail">
+<p><span class="node">Decision</span> <span class="node">Evidence</span> <span class="node">Variation</span> <span class="node">Output</span> <span class="node">Threshold</span> <span class="node">Action</span></p>
+</div>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A[design decision] --&gt; B[variants / scenarios]
+    B --&gt; C[workflow]
+    C --&gt; D[evidence output]
+    D --&gt; E{threshold}
+    E --&gt; F[design action]
+    F --&gt; G[limit]
+</pre>
+</div>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
+<div class="concept-card">
+<p><span class="card-title">The reviewer’s question</span> Can I trace <strong>decision → variants/scenarios → workflow → evidence output → threshold → action → limit</strong> without you explaining it out loud?</p>
+</div>
+<p>If a link is missing, that is feedback — not a verdict.</p>
 </section>
-<section id="thank-you-and-continued-excellence" class="slide level2 center">
-<h2>🌈 Thank You and Continued Excellence</h2>
-<h3 id="course-completion-and-appreciation">🎓 Course Completion and Appreciation</h3>
-<p><strong>👨‍🏫 Instructor Appreciation</strong>: Thank you for your dedication, curiosity, and professional excellence throughout this semester</p>
-<p><strong>🤝 Peer Recognition</strong>: Thank you for supporting each other’s learning and celebrating collective achievement</p>
-<p><strong>💼 Industry Professional Gratitude</strong>: Thank you to our critics and mentors for sharing expertise and advancing student development</p>
-<p><strong>🏆 Champion Achievement</strong>: You have exceeded expectations and represented evidence-based design excellence</p>
-<h3 id="continuing-professional-development">🚀 Continuing Professional Development</h3>
-<p><strong>📧 Ongoing Connection</strong>: Course instructor available for continued professional development support</p>
-<p><strong>🌐 Resource Access</strong>: Course materials and resources remain available for professional reference</p>
-<p><strong>🤝 Professional Network</strong>: Peer connections for collaboration and mutual career support</p>
-<p><strong>🎯 Future Opportunities</strong>: Advanced coursework, research collaboration, and professional development pathways</p>
+<section id="invited-critics-three-reading-positions" class="slide level2">
+<h2>Invited critics: three reading positions</h2>
+<p>Not judges with scores — three perspectives, so the feedback is varied rather than repetitive.</p>
+<div class="three-step">
+<div class="step-box">
+<p><span class="card-title">Practice lens</span> Would this convince a studio tutor or client? Is the recommendation usable?</p>
+</div>
+<div class="step-box">
+<p><span class="card-title">Method lens</span> Is the workflow sound? Are assumptions, thresholds, and limits stated?</p>
+</div>
+<div class="step-box">
+<p><span class="card-title">Communication lens</span> Can a busy reader get the message in 30 seconds?</p>
+</div>
+</div>
 </section>
-<section class="slide level2 center">
+<section id="qa-that-helps-the-presenter" class="slide level2">
+<h2>Q&amp;A that helps the presenter</h2>
+<p>The questions that help most are the ones that test a link in the loop, not the person.</p>
+<div class="activity-card">
+<p><span class="card-title">Useful questions sound like</span> - “What would have changed the recommendation?” (threshold) - “How would someone rerun this?” (workflow) - “Where does this stop being true?” (limit)</p>
+</div>
+<div class="warning-card">
+<p>We examine the artifact and its claim, never the presenter’s competence.</p>
+</div>
+</section>
+<section id="capture-feedback-as-you-go" class="slide level2">
+<h2>Capture feedback as you go</h2>
+<p>You will hear more than you can hold. Sort it while it is fresh.</p>
+<table>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Note type</th>
+<th>Meaning</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Trace gap</strong></td>
+<td>a link in the loop is unclear</td>
+<td>record it for the final package edit</td>
+</tr>
+<tr class="even">
+<td><strong>Carry-forward</strong></td>
+<td>a move worth reusing next time</td>
+<td>add to your transfer list</td>
+</tr>
+<tr class="odd">
+<td><strong>Polish</strong></td>
+<td>small clarity improvement</td>
+<td>note if time allows</td>
+</tr>
+</tbody>
+</table>
+<div class="reflection-card">
+<p>The skill is not defending everything. It is hearing one true note and knowing what to do with it.</p>
+</div>
+</section>
+<section id="break" class="slide level2 big-break">
+<h2>BREAK</h2>
+<p>Take 10 minutes.</p>
+<p>When you return, we move from presenting to synthesis — what reasoning you keep.</p>
+</section>
+<section class="slide level2">
 
-<p><strong>🎊 Congratulations on completing ARCH7476: Evidence-Based Generative Design with championship excellence!</strong></p>
-<p><em>Please join us for networking, celebration, and continued professional relationship building</em></p>
+<p><span class="kicker">Session 2 · Round table</span></p>
 </section>
-<section class="slide level2 center">
-
-<p><strong>🏆 You are now Evidence-Based Design Champions. Go forth and transform the built environment with systematic excellence!</strong> 👑</p>
-<p><strong>🌟 The future of evidence-based design is in your capable, professional hands.</strong> ⭐</p>
+<section id="the-reasoning-you-can-transfer" class="slide level2">
+<h2>The reasoning you can transfer</h2>
+<div class="spine-rail">
+<p><span class="node">Decision</span> <span class="node">Evidence</span> <span class="node">Variation</span> <span class="node">Output</span> <span class="node">Threshold</span> <span class="node is-current">Action</span></p>
+</div>
+<p>This is synthesis, not a second formal presentation. Using your final object card or reflection note, speak for 60–90 seconds on the reasoning you would carry into another project. <span class="feeds-tag">feeds A4</span></p>
+<p>Volunteers go first; a random draw may fill the remaining turns.</p>
 </section>
-<section class="slide level2 center">
+<section id="reconstruct-what-transfers" class="slide level2">
+<h2>Reconstruct what transfers</h2>
+<p><strong>Object this week: the reasoning you can transfer to another project.</strong></p>
+<div class="recall-4step">
+<p>::: {.step}<strong>Did</strong> What was the core reasoning move in your A4 workflow? ::: ::: {.step}<strong>Assumed</strong> What did it depend on that was specific to this project? ::: ::: {.step}<strong>Risk</strong> Where might that reasoning break on a different problem? ::: ::: {.step}<strong>Verify</strong> What would you check before reusing it next time? :::</p>
+</div>
+<div class="grading-note">
+<p>Post your four-step under your object card. Posting + an honest reconstruction is the graded unit — not how you spoke. Session 2 today is synthesis; there is no second graded presentation.</p>
+</div>
+</section>
+<section id="transfer-forward" class="slide level2">
+<h2>Transfer forward</h2>
+<div class="reflection-card">
+<p><span class="card-title">What do you keep?</span> Take three minutes and write:</p>
+<ul>
+<li class="fragment">which reasoning move from A4 will I reuse in studio?</li>
+<li class="fragment">what evidence habit is now part of how I work?</li>
+<li class="fragment">where will I still need to slow down and check?</li>
+<li class="fragment">what is one decision I will treat differently next time?</li>
+</ul>
+</div>
+<p>Keep it in notes or post it as a Slack thread under your object card.</p>
+</section>
+<section class="slide level2">
 
-<p><em>Thank you for your excellence, your collaboration, and your commitment to advancing evidence-based design practice and education!</em> 🙏</p>
+<p><span class="kicker">Exit</span></p>
+</section>
+<section id="your-transfer-line-in-one-sentence" class="slide level2">
+<h2>Your transfer line, in one sentence</h2>
+<p>Before you leave, write and post:</p>
+<div class="reflection-card">
+<p><strong>The one reasoning move I am keeping from this course is <strong><em>, and the next project I will use it on is </em></strong>.</strong></p>
+</div>
+<p>Thank you for the work, the honesty, and for examining each other’s reasoning rather than each other. That habit is the part that travels with you.</p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-
+<p>Week 12 · feeds A4: Workflow Package</p>
 </div>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
@@ -777,7 +684,7 @@
         disableLayout: false,
 
         // Vertical centering of slides
-        center: true,
+        center: false,
 
         // Enables touch navigation on devices with touch input
         touch: true,
@@ -853,7 +760,7 @@
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'fade',
+        transition: 'slide',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
