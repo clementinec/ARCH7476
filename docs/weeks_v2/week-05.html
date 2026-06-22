@@ -364,6 +364,47 @@
 </section>
 <section class="slide level2 center">
 
+<p><span class="kicker">Course progress</span></p>
+</section>
+<section id="this-week-produces-a-model-assumption-artifact" class="slide level2 center">
+<h2>This week produces a model-assumption artifact</h2>
+<div class="progress-ladder">
+<div class="step done">
+<p>W3 comparison</p>
+</div>
+<div class="step done">
+<p>W4 GIS</p>
+</div>
+<div class="step current">
+<p>W5 BIM/BEM</p>
+</div>
+<div class="step">
+<p>W6 pathway</p>
+</div>
+<div class="step">
+<p>W7 prototype</p>
+</div>
+<div class="step">
+<p>W8 verify</p>
+</div>
+</div>
+<div class="artifact-strip">
+<div class="artifact">
+<p><span class="label concept">Input</span> BIM-derived room/facade parameters, not a magical BIM import</p>
+</div>
+<div class="artifact">
+<p><span class="label activity">Change</span> WWR, shading depth, orientation, glazing, schedule assumptions</p>
+</div>
+<div class="artifact">
+<p><span class="label example">Output</span> daylight/heat-risk proxy, scenario table, uncertainty note</p>
+</div>
+<div class="artifact">
+<p><span class="label reflect">Bridge</span> variant metrics can return to GH/Ladybug/Honeybee as parameters or checks</p>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
 <p><span class="kicker">Why this week matters</span></p>
 </section>
 <section id="even-if-you-never-run-a-simulation" class="slide level2 center">
@@ -416,7 +457,7 @@
 </section>
 <section id="same-building-two-models" class="slide level2 center">
 <h2>Same building, two models</h2>
-<div class="tool-panel demo-pending">
+<div class="tool-panel">
 <div class="zone input">
 <p><strong>BIM view</strong> walls · rooms · floors · doors · material layers · element relationships</p>
 </div>
@@ -432,6 +473,63 @@
 </div>
 <div class="warning-card">
 <p><span class="card-title">Commonly fails to translate</span> Thermal <strong>zoning</strong>, occupancy and system <strong>schedules</strong>, real <strong>constructions</strong> (R-value, SHGC, mass), and building <strong>orientation</strong>.</p>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Minimum supported input</span></p>
+</section>
+<section id="bim-derived-input-schema" class="slide level2 center">
+<h2>BIM-derived input schema</h2>
+<p>For this course, the reliable minimum is not “import my whole model.” It is a small table students can export, measure, or enter from Rhino/Revit.</p>
+<table>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Unit / type</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>room depth</td>
+<td>m</td>
+<td>daylight penetration and cooling-load proxy</td>
+</tr>
+<tr class="even">
+<td>facade orientation</td>
+<td>N/E/S/W or degrees</td>
+<td>solar exposure and glare risk</td>
+</tr>
+<tr class="odd">
+<td>window-to-wall ratio</td>
+<td>0-1</td>
+<td>daylight gain and heat gain</td>
+</tr>
+<tr class="even">
+<td>shading depth</td>
+<td>m</td>
+<td>solar control and view/daylight trade-off</td>
+</tr>
+<tr class="odd">
+<td>glazing U-value / SHGC</td>
+<td>numeric</td>
+<td>envelope performance assumption</td>
+</tr>
+<tr class="even">
+<td>obstruction factor</td>
+<td>0-1</td>
+<td>context/shading simplification</td>
+</tr>
+</tbody>
+</table>
+<div class="warning-card">
+<p>If this table cannot be filled honestly, a more advanced simulation will only hide the uncertainty better.</p>
 </div>
 </section>
 <section id="bim-data-priorities" class="slide level2 center">
@@ -454,6 +552,29 @@
 <li class="fragment">HVAC systems and control logic</li>
 <li class="fragment">weather and shading context</li>
 </ul>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Runnable proxy</span></p>
+</section>
+<section id="the-performance-demo-is-a-scenario-file" class="slide level2 center">
+<h2>The performance demo is a scenario file</h2>
+<p>The minimum runnable route uses a small <code>scenario.json</code> or table before any full EnergyPlus/Radiance setup.</p>
+<div class="tool-panel">
+<div class="zone input">
+<p><strong>Input</strong> room/facade schema + weather/season assumption</p>
+</div>
+<div class="zone operation">
+<p><strong>What varies</strong> WWR, shading depth, orientation, glazing, schedule</p>
+</div>
+<div class="zone output">
+<p><strong>Output</strong> daylight proxy, heat-risk proxy, comfort-risk note</p>
+</div>
+<div class="zone check">
+<p><strong>Quality check</strong> units, range, and one known hand-check are stated</p>
+</div>
+</div>
+<p>This proxy is not the final truth. It is the fast test that tells you whether a full Ladybug/Honeybee/Radiance workflow is worth the setup.</p>
 </section>
 <section id="quick-check-bim-or-bem" class="slide level2 center">
 <h2>Quick check: BIM or BEM?</h2>
@@ -686,10 +807,24 @@
 <h2>Ideal workflow vs real workflow</h2>
 <div class="two-col">
 <div class="example-card">
-<p><span class="card-title">Ideal</span> 1. update BIM 2. export cleanly 3. update BEM automatically 4. rerun analysis 5. feed changes back into design</p>
+<p><span class="card-title">Ideal</span></p>
+<ol type="1">
+<li class="fragment">update BIM</li>
+<li class="fragment">export cleanly</li>
+<li class="fragment">update BEM automatically</li>
+<li class="fragment">rerun analysis</li>
+<li class="fragment">feed changes back into design</li>
+</ol>
 </div>
 <div class="warning-card">
-<p><span class="card-title">Real</span> 1. export once 2. spend days cleaning the BEM 3. design changes continue 4. model diverges 5. everyone hopes the gap is still “small enough”</p>
+<p><span class="card-title">Real</span></p>
+<ol type="1">
+<li class="fragment">export once</li>
+<li class="fragment">spend days cleaning the BEM</li>
+<li class="fragment">design changes continue</li>
+<li class="fragment">model diverges</li>
+<li class="fragment">everyone hopes the gap is still “small enough”</li>
+</ol>
 </div>
 </div>
 </section>
@@ -710,10 +845,20 @@
 <h2>Case study timeline</h2>
 <div class="two-col">
 <div class="example-card">
-<p><span class="card-title">Week 1</span> - export appears successful - team believes the workflow is seamless</p>
+<p><span class="card-title">Week 1</span></p>
+<ul>
+<li class="fragment">export appears successful</li>
+<li class="fragment">team believes the workflow is seamless</li>
+</ul>
 </div>
 <div class="warning-card">
-<p><span class="card-title">Week 2</span> - 465 thermal zones created instead of about 30 - HVAC missing - generic constructions everywhere - orientation wrong</p>
+<p><span class="card-title">Week 2</span></p>
+<ul>
+<li class="fragment">465 thermal zones created instead of about 30</li>
+<li class="fragment">HVAC missing</li>
+<li class="fragment">generic constructions everywhere</li>
+<li class="fragment">orientation wrong</li>
+</ul>
 </div>
 </div>
 </section>
@@ -721,10 +866,21 @@
 <h2>Case study timeline (cont’d)</h2>
 <div class="two-col">
 <div class="activity-card">
-<p><span class="card-title">Weeks 3-4</span> - merge zones manually - define constructions and material properties - build schedules and HVAC systems - fix context and shading</p>
+<p><span class="card-title">Weeks 3-4</span></p>
+<ul>
+<li class="fragment">merge zones manually</li>
+<li class="fragment">define constructions and material properties</li>
+<li class="fragment">build schedules and HVAC systems</li>
+<li class="fragment">fix context and shading</li>
+</ul>
 </div>
 <div class="warning-card">
-<p><span class="card-title">Week 8</span> - design changes arrive - re-export means losing cleanup work - manual updates begin and divergence starts</p>
+<p><span class="card-title">Week 8</span></p>
+<ul>
+<li class="fragment">design changes arrive</li>
+<li class="fragment">re-export means losing cleanup work</li>
+<li class="fragment">manual updates begin and divergence starts</li>
+</ul>
 </div>
 </div>
 </section>
@@ -781,6 +937,45 @@
 <p><span class="card-title">The lesson</span> A polished BEM output is a scenario, not a measurement. State the assumptions a performance claim depends on, and name where the real building is likely to diverge.</p>
 </div>
 </section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Patch to Grasshopper</span></p>
+</section>
+<section id="performance-outputs-can-steer-gh-variants" class="slide level2 center">
+<h2>Performance outputs can steer GH variants</h2>
+<div class="gh-bridge">
+<p><strong>Bridge pattern</strong> Use GH/Ladybug/Honeybee or a Python proxy to generate variant metrics -&gt; export <code>variant_metrics.csv</code> -&gt; attach daylight/heat-risk scores to GH geometry variants.</p>
+</div>
+<div class="bridge-flow">
+<div class="node current">
+<p>BIM-derived schema</p>
+</div>
+<div class="node">
+<p>scenario run</p>
+</div>
+<div class="node">
+<p>metrics CSV</p>
+</div>
+<div class="node">
+<p>GH variant colors</p>
+</div>
+<div class="node">
+<p>revise facade</p>
+</div>
+</div>
+<p>Supported professional bridge: one constrained Ladybug/Radiance walkthrough, not “everything Ladybug.”</p>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Uncertainty check</span></p>
+</section>
+<section id="simulation-is-precise-about-the-model-not-automatically-about-the-building" class="slide level2 center">
+<h2>Simulation is precise about the model, not automatically about the building</h2>
+<div class="uncertainty-check">
+<p><strong>Question for your performance route</strong> Which assumption dominates the result: geometry, material, schedule, weather, system, or occupancy?</p>
+</div>
+<p>If you cannot name the dominant assumption, do not present the output as a performance conclusion. Present it as a scenario result.</p>
+</section>
 <section id="break" class="slide level2 big-break center">
 <h2>BREAK</h2>
 <p>Take 10 minutes.</p>
@@ -800,7 +995,7 @@
 <section id="speak-for-60-90-seconds" class="slide level2 center">
 <h2>Speak for 60-90 seconds</h2>
 <div class="concept-card">
-<p><span class="card-title">The prompt</span> What would a performance model need to know about your building, and what would it probably simplify?</p>
+<p><span class="card-title">Check-in question</span> What would a performance model need to know about your building, and what would it probably simplify?</p>
 </div>
 <p>Volunteers go first; random draw may fill the remaining examples.</p>
 </section>
@@ -825,8 +1020,8 @@
 <p>Post your filled four-step to Slack under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Presenting is welcomed and earns credit; it is never required and never scored as performance.</p>
 </div>
 </section>
-<section id="stand-alone-case-prompts" class="slide level2 center">
-<h2>Stand-alone case prompts</h2>
+<section id="case-transfer-checks" class="slide level2 center">
+<h2>Case transfer checks</h2>
 <div class="two-col">
 <div class="example-card">
 <div class="quarto-figure quarto-figure-center">

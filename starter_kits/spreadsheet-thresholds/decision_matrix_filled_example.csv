@@ -1,0 +1,13 @@
+variant,criterion,value,unit,source,confidence,threshold,pass_fail,decision_note
+Baseline,morning glare,2.8,h/day,student sun-path check,medium,<=2.0,fail,Too much direct morning glare for desk use
+Baseline,view openness,0.74,fraction,facade elevation takeoff,medium,>=0.55,pass,Good visual connection but not enough control
+Baseline,planting depth,0.60,m,studio section,high,>=0.80,fail,Planter is too shallow for the stated cooling claim
+Deep fins,morning glare,1.5,h/day,proxy model,medium,<=2.0,pass,Fins reduce glare below threshold
+Deep fins,view openness,0.58,fraction,facade elevation takeoff,medium,>=0.55,pass,View remains acceptable
+Deep fins,planting depth,0.80,m,studio section,high,>=0.80,pass,Meets minimum planting claim
+High greenery,morning glare,2.1,h/day,proxy model,low,<=2.0,review,Near threshold; needs better solar check
+High greenery,view openness,0.52,fraction,facade elevation takeoff,medium,>=0.55,fail,Green layer blocks more view than intended
+High greenery,planting depth,1.20,m,studio section,high,>=0.80,pass,Strongest planting support
+Hybrid,morning glare,1.7,h/day,proxy model,medium,<=2.0,pass,Moderate fins handle glare
+Hybrid,view openness,0.61,fraction,facade elevation takeoff,medium,>=0.55,pass,View is still legible
+Hybrid,planting depth,0.95,m,studio section,high,>=0.80,pass,Planting claim is supportable

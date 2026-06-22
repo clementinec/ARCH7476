@@ -7,7 +7,7 @@ format:
 
 # GH Parametric Variants
 
-**Launch status:** not ready. Spec only.
+**Launch status:** bridge notes and example metric CSV added. Native GH/Rhino files are still needed.
 
 ## Purpose
 
@@ -21,8 +21,14 @@ input geometry -> parameter variation -> multiple variants -> metric export -> t
 - Grasshopper definition
 - screenshot of the GH canvas
 - screenshot of variant outputs
-- exported CSV of variant metrics
+- exported CSV of variant metrics: `outputs/facade_variant_metrics_example.csv` is currently a code-side example
 - example Object Card figure
+
+## Current Support Files
+
+- `variant_log_template.csv`
+- `outputs/facade_variant_metrics_example.csv`
+- `grasshopper_bridge_notes.md`
 
 ## Demo Scenario
 
@@ -53,4 +59,3 @@ Students replace the demo geometry or variable range with their own studio decis
 - exported values match visible variants
 - at least three variants are compared
 - one threshold or comparison rule is stated
-

@@ -45,6 +45,52 @@ This is a final review, not a contest. We read each package carefully, name what
 
 ---
 
+[Course progress]{.kicker}
+
+## Final handoff and transfer
+
+::: {.progress-ladder}
+::: {.step .done}
+A1 recall
+:::
+::: {.step .done}
+A2 route
+:::
+::: {.step .done}
+A3 prototype
+:::
+::: {.step .done}
+A4 draft
+:::
+::: {.step .current}
+Object Fair
+:::
+::: {.step .current}
+transfer
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Present]{.label .concept}
+one bounded decision, one workflow, one output, one threshold
+:::
+::: {.artifact}
+[Hand over]{.label .activity}
+practice case, research brief, object card, capsule
+:::
+::: {.artifact}
+[Inspect]{.label .example}
+reviewers trace the evidence loop and ask what remains uncertain
+:::
+::: {.artifact}
+[Transfer]{.label .reflect}
+one reasoning move to reuse in another studio project
+:::
+:::
+
+---
+
 [The arc]{.kicker}
 
 ## Where this sits in the semester
@@ -64,6 +110,41 @@ flowchart LR
 ::: {.concept-card}
 One method, four objects. Today you hand over the **package** — and then you keep the **reasoning**.
 :::
+
+---
+
+[Tool coverage closure]{.kicker}
+
+## What was mapped, and what remains yours to own
+
+::: {.tool-ledger}
+::: {.slot .core}
+[Mapped by course]{.label .activity}
+
+- evidence audit
+- spreadsheet thresholds
+- `geopandas`
+- BIM-derived proxy
+- Python/AI verification logic
+:::
+::: {.slot .peer}
+[Mapped by room]{.label .concept}
+
+- GH workflows
+- Ladybug/Radiance pieces
+- studio-specific tool practices
+:::
+::: {.slot .explore}
+[Still exploratory]{.label .example}
+
+- large plugins
+- full BIM interoperability
+- advanced simulation
+- office-specific automation
+:::
+:::
+
+The honest endpoint is not "we covered every tool." It is: you can now tell whether a tool's output deserves trust.
 
 ---
 
@@ -92,6 +173,7 @@ You are not waiting your turn — you are reviewing. Note one strong move and on
 
 ::: {.activity-card}
 [Per person]{.card-title}
+
 - **6–8 min** — final presentation of your A4 package
 - **4 min** — questions from the room and invited critics
 - **2 min** — notes captured, one carry-forward noted
@@ -157,6 +239,7 @@ The questions that help most are the ones that test a link in the loop, not the 
 
 ::: {.activity-card}
 [Useful questions sound like]{.card-title}
+
 - "What would have changed the recommendation?" (threshold)
 - "How would someone rerun this?" (workflow)
 - "Where does this stop being true?" (limit)
@@ -181,6 +264,19 @@ You will hear more than you can hold. Sort it while it is fresh.
 ::: {.reflection-card}
 The skill is not defending everything. It is hearing one true note and knowing what to do with it.
 :::
+
+---
+
+[Uncertainty check]{.kicker}
+
+## The final question is not whether the tool worked
+
+::: {.uncertainty-check}
+**Question for the Object Fair**
+What would have to change for your recommendation to become wrong?
+:::
+
+That answer is the most useful transfer from this course: it tells you where the next project should start checking.
 
 ---
 

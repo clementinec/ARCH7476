@@ -1,1 +1,5 @@
 /.quarto/
+__pycache__/
+*.py[cod]
+starter_kits/**/outputs/.cache/
+starter_kits/**/outputs/.mplconfig/

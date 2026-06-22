@@ -7,15 +7,31 @@ format:
 
 # Preset Simulation / Proxy Test
 
-**Launch status:** not ready. Spec only.
+**Launch status:** runnable proxy demo added. Still needs an optional Ladybug/Radiance walkthrough.
 
 ## Purpose
 
 Provide a runnable Week 5 example that tests a design claim without requiring a full custom simulation model.
 
-## Candidate Demo Routes
+## Current Demo Route
 
-Choose one before launch:
+- `data/facade_scenarios.csv`
+- `facade_heat_proxy_demo.py`
+
+From this folder:
+
+```bash
+python3 facade_heat_proxy_demo.py
+```
+
+The script exports:
+
+- `outputs/facade_heat_proxy_scores.csv`
+- `outputs/facade_heat_proxy_chart.png`
+
+## Candidate Extensions
+
+Choose one before launch if deeper tooling is needed:
 
 - GH + Ladybug solar/shading comparison
 - VELUX or Radiance daylight preset
@@ -35,6 +51,10 @@ Choose one before launch:
 
 Students define the smallest test that can reduce uncertainty around their design decision.
 
+## Grasshopper Bridge
+
+Students can generate the scenario table from GH sliders, run the proxy, then bring the scored CSV back into GH for variant filtering. The important point is that the coefficients remain visible and debatable.
+
 ## Verification Checks
 
 - assumptions are visible
@@ -42,4 +62,3 @@ Students define the smallest test that can reduce uncertainty around their desig
 - output is interpretable
 - no black-box "simulation proves it" language
 - result is tied to a design action
-

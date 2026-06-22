@@ -311,19 +311,6 @@ $code-color: #16181D !default;
 }
 .reveal .tool-panel .zone.output { background: var(--paper); }
 .reveal .tool-panel .zone.check  { background: var(--activity-soft); }
-// A live slot: this tool gets run and captured WITH the class (often from a
-// student walk-through), not a faked screenshot. Honest and pedagogical.
-.reveal .tool-panel.demo-pending { border-style: dashed; }
-.reveal .tool-panel.demo-pending::after {
-  content: "we run and capture this live in class";
-  grid-column: 1 / -1;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.7em;
-  color: var(--muted);
-  padding: 0.3em 0.8em;
-  border-top: 1px dashed var(--rule-soft);
-}
-
 /*---------------------------------------------------------------------------
   8. WALK-THROUGH vs AUDIT  — the two Session-2 modes
   .walkthrough-card = celebrated, opt-in "teach your strongest tool".
@@ -386,7 +373,132 @@ $code-color: #16181D !default;
 }
 
 /*---------------------------------------------------------------------------
-  11. TABLES — Swiss: rules only, no fill, no zebra
+  11. ARTIFACT / PATHWAY SYSTEM
+  These components make each week visibly produce a transferable object:
+  artifact -> export -> GH bridge -> uncertainty check -> assignment feed.
+---------------------------------------------------------------------------*/
+.reveal .artifact-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.55em;
+  margin: 0.65em 0;
+}
+.reveal .artifact {
+  background: #fff;
+  border: 1px solid var(--rule-soft);
+  border-top: 4px solid var(--role-activity);
+  padding: 0.65em 0.75em;
+  min-height: 4.5em;
+}
+.reveal .artifact strong,
+.reveal .tool-ledger strong,
+.reveal .gh-bridge strong,
+.reveal .function-contract strong,
+.reveal .uncertainty-check strong {
+  font-family: "Archivo", sans-serif;
+  display: block;
+  margin-bottom: 0.18em;
+}
+.reveal .artifact .label,
+.reveal .tool-ledger .label {
+  margin-bottom: 0.35em;
+}
+
+.reveal .progress-ladder {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.35em;
+  margin: 0.7em 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.54em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.reveal .progress-ladder .step {
+  border: 1px solid var(--rule-soft);
+  padding: 0.45em 0.55em;
+  color: var(--muted);
+  background: #fff;
+}
+.reveal .progress-ladder .step.done {
+  color: #fff;
+  background: var(--role-activity);
+  border-color: var(--role-activity);
+}
+.reveal .progress-ladder .step.current {
+  color: #fff;
+  background: var(--signal);
+  border-color: var(--signal);
+}
+
+.reveal .tool-ledger {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6em;
+  margin: 0.6em 0;
+  font-size: 0.78em;
+}
+.reveal .tool-ledger .slot {
+  border: 1px solid var(--rule-soft);
+  background: #fff;
+  padding: 0.65em 0.75em;
+}
+.reveal .tool-ledger ul {
+  margin: 0.45em 0 0 1.05em;
+  padding: 0;
+}
+.reveal .tool-ledger li {
+  margin: 0.16em 0;
+}
+.reveal .tool-ledger .core { border-top: 4px solid var(--role-activity); }
+.reveal .tool-ledger .peer { border-top: 4px solid var(--role-concept); }
+.reveal .tool-ledger .explore { border-top: 4px solid var(--role-example); }
+.reveal .tool-ledger .defer { border-top: 4px solid var(--muted); }
+
+.reveal .bridge-flow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: stretch;
+  gap: 0.35em;
+  margin: 0.65em 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.58em;
+  text-transform: uppercase;
+}
+.reveal .bridge-flow .node {
+  border: 1px solid var(--rule-soft);
+  background: #fff;
+  padding: 0.55em 0.65em;
+}
+.reveal .bridge-flow .node.current {
+  background: var(--signal);
+  color: #fff;
+  border-color: var(--signal);
+}
+.reveal .bridge-flow .node + .node::before {
+  content: "\2192";
+  color: var(--muted);
+  margin-right: 0.45em;
+}
+
+.reveal .gh-bridge,
+.reveal .function-contract,
+.reveal .uncertainty-check {
+  border: 1px solid var(--rule-soft);
+  background: #fff;
+  padding: 0.75em 0.95em;
+  margin: 0.6em 0;
+}
+.reveal .gh-bridge { border-left: 6px solid var(--role-concept); }
+.reveal .function-contract { border-left: 6px solid var(--role-activity); }
+.reveal .uncertainty-check {
+  border-left: 6px solid var(--role-warn);
+  background: var(--warn-soft);
+}
+.reveal .uncertainty-check strong::before { content: "? "; color: var(--signal); }
+
+/*---------------------------------------------------------------------------
+  12. TABLES — Swiss: rules only, no fill, no zebra
 ---------------------------------------------------------------------------*/
 .reveal table { font-size: 0.78em; border-collapse: collapse; }
 .reveal table th {
@@ -402,7 +514,7 @@ $code-color: #16181D !default;
 .reveal table tr:hover { background: none; }
 
 /*---------------------------------------------------------------------------
-  12. CODE
+  13. CODE
 ---------------------------------------------------------------------------*/
 .reveal pre { font-size: 0.5em; box-shadow: none; border-radius: 0; }
 .reveal pre code { background: var(--ink); color: #F3F3EE; border-radius: 0; padding: 1em; }
@@ -412,7 +524,7 @@ $code-color: #16181D !default;
 }
 
 /*---------------------------------------------------------------------------
-  13. BREAK / FULL-BLEED MOMENT  — .big-break
+  14. BREAK / FULL-BLEED MOMENT  — .big-break
 ---------------------------------------------------------------------------*/
 .reveal .big-break {
   background: var(--ink);
@@ -425,7 +537,7 @@ $code-color: #16181D !default;
 .reveal .big-break h2 { color: var(--paper); border-top-color: var(--paper); font-size: 2.4em; }
 
 /*---------------------------------------------------------------------------
-  14. VIBE CASE (Week 1)  — image left, reasoning right
+  15. VIBE CASE (Week 1)  — image left, reasoning right
 ---------------------------------------------------------------------------*/
 .reveal .vibe-case {
   display: grid; grid-template-columns: minmax(0,1.35fr) minmax(280px,0.8fr);
@@ -440,7 +552,7 @@ $code-color: #16181D !default;
 }
 
 /*---------------------------------------------------------------------------
-  15. SLIDE CHROME — running footer (lightweight persistent context)
+  16. SLIDE CHROME — running footer (lightweight persistent context)
   Set per deck via the YAML `footer:` option, e.g. "Week 5 · feeds A2".
 ---------------------------------------------------------------------------*/
 .reveal .footer {
@@ -453,11 +565,15 @@ $code-color: #16181D !default;
 .reveal .slide-number { font-family: "JetBrains Mono", monospace; background: none; color: var(--muted); }
 
 /*---------------------------------------------------------------------------
-  16. RESPONSIVE
+  17. RESPONSIVE
 ---------------------------------------------------------------------------*/
 @media (max-width: 900px) {
   .reveal .recall-4step,
   .reveal .tool-panel,
+  .reveal .artifact-strip,
+  .reveal .progress-ladder,
+  .reveal .tool-ledger,
+  .reveal .bridge-flow,
   .reveal .two-col, .reveal .two-column-tight,
   .reveal .three-step,
   .reveal .vibe-case { grid-template-columns: 1fr; }

@@ -92,6 +92,64 @@ The same four-step move repeats all semester. Only the **object** changes — an
 
 ---
 
+[The take-away objects]{.kicker}
+
+## What you physically make
+
+The course is not a set of prompts. Every phase leaves an artifact that can be inspected, reused, or patched into a design workflow.
+
+::: {.artifact-strip}
+::: {.artifact}
+[A1 · recall board]{.label .activity}
+one past decision, original evidence, weak links, missing variable
+:::
+::: {.artifact}
+[A2 · pathway contract]{.label .concept}
+evidence map, workflow route, A4 branch, smallest useful output
+:::
+::: {.artifact}
+[A3 · prototype]{.label .example}
+runnable or inspectable workflow, variant output, verification log
+:::
+::: {.artifact}
+[A4 · handoff package]{.label .reflect}
+practice case, research brief, object card, reproducibility capsule
+:::
+:::
+
+---
+
+[Course progress]{.kicker}
+
+## Artifact progress bar
+
+Each week moves one object from rough material to a handoff artifact.
+
+::: {.progress-ladder}
+::: {.step .current}
+W1 decision
+:::
+::: {.step}
+W2 evidence
+:::
+::: {.step}
+W3 comparison
+:::
+::: {.step}
+W4-6 pathway
+:::
+::: {.step}
+W7-9 prototype
+:::
+::: {.step}
+W10-12 package
+:::
+:::
+
+Today's visible output: one past project visual + one tool-strength/wishlist entry.
+
+---
+
 [The recurring engine]{.kicker}
 
 ## Look harder at what you already did
@@ -255,11 +313,42 @@ Not "which software looks advanced?" but "which workflow makes this decision mor
 
 ---
 
+[The GH bridge]{.kicker}
+
+## Every pathway can talk to Grasshopper
+
+Most of you will return to Grasshopper. That is fine. The point is to make the route into a clean function before it becomes a component.
+
+::: {.bridge-flow}
+::: {.node .current}
+external workflow
+:::
+::: {.node}
+visible output change
+:::
+::: {.node}
+CSV / JSON / GeoJSON
+:::
+::: {.node}
+GH read / GhPython
+:::
+::: {.node}
+design action
+:::
+:::
+
+::: {.function-contract}
+**Grasshopper component = packed function**
+Inputs go in, an operation happens inside, outputs come out. The course asks you to name the inputs, units, ranges, output, and quality check before you trust the component.
+:::
+
+---
+
 [Do this at the first lecture]{.kicker}
 
 ## Declare your two tools
 
-Post both to the Slack channel now — this is your record for the semester.
+Post both to the Slack channel now. They become the class Tool Coverage Board, not a disappearing survey.
 
 :::: {.two-col}
 ::: {.warning-card}
@@ -273,20 +362,55 @@ Your **strongest** tool — the one you could walk the class through.
 ::::
 
 ::: {.grading-note}
-I read both columns. They become the walk-through roster and the class wishlist.
+These two columns become the walk-through roster and the class wishlist.
 :::
 
 ---
 
 ## How the wishlist is used
 
-::: {.concept-card}
-Your "want to learn" + your classmates' "I'd teach" are a **matching market**.
+Wishlist items are sorted visibly, then revisited weekly.
+
+::: {.tool-ledger}
+::: {.slot .core}
+[Core supported]{.label .activity}
+
+- spreadsheet thresholds
+- BIM-derived proxy
+- `geopandas`
+- Python notebook
+- AI verification
+:::
+::: {.slot .peer}
+[Peer supported]{.label .concept}
+
+- GH clusters
+- Ladybug setup
+- mapping tricks from real use
+:::
+::: {.slot .explore}
+[Exploratory]{.label .example}
+
+- special plugins
+- office workflows
+- custom scripts
+:::
 :::
 
-- if a classmate is strong in what you want, they may walk us through it
-- the **top shared wishes** get covered together later in the semester
-- where a wish is a small custom tool, the answer becomes **build it yourself** (at best effort) — by the end, that can mean vibe-coding a Grasshopper component
+Each week we mark: **mapped today**, **partially mapped**, **still unsupported**, or **out of scope this term**.
+
+---
+
+[The uncertainty habit]{.kicker}
+
+## The course contribution
+
+Tools make outputs look certain. Architecture usually is not.
+
+::: {.uncertainty-check}
+**Ask every week**
+What did the tool make easier to see, and what assumption did it make easier to hide?
+:::
 
 I am at the table too: I declare, I walk through, and I get audited like everyone else.
 

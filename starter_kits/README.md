@@ -15,12 +15,12 @@ The course should not be released as a generative design elective until the core
 
 | Kit | Current status | Needed before launch |
 |---|---|---|
-| [GH Parametric Variants](gh-parametric-variants/README.md) | spec only | `.gh` / `.ghx` file, Rhino base geometry, screenshots |
-| [Preset Simulation / Proxy Test](preset-simulation-proxy/README.md) | spec only | runnable preset or spreadsheet proxy demo |
-| [AI-Assisted Workflow](ai-assisted-workflow/README.md) | spec only | prompt log, failed output, verified repair example |
-| [GIS Spatial Comparison](gis-spatial-comparison/README.md) | partial support from existing lecture | small packaged data example |
-| [Python Notebook Analysis](python-notebook-analysis/README.md) | partial support from existing notebooks | adapt one notebook as a design-decision demo |
-| [Spreadsheet Thresholds](spreadsheet-thresholds/README.md) | baseline support | clean workbook template |
+| [GH Parametric Variants](gh-parametric-variants/README.md) | bridge example added | `.gh` / `.ghx` file, Rhino base geometry, screenshots |
+| [Preset Simulation / Proxy Test](preset-simulation-proxy/README.md) | runnable proxy demo added | optional Ladybug/Radiance preset walkthrough |
+| [AI-Assisted Workflow](ai-assisted-workflow/README.md) | prompt log + verified function added | one GH Python component screenshot |
+| [GIS Spatial Comparison](gis-spatial-comparison/README.md) | runnable GeoJSON demo added | optional QGIS project file |
+| [Python Notebook Analysis](python-notebook-analysis/README.md) | runnable facade decision script added | notebook export for Colab |
+| [Spreadsheet Thresholds](spreadsheet-thresholds/README.md) | template + filled example added | optional spreadsheet chart export |
 
 ## Minimum Kit Standard
 
@@ -37,4 +37,3 @@ Each kit should include:
 ## Course Promise Check
 
 If a route is listed as "supported," a student should be able to start from the kit and adapt it to their own studio project without the instructor inventing the route during class.
-

@@ -361,6 +361,47 @@
 </section>
 <section class="slide level2 center">
 
+<p><span class="kicker">Course progress</span></p>
+</section>
+<section id="this-week-produces-a-comparison-artifact" class="slide level2 center">
+<h2>This week produces a comparison artifact</h2>
+<div class="progress-ladder">
+<div class="step done">
+<p>W1 decision</p>
+</div>
+<div class="step done">
+<p>W2 evidence</p>
+</div>
+<div class="step current">
+<p>W3 comparison</p>
+</div>
+<div class="step">
+<p>W4-6 pathway</p>
+</div>
+<div class="step">
+<p>W7-9 prototype</p>
+</div>
+<div class="step">
+<p>W10-12 package</p>
+</div>
+</div>
+<div class="artifact-strip">
+<div class="artifact">
+<p><span class="label concept">Input</span> A1 decision + evidence audit</p>
+</div>
+<div class="artifact">
+<p><span class="label activity">Change</span> weights, thresholds, variant rows, confidence levels</p>
+</div>
+<div class="artifact">
+<p><span class="label example">Output</span> ranked variants + one chart + one CSV export</p>
+</div>
+<div class="artifact">
+<p><span class="label reflect">Bridge</span> CSV can drive GH colors, labels, panels, or variant selection</p>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
 <p><span class="kicker">The reframe</span></p>
 </section>
 <section id="the-spreadsheet-is-the-comparison-layer" class="slide level2 center">
@@ -392,23 +433,20 @@
 </section>
 <section id="workbook-anatomy" class="slide level2 center">
 <h2>Workbook anatomy</h2>
-<p>The same four-zone frame we use for every tool. A real workbook screenshot drops into this later.</p>
-<div class="tool-panel demo-pending">
+<p>The same four-zone frame we use for every tool. This is a minimum runnable workbook, not an abstract exercise.</p>
+<div class="tool-panel">
 <div class="zone input">
-<p><strong>Input</strong> evidence rows — source, observation, confidence per variant</p>
+<p><strong>Input</strong> <code>variant</code>, <code>criterion</code>, <code>value</code>, <code>unit</code>, <code>source</code>, <code>confidence</code></p>
 </div>
 <div class="zone operation">
-<p><strong>What varies</strong> the option or scenario being compared (A / B / C, or low / mid / high)</p>
+<p><strong>What varies</strong> weights, thresholds, variant rows, confidence notes</p>
 </div>
 <div class="zone output">
-<p><strong>Output</strong> one chart or matrix that makes the trade-off visible</p>
+<p><strong>Output</strong> decision table, chart, <code>variant_scores.csv</code></p>
 </div>
 <div class="zone check">
-<p><strong>Quality check</strong> units stated, legend present, formulas readable by a stranger</p>
+<p><strong>Quality check</strong> formulas visible, units stated, one hand calculation matches</p>
 </div>
-</div>
-<div class="example-card">
-<p>Screenshot pending — we will capture a live workbook in class rather than fake a polished one.</p>
 </div>
 </section>
 <section id="start-with-the-decision-not-the-software" class="slide level2 center">
@@ -416,10 +454,20 @@
 <p>The structure follows the question, never the other way around.</p>
 <div class="two-col">
 <div class="warning-card">
-<p><span class="card-title">Workbook with no decision</span> - one giant undifferentiated sheet - no units, no audience - columns with no reason to exist</p>
+<p><span class="card-title">Workbook with no decision</span></p>
+<ul>
+<li class="fragment">one giant undifferentiated sheet</li>
+<li class="fragment">no units, no audience</li>
+<li class="fragment">columns with no reason to exist</li>
+</ul>
 </div>
 <div class="activity-card">
-<p><span class="card-title">Workbook built on a decision</span> - one question per structure - one row type per sheet - one clear output already in mind</p>
+<p><span class="card-title">Workbook built on a decision</span></p>
+<ul>
+<li class="fragment">one question per structure</li>
+<li class="fragment">one row type per sheet</li>
+<li class="fragment">one clear output already in mind</li>
+</ul>
 </div>
 </div>
 </section>
@@ -440,6 +488,34 @@
 <div class="concept-card">
 <p>Each sheet answers one question, so the reader never has to reverse-engineer your intent.</p>
 </div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Patch to Grasshopper</span></p>
+</section>
+<section id="spreadsheet-output-can-become-gh-input" class="slide level2 center">
+<h2>Spreadsheet output can become GH input</h2>
+<div class="gh-bridge">
+<p><strong>Bridge pattern</strong> Export <code>variant_scores.csv</code> -&gt; read it in Grasshopper -&gt; attach scores to geometry variants -&gt; color, cull, rank, or label the options.</p>
+</div>
+<div class="bridge-flow">
+<div class="node current">
+<p>spreadsheet</p>
+</div>
+<div class="node">
+<p>CSV</p>
+</div>
+<div class="node">
+<p>GH read file</p>
+</div>
+<div class="node">
+<p>geometry variants</p>
+</div>
+<div class="node">
+<p>selected option</p>
+</div>
+</div>
+<p>The spreadsheet does not replace GH. It makes the decision rule visible before GH starts looking magical.</p>
 </section>
 <section id="from-image-to-comparable-fields" class="slide level2 center">
 <h2>From image to comparable fields</h2>
@@ -473,10 +549,22 @@
 <p>A chart fails when it describes data instead of carrying a message.</p>
 <div class="two-col">
 <div class="warning-card">
-<p><span class="card-title">The chart that fails a stakeholder</span> - too many series, no dominant takeaway - labels too small to read at a glance - colour decorating instead of working - title naming the data, not the message</p>
+<p><span class="card-title">The chart that fails a stakeholder</span></p>
+<ul>
+<li class="fragment">too many series, no dominant takeaway</li>
+<li class="fragment">labels too small to read at a glance</li>
+<li class="fragment">colour decorating instead of working</li>
+<li class="fragment">title naming the data, not the message</li>
+</ul>
 </div>
 <div class="activity-card">
-<p><span class="card-title">The cleaned chart</span> - one message, stated in the title - only the series that support it - annotation forcing the eye to the point - uncertainty shown where it matters</p>
+<p><span class="card-title">The cleaned chart</span></p>
+<ul>
+<li class="fragment">one message, stated in the title</li>
+<li class="fragment">only the series that support it</li>
+<li class="fragment">annotation forcing the eye to the point</li>
+<li class="fragment">uncertainty shown where it matters</li>
+</ul>
 </div>
 </div>
 </section>
@@ -513,10 +601,20 @@
 <h2>Show uncertainty honestly</h2>
 <div class="two-col">
 <div class="warning-card">
-<p><span class="card-title">Avoid</span> - fake precision - unexplained weighted scores - single-point claims on weak inputs</p>
+<p><span class="card-title">Avoid</span></p>
+<ul>
+<li class="fragment">fake precision</li>
+<li class="fragment">unexplained weighted scores</li>
+<li class="fragment">single-point claims on weak inputs</li>
+</ul>
 </div>
 <div class="activity-card">
-<p><span class="card-title">Prefer</span> - ranges and scenario labels - note fields for assumptions - charts that make limits visible</p>
+<p><span class="card-title">Prefer</span></p>
+<ul>
+<li class="fragment">ranges and scenario labels</li>
+<li class="fragment">note fields for assumptions</li>
+<li class="fragment">charts that make limits visible</li>
+</ul>
 </div>
 </div>
 </section>
@@ -564,6 +662,17 @@
 <div class="reflection-card">
 <p>The note column is doing the real work: it converts scores back into a defensible recommendation.</p>
 </div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Uncertainty check</span></p>
+</section>
+<section id="a-number-is-not-neutral-just-because-it-is-in-a-cell" class="slide level2 center">
+<h2>A number is not neutral just because it is in a cell</h2>
+<div class="uncertainty-check">
+<p><strong>Question for your workbook</strong> Which cell, weight, or threshold would change the recommendation if it moved by 10 percent?</p>
+</div>
+<p>That cell is not a detail. It is a design assumption wearing the costume of arithmetic.</p>
 </section>
 <section class="slide level2 center">
 
@@ -697,7 +806,14 @@
 <section id="week-3-milestone" class="slide level2 center">
 <h2>Week 3 milestone</h2>
 <div class="concept-card">
-<p><span class="card-title">Leave class with</span> 1. your A1 Total Recall board finalized 2. a starter workbook comparing real variants 3. one chart that passes the 3-second test 4. one named limit your workbook cannot answer</p>
+<p><span class="card-title">Leave class with</span></p>
+<ol type="1">
+<li class="fragment">your A1 Total Recall board finalized</li>
+<li class="fragment">a starter workbook comparing real variants or scenarios</li>
+<li class="fragment">one exported table/chart that could be read by GH or another tool</li>
+<li class="fragment">one chart that passes the 3-second test</li>
+<li class="fragment">one named cell, weight, or threshold you do not fully trust</li>
+</ol>
 </div>
 <div class="reflection-card">
 <p><strong>The trade-off my workbook makes visible is <strong><em>, and the input I least trust is </em></strong>.</strong></p>

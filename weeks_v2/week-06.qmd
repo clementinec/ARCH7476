@@ -45,6 +45,84 @@ This is the **A2 decision gate** and your **A4 route declaration**. We commit to
 
 ---
 
+[Course progress]{.kicker}
+
+## This week locks the pathway contract
+
+::: {.progress-ladder}
+::: {.step .done}
+spreadsheet
+:::
+::: {.step .done}
+GIS
+:::
+::: {.step .done}
+BIM/BEM
+:::
+::: {.step .current}
+route choice
+:::
+::: {.step}
+prototype
+:::
+::: {.step}
+verification
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Input]{.label .concept}
+A1 board + evidence audit + route tests from Weeks 3-5
+:::
+::: {.artifact}
+[Decide]{.label .activity}
+Route A/B, primary pathway, smallest useful output
+:::
+::: {.artifact}
+[Output]{.label .example}
+A2 pathway contract + A4 branch declaration
+:::
+::: {.artifact}
+[Bridge]{.label .reflect}
+one named export/ingestion path for GH, notebook, GIS, or package
+:::
+:::
+
+---
+
+[Tool coverage board]{.kicker}
+
+## What we have mapped so far
+
+::: {.tool-ledger}
+::: {.slot .core}
+[Core mapped]{.label .activity}
+
+- spreadsheet thresholds
+- `geopandas` spatial comparison
+- BIM-derived performance proxy
+:::
+::: {.slot .peer}
+[Peer / bridge]{.label .concept}
+
+- GH components
+- Ladybug/Radiance walkthrough
+- studio-specific plugin knowledge
+:::
+::: {.slot .explore}
+[To be mapped]{.label .example}
+
+- Python design-decision notebook
+- AI-assisted component verification
+- final package handoff
+:::
+:::
+
+The board keeps the wishlist honest: a tool is either mapped, peer-supported, exploratory, or out of scope.
+
+---
+
 [Strategic, not exhaustive]{.kicker}
 
 ## Evidence mapping is a decision, not a collection
@@ -62,7 +140,7 @@ A source earns its place only when it could change the scheme, not decorate the 
 
 ---
 
-## Stand-alone prompt
+## Worked pathway claim: Kai Tak
 
 ![Kai Tak Sports Park](../assets/examples/kai-tak-sports-park.jpg){height="460"}
 
@@ -75,6 +153,7 @@ If this were your next studio decision, which evidence sources would actually **
 :::: {.two-col}
 ::: {.concept-card}
 [Often decisive]{.card-title}
+
 - published research
 - standards and code
 - site observations
@@ -85,6 +164,7 @@ If this were your next studio decision, which evidence sources would actually **
 
 ::: {.example-card}
 [Often supporting only]{.card-title}
+
 - precedent and case studies
 - interviews or surveys
 - one-off articles
@@ -158,6 +238,7 @@ You are mapping a pathway for **one** decision and its smallest useful output â€
 :::: {.two-col}
 ::: {.concept-card}
 [Route A Â· retrospective redesign]{.card-title}
+
 - start from a **past studio board**
 - pick one decision you would now redo
 - arrive at a **redesigned decision** with evidence behind it
@@ -166,6 +247,7 @@ You are mapping a pathway for **one** decision and its smallest useful output â€
 
 ::: {.activity-card}
 [Route B Â· live studio application]{.card-title}
+
 - start from your **current studio board**
 - pick one decision you are facing now
 - arrive at an **active design move** you can apply this term
@@ -202,6 +284,23 @@ Let the kind of evidence that drives your decision point to a pathway.
 | `GH / parametric` | design variables and option families are central | there is no clear evaluation output |
 | `BIM/BEM / simulation` | performance assumptions need model-based testing | setup or cleanup exceeds the decision value |
 | `AI-assisted` | a component can be accelerated and verified | the result cannot be inspected or reproduced |
+
+---
+
+[Pathway contract]{.kicker}
+
+## A2 has to name the transfer path
+
+Every pathway declaration includes a handoff target. This is what prevents "I chose a tool" from replacing the actual method.
+
+| Pathway | Export / handoff | GH or package bridge |
+|---|---|---|
+| spreadsheet | `variant_scores.csv` | read into GH; color/rank variants |
+| GIS | `site_layers.geojson` + score table | import context geometry and attributes |
+| Python | notebook + exported figure/table | feed metrics or plots to package/GH |
+| GH / parametric | GH definition + variant log | direct geometry variants and CSV metrics |
+| BIM/BEM / proxy | scenario table + metrics CSV | drive facade/massing revisions |
+| AI-assisted | prompt log + verified component | GhPython/C# function or documentation block |
 
 ---
 
@@ -252,11 +351,25 @@ If you cannot finish the sentence clearly, the pathway is not chosen yet â€” and
 
 ::: {.warning-card}
 [Catch these now]{.card-title}
+
 - too many source types with no hierarchy
 - a pathway choice that does not change the method
 - no clear output format
 - a question still too large for a prototype
 :::
+
+---
+
+[Uncertainty check]{.kicker}
+
+## Choosing a pathway also chooses what you will ignore
+
+::: {.uncertainty-check}
+**Question for A2**
+What does your chosen pathway make visible, and what does it make almost impossible to see within this semester?
+:::
+
+Write both answers into the A2 matrix. The unsupported part becomes a limit, not a hidden weakness.
 
 ---
 

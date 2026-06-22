@@ -45,6 +45,52 @@ This is a clinic, not a contest. We examine the **workflow**, and we help each o
 
 ---
 
+[Course progress]{.kicker}
+
+## This week produces a verification artifact
+
+::: {.progress-ladder}
+::: {.step .done}
+A2 route
+:::
+::: {.step .done}
+prototype
+:::
+::: {.step .current}
+verification
+:::
+::: {.step}
+threshold
+:::
+::: {.step}
+draft package
+:::
+::: {.step}
+handoff
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Input]{.label .concept}
+prototype artifact, prompt log, notebook, GH canvas, map, or scenario file
+:::
+::: {.artifact}
+[Test]{.label .activity}
+peer rerun, manual check, known-case comparison, or failure replay
+:::
+::: {.artifact}
+[Output]{.label .example}
+verification card + reproducibility fix list
+:::
+::: {.artifact}
+[Feeds]{.label .reflect}
+A3 Verification Log and A4 Reproducibility Capsule
+:::
+:::
+
+---
+
 [The reproducibility frame]{.kicker}
 
 ## If you can't rerun it, it isn't evidence
@@ -175,6 +221,7 @@ Both come down to one principle: **KNOW YOUR DATA.**
 :::: {.two-col}
 ::: {.concept-card}
 [In research ethics]{.card-title}
+
 - who your participants are
 - how the data was collected
 - the biases in your sample
@@ -182,6 +229,7 @@ Both come down to one principle: **KNOW YOUR DATA.**
 :::
 ::: {.concept-card}
 [In AI use]{.card-title}
+
 - what the model was trained on
 - the biases that training carries
 - what the tool can and cannot do
@@ -221,6 +269,7 @@ A building-performance analysis: polished charts, statistics beyond the author's
 
 ::: {.reflection-card}
 [Review it together]{.card-title}
+
 - which specific claims can the author actually defend?
 - what should have been disclosed, and where?
 - what verification would have made this trustworthy?
@@ -237,7 +286,7 @@ We critique the **workflow and its claims**, never the author's ability.
 
 The same four-zone frame as the rest of the course — but now one zone is an AI draft, and the **manual check** and **disclosure** are not optional.
 
-::: {.tool-panel .demo-pending}
+::: {.tool-panel}
 ::: {.zone .input}
 **Prompt** "Write a geopandas script that buffers transit stops 400 m and reports % of site parcels covered."
 :::
@@ -258,6 +307,51 @@ AI can draft the step. It cannot verify it or disclose it. Those two zones are y
 
 ---
 
+[AI as component front end]{.kicker}
+
+## Vibe coding is only acceptable after the function contract is clear
+
+::: {.function-contract}
+**Before asking AI**
+State the component's inputs, units, allowed ranges, operation, output, and one known test case. The prompt should describe that contract, not just ask for "a script."
+:::
+
+::: {.bridge-flow}
+::: {.node .current}
+function contract
+:::
+::: {.node}
+AI draft
+:::
+::: {.node}
+manual repair
+:::
+::: {.node}
+GhPython / notebook
+:::
+::: {.node}
+verified output
+:::
+:::
+
+---
+
+[Patch to Grasshopper]{.kicker}
+
+## AI drafts can become GH components, but only after inspection
+
+::: {.gh-bridge}
+**Bridge pattern**
+AI drafts a `geopandas`, Python, GhPython, or C# component -> student checks units, edge cases, and one manual result -> only then does the component enter the design workflow.
+:::
+
+::: {.uncertainty-check}
+**Question for AI-assisted work**
+Which part of the generated output do you understand least, and what test would expose a wrong answer there?
+:::
+
+---
+
 # Session 1 · Mentor Prep {background-color="#1a1a1a"}
 
 ---
@@ -270,6 +364,7 @@ Most mentor time is lost to vague questions. A little preparation turns a pleasa
 
 ::: {.activity-card}
 [Prepare now · 15 minutes]{.card-title}
+
 1. **One-liner** — your project in a single sentence
 2. **Specific ask** — the exact advice you need
 3. **Context check** — what your mentor actually does
@@ -284,12 +379,14 @@ Most mentor time is lost to vague questions. A little preparation turns a pleasa
 :::: {.two-col}
 ::: {.warning-card}
 [Weak — wastes the slot]{.card-title}
+
 - "What do you think of my project?"
 - "Do you have any advice?"
 - "How do I get a job in your field?"
 :::
 ::: {.concept-card}
 [Strategic — creates value]{.card-title}
+
 - "What evidence would convince [specific stakeholder] to change current practice?"
 - "What implementation barriers am I likely missing?"
 - "How do practitioners here validate this kind of analysis?"
@@ -303,6 +400,7 @@ Most mentor time is lost to vague questions. A little preparation turns a pleasa
 
 ::: {.activity-card}
 [In pairs · 10 minutes]{.card-title}
+
 1. Person A delivers their one-liner + best strategic question
 2. Person B gives specific feedback and one improvement
 3. Swap roles and repeat
@@ -423,6 +521,7 @@ Keep it in notes or post it as a Slack thread under your material.
 
 ::: {.concept-card}
 [Before Week 9]{.card-title}
+
 1. complete your mentor consultation using your strategic questions
 2. send the follow-up email showing how their advice changed your approach
 3. document one workflow so a peer can rerun it unaided

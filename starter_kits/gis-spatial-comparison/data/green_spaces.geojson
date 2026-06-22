@@ -1,0 +1,15 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"green_id": "G1", "type": "park"},
+      "geometry": {"type": "Polygon", "coordinates": [[[-80, 130], [70, 130], [70, 280], [-80, 280], [-80, 130]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"green_id": "G2", "type": "tree corridor"},
+      "geometry": {"type": "Polygon", "coordinates": [[[180, 250], [390, 250], [390, 340], [180, 340], [180, 250]]]}
+    }
+  ]
+}

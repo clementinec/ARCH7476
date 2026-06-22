@@ -427,6 +427,47 @@
 </section>
 <section class="slide level2 center">
 
+<p><span class="kicker">Course progress</span></p>
+</section>
+<section id="this-week-produces-a-spatial-evidence-artifact" class="slide level2 center">
+<h2>This week produces a spatial evidence artifact</h2>
+<div class="progress-ladder">
+<div class="step done">
+<p>W1 decision</p>
+</div>
+<div class="step done">
+<p>W2 evidence</p>
+</div>
+<div class="step done">
+<p>W3 comparison</p>
+</div>
+<div class="step current">
+<p>W4 GIS route</p>
+</div>
+<div class="step">
+<p>W5 model route</p>
+</div>
+<div class="step">
+<p>W6 pathway</p>
+</div>
+</div>
+<div class="artifact-strip">
+<div class="artifact">
+<p><span class="label concept">Input</span> site boundary + transit/noise/green layers as GeoJSON</p>
+</div>
+<div class="artifact">
+<p><span class="label activity">Change</span> buffer distance, overlay rules, scoring weights</p>
+</div>
+<div class="artifact">
+<p><span class="label example">Output</span> site score table + map export + cleaned GeoJSON</p>
+</div>
+<div class="artifact">
+<p><span class="label reflect">Bridge</span> GeoJSON/CSV can be read by Rhino/GH for site geometry and attributes</p>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
 <p><span class="kicker">The framing</span></p>
 </section>
 <section id="gis-is-not-just-digital-mapping" class="slide level2 center">
@@ -448,8 +489,8 @@
 
 <p><span class="kicker">Read the site first</span></p>
 </section>
-<section id="stand-alone-site-prompt" class="slide level2 center">
-<h2>Stand-alone site prompt</h2>
+<section id="worked-site-question-kai-tak" class="slide level2 center">
+<h2>Worked site question: Kai Tak</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="../assets/examples/kai-tak-sports-park.jpg" height="480"></p>
@@ -584,25 +625,24 @@
 </section>
 <section class="slide level2 center">
 
-<p><span class="kicker">Tool panel · capture comes later</span></p>
+<p><span class="kicker">Tool panel · runnable contract</span></p>
 </section>
 <section id="a-geopandas-operation-as-a-tool" class="slide level2 center">
 <h2>A <code>geopandas</code> operation as a tool</h2>
-<div class="tool-panel demo-pending">
+<div class="tool-panel">
 <div class="zone input">
-<p><strong>Input</strong> site polygon + a transit / amenity layer</p>
+<p><strong>Input</strong> candidate sites + transit stops + noise zones + green-space polygons</p>
 </div>
 <div class="zone operation">
-<p><strong>What varies</strong> buffer distance (e.g.&nbsp;200–600 m)</p>
+<p><strong>What varies</strong> buffer distance, overlay rule, scoring weights</p>
 </div>
 <div class="zone output">
-<p><strong>Output</strong> coverage % per option (per site or per layer)</p>
+<p><strong>Output</strong> score table, exported map, selected site GeoJSON</p>
 </div>
 <div class="zone check">
-<p><strong>Quality check</strong> CRS stated, feature counts spot-checked</p>
+<p><strong>Quality check</strong> CRS projected, feature counts spot-checked, one distance checked manually</p>
 </div>
 </div>
-<p>The dashed frame means the live capture does not exist yet — we will drop a real cell in, not a faked screenshot.</p>
 </section>
 <section id="minimal-geopandas-workflow" class="slide level2 center">
 <h2>Minimal <code>geopandas</code> workflow</h2>
@@ -699,14 +739,22 @@
 <h2>Example workflow 1: site selection</h2>
 <p><strong>Question:</strong> which of three candidate sites best balances transit access, development constraints, and environmental exposure?</p>
 <div class="example-card">
-<p><span class="card-title">Possible pathway</span> - <code>QGIS</code> for first-pass layer exploration - <code>geopandas</code> if repeated comparisons or automation become useful</p>
+<p><span class="card-title">Possible pathway</span></p>
+<ul>
+<li class="fragment"><code>QGIS</code> for first-pass layer exploration</li>
+<li class="fragment"><code>geopandas</code> if repeated comparisons or automation become useful</li>
+</ul>
 </div>
 </section>
 <section id="example-workflow-2-public-space-access" class="slide level2 center">
 <h2>Example workflow 2: public-space access</h2>
 <p><strong>Question:</strong> how does a proposal change access within a 5-minute or 10-minute walk?</p>
 <div class="example-card">
-<p><span class="card-title">Possible pathway</span> - GIS for network and catchment logic - spreadsheet later for ranking alternatives</p>
+<p><span class="card-title">Possible pathway</span></p>
+<ul>
+<li class="fragment">GIS for network and catchment logic</li>
+<li class="fragment">spreadsheet later for ranking alternatives</li>
+</ul>
 </div>
 <p>Pathways can support each other even when one remains primary.</p>
 </section>
@@ -714,8 +762,51 @@
 <h2>Example workflow 3: context for studio modeling</h2>
 <p><strong>Question:</strong> what context data should be brought into Rhino / Grasshopper or another design environment?</p>
 <div class="example-card">
-<p><span class="card-title">Possible pathway</span> - use GIS to select, simplify, and export - avoid importing the entire city when only a few layers matter</p>
+<p><span class="card-title">Possible pathway</span></p>
+<ul>
+<li class="fragment">use GIS to select, simplify, and export</li>
+<li class="fragment">avoid importing the entire city when only a few layers matter</li>
+</ul>
 </div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Patch to Grasshopper</span></p>
+</section>
+<section id="gis-outputs-can-become-rhino-context" class="slide level2 center">
+<h2>GIS outputs can become Rhino context</h2>
+<div class="gh-bridge">
+<p><strong>Bridge pattern</strong> Export candidate sites or selected layers as <code>GeoJSON</code> / <code>CSV</code> -&gt; bring points, curves, polygons, and scores into Rhino/GH -&gt; use them to locate, color, or constrain design variants.</p>
+</div>
+<div class="bridge-flow">
+<div class="node current">
+<p>geopandas</p>
+</div>
+<div class="node">
+<p>GeoJSON / CSV</p>
+</div>
+<div class="node">
+<p>Rhino/GH import</p>
+</div>
+<div class="node">
+<p>site geometry + attributes</p>
+</div>
+<div class="node">
+<p>placement / access decision</p>
+</div>
+</div>
+<p>The map becomes design evidence only when it changes a geometric or strategic decision.</p>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Uncertainty check</span></p>
+</section>
+<section id="spatial-certainty-can-be-fake-certainty" class="slide level2 center">
+<h2>Spatial certainty can be fake certainty</h2>
+<div class="uncertainty-check">
+<p><strong>Question for your GIS route</strong> Is your buffer measuring real access, or just distance on a map?</p>
+</div>
+<p>Check at least one of these before trusting the output: CRS, walking network vs straight-line distance, data date, missing entrances, and layer source.</p>
 </section>
 <section class="slide level2 center">
 
@@ -749,7 +840,14 @@
 <section id="minute-gis-scoping-sprint" class="slide level2 center">
 <h2>15-minute GIS scoping sprint</h2>
 <div class="activity-card">
-<p><span class="card-title">Choose your own project and write down</span> - the spatial question - the smallest useful spatial output - the minimum input layers needed - whether you would start in <code>QGIS</code>, <code>ArcGIS</code>, or <code>geopandas</code> - what would make GIS the <strong>wrong</strong> pathway</p>
+<p><span class="card-title">Choose your own project and write down</span></p>
+<ul>
+<li class="fragment">the spatial question</li>
+<li class="fragment">the smallest useful spatial output</li>
+<li class="fragment">the minimum input layers needed</li>
+<li class="fragment">whether you would start in <code>QGIS</code>, <code>ArcGIS</code>, or <code>geopandas</code></li>
+<li class="fragment">what would make GIS the <strong>wrong</strong> pathway</li>
+</ul>
 </div>
 </section>
 <section id="when-gis-is-the-right-semester-pathway" class="slide level2 center">

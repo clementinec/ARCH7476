@@ -45,6 +45,52 @@ This is a review, not a contest. We examine the **work**, and we help each other
 
 ---
 
+[Course progress]{.kicker}
+
+## This week turns artifacts into a draft package
+
+::: {.progress-ladder}
+::: {.step .done}
+A1 board
+:::
+::: {.step .done}
+A2 contract
+:::
+::: {.step .done}
+A3 prototype
+:::
+::: {.step .done}
+threshold
+:::
+::: {.step .current}
+draft package
+:::
+::: {.step}
+final handoff
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Ingest]{.label .concept}
+Total Recall board, pathway contract, prototype output, verification log
+:::
+::: {.artifact}
+[Assemble]{.label .activity}
+Practice Case, Research Brief, Object Card, Reproducibility Capsule
+:::
+::: {.artifact}
+[Test]{.label .example}
+can a reviewer trace every claim back to a file, figure, or assumption?
+:::
+::: {.artifact}
+[Revise]{.label .reflect}
+one critical missing link before Week 11
+:::
+:::
+
+---
+
 [The review frame]{.kicker}
 
 ## What a reviewer checks
@@ -64,10 +110,38 @@ If any link is missing, that is the fix list — not a failure.
 
 ---
 
+[Artifact chain]{.kicker}
+
+## The draft must show where each claim came from
+
+| A4 claim | Source artifact | What reviewer checks |
+|---|---|---|
+| decision and stake | A1 board / live studio branch | one bounded decision, not whole project |
+| evidence route | A2 pathway contract | why this workflow fits the decision |
+| output | A3 prototype | visible run, variant/scenario output |
+| trust | verification log | what was checked, what failed, what remains uncertain |
+| action | object card / threshold | what changes next |
+
+---
+
+[Uncertainty check]{.kicker}
+
+## Draft review is where hidden assumptions surface
+
+::: {.uncertainty-check}
+**Question for Week 10**
+Which claim in your draft would you least want a skeptical reviewer to ask you to rerun or justify?
+:::
+
+That claim is the one to fix first.
+
+---
+
 ## Review format
 
 ::: {.activity-card}
 [Per person]{.card-title}
+
 - **6–8 min** — draft presentation
 - **4 min** — questions from the panel and room
 - **2 min** — notes captured, one priority fix agreed
@@ -221,6 +295,7 @@ A short version for a tutor, a longer one for a method reviewer.
 
 ::: {.concept-card}
 [Before Week 11]{.card-title}
+
 1. address every **critical** item from your review
 2. strengthen the weakest spine link you identified
 3. get the draft timing to 6–8 minutes

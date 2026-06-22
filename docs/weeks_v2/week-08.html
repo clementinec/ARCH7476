@@ -361,6 +361,47 @@
 </section>
 <section class="slide level2 center">
 
+<p><span class="kicker">Course progress</span></p>
+</section>
+<section id="this-week-produces-a-verification-artifact" class="slide level2 center">
+<h2>This week produces a verification artifact</h2>
+<div class="progress-ladder">
+<div class="step done">
+<p>A2 route</p>
+</div>
+<div class="step done">
+<p>prototype</p>
+</div>
+<div class="step current">
+<p>verification</p>
+</div>
+<div class="step">
+<p>threshold</p>
+</div>
+<div class="step">
+<p>draft package</p>
+</div>
+<div class="step">
+<p>handoff</p>
+</div>
+</div>
+<div class="artifact-strip">
+<div class="artifact">
+<p><span class="label concept">Input</span> prototype artifact, prompt log, notebook, GH canvas, map, or scenario file</p>
+</div>
+<div class="artifact">
+<p><span class="label activity">Test</span> peer rerun, manual check, known-case comparison, or failure replay</p>
+</div>
+<div class="artifact">
+<p><span class="label example">Output</span> verification card + reproducibility fix list</p>
+</div>
+<div class="artifact">
+<p><span class="label reflect">Feeds</span> A3 Verification Log and A4 Reproducibility Capsule</p>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
 <p><span class="kicker">The reproducibility frame</span></p>
 </section>
 <section id="if-you-cant-rerun-it-it-isnt-evidence" class="slide level2 center">
@@ -519,10 +560,22 @@
 </div>
 <div class="two-col">
 <div class="concept-card">
-<p><span class="card-title">In research ethics</span> - who your participants are - how the data was collected - the biases in your sample - the limits of your method</p>
+<p><span class="card-title">In research ethics</span></p>
+<ul>
+<li class="fragment">who your participants are</li>
+<li class="fragment">how the data was collected</li>
+<li class="fragment">the biases in your sample</li>
+<li class="fragment">the limits of your method</li>
+</ul>
 </div>
 <div class="concept-card">
-<p><span class="card-title">In AI use</span> - what the model was trained on - the biases that training carries - what the tool can and cannot do - when its output should not be trusted</p>
+<p><span class="card-title">In AI use</span></p>
+<ul>
+<li class="fragment">what the model was trained on</li>
+<li class="fragment">the biases that training carries</li>
+<li class="fragment">what the tool can and cannot do</li>
+<li class="fragment">when its output should not be trusted</li>
+</ul>
 </div>
 </div>
 <p>When you don’t understand the data behind a result, harm propagates quietly and at scale.</p>
@@ -567,7 +620,13 @@
 <p><span class="card-title">The artifact</span> A building-performance analysis: polished charts, statistics beyond the author’s stated skill, no understanding of the method when questioned, no disclosure of AI use.</p>
 </div>
 <div class="reflection-card">
-<p><span class="card-title">Review it together</span> - which specific claims can the author actually defend? - what should have been disclosed, and where? - what verification would have made this trustworthy? - what is the minimum honest version of this output?</p>
+<p><span class="card-title">Review it together</span></p>
+<ul>
+<li class="fragment">which specific claims can the author actually defend?</li>
+<li class="fragment">what should have been disclosed, and where?</li>
+<li class="fragment">what verification would have made this trustworthy?</li>
+<li class="fragment">what is the minimum honest version of this output?</li>
+</ul>
 </div>
 <p>We critique the <strong>workflow and its claims</strong>, never the author’s ability.</p>
 </section>
@@ -578,7 +637,7 @@
 <section id="an-ai-assisted-workflow-made-honest" class="slide level2 center">
 <h2>An AI-assisted workflow, made honest</h2>
 <p>The same four-zone frame as the rest of the course — but now one zone is an AI draft, and the <strong>manual check</strong> and <strong>disclosure</strong> are not optional.</p>
-<div class="tool-panel demo-pending">
+<div class="tool-panel">
 <div class="zone input">
 <p><strong>Prompt</strong> “Write a geopandas script that buffers transit stops 400 m and reports % of site parcels covered.”</p>
 </div>
@@ -598,6 +657,46 @@
 </section>
 <section class="slide level2 center">
 
+<p><span class="kicker">AI as component front end</span></p>
+</section>
+<section id="vibe-coding-is-only-acceptable-after-the-function-contract-is-clear" class="slide level2 center">
+<h2>Vibe coding is only acceptable after the function contract is clear</h2>
+<div class="function-contract">
+<p><strong>Before asking AI</strong> State the component’s inputs, units, allowed ranges, operation, output, and one known test case. The prompt should describe that contract, not just ask for “a script.”</p>
+</div>
+<div class="bridge-flow">
+<div class="node current">
+<p>function contract</p>
+</div>
+<div class="node">
+<p>AI draft</p>
+</div>
+<div class="node">
+<p>manual repair</p>
+</div>
+<div class="node">
+<p>GhPython / notebook</p>
+</div>
+<div class="node">
+<p>verified output</p>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Patch to Grasshopper</span></p>
+</section>
+<section id="ai-drafts-can-become-gh-components-but-only-after-inspection" class="slide level2 center">
+<h2>AI drafts can become GH components, but only after inspection</h2>
+<div class="gh-bridge">
+<p><strong>Bridge pattern</strong> AI drafts a <code>geopandas</code>, Python, GhPython, or C# component -&gt; student checks units, edge cases, and one manual result -&gt; only then does the component enter the design workflow.</p>
+</div>
+<div class="uncertainty-check">
+<p><strong>Question for AI-assisted work</strong> Which part of the generated output do you understand least, and what test would expose a wrong answer there?</p>
+</div>
+</section>
+<section class="slide level2 center">
+
 </section></section>
 <section>
 <section id="session-1-mentor-prep" class="title-slide slide level1 center" data-background-color="#1a1a1a">
@@ -612,24 +711,47 @@
 <h2>Make the mentor meeting count</h2>
 <p>Most mentor time is lost to vague questions. A little preparation turns a pleasant chat into a useful one.</p>
 <div class="activity-card">
-<p><span class="card-title">Prepare now · 15 minutes</span> 1. <strong>One-liner</strong> — your project in a single sentence 2. <strong>Specific ask</strong> — the exact advice you need 3. <strong>Context check</strong> — what your mentor actually does 4. <strong>Question bank</strong> — five strategic questions 5. <strong>Show-and-tell</strong> — the one thing you want them to see</p>
+<p><span class="card-title">Prepare now · 15 minutes</span></p>
+<ol type="1">
+<li class="fragment"><strong>One-liner</strong> — your project in a single sentence</li>
+<li class="fragment"><strong>Specific ask</strong> — the exact advice you need</li>
+<li class="fragment"><strong>Context check</strong> — what your mentor actually does</li>
+<li class="fragment"><strong>Question bank</strong> — five strategic questions</li>
+<li class="fragment"><strong>Show-and-tell</strong> — the one thing you want them to see</li>
+</ol>
 </div>
 </section>
 <section id="weak-questions-vs-strategic-questions" class="slide level2 center">
 <h2>Weak questions vs strategic questions</h2>
 <div class="two-col">
 <div class="warning-card">
-<p><span class="card-title">Weak — wastes the slot</span> - “What do you think of my project?” - “Do you have any advice?” - “How do I get a job in your field?”</p>
+<p><span class="card-title">Weak — wastes the slot</span></p>
+<ul>
+<li class="fragment">“What do you think of my project?”</li>
+<li class="fragment">“Do you have any advice?”</li>
+<li class="fragment">“How do I get a job in your field?”</li>
+</ul>
 </div>
 <div class="concept-card">
-<p><span class="card-title">Strategic — creates value</span> - “What evidence would convince [specific stakeholder] to change current practice?” - “What implementation barriers am I likely missing?” - “How do practitioners here validate this kind of analysis?” - “What would make my findings most useful to someone in your position?”</p>
+<p><span class="card-title">Strategic — creates value</span></p>
+<ul>
+<li class="fragment">“What evidence would convince [specific stakeholder] to change current practice?”</li>
+<li class="fragment">“What implementation barriers am I likely missing?”</li>
+<li class="fragment">“How do practitioners here validate this kind of analysis?”</li>
+<li class="fragment">“What would make my findings most useful to someone in your position?”</li>
+</ul>
 </div>
 </div>
 </section>
 <section id="question-workshop" class="slide level2 center">
 <h2>Question workshop</h2>
 <div class="activity-card">
-<p><span class="card-title">In pairs · 10 minutes</span> 1. Person A delivers their one-liner + best strategic question 2. Person B gives specific feedback and one improvement 3. Swap roles and repeat</p>
+<p><span class="card-title">In pairs · 10 minutes</span></p>
+<ol type="1">
+<li class="fragment">Person A delivers their one-liner + best strategic question</li>
+<li class="fragment">Person B gives specific feedback and one improvement</li>
+<li class="fragment">Swap roles and repeat</li>
+</ol>
 </div>
 <div class="reflection-card">
 <p>You are not competing for the best question. You are pressure-testing your own so it earns a real answer in the room.</p>
@@ -747,7 +869,14 @@
 <section id="week-8-checklist" class="slide level2 center">
 <h2>Week 8 Checklist</h2>
 <div class="concept-card">
-<p><span class="card-title">Before Week 9</span> 1. complete your mentor consultation using your strategic questions 2. send the follow-up email showing how their advice changed your approach 3. document one workflow so a peer can rerun it unaided 4. disclose and verify any AI-assisted step in your method 5. fix the weakest reproducibility gap your peer check found</p>
+<p><span class="card-title">Before Week 9</span></p>
+<ol type="1">
+<li class="fragment">complete your mentor consultation using your strategic questions</li>
+<li class="fragment">send the follow-up email showing how their advice changed your approach</li>
+<li class="fragment">document one workflow so a peer can rerun it unaided</li>
+<li class="fragment">disclose and verify any AI-assisted step in your method</li>
+<li class="fragment">fix the weakest reproducibility gap your peer check found</li>
+</ol>
 </div>
 </section>
 <section class="slide level2 center">

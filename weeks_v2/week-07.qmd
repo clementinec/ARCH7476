@@ -46,6 +46,52 @@ This week the **object** becomes your prototype workflow. A3 begins here.
 
 ---
 
+[Course progress]{.kicker}
+
+## This week produces a prototype artifact
+
+::: {.progress-ladder}
+::: {.step .done}
+A2 route
+:::
+::: {.step .current}
+prototype
+:::
+::: {.step}
+verify
+:::
+::: {.step}
+threshold
+:::
+::: {.step}
+draft
+:::
+::: {.step}
+handoff
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Input]{.label .concept}
+the files, geometry, data, or scenario table your route needs
+:::
+::: {.artifact}
+[Run]{.label .activity}
+one function/component/notebook/definition with a visible changed output
+:::
+::: {.artifact}
+[Export]{.label .example}
+output figure, CSV/JSON/GeoJSON, GH canvas, screenshot, or notebook cell
+:::
+::: {.artifact}
+[Verify]{.label .reflect}
+one known test case and one failure/fragility note
+:::
+:::
+
+---
+
 [The core idea]{.kicker}
 
 ## Minimal Viable Workflow
@@ -90,7 +136,7 @@ The four zones of that loop are what every tool panel below makes concrete.
 
 Read any workflow as four zones. If you can fill all four honestly, you have a prototype, not just a file.
 
-::: {.tool-panel .demo-pending}
+::: {.tool-panel}
 ::: {.zone .input}
 **Input** the real files, data, or model the method starts from
 :::
@@ -105,9 +151,25 @@ Read any workflow as four zones. If you can fill all four honestly, you have a p
 :::
 :::
 
-::: {.example-card}
-A screenshot of your tool running drops into this frame once you have one. Until then it stays marked pending — honest, not faked.
+---
+
+[Grasshopper translation]{.kicker}
+
+## A GH component is a packed function
+
+::: {.function-contract}
+**Function contract**
+Inputs have names, types, units, and allowed ranges. The operation changes something. Outputs have names, types, and units. A quality check proves the component did not just produce a plausible-looking answer.
 :::
+
+| Route | Function form | Visible change |
+|---|---|---|
+| spreadsheet | formula / decision rule | selected variant or score changes |
+| `geopandas` | buffer / overlay / score function | site rank or map layer changes |
+| Python | analysis function | plot or metric changes |
+| GH | cluster / GhPython component | geometry variant changes |
+| BIM/BEM proxy | scenario function | daylight/heat-risk score changes |
+| AI-assisted | drafted function, manually checked | output changes after repair |
 
 ---
 
@@ -209,6 +271,7 @@ Pick one route to document:
 :::: {.two-col}
 ::: {.concept-card}
 [Workflow]{.card-title}
+
 - what the method is for
 - what files or inputs are required
 - what tools are required
@@ -216,6 +279,7 @@ Pick one route to document:
 
 ::: {.activity-card}
 [Step-by-step]{.card-title}
+
 1. do this
 2. check this
 3. if this fails, try this
@@ -230,6 +294,7 @@ Pick one route to document:
 :::: {.two-col}
 ::: {.warning-card}
 [Troubleshooting]{.card-title}
+
 - common error
 - warning sign
 - likely fix
@@ -237,6 +302,7 @@ Pick one route to document:
 
 ::: {.concept-card}
 [Quality check]{.card-title}
+
 - what success looks like
 - what a red flag looks like
 :::
@@ -254,6 +320,7 @@ Notice the template is just the four zones, written out for a stranger.
 
 ::: {.activity-card}
 [Do this now]{.card-title}
+
 1. swap instructions with someone using a **different** route
 2. no verbal explanation allowed
 3. try to follow their method
@@ -274,17 +341,19 @@ That does not mean the project is weak. It means the workflow needs **one more l
 
 ---
 
-## Pathway breakout prompts
+## Pathway breakout checks
 
 :::: {.two-col}
 ::: {.concept-card}
 [Spreadsheet]{.card-title}
+
 - what table structure does the method depend on?
 - which formula or chart is most fragile?
 :::
 
 ::: {.concept-card}
 [GIS]{.card-title}
+
 - what layer preparation is essential?
 - which operation sequence must be documented exactly?
 :::
@@ -293,12 +362,14 @@ That does not mean the project is weak. It means the workflow needs **one more l
 :::: {.two-col}
 ::: {.concept-card}
 [Python]{.card-title}
+
 - what notebook cells define the real logic?
 - what package, path, or file assumptions must be stated?
 :::
 
 ::: {.concept-card}
 [GH / parametric]{.card-title}
+
 - what sliders or constraints define the design space?
 - what output proves the variants are comparable?
 :::
@@ -307,16 +378,60 @@ That does not mean the project is weak. It means the workflow needs **one more l
 :::: {.two-col}
 ::: {.concept-card}
 [BIM/BEM / simulation]{.card-title}
+
 - what model assumptions dominate the result?
 - what setup choices must be documented first?
 :::
 
 ::: {.concept-card}
 [AI-assisted]{.card-title}
+
 - what did AI generate or edit?
 - what manual check confirms the output is usable?
 :::
 ::::
+
+---
+
+[Patch to Grasshopper]{.kicker}
+
+## Every prototype needs an ingestion path
+
+::: {.gh-bridge}
+**Bridge card for A3**
+What file or value leaves your workflow, what GH component reads it, what geometry/parameter it affects, and what visual change proves the bridge works?
+:::
+
+::: {.bridge-flow}
+::: {.node .current}
+prototype output
+:::
+::: {.node}
+CSV / JSON / screenshot
+:::
+::: {.node}
+GH / package ingest
+:::
+::: {.node}
+visible change
+:::
+::: {.node}
+quality check
+:::
+:::
+
+---
+
+[Uncertainty check]{.kicker}
+
+## A working prototype can still be wrong
+
+::: {.uncertainty-check}
+**Question for your A3**
+What is the smallest input change that would make your prototype output visibly different?
+:::
+
+If no visible change appears, either the workflow is not sensitive enough, the output is not meaningful, or the connection is broken.
 
 ---
 
@@ -352,6 +467,7 @@ The point of a rough prototype is that it surfaces real questions for your mento
 
 ::: {.activity-card}
 [Write three questions]{.card-title}
+
 1. one **technical** question
 2. one **methodological** question
 3. one **strategic** question about scope or decision relevance
@@ -453,7 +569,9 @@ You should leave with:
 
 ::: {.concept-card}
 [Week 7 milestone]{.card-title}
+
 - a first working artifact
+- a function/component contract with inputs, output, and quality check
 - documentation that survives a swap test
 - a list of fragile steps and assumptions
 - three sharp mentor questions

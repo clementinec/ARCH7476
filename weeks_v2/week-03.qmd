@@ -45,6 +45,52 @@ A1 finalizes this week. The same comparison logic also seeds A2 — this is wher
 
 ---
 
+[Course progress]{.kicker}
+
+## This week produces a comparison artifact
+
+::: {.progress-ladder}
+::: {.step .done}
+W1 decision
+:::
+::: {.step .done}
+W2 evidence
+:::
+::: {.step .current}
+W3 comparison
+:::
+::: {.step}
+W4-6 pathway
+:::
+::: {.step}
+W7-9 prototype
+:::
+::: {.step}
+W10-12 package
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Input]{.label .concept}
+A1 decision + evidence audit
+:::
+::: {.artifact}
+[Change]{.label .activity}
+weights, thresholds, variant rows, confidence levels
+:::
+::: {.artifact}
+[Output]{.label .example}
+ranked variants + one chart + one CSV export
+:::
+::: {.artifact}
+[Bridge]{.label .reflect}
+CSV can drive GH colors, labels, panels, or variant selection
+:::
+:::
+
+---
+
 [The reframe]{.kicker}
 
 ## The spreadsheet is the comparison layer
@@ -81,25 +127,21 @@ A1 is **finalized** this week — the Total Recall board. The comparison habit y
 
 ## Workbook anatomy
 
-The same four-zone frame we use for every tool. A real workbook screenshot drops into this later.
+The same four-zone frame we use for every tool. This is a minimum runnable workbook, not an abstract exercise.
 
-::: {.tool-panel .demo-pending}
+::: {.tool-panel}
 ::: {.zone .input}
-**Input** evidence rows — source, observation, confidence per variant
+**Input** `variant`, `criterion`, `value`, `unit`, `source`, `confidence`
 :::
 ::: {.zone .operation}
-**What varies** the option or scenario being compared (A / B / C, or low / mid / high)
+**What varies** weights, thresholds, variant rows, confidence notes
 :::
 ::: {.zone .output}
-**Output** one chart or matrix that makes the trade-off visible
+**Output** decision table, chart, `variant_scores.csv`
 :::
 ::: {.zone .check}
-**Quality check** units stated, legend present, formulas readable by a stranger
+**Quality check** formulas visible, units stated, one hand calculation matches
 :::
-:::
-
-::: {.example-card}
-Screenshot pending — we will capture a live workbook in class rather than fake a polished one.
 :::
 
 ---
@@ -111,6 +153,7 @@ The structure follows the question, never the other way around.
 :::: {.two-col}
 ::: {.warning-card}
 [Workbook with no decision]{.card-title}
+
 - one giant undifferentiated sheet
 - no units, no audience
 - columns with no reason to exist
@@ -118,6 +161,7 @@ The structure follows the question, never the other way around.
 
 ::: {.activity-card}
 [Workbook built on a decision]{.card-title}
+
 - one question per structure
 - one row type per sheet
 - one clear output already in mind
@@ -148,6 +192,37 @@ the chart · the matrix · the summary line
 ::: {.concept-card}
 Each sheet answers one question, so the reader never has to reverse-engineer your intent.
 :::
+
+---
+
+[Patch to Grasshopper]{.kicker}
+
+## Spreadsheet output can become GH input
+
+::: {.gh-bridge}
+**Bridge pattern**
+Export `variant_scores.csv` -> read it in Grasshopper -> attach scores to geometry variants -> color, cull, rank, or label the options.
+:::
+
+::: {.bridge-flow}
+::: {.node .current}
+spreadsheet
+:::
+::: {.node}
+CSV
+:::
+::: {.node}
+GH read file
+:::
+::: {.node}
+geometry variants
+:::
+::: {.node}
+selected option
+:::
+:::
+
+The spreadsheet does not replace GH. It makes the decision rule visible before GH starts looking magical.
 
 ---
 
@@ -182,6 +257,7 @@ A chart fails when it describes data instead of carrying a message.
 :::: {.two-col}
 ::: {.warning-card}
 [The chart that fails a stakeholder]{.card-title}
+
 - too many series, no dominant takeaway
 - labels too small to read at a glance
 - colour decorating instead of working
@@ -190,6 +266,7 @@ A chart fails when it describes data instead of carrying a message.
 
 ::: {.activity-card}
 [The cleaned chart]{.card-title}
+
 - one message, stated in the title
 - only the series that support it
 - annotation forcing the eye to the point
@@ -237,6 +314,7 @@ If not, the chart is not finished — that is a clarity gap, not a failure of ta
 :::: {.two-col}
 ::: {.warning-card}
 [Avoid]{.card-title}
+
 - fake precision
 - unexplained weighted scores
 - single-point claims on weak inputs
@@ -244,6 +322,7 @@ If not, the chart is not finished — that is a clarity gap, not a failure of ta
 
 ::: {.activity-card}
 [Prefer]{.card-title}
+
 - ranges and scenario labels
 - note fields for assumptions
 - charts that make limits visible
@@ -265,6 +344,19 @@ A matrix is a comparison layer in table form — readable as long as the criteri
 ::: {.reflection-card}
 The note column is doing the real work: it converts scores back into a defensible recommendation.
 :::
+
+---
+
+[Uncertainty check]{.kicker}
+
+## A number is not neutral just because it is in a cell
+
+::: {.uncertainty-check}
+**Question for your workbook**
+Which cell, weight, or threshold would change the recommendation if it moved by 10 percent?
+:::
+
+That cell is not a detail. It is a design assumption wearing the costume of arithmetic.
 
 ---
 
@@ -427,10 +519,12 @@ You can do the course very well on this tool, as long as you:
 
 ::: {.concept-card}
 [Leave class with]{.card-title}
+
 1. your A1 Total Recall board finalized
-2. a starter workbook comparing real variants
-3. one chart that passes the 3-second test
-4. one named limit your workbook cannot answer
+2. a starter workbook comparing real variants or scenarios
+3. one exported table/chart that could be read by GH or another tool
+4. one chart that passes the 3-second test
+5. one named cell, weight, or threshold you do not fully trust
 :::
 
 ::: {.reflection-card}

@@ -266,7 +266,7 @@
     "href": "starter_kits/spreadsheet-thresholds/README.html",
     "title": "Starter Kit: Spreadsheet Thresholds",
     "section": "",
-    "text": "Launch status: baseline support. Needs clean workbook template.\n\n\nProvide the low-code floor for comparison, sensitivity, and threshold logic.\n\n\n\n\nalternatives or variants\ncriteria\nsource values or ranges\ncomparison table\nthreshold\nrecommendation\n\n\n\n\n\nspreadsheet template\nsample filled example\nexported chart\nREADME explaining formulas\n\n\n\n\nStudents create a transparent comparison table for their variants or evidence sources.\n\n\n\n\nunits are named\nformulas are visible\ncolor coding has a legend\nthreshold is explicit\nrecommendation follows the table"
+    "text": "Launch status: baseline support. Template and filled CSV example are present.\n\n\nProvide the low-code floor for comparison, sensitivity, and threshold logic.\n\n\n\n\nalternatives or variants\ncriteria\nsource values or ranges\ncomparison table\nthreshold\nrecommendation\n\n\n\n\n\ndecision_matrix_template.csv — blank structure for student use\ndecision_matrix_filled_example.csv — filled facade decision example\n\n\n\n\nStudents create a transparent comparison table for their variants or evidence sources.\n\n\n\nStudents can export GH slider values and calculated metrics to CSV, then use the same threshold table to decide whether a variant is a candidate, a revision, or an exception that needs stronger evidence.\n\n\n\n\nunits are named\nformulas are visible\ncolor coding has a legend\nthreshold is explicit\nrecommendation follows the table"
   },
   {
     "objectID": "starter_kits/spreadsheet-thresholds/README.html#purpose",
@@ -283,11 +283,11 @@
     "text": "alternatives or variants\ncriteria\nsource values or ranges\ncomparison table\nthreshold\nrecommendation"
   },
   {
-    "objectID": "starter_kits/spreadsheet-thresholds/README.html#required-files-to-build",
-    "href": "starter_kits/spreadsheet-thresholds/README.html#required-files-to-build",
+    "objectID": "starter_kits/spreadsheet-thresholds/README.html#files",
+    "href": "starter_kits/spreadsheet-thresholds/README.html#files",
     "title": "Starter Kit: Spreadsheet Thresholds",
     "section": "",
-    "text": "spreadsheet template\nsample filled example\nexported chart\nREADME explaining formulas"
+    "text": "decision_matrix_template.csv — blank structure for student use\ndecision_matrix_filled_example.csv — filled facade decision example"
   },
   {
     "objectID": "starter_kits/spreadsheet-thresholds/README.html#student-adaptation-task",
@@ -295,6 +295,13 @@
     "title": "Starter Kit: Spreadsheet Thresholds",
     "section": "",
     "text": "Students create a transparent comparison table for their variants or evidence sources."
+  },
+  {
+    "objectID": "starter_kits/spreadsheet-thresholds/README.html#grasshopper-bridge",
+    "href": "starter_kits/spreadsheet-thresholds/README.html#grasshopper-bridge",
+    "title": "Starter Kit: Spreadsheet Thresholds",
+    "section": "",
+    "text": "Students can export GH slider values and calculated metrics to CSV, then use the same threshold table to decide whether a variant is a candidate, a revision, or an exception that needs stronger evidence."
   },
   {
     "objectID": "starter_kits/spreadsheet-thresholds/README.html#verification-checks",
@@ -308,7 +315,7 @@
     "href": "starter_kits/gis-spatial-comparison/README.html",
     "title": "Starter Kit: GIS Spatial Comparison",
     "section": "",
-    "text": "Launch status: partial. Existing lecture material exists, but packaged demo data is still needed.\n\n\nSupport site, access, zoning, exposure, and context decisions.\n\n\n\n\ncandidate sites or design zones\nspatial layer\nbuffer, overlay, join, or clip\nmap or summary table\ndecision comparison\n\n\n\n\n\nsmall sample GeoJSON or geopackage\nQGIS project or notebook example\nexported map\nexported comparison table\n\n\n\n\nStudents identify the spatial layer or proximity rule that affects their studio decision.\n\n\n\n\nCRS is stated\nlayer source is cited\nmap legend is meaningful\noperation sequence is documented\noutput supports a design decision"
+    "text": "Launch status: runnable GeoJSON demo added.\n\n\nSupport site, access, zoning, exposure, and context decisions.\n\n\n\n\ncandidate sites or design zones\nspatial layer\nbuffer, overlay, join, or clip\nmap or summary table\ndecision comparison\n\n\n\n\n\ndata/candidate_sites.geojson\ndata/transit_stops.geojson\ndata/noise_zones.geojson\ndata/green_spaces.geojson\ngis_spatial_comparison_demo.py\n\n\n\n\nFrom this folder:\npython3 gis_spatial_comparison_demo.py\nUse a Colab or conda environment with geopandas installed. The script also has a shapely fallback for the packaged data, but a bare system Python will usually be too thin for this route.\nThe script exports:\n\noutputs/scored_sites.csv\noutputs/gis_site_comparison_map.png\n\n\n\n\nStudents identify the spatial layer or proximity rule that affects their studio decision.\n\n\n\nUse the scored CSV as a simple site-selection input in GH. If students are working with actual Rhino parcels, they can match by site_id and use the score to color, filter, or annotate candidate sites.\n\n\n\n\nCRS is stated\nlayer source is cited\nmap legend is meaningful\noperation sequence is documented\noutput supports a design decision"
   },
   {
     "objectID": "starter_kits/gis-spatial-comparison/README.html#purpose",
@@ -325,11 +332,18 @@
     "text": "candidate sites or design zones\nspatial layer\nbuffer, overlay, join, or clip\nmap or summary table\ndecision comparison"
   },
   {
-    "objectID": "starter_kits/gis-spatial-comparison/README.html#required-files-to-build",
-    "href": "starter_kits/gis-spatial-comparison/README.html#required-files-to-build",
+    "objectID": "starter_kits/gis-spatial-comparison/README.html#files",
+    "href": "starter_kits/gis-spatial-comparison/README.html#files",
     "title": "Starter Kit: GIS Spatial Comparison",
     "section": "",
-    "text": "small sample GeoJSON or geopackage\nQGIS project or notebook example\nexported map\nexported comparison table"
+    "text": "data/candidate_sites.geojson\ndata/transit_stops.geojson\ndata/noise_zones.geojson\ndata/green_spaces.geojson\ngis_spatial_comparison_demo.py"
+  },
+  {
+    "objectID": "starter_kits/gis-spatial-comparison/README.html#demo-run",
+    "href": "starter_kits/gis-spatial-comparison/README.html#demo-run",
+    "title": "Starter Kit: GIS Spatial Comparison",
+    "section": "",
+    "text": "From this folder:\npython3 gis_spatial_comparison_demo.py\nUse a Colab or conda environment with geopandas installed. The script also has a shapely fallback for the packaged data, but a bare system Python will usually be too thin for this route.\nThe script exports:\n\noutputs/scored_sites.csv\noutputs/gis_site_comparison_map.png"
   },
   {
     "objectID": "starter_kits/gis-spatial-comparison/README.html#student-adaptation-task",
@@ -337,6 +351,13 @@
     "title": "Starter Kit: GIS Spatial Comparison",
     "section": "",
     "text": "Students identify the spatial layer or proximity rule that affects their studio decision."
+  },
+  {
+    "objectID": "starter_kits/gis-spatial-comparison/README.html#grasshopper-bridge",
+    "href": "starter_kits/gis-spatial-comparison/README.html#grasshopper-bridge",
+    "title": "Starter Kit: GIS Spatial Comparison",
+    "section": "",
+    "text": "Use the scored CSV as a simple site-selection input in GH. If students are working with actual Rhino parcels, they can match by site_id and use the score to color, filter, or annotate candidate sites."
   },
   {
     "objectID": "starter_kits/gis-spatial-comparison/README.html#verification-checks",
@@ -350,7 +371,7 @@
     "href": "starter_kits/preset-simulation-proxy/README.html",
     "title": "Starter Kit: Preset Simulation / Proxy Test",
     "section": "",
-    "text": "Launch status: not ready. Spec only.\n\n\nProvide a runnable Week 5 example that tests a design claim without requiring a full custom simulation model.\n\n\n\nChoose one before launch:\n\nGH + Ladybug solar/shading comparison\nVELUX or Radiance daylight preset\nEnergyPlus Simple Glazing scenario comparison\nspreadsheet-based proxy test for heat, light, or access logic\n\n\n\n\n\nclaim\nvariable/range\npreset or proxy test\noutput\nuncertainty note\nadopt/defer threshold\n\n\n\n\nStudents define the smallest test that can reduce uncertainty around their design decision.\n\n\n\n\nassumptions are visible\ninput range is plausible\noutput is interpretable\nno black-box “simulation proves it” language\nresult is tied to a design action"
+    "text": "Launch status: runnable proxy demo added. Still needs an optional Ladybug/Radiance walkthrough.\n\n\nProvide a runnable Week 5 example that tests a design claim without requiring a full custom simulation model.\n\n\n\n\ndata/facade_scenarios.csv\nfacade_heat_proxy_demo.py\n\nFrom this folder:\npython3 facade_heat_proxy_demo.py\nThe script exports:\n\noutputs/facade_heat_proxy_scores.csv\noutputs/facade_heat_proxy_chart.png\n\n\n\n\nChoose one before launch if deeper tooling is needed:\n\nGH + Ladybug solar/shading comparison\nVELUX or Radiance daylight preset\nEnergyPlus Simple Glazing scenario comparison\nspreadsheet-based proxy test for heat, light, or access logic\n\n\n\n\n\nclaim\nvariable/range\npreset or proxy test\noutput\nuncertainty note\nadopt/defer threshold\n\n\n\n\nStudents define the smallest test that can reduce uncertainty around their design decision.\n\n\n\nStudents can generate the scenario table from GH sliders, run the proxy, then bring the scored CSV back into GH for variant filtering. The important point is that the coefficients remain visible and debatable.\n\n\n\n\nassumptions are visible\ninput range is plausible\noutput is interpretable\nno black-box “simulation proves it” language\nresult is tied to a design action"
   },
   {
     "objectID": "starter_kits/preset-simulation-proxy/README.html#purpose",
@@ -360,11 +381,18 @@
     "text": "Provide a runnable Week 5 example that tests a design claim without requiring a full custom simulation model."
   },
   {
-    "objectID": "starter_kits/preset-simulation-proxy/README.html#candidate-demo-routes",
-    "href": "starter_kits/preset-simulation-proxy/README.html#candidate-demo-routes",
+    "objectID": "starter_kits/preset-simulation-proxy/README.html#current-demo-route",
+    "href": "starter_kits/preset-simulation-proxy/README.html#current-demo-route",
     "title": "Starter Kit: Preset Simulation / Proxy Test",
     "section": "",
-    "text": "Choose one before launch:\n\nGH + Ladybug solar/shading comparison\nVELUX or Radiance daylight preset\nEnergyPlus Simple Glazing scenario comparison\nspreadsheet-based proxy test for heat, light, or access logic"
+    "text": "data/facade_scenarios.csv\nfacade_heat_proxy_demo.py\n\nFrom this folder:\npython3 facade_heat_proxy_demo.py\nThe script exports:\n\noutputs/facade_heat_proxy_scores.csv\noutputs/facade_heat_proxy_chart.png"
+  },
+  {
+    "objectID": "starter_kits/preset-simulation-proxy/README.html#candidate-extensions",
+    "href": "starter_kits/preset-simulation-proxy/README.html#candidate-extensions",
+    "title": "Starter Kit: Preset Simulation / Proxy Test",
+    "section": "",
+    "text": "Choose one before launch if deeper tooling is needed:\n\nGH + Ladybug solar/shading comparison\nVELUX or Radiance daylight preset\nEnergyPlus Simple Glazing scenario comparison\nspreadsheet-based proxy test for heat, light, or access logic"
   },
   {
     "objectID": "starter_kits/preset-simulation-proxy/README.html#minimum-demo-loop",
@@ -381,6 +409,13 @@
     "text": "Students define the smallest test that can reduce uncertainty around their design decision."
   },
   {
+    "objectID": "starter_kits/preset-simulation-proxy/README.html#grasshopper-bridge",
+    "href": "starter_kits/preset-simulation-proxy/README.html#grasshopper-bridge",
+    "title": "Starter Kit: Preset Simulation / Proxy Test",
+    "section": "",
+    "text": "Students can generate the scenario table from GH sliders, run the proxy, then bring the scored CSV back into GH for variant filtering. The important point is that the coefficients remain visible and debatable."
+  },
+  {
     "objectID": "starter_kits/preset-simulation-proxy/README.html#verification-checks",
     "href": "starter_kits/preset-simulation-proxy/README.html#verification-checks",
     "title": "Starter Kit: Preset Simulation / Proxy Test",
@@ -392,14 +427,14 @@
     "href": "starter_kits/README.html",
     "title": "Starter Kits",
     "section": "",
-    "text": "Starter kits are the practical launch gate for the rebuilt course.\nThe course should not be released as a generative design elective until the core kits below are runnable enough for a Week 3, Week 5, and Week 8 demonstration.\n\n\n\n\n\nKit\nCurrent status\nNeeded before launch\n\n\n\n\nGH Parametric Variants\nspec only\n.gh / .ghx file, Rhino base geometry, screenshots\n\n\nPreset Simulation / Proxy Test\nspec only\nrunnable preset or spreadsheet proxy demo\n\n\nAI-Assisted Workflow\nspec only\nprompt log, failed output, verified repair example\n\n\nGIS Spatial Comparison\npartial support from existing lecture\nsmall packaged data example\n\n\nPython Notebook Analysis\npartial support from existing notebooks\nadapt one notebook as a design-decision demo\n\n\nSpreadsheet Thresholds\nbaseline support\nclean workbook template\n\n\n\n\n\n\nEach kit should include:\n\nREADME\ninput file or source description\nstudent task\nexpected output\nverification check\nexample final figure or table\nknown failure modes\n\n\n\n\nIf a route is listed as “supported,” a student should be able to start from the kit and adapt it to their own studio project without the instructor inventing the route during class."
+    "text": "Starter kits are the practical launch gate for the rebuilt course.\nThe course should not be released as a generative design elective until the core kits below are runnable enough for a Week 3, Week 5, and Week 8 demonstration.\n\n\n\n\n\nKit\nCurrent status\nNeeded before launch\n\n\n\n\nGH Parametric Variants\nbridge example added\n.gh / .ghx file, Rhino base geometry, screenshots\n\n\nPreset Simulation / Proxy Test\nrunnable proxy demo added\noptional Ladybug/Radiance preset walkthrough\n\n\nAI-Assisted Workflow\nprompt log + verified function added\none GH Python component screenshot\n\n\nGIS Spatial Comparison\nrunnable GeoJSON demo added\noptional QGIS project file\n\n\nPython Notebook Analysis\nrunnable facade decision script added\nnotebook export for Colab\n\n\nSpreadsheet Thresholds\ntemplate + filled example added\noptional spreadsheet chart export\n\n\n\n\n\n\nEach kit should include:\n\nREADME\ninput file or source description\nstudent task\nexpected output\nverification check\nexample final figure or table\nknown failure modes\n\n\n\n\nIf a route is listed as “supported,” a student should be able to start from the kit and adapt it to their own studio project without the instructor inventing the route during class."
   },
   {
     "objectID": "starter_kits/README.html#launch-readiness",
     "href": "starter_kits/README.html#launch-readiness",
     "title": "Starter Kits",
     "section": "",
-    "text": "Kit\nCurrent status\nNeeded before launch\n\n\n\n\nGH Parametric Variants\nspec only\n.gh / .ghx file, Rhino base geometry, screenshots\n\n\nPreset Simulation / Proxy Test\nspec only\nrunnable preset or spreadsheet proxy demo\n\n\nAI-Assisted Workflow\nspec only\nprompt log, failed output, verified repair example\n\n\nGIS Spatial Comparison\npartial support from existing lecture\nsmall packaged data example\n\n\nPython Notebook Analysis\npartial support from existing notebooks\nadapt one notebook as a design-decision demo\n\n\nSpreadsheet Thresholds\nbaseline support\nclean workbook template"
+    "text": "Kit\nCurrent status\nNeeded before launch\n\n\n\n\nGH Parametric Variants\nbridge example added\n.gh / .ghx file, Rhino base geometry, screenshots\n\n\nPreset Simulation / Proxy Test\nrunnable proxy demo added\noptional Ladybug/Radiance preset walkthrough\n\n\nAI-Assisted Workflow\nprompt log + verified function added\none GH Python component screenshot\n\n\nGIS Spatial Comparison\nrunnable GeoJSON demo added\noptional QGIS project file\n\n\nPython Notebook Analysis\nrunnable facade decision script added\nnotebook export for Colab\n\n\nSpreadsheet Thresholds\ntemplate + filled example added\noptional spreadsheet chart export"
   },
   {
     "objectID": "starter_kits/README.html#minimum-kit-standard",
@@ -512,11 +547,35 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-12.html#final-handoff-and-transfer",
+    "href": "weeks_v2/week-12.html#final-handoff-and-transfer",
+    "title": "Week 12: Object Fair",
+    "section": "Final handoff and transfer",
+    "text": "Final handoff and transfer\n\n\nA1 recall\n\n\nA2 route\n\n\nA3 prototype\n\n\nA4 draft\n\n\nObject Fair\n\n\ntransfer\n\n\n\n\nPresent one bounded decision, one workflow, one output, one threshold\n\n\nHand over practice case, research brief, object card, capsule\n\n\nInspect reviewers trace the evidence loop and ask what remains uncertain\n\n\nTransfer one reasoning move to reuse in another studio project",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W12: Object Fair"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-12.html#where-this-sits-in-the-semester",
     "href": "weeks_v2/week-12.html#where-this-sits-in-the-semester",
     "title": "Week 12: Object Fair",
     "section": "Where this sits in the semester",
     "text": "Where this sits in the semester\nThe Object Fair closes the loop. It is the last review of A4, read against the same spine we have used since Week 1.\n\n\n\n\n\nflowchart LR\n    A[A1: Total Recall&lt;br/&gt;Weeks 1-3] --&gt; B[A2: Evidence + Workflow Map&lt;br/&gt;Weeks 4-6]\n    B --&gt; C[A3: Prototype + Verification&lt;br/&gt;Weeks 7-9]\n    C --&gt; D[A4: Workflow Package&lt;br/&gt;Weeks 10-12]\n    D --&gt; E{Final review}\n    E --&gt; F[Object Fair: present & defend]\n    E --&gt; G[Transfer: reasoning you keep]\n\n\n\n\n\n\n\nOne method, four objects. Today you hand over the package — and then you keep the reasoning.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W12: Object Fair"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-12.html#what-was-mapped-and-what-remains-yours-to-own",
+    "href": "weeks_v2/week-12.html#what-was-mapped-and-what-remains-yours-to-own",
+    "title": "Week 12: Object Fair",
+    "section": "What was mapped, and what remains yours to own",
+    "text": "What was mapped, and what remains yours to own\n\n\nMapped by course\n\nevidence audit\nspreadsheet thresholds\ngeopandas\nBIM-derived proxy\nPython/AI verification logic\n\n\n\nMapped by room\n\nGH workflows\nLadybug/Radiance pieces\nstudio-specific tool practices\n\n\n\nStill exploratory\n\nlarge plugins\nfull BIM interoperability\nadvanced simulation\noffice-specific automation\n\n\n\nThe honest endpoint is not “we covered every tool.” It is: you can now tell whether a tool’s output deserves trust.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -540,7 +599,7 @@
     "href": "weeks_v2/week-12.html#presentation-format",
     "title": "Week 12: Object Fair",
     "section": "Presentation format",
-    "text": "Presentation format\n\nPer person - 6–8 min — final presentation of your A4 package - 4 min — questions from the room and invited critics - 2 min — notes captured, one carry-forward noted\n\nUse your object card as the single visual that carries the recommendation and the one figure. Volunteers go first; a random draw may fill the remaining slots.",
+    "text": "Presentation format\n\nPer person\n\n6–8 min — final presentation of your A4 package\n4 min — questions from the room and invited critics\n2 min — notes captured, one carry-forward noted\n\n\nUse your object card as the single visual that carries the recommendation and the one figure. Volunteers go first; a random draw may fill the remaining slots.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -576,7 +635,7 @@
     "href": "weeks_v2/week-12.html#qa-that-helps-the-presenter",
     "title": "Week 12: Object Fair",
     "section": "Q&A that helps the presenter",
-    "text": "Q&A that helps the presenter\nThe questions that help most are the ones that test a link in the loop, not the person.\n\nUseful questions sound like - “What would have changed the recommendation?” (threshold) - “How would someone rerun this?” (workflow) - “Where does this stop being true?” (limit)\n\n\nWe examine the artifact and its claim, never the presenter’s competence.",
+    "text": "Q&A that helps the presenter\nThe questions that help most are the ones that test a link in the loop, not the person.\n\nUseful questions sound like\n\n“What would have changed the recommendation?” (threshold)\n“How would someone rerun this?” (workflow)\n“Where does this stop being true?” (limit)\n\n\n\nWe examine the artifact and its claim, never the presenter’s competence.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -589,6 +648,18 @@
     "title": "Week 12: Object Fair",
     "section": "Capture feedback as you go",
     "text": "Capture feedback as you go\nYou will hear more than you can hold. Sort it while it is fresh.\n\n\n\n\n\n\n\n\nNote type\nMeaning\nWhat to do\n\n\n\n\nTrace gap\na link in the loop is unclear\nrecord it for the final package edit\n\n\nCarry-forward\na move worth reusing next time\nadd to your transfer list\n\n\nPolish\nsmall clarity improvement\nnote if time allows\n\n\n\n\nThe skill is not defending everything. It is hearing one true note and knowing what to do with it.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W12: Object Fair"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-12.html#the-final-question-is-not-whether-the-tool-worked",
+    "href": "weeks_v2/week-12.html#the-final-question-is-not-whether-the-tool-worked",
+    "title": "Week 12: Object Fair",
+    "section": "The final question is not whether the tool worked",
+    "text": "The final question is not whether the tool worked\n\nQuestion for the Object Fair What would have to change for your recommendation to become wrong?\n\nThat answer is the most useful transfer from this course: it tells you where the next project should start checking.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -668,6 +739,18 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-10.html#this-week-turns-artifacts-into-a-draft-package",
+    "href": "weeks_v2/week-10.html#this-week-turns-artifacts-into-a-draft-package",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "This week turns artifacts into a draft package",
+    "text": "This week turns artifacts into a draft package\n\n\nA1 board\n\n\nA2 contract\n\n\nA3 prototype\n\n\nthreshold\n\n\ndraft package\n\n\nfinal handoff\n\n\n\n\nIngest Total Recall board, pathway contract, prototype output, verification log\n\n\nAssemble Practice Case, Research Brief, Object Card, Reproducibility Capsule\n\n\nTest can a reviewer trace every claim back to a file, figure, or assumption?\n\n\nRevise one critical missing link before Week 11",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-10.html#what-a-reviewer-checks",
     "href": "weeks_v2/week-10.html#what-a-reviewer-checks",
     "title": "Week 10: Draft Workflow Review",
@@ -680,11 +763,35 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-10.html#the-draft-must-show-where-each-claim-came-from",
+    "href": "weeks_v2/week-10.html#the-draft-must-show-where-each-claim-came-from",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "The draft must show where each claim came from",
+    "text": "The draft must show where each claim came from\n\n\n\n\n\n\n\n\nA4 claim\nSource artifact\nWhat reviewer checks\n\n\n\n\ndecision and stake\nA1 board / live studio branch\none bounded decision, not whole project\n\n\nevidence route\nA2 pathway contract\nwhy this workflow fits the decision\n\n\noutput\nA3 prototype\nvisible run, variant/scenario output\n\n\ntrust\nverification log\nwhat was checked, what failed, what remains uncertain\n\n\naction\nobject card / threshold\nwhat changes next",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-10.html#draft-review-is-where-hidden-assumptions-surface",
+    "href": "weeks_v2/week-10.html#draft-review-is-where-hidden-assumptions-surface",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "Draft review is where hidden assumptions surface",
+    "text": "Draft review is where hidden assumptions surface\n\nQuestion for Week 10 Which claim in your draft would you least want a skeptical reviewer to ask you to rerun or justify?\n\nThat claim is the one to fix first.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-10.html#review-format",
     "href": "weeks_v2/week-10.html#review-format",
     "title": "Week 10: Draft Workflow Review",
     "section": "Review format",
-    "text": "Review format\n\nPer person - 6–8 min — draft presentation - 4 min — questions from the panel and room - 2 min — notes captured, one priority fix agreed\n\nThose not presenting are the engaged review panel: take notes, mark where the spine breaks, and prepare one useful question each.",
+    "text": "Review format\n\nPer person\n\n6–8 min — draft presentation\n4 min — questions from the panel and room\n2 min — notes captured, one priority fix agreed\n\n\nThose not presenting are the engaged review panel: take notes, mark where the spine breaks, and prepare one useful question each.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -792,7 +899,7 @@
     "href": "weeks_v2/week-10.html#week-10-checklist",
     "title": "Week 10: Draft Workflow Review",
     "section": "Week 10 checklist",
-    "text": "Week 10 checklist\n\nBefore Week 11 1. address every critical item from your review 2. strengthen the weakest spine link you identified 3. get the draft timing to 6–8 minutes 4. make the object card readable in 30 seconds",
+    "text": "Week 10 checklist\n\nBefore Week 11\n\naddress every critical item from your review\nstrengthen the weakest spine link you identified\nget the draft timing to 6–8 minutes\nmake the object card readable in 30 seconds",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -824,6 +931,18 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-08.html#this-week-produces-a-verification-artifact",
+    "href": "weeks_v2/week-08.html#this-week-produces-a-verification-artifact",
+    "title": "Week 8: Reproducibility and Mentor Prep",
+    "section": "This week produces a verification artifact",
+    "text": "This week produces a verification artifact\n\n\nA2 route\n\n\nprototype\n\n\nverification\n\n\nthreshold\n\n\ndraft package\n\n\nhandoff\n\n\n\n\nInput prototype artifact, prompt log, notebook, GH canvas, map, or scenario file\n\n\nTest peer rerun, manual check, known-case comparison, or failure replay\n\n\nOutput verification card + reproducibility fix list\n\n\nFeeds A3 Verification Log and A4 Reproducibility Capsule",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-08.html#if-you-cant-rerun-it-it-isnt-evidence",
     "href": "weeks_v2/week-08.html#if-you-cant-rerun-it-it-isnt-evidence",
     "title": "Week 8: Reproducibility and Mentor Prep",
@@ -841,6 +960,18 @@
     "title": "Week 8: Reproducibility and Mentor Prep",
     "section": "Where reproducibility quietly fails",
     "text": "Where reproducibility quietly fails\nThese are ordinary, not dramatic — and they happen to careful people.\n\n\n\n\n\n\n\nFailure\nWhat was lost\n\n\n\n\nPlugin / version not recorded\nthe file won’t reopen or rerun later\n\n\nSettings changed but not noted\nresults can’t be matched to inputs\n\n\nOne person held the knowledge\nnobody else can defend the method\n\n\nCRS / units left implicit\nspatial output is silently wrong\n\n\nAI-generated step never checked\na claim no one actually understands\n\n\n\n\nThe risk is not embarrassment. It is presenting a result you can no longer stand behind.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#when-the-spreadsheet-silently-rewrote-the-data",
+    "href": "weeks_v2/week-08.html#when-the-spreadsheet-silently-rewrote-the-data",
+    "title": "Week 8: Reproducibility and Mentor Prep",
+    "section": "When the spreadsheet silently rewrote the data",
+    "text": "When the spreadsheet silently rewrote the data\n\nWhat happened Geneticists found that Excel was auto-converting gene names into dates and numbers (for example “SEPT2” became a date). A 2016 study found errors in roughly one in five papers with supplementary spreadsheets — the field eventually renamed the genes rather than fight the software.\n\n\nThe lesson Reproducibility starts with knowing what your tool did to your data. Document formats, versions, and import settings — the failure is invisible until someone re-runs it.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -900,7 +1031,7 @@
     "href": "weeks_v2/week-08.html#what-ai-use-and-research-methods-share",
     "title": "Week 8: Reproducibility and Mentor Prep",
     "section": "What AI use and research methods share",
-    "text": "What AI use and research methods share\n\nThe shared root Both come down to one principle: KNOW YOUR DATA.\n\n\n\nIn research ethics - who your participants are - how the data was collected - the biases in your sample - the limits of your method\n\n\nIn AI use - what the model was trained on - the biases that training carries - what the tool can and cannot do - when its output should not be trusted\n\n\nWhen you don’t understand the data behind a result, harm propagates quietly and at scale.",
+    "text": "What AI use and research methods share\n\nThe shared root Both come down to one principle: KNOW YOUR DATA.\n\n\n\nIn research ethics\n\nwho your participants are\nhow the data was collected\nthe biases in your sample\nthe limits of your method\n\n\n\nIn AI use\n\nwhat the model was trained on\nthe biases that training carries\nwhat the tool can and cannot do\nwhen its output should not be trusted\n\n\n\nWhen you don’t understand the data behind a result, harm propagates quietly and at scale.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -924,7 +1055,7 @@
     "href": "weeks_v2/week-08.html#ai-method-review",
     "title": "Week 8: Reproducibility and Mentor Prep",
     "section": "AI Method Review",
-    "text": "AI Method Review\nA common situation, examined as a method — not a person.\n\nThe artifact A building-performance analysis: polished charts, statistics beyond the author’s stated skill, no understanding of the method when questioned, no disclosure of AI use.\n\n\nReview it together - which specific claims can the author actually defend? - what should have been disclosed, and where? - what verification would have made this trustworthy? - what is the minimum honest version of this output?\n\nWe critique the workflow and its claims, never the author’s ability.",
+    "text": "AI Method Review\nA common situation, examined as a method — not a person.\n\nThe artifact A building-performance analysis: polished charts, statistics beyond the author’s stated skill, no understanding of the method when questioned, no disclosure of AI use.\n\n\nReview it together\n\nwhich specific claims can the author actually defend?\nwhat should have been disclosed, and where?\nwhat verification would have made this trustworthy?\nwhat is the minimum honest version of this output?\n\n\nWe critique the workflow and its claims, never the author’s ability.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -944,11 +1075,35 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-08.html#vibe-coding-is-only-acceptable-after-the-function-contract-is-clear",
+    "href": "weeks_v2/week-08.html#vibe-coding-is-only-acceptable-after-the-function-contract-is-clear",
+    "title": "Week 8: Reproducibility and Mentor Prep",
+    "section": "Vibe coding is only acceptable after the function contract is clear",
+    "text": "Vibe coding is only acceptable after the function contract is clear\n\nBefore asking AI State the component’s inputs, units, allowed ranges, operation, output, and one known test case. The prompt should describe that contract, not just ask for “a script.”\n\n\n\nfunction contract\n\n\nAI draft\n\n\nmanual repair\n\n\nGhPython / notebook\n\n\nverified output",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#ai-drafts-can-become-gh-components-but-only-after-inspection",
+    "href": "weeks_v2/week-08.html#ai-drafts-can-become-gh-components-but-only-after-inspection",
+    "title": "Week 8: Reproducibility and Mentor Prep",
+    "section": "AI drafts can become GH components, but only after inspection",
+    "text": "AI drafts can become GH components, but only after inspection\n\nBridge pattern AI drafts a geopandas, Python, GhPython, or C# component -&gt; student checks units, edge cases, and one manual result -&gt; only then does the component enter the design workflow.\n\n\nQuestion for AI-assisted work Which part of the generated output do you understand least, and what test would expose a wrong answer there?",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-08.html#make-the-mentor-meeting-count",
     "href": "weeks_v2/week-08.html#make-the-mentor-meeting-count",
     "title": "Week 8: Reproducibility and Mentor Prep",
     "section": "Make the mentor meeting count",
-    "text": "Make the mentor meeting count\nMost mentor time is lost to vague questions. A little preparation turns a pleasant chat into a useful one.\n\nPrepare now · 15 minutes 1. One-liner — your project in a single sentence 2. Specific ask — the exact advice you need 3. Context check — what your mentor actually does 4. Question bank — five strategic questions 5. Show-and-tell — the one thing you want them to see",
+    "text": "Make the mentor meeting count\nMost mentor time is lost to vague questions. A little preparation turns a pleasant chat into a useful one.\n\nPrepare now · 15 minutes\n\nOne-liner — your project in a single sentence\nSpecific ask — the exact advice you need\nContext check — what your mentor actually does\nQuestion bank — five strategic questions\nShow-and-tell — the one thing you want them to see",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -960,7 +1115,7 @@
     "href": "weeks_v2/week-08.html#weak-questions-vs-strategic-questions",
     "title": "Week 8: Reproducibility and Mentor Prep",
     "section": "Weak questions vs strategic questions",
-    "text": "Weak questions vs strategic questions\n\n\nWeak — wastes the slot - “What do you think of my project?” - “Do you have any advice?” - “How do I get a job in your field?”\n\n\nStrategic — creates value - “What evidence would convince [specific stakeholder] to change current practice?” - “What implementation barriers am I likely missing?” - “How do practitioners here validate this kind of analysis?” - “What would make my findings most useful to someone in your position?”",
+    "text": "Weak questions vs strategic questions\n\n\nWeak — wastes the slot\n\n“What do you think of my project?”\n“Do you have any advice?”\n“How do I get a job in your field?”\n\n\n\nStrategic — creates value\n\n“What evidence would convince [specific stakeholder] to change current practice?”\n“What implementation barriers am I likely missing?”\n“How do practitioners here validate this kind of analysis?”\n“What would make my findings most useful to someone in your position?”",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -972,7 +1127,7 @@
     "href": "weeks_v2/week-08.html#question-workshop",
     "title": "Week 8: Reproducibility and Mentor Prep",
     "section": "Question workshop",
-    "text": "Question workshop\n\nIn pairs · 10 minutes 1. Person A delivers their one-liner + best strategic question 2. Person B gives specific feedback and one improvement 3. Swap roles and repeat\n\n\nYou are not competing for the best question. You are pressure-testing your own so it earns a real answer in the room.",
+    "text": "Question workshop\n\nIn pairs · 10 minutes\n\nPerson A delivers their one-liner + best strategic question\nPerson B gives specific feedback and one improvement\nSwap roles and repeat\n\n\n\nYou are not competing for the best question. You are pressure-testing your own so it earns a real answer in the room.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1044,7 +1199,7 @@
     "href": "weeks_v2/week-08.html#week-8-checklist",
     "title": "Week 8: Reproducibility and Mentor Prep",
     "section": "Week 8 Checklist",
-    "text": "Week 8 Checklist\n\nBefore Week 9 1. complete your mentor consultation using your strategic questions 2. send the follow-up email showing how their advice changed your approach 3. document one workflow so a peer can rerun it unaided 4. disclose and verify any AI-assisted step in your method 5. fix the weakest reproducibility gap your peer check found",
+    "text": "Week 8 Checklist\n\nBefore Week 9\n\ncomplete your mentor consultation using your strategic questions\nsend the follow-up email showing how their advice changed your approach\ndocument one workflow so a peer can rerun it unaided\ndisclose and verify any AI-assisted step in your method\nfix the weakest reproducibility gap your peer check found",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1076,6 +1231,30 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-06.html#this-week-locks-the-pathway-contract",
+    "href": "weeks_v2/week-06.html#this-week-locks-the-pathway-contract",
+    "title": "Week 6: Evidence and Pathway Mapping",
+    "section": "This week locks the pathway contract",
+    "text": "This week locks the pathway contract\n\n\nspreadsheet\n\n\nGIS\n\n\nBIM/BEM\n\n\nroute choice\n\n\nprototype\n\n\nverification\n\n\n\n\nInput A1 board + evidence audit + route tests from Weeks 3-5\n\n\nDecide Route A/B, primary pathway, smallest useful output\n\n\nOutput A2 pathway contract + A4 branch declaration\n\n\nBridge one named export/ingestion path for GH, notebook, GIS, or package",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W6: Pathway Mapping"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-06.html#what-we-have-mapped-so-far",
+    "href": "weeks_v2/week-06.html#what-we-have-mapped-so-far",
+    "title": "Week 6: Evidence and Pathway Mapping",
+    "section": "What we have mapped so far",
+    "text": "What we have mapped so far\n\n\nCore mapped\n\nspreadsheet thresholds\ngeopandas spatial comparison\nBIM-derived performance proxy\n\n\n\nPeer / bridge\n\nGH components\nLadybug/Radiance walkthrough\nstudio-specific plugin knowledge\n\n\n\nTo be mapped\n\nPython design-decision notebook\nAI-assisted component verification\nfinal package handoff\n\n\n\nThe board keeps the wishlist honest: a tool is either mapped, peer-supported, exploratory, or out of scope.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W6: Pathway Mapping"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-06.html#evidence-mapping-is-a-decision-not-a-collection",
     "href": "weeks_v2/week-06.html#evidence-mapping-is-a-decision-not-a-collection",
     "title": "Week 6: Evidence and Pathway Mapping",
@@ -1088,11 +1267,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-06.html#stand-alone-prompt",
-    "href": "weeks_v2/week-06.html#stand-alone-prompt",
+    "objectID": "weeks_v2/week-06.html#worked-pathway-claim-kai-tak",
+    "href": "weeks_v2/week-06.html#worked-pathway-claim-kai-tak",
     "title": "Week 6: Evidence and Pathway Mapping",
-    "section": "Stand-alone prompt",
-    "text": "Stand-alone prompt\n\n\n\nKai Tak Sports Park\n\n\nIf this were your next studio decision, which evidence sources would actually change the scheme rather than merely decorate the presentation?",
+    "section": "Worked pathway claim: Kai Tak",
+    "text": "Worked pathway claim: Kai Tak\n\n\n\nKai Tak Sports Park\n\n\nIf this were your next studio decision, which evidence sources would actually change the scheme rather than merely decorate the presentation?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1104,7 +1283,7 @@
     "href": "weeks_v2/week-06.html#evidence-categories-to-sort",
     "title": "Week 6: Evidence and Pathway Mapping",
     "section": "Evidence categories to sort",
-    "text": "Evidence categories to sort\n\n\nOften decisive - published research - standards and code - site observations - open datasets - simulations - maps and spatial layers\n\n\nOften supporting only - precedent and case studies - interviews or surveys - one-off articles\nUseful for framing, rarely enough on their own.\n\n\nNot every category belongs in every project.",
+    "text": "Evidence categories to sort\n\n\nOften decisive\n\npublished research\nstandards and code\nsite observations\nopen datasets\nsimulations\nmaps and spatial layers\n\n\n\nOften supporting only\n\nprecedent and case studies\ninterviews or surveys\none-off articles\n\nUseful for framing, rarely enough on their own.\n\n\nNot every category belongs in every project.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1152,7 +1331,7 @@
     "href": "weeks_v2/week-06.html#the-fork-side-by-side",
     "title": "Week 6: Evidence and Pathway Mapping",
     "section": "The fork, side by side",
-    "text": "The fork, side by side\n\n\nRoute A · retrospective redesign - start from a past studio board - pick one decision you would now redo - arrive at a redesigned decision with evidence behind it - safest when your current studio is too unsettled to instrument\n\n\nRoute B · live studio application - start from your current studio board - pick one decision you are facing now - arrive at an active design move you can apply this term - best when a live decision genuinely depends on the analysis\n\n\nBoth converge on the same A4 components. Pick the route that lets you do honest work now.",
+    "text": "The fork, side by side\n\n\nRoute A · retrospective redesign\n\nstart from a past studio board\npick one decision you would now redo\narrive at a redesigned decision with evidence behind it\nsafest when your current studio is too unsettled to instrument\n\n\n\nRoute B · live studio application\n\nstart from your current studio board\npick one decision you are facing now\narrive at an active design move you can apply this term\nbest when a live decision genuinely depends on the analysis\n\n\n\nBoth converge on the same A4 components. Pick the route that lets you do honest work now.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1177,6 +1356,18 @@
     "title": "Week 6: Evidence and Pathway Mapping",
     "section": "Compare the pathways directly",
     "text": "Compare the pathways directly\n\n\n\n\n\n\n\n\nPathway\nstrongest when\nweak when\n\n\n\n\nspreadsheet\ncomparison logic is the core task\nthe question is deeply spatial or repetitive\n\n\nGIS\nlocation and overlap drive the decision\nthe project barely depends on spatial analysis\n\n\nPython\nrepeatability and flexible analysis matter\nsetup outweighs the analytical benefit\n\n\nGH / parametric\ndesign variables and option families are central\nthere is no clear evaluation output\n\n\nBIM/BEM / simulation\nperformance assumptions need model-based testing\nsetup or cleanup exceeds the decision value\n\n\nAI-assisted\na component can be accelerated and verified\nthe result cannot be inspected or reproduced",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W6: Pathway Mapping"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-06.html#a2-has-to-name-the-transfer-path",
+    "href": "weeks_v2/week-06.html#a2-has-to-name-the-transfer-path",
+    "title": "Week 6: Evidence and Pathway Mapping",
+    "section": "A2 has to name the transfer path",
+    "text": "A2 has to name the transfer path\nEvery pathway declaration includes a handoff target. This is what prevents “I chose a tool” from replacing the actual method.\n\n\n\n\n\n\n\n\nPathway\nExport / handoff\nGH or package bridge\n\n\n\n\nspreadsheet\nvariant_scores.csv\nread into GH; color/rank variants\n\n\nGIS\nsite_layers.geojson + score table\nimport context geometry and attributes\n\n\nPython\nnotebook + exported figure/table\nfeed metrics or plots to package/GH\n\n\nGH / parametric\nGH definition + variant log\ndirect geometry variants and CSV metrics\n\n\nBIM/BEM / proxy\nscenario table + metrics CSV\ndrive facade/massing revisions\n\n\nAI-assisted\nprompt log + verified component\nGhPython/C# function or documentation block",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1224,7 +1415,19 @@
     "href": "weeks_v2/week-06.html#warning-signs",
     "title": "Week 6: Evidence and Pathway Mapping",
     "section": "Warning signs",
-    "text": "Warning signs\n\nCatch these now - too many source types with no hierarchy - a pathway choice that does not change the method - no clear output format - a question still too large for a prototype",
+    "text": "Warning signs\n\nCatch these now\n\ntoo many source types with no hierarchy\na pathway choice that does not change the method\nno clear output format\na question still too large for a prototype",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W6: Pathway Mapping"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-06.html#choosing-a-pathway-also-chooses-what-you-will-ignore",
+    "href": "weeks_v2/week-06.html#choosing-a-pathway-also-chooses-what-you-will-ignore",
+    "title": "Week 6: Evidence and Pathway Mapping",
+    "section": "Choosing a pathway also chooses what you will ignore",
+    "text": "Choosing a pathway also chooses what you will ignore\n\nQuestion for A2 What does your chosen pathway make visible, and what does it make almost impossible to see within this semester?\n\nWrite both answers into the A2 matrix. The unsupported part becomes a limit, not a hidden weakness.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1316,6 +1519,18 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-04.html#this-week-produces-a-spatial-evidence-artifact",
+    "href": "weeks_v2/week-04.html#this-week-produces-a-spatial-evidence-artifact",
+    "title": "Week 4: GIS Choices for Architects",
+    "section": "This week produces a spatial evidence artifact",
+    "text": "This week produces a spatial evidence artifact\n\n\nW1 decision\n\n\nW2 evidence\n\n\nW3 comparison\n\n\nW4 GIS route\n\n\nW5 model route\n\n\nW6 pathway\n\n\n\n\nInput site boundary + transit/noise/green layers as GeoJSON\n\n\nChange buffer distance, overlay rules, scoring weights\n\n\nOutput site score table + map export + cleaned GeoJSON\n\n\nBridge GeoJSON/CSV can be read by Rhino/GH for site geometry and attributes",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W4: GIS Choices"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-04.html#gis-is-not-just-digital-mapping",
     "href": "weeks_v2/week-04.html#gis-is-not-just-digital-mapping",
     "title": "Week 4: GIS Choices for Architects",
@@ -1328,11 +1543,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-04.html#stand-alone-site-prompt",
-    "href": "weeks_v2/week-04.html#stand-alone-site-prompt",
+    "objectID": "weeks_v2/week-04.html#worked-site-question-kai-tak",
+    "href": "weeks_v2/week-04.html#worked-site-question-kai-tak",
     "title": "Week 4: GIS Choices for Architects",
-    "section": "Stand-alone site prompt",
-    "text": "Stand-alone site prompt\n\n\n\nKai Tak Sports Park\n\n\nIf this were your project, what spatial questions would matter first?",
+    "section": "Worked site question: Kai Tak",
+    "text": "Worked site question: Kai Tak\n\n\n\nKai Tak Sports Park\n\n\nIf this were your project, what spatial questions would matter first?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1440,7 +1655,7 @@
     "href": "weeks_v2/week-04.html#a-geopandas-operation-as-a-tool",
     "title": "Week 4: GIS Choices for Architects",
     "section": "A geopandas operation as a tool",
-    "text": "A geopandas operation as a tool\n\n\nInput site polygon + a transit / amenity layer\n\n\nWhat varies buffer distance (e.g. 200–600 m)\n\n\nOutput coverage % per option (per site or per layer)\n\n\nQuality check CRS stated, feature counts spot-checked\n\n\nThe dashed frame means the live capture does not exist yet — we will drop a real cell in, not a faked screenshot.",
+    "text": "A geopandas operation as a tool\n\n\nInput candidate sites + transit stops + noise zones + green-space polygons\n\n\nWhat varies buffer distance, overlay rule, scoring weights\n\n\nOutput score table, exported map, selected site GeoJSON\n\n\nQuality check CRS projected, feature counts spot-checked, one distance checked manually",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1484,6 +1699,18 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-04.html#s-redlining-maps-that-shaped-cities",
+    "href": "weeks_v2/week-04.html#s-redlining-maps-that-shaped-cities",
+    "title": "Week 4: GIS Choices for Architects",
+    "section": "1930s: redlining maps that shaped cities",
+    "text": "1930s: redlining maps that shaped cities\n\n\n\n\n\nHOLC “residential security” map, Brooklyn, 1930s. Public domain / CC BY-SA, via Wikimedia Commons.\n\n\n\n\n\nWhat it did Home Owners’ Loan Corporation maps graded neighborhoods A–D and colored the “hazardous” ones red. Lenders used them to deny mortgages — a spatial layer that steered investment and segregation for generations.\n\n\nThe lesson A map is a decision instrument, not decoration — and it carries the bias of whoever drew it and how they classified. Choose layers and categories knowing they will drive real action.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W4: GIS Choices"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-04.html#gis-outputs-that-actually-help-design",
     "href": "weeks_v2/week-04.html#gis-outputs-that-actually-help-design",
     "title": "Week 4: GIS Choices for Architects",
@@ -1512,7 +1739,7 @@
     "href": "weeks_v2/week-04.html#example-workflow-1-site-selection",
     "title": "Week 4: GIS Choices for Architects",
     "section": "Example workflow 1: site selection",
-    "text": "Example workflow 1: site selection\nQuestion: which of three candidate sites best balances transit access, development constraints, and environmental exposure?\n\nPossible pathway - QGIS for first-pass layer exploration - geopandas if repeated comparisons or automation become useful",
+    "text": "Example workflow 1: site selection\nQuestion: which of three candidate sites best balances transit access, development constraints, and environmental exposure?\n\nPossible pathway\n\nQGIS for first-pass layer exploration\ngeopandas if repeated comparisons or automation become useful",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1524,7 +1751,7 @@
     "href": "weeks_v2/week-04.html#example-workflow-2-public-space-access",
     "title": "Week 4: GIS Choices for Architects",
     "section": "Example workflow 2: public-space access",
-    "text": "Example workflow 2: public-space access\nQuestion: how does a proposal change access within a 5-minute or 10-minute walk?\n\nPossible pathway - GIS for network and catchment logic - spreadsheet later for ranking alternatives\n\nPathways can support each other even when one remains primary.",
+    "text": "Example workflow 2: public-space access\nQuestion: how does a proposal change access within a 5-minute or 10-minute walk?\n\nPossible pathway\n\nGIS for network and catchment logic\nspreadsheet later for ranking alternatives\n\n\nPathways can support each other even when one remains primary.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1536,7 +1763,31 @@
     "href": "weeks_v2/week-04.html#example-workflow-3-context-for-studio-modeling",
     "title": "Week 4: GIS Choices for Architects",
     "section": "Example workflow 3: context for studio modeling",
-    "text": "Example workflow 3: context for studio modeling\nQuestion: what context data should be brought into Rhino / Grasshopper or another design environment?\n\nPossible pathway - use GIS to select, simplify, and export - avoid importing the entire city when only a few layers matter",
+    "text": "Example workflow 3: context for studio modeling\nQuestion: what context data should be brought into Rhino / Grasshopper or another design environment?\n\nPossible pathway\n\nuse GIS to select, simplify, and export\navoid importing the entire city when only a few layers matter",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W4: GIS Choices"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-04.html#gis-outputs-can-become-rhino-context",
+    "href": "weeks_v2/week-04.html#gis-outputs-can-become-rhino-context",
+    "title": "Week 4: GIS Choices for Architects",
+    "section": "GIS outputs can become Rhino context",
+    "text": "GIS outputs can become Rhino context\n\nBridge pattern Export candidate sites or selected layers as GeoJSON / CSV -&gt; bring points, curves, polygons, and scores into Rhino/GH -&gt; use them to locate, color, or constrain design variants.\n\n\n\ngeopandas\n\n\nGeoJSON / CSV\n\n\nRhino/GH import\n\n\nsite geometry + attributes\n\n\nplacement / access decision\n\n\nThe map becomes design evidence only when it changes a geometric or strategic decision.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W4: GIS Choices"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-04.html#spatial-certainty-can-be-fake-certainty",
+    "href": "weeks_v2/week-04.html#spatial-certainty-can-be-fake-certainty",
+    "title": "Week 4: GIS Choices for Architects",
+    "section": "Spatial certainty can be fake certainty",
+    "text": "Spatial certainty can be fake certainty\n\nQuestion for your GIS route Is your buffer measuring real access, or just distance on a map?\n\nCheck at least one of these before trusting the output: CRS, walking network vs straight-line distance, data date, missing entrances, and layer source.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1572,7 +1823,7 @@
     "href": "weeks_v2/week-04.html#minute-gis-scoping-sprint",
     "title": "Week 4: GIS Choices for Architects",
     "section": "15-minute GIS scoping sprint",
-    "text": "15-minute GIS scoping sprint\n\nChoose your own project and write down - the spatial question - the smallest useful spatial output - the minimum input layers needed - whether you would start in QGIS, ArcGIS, or geopandas - what would make GIS the wrong pathway",
+    "text": "15-minute GIS scoping sprint\n\nChoose your own project and write down\n\nthe spatial question\nthe smallest useful spatial output\nthe minimum input layers needed\nwhether you would start in QGIS, ArcGIS, or geopandas\nwhat would make GIS the wrong pathway",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1664,6 +1915,18 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-02.html#this-week-produces-an-evidence-audit",
+    "href": "weeks_v2/week-02.html#this-week-produces-an-evidence-audit",
+    "title": "Week 2: Audit the Evidence You Already Use",
+    "section": "This week produces an evidence audit",
+    "text": "This week produces an evidence audit\n\n\nW1 decision\n\n\nW2 evidence\n\n\nW3 comparison\n\n\nW4-6 pathway\n\n\nW7-9 prototype\n\n\nW10-12 package\n\n\n\n\nBring the same past-project visual from Week 1, marked up directly\n\n\nMake an evidence table: type, strength, what it actually supports\n\n\nExport one weak-link sentence and one missing variable/range/threshold\n\n\nFeeds A1 Evidence Critique and Week 3 comparison setup",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W2: Evidence Audit"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-02.html#architecture-uses-many-evidence-types",
     "href": "weeks_v2/week-02.html#architecture-uses-many-evidence-types",
     "title": "Week 2: Audit the Evidence You Already Use",
@@ -1724,11 +1987,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-02.html#common-overclaims",
-    "href": "weeks_v2/week-02.html#common-overclaims",
+    "objectID": "weeks_v2/week-02.html#a1-evidence-audit-not-notes",
+    "href": "weeks_v2/week-02.html#a1-evidence-audit-not-notes",
     "title": "Week 2: Audit the Evidence You Already Use",
-    "section": "Common overclaims",
-    "text": "Common overclaims\n\nWatch for these in your own A1 - “there was evidence” when there was only precedent - “the model proved it” when the assumptions were weak - “users prefer this” from a tiny or biased sample - “this is best practice” without context\n\nThe strongest move is catching one of these in your own work before anyone else does.",
+    "section": "A1 evidence audit, not notes",
+    "text": "A1 evidence audit, not notes\nBy the end of Week 2, your A1 board should contain a visible audit layer.\n\n\nInput one decision image + sources used then\n\n\nSort evidence / precedent / assumption / preference\n\n\nOutput weak-link diagnosis and missing test\n\n\nQuality check the claim gets weaker or stronger when the source is removed",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1736,11 +1999,47 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-02.html#stand-alone-prompt",
-    "href": "weeks_v2/week-02.html#stand-alone-prompt",
+    "objectID": "weeks_v2/week-02.html#common-overclaims",
+    "href": "weeks_v2/week-02.html#common-overclaims",
     "title": "Week 2: Audit the Evidence You Already Use",
-    "section": "Stand-alone prompt",
-    "text": "Stand-alone prompt\n\n\n\n\n\nCalifornia Academy of Sciences\n\n\n\n\nDefend one claim If you were defending a single design claim about this project in public, what evidence would you want before making it?\nName the claim, then name the evidence that would earn it.",
+    "section": "Common overclaims",
+    "text": "Common overclaims\n\nWatch for these in your own A1\n\n“there was evidence” when there was only precedent\n“the model proved it” when the assumptions were weak\n“users prefer this” from a tiny or biased sample\n“this is best practice” without context\n\n\nThe strongest move is catching one of these in your own work before anyone else does.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W2: Evidence Audit"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-02.html#an-austerity-argument-built-on-a-spreadsheet-error",
+    "href": "weeks_v2/week-02.html#an-austerity-argument-built-on-a-spreadsheet-error",
+    "title": "Week 2: Audit the Evidence You Already Use",
+    "section": "2010: an austerity argument built on a spreadsheet error",
+    "text": "2010: an austerity argument built on a spreadsheet error\n\nWhat happened A widely cited economics paper (Reinhart & Rogoff) reported that economic growth collapses once public debt passes 90% of GDP. The claim was used to justify austerity policy in several countries. In 2013 a graduate student rechecking the workbook found an Excel formula that left out five rows — once corrected, the dramatic threshold largely disappeared.\n\n\nThe lesson A result nobody can re-open and audit is a vibe with a number attached. Evidence is only as strong as your ability to trace how it was computed.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W2: Evidence Audit"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-02.html#worked-claim-audit",
+    "href": "weeks_v2/week-02.html#worked-claim-audit",
+    "title": "Week 2: Audit the Evidence You Already Use",
+    "section": "Worked claim audit",
+    "text": "Worked claim audit\n\n\n\n\n\nCalifornia Academy of Sciences\n\n\n\n\nDefend one claim If you were defending a single design claim about this project in public, what evidence would you want before making it?\nName the claim, then name the evidence that would earn it.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W2: Evidence Audit"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-02.html#polished-evidence-still-needs-inspection",
+    "href": "weeks_v2/week-02.html#polished-evidence-still-needs-inspection",
+    "title": "Week 2: Audit the Evidence You Already Use",
+    "section": "Polished evidence still needs inspection",
+    "text": "Polished evidence still needs inspection\n\nQuestion for your A1 Which piece of evidence in your old project looked convincing because it was visually polished, not because it was actually strong?\n\nIf the answer is a render, precedent image, exported map, or simulation screenshot, write down what would have to be checked before it could carry the claim.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1752,7 +2051,7 @@
     "href": "weeks_v2/week-02.html#pivot-to-the-next-decision",
     "title": "Week 2: Audit the Evidence You Already Use",
     "section": "Pivot to the next decision",
-    "text": "Pivot to the next decision\nThe second half of A1 turns from the past to the next real choice.\n\n\nThe four questions - what is the next real design decision? - who needs to be convinced? - what evidence would matter? - which pathway might help most?\n\n\nThis is where A1 stops being a post-mortem and starts pointing at the rest of the semester.",
+    "text": "Pivot to the next decision\nThe second half of A1 turns from the past to the next real choice.\n\n\nThe four questions\n\nwhat is the next real design decision?\nwho needs to be convinced?\nwhat evidence would matter?\nwhich pathway might help most?\n\n\n\nThis is where A1 stops being a post-mortem and starts pointing at the rest of the semester.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1764,7 +2063,7 @@
     "href": "weeks_v2/week-02.html#pathway-sniff-test",
     "title": "Week 2: Audit the Evidence You Already Use",
     "section": "Pathway sniff test",
-    "text": "Pathway sniff test\nChoose provisionally — you can revise as A2 sharpens the question.\n\nspreadsheet — comparison, ranking, or visible logic\nGIS — space, site, access, zoning, or context is central\nPython / notebook — repeatable analysis or notebook workflow\nGH / parametric — design variables and option families\nBIM/BEM / simulation — claim depends on model translation or performance\nAI-assisted — help building part of a workflow you can verify",
+    "text": "Pathway sniff test\nChoose provisionally — you can revise as A2 sharpens the question.\n\n\nMapped soon\n\nspreadsheet comparison\ngeopandas\nBIM-derived proxy\nPython notebook\nAI verification\n\n\n\nMapped through class\n\nGH components\nLadybug/Radiance walkthroughs\noffice tools students already know\n\n\n\nAllowed with caution\n\nplugins\noffice workflows\ncustom scripts that still export an inspectable artifact\n\n\n\nThe provisional question is: which route can produce the smallest output that would change the decision?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1848,7 +2147,7 @@
     "href": "weeks_v2/week-02.html#a1-submission-check",
     "title": "Week 2: Audit the Evidence You Already Use",
     "section": "A1 submission check",
-    "text": "A1 submission check\n\nLeave Week 2 with - one prior decision, clearly described - one evidence audit (type, strength, what it supported) - one next studio decision - one visual page that makes the transition visible\n\n\nA1 is diagnosed, not finished. Week 3 finalizes the Total Recall board.\n\n\n\n\nWeek 2 · feeds A1: Total Recall",
+    "text": "A1 submission check\n\nLeave Week 2 with\n\none prior decision, clearly described\none evidence audit (type, strength, what it supported)\none next studio decision\none visual page that makes the transition visible\n\n\n\nA1 is diagnosed, not finished. Week 3 finalizes the Total Recall board.\n\n\n\n\nWeek 2 · feeds A1: Total Recall",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -2896,6 +3195,30 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-01.html#what-you-physically-make",
+    "href": "weeks_v2/week-01.html#what-you-physically-make",
+    "title": "Week 1: Why Evidence Needs a Workflow",
+    "section": "What you physically make",
+    "text": "What you physically make\nThe course is not a set of prompts. Every phase leaves an artifact that can be inspected, reused, or patched into a design workflow.\n\n\nA1 · recall board one past decision, original evidence, weak links, missing variable\n\n\nA2 · pathway contract evidence map, workflow route, A4 branch, smallest useful output\n\n\nA3 · prototype runnable or inspectable workflow, variant output, verification log\n\n\nA4 · handoff package practice case, research brief, object card, reproducibility capsule",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W1: Total Recall"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-01.html#artifact-progress-bar",
+    "href": "weeks_v2/week-01.html#artifact-progress-bar",
+    "title": "Week 1: Why Evidence Needs a Workflow",
+    "section": "Artifact progress bar",
+    "text": "Artifact progress bar\nEach week moves one object from rough material to a handoff artifact.\n\n\nW1 decision\n\n\nW2 evidence\n\n\nW3 comparison\n\n\nW4-6 pathway\n\n\nW7-9 prototype\n\n\nW10-12 package\n\n\nToday’s visible output: one past project visual + one tool-strength/wishlist entry.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W1: Total Recall"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-01.html#look-harder-at-what-you-already-did",
     "href": "weeks_v2/week-01.html#look-harder-at-what-you-already-did",
     "title": "Week 1: Why Evidence Needs a Workflow",
@@ -2992,11 +3315,23 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-01.html#every-pathway-can-talk-to-grasshopper",
+    "href": "weeks_v2/week-01.html#every-pathway-can-talk-to-grasshopper",
+    "title": "Week 1: Why Evidence Needs a Workflow",
+    "section": "Every pathway can talk to Grasshopper",
+    "text": "Every pathway can talk to Grasshopper\nMost of you will return to Grasshopper. That is fine. The point is to make the route into a clean function before it becomes a component.\n\n\nexternal workflow\n\n\nvisible output change\n\n\nCSV / JSON / GeoJSON\n\n\nGH read / GhPython\n\n\ndesign action\n\n\n\nGrasshopper component = packed function Inputs go in, an operation happens inside, outputs come out. The course asks you to name the inputs, units, ranges, output, and quality check before you trust the component.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W1: Total Recall"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-01.html#declare-your-two-tools",
     "href": "weeks_v2/week-01.html#declare-your-two-tools",
     "title": "Week 1: Why Evidence Needs a Workflow",
     "section": "Declare your two tools",
-    "text": "Declare your two tools\nPost both to the Slack channel now — this is your record for the semester.\n\n\n1 · The tool I want to learn The one you feel you need for your studio work and cannot yet use well.\n\n\n2 · The tool I’d teach Your strongest tool — the one you could walk the class through.\n\n\n\nI read both columns. They become the walk-through roster and the class wishlist.",
+    "text": "Declare your two tools\nPost both to the Slack channel now. They become the class Tool Coverage Board, not a disappearing survey.\n\n\n1 · The tool I want to learn The one you feel you need for your studio work and cannot yet use well.\n\n\n2 · The tool I’d teach Your strongest tool — the one you could walk the class through.\n\n\n\nThese two columns become the walk-through roster and the class wishlist.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3008,7 +3343,19 @@
     "href": "weeks_v2/week-01.html#how-the-wishlist-is-used",
     "title": "Week 1: Why Evidence Needs a Workflow",
     "section": "How the wishlist is used",
-    "text": "How the wishlist is used\n\nYour “want to learn” + your classmates’ “I’d teach” are a matching market.\n\n\nif a classmate is strong in what you want, they may walk us through it\nthe top shared wishes get covered together later in the semester\nwhere a wish is a small custom tool, the answer becomes build it yourself (at best effort) — by the end, that can mean vibe-coding a Grasshopper component\n\nI am at the table too: I declare, I walk through, and I get audited like everyone else.",
+    "text": "How the wishlist is used\nWishlist items are sorted visibly, then revisited weekly.\n\n\nCore supported\n\nspreadsheet thresholds\nBIM-derived proxy\ngeopandas\nPython notebook\nAI verification\n\n\n\nPeer supported\n\nGH clusters\nLadybug setup\nmapping tricks from real use\n\n\n\nExploratory\n\nspecial plugins\noffice workflows\ncustom scripts\n\n\n\nEach week we mark: mapped today, partially mapped, still unsupported, or out of scope this term.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W1: Total Recall"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-01.html#the-course-contribution",
+    "href": "weeks_v2/week-01.html#the-course-contribution",
+    "title": "Week 1: Why Evidence Needs a Workflow",
+    "section": "The course contribution",
+    "text": "The course contribution\nTools make outputs look certain. Architecture usually is not.\n\nAsk every week What did the tool make easier to see, and what assumption did it make easier to hide?\n\nI am at the table too: I declare, I walk through, and I get audited like everyone else.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3136,6 +3483,18 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-03.html#this-week-produces-a-comparison-artifact",
+    "href": "weeks_v2/week-03.html#this-week-produces-a-comparison-artifact",
+    "title": "Week 3: Spreadsheet as the Comparison Layer",
+    "section": "This week produces a comparison artifact",
+    "text": "This week produces a comparison artifact\n\n\nW1 decision\n\n\nW2 evidence\n\n\nW3 comparison\n\n\nW4-6 pathway\n\n\nW7-9 prototype\n\n\nW10-12 package\n\n\n\n\nInput A1 decision + evidence audit\n\n\nChange weights, thresholds, variant rows, confidence levels\n\n\nOutput ranked variants + one chart + one CSV export\n\n\nBridge CSV can drive GH colors, labels, panels, or variant selection",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W3: Spreadsheet Baseline"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-03.html#the-spreadsheet-is-the-comparison-layer",
     "href": "weeks_v2/week-03.html#the-spreadsheet-is-the-comparison-layer",
     "title": "Week 3: Spreadsheet as the Comparison Layer",
@@ -3164,7 +3523,7 @@
     "href": "weeks_v2/week-03.html#workbook-anatomy",
     "title": "Week 3: Spreadsheet as the Comparison Layer",
     "section": "Workbook anatomy",
-    "text": "Workbook anatomy\nThe same four-zone frame we use for every tool. A real workbook screenshot drops into this later.\n\n\nInput evidence rows — source, observation, confidence per variant\n\n\nWhat varies the option or scenario being compared (A / B / C, or low / mid / high)\n\n\nOutput one chart or matrix that makes the trade-off visible\n\n\nQuality check units stated, legend present, formulas readable by a stranger\n\n\n\nScreenshot pending — we will capture a live workbook in class rather than fake a polished one.",
+    "text": "Workbook anatomy\nThe same four-zone frame we use for every tool. This is a minimum runnable workbook, not an abstract exercise.\n\n\nInput variant, criterion, value, unit, source, confidence\n\n\nWhat varies weights, thresholds, variant rows, confidence notes\n\n\nOutput decision table, chart, variant_scores.csv\n\n\nQuality check formulas visible, units stated, one hand calculation matches",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3176,7 +3535,7 @@
     "href": "weeks_v2/week-03.html#start-with-the-decision-not-the-software",
     "title": "Week 3: Spreadsheet as the Comparison Layer",
     "section": "Start with the decision, not the software",
-    "text": "Start with the decision, not the software\nThe structure follows the question, never the other way around.\n\n\nWorkbook with no decision - one giant undifferentiated sheet - no units, no audience - columns with no reason to exist\n\n\nWorkbook built on a decision - one question per structure - one row type per sheet - one clear output already in mind",
+    "text": "Start with the decision, not the software\nThe structure follows the question, never the other way around.\n\n\nWorkbook with no decision\n\none giant undifferentiated sheet\nno units, no audience\ncolumns with no reason to exist\n\n\n\nWorkbook built on a decision\n\none question per structure\none row type per sheet\none clear output already in mind",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3189,6 +3548,18 @@
     "title": "Week 3: Spreadsheet as the Comparison Layer",
     "section": "A useful workbook pattern",
     "text": "A useful workbook pattern\nThree sheets, each tied to one job in the comparison.\n\n\nSheet 1 · Evidence log source · date · evidence type · relevance · confidence\n\n\nSheet 2 · Alternatives option · criteria · scores or ranges · comments\n\n\nSheet 3 · Outputs the chart · the matrix · the summary line\n\n\n\nEach sheet answers one question, so the reader never has to reverse-engineer your intent.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W3: Spreadsheet Baseline"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-03.html#spreadsheet-output-can-become-gh-input",
+    "href": "weeks_v2/week-03.html#spreadsheet-output-can-become-gh-input",
+    "title": "Week 3: Spreadsheet as the Comparison Layer",
+    "section": "Spreadsheet output can become GH input",
+    "text": "Spreadsheet output can become GH input\n\nBridge pattern Export variant_scores.csv -&gt; read it in Grasshopper -&gt; attach scores to geometry variants -&gt; color, cull, rank, or label the options.\n\n\n\nspreadsheet\n\n\nCSV\n\n\nGH read file\n\n\ngeometry variants\n\n\nselected option\n\n\nThe spreadsheet does not replace GH. It makes the decision rule visible before GH starts looking magical.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3224,7 +3595,7 @@
     "href": "weeks_v2/week-03.html#bad-chart-vs-cleaned-chart",
     "title": "Week 3: Spreadsheet as the Comparison Layer",
     "section": "Bad chart vs cleaned chart",
-    "text": "Bad chart vs cleaned chart\nA chart fails when it describes data instead of carrying a message.\n\n\nThe chart that fails a stakeholder - too many series, no dominant takeaway - labels too small to read at a glance - colour decorating instead of working - title naming the data, not the message\n\n\nThe cleaned chart - one message, stated in the title - only the series that support it - annotation forcing the eye to the point - uncertainty shown where it matters",
+    "text": "Bad chart vs cleaned chart\nA chart fails when it describes data instead of carrying a message.\n\n\nThe chart that fails a stakeholder\n\ntoo many series, no dominant takeaway\nlabels too small to read at a glance\ncolour decorating instead of working\ntitle naming the data, not the message\n\n\n\nThe cleaned chart\n\none message, stated in the title\nonly the series that support it\nannotation forcing the eye to the point\nuncertainty shown where it matters",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3260,7 +3631,7 @@
     "href": "weeks_v2/week-03.html#show-uncertainty-honestly",
     "title": "Week 3: Spreadsheet as the Comparison Layer",
     "section": "Show uncertainty honestly",
-    "text": "Show uncertainty honestly\n\n\nAvoid - fake precision - unexplained weighted scores - single-point claims on weak inputs\n\n\nPrefer - ranges and scenario labels - note fields for assumptions - charts that make limits visible",
+    "text": "Show uncertainty honestly\n\n\nAvoid\n\nfake precision\nunexplained weighted scores\nsingle-point claims on weak inputs\n\n\n\nPrefer\n\nranges and scenario labels\nnote fields for assumptions\ncharts that make limits visible",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3280,11 +3651,35 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-03.html#a-number-is-not-neutral-just-because-it-is-in-a-cell",
+    "href": "weeks_v2/week-03.html#a-number-is-not-neutral-just-because-it-is-in-a-cell",
+    "title": "Week 3: Spreadsheet as the Comparison Layer",
+    "section": "A number is not neutral just because it is in a cell",
+    "text": "A number is not neutral just because it is in a cell\n\nQuestion for your workbook Which cell, weight, or threshold would change the recommendation if it moved by 10 percent?\n\nThat cell is not a detail. It is a design assumption wearing the costume of arithmetic.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W3: Spreadsheet Baseline"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-03.html#when-you-weight-a-decision-matrix-you-are-writing-a-loss-function",
     "href": "weeks_v2/week-03.html#when-you-weight-a-decision-matrix-you-are-writing-a-loss-function",
     "title": "Week 3: Spreadsheet as the Comparison Layer",
     "section": "When you weight a decision matrix, you are writing a loss function",
     "text": "When you weight a decision matrix, you are writing a loss function\n\nPrinciple 4 — Loss = what “better” means An ML model only improves on what its loss rewards. Your spreadsheet’s weights are the same thing: they define what “better” means before you compare anything.\n\n\nSo If your weighting ignores a real constraint (cost, daylight, legibility), the “winning” variant will too. Make the criterion explicit, like a loss.\n\nSee ML Primer · Principles 3–4.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W3: Spreadsheet Baseline"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-03.html#a-copy-paste-error-inside-a-risk-model",
+    "href": "weeks_v2/week-03.html#a-copy-paste-error-inside-a-risk-model",
+    "title": "Week 3: Spreadsheet as the Comparison Layer",
+    "section": "2012: a copy-paste error inside a risk model",
+    "text": "2012: a copy-paste error inside a risk model\n\nWhat happened JPMorgan’s “London Whale” risk model lived in a chain of spreadsheets where values were copied and pasted between cells by hand. One step divided by a sum instead of an average, understating the risk. The losses reached about US$6 billion.\n\n\nThe lesson A spreadsheet is a transparent comparison layer only if its steps are inspectable. Manual copy-paste between cells is exactly where the logic stops being traceable.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3392,7 +3787,7 @@
     "href": "weeks_v2/week-03.html#week-3-milestone",
     "title": "Week 3: Spreadsheet as the Comparison Layer",
     "section": "Week 3 milestone",
-    "text": "Week 3 milestone\n\nLeave class with 1. your A1 Total Recall board finalized 2. a starter workbook comparing real variants 3. one chart that passes the 3-second test 4. one named limit your workbook cannot answer\n\n\nThe trade-off my workbook makes visible is , and the input I least trust is .\n\nWeek 4 opens A2: turning this comparison habit into an Evidence + Workflow Map.\n\n\n\nWeek 3 · feeds A1 + A2",
+    "text": "Week 3 milestone\n\nLeave class with\n\nyour A1 Total Recall board finalized\na starter workbook comparing real variants or scenarios\none exported table/chart that could be read by GH or another tool\none chart that passes the 3-second test\none named cell, weight, or threshold you do not fully trust\n\n\n\nThe trade-off my workbook makes visible is , and the input I least trust is .\n\nWeek 4 opens A2: turning this comparison habit into an Evidence + Workflow Map.\n\n\n\nWeek 3 · feeds A1 + A2",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3405,6 +3800,18 @@
     "title": "Week 5: BIM, BEM, and Building Performance",
     "section": "Today’s Agenda",
     "text": "Today’s Agenda\n\n\nSession 1\nLecture / tool demo\n\nBIM and BEM are not the same model\nhow BIM files become BEM files\nwhat gets lost in translation\nIFC vs gbXML\n\n\n\nSession 2\nRound table on YOUR model\n\nupload one BIM/BEM material to Slack\nreconstruct it in four steps\nname one performance claim and its weakest link\n\n\n\n\nThis is a tool week, but the question stays the same: what would make a performance claim defensible, and where does the workflow quietly break?",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W5: BIM/BEM"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-05.html#this-week-produces-a-model-assumption-artifact",
+    "href": "weeks_v2/week-05.html#this-week-produces-a-model-assumption-artifact",
+    "title": "Week 5: BIM, BEM, and Building Performance",
+    "section": "This week produces a model-assumption artifact",
+    "text": "This week produces a model-assumption artifact\n\n\nW3 comparison\n\n\nW4 GIS\n\n\nW5 BIM/BEM\n\n\nW6 pathway\n\n\nW7 prototype\n\n\nW8 verify\n\n\n\n\nInput BIM-derived room/facade parameters, not a magical BIM import\n\n\nChange WWR, shading depth, orientation, glazing, schedule assumptions\n\n\nOutput daylight/heat-risk proxy, scenario table, uncertainty note\n\n\nBridge variant metrics can return to GH/Ladybug/Honeybee as parameters or checks",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3460,6 +3867,18 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-05.html#bim-derived-input-schema",
+    "href": "weeks_v2/week-05.html#bim-derived-input-schema",
+    "title": "Week 5: BIM, BEM, and Building Performance",
+    "section": "BIM-derived input schema",
+    "text": "BIM-derived input schema\nFor this course, the reliable minimum is not “import my whole model.” It is a small table students can export, measure, or enter from Rhino/Revit.\n\n\n\n\n\n\n\n\nField\nUnit / type\nWhy it matters\n\n\n\n\nroom depth\nm\ndaylight penetration and cooling-load proxy\n\n\nfacade orientation\nN/E/S/W or degrees\nsolar exposure and glare risk\n\n\nwindow-to-wall ratio\n0-1\ndaylight gain and heat gain\n\n\nshading depth\nm\nsolar control and view/daylight trade-off\n\n\nglazing U-value / SHGC\nnumeric\nenvelope performance assumption\n\n\nobstruction factor\n0-1\ncontext/shading simplification\n\n\n\n\nIf this table cannot be filled honestly, a more advanced simulation will only hide the uncertainty better.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W5: BIM/BEM"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-05.html#bim-data-priorities",
     "href": "weeks_v2/week-05.html#bim-data-priorities",
     "title": "Week 5: BIM, BEM, and Building Performance",
@@ -3477,6 +3896,18 @@
     "title": "Week 5: BIM, BEM, and Building Performance",
     "section": "BEM data priorities",
     "text": "BEM data priorities\n\nthermal zones\nheat-transfer surfaces\ninternal loads\noccupancy schedules\nHVAC systems and control logic\nweather and shading context",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W5: BIM/BEM"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-05.html#the-performance-demo-is-a-scenario-file",
+    "href": "weeks_v2/week-05.html#the-performance-demo-is-a-scenario-file",
+    "title": "Week 5: BIM, BEM, and Building Performance",
+    "section": "The performance demo is a scenario file",
+    "text": "The performance demo is a scenario file\nThe minimum runnable route uses a small scenario.json or table before any full EnergyPlus/Radiance setup.\n\n\nInput room/facade schema + weather/season assumption\n\n\nWhat varies WWR, shading depth, orientation, glazing, schedule\n\n\nOutput daylight proxy, heat-risk proxy, comfort-risk note\n\n\nQuality check units, range, and one known hand-check are stated\n\n\nThis proxy is not the final truth. It is the fast test that tells you whether a full Ladybug/Honeybee/Radiance workflow is worth the setup.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3656,7 +4087,7 @@
     "href": "weeks_v2/week-05.html#ideal-workflow-vs-real-workflow",
     "title": "Week 5: BIM, BEM, and Building Performance",
     "section": "Ideal workflow vs real workflow",
-    "text": "Ideal workflow vs real workflow\n\n\nIdeal 1. update BIM 2. export cleanly 3. update BEM automatically 4. rerun analysis 5. feed changes back into design\n\n\nReal 1. export once 2. spend days cleaning the BEM 3. design changes continue 4. model diverges 5. everyone hopes the gap is still “small enough”",
+    "text": "Ideal workflow vs real workflow\n\n\nIdeal\n\nupdate BIM\nexport cleanly\nupdate BEM automatically\nrerun analysis\nfeed changes back into design\n\n\n\nReal\n\nexport once\nspend days cleaning the BEM\ndesign changes continue\nmodel diverges\neveryone hopes the gap is still “small enough”",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3680,7 +4111,7 @@
     "href": "weeks_v2/week-05.html#case-study-timeline",
     "title": "Week 5: BIM, BEM, and Building Performance",
     "section": "Case study timeline",
-    "text": "Case study timeline\n\n\nWeek 1 - export appears successful - team believes the workflow is seamless\n\n\nWeek 2 - 465 thermal zones created instead of about 30 - HVAC missing - generic constructions everywhere - orientation wrong",
+    "text": "Case study timeline\n\n\nWeek 1\n\nexport appears successful\nteam believes the workflow is seamless\n\n\n\nWeek 2\n\n465 thermal zones created instead of about 30\nHVAC missing\ngeneric constructions everywhere\norientation wrong",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3692,7 +4123,7 @@
     "href": "weeks_v2/week-05.html#case-study-timeline-contd",
     "title": "Week 5: BIM, BEM, and Building Performance",
     "section": "Case study timeline (cont’d)",
-    "text": "Case study timeline (cont’d)\n\n\nWeeks 3-4 - merge zones manually - define constructions and material properties - build schedules and HVAC systems - fix context and shading\n\n\nWeek 8 - design changes arrive - re-export means losing cleanup work - manual updates begin and divergence starts",
+    "text": "Case study timeline (cont’d)\n\n\nWeeks 3-4\n\nmerge zones manually\ndefine constructions and material properties\nbuild schedules and HVAC systems\nfix context and shading\n\n\n\nWeek 8\n\ndesign changes arrive\nre-export means losing cleanup work\nmanual updates begin and divergence starts",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3736,6 +4167,42 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-05.html#the-performance-gap-models-vs-metered-reality",
+    "href": "weeks_v2/week-05.html#the-performance-gap-models-vs-metered-reality",
+    "title": "Week 5: BIM, BEM, and Building Performance",
+    "section": "The performance gap: models vs metered reality",
+    "text": "The performance gap: models vs metered reality\n\nWhat happens Studies of completed buildings repeatedly find measured energy use two to three times higher than the design-stage model predicted. The model was not “wrong” — its assumptions (occupancy, schedules, controls, construction quality) simply did not match how the building was actually used and built.\n\n\nThe lesson A polished BEM output is a scenario, not a measurement. State the assumptions a performance claim depends on, and name where the real building is likely to diverge.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W5: BIM/BEM"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-05.html#performance-outputs-can-steer-gh-variants",
+    "href": "weeks_v2/week-05.html#performance-outputs-can-steer-gh-variants",
+    "title": "Week 5: BIM, BEM, and Building Performance",
+    "section": "Performance outputs can steer GH variants",
+    "text": "Performance outputs can steer GH variants\n\nBridge pattern Use GH/Ladybug/Honeybee or a Python proxy to generate variant metrics -&gt; export variant_metrics.csv -&gt; attach daylight/heat-risk scores to GH geometry variants.\n\n\n\nBIM-derived schema\n\n\nscenario run\n\n\nmetrics CSV\n\n\nGH variant colors\n\n\nrevise facade\n\n\nSupported professional bridge: one constrained Ladybug/Radiance walkthrough, not “everything Ladybug.”",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W5: BIM/BEM"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-05.html#simulation-is-precise-about-the-model-not-automatically-about-the-building",
+    "href": "weeks_v2/week-05.html#simulation-is-precise-about-the-model-not-automatically-about-the-building",
+    "title": "Week 5: BIM, BEM, and Building Performance",
+    "section": "Simulation is precise about the model, not automatically about the building",
+    "text": "Simulation is precise about the model, not automatically about the building\n\nQuestion for your performance route Which assumption dominates the result: geometry, material, schedule, weather, system, or occupancy?\n\nIf you cannot name the dominant assumption, do not present the output as a performance conclusion. Present it as a scenario result.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W5: BIM/BEM"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-05.html#break",
     "href": "weeks_v2/week-05.html#break",
     "title": "Week 5: BIM, BEM, and Building Performance",
@@ -3764,7 +4231,7 @@
     "href": "weeks_v2/week-05.html#speak-for-60-90-seconds",
     "title": "Week 5: BIM, BEM, and Building Performance",
     "section": "Speak for 60-90 seconds",
-    "text": "Speak for 60-90 seconds\n\nThe prompt What would a performance model need to know about your building, and what would it probably simplify?\n\nVolunteers go first; random draw may fill the remaining examples.",
+    "text": "Speak for 60-90 seconds\n\nCheck-in question What would a performance model need to know about your building, and what would it probably simplify?\n\nVolunteers go first; random draw may fill the remaining examples.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3784,11 +4251,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-05.html#stand-alone-case-prompts",
-    "href": "weeks_v2/week-05.html#stand-alone-case-prompts",
+    "objectID": "weeks_v2/week-05.html#case-transfer-checks",
+    "href": "weeks_v2/week-05.html#case-transfer-checks",
     "title": "Week 5: BIM, BEM, and Building Performance",
-    "section": "Stand-alone case prompts",
-    "text": "Stand-alone case prompts\n\n\n\n\n\nThe Edge, Amsterdam\n\n\nWhat kinds of evidence would support a claim about workplace performance here?\n\n\n\n\n\nCalifornia Academy of Sciences\n\n\nWhat kinds of evidence would support a claim about environmental performance here?",
+    "section": "Case transfer checks",
+    "text": "Case transfer checks\n\n\n\n\n\nThe Edge, Amsterdam\n\n\nWhat kinds of evidence would support a claim about workplace performance here?\n\n\n\n\n\nCalifornia Academy of Sciences\n\n\nWhat kinds of evidence would support a claim about environmental performance here?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3813,6 +4280,18 @@
     "title": "Week 7: Method Prototype Studio",
     "section": "Today’s Agenda",
     "text": "Today’s Agenda\n\n\nSession 1\nLecture / studio-lab\n\nwhat a minimal viable workflow is\nwhy documentation comes before the package\nthe 10-minute method challenge\nthe documentation swap\nmentor-question prep for weak spots\n\n\n\nSession 2\nRound table on YOUR prototype\n\nupload one rough workflow artifact\nreconstruct it in four steps\noptional walk-through, then a shared audit\n\n\n\n\nThis week the object becomes your prototype workflow. A3 begins here.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#this-week-produces-a-prototype-artifact",
+    "href": "weeks_v2/week-07.html#this-week-produces-a-prototype-artifact",
+    "title": "Week 7: Method Prototype Studio",
+    "section": "This week produces a prototype artifact",
+    "text": "This week produces a prototype artifact\n\n\nA2 route\n\n\nprototype\n\n\nverify\n\n\nthreshold\n\n\ndraft\n\n\nhandoff\n\n\n\n\nInput the files, geometry, data, or scenario table your route needs\n\n\nRun one function/component/notebook/definition with a visible changed output\n\n\nExport output figure, CSV/JSON/GeoJSON, GH canvas, screenshot, or notebook cell\n\n\nVerify one known test case and one failure/fragility note",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3848,7 +4327,19 @@
     "href": "weeks_v2/week-07.html#the-prototype-frame-four-zones",
     "title": "Week 7: Method Prototype Studio",
     "section": "The prototype frame — four zones",
-    "text": "The prototype frame — four zones\nRead any workflow as four zones. If you can fill all four honestly, you have a prototype, not just a file.\n\n\nInput the real files, data, or model the method starts from\n\n\nWhat varies the one thing you change between runs\n\n\nOutput the single interpretable result it produces\n\n\nQuality check what proves the run was valid, not just that it ran\n\n\n\nA screenshot of your tool running drops into this frame once you have one. Until then it stays marked pending — honest, not faked.",
+    "text": "The prototype frame — four zones\nRead any workflow as four zones. If you can fill all four honestly, you have a prototype, not just a file.\n\n\nInput the real files, data, or model the method starts from\n\n\nWhat varies the one thing you change between runs\n\n\nOutput the single interpretable result it produces\n\n\nQuality check what proves the run was valid, not just that it ran",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#a-gh-component-is-a-packed-function",
+    "href": "weeks_v2/week-07.html#a-gh-component-is-a-packed-function",
+    "title": "Week 7: Method Prototype Studio",
+    "section": "A GH component is a packed function",
+    "text": "A GH component is a packed function\n\nFunction contract Inputs have names, types, units, and allowed ranges. The operation changes something. Outputs have names, types, and units. A quality check proves the component did not just produce a plausible-looking answer.\n\n\n\n\n\n\n\n\n\nRoute\nFunction form\nVisible change\n\n\n\n\nspreadsheet\nformula / decision rule\nselected variant or score changes\n\n\ngeopandas\nbuffer / overlay / score function\nsite rank or map layer changes\n\n\nPython\nanalysis function\nplot or metric changes\n\n\nGH\ncluster / GhPython component\ngeometry variant changes\n\n\nBIM/BEM proxy\nscenario function\ndaylight/heat-risk score changes\n\n\nAI-assisted\ndrafted function, manually checked\noutput changes after repair",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3908,7 +4399,7 @@
     "href": "weeks_v2/week-07.html#documentation-template",
     "title": "Week 7: Method Prototype Studio",
     "section": "Documentation Template",
-    "text": "Documentation Template\n\n\nWorkflow - what the method is for - what files or inputs are required - what tools are required\n\n\nStep-by-step 1. do this 2. check this 3. if this fails, try this 4. export this",
+    "text": "Documentation Template\n\n\nWorkflow\n\nwhat the method is for\nwhat files or inputs are required\nwhat tools are required\n\n\n\nStep-by-step\n\ndo this\ncheck this\nif this fails, try this\nexport this",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3920,7 +4411,7 @@
     "href": "weeks_v2/week-07.html#documentation-template-contd",
     "title": "Week 7: Method Prototype Studio",
     "section": "Documentation Template (cont’d)",
-    "text": "Documentation Template (cont’d)\n\n\nTroubleshooting - common error - warning sign - likely fix\n\n\nQuality check - what success looks like - what a red flag looks like\n\n\n\nNotice the template is just the four zones, written out for a stranger.",
+    "text": "Documentation Template (cont’d)\n\n\nTroubleshooting\n\ncommon error\nwarning sign\nlikely fix\n\n\n\nQuality check\n\nwhat success looks like\nwhat a red flag looks like\n\n\n\n\nNotice the template is just the four zones, written out for a stranger.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3932,7 +4423,7 @@
     "href": "weeks_v2/week-07.html#documentation-swap",
     "title": "Week 7: Method Prototype Studio",
     "section": "Documentation Swap",
-    "text": "Documentation Swap\n\nDo this now 1. swap instructions with someone using a different route 2. no verbal explanation allowed 3. try to follow their method 4. record what is missing, unclear, or fragile\n\nThis is the fastest way to learn whether your workflow is genuinely reproducible or only familiar to you.",
+    "text": "Documentation Swap\n\nDo this now\n\nswap instructions with someone using a different route\nno verbal explanation allowed\ntry to follow their method\nrecord what is missing, unclear, or fragile\n\n\nThis is the fastest way to learn whether your workflow is genuinely reproducible or only familiar to you.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3952,11 +4443,35 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#pathway-breakout-prompts",
-    "href": "weeks_v2/week-07.html#pathway-breakout-prompts",
+    "objectID": "weeks_v2/week-07.html#pathway-breakout-checks",
+    "href": "weeks_v2/week-07.html#pathway-breakout-checks",
     "title": "Week 7: Method Prototype Studio",
-    "section": "Pathway breakout prompts",
-    "text": "Pathway breakout prompts\n\n\nSpreadsheet - what table structure does the method depend on? - which formula or chart is most fragile?\n\n\nGIS - what layer preparation is essential? - which operation sequence must be documented exactly?\n\n\n\n\nPython - what notebook cells define the real logic? - what package, path, or file assumptions must be stated?\n\n\nGH / parametric - what sliders or constraints define the design space? - what output proves the variants are comparable?\n\n\n\n\nBIM/BEM / simulation - what model assumptions dominate the result? - what setup choices must be documented first?\n\n\nAI-assisted - what did AI generate or edit? - what manual check confirms the output is usable?",
+    "section": "Pathway breakout checks",
+    "text": "Pathway breakout checks\n\n\nSpreadsheet\n\nwhat table structure does the method depend on?\nwhich formula or chart is most fragile?\n\n\n\nGIS\n\nwhat layer preparation is essential?\nwhich operation sequence must be documented exactly?\n\n\n\n\n\nPython\n\nwhat notebook cells define the real logic?\nwhat package, path, or file assumptions must be stated?\n\n\n\nGH / parametric\n\nwhat sliders or constraints define the design space?\nwhat output proves the variants are comparable?\n\n\n\n\n\nBIM/BEM / simulation\n\nwhat model assumptions dominate the result?\nwhat setup choices must be documented first?\n\n\n\nAI-assisted\n\nwhat did AI generate or edit?\nwhat manual check confirms the output is usable?",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#every-prototype-needs-an-ingestion-path",
+    "href": "weeks_v2/week-07.html#every-prototype-needs-an-ingestion-path",
+    "title": "Week 7: Method Prototype Studio",
+    "section": "Every prototype needs an ingestion path",
+    "text": "Every prototype needs an ingestion path\n\nBridge card for A3 What file or value leaves your workflow, what GH component reads it, what geometry/parameter it affects, and what visual change proves the bridge works?\n\n\n\nprototype output\n\n\nCSV / JSON / screenshot\n\n\nGH / package ingest\n\n\nvisible change\n\n\nquality check",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#a-working-prototype-can-still-be-wrong",
+    "href": "weeks_v2/week-07.html#a-working-prototype-can-still-be-wrong",
+    "title": "Week 7: Method Prototype Studio",
+    "section": "A working prototype can still be wrong",
+    "text": "A working prototype can still be wrong\n\nQuestion for your A3 What is the smallest input change that would make your prototype output visibly different?\n\nIf no visible change appears, either the workflow is not sensitive enough, the output is not meaningful, or the connection is broken.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3992,7 +4507,7 @@
     "href": "weeks_v2/week-07.html#mentor-question-development",
     "title": "Week 7: Method Prototype Studio",
     "section": "Mentor question development",
-    "text": "Mentor question development\n\nWrite three questions 1. one technical question 2. one methodological question 3. one strategic question about scope or decision relevance\n\n\nIf the question is generic, it is not ready. A good question points at a specific zone of your loop.",
+    "text": "Mentor question development\n\nWrite three questions\n\none technical question\none methodological question\none strategic question about scope or decision relevance\n\n\n\nIf the question is generic, it is not ready. A good question points at a specific zone of your loop.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4064,7 +4579,7 @@
     "href": "weeks_v2/week-07.html#by-the-end-of-this-week",
     "title": "Week 7: Method Prototype Studio",
     "section": "By the End of This Week",
-    "text": "By the End of This Week\nYou should leave with:\n\nWeek 7 milestone - a first working artifact - documentation that survives a swap test - a list of fragile steps and assumptions - three sharp mentor questions - a clearer story for A3\n\nA3 is started, not finished — Weeks 8–9 verify the method and build toward the Prototype + Verification package.\n\n\n\nWeek 7 · feeds A3: Prototype + Verification",
+    "text": "By the End of This Week\nYou should leave with:\n\nWeek 7 milestone\n\na first working artifact\na function/component contract with inputs, output, and quality check\ndocumentation that survives a swap test\na list of fragile steps and assumptions\nthree sharp mentor questions\na clearer story for A3\n\n\nA3 is started, not finished — Weeks 8–9 verify the method and build toward the Prototype + Verification package.\n\n\n\nWeek 7 · feeds A3: Prototype + Verification",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4084,11 +4599,23 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-09.html#this-week-produces-the-first-a4-facing-artifact",
+    "href": "weeks_v2/week-09.html#this-week-produces-the-first-a4-facing-artifact",
+    "title": "Week 9: Storytelling, Figures, and Decisions",
+    "section": "This week produces the first A4-facing artifact",
+    "text": "This week produces the first A4-facing artifact\n\n\nprototype\n\n\nverification\n\n\nthreshold\n\n\nobject card\n\n\ndraft package\n\n\nhandoff\n\n\n\n\nInput A3 output, chart, map, model result, or variant table\n\n\nChange figure title, threshold, uncertainty note, recommendation sentence\n\n\nOutput object-card draft + one decision-ready figure\n\n\nFeeds A3 final output and A4 Practice Case/Object Card",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-09.html#when-good-research-goes-bad",
     "href": "weeks_v2/week-09.html#when-good-research-goes-bad",
     "title": "Week 9: Storytelling, Figures, and Decisions",
     "section": "When good research goes bad",
-    "text": "When good research goes bad\nStrong work can still fail at the moment it reaches an audience.\n\n\nCase 1 · method over message - great method - weak message - the audience hears process, not action\n\n\nCase 2 · correct but unclear - technically correct charts - no clear takeaway - the status quo survives because the room stays confused",
+    "text": "When good research goes bad\nStrong work can still fail at the moment it reaches an audience.\n\n\nCase 1 · method over message\n\ngreat method\nweak message\nthe audience hears process, not action\n\n\n\nCase 2 · correct but unclear\n\ntechnically correct charts\nno clear takeaway\nthe status quo survives because the room stays confused",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4148,7 +4675,7 @@
     "href": "weeks_v2/week-09.html#start-with-their-problem",
     "title": "Week 9: Storytelling, Figures, and Decisions",
     "section": "Start with their problem",
-    "text": "Start with their problem\n\n\nDo not begin with - software - methods jargon - every intermediate step\n\n\nBegin with - the decision - the stake - the missing evidence",
+    "text": "Start with their problem\n\n\nDo not begin with\n\nsoftware\nmethods jargon\nevery intermediate step\n\n\n\nBegin with\n\nthe decision\nthe stake\nthe missing evidence",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4156,11 +4683,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#stand-alone-prompt",
-    "href": "weeks_v2/week-09.html#stand-alone-prompt",
+    "objectID": "weeks_v2/week-09.html#worked-stakeholder-question",
+    "href": "weeks_v2/week-09.html#worked-stakeholder-question",
     "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Stand-alone prompt",
-    "text": "Stand-alone prompt\n\n\n\nThe Edge, Amsterdam\n\n\nIf your recommendation depends on a case like this, what would a skeptical stakeholder ask first?",
+    "section": "Worked stakeholder question",
+    "text": "Worked stakeholder question\n\n\n\nThe Edge, Amsterdam\n\n\nIf your recommendation depends on a case like this, what would a skeptical stakeholder ask first?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4208,7 +4735,7 @@
     "href": "weeks_v2/week-09.html#figure-rescue-before-and-after",
     "title": "Week 9: Storytelling, Figures, and Decisions",
     "section": "Figure rescue: before and after",
-    "text": "Figure rescue: before and after\n\n\nBefore · the weak figure - five series, no focus - title reads “Results — Final” - legend the reader must decode - error bars buried or absent - nothing ties it to a decision\n\n\nAfter · the cleaned figure - one message, two series compared - title states the takeaway in words - the winning option labelled directly - uncertainty shown where it matters - a caption naming the design action",
+    "text": "Figure rescue: before and after\n\n\nBefore · the weak figure\n\nfive series, no focus\ntitle reads “Results — Final”\nlegend the reader must decode\nerror bars buried or absent\nnothing ties it to a decision\n\n\n\nAfter · the cleaned figure\n\none message, two series compared\ntitle states the takeaway in words\nthe winning option labelled directly\nuncertainty shown where it matters\na caption naming the design action",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4292,7 +4819,7 @@
     "href": "weeks_v2/week-09.html#object-card-clinic",
     "title": "Week 9: Storytelling, Figures, and Decisions",
     "section": "Object-card clinic",
-    "text": "Object-card clinic\n\nCheck your draft for - message hierarchy - visual hierarchy - stakeholder-friendly language - print readability from a distance",
+    "text": "Object-card clinic\n\nCheck your draft for\n\nmessage hierarchy\nvisual hierarchy\nstakeholder-friendly language\nprint readability from a distance",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4353,6 +4880,30 @@
     "title": "Week 9: Storytelling, Figures, and Decisions",
     "section": "Counter-arguments matter",
     "text": "Counter-arguments matter\nA strong recommendation also says:\n\n\nwhat could change the conclusion\nwhere the evidence is weakest\nwhy another option may still be reasonable\nwhat additional evidence would strengthen confidence",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#a-figure-can-still-feed-back-into-geometry",
+    "href": "weeks_v2/week-09.html#a-figure-can-still-feed-back-into-geometry",
+    "title": "Week 9: Storytelling, Figures, and Decisions",
+    "section": "A figure can still feed back into geometry",
+    "text": "A figure can still feed back into geometry\n\nBridge pattern Use your figure or threshold to revise the GH design space: narrow a slider range, reject a variant family, color variants by risk, or export a final recommendation table.\n\n\n\nA3 output\n\n\nthreshold\n\n\nobject card\n\n\nGH range / color\n\n\ndesign action\n\n\nIf the figure does not change any action, it is not yet a decision figure.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#thresholds-are-decisions-not-facts",
+    "href": "weeks_v2/week-09.html#thresholds-are-decisions-not-facts",
+    "title": "Week 9: Storytelling, Figures, and Decisions",
+    "section": "Thresholds are decisions, not facts",
+    "text": "Thresholds are decisions, not facts\n\nQuestion for Week 9 Who would disagree with your threshold, and what evidence would they use to move it?\n\nWrite that disagreement into the limitation note. A strong recommendation can survive a named counter-argument.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4456,6 +5007,18 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-11.html#this-week-finalizes-the-handoff-artifact",
+    "href": "weeks_v2/week-11.html#this-week-finalizes-the-handoff-artifact",
+    "title": "Week 11: Final Package Clinic",
+    "section": "This week finalizes the handoff artifact",
+    "text": "This week finalizes the handoff artifact\n\n\nA1 board\n\n\nA2 contract\n\n\nA3 output\n\n\nthreshold\n\n\ndraft\n\n\nhandoff\n\n\n\n\nPractice 2-slide decision memo: what changed and what to do\n\n\nResearch 2-page method brief: how you know and what remains uncertain\n\n\nObject 1-page card: dominant figure, threshold, recommendation\n\n\nCapsule README, files, sources, prompt/code notes, verification log",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-11.html#four-components-one-package",
     "href": "weeks_v2/week-11.html#four-components-one-package",
     "title": "Week 11: Final Package Clinic",
@@ -4492,6 +5055,18 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-11.html#the-package-is-a-small-inspectable-archive",
+    "href": "weeks_v2/week-11.html#the-package-is-a-small-inspectable-archive",
+    "title": "Week 11: Final Package Clinic",
+    "section": "The package is a small inspectable archive",
+    "text": "The package is a small inspectable archive\n\n\ndecision memo\n\n\nmethod brief\n\n\nobject card\n\n\nsource files\n\n\nverification log\n\n\n\nBridge pattern If your workflow uses GH, the capsule includes the .gh file or screenshots, exported variant table, component/function contract, and one note explaining which sliders or inputs should be changed next.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-11.html#visual-polish-lab-1",
     "href": "weeks_v2/week-11.html#visual-polish-lab-1",
     "title": "Week 11: Final Package Clinic",
@@ -4508,7 +5083,7 @@
     "href": "weeks_v2/week-11.html#object-card-refinement",
     "title": "Week 11: Final Package Clinic",
     "section": "Object Card refinement",
-    "text": "Object Card refinement\nThe Object Card is the one artifact most viewers actually read. It must stand alone.\n\n\nWhat it must carry - the decision and who it is for - one figure that carries the message - the recommendation, in plain language - a stated limit\n\n\nThe 30-second test Hand your draft card to a neighbour. Can they state your recommendation and one limit after 30 seconds, without you speaking?",
+    "text": "Object Card refinement\nThe Object Card is the one artifact most viewers actually read. It must stand alone.\n\n\nWhat it must carry\n\nthe decision and who it is for\none figure that carries the message\nthe recommendation, in plain language\na stated limit\n\n\n\nThe 30-second test Hand your draft card to a neighbour. Can they state your recommendation and one limit after 30 seconds, without you speaking?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4520,7 +5095,19 @@
     "href": "weeks_v2/week-11.html#sharpen-the-writing",
     "title": "Week 11: Final Package Clinic",
     "section": "Sharpen the writing",
-    "text": "Sharpen the writing\nThe Research Brief and Practice Case carry the argument. Tighten them.\n\n8-minute writing pass 1. Opening — does the first paragraph state the decision, finding, and action? 2. Thread — is the stakeholder’s relevance clear all the way through? 3. Evidence — is confidence matched to the strength of the evidence? 4. Citations — are sources complete and the capsule index linked?\n\n\nState uncertainty plainly. Overclaiming weakens credibility faster than admitting a limit ever will.",
+    "text": "Sharpen the writing\nThe Research Brief and Practice Case carry the argument. Tighten them.\n\n8-minute writing pass\n\nOpening — does the first paragraph state the decision, finding, and action?\nThread — is the stakeholder’s relevance clear all the way through?\nEvidence — is confidence matched to the strength of the evidence?\nCitations — are sources complete and the capsule index linked?\n\n\n\nState uncertainty plainly. Overclaiming weakens credibility faster than admitting a limit ever will.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#final-polish-should-not-polish-away-doubt",
+    "href": "weeks_v2/week-11.html#final-polish-should-not-polish-away-doubt",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Final polish should not polish away doubt",
+    "text": "Final polish should not polish away doubt\n\nQuestion for Week 11 Which caveat would change the recommendation if it turned out worse than expected?\n\nThat caveat belongs on the Object Card or in the Practice Case, not buried in the capsule.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4556,7 +5143,7 @@
     "href": "weeks_v2/week-11.html#a-useful-answer-in-four-moves",
     "title": "Week 11: Final Package Clinic",
     "section": "A useful answer, in four moves",
-    "text": "A useful answer, in four moves\n\nThe response shape 1. Acknowledge — “Good question about .” 2. Answer — ”Here is what I found / checked.” 3. Connect — ”What this means for your decision is .” 4. Offer — “I can follow up with the detail in the capsule.”\n\nKeep it short. A clear, honest answer beats a long defensive one.",
+    "text": "A useful answer, in four moves\n\nThe response shape\n\nAcknowledge — “Good question about ___.”\nAnswer — “Here is what I found / checked.”\nConnect — “What this means for your decision is ___.”\nOffer — “I can follow up with the detail in the capsule.”\n\n\nKeep it short. A clear, honest answer beats a long defensive one.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4616,7 +5203,7 @@
     "href": "weeks_v2/week-11.html#object-fair-the-day",
     "title": "Week 11: Final Package Clinic",
     "section": "Object Fair, the day",
-    "text": "Object Fair, the day\nA calm checklist, not a performance plan.\n\n\nBefore you arrive - test any display or files early - set up the Object Card where it reads at a glance - have the capsule index ready to point to\n\n\nDuring the fair - open with the decision and who it is for - let the one figure do the work - answer questions in the four-move shape - a few real conversations beat many quick ones",
+    "text": "Object Fair, the day\nA calm checklist, not a performance plan.\n\n\nBefore you arrive\n\ntest any display or files early\nset up the Object Card where it reads at a glance\nhave the capsule index ready to point to\n\n\n\nDuring the fair\n\nopen with the decision and who it is for\nlet the one figure do the work\nanswer questions in the four-move shape\na few real conversations beat many quick ones",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4628,7 +5215,7 @@
     "href": "weeks_v2/week-11.html#week-11-milestone",
     "title": "Week 11: Final Package Clinic",
     "section": "Week 11 milestone",
-    "text": "Week 11 milestone\n\nBefore the Object Fair 1. each component answers its own question clearly 2. the weakest component you named is fixed 3. the Object Card reads in 30 seconds 4. the capsule lets a stranger inspect the method",
+    "text": "Week 11 milestone\n\nBefore the Object Fair\n\neach component answers its own question clearly\nthe weakest component you named is fixed\nthe Object Card reads in 30 seconds\nthe capsule lets a stranger inspect the method",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4799,7 +5386,7 @@
     "href": "starter_kits/gh-parametric-variants/README.html",
     "title": "Starter Kit: GH Parametric Variants",
     "section": "",
-    "text": "Launch status: not ready. Spec only.\n\n\nGive students a concrete generative design loop:\ninput geometry -&gt; parameter variation -&gt; multiple variants -&gt; metric export -&gt; threshold decision\n\n\n\n\nRhino base file\nGrasshopper definition\nscreenshot of the GH canvas\nscreenshot of variant outputs\nexported CSV of variant metrics\nexample Object Card figure\n\n\n\n\nFacade shading or aperture variation.\nSuggested variables:\n\nshading depth\nfin spacing\naperture ratio\nrotation angle\n\nSuggested outputs:\n\nsolar exposure proxy\ndaylight proxy\nview/opening ratio\nmaterial quantity proxy\n\n\n\n\nStudents replace the demo geometry or variable range with their own studio decision.\n\n\n\n\nunits are stated\nsliders have realistic ranges\nexported values match visible variants\nat least three variants are compared\none threshold or comparison rule is stated"
+    "text": "Launch status: bridge notes and example metric CSV added. Native GH/Rhino files are still needed.\n\n\nGive students a concrete generative design loop:\ninput geometry -&gt; parameter variation -&gt; multiple variants -&gt; metric export -&gt; threshold decision\n\n\n\n\nRhino base file\nGrasshopper definition\nscreenshot of the GH canvas\nscreenshot of variant outputs\nexported CSV of variant metrics: outputs/facade_variant_metrics_example.csv is currently a code-side example\nexample Object Card figure\n\n\n\n\n\nvariant_log_template.csv\noutputs/facade_variant_metrics_example.csv\ngrasshopper_bridge_notes.md\n\n\n\n\nFacade shading or aperture variation.\nSuggested variables:\n\nshading depth\nfin spacing\naperture ratio\nrotation angle\n\nSuggested outputs:\n\nsolar exposure proxy\ndaylight proxy\nview/opening ratio\nmaterial quantity proxy\n\n\n\n\nStudents replace the demo geometry or variable range with their own studio decision.\n\n\n\n\nunits are stated\nsliders have realistic ranges\nexported values match visible variants\nat least three variants are compared\none threshold or comparison rule is stated"
   },
   {
     "objectID": "starter_kits/gh-parametric-variants/README.html#purpose",
@@ -4813,7 +5400,14 @@
     "href": "starter_kits/gh-parametric-variants/README.html#required-files-to-build",
     "title": "Starter Kit: GH Parametric Variants",
     "section": "",
-    "text": "Rhino base file\nGrasshopper definition\nscreenshot of the GH canvas\nscreenshot of variant outputs\nexported CSV of variant metrics\nexample Object Card figure"
+    "text": "Rhino base file\nGrasshopper definition\nscreenshot of the GH canvas\nscreenshot of variant outputs\nexported CSV of variant metrics: outputs/facade_variant_metrics_example.csv is currently a code-side example\nexample Object Card figure"
+  },
+  {
+    "objectID": "starter_kits/gh-parametric-variants/README.html#current-support-files",
+    "href": "starter_kits/gh-parametric-variants/README.html#current-support-files",
+    "title": "Starter Kit: GH Parametric Variants",
+    "section": "",
+    "text": "variant_log_template.csv\noutputs/facade_variant_metrics_example.csv\ngrasshopper_bridge_notes.md"
   },
   {
     "objectID": "starter_kits/gh-parametric-variants/README.html#demo-scenario",
@@ -4841,7 +5435,7 @@
     "href": "starter_kits/ai-assisted-workflow/README.html",
     "title": "Starter Kit: AI-Assisted Workflow",
     "section": "",
-    "text": "Launch status: not ready. Spec only.\n\n\nShow students how AI can help build a workflow component without becoming unverified evidence.\n\n\n\nBefore launch, build one of:\n\nAI-generated GH Python component\nAI-assisted Python notebook function\nAI-generated workflow documentation\nfailed AI output repaired through manual verification\n\n\n\n\n\ntask prompt\ngenerated output\nfailure or risk\nmanual verification\ncorrected workflow component\ndisclosure statement\n\n\n\n\nStudents use AI for one bounded workflow task or explain why AI is not appropriate.\n\n\n\n\ncode or component runs\nunits and scale are correct\noutput is compared against a manual or known result\nAI role is disclosed\ndesign judgment remains with the student"
+    "text": "Launch status: prompt log and verified function example added.\n\n\nShow students how AI can help build a workflow component without becoming unverified evidence.\n\n\n\n\nexamples/prompt_log_example.md\nexamples/verified_setback_score.py\n\n\n\n\nBefore launch, optionally add one of:\n\nAI-generated GH Python component\nAI-assisted Python notebook function\nAI-generated workflow documentation\nfailed AI output repaired through manual verification\n\n\n\n\n\ntask prompt\ngenerated output\nfailure or risk\nmanual verification\ncorrected workflow component\ndisclosure statement\n\n\n\n\nStudents use AI for one bounded workflow task or explain why AI is not appropriate.\n\n\n\nThe verified setback function is intentionally small enough to paste into GhPython. That makes the teaching point clear: AI can help draft a component, but the student must still test units, thresholds, and known cases.\n\n\n\n\ncode or component runs\nunits and scale are correct\noutput is compared against a manual or known result\nAI role is disclosed\ndesign judgment remains with the student"
   },
   {
     "objectID": "starter_kits/ai-assisted-workflow/README.html#purpose",
@@ -4851,11 +5445,18 @@
     "text": "Show students how AI can help build a workflow component without becoming unverified evidence."
   },
   {
-    "objectID": "starter_kits/ai-assisted-workflow/README.html#required-demo-example",
-    "href": "starter_kits/ai-assisted-workflow/README.html#required-demo-example",
+    "objectID": "starter_kits/ai-assisted-workflow/README.html#files",
+    "href": "starter_kits/ai-assisted-workflow/README.html#files",
     "title": "Starter Kit: AI-Assisted Workflow",
     "section": "",
-    "text": "Before launch, build one of:\n\nAI-generated GH Python component\nAI-assisted Python notebook function\nAI-generated workflow documentation\nfailed AI output repaired through manual verification"
+    "text": "examples/prompt_log_example.md\nexamples/verified_setback_score.py"
+  },
+  {
+    "objectID": "starter_kits/ai-assisted-workflow/README.html#candidate-extensions",
+    "href": "starter_kits/ai-assisted-workflow/README.html#candidate-extensions",
+    "title": "Starter Kit: AI-Assisted Workflow",
+    "section": "",
+    "text": "Before launch, optionally add one of:\n\nAI-generated GH Python component\nAI-assisted Python notebook function\nAI-generated workflow documentation\nfailed AI output repaired through manual verification"
   },
   {
     "objectID": "starter_kits/ai-assisted-workflow/README.html#minimum-demo-loop",
@@ -4872,6 +5473,13 @@
     "text": "Students use AI for one bounded workflow task or explain why AI is not appropriate."
   },
   {
+    "objectID": "starter_kits/ai-assisted-workflow/README.html#grasshopper-bridge",
+    "href": "starter_kits/ai-assisted-workflow/README.html#grasshopper-bridge",
+    "title": "Starter Kit: AI-Assisted Workflow",
+    "section": "",
+    "text": "The verified setback function is intentionally small enough to paste into GhPython. That makes the teaching point clear: AI can help draft a component, but the student must still test units, thresholds, and known cases."
+  },
+  {
     "objectID": "starter_kits/ai-assisted-workflow/README.html#verification-checks",
     "href": "starter_kits/ai-assisted-workflow/README.html#verification-checks",
     "title": "Starter Kit: AI-Assisted Workflow",
@@ -4883,14 +5491,14 @@
     "href": "starter_kits/python-notebook-analysis/README.html",
     "title": "Starter Kit: Python Notebook Analysis",
     "section": "",
-    "text": "Launch status: partial. Existing notebooks are available.\n\n\n\nnotebooks/01_python_ml_basics.ipynb\nnotebooks/02_arch_viz_analysis.ipynb\nfake architecture-flavored CSV files in data/\n\n\n\n\nSupport repeatable analysis, visualization, and lightweight modeling for design evidence.\n\n\n\n\ndesign question\nstructured input table\nanalysis or comparison\nvisualization\nthreshold or recommendation\n\n\n\n\nAdapt one notebook into a complete design-decision demo rather than a general Python primer.\n\n\n\nStudents replace the demo dataset with their own project data or scenario table.\n\n\n\n\nnotebook runs top to bottom\nunits are named\nplots have interpretable labels\nuncertainty or range is shown\noutput supports a design action"
+    "text": "Launch status: runnable script added. Existing notebooks are still available.\n\n\n\nnotebooks/01_python_ml_basics.ipynb\nnotebooks/02_arch_viz_analysis.ipynb\nfake architecture-flavored CSV files in data/\ndata/facade_variants.csv\nfacade_decision_demo.py\n\n\n\n\nSupport repeatable analysis, visualization, and lightweight modeling for design evidence.\n\n\n\n\ndesign question\nstructured input table\nanalysis or comparison\nvisualization\nthreshold or recommendation\n\n\n\n\nFrom this folder:\npython3 facade_decision_demo.py\nThe script exports:\n\noutputs/facade_variant_scores.csv\noutputs/facade_variant_tradeoff.png\n\n\n\n\nStudents replace the demo dataset with their own project data or scenario table.\n\n\n\nRead outputs/facade_variant_scores.csv back into GH to color variants, filter candidates, or compare slider states against the same thresholds.\n\n\n\n\nnotebook runs top to bottom\nunits are named\nplots have interpretable labels\nuncertainty or range is shown\noutput supports a design action"
   },
   {
     "objectID": "starter_kits/python-notebook-analysis/README.html#existing-assets",
     "href": "starter_kits/python-notebook-analysis/README.html#existing-assets",
     "title": "Starter Kit: Python Notebook Analysis",
     "section": "",
-    "text": "notebooks/01_python_ml_basics.ipynb\nnotebooks/02_arch_viz_analysis.ipynb\nfake architecture-flavored CSV files in data/"
+    "text": "notebooks/01_python_ml_basics.ipynb\nnotebooks/02_arch_viz_analysis.ipynb\nfake architecture-flavored CSV files in data/\ndata/facade_variants.csv\nfacade_decision_demo.py"
   },
   {
     "objectID": "starter_kits/python-notebook-analysis/README.html#purpose",
@@ -4907,11 +5515,11 @@
     "text": "design question\nstructured input table\nanalysis or comparison\nvisualization\nthreshold or recommendation"
   },
   {
-    "objectID": "starter_kits/python-notebook-analysis/README.html#needed-before-launch",
-    "href": "starter_kits/python-notebook-analysis/README.html#needed-before-launch",
+    "objectID": "starter_kits/python-notebook-analysis/README.html#demo-run",
+    "href": "starter_kits/python-notebook-analysis/README.html#demo-run",
     "title": "Starter Kit: Python Notebook Analysis",
     "section": "",
-    "text": "Adapt one notebook into a complete design-decision demo rather than a general Python primer."
+    "text": "From this folder:\npython3 facade_decision_demo.py\nThe script exports:\n\noutputs/facade_variant_scores.csv\noutputs/facade_variant_tradeoff.png"
   },
   {
     "objectID": "starter_kits/python-notebook-analysis/README.html#student-adaptation-task",
@@ -4919,6 +5527,13 @@
     "title": "Starter Kit: Python Notebook Analysis",
     "section": "",
     "text": "Students replace the demo dataset with their own project data or scenario table."
+  },
+  {
+    "objectID": "starter_kits/python-notebook-analysis/README.html#grasshopper-bridge",
+    "href": "starter_kits/python-notebook-analysis/README.html#grasshopper-bridge",
+    "title": "Starter Kit: Python Notebook Analysis",
+    "section": "",
+    "text": "Read outputs/facade_variant_scores.csv back into GH to color variants, filter candidates, or compare slider states against the same thresholds."
   },
   {
     "objectID": "starter_kits/python-notebook-analysis/README.html#verification-checks",
@@ -5171,65 +5786,5 @@
     "title": "Python + ML Basics for Architects",
     "section": "",
     "text": "Always hold out test data or use cross-validation\nStart simple; only add complexity if it improves validated performance\nDocument random seeds and settings for reproducibility\n“Deep” models need more data and care; don’t overfit\n\nNext: a richer notebook focused on visualizing pilot results and making figures for stakeholders."
-  },
-  {
-    "objectID": "weeks_v2/week-02.html#an-austerity-argument-built-on-a-spreadsheet-error",
-    "href": "weeks_v2/week-02.html#an-austerity-argument-built-on-a-spreadsheet-error",
-    "title": "Week 2: Audit the Evidence You Already Use",
-    "section": "2010: an austerity argument built on a spreadsheet error",
-    "text": "2010: an austerity argument built on a spreadsheet error\n\nWhat happened A widely cited economics paper (Reinhart & Rogoff) reported that economic growth collapses once public debt passes 90% of GDP. The claim was used to justify austerity policy in several countries. In 2013 a graduate student rechecking the workbook found an Excel formula that left out five rows — once corrected, the dramatic threshold largely disappeared.\n\n\nThe lesson A result nobody can re-open and audit is a vibe with a number attached. Evidence is only as strong as your ability to trace how it was computed.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W2: Evidence Audit"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-03.html#a-copy-paste-error-inside-a-risk-model",
-    "href": "weeks_v2/week-03.html#a-copy-paste-error-inside-a-risk-model",
-    "title": "Week 3: Spreadsheet as the Comparison Layer",
-    "section": "2012: a copy-paste error inside a risk model",
-    "text": "2012: a copy-paste error inside a risk model\n\nWhat happened JPMorgan’s “London Whale” risk model lived in a chain of spreadsheets where values were copied and pasted between cells by hand. One step divided by a sum instead of an average, understating the risk. The losses reached about US$6 billion.\n\n\nThe lesson A spreadsheet is a transparent comparison layer only if its steps are inspectable. Manual copy-paste between cells is exactly where the logic stops being traceable.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W3: Spreadsheet Baseline"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-04.html#s-redlining-maps-that-shaped-cities",
-    "href": "weeks_v2/week-04.html#s-redlining-maps-that-shaped-cities",
-    "title": "Week 4: GIS Choices for Architects",
-    "section": "1930s: redlining maps that shaped cities",
-    "text": "1930s: redlining maps that shaped cities\n\n\n\n\n\nHOLC “residential security” map, Brooklyn, 1930s. Public domain / CC BY-SA, via Wikimedia Commons.\n\n\n\n\n\nWhat it did Home Owners’ Loan Corporation maps graded neighborhoods A–D and colored the “hazardous” ones red. Lenders used them to deny mortgages — a spatial layer that steered investment and segregation for generations.\n\n\nThe lesson A map is a decision instrument, not decoration — and it carries the bias of whoever drew it and how they classified. Choose layers and categories knowing they will drive real action.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W4: GIS Choices"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-05.html#the-performance-gap-models-vs-metered-reality",
-    "href": "weeks_v2/week-05.html#the-performance-gap-models-vs-metered-reality",
-    "title": "Week 5: BIM, BEM, and Building Performance",
-    "section": "The performance gap: models vs metered reality",
-    "text": "The performance gap: models vs metered reality\n\nWhat happens Studies of completed buildings repeatedly find measured energy use two to three times higher than the design-stage model predicted. The model was not “wrong” — its assumptions (occupancy, schedules, controls, construction quality) simply did not match how the building was actually used and built.\n\n\nThe lesson A polished BEM output is a scenario, not a measurement. State the assumptions a performance claim depends on, and name where the real building is likely to diverge.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W5: BIM/BEM"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-08.html#when-the-spreadsheet-silently-rewrote-the-data",
-    "href": "weeks_v2/week-08.html#when-the-spreadsheet-silently-rewrote-the-data",
-    "title": "Week 8: Reproducibility and Mentor Prep",
-    "section": "When the spreadsheet silently rewrote the data",
-    "text": "When the spreadsheet silently rewrote the data\n\nWhat happened Geneticists found that Excel was auto-converting gene names into dates and numbers (for example “SEPT2” became a date). A 2016 study found errors in roughly one in five papers with supplementary spreadsheets — the field eventually renamed the genes rather than fight the software.\n\n\nThe lesson Reproducibility starts with knowing what your tool did to your data. Document formats, versions, and import settings — the failure is invisible until someone re-runs it.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W8: Reproducibility"
-    ]
   }
 ]

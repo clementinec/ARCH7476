@@ -46,6 +46,52 @@ A tool week is still an evidence week. We choose a GIS path only when the **deci
 
 ---
 
+[Course progress]{.kicker}
+
+## This week produces a spatial evidence artifact
+
+::: {.progress-ladder}
+::: {.step .done}
+W1 decision
+:::
+::: {.step .done}
+W2 evidence
+:::
+::: {.step .done}
+W3 comparison
+:::
+::: {.step .current}
+W4 GIS route
+:::
+::: {.step}
+W5 model route
+:::
+::: {.step}
+W6 pathway
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Input]{.label .concept}
+site boundary + transit/noise/green layers as GeoJSON
+:::
+::: {.artifact}
+[Change]{.label .activity}
+buffer distance, overlay rules, scoring weights
+:::
+::: {.artifact}
+[Output]{.label .example}
+site score table + map export + cleaned GeoJSON
+:::
+::: {.artifact}
+[Bridge]{.label .reflect}
+GeoJSON/CSV can be read by Rhino/GH for site geometry and attributes
+:::
+:::
+
+---
+
 [The framing]{.kicker}
 
 ## GIS is not just digital mapping
@@ -67,7 +113,7 @@ If the question is not spatial, a beautiful map is decoration, not evidence.
 
 [Read the site first]{.kicker}
 
-## Stand-alone site prompt
+## Worked site question: Kai Tak
 
 ![Kai Tak Sports Park](../assets/examples/kai-tak-sports-park.jpg){height="480"}
 
@@ -172,26 +218,24 @@ In a GIS notebook, you should be able to point to:
 
 ---
 
-[Tool panel · capture comes later]{.kicker}
+[Tool panel · runnable contract]{.kicker}
 
 ## A `geopandas` operation as a tool
 
-::: {.tool-panel .demo-pending}
+::: {.tool-panel}
 ::: {.zone .input}
-**Input** site polygon + a transit / amenity layer
+**Input** candidate sites + transit stops + noise zones + green-space polygons
 :::
 ::: {.zone .operation}
-**What varies** buffer distance (e.g. 200–600 m)
+**What varies** buffer distance, overlay rule, scoring weights
 :::
 ::: {.zone .output}
-**Output** coverage % per option (per site or per layer)
+**Output** score table, exported map, selected site GeoJSON
 :::
 ::: {.zone .check}
-**Quality check** CRS stated, feature counts spot-checked
+**Quality check** CRS projected, feature counts spot-checked, one distance checked manually
 :::
 :::
-
-The dashed frame means the live capture does not exist yet — we will drop a real cell in, not a faked screenshot.
 
 ---
 
@@ -297,6 +341,7 @@ Learn where to look **before** you start modeling — the data you can get shape
 
 ::: {.example-card}
 [Possible pathway]{.card-title}
+
 - `QGIS` for first-pass layer exploration
 - `geopandas` if repeated comparisons or automation become useful
 :::
@@ -309,6 +354,7 @@ Learn where to look **before** you start modeling — the data you can get shape
 
 ::: {.example-card}
 [Possible pathway]{.card-title}
+
 - GIS for network and catchment logic
 - spreadsheet later for ranking alternatives
 :::
@@ -323,9 +369,54 @@ Pathways can support each other even when one remains primary.
 
 ::: {.example-card}
 [Possible pathway]{.card-title}
+
 - use GIS to select, simplify, and export
 - avoid importing the entire city when only a few layers matter
 :::
+
+---
+
+[Patch to Grasshopper]{.kicker}
+
+## GIS outputs can become Rhino context
+
+::: {.gh-bridge}
+**Bridge pattern**
+Export candidate sites or selected layers as `GeoJSON` / `CSV` -> bring points, curves, polygons, and scores into Rhino/GH -> use them to locate, color, or constrain design variants.
+:::
+
+::: {.bridge-flow}
+::: {.node .current}
+geopandas
+:::
+::: {.node}
+GeoJSON / CSV
+:::
+::: {.node}
+Rhino/GH import
+:::
+::: {.node}
+site geometry + attributes
+:::
+::: {.node}
+placement / access decision
+:::
+:::
+
+The map becomes design evidence only when it changes a geometric or strategic decision.
+
+---
+
+[Uncertainty check]{.kicker}
+
+## Spatial certainty can be fake certainty
+
+::: {.uncertainty-check}
+**Question for your GIS route**
+Is your buffer measuring real access, or just distance on a map?
+:::
+
+Check at least one of these before trusting the output: CRS, walking network vs straight-line distance, data date, missing entrances, and layer source.
 
 ---
 
@@ -364,6 +455,7 @@ No one tool wins everything. **Fit** to the decision is what matters.
 
 ::: {.activity-card}
 [Choose your own project and write down]{.card-title}
+
 - the spatial question
 - the smallest useful spatial output
 - the minimum input layers needed

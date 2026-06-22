@@ -365,6 +365,47 @@
 </section>
 <section class="slide level2 center">
 
+<p><span class="kicker">Course progress</span></p>
+</section>
+<section id="this-week-produces-a-prototype-artifact" class="slide level2 center">
+<h2>This week produces a prototype artifact</h2>
+<div class="progress-ladder">
+<div class="step done">
+<p>A2 route</p>
+</div>
+<div class="step current">
+<p>prototype</p>
+</div>
+<div class="step">
+<p>verify</p>
+</div>
+<div class="step">
+<p>threshold</p>
+</div>
+<div class="step">
+<p>draft</p>
+</div>
+<div class="step">
+<p>handoff</p>
+</div>
+</div>
+<div class="artifact-strip">
+<div class="artifact">
+<p><span class="label concept">Input</span> the files, geometry, data, or scenario table your route needs</p>
+</div>
+<div class="artifact">
+<p><span class="label activity">Run</span> one function/component/notebook/definition with a visible changed output</p>
+</div>
+<div class="artifact">
+<p><span class="label example">Export</span> output figure, CSV/JSON/GeoJSON, GH canvas, screenshot, or notebook cell</p>
+</div>
+<div class="artifact">
+<p><span class="label reflect">Verify</span> one known test case and one failure/fragility note</p>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
 <p><span class="kicker">The core idea</span></p>
 </section>
 <section id="minimal-viable-workflow" class="slide level2 center">
@@ -411,7 +452,7 @@
 <section id="the-prototype-frame-four-zones" class="slide level2 center">
 <h2>The prototype frame — four zones</h2>
 <p>Read any workflow as four zones. If you can fill all four honestly, you have a prototype, not just a file.</p>
-<div class="tool-panel demo-pending">
+<div class="tool-panel">
 <div class="zone input">
 <p><strong>Input</strong> the real files, data, or model the method starts from</p>
 </div>
@@ -425,9 +466,62 @@
 <p><strong>Quality check</strong> what proves the run was valid, not just that it ran</p>
 </div>
 </div>
-<div class="example-card">
-<p>A screenshot of your tool running drops into this frame once you have one. Until then it stays marked pending — honest, not faked.</p>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Grasshopper translation</span></p>
+</section>
+<section id="a-gh-component-is-a-packed-function" class="slide level2 center">
+<h2>A GH component is a packed function</h2>
+<div class="function-contract">
+<p><strong>Function contract</strong> Inputs have names, types, units, and allowed ranges. The operation changes something. Outputs have names, types, and units. A quality check proves the component did not just produce a plausible-looking answer.</p>
 </div>
+<table>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Route</th>
+<th>Function form</th>
+<th>Visible change</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>spreadsheet</td>
+<td>formula / decision rule</td>
+<td>selected variant or score changes</td>
+</tr>
+<tr class="even">
+<td><code>geopandas</code></td>
+<td>buffer / overlay / score function</td>
+<td>site rank or map layer changes</td>
+</tr>
+<tr class="odd">
+<td>Python</td>
+<td>analysis function</td>
+<td>plot or metric changes</td>
+</tr>
+<tr class="even">
+<td>GH</td>
+<td>cluster / GhPython component</td>
+<td>geometry variant changes</td>
+</tr>
+<tr class="odd">
+<td>BIM/BEM proxy</td>
+<td>scenario function</td>
+<td>daylight/heat-risk score changes</td>
+</tr>
+<tr class="even">
+<td>AI-assisted</td>
+<td>drafted function, manually checked</td>
+<td>output changes after repair</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="reproducibility-lessons-from-practice" class="slide level2 center">
 <h2>Reproducibility lessons from practice</h2>
@@ -512,10 +606,21 @@
 <h2>Documentation Template</h2>
 <div class="two-col">
 <div class="concept-card">
-<p><span class="card-title">Workflow</span> - what the method is for - what files or inputs are required - what tools are required</p>
+<p><span class="card-title">Workflow</span></p>
+<ul>
+<li class="fragment">what the method is for</li>
+<li class="fragment">what files or inputs are required</li>
+<li class="fragment">what tools are required</li>
+</ul>
 </div>
 <div class="activity-card">
-<p><span class="card-title">Step-by-step</span> 1. do this 2. check this 3. if this fails, try this 4. export this</p>
+<p><span class="card-title">Step-by-step</span></p>
+<ol type="1">
+<li class="fragment">do this</li>
+<li class="fragment">check this</li>
+<li class="fragment">if this fails, try this</li>
+<li class="fragment">export this</li>
+</ol>
 </div>
 </div>
 </section>
@@ -523,10 +628,19 @@
 <h2>Documentation Template (cont’d)</h2>
 <div class="two-col">
 <div class="warning-card">
-<p><span class="card-title">Troubleshooting</span> - common error - warning sign - likely fix</p>
+<p><span class="card-title">Troubleshooting</span></p>
+<ul>
+<li class="fragment">common error</li>
+<li class="fragment">warning sign</li>
+<li class="fragment">likely fix</li>
+</ul>
 </div>
 <div class="concept-card">
-<p><span class="card-title">Quality check</span> - what success looks like - what a red flag looks like</p>
+<p><span class="card-title">Quality check</span></p>
+<ul>
+<li class="fragment">what success looks like</li>
+<li class="fragment">what a red flag looks like</li>
+</ul>
 </div>
 </div>
 <div class="reflection-card">
@@ -540,7 +654,13 @@
 <section id="documentation-swap" class="slide level2 center">
 <h2>Documentation Swap</h2>
 <div class="activity-card">
-<p><span class="card-title">Do this now</span> 1. swap instructions with someone using a <strong>different</strong> route 2. no verbal explanation allowed 3. try to follow their method 4. record what is missing, unclear, or fragile</p>
+<p><span class="card-title">Do this now</span></p>
+<ol type="1">
+<li class="fragment">swap instructions with someone using a <strong>different</strong> route</li>
+<li class="fragment">no verbal explanation allowed</li>
+<li class="fragment">try to follow their method</li>
+<li class="fragment">record what is missing, unclear, or fragile</li>
+</ol>
 </div>
 <p>This is the fastest way to learn whether your workflow is genuinely reproducible or only familiar to you.</p>
 </section>
@@ -551,32 +671,94 @@
 <p>That does not mean the project is weak. It means the workflow needs <strong>one more layer of translation</strong> before someone else can inspect it.</p>
 </div>
 </section>
-<section id="pathway-breakout-prompts" class="slide level2 center">
-<h2>Pathway breakout prompts</h2>
+<section id="pathway-breakout-checks" class="slide level2 center">
+<h2>Pathway breakout checks</h2>
 <div class="two-col">
 <div class="concept-card">
-<p><span class="card-title">Spreadsheet</span> - what table structure does the method depend on? - which formula or chart is most fragile?</p>
+<p><span class="card-title">Spreadsheet</span></p>
+<ul>
+<li class="fragment">what table structure does the method depend on?</li>
+<li class="fragment">which formula or chart is most fragile?</li>
+</ul>
 </div>
 <div class="concept-card">
-<p><span class="card-title">GIS</span> - what layer preparation is essential? - which operation sequence must be documented exactly?</p>
+<p><span class="card-title">GIS</span></p>
+<ul>
+<li class="fragment">what layer preparation is essential?</li>
+<li class="fragment">which operation sequence must be documented exactly?</li>
+</ul>
 </div>
 </div>
 <div class="two-col">
 <div class="concept-card">
-<p><span class="card-title">Python</span> - what notebook cells define the real logic? - what package, path, or file assumptions must be stated?</p>
+<p><span class="card-title">Python</span></p>
+<ul>
+<li class="fragment">what notebook cells define the real logic?</li>
+<li class="fragment">what package, path, or file assumptions must be stated?</li>
+</ul>
 </div>
 <div class="concept-card">
-<p><span class="card-title">GH / parametric</span> - what sliders or constraints define the design space? - what output proves the variants are comparable?</p>
+<p><span class="card-title">GH / parametric</span></p>
+<ul>
+<li class="fragment">what sliders or constraints define the design space?</li>
+<li class="fragment">what output proves the variants are comparable?</li>
+</ul>
 </div>
 </div>
 <div class="two-col">
 <div class="concept-card">
-<p><span class="card-title">BIM/BEM / simulation</span> - what model assumptions dominate the result? - what setup choices must be documented first?</p>
+<p><span class="card-title">BIM/BEM / simulation</span></p>
+<ul>
+<li class="fragment">what model assumptions dominate the result?</li>
+<li class="fragment">what setup choices must be documented first?</li>
+</ul>
 </div>
 <div class="concept-card">
-<p><span class="card-title">AI-assisted</span> - what did AI generate or edit? - what manual check confirms the output is usable?</p>
+<p><span class="card-title">AI-assisted</span></p>
+<ul>
+<li class="fragment">what did AI generate or edit?</li>
+<li class="fragment">what manual check confirms the output is usable?</li>
+</ul>
 </div>
 </div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Patch to Grasshopper</span></p>
+</section>
+<section id="every-prototype-needs-an-ingestion-path" class="slide level2 center">
+<h2>Every prototype needs an ingestion path</h2>
+<div class="gh-bridge">
+<p><strong>Bridge card for A3</strong> What file or value leaves your workflow, what GH component reads it, what geometry/parameter it affects, and what visual change proves the bridge works?</p>
+</div>
+<div class="bridge-flow">
+<div class="node current">
+<p>prototype output</p>
+</div>
+<div class="node">
+<p>CSV / JSON / screenshot</p>
+</div>
+<div class="node">
+<p>GH / package ingest</p>
+</div>
+<div class="node">
+<p>visible change</p>
+</div>
+<div class="node">
+<p>quality check</p>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Uncertainty check</span></p>
+</section>
+<section id="a-working-prototype-can-still-be-wrong" class="slide level2 center">
+<h2>A working prototype can still be wrong</h2>
+<div class="uncertainty-check">
+<p><strong>Question for your A3</strong> What is the smallest input change that would make your prototype output visibly different?</p>
+</div>
+<p>If no visible change appears, either the workflow is not sensitive enough, the output is not meaningful, or the connection is broken.</p>
 </section>
 <section id="capture-the-decision-logic-too" class="slide level2 center">
 <h2>Capture the decision logic too</h2>
@@ -608,7 +790,12 @@
 <section id="mentor-question-development" class="slide level2 center">
 <h2>Mentor question development</h2>
 <div class="activity-card">
-<p><span class="card-title">Write three questions</span> 1. one <strong>technical</strong> question 2. one <strong>methodological</strong> question 3. one <strong>strategic</strong> question about scope or decision relevance</p>
+<p><span class="card-title">Write three questions</span></p>
+<ol type="1">
+<li class="fragment">one <strong>technical</strong> question</li>
+<li class="fragment">one <strong>methodological</strong> question</li>
+<li class="fragment">one <strong>strategic</strong> question about scope or decision relevance</li>
+</ol>
 </div>
 <div class="warning-card">
 <p>If the question is generic, it is not ready. A good question points at a specific zone of your loop.</p>
@@ -687,7 +874,15 @@
 <h2>By the End of This Week</h2>
 <p>You should leave with:</p>
 <div class="concept-card">
-<p><span class="card-title">Week 7 milestone</span> - a first working artifact - documentation that survives a swap test - a list of fragile steps and assumptions - three sharp mentor questions - a clearer story for A3</p>
+<p><span class="card-title">Week 7 milestone</span></p>
+<ul>
+<li class="fragment">a first working artifact</li>
+<li class="fragment">a function/component contract with inputs, output, and quality check</li>
+<li class="fragment">documentation that survives a swap test</li>
+<li class="fragment">a list of fragile steps and assumptions</li>
+<li class="fragment">three sharp mentor questions</li>
+<li class="fragment">a clearer story for A3</li>
+</ul>
 </div>
 <p>A3 is <strong>started, not finished</strong> — Weeks 8–9 verify the method and build toward the Prototype + Verification package.</p>
 

@@ -1,0 +1,8 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type": "Feature", "properties": {"stop_id": "T1", "mode": "bus"}, "geometry": {"type": "Point", "coordinates": [45, -40]}},
+    {"type": "Feature", "properties": {"stop_id": "T2", "mode": "rail"}, "geometry": {"type": "Point", "coordinates": [330, 170]}},
+    {"type": "Feature", "properties": {"stop_id": "T3", "mode": "bus"}, "geometry": {"type": "Point", "coordinates": [115, 360]}}
+  ]
+}

@@ -45,6 +45,52 @@ This is decision support, not decoration. We help each other turn finished analy
 
 ---
 
+[Course progress]{.kicker}
+
+## This week produces the first A4-facing artifact
+
+::: {.progress-ladder}
+::: {.step .done}
+prototype
+:::
+::: {.step .done}
+verification
+:::
+::: {.step .current}
+threshold
+:::
+::: {.step .current}
+object card
+:::
+::: {.step}
+draft package
+:::
+::: {.step}
+handoff
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Input]{.label .concept}
+A3 output, chart, map, model result, or variant table
+:::
+::: {.artifact}
+[Change]{.label .activity}
+figure title, threshold, uncertainty note, recommendation sentence
+:::
+::: {.artifact}
+[Output]{.label .example}
+object-card draft + one decision-ready figure
+:::
+::: {.artifact}
+[Feeds]{.label .reflect}
+A3 final output and A4 Practice Case/Object Card
+:::
+:::
+
+---
+
 [The problem]{.kicker}
 
 ## When good research goes bad
@@ -54,6 +100,7 @@ Strong work can still fail at the moment it reaches an audience.
 :::: {.two-col}
 ::: {.warning-card}
 [Case 1 · method over message]{.card-title}
+
 - great method
 - weak message
 - the audience hears process, not action
@@ -61,6 +108,7 @@ Strong work can still fail at the moment it reaches an audience.
 
 ::: {.warning-card}
 [Case 2 · correct but unclear]{.card-title}
+
 - technically correct charts
 - no clear takeaway
 - the status quo survives because the room stays confused
@@ -138,6 +186,7 @@ The figure **located the cause**, so the action was obvious: remove the Broad St
 :::: {.two-col}
 ::: {.warning-card}
 [Do not begin with]{.card-title}
+
 - software
 - methods jargon
 - every intermediate step
@@ -145,6 +194,7 @@ The figure **located the cause**, so the action was obvious: remove the Broad St
 
 ::: {.activity-card}
 [Begin with]{.card-title}
+
 - the decision
 - the stake
 - the missing evidence
@@ -153,7 +203,7 @@ The figure **located the cause**, so the action was obvious: remove the Broad St
 
 ---
 
-## Stand-alone prompt
+## Worked stakeholder question
 
 ![The Edge, Amsterdam](../assets/examples/the-edge-amsterdam.jpg){height="460"}
 
@@ -216,6 +266,7 @@ One dominant visual comparison can carry an argument that columns of numbers can
 :::: {.two-col}
 ::: {.warning-card}
 [Before · the weak figure]{.card-title}
+
 - five series, no focus
 - title reads "Results — Final"
 - legend the reader must decode
@@ -225,6 +276,7 @@ One dominant visual comparison can carry an argument that columns of numbers can
 
 ::: {.activity-card}
 [After · the cleaned figure]{.card-title}
+
 - one message, two series compared
 - title states the takeaway in words
 - the winning option labelled directly
@@ -344,6 +396,7 @@ Where the evidence is weakest and what would change the conclusion — small, ho
 
 ::: {.activity-card}
 [Check your draft for]{.card-title}
+
 - message hierarchy
 - visual hierarchy
 - stakeholder-friendly language
@@ -412,6 +465,50 @@ A strong recommendation also says:
 - why another option may still be reasonable
 - what additional evidence would strengthen confidence
 :::
+
+---
+
+[Patch to Grasshopper]{.kicker}
+
+## A figure can still feed back into geometry
+
+::: {.gh-bridge}
+**Bridge pattern**
+Use your figure or threshold to revise the GH design space: narrow a slider range, reject a variant family, color variants by risk, or export a final recommendation table.
+:::
+
+::: {.bridge-flow}
+::: {.node .current}
+A3 output
+:::
+::: {.node}
+threshold
+:::
+::: {.node}
+object card
+:::
+::: {.node}
+GH range / color
+:::
+::: {.node}
+design action
+:::
+:::
+
+If the figure does not change any action, it is not yet a decision figure.
+
+---
+
+[Uncertainty check]{.kicker}
+
+## Thresholds are decisions, not facts
+
+::: {.uncertainty-check}
+**Question for Week 9**
+Who would disagree with your threshold, and what evidence would they use to move it?
+:::
+
+Write that disagreement into the limitation note. A strong recommendation can survive a named counter-argument.
 
 ---
 

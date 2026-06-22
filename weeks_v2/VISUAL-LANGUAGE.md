@@ -94,12 +94,11 @@ Nodes: Decision · Evidence · Variation · Output · Threshold · Action.
 ```
 
 ### Tool / instrument panel — `.tool-panel`
-The "show a tool running" frame. Four zones; a real screenshot/cell/canvas
-drops in later. Add `.demo-pending` (dashed) when the capture does not exist
-yet — honest, not faked.
+The "show a tool running" frame. Four zones. Use it only when the slide names
+a runnable contract, export target, or verification target.
 
 ```markdown
-::: {.tool-panel .demo-pending}
+::: {.tool-panel}
 ::: {.zone .input}
 **Input** site polygon + transit layer
 :::
@@ -124,6 +123,20 @@ person. Keep them visually and sequentially separate (teach first, then audit).
 - `[feeds A2]{.feeds-tag}` — links Session 2 work to its assignment.
 - `::: {.grading-note} … :::` — how the week's participation is graded.
 - `## BREAK {.big-break}` — full-bleed dark break moment.
+
+### Progress & flow components (multi-class — mind the dots)
+
+**Every extra class needs its own dot.** Write `{.step .done}`, never
+`{.step done}` — pandoc silently drops a bare word, so the state class never
+applies and the component looks orphaned.
+
+- `.progress-ladder` with `.step`, `.step .done`, `.step .current` — the
+  semester-progress strip at the top of a deck.
+- `.artifact-strip` with `.artifact` — what this week takes in / changes / outputs.
+- `.tool-ledger` with `.slot .core` / `.slot .peer` / `.slot .explore` — the
+  three Session-2 roster lanes.
+- `.bridge-flow` with `.node`, `.node .current` — a small left-to-right flow.
+  Note: this uses `.current`, while `.spine-rail` uses `.is-current`.
 
 ## Tone rules (non-negotiable)
 - Nurturing, not competitive. **No** gladiator / arena / championship /

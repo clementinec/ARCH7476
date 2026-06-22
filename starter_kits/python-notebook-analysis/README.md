@@ -7,13 +7,15 @@ format:
 
 # Python Notebook Analysis
 
-**Launch status:** partial. Existing notebooks are available.
+**Launch status:** runnable script added. Existing notebooks are still available.
 
 ## Existing Assets
 
 - `notebooks/01_python_ml_basics.ipynb`
 - `notebooks/02_arch_viz_analysis.ipynb`
 - fake architecture-flavored CSV files in `data/`
+- `data/facade_variants.csv`
+- `facade_decision_demo.py`
 
 ## Purpose
 
@@ -27,13 +29,26 @@ Support repeatable analysis, visualization, and lightweight modeling for design 
 4. visualization
 5. threshold or recommendation
 
-## Needed Before Launch
+## Demo Run
 
-Adapt one notebook into a complete design-decision demo rather than a general Python primer.
+From this folder:
+
+```bash
+python3 facade_decision_demo.py
+```
+
+The script exports:
+
+- `outputs/facade_variant_scores.csv`
+- `outputs/facade_variant_tradeoff.png`
 
 ## Student Adaptation Task
 
 Students replace the demo dataset with their own project data or scenario table.
+
+## Grasshopper Bridge
+
+Read `outputs/facade_variant_scores.csv` back into GH to color variants, filter candidates, or compare slider states against the same thresholds.
 
 ## Verification Checks
 
@@ -42,4 +57,3 @@ Students replace the demo dataset with their own project data or scenario table.
 - plots have interpretable labels
 - uncertainty or range is shown
 - output supports a design action
-

@@ -45,6 +45,52 @@ This is a clinic, not a contest. We refine the **work**, find the weakest compon
 
 ---
 
+[Course progress]{.kicker}
+
+## This week finalizes the handoff artifact
+
+::: {.progress-ladder}
+::: {.step .done}
+A1 board
+:::
+::: {.step .done}
+A2 contract
+:::
+::: {.step .done}
+A3 output
+:::
+::: {.step .done}
+threshold
+:::
+::: {.step .done}
+draft
+:::
+::: {.step .current}
+handoff
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Practice]{.label .concept}
+2-slide decision memo: what changed and what to do
+:::
+::: {.artifact}
+[Research]{.label .activity}
+2-page method brief: how you know and what remains uncertain
+:::
+::: {.artifact}
+[Object]{.label .example}
+1-page card: dominant figure, threshold, recommendation
+:::
+::: {.artifact}
+[Capsule]{.label .reflect}
+README, files, sources, prompt/code notes, verification log
+:::
+:::
+
+---
+
 [The spine of the week]{.kicker}
 
 ## Four components, one package
@@ -122,6 +168,35 @@ Polish is not decoration. It is making each link legible.
 
 ---
 
+[Handoff map]{.kicker}
+
+## The package is a small inspectable archive
+
+::: {.bridge-flow}
+::: {.node .current}
+decision memo
+:::
+::: {.node}
+method brief
+:::
+::: {.node}
+object card
+:::
+::: {.node}
+source files
+:::
+::: {.node}
+verification log
+:::
+:::
+
+::: {.gh-bridge}
+**Bridge pattern**
+If your workflow uses GH, the capsule includes the `.gh` file or screenshots, exported variant table, component/function contract, and one note explaining which sliders or inputs should be changed next.
+:::
+
+---
+
 # Visual-polish lab {.big-break}
 
 Bring your weakest figure and your Object Card draft.
@@ -153,6 +228,7 @@ The Object Card is the one artifact most viewers actually read. It must stand al
 :::: {.two-col}
 ::: {.concept-card}
 [What it must carry]{.card-title}
+
 - the decision and who it is for
 - one figure that carries the message
 - the recommendation, in plain language
@@ -175,6 +251,7 @@ The Research Brief and Practice Case carry the argument. Tighten them.
 
 ::: {.activity-card}
 [8-minute writing pass]{.card-title}
+
 1. **Opening** — does the first paragraph state the decision, finding, and action?
 2. **Thread** — is the stakeholder's relevance clear all the way through?
 3. **Evidence** — is confidence matched to the strength of the evidence?
@@ -184,6 +261,19 @@ The Research Brief and Practice Case carry the argument. Tighten them.
 ::: {.warning-card}
 State uncertainty plainly. Overclaiming weakens credibility faster than admitting a limit ever will.
 :::
+
+---
+
+[Uncertainty check]{.kicker}
+
+## Final polish should not polish away doubt
+
+::: {.uncertainty-check}
+**Question for Week 11**
+Which caveat would change the recommendation if it turned out worse than expected?
+:::
+
+That caveat belongs on the Object Card or in the Practice Case, not buried in the capsule.
 
 ---
 
@@ -236,6 +326,7 @@ A question is a chance to show your reasoning, not an attack to defend against. 
 
 ::: {.activity-card}
 [The response shape]{.card-title}
+
 1. **Acknowledge** — "Good question about ___."
 2. **Answer** — "Here is what I found / checked."
 3. **Connect** — "What this means for your decision is ___."
@@ -324,6 +415,7 @@ A calm checklist, not a performance plan.
 :::: {.two-col}
 ::: {.activity-card}
 [Before you arrive]{.card-title}
+
 - test any display or files early
 - set up the Object Card where it reads at a glance
 - have the capsule index ready to point to
@@ -331,6 +423,7 @@ A calm checklist, not a performance plan.
 
 ::: {.activity-card}
 [During the fair]{.card-title}
+
 - open with the decision and who it is for
 - let the one figure do the work
 - answer questions in the four-move shape
@@ -344,6 +437,7 @@ A calm checklist, not a performance plan.
 
 ::: {.concept-card}
 [Before the Object Fair]{.card-title}
+
 1. each component answers its own question clearly
 2. the weakest component you named is fixed
 3. the Object Card reads in 30 seconds

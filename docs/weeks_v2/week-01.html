@@ -441,6 +441,57 @@
 </section>
 <section class="slide level2 center">
 
+<p><span class="kicker">The take-away objects</span></p>
+</section>
+<section id="what-you-physically-make" class="slide level2 center">
+<h2>What you physically make</h2>
+<p>The course is not a set of prompts. Every phase leaves an artifact that can be inspected, reused, or patched into a design workflow.</p>
+<div class="artifact-strip">
+<div class="artifact">
+<p><span class="label activity">A1 · recall board</span> one past decision, original evidence, weak links, missing variable</p>
+</div>
+<div class="artifact">
+<p><span class="label concept">A2 · pathway contract</span> evidence map, workflow route, A4 branch, smallest useful output</p>
+</div>
+<div class="artifact">
+<p><span class="label example">A3 · prototype</span> runnable or inspectable workflow, variant output, verification log</p>
+</div>
+<div class="artifact">
+<p><span class="label reflect">A4 · handoff package</span> practice case, research brief, object card, reproducibility capsule</p>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Course progress</span></p>
+</section>
+<section id="artifact-progress-bar" class="slide level2 center">
+<h2>Artifact progress bar</h2>
+<p>Each week moves one object from rough material to a handoff artifact.</p>
+<div class="progress-ladder">
+<div class="step current">
+<p>W1 decision</p>
+</div>
+<div class="step">
+<p>W2 evidence</p>
+</div>
+<div class="step">
+<p>W3 comparison</p>
+</div>
+<div class="step">
+<p>W4-6 pathway</p>
+</div>
+<div class="step">
+<p>W7-9 prototype</p>
+</div>
+<div class="step">
+<p>W10-12 package</p>
+</div>
+</div>
+<p>Today’s visible output: one past project visual + one tool-strength/wishlist entry.</p>
+</section>
+<section class="slide level2 center">
+
 <p><span class="kicker">The recurring engine</span></p>
 </section>
 <section id="look-harder-at-what-you-already-did" class="slide level2 center">
@@ -602,11 +653,39 @@
 </section>
 <section class="slide level2 center">
 
+<p><span class="kicker">The GH bridge</span></p>
+</section>
+<section id="every-pathway-can-talk-to-grasshopper" class="slide level2 center">
+<h2>Every pathway can talk to Grasshopper</h2>
+<p>Most of you will return to Grasshopper. That is fine. The point is to make the route into a clean function before it becomes a component.</p>
+<div class="bridge-flow">
+<div class="node current">
+<p>external workflow</p>
+</div>
+<div class="node">
+<p>visible output change</p>
+</div>
+<div class="node">
+<p>CSV / JSON / GeoJSON</p>
+</div>
+<div class="node">
+<p>GH read / GhPython</p>
+</div>
+<div class="node">
+<p>design action</p>
+</div>
+</div>
+<div class="function-contract">
+<p><strong>Grasshopper component = packed function</strong> Inputs go in, an operation happens inside, outputs come out. The course asks you to name the inputs, units, ranges, output, and quality check before you trust the component.</p>
+</div>
+</section>
+<section class="slide level2 center">
+
 <p><span class="kicker">Do this at the first lecture</span></p>
 </section>
 <section id="declare-your-two-tools" class="slide level2 center">
 <h2>Declare your two tools</h2>
-<p>Post both to the Slack channel now — this is your record for the semester.</p>
+<p>Post both to the Slack channel now. They become the class Tool Coverage Board, not a disappearing survey.</p>
 <div class="two-col">
 <div class="warning-card">
 <p><span class="card-title">1 · The tool I want to learn</span> The one you feel you <strong>need</strong> for your studio work and cannot yet use well.</p>
@@ -616,19 +695,52 @@
 </div>
 </div>
 <div class="grading-note">
-<p>I read both columns. They become the walk-through roster and the class wishlist.</p>
+<p>These two columns become the walk-through roster and the class wishlist.</p>
 </div>
 </section>
 <section id="how-the-wishlist-is-used" class="slide level2 center">
 <h2>How the wishlist is used</h2>
-<div class="concept-card">
-<p>Your “want to learn” + your classmates’ “I’d teach” are a <strong>matching market</strong>.</p>
-</div>
+<p>Wishlist items are sorted visibly, then revisited weekly.</p>
+<div class="tool-ledger">
+<div class="slot core">
+<p><span class="label activity">Core supported</span></p>
 <ul>
-<li class="fragment">if a classmate is strong in what you want, they may walk us through it</li>
-<li class="fragment">the <strong>top shared wishes</strong> get covered together later in the semester</li>
-<li class="fragment">where a wish is a small custom tool, the answer becomes <strong>build it yourself</strong> (at best effort) — by the end, that can mean vibe-coding a Grasshopper component</li>
+<li class="fragment">spreadsheet thresholds</li>
+<li class="fragment">BIM-derived proxy</li>
+<li class="fragment"><code>geopandas</code></li>
+<li class="fragment">Python notebook</li>
+<li class="fragment">AI verification</li>
 </ul>
+</div>
+<div class="slot peer">
+<p><span class="label concept">Peer supported</span></p>
+<ul>
+<li class="fragment">GH clusters</li>
+<li class="fragment">Ladybug setup</li>
+<li class="fragment">mapping tricks from real use</li>
+</ul>
+</div>
+<div class="slot explore">
+<p><span class="label example">Exploratory</span></p>
+<ul>
+<li class="fragment">special plugins</li>
+<li class="fragment">office workflows</li>
+<li class="fragment">custom scripts</li>
+</ul>
+</div>
+</div>
+<p>Each week we mark: <strong>mapped today</strong>, <strong>partially mapped</strong>, <strong>still unsupported</strong>, or <strong>out of scope this term</strong>.</p>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">The uncertainty habit</span></p>
+</section>
+<section id="the-course-contribution" class="slide level2 center">
+<h2>The course contribution</h2>
+<p>Tools make outputs look certain. Architecture usually is not.</p>
+<div class="uncertainty-check">
+<p><strong>Ask every week</strong> What did the tool make easier to see, and what assumption did it make easier to hide?</p>
+</div>
 <p>I am at the table too: I declare, I walk through, and I get audited like everyone else.</p>
 </section>
 <section id="break" class="slide level2 big-break center">

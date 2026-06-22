@@ -45,6 +45,52 @@ This is a tool week, but the question stays the same: what would make a performa
 
 ---
 
+[Course progress]{.kicker}
+
+## This week produces a model-assumption artifact
+
+::: {.progress-ladder}
+::: {.step .done}
+W3 comparison
+:::
+::: {.step .done}
+W4 GIS
+:::
+::: {.step .current}
+W5 BIM/BEM
+:::
+::: {.step}
+W6 pathway
+:::
+::: {.step}
+W7 prototype
+:::
+::: {.step}
+W8 verify
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Input]{.label .concept}
+BIM-derived room/facade parameters, not a magical BIM import
+:::
+::: {.artifact}
+[Change]{.label .activity}
+WWR, shading depth, orientation, glazing, schedule assumptions
+:::
+::: {.artifact}
+[Output]{.label .example}
+daylight/heat-risk proxy, scenario table, uncertainty note
+:::
+::: {.artifact}
+[Bridge]{.label .reflect}
+variant metrics can return to GH/Ladybug/Honeybee as parameters or checks
+:::
+:::
+
+---
+
 [Why this week matters]{.kicker}
 
 ## Even if you never run a simulation
@@ -103,7 +149,7 @@ How will it behave over time when weather, people, and systems act on it?
 
 ## Same building, two models
 
-::: {.tool-panel .demo-pending}
+::: {.tool-panel}
 ::: {.zone .input}
 **BIM view** walls · rooms · floors · doors · material layers · element relationships
 :::
@@ -121,6 +167,27 @@ How will it behave over time when weather, people, and systems act on it?
 ::: {.warning-card}
 [Commonly fails to translate]{.card-title}
 Thermal **zoning**, occupancy and system **schedules**, real **constructions** (R-value, SHGC, mass), and building **orientation**.
+:::
+
+---
+
+[Minimum supported input]{.kicker}
+
+## BIM-derived input schema
+
+For this course, the reliable minimum is not "import my whole model." It is a small table students can export, measure, or enter from Rhino/Revit.
+
+| Field | Unit / type | Why it matters |
+|---|---|---|
+| room depth | m | daylight penetration and cooling-load proxy |
+| facade orientation | N/E/S/W or degrees | solar exposure and glare risk |
+| window-to-wall ratio | 0-1 | daylight gain and heat gain |
+| shading depth | m | solar control and view/daylight trade-off |
+| glazing U-value / SHGC | numeric | envelope performance assumption |
+| obstruction factor | 0-1 | context/shading simplification |
+
+::: {.warning-card}
+If this table cannot be filled honestly, a more advanced simulation will only hide the uncertainty better.
 :::
 
 ---
@@ -143,6 +210,31 @@ Thermal **zoning**, occupancy and system **schedules**, real **constructions** (
 - occupancy schedules
 - HVAC systems and control logic
 - weather and shading context
+
+---
+
+[Runnable proxy]{.kicker}
+
+## The performance demo is a scenario file
+
+The minimum runnable route uses a small `scenario.json` or table before any full EnergyPlus/Radiance setup.
+
+::: {.tool-panel}
+::: {.zone .input}
+**Input** room/facade schema + weather/season assumption
+:::
+::: {.zone .operation}
+**What varies** WWR, shading depth, orientation, glazing, schedule
+:::
+::: {.zone .output}
+**Output** daylight proxy, heat-risk proxy, comfort-risk note
+:::
+::: {.zone .check}
+**Quality check** units, range, and one known hand-check are stated
+:::
+:::
+
+This proxy is not the final truth. It is the fast test that tells you whether a full Ladybug/Honeybee/Radiance workflow is worth the setup.
 
 ---
 
@@ -349,6 +441,7 @@ Both are bridges. Neither is a perfect bridge.
 :::: {.two-col}
 ::: {.example-card}
 [Ideal]{.card-title}
+
 1. update BIM
 2. export cleanly
 3. update BEM automatically
@@ -358,6 +451,7 @@ Both are bridges. Neither is a perfect bridge.
 
 ::: {.warning-card}
 [Real]{.card-title}
+
 1. export once
 2. spend days cleaning the BEM
 3. design changes continue
@@ -384,12 +478,14 @@ Both are bridges. Neither is a perfect bridge.
 :::: {.two-col}
 ::: {.example-card}
 [Week 1]{.card-title}
+
 - export appears successful
 - team believes the workflow is seamless
 :::
 
 ::: {.warning-card}
 [Week 2]{.card-title}
+
 - 465 thermal zones created instead of about 30
 - HVAC missing
 - generic constructions everywhere
@@ -404,6 +500,7 @@ Both are bridges. Neither is a perfect bridge.
 :::: {.two-col}
 ::: {.activity-card}
 [Weeks 3-4]{.card-title}
+
 - merge zones manually
 - define constructions and material properties
 - build schedules and HVAC systems
@@ -412,6 +509,7 @@ Both are bridges. Neither is a perfect bridge.
 
 ::: {.warning-card}
 [Week 8]{.card-title}
+
 - design changes arrive
 - re-export means losing cleanup work
 - manual updates begin and divergence starts
@@ -478,6 +576,50 @@ A polished BEM output is a scenario, not a measurement. State the assumptions a 
 
 ---
 
+[Patch to Grasshopper]{.kicker}
+
+## Performance outputs can steer GH variants
+
+::: {.gh-bridge}
+**Bridge pattern**
+Use GH/Ladybug/Honeybee or a Python proxy to generate variant metrics -> export `variant_metrics.csv` -> attach daylight/heat-risk scores to GH geometry variants.
+:::
+
+::: {.bridge-flow}
+::: {.node .current}
+BIM-derived schema
+:::
+::: {.node}
+scenario run
+:::
+::: {.node}
+metrics CSV
+:::
+::: {.node}
+GH variant colors
+:::
+::: {.node}
+revise facade
+:::
+:::
+
+Supported professional bridge: one constrained Ladybug/Radiance walkthrough, not "everything Ladybug."
+
+---
+
+[Uncertainty check]{.kicker}
+
+## Simulation is precise about the model, not automatically about the building
+
+::: {.uncertainty-check}
+**Question for your performance route**
+Which assumption dominates the result: geometry, material, schedule, weather, system, or occupancy?
+:::
+
+If you cannot name the dominant assumption, do not present the output as a performance conclusion. Present it as a scenario result.
+
+---
+
 ## BREAK {.big-break}
 
 Take 10 minutes.
@@ -501,7 +643,7 @@ Upload one rough material to Slack before Session 2 — a BIM/BEM screenshot, a 
 ## Speak for 60-90 seconds
 
 ::: {.concept-card}
-[The prompt]{.card-title}
+[Check-in question]{.card-title}
 What would a performance model need to know about your building, and what would it probably simplify?
 :::
 
@@ -534,7 +676,7 @@ Post your filled four-step to Slack under your material. Posting + an honest rec
 
 ---
 
-## Stand-alone case prompts
+## Case transfer checks
 
 :::: {.two-col}
 ::: {.example-card}

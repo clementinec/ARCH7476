@@ -45,6 +45,52 @@ This week diagnoses the evidence behind work you have **already done**. We exami
 
 ---
 
+[Course progress]{.kicker}
+
+## This week produces an evidence audit
+
+::: {.progress-ladder}
+::: {.step .done}
+W1 decision
+:::
+::: {.step .current}
+W2 evidence
+:::
+::: {.step}
+W3 comparison
+:::
+::: {.step}
+W4-6 pathway
+:::
+::: {.step}
+W7-9 prototype
+:::
+::: {.step}
+W10-12 package
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Bring]{.label .concept}
+the same past-project visual from Week 1, marked up directly
+:::
+::: {.artifact}
+[Make]{.label .activity}
+an evidence table: type, strength, what it actually supports
+:::
+::: {.artifact}
+[Export]{.label .example}
+one weak-link sentence and one missing variable/range/threshold
+:::
+::: {.artifact}
+[Feeds]{.label .reflect}
+A1 Evidence Critique and Week 3 comparison setup
+:::
+:::
+
+---
+
 [The reset]{.kicker}
 
 ## Architecture uses many evidence types
@@ -133,10 +179,34 @@ For each input you actually used, name its type, its honest strength, and what i
 
 ---
 
+[Take-away artifact]{.kicker}
+
+## A1 evidence audit, not notes
+
+By the end of Week 2, your A1 board should contain a visible audit layer.
+
+::: {.tool-panel}
+::: {.zone .input}
+**Input** one decision image + sources used then
+:::
+::: {.zone .operation}
+**Sort** evidence / precedent / assumption / preference
+:::
+::: {.zone .output}
+**Output** weak-link diagnosis and missing test
+:::
+::: {.zone .check}
+**Quality check** the claim gets weaker or stronger when the source is removed
+:::
+:::
+
+---
+
 ## Common overclaims
 
 ::: {.warning-card}
 [Watch for these in your own A1]{.card-title}
+
 - "there was evidence" when there was only precedent
 - "the model proved it" when the assumptions were weak
 - "users prefer this" from a tiny or biased sample
@@ -163,10 +233,10 @@ A result nobody can re-open and audit is a vibe with a number attached. Evidence
 
 ---
 
-## Stand-alone prompt
+## Worked claim audit
 
 :::: {.two-col}
-::: {}
+::: {.visual-panel}
 ![California Academy of Sciences](../assets/examples/california-academy-of-sciences.jpg){height="460"}
 :::
 ::: {.concept-card}
@@ -179,6 +249,19 @@ Name the claim, then name the evidence that would earn it.
 
 ---
 
+[Uncertainty check]{.kicker}
+
+## Polished evidence still needs inspection
+
+::: {.uncertainty-check}
+**Question for your A1**
+Which piece of evidence in your old project looked convincing because it was visually polished, not because it was actually strong?
+:::
+
+If the answer is a render, precedent image, exported map, or simulation screenshot, write down what would have to be checked before it could carry the claim.
+
+---
+
 [Where A1 goes next]{.kicker}
 
 ## Pivot to the next decision
@@ -188,6 +271,7 @@ The second half of A1 turns from the past to the next real choice.
 :::: {.two-col}
 ::: {.concept-card}
 [The four questions]{.card-title}
+
 - what is the next real design decision?
 - who needs to be convinced?
 - what evidence would matter?
@@ -205,12 +289,33 @@ This is where A1 stops being a post-mortem and starts pointing at the rest of th
 
 Choose **provisionally** — you can revise as A2 sharpens the question.
 
-- **spreadsheet** — comparison, ranking, or visible logic
-- **GIS** — space, site, access, zoning, or context is central
-- **Python / notebook** — repeatable analysis or notebook workflow
-- **GH / parametric** — design variables and option families
-- **BIM/BEM / simulation** — claim depends on model translation or performance
-- **AI-assisted** — help building part of a workflow you can verify
+::: {.tool-ledger}
+::: {.slot .core}
+[Mapped soon]{.label .activity}
+
+- spreadsheet comparison
+- `geopandas`
+- BIM-derived proxy
+- Python notebook
+- AI verification
+:::
+::: {.slot .peer}
+[Mapped through class]{.label .concept}
+
+- GH components
+- Ladybug/Radiance walkthroughs
+- office tools students already know
+:::
+::: {.slot .explore}
+[Allowed with caution]{.label .example}
+
+- plugins
+- office workflows
+- custom scripts that still export an inspectable artifact
+:::
+:::
+
+The provisional question is: which route can produce the smallest output that would change the decision?
 
 ---
 
@@ -306,6 +411,7 @@ Vague is normal at Week 2. Naming why it is vague is the fix.
 
 ::: {.concept-card}
 [Leave Week 2 with]{.card-title}
+
 - one prior decision, clearly described
 - one evidence audit (type, strength, what it supported)
 - one next studio decision
