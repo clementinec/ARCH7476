@@ -78,6 +78,22 @@ The risk is not embarrassment. It is presenting a result you can no longer stand
 
 ---
 
+[Anecdote · the tool changed your data and didn't tell you]{.kicker}
+
+## When the spreadsheet silently rewrote the data
+
+::: {.warning-card}
+[What happened]{.card-title}
+Geneticists found that Excel was **auto-converting gene names into dates and numbers** (for example "SEPT2" became a date). A 2016 study found errors in roughly **one in five** papers with supplementary spreadsheets — the field eventually renamed the genes rather than fight the software.
+:::
+
+::: {.example-card}
+[The lesson]{.card-title}
+Reproducibility starts with knowing what your tool did to your data. Document formats, versions, and import settings — the failure is invisible until someone re-runs it.
+:::
+
+---
+
 ## A quick, honest poll
 
 Have you ever struggled to reconstruct what you did on a project from a few months ago?

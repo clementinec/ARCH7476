@@ -286,6 +286,22 @@ See [ML Primer · Principles 3–4](../lectures/ml-primer-12-principles.html).
 
 ---
 
+[Anecdote · when the spreadsheet hides the risk]{.kicker}
+
+## 2012: a copy-paste error inside a risk model
+
+::: {.warning-card}
+[What happened]{.card-title}
+JPMorgan's "London Whale" risk model lived in a chain of spreadsheets where values were **copied and pasted between cells by hand**. One step divided by a sum instead of an average, understating the risk. The losses reached about US$6 billion.
+:::
+
+::: {.example-card}
+[The lesson]{.card-title}
+A spreadsheet is a transparent comparison layer only if its steps are inspectable. Manual copy-paste between cells is exactly where the logic stops being traceable.
+:::
+
+---
+
 ## BREAK {.big-break}
 
 Take 10 minutes.

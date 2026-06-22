@@ -4096,6 +4096,18 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-09.html#the-chart-that-did-not-show-the-danger",
+    "href": "weeks_v2/week-09.html#the-chart-that-did-not-show-the-danger",
+    "title": "Week 9: Storytelling, Figures, and Decisions",
+    "section": "1986: the chart that did not show the danger",
+    "text": "1986: the chart that did not show the danger\n\nWhat went wrong The night before the Challenger launch, engineers argued against a cold-weather launch — but their charts scattered O-ring damage across thirteen pages and never plotted damage against temperature. The pattern stayed invisible; the launch was approved.\n\n\nThe lesson Correct data is not enough. If the figure does not make the relationship visible, the decision does not get made. (Edward Tufte’s classic case study of this launch.)",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-09.html#the-two-slide-challenge",
     "href": "weeks_v2/week-09.html#the-two-slide-challenge",
     "title": "Week 9: Storytelling, Figures, and Decisions",
@@ -4113,6 +4125,18 @@
     "title": "Week 9: Storytelling, Figures, and Decisions",
     "section": "One useful story structure for busy stakeholders",
     "text": "One useful story structure for busy stakeholders\n\n\nWhat problem or decision matters?\nWhat evidence did you gather?\nWhat changed because of that evidence?\nWhat should happen next?\n\n\nThis is not simplification for its own sake. It is decision support.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#the-map-that-removed-a-pump-handle",
+    "href": "weeks_v2/week-09.html#the-map-that-removed-a-pump-handle",
+    "title": "Week 9: Storytelling, Figures, and Decisions",
+    "section": "1854: the map that removed a pump handle",
+    "text": "1854: the map that removed a pump handle\n\n\n\n\n\nJohn Snow’s cholera map of Soho, 1854. Public domain, via Wikimedia Commons.\n\n\n\n\n\nWhat it did Plotting each cholera death as a mark on the street map made one water pump’s deadly cluster impossible to miss.\n\n\nThe lesson The figure located the cause, so the action was obvious: remove the Broad Street pump handle. A figure that locates the problem changes the decision.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4168,6 +4192,18 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-09.html#the-diagram-that-won-a-sanitation-argument",
+    "href": "weeks_v2/week-09.html#the-diagram-that-won-a-sanitation-argument",
+    "title": "Week 9: Storytelling, Figures, and Decisions",
+    "section": "1858: the diagram that won a sanitation argument",
+    "text": "1858: the diagram that won a sanitation argument\n\n\n\n\n\nFlorence Nightingale’s rose / coxcomb diagram of army mortality, 1858. Public domain, via Wikimedia Commons.\n\n\n\n\n\nWhat it did The large wedges showed deaths from preventable disease dwarfing deaths from wounds — visible at a glance, no table required.\n\n\nThe lesson One dominant visual comparison can carry an argument that columns of numbers cannot. Make the biggest thing the most visible thing.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-09.html#figure-rescue-before-and-after",
     "href": "weeks_v2/week-09.html#figure-rescue-before-and-after",
     "title": "Week 9: Storytelling, Figures, and Decisions",
@@ -4209,6 +4245,18 @@
     "title": "Week 9: Storytelling, Figures, and Decisions",
     "section": "The 30-second board test",
     "text": "The 30-second board test\nDuring the Object Fair, a viewer gives your board about 30 seconds. In that time they should be able to:\n\n\nstop\nunderstand the key message\nknow what action or question follows",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#six-variables-in-a-single-image",
+    "href": "weeks_v2/week-09.html#six-variables-in-a-single-image",
+    "title": "Week 9: Storytelling, Figures, and Decisions",
+    "section": "1869: six variables in a single image",
+    "text": "1869: six variables in a single image\n\n\n\n\n\nCharles Minard’s figurative map of Napoleon’s 1812 Russian campaign. Public domain, via Wikimedia Commons.\n\n\n\n\n\nWhat it shows Army size, location, direction, and temperature on the retreat — the shrinking band tells the whole catastrophe without a caption.\n\n\nThe object-card ideal Tufte called it among the best statistical graphics ever drawn. Your object card has the same job: one figure that carries the decision on its own.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4341,6 +4389,18 @@
     "title": "Week 9: Storytelling, Figures, and Decisions",
     "section": "Exit task",
     "text": "Exit task\nBefore next week, each student should have:\n\n\none improved figure\none clearer object-card draft\none recommendation sentence\none explicit note on limits and confidence",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#break",
+    "href": "weeks_v2/week-09.html#break",
+    "title": "Week 9: Storytelling, Figures, and Decisions",
+    "section": "BREAK",
+    "text": "BREAK\nTake 10 minutes.\nWhen you return, upload one rough figure or object-card draft to Slack for Session 2.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -5113,63 +5173,63 @@
     "text": "Always hold out test data or use cross-validation\nStart simple; only add complexity if it improves validated performance\nDocument random seeds and settings for reproducibility\n“Deep” models need more data and care; don’t overfit\n\nNext: a richer notebook focused on visualizing pilot results and making figures for stakeholders."
   },
   {
-    "objectID": "weeks_v2/week-09.html#the-chart-that-did-not-show-the-danger",
-    "href": "weeks_v2/week-09.html#the-chart-that-did-not-show-the-danger",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "1986: the chart that did not show the danger",
-    "text": "1986: the chart that did not show the danger\n\nWhat went wrong The night before the Challenger launch, engineers argued against a cold-weather launch — but their charts scattered O-ring damage across thirteen pages and never plotted damage against temperature. The pattern stayed invisible; the launch was approved.\n\n\nThe lesson Correct data is not enough. If the figure does not make the relationship visible, the decision does not get made. (Edward Tufte’s classic case study of this launch.)",
+    "objectID": "weeks_v2/week-02.html#an-austerity-argument-built-on-a-spreadsheet-error",
+    "href": "weeks_v2/week-02.html#an-austerity-argument-built-on-a-spreadsheet-error",
+    "title": "Week 2: Audit the Evidence You Already Use",
+    "section": "2010: an austerity argument built on a spreadsheet error",
+    "text": "2010: an austerity argument built on a spreadsheet error\n\nWhat happened A widely cited economics paper (Reinhart & Rogoff) reported that economic growth collapses once public debt passes 90% of GDP. The claim was used to justify austerity policy in several countries. In 2013 a graduate student rechecking the workbook found an Excel formula that left out five rows — once corrected, the dramatic threshold largely disappeared.\n\n\nThe lesson A result nobody can re-open and audit is a vibe with a number attached. Evidence is only as strong as your ability to trace how it was computed.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W2: Evidence Audit"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#the-map-that-removed-a-pump-handle",
-    "href": "weeks_v2/week-09.html#the-map-that-removed-a-pump-handle",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "1854: the map that removed a pump handle",
-    "text": "1854: the map that removed a pump handle\n\n\n\n\n\nJohn Snow’s cholera map of Soho, 1854. Public domain, via Wikimedia Commons.\n\n\n\n\n\nWhat it did Plotting each cholera death as a mark on the street map made one water pump’s deadly cluster impossible to miss.\n\n\nThe lesson The figure located the cause, so the action was obvious: remove the Broad Street pump handle. A figure that locates the problem changes the decision.",
+    "objectID": "weeks_v2/week-03.html#a-copy-paste-error-inside-a-risk-model",
+    "href": "weeks_v2/week-03.html#a-copy-paste-error-inside-a-risk-model",
+    "title": "Week 3: Spreadsheet as the Comparison Layer",
+    "section": "2012: a copy-paste error inside a risk model",
+    "text": "2012: a copy-paste error inside a risk model\n\nWhat happened JPMorgan’s “London Whale” risk model lived in a chain of spreadsheets where values were copied and pasted between cells by hand. One step divided by a sum instead of an average, understating the risk. The losses reached about US$6 billion.\n\n\nThe lesson A spreadsheet is a transparent comparison layer only if its steps are inspectable. Manual copy-paste between cells is exactly where the logic stops being traceable.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W3: Spreadsheet Baseline"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#the-diagram-that-won-a-sanitation-argument",
-    "href": "weeks_v2/week-09.html#the-diagram-that-won-a-sanitation-argument",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "1858: the diagram that won a sanitation argument",
-    "text": "1858: the diagram that won a sanitation argument\n\n\n\n\n\nFlorence Nightingale’s rose / coxcomb diagram of army mortality, 1858. Public domain, via Wikimedia Commons.\n\n\n\n\n\nWhat it did The large wedges showed deaths from preventable disease dwarfing deaths from wounds — visible at a glance, no table required.\n\n\nThe lesson One dominant visual comparison can carry an argument that columns of numbers cannot. Make the biggest thing the most visible thing.",
+    "objectID": "weeks_v2/week-04.html#s-redlining-maps-that-shaped-cities",
+    "href": "weeks_v2/week-04.html#s-redlining-maps-that-shaped-cities",
+    "title": "Week 4: GIS Choices for Architects",
+    "section": "1930s: redlining maps that shaped cities",
+    "text": "1930s: redlining maps that shaped cities\n\n\n\n\n\nHOLC “residential security” map, Brooklyn, 1930s. Public domain / CC BY-SA, via Wikimedia Commons.\n\n\n\n\n\nWhat it did Home Owners’ Loan Corporation maps graded neighborhoods A–D and colored the “hazardous” ones red. Lenders used them to deny mortgages — a spatial layer that steered investment and segregation for generations.\n\n\nThe lesson A map is a decision instrument, not decoration — and it carries the bias of whoever drew it and how they classified. Choose layers and categories knowing they will drive real action.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W4: GIS Choices"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#six-variables-in-a-single-image",
-    "href": "weeks_v2/week-09.html#six-variables-in-a-single-image",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "1869: six variables in a single image",
-    "text": "1869: six variables in a single image\n\n\n\n\n\nCharles Minard’s figurative map of Napoleon’s 1812 Russian campaign. Public domain, via Wikimedia Commons.\n\n\n\n\n\nWhat it shows Army size, location, direction, and temperature on the retreat — the shrinking band tells the whole catastrophe without a caption.\n\n\nThe object-card ideal Tufte called it among the best statistical graphics ever drawn. Your object card has the same job: one figure that carries the decision on its own.",
+    "objectID": "weeks_v2/week-05.html#the-performance-gap-models-vs-metered-reality",
+    "href": "weeks_v2/week-05.html#the-performance-gap-models-vs-metered-reality",
+    "title": "Week 5: BIM, BEM, and Building Performance",
+    "section": "The performance gap: models vs metered reality",
+    "text": "The performance gap: models vs metered reality\n\nWhat happens Studies of completed buildings repeatedly find measured energy use two to three times higher than the design-stage model predicted. The model was not “wrong” — its assumptions (occupancy, schedules, controls, construction quality) simply did not match how the building was actually used and built.\n\n\nThe lesson A polished BEM output is a scenario, not a measurement. State the assumptions a performance claim depends on, and name where the real building is likely to diverge.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W5: BIM/BEM"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#break",
-    "href": "weeks_v2/week-09.html#break",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "BREAK",
-    "text": "BREAK\nTake 10 minutes.\nWhen you return, upload one rough figure or object-card draft to Slack for Session 2.",
+    "objectID": "weeks_v2/week-08.html#when-the-spreadsheet-silently-rewrote-the-data",
+    "href": "weeks_v2/week-08.html#when-the-spreadsheet-silently-rewrote-the-data",
+    "title": "Week 8: Reproducibility and Mentor Prep",
+    "section": "When the spreadsheet silently rewrote the data",
+    "text": "When the spreadsheet silently rewrote the data\n\nWhat happened Geneticists found that Excel was auto-converting gene names into dates and numbers (for example “SEPT2” became a date). A 2016 study found errors in roughly one in five papers with supplementary spreadsheets — the field eventually renamed the genes rather than fight the software.\n\n\nThe lesson Reproducibility starts with knowing what your tool did to your data. Document formats, versions, and import settings — the failure is invisible until someone re-runs it.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W8: Reproducibility"
     ]
   }
 ]

@@ -462,6 +462,22 @@ Come back with your top three suspects.
 
 ---
 
+[Anecdote · clean model, different building]{.kicker}
+
+## The performance gap: models vs metered reality
+
+::: {.warning-card}
+[What happens]{.card-title}
+Studies of completed buildings repeatedly find measured energy use **two to three times higher** than the design-stage model predicted. The model was not "wrong" — its assumptions (occupancy, schedules, controls, construction quality) simply did not match how the building was actually used and built.
+:::
+
+::: {.example-card}
+[The lesson]{.card-title}
+A polished BEM output is a scenario, not a measurement. State the assumptions a performance claim depends on, and name where the real building is likely to diverge.
+:::
+
+---
+
 ## BREAK {.big-break}
 
 Take 10 minutes.

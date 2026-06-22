@@ -30,7 +30,9 @@
       "Bash(git commit -q -m 'fix: multi-line fenced-div cells + restore vertical centering *)",
       "Bash(git commit -q -m 'add ML primer \\(12 principles\\) + thread into variable/threshold weeks + full site reskin *)",
       "Bash(awk 'NR>1{print $5, $NF}')",
-      "Bash(git commit -q -m 'week-09: add BREAK slide + 4 real-anecdote callouts with public-domain images *)"
+      "Bash(git commit -q -m 'week-09: add BREAK slide + 4 real-anecdote callouts with public-domain images *)",
+      "Bash(curl -sS -L --max-time 40 -o holc-redlining.jpg \"https://commons.wikimedia.org/wiki/Special:FilePath/Brooklyn,_New_York_HOLC_Redlining_Map.jpg\")",
+      "Bash(git commit -q -m 'anecdotes: add real-case callouts to W2/W3/W4/W5/W8 *)"
     ],
     "deny": [],
     "ask": []

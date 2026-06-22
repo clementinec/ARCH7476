@@ -243,6 +243,28 @@ If the output does not inform a decision, it is just map decoration.
 
 ---
 
+[Anecdote · a map that drove decisions for decades]{.kicker}
+
+## 1930s: redlining maps that shaped cities
+
+::: {.vibe-case}
+::: {.vibe-visual}
+![HOLC "residential security" map, Brooklyn, 1930s. Public domain / CC BY-SA, via Wikimedia Commons.](../assets/anecdotes/holc-redlining.jpg)
+:::
+::: {.vibe-panel}
+::: {.example-card}
+[What it did]{.card-title}
+Home Owners' Loan Corporation maps graded neighborhoods A–D and colored the "hazardous" ones red. Lenders used them to deny mortgages — a spatial layer that steered investment and segregation for generations.
+:::
+::: {.warning-card}
+[The lesson]{.card-title}
+A map is a decision instrument, not decoration — and it carries the bias of whoever drew it and how they classified. Choose layers and categories knowing they will drive real action.
+:::
+:::
+:::
+
+---
+
 ## GIS outputs that actually help design
 
 - simple site-comparison maps

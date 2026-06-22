@@ -147,6 +147,22 @@ The strongest move is catching one of these in your **own** work before anyone e
 
 ---
 
+[Anecdote · evidence that was never audited]{.kicker}
+
+## 2010: an austerity argument built on a spreadsheet error
+
+::: {.warning-card}
+[What happened]{.card-title}
+A widely cited economics paper (Reinhart & Rogoff) reported that economic growth collapses once public debt passes 90% of GDP. The claim was used to justify austerity policy in several countries. In 2013 a graduate student rechecking the workbook found an Excel formula that **left out five rows** — once corrected, the dramatic threshold largely disappeared.
+:::
+
+::: {.example-card}
+[The lesson]{.card-title}
+A result nobody can re-open and audit is a vibe with a number attached. Evidence is only as strong as your ability to trace how it was computed.
+:::
+
+---
+
 ## Stand-alone prompt
 
 :::: {.two-col}
