@@ -5111,5 +5111,65 @@
     "title": "Python + ML Basics for Architects",
     "section": "",
     "text": "Always hold out test data or use cross-validation\nStart simple; only add complexity if it improves validated performance\nDocument random seeds and settings for reproducibility\n“Deep” models need more data and care; don’t overfit\n\nNext: a richer notebook focused on visualizing pilot results and making figures for stakeholders."
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#the-chart-that-did-not-show-the-danger",
+    "href": "weeks_v2/week-09.html#the-chart-that-did-not-show-the-danger",
+    "title": "Week 9: Storytelling, Figures, and Decisions",
+    "section": "1986: the chart that did not show the danger",
+    "text": "1986: the chart that did not show the danger\n\nWhat went wrong The night before the Challenger launch, engineers argued against a cold-weather launch — but their charts scattered O-ring damage across thirteen pages and never plotted damage against temperature. The pattern stayed invisible; the launch was approved.\n\n\nThe lesson Correct data is not enough. If the figure does not make the relationship visible, the decision does not get made. (Edward Tufte’s classic case study of this launch.)",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#the-map-that-removed-a-pump-handle",
+    "href": "weeks_v2/week-09.html#the-map-that-removed-a-pump-handle",
+    "title": "Week 9: Storytelling, Figures, and Decisions",
+    "section": "1854: the map that removed a pump handle",
+    "text": "1854: the map that removed a pump handle\n\n\n\n\n\nJohn Snow’s cholera map of Soho, 1854. Public domain, via Wikimedia Commons.\n\n\n\n\n\nWhat it did Plotting each cholera death as a mark on the street map made one water pump’s deadly cluster impossible to miss.\n\n\nThe lesson The figure located the cause, so the action was obvious: remove the Broad Street pump handle. A figure that locates the problem changes the decision.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#the-diagram-that-won-a-sanitation-argument",
+    "href": "weeks_v2/week-09.html#the-diagram-that-won-a-sanitation-argument",
+    "title": "Week 9: Storytelling, Figures, and Decisions",
+    "section": "1858: the diagram that won a sanitation argument",
+    "text": "1858: the diagram that won a sanitation argument\n\n\n\n\n\nFlorence Nightingale’s rose / coxcomb diagram of army mortality, 1858. Public domain, via Wikimedia Commons.\n\n\n\n\n\nWhat it did The large wedges showed deaths from preventable disease dwarfing deaths from wounds — visible at a glance, no table required.\n\n\nThe lesson One dominant visual comparison can carry an argument that columns of numbers cannot. Make the biggest thing the most visible thing.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#six-variables-in-a-single-image",
+    "href": "weeks_v2/week-09.html#six-variables-in-a-single-image",
+    "title": "Week 9: Storytelling, Figures, and Decisions",
+    "section": "1869: six variables in a single image",
+    "text": "1869: six variables in a single image\n\n\n\n\n\nCharles Minard’s figurative map of Napoleon’s 1812 Russian campaign. Public domain, via Wikimedia Commons.\n\n\n\n\n\nWhat it shows Army size, location, direction, and temperature on the retreat — the shrinking band tells the whole catastrophe without a caption.\n\n\nThe object-card ideal Tufte called it among the best statistical graphics ever drawn. Your object card has the same job: one figure that carries the decision on its own.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#break",
+    "href": "weeks_v2/week-09.html#break",
+    "title": "Week 9: Storytelling, Figures, and Decisions",
+    "section": "BREAK",
+    "text": "BREAK\nTake 10 minutes.\nWhen you return, upload one rough figure or object-card draft to Slack for Session 2.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds"
+    ]
   }
 ]

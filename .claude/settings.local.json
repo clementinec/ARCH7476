@@ -28,7 +28,9 @@
       "Bash(perl -i -pe 's!^\\(:::+\\) \\(\\\\{[^}]*\\\\}\\)\\(.+?\\) :::\\\\s*$!$1 $2\\\\n$3\\\\n$1!' weeks_v2/week-*.qmd)",
       "Bash(perl -i -pe 's/^::::::\\(?!:\\)/:::\\\\n:::/' weeks_v2/week-*.qmd)",
       "Bash(git commit -q -m 'fix: multi-line fenced-div cells + restore vertical centering *)",
-      "Bash(git commit -q -m 'add ML primer \\(12 principles\\) + thread into variable/threshold weeks + full site reskin *)"
+      "Bash(git commit -q -m 'add ML primer \\(12 principles\\) + thread into variable/threshold weeks + full site reskin *)",
+      "Bash(awk 'NR>1{print $5, $NF}')",
+      "Bash(git commit -q -m 'week-09: add BREAK slide + 4 real-anecdote callouts with public-domain images *)"
     ],
     "deny": [],
     "ask": []

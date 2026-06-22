@@ -69,6 +69,22 @@ Strong work can still fail at the moment it reaches an audience.
 
 ---
 
+[Anecdote · a figure that failed]{.kicker}
+
+## 1986: the chart that did not show the danger
+
+::: {.warning-card}
+[What went wrong]{.card-title}
+The night before the Challenger launch, engineers argued against a cold-weather launch — but their charts scattered O-ring damage across thirteen pages and never plotted damage **against temperature**. The pattern stayed invisible; the launch was approved.
+:::
+
+::: {.example-card}
+[The lesson]{.card-title}
+Correct data is not enough. If the figure does not make the relationship visible, the decision does not get made. (Edward Tufte's classic case study of this launch.)
+:::
+
+---
+
 ## The two-slide challenge
 
 ::: {.concept-card}
@@ -92,6 +108,28 @@ If not, your findings are still trapped inside your process.
 :::
 
 This is not simplification for its own sake. It is decision support.
+
+---
+
+[Anecdote · a figure that drove a decision]{.kicker}
+
+## 1854: the map that removed a pump handle
+
+::: {.vibe-case}
+::: {.vibe-visual}
+![John Snow's cholera map of Soho, 1854. Public domain, via Wikimedia Commons.](../assets/anecdotes/snow-cholera-map.jpg)
+:::
+::: {.vibe-panel}
+::: {.example-card}
+[What it did]{.card-title}
+Plotting each cholera death as a mark on the street map made one water pump's deadly cluster impossible to miss.
+:::
+::: {.activity-card}
+[The lesson]{.card-title}
+The figure **located the cause**, so the action was obvious: remove the Broad Street pump handle. A figure that locates the problem changes the decision.
+:::
+:::
+:::
 
 ---
 
@@ -148,6 +186,28 @@ Give your figure three seconds. Can a viewer tell:
 :::
 
 If not, it needs revision.
+
+---
+
+[Anecdote · make the dominant cause unmissable]{.kicker}
+
+## 1858: the diagram that won a sanitation argument
+
+::: {.vibe-case}
+::: {.vibe-visual}
+![Florence Nightingale's rose / coxcomb diagram of army mortality, 1858. Public domain, via Wikimedia Commons.](../assets/anecdotes/nightingale-rose.jpg)
+:::
+::: {.vibe-panel}
+::: {.example-card}
+[What it did]{.card-title}
+The large wedges showed deaths from **preventable disease** dwarfing deaths from wounds — visible at a glance, no table required.
+:::
+::: {.activity-card}
+[The lesson]{.card-title}
+One dominant visual comparison can carry an argument that columns of numbers cannot. Make the biggest thing the most visible thing.
+:::
+:::
+:::
 
 ---
 
@@ -213,6 +273,28 @@ During the Object Fair, a viewer gives your board about 30 seconds. In that time
 1. stop
 2. understand the key message
 3. know what action or question follows
+:::
+
+---
+
+[Anecdote · one figure, the whole story]{.kicker}
+
+## 1869: six variables in a single image
+
+::: {.vibe-case}
+::: {.vibe-visual}
+![Charles Minard's figurative map of Napoleon's 1812 Russian campaign. Public domain, via Wikimedia Commons.](../assets/anecdotes/minard-napoleon.png)
+:::
+::: {.vibe-panel}
+::: {.example-card}
+[What it shows]{.card-title}
+Army size, location, direction, and temperature on the retreat — the shrinking band tells the whole catastrophe without a caption.
+:::
+::: {.activity-card}
+[The object-card ideal]{.card-title}
+Tufte called it among the best statistical graphics ever drawn. Your object card has the same job: one figure that carries the decision on its own.
+:::
+:::
 :::
 
 ---
@@ -388,6 +470,14 @@ Before next week, each student should have:
 - one recommendation sentence
 - one explicit note on limits and confidence
 :::
+
+---
+
+## BREAK {.big-break}
+
+Take 10 minutes.
+
+When you return, upload one rough figure or object-card draft to Slack for Session 2.
 
 ---
 
