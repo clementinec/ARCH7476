@@ -10,7 +10,7 @@ format:
     incremental: true
     width: 1400
     height: 900
-    center: false
+    center: true
     footer: "Week 12 · feeds A4: Workflow Package"
 ---
 
@@ -211,10 +211,18 @@ Volunteers go first; a random draw may fill the remaining turns.
 **Object this week: the reasoning you can transfer to another project.**
 
 ::: {.recall-4step}
-::: {.step}**Did** What was the core reasoning move in your A4 workflow? :::
-::: {.step}**Assumed** What did it depend on that was specific to this project? :::
-::: {.step}**Risk** Where might that reasoning break on a different problem? :::
-::: {.step}**Verify** What would you check before reusing it next time? :::
+::: {.step}
+**Did** What was the core reasoning move in your A4 workflow?
+:::
+::: {.step}
+**Assumed** What did it depend on that was specific to this project?
+:::
+::: {.step}
+**Risk** Where might that reasoning break on a different problem?
+:::
+::: {.step}
+**Verify** What would you check before reusing it next time?
+:::
 :::
 
 ::: {.grading-note}

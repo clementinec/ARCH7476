@@ -10,7 +10,7 @@ format:
     incremental: true
     width: 1400
     height: 900
-    center: false
+    center: true
     footer: "Week 10 · feeds A4: Workflow Package"
 ---
 
@@ -126,10 +126,18 @@ Upload one rough material to Slack before Session 2 — draft presentation, obje
 **Object this week: your A4 draft package as a reviewer will meet it.**
 
 ::: {.recall-4step}
-::: {.step}**Did** What does the draft currently claim and show? :::
-::: {.step}**Assumed** What am I assuming the reader already knows? :::
-::: {.step}**Risk** Which link in the spine is weakest or missing? :::
-::: {.step}**Verify** What one fix would most improve traceability? :::
+::: {.step}
+**Did** What does the draft currently claim and show?
+:::
+::: {.step}
+**Assumed** What am I assuming the reader already knows?
+:::
+::: {.step}
+**Risk** Which link in the spine is weakest or missing?
+:::
+::: {.step}
+**Verify** What one fix would most improve traceability?
+:::
 :::
 
 ::: {.grading-note}

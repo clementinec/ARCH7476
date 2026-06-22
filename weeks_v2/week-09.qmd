@@ -10,7 +10,7 @@ format:
     incremental: true
     width: 1400
     height: 900
-    center: false
+    center: true
     footer: "Week 9 · feeds A3 + A4"
 ---
 
@@ -384,10 +384,18 @@ Upload one rough material to Slack before Session 2 — a figure, output table, 
 **Object this week: your result/figure and the design action it changes.**
 
 ::: {.recall-4step}
-::: {.step}**Did** What does this figure currently show, and what is its one message? :::
-::: {.step}**Assumed** What does the reader have to already know for it to land? :::
-::: {.step}**Risk** Where is the takeaway unclear, or the uncertainty hidden? :::
-::: {.step}**Verify** What threshold or label would tie it to a design action? :::
+::: {.step}
+**Did** What does this figure currently show, and what is its one message?
+:::
+::: {.step}
+**Assumed** What does the reader have to already know for it to land?
+:::
+::: {.step}
+**Risk** Where is the takeaway unclear, or the uncertainty hidden?
+:::
+::: {.step}
+**Verify** What threshold or label would tie it to a design action?
+:::
 :::
 
 ::: {.grading-note}

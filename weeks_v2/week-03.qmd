@@ -10,7 +10,7 @@ format:
     incremental: true
     width: 1400
     height: 900
-    center: false
+    center: true
     footer: "Week 3 · feeds A1 + A2"
 ---
 
@@ -84,10 +84,18 @@ A1 is **finalized** this week — the Total Recall board. The comparison habit y
 The same four-zone frame we use for every tool. A real workbook screenshot drops into this later.
 
 ::: {.tool-panel .demo-pending}
-::: {.zone .input}**Input** evidence rows — source, observation, confidence per variant :::
-::: {.zone .operation}**What varies** the option or scenario being compared (A / B / C, or low / mid / high) :::
-::: {.zone .output}**Output** one chart or matrix that makes the trade-off visible :::
-::: {.zone .check}**Quality check** units stated, legend present, formulas readable by a stranger :::
+::: {.zone .input}
+**Input** evidence rows — source, observation, confidence per variant
+:::
+::: {.zone .operation}
+**What varies** the option or scenario being compared (A / B / C, or low / mid / high)
+:::
+::: {.zone .output}
+**Output** one chart or matrix that makes the trade-off visible
+:::
+::: {.zone .check}
+**Quality check** units stated, legend present, formulas readable by a stranger
+:::
 :::
 
 ::: {.example-card}
@@ -208,10 +216,18 @@ If not, the chart is not finished — that is a clarity gap, not a failure of ta
 ## Chart rescue formula
 
 ::: {.recall-4step}
-::: {.step}**Message** Decide the one thing the chart must say :::
-::: {.step}**Remove** Cut everything that does not support it :::
-::: {.step}**Force** Use annotation or labels to make the point unmissable :::
-::: {.step}**Limit** Show uncertainty, then connect back to the decision :::
+::: {.step}
+**Message** Decide the one thing the chart must say
+:::
+::: {.step}
+**Remove** Cut everything that does not support it
+:::
+::: {.step}
+**Force** Use annotation or labels to make the point unmissable
+:::
+::: {.step}
+**Limit** Show uncertainty, then connect back to the decision
+:::
 :::
 
 ---
@@ -292,10 +308,18 @@ A volunteer opens their actual spreadsheet and walks the class through one compa
 **Object this week: your comparison of variants or scenarios in a spreadsheet.**
 
 ::: {.recall-4step}
-::: {.step}**Did** What variants did I compare, and how did I structure the sheets? :::
-::: {.step}**Assumed** What scores, weights, or units did I treat as given? :::
-::: {.step}**Risk** Where is the comparison hiding a weak input or a false precision? :::
-::: {.step}**Verify** What would I add to make the trade-off legible to a stranger? :::
+::: {.step}
+**Did** What variants did I compare, and how did I structure the sheets?
+:::
+::: {.step}
+**Assumed** What scores, weights, or units did I treat as given?
+:::
+::: {.step}
+**Risk** Where is the comparison hiding a weak input or a false precision?
+:::
+::: {.step}
+**Verify** What would I add to make the trade-off legible to a stranger?
+:::
 :::
 
 ::: {.grading-note}

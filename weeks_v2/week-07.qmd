@@ -10,7 +10,7 @@ format:
     incremental: true
     width: 1400
     height: 900
-    center: false
+    center: true
     footer: "Week 7 · feeds A3: Prototype + Verification"
 ---
 
@@ -91,10 +91,18 @@ The four zones of that loop are what every tool panel below makes concrete.
 Read any workflow as four zones. If you can fill all four honestly, you have a prototype, not just a file.
 
 ::: {.tool-panel .demo-pending}
-::: {.zone .input}**Input** the real files, data, or model the method starts from :::
-::: {.zone .operation}**What varies** the one thing you change between runs :::
-::: {.zone .output}**Output** the single interpretable result it produces :::
-::: {.zone .check}**Quality check** what proves the run was valid, not just that it ran :::
+::: {.zone .input}
+**Input** the real files, data, or model the method starts from
+:::
+::: {.zone .operation}
+**What varies** the one thing you change between runs
+:::
+::: {.zone .output}
+**Output** the single interpretable result it produces
+:::
+::: {.zone .check}
+**Quality check** what proves the run was valid, not just that it ran
+:::
 :::
 
 ::: {.example-card}
@@ -360,10 +368,18 @@ If the question is generic, it is not ready. A good question points at a specifi
 The test for "ready for the round table":
 
 ::: {.tool-panel}
-::: {.zone .input}**Input** can another person tell what goes in? :::
-::: {.zone .operation}**What varies** can they see which judgment calls mattered? :::
-::: {.zone .output}**Output** can they tell what comes out? :::
-::: {.zone .check}**Quality check** can they tell whether the output is already useful? :::
+::: {.zone .input}
+**Input** can another person tell what goes in?
+:::
+::: {.zone .operation}
+**What varies** can they see which judgment calls mattered?
+:::
+::: {.zone .output}
+**Output** can they tell what comes out?
+:::
+::: {.zone .check}
+**Quality check** can they tell whether the output is already useful?
+:::
 :::
 
 ---
@@ -411,10 +427,18 @@ No polish required — show the real thing working. Questions wait for Mode 2.
 **Object this week: your prototype workflow as someone else will meet it.**
 
 ::: {.recall-4step}
-::: {.step}**Did** What does the workflow actually do, step by step? :::
-::: {.step}**Assumed** What hidden inputs or settings does each step assume? :::
-::: {.step}**Risk** Where did I not check — where could it break or fail to rerun? :::
-::: {.step}**Verify** What quality check would prove the run is valid? :::
+::: {.step}
+**Did** What does the workflow actually do, step by step?
+:::
+::: {.step}
+**Assumed** What hidden inputs or settings does each step assume?
+:::
+::: {.step}
+**Risk** Where did I not check — where could it break or fail to rerun?
+:::
+::: {.step}
+**Verify** What quality check would prove the run is valid?
+:::
 :::
 
 ::: {.grading-note}

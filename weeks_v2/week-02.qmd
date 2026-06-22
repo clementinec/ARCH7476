@@ -10,7 +10,7 @@ format:
     incremental: true
     width: 1400
     height: 900
-    center: false
+    center: true
     footer: "Week 2 · feeds A1: Total Recall"
 ---
 
@@ -236,10 +236,18 @@ Volunteers go first; random draw may fill the remaining examples.
 **Object this week: the evidence behind your past decision.**
 
 ::: {.recall-4step}
-::: {.step}**Did** What evidence did I actually use, and for which decision? :::
-::: {.step}**Assumed** What did I treat as evidence that was really assumption or precedent? :::
-::: {.step}**Risk** Where was my confidence stronger than the evidence supported? :::
-::: {.step}**Verify** What evidence would I gather before the next decision? :::
+::: {.step}
+**Did** What evidence did I actually use, and for which decision?
+:::
+::: {.step}
+**Assumed** What did I treat as evidence that was really assumption or precedent?
+:::
+::: {.step}
+**Risk** Where was my confidence stronger than the evidence supported?
+:::
+::: {.step}
+**Verify** What evidence would I gather before the next decision?
+:::
 :::
 
 ::: {.grading-note}

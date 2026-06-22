@@ -9,7 +9,7 @@ format:
     incremental: true
     width: 1400
     height: 900
-    center: false
+    center: true
     footer: "Week 1 · feeds A1: Total Recall"
 ---
 
@@ -99,10 +99,18 @@ The same four-step move repeats all semester. Only the **object** changes — an
 You learn most by examining the reasoning inside work you have **already done** — not by adding new work. Every week, the same four questions, pointed at that week's object:
 
 ::: {.recall-4step}
-::: {.step}**Did** What did I actually do, step by step? :::
-::: {.step}**Assumed** What did I assume at each step? :::
-::: {.step}**Risk** Where did I not check — where could it break? :::
-::: {.step}**Verify** What would I verify if I did it again? :::
+::: {.step}
+**Did** What did I actually do, step by step?
+:::
+::: {.step}
+**Assumed** What did I assume at each step?
+:::
+::: {.step}
+**Risk** Where did I not check — where could it break?
+:::
+::: {.step}
+**Verify** What would I verify if I did it again?
+:::
 :::
 
 The point is not to judge old work. It is to see how its argument was built.
@@ -335,10 +343,18 @@ We ask the same question of every artifact, including mine: **what does this act
 **Object this week: one past studio decision and its evidence.**
 
 ::: {.recall-4step}
-::: {.step}**Did** What did I decide, and what did I actually do? :::
-::: {.step}**Assumed** What did I treat as evidence that was really assumption or precedent? :::
-::: {.step}**Risk** Where was confidence stronger than the evidence? :::
-::: {.step}**Verify** What evidence would I gather for the next decision? :::
+::: {.step}
+**Did** What did I decide, and what did I actually do?
+:::
+::: {.step}
+**Assumed** What did I treat as evidence that was really assumption or precedent?
+:::
+::: {.step}
+**Risk** Where was confidence stronger than the evidence?
+:::
+::: {.step}
+**Verify** What evidence would I gather for the next decision?
+:::
 :::
 
 ::: {.grading-note}

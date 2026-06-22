@@ -22,7 +22,12 @@
       "Bash(git commit -q -m 'checkpoint: state before visual-language refresh *)",
       "Bash(echo \"exit: $?\")",
       "Bash(echo \"exit:$?\")",
-      "Bash(git commit -q -m 'visual-language refresh: unified Swiss theme + nurturing round table across all 12 decks *)"
+      "Bash(git commit -q -m 'visual-language refresh: unified Swiss theme + nurturing round table across all 12 decks *)",
+      "Bash(perl -i -pe 's{^\\(:::+\\) \\(\\\\{[^}]*\\\\}\\) \\(.+?\\) :::\\\\s*$}{$1 $2\\\\n$3\\\\n$1}' weeks_v2/week-*.qmd)",
+      "Bash(perl -i -pe 's/^\\(\\\\s*\\)center: false/$1center: true/' weeks_v2/week-*.qmd)",
+      "Bash(perl -i -pe 's!^\\(:::+\\) \\(\\\\{[^}]*\\\\}\\)\\(.+?\\) :::\\\\s*$!$1 $2\\\\n$3\\\\n$1!' weeks_v2/week-*.qmd)",
+      "Bash(perl -i -pe 's/^::::::\\(?!:\\)/:::\\\\n:::/' weeks_v2/week-*.qmd)",
+      "Bash(git commit -q -m 'fix: multi-line fenced-div cells + restore vertical centering *)"
     ],
     "deny": [],
     "ask": []

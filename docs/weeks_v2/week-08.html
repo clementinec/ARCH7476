@@ -332,7 +332,7 @@
 </div>
 
 </section>
-<section id="todays-agenda" class="slide level2">
+<section id="todays-agenda" class="slide level2 center">
 <h2>Today’s Agenda</h2>
 <div class="two-col">
 <div class="concept-card">
@@ -359,11 +359,11 @@
 <p>This is a clinic, not a contest. We examine the <strong>workflow</strong>, and we help each other find the part a stranger could not yet reproduce.</p>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 <p><span class="kicker">The reproducibility frame</span></p>
 </section>
-<section id="if-you-cant-rerun-it-it-isnt-evidence" class="slide level2">
+<section id="if-you-cant-rerun-it-it-isnt-evidence" class="slide level2 center">
 <h2>If you can’t rerun it, it isn’t evidence</h2>
 <p>A result becomes evidence only when someone else can inspect how you got it — and ideally reproduce it.</p>
 <div class="concept-card">
@@ -371,7 +371,7 @@
 </div>
 <p>Documentation is not paperwork after the fact. It is the part of the method that makes the output legible.</p>
 </section>
-<section id="where-reproducibility-quietly-fails" class="slide level2">
+<section id="where-reproducibility-quietly-fails" class="slide level2 center">
 <h2>Where reproducibility quietly fails</h2>
 <p>These are ordinary, not dramatic — and they happen to careful people.</p>
 <table>
@@ -412,14 +412,14 @@
 <p>The risk is not embarrassment. It is presenting a result you can no longer stand behind.</p>
 </div>
 </section>
-<section id="a-quick-honest-poll" class="slide level2">
+<section id="a-quick-honest-poll" class="slide level2 center">
 <h2>A quick, honest poll</h2>
 <p>Have you ever struggled to reconstruct what you did on a project from a few months ago?</p>
 <div class="reflection-card">
 <p>Almost everyone has. The point is not guilt — it is to treat documentation as a normal, expected part of the workflow, starting with one process today.</p>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 </section>
 <section>
@@ -427,11 +427,11 @@
 <h1>Session 1 · Documentation Clinic</h1>
 
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 <p><span class="kicker">The clinic</span></p>
 </section>
-<section id="document-one-workflow-so-it-stands-alone" class="slide level2">
+<section id="document-one-workflow-so-it-stands-alone" class="slide level2 center">
 <h2>Document one workflow so it stands alone</h2>
 <p>Pick the <strong>most complex or critical</strong> workflow in your project — the one you would least want to lose.</p>
 <div class="activity-card">
@@ -439,7 +439,7 @@
 </div>
 <p>Candidates: a Grasshopper setup, a survey-data analysis, a GIS operation, a Python notebook, a statistical step.</p>
 </section>
-<section id="documentation-template" class="slide level2">
+<section id="documentation-template" class="slide level2 center">
 <h2>Documentation template</h2>
 <p>Copy this structure into your notes.</p>
 <table>
@@ -477,7 +477,7 @@
 </tbody>
 </table>
 </section>
-<section id="the-documentation-swap" class="slide level2">
+<section id="the-documentation-swap" class="slide level2 center">
 <h2>The documentation swap</h2>
 <p>We test documentation the only honest way: someone else follows it cold.</p>
 <div class="three-step">
@@ -495,11 +495,11 @@
 <p>The gaps you find are the gaps a future reader would hit. This is the most useful feedback you will get all week.</p>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 <p><span class="kicker">Automation ethics</span></p>
 </section>
-<section id="what-ai-use-and-research-methods-share" class="slide level2">
+<section id="what-ai-use-and-research-methods-share" class="slide level2 center">
 <h2>What AI use and research methods share</h2>
 <div class="concept-card">
 <p><span class="card-title">The shared root</span> Both come down to one principle: <strong>KNOW YOUR DATA.</strong></p>
@@ -514,7 +514,7 @@
 </div>
 <p>When you don’t understand the data behind a result, harm propagates quietly and at scale.</p>
 </section>
-<section id="automation-ethics-cases" class="slide level2">
+<section id="automation-ethics-cases" class="slide level2 center">
 <h2>Automation Ethics Cases</h2>
 <p>Read each case and place it: acceptable, acceptable <strong>with disclosure</strong>, or not acceptable — and say why.</p>
 <table>
@@ -547,7 +547,7 @@
 <p>The line is rarely “AI or not.” It is <strong>understanding + disclosure</strong>: do you understand the step, and have you said how it was produced?</p>
 </div>
 </section>
-<section id="ai-method-review" class="slide level2">
+<section id="ai-method-review" class="slide level2 center">
 <h2>AI Method Review</h2>
 <p>A common situation, examined as a method — not a person.</p>
 <div class="concept-card">
@@ -558,21 +558,32 @@
 </div>
 <p>We critique the <strong>workflow and its claims</strong>, never the author’s ability.</p>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 <p><span class="kicker">Key visual</span></p>
 </section>
-<section id="an-ai-assisted-workflow-made-honest" class="slide level2">
+<section id="an-ai-assisted-workflow-made-honest" class="slide level2 center">
 <h2>An AI-assisted workflow, made honest</h2>
 <p>The same four-zone frame as the rest of the course — but now one zone is an AI draft, and the <strong>manual check</strong> and <strong>disclosure</strong> are not optional.</p>
 <div class="tool-panel demo-pending">
-<p>::: {.zone .input}<strong>Prompt</strong> “Write a geopandas script that buffers transit stops 400 m and reports % of site parcels covered.” ::: ::: {.zone .operation}<strong>AI output</strong> a draft script + a Grasshopper Python component stub ::: ::: {.zone .check}<strong>Manual check</strong> CRS is projected (metres, not degrees); buffer distance correct; parcel counts spot-checked by hand ::: ::: {.zone .output}<strong>Disclosure note</strong> “Buffer script drafted with AI; CRS and counts verified manually on DD-MM.” :::</p>
+<div class="zone input">
+<p><strong>Prompt</strong> “Write a geopandas script that buffers transit stops 400 m and reports % of site parcels covered.”</p>
+</div>
+<div class="zone operation">
+<p><strong>AI output</strong> a draft script + a Grasshopper Python component stub</p>
+</div>
+<div class="zone check">
+<p><strong>Manual check</strong> CRS is projected (metres, not degrees); buffer distance correct; parcel counts spot-checked by hand</p>
+</div>
+<div class="zone output">
+<p><strong>Disclosure note</strong> “Buffer script drafted with AI; CRS and counts verified manually on DD-MM.”</p>
+</div>
 </div>
 <div class="warning-card">
 <p>AI can draft the step. It cannot verify it or disclose it. Those two zones are your responsibility, every time.</p>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 </section></section>
 <section>
@@ -580,18 +591,18 @@
 <h1>Session 1 · Mentor Prep</h1>
 
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 <p><span class="kicker">Mentor prep</span></p>
 </section>
-<section id="make-the-mentor-meeting-count" class="slide level2">
+<section id="make-the-mentor-meeting-count" class="slide level2 center">
 <h2>Make the mentor meeting count</h2>
 <p>Most mentor time is lost to vague questions. A little preparation turns a pleasant chat into a useful one.</p>
 <div class="activity-card">
 <p><span class="card-title">Prepare now · 15 minutes</span> 1. <strong>One-liner</strong> — your project in a single sentence 2. <strong>Specific ask</strong> — the exact advice you need 3. <strong>Context check</strong> — what your mentor actually does 4. <strong>Question bank</strong> — five strategic questions 5. <strong>Show-and-tell</strong> — the one thing you want them to see</p>
 </div>
 </section>
-<section id="weak-questions-vs-strategic-questions" class="slide level2">
+<section id="weak-questions-vs-strategic-questions" class="slide level2 center">
 <h2>Weak questions vs strategic questions</h2>
 <div class="two-col">
 <div class="warning-card">
@@ -602,7 +613,7 @@
 </div>
 </div>
 </section>
-<section id="question-workshop" class="slide level2">
+<section id="question-workshop" class="slide level2 center">
 <h2>Question workshop</h2>
 <div class="activity-card">
 <p><span class="card-title">In pairs · 10 minutes</span> 1. Person A delivers their one-liner + best strategic question 2. Person B gives specific feedback and one improvement 3. Swap roles and repeat</p>
@@ -611,7 +622,7 @@
 <p>You are not competing for the best question. You are pressure-testing your own so it earns a real answer in the room.</p>
 </div>
 </section>
-<section id="follow-up-email-template" class="slide level2">
+<section id="follow-up-email-template" class="slide level2 center">
 <h2>Follow-up email template</h2>
 <p>Send within 48 hours. Show that their advice changed something.</p>
 <table>
@@ -648,7 +659,7 @@
 <p><span class="card-title">Draft it now</span> Write the subject line and opening for your upcoming mentor meeting before you leave class.</p>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 </section></section>
 <section>
@@ -657,28 +668,39 @@
 <p>Take 10 minutes.</p>
 <p>When you return, post one rough workflow material to Slack for Session 2.</p>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 <p><span class="kicker">Session 2 · Round table</span></p>
 </section>
-<section id="round-table-on-your-workflow" class="slide level2">
+<section id="round-table-on-your-workflow" class="slide level2 center">
 <h2>Round table on YOUR workflow</h2>
 <div class="spine-rail">
 <p><span class="node">Decision</span> <span class="node">Evidence</span> <span class="node">Variation</span> <span class="node is-current">Output</span> <span class="node">Threshold</span> <span class="node">Action</span></p>
 </div>
 <p>Upload one rough material to Slack before Session 2 — a prompt log, an error message, a workflow output, a README fragment, or a verification note. <span class="feeds-tag">feeds A3</span></p>
 </section>
-<section id="reconstruct-your-verification-in-four-steps" class="slide level2">
+<section id="reconstruct-your-verification-in-four-steps" class="slide level2 center">
 <h2>Reconstruct your verification in four steps</h2>
 <p><strong>Object this week: your workflow’s verification — what someone must inspect to trust it.</strong></p>
 <div class="recall-4step">
-<p>::: {.step}<strong>Did</strong> What does the workflow produce, and how, step by step? ::: ::: {.step}<strong>Assumed</strong> What inputs or settings are implicit and undocumented? ::: ::: {.step}<strong>Risk</strong> Which step could a reader not reproduce or check? ::: ::: {.step}<strong>Verify</strong> What must someone inspect before they trust this output? :::</p>
+<div class="step">
+<p><strong>Did</strong> What does the workflow produce, and how, step by step?</p>
+</div>
+<div class="step">
+<p><strong>Assumed</strong> What inputs or settings are implicit and undocumented?</p>
+</div>
+<div class="step">
+<p><strong>Risk</strong> Which step could a reader not reproduce or check?</p>
+</div>
+<div class="step">
+<p><strong>Verify</strong> What must someone inspect before they trust this output?</p>
+</div>
 </div>
 <div class="grading-note">
 <p>Post your four-step under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Volunteers go first; random draw may fill the remaining examples.</p>
 </div>
 </section>
-<section id="peer-reproducibility-check" class="slide level2">
+<section id="peer-reproducibility-check" class="slide level2 center">
 <h2>Peer Reproducibility Check</h2>
 <p>In small groups, run each other’s documentation cold — the same test as the swap, on real project material.</p>
 <div class="three-step">
@@ -696,7 +718,7 @@
 <p>We are not ranking packages. We are finding, kindly and early, the gap a stranger would fall into.</p>
 </div>
 </section>
-<section id="session-2-reflection" class="slide level2">
+<section id="session-2-reflection" class="slide level2 center">
 <h2>Session 2 reflection</h2>
 <div class="reflection-card">
 <p><span class="card-title">What changed?</span> Take three minutes and write:</p>
@@ -709,17 +731,17 @@
 </div>
 <p>Keep it in notes or post it as a Slack thread under your material.</p>
 </section>
-<section id="week-8-checklist" class="slide level2">
+<section id="week-8-checklist" class="slide level2 center">
 <h2>Week 8 Checklist</h2>
 <div class="concept-card">
 <p><span class="card-title">Before Week 9</span> 1. complete your mentor consultation using your strategic questions 2. send the follow-up email showing how their advice changed your approach 3. document one workflow so a peer can rerun it unaided 4. disclose and verify any AI-assisted step in your method 5. fix the weakest reproducibility gap your peer check found</p>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 <p><span class="kicker">Exit</span></p>
 </section>
-<section id="your-verification-in-one-line" class="slide level2">
+<section id="your-verification-in-one-line" class="slide level2 center">
 <h2>Your verification, in one line</h2>
 <p>Before you leave, write and post:</p>
 <div class="reflection-card">
@@ -813,7 +835,7 @@
         disableLayout: false,
 
         // Vertical centering of slides
-        center: false,
+        center: true,
 
         // Enables touch navigation on devices with touch input
         touch: true,

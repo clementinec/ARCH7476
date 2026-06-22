@@ -10,7 +10,7 @@ format:
     incremental: true
     width: 1500
     height: 900
-    center: false
+    center: true
     footer: "Week 5 · feeds A2: Evidence + Workflow Map"
 ---
 
@@ -104,10 +104,18 @@ How will it behave over time when weather, people, and systems act on it?
 ## Same building, two models
 
 ::: {.tool-panel .demo-pending}
-::: {.zone .input}**BIM view** walls · rooms · floors · doors · material layers · element relationships :::
-::: {.zone .operation}**BEM view** thermal zones · heat-transfer surfaces · schedules · weather · HVAC systems :::
-::: {.zone .output}**Shared object** the same wall exists in both — but not for the same reason :::
-::: {.zone .check}**Quality check** does each model carry what its analysis actually needs? :::
+::: {.zone .input}
+**BIM view** walls · rooms · floors · doors · material layers · element relationships
+:::
+::: {.zone .operation}
+**BEM view** thermal zones · heat-transfer surfaces · schedules · weather · HVAC systems
+:::
+::: {.zone .output}
+**Shared object** the same wall exists in both — but not for the same reason
+:::
+::: {.zone .check}
+**Quality check** does each model carry what its analysis actually needs?
+:::
 :::
 
 ::: {.warning-card}
@@ -490,10 +498,18 @@ Volunteers go first; random draw may fill the remaining examples.
 **Object this week: your BIM/BEM model and one performance claim.**
 
 ::: {.recall-4step}
-::: {.step}**Did** What does the model claim, and what did you actually build or export? :::
-::: {.step}**Assumed** What zoning, schedules, and constructions did the workflow assume for you? :::
-::: {.step}**Risk** Where could the translation have failed without you noticing? :::
-::: {.step}**Verify** What would you inspect before trusting the output? :::
+::: {.step}
+**Did** What does the model claim, and what did you actually build or export?
+:::
+::: {.step}
+**Assumed** What zoning, schedules, and constructions did the workflow assume for you?
+:::
+::: {.step}
+**Risk** Where could the translation have failed without you noticing?
+:::
+::: {.step}
+**Verify** What would you inspect before trusting the output?
+:::
 :::
 
 ::: {.grading-note}

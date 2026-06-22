@@ -1576,7 +1576,7 @@
     "href": "weeks_v2/week-07.html#prototype-quality-check",
     "title": "Week 7: Method Prototype Studio",
     "section": "Prototype Quality Check",
-    "text": "Prototype Quality Check\nThe test for “ready for the round table”:\n\n::: {.zone .input}Input can another person tell what goes in? ::: ::: {.zone .operation}What varies can they see which judgment calls mattered? ::: ::: {.zone .output}Output can they tell what comes out? ::: ::: {.zone .check}Quality check can they tell whether the output is already useful? :::",
+    "text": "Prototype Quality Check\nThe test for “ready for the round table”:\n\n\nInput can another person tell what goes in?\n\n\nWhat varies can they see which judgment calls mattered?\n\n\nOutput can they tell what comes out?\n\n\nQuality check can they tell whether the output is already useful?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -5704,7 +5704,7 @@
     "href": "weeks_v2/week-01.html#look-harder-at-what-you-already-did",
     "title": "Week 1: Why Evidence Needs a Workflow",
     "section": "Look harder at what you already did",
-    "text": "Look harder at what you already did\nYou learn most by examining the reasoning inside work you have already done — not by adding new work. Every week, the same four questions, pointed at that week’s object:\n\n::: {.step}Did What did I actually do, step by step? ::: ::: {.step}Assumed What did I assume at each step? ::: ::: {.step}Risk Where did I not check — where could it break? ::: ::: {.step}Verify What would I verify if I did it again? :::\n\nThe point is not to judge old work. It is to see how its argument was built.",
+    "text": "Look harder at what you already did\nYou learn most by examining the reasoning inside work you have already done — not by adding new work. Every week, the same four questions, pointed at that week’s object:\n\n\nDid What did I actually do, step by step?\n\n\nAssumed What did I assume at each step?\n\n\nRisk Where did I not check — where could it break?\n\n\nVerify What would I verify if I did it again?\n\n\nThe point is not to judge old work. It is to see how its argument was built.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -5788,7 +5788,7 @@
     "href": "weeks_v2/week-01.html#reconstruct-your-decision-in-four-steps",
     "title": "Week 1: Why Evidence Needs a Workflow",
     "section": "Reconstruct your decision in four steps",
-    "text": "Reconstruct your decision in four steps\nObject this week: one past studio decision and its evidence.\n\n::: {.step}Did What did I decide, and what did I actually do? ::: ::: {.step}Assumed What did I treat as evidence that was really assumption or precedent? ::: ::: {.step}Risk Where was confidence stronger than the evidence? ::: ::: {.step}Verify What evidence would I gather for the next decision? :::\n\n\nPost your filled four-step to Slack under your image. Posting + an honest reconstruction is the graded unit — not how you spoke.",
+    "text": "Reconstruct your decision in four steps\nObject this week: one past studio decision and its evidence.\n\n\nDid What did I decide, and what did I actually do?\n\n\nAssumed What did I treat as evidence that was really assumption or precedent?\n\n\nRisk Where was confidence stronger than the evidence?\n\n\nVerify What evidence would I gather for the next decision?\n\n\n\nPost your filled four-step to Slack under your image. Posting + an honest reconstruction is the graded unit — not how you spoke.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -5884,7 +5884,7 @@
     "href": "weeks_v2/week-10.html#reconstruct-your-draft-in-four-steps",
     "title": "Week 10: Draft Workflow Review",
     "section": "Reconstruct your draft in four steps",
-    "text": "Reconstruct your draft in four steps\nObject this week: your A4 draft package as a reviewer will meet it.\n\n::: {.step}Did What does the draft currently claim and show? ::: ::: {.step}Assumed What am I assuming the reader already knows? ::: ::: {.step}Risk Which link in the spine is weakest or missing? ::: ::: {.step}Verify What one fix would most improve traceability? :::\n\n\nPost your four-step under your draft. Posting + an honest reconstruction is the graded unit. Presenting is welcomed and earns credit; it is never required and never scored as performance.",
+    "text": "Reconstruct your draft in four steps\nObject this week: your A4 draft package as a reviewer will meet it.\n\n\nDid What does the draft currently claim and show?\n\n\nAssumed What am I assuming the reader already knows?\n\n\nRisk Which link in the spine is weakest or missing?\n\n\nVerify What one fix would most improve traceability?\n\n\n\nPost your four-step under your draft. Posting + an honest reconstruction is the graded unit. Presenting is welcomed and earns credit; it is never required and never scored as performance.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6004,7 +6004,7 @@
     "href": "weeks_v2/week-02.html#reconstruct-your-decision-in-four-steps",
     "title": "Week 2: Audit the Evidence You Already Use",
     "section": "Reconstruct your decision in four steps",
-    "text": "Reconstruct your decision in four steps\nObject this week: the evidence behind your past decision.\n\n::: {.step}Did What evidence did I actually use, and for which decision? ::: ::: {.step}Assumed What did I treat as evidence that was really assumption or precedent? ::: ::: {.step}Risk Where was my confidence stronger than the evidence supported? ::: ::: {.step}Verify What evidence would I gather before the next decision? :::\n\n\nPost your filled four-step to Slack under your image. Posting + an honest reconstruction is the graded unit — not how you spoke.",
+    "text": "Reconstruct your decision in four steps\nObject this week: the evidence behind your past decision.\n\n\nDid What evidence did I actually use, and for which decision?\n\n\nAssumed What did I treat as evidence that was really assumption or precedent?\n\n\nRisk Where was my confidence stronger than the evidence supported?\n\n\nVerify What evidence would I gather before the next decision?\n\n\n\nPost your filled four-step to Slack under your image. Posting + an honest reconstruction is the graded unit — not how you spoke.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6052,7 +6052,7 @@
     "href": "weeks_v2/week-03.html#workbook-anatomy",
     "title": "Week 3: Spreadsheet as the Comparison Layer",
     "section": "Workbook anatomy",
-    "text": "Workbook anatomy\nThe same four-zone frame we use for every tool. A real workbook screenshot drops into this later.\n\n::: {.zone .input}Input evidence rows — source, observation, confidence per variant ::: ::: {.zone .operation}What varies the option or scenario being compared (A / B / C, or low / mid / high) ::: ::: {.zone .output}Output one chart or matrix that makes the trade-off visible ::: ::: {.zone .check}Quality check units stated, legend present, formulas readable by a stranger :::\n\n\nScreenshot pending — we will capture a live workbook in class rather than fake a polished one.",
+    "text": "Workbook anatomy\nThe same four-zone frame we use for every tool. A real workbook screenshot drops into this later.\n\n\nInput evidence rows — source, observation, confidence per variant\n\n\nWhat varies the option or scenario being compared (A / B / C, or low / mid / high)\n\n\nOutput one chart or matrix that makes the trade-off visible\n\n\nQuality check units stated, legend present, formulas readable by a stranger\n\n\n\nScreenshot pending — we will capture a live workbook in class rather than fake a polished one.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6100,7 +6100,7 @@
     "href": "weeks_v2/week-03.html#chart-rescue-formula",
     "title": "Week 3: Spreadsheet as the Comparison Layer",
     "section": "Chart rescue formula",
-    "text": "Chart rescue formula\n\n::: {.step}Message Decide the one thing the chart must say ::: ::: {.step}Remove Cut everything that does not support it ::: ::: {.step}Force Use annotation or labels to make the point unmissable ::: ::: {.step}Limit Show uncertainty, then connect back to the decision :::",
+    "text": "Chart rescue formula\n\n\nMessage Decide the one thing the chart must say\n\n\nRemove Cut everything that does not support it\n\n\nForce Use annotation or labels to make the point unmissable\n\n\nLimit Show uncertainty, then connect back to the decision",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6148,7 +6148,7 @@
     "href": "weeks_v2/week-03.html#reconstruct-your-comparison-in-four-steps",
     "title": "Week 3: Spreadsheet as the Comparison Layer",
     "section": "Reconstruct your comparison in four steps",
-    "text": "Reconstruct your comparison in four steps\nObject this week: your comparison of variants or scenarios in a spreadsheet.\n\n::: {.step}Did What variants did I compare, and how did I structure the sheets? ::: ::: {.step}Assumed What scores, weights, or units did I treat as given? ::: ::: {.step}Risk Where is the comparison hiding a weak input or a false precision? ::: ::: {.step}Verify What would I add to make the trade-off legible to a stranger? :::\n\n\nPost your filled four-step to Slack under your comparison. Posting + an honest reconstruction is the graded unit — not how you spoke or how polished the workbook looks.\n\nVolunteers go first; random draw may fill the remaining examples.",
+    "text": "Reconstruct your comparison in four steps\nObject this week: your comparison of variants or scenarios in a spreadsheet.\n\n\nDid What variants did I compare, and how did I structure the sheets?\n\n\nAssumed What scores, weights, or units did I treat as given?\n\n\nRisk Where is the comparison hiding a weak input or a false precision?\n\n\nVerify What would I add to make the trade-off legible to a stranger?\n\n\n\nPost your filled four-step to Slack under your comparison. Posting + an honest reconstruction is the graded unit — not how you spoke or how polished the workbook looks.\n\nVolunteers go first; random draw may fill the remaining examples.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6220,7 +6220,7 @@
     "href": "weeks_v2/week-04.html#a-geopandas-operation-as-a-tool",
     "title": "Week 4: GIS Choices for Architects",
     "section": "A geopandas operation as a tool",
-    "text": "A geopandas operation as a tool\n\n::: {.zone .input}Input site polygon + a transit / amenity layer ::: ::: {.zone .operation}What varies buffer distance (e.g. 200–600 m) ::: ::: {.zone .output}Output coverage % per option (per site or per layer) ::: ::: {.zone .check}Quality check CRS stated, feature counts spot-checked :::\n\nThe dashed frame means the live capture does not exist yet — we will drop a real cell in, not a faked screenshot.",
+    "text": "A geopandas operation as a tool\n\n\nInput site polygon + a transit / amenity layer\n\n\nWhat varies buffer distance (e.g. 200–600 m)\n\n\nOutput coverage % per option (per site or per layer)\n\n\nQuality check CRS stated, feature counts spot-checked\n\n\nThe dashed frame means the live capture does not exist yet — we will drop a real cell in, not a faked screenshot.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6292,7 +6292,7 @@
     "href": "weeks_v2/week-04.html#reconstruct-your-site-in-four-steps",
     "title": "Week 4: GIS Choices for Architects",
     "section": "Reconstruct your site in four steps",
-    "text": "Reconstruct your site in four steps\nObject this week: your site’s spatial layers and the spatial claim they support.\n\n::: {.step}Did Which layers did I gather, and what claim do they make? ::: ::: {.step}Assumed What did I assume about CRS, coverage, or completeness? ::: ::: {.step}Risk Where could the spatial claim break or mislead? ::: ::: {.step}Verify What would I check — counts, CRS, a buffer recomputed? :::\n\n\nPost your filled four-step to Slack under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Volunteers go first; random draw may fill the remaining examples.",
+    "text": "Reconstruct your site in four steps\nObject this week: your site’s spatial layers and the spatial claim they support.\n\n\nDid Which layers did I gather, and what claim do they make?\n\n\nAssumed What did I assume about CRS, coverage, or completeness?\n\n\nRisk Where could the spatial claim break or mislead?\n\n\nVerify What would I check — counts, CRS, a buffer recomputed?\n\n\n\nPost your filled four-step to Slack under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Volunteers go first; random draw may fill the remaining examples.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6328,7 +6328,7 @@
     "href": "weeks_v2/week-06.html#triage-every-source",
     "title": "Week 6: Evidence and Pathway Mapping",
     "section": "Triage every source",
-    "text": "Triage every source\nAsk four questions of each one:\n\n::: {.step}Relevant Does it bear on this decision? ::: ::: {.step}Trustworthy Can the source be inspected and trusted? ::: ::: {.step}Local Is it close enough to your site and program? ::: ::: {.step}Usable Can I actually use it this semester? :::",
+    "text": "Triage every source\nAsk four questions of each one:\n\n\nRelevant Does it bear on this decision?\n\n\nTrustworthy Can the source be inspected and trusted?\n\n\nLocal Is it close enough to your site and program?\n\n\nUsable Can I actually use it this semester?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6400,7 +6400,7 @@
     "href": "weeks_v2/week-06.html#reconstruct-your-route-in-four-steps",
     "title": "Week 6: Evidence and Pathway Mapping",
     "section": "Reconstruct your route in four steps",
-    "text": "Reconstruct your route in four steps\nObject this week: your chosen route and its smallest useful output.\n\n::: {.step}Did Which route did I pick, and what output am I aiming at? ::: ::: {.step}Assumed What am I assuming the evidence will show or allow? ::: ::: {.step}Risk Where could this route stall or the output stay out of reach? ::: ::: {.step}Verify What is the smallest thing I can do to confirm the route works? :::\n\n\nSpeak for 60–90 seconds: which route are you choosing, and what is the smallest useful output? Posting + an honest reconstruction is the graded unit — not how you spoke. Volunteers go first; random draw may fill the remaining examples.",
+    "text": "Reconstruct your route in four steps\nObject this week: your chosen route and its smallest useful output.\n\n\nDid Which route did I pick, and what output am I aiming at?\n\n\nAssumed What am I assuming the evidence will show or allow?\n\n\nRisk Where could this route stall or the output stay out of reach?\n\n\nVerify What is the smallest thing I can do to confirm the route works?\n\n\n\nSpeak for 60–90 seconds: which route are you choosing, and what is the smallest useful output? Posting + an honest reconstruction is the graded unit — not how you spoke. Volunteers go first; random draw may fill the remaining examples.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6436,7 +6436,7 @@
     "href": "weeks_v2/week-05.html#same-building-two-models",
     "title": "Week 5: BIM, BEM, and Building Performance",
     "section": "Same building, two models",
-    "text": "Same building, two models\n\n::: {.zone .input}BIM view walls · rooms · floors · doors · material layers · element relationships ::: ::: {.zone .operation}BEM view thermal zones · heat-transfer surfaces · schedules · weather · HVAC systems ::: ::: {.zone .output}Shared object the same wall exists in both — but not for the same reason ::: ::: {.zone .check}Quality check does each model carry what its analysis actually needs? :::\n\n\nCommonly fails to translate Thermal zoning, occupancy and system schedules, real constructions (R-value, SHGC, mass), and building orientation.",
+    "text": "Same building, two models\n\n\nBIM view walls · rooms · floors · doors · material layers · element relationships\n\n\nBEM view thermal zones · heat-transfer surfaces · schedules · weather · HVAC systems\n\n\nShared object the same wall exists in both — but not for the same reason\n\n\nQuality check does each model carry what its analysis actually needs?\n\n\n\nCommonly fails to translate Thermal zoning, occupancy and system schedules, real constructions (R-value, SHGC, mass), and building orientation.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6520,7 +6520,7 @@
     "href": "weeks_v2/week-05.html#reconstruct-your-model-in-four-steps",
     "title": "Week 5: BIM, BEM, and Building Performance",
     "section": "Reconstruct your model in four steps",
-    "text": "Reconstruct your model in four steps\nObject this week: your BIM/BEM model and one performance claim.\n\n::: {.step}Did What does the model claim, and what did you actually build or export? ::: ::: {.step}Assumed What zoning, schedules, and constructions did the workflow assume for you? ::: ::: {.step}Risk Where could the translation have failed without you noticing? ::: ::: {.step}Verify What would you inspect before trusting the output? :::\n\n\nPost your filled four-step to Slack under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Presenting is welcomed and earns credit; it is never required and never scored as performance.",
+    "text": "Reconstruct your model in four steps\nObject this week: your BIM/BEM model and one performance claim.\n\n\nDid What does the model claim, and what did you actually build or export?\n\n\nAssumed What zoning, schedules, and constructions did the workflow assume for you?\n\n\nRisk Where could the translation have failed without you noticing?\n\n\nVerify What would you inspect before trusting the output?\n\n\n\nPost your filled four-step to Slack under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Presenting is welcomed and earns credit; it is never required and never scored as performance.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6544,7 +6544,7 @@
     "href": "weeks_v2/week-07.html#the-prototype-frame-four-zones",
     "title": "Week 7: Method Prototype Studio",
     "section": "The prototype frame — four zones",
-    "text": "The prototype frame — four zones\nRead any workflow as four zones. If you can fill all four honestly, you have a prototype, not just a file.\n\n::: {.zone .input}Input the real files, data, or model the method starts from ::: ::: {.zone .operation}What varies the one thing you change between runs ::: ::: {.zone .output}Output the single interpretable result it produces ::: ::: {.zone .check}Quality check what proves the run was valid, not just that it ran :::\n\n\nA screenshot of your tool running drops into this frame once you have one. Until then it stays marked pending — honest, not faked.",
+    "text": "The prototype frame — four zones\nRead any workflow as four zones. If you can fill all four honestly, you have a prototype, not just a file.\n\n\nInput the real files, data, or model the method starts from\n\n\nWhat varies the one thing you change between runs\n\n\nOutput the single interpretable result it produces\n\n\nQuality check what proves the run was valid, not just that it ran\n\n\n\nA screenshot of your tool running drops into this frame once you have one. Until then it stays marked pending — honest, not faked.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6652,7 +6652,7 @@
     "href": "weeks_v2/week-07.html#reconstruct-your-prototype-in-four-steps",
     "title": "Week 7: Method Prototype Studio",
     "section": "Reconstruct your prototype in four steps",
-    "text": "Reconstruct your prototype in four steps\nObject this week: your prototype workflow as someone else will meet it.\n\n::: {.step}Did What does the workflow actually do, step by step? ::: ::: {.step}Assumed What hidden inputs or settings does each step assume? ::: ::: {.step}Risk Where did I not check — where could it break or fail to rerun? ::: ::: {.step}Verify What quality check would prove the run is valid? :::\n\n\nPost your filled four-step to Slack under your artifact. Posting + an honest reconstruction is the graded unit — not how you spoke. Walking through is welcomed and earns credit; it is never required and never scored as performance. Volunteers go first; a random draw may fill the remaining examples.",
+    "text": "Reconstruct your prototype in four steps\nObject this week: your prototype workflow as someone else will meet it.\n\n\nDid What does the workflow actually do, step by step?\n\n\nAssumed What hidden inputs or settings does each step assume?\n\n\nRisk Where did I not check — where could it break or fail to rerun?\n\n\nVerify What quality check would prove the run is valid?\n\n\n\nPost your filled four-step to Slack under your artifact. Posting + an honest reconstruction is the graded unit — not how you spoke. Walking through is welcomed and earns credit; it is never required and never scored as performance. Volunteers go first; a random draw may fill the remaining examples.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6748,7 +6748,7 @@
     "href": "weeks_v2/week-09.html#reconstruct-your-figure-in-four-steps",
     "title": "Week 9: Storytelling, Figures, and Decisions",
     "section": "Reconstruct your figure in four steps",
-    "text": "Reconstruct your figure in four steps\nObject this week: your result/figure and the design action it changes.\n\n::: {.step}Did What does this figure currently show, and what is its one message? ::: ::: {.step}Assumed What does the reader have to already know for it to land? ::: ::: {.step}Risk Where is the takeaway unclear, or the uncertainty hidden? ::: ::: {.step}Verify What threshold or label would tie it to a design action? :::\n\n\nPost your four-step under your figure. Posting + an honest reconstruction is the graded unit — not how you spoke. Speak for 60–90 seconds: what result changes the design action, and what uncertainty remains visible?",
+    "text": "Reconstruct your figure in four steps\nObject this week: your result/figure and the design action it changes.\n\n\nDid What does this figure currently show, and what is its one message?\n\n\nAssumed What does the reader have to already know for it to land?\n\n\nRisk Where is the takeaway unclear, or the uncertainty hidden?\n\n\nVerify What threshold or label would tie it to a design action?\n\n\n\nPost your four-step under your figure. Posting + an honest reconstruction is the graded unit — not how you spoke. Speak for 60–90 seconds: what result changes the design action, and what uncertainty remains visible?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6892,7 +6892,7 @@
     "href": "weeks_v2/week-08.html#an-ai-assisted-workflow-made-honest",
     "title": "Week 8: Reproducibility and Mentor Prep",
     "section": "An AI-assisted workflow, made honest",
-    "text": "An AI-assisted workflow, made honest\nThe same four-zone frame as the rest of the course — but now one zone is an AI draft, and the manual check and disclosure are not optional.\n\n::: {.zone .input}Prompt “Write a geopandas script that buffers transit stops 400 m and reports % of site parcels covered.” ::: ::: {.zone .operation}AI output a draft script + a Grasshopper Python component stub ::: ::: {.zone .check}Manual check CRS is projected (metres, not degrees); buffer distance correct; parcel counts spot-checked by hand ::: ::: {.zone .output}Disclosure note “Buffer script drafted with AI; CRS and counts verified manually on DD-MM.” :::\n\n\nAI can draft the step. It cannot verify it or disclose it. Those two zones are your responsibility, every time.",
+    "text": "An AI-assisted workflow, made honest\nThe same four-zone frame as the rest of the course — but now one zone is an AI draft, and the manual check and disclosure are not optional.\n\n\nPrompt “Write a geopandas script that buffers transit stops 400 m and reports % of site parcels covered.”\n\n\nAI output a draft script + a Grasshopper Python component stub\n\n\nManual check CRS is projected (metres, not degrees); buffer distance correct; parcel counts spot-checked by hand\n\n\nDisclosure note “Buffer script drafted with AI; CRS and counts verified manually on DD-MM.”\n\n\n\nAI can draft the step. It cannot verify it or disclose it. Those two zones are your responsibility, every time.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6964,7 +6964,7 @@
     "href": "weeks_v2/week-08.html#reconstruct-your-verification-in-four-steps",
     "title": "Week 8: Reproducibility and Mentor Prep",
     "section": "Reconstruct your verification in four steps",
-    "text": "Reconstruct your verification in four steps\nObject this week: your workflow’s verification — what someone must inspect to trust it.\n\n::: {.step}Did What does the workflow produce, and how, step by step? ::: ::: {.step}Assumed What inputs or settings are implicit and undocumented? ::: ::: {.step}Risk Which step could a reader not reproduce or check? ::: ::: {.step}Verify What must someone inspect before they trust this output? :::\n\n\nPost your four-step under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Volunteers go first; random draw may fill the remaining examples.",
+    "text": "Reconstruct your verification in four steps\nObject this week: your workflow’s verification — what someone must inspect to trust it.\n\n\nDid What does the workflow produce, and how, step by step?\n\n\nAssumed What inputs or settings are implicit and undocumented?\n\n\nRisk Which step could a reader not reproduce or check?\n\n\nVerify What must someone inspect before they trust this output?\n\n\n\nPost your four-step under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Volunteers go first; random draw may fill the remaining examples.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -7156,7 +7156,7 @@
     "href": "weeks_v2/week-11.html#reconstruct-your-weakest-component-in-four-steps",
     "title": "Week 11: Final Package Clinic",
     "section": "Reconstruct your weakest component in four steps",
-    "text": "Reconstruct your weakest component in four steps\nObject this week: your weakest A4 component, as a reviewer will meet it.\n\n::: {.step}Did What does this component currently claim and show? ::: ::: {.step}Assumed What am I assuming the reader already knows? ::: ::: {.step}Risk Why is this the weakest of the four — what is missing? ::: ::: {.step}Verify What one fix would most improve it before submission? :::\n\n\nPost your four-step under your component. Posting + an honest reconstruction is the graded unit. Presenting is welcomed and earns credit; it is never required and never scored as performance. Volunteers go first; random draw may fill the remaining examples.",
+    "text": "Reconstruct your weakest component in four steps\nObject this week: your weakest A4 component, as a reviewer will meet it.\n\n\nDid What does this component currently claim and show?\n\n\nAssumed What am I assuming the reader already knows?\n\n\nRisk Why is this the weakest of the four — what is missing?\n\n\nVerify What one fix would most improve it before submission?\n\n\n\nPost your four-step under your component. Posting + an honest reconstruction is the graded unit. Presenting is welcomed and earns credit; it is never required and never scored as performance. Volunteers go first; random draw may fill the remaining examples.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -7348,7 +7348,7 @@
     "href": "weeks_v2/week-12.html#reconstruct-what-transfers",
     "title": "Week 12: Object Fair",
     "section": "Reconstruct what transfers",
-    "text": "Reconstruct what transfers\nObject this week: the reasoning you can transfer to another project.\n\n::: {.step}Did What was the core reasoning move in your A4 workflow? ::: ::: {.step}Assumed What did it depend on that was specific to this project? ::: ::: {.step}Risk Where might that reasoning break on a different problem? ::: ::: {.step}Verify What would you check before reusing it next time? :::\n\n\nPost your four-step under your object card. Posting + an honest reconstruction is the graded unit — not how you spoke. Session 2 today is synthesis; there is no second graded presentation.",
+    "text": "Reconstruct what transfers\nObject this week: the reasoning you can transfer to another project.\n\n\nDid What was the core reasoning move in your A4 workflow?\n\n\nAssumed What did it depend on that was specific to this project?\n\n\nRisk Where might that reasoning break on a different problem?\n\n\nVerify What would you check before reusing it next time?\n\n\n\nPost your four-step under your object card. Posting + an honest reconstruction is the graded unit — not how you spoke. Session 2 today is synthesis; there is no second graded presentation.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",

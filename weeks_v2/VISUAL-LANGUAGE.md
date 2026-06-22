@@ -61,14 +61,25 @@ The course's recurring engine. **Same four prompts every week; only the
 OBJECT changes** (past decision → tool/route → prototype → package). Always
 state the object in the lead-in line.
 
+**IMPORTANT:** every `:::` marker must be on its OWN line. A one-line
+`::: {.step}text :::` does NOT parse as a div — it leaks as literal text.
+
 ```markdown
 **Reconstruct your [BIM/BEM screenshot]:**
 
 ::: {.recall-4step}
-::: {.step}**Did** the real steps you took, in order :::
-::: {.step}**Assumed** the hidden inputs at each step :::
-::: {.step}**Risk** where you did not check / could break :::
-::: {.step}**Verify** what you would check if you did it again :::
+::: {.step}
+**Did** the real steps you took, in order
+:::
+::: {.step}
+**Assumed** the hidden inputs at each step
+:::
+::: {.step}
+**Risk** where you did not check / could break
+:::
+::: {.step}
+**Verify** what you would check if you did it again
+:::
 :::
 ```
 
@@ -89,10 +100,18 @@ yet — honest, not faked.
 
 ```markdown
 ::: {.tool-panel .demo-pending}
-::: {.zone .input}**Input** site polygon + transit layer :::
-::: {.zone .operation}**What varies** buffer distance 200–600 m :::
-::: {.zone .output}**Output** access-coverage % per option :::
-::: {.zone .check}**Quality check** CRS stated, counts spot-checked :::
+::: {.zone .input}
+**Input** site polygon + transit layer
+:::
+::: {.zone .operation}
+**What varies** buffer distance 200–600 m
+:::
+::: {.zone .output}
+**Output** access-coverage % per option
+:::
+::: {.zone .check}
+**Quality check** CRS stated, counts spot-checked
+:::
 :::
 ```
 

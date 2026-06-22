@@ -10,7 +10,7 @@ format:
     incremental: true
     width: 1500
     height: 900
-    center: false
+    center: true
     footer: "Week 4 · feeds A2: Evidence + Workflow Map"
 ---
 
@@ -177,10 +177,18 @@ In a GIS notebook, you should be able to point to:
 ## A `geopandas` operation as a tool
 
 ::: {.tool-panel .demo-pending}
-::: {.zone .input}**Input** site polygon + a transit / amenity layer :::
-::: {.zone .operation}**What varies** buffer distance (e.g. 200–600 m) :::
-::: {.zone .output}**Output** coverage % per option (per site or per layer) :::
-::: {.zone .check}**Quality check** CRS stated, feature counts spot-checked :::
+::: {.zone .input}
+**Input** site polygon + a transit / amenity layer
+:::
+::: {.zone .operation}
+**What varies** buffer distance (e.g. 200–600 m)
+:::
+::: {.zone .output}
+**Output** coverage % per option (per site or per layer)
+:::
+::: {.zone .check}
+**Quality check** CRS stated, feature counts spot-checked
+:::
 :::
 
 The dashed frame means the live capture does not exist yet — we will drop a real cell in, not a faked screenshot.
@@ -396,10 +404,18 @@ If yes, it is a spatial claim GIS could help defend. If no, GIS is likely the wr
 **Object this week: your site's spatial layers and the spatial claim they support.**
 
 ::: {.recall-4step}
-::: {.step}**Did** Which layers did I gather, and what claim do they make? :::
-::: {.step}**Assumed** What did I assume about CRS, coverage, or completeness? :::
-::: {.step}**Risk** Where could the spatial claim break or mislead? :::
-::: {.step}**Verify** What would I check — counts, CRS, a buffer recomputed? :::
+::: {.step}
+**Did** Which layers did I gather, and what claim do they make?
+:::
+::: {.step}
+**Assumed** What did I assume about CRS, coverage, or completeness?
+:::
+::: {.step}
+**Risk** Where could the spatial claim break or mislead?
+:::
+::: {.step}
+**Verify** What would I check — counts, CRS, a buffer recomputed?
+:::
 :::
 
 ::: {.grading-note}

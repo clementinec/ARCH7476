@@ -335,7 +335,7 @@
 </div>
 
 </section>
-<section id="todays-agenda" class="slide level2">
+<section id="todays-agenda" class="slide level2 center">
 <h2>Today’s Agenda</h2>
 <div class="two-col">
 <div class="concept-card">
@@ -362,11 +362,11 @@
 <p>This is a tool week, but the question stays the same: what would make a performance claim defensible, and where does the workflow quietly break?</p>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 <p><span class="kicker">Why this week matters</span></p>
 </section>
-<section id="even-if-you-never-run-a-simulation" class="slide level2">
+<section id="even-if-you-never-run-a-simulation" class="slide level2 center">
 <h2>Even if you never run a simulation</h2>
 <p>You still need to read performance claims with care.</p>
 <ul>
@@ -378,11 +378,11 @@
 <p>A simulation number is only as good as the assumptions and cleanup behind it.</p>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 <p><span class="kicker">The core distinction</span></p>
 </section>
-<section id="what-are-bim-and-bem" class="slide level2">
+<section id="what-are-bim-and-bem" class="slide level2 center">
 <h2>What are BIM and BEM?</h2>
 <div class="two-col">
 <div class="concept-card">
@@ -403,7 +403,7 @@
 </div>
 </div>
 </section>
-<section id="same-building-different-core-questions" class="slide level2">
+<section id="same-building-different-core-questions" class="slide level2 center">
 <h2>Same building, different core questions</h2>
 <div class="two-col">
 <div class="concept-card">
@@ -414,16 +414,27 @@
 </div>
 </div>
 </section>
-<section id="same-building-two-models" class="slide level2">
+<section id="same-building-two-models" class="slide level2 center">
 <h2>Same building, two models</h2>
 <div class="tool-panel demo-pending">
-<p>::: {.zone .input}<strong>BIM view</strong> walls · rooms · floors · doors · material layers · element relationships ::: ::: {.zone .operation}<strong>BEM view</strong> thermal zones · heat-transfer surfaces · schedules · weather · HVAC systems ::: ::: {.zone .output}<strong>Shared object</strong> the same wall exists in both — but not for the same reason ::: ::: {.zone .check}<strong>Quality check</strong> does each model carry what its analysis actually needs? :::</p>
+<div class="zone input">
+<p><strong>BIM view</strong> walls · rooms · floors · doors · material layers · element relationships</p>
+</div>
+<div class="zone operation">
+<p><strong>BEM view</strong> thermal zones · heat-transfer surfaces · schedules · weather · HVAC systems</p>
+</div>
+<div class="zone output">
+<p><strong>Shared object</strong> the same wall exists in both — but not for the same reason</p>
+</div>
+<div class="zone check">
+<p><strong>Quality check</strong> does each model carry what its analysis actually needs?</p>
+</div>
 </div>
 <div class="warning-card">
 <p><span class="card-title">Commonly fails to translate</span> Thermal <strong>zoning</strong>, occupancy and system <strong>schedules</strong>, real <strong>constructions</strong> (R-value, SHGC, mass), and building <strong>orientation</strong>.</p>
 </div>
 </section>
-<section id="bim-data-priorities" class="slide level2">
+<section id="bim-data-priorities" class="slide level2 center">
 <h2>BIM data priorities</h2>
 <ul>
 <li class="fragment">project, site, building, levels</li>
@@ -433,7 +444,7 @@
 <li class="fragment">element relationships and construction logic</li>
 </ul>
 </section>
-<section id="bem-data-priorities" class="slide level2">
+<section id="bem-data-priorities" class="slide level2 center">
 <h2>BEM data priorities</h2>
 <ul>
 <li class="fragment">thermal zones</li>
@@ -444,7 +455,7 @@
 <li class="fragment">weather and shading context</li>
 </ul>
 </section>
-<section id="quick-check-bim-or-bem" class="slide level2">
+<section id="quick-check-bim-or-bem" class="slide level2 center">
 <h2>Quick check: BIM or BEM?</h2>
 <ol type="1">
 <li class="fragment">Exact window manufacturer and product code</li>
@@ -457,7 +468,7 @@
 <p><span class="card-title">Pair task</span> Label each item <code>BIM</code>, <code>BEM</code>, or <code>both</code>.</p>
 </div>
 </section>
-<section id="quick-check-answers" class="slide level2">
+<section id="quick-check-answers" class="slide level2 center">
 <h2>Quick check answers</h2>
 <ul>
 <li class="fragment">exact manufacturer and product code: mostly <code>BIM</code></li>
@@ -470,11 +481,11 @@
 <p>The same wall can exist in both models, but not for the same reason.</p>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 <p><span class="kicker">How the files come to exist</span></p>
 </section>
-<section id="how-bim-files-get-made" class="slide level2">
+<section id="how-bim-files-get-made" class="slide level2 center">
 <h2>How BIM files get made</h2>
 <ul>
 <li class="fragment"><strong>manual BIM authoring</strong> in Revit / ArchiCAD / similar</li>
@@ -483,7 +494,7 @@
 </ul>
 <p>Each path changes how much cleanup is needed before any energy analysis begins.</p>
 </section>
-<section id="how-bem-files-get-made" class="slide level2">
+<section id="how-bem-files-get-made" class="slide level2 center">
 <h2>How BEM files get made</h2>
 <ul>
 <li class="fragment">translate from an existing BIM model</li>
@@ -492,7 +503,7 @@
 </ul>
 <p>All three approaches are common. None is frictionless.</p>
 </section>
-<section id="workflow-map-design-to-analysis" class="slide level2">
+<section id="workflow-map-design-to-analysis" class="slide level2 center">
 <h2>Workflow map — design to analysis</h2>
 <div class="cell" data-reveal="true" data-layout-align="default">
 <div class="cell-output-display">
@@ -518,11 +529,11 @@
 </div>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 <p><span class="kicker">The translation gap</span></p>
 </section>
-<section id="when-bim-becomes-bem" class="slide level2">
+<section id="when-bim-becomes-bem" class="slide level2 center">
 <h2>When BIM becomes BEM</h2>
 <p>Problems usually come from four categories:</p>
 <ul>
@@ -535,7 +546,7 @@
 <p>Translation loss is normal, not an edge case. The skill is anticipating it.</p>
 </div>
 </section>
-<section id="geometry-issues" class="slide level2">
+<section id="geometry-issues" class="slide level2 center">
 <h2>Geometry issues</h2>
 <div class="warning-card">
 <ul>
@@ -546,7 +557,7 @@
 </ul>
 </div>
 </section>
-<section id="thermal-zoning-issues" class="slide level2">
+<section id="thermal-zoning-issues" class="slide level2 center">
 <h2>Thermal zoning issues</h2>
 <div class="warning-card">
 <ul>
@@ -556,7 +567,7 @@
 </ul>
 </div>
 </section>
-<section id="construction-and-material-gaps" class="slide level2">
+<section id="construction-and-material-gaps" class="slide level2 center">
 <h2>Construction and material gaps</h2>
 <div class="warning-card">
 <ul>
@@ -566,7 +577,7 @@
 </ul>
 </div>
 </section>
-<section id="operational-data-missing" class="slide level2">
+<section id="operational-data-missing" class="slide level2 center">
 <h2>Operational data missing</h2>
 <div class="warning-card">
 <ul>
@@ -578,11 +589,11 @@
 </div>
 <p>This is why a clean-looking import can still be analytically useless.</p>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 <p><span class="kicker">Translation diagnosis</span></p>
 </section>
-<section id="read-the-broken-translation" class="slide level2">
+<section id="read-the-broken-translation" class="slide level2 center">
 <h2>Read the broken translation</h2>
 <div class="activity-card">
 <p><span class="card-title">Scenario</span> You exported a 5-story office building to <code>gbXML</code> and the first model run shows energy use at <strong>3x</strong> what you expected.</p>
@@ -595,11 +606,11 @@
 <li class="fragment">What would you inspect first before trusting any output?</li>
 </ol>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 <p><span class="kicker">The two bridges</span></p>
 </section>
-<section id="ifc-vs-gbxml" class="slide level2">
+<section id="ifc-vs-gbxml" class="slide level2 center">
 <h2>IFC vs <code>gbXML</code></h2>
 <p>Both are bridges. Neither is a perfect bridge.</p>
 <table>
@@ -639,7 +650,7 @@
 </tbody>
 </table>
 </section>
-<section id="what-each-bridge-is-good-at" class="slide level2">
+<section id="what-each-bridge-is-good-at" class="slide level2 center">
 <h2>What each bridge is good at</h2>
 <div class="two-col">
 <div class="concept-card">
@@ -660,7 +671,7 @@
 </div>
 </div>
 </section>
-<section id="why-neither-solves-the-whole-problem" class="slide level2">
+<section id="why-neither-solves-the-whole-problem" class="slide level2 center">
 <h2>Why neither solves the whole problem</h2>
 <div class="warning-card">
 <ul>
@@ -671,7 +682,7 @@
 </ul>
 </div>
 </section>
-<section id="ideal-workflow-vs-real-workflow" class="slide level2">
+<section id="ideal-workflow-vs-real-workflow" class="slide level2 center">
 <h2>Ideal workflow vs real workflow</h2>
 <div class="two-col">
 <div class="example-card">
@@ -682,11 +693,11 @@
 </div>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 <p><span class="kicker">A real case</span></p>
 </section>
-<section id="case-study-translation-gone-wrong" class="slide level2">
+<section id="case-study-translation-gone-wrong" class="slide level2 center">
 <h2>Case study: translation gone wrong</h2>
 <ul>
 <li class="fragment">new 15,000 m² university research building</li>
@@ -695,7 +706,7 @@
 <li class="fragment">goal: LEED Gold energy analysis</li>
 </ul>
 </section>
-<section id="case-study-timeline" class="slide level2">
+<section id="case-study-timeline" class="slide level2 center">
 <h2>Case study timeline</h2>
 <div class="two-col">
 <div class="example-card">
@@ -706,7 +717,7 @@
 </div>
 </div>
 </section>
-<section id="case-study-timeline-contd" class="slide level2">
+<section id="case-study-timeline-contd" class="slide level2 center">
 <h2>Case study timeline (cont’d)</h2>
 <div class="two-col">
 <div class="activity-card">
@@ -717,7 +728,7 @@
 </div>
 </div>
 </section>
-<section id="lessons-learned" class="slide level2">
+<section id="lessons-learned" class="slide level2 center">
 <h2>Lessons learned</h2>
 <div class="reflection-card">
 <ul>
@@ -728,11 +739,11 @@
 </ul>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 <p><span class="kicker">Translation diagnosis</span></p>
 </section>
-<section id="diagnose-the-divergence" class="slide level2">
+<section id="diagnose-the-divergence" class="slide level2 center">
 <h2>Diagnose the divergence</h2>
 <div class="activity-card">
 <p><span class="card-title">Scenario</span> Actual energy use is 30% higher than predicted because the BIM and BEM drifted apart.</p>
@@ -746,7 +757,7 @@
 </ul>
 <p>Come back with your top three suspects.</p>
 </section>
-<section id="shared-literacy-takeaways" class="slide level2">
+<section id="shared-literacy-takeaways" class="slide level2 center">
 <h2>Shared literacy takeaways</h2>
 <div class="reflection-card">
 <ul>
@@ -757,40 +768,51 @@
 </ul>
 </div>
 </section>
-<section id="break" class="slide level2 big-break">
+<section id="break" class="slide level2 big-break center">
 <h2>BREAK</h2>
 <p>Take 10 minutes.</p>
 <p>When you return, post one rough BIM/BEM material from your project to Slack for Session 2.</p>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 <p><span class="kicker">Session 2 · Round table</span></p>
 </section>
-<section id="round-table-on-your-model" class="slide level2">
+<section id="round-table-on-your-model" class="slide level2 center">
 <h2>Round table on YOUR model</h2>
 <div class="spine-rail">
 <p><span class="node">Decision</span> <span class="node">Evidence</span> <span class="node">Variation</span> <span class="node is-current">Output</span> <span class="node">Threshold</span> <span class="node">Action</span></p>
 </div>
 <p>Upload one rough material to Slack before Session 2 — a BIM/BEM screenshot, a section or envelope image, a model diagram, or a performance claim from your project. <span class="feeds-tag">feeds A2</span></p>
 </section>
-<section id="speak-for-60-90-seconds" class="slide level2">
+<section id="speak-for-60-90-seconds" class="slide level2 center">
 <h2>Speak for 60-90 seconds</h2>
 <div class="concept-card">
 <p><span class="card-title">The prompt</span> What would a performance model need to know about your building, and what would it probably simplify?</p>
 </div>
 <p>Volunteers go first; random draw may fill the remaining examples.</p>
 </section>
-<section id="reconstruct-your-model-in-four-steps" class="slide level2">
+<section id="reconstruct-your-model-in-four-steps" class="slide level2 center">
 <h2>Reconstruct your model in four steps</h2>
 <p><strong>Object this week: your BIM/BEM model and one performance claim.</strong></p>
 <div class="recall-4step">
-<p>::: {.step}<strong>Did</strong> What does the model claim, and what did you actually build or export? ::: ::: {.step}<strong>Assumed</strong> What zoning, schedules, and constructions did the workflow assume for you? ::: ::: {.step}<strong>Risk</strong> Where could the translation have failed without you noticing? ::: ::: {.step}<strong>Verify</strong> What would you inspect before trusting the output? :::</p>
+<div class="step">
+<p><strong>Did</strong> What does the model claim, and what did you actually build or export?</p>
+</div>
+<div class="step">
+<p><strong>Assumed</strong> What zoning, schedules, and constructions did the workflow assume for you?</p>
+</div>
+<div class="step">
+<p><strong>Risk</strong> Where could the translation have failed without you noticing?</p>
+</div>
+<div class="step">
+<p><strong>Verify</strong> What would you inspect before trusting the output?</p>
+</div>
 </div>
 <div class="grading-note">
 <p>Post your filled four-step to Slack under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Presenting is welcomed and earns credit; it is never required and never scored as performance.</p>
 </div>
 </section>
-<section id="stand-alone-case-prompts" class="slide level2">
+<section id="stand-alone-case-prompts" class="slide level2 center">
 <h2>Stand-alone case prompts</h2>
 <div class="two-col">
 <div class="example-card">
@@ -813,11 +835,11 @@
 </div>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level2 center">
 
 <p><span class="kicker">Exit</span></p>
 </section>
-<section id="pathway-commitment-check" class="slide level2">
+<section id="pathway-commitment-check" class="slide level2 center">
 <h2>Pathway commitment check</h2>
 <p>After this week, you should be able to say:</p>
 <div class="reflection-card">
@@ -914,7 +936,7 @@
         disableLayout: false,
 
         // Vertical centering of slides
-        center: false,
+        center: true,
 
         // Enables touch navigation on devices with touch input
         touch: true,

@@ -10,7 +10,7 @@ format:
     incremental: true
     width: 1400
     height: 900
-    center: false
+    center: true
     footer: "Week 8 · feeds A3: Prototype + Verification"
 ---
 
@@ -222,10 +222,18 @@ We critique the **workflow and its claims**, never the author's ability.
 The same four-zone frame as the rest of the course — but now one zone is an AI draft, and the **manual check** and **disclosure** are not optional.
 
 ::: {.tool-panel .demo-pending}
-::: {.zone .input}**Prompt** "Write a geopandas script that buffers transit stops 400 m and reports % of site parcels covered." :::
-::: {.zone .operation}**AI output** a draft script + a Grasshopper Python component stub :::
-::: {.zone .check}**Manual check** CRS is projected (metres, not degrees); buffer distance correct; parcel counts spot-checked by hand :::
-::: {.zone .output}**Disclosure note** "Buffer script drafted with AI; CRS and counts verified manually on DD-MM." :::
+::: {.zone .input}
+**Prompt** "Write a geopandas script that buffers transit stops 400 m and reports % of site parcels covered."
+:::
+::: {.zone .operation}
+**AI output** a draft script + a Grasshopper Python component stub
+:::
+::: {.zone .check}
+**Manual check** CRS is projected (metres, not degrees); buffer distance correct; parcel counts spot-checked by hand
+:::
+::: {.zone .output}
+**Disclosure note** "Buffer script drafted with AI; CRS and counts verified manually on DD-MM."
+:::
 :::
 
 ::: {.warning-card}
@@ -334,10 +342,18 @@ Upload one rough material to Slack before Session 2 — a prompt log, an error m
 **Object this week: your workflow's verification — what someone must inspect to trust it.**
 
 ::: {.recall-4step}
-::: {.step}**Did** What does the workflow produce, and how, step by step? :::
-::: {.step}**Assumed** What inputs or settings are implicit and undocumented? :::
-::: {.step}**Risk** Which step could a reader not reproduce or check? :::
-::: {.step}**Verify** What must someone inspect before they trust this output? :::
+::: {.step}
+**Did** What does the workflow produce, and how, step by step?
+:::
+::: {.step}
+**Assumed** What inputs or settings are implicit and undocumented?
+:::
+::: {.step}
+**Risk** Which step could a reader not reproduce or check?
+:::
+::: {.step}
+**Verify** What must someone inspect before they trust this output?
+:::
 :::
 
 ::: {.grading-note}

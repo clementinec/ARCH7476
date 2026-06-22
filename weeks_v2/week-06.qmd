@@ -10,7 +10,7 @@ format:
     incremental: true
     width: 1400
     height: 900
-    center: false
+    center: true
     footer: "Week 6 · feeds A2 + A4 branch"
 ---
 
@@ -102,10 +102,18 @@ Not every category belongs in every project.
 Ask four questions of each one:
 
 ::: {.recall-4step}
-::: {.step}**Relevant** Does it bear on *this* decision? :::
-::: {.step}**Trustworthy** Can the source be inspected and trusted? :::
-::: {.step}**Local** Is it close enough to your site and program? :::
-::: {.step}**Usable** Can I actually use it this semester? :::
+::: {.step}
+**Relevant** Does it bear on *this* decision?
+:::
+::: {.step}
+**Trustworthy** Can the source be inspected and trusted?
+:::
+::: {.step}
+**Local** Is it close enough to your site and program?
+:::
+::: {.step}
+**Usable** Can I actually use it this semester?
+:::
 :::
 
 ---
@@ -277,10 +285,18 @@ Upload one rough material to Slack before Session 2 — workflow sketch, pathway
 **Object this week: your chosen route and its smallest useful output.**
 
 ::: {.recall-4step}
-::: {.step}**Did** Which route did I pick, and what output am I aiming at? :::
-::: {.step}**Assumed** What am I assuming the evidence will show or allow? :::
-::: {.step}**Risk** Where could this route stall or the output stay out of reach? :::
-::: {.step}**Verify** What is the smallest thing I can do to confirm the route works? :::
+::: {.step}
+**Did** Which route did I pick, and what output am I aiming at?
+:::
+::: {.step}
+**Assumed** What am I assuming the evidence will show or allow?
+:::
+::: {.step}
+**Risk** Where could this route stall or the output stay out of reach?
+:::
+::: {.step}
+**Verify** What is the smallest thing I can do to confirm the route works?
+:::
 :::
 
 ::: {.grading-note}
