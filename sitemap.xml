@@ -2,94 +2,150 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://clementinec.github.io/ARCH7476/notebooks/02_arch_viz_analysis.html</loc>
-    <lastmod>2026-04-14T01:53:07.325Z</lastmod>
+    <lastmod>2025-10-22T06:00:06.304Z</lastmod>
   </url>
   <url>
-    <loc>https://clementinec.github.io/ARCH7476/weeks/python-primer-overview.html</loc>
-    <lastmod>2026-04-14T02:37:54.526Z</lastmod>
+    <loc>https://clementinec.github.io/ARCH7476/lectures/ml-primer-12-principles.html</loc>
+    <lastmod>2026-06-22T23:55:28.668Z</lastmod>
   </url>
   <url>
-    <loc>https://clementinec.github.io/ARCH7476/weeks/week-11.html</loc>
-    <lastmod>2026-04-14T02:48:21.414Z</lastmod>
+    <loc>https://clementinec.github.io/ARCH7476/starter_kits/spreadsheet-thresholds/README.html</loc>
+    <lastmod>2026-06-22T23:29:08.463Z</lastmod>
   </url>
   <url>
-    <loc>https://clementinec.github.io/ARCH7476/weeks/week-09.html</loc>
-    <lastmod>2026-04-14T02:46:06.939Z</lastmod>
+    <loc>https://clementinec.github.io/ARCH7476/starter_kits/gis-spatial-comparison/README.html</loc>
+    <lastmod>2026-06-22T23:29:08.463Z</lastmod>
   </url>
   <url>
-    <loc>https://clementinec.github.io/ARCH7476/weeks/week-07.html</loc>
-    <lastmod>2026-04-14T02:45:38.868Z</lastmod>
+    <loc>https://clementinec.github.io/ARCH7476/starter_kits/preset-simulation-proxy/README.html</loc>
+    <lastmod>2026-06-22T23:29:08.462Z</lastmod>
   </url>
   <url>
-    <loc>https://clementinec.github.io/ARCH7476/weeks/week-05.html</loc>
-    <lastmod>2026-04-14T02:44:16.662Z</lastmod>
+    <loc>https://clementinec.github.io/ARCH7476/starter_kits/README.html</loc>
+    <lastmod>2026-06-23T00:02:30.202Z</lastmod>
   </url>
   <url>
-    <loc>https://clementinec.github.io/ARCH7476/weeks/week-03.html</loc>
-    <lastmod>2026-04-14T02:45:38.868Z</lastmod>
+    <loc>https://clementinec.github.io/ARCH7476/templates/ai-workflow-verification-card.html</loc>
+    <lastmod>2026-06-22T23:58:26.853Z</lastmod>
   </url>
   <url>
-    <loc>https://clementinec.github.io/ARCH7476/weeks/week-01.html</loc>
-    <lastmod>2026-04-14T03:35:29.311Z</lastmod>
+    <loc>https://clementinec.github.io/ARCH7476/templates/tool-translation-matrix.html</loc>
+    <lastmod>2026-06-22T23:29:08.464Z</lastmod>
+  </url>
+  <url>
+    <loc>https://clementinec.github.io/ARCH7476/weeks_v2/week-12.html</loc>
+    <lastmod>2026-06-22T23:57:37.356Z</lastmod>
+  </url>
+  <url>
+    <loc>https://clementinec.github.io/ARCH7476/weeks_v2/week-10.html</loc>
+    <lastmod>2026-06-22T22:26:49.581Z</lastmod>
+  </url>
+  <url>
+    <loc>https://clementinec.github.io/ARCH7476/weeks_v2/week-08.html</loc>
+    <lastmod>2026-06-22T23:56:05.422Z</lastmod>
+  </url>
+  <url>
+    <loc>https://clementinec.github.io/ARCH7476/weeks_v2/week-06.html</loc>
+    <lastmod>2026-06-22T22:26:49.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://clementinec.github.io/ARCH7476/weeks_v2/week-04.html</loc>
+    <lastmod>2026-06-22T23:09:45.976Z</lastmod>
+  </url>
+  <url>
+    <loc>https://clementinec.github.io/ARCH7476/weeks_v2/week-02.html</loc>
+    <lastmod>2026-06-22T23:57:37.264Z</lastmod>
+  </url>
+  <url>
+    <loc>https://clementinec.github.io/ARCH7476/templates/project-reasoning-checkin.html</loc>
+    <lastmod>2026-06-22T15:31:39.410Z</lastmod>
   </url>
   <url>
     <loc>https://clementinec.github.io/ARCH7476/assignments/assignment-03.html</loc>
-    <lastmod>2026-04-14T02:17:11.595Z</lastmod>
+    <lastmod>2026-06-22T23:56:50.631Z</lastmod>
   </url>
   <url>
     <loc>https://clementinec.github.io/ARCH7476/assignments/assignment-01.html</loc>
-    <lastmod>2026-04-14T03:35:29.312Z</lastmod>
+    <lastmod>2026-06-22T23:56:50.541Z</lastmod>
   </url>
   <url>
     <loc>https://clementinec.github.io/ARCH7476/assignments.html</loc>
-    <lastmod>2026-04-14T02:15:36.436Z</lastmod>
+    <lastmod>2026-06-23T00:02:29.904Z</lastmod>
   </url>
   <url>
     <loc>https://clementinec.github.io/ARCH7476/index.html</loc>
-    <lastmod>2026-04-14T02:35:47.357Z</lastmod>
+    <lastmod>2026-06-23T00:12:07.643Z</lastmod>
   </url>
   <url>
     <loc>https://clementinec.github.io/ARCH7476/schedule.html</loc>
-    <lastmod>2026-04-14T03:35:29.312Z</lastmod>
+    <lastmod>2026-06-23T00:02:30.104Z</lastmod>
   </url>
   <url>
     <loc>https://clementinec.github.io/ARCH7476/resources.html</loc>
-    <lastmod>2026-04-14T02:15:36.436Z</lastmod>
+    <lastmod>2026-06-23T00:02:30.004Z</lastmod>
   </url>
   <url>
     <loc>https://clementinec.github.io/ARCH7476/assignments/assignment-02.html</loc>
-    <lastmod>2026-04-14T02:17:11.595Z</lastmod>
+    <lastmod>2026-06-22T23:29:08.495Z</lastmod>
   </url>
   <url>
     <loc>https://clementinec.github.io/ARCH7476/assignments/assignment-04.html</loc>
-    <lastmod>2026-04-14T02:17:11.595Z</lastmod>
+    <lastmod>2026-06-22T23:44:02.932Z</lastmod>
   </url>
   <url>
-    <loc>https://clementinec.github.io/ARCH7476/weeks/week-02.html</loc>
-    <lastmod>2026-04-14T02:46:53.228Z</lastmod>
+    <loc>https://clementinec.github.io/ARCH7476/weeks_v2/week-01.html</loc>
+    <lastmod>2026-06-22T23:55:28.569Z</lastmod>
   </url>
   <url>
-    <loc>https://clementinec.github.io/ARCH7476/weeks/week-04.html</loc>
-    <lastmod>2026-04-14T02:44:51.237Z</lastmod>
+    <loc>https://clementinec.github.io/ARCH7476/weeks_v2/week-03.html</loc>
+    <lastmod>2026-06-22T22:47:01.236Z</lastmod>
   </url>
   <url>
-    <loc>https://clementinec.github.io/ARCH7476/weeks/week-06.html</loc>
-    <lastmod>2026-04-14T02:47:42.576Z</lastmod>
+    <loc>https://clementinec.github.io/ARCH7476/weeks_v2/week-05.html</loc>
+    <lastmod>2026-06-22T23:43:02.106Z</lastmod>
   </url>
   <url>
-    <loc>https://clementinec.github.io/ARCH7476/weeks/week-08.html</loc>
-    <lastmod>2026-04-14T02:48:21.414Z</lastmod>
+    <loc>https://clementinec.github.io/ARCH7476/weeks_v2/week-07.html</loc>
+    <lastmod>2026-06-22T23:43:05.893Z</lastmod>
   </url>
   <url>
-    <loc>https://clementinec.github.io/ARCH7476/weeks/week-10.html</loc>
-    <lastmod>2026-04-14T02:48:21.414Z</lastmod>
+    <loc>https://clementinec.github.io/ARCH7476/weeks_v2/week-09.html</loc>
+    <lastmod>2026-06-23T00:08:25.996Z</lastmod>
   </url>
   <url>
-    <loc>https://clementinec.github.io/ARCH7476/weeks/week-12.html</loc>
-    <lastmod>2026-04-14T02:48:21.414Z</lastmod>
+    <loc>https://clementinec.github.io/ARCH7476/weeks_v2/week-11.html</loc>
+    <lastmod>2026-06-22T22:26:49.582Z</lastmod>
+  </url>
+  <url>
+    <loc>https://clementinec.github.io/ARCH7476/templates/total-recall-board.html</loc>
+    <lastmod>2026-06-22T23:29:08.463Z</lastmod>
+  </url>
+  <url>
+    <loc>https://clementinec.github.io/ARCH7476/templates/a4-branch-declaration.html</loc>
+    <lastmod>2026-06-22T23:29:08.464Z</lastmod>
+  </url>
+  <url>
+    <loc>https://clementinec.github.io/ARCH7476/templates/final-package-checklist.html</loc>
+    <lastmod>2026-06-22T23:44:03.033Z</lastmod>
+  </url>
+  <url>
+    <loc>https://clementinec.github.io/ARCH7476/starter_kits/gh-parametric-variants/README.html</loc>
+    <lastmod>2026-06-23T00:02:30.303Z</lastmod>
+  </url>
+  <url>
+    <loc>https://clementinec.github.io/ARCH7476/starter_kits/ai-assisted-workflow/README.html</loc>
+    <lastmod>2026-06-22T23:55:28.863Z</lastmod>
+  </url>
+  <url>
+    <loc>https://clementinec.github.io/ARCH7476/starter_kits/python-notebook-analysis/README.html</loc>
+    <lastmod>2026-06-22T23:29:08.463Z</lastmod>
+  </url>
+  <url>
+    <loc>https://clementinec.github.io/ARCH7476/lectures/ml-to-python-overview.html</loc>
+    <lastmod>2025-10-22T07:16:36.137Z</lastmod>
   </url>
   <url>
     <loc>https://clementinec.github.io/ARCH7476/notebooks/01_python_ml_basics.html</loc>
-    <lastmod>2026-04-14T01:53:07.325Z</lastmod>
+    <lastmod>2025-10-22T06:00:06.304Z</lastmod>
   </url>
 </urlset>

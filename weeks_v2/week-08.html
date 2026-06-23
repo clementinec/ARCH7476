@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.4.544">
+
+  <title>ARCH7476: Evidence-Based Generative Design - Week 8: Reproducibility and AI Fact-Checking</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Week 8: Reproducibility and AI Fact-Checking</h1>
+  <p class="subtitle">Large-Model Companions, Final-Gate Checks, and Mentor Strategy</p>
+
+<div class="quarto-title-authors">
+</div>
+
+</section>
+<section id="todays-agenda" class="slide level2 center">
+<h2>Today’s Agenda</h2>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="label concept">Session 1</span></p>
+<p><span class="card-title">Workflow Documentation + AI Fact-Checking</span></p>
+<ul>
+<li class="fragment">why your work is only evidence if someone can rerun it</li>
+<li class="fragment">document one workflow, then swap and test it</li>
+<li class="fragment">understand AI as a probabilistic companion, not a final authority</li>
+<li class="fragment">separate factual claims, relationship claims, and generated workflow components</li>
+<li class="fragment">prepare strategic questions for your mentor</li>
+</ul>
+</div>
+<div class="activity-card">
+<p><span class="label activity">Session 2</span></p>
+<p><span class="card-title">Round table on YOUR workflow</span></p>
+<ul>
+<li class="fragment">upload one rough workflow material</li>
+<li class="fragment">reconstruct your verification in four steps</li>
+<li class="fragment">agree what a reader must inspect to trust it</li>
+</ul>
+</div>
+</div>
+<div class="reflection-card">
+<p>This is a clinic, not a contest. We examine the <strong>workflow</strong>, and we help each other find the part a stranger could not yet reproduce.</p>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Course progress</span></p>
+</section>
+<section id="this-week-produces-a-verification-artifact" class="slide level2 center">
+<h2>This week produces a verification artifact</h2>
+<div class="progress-ladder">
+<div class="step done">
+<p>A2 route</p>
+</div>
+<div class="step done">
+<p>prototype</p>
+</div>
+<div class="step current">
+<p>verification</p>
+</div>
+<div class="step">
+<p>threshold</p>
+</div>
+<div class="step">
+<p>draft package</p>
+</div>
+<div class="step">
+<p>handoff</p>
+</div>
+</div>
+<div class="artifact-strip">
+<div class="artifact">
+<p><span class="label concept">Input</span> prototype artifact, prompt log, notebook, GH canvas, map, or scenario file</p>
+</div>
+<div class="artifact">
+<p><span class="label activity">Test</span> peer rerun, manual check, known-case comparison, or failure replay</p>
+</div>
+<div class="artifact">
+<p><span class="label example">Output</span> verification card + reproducibility fix list</p>
+</div>
+<div class="artifact">
+<p><span class="label reflect">Feeds</span> A3 Verification Log and A4 Reproducibility Capsule</p>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">The reproducibility frame</span></p>
+</section>
+<section id="if-you-cant-rerun-it-it-isnt-evidence" class="slide level2 center">
+<h2>If you can’t rerun it, it isn’t evidence</h2>
+<p>A result becomes evidence only when someone else can inspect how you got it — and ideally reproduce it.</p>
+<div class="concept-card">
+<p><span class="card-title">The week’s question</span> <strong>If you left the project tomorrow, could someone trust your output without you in the room to explain it?</strong></p>
+</div>
+<p>Documentation is not paperwork after the fact. It is the part of the method that makes the output legible.</p>
+</section>
+<section id="where-reproducibility-quietly-fails" class="slide level2 center">
+<h2>Where reproducibility quietly fails</h2>
+<p>These are ordinary, not dramatic — and they happen to careful people.</p>
+<table>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Failure</th>
+<th>What was lost</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Plugin / version not recorded</td>
+<td>the file won’t reopen or rerun later</td>
+</tr>
+<tr class="even">
+<td>Settings changed but not noted</td>
+<td>results can’t be matched to inputs</td>
+</tr>
+<tr class="odd">
+<td>One person held the knowledge</td>
+<td>nobody else can defend the method</td>
+</tr>
+<tr class="even">
+<td>CRS / units left implicit</td>
+<td>spatial output is silently wrong</td>
+</tr>
+<tr class="odd">
+<td>AI output treated as final evidence</td>
+<td>a claim no one actually checked</td>
+</tr>
+</tbody>
+</table>
+<div class="warning-card">
+<p>The risk is not embarrassment. It is presenting a result you can no longer stand behind.</p>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Anecdote · the tool changed your data and didn’t tell you</span></p>
+</section>
+<section id="when-the-spreadsheet-silently-rewrote-the-data" class="slide level2 center">
+<h2>When the spreadsheet silently rewrote the data</h2>
+<div class="warning-card">
+<p><span class="card-title">What happened</span> Geneticists found that Excel was <strong>auto-converting gene names into dates and numbers</strong> (for example “SEPT2” became a date). A 2016 study found errors in roughly <strong>one in five</strong> papers with supplementary spreadsheets — the field eventually renamed the genes rather than fight the software.</p>
+</div>
+<div class="example-card">
+<p><span class="card-title">The lesson</span> Reproducibility starts with knowing what your tool did to your data. Document formats, versions, and import settings — the failure is invisible until someone re-runs it.</p>
+</div>
+</section>
+<section id="a-quick-honest-poll" class="slide level2 center">
+<h2>A quick, honest poll</h2>
+<p>Have you ever struggled to reconstruct what you did on a project from a few months ago?</p>
+<div class="reflection-card">
+<p>Almost everyone has. The point is not guilt — it is to treat documentation as a normal, expected part of the workflow, starting with one process today.</p>
+</div>
+</section>
+<section class="slide level2 center">
+
+</section>
+<section>
+<section id="session-1-documentation-clinic" class="title-slide slide level1 center" data-background-color="#1a1a1a">
+<h1>Session 1 · Documentation Clinic</h1>
+
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">The clinic</span></p>
+</section>
+<section id="document-one-workflow-so-it-stands-alone" class="slide level2 center">
+<h2>Document one workflow so it stands alone</h2>
+<p>Pick the <strong>most complex or critical</strong> workflow in your project — the one you would least want to lose.</p>
+<div class="activity-card">
+<p><span class="card-title">Do this now · 10 minutes</span> Write step-by-step instructions clear enough that a classmate who has never seen your method could follow them and get your result — with no verbal explanation from you.</p>
+</div>
+<p>Candidates: a Grasshopper setup, a survey-data analysis, a GIS operation, a Python notebook, a statistical step.</p>
+</section>
+<section id="documentation-template" class="slide level2 center">
+<h2>Documentation template</h2>
+<p>Copy this structure into your notes.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Section</th>
+<th>What to fill in</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Workflow</strong></td>
+<td>the one process you are documenting</td>
+</tr>
+<tr class="even">
+<td><strong>Setup</strong></td>
+<td>software + versions, files/data, prerequisite skills</td>
+</tr>
+<tr class="odd">
+<td><strong>Steps</strong></td>
+<td>each step, in order, with the reason for it</td>
+</tr>
+<tr class="even">
+<td><strong>Decisions</strong></td>
+<td>where a choice was made, and why</td>
+</tr>
+<tr class="odd">
+<td><strong>Troubleshooting</strong></td>
+<td>common error → what to do</td>
+</tr>
+<tr class="even">
+<td><strong>Quality check</strong></td>
+<td>how to know the result is correct</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="the-documentation-swap" class="slide level2 center">
+<h2>The documentation swap</h2>
+<p>We test documentation the only honest way: someone else follows it cold.</p>
+<div class="three-step">
+<div class="step-box">
+<p><span class="card-title">Exchange · 2 min</span> Swap with someone whose method differs from yours. No verbal notes — the instructions must stand alone.</p>
+</div>
+<div class="step-box">
+<p><span class="card-title">Attempt · 8 min</span> Follow their steps exactly. Mark where you get confused, stuck, or have to guess.</p>
+</div>
+<div class="step-box">
+<p><span class="card-title">Feedback · 5 min</span> Report what was unclear, what was missing, and the one change that would help most.</p>
+</div>
+</div>
+<div class="reflection-card">
+<p>The gaps you find are the gaps a future reader would hit. This is the most useful feedback you will get all week.</p>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">AI as companion</span></p>
+</section>
+<section id="what-large-models-are-for-this-course" class="slide level2 center">
+<h2>What large models are, for this course</h2>
+<div class="concept-card">
+<p><span class="card-title">The short version</span> Large models are <strong>probabilistic models of patterns in human-produced data</strong>. They can be useful companions, but they are not a final gate for truth.</p>
+</div>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="card-title">What they tend to do</span></p>
+<ul>
+<li class="fragment">produce plausible common answers</li>
+<li class="fragment">average across many writing patterns</li>
+<li class="fragment">compress complicated claims into fluent language</li>
+<li class="fragment">sound confident even when the source is weak</li>
+</ul>
+</div>
+<div class="concept-card">
+<p><span class="card-title">Why they are still useful</span></p>
+<ul>
+<li class="fragment">they can expose hidden assumptions</li>
+<li class="fragment">they can draft small workflow components</li>
+<li class="fragment">they can search the shape of an ill-defined relation</li>
+<li class="fragment">they can help when human experience is hard to model directly</li>
+</ul>
+</div>
+</div>
+<p>The skill is not “believe or reject AI.” The skill is using it, then deciding what kind of check must happen before the output becomes evidence.</p>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Large-model literacy</span></p>
+</section>
+<section id="the-useful-part-is-also-the-dangerous-part" class="slide level2 center">
+<h2>The useful part is also the dangerous part</h2>
+<div class="warning-card">
+<p><span class="card-title">Common answer problem</span> Because LLMs learn from pooled writing, they often produce the most available or average explanation. That can be helpful for orientation, but it can miss local constraints, updated facts, minority cases, and project-specific physics.</p>
+</div>
+<div class="reflection-card">
+<p><span class="card-title">Design implication</span> Do not ask only, “What does AI say?” Ask: <strong>what local fact, mechanism, calculation, or observed experience would push this answer away from the common mean?</strong></p>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Three output types</span></p>
+</section>
+<section id="not-every-ai-output-needs-the-same-check" class="slide level2 center">
+<h2>Not every AI output needs the same check</h2>
+<table>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>AI output type</th>
+<th>What it is good for</th>
+<th>Final-gate check</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Fact-based reiteration</strong></td>
+<td>summarize standards, definitions, precedent claims, code-like information</td>
+<td>verify against primary source, datasheet, standard, or cited document</td>
+</tr>
+<tr class="even">
+<td><strong>Relationship-based simulation</strong></td>
+<td>reason about fuzzy links: comfort, perception, spatial experience, thermal/acoustic sensation</td>
+<td>compare with engineering/science logic, empirical evidence, sensitivity test, or bounded calculation</td>
+</tr>
+<tr class="odd">
+<td><strong>Workflow/code drafting</strong></td>
+<td>produce formulas, scripts, GhPython snippets, notebook cells, checklists</td>
+<td>run it, inspect units/ranges, test known cases, and log failures</td>
+</tr>
+</tbody>
+</table>
+<div class="concept-card">
+<p><span class="card-title">Final gate</span> AI can help generate an answer. <strong>You</strong> decide which gate it must pass before it enters the design argument.</p>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Why architecture needs this</span></p>
+</section>
+<section id="human-experience-is-messy-enough-that-ai-can-help" class="slide level2 center">
+<h2>Human experience is messy enough that AI can help</h2>
+<p>Architecture often asks about relationships that are real but hard to reduce cleanly:</p>
+<ul>
+<li class="fragment">spatial atmosphere and perceived calm</li>
+<li class="fragment">thermal acceptability rather than just air temperature</li>
+<li class="fragment">acoustic comfort rather than only decibels</li>
+<li class="fragment">wayfinding confidence rather than only shortest path</li>
+<li class="fragment">facade perception rather than only performance values</li>
+</ul>
+<div class="example-card">
+<p><span class="card-title">A productive use</span> AI can help generate hypotheses for these fuzzy relationships. It cannot validate them. Validation still comes from source checks, simple calculations, field observations, precedent mechanisms, simulations, or sensitivity tests.</p>
+</div>
+</section>
+<section id="ai-fact-checking-cases" class="slide level2 center">
+<h2>AI Fact-Checking Cases</h2>
+<p>Read each case and name the output type, then decide the final-gate check.</p>
+<table>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Case</th>
+<th>Output type</th>
+<th>Final gate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>AI summarizes a daylight standard</td>
+<td>fact-based reiteration</td>
+<td>find the standard and quote/check the clause</td>
+</tr>
+<tr class="even">
+<td>AI proposes why a shaded courtyard may feel cooler</td>
+<td>relationship-based simulation</td>
+<td>compare with radiation/wind/shade logic and one bounded metric</td>
+</tr>
+<tr class="odd">
+<td>AI writes a Python scoring function</td>
+<td>workflow/code drafting</td>
+<td>run known cases and inspect units/ranges</td>
+</tr>
+<tr class="even">
+<td>AI writes a literature-review paragraph</td>
+<td>fact + writing support</td>
+<td>verify every claim and citation before use</td>
+</tr>
+</tbody>
+</table>
+<div class="warning-card">
+<p>The line is rarely “AI or not.” It is <strong>what kind of output is this, and what would make it trustworthy enough to use?</strong></p>
+</div>
+</section>
+<section id="large-model-method-review" class="slide level2 center">
+<h2>Large-Model Method Review</h2>
+<p>A common situation, examined as a method — not a person.</p>
+<div class="concept-card">
+<p><span class="card-title">The artifact</span> A building-performance analysis: polished charts, statistics beyond the author’s stated skill, no understanding of the method when questioned, no disclosure of AI use.</p>
+</div>
+<div class="reflection-card">
+<p><span class="card-title">Review it together</span></p>
+<ul>
+<li class="fragment">which specific claims can the author actually defend?</li>
+<li class="fragment">which claims are factual, which are relationship-based, and which are workflow/code?</li>
+<li class="fragment">what final-gate checks would have made this trustworthy?</li>
+<li class="fragment">what should have been disclosed, and where?</li>
+<li class="fragment">what is the minimum honest version of this output?</li>
+</ul>
+</div>
+<p>We critique the <strong>workflow and its claims</strong>, never the author’s ability.</p>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Key visual</span></p>
+</section>
+<section id="ai-assisted-work-made-honest" class="slide level2 center">
+<h2>AI-assisted work, made honest</h2>
+<p>The same four-zone frame as the rest of the course — but now one zone is an AI draft, and the <strong>final gate</strong> and <strong>disclosure</strong> are not optional.</p>
+<div class="tool-panel">
+<div class="zone input">
+<p><strong>Prompt</strong> “Write a geopandas script that buffers transit stops 400 m and reports % of site parcels covered.”</p>
+</div>
+<div class="zone operation">
+<p><strong>AI output</strong> a draft script + a Grasshopper Python component stub</p>
+</div>
+<div class="zone check">
+<p><strong>Final gate</strong> CRS is projected (metres, not degrees); buffer distance correct; parcel counts spot-checked by hand</p>
+</div>
+<div class="zone output">
+<p><strong>Disclosure note</strong> “Buffer script drafted with AI; CRS and counts verified manually on DD-MM.”</p>
+</div>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Run the kit</span> A real, runnable example: <a href="../starter_kits/ai-assisted-workflow/examples/verified_setback_score.py"><code>verified_setback_score.py</code></a> with its <a href="../starter_kits/ai-assisted-workflow/examples/prompt_log_example.md">prompt log</a> — AI drafted it, then the output type, known cases, and threshold behavior were checked. See the <a href="../starter_kits/ai-assisted-workflow/README.html">AI-assisted kit</a>.</p>
+</div>
+<div class="warning-card">
+<p>AI can draft the step. It cannot be the final gate for its own output. That gate is your responsibility, every time.</p>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">AI as component front end</span></p>
+</section>
+<section id="vibe-coding-starts-after-the-function-contract-is-clear" class="slide level2 center">
+<h2>Vibe coding starts after the function contract is clear</h2>
+<div class="function-contract">
+<p><strong>Before asking AI</strong> State the component’s inputs, units, allowed ranges, operation, output, and one known test case. The prompt should describe that contract, not just ask for “a script.”</p>
+</div>
+<div class="bridge-flow">
+<div class="node current">
+<p>function contract</p>
+</div>
+<div class="node">
+<p>AI draft</p>
+</div>
+<div class="node">
+<p>final-gate check</p>
+</div>
+<div class="node">
+<p>GhPython / notebook</p>
+</div>
+<div class="node">
+<p>verified output</p>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Patch to Grasshopper</span></p>
+</section>
+<section id="ai-drafts-can-become-gh-components-but-only-after-inspection" class="slide level2 center">
+<h2>AI drafts can become GH components, but only after inspection</h2>
+<div class="gh-bridge">
+<p><strong>Bridge pattern</strong> AI drafts a <code>geopandas</code>, Python, GhPython, or C# component -&gt; student checks facts, units, edge cases, and one manual result -&gt; only then does the component enter the design workflow.</p>
+</div>
+<div class="uncertainty-check">
+<p><strong>Question for AI-assisted work</strong> Is this output factual, relationship-based, or code/workflow? What check would expose a wrong answer there?</p>
+</div>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="session-1-mentor-prep" class="title-slide slide level1 center" data-background-color="#1a1a1a">
+<h1>Session 1 · Mentor Prep</h1>
+
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Mentor prep</span></p>
+</section>
+<section id="make-the-mentor-meeting-count" class="slide level2 center">
+<h2>Make the mentor meeting count</h2>
+<p>Most mentor time is lost to vague questions. A little preparation turns a pleasant chat into a useful one.</p>
+<div class="activity-card">
+<p><span class="card-title">Prepare now · 15 minutes</span></p>
+<ol type="1">
+<li class="fragment"><strong>One-liner</strong> — your project in a single sentence</li>
+<li class="fragment"><strong>Specific ask</strong> — the exact advice you need</li>
+<li class="fragment"><strong>Context check</strong> — what your mentor actually does</li>
+<li class="fragment"><strong>Question bank</strong> — five strategic questions</li>
+<li class="fragment"><strong>Show-and-tell</strong> — the one thing you want them to see</li>
+</ol>
+</div>
+</section>
+<section id="weak-questions-vs-strategic-questions" class="slide level2 center">
+<h2>Weak questions vs strategic questions</h2>
+<div class="two-col">
+<div class="warning-card">
+<p><span class="card-title">Weak — wastes the slot</span></p>
+<ul>
+<li class="fragment">“What do you think of my project?”</li>
+<li class="fragment">“Do you have any advice?”</li>
+<li class="fragment">“How do I get a job in your field?”</li>
+</ul>
+</div>
+<div class="concept-card">
+<p><span class="card-title">Strategic — creates value</span></p>
+<ul>
+<li class="fragment">“What evidence would convince [specific stakeholder] to change current practice?”</li>
+<li class="fragment">“What implementation barriers am I likely missing?”</li>
+<li class="fragment">“How do practitioners here validate this kind of analysis?”</li>
+<li class="fragment">“What would make my findings most useful to someone in your position?”</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="question-workshop" class="slide level2 center">
+<h2>Question workshop</h2>
+<div class="activity-card">
+<p><span class="card-title">In pairs · 10 minutes</span></p>
+<ol type="1">
+<li class="fragment">Person A delivers their one-liner + best strategic question</li>
+<li class="fragment">Person B gives specific feedback and one improvement</li>
+<li class="fragment">Swap roles and repeat</li>
+</ol>
+</div>
+<div class="reflection-card">
+<p>You are not competing for the best question. You are pressure-testing your own so it earns a real answer in the room.</p>
+</div>
+</section>
+<section id="follow-up-email-template" class="slide level2 center">
+<h2>Follow-up email template</h2>
+<p>Send within 48 hours. Show that their advice changed something.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Part</th>
+<th>What to write</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Subject</strong></td>
+<td>“Thank you for your insights on [topic] — [Your name]”</td>
+</tr>
+<tr class="even">
+<td><strong>Opening</strong></td>
+<td>the specific point that shifted your thinking</td>
+</tr>
+<tr class="odd">
+<td><strong>Action taken</strong></td>
+<td>the concrete change or next step you made</td>
+</tr>
+<tr class="even">
+<td><strong>Progress</strong></td>
+<td>one short paragraph on how it shaped your work</td>
+</tr>
+<tr class="odd">
+<td><strong>Next step</strong></td>
+<td>what you’ll do next; offer to share results</td>
+</tr>
+</tbody>
+</table>
+<div class="activity-card">
+<p><span class="card-title">Draft it now</span> Write the subject line and opening for your upcoming mentor meeting before you leave class.</p>
+</div>
+</section>
+<section class="slide level2 center">
+
+</section></section>
+<section>
+<section id="break" class="title-slide slide level1 big-break center">
+<h1>BREAK</h1>
+<p>Take 10 minutes.</p>
+<p>When you return, post one rough workflow material to Slack for Session 2.</p>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Session 2 · Round table</span></p>
+</section>
+<section id="round-table-on-your-workflow" class="slide level2 center">
+<h2>Round table on YOUR workflow</h2>
+<div class="spine-rail">
+<p><span class="node">Decision</span> <span class="node">Evidence</span> <span class="node">Variation</span> <span class="node is-current">Output</span> <span class="node">Threshold</span> <span class="node">Action</span></p>
+</div>
+<p>Upload one rough material to Slack before Session 2 — a prompt log, an error message, a workflow output, a README fragment, or a verification note. <span class="feeds-tag">feeds A3</span></p>
+</section>
+<section id="reconstruct-your-verification-in-four-steps" class="slide level2 center">
+<h2>Reconstruct your verification in four steps</h2>
+<p><strong>Object this week: your workflow’s verification — what someone must inspect to trust it.</strong></p>
+<div class="recall-4step">
+<div class="step">
+<p><strong>Did</strong> What does the workflow produce, and how, step by step?</p>
+</div>
+<div class="step">
+<p><strong>Assumed</strong> What inputs or settings are implicit and undocumented?</p>
+</div>
+<div class="step">
+<p><strong>Risk</strong> Which step could a reader not reproduce or check?</p>
+</div>
+<div class="step">
+<p><strong>Verify</strong> What must someone inspect before they trust this output?</p>
+</div>
+</div>
+<div class="grading-note">
+<p>Post your four-step under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Volunteers go first; random draw may fill the remaining examples.</p>
+</div>
+</section>
+<section id="peer-reproducibility-check" class="slide level2 center">
+<h2>Peer Reproducibility Check</h2>
+<p>In small groups, run each other’s documentation cold — the same test as the swap, on real project material.</p>
+<div class="three-step">
+<div class="step-box">
+<p><span class="card-title">Hand over</span> Share your workflow package: steps, tool + version list, troubleshooting notes, quality check.</p>
+</div>
+<div class="step-box">
+<p><span class="card-title">Attempt</span> A peer follows it without you explaining. They note exactly where it breaks or needs a guess.</p>
+</div>
+<div class="step-box">
+<p><span class="card-title">Improve</span> Together, name the single change that would most improve reproducibility.</p>
+</div>
+</div>
+<div class="reflection-card">
+<p>We are not ranking packages. We are finding, kindly and early, the gap a stranger would fall into.</p>
+</div>
+</section>
+<section id="session-2-reflection" class="slide level2 center">
+<h2>Session 2 reflection</h2>
+<div class="reflection-card">
+<p><span class="card-title">What changed?</span> Take three minutes and write:</p>
+<ul>
+<li class="fragment">which step in my workflow is least reproducible right now?</li>
+<li class="fragment">what did a peer get stuck on that I assumed was obvious?</li>
+<li class="fragment">where am I using AI or automation I can’t fully defend?</li>
+<li class="fragment">what is one fix before Week 9?</li>
+</ul>
+</div>
+<p>Keep it in notes or post it as a Slack thread under your material.</p>
+</section>
+<section id="week-8-checklist" class="slide level2 center">
+<h2>Week 8 Checklist</h2>
+<div class="concept-card">
+<p><span class="card-title">Before Week 9</span></p>
+<ol type="1">
+<li class="fragment">complete your mentor consultation using your strategic questions</li>
+<li class="fragment">send the follow-up email showing how their advice changed your approach</li>
+<li class="fragment">document one workflow so a peer can rerun it unaided</li>
+<li class="fragment">classify and check any AI-assisted step: fact, relationship, or workflow/code</li>
+<li class="fragment">fix the weakest reproducibility gap your peer check found</li>
+</ol>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Exit</span></p>
+</section>
+<section id="your-verification-in-one-line" class="slide level2 center">
+<h2>Your verification, in one line</h2>
+<p>Before you leave, write and post:</p>
+<div class="reflection-card">
+<p><strong>The least reproducible step in my workflow is <strong><em>, and the one thing a reader must inspect to trust it is </em></strong>.</strong></p>
+</div>
+<p>Week 9 closes A3 — we finalize the prototype and its verification before the workflow package begins.</p>
+
+<div class="quarto-auto-generated-content">
+<div class="footer footer-default">
+<p>Week 8 · feeds A3: Prototype + Verification</p>
+</div>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1400,
+
+        height: 900,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>

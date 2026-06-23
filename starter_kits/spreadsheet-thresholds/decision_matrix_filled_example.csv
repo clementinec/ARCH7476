@@ -1,0 +1,26 @@
+variant,criterion,value,unit,source,confidence,threshold,pass_fail,decision_note
+Baseline,morning glare,2.8,h/day,student sun-path check,medium,<=2.0,fail,Too much direct morning glare for desk use
+Baseline,view openness,0.74,fraction,facade elevation takeoff,medium,>=0.55,pass,Good visual connection but no glare control
+Baseline,planting depth,0.60,m,studio section,high,>=0.80,fail,Planter is too shallow for the stated cooling claim
+Baseline,solar gain proxy,72.0,index,spreadsheet proxy,medium,<=48.0,fail,Unshaded glass keeps heat risk high
+Baseline,added facade depth,0.00,m,studio section,high,<=0.75,pass,No depth conflict
+Deep fins,morning glare,1.5,h/day,proxy model,medium,<=2.0,pass,Fins reduce glare below threshold
+Deep fins,view openness,0.58,fraction,facade elevation takeoff,medium,>=0.55,pass,View remains acceptable
+Deep fins,planting depth,0.80,m,studio section,high,>=0.80,pass,Meets minimum planting claim
+Deep fins,solar gain proxy,31.3,index,spreadsheet proxy,medium,<=48.0,pass,Strongest solar reduction
+Deep fins,added facade depth,0.90,m,studio section,medium,<=0.75,fail,Facade depth may conflict with circulation or envelope limits
+High greenery,morning glare,2.1,h/day,proxy model,low,<=2.0,review,Near threshold; needs better solar check
+High greenery,view openness,0.52,fraction,facade elevation takeoff,medium,>=0.55,fail,Green layer blocks more view than intended
+High greenery,planting depth,1.20,m,studio section,high,>=0.80,pass,Strongest planting support
+High greenery,solar gain proxy,48.4,index,spreadsheet proxy,low,<=48.0,review,Close enough to require a better daylight/heat check
+High greenery,added facade depth,0.45,m,studio section,medium,<=0.75,pass,Depth remains manageable
+Hybrid,morning glare,1.7,h/day,proxy model,medium,<=2.0,pass,Moderate fins handle glare
+Hybrid,view openness,0.61,fraction,facade elevation takeoff,medium,>=0.55,pass,View is still legible
+Hybrid,planting depth,0.95,m,studio section,high,>=0.80,pass,Planting claim is supportable
+Hybrid,solar gain proxy,42.9,index,spreadsheet proxy,medium,<=48.0,pass,Heat proxy is below threshold
+Hybrid,added facade depth,0.68,m,studio section,medium,<=0.75,pass,Depth remains within the facade allowance
+Compact opening,morning glare,1.2,h/day,proxy model,medium,<=2.0,pass,Smaller opening controls glare well
+Compact opening,view openness,0.49,fraction,facade elevation takeoff,medium,>=0.55,fail,View quality falls below the stated claim
+Compact opening,planting depth,0.40,m,studio section,high,>=0.80,fail,Planting cannot support the greenery argument
+Compact opening,solar gain proxy,37.4,index,spreadsheet proxy,medium,<=48.0,pass,Heat proxy is strong
+Compact opening,added facade depth,0.50,m,studio section,medium,<=0.75,pass,Depth remains manageable
