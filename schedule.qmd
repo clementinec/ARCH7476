@@ -6,7 +6,7 @@ format:
     toc: true
 ---
 
-# Weekly Schedule Overview
+## Weekly Schedule Overview
 
 Every week has two parts:
 
@@ -32,7 +32,7 @@ Selected students speak for **60-90 seconds**:
 4. It does not yet show ________.
 5. My question to the room is ________.
 
-Volunteers go first and receive participation credit. If more examples are needed, the instructor may use random draw or select materials that make the week's concept visible. The draw is for a short reasoning check-in, not a polished presentation.
+Volunteers go first and receive formative participation acknowledgement. A1-A4 grades come from submitted work unless a specific assignment says otherwise. If more examples are needed, the instructor may use random draw or select materials that make the week's concept visible. The draw is for a short reasoning check-in, not a polished presentation.
 
 ## At a Glance
 
@@ -45,10 +45,10 @@ Volunteers go first and receive participation credit. If more examples are neede
 | 5 | BIM/BEM and performance model translation | model/performance material: what assumptions would dominate? | A2 tool matrix + feasibility |
 | 6 | Evidence and pathway mapping | workflow sketch or branch declaration: what route and output are you choosing? | A2 due / A4 branch |
 | 7 | Method prototype studio | artifact/canvas/notebook/map: what goes in, varies, and comes out? | A3 prototype scope |
-| 8 | Reproducibility, automation ethics, and mentor prep | prompt log/error/README: what must be verified or documented? | A3 verification log |
-| 9 | Thresholds, recommendations, and counter-arguments | figure/output/object-card draft: what result changes the action? | A3 due / A4 launch |
-| 10 | Draft workflow review | draft package: can reviewers trace the full evidence loop? | A4 draft |
-| 11 | Final package polish | final component draft: which A4 component is weakest? | A4 near-final |
+| 8 | Reproducibility, AI fact-checking, and mentor prep | prompt log/error/README: what must be fact-checked, relationship-checked, or documented? | A3 verification log |
+| 9 | Thresholds, recommendations, and counter-arguments | figure/output/object-card draft: what result changes the action? | A3 due / A4 launch + clinic/workgroup vote |
+| 10 | Draft workflow review | draft package: can reviewers trace the full evidence loop? | A4 draft clinic or optional workgroup |
+| 11 | Final package polish | final component draft: which A4 component is weakest? | A4 near-final clinic or optional workgroup |
 | 12 | Object Fair | final object card/reflection: what reasoning transfers forward? | A4 due |
 
 ## Week 1: Total Recall
@@ -161,12 +161,7 @@ Students identify whether their project needs model/performance evidence, a prox
 
 **Feeds:** A2 Tool Translation Matrix + Workflow Feasibility.
 
-Before course launch, this week still benefits from a named runnable demo asset. Candidate demos:
-
-- GH + Ladybug solar/shading comparison
-- VELUX/Radiance daylight preset
-- EnergyPlus Simple Glazing scenario comparison
-- spreadsheet-based proxy test when simulation setup is not available
+**Named runnable demo:** students inspect the preset simulation kit, run the no-install heat proxy, and see the optional EnergyPlus two-week CLI case. The EnergyPlus case is used when the local installation is ready; the proxy route remains the guaranteed fallback.
 
 ## Week 6: Evidence and Pathway Mapping
 
@@ -205,19 +200,20 @@ Students assemble or run the first version of their workflow artifact.
 
 **Feeds:** A3 Prototype Scope + Workflow Description.
 
-## Week 8: Reproducibility, Automation Ethics, and Mentor Prep
+## Week 8: Reproducibility, AI Fact-Checking, and Mentor Prep
 
 ### Lecture / Demo
 
 - workflow documentation
-- automation ethics and data awareness
+- AI as probabilistic companion, not final authority
+- fact-based vs relationship-based AI outputs
 - prompt logs
-- manual verification and disclosure
+- manual checks, calculations, and disclosure
 - mentor consultation preparation
 
 ### Studio-Lab
 
-Students test whether one workflow component, AI-assisted or not, is documented well enough to be inspected by someone else.
+Students test whether one workflow component, AI-assisted or not, is documented and checked well enough to be inspected by someone else.
 
 **Session 2 material:** upload a prompt log, error message, output, README fragment, verification note, or workflow checklist.
 
@@ -244,6 +240,18 @@ Students write a threshold statement and one counter-argument.
 
 **Feeds:** A3 Prototype Output + A4 Practice Case/Object Card.
 
+### End-of-Week 9 Class Vote
+
+The instructor checks whether Weeks 10-11 should stay as full-class A4 clinics or split into two modes:
+
+| Mode | For whom | Use of class time |
+|---|---|---|
+| A4 clinic | students who need 1-1 help finishing the package | desk crits, package triage, reproducibility checks |
+| Optional GH/Python workgroup | students with stable tooling who want to build their own pipeline | small-group workflow mapping, vibe-coded component review, manual verification |
+| Mixed mode | split class interest | short shared opening, then clinic/workgroup breakout |
+
+The optional workgroup is not a required route. Direct `.gh` / `.ghx` starter files are planned for the website and currently WIP; until they are published, the workgroup uses CSV / GeoJSON / Python handoff and student-owned GH setups.
+
 ## Week 10: Draft Workflow Review
 
 ### Lecture / Demo
@@ -253,13 +261,22 @@ Students write a threshold statement and one counter-argument.
 
 ### Studio-Lab
 
-Small-panel draft reviews. No tournament scoring; the emphasis is professional critique.
+Default mode is 1-1 or small-panel A4 clinic. If the Week 9 vote shows enough demand, a small optional workgroup may run in parallel for students with stable GH/Python tooling.
+
+No tournament scoring; the emphasis is professional critique and making the final package traceable.
 
 **Session 2 material:** upload a draft presentation, object card, package outline, or reproducibility capsule index.
 
 **Round-table check-in:** Can a reviewer trace decision -> variants/scenarios -> workflow -> output -> threshold -> limit?
 
 **Feeds:** A4 Draft Package.
+
+Optional workgroup output, if it runs:
+
+- one pipeline sketch
+- one function contract or component brief
+- one manual verification note
+- one decision about whether the workgroup route will actually enter A4
 
 ## Week 11: Final Package Polish
 
@@ -272,7 +289,7 @@ Small-panel draft reviews. No tournament scoring; the emphasis is professional c
 
 ### Studio-Lab
 
-Students run a package audit and complete final revisions.
+Students run a package audit and complete final revisions. The default expectation is clinic support for A4. If an optional GH/Python workgroup is still useful, it must produce documentation that can fit inside the Reproducibility Capsule rather than becoming a new ungraded side project.
 
 **Session 2 material:** upload the weakest A4 component or the component most in need of peer review.
 
@@ -288,6 +305,8 @@ The package must show the full loop:
 4. evaluation
 5. threshold
 6. design action
+7. reproducibility check
+8. feedback/revision decision
 
 ## Week 12: Object Fair
 

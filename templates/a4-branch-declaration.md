@@ -5,8 +5,6 @@ format:
     toc: true
 ---
 
-# A4 Branch Declaration
-
 Use this template in Week 6.
 
 ## Route

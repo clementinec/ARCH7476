@@ -297,7 +297,7 @@ Choose **provisionally** — you can revise as A2 sharpens the question.
 - `geopandas`
 - BIM-derived proxy
 - Python notebook
-- AI verification
+- AI-assisted fact-checking
 :::
 ::: {.slot .peer}
 [Mapped through class]{.label .concept}

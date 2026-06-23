@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.544">
 
-  <title>ARCH7476: Generative Design in Architecture - Week 3: Spreadsheet as the Comparison Layer</title>
+  <title>ARCH7476: Evidence-Based Generative Design - Week 3: Spreadsheet as the Comparison Layer</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -442,11 +442,22 @@
 <p><strong>What varies</strong> weights, thresholds, variant rows, confidence notes</p>
 </div>
 <div class="zone output">
-<p><strong>Output</strong> decision table, chart, <code>variant_scores.csv</code></p>
+<p><strong>Output</strong> live workbook, decision table, chart, <code>variant_scores.csv</code></p>
 </div>
 <div class="zone check">
 <p><strong>Quality check</strong> formulas visible, units stated, one hand calculation matches</p>
 </div>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Live demo file</span> <a href="../starter_kits/spreadsheet-thresholds/live_threshold_workbook.xlsx">Open <code>live_threshold_workbook.xlsx</code></a> · <a href="../starter_kits/spreadsheet-thresholds/live_threshold_workbook_preview.html">preview in browser</a> · <a href="../starter_kits/spreadsheet-thresholds/variant_scores.csv">CSV export</a></p>
+</div>
+</section>
+<section id="live-workbook-preview" class="slide level2 center">
+<h2>Live workbook preview</h2>
+<iframe class="xlsx-preview-frame" src="../starter_kits/spreadsheet-thresholds/live_threshold_workbook_preview.html" title="Preview of live threshold workbook">
+</iframe>
+<div class="reflection-card">
+<p>This is a static slide preview. The live workbook is where threshold cells, formulas, color rules, score rules, and the chart update.</p>
 </div>
 </section>
 <section id="start-with-the-decision-not-the-software" class="slide level2 center">
@@ -496,7 +507,7 @@
 <section id="spreadsheet-output-can-become-gh-input" class="slide level2 center">
 <h2>Spreadsheet output can become GH input</h2>
 <div class="gh-bridge">
-<p><strong>Bridge pattern</strong> Export <code>variant_scores.csv</code> -&gt; read it in Grasshopper -&gt; attach scores to geometry variants -&gt; color, cull, rank, or label the options.</p>
+<p><strong>Bridge pattern</strong> <a href="../starter_kits/spreadsheet-thresholds/live_threshold_workbook.xlsx">Open <code>live_threshold_workbook.xlsx</code></a> -&gt; edit thresholds and score rules -&gt; export <code>variant_scores.csv</code> -&gt; read it in Grasshopper -&gt; color, cull, rank, or label the options.</p>
 </div>
 <div class="bridge-flow">
 <div class="node current">

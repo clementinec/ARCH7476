@@ -125,7 +125,7 @@ One method, four objects. Today you hand over the **package** — and then you k
 - spreadsheet thresholds
 - `geopandas`
 - BIM-derived proxy
-- Python/AI verification logic
+- Python / AI-assisted fact-checking logic
 :::
 ::: {.slot .peer}
 [Mapped by room]{.label .concept}

@@ -5,8 +5,6 @@ format:
     toc: true
 ---
 
-# Final Package Checklist
-
 Use this before A4 submission.
 
 ## Package Components
@@ -17,6 +15,7 @@ Use this before A4 submission.
 | Research Brief, 2 pages | yes / no |  |
 | Object Card, 1 page | yes / no |  |
 | Reproducibility Capsule | yes / no |  |
+| Feedback + Revision Ledger | yes / no |  |
 | Reflection Note | yes / no |  |
 
 ## Decision Loop Check
@@ -57,10 +56,19 @@ The final package clearly shows:
 
 ## Reproducibility Capsule Check
 
-- [ ] README
+- [ ] README with step-by-step run instructions
+- [ ] environment / dependency list (tools and versions)
 - [ ] data/source list
-- [ ] workflow artifact
+- [ ] the runnable workflow artifact (script / workbook / project / notebook — not only a screenshot)
 - [ ] figure sources
+- [ ] **re-running the workflow reproduces the key figure**
 - [ ] prompt/code notes if relevant
 - [ ] verification or failure log
 
+## Feedback + Revision Ledger Check
+
+- [ ] at least three feedback entries
+- [ ] each entry names what assumption, metric, threshold, figure, route, or claim was challenged
+- [ ] each entry states what changed
+- [ ] rejected or deferred feedback is explained, not hidden
+- [ ] final package reflects the accepted revisions

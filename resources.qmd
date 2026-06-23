@@ -6,7 +6,7 @@ format:
     toc: true
 ---
 
-# Resource Logic
+## Resource Logic
 
 Use the lightest setup that can produce a credible workflow for your design decision.
 
@@ -28,7 +28,7 @@ Reusable worksheets for each assignment and weekly Session 2.
 :::
 ::: {.hub-card}
 ### Starter Kits
-Pathway starting points: GH, simulation, GIS, Python, AI, spreadsheet.
+Pathway starting points: spreadsheet, GIS, Python, proxy simulation, AI-assisted fact-checking, and GH bridge notes.
 [Jump to starter kits →](#starter-kits)
 :::
 ::: {.hub-card}
@@ -51,20 +51,85 @@ ML-to-Python overview and the two analysis notebooks.
 | [Total Recall Board](templates/total-recall-board.md) | A1 past studio evidence audit |
 | [Tool Translation Matrix](templates/tool-translation-matrix.md) | A2 workflow route comparison |
 | [A4 Branch Declaration](templates/a4-branch-declaration.md) | Week 6 route and scope lock |
-| [AI Workflow Verification Card](templates/ai-workflow-verification-card.md) | AI-assisted GH/Python/workflow documentation |
+| [AI-Assisted Fact-Checking Card](templates/ai-workflow-verification-card.md) | AI-assisted claim, relationship, and workflow checks |
 | [Final Package Checklist](templates/final-package-checklist.md) | A4 Practice Case, Research Brief, Object Card, Capsule |
 
 ## Starter Kits
 
 Starter kits are tracked in [Starter Kits](starter_kits/README.md).
 
-Launch-critical kits:
+## Route Readiness
+
+Use this table to choose a route without over-reading the tool promise.
+
+| Route | Launch status | What is available now | Best use |
+|---|---|---|---|
+| Spreadsheet thresholds | fully supported | live `.xlsx`, preview, CSV export, filled example | transparent decisions, thresholds, sensitivity |
+| GIS spatial comparison | fully supported | GeoJSON data, geopandas script, map, scored CSV, selected site export | site/context/access decisions |
+| Python / notebook analysis | supported starter route | facade decision script, data, plot, CSV, existing notebooks | repeated analysis, charts, reusable logic |
+| Proxy simulation | supported starter route | facade heat proxy script, scenarios, chart, scores | bounded performance assumptions when full simulation is too heavy |
+| AI-assisted fact-checking / workflow support | supported companion route | prompt log example and verified function | fact checks, relationship checks, and small code/workflow components |
+| GH / parametric workflow | bridge now; direct `.gh` / `.ghx` starter files in progress | CSV handoff notes and variant logs now; native GH/GHX starter files planned | students who already have working GH and want to connect course outputs |
+
+::: {.resource-demo-grid}
+::: {.resource-demo-card .spreadsheet}
+### Spreadsheet Thresholds
+
+Live decision matrix: edit thresholds, watch status colors and scores change, then export a GH-readable CSV.
+
+<iframe class="resource-preview-frame" src="starter_kits/spreadsheet-thresholds/live_threshold_workbook_preview.html" title="Spreadsheet threshold workbook preview"></iframe>
+
+::: {.resource-actions}
+[Open workbook](starter_kits/spreadsheet-thresholds/live_threshold_workbook.xlsx)
+[Preview](starter_kits/spreadsheet-thresholds/live_threshold_workbook_preview.html)
+[CSV](starter_kits/spreadsheet-thresholds/variant_scores.csv)
+[Kit](starter_kits/spreadsheet-thresholds/README.md)
+:::
+:::
+
+::: {.resource-demo-card .gis}
+### GIS Spatial Comparison
+
+HKU micro-walkability sample: candidate sites, synthetic grocery points, 300m catchments, green-space proximity, and noise exposure.
+
+<iframe class="resource-preview-frame" src="starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html" title="GIS spatial comparison preview"></iframe>
+
+::: {.resource-actions}
+[Preview](starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html)
+[Map](starter_kits/gis-spatial-comparison/outputs/gis_site_comparison_map.png)
+[Scores](starter_kits/gis-spatial-comparison/outputs/scored_sites.csv)
+[Selected GeoJSON](starter_kits/gis-spatial-comparison/outputs/selected_site.geojson)
+[Script](starter_kits/gis-spatial-comparison/gis_spatial_comparison_demo.py)
+[Kit](starter_kits/gis-spatial-comparison/README.md)
+:::
+:::
+
+::: {.resource-demo-card .simulation}
+### EnergyPlus Two-Week Check
+
+Stock controlled model, synthetic HK summer weather, July 8-21 run, and visible setpoint/temperature outputs before GH translation.
+
+![EnergyPlus two-week control check](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.png){.resource-preview-image}
+
+::: {.resource-actions}
+[Guide](starter_kits/preset-simulation-proxy/energyplus_two_week_case.md)
+[Script](starter_kits/preset-simulation-proxy/run_energyplus_two_week_case.py)
+[CSV](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.csv)
+[Summary](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/two_week_summary.txt)
+[Kit](starter_kits/preset-simulation-proxy/README.md)
+:::
+:::
+:::
+
+Current starter-kit links:
 
 - [GH Parametric Variants](starter_kits/gh-parametric-variants/README.md)
-- [Preset Simulation / Proxy Test](starter_kits/preset-simulation-proxy/README.md)
-- [AI-Assisted Workflow](starter_kits/ai-assisted-workflow/README.md)
+- [Preset Simulation / Proxy Test](starter_kits/preset-simulation-proxy/README.md) — Week 5 proxy + optional EnergyPlus CLI case: [EnergyPlus guide](starter_kits/preset-simulation-proxy/energyplus_two_week_case.md), [runner script](starter_kits/preset-simulation-proxy/run_energyplus_two_week_case.py), [checked output CSV](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.csv)
+- [AI-Assisted Fact-Checking + Workflow Support](starter_kits/ai-assisted-workflow/README.md)
+- [Spreadsheet Thresholds](starter_kits/spreadsheet-thresholds/README.md) — Week 3 live workbook: [open `.xlsx`](starter_kits/spreadsheet-thresholds/live_threshold_workbook.xlsx), [CSV export](starter_kits/spreadsheet-thresholds/variant_scores.csv)
+- [GIS Spatial Comparison](starter_kits/gis-spatial-comparison/README.md) — Week 4 HKU micro-walkability demo: [preview](starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html), [scores](starter_kits/gis-spatial-comparison/outputs/scored_sites.csv)
 
-The rebuild should not be treated as student-ready until those three kits are runnable.
+Students are expected to choose from the routes that are viable for their own setup. GH-native work is welcome when a student already has a working installation, but it is not required.
 
 ## Lectures and Supporting Materials
 
@@ -89,7 +154,7 @@ Typical outputs:
 - parameter table
 - comparison chart or object card
 
-Current status: **needs new starter definitions and screenshots**.
+Current status: **bridge now; direct GH/GHX files in progress**. The course website will include native `.gh` / `.ghx` starter files once the GH/Rhino authoring setup is stable. Until then, students may use GH if they already have a working setup; otherwise they should use spreadsheet, GIS, Python, proxy simulation, or AI-assisted fact-checking routes and export tables or geometry files that can later feed GH.
 
 ### BIM/BEM and Simulation
 
@@ -102,7 +167,17 @@ Typical outputs:
 - sensitivity table
 - performance threshold
 
-Current status: **BIM/BEM lecture exists; preset simulation handout still needed**.
+Current status: **supported through BIM/BEM literacy, a runnable proxy simulation kit, and an optional EnergyPlus two-week CLI case**. Full Ladybug/Radiance walkthroughs remain optional extensions, not launch requirements.
+
+Week 5 live materials:
+
+- [Preset Simulation / Proxy Test starter kit](starter_kits/preset-simulation-proxy/README.md)
+- [EnergyPlus two-week case](starter_kits/preset-simulation-proxy/energyplus_two_week_case.md)
+- [EnergyPlus runner script](starter_kits/preset-simulation-proxy/run_energyplus_two_week_case.py)
+- [EnergyPlus checked output CSV](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.csv)
+- [EnergyPlus run summary](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/two_week_summary.txt)
+- [Proxy heat scores CSV](starter_kits/preset-simulation-proxy/outputs/facade_heat_proxy_scores.csv)
+- [Proxy heat chart](starter_kits/preset-simulation-proxy/outputs/facade_heat_proxy_chart.png)
 
 ### GIS / Spatial Workflow
 
@@ -115,7 +190,16 @@ Typical outputs:
 - spatial summary table
 - exported design criteria
 
-Current status: **existing GIS material can be reused**.
+Current status: **runnable GeoJSON demo and generated preview are present**.
+
+Week 4 live materials:
+
+- [GIS preview](starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html)
+- [Site comparison map](starter_kits/gis-spatial-comparison/outputs/gis_site_comparison_map.png)
+- [Scored sites CSV](starter_kits/gis-spatial-comparison/outputs/scored_sites.csv)
+- [Selected site GeoJSON](starter_kits/gis-spatial-comparison/outputs/selected_site.geojson)
+- [GIS demo script](starter_kits/gis-spatial-comparison/gis_spatial_comparison_demo.py)
+- [GIS Spatial Comparison starter kit](starter_kits/gis-spatial-comparison/README.md)
 
 ### Python / Notebook Workflow
 
@@ -126,21 +210,23 @@ Existing notebooks:
 - `notebooks/01_python_ml_basics.ipynb`
 - `notebooks/02_arch_viz_analysis.ipynb`
 
-Current status: **existing notebooks can support optional code-heavy work**.
+Current status: **supported starter route** with existing notebooks and a runnable facade-decision script.
 
-### AI-Assisted Workflow Building
+### AI-Assisted Fact-Checking + Workflow Support
 
-Best when AI can help build a small workflow component, script, prompt sequence, or documentation scaffold.
+Best when AI can help interpret a fuzzy relationship, draft a small workflow component, structure a prompt sequence, or act as a first-pass fact-checking companion.
 
 Required documentation:
 
 - prompt log
-- generated output
-- failure notes
-- manual verification
+- generated claim, relationship, or workflow output
+- fact-check notes
+- relationship-check notes
+- manual test or calculation
+- reproducibility note
 - disclosure statement
 
-Current status: **verification checklist template exists; concrete examples still needed**.
+Current status: **supported companion route** with a prompt log example and a verified Python function. It is intended for bounded workflow help, fact-checking, and relationship stress-testing, not unverified design outsourcing.
 
 ### Spreadsheet / Low-Code Workflow
 
@@ -153,7 +239,14 @@ Typical outputs:
 - sensitivity chart
 - threshold statement
 
-Current status: **existing spreadsheet logic can be reused as baseline support**.
+Current status: **fully supported** through a live workbook, preview, and CSV export.
+
+Week 3 live materials:
+
+- [Live threshold workbook](starter_kits/spreadsheet-thresholds/live_threshold_workbook.xlsx)
+- [Workbook preview](starter_kits/spreadsheet-thresholds/live_threshold_workbook_preview.html)
+- [GH-facing score export](starter_kits/spreadsheet-thresholds/variant_scores.csv)
+- [Spreadsheet Thresholds starter kit](starter_kits/spreadsheet-thresholds/README.md)
 
 ## Setup Ladder
 
@@ -162,9 +255,9 @@ Current status: **existing spreadsheet logic can be reused as baseline support**
 | Everyone | Excel or Google Sheets, browser, PDF/image export |
 | GIS route | QGIS, project layers, export workflow |
 | Python route | Jupyter Notebook, Anaconda/Miniconda or Colab |
-| GH route | Rhino + Grasshopper, supported plugins stated by instructor |
-| Simulation route | preset tool selected for the class example |
-| AI-assisted route | approved AI tool access, prompt log, verification notes |
+| GH bridge / optional workgroup | Rhino + Grasshopper only if already working; direct GH/GHX starter files are planned but currently WIP |
+| Simulation route | no-install proxy kit for everyone; optional EnergyPlus CLI case when installed |
+| AI-assisted companion route | approved AI tool access, prompt log, fact/relationship checks, verification notes |
 
 ## Archive and Reuse
 
@@ -180,9 +273,9 @@ High-value reusable materials:
 - Python and visualization notebooks
 - object card / figure rescue content
 
-Materials still needed:
+Future extensions:
 
 - GH starter workflows
-- preset simulation demo
-- AI-assisted workflow examples
+- full preset simulation walkthrough
+- deeper AI-assisted architecture fact-checking and workflow examples
 - final package templates in downloadable format

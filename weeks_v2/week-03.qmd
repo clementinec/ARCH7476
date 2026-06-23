@@ -137,11 +137,26 @@ The same four-zone frame we use for every tool. This is a minimum runnable workb
 **What varies** weights, thresholds, variant rows, confidence notes
 :::
 ::: {.zone .output}
-**Output** decision table, chart, `variant_scores.csv`
+**Output** live workbook, decision table, chart, `variant_scores.csv`
 :::
 ::: {.zone .check}
 **Quality check** formulas visible, units stated, one hand calculation matches
 :::
+:::
+
+::: {.activity-card}
+[Live demo file]{.card-title}
+[Open `live_threshold_workbook.xlsx`](../starter_kits/spreadsheet-thresholds/live_threshold_workbook.xlsx) · [preview in browser](../starter_kits/spreadsheet-thresholds/live_threshold_workbook_preview.html) · [CSV export](../starter_kits/spreadsheet-thresholds/variant_scores.csv)
+:::
+
+---
+
+## Live workbook preview
+
+<iframe class="xlsx-preview-frame" src="../starter_kits/spreadsheet-thresholds/live_threshold_workbook_preview.html" title="Preview of live threshold workbook"></iframe>
+
+::: {.reflection-card}
+This is a static slide preview. The live workbook is where threshold cells, formulas, color rules, score rules, and the chart update.
 :::
 
 ---
@@ -201,7 +216,7 @@ Each sheet answers one question, so the reader never has to reverse-engineer you
 
 ::: {.gh-bridge}
 **Bridge pattern**
-Export `variant_scores.csv` -> read it in Grasshopper -> attach scores to geometry variants -> color, cull, rank, or label the options.
+[Open `live_threshold_workbook.xlsx`](../starter_kits/spreadsheet-thresholds/live_threshold_workbook.xlsx) -> edit thresholds and score rules -> export `variant_scores.csv` -> read it in Grasshopper -> color, cull, rank, or label the options.
 :::
 
 ::: {.bridge-flow}

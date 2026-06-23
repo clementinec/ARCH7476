@@ -294,7 +294,7 @@ Every principle uses the same four-part frame — the same shape as the course's
 | P3 Representation / P4 Loss | Week 3 — variables and what "better" means |
 | P6 Generalization / P9 Shift | Week 5 — model assumptions and limits |
 | P8 Uncertainty / P11 Evaluation | Week 9 — thresholds and figures |
-| P10 Generative / P12 Ethics | Week 8 — AI-assisted workflow and verification |
+| P10 Generative / P12 Ethics | Week 8 — AI-assisted fact-checking and workflow verification |
 
 ---
 

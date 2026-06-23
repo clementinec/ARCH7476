@@ -5,8 +5,6 @@ format:
     toc: true
 ---
 
-# Python Notebook Analysis
-
 **Launch status:** runnable script added. Existing notebooks are still available.
 
 ## Existing Assets

@@ -495,6 +495,22 @@ $code-color: #16181D !default;
   border-left: 6px solid var(--role-warn);
   background: var(--warn-soft);
 }
+
+.reveal .xlsx-preview-frame {
+  width: 100%;
+  height: min(60vh, 620px);
+  border: 1px solid var(--rule-soft);
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+.reveal .gis-preview-frame {
+  width: 100%;
+  height: min(62vh, 640px);
+  border: 1px solid var(--rule-soft);
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
 .reveal .uncertainty-check strong::before { content: "? "; color: var(--signal); }
 
 /*---------------------------------------------------------------------------

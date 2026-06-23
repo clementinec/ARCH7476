@@ -6,7 +6,7 @@ format:
     toc: true
 ---
 
-# Assignment Structure
+## Assignment Structure
 
 The assignments move from a past studio decision to a working evidence-backed generative design workflow.
 
@@ -58,14 +58,16 @@ Both routes use the same standard:
 
 Students may work through one primary route and combine support tools as needed.
 
-| Route | Typical output |
-|---|---|
-| GH / parametric workflow | variants, parameter ranges, exported comparisons |
-| BIM/BEM / simulation | model translation critique, preset simulation, performance claim |
-| GIS / spatial workflow | maps, buffers, overlays, spatial summaries |
-| Python / notebook workflow | cleaned data, plots, analysis notebook |
-| AI-assisted workflow | prompt log, generated workflow component, verification notes |
-| Spreadsheet / low-code | decision matrix, sensitivity chart, threshold table |
+| Route | Launch status | Typical output |
+|---|---|---|
+| Spreadsheet / low-code | fully supported | decision matrix, sensitivity chart, threshold table |
+| GIS / spatial workflow | fully supported | maps, buffers, overlays, spatial summaries |
+| Python / notebook workflow | supported starter route | cleaned data, plots, analysis notebook |
+| BIM/BEM / proxy simulation | supported starter route | model translation critique, proxy output, performance threshold |
+| AI-assisted fact-checking / workflow support | supported companion route | prompt log, claim checks, generated component, verification notes |
+| GH / parametric workflow | bridge now; direct `.gh` / `.ghx` starter files in progress | variants and exported comparisons, with CSV / GeoJSON / Python handoff available immediately |
+
+Native `.gh` / `.ghx` files are not required for A4. Direct GH/GHX starter files are planned as website resources, but the current assessed route remains the documented workflow, exported evidence, and reproducibility capsule.
 
 ## Assessment Principles
 
@@ -77,6 +79,7 @@ Students are assessed on:
 - evidence quality and uncertainty
 - design impact
 - reproducibility and documentation
+- feedback/revision judgment
 
 Complex tools do not automatically earn higher marks. A simple, transparent workflow that changes a design decision is stronger than an opaque advanced workflow.
 
@@ -93,4 +96,4 @@ Complex tools do not automatically earn higher marks. A simple, transparent work
 - weekly studio-lab time
 - peer checks during workflow development
 - mentor dialogue or external consultation where relevant
-- templates for case board, tool matrix, branch declaration, AI verification, and final package
+- templates for case board, tool matrix, branch declaration, AI-assisted fact-checking, and final package

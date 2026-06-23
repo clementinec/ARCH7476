@@ -379,7 +379,7 @@ Wishlist items are sorted visibly, then revisited weekly.
 - BIM-derived proxy
 - `geopandas`
 - Python notebook
-- AI verification
+- AI-assisted fact-checking
 :::
 ::: {.slot .peer}
 [Peer supported]{.label .concept}

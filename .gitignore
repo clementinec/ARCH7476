@@ -1,5 +1,11 @@
 /.quarto/
+.DS_Store
 __pycache__/
 *.py[cod]
 starter_kits/**/outputs/.cache/
 starter_kits/**/outputs/.mplconfig/
+starter_kits/**/.cache/
+starter_kits/**/.mplconfig/
+starter_kits/preset-simulation-proxy/work/
+starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/two_week*
+!starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/two_week_summary.txt

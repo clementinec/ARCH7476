@@ -12,17 +12,17 @@ format:
 
 ---
 
-# Purpose
+## Purpose
 
 `A2` turns the Total Recall decision into a forward workflow plan.
 
 You will decide what evidence is needed, compare possible workflow routes, and declare whether your final package will use a retrospective or live studio route.
 
-# Core Question
+## Core Question
 
 > Which evidence and workflow can make this design decision more defensible?
 
-# Session 2 Check-Ins That Feed A2
+## Session 2 Check-Ins That Feed A2
 
 These check-ins should become the working evidence behind your matrix and workflow choice.
 
@@ -34,9 +34,9 @@ These check-ins should become the working evidence behind your matrix and workfl
 
 Use the [Project Reasoning Check-In](../templates/project-reasoning-checkin.md) template if you want a consistent note structure.
 
-# Required Components
+## Required Components
 
-## 1. Decision Recap
+### 1. Decision Recap
 
 Restate the design decision from A1 or refine it.
 
@@ -48,7 +48,7 @@ Include:
 - why evidence matters
 - what action the evidence should support
 
-## 2. Evidence Map
+### 2. Evidence Map
 
 Identify relevant sources and classify them by:
 
@@ -61,7 +61,7 @@ Identify relevant sources and classify them by:
 
 Use ranges where possible. Avoid single values when the evidence is uncertain.
 
-## 3. Tool Translation Matrix
+### 3. Tool Translation Matrix
 
 Use the [Tool Translation Matrix](../templates/tool-translation-matrix.md) template.
 
@@ -81,7 +81,7 @@ For each route, state:
 - what output it would produce
 - what it cannot answer
 
-## 4. Primary Workflow Selection
+### 4. Primary Workflow Selection
 
 Choose one primary workflow route.
 
@@ -94,7 +94,7 @@ Define:
 - threshold or comparison rule
 - likely failure point
 
-## 5. A4 Branch Declaration
+### 5. A4 Branch Declaration
 
 Use the [A4 Branch Declaration](../templates/a4-branch-declaration.md) template.
 
@@ -103,7 +103,7 @@ Choose one:
 - **Route A: Retrospective Redesign**
 - **Route B: Live Studio Application**
 
-# Assessment Criteria
+## Assessment Criteria
 
 | Criterion | Weight |
 |---|---:|
@@ -113,26 +113,26 @@ Choose one:
 | Branch declaration clarity | 10% |
 | Communication quality | 10% |
 
-# Differentiated Expectations
+## Differentiated Expectations
 
-## Undergraduate
+### Undergraduate
 
 - compare routes clearly
 - choose a feasible route
 - keep scope narrow
 
-## MArch
+### MArch
 
 - tie the workflow to studio or practice stakes
 - justify why the workflow can affect the design decision
 - show independent judgment about feasibility
 
-## RPg / PhD
+### RPg / PhD
 
 - give stronger method rationale
 - address uncertainty and transferability more explicitly
 
-# Common Failure Modes
+## Common Failure Modes
 
 - choosing a tool because it sounds advanced
 - comparing software names without workflow logic

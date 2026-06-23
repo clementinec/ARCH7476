@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ARCH7476: Generative Design in Architecture - Starter Kit: GIS Spatial Comparison</title>
+<title>ARCH7476: Evidence-Based Generative Design - Starter Kit: GIS Spatial Comparison</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -113,7 +113,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">ARCH7476: Generative Design in Architecture</span>
+    <span class="navbar-title">ARCH7476: Evidence-Based Generative Design</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -188,7 +188,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ARCH7476: Generative Design in Architecture</span></a>
+ <span class="menu-text">ARCH7476: Evidence-Based Generative Design</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -362,16 +362,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#gis-spatial-comparison" id="toc-gis-spatial-comparison" class="nav-link active" data-scroll-target="#gis-spatial-comparison">GIS Spatial Comparison</a>
-  <ul class="collapse">
-  <li><a href="#purpose" id="toc-purpose" class="nav-link" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
   <li><a href="#minimum-demo-loop" id="toc-minimum-demo-loop" class="nav-link" data-scroll-target="#minimum-demo-loop">Minimum Demo Loop</a></li>
   <li><a href="#files" id="toc-files" class="nav-link" data-scroll-target="#files">Files</a></li>
   <li><a href="#demo-run" id="toc-demo-run" class="nav-link" data-scroll-target="#demo-run">Demo Run</a></li>
+  <li><a href="#hosted-preview" id="toc-hosted-preview" class="nav-link" data-scroll-target="#hosted-preview">Hosted Preview</a></li>
   <li><a href="#student-adaptation-task" id="toc-student-adaptation-task" class="nav-link" data-scroll-target="#student-adaptation-task">Student Adaptation Task</a></li>
   <li><a href="#grasshopper-bridge" id="toc-grasshopper-bridge" class="nav-link" data-scroll-target="#grasshopper-bridge">Grasshopper Bridge</a></li>
   <li><a href="#verification-checks" id="toc-verification-checks" class="nav-link" data-scroll-target="#verification-checks">Verification Checks</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -397,9 +395,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="gis-spatial-comparison" class="level1">
-<h1>GIS Spatial Comparison</h1>
-<p><strong>Launch status:</strong> runnable GeoJSON demo added.</p>
+<p><strong>Launch status:</strong> runnable HKU micro-walkability GeoJSON demo and hosted preview added.</p>
 <section id="purpose" class="level2">
 <h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
 <p>Support site, access, zoning, exposure, and context decisions.</p>
@@ -419,9 +415,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><code>data/candidate_sites.geojson</code></li>
 <li><code>data/transit_stops.geojson</code></li>
-<li><code>data/noise_zones.geojson</code></li>
+<li><code>data/grocery_points.geojson</code> — synthetic grocery/convenience points for proximity testing</li>
+<li><code>data/noise_corridors.geojson</code></li>
 <li><code>data/green_spaces.geojson</code></li>
 <li><code>gis_spatial_comparison_demo.py</code></li>
+<li><code>outputs/gis_spatial_comparison_preview.html</code></li>
+<li><code>outputs/gis_site_comparison_map.png</code></li>
+<li><code>outputs/scored_sites.csv</code></li>
+<li><code>outputs/selected_site.geojson</code></li>
 </ul>
 </section>
 <section id="demo-run" class="level2">
@@ -433,7 +434,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><code>outputs/scored_sites.csv</code></li>
 <li><code>outputs/gis_site_comparison_map.png</code></li>
+<li><code>outputs/gis_spatial_comparison_preview.html</code></li>
+<li><code>outputs/selected_site.geojson</code></li>
 </ul>
+</section>
+<section id="hosted-preview" class="level2">
+<h2 class="anchored" data-anchor-id="hosted-preview">Hosted Preview</h2>
+<p>Open <code>outputs/gis_spatial_comparison_preview.html</code> to inspect the worked example in a browser. The preview is generated from the same script as the scored table and map, so it should be treated as a display surface, not a separate hand-made artifact.</p>
+<p>The current worked example is a <strong>teaching sample near HKU</strong>. It uses real-ish WGS84 coordinates and synthetic grocery/convenience points. The 300m catchments are straight-line buffers, not verified walking-network access.</p>
 </section>
 <section id="student-adaptation-task" class="level2">
 <h2 class="anchored" data-anchor-id="student-adaptation-task">Student Adaptation Task</h2>
@@ -441,7 +449,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="grasshopper-bridge" class="level2">
 <h2 class="anchored" data-anchor-id="grasshopper-bridge">Grasshopper Bridge</h2>
-<p>Use the scored CSV as a simple site-selection input in GH. If students are working with actual Rhino parcels, they can match by <code>site_id</code> and use the score to color, filter, or annotate candidate sites.</p>
+<p>Use the scored CSV as a simple site-selection input in GH. If students are working with actual Rhino parcels, they can match by <code>site_id</code> and use the score to color, filter, or annotate candidate sites. <code>outputs/selected_site.geojson</code> is the highest-scoring polygon exported as a minimal geometry handoff.</p>
 </section>
 <section id="verification-checks" class="level2">
 <h2 class="anchored" data-anchor-id="verification-checks">Verification Checks</h2>
@@ -456,7 +464,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <!-- -->
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -905,60 +912,71 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu"># GIS Spatial Comparison</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>**Launch status:** runnable HKU micro-walkability GeoJSON demo and hosted preview added.</span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>**Launch status:** runnable GeoJSON demo added.</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Purpose</span></span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">## Purpose</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>Support site, access, zoning, exposure, and context decisions.</span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>Support site, access, zoning, exposure, and context decisions.</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## Minimum Demo Loop</span></span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Minimum Demo Loop</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>candidate sites or design zones</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>spatial layer</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>buffer, overlay, join, or clip</span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>map or summary table</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>decision comparison</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>candidate sites or design zones</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>spatial layer</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>buffer, overlay, join, or clip</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>map or summary table</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>decision comparison</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Files</span></span>
 <span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="fu">## Files</span></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`data/candidate_sites.geojson`</span></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`data/transit_stops.geojson`</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`data/noise_zones.geojson`</span></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`data/green_spaces.geojson`</span></span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`gis_spatial_comparison_demo.py`</span></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## Demo Run</span></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>From this folder:</span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> gis_spatial_comparison_demo.py</span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>Use a Colab or conda environment with <span class="in">`geopandas`</span> installed. The script also has a <span class="in">`shapely`</span> fallback for the packaged data, but a bare system Python will usually be too thin for this route.</span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>The script exports:</span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`outputs/scored_sites.csv`</span></span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`outputs/gis_site_comparison_map.png`</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`data/candidate_sites.geojson`</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`data/transit_stops.geojson`</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`data/grocery_points.geojson`</span> — synthetic grocery/convenience points for proximity testing</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`data/noise_corridors.geojson`</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`data/green_spaces.geojson`</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`gis_spatial_comparison_demo.py`</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`outputs/gis_spatial_comparison_preview.html`</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`outputs/gis_site_comparison_map.png`</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`outputs/scored_sites.csv`</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`outputs/selected_site.geojson`</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## Demo Run</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>From this folder:</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> gis_spatial_comparison_demo.py</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>Use a Colab or conda environment with <span class="in">`geopandas`</span> installed. The script also has a <span class="in">`shapely`</span> fallback for the packaged data, but a bare system Python will usually be too thin for this route.</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>The script exports:</span>
 <span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a><span class="fu">## Student Adaptation Task</span></span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>Students identify the spatial layer or proximity rule that affects their studio decision.</span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="fu">## Grasshopper Bridge</span></span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>Use the scored CSV as a simple site-selection input in GH. If students are working with actual Rhino parcels, they can match by <span class="in">`site_id`</span> and use the score to color, filter, or annotate candidate sites.</span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="fu">## Verification Checks</span></span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>CRS is stated</span>
-<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>layer source is cited</span>
-<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>map legend is meaningful</span>
-<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>operation sequence is documented</span>
-<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>output supports a design decision</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`outputs/scored_sites.csv`</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`outputs/gis_site_comparison_map.png`</span></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`outputs/gis_spatial_comparison_preview.html`</span></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`outputs/selected_site.geojson`</span></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hosted Preview</span></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>Open <span class="in">`outputs/gis_spatial_comparison_preview.html`</span> to inspect the worked example in a browser. The preview is generated from the same script as the scored table and map, so it should be treated as a display surface, not a separate hand-made artifact.</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>The current worked example is a **teaching sample near HKU**. It uses real-ish WGS84 coordinates and synthetic grocery/convenience points. The 300m catchments are straight-line buffers, not verified walking-network access.</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="fu">## Student Adaptation Task</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>Students identify the spatial layer or proximity rule that affects their studio decision.</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a><span class="fu">## Grasshopper Bridge</span></span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>Use the scored CSV as a simple site-selection input in GH. If students are working with actual Rhino parcels, they can match by <span class="in">`site_id`</span> and use the score to color, filter, or annotate candidate sites. <span class="in">`outputs/selected_site.geojson`</span> is the highest-scoring polygon exported as a minimal geometry handoff.</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a><span class="fu">## Verification Checks</span></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>CRS is stated</span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>layer source is cited</span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>map legend is meaningful</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>operation sequence is documented</span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>output supports a design decision</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

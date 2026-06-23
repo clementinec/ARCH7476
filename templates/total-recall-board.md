@@ -5,8 +5,6 @@ format:
     toc: true
 ---
 
-# Total Recall Board
-
 Use this template for A1.
 
 ## 1. Project Snapshot

@@ -1,6 +1,33 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - "starter_kits/spreadsheet-thresholds/*.csv"
+    - "starter_kits/spreadsheet-thresholds/*.xlsx"
+    - "starter_kits/spreadsheet-thresholds/*.py"
+    - "starter_kits/spreadsheet-thresholds/live_threshold_workbook_preview.html"
+    - "starter_kits/gis-spatial-comparison/*.py"
+    - "starter_kits/gis-spatial-comparison/data/*.geojson"
+    - "starter_kits/gis-spatial-comparison/outputs/*.csv"
+    - "starter_kits/gis-spatial-comparison/outputs/*.png"
+    - "starter_kits/gis-spatial-comparison/outputs/*.html"
+    - "starter_kits/gis-spatial-comparison/outputs/*.geojson"
+    - "starter_kits/preset-simulation-proxy/*.py"
+    - "starter_kits/preset-simulation-proxy/data/*.csv"
+    - "starter_kits/preset-simulation-proxy/outputs/*.png"
+    - "starter_kits/preset-simulation-proxy/outputs/*.csv"
+    - "starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.csv"
+    - "starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.png"
+    - "starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/two_week_summary.txt"
+    - "starter_kits/python-notebook-analysis/*.py"
+    - "starter_kits/python-notebook-analysis/data/*.csv"
+    - "starter_kits/python-notebook-analysis/outputs/*.png"
+    - "starter_kits/python-notebook-analysis/outputs/*.csv"
+    - "starter_kits/gh-parametric-variants/*.csv"
+    - "starter_kits/gh-parametric-variants/*.md"
+    - "starter_kits/gh-parametric-variants/outputs/*.csv"
+    - "starter_kits/ai-assisted-workflow/examples/*.py"
+    - "starter_kits/ai-assisted-workflow/examples/*.md"
   render:
     - index.qmd
     - schedule.qmd
@@ -32,6 +59,7 @@ project:
     - starter_kits/README.md
     - starter_kits/gh-parametric-variants/README.md
     - starter_kits/preset-simulation-proxy/README.md
+    - starter_kits/preset-simulation-proxy/energyplus_two_week_case.md
     - starter_kits/ai-assisted-workflow/README.md
     - starter_kits/gis-spatial-comparison/README.md
     - starter_kits/python-notebook-analysis/README.md
@@ -42,7 +70,7 @@ project:
     - notebooks/02_arch_viz_analysis.ipynb
 
 website:
-  title: "ARCH7476: Generative Design in Architecture"
+  title: "ARCH7476: Evidence-Based Generative Design"
   navbar:
     left:
       - href: index.qmd

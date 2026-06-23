@@ -1,5 +1,5 @@
 ---
-title: "ARCH7476: Generative Design in Architecture"
+title: "ARCH7476: Evidence-Based Generative Design"
 subtitle: "Studio Evidence Workflows"
 format:
   html:
@@ -69,16 +69,18 @@ Students learn to define:
 - what threshold would change a design decision
 - what workflow can be reused by another person
 
-Supported workflow routes include:
+The launch version is deliberately honest about route readiness:
 
-| Workflow route | Typical design use |
-|---|---|
-| **Grasshopper / parametric workflow** | create and compare option families |
-| **BIM/BEM and simulation literacy** | test performance assumptions across scenarios |
-| **GIS / spatial workflow** | compare site or context alternatives |
-| **Python / notebook workflow** | evaluate repeated design/data cases |
-| **AI-assisted workflow building** | accelerate script or workflow components, then verify them |
-| **Spreadsheet / low-code workflow** | compare variants, sensitivity, and thresholds transparently |
+| Workflow route | Launch status | Typical design use |
+|---|---|---|
+| **Spreadsheet / low-code workflow** | fully supported | compare variants, sensitivity, and thresholds transparently |
+| **GIS / spatial workflow** | fully supported | compare site or context alternatives |
+| **Python / notebook workflow** | supported starter route | evaluate repeated design/data cases |
+| **BIM/BEM and proxy simulation literacy** | supported starter route | test performance assumptions with bounded scenarios |
+| **AI-assisted fact-checking and workflow support** | supported companion route | draft or stress-test small components, then check facts, relationships, and reproducibility |
+| **Grasshopper / parametric workflow** | bridge now; direct `.gh` / `.ghx` starter files in progress | connect exported tables or scripts to GH now; use native GH files once the starter kit is ready |
+
+Direct `.gh` / `.ghx` starter files are planned for the course website and are currently WIP while the GH/Rhino authoring setup is stabilized. Until those files are published, the supported bridge is CSV / GeoJSON / Python handoff into GH, and students who already have a working Grasshopper setup may use it. Late-semester clinics can open an optional GH/Python workgroup if the class needs it.
 
 ## Course Format
 
@@ -135,6 +137,7 @@ The final package includes:
 - **Research Brief:** 2-page method and evidence report
 - **Object Card:** 1-page key figure and recommendation
 - **Reproducibility Capsule:** README, data/workflow files, figure sources, prompt/code notes where relevant
+- **Feedback + Revision Ledger:** what critique changed, what was rejected, and why
 
 ## Archive Note
 

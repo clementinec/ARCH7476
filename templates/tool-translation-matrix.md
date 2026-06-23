@@ -5,8 +5,6 @@ format:
     toc: true
 ---
 
-# Tool Translation Matrix
-
 Use this template for A2 and Week 2.
 
 ## Design Decision

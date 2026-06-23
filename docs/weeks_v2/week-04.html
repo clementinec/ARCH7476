@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.544">
 
-  <title>ARCH7476: Generative Design in Architecture - Week 4: GIS Choices for Architects</title>
+  <title>ARCH7476: Evidence-Based Generative Design - Week 4: GIS Choices for Architects</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -631,17 +631,28 @@
 <h2>A <code>geopandas</code> operation as a tool</h2>
 <div class="tool-panel">
 <div class="zone input">
-<p><strong>Input</strong> candidate sites + transit stops + noise zones + green-space polygons</p>
+<p><strong>Input</strong> HKU micro-sites + transit stops + synthetic grocery points + road/noise corridors + green-space polygons</p>
 </div>
 <div class="zone operation">
-<p><strong>What varies</strong> buffer distance, overlay rule, scoring weights</p>
+<p><strong>What varies</strong> catchment radius, proximity layer, noise penalty, scoring weights</p>
 </div>
 <div class="zone output">
-<p><strong>Output</strong> score table, exported map, selected site GeoJSON</p>
+<p><strong>Output</strong> score table, exported map, selected-site GeoJSON</p>
 </div>
 <div class="zone check">
 <p><strong>Quality check</strong> CRS projected, feature counts spot-checked, one distance checked manually</p>
 </div>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Live demo file</span> <a href="../starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html">Open GIS preview</a> · <a href="../starter_kits/gis-spatial-comparison/outputs/gis_site_comparison_map.png">map</a> · <a href="../starter_kits/gis-spatial-comparison/outputs/scored_sites.csv">scores CSV</a> · <a href="../starter_kits/gis-spatial-comparison/gis_spatial_comparison_demo.py">script</a></p>
+</div>
+</section>
+<section id="live-gis-preview-hku-micro-walkability" class="slide level2 center">
+<h2>Live GIS preview: HKU micro-walkability</h2>
+<iframe class="gis-preview-frame" src="../starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html" title="HKU micro walkability GIS preview">
+</iframe>
+<div class="warning-card">
+<p>This is a teaching sample: real-ish HKU coordinates, synthetic grocery/convenience points, and 300m straight-line buffers. The uncertainty is the point.</p>
 </div>
 </section>
 <section id="minimal-geopandas-workflow" class="slide level2 center">
@@ -653,7 +664,7 @@
 <span id="cb1-5"><a></a>sites[<span class="st">"buffer_400m"</span>] <span class="op">=</span> sites.<span class="bu">buffer</span>(<span class="dv">400</span>)</span>
 <span id="cb1-6"><a></a><span class="bu">print</span>(<span class="bu">len</span>(sites))                   <span class="co"># spot-check the count</span></span>
 <span id="cb1-7"><a></a>sites.plot(column<span class="op">=</span><span class="st">"score"</span>, legend<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>The logic matters more than the syntax: <strong>load → inspect → project → operate → visualize.</strong></p>
+<p>The logic matters more than the syntax: <strong>load -&gt; inspect -&gt; project -&gt; operate -&gt; visualize.</strong></p>
 </section>
 <section id="core-gis-operations-to-recognize" class="slide level2 center">
 <h2>Core GIS operations to recognize</h2>

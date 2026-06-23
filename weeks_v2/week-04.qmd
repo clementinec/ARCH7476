@@ -224,17 +224,32 @@ In a GIS notebook, you should be able to point to:
 
 ::: {.tool-panel}
 ::: {.zone .input}
-**Input** candidate sites + transit stops + noise zones + green-space polygons
+**Input** HKU micro-sites + transit stops + synthetic grocery points + road/noise corridors + green-space polygons
 :::
 ::: {.zone .operation}
-**What varies** buffer distance, overlay rule, scoring weights
+**What varies** catchment radius, proximity layer, noise penalty, scoring weights
 :::
 ::: {.zone .output}
-**Output** score table, exported map, selected site GeoJSON
+**Output** score table, exported map, selected-site GeoJSON
 :::
 ::: {.zone .check}
 **Quality check** CRS projected, feature counts spot-checked, one distance checked manually
 :::
+:::
+
+::: {.activity-card}
+[Live demo file]{.card-title}
+[Open GIS preview](../starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html) · [map](../starter_kits/gis-spatial-comparison/outputs/gis_site_comparison_map.png) · [scores CSV](../starter_kits/gis-spatial-comparison/outputs/scored_sites.csv) · [script](../starter_kits/gis-spatial-comparison/gis_spatial_comparison_demo.py)
+:::
+
+---
+
+## Live GIS preview: HKU micro-walkability
+
+<iframe class="gis-preview-frame" src="../starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html" title="HKU micro walkability GIS preview"></iframe>
+
+::: {.warning-card}
+This is a teaching sample: real-ish HKU coordinates, synthetic grocery/convenience points, and 300m straight-line buffers. The uncertainty is the point.
 :::
 
 ---
@@ -251,7 +266,7 @@ print(len(sites))                   # spot-check the count
 sites.plot(column="score", legend=True)
 ```
 
-The logic matters more than the syntax: **load → inspect → project → operate → visualize.**
+The logic matters more than the syntax: **load -> inspect -> project -> operate -> visualize.**
 
 ---
 

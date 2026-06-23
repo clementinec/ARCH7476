@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "A",
+        "selection_rule": "highest composite_score"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              114.1352,
+              22.284199999999995
+            ],
+            [
+              114.1357,
+              22.284199999999995
+            ],
+            [
+              114.1357,
+              22.28455
+            ],
+            [
+              114.1352,
+              22.28455
+            ],
+            [
+              114.1352,
+              22.284199999999995
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

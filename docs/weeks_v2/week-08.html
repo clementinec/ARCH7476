@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.544">
 
-  <title>ARCH7476: Generative Design in Architecture - Week 8: Reproducibility and Mentor Prep</title>
+  <title>ARCH7476: Evidence-Based Generative Design - Week 8: Reproducibility and AI Fact-Checking</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -325,8 +325,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 8: Reproducibility and Mentor Prep</h1>
-  <p class="subtitle">A Workflow Documentation Clinic, Automation Ethics, and Mentor Strategy</p>
+  <h1 class="title">Week 8: Reproducibility and AI Fact-Checking</h1>
+  <p class="subtitle">Large-Model Companions, Final-Gate Checks, and Mentor Strategy</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -337,11 +337,12 @@
 <div class="two-col">
 <div class="concept-card">
 <p><span class="label concept">Session 1</span></p>
-<p><span class="card-title">Workflow Documentation Clinic</span></p>
+<p><span class="card-title">Workflow Documentation + AI Fact-Checking</span></p>
 <ul>
 <li class="fragment">why your work is only evidence if someone can rerun it</li>
 <li class="fragment">document one workflow, then swap and test it</li>
-<li class="fragment">automation ethics cases and AI method review</li>
+<li class="fragment">understand AI as a probabilistic companion, not a final authority</li>
+<li class="fragment">separate factual claims, relationship claims, and generated workflow components</li>
 <li class="fragment">prepare strategic questions for your mentor</li>
 </ul>
 </div>
@@ -444,8 +445,8 @@
 <td>spatial output is silently wrong</td>
 </tr>
 <tr class="odd">
-<td>AI-generated step never checked</td>
-<td>a claim no one actually understands</td>
+<td>AI output treated as final evidence</td>
+<td>a claim no one actually checked</td>
 </tr>
 </tbody>
 </table>
@@ -551,70 +552,152 @@
 </section>
 <section class="slide level2 center">
 
-<p><span class="kicker">Automation ethics</span></p>
+<p><span class="kicker">AI as companion</span></p>
 </section>
-<section id="what-ai-use-and-research-methods-share" class="slide level2 center">
-<h2>What AI use and research methods share</h2>
+<section id="what-large-models-are-for-this-course" class="slide level2 center">
+<h2>What large models are, for this course</h2>
 <div class="concept-card">
-<p><span class="card-title">The shared root</span> Both come down to one principle: <strong>KNOW YOUR DATA.</strong></p>
+<p><span class="card-title">The short version</span> Large models are <strong>probabilistic models of patterns in human-produced data</strong>. They can be useful companions, but they are not a final gate for truth.</p>
 </div>
 <div class="two-col">
 <div class="concept-card">
-<p><span class="card-title">In research ethics</span></p>
+<p><span class="card-title">What they tend to do</span></p>
 <ul>
-<li class="fragment">who your participants are</li>
-<li class="fragment">how the data was collected</li>
-<li class="fragment">the biases in your sample</li>
-<li class="fragment">the limits of your method</li>
+<li class="fragment">produce plausible common answers</li>
+<li class="fragment">average across many writing patterns</li>
+<li class="fragment">compress complicated claims into fluent language</li>
+<li class="fragment">sound confident even when the source is weak</li>
 </ul>
 </div>
 <div class="concept-card">
-<p><span class="card-title">In AI use</span></p>
+<p><span class="card-title">Why they are still useful</span></p>
 <ul>
-<li class="fragment">what the model was trained on</li>
-<li class="fragment">the biases that training carries</li>
-<li class="fragment">what the tool can and cannot do</li>
-<li class="fragment">when its output should not be trusted</li>
+<li class="fragment">they can expose hidden assumptions</li>
+<li class="fragment">they can draft small workflow components</li>
+<li class="fragment">they can search the shape of an ill-defined relation</li>
+<li class="fragment">they can help when human experience is hard to model directly</li>
 </ul>
 </div>
 </div>
-<p>When you don’t understand the data behind a result, harm propagates quietly and at scale.</p>
+<p>The skill is not “believe or reject AI.” The skill is using it, then deciding what kind of check must happen before the output becomes evidence.</p>
 </section>
-<section id="automation-ethics-cases" class="slide level2 center">
-<h2>Automation Ethics Cases</h2>
-<p>Read each case and place it: acceptable, acceptable <strong>with disclosure</strong>, or not acceptable — and say why.</p>
+<section class="slide level2 center">
+
+<p><span class="kicker">Large-model literacy</span></p>
+</section>
+<section id="the-useful-part-is-also-the-dangerous-part" class="slide level2 center">
+<h2>The useful part is also the dangerous part</h2>
+<div class="warning-card">
+<p><span class="card-title">Common answer problem</span> Because LLMs learn from pooled writing, they often produce the most available or average explanation. That can be helpful for orientation, but it can miss local constraints, updated facts, minority cases, and project-specific physics.</p>
+</div>
+<div class="reflection-card">
+<p><span class="card-title">Design implication</span> Do not ask only, “What does AI say?” Ask: <strong>what local fact, mechanism, calculation, or observed experience would push this answer away from the common mean?</strong></p>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Three output types</span></p>
+</section>
+<section id="not-every-ai-output-needs-the-same-check" class="slide level2 center">
+<h2>Not every AI output needs the same check</h2>
 <table>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Case</th>
-<th>The action</th>
+<th>AI output type</th>
+<th>What it is good for</th>
+<th>Final-gate check</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
-<td>Using an AI assistant to debug your Python</td>
+<td><strong>Fact-based reiteration</strong></td>
+<td>summarize standards, definitions, precedent claims, code-like information</td>
+<td>verify against primary source, datasheet, standard, or cited document</td>
 </tr>
 <tr class="even">
-<td>2</td>
-<td>Having AI write your literature-review summary</td>
+<td><strong>Relationship-based simulation</strong></td>
+<td>reason about fuzzy links: comfort, perception, spatial experience, thermal/acoustic sensation</td>
+<td>compare with engineering/science logic, empirical evidence, sensitivity test, or bounded calculation</td>
 </tr>
 <tr class="odd">
-<td>3</td>
-<td>Generating synthetic sample data for testing</td>
+<td><strong>Workflow/code drafting</strong></td>
+<td>produce formulas, scripts, GhPython snippets, notebook cells, checklists</td>
+<td>run it, inspect units/ranges, test known cases, and log failures</td>
+</tr>
+</tbody>
+</table>
+<div class="concept-card">
+<p><span class="card-title">Final gate</span> AI can help generate an answer. <strong>You</strong> decide which gate it must pass before it enters the design argument.</p>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">Why architecture needs this</span></p>
+</section>
+<section id="human-experience-is-messy-enough-that-ai-can-help" class="slide level2 center">
+<h2>Human experience is messy enough that AI can help</h2>
+<p>Architecture often asks about relationships that are real but hard to reduce cleanly:</p>
+<ul>
+<li class="fragment">spatial atmosphere and perceived calm</li>
+<li class="fragment">thermal acceptability rather than just air temperature</li>
+<li class="fragment">acoustic comfort rather than only decibels</li>
+<li class="fragment">wayfinding confidence rather than only shortest path</li>
+<li class="fragment">facade perception rather than only performance values</li>
+</ul>
+<div class="example-card">
+<p><span class="card-title">A productive use</span> AI can help generate hypotheses for these fuzzy relationships. It cannot validate them. Validation still comes from source checks, simple calculations, field observations, precedent mechanisms, simulations, or sensitivity tests.</p>
+</div>
+</section>
+<section id="ai-fact-checking-cases" class="slide level2 center">
+<h2>AI Fact-Checking Cases</h2>
+<p>Read each case and name the output type, then decide the final-gate check.</p>
+<table>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Case</th>
+<th>Output type</th>
+<th>Final gate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>AI summarizes a daylight standard</td>
+<td>fact-based reiteration</td>
+<td>find the standard and quote/check the clause</td>
 </tr>
 <tr class="even">
-<td>4</td>
-<td>Automating a calculation you don’t understand</td>
+<td>AI proposes why a shaded courtyard may feel cooler</td>
+<td>relationship-based simulation</td>
+<td>compare with radiation/wind/shade logic and one bounded metric</td>
+</tr>
+<tr class="odd">
+<td>AI writes a Python scoring function</td>
+<td>workflow/code drafting</td>
+<td>run known cases and inspect units/ranges</td>
+</tr>
+<tr class="even">
+<td>AI writes a literature-review paragraph</td>
+<td>fact + writing support</td>
+<td>verify every claim and citation before use</td>
 </tr>
 </tbody>
 </table>
 <div class="warning-card">
-<p>The line is rarely “AI or not.” It is <strong>understanding + disclosure</strong>: do you understand the step, and have you said how it was produced?</p>
+<p>The line is rarely “AI or not.” It is <strong>what kind of output is this, and what would make it trustworthy enough to use?</strong></p>
 </div>
 </section>
-<section id="ai-method-review" class="slide level2 center">
-<h2>AI Method Review</h2>
+<section id="large-model-method-review" class="slide level2 center">
+<h2>Large-Model Method Review</h2>
 <p>A common situation, examined as a method — not a person.</p>
 <div class="concept-card">
 <p><span class="card-title">The artifact</span> A building-performance analysis: polished charts, statistics beyond the author’s stated skill, no understanding of the method when questioned, no disclosure of AI use.</p>
@@ -623,8 +706,9 @@
 <p><span class="card-title">Review it together</span></p>
 <ul>
 <li class="fragment">which specific claims can the author actually defend?</li>
+<li class="fragment">which claims are factual, which are relationship-based, and which are workflow/code?</li>
+<li class="fragment">what final-gate checks would have made this trustworthy?</li>
 <li class="fragment">what should have been disclosed, and where?</li>
-<li class="fragment">what verification would have made this trustworthy?</li>
 <li class="fragment">what is the minimum honest version of this output?</li>
 </ul>
 </div>
@@ -634,9 +718,9 @@
 
 <p><span class="kicker">Key visual</span></p>
 </section>
-<section id="an-ai-assisted-workflow-made-honest" class="slide level2 center">
-<h2>An AI-assisted workflow, made honest</h2>
-<p>The same four-zone frame as the rest of the course — but now one zone is an AI draft, and the <strong>manual check</strong> and <strong>disclosure</strong> are not optional.</p>
+<section id="ai-assisted-work-made-honest" class="slide level2 center">
+<h2>AI-assisted work, made honest</h2>
+<p>The same four-zone frame as the rest of the course — but now one zone is an AI draft, and the <strong>final gate</strong> and <strong>disclosure</strong> are not optional.</p>
 <div class="tool-panel">
 <div class="zone input">
 <p><strong>Prompt</strong> “Write a geopandas script that buffers transit stops 400 m and reports % of site parcels covered.”</p>
@@ -645,22 +729,25 @@
 <p><strong>AI output</strong> a draft script + a Grasshopper Python component stub</p>
 </div>
 <div class="zone check">
-<p><strong>Manual check</strong> CRS is projected (metres, not degrees); buffer distance correct; parcel counts spot-checked by hand</p>
+<p><strong>Final gate</strong> CRS is projected (metres, not degrees); buffer distance correct; parcel counts spot-checked by hand</p>
 </div>
 <div class="zone output">
 <p><strong>Disclosure note</strong> “Buffer script drafted with AI; CRS and counts verified manually on DD-MM.”</p>
 </div>
 </div>
+<div class="activity-card">
+<p><span class="card-title">Run the kit</span> A real, runnable example: <a href="../starter_kits/ai-assisted-workflow/examples/verified_setback_score.py"><code>verified_setback_score.py</code></a> with its <a href="../starter_kits/ai-assisted-workflow/examples/prompt_log_example.md">prompt log</a> — AI drafted it, then the output type, known cases, and threshold behavior were checked. See the <a href="../starter_kits/ai-assisted-workflow/README.html">AI-assisted kit</a>.</p>
+</div>
 <div class="warning-card">
-<p>AI can draft the step. It cannot verify it or disclose it. Those two zones are your responsibility, every time.</p>
+<p>AI can draft the step. It cannot be the final gate for its own output. That gate is your responsibility, every time.</p>
 </div>
 </section>
 <section class="slide level2 center">
 
 <p><span class="kicker">AI as component front end</span></p>
 </section>
-<section id="vibe-coding-is-only-acceptable-after-the-function-contract-is-clear" class="slide level2 center">
-<h2>Vibe coding is only acceptable after the function contract is clear</h2>
+<section id="vibe-coding-starts-after-the-function-contract-is-clear" class="slide level2 center">
+<h2>Vibe coding starts after the function contract is clear</h2>
 <div class="function-contract">
 <p><strong>Before asking AI</strong> State the component’s inputs, units, allowed ranges, operation, output, and one known test case. The prompt should describe that contract, not just ask for “a script.”</p>
 </div>
@@ -672,7 +759,7 @@
 <p>AI draft</p>
 </div>
 <div class="node">
-<p>manual repair</p>
+<p>final-gate check</p>
 </div>
 <div class="node">
 <p>GhPython / notebook</p>
@@ -689,10 +776,10 @@
 <section id="ai-drafts-can-become-gh-components-but-only-after-inspection" class="slide level2 center">
 <h2>AI drafts can become GH components, but only after inspection</h2>
 <div class="gh-bridge">
-<p><strong>Bridge pattern</strong> AI drafts a <code>geopandas</code>, Python, GhPython, or C# component -&gt; student checks units, edge cases, and one manual result -&gt; only then does the component enter the design workflow.</p>
+<p><strong>Bridge pattern</strong> AI drafts a <code>geopandas</code>, Python, GhPython, or C# component -&gt; student checks facts, units, edge cases, and one manual result -&gt; only then does the component enter the design workflow.</p>
 </div>
 <div class="uncertainty-check">
-<p><strong>Question for AI-assisted work</strong> Which part of the generated output do you understand least, and what test would expose a wrong answer there?</p>
+<p><strong>Question for AI-assisted work</strong> Is this output factual, relationship-based, or code/workflow? What check would expose a wrong answer there?</p>
 </div>
 </section>
 <section class="slide level2 center">
@@ -860,7 +947,7 @@
 <ul>
 <li class="fragment">which step in my workflow is least reproducible right now?</li>
 <li class="fragment">what did a peer get stuck on that I assumed was obvious?</li>
-<li class="fragment">where am I using automation I can’t fully defend?</li>
+<li class="fragment">where am I using AI or automation I can’t fully defend?</li>
 <li class="fragment">what is one fix before Week 9?</li>
 </ul>
 </div>
@@ -874,7 +961,7 @@
 <li class="fragment">complete your mentor consultation using your strategic questions</li>
 <li class="fragment">send the follow-up email showing how their advice changed your approach</li>
 <li class="fragment">document one workflow so a peer can rerun it unaided</li>
-<li class="fragment">disclose and verify any AI-assisted step in your method</li>
+<li class="fragment">classify and check any AI-assisted step: fact, relationship, or workflow/code</li>
 <li class="fragment">fix the weakest reproducibility gap your peer check found</li>
 </ol>
 </div>

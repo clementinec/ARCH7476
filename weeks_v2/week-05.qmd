@@ -234,7 +234,175 @@ The minimum runnable route uses a small `scenario.json` or table before any full
 :::
 :::
 
-This proxy is not the final truth. It is the fast test that tells you whether a full Ladybug/Honeybee/Radiance workflow is worth the setup.
+This proxy is not the final truth. It is the fast test that tells you whether a full EnergyPlus, Ladybug, Honeybee, or Radiance workflow is worth the setup.
+
+::: {.activity-card}
+[Run the kit]{.card-title}
+This proxy is runnable now: [`facade_heat_proxy_demo.py`](../starter_kits/preset-simulation-proxy/README.md) regenerates a [scores CSV](../starter_kits/preset-simulation-proxy/outputs/facade_heat_proxy_scores.csv) and a [comparison chart](../starter_kits/preset-simulation-proxy/outputs/facade_heat_proxy_chart.png). Change the assumptions and re-run.
+:::
+
+---
+
+[EnergyPlus route]{.kicker}
+
+## The real simulator route is one controlled CLI run
+
+::: {.reflection-card}
+Run EnergyPlus directly first to see the **model file**, **weather file**, **run period**, **setpoints**, and **output variables** without an extra Grasshopper/Ladybug translation layer. The result can still be patched back into GH later; the direct run simply removes one source of uncertainty while you learn what the simulator actually did.
+:::
+
+---
+
+## Why not start inside Grasshopper?
+
+:::: {.two-col}
+::: {.concept-card}
+[Direct EnergyPlus run]{.card-title}
+
+- one `.idf`
+- one `.epw`
+- one command
+- visible outputs
+- fewer translation assumptions
+:::
+
+::: {.activity-card}
+[GH / Ladybug layer]{.card-title}
+
+- useful for design iteration
+- adds geometry and component translation
+- easier to lose track of defaults
+- better after the baseline is understood
+:::
+::::
+
+The order is: **verify the simulator loop, then patch it into the design workflow.**
+
+---
+
+## Install once, run many times
+
+:::: {.two-col}
+::: {.concept-card}
+[Install once]{.card-title}
+
+Use the official EnergyPlus download or release page:
+
+- `energyplus.net/downloads`
+- `github.com/NREL/EnergyPlus/releases`
+:::
+
+::: {.activity-card}
+[Run many times]{.card-title}
+
+After installation, the class route is a small script:
+
+```bash
+python run_energyplus_two_week_case.py
+```
+:::
+::::
+
+The point is control: know which model, weather file, run period, setpoint, and output variable produced the number.
+
+---
+
+## What the installation folder contains
+
+::: {.tool-panel}
+::: {.zone .input}
+**Executable** `energyplus` / `energyplus.exe`
+:::
+::: {.zone .operation}
+**Schema** `Energy+.idd`
+:::
+::: {.zone .output}
+**Materials to inspect** `ExampleFiles/` and `WeatherData/`
+:::
+::: {.zone .check}
+**Post-processing** `PostProcess/`
+:::
+:::
+
+If you cannot point to these files, you do not yet know what your simulation is running.
+
+---
+
+## One raw command, all platforms
+
+```bash
+energyplus -w path/to/weather.epw -d outputs -p two_week -r path/to/model.idf
+```
+
+| Flag | Meaning |
+|---|---|
+| `-w` | weather file |
+| `-d` | output directory |
+| `-p` | output file prefix |
+| `-r` | post-process outputs into readable CSV files |
+
+Windows and macOS mainly differ in where `energyplus` lives, not in what the command means.
+
+---
+
+## If the executable is not on PATH
+
+:::: {.two-col}
+::: {.concept-card}
+[macOS]{.card-title}
+
+```bash
+export ENERGYPLUS_EXE="/Applications/EnergyPlus-26-1-0/energyplus"
+python run_energyplus_two_week_case.py
+```
+:::
+
+::: {.concept-card}
+[Windows PowerShell]{.card-title}
+
+```powershell
+$env:ENERGYPLUS_EXE="C:\EnergyPlusV26-1-0\energyplus.exe"
+python run_energyplus_two_week_case.py
+```
+:::
+::::
+
+Change the version folder if your installed version is different.
+
+---
+
+## Two-week control output preview
+
+![EnergyPlus two-week checked output](../starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.png){height="470"}
+
+::: {.reflection-card}
+This is what students should learn to read: outdoor condition, heating/cooling setpoints, actual zone air temperature, operative temperature, and where a warning or assumption would change the conclusion.
+:::
+
+---
+
+## The Week 5 simulator kit
+
+::: {.artifact-strip}
+::: {.artifact}
+[Proxy]{.label .concept}
+`facade_heat_proxy_demo.py`
+:::
+::: {.artifact}
+[EnergyPlus]{.label .activity}
+`run_energyplus_two_week_case.py`
+:::
+::: {.artifact}
+[Guide]{.label .example}
+`energyplus_two_week_case.md`
+:::
+::: {.artifact}
+[Output]{.label .reflect}
+`monitored_outputs.csv`
+:::
+:::
+
+Use the [EnergyPlus two-week case](../starter_kits/preset-simulation-proxy/energyplus_two_week_case.md) if installation is ready. Use the proxy route if it is not.
 
 ---
 
@@ -603,7 +771,7 @@ revise facade
 :::
 :::
 
-Supported professional bridge: one constrained Ladybug/Radiance walkthrough, not "everything Ladybug."
+Supported professional bridge: one constrained EnergyPlus or Ladybug/Radiance walkthrough, not "everything simulation."
 
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "Week 8: Reproducibility and Mentor Prep"
-subtitle: "A Workflow Documentation Clinic, Automation Ethics, and Mentor Strategy"
+title: "Week 8: Reproducibility and AI Fact-Checking"
+subtitle: "Large-Model Companions, Final-Gate Checks, and Mentor Strategy"
 output-file: week-08.html
 format:
   revealjs:
@@ -20,11 +20,12 @@ format:
 ::: {.concept-card}
 [Session 1]{.label .concept}
 
-[Workflow Documentation Clinic]{.card-title}
+[Workflow Documentation + AI Fact-Checking]{.card-title}
 
 - why your work is only evidence if someone can rerun it
 - document one workflow, then swap and test it
-- automation ethics cases and AI method review
+- understand AI as a probabilistic companion, not a final authority
+- separate factual claims, relationship claims, and generated workflow components
 - prepare strategic questions for your mentor
 :::
 
@@ -116,7 +117,7 @@ These are ordinary, not dramatic — and they happen to careful people.
 | Settings changed but not noted | results can't be matched to inputs |
 | One person held the knowledge | nobody else can defend the method |
 | CRS / units left implicit | spatial output is silently wrong |
-| AI-generated step never checked | a claim no one actually understands |
+| AI output treated as final evidence | a claim no one actually checked |
 
 ::: {.warning-card}
 The risk is not embarrassment. It is presenting a result you can no longer stand behind.
@@ -209,56 +210,108 @@ The gaps you find are the gaps a future reader would hit. This is the most usefu
 
 ---
 
-[Automation ethics]{.kicker}
+[AI as companion]{.kicker}
 
-## What AI use and research methods share
+## What large models are, for this course
 
 ::: {.concept-card}
-[The shared root]{.card-title}
-Both come down to one principle: **KNOW YOUR DATA.**
+[The short version]{.card-title}
+Large models are **probabilistic models of patterns in human-produced data**. They can be useful companions, but they are not a final gate for truth.
 :::
 
 :::: {.two-col}
 ::: {.concept-card}
-[In research ethics]{.card-title}
+[What they tend to do]{.card-title}
 
-- who your participants are
-- how the data was collected
-- the biases in your sample
-- the limits of your method
+- produce plausible common answers
+- average across many writing patterns
+- compress complicated claims into fluent language
+- sound confident even when the source is weak
 :::
 ::: {.concept-card}
-[In AI use]{.card-title}
+[Why they are still useful]{.card-title}
 
-- what the model was trained on
-- the biases that training carries
-- what the tool can and cannot do
-- when its output should not be trusted
+- they can expose hidden assumptions
+- they can draft small workflow components
+- they can search the shape of an ill-defined relation
+- they can help when human experience is hard to model directly
 :::
 ::::
 
-When you don't understand the data behind a result, harm propagates quietly and at scale.
+The skill is not "believe or reject AI." The skill is using it, then deciding what kind of check must happen before the output becomes evidence.
 
 ---
 
-## Automation Ethics Cases
+[Large-model literacy]{.kicker}
 
-Read each case and place it: acceptable, acceptable **with disclosure**, or not acceptable — and say why.
-
-| Case | The action |
-|---|---|
-| 1 | Using an AI assistant to debug your Python |
-| 2 | Having AI write your literature-review summary |
-| 3 | Generating synthetic sample data for testing |
-| 4 | Automating a calculation you don't understand |
+## The useful part is also the dangerous part
 
 ::: {.warning-card}
-The line is rarely "AI or not." It is **understanding + disclosure**: do you understand the step, and have you said how it was produced?
+[Common answer problem]{.card-title}
+Because LLMs learn from pooled writing, they often produce the most available or average explanation. That can be helpful for orientation, but it can miss local constraints, updated facts, minority cases, and project-specific physics.
+:::
+
+::: {.reflection-card}
+[Design implication]{.card-title}
+Do not ask only, "What does AI say?" Ask: **what local fact, mechanism, calculation, or observed experience would push this answer away from the common mean?**
 :::
 
 ---
 
-## AI Method Review
+[Three output types]{.kicker}
+
+## Not every AI output needs the same check
+
+| AI output type | What it is good for | Final-gate check |
+|---|---|---|
+| **Fact-based reiteration** | summarize standards, definitions, precedent claims, code-like information | verify against primary source, datasheet, standard, or cited document |
+| **Relationship-based simulation** | reason about fuzzy links: comfort, perception, spatial experience, thermal/acoustic sensation | compare with engineering/science logic, empirical evidence, sensitivity test, or bounded calculation |
+| **Workflow/code drafting** | produce formulas, scripts, GhPython snippets, notebook cells, checklists | run it, inspect units/ranges, test known cases, and log failures |
+
+::: {.concept-card}
+[Final gate]{.card-title}
+AI can help generate an answer. **You** decide which gate it must pass before it enters the design argument.
+:::
+
+---
+
+[Why architecture needs this]{.kicker}
+
+## Human experience is messy enough that AI can help
+
+Architecture often asks about relationships that are real but hard to reduce cleanly:
+
+- spatial atmosphere and perceived calm
+- thermal acceptability rather than just air temperature
+- acoustic comfort rather than only decibels
+- wayfinding confidence rather than only shortest path
+- facade perception rather than only performance values
+
+::: {.example-card}
+[A productive use]{.card-title}
+AI can help generate hypotheses for these fuzzy relationships. It cannot validate them. Validation still comes from source checks, simple calculations, field observations, precedent mechanisms, simulations, or sensitivity tests.
+:::
+
+---
+
+## AI Fact-Checking Cases
+
+Read each case and name the output type, then decide the final-gate check.
+
+| Case | Output type | Final gate |
+|---|---|---|
+| AI summarizes a daylight standard | fact-based reiteration | find the standard and quote/check the clause |
+| AI proposes why a shaded courtyard may feel cooler | relationship-based simulation | compare with radiation/wind/shade logic and one bounded metric |
+| AI writes a Python scoring function | workflow/code drafting | run known cases and inspect units/ranges |
+| AI writes a literature-review paragraph | fact + writing support | verify every claim and citation before use |
+
+::: {.warning-card}
+The line is rarely "AI or not." It is **what kind of output is this, and what would make it trustworthy enough to use?**
+:::
+
+---
+
+## Large-Model Method Review
 
 A common situation, examined as a method — not a person.
 
@@ -271,8 +324,9 @@ A building-performance analysis: polished charts, statistics beyond the author's
 [Review it together]{.card-title}
 
 - which specific claims can the author actually defend?
+- which claims are factual, which are relationship-based, and which are workflow/code?
+- what final-gate checks would have made this trustworthy?
 - what should have been disclosed, and where?
-- what verification would have made this trustworthy?
 - what is the minimum honest version of this output?
 :::
 
@@ -282,9 +336,9 @@ We critique the **workflow and its claims**, never the author's ability.
 
 [Key visual]{.kicker}
 
-## An AI-assisted workflow, made honest
+## AI-assisted work, made honest
 
-The same four-zone frame as the rest of the course — but now one zone is an AI draft, and the **manual check** and **disclosure** are not optional.
+The same four-zone frame as the rest of the course — but now one zone is an AI draft, and the **final gate** and **disclosure** are not optional.
 
 ::: {.tool-panel}
 ::: {.zone .input}
@@ -294,22 +348,27 @@ The same four-zone frame as the rest of the course — but now one zone is an AI
 **AI output** a draft script + a Grasshopper Python component stub
 :::
 ::: {.zone .check}
-**Manual check** CRS is projected (metres, not degrees); buffer distance correct; parcel counts spot-checked by hand
+**Final gate** CRS is projected (metres, not degrees); buffer distance correct; parcel counts spot-checked by hand
 :::
 ::: {.zone .output}
 **Disclosure note** "Buffer script drafted with AI; CRS and counts verified manually on DD-MM."
 :::
 :::
 
+::: {.activity-card}
+[Run the kit]{.card-title}
+A real, runnable example: [`verified_setback_score.py`](../starter_kits/ai-assisted-workflow/examples/verified_setback_score.py) with its [prompt log](../starter_kits/ai-assisted-workflow/examples/prompt_log_example.md) — AI drafted it, then the output type, known cases, and threshold behavior were checked. See the [AI-assisted kit](../starter_kits/ai-assisted-workflow/README.md).
+:::
+
 ::: {.warning-card}
-AI can draft the step. It cannot verify it or disclose it. Those two zones are your responsibility, every time.
+AI can draft the step. It cannot be the final gate for its own output. That gate is your responsibility, every time.
 :::
 
 ---
 
 [AI as component front end]{.kicker}
 
-## Vibe coding is only acceptable after the function contract is clear
+## Vibe coding starts after the function contract is clear
 
 ::: {.function-contract}
 **Before asking AI**
@@ -324,7 +383,7 @@ function contract
 AI draft
 :::
 ::: {.node}
-manual repair
+final-gate check
 :::
 ::: {.node}
 GhPython / notebook
@@ -342,12 +401,12 @@ verified output
 
 ::: {.gh-bridge}
 **Bridge pattern**
-AI drafts a `geopandas`, Python, GhPython, or C# component -> student checks units, edge cases, and one manual result -> only then does the component enter the design workflow.
+AI drafts a `geopandas`, Python, GhPython, or C# component -> student checks facts, units, edge cases, and one manual result -> only then does the component enter the design workflow.
 :::
 
 ::: {.uncertainty-check}
 **Question for AI-assisted work**
-Which part of the generated output do you understand least, and what test would expose a wrong answer there?
+Is this output factual, relationship-based, or code/workflow? What check would expose a wrong answer there?
 :::
 
 ---
@@ -509,7 +568,7 @@ Take three minutes and write:
 
 - which step in my workflow is least reproducible right now?
 - what did a peer get stuck on that I assumed was obvious?
-- where am I using automation I can't fully defend?
+- where am I using AI or automation I can't fully defend?
 - what is one fix before Week 9?
 :::
 
@@ -525,7 +584,7 @@ Keep it in notes or post it as a Slack thread under your material.
 1. complete your mentor consultation using your strategic questions
 2. send the follow-up email showing how their advice changed your approach
 3. document one workflow so a peer can rerun it unaided
-4. disclose and verify any AI-assisted step in your method
+4. classify and check any AI-assisted step: fact, relationship, or workflow/code
 5. fix the weakest reproducibility gap your peer check found
 :::
 

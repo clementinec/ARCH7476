@@ -91,6 +91,71 @@ A3 final output and A4 Practice Case/Object Card
 
 ---
 
+[Before evaluation]{.kicker}
+
+## Recap: the two gates from Week 8
+
+A3 is due this week; evaluation begins next. You will use AI, so both gates apply to everything you submit.
+
+:::: {.two-col}
+::: {.concept-card}
+[Reproducibility]{.card-title}
+Could someone re-run your workflow and get your result without you in the room? Environment + steps + "re-running reproduces the figure."
+:::
+::: {.concept-card}
+[AI fact-checking]{.card-title}
+For any AI-assisted part: name the output type (fact / relationship / code) and state the final-gate check that made it trustworthy.
+:::
+::::
+
+Carry both into your Object Card and Reproducibility Capsule.
+
+---
+
+## Quick reference: match the check to the AI output
+
+| AI output | What it's good for | Final-gate check |
+|---|---|---|
+| **Fact reiteration** | standards, definitions, precedent claims | verify against the primary source or document |
+| **Relationship simulation** | comfort, perception, fuzzy spatial links | compare with science logic + one bounded metric |
+| **Workflow / code** | formulas, scripts, GhPython, notebook cells | run it, check units/ranges, test a known case |
+
+See [Week 8](week-08.html) for the full treatment.
+
+---
+
+[Working with AI honestly]{.kicker}
+
+## You will use AI — so use it accountably
+
+Four obligations that travel with any AI-assisted work — this is [ML Primer Principle 12](../lectures/ml-primer-12-principles.html) in practice:
+
+:::: {.two-col}
+::: {.activity-card}
+[Disclose]{.card-title}
+State what AI did, the prompts/seeds, and what you verified. Undisclosed AI is the problem, not AI use.
+:::
+::: {.concept-card}
+[Sources & IP]{.card-title}
+Use open or owned references; cite image and data sources; respect licenses; do not pass a model's averaged answer off as your own evidence.
+:::
+::::
+
+:::: {.two-col}
+::: {.warning-card}
+[Bias]{.card-title}
+Models return the common/average answer and inherit dataset bias — name who or what your data and outputs might exclude.
+:::
+::: {.reflection-card}
+[Accountability]{.card-title}
+You remain responsible for every claim. AI is a companion, never the final gate — and never identify people without consent.
+:::
+::::
+
+See the [AI-Assisted Fact-Checking Card](../templates/ai-workflow-verification-card.md).
+
+---
+
 [The problem]{.kicker}
 
 ## When good research goes bad

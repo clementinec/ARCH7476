@@ -12,27 +12,27 @@ format:
 
 ---
 
-# Purpose
+## Purpose
 
 `A4` is the final synthesis of the course.
 
 You will show how one design decision has been improved by one evidence-backed generative workflow.
 
-# Choose One Route
+## Choose One Route
 
-## Route A: Retrospective Redesign
+### Route A: Retrospective Redesign
 
 Use a past studio project.
 
 Show how the decision would be rebuilt with better evidence, clearer variables, a stronger workflow, and a more defensible recommendation.
 
-## Route B: Live Studio Application
+### Route B: Live Studio Application
 
 Use a current studio project.
 
 Show how the workflow supported, challenged, changed, or narrowed an active design decision.
 
-# Guardrail
+## Guardrail
 
 A4 is not a whole studio presentation.
 
@@ -40,7 +40,7 @@ It is:
 
 > one design decision improved by one evidence-backed generative workflow.
 
-# Session 2 Check-Ins That Feed A4
+## Session 2 Check-Ins That Feed A4
 
 These check-ins are how the final package is tested in class before submission.
 
@@ -53,9 +53,9 @@ These check-ins are how the final package is tested in class before submission.
 
 Use the [Project Reasoning Check-In](../templates/project-reasoning-checkin.md) template if you want a consistent note structure.
 
-# Required Components
+## Required Components
 
-## 1. Practice Case
+### 1. Practice Case
 
 **Format:** 2 slides  
 **Audience:** studio critic, client, practice reviewer, or project stakeholder
@@ -69,7 +69,7 @@ Must include:
 - threshold or comparison rule
 - limit / caveat
 
-## 2. Research Brief
+### 2. Research Brief
 
 **Length:** 2 pages
 
@@ -85,7 +85,7 @@ Must include:
 - interpretation
 - what remains unresolved
 
-## 3. Object Card
+### 3. Object Card
 
 **Format:** 1 page
 
@@ -97,18 +97,31 @@ Must show:
 - threshold or comparison
 - recommendation or next action
 
-## 4. Reproducibility Capsule
+### 4. Reproducibility Capsule
 
-Submit a small folder or ZIP containing:
+Submit a small folder or ZIP that another person can actually re-run:
 
-- README
+- README **with step-by-step run instructions**
+- **environment / dependency list** (tools and versions; e.g. `requirements.txt` or a stated software list)
 - data dictionary or source list
-- workflow artifact
-- figure sources
+- the **runnable** workflow artifact (script, workbook, project, or notebook — not only a screenshot)
+- figure sources, plus a one-line note confirming that **re-running reproduces the key figure**
 - AI prompt log if relevant
 - verification notes
 
-## 5. Reflection Note
+### 5. Feedback + Revision Ledger
+
+Show how critique changed the workflow or design decision.
+
+Include at least three entries:
+
+| Feedback source | What it challenged | What changed | What did not change, and why |
+|---|---|---|---|
+| peer / instructor / tool output / AI check | assumption, metric, threshold, figure, route, or claim | revision made | reason for rejecting or deferring |
+
+The point is not to obey every comment. The point is to show judgment about which feedback made the workflow more testable.
+
+### 6. Reflection Note
 
 **Length:** 1 page
 
@@ -119,9 +132,9 @@ Answer:
 - What would you do next?
 - How could this workflow transfer to another studio project?
 
-# Route-Specific Requirements
+## Route-Specific Requirements
 
-## Route A: Retrospective Redesign
+### Route A: Retrospective Redesign
 
 Include:
 
@@ -130,7 +143,7 @@ Include:
 - what the workflow would have changed
 - revised design recommendation
 
-## Route B: Live Studio Application
+### Route B: Live Studio Application
 
 Include:
 
@@ -139,17 +152,19 @@ Include:
 - how the workflow affected the live project
 - next studio action
 
-# Assessment Criteria
+## Assessment Criteria
 
 | Criterion | Weight |
 |---|---:|
-| Decision clarity | 20% |
-| Generative workflow execution | 25% |
+| Decision clarity | 15% |
+| Generative workflow execution | 20% |
 | Evidence quality and uncertainty | 20% |
-| Design impact | 20% |
-| Documentation and reproducibility | 15% |
+| Design impact | 15% |
+| **Reproducibility — the capsule re-runs** | 15% |
+| Feedback/revision judgment | 10% |
+| Documentation and communication clarity | 5% |
 
-# What Counts as Design Impact
+## What Counts as Design Impact
 
 Design impact can mean:
 
@@ -160,12 +175,13 @@ Design impact can mean:
 - clarified what evidence is still missing
 - changed how the student would argue the decision
 
-# Common Failure Modes
+## Common Failure Modes
 
 - presenting the whole studio project instead of one decision
 - hiding the workflow behind polished images
 - making stronger claims than the evidence supports
 - submitting AI-assisted material without verification
+- treating feedback as a checklist instead of a judgment problem
 - leaving the threshold or recommendation vague
 
 Use the [Final Package Checklist](../templates/final-package-checklist.md) before submission.

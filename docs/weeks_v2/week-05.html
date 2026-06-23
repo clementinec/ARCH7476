@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.544">
 
-  <title>ARCH7476: Generative Design in Architecture - Week 5: BIM, BEM, and Building Performance</title>
+  <title>ARCH7476: Evidence-Based Generative Design - Week 5: BIM, BEM, and Building Performance</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -574,7 +639,159 @@
 <p><strong>Quality check</strong> units, range, and one known hand-check are stated</p>
 </div>
 </div>
-<p>This proxy is not the final truth. It is the fast test that tells you whether a full Ladybug/Honeybee/Radiance workflow is worth the setup.</p>
+<p>This proxy is not the final truth. It is the fast test that tells you whether a full EnergyPlus, Ladybug, Honeybee, or Radiance workflow is worth the setup.</p>
+<div class="activity-card">
+<p><span class="card-title">Run the kit</span> This proxy is runnable now: <a href="../starter_kits/preset-simulation-proxy/README.html"><code>facade_heat_proxy_demo.py</code></a> regenerates a <a href="../starter_kits/preset-simulation-proxy/outputs/facade_heat_proxy_scores.csv">scores CSV</a> and a <a href="../starter_kits/preset-simulation-proxy/outputs/facade_heat_proxy_chart.png">comparison chart</a>. Change the assumptions and re-run.</p>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><span class="kicker">EnergyPlus route</span></p>
+</section>
+<section id="the-real-simulator-route-is-one-controlled-cli-run" class="slide level2 center">
+<h2>The real simulator route is one controlled CLI run</h2>
+<div class="reflection-card">
+<p>Run EnergyPlus directly first to see the <strong>model file</strong>, <strong>weather file</strong>, <strong>run period</strong>, <strong>setpoints</strong>, and <strong>output variables</strong> without an extra Grasshopper/Ladybug translation layer. The result can still be patched back into GH later; the direct run simply removes one source of uncertainty while you learn what the simulator actually did.</p>
+</div>
+</section>
+<section id="why-not-start-inside-grasshopper" class="slide level2 center">
+<h2>Why not start inside Grasshopper?</h2>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="card-title">Direct EnergyPlus run</span></p>
+<ul>
+<li class="fragment">one <code>.idf</code></li>
+<li class="fragment">one <code>.epw</code></li>
+<li class="fragment">one command</li>
+<li class="fragment">visible outputs</li>
+<li class="fragment">fewer translation assumptions</li>
+</ul>
+</div>
+<div class="activity-card">
+<p><span class="card-title">GH / Ladybug layer</span></p>
+<ul>
+<li class="fragment">useful for design iteration</li>
+<li class="fragment">adds geometry and component translation</li>
+<li class="fragment">easier to lose track of defaults</li>
+<li class="fragment">better after the baseline is understood</li>
+</ul>
+</div>
+</div>
+<p>The order is: <strong>verify the simulator loop, then patch it into the design workflow.</strong></p>
+</section>
+<section id="install-once-run-many-times" class="slide level2 center">
+<h2>Install once, run many times</h2>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="card-title">Install once</span></p>
+<p>Use the official EnergyPlus download or release page:</p>
+<ul>
+<li class="fragment"><code>energyplus.net/downloads</code></li>
+<li class="fragment"><code>github.com/NREL/EnergyPlus/releases</code></li>
+</ul>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Run many times</span></p>
+<p>After installation, the class route is a small script:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a></a><span class="ex">python</span> run_energyplus_two_week_case.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p>The point is control: know which model, weather file, run period, setpoint, and output variable produced the number.</p>
+</section>
+<section id="what-the-installation-folder-contains" class="slide level2 center">
+<h2>What the installation folder contains</h2>
+<div class="tool-panel">
+<div class="zone input">
+<p><strong>Executable</strong> <code>energyplus</code> / <code>energyplus.exe</code></p>
+</div>
+<div class="zone operation">
+<p><strong>Schema</strong> <code>Energy+.idd</code></p>
+</div>
+<div class="zone output">
+<p><strong>Materials to inspect</strong> <code>ExampleFiles/</code> and <code>WeatherData/</code></p>
+</div>
+<div class="zone check">
+<p><strong>Post-processing</strong> <code>PostProcess/</code></p>
+</div>
+</div>
+<p>If you cannot point to these files, you do not yet know what your simulation is running.</p>
+</section>
+<section id="one-raw-command-all-platforms" class="slide level2 center">
+<h2>One raw command, all platforms</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="ex">energyplus</span> <span class="at">-w</span> path/to/weather.epw <span class="at">-d</span> outputs <span class="at">-p</span> two_week <span class="at">-r</span> path/to/model.idf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th>Flag</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>-w</code></td>
+<td>weather file</td>
+</tr>
+<tr class="even">
+<td><code>-d</code></td>
+<td>output directory</td>
+</tr>
+<tr class="odd">
+<td><code>-p</code></td>
+<td>output file prefix</td>
+</tr>
+<tr class="even">
+<td><code>-r</code></td>
+<td>post-process outputs into readable CSV files</td>
+</tr>
+</tbody>
+</table>
+<p>Windows and macOS mainly differ in where <code>energyplus</code> lives, not in what the command means.</p>
+</section>
+<section id="if-the-executable-is-not-on-path" class="slide level2 center">
+<h2>If the executable is not on PATH</h2>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="card-title">macOS</span></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a></a><span class="bu">export</span> <span class="va">ENERGYPLUS_EXE</span><span class="op">=</span><span class="st">"/Applications/EnergyPlus-26-1-0/energyplus"</span></span>
+<span id="cb3-2"><a></a><span class="ex">python</span> run_energyplus_two_week_case.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="concept-card">
+<p><span class="card-title">Windows PowerShell</span></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource powershell number-lines code-with-copy"><code class="sourceCode powershell"><span id="cb4-1"><a></a><span class="va">$env</span><span class="op">:</span><span class="va">ENERGYPLUS_EXE</span><span class="op">=</span><span class="st">"C:\EnergyPlusV26-1-0\energyplus.exe"</span></span>
+<span id="cb4-2"><a></a>python run_energyplus_two_week_case<span class="op">.</span><span class="fu">py</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p>Change the version folder if your installed version is different.</p>
+</section>
+<section id="two-week-control-output-preview" class="slide level2 center">
+<h2>Two-week control output preview</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.png" height="470"></p>
+<figcaption>EnergyPlus two-week checked output</figcaption>
+</figure>
+</div>
+<div class="reflection-card">
+<p>This is what students should learn to read: outdoor condition, heating/cooling setpoints, actual zone air temperature, operative temperature, and where a warning or assumption would change the conclusion.</p>
+</div>
+</section>
+<section id="the-week-5-simulator-kit" class="slide level2 center">
+<h2>The Week 5 simulator kit</h2>
+<div class="artifact-strip">
+<div class="artifact">
+<p><span class="label concept">Proxy</span> <code>facade_heat_proxy_demo.py</code></p>
+</div>
+<div class="artifact">
+<p><span class="label activity">EnergyPlus</span> <code>run_energyplus_two_week_case.py</code></p>
+</div>
+<div class="artifact">
+<p><span class="label example">Guide</span> <code>energyplus_two_week_case.md</code></p>
+</div>
+<div class="artifact">
+<p><span class="label reflect">Output</span> <code>monitored_outputs.csv</code></p>
+</div>
+</div>
+<p>Use the <a href="../starter_kits/preset-simulation-proxy/energyplus_two_week_case.html">EnergyPlus two-week case</a> if installation is ready. Use the proxy route if it is not.</p>
 </section>
 <section id="quick-check-bim-or-bem" class="slide level2 center">
 <h2>Quick check: BIM or BEM?</h2>
@@ -963,7 +1180,7 @@
 <p>revise facade</p>
 </div>
 </div>
-<p>Supported professional bridge: one constrained Ladybug/Radiance walkthrough, not “everything Ladybug.”</p>
+<p>Supported professional bridge: one constrained EnergyPlus or Ladybug/Radiance walkthrough, not “everything simulation.”</p>
 </section>
 <section class="slide level2 center">
 

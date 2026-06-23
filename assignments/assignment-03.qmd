@@ -12,17 +12,17 @@ format:
 
 ---
 
-# Purpose
+## Purpose
 
 `A3` is where the workflow becomes real.
 
 You will build the smallest working version of your chosen workflow, generate or compare multiple variants/scenarios, produce one output, and document how you verified or debugged it.
 
-# Core Question
+## Core Question
 
 > Can this workflow generate or compare variants and produce an output that helps the design decision?
 
-# Session 2 Check-Ins That Feed A3
+## Session 2 Check-Ins That Feed A3
 
 These check-ins should make the prototype visible before the deadline. Bring rough artifacts; the point is to expose workflow reasoning early.
 
@@ -34,9 +34,9 @@ These check-ins should make the prototype visible before the deadline. Bring rou
 
 Use the [Project Reasoning Check-In](../templates/project-reasoning-checkin.md) template if you want a consistent note structure.
 
-# Required Components
+## Required Components
 
-## 1. Prototype Scope
+### 1. Prototype Scope
 
 Define:
 
@@ -48,7 +48,7 @@ Define:
 - output target
 - what is intentionally out of scope
 
-## 2. Workflow Artifact
+### 2. Workflow Artifact
 
 Submit the relevant artifact:
 
@@ -59,7 +59,9 @@ Submit the relevant artifact:
 - spreadsheet workbook
 - AI-assisted generated component plus verification notes
 
-## 3. Workflow Description
+**It must be re-runnable, not just shown.** Include the inputs, the steps or script, and the tools/versions needed so another person could reproduce the output. A screenshot may illustrate the result, but the runnable artifact (script, workbook, project files, or notebook) must be part of the submission.
+
+### 3. Workflow Description
 
 Explain the workflow in inspectable steps.
 
@@ -71,7 +73,7 @@ Use this structure:
 4. quality check
 5. design interpretation
 
-## 4. Generative Loop
+### 4. Generative Loop
 
 Show the loop:
 
@@ -83,7 +85,7 @@ Show the loop:
 6. threshold or comparison rule
 7. design action
 
-## 5. Prototype Output
+### 5. Prototype Output
 
 Show one interpretable output from the workflow.
 
@@ -96,7 +98,7 @@ Examples:
 - chart with ranges
 - generated script/component with verified result
 
-## 6. Verification and Failure Log
+### 6. Verification and Failure Log
 
 Document:
 
@@ -106,41 +108,42 @@ Document:
 - what assumption matters most
 - what remains untrusted
 
-If AI assisted any part of the workflow, include the [AI Workflow Verification Card](../templates/ai-workflow-verification-card.md).
+If AI assisted any part of the workflow, include the [AI-Assisted Fact-Checking Card](../templates/ai-workflow-verification-card.md).
 
-# Assessment Criteria
+## Assessment Criteria
 
 | Criterion | Weight |
 |---|---:|
-| Generative loop coherence | 30% |
-| Utility of variant/scenario output | 25% |
-| Verification and debugging | 20% |
+| Generative loop coherence | 25% |
+| Utility of variant/scenario output | 20% |
+| Verification and debugging | 15% |
+| **Reproducibility — another person can re-run it** | 15% |
 | Treatment of uncertainty | 15% |
 | Documentation quality | 10% |
 
-# Differentiated Expectations
+## Differentiated Expectations
 
-## Undergraduate
+### Undergraduate
 
 - small but complete workflow
 - clear explanation
 - honest failure log
 
-## MArch
+### MArch
 
 - stronger connection between output and studio decision
 - more independent troubleshooting
 - output should inform a real design action
 
-## RPg / PhD
+### RPg / PhD
 
 - sharper method rationale
 - stronger reproducibility
 - deeper uncertainty treatment
 
-# Common Failure Modes
+## Common Failure Modes
 
-- submitting screenshots without workflow logic
+- submitting screenshots in place of a re-runnable workflow
 - building a tool artifact that answers no decision question
 - hiding broken steps
 - using AI-generated code without verification

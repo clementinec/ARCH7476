@@ -243,6 +243,16 @@ Six routes, same four zones. None is more "advanced" than the others — each is
 Pick the route that makes **your** decision more defensible — not the one that looks most impressive.
 :::
 
+::: {.activity-card}
+[Run a reference kit]{.card-title}
+Several routes have a clone-and-run starter:
+[spreadsheet](../starter_kits/spreadsheet-thresholds/README.md) ·
+[GIS](../starter_kits/gis-spatial-comparison/README.md) ·
+[simulation proxy](../starter_kits/preset-simulation-proxy/README.md) ·
+[Python notebook](../starter_kits/python-notebook-analysis/README.md) ·
+[AI-assisted](../starter_kits/ai-assisted-workflow/README.md). Start from one and swap in your own decision.
+:::
+
 ---
 
 [Studio-lab · do this now]{.kicker}

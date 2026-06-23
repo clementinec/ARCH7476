@@ -12,23 +12,23 @@ format:
 
 ---
 
-# Purpose
+## Purpose
 
 `A1` asks you to return to one past studio decision and reconstruct how you built a case for it.
 
 You are not being asked to prove that the old decision was right. You are being asked to identify what evidence actually supported it, what was assumption or preference, and what kind of workflow could have made the decision stronger.
 
-# Core Question
+## Core Question
 
 > What evidence did I really use, and what evidence workflow did I wish I had?
 
-# Required Project Basis
+## Required Project Basis
 
 Use a **past studio project** or a completed design decision from studio, research, or practice.
 
 This retrospective basis matters because the decision is stable enough to audit honestly.
 
-# Session 2 Check-Ins That Feed A1
+## Session 2 Check-Ins That Feed A1
 
 These check-ins are formative. They help you build the final submission and should be reflected in your board and short audit.
 
@@ -40,9 +40,9 @@ These check-ins are formative. They help you build the final submission and shou
 
 Use the [Project Reasoning Check-In](../templates/project-reasoning-checkin.md) template if you want a consistent note structure.
 
-# Deliverables
+## Deliverables
 
-## 1. Prior Studio Decision
+### 1. Prior Studio Decision
 
 Describe one specific decision.
 
@@ -64,7 +64,7 @@ Examples:
 - public-space arrangement
 - massing or orientation choice
 
-## 2. Evidence Recall
+### 2. Evidence Recall
 
 List what informed the decision at the time.
 
@@ -79,7 +79,7 @@ Sort each input as one of:
 - assumption
 - intuition or taste
 
-## 3. Evidence Critique
+### 3. Evidence Critique
 
 Explain:
 
@@ -89,7 +89,7 @@ Explain:
 - where confidence exceeded evidence
 - what could have changed the decision
 
-## 4. Missing Workflow
+### 4. Missing Workflow
 
 Identify a possible workflow that would have improved the decision.
 
@@ -99,10 +99,10 @@ This may involve:
 - BIM/BEM translation or preset simulation
 - GIS spatial evidence
 - Python or notebook analysis
-- AI-assisted workflow building
+- AI-assisted fact-checking or workflow support
 - spreadsheet comparison or sensitivity
 
-## 5. Total Recall Board
+### 5. Total Recall Board
 
 Submit one visual board using the [Total Recall Board](../templates/total-recall-board.md) template.
 
@@ -115,7 +115,7 @@ The board should show:
 - missing variable/range/threshold
 - candidate workflow
 
-# Assessment Criteria
+## Assessment Criteria
 
 | Criterion | Weight |
 |---|---:|
@@ -125,26 +125,26 @@ The board should show:
 | Candidate workflow logic | 15% |
 | Visual board clarity | 10% |
 
-# Differentiated Expectations
+## Differentiated Expectations
 
-## Undergraduate
+### Undergraduate
 
 - choose a tightly bounded decision
 - use clear evidence categories
 - identify one realistic missing workflow
 
-## MArch
+### MArch
 
 - connect the decision to studio or practice stakes
 - distinguish evidence from argument with sharper judgment
 - identify a workflow that could plausibly change the design
 
-## RPg / PhD
+### RPg / PhD
 
 - treat the assignment as a method critique
 - identify transfer limits and uncertainty more explicitly
 
-# Common Failure Modes
+## Common Failure Modes
 
 - describing the whole project instead of one decision
 - treating precedent images as proof
