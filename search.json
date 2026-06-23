@@ -420,7 +420,7 @@
     "href": "starter_kits/preset-simulation-proxy/energyplus_two_week_case.html#cross-platform-class-runner",
     "title": "EnergyPlus Two-Week Case",
     "section": "Cross-Platform Class Runner",
-    "text": "Cross-Platform Class Runner\nFrom this starter-kit folder:\npython run_energyplus_two_week_case.py\nThe script first tries to find energyplus from your system PATH. If that fails, set ENERGYPLUS_EXE.\nmacOS:\nexport ENERGYPLUS_EXE=\"/Applications/EnergyPlus-26-1-0/energyplus\"\npython run_energyplus_two_week_case.py\nWindows PowerShell:\n$env:ENERGYPLUS_EXE=\"C:\\EnergyPlusV26-1-0\\energyplus.exe\"\npython run_energyplus_two_week_case.py\nIf your installed folder name is different, change only the path."
+    "text": "Cross-Platform Class Runner\nFrom this starter-kit folder:\npython run_energyplus_two_week_case.py\nThe script first tries to find energyplus from your system PATH. If that fails, set ENERGYPLUS_EXE.\nmacOS:\nexport ENERGYPLUS_EXE=\"/Applications/EnergyPlus-25-1-0/energyplus\"\npython run_energyplus_two_week_case.py\nWindows PowerShell:\n$env:ENERGYPLUS_EXE=\"C:\\EnergyPlusV25-1-0\\energyplus.exe\"\npython run_energyplus_two_week_case.py\nIf your installed folder name is different, change only the path."
   },
   {
     "objectID": "starter_kits/preset-simulation-proxy/energyplus_two_week_case.html#what-the-script-creates",
@@ -1834,7 +1834,7 @@
     "href": "weeks_v2/week-05.html#if-the-executable-is-not-on-path",
     "title": "Week 5: BIM, BEM, and Building Performance",
     "section": "If the executable is not on PATH",
-    "text": "If the executable is not on PATH\n\n\nmacOS\nexport ENERGYPLUS_EXE=\"/Applications/EnergyPlus-26-1-0/energyplus\"\npython run_energyplus_two_week_case.py\n\n\nWindows PowerShell\n$env:ENERGYPLUS_EXE=\"C:\\EnergyPlusV26-1-0\\energyplus.exe\"\npython run_energyplus_two_week_case.py\n\n\nChange the version folder if your installed version is different.",
+    "text": "If the executable is not on PATH\n\n\nmacOS\nexport ENERGYPLUS_EXE=\"/Applications/EnergyPlus-25-1-0/energyplus\"\npython run_energyplus_two_week_case.py\n\n\nWindows PowerShell\n$env:ENERGYPLUS_EXE=\"C:\\EnergyPlusV25-1-0\\energyplus.exe\"\npython run_energyplus_two_week_case.py\n\n\nChange the version folder if your installed version is different.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -3250,7 +3250,7 @@
     "href": "schedule.html#at-a-glance",
     "title": "Course Schedule",
     "section": "At a Glance",
-    "text": "At a Glance\n\n\n\n\n\n\n\n\n\nWeek\nLecture / demo lens\nSession 2 material and check-in\nAssignment alignment\n\n\n\n\n1\nTotal Recall: evidence behind a past studio decision\npast project visual: what decision and evidence are visible?\nA1 decision + evidence recall\n\n\n2\nEvidence audit: weak links, overclaims, and next decision\nmarked evidence: what does it support, and what does it not show yet?\nA1 evidence critique\n\n\n3\nSpreadsheet as baseline workflow\ntable/chart/matrix: what variants or trade-offs could be compared?\nA1 due / A2 decision recap\n\n\n4\nGIS choices for architects\nsite/map/context image: is this decision spatial?\nA2 evidence map + tool matrix\n\n\n5\nBIM/BEM and performance model translation\nmodel/performance material: what assumptions would dominate?\nA2 tool matrix + feasibility\n\n\n6\nEvidence and pathway mapping\nworkflow sketch or branch declaration: what route and output are you choosing?\nA2 due / A4 branch\n\n\n7\nMethod prototype studio\nartifact/canvas/notebook/map: what goes in, varies, and comes out?\nA3 prototype scope\n\n\n8\nReproducibility, AI fact-checking, and mentor prep\nprompt log/error/README: what must be fact-checked, relationship-checked, or documented?\nA3 verification log\n\n\n9\nThresholds, recommendations, and counter-arguments\nfigure/output/object-card draft: what result changes the action?\nA3 due / A4 launch + clinic/workgroup vote\n\n\n10\nDraft workflow review\ndraft package: can reviewers trace the full evidence loop?\nA4 draft clinic or optional workgroup\n\n\n11\nFinal package polish\nfinal component draft: which A4 component is weakest?\nA4 near-final clinic or optional workgroup\n\n\n12\nObject Fair\nfinal object card/reflection: what reasoning transfers forward?\nA4 due",
+    "text": "At a Glance\n\n\n\n\n\n\n\n\n\nWeek\nLecture / demo lens\nSession 2 material and check-in\nAssignment alignment\n\n\n\n\n1\nTotal Recall: evidence behind a past studio decision\npast project visual: what decision and evidence are visible?\nA1 decision + evidence recall\n\n\n2\nEvidence audit: weak links, overclaims, and next decision\nmarked evidence: what does it support, and what does it not show yet?\nA1 evidence critique\n\n\n3\nSpreadsheet as baseline workflow\ntable/chart/matrix: what variants or trade-offs could be compared?\nA1 due / A2 decision recap\n\n\n4\nGIS choices for architects\nsite/map/context image: is this decision spatial?\nA2 evidence map + tool matrix\n\n\n5\nBIM/BEM and performance model translation\nmodel/performance material: what assumptions would dominate?\nA2 tool matrix + feasibility\n\n\n6\nEvidence and pathway mapping\nworkflow sketch or branch declaration: what route and output are you choosing?\nA2 due / A4 branch + alignment pulse\n\n\n7\nMethod prototype studio\nartifact/canvas/notebook/map: what goes in, varies, and comes out?\nA3 prototype scope\n\n\n8\nReproducibility, AI fact-checking, and mentor prep\nprompt log/error/README: what must be fact-checked, relationship-checked, or documented?\nA3 verification log\n\n\n9\nThresholds, recommendations, and counter-arguments\nfigure/output/object-card draft: what result changes the action?\nA3 due / A4 launch + clinic/workgroup vote\n\n\n10\nDraft workflow review\ndraft package: can reviewers trace the full evidence loop?\nA4 draft clinic or optional workgroup\n\n\n11\nFinal package polish\nfinal component draft: which A4 component is weakest?\nA4 near-final clinic or optional workgroup\n\n\n12\nObject Fair\nfinal object card/reflection: what reasoning transfers forward?\nA4 due",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -3322,7 +3322,7 @@
     "href": "schedule.html#week-6-evidence-and-pathway-mapping",
     "title": "Course Schedule",
     "section": "Week 6: Evidence and Pathway Mapping",
-    "text": "Week 6: Evidence and Pathway Mapping\n\nLecture / Demo\n\nevidence source triage\npathway choice across spreadsheet, GIS, Python, BIM/BEM, GH, and AI-assisted routes\nRetrospective Redesign vs Live Studio Application\nscope discipline: one decision, not the whole project\n\n\n\nStudio-Lab\nStudents submit A2 and declare their provisional A4 branch and workflow plan.\nSession 2 material: upload a workflow sketch, pathway matrix, or A4 branch declaration draft.\nRound-table check-in: Which route are you choosing, and what is the smallest useful output?\nFeeds: A2 Primary Workflow Selection + A4 Branch Declaration.",
+    "text": "Week 6: Evidence and Pathway Mapping\n\nLecture / Demo\n\nevidence source triage\npathway choice across spreadsheet, GIS, Python, BIM/BEM, GH, and AI-assisted routes\nRetrospective Redesign vs Live Studio Application\nscope discipline: one decision, not the whole project\n\n\n\nStudio-Lab\nStudents submit A2 and declare their provisional A4 branch and workflow plan.\nSession 2 material: upload a workflow sketch, pathway matrix, or A4 branch declaration draft.\nRound-table check-in: Which route are you choosing, and what is the smallest useful output?\nFeeds: A2 Primary Workflow Selection + A4 Branch Declaration.\n\n\nWeek 5/6 Course Alignment Pulse Check\nAt the end of Week 6, students complete an anonymous 5-minute check:\n\nIs the course matching what you expected from the DCP?\nWhich workflow route needs more support?\nWhat is unclear about A2 or A4?\nWhat should be adjusted before the second half of semester?\n\nThe instructor will summarize one or two adjustments in Week 7.",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -3334,7 +3334,7 @@
     "href": "schedule.html#week-7-method-prototype-studio",
     "title": "Course Schedule",
     "section": "Week 7: Method Prototype Studio",
-    "text": "Week 7: Method Prototype Studio\n\nLecture / Demo\n\ninputs, operations, outputs, quality checks\nfailure logs\nhow to debug without hiding uncertainty\n\n\n\nStudio-Lab\nStudents assemble or run the first version of their workflow artifact.\nSession 2 material: upload a workflow artifact, GH canvas, notebook output, spreadsheet, GIS map, simulation screenshot, or AI-assisted component.\nRound-table check-in: What goes in, what varies, what comes out, and what quality check proves it ran?\nFeeds: A3 Prototype Scope + Workflow Description.",
+    "text": "Week 7: Method Prototype Studio\n\nLecture / Demo\n\ninputs, operations, outputs, quality checks\nfailure logs\nhow to debug without hiding uncertainty\nresponse to the Week 5/6 alignment pulse check\n\n\n\nStudio-Lab\nStudents assemble or run the first version of their workflow artifact.\nSession 2 material: upload a workflow artifact, GH canvas, notebook output, spreadsheet, GIS map, simulation screenshot, or AI-assisted component.\nRound-table check-in: What goes in, what varies, what comes out, and what quality check proves it ran?\nFeeds: A3 Prototype Scope + Workflow Description.",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -3442,7 +3442,7 @@
     "href": "index.html#what-makes-this-generative-design",
     "title": "ARCH7476: Evidence-Based Generative Design",
     "section": "What Makes This Generative Design",
-    "text": "What Makes This Generative Design\nThe course treats generative design as a method, not a style.\nIn this course, generative means:\n\na documented workflow that creates or varies multiple design options and evaluates them against explicit criteria.\n\nStudents learn to define:\n\nwhat can vary\nwhat must remain fixed\nwhat evidence can evaluate alternatives\nwhat threshold would change a design decision\nwhat workflow can be reused by another person\n\nThe launch version is deliberately honest about route readiness:\n\n\n\n\n\n\n\n\nWorkflow route\nLaunch status\nTypical design use\n\n\n\n\nSpreadsheet / low-code workflow\nfully supported\ncompare variants, sensitivity, and thresholds transparently\n\n\nGIS / spatial workflow\nfully supported\ncompare site or context alternatives\n\n\nPython / notebook workflow\nsupported starter route\nevaluate repeated design/data cases\n\n\nBIM/BEM and proxy simulation literacy\nsupported starter route\ntest performance assumptions with bounded scenarios\n\n\nAI-assisted fact-checking and workflow support\nsupported companion route\ndraft or stress-test small components, then check facts, relationships, and reproducibility\n\n\nGrasshopper / parametric workflow\nbridge now; direct .gh / .ghx starter files in progress\nconnect exported tables or scripts to GH now; use native GH files once the starter kit is ready\n\n\n\nDirect .gh / .ghx starter files are planned for the course website and are currently WIP while the GH/Rhino authoring setup is stabilized. Until those files are published, the supported bridge is CSV / GeoJSON / Python handoff into GH, and students who already have a working Grasshopper setup may use it. Late-semester clinics can open an optional GH/Python workgroup if the class needs it.",
+    "text": "What Makes This Generative Design\nThe course treats generative design as a method, not a style.\nIn this course, generative means:\n\na documented workflow that creates or varies multiple design options and evaluates them against explicit criteria.\n\nStudents learn to define:\n\nwhat can vary\nwhat must remain fixed\nwhat evidence can evaluate alternatives\nwhat threshold would change a design decision\nwhat workflow can be reused by another person\n\nThe launch version is deliberately honest about route readiness:\n\n\n\n\n\n\n\n\nWorkflow route\nLaunch status\nTypical design use\n\n\n\n\nSpreadsheet / low-code workflow\nfully supported\ncompare variants, sensitivity, and thresholds transparently\n\n\nGIS / spatial workflow\nfully supported\ncompare site or context alternatives\n\n\nPython / notebook workflow\nsupported starter route\nevaluate repeated design/data cases\n\n\nBIM/BEM and proxy simulation literacy\nsupported starter route\ntest performance assumptions with bounded scenarios\n\n\nAI-assisted fact-checking and workflow support\nsupported companion route\ndraft or stress-test small components, then check facts, relationships, and reproducibility\n\n\nGrasshopper / parametric workflow\nsupported through CSV / GeoJSON / Python handoff; native GH/GHX starter files will be added as optional resources\nconnect exported tables, maps, and scripts to GH when useful\n\n\n\nStudents who already have a working Grasshopper setup may use it throughout the semester. For everyone else, the assessed workflow can be completed through supported handoff routes: spreadsheet tables, GeoJSON exports, Python outputs, proxy simulations, and documented workflow logic that can later connect to GH.",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -3586,7 +3586,7 @@
     "href": "assignments.html#workflow-routes",
     "title": "Assignments Overview",
     "section": "Workflow Routes",
-    "text": "Workflow Routes\nStudents may work through one primary route and combine support tools as needed.\n\n\n\n\n\n\n\n\nRoute\nLaunch status\nTypical output\n\n\n\n\nSpreadsheet / low-code\nfully supported\ndecision matrix, sensitivity chart, threshold table\n\n\nGIS / spatial workflow\nfully supported\nmaps, buffers, overlays, spatial summaries\n\n\nPython / notebook workflow\nsupported starter route\ncleaned data, plots, analysis notebook\n\n\nBIM/BEM / proxy simulation\nsupported starter route\nmodel translation critique, proxy output, performance threshold\n\n\nAI-assisted fact-checking / workflow support\nsupported companion route\nprompt log, claim checks, generated component, verification notes\n\n\nGH / parametric workflow\nbridge now; direct .gh / .ghx starter files in progress\nvariants and exported comparisons, with CSV / GeoJSON / Python handoff available immediately\n\n\n\nNative .gh / .ghx files are not required for A4. Direct GH/GHX starter files are planned as website resources, but the current assessed route remains the documented workflow, exported evidence, and reproducibility capsule.",
+    "text": "Workflow Routes\nStudents may work through one primary route and combine support tools as needed.\n\n\n\n\n\n\n\n\nRoute\nLaunch status\nTypical output\n\n\n\n\nSpreadsheet / low-code\nfully supported\ndecision matrix, sensitivity chart, threshold table\n\n\nGIS / spatial workflow\nfully supported\nmaps, buffers, overlays, spatial summaries\n\n\nPython / notebook workflow\nsupported starter route\ncleaned data, plots, analysis notebook\n\n\nBIM/BEM / proxy simulation\nsupported starter route\nmodel translation critique, proxy output, performance threshold\n\n\nAI-assisted fact-checking / workflow support\nsupported companion route\nprompt log, claim checks, generated component, verification notes\n\n\nGH / parametric workflow\nsupported through CSV / GeoJSON / Python handoff; native GH/GHX files optional when available\nvariants and exported comparisons\n\n\n\nNative .gh / .ghx files are not required for A4. The assessed route is the documented workflow, exported evidence, and reproducibility capsule; students with working GH setups may use them as part of that route.",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -3836,58 +3836,58 @@
   {
     "objectID": "templates/project-reasoning-checkin.html",
     "href": "templates/project-reasoning-checkin.html",
-    "title": "",
+    "title": "Project Reasoning Check-In",
     "section": "",
-    "text": "Code"
+    "text": "Use this for Session 2 round-table uploads. It is a low-stakes working note, not a formal presentation.\n\n\nWhat did you upload?\n\nplan / section / render / site photo\nprecedent / evidence source\ntable / chart / matrix\nGIS map / GH canvas / BIM-BEM screenshot / notebook output\nAI prompt, output, or verification note\ndraft object card / package component\n\n\n\n\nWhat design decision is this material connected to?\nThe decision is:\n\n\n\nWhy did you choose or question this evidence/tool/workflow?\nI chose / questioned this because:\n\n\n\nWhat does this material help you claim?\nIt supports:\n\n\n\nWhat should the class not overclaim from this material?\nIt does not yet show:\n\n\n\nWhat do you want peers or the instructor to help you test?\nMy question is:\n\n\n\nWhich assignment component will this improve?\nA1 / A2 / A3 / A4 component:\nNext action before the next class:"
   },
   {
     "objectID": "templates/project-reasoning-checkin.html#material",
     "href": "templates/project-reasoning-checkin.html#material",
-    "title": "",
-    "section": "1. Material",
-    "text": "1. Material\nWhat did you upload?\n\nplan / section / render / site photo\nprecedent / evidence source\ntable / chart / matrix\nGIS map / GH canvas / BIM-BEM screenshot / notebook output\nAI prompt, output, or verification note\ndraft object card / package component"
+    "title": "Project Reasoning Check-In",
+    "section": "",
+    "text": "What did you upload?\n\nplan / section / render / site photo\nprecedent / evidence source\ntable / chart / matrix\nGIS map / GH canvas / BIM-BEM screenshot / notebook output\nAI prompt, output, or verification note\ndraft object card / package component"
   },
   {
     "objectID": "templates/project-reasoning-checkin.html#design-decision",
     "href": "templates/project-reasoning-checkin.html#design-decision",
-    "title": "",
-    "section": "2. Design Decision",
-    "text": "2. Design Decision\nWhat design decision is this material connected to?\nThe decision is:"
+    "title": "Project Reasoning Check-In",
+    "section": "",
+    "text": "What design decision is this material connected to?\nThe decision is:"
   },
   {
     "objectID": "templates/project-reasoning-checkin.html#reasoning",
     "href": "templates/project-reasoning-checkin.html#reasoning",
-    "title": "",
-    "section": "3. Reasoning",
-    "text": "3. Reasoning\nWhy did you choose or question this evidence/tool/workflow?\nI chose / questioned this because:"
+    "title": "Project Reasoning Check-In",
+    "section": "",
+    "text": "Why did you choose or question this evidence/tool/workflow?\nI chose / questioned this because:"
   },
   {
     "objectID": "templates/project-reasoning-checkin.html#what-it-supports",
     "href": "templates/project-reasoning-checkin.html#what-it-supports",
-    "title": "",
-    "section": "4. What It Supports",
-    "text": "4. What It Supports\nWhat does this material help you claim?\nIt supports:"
+    "title": "Project Reasoning Check-In",
+    "section": "",
+    "text": "What does this material help you claim?\nIt supports:"
   },
   {
     "objectID": "templates/project-reasoning-checkin.html#what-it-does-not-show-yet",
     "href": "templates/project-reasoning-checkin.html#what-it-does-not-show-yet",
-    "title": "",
-    "section": "5. What It Does Not Show Yet",
-    "text": "5. What It Does Not Show Yet\nWhat should the class not overclaim from this material?\nIt does not yet show:"
+    "title": "Project Reasoning Check-In",
+    "section": "",
+    "text": "What should the class not overclaim from this material?\nIt does not yet show:"
   },
   {
     "objectID": "templates/project-reasoning-checkin.html#question-to-the-room",
     "href": "templates/project-reasoning-checkin.html#question-to-the-room",
-    "title": "",
-    "section": "6. Question to the Room",
-    "text": "6. Question to the Room\nWhat do you want peers or the instructor to help you test?\nMy question is:"
+    "title": "Project Reasoning Check-In",
+    "section": "",
+    "text": "What do you want peers or the instructor to help you test?\nMy question is:"
   },
   {
     "objectID": "templates/project-reasoning-checkin.html#assignment-feed",
     "href": "templates/project-reasoning-checkin.html#assignment-feed",
-    "title": "",
-    "section": "7. Assignment Feed",
-    "text": "7. Assignment Feed\nWhich assignment component will this improve?\nA1 / A2 / A3 / A4 component:\nNext action before the next class:"
+    "title": "Project Reasoning Check-In",
+    "section": "",
+    "text": "Which assignment component will this improve?\nA1 / A2 / A3 / A4 component:\nNext action before the next class:"
   },
   {
     "objectID": "weeks_v2/week-02.html#todays-agenda",
