@@ -160,6 +160,7 @@ strong { font-weight: 600; }
   padding: 1rem;
 }
 .resource-demo-card.gis { border-left-color: var(--role-concept); }
+.resource-demo-card.simulation { border-left-color: var(--role-reflect); }
 .resource-demo-card h3 { margin-top: 0; }
 .resource-demo-card p {
   color: var(--muted);
@@ -169,6 +170,14 @@ strong { font-weight: 600; }
 .resource-preview-frame {
   width: 100%;
   height: 390px;
+  border: 1px solid var(--rule-soft);
+  background: #fff;
+  margin: 0.35rem 0 0.8rem;
+}
+.resource-preview-image {
+  display: block;
+  width: 100%;
+  height: auto;
   border: 1px solid var(--rule-soft);
   background: #fff;
   margin: 0.35rem 0 0.8rem;

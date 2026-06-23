@@ -549,11 +549,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><a href="starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html">Preview</a> <a href="starter_kits/gis-spatial-comparison/outputs/gis_site_comparison_map.png">Map</a> <a href="starter_kits/gis-spatial-comparison/outputs/scored_sites.csv">Scores</a> <a href="starter_kits/gis-spatial-comparison/outputs/selected_site.geojson">Selected GeoJSON</a> <a href="starter_kits/gis-spatial-comparison/gis_spatial_comparison_demo.py">Script</a> <a href="./starter_kits/gis-spatial-comparison/README.html">Kit</a></p>
 </div>
 </section>
+<section id="energyplus-two-week-check" class="level3 resource-demo-card simulation">
+<h3 class="anchored" data-anchor-id="energyplus-two-week-check">EnergyPlus Two-Week Check</h3>
+<p>Stock controlled model, synthetic HK summer weather, July 8-21 run, and visible setpoint/temperature outputs before GH translation.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.png" class="resource-preview-image img-fluid figure-img"></p>
+<figcaption>EnergyPlus two-week control check</figcaption>
+</figure>
+</div>
+<div class="resource-actions">
+<p><a href="./starter_kits/preset-simulation-proxy/energyplus_two_week_case.html">Guide</a> <a href="starter_kits/preset-simulation-proxy/run_energyplus_two_week_case.py">Script</a> <a href="starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.csv">CSV</a> <a href="starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/two_week_summary.txt">Summary</a> <a href="./starter_kits/preset-simulation-proxy/README.html">Kit</a></p>
+</div>
+</section>
 </div>
 <p>Current starter-kit links:</p>
 <ul>
 <li><a href="./starter_kits/gh-parametric-variants/README.html">GH Parametric Variants</a></li>
-<li><a href="./starter_kits/preset-simulation-proxy/README.html">Preset Simulation / Proxy Test</a></li>
+<li><a href="./starter_kits/preset-simulation-proxy/README.html">Preset Simulation / Proxy Test</a> — Week 5 proxy + optional EnergyPlus CLI case: <a href="./starter_kits/preset-simulation-proxy/energyplus_two_week_case.html">EnergyPlus guide</a>, <a href="starter_kits/preset-simulation-proxy/run_energyplus_two_week_case.py">runner script</a>, <a href="starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.csv">checked output CSV</a></li>
 <li><a href="./starter_kits/ai-assisted-workflow/README.html">AI-Assisted Fact-Checking + Workflow Support</a></li>
 <li><a href="./starter_kits/spreadsheet-thresholds/README.html">Spreadsheet Thresholds</a> — Week 3 live workbook: <a href="starter_kits/spreadsheet-thresholds/live_threshold_workbook.xlsx">open <code>.xlsx</code></a>, <a href="starter_kits/spreadsheet-thresholds/variant_scores.csv">CSV export</a></li>
 <li><a href="./starter_kits/gis-spatial-comparison/README.html">GIS Spatial Comparison</a> — Week 4 HKU micro-walkability demo: <a href="starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html">preview</a>, <a href="starter_kits/gis-spatial-comparison/outputs/scored_sites.csv">scores</a></li>
@@ -617,7 +630,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>sensitivity table</li>
 <li>performance threshold</li>
 </ul>
-<p>Current status: <strong>supported through BIM/BEM literacy plus a runnable proxy simulation kit</strong>. Full Ladybug/Radiance/EnergyPlus walkthroughs are optional future extensions, not a launch requirement.</p>
+<p>Current status: <strong>supported through BIM/BEM literacy, a runnable proxy simulation kit, and an optional EnergyPlus two-week CLI case</strong>. Full Ladybug/Radiance walkthroughs remain optional extensions, not launch requirements.</p>
+<p>Week 5 live materials:</p>
+<ul>
+<li><a href="./starter_kits/preset-simulation-proxy/README.html">Preset Simulation / Proxy Test starter kit</a></li>
+<li><a href="./starter_kits/preset-simulation-proxy/energyplus_two_week_case.html">EnergyPlus two-week case</a></li>
+<li><a href="starter_kits/preset-simulation-proxy/run_energyplus_two_week_case.py">EnergyPlus runner script</a></li>
+<li><a href="starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.csv">EnergyPlus checked output CSV</a></li>
+<li><a href="starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/two_week_summary.txt">EnergyPlus run summary</a></li>
+<li><a href="starter_kits/preset-simulation-proxy/outputs/facade_heat_proxy_scores.csv">Proxy heat scores CSV</a></li>
+<li><a href="starter_kits/preset-simulation-proxy/outputs/facade_heat_proxy_chart.png">Proxy heat chart</a></li>
+</ul>
 </section>
 <section id="gis-spatial-workflow" class="level3">
 <h3 class="anchored" data-anchor-id="gis-spatial-workflow">GIS / Spatial Workflow</h3>
@@ -717,7 +740,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td>Simulation route</td>
-<td>preset tool selected for the class example</td>
+<td>no-install proxy kit for everyone; optional EnergyPlus CLI case when installed</td>
 </tr>
 <tr class="even">
 <td>AI-assisted companion route</td>
@@ -1295,156 +1318,182 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Kit</span><span class="co">](starter_kits/gis-spatial-comparison/README.md)</span></span>
 <span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a>Current starter-kit links:</span>
+<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a>::: {.resource-demo-card .simulation}</span>
+<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a><span class="fu">### EnergyPlus Two-Week Check</span></span>
 <span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GH Parametric Variants</span><span class="co">](starter_kits/gh-parametric-variants/README.md)</span></span>
-<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Preset Simulation / Proxy Test</span><span class="co">](starter_kits/preset-simulation-proxy/README.md)</span></span>
-<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">AI-Assisted Fact-Checking + Workflow Support</span><span class="co">](starter_kits/ai-assisted-workflow/README.md)</span></span>
-<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Spreadsheet Thresholds</span><span class="co">](starter_kits/spreadsheet-thresholds/README.md)</span> — Week 3 live workbook: <span class="co">[</span><span class="ot">open `.xlsx`</span><span class="co">](starter_kits/spreadsheet-thresholds/live_threshold_workbook.xlsx)</span>, <span class="co">[</span><span class="ot">CSV export</span><span class="co">](starter_kits/spreadsheet-thresholds/variant_scores.csv)</span></span>
-<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GIS Spatial Comparison</span><span class="co">](starter_kits/gis-spatial-comparison/README.md)</span> — Week 4 HKU micro-walkability demo: <span class="co">[</span><span class="ot">preview</span><span class="co">](starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html)</span>, <span class="co">[</span><span class="ot">scores</span><span class="co">](starter_kits/gis-spatial-comparison/outputs/scored_sites.csv)</span></span>
-<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a>Students are expected to choose from the routes that are viable for their own setup. GH-native work is welcome when a student already has a working installation, but it is not required.</span>
-<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a><span class="fu">## Lectures and Supporting Materials</span></span>
-<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a>| Material | Use |</span>
-<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
-<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a>| <span class="co">[</span><span class="ot">ML Primer · 12 Principles</span><span class="co">](lectures/ml-primer-12-principles.qmd)</span> | plain-language ML mental model, skinned to the course visual language |</span>
-<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a>| <span class="co">[</span><span class="ot">ML for Architecture — full deck (PDF)</span><span class="co">](data/ML_for_Architecture_Combined.pdf)</span> | the detailed version: pipeline, diffusion, segmentation, surrogate modeling, GH/Honeybee tooling |</span>
-<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a>| <span class="co">[</span><span class="ot">ML to Python Overview</span><span class="co">](lectures/ml-to-python-overview.qmd)</span> | bridge from ML concepts to runnable Python |</span>
-<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a>| <span class="co">[</span><span class="ot">Python + ML Basics</span><span class="co">](notebooks/01_python_ml_basics.ipynb)</span> | starter notebook |</span>
-<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a>| <span class="co">[</span><span class="ot">Architecture Viz + Analysis</span><span class="co">](notebooks/02_arch_viz_analysis.ipynb)</span> | starter notebook |</span>
-<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a><span class="fu">## Supported Workflow Tracks</span></span>
-<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a><span class="fu">### GH / Parametric Workflow</span></span>
+<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a>Stock controlled model, synthetic HK summer weather, July 8-21 run, and visible setpoint/temperature outputs before GH translation.</span>
+<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a><span class="al">![EnergyPlus two-week control check](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.png)</span>{.resource-preview-image}</span>
+<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a>::: {.resource-actions}</span>
+<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Guide</span><span class="co">](starter_kits/preset-simulation-proxy/energyplus_two_week_case.md)</span></span>
+<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Script</span><span class="co">](starter_kits/preset-simulation-proxy/run_energyplus_two_week_case.py)</span></span>
+<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">CSV</span><span class="co">](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.csv)</span></span>
+<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Summary</span><span class="co">](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/two_week_summary.txt)</span></span>
+<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Kit</span><span class="co">](starter_kits/preset-simulation-proxy/README.md)</span></span>
+<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a>Current starter-kit links:</span>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GH Parametric Variants</span><span class="co">](starter_kits/gh-parametric-variants/README.md)</span></span>
+<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Preset Simulation / Proxy Test</span><span class="co">](starter_kits/preset-simulation-proxy/README.md)</span> — Week 5 proxy + optional EnergyPlus CLI case: <span class="co">[</span><span class="ot">EnergyPlus guide</span><span class="co">](starter_kits/preset-simulation-proxy/energyplus_two_week_case.md)</span>, <span class="co">[</span><span class="ot">runner script</span><span class="co">](starter_kits/preset-simulation-proxy/run_energyplus_two_week_case.py)</span>, <span class="co">[</span><span class="ot">checked output CSV</span><span class="co">](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.csv)</span></span>
+<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">AI-Assisted Fact-Checking + Workflow Support</span><span class="co">](starter_kits/ai-assisted-workflow/README.md)</span></span>
+<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Spreadsheet Thresholds</span><span class="co">](starter_kits/spreadsheet-thresholds/README.md)</span> — Week 3 live workbook: <span class="co">[</span><span class="ot">open `.xlsx`</span><span class="co">](starter_kits/spreadsheet-thresholds/live_threshold_workbook.xlsx)</span>, <span class="co">[</span><span class="ot">CSV export</span><span class="co">](starter_kits/spreadsheet-thresholds/variant_scores.csv)</span></span>
+<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GIS Spatial Comparison</span><span class="co">](starter_kits/gis-spatial-comparison/README.md)</span> — Week 4 HKU micro-walkability demo: <span class="co">[</span><span class="ot">preview</span><span class="co">](starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html)</span>, <span class="co">[</span><span class="ot">scores</span><span class="co">](starter_kits/gis-spatial-comparison/outputs/scored_sites.csv)</span></span>
 <span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a>Best when the decision depends on geometry variation or option families.</span>
+<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a>Students are expected to choose from the routes that are viable for their own setup. GH-native work is welcome when a student already has a working installation, but it is not required.</span>
 <span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a>Typical outputs:</span>
+<span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a><span class="fu">## Lectures and Supporting Materials</span></span>
 <span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>GH definition</span>
-<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>exported variants</span>
-<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>parameter table</span>
-<span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>comparison chart or object card</span>
-<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a>Current status: **bridge now; direct GH/GHX files in progress**. The course website will include native <span class="in">`.gh`</span> / <span class="in">`.ghx`</span> starter files once the GH/Rhino authoring setup is stable. Until then, students may use GH if they already have a working setup; otherwise they should use spreadsheet, GIS, Python, proxy simulation, or AI-assisted fact-checking routes and export tables or geometry files that can later feed GH.</span>
-<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a><span class="fu">### BIM/BEM and Simulation</span></span>
-<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a>Best when the decision depends on building performance, model translation, daylight, energy, facade logic, or environmental assumptions.</span>
-<span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a>Typical outputs:</span>
-<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>model-translation critique</span>
-<span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>preset simulation output</span>
-<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>sensitivity table</span>
-<span id="cb2-152"><a href="#cb2-152" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>performance threshold</span>
-<span id="cb2-153"><a href="#cb2-153" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-154"><a href="#cb2-154" aria-hidden="true" tabindex="-1"></a>Current status: **supported through BIM/BEM literacy plus a runnable proxy simulation kit**. Full Ladybug/Radiance/EnergyPlus walkthroughs are optional future extensions, not a launch requirement.</span>
-<span id="cb2-155"><a href="#cb2-155" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-156"><a href="#cb2-156" aria-hidden="true" tabindex="-1"></a><span class="fu">### GIS / Spatial Workflow</span></span>
-<span id="cb2-157"><a href="#cb2-157" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-158"><a href="#cb2-158" aria-hidden="true" tabindex="-1"></a>Best when the decision depends on site, access, zoning, context, exposure, or spatial comparison.</span>
-<span id="cb2-159"><a href="#cb2-159" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-160"><a href="#cb2-160" aria-hidden="true" tabindex="-1"></a>Typical outputs:</span>
-<span id="cb2-161"><a href="#cb2-161" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-162"><a href="#cb2-162" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>map</span>
-<span id="cb2-163"><a href="#cb2-163" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>buffer/overlay output</span>
-<span id="cb2-164"><a href="#cb2-164" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>spatial summary table</span>
-<span id="cb2-165"><a href="#cb2-165" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>exported design criteria</span>
-<span id="cb2-166"><a href="#cb2-166" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-167"><a href="#cb2-167" aria-hidden="true" tabindex="-1"></a>Current status: **runnable GeoJSON demo and generated preview are present**.</span>
-<span id="cb2-168"><a href="#cb2-168" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-169"><a href="#cb2-169" aria-hidden="true" tabindex="-1"></a>Week 4 live materials:</span>
-<span id="cb2-170"><a href="#cb2-170" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-171"><a href="#cb2-171" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GIS preview</span><span class="co">](starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html)</span></span>
-<span id="cb2-172"><a href="#cb2-172" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Site comparison map</span><span class="co">](starter_kits/gis-spatial-comparison/outputs/gis_site_comparison_map.png)</span></span>
-<span id="cb2-173"><a href="#cb2-173" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Scored sites CSV</span><span class="co">](starter_kits/gis-spatial-comparison/outputs/scored_sites.csv)</span></span>
-<span id="cb2-174"><a href="#cb2-174" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Selected site GeoJSON</span><span class="co">](starter_kits/gis-spatial-comparison/outputs/selected_site.geojson)</span></span>
-<span id="cb2-175"><a href="#cb2-175" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GIS demo script</span><span class="co">](starter_kits/gis-spatial-comparison/gis_spatial_comparison_demo.py)</span></span>
-<span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GIS Spatial Comparison starter kit</span><span class="co">](starter_kits/gis-spatial-comparison/README.md)</span></span>
-<span id="cb2-177"><a href="#cb2-177" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-178"><a href="#cb2-178" aria-hidden="true" tabindex="-1"></a><span class="fu">### Python / Notebook Workflow</span></span>
-<span id="cb2-179"><a href="#cb2-179" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-180"><a href="#cb2-180" aria-hidden="true" tabindex="-1"></a>Best when the decision depends on repeated data analysis, visualization, or lightweight modeling.</span>
+<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a>| Material | Use |</span>
+<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a>| <span class="co">[</span><span class="ot">ML Primer · 12 Principles</span><span class="co">](lectures/ml-primer-12-principles.qmd)</span> | plain-language ML mental model, skinned to the course visual language |</span>
+<span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a>| <span class="co">[</span><span class="ot">ML for Architecture — full deck (PDF)</span><span class="co">](data/ML_for_Architecture_Combined.pdf)</span> | the detailed version: pipeline, diffusion, segmentation, surrogate modeling, GH/Honeybee tooling |</span>
+<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a>| <span class="co">[</span><span class="ot">ML to Python Overview</span><span class="co">](lectures/ml-to-python-overview.qmd)</span> | bridge from ML concepts to runnable Python |</span>
+<span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a>| <span class="co">[</span><span class="ot">Python + ML Basics</span><span class="co">](notebooks/01_python_ml_basics.ipynb)</span> | starter notebook |</span>
+<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a>| <span class="co">[</span><span class="ot">Architecture Viz + Analysis</span><span class="co">](notebooks/02_arch_viz_analysis.ipynb)</span> | starter notebook |</span>
+<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a><span class="fu">## Supported Workflow Tracks</span></span>
+<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a><span class="fu">### GH / Parametric Workflow</span></span>
+<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a>Best when the decision depends on geometry variation or option families.</span>
+<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a>Typical outputs:</span>
+<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-152"><a href="#cb2-152" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>GH definition</span>
+<span id="cb2-153"><a href="#cb2-153" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>exported variants</span>
+<span id="cb2-154"><a href="#cb2-154" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>parameter table</span>
+<span id="cb2-155"><a href="#cb2-155" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>comparison chart or object card</span>
+<span id="cb2-156"><a href="#cb2-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-157"><a href="#cb2-157" aria-hidden="true" tabindex="-1"></a>Current status: **bridge now; direct GH/GHX files in progress**. The course website will include native <span class="in">`.gh`</span> / <span class="in">`.ghx`</span> starter files once the GH/Rhino authoring setup is stable. Until then, students may use GH if they already have a working setup; otherwise they should use spreadsheet, GIS, Python, proxy simulation, or AI-assisted fact-checking routes and export tables or geometry files that can later feed GH.</span>
+<span id="cb2-158"><a href="#cb2-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-159"><a href="#cb2-159" aria-hidden="true" tabindex="-1"></a><span class="fu">### BIM/BEM and Simulation</span></span>
+<span id="cb2-160"><a href="#cb2-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-161"><a href="#cb2-161" aria-hidden="true" tabindex="-1"></a>Best when the decision depends on building performance, model translation, daylight, energy, facade logic, or environmental assumptions.</span>
+<span id="cb2-162"><a href="#cb2-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-163"><a href="#cb2-163" aria-hidden="true" tabindex="-1"></a>Typical outputs:</span>
+<span id="cb2-164"><a href="#cb2-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-165"><a href="#cb2-165" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>model-translation critique</span>
+<span id="cb2-166"><a href="#cb2-166" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>preset simulation output</span>
+<span id="cb2-167"><a href="#cb2-167" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>sensitivity table</span>
+<span id="cb2-168"><a href="#cb2-168" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>performance threshold</span>
+<span id="cb2-169"><a href="#cb2-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-170"><a href="#cb2-170" aria-hidden="true" tabindex="-1"></a>Current status: **supported through BIM/BEM literacy, a runnable proxy simulation kit, and an optional EnergyPlus two-week CLI case**. Full Ladybug/Radiance walkthroughs remain optional extensions, not launch requirements.</span>
+<span id="cb2-171"><a href="#cb2-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-172"><a href="#cb2-172" aria-hidden="true" tabindex="-1"></a>Week 5 live materials:</span>
+<span id="cb2-173"><a href="#cb2-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-174"><a href="#cb2-174" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Preset Simulation / Proxy Test starter kit</span><span class="co">](starter_kits/preset-simulation-proxy/README.md)</span></span>
+<span id="cb2-175"><a href="#cb2-175" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">EnergyPlus two-week case</span><span class="co">](starter_kits/preset-simulation-proxy/energyplus_two_week_case.md)</span></span>
+<span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">EnergyPlus runner script</span><span class="co">](starter_kits/preset-simulation-proxy/run_energyplus_two_week_case.py)</span></span>
+<span id="cb2-177"><a href="#cb2-177" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">EnergyPlus checked output CSV</span><span class="co">](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.csv)</span></span>
+<span id="cb2-178"><a href="#cb2-178" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">EnergyPlus run summary</span><span class="co">](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/two_week_summary.txt)</span></span>
+<span id="cb2-179"><a href="#cb2-179" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Proxy heat scores CSV</span><span class="co">](starter_kits/preset-simulation-proxy/outputs/facade_heat_proxy_scores.csv)</span></span>
+<span id="cb2-180"><a href="#cb2-180" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Proxy heat chart</span><span class="co">](starter_kits/preset-simulation-proxy/outputs/facade_heat_proxy_chart.png)</span></span>
 <span id="cb2-181"><a href="#cb2-181" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-182"><a href="#cb2-182" aria-hidden="true" tabindex="-1"></a>Existing notebooks:</span>
+<span id="cb2-182"><a href="#cb2-182" aria-hidden="true" tabindex="-1"></a><span class="fu">### GIS / Spatial Workflow</span></span>
 <span id="cb2-183"><a href="#cb2-183" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-184"><a href="#cb2-184" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`notebooks/01_python_ml_basics.ipynb`</span></span>
-<span id="cb2-185"><a href="#cb2-185" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`notebooks/02_arch_viz_analysis.ipynb`</span></span>
-<span id="cb2-186"><a href="#cb2-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-187"><a href="#cb2-187" aria-hidden="true" tabindex="-1"></a>Current status: **supported starter route** with existing notebooks and a runnable facade-decision script.</span>
-<span id="cb2-188"><a href="#cb2-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-189"><a href="#cb2-189" aria-hidden="true" tabindex="-1"></a><span class="fu">### AI-Assisted Fact-Checking + Workflow Support</span></span>
-<span id="cb2-190"><a href="#cb2-190" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-191"><a href="#cb2-191" aria-hidden="true" tabindex="-1"></a>Best when AI can help interpret a fuzzy relationship, draft a small workflow component, structure a prompt sequence, or act as a first-pass fact-checking companion.</span>
+<span id="cb2-184"><a href="#cb2-184" aria-hidden="true" tabindex="-1"></a>Best when the decision depends on site, access, zoning, context, exposure, or spatial comparison.</span>
+<span id="cb2-185"><a href="#cb2-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-186"><a href="#cb2-186" aria-hidden="true" tabindex="-1"></a>Typical outputs:</span>
+<span id="cb2-187"><a href="#cb2-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-188"><a href="#cb2-188" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>map</span>
+<span id="cb2-189"><a href="#cb2-189" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>buffer/overlay output</span>
+<span id="cb2-190"><a href="#cb2-190" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>spatial summary table</span>
+<span id="cb2-191"><a href="#cb2-191" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>exported design criteria</span>
 <span id="cb2-192"><a href="#cb2-192" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-193"><a href="#cb2-193" aria-hidden="true" tabindex="-1"></a>Required documentation:</span>
+<span id="cb2-193"><a href="#cb2-193" aria-hidden="true" tabindex="-1"></a>Current status: **runnable GeoJSON demo and generated preview are present**.</span>
 <span id="cb2-194"><a href="#cb2-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-195"><a href="#cb2-195" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>prompt log</span>
-<span id="cb2-196"><a href="#cb2-196" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>generated claim, relationship, or workflow output</span>
-<span id="cb2-197"><a href="#cb2-197" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>fact-check notes</span>
-<span id="cb2-198"><a href="#cb2-198" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>relationship-check notes</span>
-<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>manual test or calculation</span>
-<span id="cb2-200"><a href="#cb2-200" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>reproducibility note</span>
-<span id="cb2-201"><a href="#cb2-201" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>disclosure statement</span>
-<span id="cb2-202"><a href="#cb2-202" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-203"><a href="#cb2-203" aria-hidden="true" tabindex="-1"></a>Current status: **supported companion route** with a prompt log example and a verified Python function. It is intended for bounded workflow help, fact-checking, and relationship stress-testing, not unverified design outsourcing.</span>
-<span id="cb2-204"><a href="#cb2-204" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-205"><a href="#cb2-205" aria-hidden="true" tabindex="-1"></a><span class="fu">### Spreadsheet / Low-Code Workflow</span></span>
-<span id="cb2-206"><a href="#cb2-206" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-207"><a href="#cb2-207" aria-hidden="true" tabindex="-1"></a>Best when the decision depends on transparent comparison, sensitivity, or threshold logic.</span>
-<span id="cb2-208"><a href="#cb2-208" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-209"><a href="#cb2-209" aria-hidden="true" tabindex="-1"></a>Typical outputs:</span>
-<span id="cb2-210"><a href="#cb2-210" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-211"><a href="#cb2-211" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>evidence table</span>
-<span id="cb2-212"><a href="#cb2-212" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>decision matrix</span>
-<span id="cb2-213"><a href="#cb2-213" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>sensitivity chart</span>
-<span id="cb2-214"><a href="#cb2-214" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>threshold statement</span>
-<span id="cb2-215"><a href="#cb2-215" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-216"><a href="#cb2-216" aria-hidden="true" tabindex="-1"></a>Current status: **fully supported** through a live workbook, preview, and CSV export.</span>
-<span id="cb2-217"><a href="#cb2-217" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-218"><a href="#cb2-218" aria-hidden="true" tabindex="-1"></a>Week 3 live materials:</span>
-<span id="cb2-219"><a href="#cb2-219" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-220"><a href="#cb2-220" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Live threshold workbook</span><span class="co">](starter_kits/spreadsheet-thresholds/live_threshold_workbook.xlsx)</span></span>
-<span id="cb2-221"><a href="#cb2-221" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Workbook preview</span><span class="co">](starter_kits/spreadsheet-thresholds/live_threshold_workbook_preview.html)</span></span>
-<span id="cb2-222"><a href="#cb2-222" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GH-facing score export</span><span class="co">](starter_kits/spreadsheet-thresholds/variant_scores.csv)</span></span>
-<span id="cb2-223"><a href="#cb2-223" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Spreadsheet Thresholds starter kit</span><span class="co">](starter_kits/spreadsheet-thresholds/README.md)</span></span>
-<span id="cb2-224"><a href="#cb2-224" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-225"><a href="#cb2-225" aria-hidden="true" tabindex="-1"></a><span class="fu">## Setup Ladder</span></span>
-<span id="cb2-226"><a href="#cb2-226" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-227"><a href="#cb2-227" aria-hidden="true" tabindex="-1"></a>| Level | Setup |</span>
-<span id="cb2-228"><a href="#cb2-228" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
-<span id="cb2-229"><a href="#cb2-229" aria-hidden="true" tabindex="-1"></a>| Everyone | Excel or Google Sheets, browser, PDF/image export |</span>
-<span id="cb2-230"><a href="#cb2-230" aria-hidden="true" tabindex="-1"></a>| GIS route | QGIS, project layers, export workflow |</span>
-<span id="cb2-231"><a href="#cb2-231" aria-hidden="true" tabindex="-1"></a>| Python route | Jupyter Notebook, Anaconda/Miniconda or Colab |</span>
-<span id="cb2-232"><a href="#cb2-232" aria-hidden="true" tabindex="-1"></a>| GH bridge / optional workgroup | Rhino + Grasshopper only if already working; direct GH/GHX starter files are planned but currently WIP |</span>
-<span id="cb2-233"><a href="#cb2-233" aria-hidden="true" tabindex="-1"></a>| Simulation route | preset tool selected for the class example |</span>
-<span id="cb2-234"><a href="#cb2-234" aria-hidden="true" tabindex="-1"></a>| AI-assisted companion route | approved AI tool access, prompt log, fact/relationship checks, verification notes |</span>
-<span id="cb2-235"><a href="#cb2-235" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-236"><a href="#cb2-236" aria-hidden="true" tabindex="-1"></a><span class="fu">## Archive and Reuse</span></span>
-<span id="cb2-237"><a href="#cb2-237" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-238"><a href="#cb2-238" aria-hidden="true" tabindex="-1"></a>The previous offering is preserved in:</span>
-<span id="cb2-239"><a href="#cb2-239" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-240"><a href="#cb2-240" aria-hidden="true" tabindex="-1"></a><span class="in">`archive/2025-26-current-offering-source/`</span></span>
+<span id="cb2-195"><a href="#cb2-195" aria-hidden="true" tabindex="-1"></a>Week 4 live materials:</span>
+<span id="cb2-196"><a href="#cb2-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-197"><a href="#cb2-197" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GIS preview</span><span class="co">](starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html)</span></span>
+<span id="cb2-198"><a href="#cb2-198" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Site comparison map</span><span class="co">](starter_kits/gis-spatial-comparison/outputs/gis_site_comparison_map.png)</span></span>
+<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Scored sites CSV</span><span class="co">](starter_kits/gis-spatial-comparison/outputs/scored_sites.csv)</span></span>
+<span id="cb2-200"><a href="#cb2-200" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Selected site GeoJSON</span><span class="co">](starter_kits/gis-spatial-comparison/outputs/selected_site.geojson)</span></span>
+<span id="cb2-201"><a href="#cb2-201" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GIS demo script</span><span class="co">](starter_kits/gis-spatial-comparison/gis_spatial_comparison_demo.py)</span></span>
+<span id="cb2-202"><a href="#cb2-202" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GIS Spatial Comparison starter kit</span><span class="co">](starter_kits/gis-spatial-comparison/README.md)</span></span>
+<span id="cb2-203"><a href="#cb2-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-204"><a href="#cb2-204" aria-hidden="true" tabindex="-1"></a><span class="fu">### Python / Notebook Workflow</span></span>
+<span id="cb2-205"><a href="#cb2-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-206"><a href="#cb2-206" aria-hidden="true" tabindex="-1"></a>Best when the decision depends on repeated data analysis, visualization, or lightweight modeling.</span>
+<span id="cb2-207"><a href="#cb2-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-208"><a href="#cb2-208" aria-hidden="true" tabindex="-1"></a>Existing notebooks:</span>
+<span id="cb2-209"><a href="#cb2-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-210"><a href="#cb2-210" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`notebooks/01_python_ml_basics.ipynb`</span></span>
+<span id="cb2-211"><a href="#cb2-211" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`notebooks/02_arch_viz_analysis.ipynb`</span></span>
+<span id="cb2-212"><a href="#cb2-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-213"><a href="#cb2-213" aria-hidden="true" tabindex="-1"></a>Current status: **supported starter route** with existing notebooks and a runnable facade-decision script.</span>
+<span id="cb2-214"><a href="#cb2-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-215"><a href="#cb2-215" aria-hidden="true" tabindex="-1"></a><span class="fu">### AI-Assisted Fact-Checking + Workflow Support</span></span>
+<span id="cb2-216"><a href="#cb2-216" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-217"><a href="#cb2-217" aria-hidden="true" tabindex="-1"></a>Best when AI can help interpret a fuzzy relationship, draft a small workflow component, structure a prompt sequence, or act as a first-pass fact-checking companion.</span>
+<span id="cb2-218"><a href="#cb2-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-219"><a href="#cb2-219" aria-hidden="true" tabindex="-1"></a>Required documentation:</span>
+<span id="cb2-220"><a href="#cb2-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-221"><a href="#cb2-221" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>prompt log</span>
+<span id="cb2-222"><a href="#cb2-222" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>generated claim, relationship, or workflow output</span>
+<span id="cb2-223"><a href="#cb2-223" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>fact-check notes</span>
+<span id="cb2-224"><a href="#cb2-224" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>relationship-check notes</span>
+<span id="cb2-225"><a href="#cb2-225" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>manual test or calculation</span>
+<span id="cb2-226"><a href="#cb2-226" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>reproducibility note</span>
+<span id="cb2-227"><a href="#cb2-227" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>disclosure statement</span>
+<span id="cb2-228"><a href="#cb2-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-229"><a href="#cb2-229" aria-hidden="true" tabindex="-1"></a>Current status: **supported companion route** with a prompt log example and a verified Python function. It is intended for bounded workflow help, fact-checking, and relationship stress-testing, not unverified design outsourcing.</span>
+<span id="cb2-230"><a href="#cb2-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-231"><a href="#cb2-231" aria-hidden="true" tabindex="-1"></a><span class="fu">### Spreadsheet / Low-Code Workflow</span></span>
+<span id="cb2-232"><a href="#cb2-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-233"><a href="#cb2-233" aria-hidden="true" tabindex="-1"></a>Best when the decision depends on transparent comparison, sensitivity, or threshold logic.</span>
+<span id="cb2-234"><a href="#cb2-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-235"><a href="#cb2-235" aria-hidden="true" tabindex="-1"></a>Typical outputs:</span>
+<span id="cb2-236"><a href="#cb2-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-237"><a href="#cb2-237" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>evidence table</span>
+<span id="cb2-238"><a href="#cb2-238" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>decision matrix</span>
+<span id="cb2-239"><a href="#cb2-239" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>sensitivity chart</span>
+<span id="cb2-240"><a href="#cb2-240" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>threshold statement</span>
 <span id="cb2-241"><a href="#cb2-241" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-242"><a href="#cb2-242" aria-hidden="true" tabindex="-1"></a>High-value reusable materials:</span>
+<span id="cb2-242"><a href="#cb2-242" aria-hidden="true" tabindex="-1"></a>Current status: **fully supported** through a live workbook, preview, and CSV export.</span>
 <span id="cb2-243"><a href="#cb2-243" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-244"><a href="#cb2-244" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Week 1 evidence audit material</span>
-<span id="cb2-245"><a href="#cb2-245" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Week 5 BIM/BEM deck</span>
-<span id="cb2-246"><a href="#cb2-246" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>GIS overview material</span>
-<span id="cb2-247"><a href="#cb2-247" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Python and visualization notebooks</span>
-<span id="cb2-248"><a href="#cb2-248" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>object card / figure rescue content</span>
-<span id="cb2-249"><a href="#cb2-249" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-250"><a href="#cb2-250" aria-hidden="true" tabindex="-1"></a>Future extensions:</span>
-<span id="cb2-251"><a href="#cb2-251" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-252"><a href="#cb2-252" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>GH starter workflows</span>
-<span id="cb2-253"><a href="#cb2-253" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>full preset simulation walkthrough</span>
-<span id="cb2-254"><a href="#cb2-254" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>deeper AI-assisted architecture fact-checking and workflow examples</span>
-<span id="cb2-255"><a href="#cb2-255" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>final package templates in downloadable format</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-244"><a href="#cb2-244" aria-hidden="true" tabindex="-1"></a>Week 3 live materials:</span>
+<span id="cb2-245"><a href="#cb2-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-246"><a href="#cb2-246" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Live threshold workbook</span><span class="co">](starter_kits/spreadsheet-thresholds/live_threshold_workbook.xlsx)</span></span>
+<span id="cb2-247"><a href="#cb2-247" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Workbook preview</span><span class="co">](starter_kits/spreadsheet-thresholds/live_threshold_workbook_preview.html)</span></span>
+<span id="cb2-248"><a href="#cb2-248" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GH-facing score export</span><span class="co">](starter_kits/spreadsheet-thresholds/variant_scores.csv)</span></span>
+<span id="cb2-249"><a href="#cb2-249" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Spreadsheet Thresholds starter kit</span><span class="co">](starter_kits/spreadsheet-thresholds/README.md)</span></span>
+<span id="cb2-250"><a href="#cb2-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-251"><a href="#cb2-251" aria-hidden="true" tabindex="-1"></a><span class="fu">## Setup Ladder</span></span>
+<span id="cb2-252"><a href="#cb2-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-253"><a href="#cb2-253" aria-hidden="true" tabindex="-1"></a>| Level | Setup |</span>
+<span id="cb2-254"><a href="#cb2-254" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb2-255"><a href="#cb2-255" aria-hidden="true" tabindex="-1"></a>| Everyone | Excel or Google Sheets, browser, PDF/image export |</span>
+<span id="cb2-256"><a href="#cb2-256" aria-hidden="true" tabindex="-1"></a>| GIS route | QGIS, project layers, export workflow |</span>
+<span id="cb2-257"><a href="#cb2-257" aria-hidden="true" tabindex="-1"></a>| Python route | Jupyter Notebook, Anaconda/Miniconda or Colab |</span>
+<span id="cb2-258"><a href="#cb2-258" aria-hidden="true" tabindex="-1"></a>| GH bridge / optional workgroup | Rhino + Grasshopper only if already working; direct GH/GHX starter files are planned but currently WIP |</span>
+<span id="cb2-259"><a href="#cb2-259" aria-hidden="true" tabindex="-1"></a>| Simulation route | no-install proxy kit for everyone; optional EnergyPlus CLI case when installed |</span>
+<span id="cb2-260"><a href="#cb2-260" aria-hidden="true" tabindex="-1"></a>| AI-assisted companion route | approved AI tool access, prompt log, fact/relationship checks, verification notes |</span>
+<span id="cb2-261"><a href="#cb2-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-262"><a href="#cb2-262" aria-hidden="true" tabindex="-1"></a><span class="fu">## Archive and Reuse</span></span>
+<span id="cb2-263"><a href="#cb2-263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-264"><a href="#cb2-264" aria-hidden="true" tabindex="-1"></a>The previous offering is preserved in:</span>
+<span id="cb2-265"><a href="#cb2-265" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-266"><a href="#cb2-266" aria-hidden="true" tabindex="-1"></a><span class="in">`archive/2025-26-current-offering-source/`</span></span>
+<span id="cb2-267"><a href="#cb2-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-268"><a href="#cb2-268" aria-hidden="true" tabindex="-1"></a>High-value reusable materials:</span>
+<span id="cb2-269"><a href="#cb2-269" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-270"><a href="#cb2-270" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Week 1 evidence audit material</span>
+<span id="cb2-271"><a href="#cb2-271" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Week 5 BIM/BEM deck</span>
+<span id="cb2-272"><a href="#cb2-272" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>GIS overview material</span>
+<span id="cb2-273"><a href="#cb2-273" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Python and visualization notebooks</span>
+<span id="cb2-274"><a href="#cb2-274" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>object card / figure rescue content</span>
+<span id="cb2-275"><a href="#cb2-275" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-276"><a href="#cb2-276" aria-hidden="true" tabindex="-1"></a>Future extensions:</span>
+<span id="cb2-277"><a href="#cb2-277" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-278"><a href="#cb2-278" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>GH starter workflows</span>
+<span id="cb2-279"><a href="#cb2-279" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>full preset simulation walkthrough</span>
+<span id="cb2-280"><a href="#cb2-280" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>deeper AI-assisted architecture fact-checking and workflow examples</span>
+<span id="cb2-281"><a href="#cb2-281" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>final package templates in downloadable format</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
