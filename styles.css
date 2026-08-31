@@ -1,478 +1,248 @@
-/* Custom CSS for ARCH7476 Course Website */
+/*===========================================================================
+  ARCH7476 site theme — editorial / Swiss, matched to the slide deck theme
+  (weeks_v2/arch7476.scss). Same palette and type system so the website and
+  the lectures read as one identity. Flat, ruled, legible. No gradients,
+  glassmorphism, animations, or CSS-injected emoji.
+===========================================================================*/
 
-/* Modern architectural color palette */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
 :root {
-  --primary-blue: #0F172A;
-  --secondary-blue: #1E293B;
-  --accent-blue: #3B82F6;
-  --accent-orange: #F59E0B;
-  --accent-emerald: #10B981;
-  --accent-purple: #8B5CF6;
-  --light-gray: #F8FAFC;
-  --medium-gray: #E2E8F0;
-  --dark-gray: #1E293B;
-  --text-gray: #475569;
-  --warning-red: #EF4444;
-  
-  /* Gradient combinations */
-  --gradient-primary: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #3B82F6 100%);
-  --gradient-accent: linear-gradient(135deg, #F59E0B 0%, #10B981 100%);
-  --gradient-hero: linear-gradient(135deg, #0F172A 0%, #1E293B 25%, #3B82F6 75%, #8B5CF6 100%);
+  --ink:        #16181D;
+  --paper:      #FCFCFA;
+  --muted:      #6B7079;
+  --rule:       #16181D;
+  --rule-soft:  #D7D7D1;
+  --signal:     #C8442A;
+
+  --role-concept:  #1F5C7A;
+  --role-activity: #2F6F5E;
+  --role-example:  #9A641F;
+  --role-reflect:  #5B4B7A;
+  --role-warn:     #8F3D3D;
+
+  --concept-soft: #E3EEF4;
+  --activity-soft:#E0F0E8;
+  --example-soft: #F6EBD7;
+  --reflect-soft: #E9E3F1;
+  --warn-soft:    #F4DEDE;
 }
 
-/* Modern typography with better hierarchy */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
-
+/* --- Base ----------------------------------------------------------------*/
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  line-height: 1.7;
-  color: var(--text-gray);
-  background: var(--light-gray);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--paper);
   font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-blue);
-  font-weight: 600;
-  letter-spacing: -0.025em;
-  margin-bottom: 0.75rem;
-}
-
-h1 {
-  font-size: 2.5rem;
+  font-family: "Archivo", sans-serif;
+  color: var(--ink);
   font-weight: 700;
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 0.6rem;
 }
 
+/* Solid ink headline — no gradient text clip. Page title gets a rule above. */
+h1, .quarto-title h1.title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  -webkit-text-fill-color: currentColor;   /* undo any inherited gradient clip */
+  background: none;
+}
 h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--secondary-blue);
+  font-size: 1.7rem;
+  padding-top: 0.4rem;
+  border-top: 2px solid var(--rule);
+  margin-top: 2.2rem;
 }
+h3 { font-size: 1.25rem; color: var(--ink); }
 
-h3 {
-  font-size: 1.5rem;
-  color: var(--accent-blue);
-}
+a { color: var(--signal); text-decoration: none; border-bottom: 1px solid rgba(200,68,42,0.35); }
+a:hover { color: var(--ink); border-bottom-color: var(--ink); }
 
-/* Modern navigation with glass effect */
+strong { font-weight: 600; }
+
+/* --- Navbar: flat ink bar with a hairline, no blur/glow ------------------*/
 .navbar {
-  background: rgba(15, 23, 42, 0.95) !important;
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  background: var(--ink) !important;
+  backdrop-filter: none;
+  border-bottom: 3px solid var(--signal);
+  box-shadow: none;
 }
-
 .navbar-brand, .navbar-nav .nav-link {
-  color: white !important;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  color: #fff !important;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
 }
-
 .navbar-nav .nav-link:hover {
-  color: var(--accent-orange) !important;
-  transform: translateY(-1px);
-  text-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
+  color: var(--signal) !important;
+  transform: none;
+  text-shadow: none;
 }
 
-/* Sidebar styling */
-.sidebar {
-  background-color: var(--light-gray);
-  border-right: 1px solid #ddd;
-}
-
-.sidebar .nav-link {
-  color: var(--dark-gray);
-  padding: 0.5rem 1rem;
-}
-
-.sidebar .nav-link:hover {
-  background-color: white;
-  color: var(--primary-blue);
-}
-
+/* --- Sidebar -------------------------------------------------------------*/
+.sidebar { background: var(--paper); border-right: 1px solid var(--rule-soft); }
+.sidebar .sidebar-item-container .sidebar-section { font-size: 0.92em; }
+.sidebar .menu-text { font-size: 0.92em; }
+.sidebar nav[role=doc-toc] ul > li > a.active,
 .sidebar .nav-link.active {
-  background-color: var(--primary-blue);
-  color: white;
+  color: var(--signal) !important;
+  border-left: 3px solid var(--signal);
+  font-weight: 600;
+  background: none;
 }
+.sidebar .nav-link:hover { color: var(--ink); }
+.sidebar-title { font-family: "Archivo", sans-serif; font-weight: 700; }
 
-/* Hero banner with animated gradient */
+/* --- Title banner: flat ink block with a signal rule, no animation -------*/
 .quarto-title-banner {
-  background: var(--gradient-hero);
-  background-size: 200% 200%;
-  animation: gradientShift 6s ease infinite;
-  color: white;
-  position: relative;
-  overflow: hidden;
-  padding: 4rem 2rem;
+  background: var(--ink);
+  background-size: auto;
+  animation: none;
+  color: var(--paper);
+  border-bottom: 4px solid var(--signal);
+  padding: 3rem 2rem 2.5rem;
 }
+.quarto-title-banner::before { content: none; }
+.quarto-title-banner h1, .quarto-title-banner .title { color: var(--paper); text-shadow: none; }
+.quarto-title-banner .subtitle { color: #cfd2d6; text-shadow: none; }
 
-.quarto-title-banner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(1px);
+/* --- Cards: flat, square, left-ruled (matches deck cards) ----------------*/
+.assignment-card, .week-card {
+  border: 1px solid var(--rule-soft);
+  border-left: 6px solid var(--ink);
+  border-radius: 0;
+  padding: 1.5rem 1.75rem;
+  margin: 1.25rem 0;
+  background: #fff;
+  box-shadow: none;
+  transition: border-color 0.15s ease;
 }
-
-.quarto-title-banner h1,
-.quarto-title-banner .subtitle {
-  position: relative;
-  z-index: 2;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+.assignment-card::before, .week-card::before { content: none; }   /* kill the accent bar + emoji */
+.assignment-card:hover, .week-card:hover {
+  transform: none;
+  box-shadow: none;
+  border-left-color: var(--signal);
 }
+.assignment-card h3, .week-card h3 { margin-top: 0; color: var(--ink); }
+.assignment-card h3::before { content: none; }                    /* remove 📋 */
 
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+/* A reusable resource-hub card grid for resources.qmd */
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
 }
+.hub-card {
+  border: 1px solid var(--rule-soft);
+  border-top: 4px solid var(--role-concept);
+  padding: 1.1rem 1.25rem;
+  background: #fff;
+}
+.hub-card h3 { margin-top: 0; font-size: 1.05rem; }
+.hub-card p { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.4rem; }
 
-/* Table styling for schedule */
-table {
-  border-collapse: collapse;
+.resource-demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1.25rem;
+  margin: 1.4rem 0 2rem;
+}
+.resource-demo-card {
+  border: 1px solid var(--rule-soft);
+  border-left: 6px solid var(--role-activity);
+  background: #fff;
+  padding: 1rem;
+}
+.resource-demo-card.gis { border-left-color: var(--role-concept); }
+.resource-demo-card.simulation { border-left-color: var(--role-reflect); }
+.resource-demo-card h3 { margin-top: 0; }
+.resource-demo-card p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  min-height: 3rem;
+}
+.resource-preview-frame {
   width: 100%;
-  margin: 1.5rem 0;
+  height: 390px;
+  border: 1px solid var(--rule-soft);
+  background: #fff;
+  margin: 0.35rem 0 0.8rem;
 }
-
-table th {
-  background-color: var(--primary-blue);
-  color: white;
-  padding: 0.75rem;
-  text-align: left;
+.resource-preview-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule-soft);
+  background: #fff;
+  margin: 0.35rem 0 0.8rem;
 }
-
-table td {
-  padding: 0.75rem;
-  border-bottom: 1px solid #ddd;
-}
-
-table tr:nth-child(even) {
-  background-color: var(--light-gray);
-}
-
-/* Modern assignment cards with hover effects */
-.assignment-card {
-  border: 1px solid var(--medium-gray);
-  border-radius: 16px;
-  padding: 2rem;
-  margin: 1.5rem 0;
-  background: white;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.assignment-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: var(--gradient-accent);
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.assignment-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  border-color: var(--accent-blue);
-}
-
-.assignment-card:hover::before {
-  transform: scaleX(1);
-}
-
-.assignment-card h3 {
-  color: var(--accent-blue);
-  margin-top: 0;
-  font-weight: 600;
+.resource-actions {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.45rem;
 }
-
-.assignment-card h3::before {
-  content: '📋';
-  font-size: 1.2em;
-}
-
-/* Modern week cards */
-.week-card {
-  border-radius: 12px;
-  padding: 1.5rem 2rem;
-  margin: 1.5rem 0;
-  background: linear-gradient(135deg, white 0%, var(--light-gray) 100%);
-  border: 1px solid var(--medium-gray);
-  position: relative;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.week-card::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: var(--gradient-primary);
-  border-radius: 12px 0 0 12px;
-}
-
-.week-card:hover {
-  transform: translateX(4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
-.week-card h3 {
-  margin-bottom: 0.5rem;
-  color: var(--secondary-blue);
-}
-
-/* Modern callout boxes with icons */
-.callout {
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin: 1.5rem 0;
-  border: 1px solid;
-  position: relative;
-  backdrop-filter: blur(10px);
-}
-
-.callout::before {
-  content: '';
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 14px;
-  color: white;
-}
-
-.callout-note {
-  border-color: var(--accent-blue);
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(59, 130, 246, 0.15) 100%);
-}
-
-.callout-note::before {
-  content: 'ℹ';
-  background: var(--accent-blue);
-}
-
-.callout-warning {
-  border-color: var(--warning-red);
-  background: linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(239, 68, 68, 0.15) 100%);
-}
-
-.callout-warning::before {
-  content: '⚠';
-  background: var(--warning-red);
-}
-
-.callout-tip {
-  border-color: var(--accent-emerald);
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(16, 185, 129, 0.15) 100%);
-}
-
-.callout-tip::before {
-  content: '💡';
-  background: var(--accent-emerald);
-}
-
-/* Modern code styling */
-pre, code {
-  font-family: "JetBrains Mono", "Monaco", "Menlo", "Ubuntu Mono", monospace;
-  font-size: 0.875em;
-  font-weight: 400;
-}
-
-code {
-  background: var(--medium-gray);
+.resource-actions a {
+  display: inline-block;
+  border: 1px solid var(--rule-soft);
+  border-bottom-color: var(--rule-soft);
   padding: 0.25rem 0.5rem;
-  border-radius: 6px;
-  color: var(--secondary-blue);
-  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--ink);
+  background: var(--paper);
+}
+.resource-actions a:hover {
+  border-color: var(--signal);
+  color: var(--signal);
 }
 
-pre {
-  background: var(--secondary-blue);
-  color: var(--light-gray);
-  padding: 1.5rem;
-  border-radius: 12px;
-  overflow-x: auto;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+/* --- Callouts: semantic roles, flat, no emoji circles --------------------*/
+.callout { border-radius: 0; border: 1px solid var(--rule-soft); border-left-width: 6px; backdrop-filter: none; }
+.callout::before { content: none; }
+.callout-note    { border-left-color: var(--role-concept);  background: var(--concept-soft); }
+.callout-tip     { border-left-color: var(--role-activity); background: var(--activity-soft); }
+.callout-important{ border-left-color: var(--role-example); background: var(--example-soft); }
+.callout-warning { border-left-color: var(--role-warn);     background: var(--warn-soft); }
 
-pre code {
-  background: transparent;
-  color: inherit;
-  padding: 0;
-}
-
-/* Button styling */
-.btn-primary {
-  background-color: var(--primary-blue);
-  border-color: var(--primary-blue);
-}
-
-.btn-primary:hover {
-  background-color: var(--accent-orange);
-  border-color: var(--accent-orange);
-}
-
-/* Footer styling */
-footer {
-  background-color: var(--dark-gray);
-  color: white;
-  padding: 2rem 0;
-  margin-top: 3rem;
-}
-
-footer a {
-  color: var(--accent-orange);
-}
-
-/* Additional modern elements */
-.content-wrapper {
-  position: relative;
-}
-
-/* Floating action elements */
-.floating-nav {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  z-index: 1000;
-}
-
-.floating-nav button {
-  background: var(--gradient-accent);
-  border: none;
-  border-radius: 50%;
-  width: 56px;
-  height: 56px;
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-}
-
-.floating-nav button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-}
-
-/* Progress indicators */
-.progress-bar {
-  background: var(--medium-gray);
-  height: 4px;
-  border-radius: 2px;
-  overflow: hidden;
-  margin: 1rem 0;
-}
-
-.progress-fill {
-  height: 100%;
-  background: var(--gradient-accent);
-  transition: width 0.3s ease;
-}
-
-/* Modern table styling */
-table {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
+/* --- Tables: Swiss rules, no fill/zebra ----------------------------------*/
+table { border-collapse: collapse; width: 100%; margin: 1.5rem 0; border-radius: 0; box-shadow: none; background: none; }
 table th {
-  background: var(--secondary-blue);
-  color: white;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  letter-spacing: 0.05em;
+  font-family: "Archivo", sans-serif;
+  background: none; color: var(--ink);
+  text-transform: none; letter-spacing: 0;
+  text-align: left; padding: 0.55rem 0.7rem;
+  border-bottom: 2px solid var(--ink);
 }
+table td { padding: 0.55rem 0.7rem; border-bottom: 1px solid var(--rule-soft); }
+table tr:nth-child(even) { background: none; }
+table tr:hover { background: rgba(31,92,122,0.05); }
 
-table tr:hover {
-  background-color: rgba(59, 130, 246, 0.05);
-  transition: background-color 0.2s ease;
-}
+/* --- Code ----------------------------------------------------------------*/
+pre, code { font-family: "JetBrains Mono", Menlo, monospace; font-size: 0.875em; }
+code { background: #ECECE6; color: var(--ink); padding: 0.15em 0.4em; border-radius: 3px; }
+pre { background: var(--ink); color: #F3F3EE; padding: 1.25rem; border-radius: 0; border: none; box-shadow: none; overflow-x: auto; }
+pre code { background: transparent; color: inherit; padding: 0; }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .sidebar {
-    position: relative;
-    width: 100%;
-  }
-  
-  .quarto-title-banner {
-    padding: 2rem 1rem;
-  }
-  
-  h1 {
-    font-size: 2rem;
-  }
-  
-  table {
-    font-size: 0.9em;
-  }
-  
-  .assignment-card, .week-card {
-    margin: 0.75rem 0;
-    padding: 1.25rem;
-  }
-  
-  .floating-nav {
-    bottom: 1rem;
-    right: 1rem;
-  }
-}
+/* --- Buttons -------------------------------------------------------------*/
+.btn-primary { background: var(--ink); border-color: var(--ink); border-radius: 0; }
+.btn-primary:hover { background: var(--signal); border-color: var(--signal); }
 
-/* RevealJS slide customizations */
-.reveal h1, .reveal h2, .reveal h3 {
-  color: var(--primary-blue);
-}
+/* --- Footer --------------------------------------------------------------*/
+footer, .nav-footer { background: var(--ink); color: #cfd2d6; border-top: 3px solid var(--signal); }
+footer a, .nav-footer a { color: var(--signal); }
 
-.reveal .slides section .fragment.highlight-current-blue {
-  color: var(--accent-orange);
-}
+/* --- Remove the old floating action button entirely ----------------------*/
+.floating-nav { display: none; }
 
-/* Print styling */
+/* --- Print ---------------------------------------------------------------*/
 @media print {
-  .sidebar, .navbar, footer {
-    display: none;
-  }
-
-  body {
-    font-size: 12pt;
-    line-height: 1.4;
-  }
-
-  h1, h2, h3 {
-    page-break-after: avoid;
-  }
-
-  table {
-    page-break-inside: avoid;
-  }
+  .sidebar, .navbar, footer { display: none; }
+  body { font-size: 12pt; line-height: 1.4; }
+  h1, h2, h3 { page-break-after: avoid; }
+  table { page-break-inside: avoid; }
 }

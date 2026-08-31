@@ -1,0 +1,42 @@
+{
+  "type": "FeatureCollection",
+  "name": "hku_micro_candidate_sites_teaching_sample",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "A",
+        "current_use": "HKU station forecourt edge",
+        "note": "Teaching sample polygon near HKU Station; not an official parcel."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[114.13520, 22.28420], [114.13570, 22.28420], [114.13570, 22.28455], [114.13520, 22.28455], [114.13520, 22.28420]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "B",
+        "current_use": "main campus edge",
+        "note": "Teaching sample polygon along the campus/Pok Fu Lam Road edge."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[114.13655, 22.28275], [114.13720, 22.28275], [114.13720, 22.28325], [114.13655, 22.28325], [114.13655, 22.28275]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "C",
+        "current_use": "Hill Road pocket",
+        "note": "Teaching sample polygon toward the Shek Tong Tsui / Hill Road edge."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[114.13245, 22.28580], [114.13305, 22.28580], [114.13305, 22.28625], [114.13245, 22.28625], [114.13245, 22.28580]]]
+      }
+    }
+  ]
+}
