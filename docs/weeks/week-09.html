@@ -489,13 +489,14 @@
 </section>
 <section id="trade-off-table" class="slide level2 center">
 <h2>Trade-Off Table</h2>
-<table>
+<table style="width:100%;">
 <colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -503,6 +504,7 @@
 <th>strongest benefit</th>
 <th>main cost</th>
 <th>biggest risk</th>
+<th>evidence behind this row</th>
 <th>recommendation</th>
 </tr>
 </thead>
@@ -512,6 +514,7 @@
 <td>access</td>
 <td>cost</td>
 <td>moderate</td>
+<td>transit dataset</td>
 <td>good if budget is stable</td>
 </tr>
 <tr class="even">
@@ -519,6 +522,7 @@
 <td>performance</td>
 <td>complexity</td>
 <td>high</td>
+<td>own variant test</td>
 <td>only if support is available</td>
 </tr>
 <tr class="odd">
@@ -526,10 +530,18 @@
 <td>speed</td>
 <td>lower upside</td>
 <td>low</td>
+<td>both</td>
 <td>safest baseline</td>
 </tr>
 </tbody>
 </table>
+<p>The provenance column matters: some rows rest on collected data, some on comparisons you built yourself. Say which.</p>
+</section>
+<section id="option-b-drill" class="slide level2 center">
+<h2>Option B Drill</h2>
+<p>Complete this sentence for your own project:</p>
+<p><strong>Building option B showed that ________, which no external dataset could have told me, and it changes the recommendation because ________.</strong></p>
+<p>If nothing fills the first blank, your variants are decoration. Compare them against the same criteria, stated first, and they become evidence.</p>
 </section>
 <section id="counter-arguments-matter" class="slide level2 center">
 <h2>Counter-Arguments Matter</h2>

@@ -152,6 +152,8 @@ Also document:
 - what judgment call it contains
 - how the output connects back to the question
 
+The same log works for design moves: why this variant exists, and what making it tested.
+
 ---
 
 ## Mentor Consultation Bootcamp

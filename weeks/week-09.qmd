@@ -182,11 +182,23 @@ You still need:
 
 ## Trade-Off Table
 
-| Option | strongest benefit | main cost | biggest risk | recommendation |
-|---|---|---|---|---|
-| A | access | cost | moderate | good if budget is stable |
-| B | performance | complexity | high | only if support is available |
-| C | speed | lower upside | low | safest baseline |
+| Option | strongest benefit | main cost | biggest risk | evidence behind this row | recommendation |
+|---|---|---|---|---|---|
+| A | access | cost | moderate | transit dataset | good if budget is stable |
+| B | performance | complexity | high | own variant test | only if support is available |
+| C | speed | lower upside | low | both | safest baseline |
+
+The provenance column matters: some rows rest on collected data, some on comparisons you built yourself. Say which.
+
+---
+
+## Option B Drill
+
+Complete this sentence for your own project:
+
+**Building option B showed that ________, which no external dataset could have told me, and it changes the recommendation because ________.**
+
+If nothing fills the first blank, your variants are decoration. Compare them against the same criteria, stated first, and they become evidence.
 
 ---
 

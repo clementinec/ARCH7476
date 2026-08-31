@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.549">
 
-  <title>ARCH7476: Evidence-Based Generative Design - Week 8: Reproducibility and Mentor Prep</title>
+  <title>ARCH7476: Evidence-Based Generative Design - Week 8: Pilot, Compare, and Quantify Uncertainty</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -325,694 +325,82 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 8: Reproducibility and Mentor Prep</h1>
-  <p class="subtitle">Documentation Challenge, Automation Ethics, and Workflow Strategy</p>
+  <h1 class="title">Week 8: Pilot, Compare, and Quantify Uncertainty</h1>
+  <p class="subtitle">Turning a Prototype Into Defensible Evidence</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="welcome-to-the-documentation-olympics" class="slide level2 center">
-<h2>🏆 Welcome to the Documentation Olympics!</h2>
-<div class="callout callout-important no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Today’s Mission: Become a Workflow Warrior</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>The Challenge</strong>: Can you document your methods so well that a rival team could beat you using YOUR OWN instructions?</p>
-<p><strong>The Stakes</strong>: Professional credibility, research reproducibility, and bragging rights</p>
-<p><strong>The Rewards</strong>: Skills that will save your future self countless hours of confusion</p>
-</div>
-</div>
-</div>
-<p><strong>Today’s Events:</strong></p>
-<p>🥇 <strong>Documentation Speed Trials</strong> | 🤖 <strong>Automation Ethics Showdown</strong> | 📋 <strong>Reproducibility Battle Royale</strong> | 💻 <strong>Mentor Consultation Power Hour</strong></p>
-</section>
-<section class="slide level2 center">
-
-</section>
-<section>
-<section id="round-1-the-great-documentation-disasters" class="title-slide slide level1 center" data-background-color="#2C3E50">
-<h1>Round 1: The Great Documentation Disasters</h1>
-
-</section>
-<section id="horror-stories-from-the-field" class="slide level2 center">
-<h2>🔥 Horror Stories from the Field</h2>
-<p><strong>Before we become champions, let’s learn from the fallen…</strong></p>
-<div class="callout callout-warning no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Real Disasters from Professional Practice</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Case 1: The $2M Simulation Disaster</strong></p>
+<section id="todays-agenda" class="slide level2 center">
+<h2>Today’s Agenda</h2>
 <ul>
-<li>Major firm loses client because simulation crashed</li>
-<li>Original analyst left firm, took all knowledge</li>
-<li>No documentation = 3 months to recreate work</li>
-<li><strong>Client’s response</strong>: “How can we trust your process?”</li>
-</ul>
-<p><strong>Case 2: The Plot Ratio Panic</strong></p>
-<ul>
-<li>Hong Kong development approval based on complex analysis</li>
-<li>Planning department asks: “How did you calculate this?”</li>
-<li><strong>Answer</strong>: “Uh… Jennifer knew, but she’s on maternity leave”</li>
-<li><strong>Result</strong>: 6-month delay, $10M holding costs</li>
-</ul>
-</div>
-</div>
-</div>
-<p><strong>📊 Quick Poll</strong>: Raise your hand if you’ve EVER struggled to remember what you did in a project from 3+ months ago</p>
-<p><em>[Expected: Most hands up]</em></p>
-<p><strong>The reality</strong>: If YOU can’t reproduce your work, nobody can!</p>
-</section>
-<section id="the-reproducibility-graveyard" class="slide level2 center">
-<h2>💀 The Reproducibility Graveyard</h2>
-<p><strong>⚰️ Tragic Examples from Your Peers:</strong></p>
-<p><em>“I used some version of Grasshopper but I can’t remember which plugins…”</em></p>
-<p><em>“The analysis worked perfectly but now the file won’t open…”</em></p>
-<p><em>“I know I changed some settings but I can’t remember which ones…”</em></p>
-<p><em>“My brilliant Excel formula broke when I opened it on a different computer…”</em></p>
-<div class="callout callout-note no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Group Confession Time</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Stand up and share</strong> (30 seconds each): What’s YOUR most embarrassing “I can’t reproduce my own work” moment?</p>
-<p><strong>Rules</strong>:</p>
-<ul>
-<li>Be honest!</li>
-<li>No judgment zone</li>
-<li>Funniest story gets a prize! 🎁</li>
-</ul>
-</div>
-</div>
-</div>
-<p><strong>The lesson</strong>: Documentation isn’t just nice to have - it’s professional survival!</p>
-</section>
-<section class="slide level2 center">
-
-</section></section>
-<section>
-<section id="round-2-documentation-speed-trials" class="title-slide slide level1 center" data-background-color="#8E44AD">
-<h1>Round 2: Documentation Speed Trials</h1>
-
-</section>
-<section id="the-10-minute-method-challenge" class="slide level2 center">
-<h2>🏃 The 10-Minute Method Challenge</h2>
-<p><strong>⏰ You have 10 minutes to document ONE key workflow so clearly that a competitor could beat you with it!</strong></p>
-<div class="callout callout-tip no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Challenge Rules</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Pick ONE workflow</strong> from your project (the most complex/critical one):</p>
-<ul>
-<li>📐 Grasshopper simulation setup</li>
-<li>📊 Survey data analysis</li>
-<li>🎨 Visualization creation</li>
-<li>📈 Statistical analysis</li>
-<li>🔍 Literature review process</li>
-</ul>
-<p><strong>Your mission</strong>: Write step-by-step instructions that a RIVAL TEAM could follow to get exactly your results</p>
-<p><strong>Evil twist</strong>: You’ll actually SWAP instructions with someone who has never seen your method!</p>
-</div>
-</div>
-</div>
-<p><strong>Timer starts… NOW!</strong> ⏱️</p>
-</section>
-<section id="documentation-template-for-champions" class="slide level2 center">
-<h2>📝 Documentation Template for Champions</h2>
-<p><strong>Use this structure</strong> (copy to your notes):</p>
-<p><strong>🎯 WORKFLOW</strong>: ________________</p>
-<p><strong>🎪 SETUP (What you need first):</strong></p>
-<ul>
-<li>Software/tools required: ________</li>
-<li>Files/data needed: ________</li>
-<li>Skills/knowledge required: ________</li>
-</ul>
-<p><strong>🎬 ACTION (Step-by-step):</strong></p>
-<ol type="1">
-<li><strong>Step 1</strong>: ________ (Why: ________)</li>
-<li><strong>Step 2</strong>: ________ (Why: ________)</li>
-<li><strong>Step 3</strong>: ________ (If X happens: ________)</li>
-<li><strong>Step 4</strong>: ________ (Check: ________)</li>
-</ol>
-</section>
-<section id="documentation-template-contd" class="slide level2 center">
-<h2>📝 Documentation Template (cont’d)</h2>
-<p><strong>🚨 TROUBLESHOOTING (When things break):</strong></p>
-<ul>
-<li>Common error: ________ → Solution: ________</li>
-<li>Warning signs: ________ → Action: ________</li>
-</ul>
-<p><strong>📋 QUALITY CHECK (How to know it worked):</strong></p>
-<ul>
-<li>Success looks like: ________</li>
-<li>Red flags: ________</li>
+<li class="fragment">what a useful pilot actually does</li>
+<li class="fragment">uncertainty and error</li>
+<li class="fragment">comparison logic</li>
+<li class="fragment">peer critique</li>
+<li class="fragment">A3 refinement</li>
 </ul>
 </section>
-<section id="the-documentation-swap-challenge" class="slide level2 center">
-<h2>🔄 The Documentation Swap Challenge</h2>
-<p><strong>Phase 1: The Exchange</strong> (2 minutes)</p>
-<ol type="1">
-<li><strong>Find someone with a DIFFERENT method</strong> (don’t pick your best friend!)</li>
-<li><strong>Swap your documentation</strong></li>
-<li><strong>NO VERBAL EXPLANATIONS</strong> - instructions must stand alone!</li>
-</ol>
-<p><strong>Phase 2: The Attempt</strong> (8 minutes)</p>
+<section id="a-pilot-is-not-a-mini-final-project" class="slide level2 center">
+<h2>A Pilot Is Not a Mini Final Project</h2>
+<p>A pilot is useful if it shows:</p>
 <ul>
-<li>Try to follow their instructions <strong>exactly</strong></li>
-<li>Note where you get confused</li>
-<li>Document what’s missing or unclear</li>
-<li><strong>No questions allowed!</strong> (that’s the point)</li>
+<li class="fragment">the workflow can run</li>
+<li class="fragment">the output is relevant</li>
+<li class="fragment">the assumptions are visible</li>
+<li class="fragment">the weak points are now obvious</li>
 </ul>
 </section>
-<section id="the-documentation-swap-contd" class="slide level2 center">
-<h2>🔄 The Documentation Swap (cont’d)</h2>
-<p><strong>Phase 3: The Brutal Feedback</strong> (5 minutes)</p>
+<section id="where-uncertainty-comes-from" class="slide level2 center">
+<h2>Where Uncertainty Comes From</h2>
 <ul>
-<li>Share what went wrong</li>
-<li>Rate clarity (1-10)</li>
-<li>Identify biggest gaps</li>
-</ul>
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>The Harsh Truth Moment</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Show of hands</strong>: How many of you could successfully follow someone else’s instructions?</p>
-<p><em>[Expected: Very few hands]</em></p>
-<p><strong>This is why most research can’t be reproduced!</strong></p>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2 center">
-
-</section></section>
-<section>
-<section id="round-3-automation-ethics-showdown" class="title-slide slide level1 center" data-background-color="#E74C3C">
-<h1>Round 3: Automation Ethics Showdown</h1>
-
-</section>
-<section id="ethics-101-whats-the-connection" class="slide level2 center">
-<h2>🧠 Ethics 101: What’s the Connection?</h2>
-<p><strong>Quick class discussion</strong>: What overlaps between AI Ethics and Research Ethics?</p>
-<div class="callout callout-note no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Think-Pair-Share (3 minutes)</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Turn to your neighbor and discuss:</strong></p>
-<ul>
-<li>What ethical principles apply to BOTH AI use and research methods?</li>
-<li>Remember the <strong>Stanford Prison Experiment</strong> we discussed?</li>
-<li>What went wrong there, and how does it relate to using AI today?</li>
-</ul>
-<p><strong>Share out</strong>: What connections did you find?</p>
-</div>
-</div>
-</div>
-<p><strong>Hint</strong>: Both are about power, bias, and… what else?</p>
-</section>
-<section id="the-golden-rule-know-your-data" class="slide level2 center">
-<h2>🎯 The Golden Rule: KNOW YOUR DATA</h2>
-<p><strong>The connection</strong>: Both AI Ethics and Research Ethics boil down to one principle:</p>
-<div class="callout callout-important no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong><strong>KNOW YOUR DATA</strong></strong></p>
-</div>
-<div class="callout-content">
-<p><strong>In Research Ethics:</strong></p>
-<ul>
-<li>Know who your participants are</li>
-<li>Know how your data was collected</li>
-<li>Know the biases in your sample</li>
-<li>Know the limitations of your methods</li>
-</ul>
-<p><strong>In AI Ethics:</strong></p>
-<ul>
-<li>Know what data the AI was trained on</li>
-<li>Know the biases in the training data</li>
-<li>Know what the AI can and cannot do</li>
-<li>Know when to trust (and not trust) AI outputs</li>
-</ul>
-</div>
-</div>
-</div>
-<p><strong>The Stanford Experiment lesson</strong>: When you don’t understand the data (human behavior under power dynamics), things go catastrophically wrong.</p>
-<p><strong>The AI parallel</strong>: When you don’t understand the training data, your AI perpetuates harm at scale.</p>
-</section>
-<section id="lightning-round-ethical-or-evil" class="slide level2 center">
-<h2>⚡ Lightning Round: Ethical or Evil?</h2>
-<p><strong>LIVE vote on Slack with EMOJI reactions!</strong></p>
-<p><strong>React with:</strong> ✅ Totally fine | ⚠️ Okay with disclosure | ❌ Unethical | 🤷 Depends</p>
-<p><strong>Scenario 1</strong>: Using ChatGPT to debug your Python code</p>
-<p><strong>Scenario 2</strong>: Having AI write your literature review summary</p>
-</section>
-<section id="lightning-round-contd" class="slide level2 center">
-<h2>⚡ Lightning Round (cont’d)</h2>
-<p><strong>React with:</strong> ✅ Totally fine | ⚠️ Okay with disclosure | ❌ Unethical | 🤷 Depends</p>
-<p><strong>Scenario 3</strong>: Using automation to generate “fake” sample data for testing</p>
-<p><strong>Scenario 4</strong>: Automating repetitive calculations without understanding the formula</p>
-</section>
-<section id="the-automation-tribunal" class="slide level2 center">
-<h2>🎭 The Automation Tribunal</h2>
-<p><strong>🏛️ Mock Trial Format</strong>: “The Case of the Overautomated Analysis”</p>
-<p><strong>The accused</strong>: Student who used AI to generate building performance analysis</p>
-<p><strong>The evidence</strong>:</p>
-<ul>
-<li>Beautiful charts and professional-looking results</li>
-<li>Complex statistical analysis beyond their skill level</li>
-<li>No understanding of methodology when questioned</li>
-<li>Used AI without disclosure</li>
+<li class="fragment">incomplete data</li>
+<li class="fragment">noisy observations</li>
+<li class="fragment">model assumptions</li>
+<li class="fragment">small samples</li>
+<li class="fragment">repeated readings that are not independent — are 120 readings from one room 120 observations, or one?</li>
+<li class="fragment">inconsistent definitions</li>
 </ul>
 </section>
-<section id="the-automation-tribunal-contd" class="slide level2 center">
-<h2>🎭 The Automation Tribunal (cont’d)</h2>
-<p><strong>Your roles</strong>:</p>
+<section id="better-language-for-results" class="slide level2 center">
+<h2>Better Language for Results</h2>
+<p>Instead of:</p>
 <ul>
-<li><strong>👨‍⚖️ Prosecution team</strong> (3 people): Why this is unethical</li>
-<li><strong>👩‍💼 Defense team</strong> (3 people): Why this is acceptable</li>
-<li><strong>⚖️ Jury</strong> (rest of class): Vote guilty or innocent</li>
+<li class="fragment">“the data proves”</li>
 </ul>
-<p><strong>⏰ 15 minutes total</strong>:</p>
+<p>Try:</p>
 <ul>
-<li>5 min: Teams prepare arguments</li>
-<li>3 min: Prosecution case</li>
-<li>3 min: Defense case</li>
-<li>2 min: Jury deliberation</li>
-<li>2 min: Verdict and reasoning</li>
-</ul>
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Real Stakes</strong></p>
-</div>
-<div class="callout-content">
-<p>This is happening in professional practice RIGHT NOW. Your opinion matters for your future career!</p>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2 center">
-
-</section></section>
-<section>
-<section id="break-time-genai-workflow-case-hunt" class="title-slide slide level1 center" data-background-color="#16A085">
-<h1>🎬 Break Time: GenAI Workflow Case Hunt</h1>
-
-</section>
-<section id="instagram-case-hunt-caption-focus" class="slide level2 center">
-<h2>🎯 Instagram Case Hunt: Caption Focus</h2>
-<p><strong>The Challenge</strong>: Find a GenAI workflow example - focus on writing a great caption!</p>
-<p><strong>Find &amp; Post (10 minutes - Break Time)</strong></p>
-<ul>
-<li>Search: AI workflows, automated design processes, computational methods</li>
-<li>Use Figma Instagram UI Kit</li>
-<li><strong>NEW: Write a caption</strong> (2-3 sentences):
-<ul>
-<li>What makes this workflow innovative?</li>
-<li>How could it improve evidence-based design?</li>
-</ul></li>
-</ul>
-<p>Post to Slack: #WorkflowHunt</p>
-</section>
-<section id="review-engage-8-minutes" class="slide level2 center">
-<h2>👀 Review &amp; Engage (8 minutes)</h2>
-<p><strong>Browse classmates’ posts</strong></p>
-<ul>
-<li>Like posts that catch your eye</li>
-<li><strong>Optional</strong>: Suggest a hashtag in replies</li>
-<li><strong>Optional</strong>: Comment on interesting posts</li>
-</ul>
-<p><strong>Next week preview</strong>: Hashtag strategy!</p>
-</section>
-<section id="caption-writing-tips" class="slide level2 center">
-<h2>💡 Caption Writing Tips</h2>
-<p><strong>Good captions connect tool to impact:</strong></p>
-<ul>
-<li>❌ “This uses machine learning for facade design”</li>
-<li>✅ “ML-optimized facades cut energy 30% while keeping views - automation enhancing human priorities”</li>
-</ul>
-<p><strong>Ask yourself:</strong></p>
-<ul>
-<li>What problem does this solve?</li>
-<li>Why does automation help (not just what it does)?</li>
-<li>How could you use this workflow?</li>
+<li class="fragment">“the pilot suggests”</li>
+<li class="fragment">“the comparison indicates”</li>
+<li class="fragment">“confidence is limited by”</li>
 </ul>
 </section>
-<section class="slide level2 center">
-
-</section></section>
-<section>
-<section id="round-4-mentor-consultation-power-hour" class="title-slide slide level1 center" data-background-color="#27AE60">
-<h1>Round 4: Mentor Consultation Power Hour</h1>
-
-</section>
-<section id="mentor-meeting-preparation-bootcamp" class="slide level2 center">
-<h2>💪 Mentor Meeting Preparation Bootcamp</h2>
-<p><strong>🎯 Mission</strong>: Transform your mentor consultation from “nice chat” to “career-changing insight”</p>
-<p><strong>⚠️ Problem</strong>: Most students waste their mentor time with vague questions</p>
-<p><strong>💡 Solution</strong>: Strategic preparation and smart questioning</p>
-<div class="callout callout-tip no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>The Mentor Maximizer Formula</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>BEFORE the meeting</strong> (do this NOW):</p>
-<ol type="1">
-<li><strong>🎪 The One-Liner</strong>: Summarize your project in ONE sentence</li>
-<li><strong>🔍 The Specific Ask</strong>: What EXACT advice do you need?</li>
-<li><strong>💼 The Context Check</strong>: What does your mentor actually do?</li>
-<li><strong>📋 The Question Bank</strong>: Prepare 5 strategic questions</li>
-<li><strong>📊 The Show-and-Tell</strong>: What do you want them to see?</li>
-</ol>
-</div>
-</div>
-</div>
-<p><strong>⏰ You have 15 minutes to prep like a pro!</strong></p>
-</section>
-<section id="strategic-question-development-workshop" class="slide level2 center">
-<h2>🎯 Strategic Question Development Workshop</h2>
-<p><strong>🚫 BORING questions that waste time:</strong></p>
+<section id="peer-critique-questions" class="slide level2 center">
+<h2>Peer Critique Questions</h2>
 <ul>
-<li>“What do you think of my project?”</li>
-<li>“Do you have any advice?”</li>
-<li>“How do I get a job in your field?”</li>
-</ul>
-<p><strong>🔥 STRATEGIC questions that create value:</strong></p>
-<ul>
-<li>“In your experience, what evidence would convince [specific stakeholder] to change their current practice?”</li>
-<li>“What implementation barriers do you see that I haven’t considered?”</li>
-<li>“How do practitioners in your field typically validate this type of analysis?”</li>
-<li>“What would make my findings most useful for someone in your position?”</li>
+<li class="fragment">is the output genuinely tied to the decision?</li>
+<li class="fragment">is uncertainty being hidden or handled?</li>
+<li class="fragment">is the pathway still the right one?</li>
+<li class="fragment">what one fix would improve the method most?</li>
 </ul>
 </section>
-<section id="question-development-challenge" class="slide level2 center">
-<h2>🎯 Question Development Challenge</h2>
-<div class="callout callout-note no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Question Development Team Challenge</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Pairs</strong> (5 minutes each):</p>
-<ol type="1">
-<li><strong>Round 1</strong>: Person A practices their one-liner + their best strategic question</li>
-<li><strong>Round 2</strong>: Person B provides feedback and suggests improvements</li>
-<li><strong>Round 3</strong>: Person B practices their pitch</li>
-<li><strong>Round 4</strong>: Person A provides feedback</li>
-</ol>
-<p><strong>Class vote</strong>: Best strategic question wins a prize! 🏆</p>
-</div>
-</div>
-</div>
-</section>
-<section id="the-mentor-follow-up-challenge" class="slide level2 center">
-<h2>📱 The Mentor Follow-Up Challenge</h2>
-<p><strong>📧 Email Template for Professional Follow-Up:</strong></p>
-<div class="callout callout-important no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Professional Follow-Up Template</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Subject</strong>: Thank you for your insights on [specific topic] - [Your name]</p>
-<p><strong>Dear [Mentor name],</strong></p>
-<p>Thank you for the valuable conversation about [specific insight they shared]. Your point about [specific detail] particularly changed my perspective on [specific aspect].</p>
-<p><strong>I’ve taken action on your advice:</strong></p>
+<section id="a3-submission-standard" class="slide level2 center">
+<h2>A3 Submission Standard</h2>
+<p>Show enough to demonstrate:</p>
 <ul>
-<li>[Specific thing you implemented]</li>
-<li>[Specific change you made]</li>
-<li>[Specific next step you planned]</li>
+<li class="fragment">one working workflow</li>
+<li class="fragment">one interpretable output</li>
+<li class="fragment">one clear account of limits</li>
 </ul>
-<p><strong>Brief update on my progress:</strong> [One paragraph on how their advice influenced your work]</p>
-<p><strong>Next steps:</strong> I’ll [specific action] and would be happy to share the results if you’re interested.</p>
-<p>Thank you again for your time and insights.</p>
-<p>Best regards, [Your name] [Your contact info]</p>
-</div>
-</div>
-</div>
-<p><strong>⚡ Challenge</strong>: Draft this email NOW for your upcoming mentor meeting!</p>
-</section>
-<section class="slide level2 center">
-
-</section></section>
-<section>
-<section id="round-5-reproducibility-battle-royale" class="title-slide slide level1 center" data-background-color="#F39C12">
-<h1>Round 5: Reproducibility Battle Royale</h1>
-
-</section>
-<section id="the-ultimate-workflow-warfare" class="slide level2 center">
-<h2>⚔️ The Ultimate Workflow Warfare</h2>
-<p><strong>🏆 Team Challenge</strong>: The Reproducibility Olympics</p>
-<p><strong>Format</strong>: Teams of 3-4 students</p>
-<p><strong>Mission</strong>: Create the most bulletproof workflow documentation package</p>
-<div class="callout callout-important no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Battle Royale Rules</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Phase 1: Documentation Creation</strong> (20 minutes)</p>
-<p>Each team creates a complete workflow package for ONE complex process:</p>
-<ul>
-<li>📋 <strong>Step-by-step protocol</strong> (minimum 8 steps)</li>
-<li>🛠️ <strong>Tool requirements list</strong> (with alternatives)</li>
-<li>⚠️ <strong>Troubleshooting guide</strong> (minimum 3 common problems)</li>
-<li>✅ <strong>Quality checklist</strong> (how to verify success)</li>
-<li>💡 <strong>Pro tips</strong> (shortcuts and optimizations)</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="battle-royale-contd" class="slide level2 center">
-<h2>⚔️ Battle Royale (cont’d)</h2>
-<div class="callout callout-important no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Important</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Phase 2: The Challenge Round</strong> (15 minutes)</p>
-<ul>
-<li>Teams SWAP documentation packages</li>
-<li>Attempt to follow another team’s instructions</li>
-<li>Document where instructions fail or succeed</li>
-</ul>
-<p><strong>Phase 3: The Judging</strong> (10 minutes)</p>
-<ul>
-<li>Teams present their attempts using other teams’ instructions</li>
-<li>Vote for: Most Clear, Most Complete, Most Professional</li>
-<li><strong>Winners get bragging rights and prizes!</strong> 🏆</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="documentation-competition-scorecard" class="slide level2 center">
-<h2>📊 Documentation Competition Scorecard</h2>
-<p><strong>Judge each team’s package on:</strong></p>
-<table>
-<thead>
-<tr class="header">
-<th>Criteria</th>
-<th>Team A</th>
-<th>Team B</th>
-<th>Team C</th>
-<th>Team D</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Clarity</strong> (Can anyone follow it?)</td>
-<td>/10</td>
-<td>/10</td>
-<td>/10</td>
-<td>/10</td>
-</tr>
-<tr class="even">
-<td><strong>Completeness</strong> (All steps included?)</td>
-<td>/10</td>
-<td>/10</td>
-<td>/10</td>
-<td>/10</td>
-</tr>
-<tr class="odd">
-<td><strong>Troubleshooting</strong> (Problems anticipated?)</td>
-<td>/10</td>
-<td>/10</td>
-<td>/10</td>
-<td>/10</td>
-</tr>
-<tr class="even">
-<td><strong>Professional Quality</strong> (Ready for work?)</td>
-<td>/10</td>
-<td>/10</td>
-<td>/10</td>
-<td>/10</td>
-</tr>
-<tr class="odd">
-<td><strong>Usability</strong> (Actually works?)</td>
-<td>/10</td>
-<td>/10</td>
-<td>/10</td>
-<td>/10</td>
-</tr>
-<tr class="even">
-<td><strong>Total</strong></td>
-<td>/50</td>
-<td>/50</td>
-<td>/50</td>
-<td>/50</td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Live Judging</strong></p>
-</div>
-<div class="callout-content">
-<p>Use your phones to score in real-time! Results displayed on screen!</p>
-</div>
-</div>
-</div>
-<p><strong>🏆 Prize Categories:</strong></p>
-<ul>
-<li>🥇 <strong>Overall Champion</strong>: Best total score</li>
-<li>🎯 <strong>Clarity King/Queen</strong>: Easiest to follow</li>
-<li>🔧 <strong>Troubleshooting Master</strong>: Best problem-solving</li>
-<li>💎 <strong>Professional Polish</strong>: Most work-ready</li>
-</ul>
-</section>
-<section id="workflow-documentation-hall-of-fame" class="slide level2 center">
-<h2>🌟 Workflow Documentation Hall of Fame</h2>
-<p><strong>📸 Document the winning strategies!</strong></p>
-</section>
-<section id="todays-champions" class="slide level2 callout-success center" data-icon="false">
-<h2>Today’s Champions</h2>
-<p><strong>Most Clear Documentation</strong>: ________________</p>
-<p><strong>Key success factor</strong>: ________________</p>
-<p><strong>Most Complete Package</strong>: ________________</p>
-<p><strong>Key success factor</strong>: ________________</p>
-<p><strong>Best Troubleshooting</strong>: ________________</p>
-<p><strong>Key success factor</strong>: ________________</p>
-<p><strong>Most Professional</strong>: ________________</p>
-<p><strong>Key success factor</strong>: ________________</p>
-<p><strong>Class Insights</strong>: What made the difference between good and great documentation?</p>
-</section>
-<p><strong>📝 These insights go directly into your A4 Reproducibility Capsule!</strong></p>
-<section class="slide level2 center">
-
-</section></section>
-<section>
-<section id="the-learning-victory-lap" class="title-slide slide level1 center" data-background-color="#3498DB">
-<h1>The Learning Victory Lap</h1>
-
-</section>
-<section id="what-you-conquered-today" class="slide level2 center">
-<h2>🎉 What You Conquered Today</h2>
-</section>
-<section id="your-new-superpowers" class="slide level2 callout-success center" data-icon="false">
-<h2>Your New Superpowers</h2>
-<p><strong>💪 Documentation Mastery</strong>: You can now create instructions that actually work</p>
-<p><strong>🤖 Automation Wisdom</strong>: You understand the ethics and limits of AI assistance</p>
-<p><strong>🎯 Mentor Maximization</strong>: You know how to get real value from professional conversations</p>
-<p><strong>⚔️ Workflow Warfare</strong>: You’ve battle-tested your methods against peer scrutiny</p>
-<p><strong>📈 Professional Growth</strong>: You’ve leveled up your research reproducibility game</p>
-</section>
-<p><strong>Most importantly</strong>: You’ve transformed from “it works on my computer” to “anyone can reproduce this work”</p>
-<section id="mission-for-this-week" class="slide level2 center">
-<h2>🚀 Mission for This Week</h2>
-<div class="callout callout-important no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Week 8 Victory Checklist</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Level 1: Documentation Survival</strong> ✅</p>
-<ol type="1">
-<li><strong>Complete your mentor consultation</strong> - use your strategic questions!</li>
-<li><strong>Write killer mentor report</strong> - show how insights changed your approach</li>
-<li><strong>Document ONE workflow perfectly</strong> - use today’s battle-tested techniques</li>
-</ol>
-<p><strong>Level 2: Reproducibility Hero</strong> 🎖️</p>
-<ol start="4" type="1">
-<li><strong>Create full Reproducibility Capsule</strong> - battle-tested methods package</li>
-<li><strong>Test your documentation</strong> - have someone else actually use it</li>
-<li><strong>Prepare troubleshooting FAQ</strong> - anticipate everything that could go wrong</li>
-</ol>
-</div>
-</div>
-</div>
-</section>
-<section id="mission-for-this-week-contd" class="slide level2 center">
-<h2>🚀 Mission for This Week (cont’d)</h2>
-<div class="callout callout-important no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Important</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Level 3: Workflow Warrior</strong> 🥷</p>
-<ol start="7" type="1">
-<li><strong>Build automation tools</strong> - create templates and shortcuts for future you</li>
-<li><strong>Mentor follow-up excellence</strong> - professional follow-up that builds relationships</li>
-<li><strong>Help a classmate debug</strong> - spread the reproducibility love</li>
-</ol>
-<p><strong>Accountability moment</strong>: Choose your level out loud! 📣</p>
-</div>
-</div>
-</div>
-</section>
-<section id="exit-challenge-the-reproducibility-pledge" class="slide level2 center">
-<h2>🎊 Exit Challenge: The Reproducibility Pledge</h2>
-<div class="callout callout-warning no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Take the Pledge</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Stand up and repeat after me:</strong></p>
-<p><em>“I solemnly swear to document my methods so clearly that my future self will thank me, my peers can build on my work, and my professional reputation will be bulletproof.”</em></p>
-<p><em>“I will automate wisely, document thoroughly, and always remember that reproducibility is not optional - it’s professional.”</em></p>
-<p><em>“I will maximize mentor opportunities, follow up professionally, and treat every consultation as a career investment.”</em></p>
-<p><strong>Now shake hands with someone and promise to hold each other accountable this week!</strong> 🤝</p>
-</div>
-</div>
-</div>
-<p><strong>🎯 Next Week Preview</strong>: Storytelling showdown and figure clinic - where your polished methods meet killer presentation skills!</p>
-</section>
-<section class="slide level2 center">
-
-<p><em>“Documentation today, professional credibility forever!”</em> ⭐</p>
+<p>Messy is acceptable. Opaque is not.</p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
@@ -1169,7 +557,7 @@
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'zoom',
+        transition: 'slide',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',

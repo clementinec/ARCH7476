@@ -111,14 +111,14 @@ These support the whole course even if they are not the student's chosen primary
 
 ### Existing Course Notebooks
 
-- `notebooks/01_python_ml_basics.ipynb`
-- `notebooks/02_arch_viz_analysis.ipynb`
+- `notebooks/02_arch_viz_analysis.ipynb` — the pathway starter: A/B pilot analysis, error bars, and object-card figures
+- `notebooks/01_python_ml_basics.ipynb` — optional extension only: modeling concepts beyond the course scope, never assessed
 
 Recommended use:
 
-- use the second notebook first if you are new to Python
-- use the first notebook if you want a broader introduction to modeling concepts
-- adapt them rather than starting from a blank notebook
+- start with `02_arch_viz_analysis` — it aims directly at the A3/A4 deliverables
+- open `01_python_ml_basics` only if you want optional depth in modeling; nothing in it is required or graded
+- adapt the notebooks rather than starting from a blank file — but starting from a blank file is allowed if your question needs it
 
 ## Example Bank
 

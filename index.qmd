@@ -8,7 +8,7 @@ format:
 
 ## Course Overview
 
-**ARCH7476** is a mixed-cohort course for architecture students who need a clearer way to move from intuition to evidence. The course now starts by making the tool landscape explicit, then asks each student to choose one primary pathway for the semester:
+**ARCH7476** is a mixed-cohort course for architecture students who need a clearer way to move from intuition to evidence. Thesis and current-studio decisions are explicitly welcome as the semester project — the course is designed to run alongside them. The course starts by making the tool landscape explicit, then asks each student to choose one primary pathway for the semester:
 
 - **Spreadsheet** for transparent low-code comparison, charting, and decision matrices
 - **GIS** for spatial evidence, map-based reasoning, and geospatial workflows
@@ -149,4 +149,4 @@ See [Resources](resources.qmd) for the setup ladder and tool chooser.
 
 ## Course Position
 
-This course is not trying to turn every architecture student into a software specialist. It is trying to make tool choice, evidence quality, and decision logic explicit enough that students can justify design moves with more than instinct.
+This course is not trying to turn every architecture student into a software specialist. It is trying to make tool choice, evidence quality, and decision logic explicit enough that a student's design reasoning becomes visible and testable. Instinct is not the enemy here; unexamined instinct is.

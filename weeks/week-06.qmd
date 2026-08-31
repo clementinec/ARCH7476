@@ -53,6 +53,7 @@ If this is your next studio decision, which evidence sources would actually chan
 - interviews or surveys
 - simulations
 - maps and spatial layers
+- your own design variants and tests
 
 Not every category belongs in every project.
 
@@ -76,6 +77,7 @@ Ask:
 | precedent image set | medium | easy | low-medium | framing |
 | planning dataset | high | medium | high | site constraints |
 | one-off online article | low | easy | low | not enough on its own |
+| own variant study | high | you produce it | depends on stated criteria | direct comparison |
 
 ---
 

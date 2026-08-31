@@ -15,6 +15,8 @@ The course is organized around **four major assignments** that move from reflect
 3. prototype a method
 4. deliver a studio-facing evidence package
 
+The four assignments build on **one decision**: A2 plans the question A1 chose, A3 pilots the workflow A2 scoped, and A4 matures the A3 artifact into a decision-ready package. You never start over.
+
 ## Assignment Timeline
 
 | Assignment | Due Week | Weight | Main question |
@@ -43,6 +45,12 @@ All students complete the same assignments. What changes by level is the expecte
 | Undergraduate | Newer to design research and tool workflows | Clear scope, honest use of simple methods, visible scaffolding |
 | MArch | Closer to practice and studio decision-making | Stronger stakeholder fit, tighter argument, more independent judgment |
 | PhD | Higher research maturity, sometimes stronger coding/statistics | More rigorous uncertainty treatment, stronger reproducibility, deeper method critique |
+
+::: {.callout-note}
+## Tiers Are Floors, Not Ceilings
+
+The cohort tiers describe minimum expectations, not limits. Any student may opt into a higher tier's depth — stronger uncertainty treatment, more reproducible structure — without grade risk. "Tool overreach" means choosing a tool the question does not need. It never means depth within a tool the question does need.
+:::
 
 ## Pathway Logic
 

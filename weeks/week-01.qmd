@@ -120,6 +120,7 @@ In small groups, sort example inputs into:
 - standard
 - simulation
 - measurement
+- option study (a variant you made in order to compare)
 - assumption
 
 Then argue about which ones are strong enough to change a design decision.

@@ -7,3 +7,5 @@ scipy
 wordcloud
 ipykernel
 jupyterlab
+# GIS pathway: install geopandas via conda (see the Setup Ladder in resources.qmd)
+

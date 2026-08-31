@@ -27,14 +27,19 @@ def simulate_building_performance(n: int = 200, random_state: int = 42) -> pd.Da
         default=1.0,
     )
     climate_coolmult = np.where(climate == "subtropical", 1.0, 0.85)
-    cooling_kwh_m2 = 80 + 220 * solar_gain * orient_factor * climate_coolmult + rng.normal(0, 10, n)
-    heating_kwh_m2 = np.clip(40 + (3.2 - glazing_u) * 22 + rng.normal(0, 5, n), 0, None)
-    eui = cooling_kwh_m2 + heating_kwh_m2 + rng.normal(0, 8, n)
-    daylit_area = np.clip(0.3 + 0.9 * wwr - 0.35 * shading_depth_m + rng.normal(0, 0.05, n), 0, 1)
-    glare_probability = np.clip(0.55 * wwr - 0.3 * shading_depth_m + rng.normal(0, 0.05, n) + (orientation == "W") * 0.05, 0, 1)
+    cooling_kwh_m2 = 80 + 220 * solar_gain * orient_factor * climate_coolmult + rng.normal(0, 18, n)
+    # heating scales with envelope loss (worse glazing = higher U = more heating)
+    # and is near zero in subtropical Hong Kong
+    climate_heatmult = np.where(climate == "subtropical", 0.15, 1.0)
+    heating_kwh_m2 = np.clip((glazing_u - 1.0) * 14 * climate_heatmult + rng.normal(0, 3, n), 0, None)
+    # non-HVAC loads: lighting, equipment, fans, DHW
+    other_loads_kwh_m2 = rng.uniform(35, 55, n)
+    eui = cooling_kwh_m2 + heating_kwh_m2 + other_loads_kwh_m2 + rng.normal(0, 5, n)
+    daylit_area = np.clip(0.3 + 0.9 * wwr - 0.35 * shading_depth_m + rng.normal(0, 0.08, n), 0, 1)
+    glare_probability = np.clip(0.55 * wwr - 0.3 * shading_depth_m + rng.normal(0, 0.08, n) + (orientation == "W") * 0.05, 0, 1)
     occupancy_density = rng.uniform(10, 45, n)
     noise_db = np.clip(35 + 0.4 * occupancy_density + rng.normal(0, 3, n), 30, 80)
-    satisfaction = np.clip(4.7 - 0.008 * eui + 0.6 * daylit_area - 0.7 * glare_probability + rng.normal(0, 0.2, n), 1.5, 4.9)
+    satisfaction = np.clip(4.7 - 0.008 * eui + 0.6 * daylit_area - 0.7 * glare_probability + rng.normal(0, 0.35, n), 1.5, 4.9)
 
     df = pd.DataFrame(
         {
@@ -61,8 +66,11 @@ def simulate_pilot_observations(n: int = 120, random_state: int = 7) -> pd.DataF
     t = pd.date_range("2025-03-01 09:00", periods=n, freq="10min")
     cond = np.where(np.arange(n) % 2 == 0, "A", "B")
     base_occ = 20 + 8 * np.sin(np.linspace(0, 3.5 * np.pi, n))
-    occupancy = np.clip(base_occ + (cond == "B") * 3 + rng.normal(0, 2.5, n), 0, None).astype(int)
-    dwell_mean = np.clip(6 + (cond == "B") * 1.2 + rng.normal(0, 1.0, n), 1, None)
+    # condition effects kept modest on purpose: the pilot should invite
+    # discussion of uncertainty, not deliver certainty (one metric may reach
+    # significance, the other should not)
+    occupancy = np.clip(base_occ + (cond == "B") * 1.5 + rng.normal(0, 3.0, n), 0, None).astype(int)
+    dwell_mean = np.clip(6 + (cond == "B") * 0.6 + rng.normal(0, 1.2, n), 1, None)
     dwell_std = np.clip(1.2 + rng.normal(0, 0.3, n), 0.2, None)
     temp_c = 23 + 2 * np.sin(np.linspace(0, 2 * np.pi, n)) + rng.normal(0, 0.5, n)
     humidity = np.clip(55 + 5 * np.cos(np.linspace(0, 2.2 * np.pi, n)) + rng.normal(0, 2, n), 35, 85)

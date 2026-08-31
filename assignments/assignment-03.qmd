@@ -6,9 +6,10 @@ format:
     toc: true
 ---
 
-**Due:** End of Week 8  
-**Weight:** 25% of final grade  
-**Length:** 4-6 pages + pilot artifact  
+**Due:** End of Week 8\
+**Weight:** 25% of final grade\
+**Length:** 4-6 pages + pilot artifact\
+**Expected effort:** roughly 12-20 hours outside class, pathway-dependent\
 **Format:** PDF submission plus working files or exported artifact
 
 ---
@@ -40,6 +41,8 @@ Define:
 - what counts as success for the pilot
 - what is intentionally out of scope
 
+Your pilot's dataset may be your own design alternatives — two or three variants scored, simulated, or walked through under identical conditions. Generated design-variant sweeps (for example, parametric model output) are admissible inputs; the analysis remains what is assessed.
+
 ## Part 2: Workflow Description (about 1.5-2 pages)
 
 Describe the workflow step by step.
@@ -51,6 +54,8 @@ Include:
 - core analysis steps
 - the final output the workflow produces
 - where judgment enters the process
+
+Where feasible, include at least one real source — `DATA.GOV.HK`, department datasets, OpenStreetMap, or your own site observations. Pilots that run only on the provided synthetic data should say why.
 
 Examples by pathway:
 
@@ -93,6 +98,7 @@ State clearly:
 - what assumptions the workflow depends on
 - which inputs are incomplete or low confidence
 - what errors or ambiguities appeared
+- what was missing, malformed, or surprising in the data itself, and how you handled it
 - how those issues affect the strength of the output
 
 ## Part 5: Prototype Artifact
@@ -132,12 +138,14 @@ The artifact does not need to be polished. It needs to be interpretable.
 - Does the prototype form a real end-to-end workflow?
 - Are inputs, steps, and outputs clearly connected?
 - Is the pathway being used appropriately?
+- Are the analysis steps valid for the structure of the data (independence, unit of analysis, sample size) — or are violations explicitly identified?
 
 ## Utility of the Pilot (25%)
 
 - Does the output help answer the decision question?
 - Is the prototype informative even if incomplete?
 - Are success and failure interpreted thoughtfully?
+- If the pilot compares the student's own alternatives, were the comparison conditions held constant?
 
 ## Transparency About Limits (25%)
 

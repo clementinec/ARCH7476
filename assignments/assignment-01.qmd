@@ -6,9 +6,10 @@ format:
     toc: true
 ---
 
-**Due:** End of Week 2  
-**Weight:** 15% of final grade  
-**Length:** 3-4 pages + 1 visual audit sheet  
+**Due:** End of Week 2\
+**Weight:** 15% of final grade\
+**Length:** 3-4 pages + 1 visual audit sheet\
+**Expected effort:** roughly 6-9 hours outside class\
 **Format:** PDF submission via course portal
 
 ---
@@ -48,6 +49,8 @@ Use that material as the starting draft for the submission rather than beginning
 
 Choose **one decision you already made** in studio, research, or practice. It should be specific enough that someone could understand what alternatives existed.
 
+Decisions from your current thesis or studio project are explicitly welcome — the course is designed to run alongside them, and the strongest A4 packages usually feed a live project.
+
 Address:
 
 - what the design decision was
@@ -72,7 +75,7 @@ For each input, explain:
 
 - what it was
 - where it came from
-- whether it was measured, observed, simulated, cited, assumed, or inferred
+- whether it was measured, observed, simulated, cited, assumed, or inferred — or tested by making (a variant, sketch series, or mockup you produced in order to find out)
 - how strongly it really supported the final move
 
 Your audit should identify:

@@ -6,9 +6,10 @@ format:
     toc: true
 ---
 
-**Due:** End of Week 6  
-**Weight:** 20% of final grade  
-**Length:** 4-5 pages + evidence/pathway matrix  
+**Due:** End of Week 6\
+**Weight:** 20% of final grade\
+**Length:** 4-5 pages + evidence/pathway matrix\
+**Expected effort:** roughly 8-12 hours outside class\
 **Format:** PDF submission via course portal
 
 ---
@@ -58,6 +59,7 @@ Possible categories:
 - surveys or interviews
 - simulation outputs
 - spatial layers and maps
+- your own design variants and option studies
 
 For each category, explain:
 
@@ -97,6 +99,7 @@ Define:
 - expected outputs
 - what a minimal successful pilot would look like
 - what may fail or slow you down
+- one note confirming your pathway "hello world" has already run — a sample notebook rerun, a QGIS layer loaded, or a workbook structured; nobody should enter Week 7 never having opened their tool
 
 ## Part 5: Evidence and Pathway Matrix
 

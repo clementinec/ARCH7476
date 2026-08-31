@@ -6,9 +6,10 @@ format:
     toc: true
 ---
 
-**Due:** End of Week 12  
-**Weight:** 40% of final grade  
-**Format:** Multi-part package plus presentation materials  
+**Due:** End of Week 12\
+**Weight:** 40% of final grade\
+**Expected effort:** roughly 20-30 hours outside class across weeks 9-12\
+**Format:** Multi-part package plus presentation materials\
 **Submission:** PDF + pathway artifact + visuals
 
 ---
@@ -18,6 +19,11 @@ format:
 `A4` is the final synthesis of the semester. You will take the question, evidence sources, and prototype workflow developed earlier and turn them into a **studio evidence package** that someone could realistically use in the next design project.
 
 This is not just a report. It is a decision-support package.
+
+Two clarifications up front:
+
+- the pathway artifact is your A3 artifact, matured — not a new build
+- the Object Fair is a dissemination event: only the submitted package is graded, not the live presentation
 
 ## Learning Objectives
 
@@ -147,6 +153,7 @@ Explain:
 ## Communication and Visual Clarity (25%)
 
 - Are the core figures, maps, tables, or notebook outputs readable?
+- Do key figures show ranges, bands, or intervals where the method supports them, rather than bare point values?
 - Does the evidence board / object card communicate quickly?
 - Is the package structured for an audience that needs to act?
 

@@ -15,6 +15,8 @@ The semester now has a clear sequence:
 3. prototype a method
 4. turn evidence into a studio-facing decision brief
 
+In-class drills are practice, not graded — but they are where each assignment's material gets built. Missing a drill means doing the same work alone later.
+
 ## At a Glance
 
 | Week | Focus | In-class emphasis | Assignment alignment |
@@ -23,13 +25,13 @@ The semester now has a clear sequence:
 | 2 | Audit the Evidence You Already Use | prior decisions, evidence types, next studio question | **A1 due** |
 | 3 | Spreadsheet as Baseline Workflow | tables, charts, comparison logic, transparent reasoning | pathway survey |
 | 4 | GIS Choices for Architects | QGIS vs ArcGIS vs geopandas, Jupyter setup | pathway survey |
-| 5 | BIM, BEM, and Building Performance | model types, translation loss, simulation as evidence | pathway commitment |
+| 5 | BIM, BEM, and Building Performance | model types, translation loss, simulation as evidence | pathway shortlist |
 | 6 | Evidence and Pathway Mapping | source quality, scoping, tool choice, work plan | **A2 due** |
-| 7 | Method Prototype Studio | minimal viable workflow, data inputs, outputs, QC | A3 draft |
-| 8 | Reproducibility and Mentor Prep | documentation challenge, automation ethics, mentor strategy | **A3 due** |
+| 7 | Method Prototype Studio | minimal viable workflow, documentation swap, mentor prep | A3 draft |
+| 8 | Pilot, Compare, and Quantify Uncertainty | pilot results, uncertainty language, peer critique | **A3 due** |
 | 9 | Storytelling, Figures, and Decisions | narrative structure, figure rescue, recommendation framing | A4 analysis |
-| 10 | Draft Defense | presentations, live feedback, improvement strategy | A4 draft |
-| 11 | Final Polish | package refinement, rehearsal, Object Fair prep | A4 near-final |
+| 10 | Draft Review and Workflow Documentation | evidence board build, timed draft reviews, revision plan | A4 draft |
+| 11 | Evidence Package Workshop | peer review, package refinement, Object Fair prep | A4 near-final |
 | 12 | Object Fair | presentation, critique, next-studio handoff | **A4 due** |
 
 ## Week 1: Why Evidence Needs a Workflow
@@ -127,7 +129,7 @@ Teach BIM/BEM and simulation as shared literacy, especially what gets lost when 
 - pathway selection check-in
 
 ### Out of Class
-- lock your primary pathway
+- tentatively settle your primary pathway --- the lock comes with A2 in week 6
 - collect candidate evidence sources and method ideas for A2
 
 ### Tools Introduced
@@ -152,33 +154,33 @@ Translate the studio question into a realistic evidence plan and commit to one p
 ## Week 7: Method Prototype Studio
 
 ### Focus
-Build the smallest workflow that can answer a real piece of the question.
+Build the smallest workflow that can answer a real piece of the question, then prove it is documented well enough for someone else to run.
 
 ### In Class
 - minimal viable method design
+- the 10-minute method challenge and documentation swap
 - pathway breakout support
-- documenting assumptions before running the workflow
-- quality checks and version discipline
+- mentor consultation prep and question development
 
 ### Out of Class
 - run the first full prototype
 - capture screenshots, exports, and notes
 
-## Week 8: Reproducibility and Mentor Prep
+## Week 8: Pilot, Compare, and Quantify Uncertainty
 
 ### Focus
-Stress-test the method by forcing it to be documented, explained, and critiqued by others before it becomes final-course evidence.
+Turn the prototype into defensible pilot evidence: show what it produced, name the uncertainty, and claim only what the pilot supports.
 
 ### In Class
-- documentation speed trials
-- reproducibility swap challenge
-- automation ethics and data provenance
-- mentor consultation strategy and question development
+- pilot results review: what the workflow actually produced
+- sources of uncertainty and where they enter the method
+- better language for results: "the pilot suggests", never "the data proves"
+- peer critique against the A3 submission standard
 
 ### Out of Class
 - **submit A3**
-- revise your workflow notes based on what broke during the swap test
-- prepare mentor questions and final-package priorities
+- revise your workflow notes based on what the critique exposed
+- carry the pilot's limits forward into the A4 plan
 
 ## Week 9: Storytelling, Figures, and Decisions
 
@@ -195,37 +197,37 @@ Turn analysis into a convincing story, a clear figure set, and a recommendation 
 - draft A4 recommendation logic
 - refine charts, maps, or notebook outputs
 
-## Week 10: Draft Defense
+## Week 10: Draft Review and Workflow Documentation
 
 ### Focus
-Pressure-test the near-final package in live presentation conditions.
+Make the workflow visible and pressure-test the near-final package: figures with clear jobs, an evidence board that reads in seconds, and a structured draft review.
 
 ### In Class
-- timed presentations
-- live scoring and structured critique
+- every visual gets a job: compare, locate, or expose uncertainty
+- evidence board / object card build
+- timed draft reviews in small groups
 - feedback triage and revision planning
-- object fair readiness check
 
 ### Out of Class
 - assemble A4 draft package
 - prepare review materials for Week 11
 
-## Week 11: Final Polish
+## Week 11: Studio Evidence Package Workshop
 
 ### Focus
-Polish the package, rehearse delivery, and close the gap between good work and public-facing work.
+Review the full package against its audience, refine what survives critique, and set final revision priorities.
 
 ### In Class
-- professional polish lab
-- figure and message clarity clinic
-- networking and Q&A rehearsal
-- final submission assembly
+- peer review against the four A4 review questions
+- audience-fit and method-clarity checks
+- pathway troubleshooting
+- final revision priorities and submission assembly
 
 ### Out of Class
 - finalize A4
 - prepare final presentation materials
 
-## Week 12: Object Fair
+## Week 12: Object Fair and Transfer Forward
 
 ### Focus
 Present the work publicly, receive critique, and convert the semester output into something reusable for the next project.

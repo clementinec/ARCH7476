@@ -39,6 +39,7 @@ A pilot is useful if it shows:
 - noisy observations
 - model assumptions
 - small samples
+- repeated readings that are not independent — are 120 readings from one room 120 observations, or one?
 - inconsistent definitions
 
 ---

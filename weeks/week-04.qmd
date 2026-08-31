@@ -130,7 +130,7 @@ In a GIS notebook, students should be able to identify:
 import geopandas as gpd
 
 sites = gpd.read_file("candidate_sites.geojson")
-sites = sites.to_crs(3857)
+sites = sites.to_crs(2326)   # Hong Kong 1980 Grid — metres mean metres
 sites["buffer_400m"] = sites.buffer(400)
 sites.plot(column="score", legend=True)
 ```
@@ -142,6 +142,18 @@ The logic matters more than the syntax:
 - project
 - operate
 - visualize
+
+---
+
+## Why Not Web Mercator?
+
+Why `2326` (Hong Kong 1980 Grid) and not Web Mercator (`3857`):
+
+- at Hong Kong's latitude, distances in `3857` are inflated by roughly 8%
+- a "400 m" buffer in `3857` lands around 370 m on the ground
+- always buffer in a projected **local** CRS
+
+This is exactly the kind of silent error the "inspect" step exists to catch.
 
 ---
 

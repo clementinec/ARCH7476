@@ -50,7 +50,7 @@ What kinds of evidence would support a claim about environmental performance her
 
 ---
 
-## 🏗️ What Are BIM and BEM?
+## What Are BIM and BEM?
 
 **BIM**
 
@@ -207,7 +207,7 @@ When BIM becomes BEM, problems usually come from four categories:
 
 ---
 
-## 🎯 Translation Detective Challenge
+## Translation Detective Challenge
 
 **Scenario:** You exported a 5-story office building to `gbXML` and the first model run shows energy use at **3x** what you expected.
 
@@ -330,7 +330,7 @@ Both are bridges. Neither is a perfect bridge.
 
 ---
 
-## 🎮 Divergence Detective
+## Divergence Detective
 
 **Scenario:** Actual energy use is 30% higher than predicted because BIM and BEM drifted apart.
 
@@ -342,6 +342,18 @@ Investigate in groups:
 - what operation schedules may differ from assumptions?
 
 Come back with your top three suspects.
+
+---
+
+## Paired-Run Exercise: Your Variants, Same Model
+
+Run the same energy model twice — massing A, then massing B — with everything else held identical.
+
+- the absolute numbers inherit every translation error you just diagnosed
+- the **difference** between the two runs is far more robust
+- comparative simulation of your own alternatives is the strongest use of BEM at design stage
+
+One rule: state the comparison criteria **before** you look at the results.
 
 ---
 

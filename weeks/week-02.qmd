@@ -32,6 +32,7 @@ format:
 - measurement
 - published research
 - benchmarks and case comparisons
+- your own option studies and tests (variant A vs B against the same criteria)
 
 ---
 
@@ -56,12 +57,15 @@ Usually stronger:
 - measured performance
 - well-matched comparative evidence
 - relevant standards and verified constraints
+- a documented comparison of your own design variants, if the criteria were stated before the result
 
 Usually weaker:
 
 - isolated precedent images
 - vague “best practice”
 - unsupported confidence from the designer
+
+The last rung of each list is the same material — the designer’s own judgment. What moves it up the ladder: criteria stated first, identical comparison conditions, documented before the outcome.
 
 ---
 
@@ -85,6 +89,7 @@ Do this instead:
 | precedent image | visual precedent | low-medium | form and atmosphere, not performance |
 | simulation screenshot | model output | medium | comparison only if assumptions were sound |
 | code requirement | standard | high within its scope | compliance, not overall quality |
+| option study (two massing variants) | self-generated comparison | medium if criteria were stated beforehand | which alternative the scheme could tolerate |
 
 ---
 
