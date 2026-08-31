@@ -1,6 +1,0 @@
-variant,wwr,shading_depth_m,fin_spacing_m,view_score,daylight_proxy,solar_gain_proxy,passes_threshold,decision_note
-Baseline,0.72,0.00,0.00,0.74,66.2,72.0,false,too much solar gain
-Deep fins,0.62,0.90,1.20,0.58,50.5,31.3,true,candidate for design development
-High greenery,0.58,0.30,0.80,0.52,51.5,48.4,false,view score below threshold
-Hybrid,0.64,0.60,1.00,0.61,54.0,42.9,true,candidate for design development
-Compact opening,0.48,0.40,1.40,0.49,41.6,37.4,false,view score and daylight are weak

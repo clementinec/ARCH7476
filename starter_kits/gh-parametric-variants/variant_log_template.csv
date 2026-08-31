@@ -1,5 +1,0 @@
-variant_id,parameter_name,parameter_value,metric_name,metric_value,unit,pass_threshold,decision_note
-V01,shading_depth,0.3,solar_exposure_proxy,,,"<= target",""
-V02,shading_depth,0.6,solar_exposure_proxy,,,"<= target",""
-V03,shading_depth,0.9,solar_exposure_proxy,,,"<= target",""
-
