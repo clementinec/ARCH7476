@@ -10,8 +10,8 @@ Run from starter_kits/preset-simulation-proxy:
     python run_energyplus_two_week_case.py
 
 If EnergyPlus is not on PATH, set ENERGYPLUS_EXE:
-    macOS:   export ENERGYPLUS_EXE="/Applications/EnergyPlus-26-1-0/energyplus"
-    Windows: $env:ENERGYPLUS_EXE="C:\\EnergyPlusV26-1-0\\energyplus.exe"
+    macOS:   export ENERGYPLUS_EXE="/Applications/EnergyPlus-25-1-0/energyplus"
+    Windows: $env:ENERGYPLUS_EXE="C:\\EnergyPlusV25-1-0\\energyplus.exe"
 """
 
 from __future__ import annotations
@@ -142,10 +142,10 @@ https://github.com/NREL/EnergyPlus/releases, then either:
 2. set ENERGYPLUS_EXE to the executable path.
 
 macOS example:
-    export ENERGYPLUS_EXE="/Applications/EnergyPlus-26-1-0/energyplus"
+    export ENERGYPLUS_EXE="/Applications/EnergyPlus-25-1-0/energyplus"
 
 Windows PowerShell example:
-    $env:ENERGYPLUS_EXE="C:\\EnergyPlusV26-1-0\\energyplus.exe"
+    $env:ENERGYPLUS_EXE="C:\\EnergyPlusV25-1-0\\energyplus.exe"
 """
     raise SystemExit(msg)
 
