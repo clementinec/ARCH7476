@@ -1,6 +1,0 @@
-variant,pass_count,review_count,fail_count,total_criteria,score_pct,status,rank,decision_note,gh_action
-Baseline,2,0,3,5,35,revise,5,Too many core thresholds fail; use as baseline only,color red or cull from candidate set
-Deep fins,4,0,1,5,85,candidate,2,Strong performance but check facade depth before development,color green and keep with depth warning
-High greenery,2,2,1,5,55,review,4,Planting is strong but view and solar uncertainty need revision,color amber and revise view/glare logic
-Hybrid,5,0,0,5,100,candidate,1,Best balanced candidate under current thresholds,color green and keep
-Compact opening,3,0,2,5,65,revise,3,Heat and glare improve but view and planting claims collapse,color red unless brief accepts reduced view/greenery

@@ -1,6 +1,0 @@
-scenario,wwr,shading_depth_m,operable_area_ratio,internal_gain_w_m2,outdoor_temp_c,solar_exposure_w_m2,ventilation_ach,notes
-Baseline,0.72,0.00,0.04,11,31,540,0.6,no shading; small operable area
-Deep fins,0.62,0.90,0.04,11,31,540,0.6,deep horizontal shading
-High greenery,0.58,0.30,0.08,11,31,500,0.9,green screen and more operable area
-Hybrid,0.64,0.60,0.08,11,31,520,0.9,moderate fins plus ventilation
-Low glass,0.44,0.40,0.06,11,31,540,0.7,smaller glazing ratio
