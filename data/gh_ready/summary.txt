@@ -1,0 +1,10 @@
+Source: data/candidate_sites.geojson
+Features: 3
+CRS: EPSG:2326
+Geometry types: ['Polygon']
+Bounding box:
+  min x: 837311.32  min y: 818338.71
+  max x: 841638.83  max y: 821716.66
+  width:  4327.51
+  height: 3377.95
+Columns: ['name', 'score', 'transit_access', 'flood_risk']

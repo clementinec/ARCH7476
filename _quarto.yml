@@ -14,6 +14,7 @@ project:
     - weeks/week-02.qmd
     - weeks/week-03.qmd
     - weeks/week-04.qmd
+    - weeks/week-04-grasshopper.qmd
     - weeks/week-05.qmd
     - weeks/week-06.qmd
     - weeks/week-07.qmd
@@ -63,6 +64,8 @@ website:
             href: weeks/week-03.qmd
           - text: "W4: GIS Choices for Architects"
             href: weeks/week-04.qmd
+          - text: "W4 Alt: GIS in Grasshopper"
+            href: weeks/week-04-grasshopper.qmd
           - text: "W5: BIM, BEM, and Building Performance"
             href: weeks/week-05.qmd
           - text: "W6: Evidence and Pathway Mapping"

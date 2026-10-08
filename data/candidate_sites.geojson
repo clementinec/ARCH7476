@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Kai Tak", "score": 78, "transit_access": "high", "flood_risk": "medium" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [114.2130, 22.3305], [114.2180, 22.3305],
+          [114.2180, 22.3345], [114.2130, 22.3345],
+          [114.2130, 22.3305]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Kwun Tong Waterfront", "score": 65, "transit_access": "medium", "flood_risk": "low" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [114.2240, 22.3100], [114.2290, 22.3100],
+          [114.2290, 22.3140], [114.2240, 22.3140],
+          [114.2240, 22.3100]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Hung Hom Bay", "score": 72, "transit_access": "high", "flood_risk": "high" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [114.1870, 22.3040], [114.1920, 22.3040],
+          [114.1920, 22.3080], [114.1870, 22.3080],
+          [114.1870, 22.3040]
+        ]]
+      }
+    }
+  ]
+}

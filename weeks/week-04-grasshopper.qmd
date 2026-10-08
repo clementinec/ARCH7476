@@ -1,0 +1,338 @@
+---
+title: "Week 4 (Alt): GIS in Grasshopper"
+subtitle: "Spatial Analysis for Students Who Think in Nodes"
+format:
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1500
+    height: 900
+    center: true
+---
+
+## Why This Version Exists
+
+The `geopandas` + Colab workflow teaches the same spatial ideas.
+
+This version puts them into **Grasshopper**, where you already know how to work.
+
+Same concepts. Different interface.
+
+---
+
+## What Changes, What Stays
+
+| Concept | Colab / geopandas | Grasshopper |
+|---|---|---|
+| Load data | `gpd.read_file()` | `Read File` + `Split Text` |
+| Set CRS | `.to_crs(2326)` | handled by the converter script |
+| Buffer | `.buffer(400)` | `Offset Curve` or `Region Union` |
+| Clip | `gpd.clip()` | `Region Intersection` |
+| Spatial join | `gpd.sjoin()` | `Point In Curve` + `Dispatch` |
+| Visualize | `.plot()` | Rhino viewport + `Custom Preview` |
+
+---
+
+## The Two-Step Workflow
+
+**Step 1 — Convert** (one-time, command line)
+
+```bash
+python scripts/gis_to_grasshopper.py  data/candidate_sites.geojson  data/gh_ready/
+```
+
+This produces CSV files in metres (Hong Kong 1980 Grid).
+
+**Step 2 — Open in Grasshopper**
+
+Import the CSV → build geometry → do spatial operations → visualize.
+
+---
+
+## What the Converter Outputs
+
+| File | Contains | Use in Grasshopper |
+|---|---|---|
+| `points.csv` | centroid x, y + attributes | fastest path — `Construct Point` |
+| `polygons.csv` | vertex-level x, y per feature | full outlines — `Polyline` per id |
+| `lines.csv` | vertex-level x, y per feature | roads, paths, networks |
+| `attributes.csv` | all properties per feature | labels, filtering, coloring |
+| `summary.txt` | bounding box, CRS, feature count | sanity check |
+
+---
+
+## Step 2a: Import Points
+
+Grasshopper node chain:
+
+1. **File Path** → path to `points.csv`
+2. **Read File** → raw text
+3. **Split Text** (separator: `\n`) → one item per row
+4. **List Item** (index 0) → discard header row; use **Shift List** (shift = 1)
+5. For each row: **Split Text** (separator: `,`)
+6. **List Item** index 1 → x, index 2 → y
+7. **Construct Point** (x, y, 0)
+
+You now have a point cloud of centroids in Rhino space.
+
+---
+
+## Step 2b: Import Polygons
+
+For `polygons.csv` (columns: id, ring, x, y):
+
+1. **Read File** → **Split Text** by `\n` → skip header
+2. Parse each row: split by `,` → extract id, x, y
+3. **GHPython** component to group vertices by id:
+
+```python
+# GHPython: inputs = ids (list), xs (list), ys (list)
+# output = polylines (list of point lists)
+import rhinoscriptsyntax as rs
+import Rhino.Geometry as rg
+
+groups = {}
+for i in range(len(ids)):
+    fid = ids[i]
+    if fid not in groups:
+        groups[fid] = []
+    groups[fid].append(rg.Point3d(float(xs[i]), float(ys[i]), 0))
+
+polylines = []
+for fid in sorted(groups.keys()):
+    pts = groups[fid]
+    if len(pts) > 2:
+        pl = rg.Polyline(pts)
+        if not pl.IsClosed:
+            pl.Add(pts[0])
+        polylines.append(pl.ToPolylineCurve())
+
+a = polylines
+```
+
+Output `a` → list of closed polyline curves = your site boundaries.
+
+---
+
+## Core Operation 1: Buffer
+
+**Goal**: "What lies within 400 m of each site?"
+
+Grasshopper:
+
+1. Start from your imported polygon curves
+2. **Offset Curve** (distance = 400, plane = XY)
+3. Or for points: **Circle** (radius = 400) at each centroid
+4. **Region Union** if buffers overlap and you want a merged zone
+
+This replaces `sites.buffer(400)` from the notebook.
+
+---
+
+## Core Operation 2: Clip
+
+**Goal**: "What part of my data falls inside this boundary?"
+
+Grasshopper:
+
+1. Import the boundary polygon (e.g., a district outline)
+2. Import the features to clip
+3. **Region Intersection** (curve A = feature, curve B = boundary)
+4. Or for points: **Point In Curve** → keep only points that return `1` (inside) or `2` (coincident)
+
+This replaces `gpd.clip()`.
+
+---
+
+## Core Operation 3: Spatial Join
+
+**Goal**: "Which features overlap which zones?"
+
+Use **Point In Curve** with a GHPython helper:
+
+```python
+# GHPython: inputs = points (list), zones (list of curves), zone_names (list)
+# output = assignments (list of zone names per point)
+import Rhino.Geometry as rg
+
+assignments = []
+for pt in points:
+    assigned = "none"
+    for i, zone in enumerate(zones):
+        result = rg.Curve.Contains(zone, pt, rg.Plane.WorldXY, 0.01)
+        if result == rg.PointContainment.Inside:
+            assigned = zone_names[i]
+            break
+    assignments.append(assigned)
+
+a = assignments
+```
+
+This replaces `gpd.sjoin()`.
+
+---
+
+## Core Operation 4: Dissolve
+
+**Goal**: "Merge all features that share the same category."
+
+1. Group polygons by attribute using **GHPython** or **Create Set**
+2. Per group: **Region Union** → single merged boundary
+
+This replaces `gdf.dissolve()`.
+
+---
+
+## Visualization
+
+Grasshopper gives you the Rhino viewport for free:
+
+- **Custom Preview** with color gradients for scoring
+- **Text Tag** or **Text Tag 3D** for labeling features
+- **Gradient** component → map attribute values to colors
+- Bake final geometry to Rhino layers for export
+
+This replaces `.plot(column="score", legend=True)`.
+
+---
+
+## Quick Color-by-Attribute Recipe
+
+```python
+# GHPython: inputs = values (list of floats), min_val, max_val
+# output = colors
+import System.Drawing as sd
+
+colors = []
+for v in values:
+    t = max(0, min(1, (float(v) - min_val) / (max_val - min_val)))
+    r = int(255 * (1 - t))
+    g = int(255 * t)
+    colors.append(sd.Color.FromArgb(r, g, 80))
+
+a = colors
+```
+
+Feed `a` into **Custom Preview** → instant choropleth in the viewport.
+
+---
+
+## Complete Minimal Workflow
+
+```
+File Path → Read File → Split Text (\n) → Shift List (1)
+  → Split Text (,) → parse x, y → Construct Point
+  → Circle (r=400)             ← buffer
+  → Point In Curve (boundary)  ← clip
+  → Custom Preview (colors)    ← visualize
+```
+
+That is the Grasshopper equivalent of the 6-line `geopandas` notebook.
+
+---
+
+## When to Still Use the Converter Script
+
+The converter handles:
+
+- **CRS projection** (WGS84 → Hong Kong 1980 Grid, in metres)
+- **Format conversion** (Shapefile, GeoJSON, GeoPackage → CSV)
+- **Attribute flattening** (nested GeoJSON properties → flat columns)
+
+These are hard to do in Grasshopper. Let the script handle them once.
+
+---
+
+## Running the Converter
+
+Open Terminal (Mac) or Command Prompt (Windows):
+
+```bash
+cd /path/to/ARCH7476
+
+# default: reprojects to EPSG:2326 (Hong Kong 1980 Grid)
+python scripts/gis_to_grasshopper.py  my_data.geojson  gh_output/
+
+# override CRS if not in Hong Kong
+python scripts/gis_to_grasshopper.py  my_data.shp  gh_output/ --crs 32650
+```
+
+If you see an error about `geopandas`:
+
+```bash
+pip install geopandas
+```
+
+---
+
+## Heron Plugin (Optional Power-Up)
+
+If you want to skip the converter entirely for **OpenStreetMap** data:
+
+1. Install **Heron** from food4Rhino
+2. Use **Get OSM Building Footprints** → polygons directly in Grasshopper
+3. Use **Import SHP** → load Shapefiles without Python
+4. Use **Import Topo** → terrain mesh from online elevation data
+
+Heron handles CRS internally. Recommended if your project relies on OSM.
+
+---
+
+## Elk Plugin (Lightweight Alternative)
+
+**Elk** is simpler than Heron:
+
+1. Download `.osm` file from OpenStreetMap (Export → select area)
+2. **Location** component → set lat/lon origin
+3. **OSM Data** component → parse the `.osm` file
+4. Outputs: building outlines, roads, amenities as Grasshopper geometry
+
+Good for small areas. No Python at all.
+
+---
+
+## Which Path to Choose
+
+| Situation | Recommendation |
+|---|---|
+| I have a `.geojson` or `.shp` from DATA.GOV.HK | Converter script → CSV → Grasshopper |
+| I want OpenStreetMap buildings and roads | Heron or Elk plugin, no converter needed |
+| I need precise CRS control (distance in metres) | Converter script (handles projection) |
+| I just want a quick site context for design | Elk is fastest |
+
+---
+
+## What to Submit
+
+Same deliverables as the notebook version:
+
+- a Grasshopper screenshot showing your spatial operation
+- a Rhino viewport screenshot with labeled output
+- a short paragraph: what spatial question did you answer, and what did the result show?
+
+The method does not matter. The spatial reasoning does.
+
+---
+
+## Troubleshooting
+
+| Problem | Fix |
+|---|---|
+| Points appear at 0,0 | Check that the converter ran with `--crs 2326` |
+| Polygons are not closed | The GHPython script auto-closes; check for parse errors |
+| Buffer looks wrong scale | Confirm units are metres (EPSG:2326), not degrees |
+| CSV has odd characters | Open with encoding UTF-8; avoid Excel round-tripping |
+| Heron won't install | Requires Rhino 7+ and .NET 4.8; check food4Rhino |
+
+---
+
+## Exit Check
+
+By the end of this session, you should:
+
+- have run the converter on one dataset
+- imported the CSV into Grasshopper
+- performed at least one spatial operation (buffer, clip, or spatial join)
+- visualized the result in the Rhino viewport
