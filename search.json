@@ -232,7 +232,7 @@
     "href": "weeks/week-11.html#todays-agenda",
     "title": "Week 11: Studio Evidence Package Workshop",
     "section": "Today’s Agenda",
-    "text": "Today’s Agenda\n\npackage structure\npeer review\npathway troubleshooting\nfinal revision priorities",
+    "text": "Today’s Agenda\n\naudience-fit pressure test\nfour review questions, one at a time\ndemonstrated vs. validated: are you overselling?\npathway triage for workflows that are not landing\npackage assembly checklist\npeer feedback triage and revision plan",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -244,7 +244,7 @@
     "href": "weeks/week-11.html#a4-has-four-parts",
     "title": "Week 11: Studio Evidence Package Workshop",
     "section": "A4 Has Four Parts",
-    "text": "A4 Has Four Parts\n\nstudio decision brief\nevidence board / object card\npathway artifact\nmethod appendix\n\nEach part should reinforce the others.",
+    "text": "A4 Has Four Parts\n\nstudio decision brief\nevidence board / object card\npathway artifact\nmethod appendix\n\nEach part should reinforce the others. If one part contradicts or ignores another, the package reads as unfinished.",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -252,11 +252,59 @@
     ]
   },
   {
-    "objectID": "weeks/week-11.html#review-questions",
-    "href": "weeks/week-11.html#review-questions",
+    "objectID": "weeks/week-11.html#the-60-second-audience-test",
+    "href": "weeks/week-11.html#the-60-second-audience-test",
     "title": "Week 11: Studio Evidence Package Workshop",
-    "section": "Review Questions",
-    "text": "Review Questions\n\nis the decision context clear?\ndoes the evidence actually support the recommendation?\nis the pathway visible in the package?\nare the limits stated directly?",
+    "section": "The 60-Second Audience Test",
+    "text": "The 60-Second Audience Test\nA computational pipeline can produce a result without establishing which design response is justified.\nSwap your draft package with a partner. They read for 60 seconds, then answer:\n\nwhat decision is at stake?\nwhat does the author recommend?\nhow confident should I be?\n\nIf they cannot answer all three, the package is not ready for its audience.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W11: Studio Evidence Package Workshop"
+    ]
+  },
+  {
+    "objectID": "weeks/week-11.html#review-question-1-is-the-decision-context-clear",
+    "href": "weeks/week-11.html#review-question-1-is-the-decision-context-clear",
+    "title": "Week 11: Studio Evidence Package Workshop",
+    "section": "Review Question 1: Is the Decision Context Clear?",
+    "text": "Review Question 1: Is the Decision Context Clear?\nGood enough: a reader who has never seen your project can name the decision in one sentence after reading the brief.\nCommon failure: the brief opens with method or background instead of the decision. The reader reaches the recommendation without knowing what was being decided.\nFix: write the decision as the first sentence. Everything else follows from it.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W11: Studio Evidence Package Workshop"
+    ]
+  },
+  {
+    "objectID": "weeks/week-11.html#review-question-2-does-the-evidence-support-the-recommendation",
+    "href": "weeks/week-11.html#review-question-2-does-the-evidence-support-the-recommendation",
+    "title": "Week 11: Studio Evidence Package Workshop",
+    "section": "Review Question 2: Does the Evidence Support the Recommendation?",
+    "text": "Review Question 2: Does the Evidence Support the Recommendation?\nGood enough: each piece of evidence in the package connects to the recommendation through a stated reason, not just proximity on the page.\nCommon failure: the evidence is real, but the recommendation could be swapped for the opposite and nothing in the package would contradict it.\nFix: for each figure or data point, write one sentence: “this supports the recommendation because ________.” If nothing fills the blank, the evidence is decoration.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W11: Studio Evidence Package Workshop"
+    ]
+  },
+  {
+    "objectID": "weeks/week-11.html#review-question-3-is-the-pathway-visible",
+    "href": "weeks/week-11.html#review-question-3-is-the-pathway-visible",
+    "title": "Week 11: Studio Evidence Package Workshop",
+    "section": "Review Question 3: Is the Pathway Visible?",
+    "text": "Review Question 3: Is the Pathway Visible?\nGood enough: a reader can tell which tool produced the evidence and could, in principle, rerun the workflow.\nCommon failure: the pathway artifact exists but is disconnected from the brief. The spreadsheet, map, or notebook sits in an appendix that no one reads.\nFix: reference the artifact directly in the brief: “the comparison in Figure 2 was produced by ________.”",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W11: Studio Evidence Package Workshop"
+    ]
+  },
+  {
+    "objectID": "weeks/week-11.html#review-question-4-are-the-limits-stated-directly",
+    "href": "weeks/week-11.html#review-question-4-are-the-limits-stated-directly",
+    "title": "Week 11: Studio Evidence Package Workshop",
+    "section": "Review Question 4: Are the Limits Stated Directly?",
+    "text": "Review Question 4: Are the Limits Stated Directly?\nGood enough: the package names at least one thing the evidence does not establish and one condition under which the recommendation might change.\nCommon failure: limits appear as a disclaimer paragraph at the end that reads as boilerplate rather than genuine reflection.\nFix: embed limits next to the claims they qualify. “This comparison covers three sites; a fourth with different transit access might change the ranking.”",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -268,7 +316,7 @@
     "href": "weeks/week-11.html#what-reviewers-should-look-for",
     "title": "Week 11: Studio Evidence Package Workshop",
     "section": "What Reviewers Should Look For",
-    "text": "What Reviewers Should Look For\n\n\n\n\n\nHigh Line, New York\n\n\nSpatial/public-space questions:\n\ndoes the map or observation actually answer the claim?\n\n\n\n\n\nThe Edge, Amsterdam\n\n\nBuilding/workplace questions:\n\nis the performance claim backed by method, not branding?",
+    "text": "What Reviewers Should Look For\n\n\n\n\n\nHigh Line, New York\n\n\nSpatial/public-space questions:\n\ndoes the map or observation actually answer the claim?\ncould the same spatial data support a different recommendation?\n\n\n\n\n\nThe Edge, Amsterdam\n\n\nBuilding/workplace questions:\n\nis the performance claim backed by method, not branding?\nwould changing one assumption reverse the conclusion?",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -276,11 +324,47 @@
     ]
   },
   {
-    "objectID": "weeks/week-11.html#final-revision-priorities",
-    "href": "weeks/week-11.html#final-revision-priorities",
+    "objectID": "weeks/week-11.html#demonstrated-vs.-validated",
+    "href": "weeks/week-11.html#demonstrated-vs.-validated",
     "title": "Week 11: Studio Evidence Package Workshop",
-    "section": "Final Revision Priorities",
-    "text": "Final Revision Priorities\n\ncut anything that does not help the decision\nkeep one clear recommendation\nmake uncertainty visible\nmake the workflow traceable",
+    "section": "Demonstrated vs. Validated",
+    "text": "Demonstrated vs. Validated\nA working pipeline is not a validated claim.\nGo through your A4 and mark each claim:\n\ndemonstrated: “the workflow runs and produces this output”\nvalidated: “the output has been checked against independent evidence”\n\nMost student work is demonstrated, not validated. That is fine — but say so. Overselling a demonstration as validation is the fastest way to lose a reviewer’s trust.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W11: Studio Evidence Package Workshop"
+    ]
+  },
+  {
+    "objectID": "weeks/week-11.html#pathway-triage",
+    "href": "weeks/week-11.html#pathway-triage",
+    "title": "Week 11: Studio Evidence Package Workshop",
+    "section": "Pathway Triage",
+    "text": "Pathway Triage\nIf your workflow is not producing useful output by Week 11, you have three options:\n\n\n\n\n\n\n\n\nOption\nWhen it fits\nWhat changes\n\n\n\n\nNarrow the scope\nthe method works but the question is too broad\nreduce to one site, one comparison, one variable\n\n\nReframe the question\nthe evidence you found answers a different question than you started with\nrewrite the brief around what you actually have\n\n\nPivot the pathway\nthe tool is fighting the question\nswitch to the baseline spreadsheet pathway with what you have collected\n\n\n\nChoose one. Do not try all three.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W11: Studio Evidence Package Workshop"
+    ]
+  },
+  {
+    "objectID": "weeks/week-11.html#package-assembly-checklist",
+    "href": "weeks/week-11.html#package-assembly-checklist",
+    "title": "Week 11: Studio Evidence Package Workshop",
+    "section": "Package Assembly Checklist",
+    "text": "Package Assembly Checklist\n\n\n\n\n\n\n\n\nPart\nContains\nRough length\n\n\n\n\nDecision brief\ndecision, evidence summary, recommendation, limits\n1–2 pages\n\n\nEvidence board\nthe visual package: key figures, one dominant message, next action\n1 board or 2–3 slides\n\n\nPathway artifact\nthe spreadsheet, map, or notebook that produced the evidence\nincluded as file or appendix\n\n\nMethod appendix\ndata sources, workflow steps, assumptions, one paragraph on what you would do differently\n1 page\n\n\n\nIf any part is missing, the submission is incomplete.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W11: Studio Evidence Package Workshop"
+    ]
+  },
+  {
+    "objectID": "weeks/week-11.html#peer-feedback-triage",
+    "href": "weeks/week-11.html#peer-feedback-triage",
+    "title": "Week 11: Studio Evidence Package Workshop",
+    "section": "Peer Feedback Triage",
+    "text": "Peer Feedback Triage\nSort every piece of feedback you received today into three categories:\n\nFix before submission: the reviewer identified something the audience will misread\nFix if time allows: a real improvement, but the package works without it\nDisagree, and can say why: you considered the feedback and have a reason to keep your current approach\n\nWrite your triage as a one-page revision plan. Bring it to Week 12.",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -292,7 +376,7 @@
     "href": "weeks/week-11.html#end-of-class-goal",
     "title": "Week 11: Studio Evidence Package Workshop",
     "section": "End-of-Class Goal",
-    "text": "End-of-Class Goal\nLeave with:\n\none prioritized revision list\none reviewer note on audience fit\none reviewer note on method clarity",
+    "text": "End-of-Class Goal\nLeave with:\n\none completed 60-second audience test (partner’s written answers)\nevery claim in your A4 marked as demonstrated or validated\none written revision plan with prioritized fixes\na submission-ready package structure, even if content is still being refined",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -3712,7 +3796,7 @@
     "href": "weeks/week-08.html#todays-agenda",
     "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
     "section": "Today’s Agenda",
-    "text": "Today’s Agenda\n\nwhat a useful pilot actually does\nuncertainty and error\ncomparison logic\npeer critique\nA3 refinement",
+    "text": "Today’s Agenda\n\nwhat a useful pilot actually does\nhidden precision: the 120-watt case\nwhere uncertainty enters your workflow\nwhen data treatment changes the conclusion\nprobability vs. point prediction\ninput quality vs. model complexity\ncomparison logic\npeer critique and A3 refinement",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -3724,7 +3808,43 @@
     "href": "weeks/week-08.html#a-pilot-is-not-a-mini-final-project",
     "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
     "section": "A Pilot Is Not a Mini Final Project",
-    "text": "A Pilot Is Not a Mini Final Project\nA pilot is useful if it shows:\n\nthe workflow can run\nthe output is relevant\nthe assumptions are visible\nthe weak points are now obvious",
+    "text": "A Pilot Is Not a Mini Final Project\nA pilot is useful if it shows:\n\nthe workflow can run\nthe output is relevant\nthe assumptions are visible\nthe weak points are now obvious\n\nA pilot that reveals a problem is more valuable than one that confirms a hope.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W8: Pilot, Compare, and Quantify Uncertainty"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#case-the-120-watt-assumption",
+    "href": "weeks/week-08.html#case-the-120-watt-assumption",
+    "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
+    "section": "Case: The 120-Watt Assumption",
+    "text": "Case: The 120-Watt Assumption\nEvery thermal comfort standard assumes the same thing about a seated office worker:\nThey produce 120 watts of metabolic heat.\nThat number enters every PMV calculation, every cooling-load estimate, every energy model. It looks precise. It is not.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W8: Pilot, Compare, and Quantify Uncertainty"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#what-happens-when-you-replace-it",
+    "href": "weeks/week-08.html#what-happens-when-you-replace-it",
+    "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
+    "section": "What Happens When You Replace It",
+    "text": "What Happens When You Replace It\nA recent study replaced the uniform 120 W assumption with demographic-aware metabolic rates — accounting for age, sex, and body composition.\nResults:\n\nsimulated HVAC site energy changed by 4–10%\nthe predicted comfort gap between male and female occupants narrowed by 47%\n\nThe assumption looked like a fact. It was a design choice — and it had consequences for who gets comfortable.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W8: Pilot, Compare, and Quantify Uncertainty"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#why-this-matters-for-your-pilot",
+    "href": "weeks/week-08.html#why-this-matters-for-your-pilot",
+    "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
+    "section": "Why This Matters for Your Pilot",
+    "text": "Why This Matters for Your Pilot\nEvery workflow has a version of the 120-watt assumption:\n\na default occupant schedule\na standard climate file\na uniform pedestrian speed\na fixed noise threshold\n\nYour pilot should name its assumptions, not hide them inside defaults.",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -3736,7 +3856,127 @@
     "href": "weeks/week-08.html#where-uncertainty-comes-from",
     "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
     "section": "Where Uncertainty Comes From",
-    "text": "Where Uncertainty Comes From\n\nincomplete data\nnoisy observations\nmodel assumptions\nsmall samples\nrepeated readings that are not independent — are 120 readings from one room 120 observations, or one?\ninconsistent definitions",
+    "text": "Where Uncertainty Comes From\n\nincomplete data — missing readings, sparse surveys\nnoisy observations — sensor drift, subjective responses\nmodel assumptions — the 120 W default, fixed schedules\nsmall samples — three sites, not thirty\npseudo-replication — are 120 readings from one room 120 observations, or one?\ninconsistent definitions — what counts as “comfortable”?\ndata treatment choices — how you handle gaps changes the answer",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W8: Pilot, Compare, and Quantify Uncertainty"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#case-same-data-different-treatment-different-conclusion",
+    "href": "weeks/week-08.html#case-same-data-different-treatment-different-conclusion",
+    "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
+    "section": "Case: Same Data, Different Treatment, Different Conclusion",
+    "text": "Case: Same Data, Different Treatment, Different Conclusion\nA study of thermal comfort databases encountered missing radiant-temperature readings — a common problem in field research.\nThree treatments of the same missing data:\n\n\n\nTreatment\nAir-to-radiant sensitivity ratio\n\n\n\n\nRule-based imputation\n1.9\n\n\nLearning through missingness\n4.5\n\n\nMeasured-only subset\n(different again)\n\n\n\nThe learning model and validation splits were held fixed. Only the treatment of gaps changed. The interpretation of the same evidence shifted by more than 2×.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W8: Pilot, Compare, and Quantify Uncertainty"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#the-lesson",
+    "href": "weeks/week-08.html#the-lesson",
+    "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
+    "section": "The Lesson",
+    "text": "The Lesson\nIt is not enough to say “I cleaned the data.”\nYou must also ask: would a different reasonable cleaning change my conclusion?\nIf yes, that is not a flaw in your work. It is an uncertainty you should report.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W8: Pilot, Compare, and Quantify Uncertainty"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#probability-vs.-point-prediction",
+    "href": "weeks/week-08.html#probability-vs.-point-prediction",
+    "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
+    "section": "Probability vs. Point Prediction",
+    "text": "Probability vs. Point Prediction\nTraditional thermal comfort gives you a single number:\n\n“PMV = 0.3, therefore comfortable.”\n\nBut research on ordinal learning shows that thermal sensation is better represented as a probability distribution:\n\n“73% probability of neutral or slightly warm, 18% probability of warm, 9% probability of hot.”",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W8: Pilot, Compare, and Quantify Uncertainty"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#why-probabilities-matter",
+    "href": "weeks/week-08.html#why-probabilities-matter",
+    "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
+    "section": "Why Probabilities Matter",
+    "text": "Why Probabilities Matter\nThe point prediction says: this is the answer.\nThe distribution says: here is how confident you should be.\nFor your pilot:\n\na single score hides disagreement\na range or distribution makes the uncertainty visible\nyour audience can then decide whether the confidence is enough for the decision at hand",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W8: Pilot, Compare, and Quantify Uncertainty"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#input-quality-vs.-model-complexity",
+    "href": "weeks/week-08.html#input-quality-vs.-model-complexity",
+    "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
+    "section": "Input Quality vs. Model Complexity",
+    "text": "Input Quality vs. Model Complexity\nArchitecture students often invest in more complex models while using default inputs.\nA study of climate-adapted weather files found:\n\nthe standard weather file (TMY3) had a cool bias that propagated into 16–31% annual heating overestimates in New York\nin Los Angeles, the same bias reversed sign — the error went the other direction\nhistorical-file biases — not statistical methods — dominated the tested future-scenario errors\n\nThe weather file mattered more than the model.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W8: Pilot, Compare, and Quantify Uncertainty"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#the-equivalent-in-your-work",
+    "href": "weeks/week-08.html#the-equivalent-in-your-work",
+    "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
+    "section": "The Equivalent in Your Work",
+    "text": "The Equivalent in Your Work\n\n\n\nOver-invested\nUnder-examined\n\n\n\n\ncomplex simulation\nwhich climate file?\n\n\ndetailed 3D model\nwhich occupant schedule?\n\n\nmulti-criteria scoring\nwhich weights?\n\n\nsophisticated GIS layers\nwhich boundary definition?\n\n\n\nBefore making the model more complex, check whether the inputs deserve the precision.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W8: Pilot, Compare, and Quantify Uncertainty"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#case-equal-setpoints-unequal-outcomes",
+    "href": "weeks/week-08.html#case-equal-setpoints-unequal-outcomes",
+    "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
+    "section": "Case: Equal Setpoints, Unequal Outcomes",
+    "text": "Case: Equal Setpoints, Unequal Outcomes\nA residential cooling study set the same thermostat temperature across all units.\nThe result: equal cooling setpoints produced unequal modeled thermal outcomes across buildings and age groups.\n\noccupants aged 65+ experienced higher predicted core temperatures in all 24 tested cases\nlowering the setpoint helped them but increased cold-discomfort hours for others\npredicted sensation and physiological state gave different information\n\nComparison revealed hidden inequity that the uniform policy concealed.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W8: Pilot, Compare, and Quantify Uncertainty"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#case-when-a-benefit-comes-from-the-wrong-source",
+    "href": "weeks/week-08.html#case-when-a-benefit-comes-from-the-wrong-source",
+    "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
+    "section": "Case: When a Benefit Comes From the Wrong Source",
+    "text": "Case: When a Benefit Comes From the Wrong Source\nA learned HVAC supervisor was tested against fixed, PMV-based, and adaptive-band policies across 24 scenarios (six cities, two emissions pathways, present and future weather):\n\nit saved 3–7% of site energy in every scenario\nbut it increased worst-zone warm-temperature exposure in every scenario too\n\nMatched ablations showed that the setpoint bounds — not the learning — drove the savings.\nThe apparent benefit came from the operating constraints, not the intelligence.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W8: Pilot, Compare, and Quantify Uncertainty"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#why-ablation-matters",
+    "href": "weeks/week-08.html#why-ablation-matters",
+    "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
+    "section": "Why Ablation Matters",
+    "text": "Why Ablation Matters\nIf you compare option A against option B and A wins, ask:\n\nwhich part of A produced the benefit?\nwould a simpler version of A do the same thing?\nis the benefit real, or is it an artifact of the comparison setup?\n\nThis is the difference between “my method works” and “I know why it works.”",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W8: Pilot, Compare, and Quantify Uncertainty"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#uncertainty-audit-your-own-pilot",
+    "href": "weeks/week-08.html#uncertainty-audit-your-own-pilot",
+    "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
+    "section": "Uncertainty Audit: Your Own Pilot",
+    "text": "Uncertainty Audit: Your Own Pilot\nFor your current A3 prototype, answer these five questions:\n\nWhat is the single most influential assumption?\nWhat happens if that assumption is wrong by 20%?\nAre your observations independent, or pseudo-replicated?\nWould a different reasonable data treatment change the conclusion?\nDoes your output report a point value or a range?\n\nWrite down the answers. They belong in your A3 submission.",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -3748,7 +3988,7 @@
     "href": "weeks/week-08.html#better-language-for-results",
     "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
     "section": "Better Language for Results",
-    "text": "Better Language for Results\nInstead of:\n\n“the data proves”\n\nTry:\n\n“the pilot suggests”\n“the comparison indicates”\n“confidence is limited by”",
+    "text": "Better Language for Results\nInstead of:\n\n“the data proves”\n“this shows that”\n“clearly demonstrates”\n\nTry:\n\n“the pilot suggests”\n“the comparison indicates, subject to [named limit]”\n“confidence is limited by [specific source]”\n“under these assumptions, the result favors X”\n“a different treatment of [gap/input] could change this”\n\nHedging is not weakness. It is precision.",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -3756,11 +3996,23 @@
     ]
   },
   {
-    "objectID": "weeks/week-08.html#peer-critique-questions",
-    "href": "weeks/week-08.html#peer-critique-questions",
+    "objectID": "weeks/week-08.html#comparison-logic",
+    "href": "weeks/week-08.html#comparison-logic",
     "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
-    "section": "Peer Critique Questions",
-    "text": "Peer Critique Questions\n\nis the output genuinely tied to the decision?\nis uncertainty being hidden or handled?\nis the pathway still the right one?\nwhat one fix would improve the method most?",
+    "section": "Comparison Logic",
+    "text": "Comparison Logic\nA good comparison requires:\n\nstated criteria — before you compare, not after\ncontrolled differences — change one thing, hold the rest\nnamed assumptions — which defaults are you accepting?\nsensitivity check — does the ranking survive a reasonable change in inputs?\nprovenance — which data came from measurement, which from a model, which from a standard?\n\nIf your recommendation changes when one input shifts by 20%, say so.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W8: Pilot, Compare, and Quantify Uncertainty"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#peer-critique-protocol",
+    "href": "weeks/week-08.html#peer-critique-protocol",
+    "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
+    "section": "Peer Critique Protocol",
+    "text": "Peer Critique Protocol\nIn pairs, exchange your A3 prototype and answer:\n\nIs the output genuinely tied to the decision?\nWhat is the single most influential assumption?\nIs uncertainty being hidden or handled?\nIs the pathway still the right one?\nWhat one fix would improve the method most?\n\nRecord the critique. Do not defend during the exchange.",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -3772,7 +4024,7 @@
     "href": "weeks/week-08.html#a3-submission-standard",
     "title": "Week 8: Pilot, Compare, and Quantify Uncertainty",
     "section": "A3 Submission Standard",
-    "text": "A3 Submission Standard\nShow enough to demonstrate:\n\none working workflow\none interpretable output\none clear account of limits\n\nMessy is acceptable. Opaque is not.",
+    "text": "A3 Submission Standard\nShow enough to demonstrate:\n\none working workflow\none interpretable output\none clear account of limits\n\nName the assumptions. Name the uncertainties. Name what you would check next.\nMessy is acceptable. Opaque is not.",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -3784,7 +4036,7 @@
     "href": "weeks/week-10.html#todays-agenda",
     "title": "Week 10: Draft Review and Workflow Documentation",
     "section": "Today’s Agenda",
-    "text": "Today’s Agenda\n\nwhat good evidence visuals do\nhow to show the workflow without overwhelming the audience\nbuild the evidence board / object card\ndocument the pathway artifact\ntimed draft reviews and feedback triage",
+    "text": "Today’s Agenda\n\nwhat good evidence visuals do — and what kills them\nfigure rescue: from raw output to stakeholder figure\nmethod transparency: how much is enough?\nevidence board worked example\ntimed draft reviews with a real rubric\nfeedback triage",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -3796,7 +4048,7 @@
     "href": "weeks/week-10.html#every-visual-needs-a-job",
     "title": "Week 10: Draft Review and Workflow Documentation",
     "section": "Every Visual Needs a Job",
-    "text": "Every Visual Needs a Job\nA figure should do at least one of these:\n\ncompare alternatives\nshow pattern or distribution\nlocate something spatially\nshow a decision threshold\nexpose uncertainty",
+    "text": "Every Visual Needs a Job\nA figure should do at least one of these:\n\ncompare alternatives\nshow pattern or distribution\nlocate something spatially\nshow a decision threshold\nexpose uncertainty\n\nIf it does none of these, it is decoration. Cut it.",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -3808,7 +4060,7 @@
     "href": "weeks/week-10.html#match-visuals-to-pathway",
     "title": "Week 10: Draft Review and Workflow Documentation",
     "section": "Match Visuals to Pathway",
-    "text": "Match Visuals to Pathway\nSpreadsheet\n\ncomparison chart\nsummary table\ndecision matrix\n\nGIS\n\none clean map per question\nsimple legend and scale logic\navoid decorative layers\n\nPython\n\nannotated plots\nnotebook outputs with interpretation\nexported figures with titles and units",
+    "text": "Match Visuals to Pathway\nSpreadsheet\n\ncomparison chart with labeled axes and units\nsummary table with provenance column\ndecision matrix with explicit weights\n\nGIS\n\none clean map per question — not a layer showcase\nsimple legend, scale bar, north arrow\navoid decorative base layers that compete with your data\n\nPython\n\nannotated plots with direct labels, not just legends\nexported figures at print resolution (200+ dpi)\nnotebook outputs with one sentence of interpretation per figure",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -3816,11 +4068,11 @@
     ]
   },
   {
-    "objectID": "weeks/week-10.html#the-evidence-board-object-card",
-    "href": "weeks/week-10.html#the-evidence-board-object-card",
+    "objectID": "weeks/week-10.html#figure-rescue-why-raw-outputs-fail",
+    "href": "weeks/week-10.html#figure-rescue-why-raw-outputs-fail",
     "title": "Week 10: Draft Review and Workflow Documentation",
-    "section": "The Evidence Board / Object Card",
-    "text": "The Evidence Board / Object Card\nIt should answer in seconds:\n\nwhat decision is at stake?\nwhat evidence matters most?\nwhat should happen next?",
+    "section": "Figure Rescue: Why Raw Outputs Fail",
+    "text": "Figure Rescue: Why Raw Outputs Fail\nA four-panel notebook output can answer four questions at once — or none.\nCommon problems:\n\ntoo many variables competing for attention\nvague titles: “Figure 3” tells no one anything\nerror bars present but never explained\nno connection back to the decision\nuncertainty hidden or absent",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -3828,11 +4080,11 @@
     ]
   },
   {
-    "objectID": "weeks/week-10.html#method-transparency",
-    "href": "weeks/week-10.html#method-transparency",
+    "objectID": "weeks/week-10.html#figure-rescue-before-and-after",
+    "href": "weeks/week-10.html#figure-rescue-before-and-after",
     "title": "Week 10: Draft Review and Workflow Documentation",
-    "section": "Method Transparency",
-    "text": "Method Transparency\nShow just enough that someone can trust the output:\n\nsource of data\nbasic workflow\nmajor assumptions\nmain limitation",
+    "section": "Figure Rescue: Before and After",
+    "text": "Figure Rescue: Before and After\nBefore: a raw multi-panel plot from a notebook — occupancy over time, dwell time box plot, scatter of environmental conditions, mean bar chart — all at once, no annotations.\nAfter: the same four panels, but:\n\neach panel gets a sentence title: “Condition B increased mean dwell time”\nthe bar chart adds a target line: “target ≥ 24 users”\nerror bars are captioned: “mean ± 95% CI”\none paragraph below states what the figure supports\n\nThe course notebook 02_arch_viz_analysis.ipynb has an “object card starter” that demonstrates this pattern. Revisit it now.",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -3840,11 +4092,83 @@
     ]
   },
   {
-    "objectID": "weeks/week-10.html#draft-review-prompt",
-    "href": "weeks/week-10.html#draft-review-prompt",
+    "objectID": "weeks/week-10.html#the-3-second-message-test-revisited",
+    "href": "weeks/week-10.html#the-3-second-message-test-revisited",
     "title": "Week 10: Draft Review and Workflow Documentation",
-    "section": "Draft Review Prompt",
-    "text": "Draft Review Prompt\nIf a critic sees this for 30 seconds, can they tell:\n\nwhat you studied?\nwhat you found?\nhow confident they should be?\nwhat action follows?",
+    "section": "The 3-Second Message Test (Revisited)",
+    "text": "The 3-Second Message Test (Revisited)\nGive your figure three seconds. Can a viewer tell:\n\nwhat is being compared?\nwhich side is better — or why neither is?\nwhat the takeaway is for the decision?\n\nIf your figure needs a paragraph of explanation to make sense, it needs revision, not explanation.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W10: Draft Review and Workflow Documentation"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10.html#the-so-what-test",
+    "href": "weeks/week-10.html#the-so-what-test",
+    "title": "Week 10: Draft Review and Workflow Documentation",
+    "section": "The “So What?” Test",
+    "text": "The “So What?” Test\nA computational pipeline can produce a result without establishing which design response is justified.\nExercise: write one sentence under your main figure:\n“This figure shows __________, which matters because __________, and the recommended action is __________.”\nIf you cannot fill all three blanks, the figure has not yet earned its place.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W10: Draft Review and Workflow Documentation"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10.html#method-transparency-how-much-is-enough",
+    "href": "weeks/week-10.html#method-transparency-how-much-is-enough",
+    "title": "Week 10: Draft Review and Workflow Documentation",
+    "section": "Method Transparency: How Much Is Enough?",
+    "text": "Method Transparency: How Much Is Enough?\nShow just enough that someone can trust the output:\n\nsource of data — where did it come from? when?\nbasic workflow — what happened between input and output?\nmajor assumptions — what did you choose that could have gone differently?\nmain limitation — what should a reader not conclude from this?\n\nThe audience does not need your full pipeline. They need enough to judge whether your conclusion is reasonable.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W10: Draft Review and Workflow Documentation"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10.html#method-transparency-a-research-example",
+    "href": "weeks/week-10.html#method-transparency-a-research-example",
+    "title": "Week 10: Draft Review and Workflow Documentation",
+    "section": "Method Transparency: A Research Example",
+    "text": "Method Transparency: A Research Example\nAn HVAC control study tested a learned-probability supervisor against fixed, PMV, and adaptive-band policies across 24 scenarios — six cities, two emissions pathways, present and future weather.\nThe full method is complex. But the trust-worthy summary is four lines:\n\ndata: simulated buildings under 24 climate scenarios\nmethod: compared energy use and thermal exposure across four control strategies\nfinding: the supervisor saved 3–7% energy but increased worst-zone warm exposure in every scenario\nkey insight: matched ablations showed setpoint bounds, not the learned model, drove the savings\n\nYour students’ methods are simpler than this. If a 24-scenario study fits in four lines, yours can fit in three.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W10: Draft Review and Workflow Documentation"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10.html#making-method-visible-for-a-public-audience",
+    "href": "weeks/week-10.html#making-method-visible-for-a-public-audience",
+    "title": "Week 10: Draft Review and Workflow Documentation",
+    "section": "Making Method Visible for a Public Audience",
+    "text": "Making Method Visible for a Public Audience\nAt the 2025 Venice Architecture Biennale, CO₂ measurements from Hong Kong wet markets were overlaid on floor plans through augmented reality.\nThe audience was not engineers. The method had to be:\n\nvisible — viewers could see where readings came from\nhonest — the sealed retrofit showed ~216 ppm CO₂ above mixed-mode markets\nimmediate — the trade-off between enclosure, cooling, and fresh air was clear on sight\n\nYour evidence board has the same challenge: make the method visible without making it the story.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W10: Draft Review and Workflow Documentation"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10.html#evidence-board-worked-example",
+    "href": "weeks/week-10.html#evidence-board-worked-example",
+    "title": "Week 10: Draft Review and Workflow Documentation",
+    "section": "Evidence Board Worked Example",
+    "text": "Evidence Board Worked Example\nDecision: which of three candidate sites best balances transit access, development constraints, and environmental exposure?\nThe board contains four elements:\n\nThe question — one sentence at the top\nOne map — three sites with 400 m buffer zones, colored by transit access score\nOne comparison chart — bar chart of composite scores with error bars\nOne limitation statement — “flood risk data is from 2019 projections; updated models may shift Hung Hom Bay’s ranking”\n\n\n\n\nSite\nScore\nTransit\nFlood Risk\n\n\n\n\nKai Tak\n78\nhigh\nmedium\n\n\nKwun Tong Waterfront\n65\nmedium\nlow\n\n\nHung Hom Bay\n72\nhigh\nhigh\n\n\n\nThat is enough. The board is not a report — it is a decision surface.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W10: Draft Review and Workflow Documentation"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10.html#draft-review-rubric",
+    "href": "weeks/week-10.html#draft-review-rubric",
+    "title": "Week 10: Draft Review and Workflow Documentation",
+    "section": "Draft Review Rubric",
+    "text": "Draft Review Rubric\nReviewers fill out this checklist for each presenter:\n\n\n\nQuestion\nY / N\nNote\n\n\n\n\nIs the design decision clear in the first 30 seconds?\n\n\n\n\nDoes the evidence actually support the stated recommendation?\n\n\n\n\nIs uncertainty named — not hidden or hand-waved?\n\n\n\n\nDoes a clear next action follow from the evidence?\n\n\n\n\nCould you rerun or verify the key step from what is shown?\n\n\n\n\n\nHand the completed rubric to the presenter. Do not discuss during the review — write only.",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -3856,7 +4180,7 @@
     "href": "weeks/week-10.html#draft-review-protocol",
     "title": "Week 10: Draft Review and Workflow Documentation",
     "section": "Draft Review Protocol",
-    "text": "Draft Review Protocol\nIn rotating trios, with the near-final draft in front of you:\n\npresent for five minutes — the decision, the evidence, the recommendation, the limit\nreviewers respond against three questions only:\n\nwhat is the single message?\ndoes the evidence actually support it?\nwhat would you cut?\n\nrecord the critique without defending",
+    "text": "Draft Review Protocol\nIn rotating trios (15 minutes per round):\n\nPresent (5 min) — the decision, the evidence, the recommendation, the limit\nSilent review (3 min) — each reviewer completes the rubric independently\nVerbal feedback (5 min) — reviewers state their single strongest concern and one thing that works\nRecord (2 min) — presenter writes down what they heard without defending\n\nThree rounds = three sets of rubric feedback per student.",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -3868,7 +4192,19 @@
     "href": "weeks/week-10.html#feedback-triage",
     "title": "Week 10: Draft Review and Workflow Documentation",
     "section": "Feedback Triage",
-    "text": "Feedback Triage\nSort what you heard into:\n\nfix before submission\nfix if time allows\ndisagree, and can say why\n\nLeave with one written revision plan for Week 11.",
+    "text": "Feedback Triage\nAfter all rounds, sort what you heard into three piles:\n\nfix before submission — things that break the argument\nfix if time allows — things that improve clarity but do not change the conclusion\ndisagree, and can say why — things you reject with a stated reason\n\nLeave today with one written revision plan for Week 11.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W10: Draft Review and Workflow Documentation"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10.html#exit-check",
+    "href": "weeks/week-10.html#exit-check",
+    "title": "Week 10: Draft Review and Workflow Documentation",
+    "section": "Exit Check",
+    "text": "Exit Check\nBy the end of today, you should have:\n\none figure that passes the 3-second message test\none evidence board draft with all four elements\none method summary in four lines or fewer\nthree completed peer-review rubrics (received)\none prioritized revision plan",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -3880,7 +4216,7 @@
     "href": "weeks/week-12.html#todays-agenda",
     "title": "Week 12: Object Fair and Transfer Forward",
     "section": "Today’s Agenda",
-    "text": "Today’s Agenda\n\nfinal presentations\nevidence board review\nreflection on pathway choice\ntransfer into the next project",
+    "text": "Today’s Agenda\n\nObject Fair format and logistics\ncritique protocol\nfinal presentations\nreflection on pathway, tool, and reasoning\ntransfer forward: archiving and next steps",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -3900,6 +4236,30 @@
     ]
   },
   {
+    "objectID": "weeks/week-12.html#the-semester-arc",
+    "href": "weeks/week-12.html#the-semester-arc",
+    "title": "Week 12: Object Fair and Transfer Forward",
+    "section": "The Semester Arc",
+    "text": "The Semester Arc\n\n\n\n\n\n\n\n\nPhase\nWeeks\nWhat you did\n\n\n\n\nSurvey\n1–5\nExplored spreadsheet, GIS, Python, BIM/BEM\n\n\nChoose\n6\nCommitted to one primary pathway\n\n\nPrototype\n7–8\nBuilt and piloted a minimal viable workflow\n\n\nDeliver\n9–12\nTurned evidence into a recommendation someone can act on\n\n\n\nYou started with a question. You leave with a workflow, an answer, and an honest account of what remains uncertain.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W12: Object Fair and Transfer Forward"
+    ]
+  },
+  {
+    "objectID": "weeks/week-12.html#object-fair-format",
+    "href": "weeks/week-12.html#object-fair-format",
+    "title": "Week 12: Object Fair and Transfer Forward",
+    "section": "Object Fair: Format",
+    "text": "Object Fair: Format\nEach student sets up a station with:\n\nevidence board / object card — printed or displayed, readable from a distance\npathway artifact — the spreadsheet, map, notebook, or model output\nmethod appendix — available for inspection, not presented\n\nPresentations run as a walkthrough:\n\n3 minutes: verbal pitch at your station\n2 minutes: questions from reviewers\nrotate after each round",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W12: Object Fair and Transfer Forward"
+    ]
+  },
+  {
     "objectID": "weeks/week-12.html#what-to-present-clearly",
     "href": "weeks/week-12.html#what-to-present-clearly",
     "title": "Week 12: Object Fair and Transfer Forward",
@@ -3912,11 +4272,11 @@
     ]
   },
   {
-    "objectID": "weeks/week-12.html#what-transfer-forward-means",
-    "href": "weeks/week-12.html#what-transfer-forward-means",
+    "objectID": "weeks/week-12.html#critique-protocol",
+    "href": "weeks/week-12.html#critique-protocol",
     "title": "Week 12: Object Fair and Transfer Forward",
-    "section": "What “Transfer Forward” Means",
-    "text": "What “Transfer Forward” Means\nAfter today, you should be able to reuse:\n\nyour evidence structure\nyour spreadsheet, map, or notebook workflow\nyour decision criteria\nyour language for uncertainty",
+    "section": "Critique Protocol",
+    "text": "Critique Protocol\nWhile listening, fill out a feedback card for each presenter:\n\n\n\nQuestion\nYour response\n\n\n\n\nWhat was the single decision?\n\n\n\nDid the evidence support the recommendation?\n\n\n\nWhat was the strongest piece of evidence?\n\n\n\nWhat was the weakest or most uncertain?\n\n\n\nWhat question would you ask next?\n\n\n\n\nHand the card to the presenter after their round. Be specific.",
     "crumbs": [
       "Home",
       "Weekly Content",
@@ -3924,11 +4284,59 @@
     ]
   },
   {
-    "objectID": "weeks/week-12.html#reflection-questions",
-    "href": "weeks/week-12.html#reflection-questions",
+    "objectID": "weeks/week-12.html#object-fair-what-to-display-vs.-project",
+    "href": "weeks/week-12.html#object-fair-what-to-display-vs.-project",
     "title": "Week 12: Object Fair and Transfer Forward",
-    "section": "Reflection Questions",
-    "text": "Reflection Questions\n\nwhat kind of evidence do you trust differently now?\nwhich piece of evidence did you produce by designing, rather than by collecting?\ndid your chosen pathway fit the question?\nwhat would you still need before making the decision at full scale?",
+    "section": "Object Fair: What to Display vs. Project",
+    "text": "Object Fair: What to Display vs. Project\nDisplay (physical or on screen at your station):\n\nevidence board / object card\nkey figures, maps, or charts\none-sentence recommendation\n\nHave available (not projected, but ready to show):\n\nfull spreadsheet, notebook, or GIS file\nraw data sources\nmethod appendix\n\nThe audience should understand the decision in 30 seconds. The detail is there for anyone who wants to inspect it.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W12: Object Fair and Transfer Forward"
+    ]
+  },
+  {
+    "objectID": "weeks/week-12.html#reflection-evidence-and-reasoning",
+    "href": "weeks/week-12.html#reflection-evidence-and-reasoning",
+    "title": "Week 12: Object Fair and Transfer Forward",
+    "section": "Reflection: Evidence and Reasoning",
+    "text": "Reflection: Evidence and Reasoning\n\nwhat kind of evidence do you trust differently now?\nwhich piece of evidence did you produce by designing, rather than by collecting?\ndid your chosen pathway fit the question?\nwhat would you still need before making the decision at full scale?",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W12: Object Fair and Transfer Forward"
+    ]
+  },
+  {
+    "objectID": "weeks/week-12.html#reflection-tool-as-actor",
+    "href": "weeks/week-12.html#reflection-tool-as-actor",
+    "title": "Week 12: Object Fair and Transfer Forward",
+    "section": "Reflection: Tool as Actor",
+    "text": "Reflection: Tool as Actor\n\nwhat did your workflow tell you that your intuition did not?\nwhere did the tool shape what you asked, rather than just answering it?\nif you removed the computational output entirely, would your recommendation change?\nwhose experience did your model represent — and whose did it leave out?\n\nThese are not rhetorical. The tool is never neutral: it decides who the default occupant is, what the climate file assumes, which experiences the interface makes visible and which it hides.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W12: Object Fair and Transfer Forward"
+    ]
+  },
+  {
+    "objectID": "weeks/week-12.html#transfer-forward-concrete-steps",
+    "href": "weeks/week-12.html#transfer-forward-concrete-steps",
+    "title": "Week 12: Object Fair and Transfer Forward",
+    "section": "Transfer Forward: Concrete Steps",
+    "text": "Transfer Forward: Concrete Steps\nBefore you close the semester, write down:\n\n\n\n\n\n\n\nArchive\nWhat files, tools, and data do you need to keep so this workflow is reusable?\n\n\nMethod\nWhat would you do differently if you ran this again?\n\n\nNext question\nWhat evidence question would you ask next, now that this one is partially answered?\n\n\nAudience\nWho else — a studio critic, a collaborator, a future employer — could use this workflow or its outputs?\n\n\n\nThis is your handoff to yourself. Make it specific enough that you can reopen the folder in six months and know what to do.",
+    "crumbs": [
+      "Home",
+      "Weekly Content",
+      "W12: Object Fair and Transfer Forward"
+    ]
+  },
+  {
+    "objectID": "weeks/week-12.html#what-transfer-forward-means",
+    "href": "weeks/week-12.html#what-transfer-forward-means",
+    "title": "Week 12: Object Fair and Transfer Forward",
+    "section": "What “Transfer Forward” Means",
+    "text": "What “Transfer Forward” Means\nAfter today, you should be able to reuse:\n\nyour evidence structure\nyour spreadsheet, map, or notebook workflow\nyour decision criteria\nyour language for uncertainty\n\nThe course ends. The reasoning does not.",
     "crumbs": [
       "Home",
       "Weekly Content",

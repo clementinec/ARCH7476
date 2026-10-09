@@ -142,10 +142,12 @@
 <section id="todays-agenda" class="slide level2 center">
 <h2>Today’s Agenda</h2>
 <ul>
-<li class="fragment">package structure</li>
-<li class="fragment">peer review</li>
-<li class="fragment">pathway troubleshooting</li>
-<li class="fragment">final revision priorities</li>
+<li class="fragment">audience-fit pressure test</li>
+<li class="fragment">four review questions, one at a time</li>
+<li class="fragment">demonstrated vs.&nbsp;validated: are you overselling?</li>
+<li class="fragment">pathway triage for workflows that are not landing</li>
+<li class="fragment">package assembly checklist</li>
+<li class="fragment">peer feedback triage and revision plan</li>
 </ul>
 </section>
 <section id="a4-has-four-parts" class="slide level2 center">
@@ -156,16 +158,42 @@
 <li class="fragment">pathway artifact</li>
 <li class="fragment">method appendix</li>
 </ol>
-<p>Each part should reinforce the others.</p>
+<p>Each part should reinforce the others. If one part contradicts or ignores another, the package reads as unfinished.</p>
 </section>
-<section id="review-questions" class="slide level2 center">
-<h2>Review Questions</h2>
+<section id="the-60-second-audience-test" class="slide level2 center">
+<h2>The 60-Second Audience Test</h2>
+<p>A computational pipeline can produce a result without establishing which design response is justified.</p>
+<p>Swap your draft package with a partner. They read for 60 seconds, then answer:</p>
 <ul>
-<li class="fragment">is the decision context clear?</li>
-<li class="fragment">does the evidence actually support the recommendation?</li>
-<li class="fragment">is the pathway visible in the package?</li>
-<li class="fragment">are the limits stated directly?</li>
+<li class="fragment">what decision is at stake?</li>
+<li class="fragment">what does the author recommend?</li>
+<li class="fragment">how confident should I be?</li>
 </ul>
+<p>If they cannot answer all three, the package is not ready for its audience.</p>
+</section>
+<section id="review-question-1-is-the-decision-context-clear" class="slide level2 center">
+<h2>Review Question 1: Is the Decision Context Clear?</h2>
+<p><strong>Good enough:</strong> a reader who has never seen your project can name the decision in one sentence after reading the brief.</p>
+<p><strong>Common failure:</strong> the brief opens with method or background instead of the decision. The reader reaches the recommendation without knowing what was being decided.</p>
+<p><strong>Fix:</strong> write the decision as the first sentence. Everything else follows from it.</p>
+</section>
+<section id="review-question-2-does-the-evidence-support-the-recommendation" class="slide level2 center">
+<h2>Review Question 2: Does the Evidence Support the Recommendation?</h2>
+<p><strong>Good enough:</strong> each piece of evidence in the package connects to the recommendation through a stated reason, not just proximity on the page.</p>
+<p><strong>Common failure:</strong> the evidence is real, but the recommendation could be swapped for the opposite and nothing in the package would contradict it.</p>
+<p><strong>Fix:</strong> for each figure or data point, write one sentence: “this supports the recommendation because ________.” If nothing fills the blank, the evidence is decoration.</p>
+</section>
+<section id="review-question-3-is-the-pathway-visible" class="slide level2 center">
+<h2>Review Question 3: Is the Pathway Visible?</h2>
+<p><strong>Good enough:</strong> a reader can tell which tool produced the evidence and could, in principle, rerun the workflow.</p>
+<p><strong>Common failure:</strong> the pathway artifact exists but is disconnected from the brief. The spreadsheet, map, or notebook sits in an appendix that no one reads.</p>
+<p><strong>Fix:</strong> reference the artifact directly in the brief: “the comparison in Figure 2 was produced by ________.”</p>
+</section>
+<section id="review-question-4-are-the-limits-stated-directly" class="slide level2 center">
+<h2>Review Question 4: Are the Limits Stated Directly?</h2>
+<p><strong>Good enough:</strong> the package names at least one thing the evidence does not establish and one condition under which the recommendation might change.</p>
+<p><strong>Common failure:</strong> limits appear as a disclaimer paragraph at the end that reads as boilerplate rather than genuine reflection.</p>
+<p><strong>Fix:</strong> embed limits next to the claims they qualify. “This comparison covers three sites; a fourth with different transit access might change the ranking.”</p>
 </section>
 <section id="what-reviewers-should-look-for" class="slide level2 center">
 <h2>What Reviewers Should Look For</h2>
@@ -180,6 +208,7 @@
 <p>Spatial/public-space questions:</p>
 <ul>
 <li class="fragment">does the map or observation actually answer the claim?</li>
+<li class="fragment">could the same spatial data support a different recommendation?</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -191,25 +220,114 @@
 <p>Building/workplace questions:</p>
 <ul>
 <li class="fragment">is the performance claim backed by method, not branding?</li>
+<li class="fragment">would changing one assumption reverse the conclusion?</li>
 </ul>
 </div></div>
 </section>
-<section id="final-revision-priorities" class="slide level2 center">
-<h2>Final Revision Priorities</h2>
+<section id="demonstrated-vs.-validated" class="slide level2 center">
+<h2>Demonstrated vs.&nbsp;Validated</h2>
+<p>A working pipeline is not a validated claim.</p>
+<p>Go through your A4 and mark each claim:</p>
 <ul>
-<li class="fragment">cut anything that does not help the decision</li>
-<li class="fragment">keep one clear recommendation</li>
-<li class="fragment">make uncertainty visible</li>
-<li class="fragment">make the workflow traceable</li>
+<li class="fragment"><strong>demonstrated</strong>: “the workflow runs and produces this output”</li>
+<li class="fragment"><strong>validated</strong>: “the output has been checked against independent evidence”</li>
 </ul>
+<p>Most student work is demonstrated, not validated. That is fine — but say so. Overselling a demonstration as validation is the fastest way to lose a reviewer’s trust.</p>
+</section>
+<section id="pathway-triage" class="slide level2 center">
+<h2>Pathway Triage</h2>
+<p>If your workflow is not producing useful output by Week 11, you have three options:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>When it fits</th>
+<th>What changes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Narrow the scope</strong></td>
+<td>the method works but the question is too broad</td>
+<td>reduce to one site, one comparison, one variable</td>
+</tr>
+<tr class="even">
+<td><strong>Reframe the question</strong></td>
+<td>the evidence you found answers a different question than you started with</td>
+<td>rewrite the brief around what you actually have</td>
+</tr>
+<tr class="odd">
+<td><strong>Pivot the pathway</strong></td>
+<td>the tool is fighting the question</td>
+<td>switch to the baseline spreadsheet pathway with what you have collected</td>
+</tr>
+</tbody>
+</table>
+<p>Choose one. Do not try all three.</p>
+</section>
+<section id="package-assembly-checklist" class="slide level2 center">
+<h2>Package Assembly Checklist</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Part</th>
+<th>Contains</th>
+<th>Rough length</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Decision brief</strong></td>
+<td>decision, evidence summary, recommendation, limits</td>
+<td>1–2 pages</td>
+</tr>
+<tr class="even">
+<td><strong>Evidence board</strong></td>
+<td>the visual package: key figures, one dominant message, next action</td>
+<td>1 board or 2–3 slides</td>
+</tr>
+<tr class="odd">
+<td><strong>Pathway artifact</strong></td>
+<td>the spreadsheet, map, or notebook that produced the evidence</td>
+<td>included as file or appendix</td>
+</tr>
+<tr class="even">
+<td><strong>Method appendix</strong></td>
+<td>data sources, workflow steps, assumptions, one paragraph on what you would do differently</td>
+<td>1 page</td>
+</tr>
+</tbody>
+</table>
+<p>If any part is missing, the submission is incomplete.</p>
+</section>
+<section id="peer-feedback-triage" class="slide level2 center">
+<h2>Peer Feedback Triage</h2>
+<p>Sort every piece of feedback you received today into three categories:</p>
+<ul>
+<li class="fragment"><strong>Fix before submission</strong>: the reviewer identified something the audience will misread</li>
+<li class="fragment"><strong>Fix if time allows</strong>: a real improvement, but the package works without it</li>
+<li class="fragment"><strong>Disagree, and can say why</strong>: you considered the feedback and have a reason to keep your current approach</li>
+</ul>
+<p>Write your triage as a one-page revision plan. Bring it to Week 12.</p>
 </section>
 <section id="end-of-class-goal" class="slide level2 center">
 <h2>End-of-Class Goal</h2>
 <p>Leave with:</p>
 <ul>
-<li class="fragment">one prioritized revision list</li>
-<li class="fragment">one reviewer note on audience fit</li>
-<li class="fragment">one reviewer note on method clarity</li>
+<li class="fragment">one completed 60-second audience test (partner’s written answers)</li>
+<li class="fragment">every claim in your A4 marked as demonstrated or validated</li>
+<li class="fragment">one written revision plan with prioritized fixes</li>
+<li class="fragment">a submission-ready package structure, even if content is still being refined</li>
 </ul>
 
 
