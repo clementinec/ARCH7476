@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.10.19">
 
-  <title>ARCH7476: Evidence-Based Generative Design – Week 5: BIM, BEM, and Building Performance</title>
+  <title>ARCH7476: Evidence-Based Generative Design – Week 4 (Alt): GIS in Grasshopper</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -198,377 +198,384 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 5: BIM, BEM, and Building Performance</h1>
-  <p class="subtitle">What Changes When a Building Becomes an Energy Model</p>
+  <h1 class="title">Week 4 (Alt): GIS in Grasshopper</h1>
+  <p class="subtitle">Spatial Analysis for Students Who Think in Nodes</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="todays-agenda" class="slide level2 center">
-<h2>Today’s Agenda</h2>
-<ul>
-<li class="fragment">BIM and BEM are not the same model</li>
-<li class="fragment">how BIM files become BEM files</li>
-<li class="fragment">what gets lost in translation</li>
-<li class="fragment">IFC vs <code>gbXML</code></li>
-<li class="fragment">debugging exercises and pathway commitment</li>
-</ul>
+<section id="why-this-version-exists" class="slide level2 center">
+<h2>Why This Version Exists</h2>
+<p>The <code>geopandas</code> + Colab workflow teaches the same spatial ideas.</p>
+<p>This version puts them into <strong>Grasshopper</strong>, where you already know how to work.</p>
+<p>Same concepts. Different interface.</p>
 </section>
-<section id="why-this-week-matters" class="slide level2 center">
-<h2>Why This Week Matters</h2>
-<p>Even if your semester pathway is not simulation-heavy, you still need to understand:</p>
-<ul>
-<li class="fragment">what performance claims are built from</li>
-<li class="fragment">why some model outputs are more trustworthy than others</li>
-<li class="fragment">where BIM/BEM workflows break in practice</li>
-</ul>
-</section>
-<section id="stand-alone-case-prompts" class="slide level2 center">
-<h2>Stand-Alone Case Prompts</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../assets/examples/the-edge-amsterdam.jpg" height="280"></p>
-<figcaption>The Edge, Amsterdam</figcaption>
-</figure>
-</div>
-<p>What kinds of evidence would support a claim about workplace performance here?</p>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../assets/examples/california-academy-of-sciences.jpg" height="280"></p>
-<figcaption>California Academy of Sciences</figcaption>
-</figure>
-</div>
-<p>What kinds of evidence would support a claim about environmental performance here?</p>
-</div></div>
-</section>
-<section id="what-are-bim-and-bem" class="slide level2 center">
-<h2>What Are BIM and BEM?</h2>
-<p><strong>BIM</strong></p>
-<ul>
-<li class="fragment">digital model of physical and functional building characteristics</li>
-<li class="fragment">serves design, construction, coordination, and facility management</li>
-<li class="fragment">prioritizes geometry, materials, relationships, and documentation</li>
-</ul>
-<p><strong>BEM</strong></p>
-<ul>
-<li class="fragment">computational model of thermal behavior and energy flows</li>
-<li class="fragment">serves analysis, optimization, and compliance</li>
-<li class="fragment">prioritizes zones, schedules, systems, weather, and performance assumptions</li>
-</ul>
-</section>
-<section id="same-building-different-core-questions" class="slide level2 center">
-<h2>Same Building, Different Core Questions</h2>
-<p><strong>BIM asks:</strong><br>
-What do we build, where does it go, and how is it put together?</p>
-<p><strong>BEM asks:</strong><br>
-How will it behave over time when weather, people, and systems act on it?</p>
-</section>
-<section id="bim-data-priorities" class="slide level2 center">
-<h2>BIM Data Priorities</h2>
-<ul>
-<li class="fragment">project, site, building, levels</li>
-<li class="fragment">spaces and rooms</li>
-<li class="fragment">walls, windows, floors, roofs, doors</li>
-<li class="fragment">material layers and product attributes</li>
-<li class="fragment">element relationships and construction logic</li>
-</ul>
-</section>
-<section id="bem-data-priorities" class="slide level2 center">
-<h2>BEM Data Priorities</h2>
-<ul>
-<li class="fragment">thermal zones</li>
-<li class="fragment">heat-transfer surfaces</li>
-<li class="fragment">internal loads</li>
-<li class="fragment">occupancy schedules</li>
-<li class="fragment">HVAC systems and control logic</li>
-<li class="fragment">weather and shading context</li>
-</ul>
-</section>
-<section id="quick-check-bim-or-bem" class="slide level2 center">
-<h2>Quick Check: BIM or BEM?</h2>
-<ol type="1">
-<li class="fragment">Exact window manufacturer and product code</li>
-<li class="fragment">Occupancy schedule by hour</li>
-<li class="fragment">Thermal resistance of an assembly</li>
-<li class="fragment">Construction sequencing</li>
-<li class="fragment">Cooling setpoint and operating hours</li>
-</ol>
-<p><strong>Pair task:</strong> label each item <code>BIM</code>, <code>BEM</code>, or <code>both</code>.</p>
-</section>
-<section id="quick-check-answers" class="slide level2 center">
-<h2>Quick Check Answers</h2>
-<ul>
-<li class="fragment">exact manufacturer and product code: mostly <code>BIM</code></li>
-<li class="fragment">occupancy schedule by hour: <code>BEM</code></li>
-<li class="fragment">thermal resistance of an assembly: often <code>both</code>, but used differently</li>
-<li class="fragment">construction sequencing: <code>BIM</code></li>
-<li class="fragment">cooling setpoint and operation hours: <code>BEM</code></li>
-</ul>
-<p><strong>Key insight:</strong> the same wall can exist in both models, but not for the same reason.</p>
-</section>
-<section id="how-bim-files-get-made" class="slide level2 center">
-<h2>How BIM Files Get Made</h2>
-<ul>
-<li class="fragment"><strong>manual BIM authoring</strong> in Revit / ArchiCAD / similar</li>
-<li class="fragment"><strong>3D import</strong> from Rhino, SketchUp, or other geometric models</li>
-<li class="fragment"><strong>point cloud capture</strong> for as-built conditions and renovation work</li>
-</ul>
-<p>Each path changes how much cleanup is needed before any energy analysis begins.</p>
-</section>
-<section id="how-bem-files-get-made" class="slide level2 center">
-<h2>How BEM Files Get Made</h2>
-<ul>
-<li class="fragment">translate from an existing BIM model</li>
-<li class="fragment">build a direct energy model from drawings and assumptions</li>
-<li class="fragment">start from a template or archetype and adapt it</li>
-</ul>
-<p>All three approaches are common. None is frictionless.</p>
-</section>
-<section id="workflow-map-design-to-analysis" class="slide level2 center">
-<h2>Workflow Map — Design to Analysis</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource mermaid number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a aria-label="1"></a>graph TB</span>
-<span id="cb1-2"><a aria-label="2"></a>    A[Design Intent] --&gt; B[BIM Authoring Tool]</span>
-<span id="cb1-3"><a aria-label="3"></a>    B --&gt; C[Native BIM File]</span>
-<span id="cb1-4"><a aria-label="4"></a>    C --&gt; D{Export Format}</span>
-<span id="cb1-5"><a aria-label="5"></a>    D --&gt; E[IFC]</span>
-<span id="cb1-6"><a aria-label="6"></a>    D --&gt; F[gbXML]</span>
-<span id="cb1-7"><a aria-label="7"></a>    F --&gt; G[Energy Modeling Tool]</span>
-<span id="cb1-8"><a aria-label="8"></a>    G --&gt; H[Initial BEM]</span>
-<span id="cb1-9"><a aria-label="9"></a>    H --&gt; I[Manual Cleanup]</span>
-<span id="cb1-10"><a aria-label="10"></a>    I --&gt; J[Schedules, Systems, Controls, Weather]</span>
-<span id="cb1-11"><a aria-label="11"></a>    J --&gt; K[Complete BEM]</span>
-<span id="cb1-12"><a aria-label="12"></a>    K --&gt; L[Simulation Results]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="the-translation-gap" class="slide level2 center">
-<h2>The Translation Gap</h2>
-<p>When BIM becomes BEM, problems usually come from four categories:</p>
-<ul>
-<li class="fragment">geometry</li>
-<li class="fragment">zoning</li>
-<li class="fragment">constructions</li>
-<li class="fragment">operations</li>
-</ul>
-</section>
-<section id="geometry-issues" class="slide level2 center">
-<h2>Geometry Issues</h2>
-<ul>
-<li class="fragment">curved facades oversimplified into straight planes</li>
-<li class="fragment">tiny modeled objects exported as meaningful surfaces</li>
-<li class="fragment">orientation or context errors</li>
-<li class="fragment">missing adjacent buildings and shading</li>
-</ul>
-</section>
-<section id="thermal-zoning-issues" class="slide level2 center">
-<h2>Thermal Zoning Issues</h2>
-<ul>
-<li class="fragment">BIM spaces do not map neatly to thermal zones</li>
-<li class="fragment">open offices become fragmented or over-zoned</li>
-<li class="fragment">plenums, circulation zones, or mixed-use spaces disappear or split badly</li>
-</ul>
-</section>
-<section id="construction-and-material-gaps" class="slide level2 center">
-<h2>Construction and Material Gaps</h2>
-<ul>
-<li class="fragment">walls export as generic “exterior wall”</li>
-<li class="fragment">layers, R-values, SHGC, and internal mass are incomplete</li>
-<li class="fragment">thermal bridges and details are ignored</li>
-</ul>
-</section>
-<section id="operational-data-missing" class="slide level2 center">
-<h2>Operational Data Missing</h2>
-<ul>
-<li class="fragment">no occupancy schedules</li>
-<li class="fragment">no equipment or lighting schedules</li>
-<li class="fragment">no setpoints or control strategies</li>
-<li class="fragment">no HVAC system definitions</li>
-</ul>
-<p><strong>This is why a clean-looking import can still be analytically useless.</strong></p>
-</section>
-<section id="translation-detective-challenge" class="slide level2 center">
-<h2>Translation Detective Challenge</h2>
-<p><strong>Scenario:</strong> You exported a 5-story office building to <code>gbXML</code> and the first model run shows energy use at <strong>3x</strong> what you expected.</p>
-<p><strong>In groups, identify likely causes:</strong></p>
-<ol type="1">
-<li class="fragment">What probably happened to the thermal zones?</li>
-<li class="fragment">What is likely wrong with the HVAC assumptions?</li>
-<li class="fragment">What data probably failed to translate?</li>
-<li class="fragment">What would you inspect first before trusting any output?</li>
-</ol>
-</section>
-<section id="ifc-vs-gbxml" class="slide level2 center">
-<h2>IFC vs <code>gbXML</code></h2>
-<p>Both are bridges. Neither is a perfect bridge.</p>
+<section id="what-changes-what-stays" class="slide level2 center">
+<h2>What Changes, What Stays</h2>
 <table class="caption-top">
 <thead>
 <tr class="header">
-<th>Feature</th>
-<th>IFC</th>
-<th><code>gbXML</code></th>
+<th>Concept</th>
+<th>Colab / geopandas</th>
+<th>Grasshopper</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Primary purpose</td>
-<td>broad BIM exchange</td>
-<td>energy model translation</td>
+<td>Load data</td>
+<td><code>gpd.read_file()</code></td>
+<td><code>Read File</code> + <code>Split Text</code></td>
 </tr>
 <tr class="even">
-<td>Geometry detail</td>
-<td>high</td>
-<td>moderate</td>
+<td>Set CRS</td>
+<td><code>.to_crs(2326)</code></td>
+<td>handled by the converter script</td>
 </tr>
 <tr class="odd">
-<td>Thermal zoning support</td>
-<td>weak</td>
-<td>better</td>
+<td>Buffer</td>
+<td><code>.buffer(400)</code></td>
+<td><code>Offset Curve</code> or <code>Region Union</code></td>
 </tr>
 <tr class="even">
-<td>File size / speed</td>
-<td>heavier</td>
-<td>lighter</td>
+<td>Clip</td>
+<td><code>gpd.clip()</code></td>
+<td><code>Region Intersection</code></td>
 </tr>
 <tr class="odd">
-<td>Construction detail</td>
-<td>stronger</td>
-<td>narrower</td>
+<td>Spatial join</td>
+<td><code>gpd.sjoin()</code></td>
+<td><code>Point In Curve</code> + <code>Dispatch</code></td>
+</tr>
+<tr class="even">
+<td>Visualize</td>
+<td><code>.plot()</code></td>
+<td>Rhino viewport + <code>Custom Preview</code></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="what-each-bridge-is-good-at" class="slide level2 center">
-<h2>What Each Bridge Is Good At</h2>
-<p><strong>IFC</strong></p>
-<ul>
-<li class="fragment">archiving and coordination</li>
-<li class="fragment">multi-disciplinary interoperability</li>
-<li class="fragment">detailed building information</li>
-</ul>
-<p><strong><code>gbXML</code></strong></p>
-<ul>
-<li class="fragment">getting geometry and basic constructions into energy tools</li>
-<li class="fragment">faster processing</li>
-<li class="fragment">better starting point for thermal-zone workflows</li>
-</ul>
+<section id="the-two-step-workflow" class="slide level2 center">
+<h2>The Two-Step Workflow</h2>
+<p><strong>Step 1 — Convert</strong> (one-time, command line)</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a aria-label="1"></a><span class="ex">python</span> scripts/gis_to_grasshopper.py  data/candidate_sites.geojson  data/gh_ready/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This produces CSV files in metres (Hong Kong 1980 Grid).</p>
+<p><strong>Step 2 — Open in Grasshopper</strong></p>
+<p>Import the CSV → build geometry → do spatial operations → visualize.</p>
 </section>
-<section id="why-neither-solves-the-whole-problem" class="slide level2 center">
-<h2>Why Neither Solves the Whole Problem</h2>
-<ul>
-<li class="fragment">manual cleanup is still required</li>
-<li class="fragment">vendor implementations vary</li>
-<li class="fragment">updates overwrite hand fixes</li>
-<li class="fragment">building design logic and energy logic are not the same thing</li>
-</ul>
+<section id="what-the-converter-outputs" class="slide level2 center">
+<h2>What the Converter Outputs</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>Contains</th>
+<th>Use in Grasshopper</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>points.csv</code></td>
+<td>centroid x, y + attributes</td>
+<td>fastest path — <code>Construct Point</code></td>
+</tr>
+<tr class="even">
+<td><code>polygons.csv</code></td>
+<td>vertex-level x, y per feature</td>
+<td>full outlines — <code>Polyline</code> per id</td>
+</tr>
+<tr class="odd">
+<td><code>lines.csv</code></td>
+<td>vertex-level x, y per feature</td>
+<td>roads, paths, networks</td>
+</tr>
+<tr class="even">
+<td><code>attributes.csv</code></td>
+<td>all properties per feature</td>
+<td>labels, filtering, coloring</td>
+</tr>
+<tr class="odd">
+<td><code>summary.txt</code></td>
+<td>bounding box, CRS, feature count</td>
+<td>sanity check</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="ideal-workflow-vs-real-workflow" class="slide level2 center">
-<h2>Ideal Workflow vs Real Workflow</h2>
-<p><strong>Ideal</strong></p>
+<section id="step-2a-import-points" class="slide level2 center">
+<h2>Step 2a: Import Points</h2>
+<p>Grasshopper node chain:</p>
 <ol type="1">
-<li class="fragment">update BIM</li>
-<li class="fragment">export cleanly</li>
-<li class="fragment">update BEM automatically</li>
-<li class="fragment">rerun analysis</li>
-<li class="fragment">feed changes back into design</li>
+<li class="fragment"><strong>File Path</strong> → path to <code>points.csv</code></li>
+<li class="fragment"><strong>Read File</strong> → raw text</li>
+<li class="fragment"><strong>Split Text</strong> (separator: <code>\n</code>) → one item per row</li>
+<li class="fragment"><strong>List Item</strong> (index 0) → discard header row; use <strong>Shift List</strong> (shift = 1)</li>
+<li class="fragment">For each row: <strong>Split Text</strong> (separator: <code>,</code>)</li>
+<li class="fragment"><strong>List Item</strong> index 1 → x, index 2 → y</li>
+<li class="fragment"><strong>Construct Point</strong> (x, y, 0)</li>
 </ol>
-<p><strong>Real</strong></p>
+<p>You now have a point cloud of centroids in Rhino space.</p>
+</section>
+<section id="step-2b-import-polygons" class="slide level2 center">
+<h2>Step 2b: Import Polygons</h2>
+<p>For <code>polygons.csv</code> (columns: id, ring, x, y):</p>
 <ol type="1">
-<li class="fragment">export once</li>
-<li class="fragment">spend days cleaning the BEM</li>
-<li class="fragment">design changes continue</li>
-<li class="fragment">model diverges</li>
-<li class="fragment">everyone hopes the gap is still “small enough”</li>
+<li class="fragment"><strong>Read File</strong> → <strong>Split Text</strong> by <code>\n</code> → skip header</li>
+<li class="fragment">Parse each row: split by <code>,</code> → extract id, x, y</li>
+<li class="fragment"><strong>GHPython</strong> component to group vertices by id:</li>
 </ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a aria-label="1"></a><span class="co"># GHPython: inputs = ids (list), xs (list), ys (list)</span></span>
+<span id="cb2-2"><a aria-label="2"></a><span class="co"># output = polylines (list of point lists)</span></span>
+<span id="cb2-3"><a aria-label="3"></a><span class="im">import</span> rhinoscriptsyntax <span class="im">as</span> rs</span>
+<span id="cb2-4"><a aria-label="4"></a><span class="im">import</span> Rhino.Geometry <span class="im">as</span> rg</span>
+<span id="cb2-5"><a aria-label="5"></a></span>
+<span id="cb2-6"><a aria-label="6"></a>groups <span class="op">=</span> {}</span>
+<span id="cb2-7"><a aria-label="7"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(ids)):</span>
+<span id="cb2-8"><a aria-label="8"></a>    fid <span class="op">=</span> ids[i]</span>
+<span id="cb2-9"><a aria-label="9"></a>    <span class="cf">if</span> fid <span class="kw">not</span> <span class="kw">in</span> groups:</span>
+<span id="cb2-10"><a aria-label="10"></a>        groups[fid] <span class="op">=</span> []</span>
+<span id="cb2-11"><a aria-label="11"></a>    groups[fid].append(rg.Point3d(<span class="bu">float</span>(xs[i]), <span class="bu">float</span>(ys[i]), <span class="dv">0</span>))</span>
+<span id="cb2-12"><a aria-label="12"></a></span>
+<span id="cb2-13"><a aria-label="13"></a>polylines <span class="op">=</span> []</span>
+<span id="cb2-14"><a aria-label="14"></a><span class="cf">for</span> fid <span class="kw">in</span> <span class="bu">sorted</span>(groups.keys()):</span>
+<span id="cb2-15"><a aria-label="15"></a>    pts <span class="op">=</span> groups[fid]</span>
+<span id="cb2-16"><a aria-label="16"></a>    <span class="cf">if</span> <span class="bu">len</span>(pts) <span class="op">&gt;</span> <span class="dv">2</span>:</span>
+<span id="cb2-17"><a aria-label="17"></a>        pl <span class="op">=</span> rg.Polyline(pts)</span>
+<span id="cb2-18"><a aria-label="18"></a>        <span class="cf">if</span> <span class="kw">not</span> pl.IsClosed:</span>
+<span id="cb2-19"><a aria-label="19"></a>            pl.Add(pts[<span class="dv">0</span>])</span>
+<span id="cb2-20"><a aria-label="20"></a>        polylines.append(pl.ToPolylineCurve())</span>
+<span id="cb2-21"><a aria-label="21"></a></span>
+<span id="cb2-22"><a aria-label="22"></a>a <span class="op">=</span> polylines</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Output <code>a</code> → list of closed polyline curves = your site boundaries.</p>
 </section>
-<section id="case-study-translation-gone-wrong" class="slide level2 center">
-<h2>Case Study: Translation Gone Wrong</h2>
-<ul>
-<li class="fragment">new 15,000 m² university research building</li>
-<li class="fragment">BIM in Revit with MEP coordination</li>
-<li class="fragment">energy model in OpenStudio / EnergyPlus</li>
-<li class="fragment">goal: LEED Gold energy analysis</li>
-</ul>
+<section id="core-operation-1-buffer" class="slide level2 center">
+<h2>Core Operation 1: Buffer</h2>
+<p><strong>Goal</strong>: “What lies within 400 m of each site?”</p>
+<p>Grasshopper:</p>
+<ol type="1">
+<li class="fragment">Start from your imported polygon curves</li>
+<li class="fragment"><strong>Offset Curve</strong> (distance = 400, plane = XY)</li>
+<li class="fragment">Or for points: <strong>Circle</strong> (radius = 400) at each centroid</li>
+<li class="fragment"><strong>Region Union</strong> if buffers overlap and you want a merged zone</li>
+</ol>
+<p>This replaces <code>sites.buffer(400)</code> from the notebook.</p>
 </section>
-<section id="case-study-timeline" class="slide level2 center">
-<h2>Case Study Timeline</h2>
-<p><strong>Week 1</strong></p>
-<ul>
-<li class="fragment">export appears successful</li>
-<li class="fragment">team believes the workflow is seamless</li>
-</ul>
-<p><strong>Week 2</strong></p>
-<ul>
-<li class="fragment">465 thermal zones created instead of about 30</li>
-<li class="fragment">HVAC missing</li>
-<li class="fragment">generic constructions everywhere</li>
-<li class="fragment">orientation wrong</li>
-</ul>
+<section id="core-operation-2-clip" class="slide level2 center">
+<h2>Core Operation 2: Clip</h2>
+<p><strong>Goal</strong>: “What part of my data falls inside this boundary?”</p>
+<p>Grasshopper:</p>
+<ol type="1">
+<li class="fragment">Import the boundary polygon (e.g., a district outline)</li>
+<li class="fragment">Import the features to clip</li>
+<li class="fragment"><strong>Region Intersection</strong> (curve A = feature, curve B = boundary)</li>
+<li class="fragment">Or for points: <strong>Point In Curve</strong> → keep only points that return <code>1</code> (inside) or <code>2</code> (coincident)</li>
+</ol>
+<p>This replaces <code>gpd.clip()</code>.</p>
 </section>
-<section id="case-study-timeline-contd" class="slide level2 center">
-<h2>Case Study Timeline (cont’d)</h2>
-<p><strong>Weeks 3-4</strong></p>
-<ul>
-<li class="fragment">merge zones manually</li>
-<li class="fragment">define constructions and material properties</li>
-<li class="fragment">build schedules and HVAC systems</li>
-<li class="fragment">fix context and shading</li>
-</ul>
-<p><strong>Week 8</strong></p>
-<ul>
-<li class="fragment">design changes arrive</li>
-<li class="fragment">re-export means losing cleanup work</li>
-<li class="fragment">manual updates begin and divergence starts</li>
-</ul>
+<section id="core-operation-3-spatial-join" class="slide level2 center">
+<h2>Core Operation 3: Spatial Join</h2>
+<p><strong>Goal</strong>: “Which features overlap which zones?”</p>
+<p>Use <strong>Point In Curve</strong> with a GHPython helper:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a aria-label="1"></a><span class="co"># GHPython: inputs = points (list), zones (list of curves), zone_names (list)</span></span>
+<span id="cb3-2"><a aria-label="2"></a><span class="co"># output = assignments (list of zone names per point)</span></span>
+<span id="cb3-3"><a aria-label="3"></a><span class="im">import</span> Rhino.Geometry <span class="im">as</span> rg</span>
+<span id="cb3-4"><a aria-label="4"></a></span>
+<span id="cb3-5"><a aria-label="5"></a>assignments <span class="op">=</span> []</span>
+<span id="cb3-6"><a aria-label="6"></a><span class="cf">for</span> pt <span class="kw">in</span> points:</span>
+<span id="cb3-7"><a aria-label="7"></a>    assigned <span class="op">=</span> <span class="st">"none"</span></span>
+<span id="cb3-8"><a aria-label="8"></a>    <span class="cf">for</span> i, zone <span class="kw">in</span> <span class="bu">enumerate</span>(zones):</span>
+<span id="cb3-9"><a aria-label="9"></a>        result <span class="op">=</span> rg.Curve.Contains(zone, pt, rg.Plane.WorldXY, <span class="fl">0.01</span>)</span>
+<span id="cb3-10"><a aria-label="10"></a>        <span class="cf">if</span> result <span class="op">==</span> rg.PointContainment.Inside:</span>
+<span id="cb3-11"><a aria-label="11"></a>            assigned <span class="op">=</span> zone_names[i]</span>
+<span id="cb3-12"><a aria-label="12"></a>            <span class="cf">break</span></span>
+<span id="cb3-13"><a aria-label="13"></a>    assignments.append(assigned)</span>
+<span id="cb3-14"><a aria-label="14"></a></span>
+<span id="cb3-15"><a aria-label="15"></a>a <span class="op">=</span> assignments</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This replaces <code>gpd.sjoin()</code>.</p>
 </section>
-<section id="lessons-learned" class="slide level2 center">
-<h2>Lessons Learned</h2>
-<ul>
-<li class="fragment">BIM was not authored with energy analysis in mind</li>
-<li class="fragment">missing data only became obvious after export</li>
-<li class="fragment">there was no workflow for iterative updates</li>
-<li class="fragment">“the file opened” did not mean “the model is valid”</li>
-</ul>
+<section id="core-operation-4-dissolve" class="slide level2 center">
+<h2>Core Operation 4: Dissolve</h2>
+<p><strong>Goal</strong>: “Merge all features that share the same category.”</p>
+<ol type="1">
+<li class="fragment">Group polygons by attribute using <strong>GHPython</strong> or <strong>Create Set</strong></li>
+<li class="fragment">Per group: <strong>Region Union</strong> → single merged boundary</li>
+</ol>
+<p>This replaces <code>gdf.dissolve()</code>.</p>
 </section>
-<section id="divergence-detective" class="slide level2 center">
-<h2>Divergence Detective</h2>
-<p><strong>Scenario:</strong> Actual energy use is 30% higher than predicted because BIM and BEM drifted apart.</p>
-<p>Investigate in groups:</p>
+<section id="visualization" class="slide level2 center">
+<h2>Visualization</h2>
+<p>Grasshopper gives you the Rhino viewport for free:</p>
 <ul>
-<li class="fragment">what geometry changes could explain the increase?</li>
-<li class="fragment">what material substitutions matter?</li>
-<li class="fragment">what system or control changes matter?</li>
-<li class="fragment">what operation schedules may differ from assumptions?</li>
+<li class="fragment"><strong>Custom Preview</strong> with color gradients for scoring</li>
+<li class="fragment"><strong>Text Tag</strong> or <strong>Text Tag 3D</strong> for labeling features</li>
+<li class="fragment"><strong>Gradient</strong> component → map attribute values to colors</li>
+<li class="fragment">Bake final geometry to Rhino layers for export</li>
 </ul>
-<p>Come back with your top three suspects.</p>
+<p>This replaces <code>.plot(column="score", legend=True)</code>.</p>
 </section>
-<section id="paired-run-exercise-your-variants-same-model" class="slide level2 center">
-<h2>Paired-Run Exercise: Your Variants, Same Model</h2>
-<p>Run the same energy model twice — massing A, then massing B — with everything else held identical.</p>
+<section id="quick-color-by-attribute-recipe" class="slide level2 center">
+<h2>Quick Color-by-Attribute Recipe</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a aria-label="1"></a><span class="co"># GHPython: inputs = values (list of floats), min_val, max_val</span></span>
+<span id="cb4-2"><a aria-label="2"></a><span class="co"># output = colors</span></span>
+<span id="cb4-3"><a aria-label="3"></a><span class="im">import</span> System.Drawing <span class="im">as</span> sd</span>
+<span id="cb4-4"><a aria-label="4"></a></span>
+<span id="cb4-5"><a aria-label="5"></a>colors <span class="op">=</span> []</span>
+<span id="cb4-6"><a aria-label="6"></a><span class="cf">for</span> v <span class="kw">in</span> values:</span>
+<span id="cb4-7"><a aria-label="7"></a>    t <span class="op">=</span> <span class="bu">max</span>(<span class="dv">0</span>, <span class="bu">min</span>(<span class="dv">1</span>, (<span class="bu">float</span>(v) <span class="op">-</span> min_val) <span class="op">/</span> (max_val <span class="op">-</span> min_val)))</span>
+<span id="cb4-8"><a aria-label="8"></a>    r <span class="op">=</span> <span class="bu">int</span>(<span class="dv">255</span> <span class="op">*</span> (<span class="dv">1</span> <span class="op">-</span> t))</span>
+<span id="cb4-9"><a aria-label="9"></a>    g <span class="op">=</span> <span class="bu">int</span>(<span class="dv">255</span> <span class="op">*</span> t)</span>
+<span id="cb4-10"><a aria-label="10"></a>    colors.append(sd.Color.FromArgb(r, g, <span class="dv">80</span>))</span>
+<span id="cb4-11"><a aria-label="11"></a></span>
+<span id="cb4-12"><a aria-label="12"></a>a <span class="op">=</span> colors</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Feed <code>a</code> into <strong>Custom Preview</strong> → instant choropleth in the viewport.</p>
+</section>
+<section id="complete-minimal-workflow" class="slide level2 center">
+<h2>Complete Minimal Workflow</h2>
+<pre><code>File Path → Read File → Split Text (\n) → Shift List (1)
+  → Split Text (,) → parse x, y → Construct Point
+  → Circle (r=400)             ← buffer
+  → Point In Curve (boundary)  ← clip
+  → Custom Preview (colors)    ← visualize</code></pre>
+<p>That is the Grasshopper equivalent of the 6-line <code>geopandas</code> notebook.</p>
+</section>
+<section id="when-to-still-use-the-converter-script" class="slide level2 center">
+<h2>When to Still Use the Converter Script</h2>
+<p>The converter handles:</p>
 <ul>
-<li class="fragment">the absolute numbers inherit every translation error you just diagnosed</li>
-<li class="fragment">the <strong>difference</strong> between the two runs is far more robust</li>
-<li class="fragment">comparative simulation of your own alternatives is the strongest use of BEM at design stage</li>
+<li class="fragment"><strong>CRS projection</strong> (WGS84 → Hong Kong 1980 Grid, in metres)</li>
+<li class="fragment"><strong>Format conversion</strong> (Shapefile, GeoJSON, GeoPackage → CSV)</li>
+<li class="fragment"><strong>Attribute flattening</strong> (nested GeoJSON properties → flat columns)</li>
 </ul>
-<p>One rule: state the comparison criteria <strong>before</strong> you look at the results.</p>
+<p>These are hard to do in Grasshopper. Let the script handle them once.</p>
 </section>
-<section id="shared-literacy-takeaways" class="slide level2 center">
-<h2>Shared Literacy Takeaways</h2>
+<section id="running-the-converter" class="slide level2 center">
+<h2>Running the Converter</h2>
+<p>Open Terminal (Mac) or Command Prompt (Windows):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a aria-label="1"></a><span class="bu">cd</span> /path/to/ARCH7476</span>
+<span id="cb6-2"><a aria-label="2"></a></span>
+<span id="cb6-3"><a aria-label="3"></a><span class="co"># default: reprojects to EPSG:2326 (Hong Kong 1980 Grid)</span></span>
+<span id="cb6-4"><a aria-label="4"></a><span class="ex">python</span> scripts/gis_to_grasshopper.py  my_data.geojson  gh_output/</span>
+<span id="cb6-5"><a aria-label="5"></a></span>
+<span id="cb6-6"><a aria-label="6"></a><span class="co"># override CRS if not in Hong Kong</span></span>
+<span id="cb6-7"><a aria-label="7"></a><span class="ex">python</span> scripts/gis_to_grasshopper.py  my_data.shp  gh_output/ <span class="at">--crs</span> 32650</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If you see an error about <code>geopandas</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a aria-label="1"></a><span class="ex">pip</span> install geopandas</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="heron-plugin-optional-power-up" class="slide level2 center">
+<h2>Heron Plugin (Optional Power-Up)</h2>
+<p>If you want to skip the converter entirely for <strong>OpenStreetMap</strong> data:</p>
+<ol type="1">
+<li class="fragment">Install <strong>Heron</strong> from food4Rhino</li>
+<li class="fragment">Use <strong>Get OSM Building Footprints</strong> → polygons directly in Grasshopper</li>
+<li class="fragment">Use <strong>Import SHP</strong> → load Shapefiles without Python</li>
+<li class="fragment">Use <strong>Import Topo</strong> → terrain mesh from online elevation data</li>
+</ol>
+<p>Heron handles CRS internally. Recommended if your project relies on OSM.</p>
+</section>
+<section id="elk-plugin-lightweight-alternative" class="slide level2 center">
+<h2>Elk Plugin (Lightweight Alternative)</h2>
+<p><strong>Elk</strong> is simpler than Heron:</p>
+<ol type="1">
+<li class="fragment">Download <code>.osm</code> file from OpenStreetMap (Export → select area)</li>
+<li class="fragment"><strong>Location</strong> component → set lat/lon origin</li>
+<li class="fragment"><strong>OSM Data</strong> component → parse the <code>.osm</code> file</li>
+<li class="fragment">Outputs: building outlines, roads, amenities as Grasshopper geometry</li>
+</ol>
+<p>Good for small areas. No Python at all.</p>
+</section>
+<section id="which-path-to-choose" class="slide level2 center">
+<h2>Which Path to Choose</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Situation</th>
+<th>Recommendation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>I have a <code>.geojson</code> or <code>.shp</code> from DATA.GOV.HK</td>
+<td>Converter script → CSV → Grasshopper</td>
+</tr>
+<tr class="even">
+<td>I want OpenStreetMap buildings and roads</td>
+<td>Heron or Elk plugin, no converter needed</td>
+</tr>
+<tr class="odd">
+<td>I need precise CRS control (distance in metres)</td>
+<td>Converter script (handles projection)</td>
+</tr>
+<tr class="even">
+<td>I just want a quick site context for design</td>
+<td>Elk is fastest</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-to-submit" class="slide level2 center">
+<h2>What to Submit</h2>
+<p>Same deliverables as the notebook version:</p>
 <ul>
-<li class="fragment">BIM and BEM must stay related, but they should not be confused</li>
-<li class="fragment">simulation outputs are only as good as the assumptions and cleanup behind them</li>
-<li class="fragment">translation loss is normal, not an edge case</li>
-<li class="fragment">performance claims need method transparency, not just metrics</li>
+<li class="fragment">a Grasshopper screenshot showing your spatial operation</li>
+<li class="fragment">a Rhino viewport screenshot with labeled output</li>
+<li class="fragment">a short paragraph: what spatial question did you answer, and what did the result show?</li>
 </ul>
+<p>The method does not matter. The spatial reasoning does.</p>
 </section>
-<section id="pathway-commitment-check" class="slide level2 center">
-<h2>Pathway Commitment Check</h2>
-<p>After this week, you should be able to say:</p>
+<section id="troubleshooting" class="slide level2 center">
+<h2>Troubleshooting</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problem</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Points appear at 0,0</td>
+<td>Check that the converter ran with <code>--crs 2326</code></td>
+</tr>
+<tr class="even">
+<td>Polygons are not closed</td>
+<td>The GHPython script auto-closes; check for parse errors</td>
+</tr>
+<tr class="odd">
+<td>Buffer looks wrong scale</td>
+<td>Confirm units are metres (EPSG:2326), not degrees</td>
+</tr>
+<tr class="even">
+<td>CSV has odd characters</td>
+<td>Open with encoding UTF-8; avoid Excel round-tripping</td>
+</tr>
+<tr class="odd">
+<td>Heron won’t install</td>
+<td>Requires Rhino 7+ and .NET 4.8; check food4Rhino</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="exit-check" class="slide level2 center">
+<h2>Exit Check</h2>
+<p>By the end of this session, you should:</p>
 <ul>
-<li class="fragment">whether your project needs only literacy in BIM/BEM</li>
-<li class="fragment">whether simulation evidence will support your question</li>
-<li class="fragment">whether your primary semester pathway is still <code>spreadsheet</code>, <code>GIS</code>, or <code>Python</code></li>
+<li class="fragment">have run the converter on one dataset</li>
+<li class="fragment">imported the CSV into Grasshopper</li>
+<li class="fragment">performed at least one spatial operation (buffer, clip, or spatial join)</li>
+<li class="fragment">visualized the result in the Rhino viewport</li>
 </ul>
 
 

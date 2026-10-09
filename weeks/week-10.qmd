@@ -14,11 +14,12 @@ format:
 
 ## Today's Agenda
 
-- what good evidence visuals do
-- how to show the workflow without overwhelming the audience
-- build the evidence board / object card
-- document the pathway artifact
-- timed draft reviews and feedback triage
+- what good evidence visuals do — and what kills them
+- figure rescue: from raw output to stakeholder figure
+- method transparency: how much is enough?
+- evidence board worked example
+- timed draft reviews with a real rubric
+- feedback triage
 
 ---
 
@@ -32,81 +33,195 @@ A figure should do at least one of these:
 - show a decision threshold
 - expose uncertainty
 
+If it does none of these, it is decoration. Cut it.
+
 ---
 
 ## Match Visuals to Pathway
 
 ### Spreadsheet
 
-- comparison chart
-- summary table
-- decision matrix
+- comparison chart with labeled axes and units
+- summary table with provenance column
+- decision matrix with explicit weights
 
 ### GIS
 
-- one clean map per question
-- simple legend and scale logic
-- avoid decorative layers
+- one clean map per question — not a layer showcase
+- simple legend, scale bar, north arrow
+- avoid decorative base layers that compete with your data
 
 ### Python
 
-- annotated plots
-- notebook outputs with interpretation
-- exported figures with titles and units
+- annotated plots with direct labels, not just legends
+- exported figures at print resolution (200+ dpi)
+- notebook outputs with one sentence of interpretation per figure
 
 ---
 
-## The Evidence Board / Object Card
+## Figure Rescue: Why Raw Outputs Fail
 
-It should answer in seconds:
+A four-panel notebook output can answer four questions at once — or none.
 
-- what decision is at stake?
-- what evidence matters most?
-- what should happen next?
+Common problems:
+
+- too many variables competing for attention
+- vague titles: "Figure 3" tells no one anything
+- error bars present but never explained
+- no connection back to the decision
+- uncertainty hidden or absent
 
 ---
 
-## Method Transparency
+## Figure Rescue: Before and After
+
+**Before:** a raw multi-panel plot from a notebook — occupancy over time, dwell time box plot, scatter of environmental conditions, mean bar chart — all at once, no annotations.
+
+**After:** the same four panels, but:
+
+1. each panel gets a sentence title: "Condition B increased mean dwell time"
+2. the bar chart adds a target line: "target ≥ 24 users"
+3. error bars are captioned: "mean ± 95% CI"
+4. one paragraph below states what the figure supports
+
+The course notebook `02_arch_viz_analysis.ipynb` has an "object card starter" that demonstrates this pattern. Revisit it now.
+
+---
+
+## The 3-Second Message Test (Revisited)
+
+Give your figure three seconds. Can a viewer tell:
+
+- what is being compared?
+- which side is better — or why neither is?
+- what the takeaway is for the decision?
+
+If your figure needs a paragraph of explanation to make sense, it needs revision, not explanation.
+
+---
+
+## The "So What?" Test
+
+A computational pipeline can produce a result without establishing which design response is justified.
+
+**Exercise:** write one sentence under your main figure:
+
+*"This figure shows __________, which matters because __________, and the recommended action is __________."*
+
+If you cannot fill all three blanks, the figure has not yet earned its place.
+
+---
+
+## Method Transparency: How Much Is Enough?
 
 Show just enough that someone can trust the output:
 
-- source of data
-- basic workflow
-- major assumptions
-- main limitation
+- **source of data** — where did it come from? when?
+- **basic workflow** — what happened between input and output?
+- **major assumptions** — what did you choose that could have gone differently?
+- **main limitation** — what should a reader not conclude from this?
+
+The audience does not need your full pipeline. They need enough to judge whether your conclusion is reasonable.
 
 ---
 
-## Draft Review Prompt
+## Method Transparency: A Research Example
 
-If a critic sees this for 30 seconds, can they tell:
+An HVAC control study tested a learned-probability supervisor against fixed, PMV, and adaptive-band policies across 24 scenarios — six cities, two emissions pathways, present and future weather.
 
-- what you studied?
-- what you found?
-- how confident they should be?
-- what action follows?
+The full method is complex. But the trust-worthy summary is four lines:
+
+- **data:** simulated buildings under 24 climate scenarios
+- **method:** compared energy use and thermal exposure across four control strategies
+- **finding:** the supervisor saved 3–7% energy but increased worst-zone warm exposure in every scenario
+- **key insight:** matched ablations showed setpoint bounds, not the learned model, drove the savings
+
+Your students' methods are simpler than this. If a 24-scenario study fits in four lines, yours can fit in three.
+
+---
+
+## Making Method Visible for a Public Audience
+
+At the 2025 Venice Architecture Biennale, CO₂ measurements from Hong Kong wet markets were overlaid on floor plans through augmented reality.
+
+The audience was not engineers. The method had to be:
+
+- visible — viewers could see where readings came from
+- honest — the sealed retrofit showed ~216 ppm CO₂ above mixed-mode markets
+- immediate — the trade-off between enclosure, cooling, and fresh air was clear on sight
+
+Your evidence board has the same challenge: make the method visible without making it the story.
+
+---
+
+## Evidence Board Worked Example
+
+**Decision:** which of three candidate sites best balances transit access, development constraints, and environmental exposure?
+
+The board contains four elements:
+
+1. **The question** — one sentence at the top
+2. **One map** — three sites with 400 m buffer zones, colored by transit access score
+3. **One comparison chart** — bar chart of composite scores with error bars
+4. **One limitation statement** — "flood risk data is from 2019 projections; updated models may shift Hung Hom Bay's ranking"
+
+| Site | Score | Transit | Flood Risk |
+|---|---|---|---|
+| Kai Tak | 78 | high | medium |
+| Kwun Tong Waterfront | 65 | medium | low |
+| Hung Hom Bay | 72 | high | high |
+
+That is enough. The board is not a report — it is a decision surface.
+
+---
+
+## Draft Review Rubric
+
+Reviewers fill out this checklist for each presenter:
+
+| Question | Y / N | Note |
+|---|---|---|
+| Is the design decision clear in the first 30 seconds? | | |
+| Does the evidence actually support the stated recommendation? | | |
+| Is uncertainty named — not hidden or hand-waved? | | |
+| Does a clear next action follow from the evidence? | | |
+| Could you rerun or verify the key step from what is shown? | | |
+
+Hand the completed rubric to the presenter. Do not discuss during the review — write only.
 
 ---
 
 ## Draft Review Protocol
 
-In rotating trios, with the near-final draft in front of you:
+In rotating trios (15 minutes per round):
 
-1. present for five minutes — the decision, the evidence, the recommendation, the limit
-2. reviewers respond against three questions only:
-   - what is the single message?
-   - does the evidence actually support it?
-   - what would you cut?
-3. record the critique without defending
+1. **Present** (5 min) — the decision, the evidence, the recommendation, the limit
+2. **Silent review** (3 min) — each reviewer completes the rubric independently
+3. **Verbal feedback** (5 min) — reviewers state their single strongest concern and one thing that works
+4. **Record** (2 min) — presenter writes down what they heard without defending
+
+Three rounds = three sets of rubric feedback per student.
 
 ---
 
 ## Feedback Triage
 
-Sort what you heard into:
+After all rounds, sort what you heard into three piles:
 
-- fix before submission
-- fix if time allows
-- disagree, and can say why
+- **fix before submission** — things that break the argument
+- **fix if time allows** — things that improve clarity but do not change the conclusion
+- **disagree, and can say why** — things you reject with a stated reason
 
-Leave with one written revision plan for Week 11.
+Leave today with one written revision plan for Week 11.
+
+---
+
+## Exit Check
+
+By the end of today, you should have:
+
+- one figure that passes the 3-second message test
+- one evidence board draft with all four elements
+- one method summary in four lines or fewer
+- three completed peer-review rubrics (received)
+- one prioritized revision plan

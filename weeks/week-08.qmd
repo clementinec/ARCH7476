@@ -15,10 +15,13 @@ format:
 ## Today's Agenda
 
 - what a useful pilot actually does
-- uncertainty and error
+- hidden precision: the 120-watt case
+- where uncertainty enters your workflow
+- when data treatment changes the conclusion
+- probability vs. point prediction
+- input quality vs. model complexity
 - comparison logic
-- peer critique
-- A3 refinement
+- peer critique and A3 refinement
 
 ---
 
@@ -31,16 +34,187 @@ A pilot is useful if it shows:
 - the assumptions are visible
 - the weak points are now obvious
 
+A pilot that reveals a problem is more valuable than one that confirms a hope.
+
+---
+
+## Case: The 120-Watt Assumption
+
+Every thermal comfort standard assumes the same thing about a seated office worker:
+
+**They produce 120 watts of metabolic heat.**
+
+That number enters every PMV calculation, every cooling-load estimate, every energy model. It looks precise. It is not.
+
+---
+
+## What Happens When You Replace It
+
+A recent study replaced the uniform 120 W assumption with demographic-aware metabolic rates — accounting for age, sex, and body composition.
+
+Results:
+
+- simulated HVAC site energy changed by **4–10%**
+- the predicted comfort gap between male and female occupants **narrowed by 47%**
+
+The assumption looked like a fact. It was a design choice — and it had consequences for who gets comfortable.
+
+---
+
+## Why This Matters for Your Pilot
+
+Every workflow has a version of the 120-watt assumption:
+
+- a default occupant schedule
+- a standard climate file
+- a uniform pedestrian speed
+- a fixed noise threshold
+
+Your pilot should name its assumptions, not hide them inside defaults.
+
 ---
 
 ## Where Uncertainty Comes From
 
-- incomplete data
-- noisy observations
-- model assumptions
-- small samples
-- repeated readings that are not independent — are 120 readings from one room 120 observations, or one?
-- inconsistent definitions
+- **incomplete data** — missing readings, sparse surveys
+- **noisy observations** — sensor drift, subjective responses
+- **model assumptions** — the 120 W default, fixed schedules
+- **small samples** — three sites, not thirty
+- **pseudo-replication** — are 120 readings from one room 120 observations, or one?
+- **inconsistent definitions** — what counts as "comfortable"?
+- **data treatment choices** — how you handle gaps changes the answer
+
+---
+
+## Case: Same Data, Different Treatment, Different Conclusion
+
+A study of thermal comfort databases encountered missing radiant-temperature readings — a common problem in field research.
+
+Three treatments of the same missing data:
+
+| Treatment | Air-to-radiant sensitivity ratio |
+|---|---|
+| Rule-based imputation | 1.9 |
+| Learning through missingness | 4.5 |
+| Measured-only subset | (different again) |
+
+The learning model and validation splits were held fixed. Only the treatment of gaps changed. The interpretation of the same evidence shifted by more than 2×.
+
+---
+
+## The Lesson
+
+It is not enough to say "I cleaned the data."
+
+You must also ask: **would a different reasonable cleaning change my conclusion?**
+
+If yes, that is not a flaw in your work. It is an uncertainty you should report.
+
+---
+
+## Probability vs. Point Prediction
+
+Traditional thermal comfort gives you a single number:
+
+> "PMV = 0.3, therefore comfortable."
+
+But research on ordinal learning shows that thermal sensation is better represented as a **probability distribution**:
+
+> "73% probability of neutral or slightly warm, 18% probability of warm, 9% probability of hot."
+
+---
+
+## Why Probabilities Matter
+
+The point prediction says: **this is the answer.**
+
+The distribution says: **here is how confident you should be.**
+
+For your pilot:
+
+- a single score hides disagreement
+- a range or distribution makes the uncertainty visible
+- your audience can then decide whether the confidence is enough for the decision at hand
+
+---
+
+## Input Quality vs. Model Complexity
+
+Architecture students often invest in more complex models while using default inputs.
+
+A study of climate-adapted weather files found:
+
+- the standard weather file (TMY3) had a **cool bias** that propagated into **16–31% annual heating overestimates** in New York
+- in Los Angeles, the same bias **reversed sign** — the error went the other direction
+- historical-file biases — not statistical methods — **dominated** the tested future-scenario errors
+
+The weather file mattered more than the model.
+
+---
+
+## The Equivalent in Your Work
+
+| Over-invested | Under-examined |
+|---|---|
+| complex simulation | which climate file? |
+| detailed 3D model | which occupant schedule? |
+| multi-criteria scoring | which weights? |
+| sophisticated GIS layers | which boundary definition? |
+
+Before making the model more complex, check whether the inputs deserve the precision.
+
+---
+
+## Case: Equal Setpoints, Unequal Outcomes
+
+A residential cooling study set the same thermostat temperature across all units.
+
+The result: **equal cooling setpoints produced unequal modeled thermal outcomes** across buildings and age groups.
+
+- occupants aged 65+ experienced higher predicted core temperatures in all 24 tested cases
+- lowering the setpoint helped them but increased cold-discomfort hours for others
+- predicted sensation and physiological state gave **different information**
+
+Comparison revealed hidden inequity that the uniform policy concealed.
+
+---
+
+## Case: When a Benefit Comes From the Wrong Source
+
+A learned HVAC supervisor was tested against fixed, PMV-based, and adaptive-band policies across 24 scenarios (six cities, two emissions pathways, present and future weather):
+
+- it saved **3–7% of site energy** in every scenario
+- but it increased **worst-zone warm-temperature exposure** in every scenario too
+
+Matched ablations showed that the setpoint bounds — not the learning — drove the savings.
+
+The apparent benefit came from the **operating constraints**, not the intelligence.
+
+---
+
+## Why Ablation Matters
+
+If you compare option A against option B and A wins, ask:
+
+- **which part** of A produced the benefit?
+- would a simpler version of A do the same thing?
+- is the benefit real, or is it an artifact of the comparison setup?
+
+This is the difference between "my method works" and "I know why it works."
+
+---
+
+## Uncertainty Audit: Your Own Pilot
+
+For your current A3 prototype, answer these five questions:
+
+1. What is the single most influential assumption?
+2. What happens if that assumption is wrong by 20%?
+3. Are your observations independent, or pseudo-replicated?
+4. Would a different reasonable data treatment change the conclusion?
+5. Does your output report a point value or a range?
+
+Write down the answers. They belong in your A3 submission.
 
 ---
 
@@ -48,22 +222,47 @@ A pilot is useful if it shows:
 
 Instead of:
 
-- “the data proves”
+- ~~"the data proves"~~
+- ~~"this shows that"~~
+- ~~"clearly demonstrates"~~
 
 Try:
 
-- “the pilot suggests”
-- “the comparison indicates”
-- “confidence is limited by”
+- "the pilot suggests"
+- "the comparison indicates, subject to [named limit]"
+- "confidence is limited by [specific source]"
+- "under these assumptions, the result favors X"
+- "a different treatment of [gap/input] could change this"
+
+Hedging is not weakness. It is precision.
 
 ---
 
-## Peer Critique Questions
+## Comparison Logic
 
-- is the output genuinely tied to the decision?
-- is uncertainty being hidden or handled?
-- is the pathway still the right one?
-- what one fix would improve the method most?
+A good comparison requires:
+
+- **stated criteria** — before you compare, not after
+- **controlled differences** — change one thing, hold the rest
+- **named assumptions** — which defaults are you accepting?
+- **sensitivity check** — does the ranking survive a reasonable change in inputs?
+- **provenance** — which data came from measurement, which from a model, which from a standard?
+
+If your recommendation changes when one input shifts by 20%, say so.
+
+---
+
+## Peer Critique Protocol
+
+In pairs, exchange your A3 prototype and answer:
+
+1. Is the output genuinely tied to the decision?
+2. What is the single most influential assumption?
+3. Is uncertainty being hidden or handled?
+4. Is the pathway still the right one?
+5. What one fix would improve the method most?
+
+Record the critique. Do not defend during the exchange.
 
 ---
 
@@ -74,5 +273,7 @@ Show enough to demonstrate:
 - one working workflow
 - one interpretable output
 - one clear account of limits
+
+Name the assumptions. Name the uncertainties. Name what you would check next.
 
 Messy is acceptable. Opaque is not.

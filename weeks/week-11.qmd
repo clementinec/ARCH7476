@@ -14,10 +14,12 @@ format:
 
 ## Today's Agenda
 
-- package structure
-- peer review
-- pathway troubleshooting
-- final revision priorities
+- audience-fit pressure test
+- four review questions, one at a time
+- demonstrated vs. validated: are you overselling?
+- pathway triage for workflows that are not landing
+- package assembly checklist
+- peer feedback triage and revision plan
 
 ---
 
@@ -28,16 +30,61 @@ format:
 3. pathway artifact
 4. method appendix
 
-Each part should reinforce the others.
+Each part should reinforce the others. If one part contradicts or ignores another, the package reads as unfinished.
 
 ---
 
-## Review Questions
+## The 60-Second Audience Test
 
-- is the decision context clear?
-- does the evidence actually support the recommendation?
-- is the pathway visible in the package?
-- are the limits stated directly?
+A computational pipeline can produce a result without establishing which design response is justified.
+
+Swap your draft package with a partner. They read for 60 seconds, then answer:
+
+- what decision is at stake?
+- what does the author recommend?
+- how confident should I be?
+
+If they cannot answer all three, the package is not ready for its audience.
+
+---
+
+## Review Question 1: Is the Decision Context Clear?
+
+**Good enough:** a reader who has never seen your project can name the decision in one sentence after reading the brief.
+
+**Common failure:** the brief opens with method or background instead of the decision. The reader reaches the recommendation without knowing what was being decided.
+
+**Fix:** write the decision as the first sentence. Everything else follows from it.
+
+---
+
+## Review Question 2: Does the Evidence Support the Recommendation?
+
+**Good enough:** each piece of evidence in the package connects to the recommendation through a stated reason, not just proximity on the page.
+
+**Common failure:** the evidence is real, but the recommendation could be swapped for the opposite and nothing in the package would contradict it.
+
+**Fix:** for each figure or data point, write one sentence: "this supports the recommendation because ________." If nothing fills the blank, the evidence is decoration.
+
+---
+
+## Review Question 3: Is the Pathway Visible?
+
+**Good enough:** a reader can tell which tool produced the evidence and could, in principle, rerun the workflow.
+
+**Common failure:** the pathway artifact exists but is disconnected from the brief. The spreadsheet, map, or notebook sits in an appendix that no one reads.
+
+**Fix:** reference the artifact directly in the brief: "the comparison in Figure 2 was produced by ________."
+
+---
+
+## Review Question 4: Are the Limits Stated Directly?
+
+**Good enough:** the package names at least one thing the evidence does not establish and one condition under which the recommendation might change.
+
+**Common failure:** limits appear as a disclaimer paragraph at the end that reads as boilerplate rather than genuine reflection.
+
+**Fix:** embed limits next to the claims they qualify. "This comparison covers three sites; a fourth with different transit access might change the ranking."
 
 ---
 
@@ -50,6 +97,7 @@ Each part should reinforce the others.
 Spatial/public-space questions:
 
 - does the map or observation actually answer the claim?
+- could the same spatial data support a different recommendation?
 :::
 
 ::: {.column width="50%"}
@@ -58,17 +106,61 @@ Spatial/public-space questions:
 Building/workplace questions:
 
 - is the performance claim backed by method, not branding?
+- would changing one assumption reverse the conclusion?
 :::
 ::::
 
 ---
 
-## Final Revision Priorities
+## Demonstrated vs. Validated
 
-- cut anything that does not help the decision
-- keep one clear recommendation
-- make uncertainty visible
-- make the workflow traceable
+A working pipeline is not a validated claim.
+
+Go through your A4 and mark each claim:
+
+- **demonstrated**: "the workflow runs and produces this output"
+- **validated**: "the output has been checked against independent evidence"
+
+Most student work is demonstrated, not validated. That is fine — but say so. Overselling a demonstration as validation is the fastest way to lose a reviewer's trust.
+
+---
+
+## Pathway Triage
+
+If your workflow is not producing useful output by Week 11, you have three options:
+
+| Option | When it fits | What changes |
+|---|---|---|
+| **Narrow the scope** | the method works but the question is too broad | reduce to one site, one comparison, one variable |
+| **Reframe the question** | the evidence you found answers a different question than you started with | rewrite the brief around what you actually have |
+| **Pivot the pathway** | the tool is fighting the question | switch to the baseline spreadsheet pathway with what you have collected |
+
+Choose one. Do not try all three.
+
+---
+
+## Package Assembly Checklist
+
+| Part | Contains | Rough length |
+|---|---|---|
+| **Decision brief** | decision, evidence summary, recommendation, limits | 1–2 pages |
+| **Evidence board** | the visual package: key figures, one dominant message, next action | 1 board or 2–3 slides |
+| **Pathway artifact** | the spreadsheet, map, or notebook that produced the evidence | included as file or appendix |
+| **Method appendix** | data sources, workflow steps, assumptions, one paragraph on what you would do differently | 1 page |
+
+If any part is missing, the submission is incomplete.
+
+---
+
+## Peer Feedback Triage
+
+Sort every piece of feedback you received today into three categories:
+
+- **Fix before submission**: the reviewer identified something the audience will misread
+- **Fix if time allows**: a real improvement, but the package works without it
+- **Disagree, and can say why**: you considered the feedback and have a reason to keep your current approach
+
+Write your triage as a one-page revision plan. Bring it to Week 12.
 
 ---
 
@@ -76,6 +168,7 @@ Building/workplace questions:
 
 Leave with:
 
-- one prioritized revision list
-- one reviewer note on audience fit
-- one reviewer note on method clarity
+- one completed 60-second audience test (partner's written answers)
+- every claim in your A4 marked as demonstrated or validated
+- one written revision plan with prioritized fixes
+- a submission-ready package structure, even if content is still being refined

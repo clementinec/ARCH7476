@@ -8,3 +8,5 @@ __pycache__/
 *.out
 *.snm
 *.toc
+
+**/*.quarto_ipynb

@@ -14,10 +14,11 @@ format:
 
 ## Today's Agenda
 
+- Object Fair format and logistics
+- critique protocol
 - final presentations
-- evidence board review
-- reflection on pathway choice
-- transfer into the next project
+- reflection on pathway, tool, and reasoning
+- transfer forward: archiving and next steps
 
 ---
 
@@ -26,6 +27,35 @@ format:
 You are not only submitting a class project.
 
 You are handing yourself a better starting point for the next studio decision.
+
+---
+
+## The Semester Arc
+
+| Phase | Weeks | What you did |
+|---|---|---|
+| **Survey** | 1--5 | Explored spreadsheet, GIS, Python, BIM/BEM |
+| **Choose** | 6 | Committed to one primary pathway |
+| **Prototype** | 7--8 | Built and piloted a minimal viable workflow |
+| **Deliver** | 9--12 | Turned evidence into a recommendation someone can act on |
+
+You started with a question. You leave with a workflow, an answer, and an honest account of what remains uncertain.
+
+---
+
+## Object Fair: Format
+
+Each student sets up a station with:
+
+- **evidence board / object card** — printed or displayed, readable from a distance
+- **pathway artifact** — the spreadsheet, map, notebook, or model output
+- **method appendix** — available for inspection, not presented
+
+Presentations run as a walkthrough:
+
+- **3 minutes**: verbal pitch at your station
+- **2 minutes**: questions from reviewers
+- rotate after each round
 
 ---
 
@@ -39,18 +69,41 @@ You are handing yourself a better starting point for the next studio decision.
 
 ---
 
-## What “Transfer Forward” Means
+## Critique Protocol
 
-After today, you should be able to reuse:
+While listening, fill out a feedback card for each presenter:
 
-- your evidence structure
-- your spreadsheet, map, or notebook workflow
-- your decision criteria
-- your language for uncertainty
+| Question | Your response |
+|---|---|
+| What was the single decision? | |
+| Did the evidence support the recommendation? | |
+| What was the strongest piece of evidence? | |
+| What was the weakest or most uncertain? | |
+| What question would you ask next? | |
+
+Hand the card to the presenter after their round. Be specific.
 
 ---
 
-## Reflection Questions
+## Object Fair: What to Display vs. Project
+
+**Display** (physical or on screen at your station):
+
+- evidence board / object card
+- key figures, maps, or charts
+- one-sentence recommendation
+
+**Have available** (not projected, but ready to show):
+
+- full spreadsheet, notebook, or GIS file
+- raw data sources
+- method appendix
+
+The audience should understand the decision in 30 seconds. The detail is there for anyone who wants to inspect it.
+
+---
+
+## Reflection: Evidence and Reasoning
 
 - what kind of evidence do you trust differently now?
 - which piece of evidence did you produce by designing, rather than by collecting?
@@ -59,12 +112,51 @@ After today, you should be able to reuse:
 
 ---
 
+## Reflection: Tool as Actor
+
+- what did your workflow tell you that your intuition did not?
+- where did the tool shape what you asked, rather than just answering it?
+- if you removed the computational output entirely, would your recommendation change?
+- whose experience did your model represent — and whose did it leave out?
+
+These are not rhetorical. The tool is never neutral: it decides who the default occupant is, what the climate file assumes, which experiences the interface makes visible and which it hides.
+
+---
+
+## Transfer Forward: Concrete Steps
+
+Before you close the semester, write down:
+
+| | |
+|---|---|
+| **Archive** | What files, tools, and data do you need to keep so this workflow is reusable? |
+| **Method** | What would you do differently if you ran this again? |
+| **Next question** | What evidence question would you ask next, now that this one is partially answered? |
+| **Audience** | Who else — a studio critic, a collaborator, a future employer — could use this workflow or its outputs? |
+
+This is your handoff to yourself. Make it specific enough that you can reopen the folder in six months and know what to do.
+
+---
+
+## What "Transfer Forward" Means
+
+After today, you should be able to reuse:
+
+- your evidence structure
+- your spreadsheet, map, or notebook workflow
+- your decision criteria
+- your language for uncertainty
+
+The course ends. The reasoning does not.
+
+---
+
 ## Closing Standard
 
 The strongest work in this course does not sound like:
 
-“I used a tool.”
+"I used a tool."
 
 It sounds like:
 
-“I used this workflow to reduce uncertainty around a real design decision.”
+"I used this workflow to reduce uncertainty around a real design decision."
