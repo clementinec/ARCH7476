@@ -18,6 +18,7 @@ format:
 - compare access, quality, and fit
 - commit to one primary pathway
 - identify failure points early
+- make your work shareable and reusable
 - finalize A2
 
 ---
@@ -97,11 +98,96 @@ If the pathway is right, it should feel obvious in hindsight.
 
 Wrong reason:
 
-- “Python seems more impressive”
+- "Python seems more impressive"
 
 Better reason:
 
-- “The question is spatial, and GIS is the shortest path to a useful output”
+- "The question is spatial, and GIS is the shortest path to a useful output"
+
+---
+
+## Your Work Should Outlive This Course
+
+A PDF on your hard drive is not a portfolio piece.
+
+A live page that a studio tutor, employer, or peer can open in a browser — that is a takeaway.
+
+This semester, every student will publish their evidence work as a **live site**.
+
+---
+
+## GitHub Pages: Your Portfolio in 15 Minutes
+
+GitHub Pages gives you a free site at `yourname.github.io`.
+
+The workflow:
+
+1. Create a GitHub account (free)
+2. Fork the starter template
+3. Edit `index.html` with your project title and evidence
+4. Push — the site goes live automatically
+
+No server. No domain purchase. No command line if you do not want it.
+
+See the full walkthrough in [GitHub Pages Guide](github-pages-guide.qmd).
+
+---
+
+## What Goes on Your Site
+
+Start small. Add over the semester:
+
+| Week | What to publish | Why |
+|---|---|---|
+| Now | project title, decision question, pathway choice | forces clarity |
+| A3 | pilot method, first output, stated limits | makes the prototype visible |
+| A4 | evidence board, recommendation, method appendix | the full package |
+
+By Week 12, your site **is** your Object Fair evidence board — live, linkable, yours to keep.
+
+---
+
+## The GIS Explorer: Zero-Install Spatial Analysis
+
+For students on the GIS pathway — or anyone with spatial data:
+
+Open `site_tools/gis-explorer.html` in your browser. That is it.
+
+- drag and drop a `.geojson` file onto the map
+- buffer a site by any distance
+- measure point-to-point distances
+- compare site attributes side by side
+- export results
+
+No Python. No Colab. No plugins. No install.
+
+---
+
+## GIS Explorer Demo
+
+Try this now:
+
+1. Open `site_tools/gis-explorer.html`
+2. Load the sample data (`data/candidate_sites.geojson`)
+3. Buffer Kai Tak by 400 m
+4. Compare the three sites by score and flood risk
+
+The tool runs entirely in your browser. You can drop it into your GitHub Pages site and your spatial analysis becomes shareable.
+
+---
+
+## Connecting the Pieces
+
+Your **portfolio site** + your **pathway work** + tools like the **GIS Explorer** = a live evidence package.
+
+This is what the rest of the semester builds toward:
+
+- Week 7: prototype the method → publish first results
+- Week 8: quantify uncertainty → update the site
+- Week 10: build the evidence board → it lives on your site
+- Week 12: Object Fair → share the link
+
+Start now. Refine as you go. The site grows with your project.
 
 ---
 
@@ -143,6 +229,7 @@ Leave with:
 - one chosen primary pathway
 - one list of necessary input files or sources
 - one description of the smallest viable A3 prototype
+- a GitHub account and a forked starter site (or a plan to set one up this week)
 
 ---
 

@@ -1,0 +1,254 @@
+---
+title: "Publishing Your Work: GitHub Pages"
+subtitle: "A Reusable Portfolio Site in 15 Minutes"
+format:
+  html:
+    toc: true
+---
+
+# Why Publish?
+
+Your evidence package is more useful as a live page than a PDF buried in a submission folder.
+
+A published site:
+
+- lets reviewers, tutors, and peers see your work without downloading anything
+- becomes a portfolio piece you keep after the course ends
+- can host interactive tools (maps, charts) alongside your written analysis
+- proves you can communicate evidence to a real audience, not just submit it
+
+You are building something reusable. Treat it that way.
+
+# Step 1: Create a GitHub Account
+
+If you already have a GitHub account (many HKU students do), skip to Step 2.
+
+1. Go to [github.com](https://github.com) and click **Sign up**
+2. Use your HKU email or personal email — either works
+3. Choose a username you are comfortable sharing publicly (it becomes part of your site URL)
+4. Verify your email
+
+Your username determines your site address: `https://username.github.io`
+
+# Step 2: Create Your Site Repository
+
+There are two paths. Choose whichever feels simpler.
+
+## Path A: Personal Site (Recommended)
+
+This gives you a site at `username.github.io` — clean and professional.
+
+1. On GitHub, click the **+** in the top-right corner → **New repository**
+2. Name the repository **exactly** `username.github.io` (replace `username` with your actual GitHub username)
+3. Check **Add a README file**
+4. Click **Create repository**
+5. GitHub Pages is automatically enabled for repositories with this naming pattern
+
+## Path B: Project Site
+
+This gives you a site at `username.github.io/repo-name` — useful if you want separate sites for different projects.
+
+1. Create a new repository with any name (e.g., `arch7476-evidence`)
+2. Go to the repository → **Settings** → **Pages** (in the left sidebar)
+3. Under **Source**, select **Deploy from a branch**
+4. Choose **main** branch, **/ (root)** folder
+5. Click **Save**
+
+Either way, your site goes live within a minute or two after you add an `index.html` file.
+
+# Step 3: Your First Page
+
+Create a file called `index.html` in the root of your repository. You can do this directly on GitHub:
+
+1. In your repository, click **Add file** → **Create new file**
+2. Name it `index.html`
+3. Paste the template below
+4. Click **Commit new file**
+
+Your site will be live at your GitHub Pages URL within a couple of minutes.
+
+## Starter Template
+
+Copy this entire block into your `index.html`. Replace the placeholder text with your own content.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evidence Package — Your Name</title>
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --muted: #555;
+      --border: #ddd;
+      --bg: #fff;
+      --accent: #2563eb;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+    .subtitle { color: var(--muted); font-size: 1rem; margin-bottom: 2rem; }
+    h2 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+    p, li { margin-bottom: 0.5rem; }
+    ul { padding-left: 1.25rem; }
+    a { color: var(--accent); }
+    .tools { margin-top: 2rem; padding: 1rem; background: #f7f7f7; border-radius: 6px; }
+    .tools h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
+    footer { margin-top: 3rem; font-size: 0.8rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+  <h1>Project Title</h1>
+  <p class="subtitle">Your Name · ARCH7476 · Semester 2026–27</p>
+
+  <h2>Decision Context</h2>
+  <p>
+    What design decision is at stake? What alternatives exist?
+    Why does evidence matter here rather than intuition alone?
+  </p>
+
+  <h2>Evidence Summary</h2>
+  <p>
+    What evidence did you gather? Where did it come from?
+    Which sources carried the most weight and why?
+  </p>
+  <ul>
+    <li>Source 1 — what it told you</li>
+    <li>Source 2 — what it told you</li>
+    <li>Source 3 — what it told you</li>
+  </ul>
+
+  <h2>Methodology</h2>
+  <p>
+    What pathway did you choose (spreadsheet / GIS / Python)?
+    What was your workflow? What tools, data, and steps?
+  </p>
+
+  <h2>Key Findings</h2>
+  <p>
+    What did the analysis reveal? What changed compared
+    to your initial assumptions? Include figures if you have them.
+  </p>
+  <!-- To add an image: <img src="figure1.png" alt="Description" style="max-width:100%;"> -->
+
+  <h2>Recommendation</h2>
+  <p>
+    Given the evidence, what do you recommend — and under what conditions?
+    What confidence level is appropriate?
+  </p>
+
+  <h2>Limitations</h2>
+  <p>
+    What assumptions did you make? What data was missing?
+    What would you check next if you had more time?
+  </p>
+
+  <div class="tools">
+    <h3>Interactive Tools</h3>
+    <p>
+      <a href="gis-explorer.html">GIS Site Explorer</a> —
+      explore the spatial analysis interactively.
+    </p>
+  </div>
+
+  <footer>
+    ARCH7476: Evidence-Based Generative Design · The University of Hong Kong
+  </footer>
+
+</body>
+</html>
+```
+
+A standalone copy of this template is also available at `site_tools/portfolio-template.html` in the course repository — download it directly if you prefer.
+
+# Step 4: Adding the GIS Explorer
+
+The course provides a browser-based GIS analysis tool called `gis-explorer.html`. To add it to your site:
+
+1. Download `gis-explorer.html` from the course repository (`site_tools/gis-explorer.html`)
+2. In your GitHub repository, click **Add file** → **Upload files**
+3. Drag in `gis-explorer.html`
+4. Commit the upload
+
+Now your evidence package links directly to an interactive map. Visitors click the link and explore your spatial analysis — no install, no download, no Python.
+
+You can also upload your own GeoJSON data files alongside it. The explorer lets users drag-and-drop files directly onto the map.
+
+# Step 5: Updating Your Site
+
+Every time you push a change to your repository, GitHub Pages rebuilds the site automatically. There are two ways to make changes:
+
+## Edit directly on GitHub (no tools needed)
+
+1. Navigate to the file in your repository
+2. Click the **pencil icon** (Edit this file)
+3. Make your changes
+4. Click **Commit changes**
+
+This works for text edits, adding content, and small fixes.
+
+## Use GitHub Desktop (for bigger updates)
+
+1. Download [GitHub Desktop](https://desktop.github.com)
+2. Clone your repository to your computer
+3. Edit files locally with any text editor
+4. Commit and push from GitHub Desktop
+
+This is better when you are adding images, reorganizing files, or making many changes at once.
+
+# Tips
+
+## File names
+
+- Use lowercase, no spaces: `site-analysis.png` not `Site Analysis.png`
+- Keep names short and descriptive
+- Use `.html` for pages, `.png` or `.jpg` for images, `.geojson` for spatial data
+
+## Images
+
+- Resize images before uploading — aim for under 500 KB each
+- Use descriptive `alt` text for accessibility
+- Place images in the same folder as your `index.html` or in an `images/` subfolder
+
+## Keep it simple
+
+- One page is enough for most projects
+- Do not add a CSS framework or JavaScript library unless you need it
+- The starter template works on phones, tablets, and desktops — test on your phone
+- Focus on the content: decision, evidence, recommendation, limits
+
+## What not to publish
+
+- Do not publish raw data that is not yours to share
+- Do not include personal information about research participants
+- Check with your instructor if you are unsure about a dataset
+
+# What You Leave With
+
+After this setup, you have:
+
+- a live URL you can share with anyone: `https://username.github.io`
+- a professional-looking evidence package that works on any device
+- an interactive GIS explorer linked from your report
+- a site you own and can update forever — not locked inside a course platform

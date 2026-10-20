@@ -24,6 +24,7 @@ project:
     - weeks/week-11.qmd
     - weeks/week-12.qmd
     - weeks/python-primer-overview.qmd
+    - weeks/github-pages-guide.qmd
     - notebooks/01_python_ml_basics.ipynb
     - notebooks/02_arch_viz_analysis.ipynb
 
@@ -82,6 +83,10 @@ website:
             href: weeks/week-11.qmd
           - text: "W12: Object Fair and Transfer Forward"
             href: weeks/week-12.qmd
+      - section: "Guides & Tools"
+        contents:
+          - text: "GitHub Pages Guide"
+            href: weeks/github-pages-guide.qmd
       - section: "Assignments"
         contents:
           - text: "A1: Evidence Audit + Next Decision Brief"
