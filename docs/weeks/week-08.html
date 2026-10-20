@@ -143,10 +143,13 @@
 <h2>Today’s Agenda</h2>
 <ul>
 <li class="fragment">what a useful pilot actually does</li>
-<li class="fragment">uncertainty and error</li>
+<li class="fragment">hidden precision: the 120-watt case</li>
+<li class="fragment">where uncertainty enters your workflow</li>
+<li class="fragment">when data treatment changes the conclusion</li>
+<li class="fragment">probability vs.&nbsp;point prediction</li>
+<li class="fragment">input quality vs.&nbsp;model complexity</li>
 <li class="fragment">comparison logic</li>
-<li class="fragment">peer critique</li>
-<li class="fragment">A3 refinement</li>
+<li class="fragment">peer critique and A3 refinement</li>
 </ul>
 </section>
 <section id="a-pilot-is-not-a-mini-final-project" class="slide level2 center">
@@ -158,39 +161,228 @@
 <li class="fragment">the assumptions are visible</li>
 <li class="fragment">the weak points are now obvious</li>
 </ul>
+<p>A pilot that reveals a problem is more valuable than one that confirms a hope.</p>
+</section>
+<section id="case-the-120-watt-assumption" class="slide level2 center">
+<h2>Case: The 120-Watt Assumption</h2>
+<p>Every thermal comfort standard assumes the same thing about a seated office worker:</p>
+<p><strong>They produce 120 watts of metabolic heat.</strong></p>
+<p>That number enters every PMV calculation, every cooling-load estimate, every energy model. It looks precise. It is not.</p>
+</section>
+<section id="what-happens-when-you-replace-it" class="slide level2 center">
+<h2>What Happens When You Replace It</h2>
+<p>A recent study replaced the uniform 120 W assumption with demographic-aware metabolic rates — accounting for age, sex, and body composition.</p>
+<p>Results:</p>
+<ul>
+<li class="fragment">simulated HVAC site energy changed by <strong>4–10%</strong></li>
+<li class="fragment">the predicted comfort gap between male and female occupants <strong>narrowed by 47%</strong></li>
+</ul>
+<p>The assumption looked like a fact. It was a design choice — and it had consequences for who gets comfortable.</p>
+</section>
+<section id="why-this-matters-for-your-pilot" class="slide level2 center">
+<h2>Why This Matters for Your Pilot</h2>
+<p>Every workflow has a version of the 120-watt assumption:</p>
+<ul>
+<li class="fragment">a default occupant schedule</li>
+<li class="fragment">a standard climate file</li>
+<li class="fragment">a uniform pedestrian speed</li>
+<li class="fragment">a fixed noise threshold</li>
+</ul>
+<p>Your pilot should name its assumptions, not hide them inside defaults.</p>
 </section>
 <section id="where-uncertainty-comes-from" class="slide level2 center">
 <h2>Where Uncertainty Comes From</h2>
 <ul>
-<li class="fragment">incomplete data</li>
-<li class="fragment">noisy observations</li>
-<li class="fragment">model assumptions</li>
-<li class="fragment">small samples</li>
-<li class="fragment">repeated readings that are not independent — are 120 readings from one room 120 observations, or one?</li>
-<li class="fragment">inconsistent definitions</li>
+<li class="fragment"><strong>incomplete data</strong> — missing readings, sparse surveys</li>
+<li class="fragment"><strong>noisy observations</strong> — sensor drift, subjective responses</li>
+<li class="fragment"><strong>model assumptions</strong> — the 120 W default, fixed schedules</li>
+<li class="fragment"><strong>small samples</strong> — three sites, not thirty</li>
+<li class="fragment"><strong>pseudo-replication</strong> — are 120 readings from one room 120 observations, or one?</li>
+<li class="fragment"><strong>inconsistent definitions</strong> — what counts as “comfortable”?</li>
+<li class="fragment"><strong>data treatment choices</strong> — how you handle gaps changes the answer</li>
 </ul>
+</section>
+<section id="case-same-data-different-treatment-different-conclusion" class="slide level2 center">
+<h2>Case: Same Data, Different Treatment, Different Conclusion</h2>
+<p>A study of thermal comfort databases encountered missing radiant-temperature readings — a common problem in field research.</p>
+<p>Three treatments of the same missing data:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Treatment</th>
+<th>Air-to-radiant sensitivity ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rule-based imputation</td>
+<td>1.9</td>
+</tr>
+<tr class="even">
+<td>Learning through missingness</td>
+<td>4.5</td>
+</tr>
+<tr class="odd">
+<td>Measured-only subset</td>
+<td>(different again)</td>
+</tr>
+</tbody>
+</table>
+<p>The learning model and validation splits were held fixed. Only the treatment of gaps changed. The interpretation of the same evidence shifted by more than 2×.</p>
+</section>
+<section id="the-lesson" class="slide level2 center">
+<h2>The Lesson</h2>
+<p>It is not enough to say “I cleaned the data.”</p>
+<p>You must also ask: <strong>would a different reasonable cleaning change my conclusion?</strong></p>
+<p>If yes, that is not a flaw in your work. It is an uncertainty you should report.</p>
+</section>
+<section id="probability-vs.-point-prediction" class="slide level2 center">
+<h2>Probability vs.&nbsp;Point Prediction</h2>
+<p>Traditional thermal comfort gives you a single number:</p>
+<blockquote>
+<p>“PMV = 0.3, therefore comfortable.”</p>
+</blockquote>
+<p>But research on ordinal learning shows that thermal sensation is better represented as a <strong>probability distribution</strong>:</p>
+<blockquote>
+<p>“73% probability of neutral or slightly warm, 18% probability of warm, 9% probability of hot.”</p>
+</blockquote>
+</section>
+<section id="why-probabilities-matter" class="slide level2 center">
+<h2>Why Probabilities Matter</h2>
+<p>The point prediction says: <strong>this is the answer.</strong></p>
+<p>The distribution says: <strong>here is how confident you should be.</strong></p>
+<p>For your pilot:</p>
+<ul>
+<li class="fragment">a single score hides disagreement</li>
+<li class="fragment">a range or distribution makes the uncertainty visible</li>
+<li class="fragment">your audience can then decide whether the confidence is enough for the decision at hand</li>
+</ul>
+</section>
+<section id="input-quality-vs.-model-complexity" class="slide level2 center">
+<h2>Input Quality vs.&nbsp;Model Complexity</h2>
+<p>Architecture students often invest in more complex models while using default inputs.</p>
+<p>A study of climate-adapted weather files found:</p>
+<ul>
+<li class="fragment">the standard weather file (TMY3) had a <strong>cool bias</strong> that propagated into <strong>16–31% annual heating overestimates</strong> in New York</li>
+<li class="fragment">in Los Angeles, the same bias <strong>reversed sign</strong> — the error went the other direction</li>
+<li class="fragment">historical-file biases — not statistical methods — <strong>dominated</strong> the tested future-scenario errors</li>
+</ul>
+<p>The weather file mattered more than the model.</p>
+</section>
+<section id="the-equivalent-in-your-work" class="slide level2 center">
+<h2>The Equivalent in Your Work</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Over-invested</th>
+<th>Under-examined</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>complex simulation</td>
+<td>which climate file?</td>
+</tr>
+<tr class="even">
+<td>detailed 3D model</td>
+<td>which occupant schedule?</td>
+</tr>
+<tr class="odd">
+<td>multi-criteria scoring</td>
+<td>which weights?</td>
+</tr>
+<tr class="even">
+<td>sophisticated GIS layers</td>
+<td>which boundary definition?</td>
+</tr>
+</tbody>
+</table>
+<p>Before making the model more complex, check whether the inputs deserve the precision.</p>
+</section>
+<section id="case-equal-setpoints-unequal-outcomes" class="slide level2 center">
+<h2>Case: Equal Setpoints, Unequal Outcomes</h2>
+<p>A residential cooling study set the same thermostat temperature across all units.</p>
+<p>The result: <strong>equal cooling setpoints produced unequal modeled thermal outcomes</strong> across buildings and age groups.</p>
+<ul>
+<li class="fragment">occupants aged 65+ experienced higher predicted core temperatures in all 24 tested cases</li>
+<li class="fragment">lowering the setpoint helped them but increased cold-discomfort hours for others</li>
+<li class="fragment">predicted sensation and physiological state gave <strong>different information</strong></li>
+</ul>
+<p>Comparison revealed hidden inequity that the uniform policy concealed.</p>
+</section>
+<section id="case-when-a-benefit-comes-from-the-wrong-source" class="slide level2 center">
+<h2>Case: When a Benefit Comes From the Wrong Source</h2>
+<p>A learned HVAC supervisor was tested against fixed, PMV-based, and adaptive-band policies across 24 scenarios (six cities, two emissions pathways, present and future weather):</p>
+<ul>
+<li class="fragment">it saved <strong>3–7% of site energy</strong> in every scenario</li>
+<li class="fragment">but it increased <strong>worst-zone warm-temperature exposure</strong> in every scenario too</li>
+</ul>
+<p>Matched ablations showed that the setpoint bounds — not the learning — drove the savings.</p>
+<p>The apparent benefit came from the <strong>operating constraints</strong>, not the intelligence.</p>
+</section>
+<section id="why-ablation-matters" class="slide level2 center">
+<h2>Why Ablation Matters</h2>
+<p>If you compare option A against option B and A wins, ask:</p>
+<ul>
+<li class="fragment"><strong>which part</strong> of A produced the benefit?</li>
+<li class="fragment">would a simpler version of A do the same thing?</li>
+<li class="fragment">is the benefit real, or is it an artifact of the comparison setup?</li>
+</ul>
+<p>This is the difference between “my method works” and “I know why it works.”</p>
+</section>
+<section id="uncertainty-audit-your-own-pilot" class="slide level2 center">
+<h2>Uncertainty Audit: Your Own Pilot</h2>
+<p>For your current A3 prototype, answer these five questions:</p>
+<ol type="1">
+<li class="fragment">What is the single most influential assumption?</li>
+<li class="fragment">What happens if that assumption is wrong by 20%?</li>
+<li class="fragment">Are your observations independent, or pseudo-replicated?</li>
+<li class="fragment">Would a different reasonable data treatment change the conclusion?</li>
+<li class="fragment">Does your output report a point value or a range?</li>
+</ol>
+<p>Write down the answers. They belong in your A3 submission.</p>
 </section>
 <section id="better-language-for-results" class="slide level2 center">
 <h2>Better Language for Results</h2>
 <p>Instead of:</p>
 <ul>
-<li class="fragment">“the data proves”</li>
+<li class="fragment"><del>“the data proves”</del></li>
+<li class="fragment"><del>“this shows that”</del></li>
+<li class="fragment"><del>“clearly demonstrates”</del></li>
 </ul>
 <p>Try:</p>
 <ul>
 <li class="fragment">“the pilot suggests”</li>
-<li class="fragment">“the comparison indicates”</li>
-<li class="fragment">“confidence is limited by”</li>
+<li class="fragment">“the comparison indicates, subject to [named limit]”</li>
+<li class="fragment">“confidence is limited by [specific source]”</li>
+<li class="fragment">“under these assumptions, the result favors X”</li>
+<li class="fragment">“a different treatment of [gap/input] could change this”</li>
 </ul>
+<p>Hedging is not weakness. It is precision.</p>
 </section>
-<section id="peer-critique-questions" class="slide level2 center">
-<h2>Peer Critique Questions</h2>
+<section id="comparison-logic" class="slide level2 center">
+<h2>Comparison Logic</h2>
+<p>A good comparison requires:</p>
 <ul>
-<li class="fragment">is the output genuinely tied to the decision?</li>
-<li class="fragment">is uncertainty being hidden or handled?</li>
-<li class="fragment">is the pathway still the right one?</li>
-<li class="fragment">what one fix would improve the method most?</li>
+<li class="fragment"><strong>stated criteria</strong> — before you compare, not after</li>
+<li class="fragment"><strong>controlled differences</strong> — change one thing, hold the rest</li>
+<li class="fragment"><strong>named assumptions</strong> — which defaults are you accepting?</li>
+<li class="fragment"><strong>sensitivity check</strong> — does the ranking survive a reasonable change in inputs?</li>
+<li class="fragment"><strong>provenance</strong> — which data came from measurement, which from a model, which from a standard?</li>
 </ul>
+<p>If your recommendation changes when one input shifts by 20%, say so.</p>
+</section>
+<section id="peer-critique-protocol" class="slide level2 center">
+<h2>Peer Critique Protocol</h2>
+<p>In pairs, exchange your A3 prototype and answer:</p>
+<ol type="1">
+<li class="fragment">Is the output genuinely tied to the decision?</li>
+<li class="fragment">What is the single most influential assumption?</li>
+<li class="fragment">Is uncertainty being hidden or handled?</li>
+<li class="fragment">Is the pathway still the right one?</li>
+<li class="fragment">What one fix would improve the method most?</li>
+</ol>
+<p>Record the critique. Do not defend during the exchange.</p>
 </section>
 <section id="a3-submission-standard" class="slide level2 center">
 <h2>A3 Submission Standard</h2>
@@ -200,6 +392,7 @@
 <li class="fragment">one interpretable output</li>
 <li class="fragment">one clear account of limits</li>
 </ul>
+<p>Name the assumptions. Name the uncertainties. Name what you would check next.</p>
 <p>Messy is acceptable. Opaque is not.</p>
 
 

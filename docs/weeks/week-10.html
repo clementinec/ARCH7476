@@ -142,11 +142,12 @@
 <section id="todays-agenda" class="slide level2 center">
 <h2>Today’s Agenda</h2>
 <ul>
-<li class="fragment">what good evidence visuals do</li>
-<li class="fragment">how to show the workflow without overwhelming the audience</li>
-<li class="fragment">build the evidence board / object card</li>
-<li class="fragment">document the pathway artifact</li>
-<li class="fragment">timed draft reviews and feedback triage</li>
+<li class="fragment">what good evidence visuals do — and what kills them</li>
+<li class="fragment">figure rescue: from raw output to stakeholder figure</li>
+<li class="fragment">method transparency: how much is enough?</li>
+<li class="fragment">evidence board worked example</li>
+<li class="fragment">timed draft reviews with a real rubric</li>
+<li class="fragment">feedback triage</li>
 </ul>
 </section>
 <section id="every-visual-needs-a-job" class="slide level2 center">
@@ -159,80 +160,218 @@
 <li class="fragment">show a decision threshold</li>
 <li class="fragment">expose uncertainty</li>
 </ul>
+<p>If it does none of these, it is decoration. Cut it.</p>
 </section>
 <section id="match-visuals-to-pathway" class="slide level2 center">
 <h2>Match Visuals to Pathway</h2>
 <h3 id="spreadsheet">Spreadsheet</h3>
 <ul>
-<li class="fragment">comparison chart</li>
-<li class="fragment">summary table</li>
-<li class="fragment">decision matrix</li>
+<li class="fragment">comparison chart with labeled axes and units</li>
+<li class="fragment">summary table with provenance column</li>
+<li class="fragment">decision matrix with explicit weights</li>
 </ul>
 <h3 id="gis">GIS</h3>
 <ul>
-<li class="fragment">one clean map per question</li>
-<li class="fragment">simple legend and scale logic</li>
-<li class="fragment">avoid decorative layers</li>
+<li class="fragment">one clean map per question — not a layer showcase</li>
+<li class="fragment">simple legend, scale bar, north arrow</li>
+<li class="fragment">avoid decorative base layers that compete with your data</li>
 </ul>
 <h3 id="python">Python</h3>
 <ul>
-<li class="fragment">annotated plots</li>
-<li class="fragment">notebook outputs with interpretation</li>
-<li class="fragment">exported figures with titles and units</li>
+<li class="fragment">annotated plots with direct labels, not just legends</li>
+<li class="fragment">exported figures at print resolution (200+ dpi)</li>
+<li class="fragment">notebook outputs with one sentence of interpretation per figure</li>
 </ul>
 </section>
-<section id="the-evidence-board-object-card" class="slide level2 center">
-<h2>The Evidence Board / Object Card</h2>
-<p>It should answer in seconds:</p>
+<section id="figure-rescue-why-raw-outputs-fail" class="slide level2 center">
+<h2>Figure Rescue: Why Raw Outputs Fail</h2>
+<p>A four-panel notebook output can answer four questions at once — or none.</p>
+<p>Common problems:</p>
 <ul>
-<li class="fragment">what decision is at stake?</li>
-<li class="fragment">what evidence matters most?</li>
-<li class="fragment">what should happen next?</li>
+<li class="fragment">too many variables competing for attention</li>
+<li class="fragment">vague titles: “Figure 3” tells no one anything</li>
+<li class="fragment">error bars present but never explained</li>
+<li class="fragment">no connection back to the decision</li>
+<li class="fragment">uncertainty hidden or absent</li>
 </ul>
 </section>
-<section id="method-transparency" class="slide level2 center">
-<h2>Method Transparency</h2>
+<section id="figure-rescue-before-and-after" class="slide level2 center">
+<h2>Figure Rescue: Before and After</h2>
+<p><strong>Before:</strong> a raw multi-panel plot from a notebook — occupancy over time, dwell time box plot, scatter of environmental conditions, mean bar chart — all at once, no annotations.</p>
+<p><strong>After:</strong> the same four panels, but:</p>
+<ol type="1">
+<li class="fragment">each panel gets a sentence title: “Condition B increased mean dwell time”</li>
+<li class="fragment">the bar chart adds a target line: “target ≥ 24 users”</li>
+<li class="fragment">error bars are captioned: “mean ± 95% CI”</li>
+<li class="fragment">one paragraph below states what the figure supports</li>
+</ol>
+<p>The course notebook <code>02_arch_viz_analysis.ipynb</code> has an “object card starter” that demonstrates this pattern. Revisit it now.</p>
+</section>
+<section id="the-3-second-message-test-revisited" class="slide level2 center">
+<h2>The 3-Second Message Test (Revisited)</h2>
+<p>Give your figure three seconds. Can a viewer tell:</p>
+<ul>
+<li class="fragment">what is being compared?</li>
+<li class="fragment">which side is better — or why neither is?</li>
+<li class="fragment">what the takeaway is for the decision?</li>
+</ul>
+<p>If your figure needs a paragraph of explanation to make sense, it needs revision, not explanation.</p>
+</section>
+<section id="the-so-what-test" class="slide level2 center">
+<h2>The “So What?” Test</h2>
+<p>A computational pipeline can produce a result without establishing which design response is justified.</p>
+<p><strong>Exercise:</strong> write one sentence under your main figure:</p>
+<p><em>“This figure shows __________, which matters because __________, and the recommended action is __________.”</em></p>
+<p>If you cannot fill all three blanks, the figure has not yet earned its place.</p>
+</section>
+<section id="method-transparency-how-much-is-enough" class="slide level2 center">
+<h2>Method Transparency: How Much Is Enough?</h2>
 <p>Show just enough that someone can trust the output:</p>
 <ul>
-<li class="fragment">source of data</li>
-<li class="fragment">basic workflow</li>
-<li class="fragment">major assumptions</li>
-<li class="fragment">main limitation</li>
+<li class="fragment"><strong>source of data</strong> — where did it come from? when?</li>
+<li class="fragment"><strong>basic workflow</strong> — what happened between input and output?</li>
+<li class="fragment"><strong>major assumptions</strong> — what did you choose that could have gone differently?</li>
+<li class="fragment"><strong>main limitation</strong> — what should a reader not conclude from this?</li>
 </ul>
+<p>The audience does not need your full pipeline. They need enough to judge whether your conclusion is reasonable.</p>
 </section>
-<section id="draft-review-prompt" class="slide level2 center">
-<h2>Draft Review Prompt</h2>
-<p>If a critic sees this for 30 seconds, can they tell:</p>
+<section id="method-transparency-a-research-example" class="slide level2 center">
+<h2>Method Transparency: A Research Example</h2>
+<p>An HVAC control study tested a learned-probability supervisor against fixed, PMV, and adaptive-band policies across 24 scenarios — six cities, two emissions pathways, present and future weather.</p>
+<p>The full method is complex. But the trust-worthy summary is four lines:</p>
 <ul>
-<li class="fragment">what you studied?</li>
-<li class="fragment">what you found?</li>
-<li class="fragment">how confident they should be?</li>
-<li class="fragment">what action follows?</li>
+<li class="fragment"><strong>data:</strong> simulated buildings under 24 climate scenarios</li>
+<li class="fragment"><strong>method:</strong> compared energy use and thermal exposure across four control strategies</li>
+<li class="fragment"><strong>finding:</strong> the supervisor saved 3–7% energy but increased worst-zone warm exposure in every scenario</li>
+<li class="fragment"><strong>key insight:</strong> matched ablations showed setpoint bounds, not the learned model, drove the savings</li>
 </ul>
+<p>Your students’ methods are simpler than this. If a 24-scenario study fits in four lines, yours can fit in three.</p>
+</section>
+<section id="making-method-visible-for-a-public-audience" class="slide level2 center">
+<h2>Making Method Visible for a Public Audience</h2>
+<p>At the 2025 Venice Architecture Biennale, CO₂ measurements from Hong Kong wet markets were overlaid on floor plans through augmented reality.</p>
+<p>The audience was not engineers. The method had to be:</p>
+<ul>
+<li class="fragment">visible — viewers could see where readings came from</li>
+<li class="fragment">honest — the sealed retrofit showed ~216 ppm CO₂ above mixed-mode markets</li>
+<li class="fragment">immediate — the trade-off between enclosure, cooling, and fresh air was clear on sight</li>
+</ul>
+<p>Your evidence board has the same challenge: make the method visible without making it the story.</p>
+</section>
+<section id="evidence-board-worked-example" class="slide level2 center">
+<h2>Evidence Board Worked Example</h2>
+<p><strong>Decision:</strong> which of three candidate sites best balances transit access, development constraints, and environmental exposure?</p>
+<p>The board contains four elements:</p>
+<ol type="1">
+<li class="fragment"><strong>The question</strong> — one sentence at the top</li>
+<li class="fragment"><strong>One map</strong> — three sites with 400 m buffer zones, colored by transit access score</li>
+<li class="fragment"><strong>One comparison chart</strong> — bar chart of composite scores with error bars</li>
+<li class="fragment"><strong>One limitation statement</strong> — “flood risk data is from 2019 projections; updated models may shift Hung Hom Bay’s ranking”</li>
+</ol>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Site</th>
+<th>Score</th>
+<th>Transit</th>
+<th>Flood Risk</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Kai Tak</td>
+<td>78</td>
+<td>high</td>
+<td>medium</td>
+</tr>
+<tr class="even">
+<td>Kwun Tong Waterfront</td>
+<td>65</td>
+<td>medium</td>
+<td>low</td>
+</tr>
+<tr class="odd">
+<td>Hung Hom Bay</td>
+<td>72</td>
+<td>high</td>
+<td>high</td>
+</tr>
+</tbody>
+</table>
+<p>That is enough. The board is not a report — it is a decision surface.</p>
+</section>
+<section id="draft-review-rubric" class="slide level2 center">
+<h2>Draft Review Rubric</h2>
+<p>Reviewers fill out this checklist for each presenter:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Y / N</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Is the design decision clear in the first 30 seconds?</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Does the evidence actually support the stated recommendation?</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Is uncertainty named — not hidden or hand-waved?</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Does a clear next action follow from the evidence?</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Could you rerun or verify the key step from what is shown?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Hand the completed rubric to the presenter. Do not discuss during the review — write only.</p>
 </section>
 <section id="draft-review-protocol" class="slide level2 center">
 <h2>Draft Review Protocol</h2>
-<p>In rotating trios, with the near-final draft in front of you:</p>
+<p>In rotating trios (15 minutes per round):</p>
 <ol type="1">
-<li class="fragment">present for five minutes — the decision, the evidence, the recommendation, the limit</li>
-<li class="fragment">reviewers respond against three questions only:
-<ul>
-<li class="fragment">what is the single message?</li>
-<li class="fragment">does the evidence actually support it?</li>
-<li class="fragment">what would you cut?</li>
-</ul></li>
-<li class="fragment">record the critique without defending</li>
+<li class="fragment"><strong>Present</strong> (5 min) — the decision, the evidence, the recommendation, the limit</li>
+<li class="fragment"><strong>Silent review</strong> (3 min) — each reviewer completes the rubric independently</li>
+<li class="fragment"><strong>Verbal feedback</strong> (5 min) — reviewers state their single strongest concern and one thing that works</li>
+<li class="fragment"><strong>Record</strong> (2 min) — presenter writes down what they heard without defending</li>
 </ol>
+<p>Three rounds = three sets of rubric feedback per student.</p>
 </section>
 <section id="feedback-triage" class="slide level2 center">
 <h2>Feedback Triage</h2>
-<p>Sort what you heard into:</p>
+<p>After all rounds, sort what you heard into three piles:</p>
 <ul>
-<li class="fragment">fix before submission</li>
-<li class="fragment">fix if time allows</li>
-<li class="fragment">disagree, and can say why</li>
+<li class="fragment"><strong>fix before submission</strong> — things that break the argument</li>
+<li class="fragment"><strong>fix if time allows</strong> — things that improve clarity but do not change the conclusion</li>
+<li class="fragment"><strong>disagree, and can say why</strong> — things you reject with a stated reason</li>
 </ul>
-<p>Leave with one written revision plan for Week 11.</p>
+<p>Leave today with one written revision plan for Week 11.</p>
+</section>
+<section id="exit-check" class="slide level2 center">
+<h2>Exit Check</h2>
+<p>By the end of today, you should have:</p>
+<ul>
+<li class="fragment">one figure that passes the 3-second message test</li>
+<li class="fragment">one evidence board draft with all four elements</li>
+<li class="fragment">one method summary in four lines or fewer</li>
+<li class="fragment">three completed peer-review rubrics (received)</li>
+<li class="fragment">one prioritized revision plan</li>
+</ul>
 
 
 </section>
