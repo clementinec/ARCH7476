@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "hku_micro_road_noise_corridors_teaching_sample",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"corridor_id": "N1", "name": "Pok Fu Lam Road corridor", "source_note": "approximate teaching polygon"},
+      "geometry": {"type": "Polygon", "coordinates": [[[114.13455, 22.28355], [114.13825, 22.28205], [114.13840, 22.28235], [114.13470, 22.28385], [114.13455, 22.28355]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"corridor_id": "N2", "name": "Queen's Road West corridor", "source_note": "approximate teaching polygon"},
+      "geometry": {"type": "Polygon", "coordinates": [[[114.13135, 22.28740], [114.13655, 22.28675], [114.13662, 22.28710], [114.13145, 22.28776], [114.13135, 22.28740]]]}
+    }
+  ]
+}

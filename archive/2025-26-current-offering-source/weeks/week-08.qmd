@@ -1,0 +1,77 @@
+---
+title: "Week 8: Pilot, Compare, and Quantify Uncertainty"
+subtitle: "Turning a Prototype Into Defensible Evidence"
+format:
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1400
+    height: 900
+    center: true
+---
+
+## Today's Agenda
+
+- what a useful pilot actually does
+- uncertainty and error
+- comparison logic
+- peer critique
+- A3 refinement
+
+---
+
+## A Pilot Is Not a Mini Final Project
+
+A pilot is useful if it shows:
+
+- the workflow can run
+- the output is relevant
+- the assumptions are visible
+- the weak points are now obvious
+
+---
+
+## Where Uncertainty Comes From
+
+- incomplete data
+- noisy observations
+- model assumptions
+- small samples
+- inconsistent definitions
+
+---
+
+## Better Language for Results
+
+Instead of:
+
+- “the data proves”
+
+Try:
+
+- “the pilot suggests”
+- “the comparison indicates”
+- “confidence is limited by”
+
+---
+
+## Peer Critique Questions
+
+- is the output genuinely tied to the decision?
+- is uncertainty being hidden or handled?
+- is the pathway still the right one?
+- what one fix would improve the method most?
+
+---
+
+## A3 Submission Standard
+
+Show enough to demonstrate:
+
+- one working workflow
+- one interpretable output
+- one clear account of limits
+
+Messy is acceptable. Opaque is not.

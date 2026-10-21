@@ -1,0 +1,547 @@
+---
+title: "Week 1: Why Evidence Needs a Workflow"
+subtitle: "Course Reset, Your Tool Declaration, and A1 Kickoff"
+format:
+  revealjs:
+    theme: [default, arch7476.scss]
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1400
+    height: 900
+    center: true
+    footer: "Week 1 · feeds A1: Total Recall"
+---
+
+## Today's Agenda
+
+:::: {.two-col}
+::: {.concept-card}
+[Session 1]{.label .concept}
+
+[Lecture / demo]{.card-title}
+
+- what this course is actually about
+- why evidence needs a workflow
+- where "vibes" hide inside design arguments
+- how A1 runs over three weeks
+:::
+
+::: {.activity-card}
+[Session 2]{.label .activity}
+
+[Round table on YOUR work]{.card-title}
+
+- declare your two tools
+- reconstruct one past decision in four steps
+- optional walk-through, then a shared audit
+:::
+::::
+
+---
+
+[The reset]{.kicker}
+
+## This is not a software course
+
+This course is not organized around software demos.
+
+It is organized around one question:
+
+::: {.concept-card}
+[The course question]{.card-title}
+**What evidence would make a design decision more defensible?**
+:::
+
+Every tool we touch is judged only by how well it answers that.
+
+---
+
+## The semester spine
+
+::: {.spine-rail}
+[Decision]{.node .is-current} [Evidence]{.node} [Variation]{.node} [Output]{.node} [Threshold]{.node} [Action]{.node}
+:::
+
+```{mermaid}
+flowchart LR
+    A[A1: Total Recall<br/>Weeks 1-3] --> B[A2: Evidence + Workflow Map<br/>Weeks 4-6]
+    B --> C[A3: Prototype + Verification<br/>Weeks 7-9]
+    C --> D[A4: Workflow Package<br/>Weeks 10-12]
+    D --> E{Final route}
+    E --> F[Route A: retrospective redesign]
+    E --> G[Route B: live studio application]
+```
+
+::: {.warning-card}
+A1 starts today, but it is **not finished today**. It runs through Weeks 1–3.
+:::
+
+---
+
+## One method, four objects
+
+The same four-step move repeats all semester. Only the **object** changes — and each phase's weekly work accumulates into one assignment.
+
+| Phase | Weeks | You reconstruct… | Builds |
+|---|---|---|---|
+| A1 | 1–3 | a **past decision** + its evidence | Total Recall board |
+| A2 | 4–6 | candidate **tools / routes** | Evidence + Workflow Map |
+| A3 | 7–9 | your **prototype** running | Prototype + Verification |
+| A4 | 10–12 | the **package** you hand over | Workflow Package |
+
+---
+
+[The take-away objects]{.kicker}
+
+## What you physically make
+
+The course is not a set of prompts. Every phase leaves an artifact that can be inspected, reused, or patched into a design workflow.
+
+::: {.artifact-strip}
+::: {.artifact}
+[A1 · recall board]{.label .activity}
+one past decision, original evidence, weak links, missing variable
+:::
+::: {.artifact}
+[A2 · pathway contract]{.label .concept}
+evidence map, workflow route, A4 branch, smallest useful output
+:::
+::: {.artifact}
+[A3 · prototype]{.label .example}
+runnable or inspectable workflow, variant output, verification log
+:::
+::: {.artifact}
+[A4 · handoff package]{.label .reflect}
+practice case, research brief, object card, reproducibility capsule
+:::
+:::
+
+---
+
+[Course progress]{.kicker}
+
+## Artifact progress bar
+
+Each week moves one object from rough material to a handoff artifact.
+
+::: {.progress-ladder}
+::: {.step .current}
+W1 decision
+:::
+::: {.step}
+W2 evidence
+:::
+::: {.step}
+W3 comparison
+:::
+::: {.step}
+W4-6 pathway
+:::
+::: {.step}
+W7-9 prototype
+:::
+::: {.step}
+W10-12 package
+:::
+:::
+
+Today's visible output: one past project visual + one tool-strength/wishlist entry.
+
+---
+
+[The recurring engine]{.kicker}
+
+## Look harder at what you already did
+
+You learn most by examining the reasoning inside work you have **already done** — not by adding new work. Every week, the same four questions, pointed at that week's object:
+
+::: {.recall-4step}
+::: {.step}
+**Did** What did I actually do, step by step?
+:::
+::: {.step}
+**Assumed** What did I assume at each step?
+:::
+::: {.step}
+**Risk** Where did I not check — where could it break?
+:::
+::: {.step}
+**Verify** What would I verify if I did it again?
+:::
+:::
+
+The point is not to judge old work. It is to see how its argument was built.
+
+---
+
+## Evidence needs a workflow
+
+- precedent images can be useful, but rarely prove performance on their own
+- simulation numbers can be precise, but still depend on assumptions
+- survey comments can be rich, but need context before they generalize
+- data only becomes useful when the path from input to decision is legible
+
+::: {.concept-card}
+A finding is evidence only when someone else can inspect how you got it.
+:::
+
+---
+
+## Sometimes evidence is just vibes
+
+:::: {.two-col}
+::: {.example-card}
+[A vibe is not useless]{.card-title}
+It is often the first clue that something might matter.
+:::
+
+::: {.warning-card}
+[A vibe is not enough by itself]{.card-title}
+It gets stronger only when the next step asks what would confirm, qualify, or challenge it.
+:::
+::::
+
+For each image next: name the **vibe claim**, **what it does not show yet**, and the **next evidence move**.
+
+---
+
+## Vibe case 1: busy = working?
+
+::: {.vibe-case}
+::: {.vibe-visual}
+![Polished restaurant interior, dramatic lighting, visually busy](../assets/generated/vibes-evidence/restaurant-vibe.png)
+:::
+::: {.vibe-panel}
+[Let the class answer first]{.vibe-kicker}
+
+::: {.fragment .example-card}
+**Vibe claim:** "This layout works; it feels busy."
+:::
+::: {.fragment .warning-card}
+**Not shown yet:** atmosphere is not a measured use pattern.
+:::
+::: {.fragment .activity-card}
+**Ask for:** dwell time, table turnover, circulation pinch points, observation by time period.
+:::
+:::
+:::
+
+---
+
+## Vibe case 2: polished = high performance?
+
+::: {.vibe-case}
+::: {.vibe-visual}
+![Smartphone camera preview of a picturesque mountain and lake](../assets/generated/vibes-evidence/phone-camera-vibe.png)
+:::
+::: {.vibe-panel}
+[The ad-logic problem]{.vibe-kicker}
+
+::: {.fragment .example-card}
+**Vibe claim:** "This camera is good; the image looks amazing."
+:::
+::: {.fragment .warning-card}
+**Not shown yet:** presentation polish is not performance.
+:::
+::: {.fragment .activity-card}
+**Ask for:** controlled comparisons, low-light tests, compression checks, failure cases.
+:::
+:::
+:::
+
+---
+
+## Vibe case 3: calm = safer?
+
+::: {.vibe-case}
+::: {.vibe-visual}
+![French street at blue hour with trees, lamps, calm road](../assets/generated/vibes-evidence/calm-route-vibe.png)
+:::
+::: {.vibe-panel}
+[Perception is partial]{.vibe-kicker}
+
+::: {.fragment .example-card}
+**Vibe claim:** "This route is safer; it feels calmer."
+:::
+::: {.fragment .warning-card}
+**Not shown yet:** perceived calm may miss actual risk.
+:::
+::: {.fragment .activity-card}
+**Ask for:** lighting levels, pedestrian counts, crossing conflicts, incident records.
+:::
+:::
+:::
+
+---
+
+## Vibe case 4: green = sustainable?
+
+::: {.vibe-case}
+::: {.vibe-visual}
+![Greenery-covered building facade with dense planted wall](../assets/generated/vibes-evidence/green-facade-vibe.png)
+:::
+::: {.vibe-panel}
+[The studio render problem]{.vibe-kicker}
+
+::: {.fragment .example-card}
+**Vibe claim:** "This facade is sustainable; the render is green."
+:::
+::: {.fragment .warning-card}
+**Not shown yet:** visual greenness is not environmental performance.
+:::
+::: {.fragment .activity-card}
+**Ask for:** solar exposure, heat gain, daylight, irrigation/maintenance, material data.
+:::
+:::
+:::
+
+---
+
+## Workflow routes, not software shopping
+
+- **GH / parametric** — vary design options
+- **BIM/BEM / simulation** — test performance assumptions
+- **GIS** — compare spatial conditions
+- **Python / notebook** — rerun analysis and figures
+- **AI-assisted** — speed up components, then verify
+- **Spreadsheet / low-code** — compare ranges and thresholds transparently
+
+::: {.reflection-card}
+Not "which software looks advanced?" but "which workflow makes this decision more defensible?"
+:::
+
+---
+
+[The GH bridge]{.kicker}
+
+## Every pathway can talk to Grasshopper
+
+Most of you will return to Grasshopper. That is fine. The point is to make the route into a clean function before it becomes a component.
+
+::: {.bridge-flow}
+::: {.node .current}
+external workflow
+:::
+::: {.node}
+visible output change
+:::
+::: {.node}
+CSV / JSON / GeoJSON
+:::
+::: {.node}
+GH read / GhPython
+:::
+::: {.node}
+design action
+:::
+:::
+
+::: {.function-contract}
+**Grasshopper component = packed function**
+Inputs go in, an operation happens inside, outputs come out. The course asks you to name the inputs, units, ranges, output, and quality check before you trust the component.
+:::
+
+---
+
+[Do this at the first lecture]{.kicker}
+
+## Declare your two tools
+
+Post both to the Slack channel now. They become the class Tool Coverage Board, not a disappearing survey.
+
+:::: {.two-col}
+::: {.warning-card}
+[1 · The tool I want to learn]{.card-title}
+The one you feel you **need** for your studio work and cannot yet use well.
+:::
+::: {.walkthrough-card}
+[2 · The tool I'd teach]{.card-title}
+Your **strongest** tool — the one you could walk the class through.
+:::
+::::
+
+::: {.grading-note}
+These two columns become the walk-through roster and the class wishlist.
+:::
+
+---
+
+## How the wishlist is used
+
+Wishlist items are sorted visibly, then revisited weekly.
+
+::: {.tool-ledger}
+::: {.slot .core}
+[Core supported]{.label .activity}
+
+- spreadsheet thresholds
+- BIM-derived proxy
+- `geopandas`
+- Python notebook
+- AI-assisted fact-checking
+:::
+::: {.slot .peer}
+[Peer supported]{.label .concept}
+
+- GH clusters
+- Ladybug setup
+- mapping tricks from real use
+:::
+::: {.slot .explore}
+[Exploratory]{.label .example}
+
+- special plugins
+- office workflows
+- custom scripts
+:::
+:::
+
+Each week we mark: **mapped today**, **partially mapped**, **still unsupported**, or **out of scope this term**.
+
+---
+
+[The uncertainty habit]{.kicker}
+
+## The course contribution
+
+Tools make outputs look certain. Architecture usually is not.
+
+::: {.uncertainty-check}
+**Ask every week**
+What did the tool make easier to see, and what assumption did it make easier to hide?
+:::
+
+I am at the table too: I declare, I walk through, and I get audited like everyone else.
+
+---
+
+## BREAK {.big-break}
+
+Take 10 minutes.
+
+When you return, post one rough visual from a past project to Slack for Session 2.
+
+---
+
+[Session 2 · Round table]{.kicker}
+
+## Round table on YOUR evidence
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node .is-current} [Variation]{.node} [Output]{.node} [Threshold]{.node} [Action]{.node}
+:::
+
+Upload one rough visual (render, sketch, diagram, table, screenshot), then we work in two modes. [feeds A1]{.feeds-tag}
+
+---
+
+## Mode 1 — the walk-through (optional, celebrated)
+
+::: {.walkthrough-card}
+[Teach us your strongest tool]{.card-title}
+A volunteer shows the class one tool they know well — uninterrupted, 3–4 minutes. This is teaching, and we treat it as such.
+:::
+
+- not graded as a performance; volunteering earns credit, never penalty
+- the room listens; questions wait for Mode 2
+- no polish required — show the real thing working
+
+---
+
+## Mode 2 — the audit (everyone)
+
+::: {.audit-card}
+[Examine the work, not the person]{.card-title}
+We ask the same question of every artifact, including mine: **what does this actually show, and what does it not show yet?**
+:::
+
+- the strongest move is naming your own weakest link first
+- we challenge the **claim**, never your competence
+- volunteers go first; a random draw fills the remaining examples
+
+---
+
+## Reconstruct your decision in four steps
+
+**Object this week: one past studio decision and its evidence.**
+
+::: {.recall-4step}
+::: {.step}
+**Did** What did I decide, and what did I actually do?
+:::
+::: {.step}
+**Assumed** What did I treat as evidence that was really assumption or precedent?
+:::
+::: {.step}
+**Risk** Where was confidence stronger than the evidence?
+:::
+::: {.step}
+**Verify** What evidence would I gather for the next decision?
+:::
+:::
+
+::: {.grading-note}
+Post your filled four-step to Slack under your image. Posting + an honest reconstruction is the graded unit — not how you spoke.
+:::
+
+---
+
+## Fast A1 worksheet
+
+By mid-class you should be able to fill:
+
+| Prompt | Your answer |
+|---|---|
+| Prior decision | |
+| Main alternatives | |
+| Main audience / stakeholder | |
+| Strongest evidence actually used | |
+| Weakest link in the argument | |
+| Next studio decision | |
+
+---
+
+## Session 2 reflection
+
+::: {.reflection-card}
+[What changed?]{.card-title}
+Take three minutes and write:
+
+- what from Session 1 changed how I see my project?
+- what evidence is weaker than I thought?
+- what is still only a vibe?
+- what is one next action before Week 2?
+:::
+
+Keep it in notes or post it as a Slack thread under your image.
+
+---
+
+## Week 1 milestone
+
+Leave class with:
+
+- one prior decision chosen
+- one rough list of the inputs/evidence actually used
+- one weak link identified
+- one next studio decision drafted
+- your two-tool declaration posted to Slack
+
+::: {.warning-card}
+A1 is **started, not finished.** Week 2 diagnoses evidence quality; Week 3 finalizes the Total Recall board.
+:::
+
+---
+
+[Where we are headed]{.kicker}
+
+## What success looks like
+
+By Week 12 you should be able to say, about one real decision:
+
+::: {.concept-card}
+**This is the decision, this is the evidence, this is the method, and this is how confident I am.**
+:::
+
+Use the [Total Recall Board](../templates/total-recall-board.md) to start A1.

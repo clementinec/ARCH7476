@@ -1,6 +1,33 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - "starter_kits/spreadsheet-thresholds/*.csv"
+    - "starter_kits/spreadsheet-thresholds/*.xlsx"
+    - "starter_kits/spreadsheet-thresholds/*.py"
+    - "starter_kits/spreadsheet-thresholds/live_threshold_workbook_preview.html"
+    - "starter_kits/gis-spatial-comparison/*.py"
+    - "starter_kits/gis-spatial-comparison/data/*.geojson"
+    - "starter_kits/gis-spatial-comparison/outputs/*.csv"
+    - "starter_kits/gis-spatial-comparison/outputs/*.png"
+    - "starter_kits/gis-spatial-comparison/outputs/*.html"
+    - "starter_kits/gis-spatial-comparison/outputs/*.geojson"
+    - "starter_kits/preset-simulation-proxy/*.py"
+    - "starter_kits/preset-simulation-proxy/data/*.csv"
+    - "starter_kits/preset-simulation-proxy/outputs/*.png"
+    - "starter_kits/preset-simulation-proxy/outputs/*.csv"
+    - "starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.csv"
+    - "starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.png"
+    - "starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/two_week_summary.txt"
+    - "starter_kits/python-notebook-analysis/*.py"
+    - "starter_kits/python-notebook-analysis/data/*.csv"
+    - "starter_kits/python-notebook-analysis/outputs/*.png"
+    - "starter_kits/python-notebook-analysis/outputs/*.csv"
+    - "starter_kits/gh-parametric-variants/*.csv"
+    - "starter_kits/gh-parametric-variants/*.md"
+    - "starter_kits/gh-parametric-variants/outputs/*.csv"
+    - "starter_kits/ai-assisted-workflow/examples/*.py"
+    - "starter_kits/ai-assisted-workflow/examples/*.md"
   render:
     - index.qmd
     - schedule.qmd
@@ -10,28 +37,41 @@ project:
     - assignments/assignment-02.qmd
     - assignments/assignment-03.qmd
     - assignments/assignment-04.qmd
-    - weeks/week-01.qmd
-    - weeks/week-02.qmd
-    - weeks/week-03.qmd
-    - weeks/week-04.qmd
-    - weeks/week-04-grasshopper.qmd
-    - weeks/week-05.qmd
-    - weeks/week-06.qmd
-    - weeks/week-07.qmd
-    - weeks/week-08.qmd
-    - weeks/week-09.qmd
-    - weeks/week-10.qmd
-    - weeks/week-11.qmd
-    - weeks/week-12.qmd
-    - weeks/python-primer-overview.qmd
-    - weeks/github-pages-guide.qmd
+    - templates/project-reasoning-checkin.md
+    - weeks_v2/week-01.qmd
+    - weeks_v2/week-02.qmd
+    - weeks_v2/week-03.qmd
+    - weeks_v2/week-04.qmd
+    - weeks_v2/week-05.qmd
+    - weeks_v2/week-06.qmd
+    - weeks_v2/week-07.qmd
+    - weeks_v2/week-08.qmd
+    - weeks_v2/week-09.qmd
+    - weeks_v2/week-10.qmd
+    - weeks_v2/week-11.qmd
+    - weeks_v2/week-12.qmd
+    - templates/project-reasoning-checkin.md
+    - templates/total-recall-board.md
+    - templates/tool-translation-matrix.md
+    - templates/a4-branch-declaration.md
+    - templates/ai-workflow-verification-card.md
+    - templates/final-package-checklist.md
+    - starter_kits/README.md
+    - starter_kits/gh-parametric-variants/README.md
+    - starter_kits/preset-simulation-proxy/README.md
+    - starter_kits/preset-simulation-proxy/energyplus_two_week_case.md
+    - starter_kits/ai-assisted-workflow/README.md
+    - starter_kits/gis-spatial-comparison/README.md
+    - starter_kits/python-notebook-analysis/README.md
+    - starter_kits/spreadsheet-thresholds/README.md
+    - lectures/ml-to-python-overview.qmd
+    - lectures/ml-primer-12-principles.qmd
     - notebooks/01_python_ml_basics.ipynb
     - notebooks/02_arch_viz_analysis.ipynb
 
 website:
   title: "ARCH7476: Evidence-Based Generative Design"
   navbar:
-    logo: "assets/ARCH7476_HONGSHAN GUO.pdf"
     left:
       - href: index.qmd
         text: Home
@@ -48,6 +88,7 @@ website:
   sidebar:
     style: docked
     search: true
+    collapse-level: 1
     contents:
       - section: "Course Overview"
         contents:
@@ -55,56 +96,48 @@ website:
           - schedule.qmd
           - assignments.qmd
           - resources.qmd
-      - section: "Weekly Content"
+      - section: "Weekly Studio-Labs"
         contents:
-          - text: "W1: Why Evidence Needs a Workflow"
-            href: weeks/week-01.qmd
-          - text: "W2: Audit the Evidence You Already Use"
-            href: weeks/week-02.qmd
-          - text: "W3: Spreadsheet as Baseline Workflow"
-            href: weeks/week-03.qmd
-          - text: "W4: GIS Choices for Architects"
-            href: weeks/week-04.qmd
-          - text: "W4 Alt: GIS in Grasshopper"
-            href: weeks/week-04-grasshopper.qmd
-          - text: "W5: BIM, BEM, and Building Performance"
-            href: weeks/week-05.qmd
-          - text: "W6: Evidence and Pathway Mapping"
-            href: weeks/week-06.qmd
-          - text: "W7: Method Prototype Studio"
-            href: weeks/week-07.qmd
-          - text: "W8: Pilot, Compare, and Quantify Uncertainty"
-            href: weeks/week-08.qmd
-          - text: "W9: Storytelling, Figures, and Decisions"
-            href: weeks/week-09.qmd
-          - text: "W10: Draft Review and Workflow Documentation"
-            href: weeks/week-10.qmd
-          - text: "W11: Studio Evidence Package Workshop"
-            href: weeks/week-11.qmd
-          - text: "W12: Object Fair and Transfer Forward"
-            href: weeks/week-12.qmd
-      - section: "Guides & Tools"
-        contents:
-          - text: "GitHub Pages Guide"
-            href: weeks/github-pages-guide.qmd
+          - text: "W1: Total Recall"
+            href: weeks_v2/week-01.qmd
+          - text: "W2: Evidence Audit"
+            href: weeks_v2/week-02.qmd
+          - text: "W3: Spreadsheet Baseline"
+            href: weeks_v2/week-03.qmd
+          - text: "W4: GIS Choices"
+            href: weeks_v2/week-04.qmd
+          - text: "W5: BIM/BEM"
+            href: weeks_v2/week-05.qmd
+          - text: "W6: Pathway Mapping"
+            href: weeks_v2/week-06.qmd
+          - text: "W7: Prototype Clinic"
+            href: weeks_v2/week-07.qmd
+          - text: "W8: Reproducibility"
+            href: weeks_v2/week-08.qmd
+          - text: "W9: Thresholds"
+            href: weeks_v2/week-09.qmd
+          - text: "W10: Draft Review"
+            href: weeks_v2/week-10.qmd
+          - text: "W11: Final Package"
+            href: weeks_v2/week-11.qmd
+          - text: "W12: Object Fair"
+            href: weeks_v2/week-12.qmd
       - section: "Assignments"
         contents:
-          - text: "A1: Evidence Audit + Next Decision Brief"
+          - text: "A1: Total Recall"
             href: assignments/assignment-01.qmd
-          - text: "A2: Evidence and Pathway Map"
+          - text: "A2: Evidence + Workflow Map"
             href: assignments/assignment-02.qmd
-          - text: "A3: Method Prototype"
+          - text: "A3: Prototype + Verification"
             href: assignments/assignment-03.qmd
-          - text: "A4: Studio Evidence Package"
+          - text: "A4: Workflow Package"
             href: assignments/assignment-04.qmd
-      - section: "Python Notebooks"
+      - section: "Resources"
         contents:
-          - text: "Python + ML Basics"
-            href: notebooks/01_python_ml_basics.ipynb
-          - text: "Architecture Viz + Analysis"
-            href: notebooks/02_arch_viz_analysis.ipynb
-          - text: "Python + Notebook Primer"
-            href: weeks/python-primer-overview.qmd
+          - text: "Resource Hub"
+            href: resources.qmd
+          - text: "ML Primer · 12 Principles"
+            href: lectures/ml-primer-12-principles.qmd
 
 format:
   html:

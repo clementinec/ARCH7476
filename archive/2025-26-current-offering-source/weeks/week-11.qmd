@@ -1,0 +1,81 @@
+---
+title: "Week 11: Studio Evidence Package Workshop"
+subtitle: "Audience Fit, Review, and Final Refinement"
+format:
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1400
+    height: 900
+    center: true
+---
+
+## Today's Agenda
+
+- package structure
+- peer review
+- pathway troubleshooting
+- final revision priorities
+
+---
+
+## A4 Has Four Parts
+
+1. studio decision brief
+2. evidence board / object card
+3. pathway artifact
+4. method appendix
+
+Each part should reinforce the others.
+
+---
+
+## Review Questions
+
+- is the decision context clear?
+- does the evidence actually support the recommendation?
+- is the pathway visible in the package?
+- are the limits stated directly?
+
+---
+
+## What Reviewers Should Look For
+
+:::: {.columns}
+::: {.column width="50%"}
+![High Line, New York](../assets/examples/high-line-park.jpg){height="260"}
+
+Spatial/public-space questions:
+
+- does the map or observation actually answer the claim?
+:::
+
+::: {.column width="50%"}
+![The Edge, Amsterdam](../assets/examples/the-edge-amsterdam.jpg){height="260"}
+
+Building/workplace questions:
+
+- is the performance claim backed by method, not branding?
+:::
+::::
+
+---
+
+## Final Revision Priorities
+
+- cut anything that does not help the decision
+- keep one clear recommendation
+- make uncertainty visible
+- make the workflow traceable
+
+---
+
+## End-of-Class Goal
+
+Leave with:
+
+- one prioritized revision list
+- one reviewer note on audience fit
+- one reviewer note on method clarity

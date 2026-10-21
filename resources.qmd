@@ -1,188 +1,281 @@
 ---
 title: "Course Resources"
-subtitle: "Setup Ladder, Pathway Guide, and Data Sources"
+subtitle: "Workflow Tracks, Templates, and Reuse Map"
 format:
   html:
     toc: true
 ---
 
-# Setup Ladder
+## Resource Logic
 
-The course supports different levels of technical comfort. Use the lightest setup that still lets you complete your chosen pathway well.
+Use the lightest setup that can produce a credible workflow for your design decision.
 
-## Baseline for Everyone
+The course does not reward technical intimidation. It rewards a clear relationship between:
 
-- **Spreadsheet software**: Excel (HKU license) or Google Sheets
-- **Web browser**: Chrome, Firefox, or Safari
-- **Course downloads**: notebooks, sample data, and local image assets
+```mermaid
+flowchart LR
+    A[Design decision] --> B[Variable / evidence]
+    B --> C[Workflow]
+    C --> D[Output]
+    D --> E[Threshold / recommendation]
+```
 
-## GIS / Python Local Setup
-
-### 1. Python Environment
-
-Use **Anaconda** or **Miniconda** if you want a managed local environment.
-
-- `Anaconda`: bigger install, more batteries included
-- `Miniconda`: lighter install, better if you only want what the course uses
-
-### 2. Notebook Interface
-
-Use **Jupyter Notebook** as the main interactive environment.
-
-- run provided examples
-- edit cells and notes in one place
-- keep code, charts, and interpretation together
-
-### 3. Browser Fallback
-
-Use **Google Colab** if local installation is not ready yet.
-
-- good for quick starts
-- lower setup burden
-- less control over local files and environments
-
-::: {.callout-note}
-## What These Names Mean
-
-- `Anaconda` / `Miniconda` = Python environment and package manager
-- `Jupyter Notebook` = the interface where you run and annotate code
-- `pandas` / `geopandas` = the libraries used inside notebooks
-- `Colab` = browser-based fallback if you do not want a local install yet
+::: {.hub-grid}
+::: {.hub-card}
+### Templates
+Reusable worksheets for each assignment and weekly Session 2.
+[Jump to templates →](#core-templates)
+:::
+::: {.hub-card}
+### Starter Kits
+Pathway starting points: spreadsheet, GIS, Python, proxy simulation, AI-assisted fact-checking, and GH bridge notes.
+[Jump to starter kits →](#starter-kits)
+:::
+::: {.hub-card}
+### ML Primer
+The 12 Principles of ML for architecture, in plain language.
+[Open the primer →](lectures/ml-primer-12-principles.qmd)
+:::
+::: {.hub-card}
+### Lectures & Notebooks
+ML-to-Python overview and the two analysis notebooks.
+[Jump to supporting materials →](#lectures-and-supporting-materials)
+:::
 :::
 
-## Suggested Install Order
+## Core Templates
 
-1. Confirm spreadsheet access
-2. Install `QGIS` if you want the GIS route
-3. Install `Anaconda` or `Miniconda` if you want GIS code or Python
-4. Open `Jupyter Notebook`
-5. Run one sample notebook before modifying anything
+| Template | Use |
+|---|---|
+| [Project Reasoning Check-In](templates/project-reasoning-checkin.md) | weekly Session 2 Slack upload and round-table note |
+| [Total Recall Board](templates/total-recall-board.md) | A1 past studio evidence audit |
+| [Tool Translation Matrix](templates/tool-translation-matrix.md) | A2 workflow route comparison |
+| [A4 Branch Declaration](templates/a4-branch-declaration.md) | Week 6 route and scope lock |
+| [AI-Assisted Fact-Checking Card](templates/ai-workflow-verification-card.md) | AI-assisted claim, relationship, and workflow checks |
+| [Final Package Checklist](templates/final-package-checklist.md) | A4 Practice Case, Research Brief, Object Card, Capsule |
 
-## Pathway Chooser
+## Starter Kits
 
-| Pathway | Best when your question is about | Common outputs | Typical student fit |
+Starter kits are tracked in [Starter Kits](starter_kits/README.md).
+
+## Route Readiness
+
+Use this table to choose a route without over-reading the tool promise.
+
+| Route | Launch status | What is available now | Best use |
 |---|---|---|---|
-| Spreadsheet | comparisons, ranking, observations, literature/evidence tables | charts, matrices, summary tables | anyone; best baseline |
-| GIS | site, zoning, access, urban context, spatial trade-offs | maps, buffers, overlays, spatial comparisons | students with site or urban questions |
-| Python | repeatable analysis, plotting, lightweight modeling, reusable scripts | notebooks, charts, cleaned datasets, export tables | students who want more control or reuse |
+| Spreadsheet thresholds | fully supported | live `.xlsx`, preview, CSV export, filled example | transparent decisions, thresholds, sensitivity |
+| GIS spatial comparison | fully supported | GeoJSON data, geopandas script, map, scored CSV, selected site export | site/context/access decisions |
+| Python / notebook analysis | supported starter route | facade decision script, data, plot, CSV, existing notebooks | repeated analysis, charts, reusable logic |
+| Proxy simulation | supported starter route | facade heat proxy script, scenarios, chart, scores | bounded performance assumptions when full simulation is too heavy |
+| AI-assisted fact-checking / workflow support | supported companion route | prompt log example and verified function | fact checks, relationship checks, and small code/workflow components |
+| GH / parametric workflow | bridge now; direct `.gh` / `.ghx` starter files in progress | CSV handoff notes and variant logs now; native GH/GHX starter files planned | students who already have working GH and want to connect course outputs |
 
-## GIS Alternatives for Architects
+::: {.resource-demo-grid}
+::: {.resource-demo-card .spreadsheet}
+### Spreadsheet Thresholds
 
-The course explicitly introduces three GIS paradigms:
+Live decision matrix: edit thresholds, watch status colors and scores change, then export a GH-readable CSV.
 
-### QGIS
+<iframe class="resource-preview-frame" src="starter_kits/spreadsheet-thresholds/live_threshold_workbook_preview.html" title="Spreadsheet threshold workbook preview"></iframe>
 
-- free and open-source
-- good for visual exploration, layering, and manual map production
-- useful when you need fast spatial inspection without writing code
+::: {.resource-actions}
+[Open workbook](starter_kits/spreadsheet-thresholds/live_threshold_workbook.xlsx)
+[Preview](starter_kits/spreadsheet-thresholds/live_threshold_workbook_preview.html)
+[CSV](starter_kits/spreadsheet-thresholds/variant_scores.csv)
+[Kit](starter_kits/spreadsheet-thresholds/README.md)
+:::
+:::
 
-### ArcGIS
+::: {.resource-demo-card .gis}
+### GIS Spatial Comparison
 
-- important professional ecosystem
-- useful for enterprise, client, and institutional contexts
-- relevant if your collaborators or office already use it
+HKU micro-walkability sample: candidate sites, synthetic grocery points, 300m catchments, green-space proximity, and noise exposure.
 
-### geopandas
+<iframe class="resource-preview-frame" src="starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html" title="GIS spatial comparison preview"></iframe>
 
-- the course anchor for code-based GIS
-- useful when you need reproducible spatial analysis in notebooks
-- sits naturally beside `pandas`, plotting libraries, and exported CSV data
+::: {.resource-actions}
+[Preview](starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html)
+[Map](starter_kits/gis-spatial-comparison/outputs/gis_site_comparison_map.png)
+[Scores](starter_kits/gis-spatial-comparison/outputs/scored_sites.csv)
+[Selected GeoJSON](starter_kits/gis-spatial-comparison/outputs/selected_site.geojson)
+[Script](starter_kits/gis-spatial-comparison/gis_spatial_comparison_demo.py)
+[Kit](starter_kits/gis-spatial-comparison/README.md)
+:::
+:::
 
-### Why `geopandas` Sits at the Center
+::: {.resource-demo-card .simulation}
+### EnergyPlus Two-Week Check
 
-The course does not treat code-driven GIS as an abstract option. It teaches a small, concrete `geopandas` workflow in `Jupyter Notebook` so students understand:
+Stock controlled model, synthetic HK summer weather, July 8-21 run, and visible setpoint/temperature outputs before GH translation.
 
-- how spatial data looks in code
-- how projections and geometry affect analysis
-- how to move from raw layers to a decision-support plot or export
+![EnergyPlus two-week control check](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.png){.resource-preview-image}
 
-## Building Performance Literacy
+::: {.resource-actions}
+[Guide](starter_kits/preset-simulation-proxy/energyplus_two_week_case.md)
+[Script](starter_kits/preset-simulation-proxy/run_energyplus_two_week_case.py)
+[CSV](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.csv)
+[Summary](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/two_week_summary.txt)
+[Kit](starter_kits/preset-simulation-proxy/README.md)
+:::
+:::
+:::
 
-All students get shared literacy in:
+Current starter-kit links:
 
-- **BIM vs BEM**: different data structures, different priorities
-- **simulation workflows**: useful, but never automatically authoritative
-- **translation loss**: what breaks between design models and performance models
-- **uncertainty**: why numerical output still needs judgment
+- [GH Parametric Variants](starter_kits/gh-parametric-variants/README.md)
+- [Preset Simulation / Proxy Test](starter_kits/preset-simulation-proxy/README.md) — Week 5 proxy + optional EnergyPlus CLI case: [EnergyPlus guide](starter_kits/preset-simulation-proxy/energyplus_two_week_case.md), [runner script](starter_kits/preset-simulation-proxy/run_energyplus_two_week_case.py), [checked output CSV](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.csv)
+- [AI-Assisted Fact-Checking + Workflow Support](starter_kits/ai-assisted-workflow/README.md)
+- [Spreadsheet Thresholds](starter_kits/spreadsheet-thresholds/README.md) — Week 3 live workbook: [open `.xlsx`](starter_kits/spreadsheet-thresholds/live_threshold_workbook.xlsx), [CSV export](starter_kits/spreadsheet-thresholds/variant_scores.csv)
+- [GIS Spatial Comparison](starter_kits/gis-spatial-comparison/README.md) — Week 4 HKU micro-walkability demo: [preview](starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html), [scores](starter_kits/gis-spatial-comparison/outputs/scored_sites.csv)
 
-These support the whole course even if they are not the student's chosen primary pathway.
+Students are expected to choose from the routes that are viable for their own setup. GH-native work is welcome when a student already has a working installation, but it is not required.
 
-## Notebook Resources
+## Lectures and Supporting Materials
 
-### Existing Course Notebooks
+| Material | Use |
+|---|---|
+| [ML Primer · 12 Principles](lectures/ml-primer-12-principles.qmd) | plain-language ML mental model, skinned to the course visual language |
+| [ML for Architecture — full deck (PDF)](data/ML_for_Architecture_Combined.pdf) | the detailed version: pipeline, diffusion, segmentation, surrogate modeling, GH/Honeybee tooling |
+| [ML to Python Overview](lectures/ml-to-python-overview.qmd) | bridge from ML concepts to runnable Python |
+| [Python + ML Basics](notebooks/01_python_ml_basics.ipynb) | starter notebook |
+| [Architecture Viz + Analysis](notebooks/02_arch_viz_analysis.ipynb) | starter notebook |
 
-- `notebooks/02_arch_viz_analysis.ipynb` — the pathway starter: A/B pilot analysis, error bars, and object-card figures
-- `notebooks/01_python_ml_basics.ipynb` — optional extension only: modeling concepts beyond the course scope, never assessed
+## Supported Workflow Tracks
 
-Recommended use:
+### GH / Parametric Workflow
 
-- start with `02_arch_viz_analysis` — it aims directly at the A3/A4 deliverables
-- open `01_python_ml_basics` only if you want optional depth in modeling; nothing in it is required or graded
-- adapt the notebooks rather than starting from a blank file — but starting from a blank file is allowed if your question needs it
+Best when the decision depends on geometry variation or option families.
 
-## Example Bank
+Typical outputs:
 
-The course now stores visual examples locally in `assets/examples/` to avoid remote failures in slides and pages.
+- GH definition
+- exported variants
+- parameter table
+- comparison chart or object card
 
-Included examples currently support:
+Current status: **bridge now; direct GH/GHX files in progress**. The course website will include native `.gh` / `.ghx` starter files once the GH/Rhino authoring setup is stable. Until then, students may use GH if they already have a working setup; otherwise they should use spreadsheet, GIS, Python, proxy simulation, or AI-assisted fact-checking routes and export tables or geometry files that can later feed GH.
 
-- workplace and systems claims
-- public-space observation
-- environmental performance examples
-- Hong Kong site and access questions
+### BIM/BEM and Simulation
 
-Attribution and source links are recorded in `assets/examples/sources.csv`.
+Best when the decision depends on building performance, model translation, daylight, energy, facade logic, or environmental assumptions.
 
-## Data Sources
+Typical outputs:
 
-### Hong Kong / Local
+- model-translation critique
+- preset simulation output
+- sensitivity table
+- performance threshold
 
-- `DATA.GOV.HK`
-- Planning Department datasets
-- Transport Department data
-- Hong Kong Observatory climate records
-- site-specific images, counts, notes, and precedent material collected by students
+Current status: **supported through BIM/BEM literacy, a runnable proxy simulation kit, and an optional EnergyPlus two-week CLI case**. Full Ladybug/Radiance walkthroughs remain optional extensions, not launch requirements.
 
-### Global / Open
+Week 5 live materials:
 
-- OpenStreetMap
-- municipal open data portals
-- EnergyPlus weather files
-- professional standards and benchmark sources
+- [Preset Simulation / Proxy Test starter kit](starter_kits/preset-simulation-proxy/README.md)
+- [EnergyPlus two-week case](starter_kits/preset-simulation-proxy/energyplus_two_week_case.md)
+- [EnergyPlus runner script](starter_kits/preset-simulation-proxy/run_energyplus_two_week_case.py)
+- [EnergyPlus checked output CSV](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.csv)
+- [EnergyPlus run summary](starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/two_week_summary.txt)
+- [Proxy heat scores CSV](starter_kits/preset-simulation-proxy/outputs/facade_heat_proxy_scores.csv)
+- [Proxy heat chart](starter_kits/preset-simulation-proxy/outputs/facade_heat_proxy_chart.png)
 
-## Support
+### GIS / Spatial Workflow
 
-### During the Semester
+Best when the decision depends on site, access, zoning, context, exposure, or spatial comparison.
 
-- office hours for setup and pathway troubleshooting
-- in-class work sessions for assignment development
-- peer review for method fit and clarity
+Typical outputs:
 
-### When to Ask for Help
+- map
+- buffer/overlay output
+- spatial summary table
+- exported design criteria
 
-Ask early if:
+Current status: **runnable GeoJSON demo and generated preview are present**.
 
-- you cannot run the provided notebook example
-- your GIS data will not open or align correctly
-- your spreadsheet structure is collapsing under too many ad hoc columns
-- your chosen method does not yet produce a decision-relevant output
+Week 4 live materials:
 
-## Quick Start
+- [GIS preview](starter_kits/gis-spatial-comparison/outputs/gis_spatial_comparison_preview.html)
+- [Site comparison map](starter_kits/gis-spatial-comparison/outputs/gis_site_comparison_map.png)
+- [Scored sites CSV](starter_kits/gis-spatial-comparison/outputs/scored_sites.csv)
+- [Selected site GeoJSON](starter_kits/gis-spatial-comparison/outputs/selected_site.geojson)
+- [GIS demo script](starter_kits/gis-spatial-comparison/gis_spatial_comparison_demo.py)
+- [GIS Spatial Comparison starter kit](starter_kits/gis-spatial-comparison/README.md)
 
-### If You Want the Safest Start
+### Python / Notebook Workflow
 
-1. Choose `spreadsheet`
-2. Build a clean comparison table for A1 and A2
-3. Add GIS or Python only if the question truly needs it
+Best when the decision depends on repeated data analysis, visualization, or lightweight modeling.
 
-### If You Want GIS
+Existing notebooks:
 
-1. Install `QGIS`
-2. Run the `geopandas` starter notebook in `Jupyter` or `Colab`
-3. Compare the GUI and code workflows before choosing how far to automate
+- `notebooks/01_python_ml_basics.ipynb`
+- `notebooks/02_arch_viz_analysis.ipynb`
 
-### If You Want Python
+Current status: **supported starter route** with existing notebooks and a runnable facade-decision script.
 
-1. Install `Anaconda` or `Miniconda`
-2. Open the provided notebook in `Jupyter`
-3. Reproduce one chart using your own small dataset before scaling up
+### AI-Assisted Fact-Checking + Workflow Support
+
+Best when AI can help interpret a fuzzy relationship, draft a small workflow component, structure a prompt sequence, or act as a first-pass fact-checking companion.
+
+Required documentation:
+
+- prompt log
+- generated claim, relationship, or workflow output
+- fact-check notes
+- relationship-check notes
+- manual test or calculation
+- reproducibility note
+- disclosure statement
+
+Current status: **supported companion route** with a prompt log example and a verified Python function. It is intended for bounded workflow help, fact-checking, and relationship stress-testing, not unverified design outsourcing.
+
+### Spreadsheet / Low-Code Workflow
+
+Best when the decision depends on transparent comparison, sensitivity, or threshold logic.
+
+Typical outputs:
+
+- evidence table
+- decision matrix
+- sensitivity chart
+- threshold statement
+
+Current status: **fully supported** through a live workbook, preview, and CSV export.
+
+Week 3 live materials:
+
+- [Live threshold workbook](starter_kits/spreadsheet-thresholds/live_threshold_workbook.xlsx)
+- [Workbook preview](starter_kits/spreadsheet-thresholds/live_threshold_workbook_preview.html)
+- [GH-facing score export](starter_kits/spreadsheet-thresholds/variant_scores.csv)
+- [Spreadsheet Thresholds starter kit](starter_kits/spreadsheet-thresholds/README.md)
+
+## Setup Ladder
+
+| Level | Setup |
+|---|---|
+| Everyone | Excel or Google Sheets, browser, PDF/image export |
+| GIS route | QGIS, project layers, export workflow |
+| Python route | Jupyter Notebook, Anaconda/Miniconda or Colab |
+| GH bridge / optional workgroup | Rhino + Grasshopper only if already working; direct GH/GHX starter files are planned but currently WIP |
+| Simulation route | no-install proxy kit for everyone; optional EnergyPlus CLI case when installed |
+| AI-assisted companion route | approved AI tool access, prompt log, fact/relationship checks, verification notes |
+
+## Archive and Reuse
+
+The previous offering is preserved in:
+
+`archive/2025-26-current-offering-source/`
+
+High-value reusable materials:
+
+- Week 1 evidence audit material
+- Week 5 BIM/BEM deck
+- GIS overview material
+- Python and visualization notebooks
+- object card / figure rescue content
+
+Future extensions:
+
+- GH starter workflows
+- full preset simulation walkthrough
+- deeper AI-assisted architecture fact-checking and workflow examples
+- final package templates in downloadable format

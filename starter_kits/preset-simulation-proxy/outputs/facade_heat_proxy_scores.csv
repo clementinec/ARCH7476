@@ -1,0 +1,6 @@
+scenario,wwr,shading_depth_m,operable_area_ratio,internal_gain_w_m2,outdoor_temp_c,solar_exposure_w_m2,ventilation_ach,notes,shading_factor,ta_proxy_c,overheat_index,passes_threshold,decision_note
+Baseline,0.72,0.0,0.04,11,31,540,0.6,no shading; small operable area,1.0,35.7,19.3,False,"revise shading, WWR, or ventilation"
+Deep fins,0.62,0.9,0.04,11,31,540,0.6,deep horizontal shading,0.5,33.5,13.8,True,keep as candidate
+High greenery,0.58,0.3,0.08,11,31,500,0.9,green screen and more operable area,0.83,34.2,15.4,True,keep as candidate
+Hybrid,0.64,0.6,0.08,11,31,520,0.9,moderate fins plus ventilation,0.67,34.0,15.0,True,keep as candidate
+Low glass,0.44,0.4,0.06,11,31,540,0.7,smaller glazing ratio,0.78,33.7,14.1,True,keep as candidate

@@ -1,0 +1,875 @@
+---
+title: "Week 5: BIM, BEM, and Building Performance"
+subtitle: "What Changes When a Building Becomes an Energy Model"
+output-file: week-05.html
+format:
+  revealjs:
+    theme: [default, arch7476.scss]
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1500
+    height: 900
+    center: true
+    footer: "Week 5 · feeds A2: Evidence + Workflow Map"
+---
+
+## Today's Agenda
+
+:::: {.two-col}
+::: {.concept-card}
+[Session 1]{.label .concept}
+
+[Lecture / tool demo]{.card-title}
+
+- BIM and BEM are not the same model
+- how BIM files become BEM files
+- what gets lost in translation
+- IFC vs `gbXML`
+:::
+
+::: {.activity-card}
+[Session 2]{.label .activity}
+
+[Round table on YOUR model]{.card-title}
+
+- upload one BIM/BEM material to Slack
+- reconstruct it in four steps
+- name one performance claim and its weakest link
+:::
+::::
+
+::: {.reflection-card}
+This is a tool week, but the question stays the same: what would make a performance claim defensible, and where does the workflow quietly break?
+:::
+
+---
+
+[Course progress]{.kicker}
+
+## This week produces a model-assumption artifact
+
+::: {.progress-ladder}
+::: {.step .done}
+W3 comparison
+:::
+::: {.step .done}
+W4 GIS
+:::
+::: {.step .current}
+W5 BIM/BEM
+:::
+::: {.step}
+W6 pathway
+:::
+::: {.step}
+W7 prototype
+:::
+::: {.step}
+W8 verify
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Input]{.label .concept}
+BIM-derived room/facade parameters, not a magical BIM import
+:::
+::: {.artifact}
+[Change]{.label .activity}
+WWR, shading depth, orientation, glazing, schedule assumptions
+:::
+::: {.artifact}
+[Output]{.label .example}
+daylight/heat-risk proxy, scenario table, uncertainty note
+:::
+::: {.artifact}
+[Bridge]{.label .reflect}
+variant metrics can return to GH/Ladybug/Honeybee as parameters or checks
+:::
+:::
+
+---
+
+[Why this week matters]{.kicker}
+
+## Even if you never run a simulation
+
+You still need to read performance claims with care.
+
+- what performance claims are built from
+- why some model outputs are more trustworthy than others
+- where BIM/BEM workflows break in practice
+
+::: {.concept-card}
+A simulation number is only as good as the assumptions and cleanup behind it.
+:::
+
+---
+
+[The core distinction]{.kicker}
+
+## What are BIM and BEM?
+
+:::: {.two-col}
+::: {.concept-card}
+[BIM]{.card-title}
+
+- digital model of physical and functional building characteristics
+- serves design, construction, coordination, and facility management
+- prioritizes geometry, materials, relationships, and documentation
+:::
+
+::: {.concept-card}
+[BEM]{.card-title}
+
+- computational model of thermal behavior and energy flows
+- serves analysis, optimization, and compliance
+- prioritizes zones, schedules, systems, weather, and performance assumptions
+:::
+::::
+
+---
+
+## Same building, different core questions
+
+:::: {.two-col}
+::: {.concept-card}
+[BIM asks]{.card-title}
+What do we build, where does it go, and how is it put together?
+:::
+
+::: {.concept-card}
+[BEM asks]{.card-title}
+How will it behave over time when weather, people, and systems act on it?
+:::
+::::
+
+---
+
+## Same building, two models
+
+::: {.tool-panel}
+::: {.zone .input}
+**BIM view** walls · rooms · floors · doors · material layers · element relationships
+:::
+::: {.zone .operation}
+**BEM view** thermal zones · heat-transfer surfaces · schedules · weather · HVAC systems
+:::
+::: {.zone .output}
+**Shared object** the same wall exists in both — but not for the same reason
+:::
+::: {.zone .check}
+**Quality check** does each model carry what its analysis actually needs?
+:::
+:::
+
+::: {.warning-card}
+[Commonly fails to translate]{.card-title}
+Thermal **zoning**, occupancy and system **schedules**, real **constructions** (R-value, SHGC, mass), and building **orientation**.
+:::
+
+---
+
+[Minimum supported input]{.kicker}
+
+## BIM-derived input schema
+
+For this course, the reliable minimum is not "import my whole model." It is a small table students can export, measure, or enter from Rhino/Revit.
+
+| Field | Unit / type | Why it matters |
+|---|---|---|
+| room depth | m | daylight penetration and cooling-load proxy |
+| facade orientation | N/E/S/W or degrees | solar exposure and glare risk |
+| window-to-wall ratio | 0-1 | daylight gain and heat gain |
+| shading depth | m | solar control and view/daylight trade-off |
+| glazing U-value / SHGC | numeric | envelope performance assumption |
+| obstruction factor | 0-1 | context/shading simplification |
+
+::: {.warning-card}
+If this table cannot be filled honestly, a more advanced simulation will only hide the uncertainty better.
+:::
+
+---
+
+## BIM data priorities
+
+- project, site, building, levels
+- spaces and rooms
+- walls, windows, floors, roofs, doors
+- material layers and product attributes
+- element relationships and construction logic
+
+---
+
+## BEM data priorities
+
+- thermal zones
+- heat-transfer surfaces
+- internal loads
+- occupancy schedules
+- HVAC systems and control logic
+- weather and shading context
+
+---
+
+[Runnable proxy]{.kicker}
+
+## The performance demo is a scenario file
+
+The minimum runnable route uses a small `scenario.json` or table before any full EnergyPlus/Radiance setup.
+
+::: {.tool-panel}
+::: {.zone .input}
+**Input** room/facade schema + weather/season assumption
+:::
+::: {.zone .operation}
+**What varies** WWR, shading depth, orientation, glazing, schedule
+:::
+::: {.zone .output}
+**Output** daylight proxy, heat-risk proxy, comfort-risk note
+:::
+::: {.zone .check}
+**Quality check** units, range, and one known hand-check are stated
+:::
+:::
+
+This proxy is not the final truth. It is the fast test that tells you whether a full EnergyPlus, Ladybug, Honeybee, or Radiance workflow is worth the setup.
+
+::: {.activity-card}
+[Run the kit]{.card-title}
+This proxy is runnable now: [`facade_heat_proxy_demo.py`](../starter_kits/preset-simulation-proxy/README.md) regenerates a [scores CSV](../starter_kits/preset-simulation-proxy/outputs/facade_heat_proxy_scores.csv) and a [comparison chart](../starter_kits/preset-simulation-proxy/outputs/facade_heat_proxy_chart.png). Change the assumptions and re-run.
+:::
+
+---
+
+[EnergyPlus route]{.kicker}
+
+## The real simulator route is one controlled CLI run
+
+::: {.reflection-card}
+Run EnergyPlus directly first to see the **model file**, **weather file**, **run period**, **setpoints**, and **output variables** without an extra Grasshopper/Ladybug translation layer. The result can still be patched back into GH later; the direct run simply removes one source of uncertainty while you learn what the simulator actually did.
+:::
+
+---
+
+## Why not start inside Grasshopper?
+
+:::: {.two-col}
+::: {.concept-card}
+[Direct EnergyPlus run]{.card-title}
+
+- one `.idf`
+- one `.epw`
+- one command
+- visible outputs
+- fewer translation assumptions
+:::
+
+::: {.activity-card}
+[GH / Ladybug layer]{.card-title}
+
+- useful for design iteration
+- adds geometry and component translation
+- easier to lose track of defaults
+- better after the baseline is understood
+:::
+::::
+
+The order is: **verify the simulator loop, then patch it into the design workflow.**
+
+---
+
+## Install once, run many times
+
+:::: {.two-col}
+::: {.concept-card}
+[Install once]{.card-title}
+
+Use the official EnergyPlus download or release page:
+
+- `energyplus.net/downloads`
+- `github.com/NREL/EnergyPlus/releases`
+:::
+
+::: {.activity-card}
+[Run many times]{.card-title}
+
+After installation, the class route is a small script:
+
+```bash
+python run_energyplus_two_week_case.py
+```
+:::
+::::
+
+The point is control: know which model, weather file, run period, setpoint, and output variable produced the number.
+
+---
+
+## What the installation folder contains
+
+::: {.tool-panel}
+::: {.zone .input}
+**Executable** `energyplus` / `energyplus.exe`
+:::
+::: {.zone .operation}
+**Schema** `Energy+.idd`
+:::
+::: {.zone .output}
+**Materials to inspect** `ExampleFiles/` and `WeatherData/`
+:::
+::: {.zone .check}
+**Post-processing** `PostProcess/`
+:::
+:::
+
+If you cannot point to these files, you do not yet know what your simulation is running.
+
+---
+
+## One raw command, all platforms
+
+```bash
+energyplus -w path/to/weather.epw -d outputs -p two_week -r path/to/model.idf
+```
+
+| Flag | Meaning |
+|---|---|
+| `-w` | weather file |
+| `-d` | output directory |
+| `-p` | output file prefix |
+| `-r` | post-process outputs into readable CSV files |
+
+Windows and macOS mainly differ in where `energyplus` lives, not in what the command means.
+
+---
+
+## If the executable is not on PATH
+
+:::: {.two-col}
+::: {.concept-card}
+[macOS]{.card-title}
+
+```bash
+export ENERGYPLUS_EXE="/Applications/EnergyPlus-26-1-0/energyplus"
+python run_energyplus_two_week_case.py
+```
+:::
+
+::: {.concept-card}
+[Windows PowerShell]{.card-title}
+
+```powershell
+$env:ENERGYPLUS_EXE="C:\EnergyPlusV26-1-0\energyplus.exe"
+python run_energyplus_two_week_case.py
+```
+:::
+::::
+
+Change the version folder if your installed version is different.
+
+---
+
+## Two-week control output preview
+
+![EnergyPlus two-week checked output](../starter_kits/preset-simulation-proxy/outputs/energyplus_two_week/monitored_outputs.png){height="470"}
+
+::: {.reflection-card}
+This is what students should learn to read: outdoor condition, heating/cooling setpoints, actual zone air temperature, operative temperature, and where a warning or assumption would change the conclusion.
+:::
+
+---
+
+## The Week 5 simulator kit
+
+::: {.artifact-strip}
+::: {.artifact}
+[Proxy]{.label .concept}
+`facade_heat_proxy_demo.py`
+:::
+::: {.artifact}
+[EnergyPlus]{.label .activity}
+`run_energyplus_two_week_case.py`
+:::
+::: {.artifact}
+[Guide]{.label .example}
+`energyplus_two_week_case.md`
+:::
+::: {.artifact}
+[Output]{.label .reflect}
+`monitored_outputs.csv`
+:::
+:::
+
+Use the [EnergyPlus two-week case](../starter_kits/preset-simulation-proxy/energyplus_two_week_case.md) if installation is ready. Use the proxy route if it is not.
+
+---
+
+## Quick check: BIM or BEM?
+
+1. Exact window manufacturer and product code
+2. Occupancy schedule by hour
+3. Thermal resistance of an assembly
+4. Construction sequencing
+5. Cooling setpoint and operating hours
+
+::: {.activity-card}
+[Pair task]{.card-title}
+Label each item `BIM`, `BEM`, or `both`.
+:::
+
+---
+
+## Quick check answers
+
+- exact manufacturer and product code: mostly `BIM`
+- occupancy schedule by hour: `BEM`
+- thermal resistance of an assembly: often `both`, but used differently
+- construction sequencing: `BIM`
+- cooling setpoint and operation hours: `BEM`
+
+::: {.concept-card}
+The same wall can exist in both models, but not for the same reason.
+:::
+
+---
+
+[How the files come to exist]{.kicker}
+
+## How BIM files get made
+
+- **manual BIM authoring** in Revit / ArchiCAD / similar
+- **3D import** from Rhino, SketchUp, or other geometric models
+- **point cloud capture** for as-built conditions and renovation work
+
+Each path changes how much cleanup is needed before any energy analysis begins.
+
+---
+
+## How BEM files get made
+
+- translate from an existing BIM model
+- build a direct energy model from drawings and assumptions
+- start from a template or archetype and adapt it
+
+All three approaches are common. None is frictionless.
+
+---
+
+## Workflow map — design to analysis
+
+```{mermaid}
+graph TB
+    A[Design Intent] --> B[BIM Authoring Tool]
+    B --> C[Native BIM File]
+    C --> D{Export Format}
+    D --> E[IFC]
+    D --> F[gbXML]
+    F --> G[Energy Modeling Tool]
+    G --> H[Initial BEM]
+    H --> I[Manual Cleanup]
+    I --> J[Schedules, Systems, Controls, Weather]
+    J --> K[Complete BEM]
+    K --> L[Simulation Results]
+```
+
+---
+
+[The translation gap]{.kicker}
+
+## When BIM becomes BEM
+
+Problems usually come from four categories:
+
+- geometry
+- zoning
+- constructions
+- operations
+
+::: {.concept-card}
+Translation loss is normal, not an edge case. The skill is anticipating it.
+:::
+
+---
+
+## Geometry issues
+
+::: {.warning-card}
+- curved facades oversimplified into straight planes
+- tiny modeled objects exported as meaningful surfaces
+- orientation or context errors
+- missing adjacent buildings and shading
+:::
+
+---
+
+## Thermal zoning issues
+
+::: {.warning-card}
+- BIM spaces do not map neatly to thermal zones
+- open offices become fragmented or over-zoned
+- plenums, circulation zones, or mixed-use spaces disappear or split badly
+:::
+
+---
+
+## Construction and material gaps
+
+::: {.warning-card}
+- walls export as generic "exterior wall"
+- layers, R-values, SHGC, and internal mass are incomplete
+- thermal bridges and details are ignored
+:::
+
+---
+
+## Operational data missing
+
+::: {.warning-card}
+- no occupancy schedules
+- no equipment or lighting schedules
+- no setpoints or control strategies
+- no HVAC system definitions
+:::
+
+This is why a clean-looking import can still be analytically useless.
+
+---
+
+[Translation diagnosis]{.kicker}
+
+## Read the broken translation
+
+::: {.activity-card}
+[Scenario]{.card-title}
+You exported a 5-story office building to `gbXML` and the first model run shows energy use at **3x** what you expected.
+:::
+
+In small groups, work through:
+
+1. What probably happened to the thermal zones?
+2. What is likely wrong with the HVAC assumptions?
+3. What data probably failed to translate?
+4. What would you inspect first before trusting any output?
+
+---
+
+[The two bridges]{.kicker}
+
+## IFC vs `gbXML`
+
+Both are bridges. Neither is a perfect bridge.
+
+| Feature | IFC | `gbXML` |
+|---|---|---|
+| Primary purpose | broad BIM exchange | energy model translation |
+| Geometry detail | high | moderate |
+| Thermal zoning support | weak | better |
+| File size / speed | heavier | lighter |
+| Construction detail | stronger | narrower |
+
+---
+
+## What each bridge is good at
+
+:::: {.two-col}
+::: {.concept-card}
+[IFC]{.card-title}
+
+- archiving and coordination
+- multi-disciplinary interoperability
+- detailed building information
+:::
+
+::: {.concept-card}
+[`gbXML`]{.card-title}
+
+- getting geometry and basic constructions into energy tools
+- faster processing
+- better starting point for thermal-zone workflows
+:::
+::::
+
+---
+
+## Why neither solves the whole problem
+
+::: {.warning-card}
+- manual cleanup is still required
+- vendor implementations vary
+- updates overwrite hand fixes
+- building design logic and energy logic are not the same thing
+:::
+
+---
+
+## Ideal workflow vs real workflow
+
+:::: {.two-col}
+::: {.example-card}
+[Ideal]{.card-title}
+
+1. update BIM
+2. export cleanly
+3. update BEM automatically
+4. rerun analysis
+5. feed changes back into design
+:::
+
+::: {.warning-card}
+[Real]{.card-title}
+
+1. export once
+2. spend days cleaning the BEM
+3. design changes continue
+4. model diverges
+5. everyone hopes the gap is still "small enough"
+:::
+::::
+
+---
+
+[A real case]{.kicker}
+
+## Case study: translation gone wrong
+
+- new 15,000 m² university research building
+- BIM in Revit with MEP coordination
+- energy model in OpenStudio / EnergyPlus
+- goal: LEED Gold energy analysis
+
+---
+
+## Case study timeline
+
+:::: {.two-col}
+::: {.example-card}
+[Week 1]{.card-title}
+
+- export appears successful
+- team believes the workflow is seamless
+:::
+
+::: {.warning-card}
+[Week 2]{.card-title}
+
+- 465 thermal zones created instead of about 30
+- HVAC missing
+- generic constructions everywhere
+- orientation wrong
+:::
+::::
+
+---
+
+## Case study timeline (cont'd)
+
+:::: {.two-col}
+::: {.activity-card}
+[Weeks 3-4]{.card-title}
+
+- merge zones manually
+- define constructions and material properties
+- build schedules and HVAC systems
+- fix context and shading
+:::
+
+::: {.warning-card}
+[Week 8]{.card-title}
+
+- design changes arrive
+- re-export means losing cleanup work
+- manual updates begin and divergence starts
+:::
+::::
+
+---
+
+## Lessons learned
+
+::: {.reflection-card}
+- BIM was not authored with energy analysis in mind
+- missing data only became obvious after export
+- there was no workflow for iterative updates
+- "the file opened" did not mean "the model is valid"
+:::
+
+---
+
+[Translation diagnosis]{.kicker}
+
+## Diagnose the divergence
+
+::: {.activity-card}
+[Scenario]{.card-title}
+Actual energy use is 30% higher than predicted because the BIM and BEM drifted apart.
+:::
+
+In small groups, investigate:
+
+- what geometry changes could explain the increase?
+- what material substitutions matter?
+- what system or control changes matter?
+- what operation schedules may differ from assumptions?
+
+Come back with your top three suspects.
+
+---
+
+## Shared literacy takeaways
+
+::: {.reflection-card}
+- BIM and BEM must stay related, but they should not be confused
+- simulation outputs are only as good as the assumptions and cleanup behind them
+- translation loss is normal, not an edge case
+- performance claims need method transparency, not just metrics
+:::
+
+---
+
+[Anecdote · clean model, different building]{.kicker}
+
+## The performance gap: models vs metered reality
+
+::: {.warning-card}
+[What happens]{.card-title}
+Studies of completed buildings repeatedly find measured energy use **two to three times higher** than the design-stage model predicted. The model was not "wrong" — its assumptions (occupancy, schedules, controls, construction quality) simply did not match how the building was actually used and built.
+:::
+
+::: {.example-card}
+[The lesson]{.card-title}
+A polished BEM output is a scenario, not a measurement. State the assumptions a performance claim depends on, and name where the real building is likely to diverge.
+:::
+
+---
+
+[Patch to Grasshopper]{.kicker}
+
+## Performance outputs can steer GH variants
+
+::: {.gh-bridge}
+**Bridge pattern**
+Use GH/Ladybug/Honeybee or a Python proxy to generate variant metrics -> export `variant_metrics.csv` -> attach daylight/heat-risk scores to GH geometry variants.
+:::
+
+::: {.bridge-flow}
+::: {.node .current}
+BIM-derived schema
+:::
+::: {.node}
+scenario run
+:::
+::: {.node}
+metrics CSV
+:::
+::: {.node}
+GH variant colors
+:::
+::: {.node}
+revise facade
+:::
+:::
+
+Supported professional bridge: one constrained EnergyPlus or Ladybug/Radiance walkthrough, not "everything simulation."
+
+---
+
+[Uncertainty check]{.kicker}
+
+## Simulation is precise about the model, not automatically about the building
+
+::: {.uncertainty-check}
+**Question for your performance route**
+Which assumption dominates the result: geometry, material, schedule, weather, system, or occupancy?
+:::
+
+If you cannot name the dominant assumption, do not present the output as a performance conclusion. Present it as a scenario result.
+
+---
+
+## BREAK {.big-break}
+
+Take 10 minutes.
+
+When you return, post one rough BIM/BEM material from your project to Slack for Session 2.
+
+---
+
+[Session 2 · Round table]{.kicker}
+
+## Round table on YOUR model
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node .is-current} [Threshold]{.node} [Action]{.node}
+:::
+
+Upload one rough material to Slack before Session 2 — a BIM/BEM screenshot, a section or envelope image, a model diagram, or a performance claim from your project. [feeds A2]{.feeds-tag}
+
+---
+
+## Speak for 60-90 seconds
+
+::: {.concept-card}
+[Check-in question]{.card-title}
+What would a performance model need to know about your building, and what would it probably simplify?
+:::
+
+Volunteers go first; random draw may fill the remaining examples.
+
+---
+
+## Reconstruct your model in four steps
+
+**Object this week: your BIM/BEM model and one performance claim.**
+
+::: {.recall-4step}
+::: {.step}
+**Did** What does the model claim, and what did you actually build or export?
+:::
+::: {.step}
+**Assumed** What zoning, schedules, and constructions did the workflow assume for you?
+:::
+::: {.step}
+**Risk** Where could the translation have failed without you noticing?
+:::
+::: {.step}
+**Verify** What would you inspect before trusting the output?
+:::
+:::
+
+::: {.grading-note}
+Post your filled four-step to Slack under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Presenting is welcomed and earns credit; it is never required and never scored as performance.
+:::
+
+---
+
+## Case transfer checks
+
+:::: {.two-col}
+::: {.example-card}
+![The Edge, Amsterdam](../assets/examples/the-edge-amsterdam.jpg){height="280"}
+
+What kinds of evidence would support a claim about workplace performance here?
+:::
+
+::: {.example-card}
+![California Academy of Sciences](../assets/examples/california-academy-of-sciences.jpg){height="280"}
+
+What kinds of evidence would support a claim about environmental performance here?
+:::
+::::
+
+---
+
+[Exit]{.kicker}
+
+## Pathway commitment check
+
+After this week, you should be able to say:
+
+::: {.reflection-card}
+- whether your project needs only literacy in BIM/BEM
+- whether simulation evidence will support your question
+- whether your primary semester pathway is `spreadsheet`, `GIS`, `Python`, `GH`, `BIM/BEM`, or `AI-assisted`
+:::

@@ -1,0 +1,43 @@
+/*-- scss:defaults --*/
+$presentation-heading-color: #2c5282;
+$link-color: #3182ce;
+$code-block-bg: #f7fafc;
+
+/*-- scss:rules --*/
+
+.reveal h1 {
+  text-transform: none;
+  font-weight: 700;
+}
+
+.reveal h2 {
+  text-transform: none;
+  font-weight: 600;
+}
+
+.reveal .callout {
+  margin: 1em 0;
+}
+
+.reveal table {
+  font-size: 0.8em;
+}
+
+.reveal pre {
+  font-size: 0.55em;
+}
+
+.reveal code {
+  background-color: #e2e8f0;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+.smaller {
+  font-size: 0.85em;
+}
+
+.reveal .fragment.highlight-current-blue .current-fragment {
+  color: #3182ce;
+  font-weight: bold;
+}

@@ -1,0 +1,549 @@
+---
+title: "Week 3: Spreadsheet as the Comparison Layer"
+subtitle: "Transparent Comparison of Variants, Charting, and Decision Logic"
+output-file: week-03.html
+format:
+  revealjs:
+    theme: [default, arch7476.scss]
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1400
+    height: 900
+    center: true
+    footer: "Week 3 · feeds A1 + A2"
+---
+
+## Today's Agenda
+
+:::: {.two-col}
+::: {.concept-card}
+[Session 1]{.label .concept}
+
+[Lecture / tool demo]{.card-title}
+
+- spreadsheet as the transparent comparison layer
+- structuring a workbook around a decision
+- chart rescue and the 3-second message test
+- decision matrices and honest uncertainty
+:::
+
+::: {.activity-card}
+[Session 2]{.label .activity}
+
+[Round table on YOUR comparison]{.card-title}
+
+- upload one rough comparison
+- reconstruct it in four steps
+- in-class build, then a peer-swap test
+:::
+::::
+
+::: {.reflection-card}
+A1 finalizes this week. The same comparison logic also seeds A2 — this is where Total Recall hands off to the Workflow Map.
+:::
+
+---
+
+[Course progress]{.kicker}
+
+## This week produces a comparison artifact
+
+::: {.progress-ladder}
+::: {.step .done}
+W1 decision
+:::
+::: {.step .done}
+W2 evidence
+:::
+::: {.step .current}
+W3 comparison
+:::
+::: {.step}
+W4-6 pathway
+:::
+::: {.step}
+W7-9 prototype
+:::
+::: {.step}
+W10-12 package
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Input]{.label .concept}
+A1 decision + evidence audit
+:::
+::: {.artifact}
+[Change]{.label .activity}
+weights, thresholds, variant rows, confidence levels
+:::
+::: {.artifact}
+[Output]{.label .example}
+ranked variants + one chart + one CSV export
+:::
+::: {.artifact}
+[Bridge]{.label .reflect}
+CSV can drive GH colors, labels, panels, or variant selection
+:::
+:::
+
+---
+
+[The reframe]{.kicker}
+
+## The spreadsheet is the comparison layer
+
+This is not remedial Excel. A workbook is the most portable way to make a **generative comparison of variants** legible to someone else.
+
+::: {.concept-card}
+[Why it earns its place]{.card-title}
+It is the lowest-friction surface where assumptions, options, and trade-offs sit side by side and stay editable.
+:::
+
+- visible assumptions, not hidden ones
+- editable comparison logic anyone can rerun
+- traceable calculations from input to claim
+- fast iteration with no heavy setup
+
+---
+
+## Where it sits on the spine
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node .is-current} [Output]{.node} [Threshold]{.node} [Action]{.node}
+:::
+
+The workbook is how **Variation** becomes inspectable: many variants or scenarios, one comparable structure, one readable output.
+
+::: {.warning-card}
+A1 is **finalized** this week — the Total Recall board. The comparison habit you build here is exactly what A2's Workflow Map will formalize.
+:::
+
+---
+
+[Tool demo]{.kicker}
+
+## Workbook anatomy
+
+The same four-zone frame we use for every tool. This is a minimum runnable workbook, not an abstract exercise.
+
+::: {.tool-panel}
+::: {.zone .input}
+**Input** `variant`, `criterion`, `value`, `unit`, `source`, `confidence`
+:::
+::: {.zone .operation}
+**What varies** weights, thresholds, variant rows, confidence notes
+:::
+::: {.zone .output}
+**Output** live workbook, decision table, chart, `variant_scores.csv`
+:::
+::: {.zone .check}
+**Quality check** formulas visible, units stated, one hand calculation matches
+:::
+:::
+
+::: {.activity-card}
+[Live demo file]{.card-title}
+[Open `live_threshold_workbook.xlsx`](../starter_kits/spreadsheet-thresholds/live_threshold_workbook.xlsx) · [preview in browser](../starter_kits/spreadsheet-thresholds/live_threshold_workbook_preview.html) · [CSV export](../starter_kits/spreadsheet-thresholds/variant_scores.csv)
+:::
+
+---
+
+## Live workbook preview
+
+<iframe class="xlsx-preview-frame" src="../starter_kits/spreadsheet-thresholds/live_threshold_workbook_preview.html" title="Preview of live threshold workbook"></iframe>
+
+::: {.reflection-card}
+This is a static slide preview. The live workbook is where threshold cells, formulas, color rules, score rules, and the chart update.
+:::
+
+---
+
+## Start with the decision, not the software
+
+The structure follows the question, never the other way around.
+
+:::: {.two-col}
+::: {.warning-card}
+[Workbook with no decision]{.card-title}
+
+- one giant undifferentiated sheet
+- no units, no audience
+- columns with no reason to exist
+:::
+
+::: {.activity-card}
+[Workbook built on a decision]{.card-title}
+
+- one question per structure
+- one row type per sheet
+- one clear output already in mind
+:::
+::::
+
+---
+
+## A useful workbook pattern
+
+Three sheets, each tied to one job in the comparison.
+
+:::: {.three-step}
+::: {.step-box}
+[Sheet 1 · Evidence log]{.card-title}
+source · date · evidence type · relevance · confidence
+:::
+::: {.step-box}
+[Sheet 2 · Alternatives]{.card-title}
+option · criteria · scores or ranges · comments
+:::
+::: {.step-box}
+[Sheet 3 · Outputs]{.card-title}
+the chart · the matrix · the summary line
+:::
+::::
+
+::: {.concept-card}
+Each sheet answers one question, so the reader never has to reverse-engineer your intent.
+:::
+
+---
+
+[Patch to Grasshopper]{.kicker}
+
+## Spreadsheet output can become GH input
+
+::: {.gh-bridge}
+**Bridge pattern**
+[Open `live_threshold_workbook.xlsx`](../starter_kits/spreadsheet-thresholds/live_threshold_workbook.xlsx) -> edit thresholds and score rules -> export `variant_scores.csv` -> read it in Grasshopper -> color, cull, rank, or label the options.
+:::
+
+::: {.bridge-flow}
+::: {.node .current}
+spreadsheet
+:::
+::: {.node}
+CSV
+:::
+::: {.node}
+GH read file
+:::
+::: {.node}
+geometry variants
+:::
+::: {.node}
+selected option
+:::
+:::
+
+The spreadsheet does not replace GH. It makes the decision rule visible before GH starts looking magical.
+
+---
+
+## From image to comparable fields
+
+![High Line, New York](../assets/examples/high-line-park.jpg){height="380"}
+
+If you claimed this public-space strategy works, what would the workbook need to **compare**? Move from atmosphere to comparable fields: location, activity type, time and duration, seating/circulation, weather, evidence source and confidence.
+
+---
+
+## Typical comparison uses
+
+- precedent comparison across variants
+- evidence and source logging
+- option scoring with stated criteria
+- uncertainty-range charts
+- summary tables for a decision brief
+
+::: {.reflection-card}
+Every one of these is a way of laying variants side by side so the trade-off becomes visible to someone who was not in your head.
+:::
+
+---
+
+[The chart problem]{.kicker}
+
+## Bad chart vs cleaned chart
+
+A chart fails when it describes data instead of carrying a message.
+
+:::: {.two-col}
+::: {.warning-card}
+[The chart that fails a stakeholder]{.card-title}
+
+- too many series, no dominant takeaway
+- labels too small to read at a glance
+- colour decorating instead of working
+- title naming the data, not the message
+:::
+
+::: {.activity-card}
+[The cleaned chart]{.card-title}
+
+- one message, stated in the title
+- only the series that support it
+- annotation forcing the eye to the point
+- uncertainty shown where it matters
+:::
+::::
+
+---
+
+## The 3-second message test
+
+If a critic glances for three seconds, can they tell:
+
+- what is being compared?
+- which option is stronger or riskier?
+- what they are meant to notice?
+
+::: {.warning-card}
+If not, the chart is not finished — that is a clarity gap, not a failure of taste.
+:::
+
+---
+
+## Chart rescue formula
+
+::: {.recall-4step}
+::: {.step}
+**Message** Decide the one thing the chart must say
+:::
+::: {.step}
+**Remove** Cut everything that does not support it
+:::
+::: {.step}
+**Force** Use annotation or labels to make the point unmissable
+:::
+::: {.step}
+**Limit** Show uncertainty, then connect back to the decision
+:::
+:::
+
+---
+
+## Show uncertainty honestly
+
+:::: {.two-col}
+::: {.warning-card}
+[Avoid]{.card-title}
+
+- fake precision
+- unexplained weighted scores
+- single-point claims on weak inputs
+:::
+
+::: {.activity-card}
+[Prefer]{.card-title}
+
+- ranges and scenario labels
+- note fields for assumptions
+- charts that make limits visible
+:::
+::::
+
+---
+
+## Decision matrix example
+
+A matrix is a comparison layer in table form — readable as long as the criteria and direction are stated.
+
+| Option | daylight | access | cost | risk | recommendation note |
+|---|---:|---:|---:|---:|---|
+| A | high | medium | medium | medium | balanced |
+| B | medium | high | low | high | cheaper but riskier |
+| C | high | high | high | low | strongest, but costly |
+
+::: {.reflection-card}
+The note column is doing the real work: it converts scores back into a defensible recommendation.
+:::
+
+---
+
+[Uncertainty check]{.kicker}
+
+## A number is not neutral just because it is in a cell
+
+::: {.uncertainty-check}
+**Question for your workbook**
+Which cell, weight, or threshold would change the recommendation if it moved by 10 percent?
+:::
+
+That cell is not a detail. It is a design assumption wearing the costume of arithmetic.
+
+---
+
+[ML principle connection]{.kicker}
+
+## When you weight a decision matrix, you are writing a loss function
+
+::: {.concept-card}
+[Principle 4 — Loss = what "better" means]{.card-title}
+An ML model only improves on what its loss rewards. Your spreadsheet's weights are the same thing: they define what "better" means before you compare anything.
+:::
+
+::: {.reflection-card}
+[So]{.card-title}
+If your weighting ignores a real constraint (cost, daylight, legibility), the "winning" variant will too. Make the criterion explicit, like a loss.
+:::
+
+See [ML Primer · Principles 3–4](../lectures/ml-primer-12-principles.html).
+
+---
+
+[Anecdote · when the spreadsheet hides the risk]{.kicker}
+
+## 2012: a copy-paste error inside a risk model
+
+::: {.warning-card}
+[What happened]{.card-title}
+JPMorgan's "London Whale" risk model lived in a chain of spreadsheets where values were **copied and pasted between cells by hand**. One step divided by a sum instead of an average, understating the risk. The losses reached about US$6 billion.
+:::
+
+::: {.example-card}
+[The lesson]{.card-title}
+A spreadsheet is a transparent comparison layer only if its steps are inspectable. Manual copy-paste between cells is exactly where the logic stops being traceable.
+:::
+
+---
+
+## BREAK {.big-break}
+
+Take 10 minutes.
+
+When you return, open the workbook you will rebuild — your A1 topic, not a generic example.
+
+---
+
+[Session 2 · Round table]{.kicker}
+
+## Round table on YOUR comparison
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node .is-current} [Output]{.node} [Threshold]{.node} [Action]{.node}
+:::
+
+Upload one rough comparison to Slack before Session 2 — a comparison table, a chart, a decision matrix, or a sketch of variants or scenarios. [feeds A1 + A2]{.feeds-tag}
+
+---
+
+## Mode 1 — the walk-through (optional, celebrated)
+
+This is a hands-on tool week, so a live walk-through is especially welcome.
+
+::: {.walkthrough-card}
+[Show us your workbook running]{.card-title}
+A volunteer opens their actual spreadsheet and walks the class through one comparison — uninterrupted, 3–4 minutes. Messy is fine; we want the real thing working.
+:::
+
+- not graded as a performance; volunteering earns credit, never penalty
+- the room listens; questions wait for the audit
+- show how a variant changes the output live, if you can
+
+---
+
+## Reconstruct your comparison in four steps
+
+**Object this week: your comparison of variants or scenarios in a spreadsheet.**
+
+::: {.recall-4step}
+::: {.step}
+**Did** What variants did I compare, and how did I structure the sheets?
+:::
+::: {.step}
+**Assumed** What scores, weights, or units did I treat as given?
+:::
+::: {.step}
+**Risk** Where is the comparison hiding a weak input or a false precision?
+:::
+::: {.step}
+**Verify** What would I add to make the trade-off legible to a stranger?
+:::
+:::
+
+::: {.grading-note}
+Post your filled four-step to Slack under your comparison. Posting + an honest reconstruction is the graded unit — not how you spoke or how polished the workbook looks.
+:::
+
+Volunteers go first; random draw may fill the remaining examples.
+
+---
+
+## In-class build sprint
+
+::: {.activity-card}
+[Do this now — 15 minutes]{.card-title}
+Build a starter workbook on your A1 topic with:
+
+1. one sheet for evidence sources
+2. one sheet for alternative comparison
+3. one chart that makes a trade-off visible
+:::
+
+Use your real topic, not a placeholder — this is the comparison your A1 board and A2 map will both lean on.
+
+---
+
+## Peer-swap test
+
+Swap screens with a classmate. They read only what is on the sheet — you stay quiet.
+
+::: {.audit-card}
+[Examine the workbook, not the author]{.card-title}
+Can a reader, with no narration:
+
+- follow the workbook logic quickly?
+- tell what each column means?
+- identify the decision being supported?
+- read the chart without explanation?
+:::
+
+Where the answer is no, that is a fix on the artifact — not a judgment of the person.
+
+---
+
+## What the spreadsheet cannot replace
+
+- spatial reasoning at city or site scale
+- repeated geospatial operations
+- heavier notebook automation
+- simulation-specific modeling
+
+::: {.concept-card}
+That is exactly why the course goes on to survey GIS, BIM/BEM, Grasshopper, Python, and AI-assisted workflows.
+:::
+
+---
+
+## If you stay on the spreadsheet
+
+You can do the course very well on this tool, as long as you:
+
+- keep the comparison logic clean
+- tie every sheet to a decision
+- avoid decorative graphics
+- document what the workbook cannot tell you
+
+---
+
+[Exit]{.kicker}
+
+## Week 3 milestone
+
+::: {.concept-card}
+[Leave class with]{.card-title}
+
+1. your A1 Total Recall board finalized
+2. a starter workbook comparing real variants or scenarios
+3. one exported table/chart that could be read by GH or another tool
+4. one chart that passes the 3-second test
+5. one named cell, weight, or threshold you do not fully trust
+:::
+
+::: {.reflection-card}
+**The trade-off my workbook makes visible is ___, and the input I least trust is ___.**
+:::
+
+Week 4 opens A2: turning this comparison habit into an Evidence + Workflow Map.

@@ -1,0 +1,459 @@
+---
+title: "Week 11: Final Package Clinic"
+subtitle: "Refine the Four A4 Components and Prepare for the Object Fair"
+output-file: week-11.html
+format:
+  revealjs:
+    theme: [default, arch7476.scss]
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1400
+    height: 900
+    center: true
+    footer: "Week 11 · feeds A4: Workflow Package"
+---
+
+## Today's Agenda
+
+:::: {.two-col}
+::: {.concept-card}
+[Session 1]{.label .concept}
+
+[Final package clinic]{.card-title}
+
+- the four A4 components, side by side
+- visual-polish lab and content refinement
+- the message-clarity clinic
+- Q&A preparation, then the submission checklist
+:::
+
+::: {.activity-card}
+[Session 2]{.label .activity}
+
+[Round table on YOUR weakest component]{.card-title}
+
+- upload one rough A4 fragment
+- reconstruct it in four steps
+- agree the one fix before submission
+:::
+::::
+
+::: {.reflection-card}
+This is a clinic, not a contest. We refine the **work**, find the weakest component early enough to fix it, and make the package legible to a stranger.
+:::
+
+---
+
+[Course progress]{.kicker}
+
+## This week finalizes the handoff artifact
+
+::: {.progress-ladder}
+::: {.step .done}
+A1 board
+:::
+::: {.step .done}
+A2 contract
+:::
+::: {.step .done}
+A3 output
+:::
+::: {.step .done}
+threshold
+:::
+::: {.step .done}
+draft
+:::
+::: {.step .current}
+handoff
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Practice]{.label .concept}
+2-slide decision memo: what changed and what to do
+:::
+::: {.artifact}
+[Research]{.label .activity}
+2-page method brief: how you know and what remains uncertain
+:::
+::: {.artifact}
+[Object]{.label .example}
+1-page card: dominant figure, threshold, recommendation
+:::
+::: {.artifact}
+[Capsule]{.label .reflect}
+README, files, sources, prompt/code notes, verification log
+:::
+:::
+
+---
+
+[The spine of the week]{.kicker}
+
+## Four components, one package
+
+A4 is not one document. It is four linked components, each answering a different question. Polish here means each one answers its question clearly.
+
+:::: {.two-col}
+::: {.concept-card}
+[1 · Practice Case]{.card-title}
+The applied story: a real decision and what changed because of the evidence.
+
+*Answers:* **what changed?**
+:::
+
+::: {.concept-card}
+[2 · Research Brief]{.card-title}
+The reasoning and evidence behind the recommendation, stated honestly.
+
+*Answers:* **how do you know?**
+:::
+::::
+
+:::: {.two-col}
+::: {.concept-card}
+[3 · Object Card]{.card-title}
+The single readable artifact a viewer meets at the fair.
+
+*Answers:* **what does a viewer see?**
+:::
+
+::: {.concept-card}
+[4 · Reproducibility Capsule]{.card-title}
+The inputs, steps, and files so the method can be inspected.
+
+*Answers:* **how can someone inspect the method?**
+:::
+::::
+
+---
+
+## How the components fit together
+
+The four components are not parallel deliverables — they answer four questions a reviewer asks in sequence.
+
+```{mermaid}
+flowchart LR
+    PC[Practice Case<br/>what changed?] --> RB[Research Brief<br/>how do you know?]
+    RB --> OC[Object Card<br/>what does a viewer see?]
+    OC --> RC[Reproducibility Capsule<br/>how can someone inspect the method?]
+    RC --> A4[A4: Workflow Package]
+```
+
+::: {.reflection-card}
+If a stranger can walk this chain without you in the room, the package is done. Networking is secondary — the package comes first.
+:::
+
+---
+
+[Final polish]{.kicker}
+
+## The semester spine, one last time
+
+Every component must still let a reader trace the same six-part spine your A4 has carried all along.
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node} [Threshold]{.node} [Action]{.node}
+:::
+
+::: {.concept-card}
+[The reviewer's question]{.card-title}
+Can I trace **decision → variants → workflow → output → threshold → limit** across the four components without asking you to explain it out loud?
+:::
+
+Polish is not decoration. It is making each link legible.
+
+---
+
+[Handoff map]{.kicker}
+
+## The package is a small inspectable archive
+
+::: {.bridge-flow}
+::: {.node .current}
+decision memo
+:::
+::: {.node}
+method brief
+:::
+::: {.node}
+object card
+:::
+::: {.node}
+source files
+:::
+::: {.node}
+verification log
+:::
+:::
+
+::: {.gh-bridge}
+**Bridge pattern**
+If your workflow uses GH, the capsule includes the `.gh` file or screenshots, exported variant table, component/function contract, and one note explaining which sliders or inputs should be changed next.
+:::
+
+---
+
+# Visual-polish lab {.big-break}
+
+Bring your weakest figure and your Object Card draft.
+
+---
+
+## Visual-polish lab
+
+Work on one figure at a time. The goal is clarity, not ornament.
+
+::: {.activity-card}
+[Do this now]{.card-title}
+Take your weakest figure and run the four checks below, in order. Stop when the key message is obvious in three seconds.
+:::
+
+| Check | Question | Fix if no |
+|---|---|---|
+| Message | Is the key insight obvious in 3 seconds? | cut clutter, label the point |
+| Readability | Legible at fair scale, from a few feet away? | larger type, fewer series |
+| Honesty | Are uncertainty and limits visible? | add range, caveat, or note |
+| Consistency | Same fonts, colours, units across components? | align to one style |
+
+---
+
+## Object Card refinement
+
+The Object Card is the one artifact most viewers actually read. It must stand alone.
+
+:::: {.two-col}
+::: {.concept-card}
+[What it must carry]{.card-title}
+
+- the decision and who it is for
+- one figure that carries the message
+- the recommendation, in plain language
+- a stated limit
+:::
+
+::: {.activity-card}
+[The 30-second test]{.card-title}
+Hand your draft card to a neighbour. Can they state your recommendation and one limit after 30 seconds, without you speaking?
+:::
+::::
+
+---
+
+[Content refinement]{.kicker}
+
+## Sharpen the writing
+
+The Research Brief and Practice Case carry the argument. Tighten them.
+
+::: {.activity-card}
+[8-minute writing pass]{.card-title}
+
+1. **Opening** — does the first paragraph state the decision, finding, and action?
+2. **Thread** — is the stakeholder's relevance clear all the way through?
+3. **Evidence** — is confidence matched to the strength of the evidence?
+4. **Citations** — are sources complete and the capsule index linked?
+:::
+
+::: {.warning-card}
+State uncertainty plainly. Overclaiming weakens credibility faster than admitting a limit ever will.
+:::
+
+---
+
+[Uncertainty check]{.kicker}
+
+## Final polish should not polish away doubt
+
+::: {.uncertainty-check}
+**Question for Week 11**
+Which caveat would change the recommendation if it turned out worse than expected?
+:::
+
+That caveat belongs on the Object Card or in the Practice Case, not buried in the capsule.
+
+---
+
+[Message clarity]{.kicker}
+
+## The message-clarity clinic
+
+Pair up. One reads as a busy reader; the other presents the core message.
+
+::: {.activity-card}
+[Role-play, 4 minutes]{.card-title}
+The reader skims, then asks: **"So what should I actually do?"** The presenter must answer in one sentence.
+:::
+
+::: {.reflection-card}
+[The one-thing test]{.card-title}
+If a reader remembers only one thing, what should it be? Does every part of your package support that one message?
+:::
+
+---
+
+[Q&A preparation]{.kicker}
+
+## Prepare for the likely questions
+
+Most fair questions fall into three families. Draft one honest answer for each.
+
+:::: {.three-step}
+::: {.step-box}
+[Method]{.card-title}
+"How do you know the sample / model is adequate?" → state your check and its limit.
+:::
+::: {.step-box}
+[Implementation]{.card-title}
+"What would this cost or take to apply?" → give a range, not a guess.
+:::
+::: {.step-box}
+[Alternatives]{.card-title}
+"Could something else explain this?" → name the alternative you ruled out, and how.
+:::
+::::
+
+::: {.concept-card}
+A question is a chance to show your reasoning, not an attack to defend against. Acknowledging a limit builds more credibility than deflecting.
+:::
+
+---
+
+## A useful answer, in four moves
+
+::: {.activity-card}
+[The response shape]{.card-title}
+
+1. **Acknowledge** — "Good question about ___."
+2. **Answer** — "Here is what I found / checked."
+3. **Connect** — "What this means for your decision is ___."
+4. **Offer** — "I can follow up with the detail in the capsule."
+:::
+
+Keep it short. A clear, honest answer beats a long defensive one.
+
+---
+
+[Session 2 · Round table]{.kicker}
+
+## Round table on YOUR weakest component
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node} [Threshold]{.node} [Action]{.node .is-current}
+:::
+
+Upload one rough material to Slack before Session 2 — a Practice Case section, Research Brief fragment, final Object Card draft, or a Reproducibility Capsule index. [feeds A4]{.feeds-tag}
+
+---
+
+## Reconstruct your weakest component in four steps
+
+**Object this week: your weakest A4 component, as a reviewer will meet it.**
+
+::: {.recall-4step}
+::: {.step}
+**Did** What does this component currently claim and show?
+:::
+::: {.step}
+**Assumed** What am I assuming the reader already knows?
+:::
+::: {.step}
+**Risk** Why is this the weakest of the four — what is missing?
+:::
+::: {.step}
+**Verify** What one fix would most improve it before submission?
+:::
+:::
+
+::: {.grading-note}
+Post your four-step under your component. Posting + an honest reconstruction is the graded unit. Presenting is welcomed and earns credit; it is never required and never scored as performance. Volunteers go first; random draw may fill the remaining examples.
+:::
+
+---
+
+## Triage what you hear
+
+You will get more notes than you can act on before submission. Sort first.
+
+| Priority | Meaning | When to fix |
+|---|---|---|
+| **Critical** | a component fails to answer its question | this week |
+| **Important** | credibility or clarity gap | before submission |
+| **Polish** | would improve, not essential | if time allows |
+
+::: {.warning-card}
+Fix one critical item well rather than ten polish items poorly.
+:::
+
+---
+
+## Final submission checklist
+
+Run this before you submit the package.
+
+::: {.activity-card}
+[Quality assurance — check each]{.card-title}
+:::
+
+| Component | Done when |
+|---|---|
+| Practice Case | what changed is clear, and who it was for |
+| Research Brief | the reasoning and evidence are honest and cited |
+| Object Card | recommendation + one figure readable in 30 seconds |
+| Reproducibility Capsule | inputs, steps, and files let a stranger re-run it |
+| Across all four | findings consistent, spine traceable end to end |
+
+---
+
+## Object Fair, the day
+
+A calm checklist, not a performance plan.
+
+:::: {.two-col}
+::: {.activity-card}
+[Before you arrive]{.card-title}
+
+- test any display or files early
+- set up the Object Card where it reads at a glance
+- have the capsule index ready to point to
+:::
+
+::: {.activity-card}
+[During the fair]{.card-title}
+
+- open with the decision and who it is for
+- let the one figure do the work
+- answer questions in the four-move shape
+- a few real conversations beat many quick ones
+:::
+::::
+
+---
+
+## Week 11 milestone
+
+::: {.concept-card}
+[Before the Object Fair]{.card-title}
+
+1. each component answers its own question clearly
+2. the weakest component you named is fixed
+3. the Object Card reads in 30 seconds
+4. the capsule lets a stranger inspect the method
+:::
+
+---
+
+[Exit]{.kicker}
+
+## Your final fix, in one line
+
+Before you leave, write and post:
+
+::: {.reflection-card}
+**My weakest A4 component is ___, and the one fix I will make before submission is ___.**
+:::
+
+Next week is the Object Fair: you present the package and discuss it with peers and reviewers.

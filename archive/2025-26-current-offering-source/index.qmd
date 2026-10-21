@@ -1,0 +1,152 @@
+---
+title: "ARCH7476: Evidence-Based Generative Design"
+subtitle: "Tool Pathways for Studio Decisions"
+format:
+  html:
+    toc: true
+---
+
+## Course Overview
+
+**ARCH7476** is a mixed-cohort course for architecture students who need a clearer way to move from intuition to evidence. The course now starts by making the tool landscape explicit, then asks each student to choose one primary pathway for the semester:
+
+- **Spreadsheet** for transparent low-code comparison, charting, and decision matrices
+- **GIS** for spatial evidence, map-based reasoning, and geospatial workflows
+- **Python** for notebook-based analysis, scripting, and reproducible evidence building
+
+The course keeps **BIM/BEM and building performance** as shared literacy for everyone, but the assessed semester pathway is chosen from `spreadsheet`, `GIS`, or `Python`.
+
+## What Students Leave With
+
+By the end of the semester, students will be able to:
+
+1. Frame a design decision as an evidence problem rather than a vague preference
+2. Audit what counted as evidence in a prior project and identify missing evidence
+3. Choose a tool pathway that actually fits the decision being made
+4. Run one primary workflow with enough independence to keep using it after the course
+5. Communicate findings with clear limits, confidence, and next steps for studio or practice
+
+## Mixed-Cohort Design
+
+This course is designed for **undergraduates**, **MArch students**, and occasional **PhD students** in the same room.
+
+| Student level | What stays common | What scales by level |
+|---|---|---|
+| Undergraduate | Same weekly structure and assignments | More scaffolding, narrower scope, simpler analysis |
+| MArch | Same weekly structure and assignments | Stronger stakeholder fit, more independence, practice-ready outputs |
+| PhD | Same weekly structure and assignments | Higher rigor, deeper uncertainty treatment, stronger reproducibility |
+
+The difference is **depth and independence**, not separate coursework.
+
+## Semester Structure
+
+### Phase 1: Survey the Landscape
+
+Weeks 1-5 introduce the tool families and the decisions they support:
+
+- spreadsheet workflows for comparison and traceable reasoning
+- GIS alternatives: `QGIS`, `ArcGIS`, and `geopandas`
+- notebook workflows in `Jupyter`
+- BIM/BEM and simulation literacy
+
+### Phase 2: Choose a Pathway
+
+By the middle of the semester, each student formally chooses one primary pathway and uses it to:
+
+- define evidence sources
+- prototype a method
+- run a pilot workflow
+- build a studio-facing evidence package
+
+### Phase 3: Apply It to Studio
+
+The back half of the semester focuses on:
+
+- evidence quality and uncertainty
+- decision thresholds
+- visual communication
+- workflow documentation
+- transfer into the next studio project
+
+## Tool Pathways
+
+### Spreadsheet Pathway
+
+Best for students who need a strong, professional baseline without heavy setup.
+
+- organize precedent and observation data
+- compare alternatives
+- build uncertainty-aware charts
+- produce decision matrices and summary tables
+
+### GIS Pathway
+
+Best for site analysis, urban context, access, zoning, and spatial comparison.
+
+- learn when `QGIS` is the fastest choice
+- understand where `ArcGIS` fits in practice
+- run a minimal code-based workflow in `geopandas`
+- connect map outputs back to architectural decisions
+
+### Python Pathway
+
+Best for students who need more automation, reuse, or analytical control.
+
+- work in `Jupyter Notebook`
+- use `pandas` and plotting for evidence building
+- adapt the provided notebooks to project-specific data
+- document a reproducible workflow others can inspect
+
+::: {.callout-note}
+## Why Spreadsheet Matters
+
+`Spreadsheet` is the baseline exit pathway for the course. It is not remedial. It is the lowest-friction route to a credible, transparent, decision-ready workflow, and a student can complete the course very well through it.
+:::
+
+## Course Precedents
+
+These are some of the case studies and project types we will keep returning to when we ask what counts as evidence, what different tools can actually tell us, and how a design claim becomes defensible.
+
+:::: {.columns}
+::: {.column width="50%"}
+![The Edge, Amsterdam: a useful case for workplace performance and systems claims](assets/examples/the-edge-amsterdam.jpg)
+
+![High Line, New York: a useful case for public-space observation and GIS framing](assets/examples/high-line-park.jpg)
+:::
+
+::: {.column width="50%"}
+![California Academy of Sciences: a useful case for environmental performance and envelope claims](assets/examples/california-academy-of-sciences.jpg)
+
+![Kai Tak Sports Park: a local case for site, access, and urban evidence questions](assets/examples/kai-tak-sports-park.jpg)
+:::
+::::
+
+Image credits are recorded in `assets/examples/sources.csv`.
+
+## Assignment Arc
+
+| Assignment | Due | Weight | Purpose |
+|---|---:|---:|---|
+| [A1: Evidence Audit + Next Decision Brief](assignments/assignment-01.qmd) | Week 2 | 15% | Audit a prior decision and define evidence needed for the next studio decision |
+| [A2: Evidence and Pathway Map](assignments/assignment-02.qmd) | Week 6 | 20% | Map evidence sources, compare tools, and choose a primary pathway |
+| [A3: Method Prototype](assignments/assignment-03.qmd) | Week 8 | 25% | Build and test a pilot workflow in the chosen pathway |
+| [A4: Studio Evidence Package](assignments/assignment-04.qmd) | Week 12 | 40% | Deliver a studio-facing decision brief with pathway artifact and method appendix |
+
+## Setup Guidance
+
+### Everyone
+
+- spreadsheet software: Excel or Google Sheets
+- browser access to course materials and downloads
+
+### If You Choose GIS or Python
+
+- `Jupyter Notebook` as the main notebook interface
+- `Anaconda` or `Miniconda` as the supported local Python environment
+- `Google Colab` as the no-install fallback
+
+See [Resources](resources.qmd) for the setup ladder and tool chooser.
+
+## Course Position
+
+This course is not trying to turn every architecture student into a software specialist. It is trying to make tool choice, evidence quality, and decision logic explicit enough that students can justify design moves with more than instinct.

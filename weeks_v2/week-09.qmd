@@ -1,0 +1,693 @@
+---
+title: "Week 9: Storytelling, Figures, and Decisions"
+subtitle: "Turn Analysis Into a Recommendation People Can Understand"
+output-file: week-09.html
+format:
+  revealjs:
+    theme: [default, arch7476.scss]
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1400
+    height: 900
+    center: true
+    footer: "Week 9 · feeds A3 + A4"
+---
+
+## Today's Agenda
+
+:::: {.two-col}
+::: {.concept-card}
+[Session 1]{.label .concept}
+
+[Lecture / demo]{.card-title}
+
+- when good research goes bad in presentation
+- story structure for busy stakeholders
+- figure rescue and the 3-second test
+- object-card design and thresholds
+:::
+
+::: {.activity-card}
+[Session 2]{.label .activity}
+
+[Round table on YOUR work]{.card-title}
+
+- upload one rough figure or object-card draft
+- reconstruct it in four steps
+- name the result and the design action it changes
+:::
+::::
+
+::: {.reflection-card}
+This is decision support, not decoration. We help each other turn finished analysis into something a busy reader can act on.
+:::
+
+---
+
+[Course progress]{.kicker}
+
+## This week produces the first A4-facing artifact
+
+::: {.progress-ladder}
+::: {.step .done}
+prototype
+:::
+::: {.step .done}
+verification
+:::
+::: {.step .current}
+threshold
+:::
+::: {.step .current}
+object card
+:::
+::: {.step}
+draft package
+:::
+::: {.step}
+handoff
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Input]{.label .concept}
+A3 output, chart, map, model result, or variant table
+:::
+::: {.artifact}
+[Change]{.label .activity}
+figure title, threshold, uncertainty note, recommendation sentence
+:::
+::: {.artifact}
+[Output]{.label .example}
+object-card draft + one decision-ready figure
+:::
+::: {.artifact}
+[Feeds]{.label .reflect}
+A3 final output and A4 Practice Case/Object Card
+:::
+:::
+
+---
+
+[Before evaluation]{.kicker}
+
+## Recap: the two gates from Week 8
+
+A3 is due this week; evaluation begins next. You will use AI, so both gates apply to everything you submit.
+
+:::: {.two-col}
+::: {.concept-card}
+[Reproducibility]{.card-title}
+Could someone re-run your workflow and get your result without you in the room? Environment + steps + "re-running reproduces the figure."
+:::
+::: {.concept-card}
+[AI fact-checking]{.card-title}
+For any AI-assisted part: name the output type (fact / relationship / code) and state the final-gate check that made it trustworthy.
+:::
+::::
+
+Carry both into your Object Card and Reproducibility Capsule.
+
+---
+
+## Quick reference: match the check to the AI output
+
+| AI output | What it's good for | Final-gate check |
+|---|---|---|
+| **Fact reiteration** | standards, definitions, precedent claims | verify against the primary source or document |
+| **Relationship simulation** | comfort, perception, fuzzy spatial links | compare with science logic + one bounded metric |
+| **Workflow / code** | formulas, scripts, GhPython, notebook cells | run it, check units/ranges, test a known case |
+
+See [Week 8](week-08.html) for the full treatment.
+
+---
+
+[Working with AI honestly]{.kicker}
+
+## You will use AI — so use it accountably
+
+Four obligations that travel with any AI-assisted work — this is [ML Primer Principle 12](../lectures/ml-primer-12-principles.html) in practice:
+
+:::: {.two-col}
+::: {.activity-card}
+[Disclose]{.card-title}
+State what AI did, the prompts/seeds, and what you verified. Undisclosed AI is the problem, not AI use.
+:::
+::: {.concept-card}
+[Sources & IP]{.card-title}
+Use open or owned references; cite image and data sources; respect licenses; do not pass a model's averaged answer off as your own evidence.
+:::
+::::
+
+:::: {.two-col}
+::: {.warning-card}
+[Bias]{.card-title}
+Models return the common/average answer and inherit dataset bias — name who or what your data and outputs might exclude.
+:::
+::: {.reflection-card}
+[Accountability]{.card-title}
+You remain responsible for every claim. AI is a companion, never the final gate — and never identify people without consent.
+:::
+::::
+
+See the [AI-Assisted Fact-Checking Card](../templates/ai-workflow-verification-card.md).
+
+---
+
+[The problem]{.kicker}
+
+## When good research goes bad
+
+Strong work can still fail at the moment it reaches an audience.
+
+:::: {.two-col}
+::: {.warning-card}
+[Case 1 · method over message]{.card-title}
+
+- great method
+- weak message
+- the audience hears process, not action
+:::
+
+::: {.warning-card}
+[Case 2 · correct but unclear]{.card-title}
+
+- technically correct charts
+- no clear takeaway
+- the status quo survives because the room stays confused
+:::
+::::
+
+---
+
+[Anecdote · a figure that failed]{.kicker}
+
+## 1986: the chart that did not show the danger
+
+::: {.warning-card}
+[What went wrong]{.card-title}
+The night before the Challenger launch, engineers argued against a cold-weather launch — but their charts scattered O-ring damage across thirteen pages and never plotted damage **against temperature**. The pattern stayed invisible; the launch was approved.
+:::
+
+::: {.example-card}
+[The lesson]{.card-title}
+Correct data is not enough. If the figure does not make the relationship visible, the decision does not get made. (Edward Tufte's classic case study of this launch.)
+:::
+
+---
+
+## The two-slide challenge
+
+::: {.concept-card}
+[The test]{.card-title}
+Could you explain your semester in **two slides** to a busy critic, client, or studio tutor who gives you three minutes?
+:::
+
+If not, your findings are still trapped inside your process.
+
+---
+
+[Story structure]{.kicker}
+
+## One useful story structure for busy stakeholders
+
+::: {.concept-card}
+1. What problem or decision matters?
+2. What evidence did you gather?
+3. What changed because of that evidence?
+4. What should happen next?
+:::
+
+This is not simplification for its own sake. It is decision support.
+
+---
+
+[Anecdote · a figure that drove a decision]{.kicker}
+
+## 1854: the map that removed a pump handle
+
+::: {.vibe-case}
+::: {.vibe-visual}
+![John Snow's cholera map of Soho, 1854. Public domain, via Wikimedia Commons.](../assets/anecdotes/snow-cholera-map.jpg)
+:::
+::: {.vibe-panel}
+::: {.example-card}
+[What it did]{.card-title}
+Plotting each cholera death as a mark on the street map made one water pump's deadly cluster impossible to miss.
+:::
+::: {.activity-card}
+[The lesson]{.card-title}
+The figure **located the cause**, so the action was obvious: remove the Broad Street pump handle. A figure that locates the problem changes the decision.
+:::
+:::
+:::
+
+---
+
+## Start with their problem
+
+:::: {.two-col}
+::: {.warning-card}
+[Do not begin with]{.card-title}
+
+- software
+- methods jargon
+- every intermediate step
+:::
+
+::: {.activity-card}
+[Begin with]{.card-title}
+
+- the decision
+- the stake
+- the missing evidence
+:::
+::::
+
+---
+
+## Worked stakeholder question
+
+![The Edge, Amsterdam](../assets/examples/the-edge-amsterdam.jpg){height="460"}
+
+If your recommendation depends on a case like this, what would a skeptical stakeholder ask first?
+
+---
+
+[Figure rescue]{.kicker}
+
+## Why charts fail
+
+::: {.warning-card}
+- too many variables at once
+- vague titles
+- no highlighted message
+- uncertainty hidden
+- no connection back to the decision
+:::
+
+---
+
+## The 3-second message test
+
+Give your figure three seconds. Can a viewer tell:
+
+::: {.concept-card}
+- what is being compared?
+- which side performs better?
+- what the implication is?
+:::
+
+If not, it needs revision.
+
+---
+
+[Anecdote · make the dominant cause unmissable]{.kicker}
+
+## 1858: the diagram that won a sanitation argument
+
+::: {.vibe-case}
+::: {.vibe-visual}
+![Florence Nightingale's rose / coxcomb diagram of army mortality, 1858. Public domain, via Wikimedia Commons.](../assets/anecdotes/nightingale-rose.jpg)
+:::
+::: {.vibe-panel}
+::: {.example-card}
+[What it did]{.card-title}
+The large wedges showed deaths from **preventable disease** dwarfing deaths from wounds — visible at a glance, no table required.
+:::
+::: {.activity-card}
+[The lesson]{.card-title}
+One dominant visual comparison can carry an argument that columns of numbers cannot. Make the biggest thing the most visible thing.
+:::
+:::
+:::
+
+---
+
+## Figure rescue: before and after
+
+:::: {.two-col}
+::: {.warning-card}
+[Before · the weak figure]{.card-title}
+
+- five series, no focus
+- title reads "Results — Final"
+- legend the reader must decode
+- error bars buried or absent
+- nothing ties it to a decision
+:::
+
+::: {.activity-card}
+[After · the cleaned figure]{.card-title}
+
+- one message, two series compared
+- title states the takeaway in words
+- the winning option labelled directly
+- uncertainty shown where it matters
+- a caption naming the design action
+:::
+::::
+
+---
+
+## Rescue formula
+
+::: {.concept-card}
+1. decide the one message
+2. remove non-essential data
+3. label the takeaway directly
+4. show uncertainty where it matters
+5. connect the figure to the design decision
+:::
+
+---
+
+## Figure rescue sprint
+
+::: {.activity-card}
+[Do this now]{.card-title}
+Bring one weak figure and improve it under these rules:
+
+- one message only
+- readable title
+- no decorative legends if direct labels work
+- one annotation that tells the audience why it matters
+:::
+
+Present the before and after in 60 seconds.
+
+---
+
+[Object cards]{.kicker}
+
+## The 30-second board test
+
+During the Object Fair, a viewer gives your board about 30 seconds. In that time they should be able to:
+
+::: {.concept-card}
+1. stop
+2. understand the key message
+3. know what action or question follows
+:::
+
+---
+
+[Anecdote · one figure, the whole story]{.kicker}
+
+## 1869: six variables in a single image
+
+::: {.vibe-case}
+::: {.vibe-visual}
+![Charles Minard's figurative map of Napoleon's 1812 Russian campaign. Public domain, via Wikimedia Commons.](../assets/anecdotes/minard-napoleon.png)
+:::
+::: {.vibe-panel}
+::: {.example-card}
+[What it shows]{.card-title}
+Army size, location, direction, and temperature on the retreat — the shrinking band tells the whole catastrophe without a caption.
+:::
+::: {.activity-card}
+[The object-card ideal]{.card-title}
+Tufte called it among the best statistical graphics ever drawn. Your object card has the same job: one figure that carries the decision on its own.
+:::
+:::
+:::
+
+---
+
+## Object-card anatomy
+
+The whole card is built around one dominant recommendation. Everything else supports it.
+
+:::: {.two-col}
+::: {.concept-card}
+[1 · The dominant recommendation]{.card-title}
+The one sentence the viewer must leave with. Largest, first, unmissable.
+:::
+
+::: {.example-card}
+[2 · One comparison figure]{.card-title}
+A single legible chart that shows the comparison behind the recommendation — secondary to the headline, never competing with it.
+:::
+::::
+
+:::: {.two-col}
+::: {.concept-card}
+[3 · One threshold sentence]{.card-title}
+The rule that turns the comparison into a decision: "we prefer X once the gain clears Y."
+:::
+
+::: {.warning-card}
+[4 · One limitations note]{.card-title}
+Where the evidence is weakest and what would change the conclusion — small, honest, present.
+:::
+::::
+
+---
+
+## Object-card priorities
+
+::: {.concept-card}
+- one dominant message
+- supporting evidence that is legible but secondary
+- clear next action or recommendation
+- contact / follow-up information without clutter
+:::
+
+---
+
+## Object-card clinic
+
+::: {.activity-card}
+[Check your draft for]{.card-title}
+
+- message hierarchy
+- visual hierarchy
+- stakeholder-friendly language
+- print readability from a distance
+:::
+
+---
+
+[Thresholds]{.kicker}
+
+## Evidence alone does not make the decision
+
+You still need:
+
+::: {.concept-card}
+- a threshold
+- a comparison rule
+- a stakeholder frame
+- an explanation of what matters most
+:::
+
+---
+
+## Typical threshold questions
+
+::: {.concept-card}
+- how much improvement is enough to justify a change?
+- what cost increase is acceptable?
+- what travel-time difference matters?
+- how much uncertainty can the decision tolerate?
+:::
+
+---
+
+## Threshold examples across project types
+
+A threshold turns a number into a decision rule. It looks different in each domain:
+
+| Project type | Quantity | Example threshold |
+|---|---|---|
+| Transit / access | access time | within 10 min of a stop |
+| Daylight study | daylight hours | ≥ 50% of area meets sDA 300/50% |
+| Cost trade-off | cost premium | accept ≤ 8% over baseline |
+| Facade / envelope | heat gain | reduce peak gain by ≥ 15% |
+| Post-occupancy | survey confidence | ≥ 70% agreement, n ≥ 30 |
+
+---
+
+## Trade-off table
+
+| Option | strongest benefit | main cost | biggest risk | recommendation |
+|---|---|---|---|---|
+| A | access | cost | moderate | good if budget is stable |
+| B | performance | complexity | high | only if support is available |
+| C | speed | lower upside | low | safest baseline |
+
+---
+
+## Counter-arguments matter
+
+A strong recommendation also says:
+
+::: {.reflection-card}
+- what could change the conclusion
+- where the evidence is weakest
+- why another option may still be reasonable
+- what additional evidence would strengthen confidence
+:::
+
+---
+
+[Patch to Grasshopper]{.kicker}
+
+## A figure can still feed back into geometry
+
+::: {.gh-bridge}
+**Bridge pattern**
+Use your figure or threshold to revise the GH design space: narrow a slider range, reject a variant family, color variants by risk, or export a final recommendation table.
+:::
+
+::: {.bridge-flow}
+::: {.node .current}
+A3 output
+:::
+::: {.node}
+threshold
+:::
+::: {.node}
+object card
+:::
+::: {.node}
+GH range / color
+:::
+::: {.node}
+design action
+:::
+:::
+
+If the figure does not change any action, it is not yet a decision figure.
+
+---
+
+[Uncertainty check]{.kicker}
+
+## Thresholds are decisions, not facts
+
+::: {.uncertainty-check}
+**Question for Week 9**
+Who would disagree with your threshold, and what evidence would they use to move it?
+:::
+
+Write that disagreement into the limitation note. A strong recommendation can survive a named counter-argument.
+
+---
+
+[ML principle connection]{.kicker}
+
+## Treat a model output as a suggestion, and match the metric to the task
+
+:::: {.two-col}
+::: {.concept-card}
+[Principle 8 — Uncertainty is real]{.card-title}
+Predictions are probabilistic. Sample multiple outputs and critique; avoid presenting one lucky frame as truth.
+:::
+::: {.concept-card}
+[Principle 11 — Evaluation must match the task]{.card-title}
+Numbers alone can reward "pretty wrong" results. Pair a metric with human A/B judgment for visuals.
+:::
+::::
+
+::: {.reflection-card}
+[So]{.card-title}
+State your threshold WITH its uncertainty, and make the figure show the comparison — not a single hero result.
+:::
+
+See [ML Primer · Principles 8 & 11](../lectures/ml-primer-12-principles.html).
+
+---
+
+[The drill]{.kicker}
+
+## Recommendation sentence drill
+
+Write one sentence:
+
+::: {.concept-card}
+[The recommendation sentence]{.card-title}
+**Given this evidence, for this audience, I would do X under conditions Y and Z.**
+:::
+
+Then test whether the sentence:
+
+::: {.activity-card}
+- names the decision
+- reflects uncertainty
+- implies a next move
+:::
+
+---
+
+## Exit task
+
+Before next week, each student should have:
+
+::: {.reflection-card}
+- one improved figure
+- one clearer object-card draft
+- one recommendation sentence
+- one explicit note on limits and confidence
+:::
+
+---
+
+## BREAK {.big-break}
+
+Take 10 minutes.
+
+When you return, upload one rough figure or object-card draft to Slack for Session 2.
+
+---
+
+[Session 2 · Round table]{.kicker}
+
+## Round table on YOUR work
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node} [Threshold]{.node .is-current} [Action]{.node}
+:::
+
+Upload one rough material to Slack before Session 2 — a figure, output table, comparison chart, or object-card draft. [feeds A3 + A4]{.feeds-tag}
+
+---
+
+## Reconstruct your figure in four steps
+
+**Object this week: your result/figure and the design action it changes.**
+
+::: {.recall-4step}
+::: {.step}
+**Did** What does this figure currently show, and what is its one message?
+:::
+::: {.step}
+**Assumed** What does the reader have to already know for it to land?
+:::
+::: {.step}
+**Risk** Where is the takeaway unclear, or the uncertainty hidden?
+:::
+::: {.step}
+**Verify** What threshold or label would tie it to a design action?
+:::
+:::
+
+::: {.grading-note}
+Post your four-step under your figure. Posting + an honest reconstruction is the graded unit — not how you spoke. Speak for 60–90 seconds: what result changes the design action, and what uncertainty remains visible?
+:::
+
+---
+
+## Order and the waiting role
+
+::: {.activity-card}
+[How we run it]{.card-title}
+Volunteers go first; a random draw may fill the remaining examples.
+:::
+
+::: {.example-card}
+[While others present]{.card-title}
+You are not waiting your turn — you are reading. Note one clear move and one missing link per figure. Those notes are your participation record.
+:::

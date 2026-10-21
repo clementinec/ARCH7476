@@ -1,0 +1,356 @@
+---
+title: "Week 12: Object Fair"
+subtitle: "Final Review, Synthesis, and Transfer Forward"
+output-file: week-12.html
+format:
+  revealjs:
+    theme: [default, arch7476.scss]
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1400
+    height: 900
+    center: true
+    footer: "Week 12 · feeds A4: Workflow Package"
+---
+
+## Today's Agenda
+
+:::: {.two-col}
+::: {.concept-card}
+[Session 1]{.label .concept}
+
+[Final review]{.card-title}
+
+- present your A4 package to the room and invited critics
+- timed presentations, then questions
+- read every project against the same evaluation loop
+- capture the feedback that matters
+:::
+
+::: {.activity-card}
+[Session 2]{.label .activity}
+
+[Reasoning round table]{.card-title}
+
+- synthesis, not a second formal presentation
+- reconstruct the reasoning you can carry forward
+- name what transfers to your next project
+:::
+::::
+
+::: {.reflection-card}
+This is a final review, not a contest. We read each package carefully, name what it shows, and help each other see what carries forward.
+:::
+
+---
+
+[Course progress]{.kicker}
+
+## Final handoff and transfer
+
+::: {.progress-ladder}
+::: {.step .done}
+A1 recall
+:::
+::: {.step .done}
+A2 route
+:::
+::: {.step .done}
+A3 prototype
+:::
+::: {.step .done}
+A4 draft
+:::
+::: {.step .current}
+Object Fair
+:::
+::: {.step .current}
+transfer
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Present]{.label .concept}
+one bounded decision, one workflow, one output, one threshold
+:::
+::: {.artifact}
+[Hand over]{.label .activity}
+practice case, research brief, object card, capsule
+:::
+::: {.artifact}
+[Inspect]{.label .example}
+reviewers trace the evidence loop and ask what remains uncertain
+:::
+::: {.artifact}
+[Transfer]{.label .reflect}
+one reasoning move to reuse in another studio project
+:::
+:::
+
+---
+
+[The arc]{.kicker}
+
+## Where this sits in the semester
+
+The Object Fair closes the loop. It is the last review of A4, read against the same spine we have used since Week 1.
+
+```{mermaid}
+flowchart LR
+    A[A1: Total Recall<br/>Weeks 1-3] --> B[A2: Evidence + Workflow Map<br/>Weeks 4-6]
+    B --> C[A3: Prototype + Verification<br/>Weeks 7-9]
+    C --> D[A4: Workflow Package<br/>Weeks 10-12]
+    D --> E{Final review}
+    E --> F[Object Fair: present & defend]
+    E --> G[Transfer: reasoning you keep]
+```
+
+::: {.concept-card}
+One method, four objects. Today you hand over the **package** — and then you keep the **reasoning**.
+:::
+
+---
+
+[Tool coverage closure]{.kicker}
+
+## What was mapped, and what remains yours to own
+
+::: {.tool-ledger}
+::: {.slot .core}
+[Mapped by course]{.label .activity}
+
+- evidence audit
+- spreadsheet thresholds
+- `geopandas`
+- BIM-derived proxy
+- Python / AI-assisted fact-checking logic
+:::
+::: {.slot .peer}
+[Mapped by room]{.label .concept}
+
+- GH workflows
+- Ladybug/Radiance pieces
+- studio-specific tool practices
+:::
+::: {.slot .explore}
+[Still exploratory]{.label .example}
+
+- large plugins
+- full BIM interoperability
+- advanced simulation
+- office-specific automation
+:::
+:::
+
+The honest endpoint is not "we covered every tool." It is: you can now tell whether a tool's output deserves trust.
+
+---
+
+[The session]{.kicker}
+
+## Run of show
+
+A calm, predictable order so no one over-prepares for a slot.
+
+| Segment | Time | What happens |
+|---|---|---|
+| Setup & final check | 15 min | files loaded, object cards posted, timing confirmed |
+| Welcome & framing | 5 min | the evaluation loop we all read against |
+| Final presentations | ~90 min | timed, with questions after each |
+| Invited critic notes | 20 min | practice and method perspectives |
+| Session 2: round table | 30 min | synthesis and transfer forward |
+
+::: {.example-card}
+[While others present]{.card-title}
+You are not waiting your turn — you are reviewing. Note one strong move and one open question per presenter. Those notes are your participation record.
+:::
+
+---
+
+## Presentation format
+
+::: {.activity-card}
+[Per person]{.card-title}
+
+- **6–8 min** — final presentation of your A4 package
+- **4 min** — questions from the room and invited critics
+- **2 min** — notes captured, one carry-forward noted
+:::
+
+Use your object card as the single visual that carries the recommendation and the one figure. Volunteers go first; a random draw may fill the remaining slots.
+
+---
+
+[The criteria]{.kicker}
+
+## What every presentation is read against
+
+Each package is read against one evaluation loop — the same logic your A4 must let a stranger trace.
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node} [Threshold]{.node} [Action]{.node}
+:::
+
+```{mermaid}
+flowchart LR
+    A[design decision] --> B[variants / scenarios]
+    B --> C[workflow]
+    C --> D[evidence output]
+    D --> E{threshold}
+    E --> F[design action]
+    F --> G[limit]
+```
+
+::: {.concept-card}
+[The reviewer's question]{.card-title}
+Can I trace **decision → variants/scenarios → workflow → evidence output → threshold → action → limit** without you explaining it out loud?
+:::
+
+If a link is missing, that is feedback — not a verdict.
+
+---
+
+## Invited critics: three reading positions
+
+Not judges with scores — three perspectives, so the feedback is varied rather than repetitive.
+
+:::: {.three-step}
+::: {.step-box}
+[Practice lens]{.card-title}
+Would this convince a studio tutor or client? Is the recommendation usable?
+:::
+::: {.step-box}
+[Method lens]{.card-title}
+Is the workflow sound? Are assumptions, thresholds, and limits stated?
+:::
+::: {.step-box}
+[Communication lens]{.card-title}
+Can a busy reader get the message in 30 seconds?
+:::
+::::
+
+---
+
+## Q&A that helps the presenter
+
+The questions that help most are the ones that test a link in the loop, not the person.
+
+::: {.activity-card}
+[Useful questions sound like]{.card-title}
+
+- "What would have changed the recommendation?" (threshold)
+- "How would someone rerun this?" (workflow)
+- "Where does this stop being true?" (limit)
+:::
+
+::: {.warning-card}
+We examine the artifact and its claim, never the presenter's competence.
+:::
+
+---
+
+## Capture feedback as you go
+
+You will hear more than you can hold. Sort it while it is fresh.
+
+| Note type | Meaning | What to do |
+|---|---|---|
+| **Trace gap** | a link in the loop is unclear | record it for the final package edit |
+| **Carry-forward** | a move worth reusing next time | add to your transfer list |
+| **Polish** | small clarity improvement | note if time allows |
+
+::: {.reflection-card}
+The skill is not defending everything. It is hearing one true note and knowing what to do with it.
+:::
+
+---
+
+[Uncertainty check]{.kicker}
+
+## The final question is not whether the tool worked
+
+::: {.uncertainty-check}
+**Question for the Object Fair**
+What would have to change for your recommendation to become wrong?
+:::
+
+That answer is the most useful transfer from this course: it tells you where the next project should start checking.
+
+---
+
+## BREAK {.big-break}
+
+Take 10 minutes.
+
+When you return, we move from presenting to synthesis — what reasoning you keep.
+
+---
+
+[Session 2 · Round table]{.kicker}
+
+## The reasoning you can transfer
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node} [Threshold]{.node} [Action]{.node .is-current}
+:::
+
+This is synthesis, not a second formal presentation. Using your final object card or reflection note, speak for 60–90 seconds on the reasoning you would carry into another project. [feeds A4]{.feeds-tag}
+
+Volunteers go first; a random draw may fill the remaining turns.
+
+---
+
+## Reconstruct what transfers
+
+**Object this week: the reasoning you can transfer to another project.**
+
+::: {.recall-4step}
+::: {.step}
+**Did** What was the core reasoning move in your A4 workflow?
+:::
+::: {.step}
+**Assumed** What did it depend on that was specific to this project?
+:::
+::: {.step}
+**Risk** Where might that reasoning break on a different problem?
+:::
+::: {.step}
+**Verify** What would you check before reusing it next time?
+:::
+:::
+
+::: {.grading-note}
+Post your four-step under your object card. Posting + an honest reconstruction is the graded unit — not how you spoke. Session 2 today is synthesis; there is no second graded presentation.
+:::
+
+---
+
+## Transfer forward
+
+::: {.reflection-card}
+[What do you keep?]{.card-title}
+Take three minutes and write:
+
+- which reasoning move from A4 will I reuse in studio?
+- what evidence habit is now part of how I work?
+- where will I still need to slow down and check?
+- what is one decision I will treat differently next time?
+:::
+
+Keep it in notes or post it as a Slack thread under your object card.
+
+---
+
+[Exit]{.kicker}
+
+## Your transfer line, in one sentence
+
+Before you leave, write and post:
+
+::: {.reflection-card}
+**The one reasoning move I am keeping from this course is ___, and the next project I will use it on is ___.**
+:::
+
+Thank you for the work, the honesty, and for examining each other's reasoning rather than each other. That habit is the part that travels with you.

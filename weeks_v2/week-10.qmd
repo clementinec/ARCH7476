@@ -1,0 +1,317 @@
+---
+title: "Week 10: Draft Workflow Review"
+subtitle: "A Professional Draft Review and a Plan to Fix the Weakest Parts"
+output-file: week-10.html
+format:
+  revealjs:
+    theme: [default, arch7476.scss]
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1400
+    height: 900
+    center: true
+    footer: "Week 10 · feeds A4: Workflow Package"
+---
+
+## Today's Agenda
+
+:::: {.two-col}
+::: {.concept-card}
+[Session 1]{.label .concept}
+
+[Draft review]{.card-title}
+
+- what a reviewer actually checks
+- timed draft presentations
+- a three-lens panel, not a scoreboard
+- triage the feedback you get
+:::
+
+::: {.activity-card}
+[Session 2]{.label .activity}
+
+[Round table on YOUR draft]{.card-title}
+
+- upload a draft package fragment
+- reconstruct it in four steps
+- agree the one fix that matters most
+:::
+::::
+
+::: {.reflection-card}
+This is a review, not a contest. We examine the **work**, and we help each other find the weakest part early enough to fix it.
+:::
+
+---
+
+[Course progress]{.kicker}
+
+## This week turns artifacts into a draft package
+
+::: {.progress-ladder}
+::: {.step .done}
+A1 board
+:::
+::: {.step .done}
+A2 contract
+:::
+::: {.step .done}
+A3 prototype
+:::
+::: {.step .done}
+threshold
+:::
+::: {.step .current}
+draft package
+:::
+::: {.step}
+final handoff
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Ingest]{.label .concept}
+Total Recall board, pathway contract, prototype output, verification log
+:::
+::: {.artifact}
+[Assemble]{.label .activity}
+Practice Case, Research Brief, Object Card, Reproducibility Capsule
+:::
+::: {.artifact}
+[Test]{.label .example}
+can a reviewer trace every claim back to a file, figure, or assumption?
+:::
+::: {.artifact}
+[Revise]{.label .reflect}
+one critical missing link before Week 11
+:::
+:::
+
+---
+
+[The review frame]{.kicker}
+
+## What a reviewer checks
+
+Every draft is read against the same six-part spine — the same one your A4 must let a stranger trace.
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node} [Threshold]{.node} [Action]{.node}
+:::
+
+::: {.concept-card}
+[The reviewer's question]{.card-title}
+Can I trace **decision → variants/scenarios → workflow → output → threshold → limit** without asking you to explain it out loud?
+:::
+
+If any link is missing, that is the fix list — not a failure.
+
+---
+
+[Artifact chain]{.kicker}
+
+## The draft must show where each claim came from
+
+| A4 claim | Source artifact | What reviewer checks |
+|---|---|---|
+| decision and stake | A1 board / live studio branch | one bounded decision, not whole project |
+| evidence route | A2 pathway contract | why this workflow fits the decision |
+| output | A3 prototype | visible run, variant/scenario output |
+| trust | verification log | what was checked, what failed, what remains uncertain |
+| action | object card / threshold | what changes next |
+
+---
+
+[Uncertainty check]{.kicker}
+
+## Draft review is where hidden assumptions surface
+
+::: {.uncertainty-check}
+**Question for Week 10**
+Which claim in your draft would you least want a skeptical reviewer to ask you to rerun or justify?
+:::
+
+That claim is the one to fix first.
+
+---
+
+## Review format
+
+::: {.activity-card}
+[Per person]{.card-title}
+
+- **6–8 min** — draft presentation
+- **4 min** — questions from the panel and room
+- **2 min** — notes captured, one priority fix agreed
+:::
+
+Those not presenting are the **engaged review panel**: take notes, mark where the spine breaks, and prepare one useful question each.
+
+---
+
+## A three-lens panel
+
+Not judges with scores — three reading positions, so feedback is varied rather than repetitive.
+
+:::: {.three-step}
+::: {.step-box}
+[Practice lens]{.card-title}
+Would this convince a studio tutor or client? Is the recommendation usable?
+:::
+::: {.step-box}
+[Method lens]{.card-title}
+Is the workflow sound? Are assumptions and limits stated?
+:::
+::: {.step-box}
+[Communication lens]{.card-title}
+Can a busy reader get the message in 30 seconds?
+:::
+::::
+
+---
+
+## Order and the waiting role
+
+Review order is drawn at random, so no one over-prepares for a slot.
+
+::: {.example-card}
+[While others present]{.card-title}
+You are not waiting your turn — you are reviewing. Note one strong move and one missing link per presenter. Those notes are your participation record.
+:::
+
+---
+
+[Session 2 · Round table]{.kicker}
+
+## Round table on YOUR draft
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node} [Threshold]{.node} [Action]{.node .is-current}
+:::
+
+Upload one rough material to Slack before Session 2 — draft presentation, object card, package outline, or reproducibility-capsule index. [feeds A4]{.feeds-tag}
+
+---
+
+## Reconstruct your draft in four steps
+
+**Object this week: your A4 draft package as a reviewer will meet it.**
+
+::: {.recall-4step}
+::: {.step}
+**Did** What does the draft currently claim and show?
+:::
+::: {.step}
+**Assumed** What am I assuming the reader already knows?
+:::
+::: {.step}
+**Risk** Which link in the spine is weakest or missing?
+:::
+::: {.step}
+**Verify** What one fix would most improve traceability?
+:::
+:::
+
+::: {.grading-note}
+Post your four-step under your draft. Posting + an honest reconstruction is the graded unit. Presenting is welcomed and earns credit; it is never required and never scored as performance.
+:::
+
+---
+
+## Triage the feedback
+
+You will get more notes than you can act on. Sort before you fix.
+
+| Priority | Meaning | When to fix |
+|---|---|---|
+| **Critical** | a spine link is missing or wrong | this week |
+| **Important** | credibility or clarity gap | before submission |
+| **Polish** | would improve, not essential | if time allows |
+
+::: {.warning-card}
+Fix one critical item well rather than ten polish items poorly.
+:::
+
+---
+
+## Feedback integration plan
+
+Turn notes into a short, owned plan.
+
+| Area | Specific issue | Fix | When |
+|---|---|---|---|
+| Content / logic | | | |
+| Workflow / evidence | | | |
+| Visuals / object card | | | |
+| Q&A readiness | | | |
+
+::: {.reflection-card}
+The professional skill here is not perfection. It is integrating feedback quickly and deciding what to leave alone.
+:::
+
+---
+
+## Useful review moves (collect these)
+
+As the room presents, note the moves worth borrowing:
+
+- clearest framing of the decision and who it is for
+- most honest statement of a limitation
+- cleanest single figure that carried the message
+- best answer that redirected to the key point under questioning
+
+These become shared craft, not a ranking.
+
+---
+
+## Quick prep stations (optional)
+
+If time remains, rotate through short practice corners:
+
+:::: {.two-col}
+::: {.activity-card}
+[Delivery]{.card-title}
+Timing and clear transitions for the 6–8 minute version.
+:::
+::: {.activity-card}
+[Questions]{.card-title}
+Rehearse acknowledging a limit, then redirecting to the key point.
+:::
+::: {.activity-card}
+[Object card]{.card-title}
+Make the recommendation and the one figure readable at a glance.
+:::
+::: {.activity-card}
+[Audience fit]{.card-title}
+A short version for a tutor, a longer one for a method reviewer.
+:::
+::::
+
+---
+
+## Week 10 checklist
+
+::: {.concept-card}
+[Before Week 11]{.card-title}
+
+1. address every **critical** item from your review
+2. strengthen the weakest spine link you identified
+3. get the draft timing to 6–8 minutes
+4. make the object card readable in 30 seconds
+:::
+
+---
+
+[Exit]{.kicker}
+
+## Your revision plan, in one line
+
+Before you leave, write and post:
+
+::: {.reflection-card}
+**The weakest link in my draft is ___, and the one fix I will make before Week 11 is ___.**
+:::
+
+Week 11 is the final polish clinic — we refine the package and prepare for the Object Fair review.

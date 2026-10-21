@@ -1,0 +1,603 @@
+---
+title: "Week 8: Reproducibility and AI Fact-Checking"
+subtitle: "Large-Model Companions, Final-Gate Checks, and Mentor Strategy"
+output-file: week-08.html
+format:
+  revealjs:
+    theme: [default, arch7476.scss]
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1400
+    height: 900
+    center: true
+    footer: "Week 8 · feeds A3: Prototype + Verification"
+---
+
+## Today's Agenda
+
+:::: {.two-col}
+::: {.concept-card}
+[Session 1]{.label .concept}
+
+[Workflow Documentation + AI Fact-Checking]{.card-title}
+
+- why your work is only evidence if someone can rerun it
+- document one workflow, then swap and test it
+- understand AI as a probabilistic companion, not a final authority
+- separate factual claims, relationship claims, and generated workflow components
+- prepare strategic questions for your mentor
+:::
+
+::: {.activity-card}
+[Session 2]{.label .activity}
+
+[Round table on YOUR workflow]{.card-title}
+
+- upload one rough workflow material
+- reconstruct your verification in four steps
+- agree what a reader must inspect to trust it
+:::
+::::
+
+::: {.reflection-card}
+This is a clinic, not a contest. We examine the **workflow**, and we help each other find the part a stranger could not yet reproduce.
+:::
+
+---
+
+[Course progress]{.kicker}
+
+## This week produces a verification artifact
+
+::: {.progress-ladder}
+::: {.step .done}
+A2 route
+:::
+::: {.step .done}
+prototype
+:::
+::: {.step .current}
+verification
+:::
+::: {.step}
+threshold
+:::
+::: {.step}
+draft package
+:::
+::: {.step}
+handoff
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Input]{.label .concept}
+prototype artifact, prompt log, notebook, GH canvas, map, or scenario file
+:::
+::: {.artifact}
+[Test]{.label .activity}
+peer rerun, manual check, known-case comparison, or failure replay
+:::
+::: {.artifact}
+[Output]{.label .example}
+verification card + reproducibility fix list
+:::
+::: {.artifact}
+[Feeds]{.label .reflect}
+A3 Verification Log and A4 Reproducibility Capsule
+:::
+:::
+
+---
+
+[The reproducibility frame]{.kicker}
+
+## If you can't rerun it, it isn't evidence
+
+A result becomes evidence only when someone else can inspect how you got it — and ideally reproduce it.
+
+::: {.concept-card}
+[The week's question]{.card-title}
+**If you left the project tomorrow, could someone trust your output without you in the room to explain it?**
+:::
+
+Documentation is not paperwork after the fact. It is the part of the method that makes the output legible.
+
+---
+
+## Where reproducibility quietly fails
+
+These are ordinary, not dramatic — and they happen to careful people.
+
+| Failure | What was lost |
+|---|---|
+| Plugin / version not recorded | the file won't reopen or rerun later |
+| Settings changed but not noted | results can't be matched to inputs |
+| One person held the knowledge | nobody else can defend the method |
+| CRS / units left implicit | spatial output is silently wrong |
+| AI output treated as final evidence | a claim no one actually checked |
+
+::: {.warning-card}
+The risk is not embarrassment. It is presenting a result you can no longer stand behind.
+:::
+
+---
+
+[Anecdote · the tool changed your data and didn't tell you]{.kicker}
+
+## When the spreadsheet silently rewrote the data
+
+::: {.warning-card}
+[What happened]{.card-title}
+Geneticists found that Excel was **auto-converting gene names into dates and numbers** (for example "SEPT2" became a date). A 2016 study found errors in roughly **one in five** papers with supplementary spreadsheets — the field eventually renamed the genes rather than fight the software.
+:::
+
+::: {.example-card}
+[The lesson]{.card-title}
+Reproducibility starts with knowing what your tool did to your data. Document formats, versions, and import settings — the failure is invisible until someone re-runs it.
+:::
+
+---
+
+## A quick, honest poll
+
+Have you ever struggled to reconstruct what you did on a project from a few months ago?
+
+::: {.reflection-card}
+Almost everyone has. The point is not guilt — it is to treat documentation as a normal, expected part of the workflow, starting with one process today.
+:::
+
+---
+
+# Session 1 · Documentation Clinic {background-color="#1a1a1a"}
+
+---
+
+[The clinic]{.kicker}
+
+## Document one workflow so it stands alone
+
+Pick the **most complex or critical** workflow in your project — the one you would least want to lose.
+
+::: {.activity-card}
+[Do this now · 10 minutes]{.card-title}
+Write step-by-step instructions clear enough that a classmate who has never seen your method could follow them and get your result — with no verbal explanation from you.
+:::
+
+Candidates: a Grasshopper setup, a survey-data analysis, a GIS operation, a Python notebook, a statistical step.
+
+---
+
+## Documentation template
+
+Copy this structure into your notes.
+
+| Section | What to fill in |
+|---|---|
+| **Workflow** | the one process you are documenting |
+| **Setup** | software + versions, files/data, prerequisite skills |
+| **Steps** | each step, in order, with the reason for it |
+| **Decisions** | where a choice was made, and why |
+| **Troubleshooting** | common error → what to do |
+| **Quality check** | how to know the result is correct |
+
+---
+
+## The documentation swap
+
+We test documentation the only honest way: someone else follows it cold.
+
+:::: {.three-step}
+::: {.step-box}
+[Exchange · 2 min]{.card-title}
+Swap with someone whose method differs from yours. No verbal notes — the instructions must stand alone.
+:::
+::: {.step-box}
+[Attempt · 8 min]{.card-title}
+Follow their steps exactly. Mark where you get confused, stuck, or have to guess.
+:::
+::: {.step-box}
+[Feedback · 5 min]{.card-title}
+Report what was unclear, what was missing, and the one change that would help most.
+:::
+::::
+
+::: {.reflection-card}
+The gaps you find are the gaps a future reader would hit. This is the most useful feedback you will get all week.
+:::
+
+---
+
+[AI as companion]{.kicker}
+
+## What large models are, for this course
+
+::: {.concept-card}
+[The short version]{.card-title}
+Large models are **probabilistic models of patterns in human-produced data**. They can be useful companions, but they are not a final gate for truth.
+:::
+
+:::: {.two-col}
+::: {.concept-card}
+[What they tend to do]{.card-title}
+
+- produce plausible common answers
+- average across many writing patterns
+- compress complicated claims into fluent language
+- sound confident even when the source is weak
+:::
+::: {.concept-card}
+[Why they are still useful]{.card-title}
+
+- they can expose hidden assumptions
+- they can draft small workflow components
+- they can search the shape of an ill-defined relation
+- they can help when human experience is hard to model directly
+:::
+::::
+
+The skill is not "believe or reject AI." The skill is using it, then deciding what kind of check must happen before the output becomes evidence.
+
+---
+
+[Large-model literacy]{.kicker}
+
+## The useful part is also the dangerous part
+
+::: {.warning-card}
+[Common answer problem]{.card-title}
+Because LLMs learn from pooled writing, they often produce the most available or average explanation. That can be helpful for orientation, but it can miss local constraints, updated facts, minority cases, and project-specific physics.
+:::
+
+::: {.reflection-card}
+[Design implication]{.card-title}
+Do not ask only, "What does AI say?" Ask: **what local fact, mechanism, calculation, or observed experience would push this answer away from the common mean?**
+:::
+
+---
+
+[Three output types]{.kicker}
+
+## Not every AI output needs the same check
+
+| AI output type | What it is good for | Final-gate check |
+|---|---|---|
+| **Fact-based reiteration** | summarize standards, definitions, precedent claims, code-like information | verify against primary source, datasheet, standard, or cited document |
+| **Relationship-based simulation** | reason about fuzzy links: comfort, perception, spatial experience, thermal/acoustic sensation | compare with engineering/science logic, empirical evidence, sensitivity test, or bounded calculation |
+| **Workflow/code drafting** | produce formulas, scripts, GhPython snippets, notebook cells, checklists | run it, inspect units/ranges, test known cases, and log failures |
+
+::: {.concept-card}
+[Final gate]{.card-title}
+AI can help generate an answer. **You** decide which gate it must pass before it enters the design argument.
+:::
+
+---
+
+[Why architecture needs this]{.kicker}
+
+## Human experience is messy enough that AI can help
+
+Architecture often asks about relationships that are real but hard to reduce cleanly:
+
+- spatial atmosphere and perceived calm
+- thermal acceptability rather than just air temperature
+- acoustic comfort rather than only decibels
+- wayfinding confidence rather than only shortest path
+- facade perception rather than only performance values
+
+::: {.example-card}
+[A productive use]{.card-title}
+AI can help generate hypotheses for these fuzzy relationships. It cannot validate them. Validation still comes from source checks, simple calculations, field observations, precedent mechanisms, simulations, or sensitivity tests.
+:::
+
+---
+
+## AI Fact-Checking Cases
+
+Read each case and name the output type, then decide the final-gate check.
+
+| Case | Output type | Final gate |
+|---|---|---|
+| AI summarizes a daylight standard | fact-based reiteration | find the standard and quote/check the clause |
+| AI proposes why a shaded courtyard may feel cooler | relationship-based simulation | compare with radiation/wind/shade logic and one bounded metric |
+| AI writes a Python scoring function | workflow/code drafting | run known cases and inspect units/ranges |
+| AI writes a literature-review paragraph | fact + writing support | verify every claim and citation before use |
+
+::: {.warning-card}
+The line is rarely "AI or not." It is **what kind of output is this, and what would make it trustworthy enough to use?**
+:::
+
+---
+
+## Large-Model Method Review
+
+A common situation, examined as a method — not a person.
+
+::: {.concept-card}
+[The artifact]{.card-title}
+A building-performance analysis: polished charts, statistics beyond the author's stated skill, no understanding of the method when questioned, no disclosure of AI use.
+:::
+
+::: {.reflection-card}
+[Review it together]{.card-title}
+
+- which specific claims can the author actually defend?
+- which claims are factual, which are relationship-based, and which are workflow/code?
+- what final-gate checks would have made this trustworthy?
+- what should have been disclosed, and where?
+- what is the minimum honest version of this output?
+:::
+
+We critique the **workflow and its claims**, never the author's ability.
+
+---
+
+[Key visual]{.kicker}
+
+## AI-assisted work, made honest
+
+The same four-zone frame as the rest of the course — but now one zone is an AI draft, and the **final gate** and **disclosure** are not optional.
+
+::: {.tool-panel}
+::: {.zone .input}
+**Prompt** "Write a geopandas script that buffers transit stops 400 m and reports % of site parcels covered."
+:::
+::: {.zone .operation}
+**AI output** a draft script + a Grasshopper Python component stub
+:::
+::: {.zone .check}
+**Final gate** CRS is projected (metres, not degrees); buffer distance correct; parcel counts spot-checked by hand
+:::
+::: {.zone .output}
+**Disclosure note** "Buffer script drafted with AI; CRS and counts verified manually on DD-MM."
+:::
+:::
+
+::: {.activity-card}
+[Run the kit]{.card-title}
+A real, runnable example: [`verified_setback_score.py`](../starter_kits/ai-assisted-workflow/examples/verified_setback_score.py) with its [prompt log](../starter_kits/ai-assisted-workflow/examples/prompt_log_example.md) — AI drafted it, then the output type, known cases, and threshold behavior were checked. See the [AI-assisted kit](../starter_kits/ai-assisted-workflow/README.md).
+:::
+
+::: {.warning-card}
+AI can draft the step. It cannot be the final gate for its own output. That gate is your responsibility, every time.
+:::
+
+---
+
+[AI as component front end]{.kicker}
+
+## Vibe coding starts after the function contract is clear
+
+::: {.function-contract}
+**Before asking AI**
+State the component's inputs, units, allowed ranges, operation, output, and one known test case. The prompt should describe that contract, not just ask for "a script."
+:::
+
+::: {.bridge-flow}
+::: {.node .current}
+function contract
+:::
+::: {.node}
+AI draft
+:::
+::: {.node}
+final-gate check
+:::
+::: {.node}
+GhPython / notebook
+:::
+::: {.node}
+verified output
+:::
+:::
+
+---
+
+[Patch to Grasshopper]{.kicker}
+
+## AI drafts can become GH components, but only after inspection
+
+::: {.gh-bridge}
+**Bridge pattern**
+AI drafts a `geopandas`, Python, GhPython, or C# component -> student checks facts, units, edge cases, and one manual result -> only then does the component enter the design workflow.
+:::
+
+::: {.uncertainty-check}
+**Question for AI-assisted work**
+Is this output factual, relationship-based, or code/workflow? What check would expose a wrong answer there?
+:::
+
+---
+
+# Session 1 · Mentor Prep {background-color="#1a1a1a"}
+
+---
+
+[Mentor prep]{.kicker}
+
+## Make the mentor meeting count
+
+Most mentor time is lost to vague questions. A little preparation turns a pleasant chat into a useful one.
+
+::: {.activity-card}
+[Prepare now · 15 minutes]{.card-title}
+
+1. **One-liner** — your project in a single sentence
+2. **Specific ask** — the exact advice you need
+3. **Context check** — what your mentor actually does
+4. **Question bank** — five strategic questions
+5. **Show-and-tell** — the one thing you want them to see
+:::
+
+---
+
+## Weak questions vs strategic questions
+
+:::: {.two-col}
+::: {.warning-card}
+[Weak — wastes the slot]{.card-title}
+
+- "What do you think of my project?"
+- "Do you have any advice?"
+- "How do I get a job in your field?"
+:::
+::: {.concept-card}
+[Strategic — creates value]{.card-title}
+
+- "What evidence would convince [specific stakeholder] to change current practice?"
+- "What implementation barriers am I likely missing?"
+- "How do practitioners here validate this kind of analysis?"
+- "What would make my findings most useful to someone in your position?"
+:::
+::::
+
+---
+
+## Question workshop
+
+::: {.activity-card}
+[In pairs · 10 minutes]{.card-title}
+
+1. Person A delivers their one-liner + best strategic question
+2. Person B gives specific feedback and one improvement
+3. Swap roles and repeat
+:::
+
+::: {.reflection-card}
+You are not competing for the best question. You are pressure-testing your own so it earns a real answer in the room.
+:::
+
+---
+
+## Follow-up email template
+
+Send within 48 hours. Show that their advice changed something.
+
+| Part | What to write |
+|---|---|
+| **Subject** | "Thank you for your insights on [topic] — [Your name]" |
+| **Opening** | the specific point that shifted your thinking |
+| **Action taken** | the concrete change or next step you made |
+| **Progress** | one short paragraph on how it shaped your work |
+| **Next step** | what you'll do next; offer to share results |
+
+::: {.activity-card}
+[Draft it now]{.card-title}
+Write the subject line and opening for your upcoming mentor meeting before you leave class.
+:::
+
+---
+
+# BREAK {.big-break}
+
+Take 10 minutes.
+
+When you return, post one rough workflow material to Slack for Session 2.
+
+---
+
+[Session 2 · Round table]{.kicker}
+
+## Round table on YOUR workflow
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node .is-current} [Threshold]{.node} [Action]{.node}
+:::
+
+Upload one rough material to Slack before Session 2 — a prompt log, an error message, a workflow output, a README fragment, or a verification note. [feeds A3]{.feeds-tag}
+
+---
+
+## Reconstruct your verification in four steps
+
+**Object this week: your workflow's verification — what someone must inspect to trust it.**
+
+::: {.recall-4step}
+::: {.step}
+**Did** What does the workflow produce, and how, step by step?
+:::
+::: {.step}
+**Assumed** What inputs or settings are implicit and undocumented?
+:::
+::: {.step}
+**Risk** Which step could a reader not reproduce or check?
+:::
+::: {.step}
+**Verify** What must someone inspect before they trust this output?
+:::
+:::
+
+::: {.grading-note}
+Post your four-step under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Volunteers go first; random draw may fill the remaining examples.
+:::
+
+---
+
+## Peer Reproducibility Check
+
+In small groups, run each other's documentation cold — the same test as the swap, on real project material.
+
+:::: {.three-step}
+::: {.step-box}
+[Hand over]{.card-title}
+Share your workflow package: steps, tool + version list, troubleshooting notes, quality check.
+:::
+::: {.step-box}
+[Attempt]{.card-title}
+A peer follows it without you explaining. They note exactly where it breaks or needs a guess.
+:::
+::: {.step-box}
+[Improve]{.card-title}
+Together, name the single change that would most improve reproducibility.
+:::
+::::
+
+::: {.reflection-card}
+We are not ranking packages. We are finding, kindly and early, the gap a stranger would fall into.
+:::
+
+---
+
+## Session 2 reflection
+
+::: {.reflection-card}
+[What changed?]{.card-title}
+Take three minutes and write:
+
+- which step in my workflow is least reproducible right now?
+- what did a peer get stuck on that I assumed was obvious?
+- where am I using AI or automation I can't fully defend?
+- what is one fix before Week 9?
+:::
+
+Keep it in notes or post it as a Slack thread under your material.
+
+---
+
+## Week 8 Checklist
+
+::: {.concept-card}
+[Before Week 9]{.card-title}
+
+1. complete your mentor consultation using your strategic questions
+2. send the follow-up email showing how their advice changed your approach
+3. document one workflow so a peer can rerun it unaided
+4. classify and check any AI-assisted step: fact, relationship, or workflow/code
+5. fix the weakest reproducibility gap your peer check found
+:::
+
+---
+
+[Exit]{.kicker}
+
+## Your verification, in one line
+
+Before you leave, write and post:
+
+::: {.reflection-card}
+**The least reproducible step in my workflow is ___, and the one thing a reader must inspect to trust it is ___.**
+:::
+
+Week 9 closes A3 — we finalize the prototype and its verification before the workflow package begins.

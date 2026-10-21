@@ -1,0 +1,591 @@
+---
+title: "Week 7: Method Prototype Studio"
+subtitle: "Build It, Document It, and Make It Reproducible Enough to Trust"
+output-file: week-07.html
+format:
+  revealjs:
+    theme: [default, arch7476.scss]
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1400
+    height: 900
+    center: true
+    footer: "Week 7 · feeds A3: Prototype + Verification"
+---
+
+## Today's Agenda
+
+:::: {.two-col}
+::: {.concept-card}
+[Session 1]{.label .concept}
+
+[Lecture / studio-lab]{.card-title}
+
+- what a minimal viable workflow is
+- why documentation comes before the package
+- the 10-minute method challenge
+- the documentation swap
+- mentor-question prep for weak spots
+:::
+
+::: {.activity-card}
+[Session 2]{.label .activity}
+
+[Round table on YOUR prototype]{.card-title}
+
+- upload one rough workflow artifact
+- reconstruct it in four steps
+- optional walk-through, then a shared audit
+:::
+::::
+
+::: {.reflection-card}
+This week the **object** becomes your prototype workflow. A3 begins here.
+:::
+
+---
+
+[Course progress]{.kicker}
+
+## This week produces a prototype artifact
+
+::: {.progress-ladder}
+::: {.step .done}
+A2 route
+:::
+::: {.step .current}
+prototype
+:::
+::: {.step}
+verify
+:::
+::: {.step}
+threshold
+:::
+::: {.step}
+draft
+:::
+::: {.step}
+handoff
+:::
+:::
+
+::: {.artifact-strip}
+::: {.artifact}
+[Input]{.label .concept}
+the files, geometry, data, or scenario table your route needs
+:::
+::: {.artifact}
+[Run]{.label .activity}
+one function/component/notebook/definition with a visible changed output
+:::
+::: {.artifact}
+[Export]{.label .example}
+output figure, CSV/JSON/GeoJSON, GH canvas, screenshot, or notebook cell
+:::
+::: {.artifact}
+[Verify]{.label .reflect}
+one known test case and one failure/fragility note
+:::
+:::
+
+---
+
+[The core idea]{.kicker}
+
+## Minimal Viable Workflow
+
+A prototype is successful — even when rough — if it can do four things:
+
+::: {.concept-card}
+[What "working" means]{.card-title}
+**Take real inputs, run a clear process, produce one interpretable output, and reveal where the method still breaks.**
+:::
+
+- it does not need to be polished
+- it does not need to be complete
+- it needs to be **legible enough that someone else could rerun it**
+
+---
+
+[The A3 loop]{.kicker}
+
+## The loop every prototype runs
+
+The same five-node spine, expressed as a runnable loop. Everything you build this week sits inside it.
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node .is-current} [Output]{.node} [Threshold]{.node} [Action]{.node}
+:::
+
+```{mermaid}
+flowchart LR
+    A[Input<br/>real data / model] --> B[Variation<br/>what you change]
+    B --> C[Output<br/>one readable result]
+    C --> D{Threshold<br/>quality check}
+    D -->|passes| E[Action<br/>use / decide]
+    D -->|fails| A
+```
+
+The four zones of that loop are what every tool panel below makes concrete.
+
+---
+
+## The prototype frame — four zones
+
+Read any workflow as four zones. If you can fill all four honestly, you have a prototype, not just a file.
+
+::: {.tool-panel}
+::: {.zone .input}
+**Input** the real files, data, or model the method starts from
+:::
+::: {.zone .operation}
+**What varies** the one thing you change between runs
+:::
+::: {.zone .output}
+**Output** the single interpretable result it produces
+:::
+::: {.zone .check}
+**Quality check** what proves the run was valid, not just that it ran
+:::
+:::
+
+---
+
+[Grasshopper translation]{.kicker}
+
+## A GH component is a packed function
+
+::: {.function-contract}
+**Function contract**
+Inputs have names, types, units, and allowed ranges. The operation changes something. Outputs have names, types, and units. A quality check proves the component did not just produce a plausible-looking answer.
+:::
+
+| Route | Function form | Visible change |
+|---|---|---|
+| spreadsheet | formula / decision rule | selected variant or score changes |
+| `geopandas` | buffer / overlay / score function | site rank or map layer changes |
+| Python | analysis function | plot or metric changes |
+| GH | cluster / GhPython component | geometry variant changes |
+| BIM/BEM proxy | scenario function | daylight/heat-risk score changes |
+| AI-assisted | drafted function, manually checked | output changes after repair |
+
+---
+
+## Reproducibility lessons from practice
+
+The common failures are not about talent — they are about traceability.
+
+- the analyst leaves and no one can rerun the method
+- the spreadsheet works on one machine only
+- the GIS layers were clipped somehow but nobody recorded how
+- the notebook runs, but only if you know which file was silently edited
+
+::: {.warning-card}
+If the workflow cannot be retraced, the result is hard to trust — no matter how good the output looks.
+:::
+
+---
+
+## Where the gaps usually hide
+
+Typical first-draft descriptions sound like this:
+
+- "I used some plugin, but I forgot which one."
+- "I changed the settings until it looked right."
+- "The chart came from another file, I think."
+- "The model worked last week."
+
+::: {.reflection-card}
+Each of these is a missing line in one of the four zones. Naming the gap is the first repair.
+:::
+
+---
+
+[Many valid routes]{.kicker}
+
+## There is no single correct technical route
+
+Six routes, same four zones. None is more "advanced" than the others — each is judged only by whether the loop is legible.
+
+:::: {.three-step}
+::: {.step-box}
+[Spreadsheet]{.card-title}
+**In** comparison table · **Varies** parameter ranges · **Out** ranked options · **Check** formulas auditable, units stated
+:::
+::: {.step-box}
+[GIS]{.card-title}
+**In** layers + CRS · **Varies** operation sequence · **Out** spatial comparison · **Check** CRS stated, counts spot-checked
+:::
+::: {.step-box}
+[Python / notebook]{.card-title}
+**In** data files + paths · **Varies** analysis parameters · **Out** figure / table · **Check** runs top-to-bottom, paths stated
+:::
+::::
+
+:::: {.three-step}
+::: {.step-box}
+[GH / parametric]{.card-title}
+**In** geometry + sliders · **Varies** the design space · **Out** comparable variants · **Check** variants share assumptions
+:::
+::: {.step-box}
+[BIM/BEM / simulation]{.card-title}
+**In** model + settings · **Varies** scenario assumptions · **Out** performance result · **Check** dominant assumptions documented
+:::
+::: {.step-box}
+[AI-assisted]{.card-title}
+**In** prompt + source data · **Varies** what AI generates / edits · **Out** drafted component · **Check** a manual review confirms it
+:::
+::::
+
+::: {.reflection-card}
+Pick the route that makes **your** decision more defensible — not the one that looks most impressive.
+:::
+
+::: {.activity-card}
+[Run a reference kit]{.card-title}
+Several routes have a clone-and-run starter:
+[spreadsheet](../starter_kits/spreadsheet-thresholds/README.md) ·
+[GIS](../starter_kits/gis-spatial-comparison/README.md) ·
+[simulation proxy](../starter_kits/preset-simulation-proxy/README.md) ·
+[Python notebook](../starter_kits/python-notebook-analysis/README.md) ·
+[AI-assisted](../starter_kits/ai-assisted-workflow/README.md). Start from one and swap in your own decision.
+:::
+
+---
+
+[Studio-lab · do this now]{.kicker}
+
+## The 10-Minute Method Challenge
+
+::: {.activity-card}
+[Do this now]{.card-title}
+Choose one workflow from your project and document it so clearly that another team could rerun it without you in the room.
+:::
+
+Pick one route to document:
+
+- spreadsheet comparison
+- GH / parametric option generation
+- GIS operation sequence
+- notebook analysis
+- simulation setup
+- AI-assisted script or workflow component
+- visualization workflow
+
+---
+
+## Documentation Template
+
+:::: {.two-col}
+::: {.concept-card}
+[Workflow]{.card-title}
+
+- what the method is for
+- what files or inputs are required
+- what tools are required
+:::
+
+::: {.activity-card}
+[Step-by-step]{.card-title}
+
+1. do this
+2. check this
+3. if this fails, try this
+4. export this
+:::
+::::
+
+---
+
+## Documentation Template (cont'd)
+
+:::: {.two-col}
+::: {.warning-card}
+[Troubleshooting]{.card-title}
+
+- common error
+- warning sign
+- likely fix
+:::
+
+::: {.concept-card}
+[Quality check]{.card-title}
+
+- what success looks like
+- what a red flag looks like
+:::
+::::
+
+::: {.reflection-card}
+Notice the template is just the four zones, written out for a stranger.
+:::
+
+---
+
+[Studio-lab · do this now]{.kicker}
+
+## Documentation Swap
+
+::: {.activity-card}
+[Do this now]{.card-title}
+
+1. swap instructions with someone using a **different** route
+2. no verbal explanation allowed
+3. try to follow their method
+4. record what is missing, unclear, or fragile
+:::
+
+This is the fastest way to learn whether your workflow is genuinely reproducible or only familiar to you.
+
+---
+
+## Documentation Reality Check
+
+If another student cannot follow your documentation, the method is not yet ready for A3.
+
+::: {.reflection-card}
+That does not mean the project is weak. It means the workflow needs **one more layer of translation** before someone else can inspect it.
+:::
+
+---
+
+## Pathway breakout checks
+
+:::: {.two-col}
+::: {.concept-card}
+[Spreadsheet]{.card-title}
+
+- what table structure does the method depend on?
+- which formula or chart is most fragile?
+:::
+
+::: {.concept-card}
+[GIS]{.card-title}
+
+- what layer preparation is essential?
+- which operation sequence must be documented exactly?
+:::
+::::
+
+:::: {.two-col}
+::: {.concept-card}
+[Python]{.card-title}
+
+- what notebook cells define the real logic?
+- what package, path, or file assumptions must be stated?
+:::
+
+::: {.concept-card}
+[GH / parametric]{.card-title}
+
+- what sliders or constraints define the design space?
+- what output proves the variants are comparable?
+:::
+::::
+
+:::: {.two-col}
+::: {.concept-card}
+[BIM/BEM / simulation]{.card-title}
+
+- what model assumptions dominate the result?
+- what setup choices must be documented first?
+:::
+
+::: {.concept-card}
+[AI-assisted]{.card-title}
+
+- what did AI generate or edit?
+- what manual check confirms the output is usable?
+:::
+::::
+
+---
+
+[Patch to Grasshopper]{.kicker}
+
+## Every prototype needs an ingestion path
+
+::: {.gh-bridge}
+**Bridge card for A3**
+What file or value leaves your workflow, what GH component reads it, what geometry/parameter it affects, and what visual change proves the bridge works?
+:::
+
+::: {.bridge-flow}
+::: {.node .current}
+prototype output
+:::
+::: {.node}
+CSV / JSON / screenshot
+:::
+::: {.node}
+GH / package ingest
+:::
+::: {.node}
+visible change
+:::
+::: {.node}
+quality check
+:::
+:::
+
+---
+
+[Uncertainty check]{.kicker}
+
+## A working prototype can still be wrong
+
+::: {.uncertainty-check}
+**Question for your A3**
+What is the smallest input change that would make your prototype output visibly different?
+:::
+
+If no visible change appears, either the workflow is not sensitive enough, the output is not meaningful, or the connection is broken.
+
+---
+
+## Capture the decision logic too
+
+Do not document only button clicks. Also capture the reasoning:
+
+- why this step exists
+- what assumption it encodes
+- what judgment call it contains
+- how the output connects back to the question
+
+::: {.concept-card}
+A workflow becomes evidence when the **reasoning** travels with the steps, not just the clicks.
+:::
+
+---
+
+[Mentor prep]{.kicker}
+
+## Use the prototype to ask sharper questions
+
+The point of a rough prototype is that it surfaces real questions for your mentor.
+
+- where is the workflow weakest?
+- what assumption am I least confident about?
+- what output would most strengthen the project?
+- what would a practitioner immediately ask about?
+
+---
+
+## Mentor question development
+
+::: {.activity-card}
+[Write three questions]{.card-title}
+
+1. one **technical** question
+2. one **methodological** question
+3. one **strategic** question about scope or decision relevance
+:::
+
+::: {.warning-card}
+If the question is generic, it is not ready. A good question points at a specific zone of your loop.
+:::
+
+---
+
+## Prototype Quality Check
+
+The test for "ready for the round table":
+
+::: {.tool-panel}
+::: {.zone .input}
+**Input** can another person tell what goes in?
+:::
+::: {.zone .operation}
+**What varies** can they see which judgment calls mattered?
+:::
+::: {.zone .output}
+**Output** can they tell what comes out?
+:::
+::: {.zone .check}
+**Quality check** can they tell whether the output is already useful?
+:::
+:::
+
+---
+
+## BREAK {.big-break}
+
+Take 10 minutes.
+
+When you return, upload one rough workflow artifact to Slack for the round table.
+
+---
+
+[Session 2 · Round table]{.kicker}
+
+## Round table on YOUR prototype
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node .is-current} [Output]{.node} [Threshold]{.node} [Action]{.node}
+:::
+
+Upload one rough material before Session 2 — a workflow artifact, GH canvas, notebook output, spreadsheet, GIS map, simulation screenshot, or AI-assisted component. [feeds A3]{.feeds-tag}
+
+---
+
+## Mode 1 — the walk-through (optional, celebrated)
+
+::: {.walkthrough-card}
+[Teach us your strongest route]{.card-title}
+A volunteer runs the class through one prototype they know well — uninterrupted, 3–4 minutes. Speak for roughly 60–90 seconds on the loop itself.
+:::
+
+Narrate the four zones as you go:
+
+- **what goes in** (input)
+- **what varies** (the one thing you change)
+- **what comes out** (output)
+- **what quality check proves it ran** (threshold)
+
+No polish required — show the real thing working. Questions wait for Mode 2.
+
+---
+
+## Reconstruct your prototype in four steps
+
+**Object this week: your prototype workflow as someone else will meet it.**
+
+::: {.recall-4step}
+::: {.step}
+**Did** What does the workflow actually do, step by step?
+:::
+::: {.step}
+**Assumed** What hidden inputs or settings does each step assume?
+:::
+::: {.step}
+**Risk** Where did I not check — where could it break or fail to rerun?
+:::
+::: {.step}
+**Verify** What quality check would prove the run is valid?
+:::
+:::
+
+::: {.grading-note}
+Post your filled four-step to Slack under your artifact. Posting + an honest reconstruction is the graded unit — not how you spoke. Walking through is welcomed and earns credit; it is never required and never scored as performance. Volunteers go first; a random draw may fill the remaining examples.
+:::
+
+---
+
+## By the End of This Week
+
+You should leave with:
+
+::: {.concept-card}
+[Week 7 milestone]{.card-title}
+
+- a first working artifact
+- a function/component contract with inputs, output, and quality check
+- documentation that survives a swap test
+- a list of fragile steps and assumptions
+- three sharp mentor questions
+- a clearer story for A3
+:::
+
+A3 is **started, not finished** — Weeks 8–9 verify the method and build toward the Prototype + Verification package.

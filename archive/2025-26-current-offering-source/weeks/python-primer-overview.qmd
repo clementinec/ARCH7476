@@ -1,0 +1,115 @@
+---
+title: "Python + Notebook Primer"
+subtitle: "Jupyter, pandas, geopandas, and Reproducible Study Work"
+format:
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+    center: true
+---
+
+## What This Primer Is For
+
+- understand what `Jupyter Notebook` is
+- understand how Python fits beside spreadsheets and GIS
+- see where `pandas` and `geopandas` sit
+- start from the course notebooks instead of a blank file
+
+---
+
+## The Python Stack in This Course
+
+- `Anaconda` / `Miniconda` for local environment management
+- `Jupyter Notebook` for interactive work
+- `pandas` for tables and summaries
+- `geopandas` for spatial data
+- `matplotlib` / `seaborn` for figures
+
+---
+
+## Why Notebooks Matter
+
+Notebooks keep these together:
+
+- code
+- outputs
+- charts
+- notes on interpretation
+
+That is why they work well for evidence-based design.
+
+---
+
+## Where Python Helps Most
+
+- repeat a workflow without rebuilding it manually
+- clean messy data
+- make figures from the same dataset many times
+- support `geopandas` when the question is spatial
+- leave a readable trail for A3 and A4
+
+---
+
+## Start With Existing Notebooks
+
+- `01_python_ml_basics.ipynb`
+- `02_arch_viz_analysis.ipynb`
+
+Use them as:
+
+- starter templates
+- examples of structure
+- places to swap in your own data later
+
+---
+
+## A Minimal Notebook Pattern
+
+1. import libraries
+2. load data
+3. inspect columns and units
+4. clean or filter
+5. summarize or compare
+6. plot
+7. write one sentence interpreting the result
+
+---
+
+## Where `geopandas` Fits
+
+If your question is spatial:
+
+- open the data in a notebook
+- inspect CRS and geometry
+- filter, join, buffer, or overlay
+- plot or export a result
+
+That makes Python and GIS part of the same workflow rather than separate worlds.
+
+---
+
+## Python Is Not Mandatory for Everyone
+
+Choose Python if it genuinely improves:
+
+- repeatability
+- clarity
+- scale
+- control
+
+If a spreadsheet answers the question cleanly, that is still a strong choice.
+
+---
+
+## Good First Step
+
+Open one notebook, rerun it successfully, then change only one thing:
+
+- a title
+- a chart label
+- a filter
+- one small dataset input
+
+That is enough to start building confidence.

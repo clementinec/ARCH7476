@@ -1,0 +1,151 @@
+---
+title: "Week 6: Evidence and Pathway Mapping"
+subtitle: "From a Good Question to a Realistic Workflow Plan"
+format:
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1400
+    height: 900
+    center: true
+---
+
+## Today's Agenda
+
+- map evidence sources
+- compare access, quality, and fit
+- commit to one primary pathway
+- identify failure points early
+- finalize A2
+
+---
+
+## Evidence Mapping Is Strategic
+
+You are not collecting everything.
+
+You are deciding:
+
+- what matters
+- what is accessible
+- what is convincing for the audience
+- what your pathway can realistically process
+
+---
+
+## Stand-Alone Prompt
+
+![Kai Tak Sports Park](../assets/examples/kai-tak-sports-park.jpg){height="500"}
+
+If this is your next studio decision, which evidence sources would actually change the scheme rather than merely decorate the presentation?
+
+---
+
+## Evidence Categories to Sort
+
+- precedent and case studies
+- published research
+- standards and code
+- site observations
+- open datasets
+- interviews or surveys
+- simulations
+- maps and spatial layers
+
+Not every category belongs in every project.
+
+---
+
+## Evaluate Every Source
+
+Ask:
+
+- is it relevant?
+- is it trustworthy?
+- is it local enough?
+- can I actually use it this semester?
+
+---
+
+## A Simple Source Triage Table
+
+| Source | relevance | access | confidence | best use |
+|---|---|---|---|---|
+| precedent image set | medium | easy | low-medium | framing |
+| planning dataset | high | medium | high | site constraints |
+| one-off online article | low | easy | low | not enough on its own |
+
+---
+
+## Compare the Pathways Directly
+
+| Pathway | strongest when | weak when |
+|---|---|---|
+| `spreadsheet` | comparison logic is the core task | the question is deeply spatial or repetitive |
+| `GIS` | location and overlap drive the decision | the project barely depends on spatial analysis |
+| `Python` | repeatability and flexible analysis matter | setup outweighs the analytical benefit |
+
+---
+
+## Pathway Choice Should Feel Boring
+
+If the pathway is right, it should feel obvious in hindsight.
+
+Wrong reason:
+
+- “Python seems more impressive”
+
+Better reason:
+
+- “The question is spatial, and GIS is the shortest path to a useful output”
+
+---
+
+## A2 Work Session
+
+By the end of class, each student should have:
+
+- one clear decision context
+- one evidence/pathway matrix draft
+- one chosen pathway
+- one minimal pilot target for A3
+
+---
+
+## Pathway Commitment Drill
+
+Complete this sentence:
+
+**I am choosing `spreadsheet` / `GIS` / `Python` because my decision depends primarily on ________, and the minimum useful output will be ________.**
+
+If you cannot finish the sentence clearly, the pathway is not chosen yet.
+
+---
+
+## Warning Signs
+
+- too many source types with no hierarchy
+- a pathway choice that does not change the method
+- no clear output format
+- a question still too large for a prototype
+
+---
+
+## End-of-Class Deliverables
+
+Leave with:
+
+- one evidence/pathway matrix draft
+- one chosen primary pathway
+- one list of necessary input files or sources
+- one description of the smallest viable A3 prototype
+
+---
+
+## Submission Logic
+
+A strong A2 should make it easy to answer:
+
+**Why this evidence? Why this pathway? Why now?**

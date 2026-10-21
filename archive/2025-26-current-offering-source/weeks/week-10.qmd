@@ -1,0 +1,86 @@
+---
+title: "Week 10: Visualize and Document the Workflow"
+subtitle: "Figures, Object Cards, and Method Transparency"
+format:
+  revealjs:
+    theme: simple
+    transition: slide
+    slide-number: true
+    incremental: true
+    width: 1400
+    height: 900
+    center: true
+---
+
+## Today's Agenda
+
+- what good evidence visuals do
+- how to show the workflow without overwhelming the audience
+- build the evidence board / object card
+- document the pathway artifact
+
+---
+
+## Every Visual Needs a Job
+
+A figure should do at least one of these:
+
+- compare alternatives
+- show pattern or distribution
+- locate something spatially
+- show a decision threshold
+- expose uncertainty
+
+---
+
+## Match Visuals to Pathway
+
+### Spreadsheet
+
+- comparison chart
+- summary table
+- decision matrix
+
+### GIS
+
+- one clean map per question
+- simple legend and scale logic
+- avoid decorative layers
+
+### Python
+
+- annotated plots
+- notebook outputs with interpretation
+- exported figures with titles and units
+
+---
+
+## The Evidence Board / Object Card
+
+It should answer in seconds:
+
+- what decision is at stake?
+- what evidence matters most?
+- what should happen next?
+
+---
+
+## Method Transparency
+
+Show just enough that someone can trust the output:
+
+- source of data
+- basic workflow
+- major assumptions
+- main limitation
+
+---
+
+## Draft Review Prompt
+
+If a critic sees this for 30 seconds, can they tell:
+
+- what you studied?
+- what you found?
+- how confident they should be?
+- what action follows?
