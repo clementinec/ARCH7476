@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evidence Package — Your Name</title>
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --muted: #555;
+      --border: #ddd;
+      --bg: #fff;
+      --accent: #2563eb;
+      --section-bg: #f7f7f7;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #e5e5e5;
+        --muted: #aaa;
+        --border: #333;
+        --bg: #141414;
+        --accent: #60a5fa;
+        --section-bg: #1e1e1e;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2.5rem 1rem;
+    }
+
+    /* Header */
+    header { margin-bottom: 2.5rem; }
+    h1 { font-size: 1.8rem; font-weight: 600; margin-bottom: 0.25rem; }
+    .meta { color: var(--muted); font-size: 0.95rem; }
+    .meta span + span::before { content: " · "; }
+
+    /* Sections */
+    h2 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.35rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+    p { margin-bottom: 0.6rem; }
+    ul, ol { padding-left: 1.25rem; margin-bottom: 0.6rem; }
+    li { margin-bottom: 0.35rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Figures */
+    figure {
+      margin: 1.25rem 0;
+      text-align: center;
+    }
+    figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    figcaption {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.4rem;
+    }
+
+    /* Evidence table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+    }
+
+    /* Tools callout */
+    .tools {
+      margin-top: 2.5rem;
+      padding: 1.25rem;
+      background: var(--section-bg);
+      border-radius: 6px;
+    }
+    .tools h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .tools p { margin-bottom: 0.3rem; }
+
+    /* Footer */
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Project Title</h1>
+    <p class="meta">
+      <span>Your Name</span>
+      <span>ARCH7476</span>
+      <span>Semester 2026–27</span>
+    </p>
+  </header>
+
+  <h2>Decision Context</h2>
+  <p>
+    What design decision is at stake? What are the alternatives under consideration?
+    Why does this decision need evidence rather than intuition alone?
+  </p>
+  <p>
+    Briefly describe the site, project, or scenario. Name the stakeholders
+    and what they need to know.
+  </p>
+
+  <h2>Evidence Summary</h2>
+  <p>
+    What evidence did you gather? Where did it come from?
+    Which sources carried the most weight, and why?
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Source</th>
+        <th>Type</th>
+        <th>Relevance</th>
+        <th>Confidence</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Planning Department GIS layers</td>
+        <td>Spatial data</td>
+        <td>High</td>
+        <td>High</td>
+      </tr>
+      <tr>
+        <td>Site visit observations</td>
+        <td>Field notes</td>
+        <td>High</td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>Precedent case studies</td>
+        <td>Literature</td>
+        <td>Medium</td>
+        <td>Medium</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Methodology</h2>
+  <p>
+    Which pathway did you choose: spreadsheet, GIS, or Python?
+    What was the workflow — what tools, data, and steps?
+  </p>
+  <ol>
+    <li>Collected spatial data from DATA.GOV.HK</li>
+    <li>Converted to Hong Kong 1980 Grid (EPSG:2326) for distance accuracy</li>
+    <li>Ran buffer and spatial join analysis</li>
+    <li>Compared three candidate sites on transit access, flood risk, and walkability</li>
+  </ol>
+
+  <h2>Key Findings</h2>
+  <p>
+    What did the analysis reveal? What changed compared to your initial assumptions?
+  </p>
+
+  <!-- To add a figure:
+  <figure>
+    <img src="comparison-chart.png" alt="Site comparison showing transit access scores">
+    <figcaption>Figure 1: Comparison of transit access scores across three candidate sites.</figcaption>
+  </figure>
+  -->
+
+  <p>
+    Replace this paragraph with your findings. Refer to figures by number.
+    State what the evidence shows, not what you hoped it would show.
+  </p>
+
+  <h2>Recommendation</h2>
+  <p>
+    Given this evidence, what do you recommend — and under what conditions?
+    What confidence level is appropriate?
+  </p>
+  <p>
+    Use the structure:
+    <em>"Given [evidence], for [audience], I recommend [action] under conditions [X and Y]."</em>
+  </p>
+
+  <h2>Limitations</h2>
+  <ul>
+    <li>What assumptions did you make?</li>
+    <li>What data was missing or incomplete?</li>
+    <li>Would a different reasonable data treatment change the conclusion?</li>
+    <li>What would you check next with more time?</li>
+  </ul>
+
+  <div class="tools">
+    <h3>Interactive Tools</h3>
+    <p>
+      <a href="gis-explorer.html">GIS Site Explorer</a> —
+      explore the spatial analysis interactively. Load site boundaries,
+      run buffers, and compare alternatives on the map.
+    </p>
+    <!-- Add more tools here as needed:
+    <p><a href="comparison.html">Site Comparison Dashboard</a></p>
+    -->
+  </div>
+
+  <footer>
+    <p>ARCH7476: Evidence-Based Generative Design · The University of Hong Kong</p>
+    <p>Published with GitHub Pages</p>
+  </footer>
+
+</body>
+</html>

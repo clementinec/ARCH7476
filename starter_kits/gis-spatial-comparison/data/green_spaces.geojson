@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "name": "hku_micro_green_spaces_teaching_sample",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"green_id": "GR1", "name": "campus terrace green", "source_note": "approximate teaching polygon"},
+      "geometry": {"type": "Polygon", "coordinates": [[[114.13610, 22.28342], [114.13720, 22.28342], [114.13720, 22.28410], [114.13610, 22.28410], [114.13610, 22.28342]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"green_id": "GR2", "name": "Hill Road pocket green", "source_note": "approximate teaching polygon"},
+      "geometry": {"type": "Polygon", "coordinates": [[[114.13180, 22.28645], [114.13255, 22.28645], [114.13255, 22.28705], [114.13180, 22.28705], [114.13180, 22.28645]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"green_id": "GR3", "name": "waterfront park direction", "source_note": "approximate teaching polygon outside the immediate campus core"},
+      "geometry": {"type": "Polygon", "coordinates": [[[114.13380, 22.28870], [114.13620, 22.28870], [114.13620, 22.28960], [114.13380, 22.28960], [114.13380, 22.28870]]]}
+    }
+  ]
+}
