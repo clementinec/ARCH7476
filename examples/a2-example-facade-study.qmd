@@ -1,0 +1,236 @@
+---
+title: "A2 Worked Example: Facade Shading for a Campus Reading Room"
+subtitle: "When the best design depends on which metric you trust"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+::: {.callout-note}
+## About This Example
+
+This is a worked A2 skeleton based on a common architectural design problem: choosing a facade shading strategy using daylight and energy simulation. Unlike the [Hidden Drivers example](a2-example-hidden-drivers.qmd), this one starts from a spatial design decision — the kind of question a studio project would produce. The structure is the same; the evidence is different.
+:::
+
+---
+
+## 1. Decision Recap
+
+### Decision
+
+Which shading strategy for the south-facing reading room of a proposed campus library produces acceptable daylight while keeping cooling loads within the project's energy budget?
+
+### Alternatives
+
+| Option | Description |
+|---|---|
+| A — Fixed horizontal louvers | 600 mm deep aluminum louvers at 450 mm spacing, fixed angle |
+| B — Perforated metal screen | 40% perforation ratio, flush-mounted, no moving parts |
+| C — Automated roller blinds | Interior fabric blinds activated by exterior illuminance sensor at 25 klux |
+
+All three options share the same glazing (double low-e, SHGC 0.27) and the same floor plan. Only the shading device changes.
+
+### Audience
+
+Design team and client sustainability consultant, who will use the comparison to select one system for the schematic design package.
+
+### Why evidence matters
+
+The team's instinct favours Option A (louvers — familiar, low maintenance). But the reading room faces due south in a subtropical climate (Hong Kong), and the consultant has flagged that fixed louvers may over-shade the space in winter, reducing useful daylight below the 300 lux threshold for reading. The choice cannot rest on instinct alone because the three options perform differently on daylight, glare, and cooling — and the ranking changes depending on which metric leads.
+
+### What action the evidence should support
+
+Select one shading system for the schematic design submission, with documented evidence showing the trade-off between daylight, glare, and energy for each option.
+
+---
+
+## 2. Evidence Map
+
+| Source | Type | Relevance | Access | Confidence | Limits | Role in workflow |
+|---|---|---|---|---|---|---|
+| Climate file (Hong Kong, IWEC/TMY) | Measurement (hourly) | **Primary** — drives both daylight and energy models | Public (EnergyPlus weather data) | High (validated station data) | Represents a typical year, not extremes; see sAMY research for climate-file sensitivity | Simulation input |
+| Rhino 3D model of reading room | Design geometry | **Primary** — defines the space being tested | Project file | High (own geometry) | Model simplifications (furniture, partitions omitted) may affect daylight distribution | Simulation input |
+| Glazing spec (manufacturer data) | Product data | High — SHGC, VLT, U-value | From spec sheet | High | Lab-measured, may differ from installed performance | Material input |
+| Shading device geometry / properties | Design variable | **Critical** — the thing being compared | Defined by design team | Medium — optical properties estimated from manufacturer ranges | Screen perforation ratio is nominal; real transmission varies with angle | The controlled variable |
+| ASHRAE 90.1 / BEAM Plus | Standard | Medium — sets energy budget threshold | Public | High (code requirement) | Prescriptive path; actual performance may differ | Threshold for cooling load acceptability |
+| LEED v4 / IES LM-83 | Standard | Medium — defines daylight metrics (sDA, ASE) | Public | High | Metrics are annual summaries — do not capture seasonal variation | Threshold for daylight acceptability |
+
+### What is missing from this evidence map
+
+- Post-occupancy data from a comparable reading room with each shading type
+- Occupant preference data (do readers actually prefer 300 lux or more?)
+- Maintenance and cost data (relevant to the final decision, but outside the simulation scope)
+- Glare assessment from an occupant position (DGP, not just illuminance)
+
+---
+
+## 3. Tool Translation Matrix
+
+### Design Decision (restated)
+
+Which shading option delivers adequate daylight (sDA ≥ 55% at 300 lux) and acceptable cooling load (≤ EUI threshold) for a south-facing reading room in Hong Kong?
+
+| Workflow route | Input | What varies | Operation | Output | What it cannot answer | Fit |
+|---|---|---|---|---|---|---|
+| **GH + Ladybug / Honeybee** | Rhino geometry + EPW file + shading geometry | Shading option (A, B, C) | Annual daylight simulation (Radiance via Honeybee) + energy simulation (EnergyPlus via Honeybee) for each option | sDA, ASE, annual cooling load (kWh), DGP at reading positions | Whether occupants will prefer the result; whether the model captures real construction tolerances | **high** |
+| BIM/BEM (Revit + Insight) | Revit model + built-in weather | Shading type (generic families) | Whole-building energy model; Insight lighting analysis | EUI, daylight factor (simplified) | Radiance-level daylight accuracy; annual climate-based metrics like sDA | medium |
+| Python / notebook | Simulation output CSVs from Ladybug or EnergyPlus | Post-processing and visualization | Statistical comparison, threshold testing, sensitivity analysis | Charts, ranked tables, sensitivity ranges | Cannot run the simulation itself — depends on upstream tool | medium (post-processing) |
+| Spreadsheet / low-code | Manufacturer data + rule-of-thumb shading coefficients | Shading coefficient lookup | Estimate cooling load reduction and daylight factor using simplified methods | Rough ranking by shading coefficient and VLT | No spatial resolution; cannot capture seasonal geometry effects | low |
+| GIS / spatial | Not applicable to a single-room facade question | — | — | — | — | **low** |
+| AI-assisted workflow | Geometry description + prompt | Shading description | Generate parametric definitions or analysis scripts | Accelerated setup, but outputs require verification | Cannot validate physical accuracy of the simulation | medium (support role) |
+
+### Route Selection
+
+> I am choosing **Grasshopper + Ladybug/Honeybee** because my decision depends on comparing spatially resolved annual daylight and cooling load for three shading options on the same geometry, and the minimum useful output is sDA, ASE, and annual cooling EUI for each option.
+
+### Risk Check
+
+- **Most fragile input:** Optical properties of the perforated screen (Option B) — manufacturer data gives a single perforation ratio, but angular transmittance is not specified
+- **Likely setup problem:** Getting Honeybee's Radiance material definitions to match the shading products; ensuring the EnergyPlus shading schedule for Option C (automated blinds) triggers correctly
+- **What I can cut:** Drop DGP (glare probability) and report only sDA/ASE — glare requires a separate point-in-time simulation for each view direction
+- **What I need help with:** Validating that the Radiance material for the perforated screen is a reasonable approximation
+
+---
+
+## 4. Primary Workflow Selection
+
+```
+┌─────────────────────────────────────────────────┐
+│  INPUT                                           │
+│  Rhino model (reading room, south facade)        │
+│  + Hong Kong EPW climate file                    │
+│  + glazing spec + 3 shading definitions          │
+└──────────────────┬──────────────────────────────┘
+                   │
+          ┌────────┼────────┐
+          ▼        ▼        ▼
+       ┌─────┐ ┌─────┐ ┌─────┐
+       │Opt A│ │Opt B│ │Opt C│
+       │Louv.│ │Perf.│ │Blind│
+       └──┬──┘ └──┬──┘ └──┬──┘
+          │       │       │
+          ▼       ▼       ▼
+┌─────────────────────────────────────────────────┐
+│  SIMULATE (same settings for each option)        │
+│  1. Annual daylight (Radiance via Honeybee)      │
+│     → sDA (% of floor area ≥ 300 lux for ≥ 50%  │
+│       of occupied hours)                         │
+│     → ASE (% of floor area > 1000 lux for       │
+│       > 250 hours — glare risk proxy)            │
+│  2. Annual energy (EnergyPlus via Honeybee)      │
+│     → Cooling EUI (kWh/m² for the reading room)  │
+└──────────────────┬──────────────────────────────┘
+                   │
+                   ▼
+┌─────────────────────────────────────────────────┐
+│  COMPARE                                         │
+│                                                  │
+│  Thresholds (stated in advance):                 │
+│  • sDA ≥ 55% at 300 lux       (LEED minimum)    │
+│  • ASE ≤ 10%                   (glare limit)     │
+│  • Cooling EUI ≤ project budget (from consultant)│
+│                                                  │
+│  If all three options pass all thresholds:        │
+│  rank by sDA (daylight wins ties).               │
+│  If some options fail a threshold: eliminate.     │
+│  If ranking changes when threshold shifts ±10%:  │
+│  flag as threshold-sensitive.                    │
+└──────────────────┬──────────────────────────────┘
+                   │
+                   ▼
+┌─────────────────────────────────────────────────┐
+│  OUTPUT                                          │
+│  Summary table:                                  │
+│  ┌────────┬───────┬───────┬──────────┬────────┐  │
+│  │ Option │ sDA % │ ASE % │ Cool EUI │ Pass?  │  │
+│  ├────────┼───────┼───────┼──────────┼────────┤  │
+│  │ A Louv │  48*  │   4   │   62     │ FAIL   │  │
+│  │ B Perf │  61   │   8   │   68*    │ CHECK  │  │
+│  │ C Blind│  58   │   5   │   59     │ PASS   │  │
+│  └────────┴───────┴───────┴──────────┴────────┘  │
+│  * = below/above threshold                       │
+│                                                  │
+│  Plausible outcome: the instinct favourite (A)   │
+│  fails on daylight. The "best" option depends    │
+│  on whether you weight daylight or energy.       │
+│  That tension IS the evidence contribution.      │
+└─────────────────────────────────────────────────┘
+```
+
+### Workflow definition
+
+- **Input files:** Rhino `.3dm` with reading-room geometry; Hong Kong `.epw`; three Grasshopper shading component definitions
+- **Variable:** Shading option (A / B / C) — the only thing that changes between runs
+- **Steps:** Model setup → apply each shading option → run annual daylight (Radiance) → run annual energy (EnergyPlus) → extract sDA, ASE, cooling EUI → compare against thresholds → rank
+- **Expected output:** Comparison table with pass/fail per metric; spatial daylight maps for each option; recommendation with stated trade-off
+- **Threshold:** sDA ≥ 55%, ASE ≤ 10%, cooling EUI ≤ project target
+- **Likely failure point:** Option B's angular transmittance — if the Radiance material is wrong, the daylight results for the perforated screen are unreliable
+
+---
+
+## 5. A4 Branch Declaration
+
+### Route
+
+**Route B: Live Studio Application** — this facade decision is part of an active studio project, and the simulation results will feed directly into the schematic design submission.
+
+### Decision
+
+- **Project:** Campus library — south-facing reading room
+- **Decision:** Which shading system to specify for the south facade
+- **Alternatives:** Fixed louvers (A), perforated screen (B), automated blinds (C)
+- **Why this matters:** The choice affects both the occupant experience (daylight, glare) and the project's energy budget — and the ranking depends on which metric leads
+
+### Workflow
+
+- **Primary route:** Grasshopper + Ladybug/Honeybee
+- **Input files:** Rhino model, EPW, shading definitions
+- **What varies:** Shading device (single controlled variable)
+- **Minimum scenarios:** 3 (one per option) + 1 sensitivity run (threshold ± 10%)
+- **Output:** sDA, ASE, cooling EUI per option; comparison table; spatial daylight maps
+- **Threshold:** sDA ≥ 55%, ASE ≤ 10%, cooling EUI ≤ project target
+
+### Feasibility
+
+- **What must exist by A3:** Working Honeybee model producing sDA and cooling EUI for at least Options A and C (the two with well-defined material properties)
+- **Most likely failure:** Perforated screen material definition (Option B) — if angular transmittance cannot be modeled reliably, drop B and compare A vs. C only
+- **Backup route:** If Honeybee simulation is too slow or fails to converge, fall back to Climate Studio or a simplified Radiance-only daylight comparison without the energy model
+- **What can be simplified:** Drop the spatial daylight maps and report only the aggregate sDA percentage
+
+### Branch Statement
+
+> I will use Route B (Live Studio Application) to test which shading strategy meets both daylight and cooling thresholds for the reading room, through a controlled comparison of three facade options simulated under identical conditions, because the design decision depends on a trade-off the team cannot resolve by instinct — the option that wins on daylight may lose on energy — and the minimum useful output is a comparison table showing sDA, ASE, and cooling EUI for each option against pre-stated thresholds.
+
+---
+
+## Why This Example Works as an A2
+
+1. **The decision is spatial and architectural.** It starts from a facade, a room, an orientation — not a dataset. The simulation serves the design question.
+
+2. **The ranking is not obvious.** Option A (the team's instinct) may fail on daylight. Option B scores well on daylight but costs more energy. Option C passes everything but requires maintenance and control logic. The evidence does not point to one winner — it reveals a trade-off the team must negotiate.
+
+3. **The controlled variable is clear.** Only the shading device changes. Geometry, climate file, glazing, occupancy schedule, and simulation settings are held fixed.
+
+4. **Thresholds are stated before the simulation runs.** sDA ≥ 55%, ASE ≤ 10%, cooling EUI ≤ target. This prevents the post-hoc narrative of "well, 47% is close enough."
+
+5. **The weakest link is named.** The perforated screen's angular transmittance is flagged as the most fragile input, with a stated backup plan (drop Option B).
+
+6. **The tool choice follows the question.** Grasshopper + Honeybee is chosen because the question requires spatially resolved annual daylight *and* annual energy on the same geometry — not because it is the most advanced option. The spreadsheet route is explicitly rejected because it cannot capture seasonal shading geometry effects.
+
+::: {.callout-tip}
+## Adapting This to Your Studio Project
+
+You do not need a facade study. Replace the shading options with any set of design alternatives you are comparing:
+
+- **Three site layouts** → GIS or Grasshopper, evaluated by walkability, noise exposure, or solar access
+- **Three structural systems** → BIM/BEM, evaluated by embodied carbon, span, or construction sequence
+- **Three ventilation strategies** → EnergyPlus or CFD, evaluated by air change rate, energy use, or thermal comfort
+
+Keep the structure: one controlled variable, same evaluation method, stated thresholds, named weakest input, and a comparison table where the ranking might change depending on which metric leads. That tension is what makes the evidence useful.
+:::
+
+::: {.callout-note}
+## Companion Example
+See also the [Hidden Drivers example](a2-example-hidden-drivers.qmd) for a data-analysis version of the same A2 structure, based on Guo et al. (*Energy and AI*, 2026). [DOI: 10.1016/j.egyai.2026.100709](https://doi.org/10.1016/j.egyai.2026.100709)
+:::

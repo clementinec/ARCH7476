@@ -10,7 +10,9 @@ format:
 ::: {.callout-note}
 ## About This Example
 
-This is a worked A2 skeleton based on a real research project — *"Toward smarter HVAC control: Machine learning reveals hidden drivers in thermal comfort databases"* (Guo et al., *Energy and AI*, 2026). It is meant to show how A2 components fit together hierarchically, not to prescribe a specific topic. Your A2 should use your own studio decision.
+This is a worked A2 skeleton based on a real research project — *"Toward smarter HVAC control: Machine learning reveals hidden drivers in thermal comfort databases"* (Guo et al., *Energy and AI*, 2026). [DOI: 10.1016/j.egyai.2026.100709](https://doi.org/10.1016/j.egyai.2026.100709)
+
+It is meant to show how A2 components fit together hierarchically, not to prescribe a specific topic. Your A2 should use your own studio decision. See also the [companion architectural example](a2-example-facade-study.qmd) for a design-decision version of the same structure.
 :::
 
 ---

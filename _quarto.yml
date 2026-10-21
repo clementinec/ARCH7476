@@ -68,6 +68,7 @@ project:
     - starter_kits/spreadsheet-thresholds/README.md
     - weeks/github-pages-guide.qmd
     - examples/a2-example-hidden-drivers.qmd
+    - examples/a2-example-facade-study.qmd
     - lectures/ml-to-python-overview.qmd
     - lectures/ml-primer-12-principles.qmd
     - notebooks/01_python_ml_basics.ipynb
@@ -138,8 +139,10 @@ website:
             href: assignments/assignment-04.qmd
       - section: "Examples"
         contents:
-          - text: "A2: Hidden Drivers (worked example)"
+          - text: "A2: Hidden Drivers (data analysis)"
             href: examples/a2-example-hidden-drivers.qmd
+          - text: "A2: Facade Shading (design simulation)"
+            href: examples/a2-example-facade-study.qmd
       - section: "Tools & Guides"
         contents:
           - text: "GIS Site Explorer"
