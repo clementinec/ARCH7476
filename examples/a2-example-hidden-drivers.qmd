@@ -1,0 +1,211 @@
+---
+title: "A2 Worked Example: Hidden Drivers in Thermal Comfort Databases"
+subtitle: "How data treatment choices changed the interpretation of the same evidence"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+::: {.callout-note}
+## About This Example
+
+This is a worked A2 skeleton based on a real research project — *"Toward smarter HVAC control: Machine learning reveals hidden drivers in thermal comfort databases"* (Guo et al., *Energy and AI*, 2026). It is meant to show how A2 components fit together hierarchically, not to prescribe a specific topic. Your A2 should use your own studio decision.
+:::
+
+---
+
+## 1. Decision Recap
+
+### Decision
+
+Which representation of missing radiant-temperature data should be used when training thermal comfort models from field-study databases?
+
+### Alternatives
+
+| Label | Treatment | Description |
+|---|---|---|
+| T1 | Rule-based imputation | Replace missing mean radiant temperature ($T_{mrt}$) with air temperature ($T_a$), following standard practice |
+| T2 | Learning through missingness | Let the model learn from the pattern of what is missing, using missingness indicators as input features |
+| T3 | Measured-only subset | Drop all records without measured $T_{mrt}$ and train only on complete cases |
+
+### Audience
+
+Researchers and standards committees who rely on thermal-comfort databases (ASHRAE Global Thermal Comfort Database II, etc.) to calibrate models used in HVAC sizing and control.
+
+### Why evidence matters
+
+The default assumption — impute $T_{mrt} = T_a$ — enters every downstream model silently. If this treatment distorts the learned relationship between air and radiant conditions, then every comfort prediction and every control policy built on it inherits that distortion. The question is whether the conclusion survives a reasonable change in how missing data is handled.
+
+### What action the evidence should support
+
+Decide whether the standard imputation practice should be replaced, supplemented with sensitivity reporting, or flagged as a known limitation in future database-driven comfort studies.
+
+---
+
+## 2. Evidence Map
+
+| Source | Type | Relevance | Access | Confidence | Limits | Role in workflow |
+|---|---|---|---|---|---|---|
+| ASHRAE Global Thermal Comfort Database II | Measurement (field) | **Primary** — the dataset under investigation | Public | High (88 field studies) | Personal and radiant variables systematically underrecorded | Input dataset |
+| Field-study metadata (88 studies) | Documentation | High — reveals which variables were actually measured vs. assumed | Requires audit of each study | Medium — reporting varies | Some studies do not state their imputation method | Classifies records as measured vs. imputed |
+| PMV / thermal comfort standards (ISO 7730, ASHRAE 55) | Standard | High — defines the baseline assumption ($T_{mrt} = T_a$) | Public | High (consensus standard) | A standard is a convention, not a measurement | Benchmark for T1 (rule-based) |
+| Machine learning model output (gradient-boosted trees) | Model | High — the evaluation instrument | Reproducible | Medium — model choice affects learned sensitivity | Results may not generalize to other model families | Evaluation pathway |
+| Air-to-radiant sensitivity ratio | Derived metric | **Critical** — the comparison criterion | Computed from model coefficients | Depends on treatment | Ratio is a summary; full partial-dependence plots tell more | Primary output for comparison |
+
+### What is missing from this evidence map
+
+- Independent radiant-temperature measurement campaign (expensive, not in scope)
+- Cross-validation with a second database
+- Expert elicitation on which imputation is "least wrong"
+
+---
+
+## 3. Tool Translation Matrix
+
+### Design Decision (restated)
+
+Does the choice of missing-data treatment change the model's learned sensitivity to radiant conditions — and by how much?
+
+| Workflow route | Input | What varies | Operation | Output | What it cannot answer | Fit |
+|---|---|---|---|---|---|---|
+| **Python / notebook** | Database CSV + missingness flags | Data treatment (T1, T2, T3) | Train gradient-boosted model under each treatment; extract feature importance and partial-dependence curves | Air-to-radiant sensitivity ratio per treatment; partial-dependence plots | Whether any treatment is "correct" — only whether the conclusion changes | **high** |
+| Spreadsheet / low-code | Summary statistics from published studies | Study-level imputation method | Tabulate fraction of studies using each method; compare reported comfort ranges | Frequency table of imputation practice across the literature | Cannot retrain models or test sensitivity — descriptive only | medium |
+| BIM/BEM / simulation | EnergyPlus model + comfort module | Occupant representation (120 W vs. demographic) | Run simulation with each treatment and compare PMV outputs | Simulated comfort outcomes under different assumptions | Tests a downstream effect, not the database-level question directly | low |
+| GIS / spatial | Field-study locations geocoded | Geographic coverage | Map which regions have measured vs. imputed radiant data | Spatial gap map of data quality | Reveals coverage gaps but does not test sensitivity | low |
+| AI-assisted workflow | Database + LLM for code generation | Prompt strategy for data cleaning | Generate cleaning scripts, compare outputs | Reproducible cleaning pipeline | Cannot validate which cleaning is physically correct | medium |
+| GH / parametric | Not applicable | — | — | — | Wrong tool for a database question | **low** |
+
+### Route Selection
+
+> I am choosing **Python / notebook** because my decision depends on comparing model outputs under controlled data-treatment changes, and the minimum useful output is the sensitivity ratio under each of the three treatments, computed with the same model and validation splits held fixed.
+
+### Risk Check
+
+- **Most fragile input:** Correct classification of which records have measured vs. imputed $T_{mrt}$ — the database does not always label this clearly
+- **Likely setup problem:** Getting the missingness-indicator encoding to work correctly in the model pipeline
+- **What I can cut:** Drop partial-dependence plots and report only the aggregate sensitivity ratio
+- **What I need help with:** Confirming the literature audit (88 studies) is complete and consistent
+
+---
+
+## 4. Primary Workflow Selection
+
+```
+┌─────────────────────────────────────────────────┐
+│  INPUT                                           │
+│  ASHRAE Global Thermal Comfort Database II       │
+│  + field-study metadata (88 studies)             │
+└──────────────────┬──────────────────────────────┘
+                   │
+                   ▼
+┌─────────────────────────────────────────────────┐
+│  CLASSIFY                                        │
+│  Label each record: measured Tmrt / imputed /    │
+│  missing. Flag = {measured, imputed, absent}.    │
+└──────────────────┬──────────────────────────────┘
+                   │
+          ┌────────┼────────┐
+          ▼        ▼        ▼
+       ┌─────┐ ┌─────┐ ┌─────┐
+       │ T1  │ │ T2  │ │ T3  │
+       │Rule │ │Learn│ │Meas.│
+       │imp. │ │miss.│ │only │
+       └──┬──┘ └──┬──┘ └──┬──┘
+          │       │       │
+          ▼       ▼       ▼
+┌─────────────────────────────────────────────────┐
+│  TRAIN (identical for each treatment)            │
+│  Gradient-boosted trees, same hyperparameters,   │
+│  same validation splits, same target variable.   │
+│  Only the input data treatment differs.          │
+└──────────────────┬──────────────────────────────┘
+                   │
+                   ▼
+┌─────────────────────────────────────────────────┐
+│  COMPARE                                         │
+│  Extract air-to-radiant sensitivity ratio from   │
+│  each model. Compute partial-dependence curves.  │
+│                                                  │
+│  Threshold: if ratio changes by > 50% across     │
+│  treatments, the conclusion is treatment-         │
+│  dependent and must be reported.                  │
+└──────────────────┬──────────────────────────────┘
+                   │
+                   ▼
+┌─────────────────────────────────────────────────┐
+│  OUTPUT                                          │
+│  Table: sensitivity ratio per treatment          │
+│  (actual result: 1.9 → 4.5 = 137% change)       │
+│  Verdict: conclusion IS treatment-dependent.     │
+│  Partial-dependence plots per treatment.         │
+└─────────────────────────────────────────────────┘
+```
+
+### Workflow definition
+
+- **Input files:** ASHRAE Database II CSV export; field-study metadata spreadsheet
+- **Variable:** Data treatment method (T1 / T2 / T3)
+- **Steps:** Classify → split into three treatment branches → train identical models → extract and compare sensitivity ratios
+- **Expected output:** Sensitivity ratio table + partial-dependence plots
+- **Threshold:** >50% change in ratio = treatment-dependent conclusion
+- **Likely failure point:** Misclassification of records (some studies silently impute without documenting it)
+
+---
+
+## 5. A4 Branch Declaration
+
+### Route
+
+**Route A: Retrospective Redesign** — this is an investigation of an existing dataset and existing practice, not a live design intervention.
+
+### Decision
+
+- **Project:** Thermal comfort database analysis
+- **Decision:** Whether the standard missing-data treatment ($T_{mrt} = T_a$) produces a stable or unstable learned sensitivity
+- **Alternatives:** Three data treatments (T1, T2, T3)
+- **Why this matters:** Every HVAC control strategy and comfort standard that relies on these databases inherits the data treatment silently
+
+### Workflow
+
+- **Primary route:** Python / notebook
+- **Input files:** Database CSV + metadata audit
+- **What varies:** Data treatment (the single controlled variable)
+- **Minimum scenarios:** 3 (one per treatment)
+- **Output:** Sensitivity ratio table + partial-dependence comparison
+- **Threshold:** >50% ratio change across treatments = treatment-dependent
+
+### Feasibility
+
+- **What must exist by A3:** Working pipeline for at least T1 and T2, with sensitivity ratio extracted
+- **Most likely failure:** Records misclassified between measured and imputed
+- **Backup route:** If full retraining is too slow, use a simpler model (logistic regression) and report whether the direction of the sensitivity shift is the same
+- **What can be simplified:** Drop T3 (measured-only) if the subset is too small to train on
+
+### Branch Statement
+
+> I will use Route A (Retrospective Redesign) to test whether the learned air-to-radiant sensitivity in thermal comfort models is stable across data treatments, through a controlled comparison of three imputation strategies on the same database, because the design decision (which treatment to trust) depends on whether the conclusion survives the space of reasonable data-cleaning choices, and the minimum useful output is the sensitivity ratio under each treatment with the learning model and validation splits held fixed.
+
+---
+
+## Why This Example Works as an A2
+
+This example demonstrates several things the assignment is looking for:
+
+1. **The decision is about evidence, not about software.** The question is not "which tool should I use" but "does the conclusion change when I handle the evidence differently."
+
+2. **The alternatives are genuine.** All three treatments are defensible. The point is to test whether the choice matters, not to declare one correct.
+
+3. **The workflow has a controlled variable.** Only the data treatment changes; the model, validation splits, and target are held fixed. This is what makes the comparison interpretable.
+
+4. **The threshold is stated in advance.** "If the ratio changes by more than 50%" is a pre-committed criterion, not a post-hoc narrative.
+
+5. **The failure modes are named.** Record misclassification is acknowledged as the weakest link, not hidden.
+
+6. **The tool choice follows the question.** Python/notebook is chosen because the question requires retraining a model under controlled conditions — not because Python is the most advanced option.
+
+::: {.callout-tip}
+## Adapting This to Your Own A2
+
+Replace the database with your evidence source. Replace the three data treatments with three versions of your studio decision (three site layouts, three facade options, three scoring methods). Keep the structure: one controlled variable, same evaluation method, stated threshold, named failure mode.
+:::

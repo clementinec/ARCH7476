@@ -67,6 +67,7 @@ project:
     - starter_kits/python-notebook-analysis/README.md
     - starter_kits/spreadsheet-thresholds/README.md
     - weeks/github-pages-guide.qmd
+    - examples/a2-example-hidden-drivers.qmd
     - lectures/ml-to-python-overview.qmd
     - lectures/ml-primer-12-principles.qmd
     - notebooks/01_python_ml_basics.ipynb
@@ -135,6 +136,10 @@ website:
             href: assignments/assignment-03.qmd
           - text: "A4: Workflow Package"
             href: assignments/assignment-04.qmd
+      - section: "Examples"
+        contents:
+          - text: "A2: Hidden Drivers (worked example)"
+            href: examples/a2-example-hidden-drivers.qmd
       - section: "Tools & Guides"
         contents:
           - text: "GIS Site Explorer"

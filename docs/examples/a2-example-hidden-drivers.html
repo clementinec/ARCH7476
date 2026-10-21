@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>A2 Worked Example: Hidden Drivers in Thermal Comfort Databases – ARCH7476: Evidence-Based Generative Design</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-629c56ba100745318e9dcb35146191d0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">ARCH7476: Evidence-Based Generative Design</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html"> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../assignments.html"> 
+<span class="menu-text">Assignments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../examples/a2-example-hidden-drivers.html">Examples</a></li><li class="breadcrumb-item"><a href="../examples/a2-example-hidden-drivers.html">A2: Hidden Drivers (worked example)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Course Overview</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ARCH7476: Evidence-Based Generative Design</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Schedule</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignments Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Resources</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Weekly Studio-Labs</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks_v2/week-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">W1: Total Recall</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks_v2/week-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">W2: Evidence Audit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks_v2/week-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">W3: Spreadsheet Baseline</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks_v2/week-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">W4: GIS Choices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks_v2/week-05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">W5: BIM/BEM</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks_v2/week-06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">W6: Pathway Mapping</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks_v2/week-07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">W7: Prototype Clinic</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks_v2/week-08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">W8: Reproducibility</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks_v2/week-09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">W9: Thresholds</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks_v2/week-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">W10: Draft Review</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks_v2/week-11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">W11: Final Package</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks_v2/week-12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">W12: Object Fair</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Assignments</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/assignment-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A1: Total Recall</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/assignment-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A2: Evidence + Workflow Map</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/assignment-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A3: Prototype + Verification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/assignment-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A4: Workflow Package</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Examples</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../examples/a2-example-hidden-drivers.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">A2: Hidden Drivers (worked example)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Tools &amp; Guides</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../site_tools/gis-explorer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GIS Site Explorer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../site_tools/portfolio-template.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Portfolio Template</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/github-pages-guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GitHub Pages Guide</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+ <span class="menu-text">Resources</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Resource Hub</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/ml-primer-12-principles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ML Primer · 12 Principles</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#decision-recap" id="toc-decision-recap" class="nav-link active" data-scroll-target="#decision-recap">1. Decision Recap</a>
+  <ul class="collapse">
+  <li><a href="#decision" id="toc-decision" class="nav-link" data-scroll-target="#decision">Decision</a></li>
+  <li><a href="#alternatives" id="toc-alternatives" class="nav-link" data-scroll-target="#alternatives">Alternatives</a></li>
+  <li><a href="#audience" id="toc-audience" class="nav-link" data-scroll-target="#audience">Audience</a></li>
+  <li><a href="#why-evidence-matters" id="toc-why-evidence-matters" class="nav-link" data-scroll-target="#why-evidence-matters">Why evidence matters</a></li>
+  <li><a href="#what-action-the-evidence-should-support" id="toc-what-action-the-evidence-should-support" class="nav-link" data-scroll-target="#what-action-the-evidence-should-support">What action the evidence should support</a></li>
+  </ul></li>
+  <li><a href="#evidence-map" id="toc-evidence-map" class="nav-link" data-scroll-target="#evidence-map">2. Evidence Map</a>
+  <ul class="collapse">
+  <li><a href="#what-is-missing-from-this-evidence-map" id="toc-what-is-missing-from-this-evidence-map" class="nav-link" data-scroll-target="#what-is-missing-from-this-evidence-map">What is missing from this evidence map</a></li>
+  </ul></li>
+  <li><a href="#tool-translation-matrix" id="toc-tool-translation-matrix" class="nav-link" data-scroll-target="#tool-translation-matrix">3. Tool Translation Matrix</a>
+  <ul class="collapse">
+  <li><a href="#design-decision-restated" id="toc-design-decision-restated" class="nav-link" data-scroll-target="#design-decision-restated">Design Decision (restated)</a></li>
+  <li><a href="#route-selection" id="toc-route-selection" class="nav-link" data-scroll-target="#route-selection">Route Selection</a></li>
+  <li><a href="#risk-check" id="toc-risk-check" class="nav-link" data-scroll-target="#risk-check">Risk Check</a></li>
+  </ul></li>
+  <li><a href="#primary-workflow-selection" id="toc-primary-workflow-selection" class="nav-link" data-scroll-target="#primary-workflow-selection">4. Primary Workflow Selection</a>
+  <ul class="collapse">
+  <li><a href="#workflow-definition" id="toc-workflow-definition" class="nav-link" data-scroll-target="#workflow-definition">Workflow definition</a></li>
+  </ul></li>
+  <li><a href="#a4-branch-declaration" id="toc-a4-branch-declaration" class="nav-link" data-scroll-target="#a4-branch-declaration">5. A4 Branch Declaration</a>
+  <ul class="collapse">
+  <li><a href="#route" id="toc-route" class="nav-link" data-scroll-target="#route">Route</a></li>
+  <li><a href="#decision-1" id="toc-decision-1" class="nav-link" data-scroll-target="#decision-1">Decision</a></li>
+  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow">Workflow</a></li>
+  <li><a href="#feasibility" id="toc-feasibility" class="nav-link" data-scroll-target="#feasibility">Feasibility</a></li>
+  <li><a href="#branch-statement" id="toc-branch-statement" class="nav-link" data-scroll-target="#branch-statement">Branch Statement</a></li>
+  </ul></li>
+  <li><a href="#why-this-example-works-as-an-a2" id="toc-why-this-example-works-as-an-a2" class="nav-link" data-scroll-target="#why-this-example-works-as-an-a2">Why This Example Works as an A2</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../examples/a2-example-hidden-drivers.html">Examples</a></li><li class="breadcrumb-item"><a href="../examples/a2-example-hidden-drivers.html">A2: Hidden Drivers (worked example)</a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">A2 Worked Example: Hidden Drivers in Thermal Comfort Databases</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">How data treatment choices changed the interpretation of the same evidence</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>About This Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is a worked A2 skeleton based on a real research project — <em>“Toward smarter HVAC control: Machine learning reveals hidden drivers in thermal comfort databases”</em> (Guo et al., <em>Energy and AI</em>, 2026). It is meant to show how A2 components fit together hierarchically, not to prescribe a specific topic. Your A2 should use your own studio decision.</p>
+</div>
+</div>
+<hr>
+<section id="decision-recap" class="level2">
+<h2 class="anchored" data-anchor-id="decision-recap">1. Decision Recap</h2>
+<section id="decision" class="level3">
+<h3 class="anchored" data-anchor-id="decision">Decision</h3>
+<p>Which representation of missing radiant-temperature data should be used when training thermal comfort models from field-study databases?</p>
+</section>
+<section id="alternatives" class="level3">
+<h3 class="anchored" data-anchor-id="alternatives">Alternatives</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Label</th>
+<th>Treatment</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T1</td>
+<td>Rule-based imputation</td>
+<td>Replace missing mean radiant temperature (<span class="math inline">\(T_{mrt}\)</span>) with air temperature (<span class="math inline">\(T_a\)</span>), following standard practice</td>
+</tr>
+<tr class="even">
+<td>T2</td>
+<td>Learning through missingness</td>
+<td>Let the model learn from the pattern of what is missing, using missingness indicators as input features</td>
+</tr>
+<tr class="odd">
+<td>T3</td>
+<td>Measured-only subset</td>
+<td>Drop all records without measured <span class="math inline">\(T_{mrt}\)</span> and train only on complete cases</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="audience" class="level3">
+<h3 class="anchored" data-anchor-id="audience">Audience</h3>
+<p>Researchers and standards committees who rely on thermal-comfort databases (ASHRAE Global Thermal Comfort Database II, etc.) to calibrate models used in HVAC sizing and control.</p>
+</section>
+<section id="why-evidence-matters" class="level3">
+<h3 class="anchored" data-anchor-id="why-evidence-matters">Why evidence matters</h3>
+<p>The default assumption — impute <span class="math inline">\(T_{mrt} = T_a\)</span> — enters every downstream model silently. If this treatment distorts the learned relationship between air and radiant conditions, then every comfort prediction and every control policy built on it inherits that distortion. The question is whether the conclusion survives a reasonable change in how missing data is handled.</p>
+</section>
+<section id="what-action-the-evidence-should-support" class="level3">
+<h3 class="anchored" data-anchor-id="what-action-the-evidence-should-support">What action the evidence should support</h3>
+<p>Decide whether the standard imputation practice should be replaced, supplemented with sensitivity reporting, or flagged as a known limitation in future database-driven comfort studies.</p>
+<hr>
+</section>
+</section>
+<section id="evidence-map" class="level2">
+<h2 class="anchored" data-anchor-id="evidence-map">2. Evidence Map</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>Type</th>
+<th>Relevance</th>
+<th>Access</th>
+<th>Confidence</th>
+<th>Limits</th>
+<th>Role in workflow</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ASHRAE Global Thermal Comfort Database II</td>
+<td>Measurement (field)</td>
+<td><strong>Primary</strong> — the dataset under investigation</td>
+<td>Public</td>
+<td>High (88 field studies)</td>
+<td>Personal and radiant variables systematically underrecorded</td>
+<td>Input dataset</td>
+</tr>
+<tr class="even">
+<td>Field-study metadata (88 studies)</td>
+<td>Documentation</td>
+<td>High — reveals which variables were actually measured vs.&nbsp;assumed</td>
+<td>Requires audit of each study</td>
+<td>Medium — reporting varies</td>
+<td>Some studies do not state their imputation method</td>
+<td>Classifies records as measured vs.&nbsp;imputed</td>
+</tr>
+<tr class="odd">
+<td>PMV / thermal comfort standards (ISO 7730, ASHRAE 55)</td>
+<td>Standard</td>
+<td>High — defines the baseline assumption (<span class="math inline">\(T_{mrt} = T_a\)</span>)</td>
+<td>Public</td>
+<td>High (consensus standard)</td>
+<td>A standard is a convention, not a measurement</td>
+<td>Benchmark for T1 (rule-based)</td>
+</tr>
+<tr class="even">
+<td>Machine learning model output (gradient-boosted trees)</td>
+<td>Model</td>
+<td>High — the evaluation instrument</td>
+<td>Reproducible</td>
+<td>Medium — model choice affects learned sensitivity</td>
+<td>Results may not generalize to other model families</td>
+<td>Evaluation pathway</td>
+</tr>
+<tr class="odd">
+<td>Air-to-radiant sensitivity ratio</td>
+<td>Derived metric</td>
+<td><strong>Critical</strong> — the comparison criterion</td>
+<td>Computed from model coefficients</td>
+<td>Depends on treatment</td>
+<td>Ratio is a summary; full partial-dependence plots tell more</td>
+<td>Primary output for comparison</td>
+</tr>
+</tbody>
+</table>
+<section id="what-is-missing-from-this-evidence-map" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-missing-from-this-evidence-map">What is missing from this evidence map</h3>
+<ul>
+<li>Independent radiant-temperature measurement campaign (expensive, not in scope)</li>
+<li>Cross-validation with a second database</li>
+<li>Expert elicitation on which imputation is “least wrong”</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="tool-translation-matrix" class="level2">
+<h2 class="anchored" data-anchor-id="tool-translation-matrix">3. Tool Translation Matrix</h2>
+<section id="design-decision-restated" class="level3">
+<h3 class="anchored" data-anchor-id="design-decision-restated">Design Decision (restated)</h3>
+<p>Does the choice of missing-data treatment change the model’s learned sensitivity to radiant conditions — and by how much?</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Workflow route</th>
+<th>Input</th>
+<th>What varies</th>
+<th>Operation</th>
+<th>Output</th>
+<th>What it cannot answer</th>
+<th>Fit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Python / notebook</strong></td>
+<td>Database CSV + missingness flags</td>
+<td>Data treatment (T1, T2, T3)</td>
+<td>Train gradient-boosted model under each treatment; extract feature importance and partial-dependence curves</td>
+<td>Air-to-radiant sensitivity ratio per treatment; partial-dependence plots</td>
+<td>Whether any treatment is “correct” — only whether the conclusion changes</td>
+<td><strong>high</strong></td>
+</tr>
+<tr class="even">
+<td>Spreadsheet / low-code</td>
+<td>Summary statistics from published studies</td>
+<td>Study-level imputation method</td>
+<td>Tabulate fraction of studies using each method; compare reported comfort ranges</td>
+<td>Frequency table of imputation practice across the literature</td>
+<td>Cannot retrain models or test sensitivity — descriptive only</td>
+<td>medium</td>
+</tr>
+<tr class="odd">
+<td>BIM/BEM / simulation</td>
+<td>EnergyPlus model + comfort module</td>
+<td>Occupant representation (120 W vs.&nbsp;demographic)</td>
+<td>Run simulation with each treatment and compare PMV outputs</td>
+<td>Simulated comfort outcomes under different assumptions</td>
+<td>Tests a downstream effect, not the database-level question directly</td>
+<td>low</td>
+</tr>
+<tr class="even">
+<td>GIS / spatial</td>
+<td>Field-study locations geocoded</td>
+<td>Geographic coverage</td>
+<td>Map which regions have measured vs.&nbsp;imputed radiant data</td>
+<td>Spatial gap map of data quality</td>
+<td>Reveals coverage gaps but does not test sensitivity</td>
+<td>low</td>
+</tr>
+<tr class="odd">
+<td>AI-assisted workflow</td>
+<td>Database + LLM for code generation</td>
+<td>Prompt strategy for data cleaning</td>
+<td>Generate cleaning scripts, compare outputs</td>
+<td>Reproducible cleaning pipeline</td>
+<td>Cannot validate which cleaning is physically correct</td>
+<td>medium</td>
+</tr>
+<tr class="even">
+<td>GH / parametric</td>
+<td>Not applicable</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>Wrong tool for a database question</td>
+<td><strong>low</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="route-selection" class="level3">
+<h3 class="anchored" data-anchor-id="route-selection">Route Selection</h3>
+<blockquote class="blockquote">
+<p>I am choosing <strong>Python / notebook</strong> because my decision depends on comparing model outputs under controlled data-treatment changes, and the minimum useful output is the sensitivity ratio under each of the three treatments, computed with the same model and validation splits held fixed.</p>
+</blockquote>
+</section>
+<section id="risk-check" class="level3">
+<h3 class="anchored" data-anchor-id="risk-check">Risk Check</h3>
+<ul>
+<li><strong>Most fragile input:</strong> Correct classification of which records have measured vs.&nbsp;imputed <span class="math inline">\(T_{mrt}\)</span> — the database does not always label this clearly</li>
+<li><strong>Likely setup problem:</strong> Getting the missingness-indicator encoding to work correctly in the model pipeline</li>
+<li><strong>What I can cut:</strong> Drop partial-dependence plots and report only the aggregate sensitivity ratio</li>
+<li><strong>What I need help with:</strong> Confirming the literature audit (88 studies) is complete and consistent</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="primary-workflow-selection" class="level2">
+<h2 class="anchored" data-anchor-id="primary-workflow-selection">4. Primary Workflow Selection</h2>
+<pre><code>┌─────────────────────────────────────────────────┐
+│  INPUT                                           │
+│  ASHRAE Global Thermal Comfort Database II       │
+│  + field-study metadata (88 studies)             │
+└──────────────────┬──────────────────────────────┘
+                   │
+                   ▼
+┌─────────────────────────────────────────────────┐
+│  CLASSIFY                                        │
+│  Label each record: measured Tmrt / imputed /    │
+│  missing. Flag = {measured, imputed, absent}.    │
+└──────────────────┬──────────────────────────────┘
+                   │
+          ┌────────┼────────┐
+          ▼        ▼        ▼
+       ┌─────┐ ┌─────┐ ┌─────┐
+       │ T1  │ │ T2  │ │ T3  │
+       │Rule │ │Learn│ │Meas.│
+       │imp. │ │miss.│ │only │
+       └──┬──┘ └──┬──┘ └──┬──┘
+          │       │       │
+          ▼       ▼       ▼
+┌─────────────────────────────────────────────────┐
+│  TRAIN (identical for each treatment)            │
+│  Gradient-boosted trees, same hyperparameters,   │
+│  same validation splits, same target variable.   │
+│  Only the input data treatment differs.          │
+└──────────────────┬──────────────────────────────┘
+                   │
+                   ▼
+┌─────────────────────────────────────────────────┐
+│  COMPARE                                         │
+│  Extract air-to-radiant sensitivity ratio from   │
+│  each model. Compute partial-dependence curves.  │
+│                                                  │
+│  Threshold: if ratio changes by &gt; 50% across     │
+│  treatments, the conclusion is treatment-         │
+│  dependent and must be reported.                  │
+└──────────────────┬──────────────────────────────┘
+                   │
+                   ▼
+┌─────────────────────────────────────────────────┐
+│  OUTPUT                                          │
+│  Table: sensitivity ratio per treatment          │
+│  (actual result: 1.9 → 4.5 = 137% change)       │
+│  Verdict: conclusion IS treatment-dependent.     │
+│  Partial-dependence plots per treatment.         │
+└─────────────────────────────────────────────────┘</code></pre>
+<section id="workflow-definition" class="level3">
+<h3 class="anchored" data-anchor-id="workflow-definition">Workflow definition</h3>
+<ul>
+<li><strong>Input files:</strong> ASHRAE Database II CSV export; field-study metadata spreadsheet</li>
+<li><strong>Variable:</strong> Data treatment method (T1 / T2 / T3)</li>
+<li><strong>Steps:</strong> Classify → split into three treatment branches → train identical models → extract and compare sensitivity ratios</li>
+<li><strong>Expected output:</strong> Sensitivity ratio table + partial-dependence plots</li>
+<li><strong>Threshold:</strong> &gt;50% change in ratio = treatment-dependent conclusion</li>
+<li><strong>Likely failure point:</strong> Misclassification of records (some studies silently impute without documenting it)</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="a4-branch-declaration" class="level2">
+<h2 class="anchored" data-anchor-id="a4-branch-declaration">5. A4 Branch Declaration</h2>
+<section id="route" class="level3">
+<h3 class="anchored" data-anchor-id="route">Route</h3>
+<p><strong>Route A: Retrospective Redesign</strong> — this is an investigation of an existing dataset and existing practice, not a live design intervention.</p>
+</section>
+<section id="decision-1" class="level3">
+<h3 class="anchored" data-anchor-id="decision-1">Decision</h3>
+<ul>
+<li><strong>Project:</strong> Thermal comfort database analysis</li>
+<li><strong>Decision:</strong> Whether the standard missing-data treatment (<span class="math inline">\(T_{mrt} = T_a\)</span>) produces a stable or unstable learned sensitivity</li>
+<li><strong>Alternatives:</strong> Three data treatments (T1, T2, T3)</li>
+<li><strong>Why this matters:</strong> Every HVAC control strategy and comfort standard that relies on these databases inherits the data treatment silently</li>
+</ul>
+</section>
+<section id="workflow" class="level3">
+<h3 class="anchored" data-anchor-id="workflow">Workflow</h3>
+<ul>
+<li><strong>Primary route:</strong> Python / notebook</li>
+<li><strong>Input files:</strong> Database CSV + metadata audit</li>
+<li><strong>What varies:</strong> Data treatment (the single controlled variable)</li>
+<li><strong>Minimum scenarios:</strong> 3 (one per treatment)</li>
+<li><strong>Output:</strong> Sensitivity ratio table + partial-dependence comparison</li>
+<li><strong>Threshold:</strong> &gt;50% ratio change across treatments = treatment-dependent</li>
+</ul>
+</section>
+<section id="feasibility" class="level3">
+<h3 class="anchored" data-anchor-id="feasibility">Feasibility</h3>
+<ul>
+<li><strong>What must exist by A3:</strong> Working pipeline for at least T1 and T2, with sensitivity ratio extracted</li>
+<li><strong>Most likely failure:</strong> Records misclassified between measured and imputed</li>
+<li><strong>Backup route:</strong> If full retraining is too slow, use a simpler model (logistic regression) and report whether the direction of the sensitivity shift is the same</li>
+<li><strong>What can be simplified:</strong> Drop T3 (measured-only) if the subset is too small to train on</li>
+</ul>
+</section>
+<section id="branch-statement" class="level3">
+<h3 class="anchored" data-anchor-id="branch-statement">Branch Statement</h3>
+<blockquote class="blockquote">
+<p>I will use Route A (Retrospective Redesign) to test whether the learned air-to-radiant sensitivity in thermal comfort models is stable across data treatments, through a controlled comparison of three imputation strategies on the same database, because the design decision (which treatment to trust) depends on whether the conclusion survives the space of reasonable data-cleaning choices, and the minimum useful output is the sensitivity ratio under each treatment with the learning model and validation splits held fixed.</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="why-this-example-works-as-an-a2" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-example-works-as-an-a2">Why This Example Works as an A2</h2>
+<p>This example demonstrates several things the assignment is looking for:</p>
+<ol type="1">
+<li><p><strong>The decision is about evidence, not about software.</strong> The question is not “which tool should I use” but “does the conclusion change when I handle the evidence differently.”</p></li>
+<li><p><strong>The alternatives are genuine.</strong> All three treatments are defensible. The point is to test whether the choice matters, not to declare one correct.</p></li>
+<li><p><strong>The workflow has a controlled variable.</strong> Only the data treatment changes; the model, validation splits, and target are held fixed. This is what makes the comparison interpretable.</p></li>
+<li><p><strong>The threshold is stated in advance.</strong> “If the ratio changes by more than 50%” is a pre-committed criterion, not a post-hoc narrative.</p></li>
+<li><p><strong>The failure modes are named.</strong> Record misclassification is acknowledged as the weakest link, not hidden.</p></li>
+<li><p><strong>The tool choice follows the question.</strong> Python/notebook is chosen because the question requires retraining a model under controlled conditions — not because Python is the most advanced option.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Adapting This to Your Own A2
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Replace the database with your evidence source. Replace the three data treatments with three versions of your studio decision (three site layouts, three facade options, three scoring methods). Keep the structure: one controlled variable, same evaluation method, stated threshold, named failure mode.</p>
+</div>
+</div>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const cellDetails = window.document.querySelectorAll(".cell details.code-fold");
+        for (let i=0; i<cellDetails.length; i++) {
+          const details = cellDetails[i];
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell div.sourceCode.cell-code");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "A2 Worked Example: Hidden Drivers in Thermal Comfort Databases"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "How data treatment choices changed the interpretation of the same evidence"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 3</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## About This Example</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>This is a worked A2 skeleton based on a real research project — *"Toward smarter HVAC control: Machine learning reveals hidden drivers in thermal comfort databases"* (Guo et al., *Energy and AI*, 2026). It is meant to show how A2 components fit together hierarchically, not to prescribe a specific topic. Your A2 should use your own studio decision.</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="fu">## 1. Decision Recap</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="fu">### Decision</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>Which representation of missing radiant-temperature data should be used when training thermal comfort models from field-study databases?</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="fu">### Alternatives</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Label <span class="pp">|</span> Treatment <span class="pp">|</span> Description <span class="pp">|</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> T1 <span class="pp">|</span> Rule-based imputation <span class="pp">|</span> Replace missing mean radiant temperature ($T_{mrt}$) with air temperature ($T_a$), following standard practice <span class="pp">|</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> T2 <span class="pp">|</span> Learning through missingness <span class="pp">|</span> Let the model learn from the pattern of what is missing, using missingness indicators as input features <span class="pp">|</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> T3 <span class="pp">|</span> Measured-only subset <span class="pp">|</span> Drop all records without measured $T_{mrt}$ and train only on complete cases <span class="pp">|</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="fu">### Audience</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>Researchers and standards committees who rely on thermal-comfort databases (ASHRAE Global Thermal Comfort Database II, etc.) to calibrate models used in HVAC sizing and control.</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="fu">### Why evidence matters</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>The default assumption — impute $T_{mrt} = T_a$ — enters every downstream model silently. If this treatment distorts the learned relationship between air and radiant conditions, then every comfort prediction and every control policy built on it inherits that distortion. The question is whether the conclusion survives a reasonable change in how missing data is handled.</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="fu">### What action the evidence should support</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>Decide whether the standard imputation practice should be replaced, supplemented with sensitivity reporting, or flagged as a known limitation in future database-driven comfort studies.</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2. Evidence Map</span></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Source <span class="pp">|</span> Type <span class="pp">|</span> Relevance <span class="pp">|</span> Access <span class="pp">|</span> Confidence <span class="pp">|</span> Limits <span class="pp">|</span> Role in workflow <span class="pp">|</span></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|---|---|---|</span></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ASHRAE Global Thermal Comfort Database II <span class="pp">|</span> Measurement (field) <span class="pp">|</span> **Primary** — the dataset under investigation <span class="pp">|</span> Public <span class="pp">|</span> High (88 field studies) <span class="pp">|</span> Personal and radiant variables systematically underrecorded <span class="pp">|</span> Input dataset <span class="pp">|</span></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Field-study metadata (88 studies) <span class="pp">|</span> Documentation <span class="pp">|</span> High — reveals which variables were actually measured vs. assumed <span class="pp">|</span> Requires audit of each study <span class="pp">|</span> Medium — reporting varies <span class="pp">|</span> Some studies do not state their imputation method <span class="pp">|</span> Classifies records as measured vs. imputed <span class="pp">|</span></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> PMV / thermal comfort standards (ISO 7730, ASHRAE 55) <span class="pp">|</span> Standard <span class="pp">|</span> High — defines the baseline assumption ($T_{mrt} = T_a$) <span class="pp">|</span> Public <span class="pp">|</span> High (consensus standard) <span class="pp">|</span> A standard is a convention, not a measurement <span class="pp">|</span> Benchmark for T1 (rule-based) <span class="pp">|</span></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Machine learning model output (gradient-boosted trees) <span class="pp">|</span> Model <span class="pp">|</span> High — the evaluation instrument <span class="pp">|</span> Reproducible <span class="pp">|</span> Medium — model choice affects learned sensitivity <span class="pp">|</span> Results may not generalize to other model families <span class="pp">|</span> Evaluation pathway <span class="pp">|</span></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Air-to-radiant sensitivity ratio <span class="pp">|</span> Derived metric <span class="pp">|</span> **Critical** — the comparison criterion <span class="pp">|</span> Computed from model coefficients <span class="pp">|</span> Depends on treatment <span class="pp">|</span> Ratio is a summary; full partial-dependence plots tell more <span class="pp">|</span> Primary output for comparison <span class="pp">|</span></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="fu">### What is missing from this evidence map</span></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Independent radiant-temperature measurement campaign (expensive, not in scope)</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cross-validation with a second database</span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Expert elicitation on which imputation is "least wrong"</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3. Tool Translation Matrix</span></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a><span class="fu">### Design Decision (restated)</span></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>Does the choice of missing-data treatment change the model's learned sensitivity to radiant conditions — and by how much?</span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Workflow route <span class="pp">|</span> Input <span class="pp">|</span> What varies <span class="pp">|</span> Operation <span class="pp">|</span> Output <span class="pp">|</span> What it cannot answer <span class="pp">|</span> Fit <span class="pp">|</span></span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|---|---|---|</span></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Python / notebook** | Database CSV + missingness flags | Data treatment (T1, T2, T3) | Train gradient-boosted model under each treatment; extract feature importance and partial-dependence curves | Air-to-radiant sensitivity ratio per treatment; partial-dependence plots | Whether any treatment is "correct" — only whether the conclusion changes | **high** <span class="pp">|</span></span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Spreadsheet / low-code <span class="pp">|</span> Summary statistics from published studies <span class="pp">|</span> Study-level imputation method <span class="pp">|</span> Tabulate fraction of studies using each method; compare reported comfort ranges <span class="pp">|</span> Frequency table of imputation practice across the literature <span class="pp">|</span> Cannot retrain models or test sensitivity — descriptive only <span class="pp">|</span> medium <span class="pp">|</span></span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> BIM/BEM / simulation <span class="pp">|</span> EnergyPlus model + comfort module <span class="pp">|</span> Occupant representation (120 W vs. demographic) <span class="pp">|</span> Run simulation with each treatment and compare PMV outputs <span class="pp">|</span> Simulated comfort outcomes under different assumptions <span class="pp">|</span> Tests a downstream effect, not the database-level question directly <span class="pp">|</span> low <span class="pp">|</span></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> GIS / spatial <span class="pp">|</span> Field-study locations geocoded <span class="pp">|</span> Geographic coverage <span class="pp">|</span> Map which regions have measured vs. imputed radiant data <span class="pp">|</span> Spatial gap map of data quality <span class="pp">|</span> Reveals coverage gaps but does not test sensitivity <span class="pp">|</span> low <span class="pp">|</span></span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AI-assisted workflow <span class="pp">|</span> Database + LLM for code generation <span class="pp">|</span> Prompt strategy for data cleaning <span class="pp">|</span> Generate cleaning scripts, compare outputs <span class="pp">|</span> Reproducible cleaning pipeline <span class="pp">|</span> Cannot validate which cleaning is physically correct <span class="pp">|</span> medium <span class="pp">|</span></span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> GH / parametric <span class="pp">|</span> Not applicable <span class="pp">|</span> — <span class="pp">|</span> — <span class="pp">|</span> — <span class="pp">|</span> Wrong tool for a database question <span class="pp">|</span> **low** <span class="pp">|</span></span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a><span class="fu">### Route Selection</span></span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; I am choosing **Python / notebook** because my decision depends on comparing model outputs under controlled data-treatment changes, and the minimum useful output is the sensitivity ratio under each of the three treatments, computed with the same model and validation splits held fixed.</span></span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a><span class="fu">### Risk Check</span></span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Most fragile input:** Correct classification of which records have measured vs. imputed $T_{mrt}$ — the database does not always label this clearly</span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Likely setup problem:** Getting the missingness-indicator encoding to work correctly in the model pipeline</span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What I can cut:** Drop partial-dependence plots and report only the aggregate sensitivity ratio</span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What I need help with:** Confirming the literature audit (88 studies) is complete and consistent</span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4. Primary Workflow Selection</span></span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a><span class="in">│  INPUT                                           │</span></span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a><span class="in">│  ASHRAE Global Thermal Comfort Database II       │</span></span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a><span class="in">│  + field-study metadata (88 studies)             │</span></span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a><span class="in">└──────────────────┬──────────────────────────────┘</span></span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a><span class="in">                   │</span></span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a><span class="in">                   ▼</span></span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
+<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a><span class="in">│  CLASSIFY                                        │</span></span>
+<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a><span class="in">│  Label each record: measured Tmrt / imputed /    │</span></span>
+<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a><span class="in">│  missing. Flag = {measured, imputed, absent}.    │</span></span>
+<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a><span class="in">└──────────────────┬──────────────────────────────┘</span></span>
+<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a><span class="in">                   │</span></span>
+<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a><span class="in">          ┌────────┼────────┐</span></span>
+<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a><span class="in">          ▼        ▼        ▼</span></span>
+<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a><span class="in">       ┌─────┐ ┌─────┐ ┌─────┐</span></span>
+<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a><span class="in">       │ T1  │ │ T2  │ │ T3  │</span></span>
+<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a><span class="in">       │Rule │ │Learn│ │Meas.│</span></span>
+<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a><span class="in">       │imp. │ │miss.│ │only │</span></span>
+<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a><span class="in">       └──┬──┘ └──┬──┘ └──┬──┘</span></span>
+<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a><span class="in">          │       │       │</span></span>
+<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a><span class="in">          ▼       ▼       ▼</span></span>
+<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
+<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a><span class="in">│  TRAIN (identical for each treatment)            │</span></span>
+<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a><span class="in">│  Gradient-boosted trees, same hyperparameters,   │</span></span>
+<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a><span class="in">│  same validation splits, same target variable.   │</span></span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a><span class="in">│  Only the input data treatment differs.          │</span></span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a><span class="in">└──────────────────┬──────────────────────────────┘</span></span>
+<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a><span class="in">                   │</span></span>
+<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a><span class="in">                   ▼</span></span>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
+<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a><span class="in">│  COMPARE                                         │</span></span>
+<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a><span class="in">│  Extract air-to-radiant sensitivity ratio from   │</span></span>
+<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a><span class="in">│  each model. Compute partial-dependence curves.  │</span></span>
+<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a><span class="in">│                                                  │</span></span>
+<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a><span class="in">│  Threshold: if ratio changes by &gt; 50% across     │</span></span>
+<span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a><span class="in">│  treatments, the conclusion is treatment-         │</span></span>
+<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a><span class="in">│  dependent and must be reported.                  │</span></span>
+<span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a><span class="in">└──────────────────┬──────────────────────────────┘</span></span>
+<span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a><span class="in">                   │</span></span>
+<span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a><span class="in">                   ▼</span></span>
+<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
+<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a><span class="in">│  OUTPUT                                          │</span></span>
+<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a><span class="in">│  Table: sensitivity ratio per treatment          │</span></span>
+<span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a><span class="in">│  (actual result: 1.9 → 4.5 = 137% change)       │</span></span>
+<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a><span class="in">│  Verdict: conclusion IS treatment-dependent.     │</span></span>
+<span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a><span class="in">│  Partial-dependence plots per treatment.         │</span></span>
+<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a><span class="in">└─────────────────────────────────────────────────┘</span></span>
+<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a><span class="fu">### Workflow definition</span></span>
+<span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Input files:** ASHRAE Database II CSV export; field-study metadata spreadsheet</span>
+<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Variable:** Data treatment method (T1 / T2 / T3)</span>
+<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Steps:** Classify → split into three treatment branches → train identical models → extract and compare sensitivity ratios</span>
+<span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Expected output:** Sensitivity ratio table + partial-dependence plots</span>
+<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Threshold:** &gt;50% change in ratio = treatment-dependent conclusion</span>
+<span id="cb2-152"><a href="#cb2-152" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Likely failure point:** Misclassification of records (some studies silently impute without documenting it)</span>
+<span id="cb2-153"><a href="#cb2-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-154"><a href="#cb2-154" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-155"><a href="#cb2-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-156"><a href="#cb2-156" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5. A4 Branch Declaration</span></span>
+<span id="cb2-157"><a href="#cb2-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-158"><a href="#cb2-158" aria-hidden="true" tabindex="-1"></a><span class="fu">### Route</span></span>
+<span id="cb2-159"><a href="#cb2-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-160"><a href="#cb2-160" aria-hidden="true" tabindex="-1"></a>**Route A: Retrospective Redesign** — this is an investigation of an existing dataset and existing practice, not a live design intervention.</span>
+<span id="cb2-161"><a href="#cb2-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-162"><a href="#cb2-162" aria-hidden="true" tabindex="-1"></a><span class="fu">### Decision</span></span>
+<span id="cb2-163"><a href="#cb2-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-164"><a href="#cb2-164" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Project:** Thermal comfort database analysis</span>
+<span id="cb2-165"><a href="#cb2-165" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Decision:** Whether the standard missing-data treatment ($T_{mrt} = T_a$) produces a stable or unstable learned sensitivity</span>
+<span id="cb2-166"><a href="#cb2-166" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Alternatives:** Three data treatments (T1, T2, T3)</span>
+<span id="cb2-167"><a href="#cb2-167" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Why this matters:** Every HVAC control strategy and comfort standard that relies on these databases inherits the data treatment silently</span>
+<span id="cb2-168"><a href="#cb2-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-169"><a href="#cb2-169" aria-hidden="true" tabindex="-1"></a><span class="fu">### Workflow</span></span>
+<span id="cb2-170"><a href="#cb2-170" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-171"><a href="#cb2-171" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Primary route:** Python / notebook</span>
+<span id="cb2-172"><a href="#cb2-172" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Input files:** Database CSV + metadata audit</span>
+<span id="cb2-173"><a href="#cb2-173" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What varies:** Data treatment (the single controlled variable)</span>
+<span id="cb2-174"><a href="#cb2-174" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Minimum scenarios:** 3 (one per treatment)</span>
+<span id="cb2-175"><a href="#cb2-175" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Output:** Sensitivity ratio table + partial-dependence comparison</span>
+<span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Threshold:** &gt;50% ratio change across treatments = treatment-dependent</span>
+<span id="cb2-177"><a href="#cb2-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-178"><a href="#cb2-178" aria-hidden="true" tabindex="-1"></a><span class="fu">### Feasibility</span></span>
+<span id="cb2-179"><a href="#cb2-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-180"><a href="#cb2-180" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What must exist by A3:** Working pipeline for at least T1 and T2, with sensitivity ratio extracted</span>
+<span id="cb2-181"><a href="#cb2-181" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Most likely failure:** Records misclassified between measured and imputed</span>
+<span id="cb2-182"><a href="#cb2-182" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Backup route:** If full retraining is too slow, use a simpler model (logistic regression) and report whether the direction of the sensitivity shift is the same</span>
+<span id="cb2-183"><a href="#cb2-183" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What can be simplified:** Drop T3 (measured-only) if the subset is too small to train on</span>
+<span id="cb2-184"><a href="#cb2-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-185"><a href="#cb2-185" aria-hidden="true" tabindex="-1"></a><span class="fu">### Branch Statement</span></span>
+<span id="cb2-186"><a href="#cb2-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-187"><a href="#cb2-187" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; I will use Route A (Retrospective Redesign) to test whether the learned air-to-radiant sensitivity in thermal comfort models is stable across data treatments, through a controlled comparison of three imputation strategies on the same database, because the design decision (which treatment to trust) depends on whether the conclusion survives the space of reasonable data-cleaning choices, and the minimum useful output is the sensitivity ratio under each treatment with the learning model and validation splits held fixed.</span></span>
+<span id="cb2-188"><a href="#cb2-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-189"><a href="#cb2-189" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-190"><a href="#cb2-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-191"><a href="#cb2-191" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why This Example Works as an A2</span></span>
+<span id="cb2-192"><a href="#cb2-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-193"><a href="#cb2-193" aria-hidden="true" tabindex="-1"></a>This example demonstrates several things the assignment is looking for:</span>
+<span id="cb2-194"><a href="#cb2-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-195"><a href="#cb2-195" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**The decision is about evidence, not about software.** The question is not "which tool should I use" but "does the conclusion change when I handle the evidence differently."</span>
+<span id="cb2-196"><a href="#cb2-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-197"><a href="#cb2-197" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**The alternatives are genuine.** All three treatments are defensible. The point is to test whether the choice matters, not to declare one correct.</span>
+<span id="cb2-198"><a href="#cb2-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**The workflow has a controlled variable.** Only the data treatment changes; the model, validation splits, and target are held fixed. This is what makes the comparison interpretable.</span>
+<span id="cb2-200"><a href="#cb2-200" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-201"><a href="#cb2-201" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**The threshold is stated in advance.** "If the ratio changes by more than 50%" is a pre-committed criterion, not a post-hoc narrative.</span>
+<span id="cb2-202"><a href="#cb2-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-203"><a href="#cb2-203" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**The failure modes are named.** Record misclassification is acknowledged as the weakest link, not hidden.</span>
+<span id="cb2-204"><a href="#cb2-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-205"><a href="#cb2-205" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>**The tool choice follows the question.** Python/notebook is chosen because the question requires retraining a model under controlled conditions — not because Python is the most advanced option.</span>
+<span id="cb2-206"><a href="#cb2-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-207"><a href="#cb2-207" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb2-208"><a href="#cb2-208" aria-hidden="true" tabindex="-1"></a><span class="fu">## Adapting This to Your Own A2</span></span>
+<span id="cb2-209"><a href="#cb2-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-210"><a href="#cb2-210" aria-hidden="true" tabindex="-1"></a>Replace the database with your evidence source. Replace the three data treatments with three versions of your studio decision (three site layouts, three facade options, three scoring methods). Keep the structure: one controlled variable, same evaluation method, stated threshold, named failure mode.</span>
+<span id="cb2-211"><a href="#cb2-211" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
