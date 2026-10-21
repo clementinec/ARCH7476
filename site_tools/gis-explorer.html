@@ -9,21 +9,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/6.5.0/turf.min.js" crossorigin="anonymous"></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--sidebar:340px;--bg:#f7f8fa;--panel:#fff;--border:#dde1e6;--text:#1a1a1a;--muted:#6b7280;--accent:#2563eb;--accent-light:#dbeafe;--danger:#ef4444;--success:#16a34a}
+:root{--sidebar:360px;--bg:#f7f8fa;--panel:#fff;--border:#dde1e6;--text:#1a1a1a;--muted:#6b7280;--accent:#2563eb;--accent-light:#dbeafe;--danger:#ef4444;--success:#16a34a}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);height:100vh;overflow:hidden;display:flex}
 #sidebar{width:var(--sidebar);min-width:var(--sidebar);height:100vh;background:var(--panel);border-right:1px solid var(--border);display:flex;flex-direction:column;overflow-y:auto;z-index:1000}
 #sidebar h1{font-size:15px;font-weight:700;padding:16px 16px 4px;letter-spacing:.3px}
 #sidebar .subtitle{font-size:11px;color:var(--muted);padding:0 16px 12px;border-bottom:1px solid var(--border)}
 .section{padding:12px 16px;border-bottom:1px solid var(--border)}
 .section-title{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:8px}
+.section-desc{font-size:11px;color:var(--muted);line-height:1.4;margin-bottom:8px}
 button{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;font-size:12px;font-weight:500;border:1px solid var(--border);border-radius:6px;background:var(--panel);color:var(--text);cursor:pointer;transition:background .15s}
 button:hover{background:var(--bg)}
 button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
 button.primary:hover{background:#1d4ed8}
+button.sm{padding:3px 8px;font-size:10px}
 button.danger{color:var(--danger);border-color:var(--danger)}
 button.danger:hover{background:#fef2f2}
 .btn-row{display:flex;gap:6px;flex-wrap:wrap}
-select,input[type=number]{width:100%;padding:6px 8px;font-size:12px;border:1px solid var(--border);border-radius:6px;background:var(--panel);color:var(--text);margin-top:4px}
+select,input[type=number],input[type=text]{width:100%;padding:6px 8px;font-size:12px;border:1px solid var(--border);border-radius:6px;background:var(--panel);color:var(--text);margin-top:4px}
 label{font-size:12px;font-weight:500;display:block;margin-top:8px}
 label:first-child{margin-top:0}
 #drop-zone{border:2px dashed var(--border);border-radius:8px;padding:14px 12px;text-align:center;font-size:12px;color:var(--muted);cursor:pointer;transition:border-color .2s,background .2s;margin-bottom:8px}
@@ -31,18 +33,32 @@ label:first-child{margin-top:0}
 #drop-zone input{display:none}
 #map-container{flex:1;position:relative}
 #map{width:100%;height:100%}
-.layer-row{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:12px}
+.layer-row{display:flex;align-items:center;gap:6px;padding:4px 0;font-size:12px}
 .layer-row input[type=checkbox]{margin:0;cursor:pointer}
 .layer-swatch{width:14px;height:14px;border-radius:3px;border:1px solid rgba(0,0,0,.15);flex-shrink:0}
 .layer-label{flex:1;cursor:pointer;user-select:none}
+.layer-meta{display:flex;align-items:center;gap:4px}
 .layer-count{font-size:10px;color:var(--muted)}
+.layer-dl{font-size:10px;color:var(--accent);cursor:pointer;text-decoration:underline;padding:0;border:none;background:none}
+.layer-dl:hover{color:#1d4ed8}
 #comparison{max-height:180px;overflow-y:auto}
 #comparison table{width:100%;border-collapse:collapse;font-size:11px}
 #comparison th,#comparison td{text-align:left;padding:4px 6px;border-bottom:1px solid var(--border)}
 #comparison th{font-weight:600;position:sticky;top:0;background:var(--panel)}
 #status{position:fixed;bottom:16px;left:calc(var(--sidebar) + 16px);background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:8px 14px;font-size:12px;box-shadow:0 2px 8px rgba(0,0,0,.08);z-index:1100;display:none}
 .measure-info{font-size:12px;color:var(--accent);margin-top:6px;min-height:18px}
-.swap-hint{font-size:11px;color:var(--muted);line-height:1.4;margin-top:6px;padding:8px;background:#f0f4ff;border-radius:6px}
+.help-box{font-size:11px;color:var(--text);line-height:1.5;padding:10px;background:#f8fafc;border:1px solid var(--border);border-radius:6px}
+.help-box strong{font-weight:600}
+.help-box ol{margin:6px 0 0 16px;padding:0}
+.help-box li{margin:3px 0}
+.help-box code{font-size:10px;background:#e8ecf0;padding:1px 4px;border-radius:3px}
+.template-box{font-size:10px;font-family:SFMono-Regular,Menlo,monospace;background:#1a1a2e;color:#e2e8f0;padding:10px;border-radius:6px;white-space:pre;overflow-x:auto;line-height:1.5;margin-top:6px}
+.template-box .k{color:#7dd3fc}
+.template-box .s{color:#86efac}
+.template-box .c{color:#6b7280}
+.search-row{display:flex;gap:6px}
+.search-row input{flex:1;margin-top:0}
+.search-row button{flex-shrink:0;margin-top:0}
 @media(max-width:768px){
   body{flex-direction:column}
   #sidebar{width:100%;min-width:100%;height:auto;max-height:45vh;border-right:none;border-bottom:1px solid var(--border)}
@@ -54,27 +70,62 @@ label:first-child{margin-top:0}
 <body>
 <div id="sidebar">
   <h1>ARCH7476 Site Explorer</h1>
-  <div class="subtitle">HKU campus-area GIS teaching sample</div>
+  <div class="subtitle">Spatial evidence tool &mdash; starts with HKU sample data</div>
+
+  <div class="section">
+    <div class="section-title">Go to a Location</div>
+    <div class="section-desc">Jump to any city or address to start investigating a different area.</div>
+    <div class="search-row">
+      <input type="text" id="search-input" placeholder="e.g. Kai Tak, Hong Kong" onkeydown="if(event.key==='Enter')goToLocation()">
+      <button class="primary" onclick="goToLocation()">Go</button>
+    </div>
+  </div>
 
   <div class="section">
     <div class="section-title">Layers</div>
+    <div class="section-desc">Each layer is one GeoJSON file. Click <em>dl</em> to download a layer and see its structure.</div>
     <div id="layer-list"></div>
   </div>
 
   <div class="section">
-    <div class="section-title">Your Data</div>
+    <div class="section-title">Add Your Own Data</div>
     <div id="drop-zone" role="button" tabindex="0">
       Drop a GeoJSON file here<br>or click to browse
-      <input type="file" id="file-input" accept=".geojson,.json">
+      <input type="file" id="file-input" accept=".geojson,.json" multiple>
     </div>
     <div class="btn-row">
       <button class="danger" onclick="clearUserLayers()">Clear My Layers</button>
-      <button onclick="resetToDefaults()">Reset All</button>
+      <button onclick="resetToDefaults()">Reset to HKU</button>
     </div>
-    <div class="swap-hint">
-      Swap in your own sites: prepare a GeoJSON with the same structure as the sample layers.
-      The buffer + measure tools work on any loaded data.
+  </div>
+
+  <div class="section">
+    <div class="section-title">How to Investigate a Different Site</div>
+    <div class="help-box">
+      <strong>Each layer = one .geojson file.</strong> To study your own site:
+      <ol>
+        <li>Click <em>dl</em> on a sample layer to download it</li>
+        <li>Open it in any text editor &mdash; it is plain JSON</li>
+        <li>Change the coordinates to your site (use <a href="https://geojson.io" target="_blank" style="color:var(--accent)">geojson.io</a> to draw polygons and copy the output)</li>
+        <li>Save as <code>.geojson</code> and drag it back here</li>
+      </ol>
+      <strong>Or export from QGIS / ArcGIS:</strong> any GeoJSON in WGS84 (EPSG:4326) works.
     </div>
+    <div class="template-box"><span class="c">// minimal site GeoJSON &mdash; copy and edit</span>
+{
+  <span class="k">"type"</span>: <span class="s">"FeatureCollection"</span>,
+  <span class="k">"features"</span>: [{
+    <span class="k">"type"</span>: <span class="s">"Feature"</span>,
+    <span class="k">"properties"</span>: {
+      <span class="k">"name"</span>: <span class="s">"My Site A"</span>,
+      <span class="k">"use"</span>: <span class="s">"vacant lot"</span>
+    },
+    <span class="k">"geometry"</span>: {
+      <span class="k">"type"</span>: <span class="s">"Polygon"</span>,
+      <span class="k">"coordinates"</span>: [[[lng,lat], ...]]
+    }
+  }]
+}</div>
   </div>
 
   <div class="section">
@@ -105,7 +156,7 @@ label:first-child{margin-top:0}
 
   <div class="section">
     <div class="section-title">Export</div>
-    <button onclick="exportGeoJSON()">Download All as GeoJSON</button>
+    <button onclick="exportGeoJSON()">Download All Visible as GeoJSON</button>
   </div>
 </div>
 
@@ -124,10 +175,28 @@ const baseMaps = {
 baseMaps['Street'].addTo(map);
 L.control.layers(baseMaps,null,{position:'topright',collapsed:true}).addTo(map);
 
+// --- Location search via Nominatim ---
+function goToLocation(){
+  const q = document.getElementById('search-input').value.trim();
+  if(!q){ showStatus('Type a place name or address', 3000); return; }
+  showStatus('Searching...', 0);
+  fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&q=' + encodeURIComponent(q))
+    .then(r => r.json())
+    .then(results => {
+      if(!results.length){ showStatus('Location not found — try a different name', 4000); return; }
+      const r = results[0];
+      const lat = parseFloat(r.lat), lng = parseFloat(r.lon);
+      map.setView([lat, lng], 15);
+      showStatus(`Moved to ${r.display_name.split(',').slice(0,2).join(',')}`, 3000);
+    })
+    .catch(() => showStatus('Search failed — check your connection', 4000));
+}
+
 // --- Built-in HKU teaching layers ---
 const LAYERS = [
   {
     id: 'candidate_sites', name: 'Candidate Sites', color: '#2563eb', fillOpacity: 0.30, builtin: true,
+    desc: '3 polygons — potential intervention sites near HKU',
     data: {"type":"FeatureCollection","features":[
       {"type":"Feature","properties":{"site_id":"A","current_use":"HKU station forecourt edge","note":"Teaching sample polygon near HKU Station; not an official parcel."},"geometry":{"type":"Polygon","coordinates":[[[114.13520,22.28420],[114.13570,22.28420],[114.13570,22.28455],[114.13520,22.28455],[114.13520,22.28420]]]}},
       {"type":"Feature","properties":{"site_id":"B","current_use":"main campus edge","note":"Teaching sample polygon along the campus/Pok Fu Lam Road edge."},"geometry":{"type":"Polygon","coordinates":[[[114.13655,22.28275],[114.13720,22.28275],[114.13720,22.28325],[114.13655,22.28325],[114.13655,22.28275]]]}},
@@ -136,36 +205,40 @@ const LAYERS = [
   },
   {
     id: 'green_spaces', name: 'Green Spaces', color: '#16a34a', fillOpacity: 0.25, builtin: true,
+    desc: '3 polygons — parks and green areas nearby',
     data: {"type":"FeatureCollection","features":[
-      {"type":"Feature","properties":{"green_id":"GR1","name":"campus terrace green","source_note":"approximate teaching polygon"},"geometry":{"type":"Polygon","coordinates":[[[114.13610,22.28342],[114.13720,22.28342],[114.13720,22.28410],[114.13610,22.28410],[114.13610,22.28342]]]}},
-      {"type":"Feature","properties":{"green_id":"GR2","name":"Hill Road pocket green","source_note":"approximate teaching polygon"},"geometry":{"type":"Polygon","coordinates":[[[114.13180,22.28645],[114.13255,22.28645],[114.13255,22.28705],[114.13180,22.28705],[114.13180,22.28645]]]}},
-      {"type":"Feature","properties":{"green_id":"GR3","name":"waterfront park direction","source_note":"approximate teaching polygon outside the immediate campus core"},"geometry":{"type":"Polygon","coordinates":[[[114.13380,22.28870],[114.13620,22.28870],[114.13620,22.28960],[114.13380,22.28960],[114.13380,22.28870]]]}}
+      {"type":"Feature","properties":{"green_id":"GR1","name":"campus terrace green"},"geometry":{"type":"Polygon","coordinates":[[[114.13610,22.28342],[114.13720,22.28342],[114.13720,22.28410],[114.13610,22.28410],[114.13610,22.28342]]]}},
+      {"type":"Feature","properties":{"green_id":"GR2","name":"Hill Road pocket green"},"geometry":{"type":"Polygon","coordinates":[[[114.13180,22.28645],[114.13255,22.28645],[114.13255,22.28705],[114.13180,22.28705],[114.13180,22.28645]]]}},
+      {"type":"Feature","properties":{"green_id":"GR3","name":"waterfront park direction"},"geometry":{"type":"Polygon","coordinates":[[[114.13380,22.28870],[114.13620,22.28870],[114.13620,22.28960],[114.13380,22.28960],[114.13380,22.28870]]]}}
     ]}
   },
   {
     id: 'noise_corridors', name: 'Noise Corridors', color: '#ea580c', fillOpacity: 0.20, builtin: true,
+    desc: '2 polygons — major road noise zones',
     data: {"type":"FeatureCollection","features":[
-      {"type":"Feature","properties":{"corridor_id":"N1","name":"Pok Fu Lam Road corridor","source_note":"approximate teaching polygon"},"geometry":{"type":"Polygon","coordinates":[[[114.13455,22.28355],[114.13825,22.28205],[114.13840,22.28235],[114.13470,22.28385],[114.13455,22.28355]]]}},
-      {"type":"Feature","properties":{"corridor_id":"N2","name":"Queen's Road West corridor","source_note":"approximate teaching polygon"},"geometry":{"type":"Polygon","coordinates":[[[114.13135,22.28740],[114.13655,22.28675],[114.13662,22.28710],[114.13145,22.28776],[114.13135,22.28740]]]}}
+      {"type":"Feature","properties":{"corridor_id":"N1","name":"Pok Fu Lam Road corridor"},"geometry":{"type":"Polygon","coordinates":[[[114.13455,22.28355],[114.13825,22.28205],[114.13840,22.28235],[114.13470,22.28385],[114.13455,22.28355]]]}},
+      {"type":"Feature","properties":{"corridor_id":"N2","name":"Queen's Road West corridor"},"geometry":{"type":"Polygon","coordinates":[[[114.13135,22.28740],[114.13655,22.28675],[114.13662,22.28710],[114.13145,22.28776],[114.13135,22.28740]]]}}
     ]}
   },
   {
     id: 'transit_stops', name: 'Transit Stops', color: '#9333ea', fillOpacity: 1, builtin: true,
+    desc: '5 points — MTR exits, bus stops, tram',
     data: {"type":"FeatureCollection","features":[
-      {"type":"Feature","properties":{"stop_id":"T1","name":"HKU Station Exit A","mode":"MTR","source_note":"approximate teaching coordinate"},"geometry":{"type":"Point","coordinates":[114.13524,22.28444]}},
-      {"type":"Feature","properties":{"stop_id":"T2","name":"HKU Station Exit C","mode":"MTR","source_note":"approximate teaching coordinate"},"geometry":{"type":"Point","coordinates":[114.13632,22.28382]}},
-      {"type":"Feature","properties":{"stop_id":"T3","name":"Pok Fu Lam Road bus stop","mode":"bus","source_note":"approximate teaching coordinate"},"geometry":{"type":"Point","coordinates":[114.13778,22.28252]}},
-      {"type":"Feature","properties":{"stop_id":"T4","name":"Hill Road bus stop","mode":"bus","source_note":"approximate teaching coordinate"},"geometry":{"type":"Point","coordinates":[114.13262,22.28662]}},
-      {"type":"Feature","properties":{"stop_id":"T5","name":"Queen's Road West tram/bus edge","mode":"tram/bus","source_note":"approximate teaching coordinate"},"geometry":{"type":"Point","coordinates":[114.13220,22.28780]}}
+      {"type":"Feature","properties":{"stop_id":"T1","name":"HKU Station Exit A","mode":"MTR"},"geometry":{"type":"Point","coordinates":[114.13524,22.28444]}},
+      {"type":"Feature","properties":{"stop_id":"T2","name":"HKU Station Exit C","mode":"MTR"},"geometry":{"type":"Point","coordinates":[114.13632,22.28382]}},
+      {"type":"Feature","properties":{"stop_id":"T3","name":"Pok Fu Lam Road bus stop","mode":"bus"},"geometry":{"type":"Point","coordinates":[114.13778,22.28252]}},
+      {"type":"Feature","properties":{"stop_id":"T4","name":"Hill Road bus stop","mode":"bus"},"geometry":{"type":"Point","coordinates":[114.13262,22.28662]}},
+      {"type":"Feature","properties":{"stop_id":"T5","name":"Queen's Road West tram/bus edge","mode":"tram/bus"},"geometry":{"type":"Point","coordinates":[114.13220,22.28780]}}
     ]}
   },
   {
     id: 'grocery_points', name: 'Grocery / Food', color: '#ca8a04', fillOpacity: 1, builtin: true,
+    desc: '4 points — convenience stores, wet market, supermarket',
     data: {"type":"FeatureCollection","features":[
-      {"type":"Feature","properties":{"shop_id":"G1","name":"synthetic convenience store","synthetic":true},"geometry":{"type":"Point","coordinates":[114.13505,22.28495]}},
-      {"type":"Feature","properties":{"shop_id":"G2","name":"synthetic wet-market edge","synthetic":true},"geometry":{"type":"Point","coordinates":[114.13272,22.28690]}},
-      {"type":"Feature","properties":{"shop_id":"G3","name":"synthetic small supermarket","synthetic":true},"geometry":{"type":"Point","coordinates":[114.13740,22.28220]}},
-      {"type":"Feature","properties":{"shop_id":"G4","name":"synthetic campus food shop","synthetic":true},"geometry":{"type":"Point","coordinates":[114.13602,22.28332]}}
+      {"type":"Feature","properties":{"shop_id":"G1","name":"convenience store"},"geometry":{"type":"Point","coordinates":[114.13505,22.28495]}},
+      {"type":"Feature","properties":{"shop_id":"G2","name":"wet-market edge"},"geometry":{"type":"Point","coordinates":[114.13272,22.28690]}},
+      {"type":"Feature","properties":{"shop_id":"G3","name":"small supermarket"},"geometry":{"type":"Point","coordinates":[114.13740,22.28220]}},
+      {"type":"Feature","properties":{"shop_id":"G4","name":"campus food shop"},"geometry":{"type":"Point","coordinates":[114.13602,22.28332]}}
     ]}
   }
 ];
@@ -188,11 +261,24 @@ function showStatus(msg, duration){
 function makePopup(props){
   let html = '<div style="font-size:13px;max-width:240px">';
   for(const [k,v] of Object.entries(props)){
-    if(k === 'source_note' || k === 'synthetic') continue;
     html += `<strong>${k}:</strong> ${v}<br>`;
   }
   html += '</div>';
   return html;
+}
+
+function downloadLayerGeoJSON(layerId){
+  const ls = layerState[layerId];
+  if(!ls) return;
+  const json = JSON.stringify(ls.def.data, null, 2);
+  const blob = new Blob([json], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = ls.def.id + '.geojson';
+  document.body.appendChild(a); a.click();
+  document.body.removeChild(a); URL.revokeObjectURL(url);
+  showStatus(`Downloaded ${ls.def.name} — open in a text editor to see the format`, 4000);
 }
 
 function addLayerToMap(layerDef){
@@ -201,28 +287,17 @@ function addLayerToMap(layerDef){
 
   const leafletLayer = L.geoJSON(layerDef.data, {
     style: () => ({
-      color: layerDef.color,
-      weight: 2,
-      fillColor: layerDef.color,
-      fillOpacity: layerDef.fillOpacity
+      color: layerDef.color, weight: 2,
+      fillColor: layerDef.color, fillOpacity: layerDef.fillOpacity
     }),
     pointToLayer: (f, ll) => {
-      if(isPoint){
-        return L.circleMarker(ll, {
-          radius: 7, color: '#fff', weight: 2,
-          fillColor: layerDef.color, fillOpacity: 1
-        });
-      }
-      return L.circleMarker(ll, {radius: 7});
+      if(isPoint) return L.circleMarker(ll, {radius:7, color:'#fff', weight:2, fillColor:layerDef.color, fillOpacity:1});
+      return L.circleMarker(ll, {radius:7});
     },
     onEachFeature: (f, layer) => { layer.bindPopup(makePopup(f.properties)); }
   });
 
-  layerState[layerDef.id] = {
-    def: layerDef,
-    leaflet: leafletLayer,
-    visible: true
-  };
+  layerState[layerDef.id] = { def: layerDef, leaflet: leafletLayer, visible: true };
   leafletLayer.addTo(map);
 }
 
@@ -236,32 +311,48 @@ function buildLayerList(){
   function addRow(ls){
     const row = document.createElement('div');
     row.className = 'layer-row';
+
     const cb = document.createElement('input');
-    cb.type = 'checkbox';
-    cb.checked = ls.visible;
+    cb.type = 'checkbox'; cb.checked = ls.visible;
     cb.addEventListener('change', () => {
       ls.visible = cb.checked;
-      if(cb.checked) ls.leaflet.addTo(map);
-      else map.removeLayer(ls.leaflet);
+      if(cb.checked) ls.leaflet.addTo(map); else map.removeLayer(ls.leaflet);
+      updateBufferSelect(); buildComparison();
     });
+
     const swatch = document.createElement('div');
     swatch.className = 'layer-swatch';
     swatch.style.background = ls.def.color;
+
     const label = document.createElement('span');
     label.className = 'layer-label';
     label.textContent = ls.def.name;
+    if(ls.def.desc) label.title = ls.def.desc;
     label.addEventListener('click', () => { cb.checked = !cb.checked; cb.dispatchEvent(new Event('change')); });
+
+    const meta = document.createElement('span');
+    meta.className = 'layer-meta';
+
     const count = document.createElement('span');
     count.className = 'layer-count';
     count.textContent = ls.def.data.features.length;
-    row.append(cb, swatch, label, count);
+    meta.appendChild(count);
+
+    const dl = document.createElement('button');
+    dl.className = 'layer-dl';
+    dl.textContent = 'dl';
+    dl.title = `Download ${ls.def.name} as .geojson`;
+    dl.addEventListener('click', e => { e.stopPropagation(); downloadLayerGeoJSON(ls.def.id); });
+    meta.appendChild(dl);
+
+    row.append(cb, swatch, label, meta);
     list.appendChild(row);
   }
 
   if(builtins.length){
     const hdr = document.createElement('div');
     hdr.style.cssText = 'font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px';
-    hdr.textContent = 'Base map layers (HKU sample)';
+    hdr.textContent = 'Sample layers (HKU campus area)';
     list.appendChild(hdr);
     builtins.forEach(addRow);
   }
@@ -293,15 +384,15 @@ function updateBufferSelect(){
 
 function buildComparison(){
   const div = document.getElementById('comparison');
-  const sitesLayer = layerState['candidate_sites'];
-  if(!sitesLayer || !sitesLayer.visible){
-    div.innerHTML = '<em style="font-size:12px;color:var(--muted)">Enable "Candidate Sites" to compare</em>';
+  const visible = Object.values(layerState).filter(ls => ls.visible && !ls.def.id.startsWith('user_'));
+  if(!visible.length){
+    div.innerHTML = '<em style="font-size:12px;color:var(--muted)">No layers visible</em>';
     return;
   }
-  const features = sitesLayer.def.data.features;
-  let html = '<table><thead><tr><th>Site</th><th>Use</th></tr></thead><tbody>';
-  features.forEach(f => {
-    html += `<tr><td><strong>${f.properties.site_id}</strong></td><td>${f.properties.current_use}</td></tr>`;
+  let html = '<table><thead><tr><th>Layer</th><th>Features</th><th>Type</th></tr></thead><tbody>';
+  visible.forEach(ls => {
+    const geomType = ls.def.data.features[0]?.geometry?.type || '—';
+    html += `<tr><td style="color:${ls.def.color};font-weight:600">${ls.def.name}</td><td>${ls.def.data.features.length}</td><td>${geomType}</td></tr>`;
   });
   html += '</tbody></table>';
   div.innerHTML = html;
@@ -321,7 +412,7 @@ function initAll(){
     }
   });
   if(allBounds.isValid()) map.fitBounds(allBounds, {padding:[30,30]});
-  showStatus('Loaded 5 HKU teaching layers — toggle them in the sidebar', 4000);
+  showStatus('5 sample layers loaded — use "Go to a Location" to investigate a different area', 5000);
 }
 
 // --- User data loading ---
@@ -333,10 +424,9 @@ dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classL
 dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
 dropZone.addEventListener('drop', e => {
   e.preventDefault(); dropZone.classList.remove('drag-over');
-  const file = e.dataTransfer.files[0];
-  if(file) readFile(file);
+  Array.from(e.dataTransfer.files).forEach(readFile);
 });
-fileInput.addEventListener('change', e => { if(e.target.files[0]) readFile(e.target.files[0]); });
+fileInput.addEventListener('change', e => { Array.from(e.target.files).forEach(readFile); });
 
 const USER_COLORS = ['#dc2626','#0891b2','#be185d','#65a30d','#7c3aed','#d97706'];
 
@@ -354,6 +444,7 @@ function readFile(file){
       addLayerToMap(layerDef);
       buildLayerList();
       updateBufferSelect();
+      buildComparison();
       const b = layerState[id].leaflet.getBounds();
       if(b.isValid()) map.fitBounds(b, {padding:[30,30]});
       showStatus(`Added "${layerName}" — ${geojson.features.length} feature(s)`, 3000);
@@ -366,25 +457,18 @@ function readFile(file){
 
 function clearUserLayers(){
   const toRemove = Object.keys(layerState).filter(k => !layerState[k].def.builtin);
-  toRemove.forEach(k => {
-    map.removeLayer(layerState[k].leaflet);
-    delete layerState[k];
-  });
-  buildLayerList();
-  updateBufferSelect();
-  showStatus('User layers cleared', 2000);
+  toRemove.forEach(k => { map.removeLayer(layerState[k].leaflet); delete layerState[k]; });
+  buildLayerList(); updateBufferSelect(); buildComparison();
+  showStatus('Your layers cleared — sample layers still visible', 2000);
 }
 
 function resetToDefaults(){
-  Object.keys(layerState).forEach(k => {
-    map.removeLayer(layerState[k].leaflet);
-    delete layerState[k];
-  });
-  bufferLayer.clearLayers();
-  measureMarkers.clearLayers();
+  Object.keys(layerState).forEach(k => { map.removeLayer(layerState[k].leaflet); delete layerState[k]; });
+  bufferLayer.clearLayers(); measureMarkers.clearLayers();
   if(measureLine){ map.removeLayer(measureLine); measureLine = null; }
   measurePoints = [];
   document.getElementById('measure-info').textContent = '';
+  document.getElementById('search-input').value = '';
   userLayerCounter = 0;
   initAll();
 }
@@ -395,17 +479,13 @@ function addBuffer(){
   const dist = parseFloat(document.getElementById('buffer-dist').value);
   if(!val){ showStatus('Select a feature first', 3000); return; }
   if(isNaN(dist) || dist <= 0){ showStatus('Enter a valid distance', 3000); return; }
-
   const [layerId, idx] = val.split(':');
   const feature = layerState[layerId].def.data.features[parseInt(idx)];
   const buffered = turf.buffer(feature, dist/1000, {units:'kilometers'});
-  const name = feature.properties.name || feature.properties.site_id ||
-               feature.properties.stop_id || `Feature`;
-
+  const name = feature.properties.name || feature.properties.site_id || feature.properties.stop_id || 'Feature';
   L.geoJSON(buffered, {
     style: {color:'#9333ea', weight:2, dashArray:'6 4', fillColor:'#9333ea', fillOpacity:0.08}
   }).bindPopup(`<strong>${dist}m buffer</strong><br>around ${name}`).addTo(bufferLayer);
-
   showStatus(`${dist}m buffer around ${name}`, 3000);
 }
 
@@ -414,16 +494,13 @@ function toggleMeasure(){
   measureMode = !measureMode;
   const btn = document.getElementById('measure-btn');
   if(measureMode){
-    btn.textContent = 'Stop Measuring';
-    btn.classList.add('danger');
-    measurePoints = [];
-    measureMarkers.clearLayers();
+    btn.textContent = 'Stop Measuring'; btn.classList.add('danger');
+    measurePoints = []; measureMarkers.clearLayers();
     if(measureLine){ map.removeLayer(measureLine); measureLine = null; }
     document.getElementById('measure-info').textContent = 'Click two points on the map';
     map.getContainer().style.cursor = 'crosshair';
   } else {
-    btn.textContent = 'Start Measuring';
-    btn.classList.remove('danger');
+    btn.textContent = 'Start Measuring'; btn.classList.remove('danger');
     map.getContainer().style.cursor = '';
   }
 }
@@ -437,13 +514,11 @@ map.on('click', e => {
     const fmt = d < 1000 ? `${Math.round(d)} m` : `${(d/1000).toFixed(2)} km`;
     document.getElementById('measure-info').textContent = `Distance: ${fmt}`;
     measureLine = L.polyline([
-      [measurePoints[0][1], measurePoints[0][0]],
-      [measurePoints[1][1], measurePoints[1][0]]
+      [measurePoints[0][1], measurePoints[0][0]], [measurePoints[1][1], measurePoints[1][0]]
     ], {color:'#dc2626', weight:2, dashArray:'4 4'}).addTo(map);
     measureMode = false;
-    const btn = document.getElementById('measure-btn');
-    btn.textContent = 'Start Measuring';
-    btn.classList.remove('danger');
+    document.getElementById('measure-btn').textContent = 'Start Measuring';
+    document.getElementById('measure-btn').classList.remove('danger');
     map.getContainer().style.cursor = '';
   }
 });
@@ -458,11 +533,9 @@ function exportGeoJSON(){
   const fc = {type:'FeatureCollection', features: allFeatures};
   const blob = new Blob([JSON.stringify(fc, null, 2)], {type:'application/json'});
   const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url; a.download = 'arch7476-export.geojson';
-  document.body.appendChild(a); a.click();
-  document.body.removeChild(a); URL.revokeObjectURL(url);
-  showStatus('GeoJSON downloaded', 3000);
+  const a = document.createElement('a'); a.href = url; a.download = 'arch7476-export.geojson';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
+  showStatus('Exported all visible layers as one GeoJSON', 3000);
 }
 
 // --- Boot ---
