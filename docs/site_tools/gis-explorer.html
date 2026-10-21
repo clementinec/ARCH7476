@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARCH7476 Site Explorer</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha512-h9FcoyWjHcOcmEVkxOfTLnmZFWIH0iZhZT1H2TbOq55xssQGEJHEaIm+PgoUaZhRvQTNTluNOEfb1ZRy6D3bA==" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" integrity="sha512-puJW3E/qXDqYp9IfhAI54BJEaWIfloJ7JWs7OeD5i6ruC9JZL1gERT1wjfQbst1BrA0q3k/W8FBo+WNUH2Qdg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/6.5.0/turf.min.js" integrity="sha512-Q7HOppxoH0L2M7hreVoFCtUZimR2YaY0fBewIYzkCgmNtgOOZ5IgMKYsFHoGIsPnELm2EW4cyuIaia5Mfpz4A==" crossorigin="anonymous"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--sidebar:320px;--bg:#f7f8fa;--panel:#fff;--border:#dde1e6;--text:#1a1a1a;--muted:#6b7280;--accent:#2563eb;--accent-light:#dbeafe;--danger:#ef4444;--success:#16a34a}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);height:100vh;overflow:hidden;display:flex}
+#sidebar{width:var(--sidebar);min-width:var(--sidebar);height:100vh;background:var(--panel);border-right:1px solid var(--border);display:flex;flex-direction:column;overflow-y:auto;z-index:1000}
+#sidebar h1{font-size:15px;font-weight:700;padding:16px 16px 4px;letter-spacing:.3px}
+#sidebar .subtitle{font-size:11px;color:var(--muted);padding:0 16px 12px;border-bottom:1px solid var(--border)}
+.section{padding:12px 16px;border-bottom:1px solid var(--border)}
+.section-title{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:8px}
+button{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;font-size:12px;font-weight:500;border:1px solid var(--border);border-radius:6px;background:var(--panel);color:var(--text);cursor:pointer;transition:background .15s}
+button:hover{background:var(--bg)}
+button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+button.primary:hover{background:#1d4ed8}
+button.danger{color:var(--danger);border-color:var(--danger)}
+button.danger:hover{background:#fef2f2}
+.btn-row{display:flex;gap:6px;flex-wrap:wrap}
+select,input[type=number]{width:100%;padding:6px 8px;font-size:12px;border:1px solid var(--border);border-radius:6px;background:var(--panel);color:var(--text);margin-top:4px}
+label{font-size:12px;font-weight:500;display:block;margin-top:8px}
+label:first-child{margin-top:0}
+#drop-zone{border:2px dashed var(--border);border-radius:8px;padding:20px 12px;text-align:center;font-size:12px;color:var(--muted);cursor:pointer;transition:border-color .2s,background .2s;margin-bottom:8px}
+#drop-zone.drag-over{border-color:var(--accent);background:var(--accent-light)}
+#drop-zone input{display:none}
+#map-container{flex:1;position:relative}
+#map{width:100%;height:100%}
+#comparison{max-height:200px;overflow-y:auto}
+#comparison table{width:100%;border-collapse:collapse;font-size:11px}
+#comparison th,#comparison td{text-align:left;padding:4px 6px;border-bottom:1px solid var(--border)}
+#comparison th{font-weight:600;position:sticky;top:0;background:var(--panel)}
+#comparison tr.best{background:#f0fdf4}
+#status{position:fixed;bottom:16px;left:calc(var(--sidebar) + 16px);background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:8px 14px;font-size:12px;box-shadow:0 2px 8px rgba(0,0,0,.08);z-index:1100;display:none}
+.measure-info{font-size:12px;color:var(--accent);margin-top:6px;min-height:18px}
+@media(max-width:768px){
+  body{flex-direction:column}
+  #sidebar{width:100%;min-width:100%;height:auto;max-height:45vh;border-right:none;border-bottom:1px solid var(--border)}
+  #map-container{flex:1;min-height:55vh}
+  #status{left:16px;bottom:8px}
+}
+</style>
+</head>
+<body>
+<div id="sidebar">
+  <h1>ARCH7476 Site Explorer</h1>
+  <div class="subtitle">Browser-based GIS for evidence workflows</div>
+
+  <div class="section">
+    <div class="section-title">Load Data</div>
+    <div id="drop-zone" role="button" tabindex="0">
+      Drop a GeoJSON file here<br>or click to browse
+      <input type="file" id="file-input" accept=".geojson,.json">
+    </div>
+    <div class="btn-row">
+      <button class="primary" onclick="loadSampleData()">Load Sample Sites</button>
+      <button class="danger" onclick="clearAll()">Clear All</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Visualize</div>
+    <label>Color by
+      <select id="color-by"><option value="">— load data first —</option></select>
+    </label>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Buffer</div>
+    <label>Feature
+      <select id="buffer-feature"><option value="">— load data first —</option></select>
+    </label>
+    <label>Distance (m)
+      <input type="number" id="buffer-dist" value="400" min="1" max="50000" step="50">
+    </label>
+    <div style="margin-top:8px">
+      <button onclick="addBuffer()">Generate Buffer</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Measure Distance</div>
+    <div class="btn-row">
+      <button id="measure-btn" onclick="toggleMeasure()">Start Measuring</button>
+    </div>
+    <div class="measure-info" id="measure-info"></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Site Comparison</div>
+    <div id="comparison"><em style="font-size:12px;color:var(--muted)">Load data to compare sites</em></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Export</div>
+    <button onclick="exportGeoJSON()">Download GeoJSON</button>
+  </div>
+</div>
+
+<div id="map-container"><div id="map"></div></div>
+<div id="status"></div>
+
+<script>
+const map = L.map('map',{zoomControl:true}).setView([22.32,114.17],12);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+  maxZoom:19,
+  attribution:'&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+let featureCollection = {type:'FeatureCollection',features:[]};
+let dataLayer = null;
+let bufferLayer = L.layerGroup().addTo(map);
+let measureMode = false;
+let measurePoints = [];
+let measureMarkers = L.layerGroup().addTo(map);
+let measureLine = null;
+
+const SAMPLE_DATA = {
+  type:'FeatureCollection',
+  features:[
+    {type:'Feature',properties:{name:'Kai Tak',score:78,transit_access:'high',flood_risk:'medium'},
+     geometry:{type:'Polygon',coordinates:[[[114.2105,22.3290],[114.2205,22.3290],[114.2205,22.3360],[114.2105,22.3360],[114.2105,22.3290]]]}},
+    {type:'Feature',properties:{name:'Kwun Tong Waterfront',score:65,transit_access:'medium',flood_risk:'low'},
+     geometry:{type:'Polygon',coordinates:[[[114.2215,22.3080],[114.2315,22.3080],[114.2315,22.3160],[114.2215,22.3160],[114.2215,22.3080]]]}},
+    {type:'Feature',properties:{name:'Hung Hom Bay',score:72,transit_access:'high',flood_risk:'high'},
+     geometry:{type:'Polygon',coordinates:[[[114.1845,22.3020],[114.1945,22.3020],[114.1945,22.3100],[114.1845,22.3100],[114.1845,22.3020]]]}}
+  ]
+};
+
+const COLORS = ['#2563eb','#16a34a','#ea580c','#9333ea','#dc2626','#0891b2','#ca8a04','#be185d'];
+
+function showStatus(msg, duration){
+  const el = document.getElementById('status');
+  el.textContent = msg;
+  el.style.display = 'block';
+  if(duration) setTimeout(()=> el.style.display='none', duration);
+}
+
+function loadGeoJSON(geojson){
+  featureCollection = geojson;
+  if(dataLayer) map.removeLayer(dataLayer);
+  bufferLayer.clearLayers();
+  renderData();
+  updateControls();
+  buildComparison();
+  const bounds = dataLayer.getBounds();
+  if(bounds.isValid()) map.fitBounds(bounds,{padding:[40,40]});
+  showStatus(`Loaded ${geojson.features.length} feature(s)`, 3000);
+}
+
+function renderData(){
+  const colorBy = document.getElementById('color-by').value;
+  const propVals = {};
+  if(colorBy){
+    featureCollection.features.forEach(f=>{
+      const v = f.properties[colorBy];
+      if(v !== undefined && v !== null) propVals[String(v)] = true;
+    });
+  }
+  const valKeys = Object.keys(propVals);
+
+  dataLayer = L.geoJSON(featureCollection,{
+    style: f => {
+      let color = '#2563eb';
+      if(colorBy && f.properties[colorBy] !== undefined){
+        const v = String(f.properties[colorBy]);
+        const idx = valKeys.indexOf(v);
+        if(idx >= 0) color = COLORS[idx % COLORS.length];
+      }
+      return {color, weight:2, fillColor:color, fillOpacity:0.25};
+    },
+    pointToLayer:(f,ll) => L.circleMarker(ll,{radius:7}),
+    onEachFeature:(f,layer)=>{
+      const props = f.properties;
+      let html = '<div style="font-size:13px;max-width:220px">';
+      for(const [k,v] of Object.entries(props)){
+        html += `<strong>${k}:</strong> ${v}<br>`;
+      }
+      html += '</div>';
+      layer.bindPopup(html);
+    }
+  }).addTo(map);
+}
+
+function updateControls(){
+  const props = new Set();
+  const names = [];
+  featureCollection.features.forEach((f,i)=>{
+    Object.keys(f.properties).forEach(k=>props.add(k));
+    names.push(f.properties.name || f.properties.Name || `Feature ${i+1}`);
+  });
+
+  const colorSel = document.getElementById('color-by');
+  const prev = colorSel.value;
+  colorSel.innerHTML = '<option value="">— none —</option>';
+  [...props].sort().forEach(p=>{
+    const opt = document.createElement('option');
+    opt.value = p; opt.textContent = p;
+    if(p === prev) opt.selected = true;
+    colorSel.appendChild(opt);
+  });
+
+  const bufSel = document.getElementById('buffer-feature');
+  bufSel.innerHTML = '<option value="">— select —</option>';
+  names.forEach((n,i)=>{
+    const opt = document.createElement('option');
+    opt.value = i; opt.textContent = n;
+    bufSel.appendChild(opt);
+  });
+}
+
+function buildComparison(){
+  const div = document.getElementById('comparison');
+  const features = featureCollection.features;
+  if(!features.length){ div.innerHTML = '<em style="font-size:12px;color:var(--muted)">No data loaded</em>'; return; }
+
+  const allProps = new Set();
+  features.forEach(f=>Object.keys(f.properties).forEach(k=>allProps.add(k)));
+  const cols = [...allProps].sort();
+
+  let bestIdx = -1;
+  let bestScore = -Infinity;
+  features.forEach((f,i)=>{
+    const s = parseFloat(f.properties.score);
+    if(!isNaN(s) && s > bestScore){ bestScore = s; bestIdx = i; }
+  });
+
+  let html = '<table><thead><tr>';
+  cols.forEach(c=> html += `<th>${c}</th>`);
+  html += '</tr></thead><tbody>';
+  features.forEach((f,i)=>{
+    html += `<tr class="${i===bestIdx?'best':''}">`;
+    cols.forEach(c=> html += `<td>${f.properties[c] ?? ''}</td>`);
+    html += '</tr>';
+  });
+  html += '</tbody></table>';
+  div.innerHTML = html;
+}
+
+document.getElementById('color-by').addEventListener('change',()=>{
+  if(!featureCollection.features.length) return;
+  if(dataLayer) map.removeLayer(dataLayer);
+  renderData();
+});
+
+// File loading
+const dropZone = document.getElementById('drop-zone');
+const fileInput = document.getElementById('file-input');
+
+dropZone.addEventListener('click',()=>fileInput.click());
+dropZone.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' ') fileInput.click(); });
+
+dropZone.addEventListener('dragover',e=>{ e.preventDefault(); dropZone.classList.add('drag-over'); });
+dropZone.addEventListener('dragleave',()=> dropZone.classList.remove('drag-over'));
+dropZone.addEventListener('drop',e=>{
+  e.preventDefault();
+  dropZone.classList.remove('drag-over');
+  const file = e.dataTransfer.files[0];
+  if(file) readFile(file);
+});
+
+fileInput.addEventListener('change',e=>{
+  const file = e.target.files[0];
+  if(file) readFile(file);
+});
+
+function readFile(file){
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      const geojson = JSON.parse(e.target.result);
+      if(geojson.type === 'FeatureCollection'){
+        loadGeoJSON(geojson);
+      } else if(geojson.type === 'Feature'){
+        loadGeoJSON({type:'FeatureCollection',features:[geojson]});
+      } else {
+        showStatus('Not a valid GeoJSON file',4000);
+      }
+    } catch(err){
+      showStatus('Error parsing file: '+err.message,4000);
+    }
+  };
+  reader.readAsText(file);
+}
+
+function loadSampleData(){
+  loadGeoJSON(JSON.parse(JSON.stringify(SAMPLE_DATA)));
+}
+
+function clearAll(){
+  featureCollection = {type:'FeatureCollection',features:[]};
+  if(dataLayer){ map.removeLayer(dataLayer); dataLayer=null; }
+  bufferLayer.clearLayers();
+  measureMarkers.clearLayers();
+  if(measureLine){ map.removeLayer(measureLine); measureLine=null; }
+  measurePoints = [];
+  document.getElementById('measure-info').textContent = '';
+  document.getElementById('color-by').innerHTML = '<option value="">— load data first —</option>';
+  document.getElementById('buffer-feature').innerHTML = '<option value="">— load data first —</option>';
+  document.getElementById('comparison').innerHTML = '<em style="font-size:12px;color:var(--muted)">Load data to compare sites</em>';
+  map.setView([22.32,114.17],12);
+  showStatus('Cleared',2000);
+}
+
+// Buffer
+function addBuffer(){
+  const idx = document.getElementById('buffer-feature').value;
+  const dist = parseFloat(document.getElementById('buffer-dist').value);
+  if(idx === ''){ showStatus('Select a feature first',3000); return; }
+  if(isNaN(dist) || dist <= 0){ showStatus('Enter a valid distance',3000); return; }
+
+  const feature = featureCollection.features[parseInt(idx)];
+  const buffered = turf.buffer(feature, dist/1000, {units:'kilometers'});
+
+  const name = feature.properties.name || feature.properties.Name || `Feature ${parseInt(idx)+1}`;
+  L.geoJSON(buffered,{
+    style:{color:'#9333ea',weight:2,dashArray:'6 4',fillColor:'#9333ea',fillOpacity:0.10}
+  }).bindPopup(`<strong>${dist}m buffer</strong><br>around ${name}`).addTo(bufferLayer);
+
+  buffered.properties = {type:'buffer',source:name,distance_m:dist};
+  featureCollection.features.push(buffered);
+  showStatus(`${dist}m buffer added around ${name}`,3000);
+}
+
+// Measure
+function toggleMeasure(){
+  measureMode = !measureMode;
+  const btn = document.getElementById('measure-btn');
+  if(measureMode){
+    btn.textContent = 'Stop Measuring';
+    btn.classList.add('danger');
+    measurePoints = [];
+    measureMarkers.clearLayers();
+    if(measureLine){ map.removeLayer(measureLine); measureLine=null; }
+    document.getElementById('measure-info').textContent = 'Click two points on the map';
+    map.getContainer().style.cursor = 'crosshair';
+  } else {
+    btn.textContent = 'Start Measuring';
+    btn.classList.remove('danger');
+    map.getContainer().style.cursor = '';
+  }
+}
+
+map.on('click',e=>{
+  if(!measureMode) return;
+  measurePoints.push([e.latlng.lng, e.latlng.lat]);
+  L.circleMarker(e.latlng,{radius:5,color:'#dc2626',fillColor:'#dc2626',fillOpacity:1}).addTo(measureMarkers);
+
+  if(measurePoints.length === 2){
+    const d = turf.distance(turf.point(measurePoints[0]),turf.point(measurePoints[1]),{units:'meters'});
+    const formatted = d < 1000 ? `${Math.round(d)} m` : `${(d/1000).toFixed(2)} km`;
+    document.getElementById('measure-info').textContent = `Distance: ${formatted}`;
+
+    measureLine = L.polyline([
+      [measurePoints[0][1],measurePoints[0][0]],
+      [measurePoints[1][1],measurePoints[1][0]]
+    ],{color:'#dc2626',weight:2,dashArray:'4 4'}).addTo(map);
+
+    measureMode = false;
+    const btn = document.getElementById('measure-btn');
+    btn.textContent = 'Start Measuring';
+    btn.classList.remove('danger');
+    map.getContainer().style.cursor = '';
+  }
+});
+
+// Export
+function exportGeoJSON(){
+  if(!featureCollection.features.length){ showStatus('Nothing to export',3000); return; }
+  const json = JSON.stringify(featureCollection,null,2);
+  const blob = new Blob([json],{type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'arch7476-export.geojson';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showStatus('GeoJSON downloaded',3000);
+}
+</script>
+</body>
+</html>

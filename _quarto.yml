@@ -28,6 +28,8 @@ project:
     - "starter_kits/gh-parametric-variants/outputs/*.csv"
     - "starter_kits/ai-assisted-workflow/examples/*.py"
     - "starter_kits/ai-assisted-workflow/examples/*.md"
+    - "site_tools/gis-explorer.html"
+    - "site_tools/portfolio-template.html"
   render:
     - index.qmd
     - schedule.qmd
@@ -64,6 +66,7 @@ project:
     - starter_kits/gis-spatial-comparison/README.md
     - starter_kits/python-notebook-analysis/README.md
     - starter_kits/spreadsheet-thresholds/README.md
+    - weeks/github-pages-guide.qmd
     - lectures/ml-to-python-overview.qmd
     - lectures/ml-primer-12-principles.qmd
     - notebooks/01_python_ml_basics.ipynb
@@ -132,6 +135,14 @@ website:
             href: assignments/assignment-03.qmd
           - text: "A4: Workflow Package"
             href: assignments/assignment-04.qmd
+      - section: "Tools & Guides"
+        contents:
+          - text: "GIS Site Explorer"
+            href: site_tools/gis-explorer.html
+          - text: "Portfolio Template"
+            href: site_tools/portfolio-template.html
+          - text: "GitHub Pages Guide"
+            href: weeks/github-pages-guide.qmd
       - section: "Resources"
         contents:
           - text: "Resource Hub"
