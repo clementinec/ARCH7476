@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>A2 Worked Example: Facade Shading for a Campus Reading Room – ARCH7476: Evidence-Based Generative Design</title>
+<title>A2 Worked Example: External Shading Devices for Offices in Hot Climates – ARCH7476: Evidence-Based Generative Design</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -164,7 +164,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../examples/a2-example-hidden-drivers.html">Examples</a></li><li class="breadcrumb-item"><a href="../examples/a2-example-facade-study.html">A2: Facade Shading (design simulation)</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../examples/a2-example-hidden-drivers.html">Examples</a></li><li class="breadcrumb-item"><a href="../examples/a2-example-facade-study.html">A2: Shading Devices (design simulation)</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -355,7 +355,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../examples/a2-example-facade-study.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">A2: Facade Shading (design simulation)</span></a>
+ <span class="menu-text">A2: Shading Devices (design simulation)</span></a>
   </div>
 </li>
       </ul>
@@ -459,10 +459,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../examples/a2-example-hidden-drivers.html">Examples</a></li><li class="breadcrumb-item"><a href="../examples/a2-example-facade-study.html">A2: Facade Shading (design simulation)</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../examples/a2-example-hidden-drivers.html">Examples</a></li><li class="breadcrumb-item"><a href="../examples/a2-example-facade-study.html">A2: Shading Devices (design simulation)</a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">A2 Worked Example: Facade Shading for a Campus Reading Room</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
-<p class="subtitle lead">When the best design depends on which metric you trust</p>
+<div class="quarto-title-block"><div><h1 class="title">A2 Worked Example: External Shading Devices for Offices in Hot Climates</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">When the device that saves the most energy cuts too much daylight</p>
 </div>
 
 
@@ -489,7 +489,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This is a worked A2 skeleton based on a common architectural design problem: choosing a facade shading strategy using daylight and energy simulation. Unlike the <a href="../examples/a2-example-hidden-drivers.html">Hidden Drivers example</a>, this one starts from a spatial design decision — the kind of question a studio project would produce. The structure is the same; the evidence is different.</p>
+<p>This is a worked A2 skeleton based on a real research project — <em>“Impact of external shading devices on thermal and daylighting performance of offices in hot climate regions”</em> (Freewan, <em>Solar Energy</em>, 2014). <a href="https://doi.org/10.1016/j.solener.2014.01.009">DOI: 10.1016/j.solener.2014.01.009</a></p>
+<p>It starts from a spatial design decision — which shading device to fix to a south-facing office facade — and uses both field measurement and simulation to compare three options. See also the <a href="../examples/a2-example-hidden-drivers.html">companion data-analysis example</a> for a non-spatial version of the same A2 structure.</p>
 </div>
 </div>
 <hr>
@@ -497,7 +498,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="decision-recap">1. Decision Recap</h2>
 <section id="decision" class="level3">
 <h3 class="anchored" data-anchor-id="decision">Decision</h3>
-<p>Which shading strategy for the south-facing reading room of a proposed campus library produces acceptable daylight while keeping cooling loads within the project’s energy budget?</p>
+<p>Which fixed external shading device for south-facing offices in a hot-arid climate (Amman, Jordan) best balances cooling-load reduction with maintained task-level daylight?</p>
 </section>
 <section id="alternatives" class="level3">
 <h3 class="anchored" data-anchor-id="alternatives">Alternatives</h3>
@@ -514,32 +515,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td>A — Fixed horizontal louvers</td>
-<td>600 mm deep aluminum louvers at 450 mm spacing, fixed angle</td>
+<td>A — Vertical fins</td>
+<td>External vertical aluminium fins projecting from the facade</td>
 </tr>
 <tr class="even">
-<td>B — Perforated metal screen</td>
-<td>40% perforation ratio, flush-mounted, no moving parts</td>
+<td>B — Diagonal fins</td>
+<td>External fins mounted at an oblique angle to the facade plane</td>
 </tr>
 <tr class="odd">
-<td>C — Automated roller blinds</td>
-<td>Interior fabric blinds activated by exterior illuminance sensor at 25 klux</td>
+<td>C — Egg-crate device</td>
+<td>Combined horizontal-and-vertical grid (egg-crate geometry) projecting from the facade</td>
 </tr>
 </tbody>
 </table>
-<p>All three options share the same glazing (double low-e, SHGC 0.27) and the same floor plan. Only the shading device changes.</p>
+<p>All three options were tested on identical south-facing offices at the Jordan University of Science and Technology (JUST) campus. Only the shading device changed; the glazing, room dimensions, orientation, and occupancy were held constant. A fourth condition — the unshaded base case — served as the control.</p>
 </section>
 <section id="audience" class="level3">
 <h3 class="anchored" data-anchor-id="audience">Audience</h3>
-<p>Design team and client sustainability consultant, who will use the comparison to select one system for the schematic design package.</p>
+<p>Architects and building-services engineers selecting a fixed shading system for south-facing office facades in hot-arid climates, where cooling dominates the energy budget but daylight must remain sufficient for desk work.</p>
 </section>
 <section id="why-evidence-matters" class="level3">
 <h3 class="anchored" data-anchor-id="why-evidence-matters">Why evidence matters</h3>
-<p>The team’s instinct favours Option A (louvers — familiar, low maintenance). But the reading room faces due south in a subtropical climate (Hong Kong), and the consultant has flagged that fixed louvers may over-shade the space in winter, reducing useful daylight below the 300 lux threshold for reading. The choice cannot rest on instinct alone because the three options perform differently on daylight, glare, and cooling — and the ranking changes depending on which metric leads.</p>
+<p>The instinct choice is often the simplest device — vertical fins are familiar, easy to fabricate, and widely used. But Freewan’s study showed that vertical fins allowed large sun patches to penetrate the office in the afternoon, providing the least cooling relief of the three options (~7% cooling-load reduction vs.&nbsp;base case). The egg-crate device delivered the highest cooling savings (~17%) but cut desk-level illuminance to roughly 200 lux — below the 300 lux task threshold. The ranking of the three options reverses depending on whether you lead with energy or daylight. That tension cannot be resolved by instinct; it requires a controlled comparison.</p>
 </section>
 <section id="what-action-the-evidence-should-support" class="level3">
 <h3 class="anchored" data-anchor-id="what-action-the-evidence-should-support">What action the evidence should support</h3>
-<p>Select one shading system for the schematic design submission, with documented evidence showing the trade-off between daylight, glare, and energy for each option.</p>
+<p>Select one fixed shading device for the facade, with documented evidence showing the trade-off between cooling-load reduction and maintained daylight for each option.</p>
 <hr>
 </section>
 </section>
@@ -568,68 +569,59 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td>Climate file (Hong Kong, IWEC/TMY)</td>
+<td>Field measurements (JUST campus, Amman)</td>
 <td>Measurement (hourly)</td>
-<td><strong>Primary</strong> — drives both daylight and energy models</td>
-<td>Public (EnergyPlus weather data)</td>
-<td>High (validated station data)</td>
-<td>Represents a typical year, not extremes; see sAMY research for climate-file sensitivity</td>
-<td>Simulation input</td>
+<td><strong>Primary</strong> — air temperature, illuminance, sun-patch area in three identical offices</td>
+<td>From publication</td>
+<td>High (calibrated instruments in real offices)</td>
+<td>Limited measurement period; does not cover full annual cycle</td>
+<td>Calibration and validation of simulation</td>
 </tr>
 <tr class="even">
-<td>Rhino 3D model of reading room</td>
-<td>Design geometry</td>
-<td><strong>Primary</strong> — defines the space being tested</td>
-<td>Project file</td>
-<td>High (own geometry)</td>
-<td>Model simplifications (furniture, partitions omitted) may affect daylight distribution</td>
-<td>Simulation input</td>
+<td>Simulation model (thermal + daylight)</td>
+<td>Model</td>
+<td><strong>Primary</strong> — extends field data to annual predictions</td>
+<td>Reproduced from publication</td>
+<td>Medium — depends on model assumptions (material properties, schedules)</td>
+<td>Simplified geometry; furniture and partitions omitted</td>
+<td>Annual performance estimates</td>
 </tr>
 <tr class="odd">
-<td>Glazing spec (manufacturer data)</td>
-<td>Product data</td>
-<td>High — SHGC, VLT, U-value</td>
-<td>From spec sheet</td>
-<td>High</td>
-<td>Lab-measured, may differ from installed performance</td>
-<td>Material input</td>
+<td>Climate file (Amman, Jordan)</td>
+<td>Measurement (hourly)</td>
+<td>High — drives both thermal and daylight models</td>
+<td>Public (EnergyPlus weather data)</td>
+<td>High (TMY station data)</td>
+<td>Typical year, not extremes</td>
+<td>Simulation input</td>
 </tr>
 <tr class="even">
-<td>Shading device geometry / properties</td>
+<td>Shading device geometry</td>
 <td>Design variable</td>
 <td><strong>Critical</strong> — the thing being compared</td>
-<td>Defined by design team</td>
-<td>Medium — optical properties estimated from manufacturer ranges</td>
-<td>Screen perforation ratio is nominal; real transmission varies with angle</td>
+<td>Defined in publication</td>
+<td>High (built and measured)</td>
+<td>Optical properties at oblique incidence angles are approximated</td>
 <td>The controlled variable</td>
 </tr>
 <tr class="odd">
-<td>ASHRAE 90.1 / BEAM Plus</td>
+<td>Jordanian building energy code / ASHRAE 55</td>
 <td>Standard</td>
-<td>Medium — sets energy budget threshold</td>
+<td>Medium — sets acceptable indoor temperature and illuminance ranges</td>
 <td>Public</td>
 <td>High (code requirement)</td>
-<td>Prescriptive path; actual performance may differ</td>
-<td>Threshold for cooling load acceptability</td>
-</tr>
-<tr class="even">
-<td>LEED v4 / IES LM-83</td>
-<td>Standard</td>
-<td>Medium — defines daylight metrics (sDA, ASE)</td>
-<td>Public</td>
-<td>High</td>
-<td>Metrics are annual summaries — do not capture seasonal variation</td>
-<td>Threshold for daylight acceptability</td>
+<td>Prescriptive; actual occupant expectations may differ</td>
+<td>Threshold for acceptability</td>
 </tr>
 </tbody>
 </table>
 <section id="what-is-missing-from-this-evidence-map" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-missing-from-this-evidence-map">What is missing from this evidence map</h3>
 <ul>
-<li>Post-occupancy data from a comparable reading room with each shading type</li>
-<li>Occupant preference data (do readers actually prefer 300 lux or more?)</li>
-<li>Maintenance and cost data (relevant to the final decision, but outside the simulation scope)</li>
-<li>Glare assessment from an occupant position (DGP, not just illuminance)</li>
+<li>Annual climate-based daylight metrics (sDA, ASE) — the study reports point-in-time illuminance, not annual spatial metrics</li>
+<li>Occupant satisfaction surveys (do workers notice the daylight difference?)</li>
+<li>Cost and maintenance data for each shading type</li>
+<li>Glare probability (DGP) from occupant viewpoints</li>
 </ul>
 <hr>
 </section>
@@ -638,7 +630,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="tool-translation-matrix">3. Tool Translation Matrix</h2>
 <section id="design-decision-restated" class="level3">
 <h3 class="anchored" data-anchor-id="design-decision-restated">Design Decision (restated)</h3>
-<p>Which shading option delivers adequate daylight (sDA ≥ 55% at 300 lux) and acceptable cooling load (≤ EUI threshold) for a south-facing reading room in Hong Kong?</p>
+<p>Which shading device delivers the greatest cooling-load reduction while keeping desk-level illuminance above the 300 lux task threshold for a south-facing office in a hot-arid climate?</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 14%">
@@ -666,35 +658,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>Rhino geometry + EPW file + shading geometry</td>
 <td>Shading option (A, B, C)</td>
 <td>Annual daylight simulation (Radiance via Honeybee) + energy simulation (EnergyPlus via Honeybee) for each option</td>
-<td>sDA, ASE, annual cooling load (kWh), DGP at reading positions</td>
-<td>Whether occupants will prefer the result; whether the model captures real construction tolerances</td>
+<td>sDA, ASE, annual cooling load (kWh/m²), illuminance maps</td>
+<td>Whether occupants will prefer the result; whether construction tolerances match the model</td>
 <td><strong>high</strong></td>
 </tr>
 <tr class="even">
-<td>BIM/BEM (Revit + Insight)</td>
-<td>Revit model + built-in weather</td>
-<td>Shading type (generic families)</td>
-<td>Whole-building energy model; Insight lighting analysis</td>
-<td>EUI, daylight factor (simplified)</td>
-<td>Radiance-level daylight accuracy; annual climate-based metrics like sDA</td>
-<td>medium</td>
+<td>BIM/BEM (DesignBuilder / IES-VE)</td>
+<td>3D model + weather file + shading components</td>
+<td>Shading type</td>
+<td>Coupled thermal-daylight simulation</td>
+<td>Indoor temperature, cooling load, daylight factor</td>
+<td>Radiance-level spatial daylight resolution; climate-based annual metrics</td>
+<td><strong>high</strong> (this is what Freewan used)</td>
 </tr>
 <tr class="odd">
 <td>Python / notebook</td>
-<td>Simulation output CSVs from Ladybug or EnergyPlus</td>
+<td>Simulation output CSVs</td>
 <td>Post-processing and visualization</td>
-<td>Statistical comparison, threshold testing, sensitivity analysis</td>
-<td>Charts, ranked tables, sensitivity ranges</td>
+<td>Statistical comparison, threshold testing, sensitivity plots</td>
+<td>Ranked tables, charts, sensitivity ranges</td>
 <td>Cannot run the simulation itself — depends on upstream tool</td>
 <td>medium (post-processing)</td>
 </tr>
 <tr class="even">
 <td>Spreadsheet / low-code</td>
-<td>Manufacturer data + rule-of-thumb shading coefficients</td>
+<td>Manufacturer shading coefficients + rule-of-thumb methods</td>
 <td>Shading coefficient lookup</td>
-<td>Estimate cooling load reduction and daylight factor using simplified methods</td>
-<td>Rough ranking by shading coefficient and VLT</td>
-<td>No spatial resolution; cannot capture seasonal geometry effects</td>
+<td>Estimate cooling-load reduction using simplified solar heat-gain method</td>
+<td>Rough ranking by shading coefficient</td>
+<td>No spatial daylight resolution; cannot capture geometry-dependent seasonal effects</td>
 <td>low</td>
 </tr>
 <tr class="odd">
@@ -711,9 +703,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>Geometry description + prompt</td>
 <td>Shading description</td>
 <td>Generate parametric definitions or analysis scripts</td>
-<td>Accelerated setup, but outputs require verification</td>
-<td>Cannot validate physical accuracy of the simulation</td>
-<td>medium (support role)</td>
+<td>Accelerated setup; outputs require verification</td>
+<td>Cannot validate physical accuracy of simulation</td>
+<td>medium (support)</td>
 </tr>
 </tbody>
 </table>
@@ -721,16 +713,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="route-selection" class="level3">
 <h3 class="anchored" data-anchor-id="route-selection">Route Selection</h3>
 <blockquote class="blockquote">
-<p>I am choosing <strong>Grasshopper + Ladybug/Honeybee</strong> because my decision depends on comparing spatially resolved annual daylight and cooling load for three shading options on the same geometry, and the minimum useful output is sDA, ASE, and annual cooling EUI for each option.</p>
+<p>I am choosing <strong>Grasshopper + Ladybug/Honeybee</strong> (or alternatively a BIM/BEM tool like IES-VE or DesignBuilder, as Freewan used) because my decision depends on comparing cooling loads and daylight levels for three shading devices on the same facade geometry, and the minimum useful output is the cooling-load reduction percentage and desk-level illuminance for each option.</p>
 </blockquote>
 </section>
 <section id="risk-check" class="level3">
 <h3 class="anchored" data-anchor-id="risk-check">Risk Check</h3>
 <ul>
-<li><strong>Most fragile input:</strong> Optical properties of the perforated screen (Option B) — manufacturer data gives a single perforation ratio, but angular transmittance is not specified</li>
-<li><strong>Likely setup problem:</strong> Getting Honeybee’s Radiance material definitions to match the shading products; ensuring the EnergyPlus shading schedule for Option C (automated blinds) triggers correctly</li>
-<li><strong>What I can cut:</strong> Drop DGP (glare probability) and report only sDA/ASE — glare requires a separate point-in-time simulation for each view direction</li>
-<li><strong>What I need help with:</strong> Validating that the Radiance material for the perforated screen is a reasonable approximation</li>
+<li><strong>Most fragile input:</strong> Optical properties of the diagonal fins at oblique angles — manufacturer data gives properties at normal incidence, but shading performance depends on solar angle throughout the day</li>
+<li><strong>Likely setup problem:</strong> Matching the Radiance material definition to the physical aluminium surface; ensuring the simulation grid captures the desk plane accurately</li>
+<li><strong>What I can cut:</strong> Drop the annual sDA/ASE calculation and report point-in-time illuminance at peak cooling hours — this reduces simulation time significantly</li>
+<li><strong>What I need help with:</strong> Validating that the simulation model reproduces the field-measured illuminance values before trusting the annual extrapolation</li>
 </ul>
 <hr>
 </section>
@@ -739,28 +731,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="primary-workflow-selection">4. Primary Workflow Selection</h2>
 <pre><code>┌─────────────────────────────────────────────────┐
 │  INPUT                                           │
-│  Rhino model (reading room, south facade)        │
-│  + Hong Kong EPW climate file                    │
-│  + glazing spec + 3 shading definitions          │
+│  Office geometry (south-facing, JUST campus)     │
+│  + Amman EPW climate file                        │
+│  + glazing spec + 3 shading device definitions   │
+│  + base case (no shading)                        │
 └──────────────────┬──────────────────────────────┘
                    │
           ┌────────┼────────┐
           ▼        ▼        ▼
        ┌─────┐ ┌─────┐ ┌─────┐
        │Opt A│ │Opt B│ │Opt C│
-       │Louv.│ │Perf.│ │Blind│
+       │Vert.│ │Diag.│ │Egg- │
+       │fins │ │fins │ │crate│
        └──┬──┘ └──┬──┘ └──┬──┘
           │       │       │
           ▼       ▼       ▼
 ┌─────────────────────────────────────────────────┐
 │  SIMULATE (same settings for each option)        │
-│  1. Annual daylight (Radiance via Honeybee)      │
-│     → sDA (% of floor area ≥ 300 lux for ≥ 50%  │
-│       of occupied hours)                         │
-│     → ASE (% of floor area &gt; 1000 lux for       │
-│       &gt; 250 hours — glare risk proxy)            │
-│  2. Annual energy (EnergyPlus via Honeybee)      │
-│     → Cooling EUI (kWh/m² for the reading room)  │
+│  1. Thermal: indoor air temperature + cooling    │
+│     load for each shading configuration          │
+│  2. Daylight: desk-level illuminance at          │
+│     multiple time steps                          │
+│  (Freewan used coupled thermal-daylight          │
+│   simulation validated against field data)       │
 └──────────────────┬──────────────────────────────┘
                    │
                    ▼
@@ -768,44 +761,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 │  COMPARE                                         │
 │                                                  │
 │  Thresholds (stated in advance):                 │
-│  • sDA ≥ 55% at 300 lux       (LEED minimum)    │
-│  • ASE ≤ 10%                   (glare limit)     │
-│  • Cooling EUI ≤ project budget (from consultant)│
+│  • Cooling-load reduction ≥ 10% vs. base case    │
+│  • Desk illuminance ≥ 300 lux (task level)       │
+│  • Indoor air temp. reduction vs. base case      │
 │                                                  │
-│  If all three options pass all thresholds:        │
-│  rank by sDA (daylight wins ties).               │
-│  If some options fail a threshold: eliminate.     │
-│  If ranking changes when threshold shifts ±10%:  │
-│  flag as threshold-sensitive.                    │
-└──────────────────┬──────────────────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────────────────┐
-│  OUTPUT                                          │
-│  Summary table:                                  │
-│  ┌────────┬───────┬───────┬──────────┬────────┐  │
-│  │ Option │ sDA % │ ASE % │ Cool EUI │ Pass?  │  │
-│  ├────────┼───────┼───────┼──────────┼────────┤  │
-│  │ A Louv │  48*  │   4   │   62     │ FAIL   │  │
-│  │ B Perf │  61   │   8   │   68*    │ CHECK  │  │
-│  │ C Blind│  58   │   5   │   59     │ PASS   │  │
-│  └────────┴───────┴───────┴──────────┴────────┘  │
-│  * = below/above threshold                       │
+│  Freewan's actual results:                       │
+│  ┌────────┬──────────┬───────────┬────────────┐  │
+│  │ Option │ Cool. Δ  │ Illum.    │ Trade-off  │  │
+│  ├────────┼──────────┼───────────┼────────────┤  │
+│  │ A Vert │  ~7%     │ ~350 lux  │ Most light │  │
+│  │        │          │           │ least save │  │
+│  │ B Diag │  ~12%    │ ~150 lux* │ Morning    │  │
+│  │        │          │           │ too dark   │  │
+│  │ C Egg  │  ~17%    │ ~200 lux* │ Best cool  │  │
+│  │        │          │           │ but dim    │  │
+│  └────────┴──────────┴───────────┴────────────┘  │
+│  * = below 300 lux task threshold                │
 │                                                  │
-│  Plausible outcome: the instinct favourite (A)   │
-│  fails on daylight. The "best" option depends    │
-│  on whether you weight daylight or energy.       │
-│  That tension IS the evidence contribution.      │
+│  Key finding: diagonal fins and egg-crate        │
+│  outperformed vertical fins overall, but          │
+│  BOTH reduced illuminance below the task          │
+│  threshold. The "best" device depends on          │
+│  whether cooling or daylight leads.              │
+│                                                  │
+│  Seasonal nuance: the egg-crate allowed solar    │
+│  penetration in winter (when heating is wanted)  │
+│  while blocking it in summer — a geometry         │
+│  advantage the other devices did not share.       │
 └─────────────────────────────────────────────────┘</code></pre>
 <section id="workflow-definition" class="level3">
 <h3 class="anchored" data-anchor-id="workflow-definition">Workflow definition</h3>
 <ul>
-<li><strong>Input files:</strong> Rhino <code>.3dm</code> with reading-room geometry; Hong Kong <code>.epw</code>; three Grasshopper shading component definitions</li>
-<li><strong>Variable:</strong> Shading option (A / B / C) — the only thing that changes between runs</li>
-<li><strong>Steps:</strong> Model setup → apply each shading option → run annual daylight (Radiance) → run annual energy (EnergyPlus) → extract sDA, ASE, cooling EUI → compare against thresholds → rank</li>
-<li><strong>Expected output:</strong> Comparison table with pass/fail per metric; spatial daylight maps for each option; recommendation with stated trade-off</li>
-<li><strong>Threshold:</strong> sDA ≥ 55%, ASE ≤ 10%, cooling EUI ≤ project target</li>
-<li><strong>Likely failure point:</strong> Option B’s angular transmittance — if the Radiance material is wrong, the daylight results for the perforated screen are unreliable</li>
+<li><strong>Input files:</strong> 3D model of the south-facing office; Amman <code>.epw</code> climate file; three shading-device geometry definitions; base case (no shading)</li>
+<li><strong>Variable:</strong> Shading device type (A / B / C) — the only thing that changes between runs</li>
+<li><strong>Steps:</strong> Model setup → apply each shading device → run coupled thermal-daylight simulation → extract cooling load, indoor air temperature, and desk illuminance → compare against thresholds → rank</li>
+<li><strong>Expected output:</strong> Comparison table with cooling-load reduction (%) and illuminance (lux) per option; recommendation stating the trade-off</li>
+<li><strong>Threshold:</strong> Cooling reduction ≥ 10% vs.&nbsp;base case; illuminance ≥ 300 lux at desk level</li>
+<li><strong>Likely failure point:</strong> Diagonal fin angle — the oblique geometry makes angular solar transmittance hard to model accurately</li>
 </ul>
 <hr>
 </section>
@@ -814,41 +806,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="a4-branch-declaration">5. A4 Branch Declaration</h2>
 <section id="route" class="level3">
 <h3 class="anchored" data-anchor-id="route">Route</h3>
-<p><strong>Route B: Live Studio Application</strong> — this facade decision is part of an active studio project, and the simulation results will feed directly into the schematic design submission.</p>
+<p><strong>Route A: Retrospective Redesign</strong> — this example dissects a published study to show how the A2 structure maps onto a real facade decision. A student using Route B would apply the same comparison structure to their own studio project.</p>
 </section>
 <section id="decision-1" class="level3">
 <h3 class="anchored" data-anchor-id="decision-1">Decision</h3>
 <ul>
-<li><strong>Project:</strong> Campus library — south-facing reading room</li>
-<li><strong>Decision:</strong> Which shading system to specify for the south facade</li>
-<li><strong>Alternatives:</strong> Fixed louvers (A), perforated screen (B), automated blinds (C)</li>
-<li><strong>Why this matters:</strong> The choice affects both the occupant experience (daylight, glare) and the project’s energy budget — and the ranking depends on which metric leads</li>
+<li><strong>Project:</strong> South-facing office building, JUST campus, Amman, Jordan</li>
+<li><strong>Decision:</strong> Which fixed external shading device to specify for the south facade</li>
+<li><strong>Alternatives:</strong> Vertical fins (A), diagonal fins (B), egg-crate device (C)</li>
+<li><strong>Why this matters:</strong> The device that saves the most cooling energy (egg-crate, ~17%) drops illuminance below the task threshold (~200 lux), while the device that preserves the most daylight (vertical fins, ~350 lux) saves the least energy (~7%). The ranking reverses depending on which metric leads.</li>
 </ul>
 </section>
 <section id="workflow" class="level3">
 <h3 class="anchored" data-anchor-id="workflow">Workflow</h3>
 <ul>
-<li><strong>Primary route:</strong> Grasshopper + Ladybug/Honeybee</li>
-<li><strong>Input files:</strong> Rhino model, EPW, shading definitions</li>
-<li><strong>What varies:</strong> Shading device (single controlled variable)</li>
-<li><strong>Minimum scenarios:</strong> 3 (one per option) + 1 sensitivity run (threshold ± 10%)</li>
-<li><strong>Output:</strong> sDA, ASE, cooling EUI per option; comparison table; spatial daylight maps</li>
-<li><strong>Threshold:</strong> sDA ≥ 55%, ASE ≤ 10%, cooling EUI ≤ project target</li>
+<li><strong>Primary route:</strong> Coupled thermal-daylight simulation (IES-VE, DesignBuilder, or Grasshopper + Honeybee)</li>
+<li><strong>Input files:</strong> Office geometry, EPW, shading device definitions</li>
+<li><strong>What varies:</strong> Shading device type (single controlled variable)</li>
+<li><strong>Minimum scenarios:</strong> 3 shading options + 1 base case (no shading)</li>
+<li><strong>Output:</strong> Cooling-load reduction (%), indoor air temperature reduction, desk-level illuminance per option</li>
+<li><strong>Threshold:</strong> Cooling reduction ≥ 10%; illuminance ≥ 300 lux</li>
 </ul>
 </section>
 <section id="feasibility" class="level3">
 <h3 class="anchored" data-anchor-id="feasibility">Feasibility</h3>
 <ul>
-<li><strong>What must exist by A3:</strong> Working Honeybee model producing sDA and cooling EUI for at least Options A and C (the two with well-defined material properties)</li>
-<li><strong>Most likely failure:</strong> Perforated screen material definition (Option B) — if angular transmittance cannot be modeled reliably, drop B and compare A vs.&nbsp;C only</li>
-<li><strong>Backup route:</strong> If Honeybee simulation is too slow or fails to converge, fall back to Climate Studio or a simplified Radiance-only daylight comparison without the energy model</li>
-<li><strong>What can be simplified:</strong> Drop the spatial daylight maps and report only the aggregate sDA percentage</li>
+<li><strong>What must exist by A3:</strong> Working simulation model producing cooling load and illuminance for at least Options A and C (the two geometric extremes)</li>
+<li><strong>Most likely failure:</strong> Angular transmittance of the diagonal fins (Option B) — if the oblique geometry cannot be modeled accurately, compare A vs.&nbsp;C only</li>
+<li><strong>Backup route:</strong> If coupled simulation is too slow, run daylight-only (Radiance) and use a simplified cooling estimate from shading coefficients</li>
+<li><strong>What can be simplified:</strong> Report illuminance at one desk position instead of a full spatial grid</li>
 </ul>
 </section>
 <section id="branch-statement" class="level3">
 <h3 class="anchored" data-anchor-id="branch-statement">Branch Statement</h3>
 <blockquote class="blockquote">
-<p>I will use Route B (Live Studio Application) to test which shading strategy meets both daylight and cooling thresholds for the reading room, through a controlled comparison of three facade options simulated under identical conditions, because the design decision depends on a trade-off the team cannot resolve by instinct — the option that wins on daylight may lose on energy — and the minimum useful output is a comparison table showing sDA, ASE, and cooling EUI for each option against pre-stated thresholds.</p>
+<p>I will use Route A (Retrospective Redesign) to examine how Freewan’s comparison of three fixed shading devices reveals a cooling-vs-daylight trade-off that the design team cannot resolve by instinct, through a controlled comparison of three facade options tested under identical conditions on the same office geometry, because the option that wins on energy loses on daylight and the minimum useful output is a comparison table showing cooling-load reduction and desk-level illuminance for each device against pre-stated thresholds.</p>
 </blockquote>
 <hr>
 </section>
@@ -857,11 +849,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="why-this-example-works-as-an-a2">Why This Example Works as an A2</h2>
 <ol type="1">
 <li><p><strong>The decision is spatial and architectural.</strong> It starts from a facade, a room, an orientation — not a dataset. The simulation serves the design question.</p></li>
-<li><p><strong>The ranking is not obvious.</strong> Option A (the team’s instinct) may fail on daylight. Option B scores well on daylight but costs more energy. Option C passes everything but requires maintenance and control logic. The evidence does not point to one winner — it reveals a trade-off the team must negotiate.</p></li>
-<li><p><strong>The controlled variable is clear.</strong> Only the shading device changes. Geometry, climate file, glazing, occupancy schedule, and simulation settings are held fixed.</p></li>
-<li><p><strong>Thresholds are stated before the simulation runs.</strong> sDA ≥ 55%, ASE ≤ 10%, cooling EUI ≤ target. This prevents the post-hoc narrative of “well, 47% is close enough.”</p></li>
-<li><p><strong>The weakest link is named.</strong> The perforated screen’s angular transmittance is flagged as the most fragile input, with a stated backup plan (drop Option B).</p></li>
-<li><p><strong>The tool choice follows the question.</strong> Grasshopper + Honeybee is chosen because the question requires spatially resolved annual daylight <em>and</em> annual energy on the same geometry — not because it is the most advanced option. The spreadsheet route is explicitly rejected because it cannot capture seasonal shading geometry effects.</p></li>
+<li><p><strong>The ranking is not obvious.</strong> Vertical fins preserve the most daylight but deliver the weakest cooling relief. Egg-crate saves the most energy but drops illuminance below the task threshold. Diagonal fins fall between on energy but produce the darkest mornings. No single winner exists — the evidence reveals a trade-off the design team must negotiate.</p></li>
+<li><p><strong>The controlled variable is clear.</strong> Only the shading device changes. Room geometry, glazing, orientation, climate file, and occupancy are held constant across all four conditions (three devices plus base case).</p></li>
+<li><p><strong>Thresholds are stated before the simulation runs.</strong> Cooling reduction ≥ 10%; illuminance ≥ 300 lux. This prevents the post-hoc narrative of “well, 200 lux is close enough.”</p></li>
+<li><p><strong>The weakest link is named.</strong> The diagonal fin’s angular transmittance is flagged as the most fragile input, with a stated backup plan (drop Option B and compare A vs.&nbsp;C only).</p></li>
+<li><p><strong>The tool choice follows the question.</strong> Coupled thermal-daylight simulation is chosen because the question requires both cooling-load and illuminance data on the same geometry — not because it is the most advanced option. A spreadsheet approach is explicitly rejected because it cannot capture how shading geometry interacts with seasonal solar angles.</p></li>
+<li><p><strong>It is grounded in a real publication.</strong> Every number in the comparison table comes from Freewan’s peer-reviewed study. Students can read the full paper to see how the analysis was done and verify the findings independently.</p></li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -873,7 +866,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You do not need a facade study. Replace the shading options with any set of design alternatives you are comparing:</p>
+<p>You do not need a shading study. Replace the three devices with any set of design alternatives you are comparing:</p>
 <ul>
 <li><strong>Three site layouts</strong> → GIS or Grasshopper, evaluated by walkability, noise exposure, or solar access</li>
 <li><strong>Three structural systems</strong> → BIM/BEM, evaluated by embodied carbon, span, or construction sequence</li>
@@ -1354,8 +1347,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "A2 Worked Example: Facade Shading for a Campus Reading Room"</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "When the best design depends on which metric you trust"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "A2 Worked Example: External Shading Devices for Offices in Hot Climates"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "When the device that saves the most energy cuts too much daylight"</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
@@ -1365,230 +1358,233 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## About This Example</span></span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>This is a worked A2 skeleton based on a common architectural design problem: choosing a facade shading strategy using daylight and energy simulation. Unlike the <span class="co">[</span><span class="ot">Hidden Drivers example</span><span class="co">](a2-example-hidden-drivers.qmd)</span>, this one starts from a spatial design decision — the kind of question a studio project would produce. The structure is the same; the evidence is different.</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>This is a worked A2 skeleton based on a real research project — *"Impact of external shading devices on thermal and daylighting performance of offices in hot climate regions"* (Freewan, *Solar Energy*, 2014). <span class="co">[</span><span class="ot">DOI: 10.1016/j.solener.2014.01.009</span><span class="co">](https://doi.org/10.1016/j.solener.2014.01.009)</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>It starts from a spatial design decision — which shading device to fix to a south-facing office facade — and uses both field measurement and simulation to compare three options. See also the <span class="co">[</span><span class="ot">companion data-analysis example</span><span class="co">](a2-example-hidden-drivers.qmd)</span> for a non-spatial version of the same A2 structure.</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="fu">## 1. Decision Recap</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="fu">### Decision</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## 1. Decision Recap</span></span>
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>Which shading strategy for the south-facing reading room of a proposed campus library produces acceptable daylight while keeping cooling loads within the project's energy budget?</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="fu">### Decision</span></span>
 <span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="fu">### Alternatives</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>Which fixed external shading device for south-facing offices in a hot-arid climate (Amman, Jordan) best balances cooling-load reduction with maintained task-level daylight?</span>
 <span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Option <span class="pp">|</span> Description <span class="pp">|</span></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A — Fixed horizontal louvers <span class="pp">|</span> 600 mm deep aluminum louvers at 450 mm spacing, fixed angle <span class="pp">|</span></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> B — Perforated metal screen <span class="pp">|</span> 40% perforation ratio, flush-mounted, no moving parts <span class="pp">|</span></span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> C — Automated roller blinds <span class="pp">|</span> Interior fabric blinds activated by exterior illuminance sensor at 25 klux <span class="pp">|</span></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>All three options share the same glazing (double low-e, SHGC 0.27) and the same floor plan. Only the shading device changes.</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="fu">### Alternatives</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Option <span class="pp">|</span> Description <span class="pp">|</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A — Vertical fins <span class="pp">|</span> External vertical aluminium fins projecting from the facade <span class="pp">|</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> B — Diagonal fins <span class="pp">|</span> External fins mounted at an oblique angle to the facade plane <span class="pp">|</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> C — Egg-crate device <span class="pp">|</span> Combined horizontal-and-vertical grid (egg-crate geometry) projecting from the facade <span class="pp">|</span></span>
 <span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="fu">### Audience</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>All three options were tested on identical south-facing offices at the Jordan University of Science and Technology (JUST) campus. Only the shading device changed; the glazing, room dimensions, orientation, and occupancy were held constant. A fourth condition — the unshaded base case — served as the control.</span>
 <span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>Design team and client sustainability consultant, who will use the comparison to select one system for the schematic design package.</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="fu">### Audience</span></span>
 <span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="fu">### Why evidence matters</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>Architects and building-services engineers selecting a fixed shading system for south-facing office facades in hot-arid climates, where cooling dominates the energy budget but daylight must remain sufficient for desk work.</span>
 <span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>The team's instinct favours Option A (louvers — familiar, low maintenance). But the reading room faces due south in a subtropical climate (Hong Kong), and the consultant has flagged that fixed louvers may over-shade the space in winter, reducing useful daylight below the 300 lux threshold for reading. The choice cannot rest on instinct alone because the three options perform differently on daylight, glare, and cooling — and the ranking changes depending on which metric leads.</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="fu">### Why evidence matters</span></span>
 <span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="fu">### What action the evidence should support</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>The instinct choice is often the simplest device — vertical fins are familiar, easy to fabricate, and widely used. But Freewan's study showed that vertical fins allowed large sun patches to penetrate the office in the afternoon, providing the least cooling relief of the three options (~7% cooling-load reduction vs. base case). The egg-crate device delivered the highest cooling savings (~17%) but cut desk-level illuminance to roughly 200 lux — below the 300 lux task threshold. The ranking of the three options reverses depending on whether you lead with energy or daylight. That tension cannot be resolved by instinct; it requires a controlled comparison.</span>
 <span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>Select one shading system for the schematic design submission, with documented evidence showing the trade-off between daylight, glare, and energy for each option.</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a><span class="fu">### What action the evidence should support</span></span>
 <span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>Select one fixed shading device for the facade, with documented evidence showing the trade-off between cooling-load reduction and maintained daylight for each option.</span>
 <span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2. Evidence Map</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Source <span class="pp">|</span> Type <span class="pp">|</span> Relevance <span class="pp">|</span> Access <span class="pp">|</span> Confidence <span class="pp">|</span> Limits <span class="pp">|</span> Role in workflow <span class="pp">|</span></span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|---|---|---|</span></span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Climate file (Hong Kong, IWEC/TMY) <span class="pp">|</span> Measurement (hourly) <span class="pp">|</span> **Primary** — drives both daylight and energy models <span class="pp">|</span> Public (EnergyPlus weather data) <span class="pp">|</span> High (validated station data) <span class="pp">|</span> Represents a typical year, not extremes; see sAMY research for climate-file sensitivity <span class="pp">|</span> Simulation input <span class="pp">|</span></span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Rhino 3D model of reading room <span class="pp">|</span> Design geometry <span class="pp">|</span> **Primary** — defines the space being tested <span class="pp">|</span> Project file <span class="pp">|</span> High (own geometry) <span class="pp">|</span> Model simplifications (furniture, partitions omitted) may affect daylight distribution <span class="pp">|</span> Simulation input <span class="pp">|</span></span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Glazing spec (manufacturer data) <span class="pp">|</span> Product data <span class="pp">|</span> High — SHGC, VLT, U-value <span class="pp">|</span> From spec sheet <span class="pp">|</span> High <span class="pp">|</span> Lab-measured, may differ from installed performance <span class="pp">|</span> Material input <span class="pp">|</span></span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Shading device geometry / properties <span class="pp">|</span> Design variable <span class="pp">|</span> **Critical** — the thing being compared <span class="pp">|</span> Defined by design team <span class="pp">|</span> Medium — optical properties estimated from manufacturer ranges <span class="pp">|</span> Screen perforation ratio is nominal; real transmission varies with angle <span class="pp">|</span> The controlled variable <span class="pp">|</span></span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ASHRAE 90.1 / BEAM Plus <span class="pp">|</span> Standard <span class="pp">|</span> Medium — sets energy budget threshold <span class="pp">|</span> Public <span class="pp">|</span> High (code requirement) <span class="pp">|</span> Prescriptive path; actual performance may differ <span class="pp">|</span> Threshold for cooling load acceptability <span class="pp">|</span></span>
-<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> LEED v4 / IES LM-83 <span class="pp">|</span> Standard <span class="pp">|</span> Medium — defines daylight metrics (sDA, ASE) <span class="pp">|</span> Public <span class="pp">|</span> High <span class="pp">|</span> Metrics are annual summaries — do not capture seasonal variation <span class="pp">|</span> Threshold for daylight acceptability <span class="pp">|</span></span>
-<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a><span class="fu">### What is missing from this evidence map</span></span>
-<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Post-occupancy data from a comparable reading room with each shading type</span>
-<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Occupant preference data (do readers actually prefer 300 lux or more?)</span>
-<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Maintenance and cost data (relevant to the final decision, but outside the simulation scope)</span>
-<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Glare assessment from an occupant position (DGP, not just illuminance)</span>
-<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3. Tool Translation Matrix</span></span>
-<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a><span class="fu">### Design Decision (restated)</span></span>
-<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>Which shading option delivers adequate daylight (sDA ≥ 55% at 300 lux) and acceptable cooling load (≤ EUI threshold) for a south-facing reading room in Hong Kong?</span>
-<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Workflow route <span class="pp">|</span> Input <span class="pp">|</span> What varies <span class="pp">|</span> Operation <span class="pp">|</span> Output <span class="pp">|</span> What it cannot answer <span class="pp">|</span> Fit <span class="pp">|</span></span>
-<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|---|---|---|</span></span>
-<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **GH + Ladybug / Honeybee** | Rhino geometry + EPW file + shading geometry | Shading option (A, B, C) | Annual daylight simulation (Radiance via Honeybee) + energy simulation (EnergyPlus via Honeybee) for each option | sDA, ASE, annual cooling load (kWh), DGP at reading positions | Whether occupants will prefer the result; whether the model captures real construction tolerances | **high** <span class="pp">|</span></span>
-<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> BIM/BEM (Revit + Insight) <span class="pp">|</span> Revit model + built-in weather <span class="pp">|</span> Shading type (generic families) <span class="pp">|</span> Whole-building energy model; Insight lighting analysis <span class="pp">|</span> EUI, daylight factor (simplified) <span class="pp">|</span> Radiance-level daylight accuracy; annual climate-based metrics like sDA <span class="pp">|</span> medium <span class="pp">|</span></span>
-<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Python / notebook <span class="pp">|</span> Simulation output CSVs from Ladybug or EnergyPlus <span class="pp">|</span> Post-processing and visualization <span class="pp">|</span> Statistical comparison, threshold testing, sensitivity analysis <span class="pp">|</span> Charts, ranked tables, sensitivity ranges <span class="pp">|</span> Cannot run the simulation itself — depends on upstream tool <span class="pp">|</span> medium (post-processing) <span class="pp">|</span></span>
-<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Spreadsheet / low-code <span class="pp">|</span> Manufacturer data + rule-of-thumb shading coefficients <span class="pp">|</span> Shading coefficient lookup <span class="pp">|</span> Estimate cooling load reduction and daylight factor using simplified methods <span class="pp">|</span> Rough ranking by shading coefficient and VLT <span class="pp">|</span> No spatial resolution; cannot capture seasonal geometry effects <span class="pp">|</span> low <span class="pp">|</span></span>
-<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> GIS / spatial <span class="pp">|</span> Not applicable to a single-room facade question <span class="pp">|</span> — <span class="pp">|</span> — <span class="pp">|</span> — <span class="pp">|</span> — <span class="pp">|</span> **low** <span class="pp">|</span></span>
-<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AI-assisted workflow <span class="pp">|</span> Geometry description + prompt <span class="pp">|</span> Shading description <span class="pp">|</span> Generate parametric definitions or analysis scripts <span class="pp">|</span> Accelerated setup, but outputs require verification <span class="pp">|</span> Cannot validate physical accuracy of the simulation <span class="pp">|</span> medium (support role) <span class="pp">|</span></span>
-<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a><span class="fu">### Route Selection</span></span>
-<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; I am choosing **Grasshopper + Ladybug/Honeybee** because my decision depends on comparing spatially resolved annual daylight and cooling load for three shading options on the same geometry, and the minimum useful output is sDA, ASE, and annual cooling EUI for each option.</span></span>
-<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a><span class="fu">### Risk Check</span></span>
-<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Most fragile input:** Optical properties of the perforated screen (Option B) — manufacturer data gives a single perforation ratio, but angular transmittance is not specified</span>
-<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Likely setup problem:** Getting Honeybee's Radiance material definitions to match the shading products; ensuring the EnergyPlus shading schedule for Option C (automated blinds) triggers correctly</span>
-<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What I can cut:** Drop DGP (glare probability) and report only sDA/ASE — glare requires a separate point-in-time simulation for each view direction</span>
-<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What I need help with:** Validating that the Radiance material for the perforated screen is a reasonable approximation</span>
-<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4. Primary Workflow Selection</span></span>
-<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
-<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a><span class="in">│  INPUT                                           │</span></span>
-<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a><span class="in">│  Rhino model (reading room, south facade)        │</span></span>
-<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a><span class="in">│  + Hong Kong EPW climate file                    │</span></span>
-<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a><span class="in">│  + glazing spec + 3 shading definitions          │</span></span>
-<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a><span class="in">└──────────────────┬──────────────────────────────┘</span></span>
-<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a><span class="in">                   │</span></span>
-<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a><span class="in">          ┌────────┼────────┐</span></span>
-<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a><span class="in">          ▼        ▼        ▼</span></span>
-<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a><span class="in">       ┌─────┐ ┌─────┐ ┌─────┐</span></span>
-<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a><span class="in">       │Opt A│ │Opt B│ │Opt C│</span></span>
-<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a><span class="in">       │Louv.│ │Perf.│ │Blind│</span></span>
-<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a><span class="in">       └──┬──┘ └──┬──┘ └──┬──┘</span></span>
-<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a><span class="in">          │       │       │</span></span>
-<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a><span class="in">          ▼       ▼       ▼</span></span>
-<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
-<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a><span class="in">│  SIMULATE (same settings for each option)        │</span></span>
-<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a><span class="in">│  1. Annual daylight (Radiance via Honeybee)      │</span></span>
-<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a><span class="in">│     → sDA (% of floor area ≥ 300 lux for ≥ 50%  │</span></span>
-<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a><span class="in">│       of occupied hours)                         │</span></span>
-<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a><span class="in">│     → ASE (% of floor area &gt; 1000 lux for       │</span></span>
-<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a><span class="in">│       &gt; 250 hours — glare risk proxy)            │</span></span>
-<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a><span class="in">│  2. Annual energy (EnergyPlus via Honeybee)      │</span></span>
-<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a><span class="in">│     → Cooling EUI (kWh/m² for the reading room)  │</span></span>
-<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a><span class="in">└──────────────────┬──────────────────────────────┘</span></span>
-<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a><span class="in">                   │</span></span>
-<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a><span class="in">                   ▼</span></span>
-<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
-<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a><span class="in">│  COMPARE                                         │</span></span>
-<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a><span class="in">│                                                  │</span></span>
-<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a><span class="in">│  Thresholds (stated in advance):                 │</span></span>
-<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a><span class="in">│  • sDA ≥ 55% at 300 lux       (LEED minimum)    │</span></span>
-<span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a><span class="in">│  • ASE ≤ 10%                   (glare limit)     │</span></span>
-<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a><span class="in">│  • Cooling EUI ≤ project budget (from consultant)│</span></span>
-<span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a><span class="in">│                                                  │</span></span>
-<span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a><span class="in">│  If all three options pass all thresholds:        │</span></span>
-<span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a><span class="in">│  rank by sDA (daylight wins ties).               │</span></span>
-<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a><span class="in">│  If some options fail a threshold: eliminate.     │</span></span>
-<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a><span class="in">│  If ranking changes when threshold shifts ±10%:  │</span></span>
-<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a><span class="in">│  flag as threshold-sensitive.                    │</span></span>
-<span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a><span class="in">└──────────────────┬──────────────────────────────┘</span></span>
-<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a><span class="in">                   │</span></span>
-<span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a><span class="in">                   ▼</span></span>
-<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
-<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a><span class="in">│  OUTPUT                                          │</span></span>
-<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a><span class="in">│  Summary table:                                  │</span></span>
-<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a><span class="in">│  ┌────────┬───────┬───────┬──────────┬────────┐  │</span></span>
-<span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a><span class="in">│  │ Option │ sDA % │ ASE % │ Cool EUI │ Pass?  │  │</span></span>
-<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a><span class="in">│  ├────────┼───────┼───────┼──────────┼────────┤  │</span></span>
-<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a><span class="in">│  │ A Louv │  48*  │   4   │   62     │ FAIL   │  │</span></span>
-<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a><span class="in">│  │ B Perf │  61   │   8   │   68*    │ CHECK  │  │</span></span>
-<span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a><span class="in">│  │ C Blind│  58   │   5   │   59     │ PASS   │  │</span></span>
-<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a><span class="in">│  └────────┴───────┴───────┴──────────┴────────┘  │</span></span>
-<span id="cb2-152"><a href="#cb2-152" aria-hidden="true" tabindex="-1"></a><span class="in">│  * = below/above threshold                       │</span></span>
-<span id="cb2-153"><a href="#cb2-153" aria-hidden="true" tabindex="-1"></a><span class="in">│                                                  │</span></span>
-<span id="cb2-154"><a href="#cb2-154" aria-hidden="true" tabindex="-1"></a><span class="in">│  Plausible outcome: the instinct favourite (A)   │</span></span>
-<span id="cb2-155"><a href="#cb2-155" aria-hidden="true" tabindex="-1"></a><span class="in">│  fails on daylight. The "best" option depends    │</span></span>
-<span id="cb2-156"><a href="#cb2-156" aria-hidden="true" tabindex="-1"></a><span class="in">│  on whether you weight daylight or energy.       │</span></span>
-<span id="cb2-157"><a href="#cb2-157" aria-hidden="true" tabindex="-1"></a><span class="in">│  That tension IS the evidence contribution.      │</span></span>
-<span id="cb2-158"><a href="#cb2-158" aria-hidden="true" tabindex="-1"></a><span class="in">└─────────────────────────────────────────────────┘</span></span>
-<span id="cb2-159"><a href="#cb2-159" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-160"><a href="#cb2-160" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-161"><a href="#cb2-161" aria-hidden="true" tabindex="-1"></a><span class="fu">### Workflow definition</span></span>
-<span id="cb2-162"><a href="#cb2-162" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-163"><a href="#cb2-163" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Input files:** Rhino <span class="in">`.3dm`</span> with reading-room geometry; Hong Kong <span class="in">`.epw`</span>; three Grasshopper shading component definitions</span>
-<span id="cb2-164"><a href="#cb2-164" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Variable:** Shading option (A / B / C) — the only thing that changes between runs</span>
-<span id="cb2-165"><a href="#cb2-165" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Steps:** Model setup → apply each shading option → run annual daylight (Radiance) → run annual energy (EnergyPlus) → extract sDA, ASE, cooling EUI → compare against thresholds → rank</span>
-<span id="cb2-166"><a href="#cb2-166" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Expected output:** Comparison table with pass/fail per metric; spatial daylight maps for each option; recommendation with stated trade-off</span>
-<span id="cb2-167"><a href="#cb2-167" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Threshold:** sDA ≥ 55%, ASE ≤ 10%, cooling EUI ≤ project target</span>
-<span id="cb2-168"><a href="#cb2-168" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Likely failure point:** Option B's angular transmittance — if the Radiance material is wrong, the daylight results for the perforated screen are unreliable</span>
-<span id="cb2-169"><a href="#cb2-169" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-170"><a href="#cb2-170" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb2-171"><a href="#cb2-171" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-172"><a href="#cb2-172" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5. A4 Branch Declaration</span></span>
-<span id="cb2-173"><a href="#cb2-173" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-174"><a href="#cb2-174" aria-hidden="true" tabindex="-1"></a><span class="fu">### Route</span></span>
-<span id="cb2-175"><a href="#cb2-175" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a>**Route B: Live Studio Application** — this facade decision is part of an active studio project, and the simulation results will feed directly into the schematic design submission.</span>
-<span id="cb2-177"><a href="#cb2-177" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-178"><a href="#cb2-178" aria-hidden="true" tabindex="-1"></a><span class="fu">### Decision</span></span>
-<span id="cb2-179"><a href="#cb2-179" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-180"><a href="#cb2-180" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Project:** Campus library — south-facing reading room</span>
-<span id="cb2-181"><a href="#cb2-181" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Decision:** Which shading system to specify for the south facade</span>
-<span id="cb2-182"><a href="#cb2-182" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Alternatives:** Fixed louvers (A), perforated screen (B), automated blinds (C)</span>
-<span id="cb2-183"><a href="#cb2-183" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Why this matters:** The choice affects both the occupant experience (daylight, glare) and the project's energy budget — and the ranking depends on which metric leads</span>
-<span id="cb2-184"><a href="#cb2-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-185"><a href="#cb2-185" aria-hidden="true" tabindex="-1"></a><span class="fu">### Workflow</span></span>
-<span id="cb2-186"><a href="#cb2-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-187"><a href="#cb2-187" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Primary route:** Grasshopper + Ladybug/Honeybee</span>
-<span id="cb2-188"><a href="#cb2-188" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Input files:** Rhino model, EPW, shading definitions</span>
-<span id="cb2-189"><a href="#cb2-189" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What varies:** Shading device (single controlled variable)</span>
-<span id="cb2-190"><a href="#cb2-190" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Minimum scenarios:** 3 (one per option) + 1 sensitivity run (threshold ± 10%)</span>
-<span id="cb2-191"><a href="#cb2-191" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Output:** sDA, ASE, cooling EUI per option; comparison table; spatial daylight maps</span>
-<span id="cb2-192"><a href="#cb2-192" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Threshold:** sDA ≥ 55%, ASE ≤ 10%, cooling EUI ≤ project target</span>
-<span id="cb2-193"><a href="#cb2-193" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-194"><a href="#cb2-194" aria-hidden="true" tabindex="-1"></a><span class="fu">### Feasibility</span></span>
-<span id="cb2-195"><a href="#cb2-195" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-196"><a href="#cb2-196" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What must exist by A3:** Working Honeybee model producing sDA and cooling EUI for at least Options A and C (the two with well-defined material properties)</span>
-<span id="cb2-197"><a href="#cb2-197" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Most likely failure:** Perforated screen material definition (Option B) — if angular transmittance cannot be modeled reliably, drop B and compare A vs. C only</span>
-<span id="cb2-198"><a href="#cb2-198" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Backup route:** If Honeybee simulation is too slow or fails to converge, fall back to Climate Studio or a simplified Radiance-only daylight comparison without the energy model</span>
-<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What can be simplified:** Drop the spatial daylight maps and report only the aggregate sDA percentage</span>
-<span id="cb2-200"><a href="#cb2-200" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-201"><a href="#cb2-201" aria-hidden="true" tabindex="-1"></a><span class="fu">### Branch Statement</span></span>
-<span id="cb2-202"><a href="#cb2-202" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-203"><a href="#cb2-203" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; I will use Route B (Live Studio Application) to test which shading strategy meets both daylight and cooling thresholds for the reading room, through a controlled comparison of three facade options simulated under identical conditions, because the design decision depends on a trade-off the team cannot resolve by instinct — the option that wins on daylight may lose on energy — and the minimum useful output is a comparison table showing sDA, ASE, and cooling EUI for each option against pre-stated thresholds.</span></span>
-<span id="cb2-204"><a href="#cb2-204" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-205"><a href="#cb2-205" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb2-206"><a href="#cb2-206" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-207"><a href="#cb2-207" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why This Example Works as an A2</span></span>
-<span id="cb2-208"><a href="#cb2-208" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-209"><a href="#cb2-209" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**The decision is spatial and architectural.** It starts from a facade, a room, an orientation — not a dataset. The simulation serves the design question.</span>
-<span id="cb2-210"><a href="#cb2-210" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-211"><a href="#cb2-211" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**The ranking is not obvious.** Option A (the team's instinct) may fail on daylight. Option B scores well on daylight but costs more energy. Option C passes everything but requires maintenance and control logic. The evidence does not point to one winner — it reveals a trade-off the team must negotiate.</span>
-<span id="cb2-212"><a href="#cb2-212" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-213"><a href="#cb2-213" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**The controlled variable is clear.** Only the shading device changes. Geometry, climate file, glazing, occupancy schedule, and simulation settings are held fixed.</span>
-<span id="cb2-214"><a href="#cb2-214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-215"><a href="#cb2-215" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Thresholds are stated before the simulation runs.** sDA ≥ 55%, ASE ≤ 10%, cooling EUI ≤ target. This prevents the post-hoc narrative of "well, 47% is close enough."</span>
-<span id="cb2-216"><a href="#cb2-216" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-217"><a href="#cb2-217" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**The weakest link is named.** The perforated screen's angular transmittance is flagged as the most fragile input, with a stated backup plan (drop Option B).</span>
-<span id="cb2-218"><a href="#cb2-218" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-219"><a href="#cb2-219" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>**The tool choice follows the question.** Grasshopper + Honeybee is chosen because the question requires spatially resolved annual daylight *and* annual energy on the same geometry — not because it is the most advanced option. The spreadsheet route is explicitly rejected because it cannot capture seasonal shading geometry effects.</span>
-<span id="cb2-220"><a href="#cb2-220" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-221"><a href="#cb2-221" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb2-222"><a href="#cb2-222" aria-hidden="true" tabindex="-1"></a><span class="fu">## Adapting This to Your Studio Project</span></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2. Evidence Map</span></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Source <span class="pp">|</span> Type <span class="pp">|</span> Relevance <span class="pp">|</span> Access <span class="pp">|</span> Confidence <span class="pp">|</span> Limits <span class="pp">|</span> Role in workflow <span class="pp">|</span></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|---|---|---|</span></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Field measurements (JUST campus, Amman) <span class="pp">|</span> Measurement (hourly) <span class="pp">|</span> **Primary** — air temperature, illuminance, sun-patch area in three identical offices <span class="pp">|</span> From publication <span class="pp">|</span> High (calibrated instruments in real offices) <span class="pp">|</span> Limited measurement period; does not cover full annual cycle <span class="pp">|</span> Calibration and validation of simulation <span class="pp">|</span></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Simulation model (thermal + daylight) <span class="pp">|</span> Model <span class="pp">|</span> **Primary** — extends field data to annual predictions <span class="pp">|</span> Reproduced from publication <span class="pp">|</span> Medium — depends on model assumptions (material properties, schedules) <span class="pp">|</span> Simplified geometry; furniture and partitions omitted <span class="pp">|</span> Annual performance estimates <span class="pp">|</span></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Climate file (Amman, Jordan) <span class="pp">|</span> Measurement (hourly) <span class="pp">|</span> High — drives both thermal and daylight models <span class="pp">|</span> Public (EnergyPlus weather data) <span class="pp">|</span> High (TMY station data) <span class="pp">|</span> Typical year, not extremes <span class="pp">|</span> Simulation input <span class="pp">|</span></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Shading device geometry <span class="pp">|</span> Design variable <span class="pp">|</span> **Critical** — the thing being compared <span class="pp">|</span> Defined in publication <span class="pp">|</span> High (built and measured) <span class="pp">|</span> Optical properties at oblique incidence angles are approximated <span class="pp">|</span> The controlled variable <span class="pp">|</span></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Jordanian building energy code / ASHRAE 55 <span class="pp">|</span> Standard <span class="pp">|</span> Medium — sets acceptable indoor temperature and illuminance ranges <span class="pp">|</span> Public <span class="pp">|</span> High (code requirement) <span class="pp">|</span> Prescriptive; actual occupant expectations may differ <span class="pp">|</span> Threshold for acceptability <span class="pp">|</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="fu">### What is missing from this evidence map</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Annual climate-based daylight metrics (sDA, ASE) — the study reports point-in-time illuminance, not annual spatial metrics</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Occupant satisfaction surveys (do workers notice the daylight difference?)</span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cost and maintenance data for each shading type</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Glare probability (DGP) from occupant viewpoints</span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3. Tool Translation Matrix</span></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="fu">### Design Decision (restated)</span></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>Which shading device delivers the greatest cooling-load reduction while keeping desk-level illuminance above the 300 lux task threshold for a south-facing office in a hot-arid climate?</span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Workflow route <span class="pp">|</span> Input <span class="pp">|</span> What varies <span class="pp">|</span> Operation <span class="pp">|</span> Output <span class="pp">|</span> What it cannot answer <span class="pp">|</span> Fit <span class="pp">|</span></span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|---|---|---|</span></span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **GH + Ladybug / Honeybee** | Rhino geometry + EPW file + shading geometry | Shading option (A, B, C) | Annual daylight simulation (Radiance via Honeybee) + energy simulation (EnergyPlus via Honeybee) for each option | sDA, ASE, annual cooling load (kWh/m²), illuminance maps | Whether occupants will prefer the result; whether construction tolerances match the model | **high** <span class="pp">|</span></span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> BIM/BEM (DesignBuilder / IES-VE) <span class="pp">|</span> 3D model + weather file + shading components <span class="pp">|</span> Shading type <span class="pp">|</span> Coupled thermal-daylight simulation <span class="pp">|</span> Indoor temperature, cooling load, daylight factor <span class="pp">|</span> Radiance-level spatial daylight resolution; climate-based annual metrics <span class="pp">|</span> **high** (this is what Freewan used) <span class="pp">|</span></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Python / notebook <span class="pp">|</span> Simulation output CSVs <span class="pp">|</span> Post-processing and visualization <span class="pp">|</span> Statistical comparison, threshold testing, sensitivity plots <span class="pp">|</span> Ranked tables, charts, sensitivity ranges <span class="pp">|</span> Cannot run the simulation itself — depends on upstream tool <span class="pp">|</span> medium (post-processing) <span class="pp">|</span></span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Spreadsheet / low-code <span class="pp">|</span> Manufacturer shading coefficients + rule-of-thumb methods <span class="pp">|</span> Shading coefficient lookup <span class="pp">|</span> Estimate cooling-load reduction using simplified solar heat-gain method <span class="pp">|</span> Rough ranking by shading coefficient <span class="pp">|</span> No spatial daylight resolution; cannot capture geometry-dependent seasonal effects <span class="pp">|</span> low <span class="pp">|</span></span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> GIS / spatial <span class="pp">|</span> Not applicable to a single-room facade question <span class="pp">|</span> — <span class="pp">|</span> — <span class="pp">|</span> — <span class="pp">|</span> — <span class="pp">|</span> **low** <span class="pp">|</span></span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AI-assisted workflow <span class="pp">|</span> Geometry description + prompt <span class="pp">|</span> Shading description <span class="pp">|</span> Generate parametric definitions or analysis scripts <span class="pp">|</span> Accelerated setup; outputs require verification <span class="pp">|</span> Cannot validate physical accuracy of simulation <span class="pp">|</span> medium (support) <span class="pp">|</span></span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a><span class="fu">### Route Selection</span></span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; I am choosing **Grasshopper + Ladybug/Honeybee** (or alternatively a BIM/BEM tool like IES-VE or DesignBuilder, as Freewan used) because my decision depends on comparing cooling loads and daylight levels for three shading devices on the same facade geometry, and the minimum useful output is the cooling-load reduction percentage and desk-level illuminance for each option.</span></span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a><span class="fu">### Risk Check</span></span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Most fragile input:** Optical properties of the diagonal fins at oblique angles — manufacturer data gives properties at normal incidence, but shading performance depends on solar angle throughout the day</span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Likely setup problem:** Matching the Radiance material definition to the physical aluminium surface; ensuring the simulation grid captures the desk plane accurately</span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What I can cut:** Drop the annual sDA/ASE calculation and report point-in-time illuminance at peak cooling hours — this reduces simulation time significantly</span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What I need help with:** Validating that the simulation model reproduces the field-measured illuminance values before trusting the annual extrapolation</span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4. Primary Workflow Selection</span></span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a><span class="in">│  INPUT                                           │</span></span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a><span class="in">│  Office geometry (south-facing, JUST campus)     │</span></span>
+<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a><span class="in">│  + Amman EPW climate file                        │</span></span>
+<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a><span class="in">│  + glazing spec + 3 shading device definitions   │</span></span>
+<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a><span class="in">│  + base case (no shading)                        │</span></span>
+<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a><span class="in">└──────────────────┬──────────────────────────────┘</span></span>
+<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a><span class="in">                   │</span></span>
+<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a><span class="in">          ┌────────┼────────┐</span></span>
+<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a><span class="in">          ▼        ▼        ▼</span></span>
+<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a><span class="in">       ┌─────┐ ┌─────┐ ┌─────┐</span></span>
+<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a><span class="in">       │Opt A│ │Opt B│ │Opt C│</span></span>
+<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a><span class="in">       │Vert.│ │Diag.│ │Egg- │</span></span>
+<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a><span class="in">       │fins │ │fins │ │crate│</span></span>
+<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a><span class="in">       └──┬──┘ └──┬──┘ └──┬──┘</span></span>
+<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a><span class="in">          │       │       │</span></span>
+<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a><span class="in">          ▼       ▼       ▼</span></span>
+<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
+<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a><span class="in">│  SIMULATE (same settings for each option)        │</span></span>
+<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a><span class="in">│  1. Thermal: indoor air temperature + cooling    │</span></span>
+<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a><span class="in">│     load for each shading configuration          │</span></span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a><span class="in">│  2. Daylight: desk-level illuminance at          │</span></span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a><span class="in">│     multiple time steps                          │</span></span>
+<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a><span class="in">│  (Freewan used coupled thermal-daylight          │</span></span>
+<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a><span class="in">│   simulation validated against field data)       │</span></span>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a><span class="in">└──────────────────┬──────────────────────────────┘</span></span>
+<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a><span class="in">                   │</span></span>
+<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a><span class="in">                   ▼</span></span>
+<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
+<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a><span class="in">│  COMPARE                                         │</span></span>
+<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a><span class="in">│                                                  │</span></span>
+<span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a><span class="in">│  Thresholds (stated in advance):                 │</span></span>
+<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a><span class="in">│  • Cooling-load reduction ≥ 10% vs. base case    │</span></span>
+<span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a><span class="in">│  • Desk illuminance ≥ 300 lux (task level)       │</span></span>
+<span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a><span class="in">│  • Indoor air temp. reduction vs. base case      │</span></span>
+<span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a><span class="in">│                                                  │</span></span>
+<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a><span class="in">│  Freewan's actual results:                       │</span></span>
+<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a><span class="in">│  ┌────────┬──────────┬───────────┬────────────┐  │</span></span>
+<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a><span class="in">│  │ Option │ Cool. Δ  │ Illum.    │ Trade-off  │  │</span></span>
+<span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a><span class="in">│  ├────────┼──────────┼───────────┼────────────┤  │</span></span>
+<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a><span class="in">│  │ A Vert │  ~7%     │ ~350 lux  │ Most light │  │</span></span>
+<span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a><span class="in">│  │        │          │           │ least save │  │</span></span>
+<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a><span class="in">│  │ B Diag │  ~12%    │ ~150 lux* │ Morning    │  │</span></span>
+<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a><span class="in">│  │        │          │           │ too dark   │  │</span></span>
+<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a><span class="in">│  │ C Egg  │  ~17%    │ ~200 lux* │ Best cool  │  │</span></span>
+<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a><span class="in">│  │        │          │           │ but dim    │  │</span></span>
+<span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a><span class="in">│  └────────┴──────────┴───────────┴────────────┘  │</span></span>
+<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a><span class="in">│  * = below 300 lux task threshold                │</span></span>
+<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a><span class="in">│                                                  │</span></span>
+<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a><span class="in">│  Key finding: diagonal fins and egg-crate        │</span></span>
+<span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a><span class="in">│  outperformed vertical fins overall, but          │</span></span>
+<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a><span class="in">│  BOTH reduced illuminance below the task          │</span></span>
+<span id="cb2-152"><a href="#cb2-152" aria-hidden="true" tabindex="-1"></a><span class="in">│  threshold. The "best" device depends on          │</span></span>
+<span id="cb2-153"><a href="#cb2-153" aria-hidden="true" tabindex="-1"></a><span class="in">│  whether cooling or daylight leads.              │</span></span>
+<span id="cb2-154"><a href="#cb2-154" aria-hidden="true" tabindex="-1"></a><span class="in">│                                                  │</span></span>
+<span id="cb2-155"><a href="#cb2-155" aria-hidden="true" tabindex="-1"></a><span class="in">│  Seasonal nuance: the egg-crate allowed solar    │</span></span>
+<span id="cb2-156"><a href="#cb2-156" aria-hidden="true" tabindex="-1"></a><span class="in">│  penetration in winter (when heating is wanted)  │</span></span>
+<span id="cb2-157"><a href="#cb2-157" aria-hidden="true" tabindex="-1"></a><span class="in">│  while blocking it in summer — a geometry         │</span></span>
+<span id="cb2-158"><a href="#cb2-158" aria-hidden="true" tabindex="-1"></a><span class="in">│  advantage the other devices did not share.       │</span></span>
+<span id="cb2-159"><a href="#cb2-159" aria-hidden="true" tabindex="-1"></a><span class="in">└─────────────────────────────────────────────────┘</span></span>
+<span id="cb2-160"><a href="#cb2-160" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-161"><a href="#cb2-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-162"><a href="#cb2-162" aria-hidden="true" tabindex="-1"></a><span class="fu">### Workflow definition</span></span>
+<span id="cb2-163"><a href="#cb2-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-164"><a href="#cb2-164" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Input files:** 3D model of the south-facing office; Amman <span class="in">`.epw`</span> climate file; three shading-device geometry definitions; base case (no shading)</span>
+<span id="cb2-165"><a href="#cb2-165" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Variable:** Shading device type (A / B / C) — the only thing that changes between runs</span>
+<span id="cb2-166"><a href="#cb2-166" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Steps:** Model setup → apply each shading device → run coupled thermal-daylight simulation → extract cooling load, indoor air temperature, and desk illuminance → compare against thresholds → rank</span>
+<span id="cb2-167"><a href="#cb2-167" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Expected output:** Comparison table with cooling-load reduction (%) and illuminance (lux) per option; recommendation stating the trade-off</span>
+<span id="cb2-168"><a href="#cb2-168" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Threshold:** Cooling reduction ≥ 10% vs. base case; illuminance ≥ 300 lux at desk level</span>
+<span id="cb2-169"><a href="#cb2-169" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Likely failure point:** Diagonal fin angle — the oblique geometry makes angular solar transmittance hard to model accurately</span>
+<span id="cb2-170"><a href="#cb2-170" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-171"><a href="#cb2-171" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-172"><a href="#cb2-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-173"><a href="#cb2-173" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5. A4 Branch Declaration</span></span>
+<span id="cb2-174"><a href="#cb2-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-175"><a href="#cb2-175" aria-hidden="true" tabindex="-1"></a><span class="fu">### Route</span></span>
+<span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-177"><a href="#cb2-177" aria-hidden="true" tabindex="-1"></a>**Route A: Retrospective Redesign** — this example dissects a published study to show how the A2 structure maps onto a real facade decision. A student using Route B would apply the same comparison structure to their own studio project.</span>
+<span id="cb2-178"><a href="#cb2-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-179"><a href="#cb2-179" aria-hidden="true" tabindex="-1"></a><span class="fu">### Decision</span></span>
+<span id="cb2-180"><a href="#cb2-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-181"><a href="#cb2-181" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Project:** South-facing office building, JUST campus, Amman, Jordan</span>
+<span id="cb2-182"><a href="#cb2-182" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Decision:** Which fixed external shading device to specify for the south facade</span>
+<span id="cb2-183"><a href="#cb2-183" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Alternatives:** Vertical fins (A), diagonal fins (B), egg-crate device (C)</span>
+<span id="cb2-184"><a href="#cb2-184" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Why this matters:** The device that saves the most cooling energy (egg-crate, ~17%) drops illuminance below the task threshold (~200 lux), while the device that preserves the most daylight (vertical fins, ~350 lux) saves the least energy (~7%). The ranking reverses depending on which metric leads.</span>
+<span id="cb2-185"><a href="#cb2-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-186"><a href="#cb2-186" aria-hidden="true" tabindex="-1"></a><span class="fu">### Workflow</span></span>
+<span id="cb2-187"><a href="#cb2-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-188"><a href="#cb2-188" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Primary route:** Coupled thermal-daylight simulation (IES-VE, DesignBuilder, or Grasshopper + Honeybee)</span>
+<span id="cb2-189"><a href="#cb2-189" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Input files:** Office geometry, EPW, shading device definitions</span>
+<span id="cb2-190"><a href="#cb2-190" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What varies:** Shading device type (single controlled variable)</span>
+<span id="cb2-191"><a href="#cb2-191" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Minimum scenarios:** 3 shading options + 1 base case (no shading)</span>
+<span id="cb2-192"><a href="#cb2-192" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Output:** Cooling-load reduction (%), indoor air temperature reduction, desk-level illuminance per option</span>
+<span id="cb2-193"><a href="#cb2-193" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Threshold:** Cooling reduction ≥ 10%; illuminance ≥ 300 lux</span>
+<span id="cb2-194"><a href="#cb2-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-195"><a href="#cb2-195" aria-hidden="true" tabindex="-1"></a><span class="fu">### Feasibility</span></span>
+<span id="cb2-196"><a href="#cb2-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-197"><a href="#cb2-197" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What must exist by A3:** Working simulation model producing cooling load and illuminance for at least Options A and C (the two geometric extremes)</span>
+<span id="cb2-198"><a href="#cb2-198" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Most likely failure:** Angular transmittance of the diagonal fins (Option B) — if the oblique geometry cannot be modeled accurately, compare A vs. C only</span>
+<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Backup route:** If coupled simulation is too slow, run daylight-only (Radiance) and use a simplified cooling estimate from shading coefficients</span>
+<span id="cb2-200"><a href="#cb2-200" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What can be simplified:** Report illuminance at one desk position instead of a full spatial grid</span>
+<span id="cb2-201"><a href="#cb2-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-202"><a href="#cb2-202" aria-hidden="true" tabindex="-1"></a><span class="fu">### Branch Statement</span></span>
+<span id="cb2-203"><a href="#cb2-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-204"><a href="#cb2-204" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; I will use Route A (Retrospective Redesign) to examine how Freewan's comparison of three fixed shading devices reveals a cooling-vs-daylight trade-off that the design team cannot resolve by instinct, through a controlled comparison of three facade options tested under identical conditions on the same office geometry, because the option that wins on energy loses on daylight and the minimum useful output is a comparison table showing cooling-load reduction and desk-level illuminance for each device against pre-stated thresholds.</span></span>
+<span id="cb2-205"><a href="#cb2-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-206"><a href="#cb2-206" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-207"><a href="#cb2-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-208"><a href="#cb2-208" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why This Example Works as an A2</span></span>
+<span id="cb2-209"><a href="#cb2-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-210"><a href="#cb2-210" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**The decision is spatial and architectural.** It starts from a facade, a room, an orientation — not a dataset. The simulation serves the design question.</span>
+<span id="cb2-211"><a href="#cb2-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-212"><a href="#cb2-212" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**The ranking is not obvious.** Vertical fins preserve the most daylight but deliver the weakest cooling relief. Egg-crate saves the most energy but drops illuminance below the task threshold. Diagonal fins fall between on energy but produce the darkest mornings. No single winner exists — the evidence reveals a trade-off the design team must negotiate.</span>
+<span id="cb2-213"><a href="#cb2-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-214"><a href="#cb2-214" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**The controlled variable is clear.** Only the shading device changes. Room geometry, glazing, orientation, climate file, and occupancy are held constant across all four conditions (three devices plus base case).</span>
+<span id="cb2-215"><a href="#cb2-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-216"><a href="#cb2-216" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Thresholds are stated before the simulation runs.** Cooling reduction ≥ 10%; illuminance ≥ 300 lux. This prevents the post-hoc narrative of "well, 200 lux is close enough."</span>
+<span id="cb2-217"><a href="#cb2-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-218"><a href="#cb2-218" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**The weakest link is named.** The diagonal fin's angular transmittance is flagged as the most fragile input, with a stated backup plan (drop Option B and compare A vs. C only).</span>
+<span id="cb2-219"><a href="#cb2-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-220"><a href="#cb2-220" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>**The tool choice follows the question.** Coupled thermal-daylight simulation is chosen because the question requires both cooling-load and illuminance data on the same geometry — not because it is the most advanced option. A spreadsheet approach is explicitly rejected because it cannot capture how shading geometry interacts with seasonal solar angles.</span>
+<span id="cb2-221"><a href="#cb2-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-222"><a href="#cb2-222" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>**It is grounded in a real publication.** Every number in the comparison table comes from Freewan's peer-reviewed study. Students can read the full paper to see how the analysis was done and verify the findings independently.</span>
 <span id="cb2-223"><a href="#cb2-223" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-224"><a href="#cb2-224" aria-hidden="true" tabindex="-1"></a>You do not need a facade study. Replace the shading options with any set of design alternatives you are comparing:</span>
-<span id="cb2-225"><a href="#cb2-225" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-226"><a href="#cb2-226" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Three site layouts** → GIS or Grasshopper, evaluated by walkability, noise exposure, or solar access</span>
-<span id="cb2-227"><a href="#cb2-227" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Three structural systems** → BIM/BEM, evaluated by embodied carbon, span, or construction sequence</span>
-<span id="cb2-228"><a href="#cb2-228" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Three ventilation strategies** → EnergyPlus or CFD, evaluated by air change rate, energy use, or thermal comfort</span>
-<span id="cb2-229"><a href="#cb2-229" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-230"><a href="#cb2-230" aria-hidden="true" tabindex="-1"></a>Keep the structure: one controlled variable, same evaluation method, stated thresholds, named weakest input, and a comparison table where the ranking might change depending on which metric leads. That tension is what makes the evidence useful.</span>
-<span id="cb2-231"><a href="#cb2-231" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-224"><a href="#cb2-224" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb2-225"><a href="#cb2-225" aria-hidden="true" tabindex="-1"></a><span class="fu">## Adapting This to Your Studio Project</span></span>
+<span id="cb2-226"><a href="#cb2-226" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-227"><a href="#cb2-227" aria-hidden="true" tabindex="-1"></a>You do not need a shading study. Replace the three devices with any set of design alternatives you are comparing:</span>
+<span id="cb2-228"><a href="#cb2-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-229"><a href="#cb2-229" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Three site layouts** → GIS or Grasshopper, evaluated by walkability, noise exposure, or solar access</span>
+<span id="cb2-230"><a href="#cb2-230" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Three structural systems** → BIM/BEM, evaluated by embodied carbon, span, or construction sequence</span>
+<span id="cb2-231"><a href="#cb2-231" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Three ventilation strategies** → EnergyPlus or CFD, evaluated by air change rate, energy use, or thermal comfort</span>
 <span id="cb2-232"><a href="#cb2-232" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-233"><a href="#cb2-233" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb2-234"><a href="#cb2-234" aria-hidden="true" tabindex="-1"></a><span class="fu">## Companion Example</span></span>
-<span id="cb2-235"><a href="#cb2-235" aria-hidden="true" tabindex="-1"></a>See also the <span class="co">[</span><span class="ot">Hidden Drivers example</span><span class="co">](a2-example-hidden-drivers.qmd)</span> for a data-analysis version of the same A2 structure, based on Guo et al. (*Energy and AI*, 2026). <span class="co">[</span><span class="ot">DOI: 10.1016/j.egyai.2026.100709</span><span class="co">](https://doi.org/10.1016/j.egyai.2026.100709)</span></span>
-<span id="cb2-236"><a href="#cb2-236" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb2-233"><a href="#cb2-233" aria-hidden="true" tabindex="-1"></a>Keep the structure: one controlled variable, same evaluation method, stated thresholds, named weakest input, and a comparison table where the ranking might change depending on which metric leads. That tension is what makes the evidence useful.</span>
+<span id="cb2-234"><a href="#cb2-234" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-235"><a href="#cb2-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-236"><a href="#cb2-236" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb2-237"><a href="#cb2-237" aria-hidden="true" tabindex="-1"></a><span class="fu">## Companion Example</span></span>
+<span id="cb2-238"><a href="#cb2-238" aria-hidden="true" tabindex="-1"></a>See also the <span class="co">[</span><span class="ot">Hidden Drivers example</span><span class="co">](a2-example-hidden-drivers.qmd)</span> for a data-analysis version of the same A2 structure, based on Guo et al. (*Energy and AI*, 2026). <span class="co">[</span><span class="ot">DOI: 10.1016/j.egyai.2026.100709</span><span class="co">](https://doi.org/10.1016/j.egyai.2026.100709)</span></span>
+<span id="cb2-239"><a href="#cb2-239" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
