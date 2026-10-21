@@ -193,7 +193,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../examples/a2-example-hidden-drivers.html">Examples</a></li><li class="breadcrumb-item"><a href="../examples/a2-example-hidden-drivers.html">A2: Hidden Drivers (worked example)</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../examples/a2-example-hidden-drivers.html">Examples</a></li><li class="breadcrumb-item"><a href="../examples/a2-example-hidden-drivers.html">A2: Hidden Drivers (data analysis)</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -378,7 +378,13 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../examples/a2-example-hidden-drivers.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">A2: Hidden Drivers (worked example)</span></a>
+ <span class="menu-text">A2: Hidden Drivers (data analysis)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../examples/a2-example-facade-study.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A2: Facade Shading (design simulation)</span></a>
   </div>
 </li>
       </ul>
@@ -482,7 +488,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../examples/a2-example-hidden-drivers.html">Examples</a></li><li class="breadcrumb-item"><a href="../examples/a2-example-hidden-drivers.html">A2: Hidden Drivers (worked example)</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../examples/a2-example-hidden-drivers.html">Examples</a></li><li class="breadcrumb-item"><a href="../examples/a2-example-hidden-drivers.html">A2: Hidden Drivers (data analysis)</a></li></ol></nav>
 <div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title">A2 Worked Example: Hidden Drivers in Thermal Comfort Databases</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 <p class="subtitle lead">How data treatment choices changed the interpretation of the same evidence</p>
@@ -512,7 +518,8 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This is a worked A2 skeleton based on a real research project — <em>“Toward smarter HVAC control: Machine learning reveals hidden drivers in thermal comfort databases”</em> (Guo et al., <em>Energy and AI</em>, 2026). It is meant to show how A2 components fit together hierarchically, not to prescribe a specific topic. Your A2 should use your own studio decision.</p>
+<p>This is a worked A2 skeleton based on a real research project — <em>“Toward smarter HVAC control: Machine learning reveals hidden drivers in thermal comfort databases”</em> (Guo et al., <em>Energy and AI</em>, 2026). <a href="https://doi.org/10.1016/j.egyai.2026.100709">DOI: 10.1016/j.egyai.2026.100709</a></p>
+<p>It is meant to show how A2 components fit together hierarchically, not to prescribe a specific topic. Your A2 should use your own studio decision. See also the <a href="../examples/a2-example-facade-study.html">companion architectural example</a> for a design-decision version of the same structure.</p>
 </div>
 </div>
 <hr>
@@ -1352,205 +1359,207 @@ window.Quarto = {
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## About This Example</span></span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>This is a worked A2 skeleton based on a real research project — *"Toward smarter HVAC control: Machine learning reveals hidden drivers in thermal comfort databases"* (Guo et al., *Energy and AI*, 2026). It is meant to show how A2 components fit together hierarchically, not to prescribe a specific topic. Your A2 should use your own studio decision.</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>This is a worked A2 skeleton based on a real research project — *"Toward smarter HVAC control: Machine learning reveals hidden drivers in thermal comfort databases"* (Guo et al., *Energy and AI*, 2026). <span class="co">[</span><span class="ot">DOI: 10.1016/j.egyai.2026.100709</span><span class="co">](https://doi.org/10.1016/j.egyai.2026.100709)</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>It is meant to show how A2 components fit together hierarchically, not to prescribe a specific topic. Your A2 should use your own studio decision. See also the <span class="co">[</span><span class="ot">companion architectural example</span><span class="co">](a2-example-facade-study.qmd)</span> for a design-decision version of the same structure.</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="fu">## 1. Decision Recap</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="fu">### Decision</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## 1. Decision Recap</span></span>
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>Which representation of missing radiant-temperature data should be used when training thermal comfort models from field-study databases?</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="fu">### Decision</span></span>
 <span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="fu">### Alternatives</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>Which representation of missing radiant-temperature data should be used when training thermal comfort models from field-study databases?</span>
 <span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Label <span class="pp">|</span> Treatment <span class="pp">|</span> Description <span class="pp">|</span></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> T1 <span class="pp">|</span> Rule-based imputation <span class="pp">|</span> Replace missing mean radiant temperature ($T_{mrt}$) with air temperature ($T_a$), following standard practice <span class="pp">|</span></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> T2 <span class="pp">|</span> Learning through missingness <span class="pp">|</span> Let the model learn from the pattern of what is missing, using missingness indicators as input features <span class="pp">|</span></span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> T3 <span class="pp">|</span> Measured-only subset <span class="pp">|</span> Drop all records without measured $T_{mrt}$ and train only on complete cases <span class="pp">|</span></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="fu">### Audience</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="fu">### Alternatives</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Label <span class="pp">|</span> Treatment <span class="pp">|</span> Description <span class="pp">|</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> T1 <span class="pp">|</span> Rule-based imputation <span class="pp">|</span> Replace missing mean radiant temperature ($T_{mrt}$) with air temperature ($T_a$), following standard practice <span class="pp">|</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> T2 <span class="pp">|</span> Learning through missingness <span class="pp">|</span> Let the model learn from the pattern of what is missing, using missingness indicators as input features <span class="pp">|</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> T3 <span class="pp">|</span> Measured-only subset <span class="pp">|</span> Drop all records without measured $T_{mrt}$ and train only on complete cases <span class="pp">|</span></span>
 <span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>Researchers and standards committees who rely on thermal-comfort databases (ASHRAE Global Thermal Comfort Database II, etc.) to calibrate models used in HVAC sizing and control.</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="fu">### Audience</span></span>
 <span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="fu">### Why evidence matters</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>Researchers and standards committees who rely on thermal-comfort databases (ASHRAE Global Thermal Comfort Database II, etc.) to calibrate models used in HVAC sizing and control.</span>
 <span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>The default assumption — impute $T_{mrt} = T_a$ — enters every downstream model silently. If this treatment distorts the learned relationship between air and radiant conditions, then every comfort prediction and every control policy built on it inherits that distortion. The question is whether the conclusion survives a reasonable change in how missing data is handled.</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="fu">### Why evidence matters</span></span>
 <span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="fu">### What action the evidence should support</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>The default assumption — impute $T_{mrt} = T_a$ — enters every downstream model silently. If this treatment distorts the learned relationship between air and radiant conditions, then every comfort prediction and every control policy built on it inherits that distortion. The question is whether the conclusion survives a reasonable change in how missing data is handled.</span>
 <span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>Decide whether the standard imputation practice should be replaced, supplemented with sensitivity reporting, or flagged as a known limitation in future database-driven comfort studies.</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="fu">### What action the evidence should support</span></span>
 <span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>Decide whether the standard imputation practice should be replaced, supplemented with sensitivity reporting, or flagged as a known limitation in future database-driven comfort studies.</span>
 <span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2. Evidence Map</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Source <span class="pp">|</span> Type <span class="pp">|</span> Relevance <span class="pp">|</span> Access <span class="pp">|</span> Confidence <span class="pp">|</span> Limits <span class="pp">|</span> Role in workflow <span class="pp">|</span></span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|---|---|---|</span></span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ASHRAE Global Thermal Comfort Database II <span class="pp">|</span> Measurement (field) <span class="pp">|</span> **Primary** — the dataset under investigation <span class="pp">|</span> Public <span class="pp">|</span> High (88 field studies) <span class="pp">|</span> Personal and radiant variables systematically underrecorded <span class="pp">|</span> Input dataset <span class="pp">|</span></span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Field-study metadata (88 studies) <span class="pp">|</span> Documentation <span class="pp">|</span> High — reveals which variables were actually measured vs. assumed <span class="pp">|</span> Requires audit of each study <span class="pp">|</span> Medium — reporting varies <span class="pp">|</span> Some studies do not state their imputation method <span class="pp">|</span> Classifies records as measured vs. imputed <span class="pp">|</span></span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> PMV / thermal comfort standards (ISO 7730, ASHRAE 55) <span class="pp">|</span> Standard <span class="pp">|</span> High — defines the baseline assumption ($T_{mrt} = T_a$) <span class="pp">|</span> Public <span class="pp">|</span> High (consensus standard) <span class="pp">|</span> A standard is a convention, not a measurement <span class="pp">|</span> Benchmark for T1 (rule-based) <span class="pp">|</span></span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Machine learning model output (gradient-boosted trees) <span class="pp">|</span> Model <span class="pp">|</span> High — the evaluation instrument <span class="pp">|</span> Reproducible <span class="pp">|</span> Medium — model choice affects learned sensitivity <span class="pp">|</span> Results may not generalize to other model families <span class="pp">|</span> Evaluation pathway <span class="pp">|</span></span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Air-to-radiant sensitivity ratio <span class="pp">|</span> Derived metric <span class="pp">|</span> **Critical** — the comparison criterion <span class="pp">|</span> Computed from model coefficients <span class="pp">|</span> Depends on treatment <span class="pp">|</span> Ratio is a summary; full partial-dependence plots tell more <span class="pp">|</span> Primary output for comparison <span class="pp">|</span></span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="fu">### What is missing from this evidence map</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2. Evidence Map</span></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Source <span class="pp">|</span> Type <span class="pp">|</span> Relevance <span class="pp">|</span> Access <span class="pp">|</span> Confidence <span class="pp">|</span> Limits <span class="pp">|</span> Role in workflow <span class="pp">|</span></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|---|---|---|</span></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ASHRAE Global Thermal Comfort Database II <span class="pp">|</span> Measurement (field) <span class="pp">|</span> **Primary** — the dataset under investigation <span class="pp">|</span> Public <span class="pp">|</span> High (88 field studies) <span class="pp">|</span> Personal and radiant variables systematically underrecorded <span class="pp">|</span> Input dataset <span class="pp">|</span></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Field-study metadata (88 studies) <span class="pp">|</span> Documentation <span class="pp">|</span> High — reveals which variables were actually measured vs. assumed <span class="pp">|</span> Requires audit of each study <span class="pp">|</span> Medium — reporting varies <span class="pp">|</span> Some studies do not state their imputation method <span class="pp">|</span> Classifies records as measured vs. imputed <span class="pp">|</span></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> PMV / thermal comfort standards (ISO 7730, ASHRAE 55) <span class="pp">|</span> Standard <span class="pp">|</span> High — defines the baseline assumption ($T_{mrt} = T_a$) <span class="pp">|</span> Public <span class="pp">|</span> High (consensus standard) <span class="pp">|</span> A standard is a convention, not a measurement <span class="pp">|</span> Benchmark for T1 (rule-based) <span class="pp">|</span></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Machine learning model output (gradient-boosted trees) <span class="pp">|</span> Model <span class="pp">|</span> High — the evaluation instrument <span class="pp">|</span> Reproducible <span class="pp">|</span> Medium — model choice affects learned sensitivity <span class="pp">|</span> Results may not generalize to other model families <span class="pp">|</span> Evaluation pathway <span class="pp">|</span></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Air-to-radiant sensitivity ratio <span class="pp">|</span> Derived metric <span class="pp">|</span> **Critical** — the comparison criterion <span class="pp">|</span> Computed from model coefficients <span class="pp">|</span> Depends on treatment <span class="pp">|</span> Ratio is a summary; full partial-dependence plots tell more <span class="pp">|</span> Primary output for comparison <span class="pp">|</span></span>
 <span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Independent radiant-temperature measurement campaign (expensive, not in scope)</span>
-<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cross-validation with a second database</span>
-<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Expert elicitation on which imputation is "least wrong"</span>
-<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="fu">### What is missing from this evidence map</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Independent radiant-temperature measurement campaign (expensive, not in scope)</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cross-validation with a second database</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Expert elicitation on which imputation is "least wrong"</span>
 <span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3. Tool Translation Matrix</span></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a><span class="fu">### Design Decision (restated)</span></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3. Tool Translation Matrix</span></span>
 <span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>Does the choice of missing-data treatment change the model's learned sensitivity to radiant conditions — and by how much?</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a><span class="fu">### Design Decision (restated)</span></span>
 <span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Workflow route <span class="pp">|</span> Input <span class="pp">|</span> What varies <span class="pp">|</span> Operation <span class="pp">|</span> Output <span class="pp">|</span> What it cannot answer <span class="pp">|</span> Fit <span class="pp">|</span></span>
-<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|---|---|---|</span></span>
-<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Python / notebook** | Database CSV + missingness flags | Data treatment (T1, T2, T3) | Train gradient-boosted model under each treatment; extract feature importance and partial-dependence curves | Air-to-radiant sensitivity ratio per treatment; partial-dependence plots | Whether any treatment is "correct" — only whether the conclusion changes | **high** <span class="pp">|</span></span>
-<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Spreadsheet / low-code <span class="pp">|</span> Summary statistics from published studies <span class="pp">|</span> Study-level imputation method <span class="pp">|</span> Tabulate fraction of studies using each method; compare reported comfort ranges <span class="pp">|</span> Frequency table of imputation practice across the literature <span class="pp">|</span> Cannot retrain models or test sensitivity — descriptive only <span class="pp">|</span> medium <span class="pp">|</span></span>
-<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> BIM/BEM / simulation <span class="pp">|</span> EnergyPlus model + comfort module <span class="pp">|</span> Occupant representation (120 W vs. demographic) <span class="pp">|</span> Run simulation with each treatment and compare PMV outputs <span class="pp">|</span> Simulated comfort outcomes under different assumptions <span class="pp">|</span> Tests a downstream effect, not the database-level question directly <span class="pp">|</span> low <span class="pp">|</span></span>
-<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> GIS / spatial <span class="pp">|</span> Field-study locations geocoded <span class="pp">|</span> Geographic coverage <span class="pp">|</span> Map which regions have measured vs. imputed radiant data <span class="pp">|</span> Spatial gap map of data quality <span class="pp">|</span> Reveals coverage gaps but does not test sensitivity <span class="pp">|</span> low <span class="pp">|</span></span>
-<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AI-assisted workflow <span class="pp">|</span> Database + LLM for code generation <span class="pp">|</span> Prompt strategy for data cleaning <span class="pp">|</span> Generate cleaning scripts, compare outputs <span class="pp">|</span> Reproducible cleaning pipeline <span class="pp">|</span> Cannot validate which cleaning is physically correct <span class="pp">|</span> medium <span class="pp">|</span></span>
-<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> GH / parametric <span class="pp">|</span> Not applicable <span class="pp">|</span> — <span class="pp">|</span> — <span class="pp">|</span> — <span class="pp">|</span> Wrong tool for a database question <span class="pp">|</span> **low** <span class="pp">|</span></span>
-<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a><span class="fu">### Route Selection</span></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>Does the choice of missing-data treatment change the model's learned sensitivity to radiant conditions — and by how much?</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Workflow route <span class="pp">|</span> Input <span class="pp">|</span> What varies <span class="pp">|</span> Operation <span class="pp">|</span> Output <span class="pp">|</span> What it cannot answer <span class="pp">|</span> Fit <span class="pp">|</span></span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|---|---|---|</span></span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Python / notebook** | Database CSV + missingness flags | Data treatment (T1, T2, T3) | Train gradient-boosted model under each treatment; extract feature importance and partial-dependence curves | Air-to-radiant sensitivity ratio per treatment; partial-dependence plots | Whether any treatment is "correct" — only whether the conclusion changes | **high** <span class="pp">|</span></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Spreadsheet / low-code <span class="pp">|</span> Summary statistics from published studies <span class="pp">|</span> Study-level imputation method <span class="pp">|</span> Tabulate fraction of studies using each method; compare reported comfort ranges <span class="pp">|</span> Frequency table of imputation practice across the literature <span class="pp">|</span> Cannot retrain models or test sensitivity — descriptive only <span class="pp">|</span> medium <span class="pp">|</span></span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> BIM/BEM / simulation <span class="pp">|</span> EnergyPlus model + comfort module <span class="pp">|</span> Occupant representation (120 W vs. demographic) <span class="pp">|</span> Run simulation with each treatment and compare PMV outputs <span class="pp">|</span> Simulated comfort outcomes under different assumptions <span class="pp">|</span> Tests a downstream effect, not the database-level question directly <span class="pp">|</span> low <span class="pp">|</span></span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> GIS / spatial <span class="pp">|</span> Field-study locations geocoded <span class="pp">|</span> Geographic coverage <span class="pp">|</span> Map which regions have measured vs. imputed radiant data <span class="pp">|</span> Spatial gap map of data quality <span class="pp">|</span> Reveals coverage gaps but does not test sensitivity <span class="pp">|</span> low <span class="pp">|</span></span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AI-assisted workflow <span class="pp">|</span> Database + LLM for code generation <span class="pp">|</span> Prompt strategy for data cleaning <span class="pp">|</span> Generate cleaning scripts, compare outputs <span class="pp">|</span> Reproducible cleaning pipeline <span class="pp">|</span> Cannot validate which cleaning is physically correct <span class="pp">|</span> medium <span class="pp">|</span></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> GH / parametric <span class="pp">|</span> Not applicable <span class="pp">|</span> — <span class="pp">|</span> — <span class="pp">|</span> — <span class="pp">|</span> Wrong tool for a database question <span class="pp">|</span> **low** <span class="pp">|</span></span>
 <span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; I am choosing **Python / notebook** because my decision depends on comparing model outputs under controlled data-treatment changes, and the minimum useful output is the sensitivity ratio under each of the three treatments, computed with the same model and validation splits held fixed.</span></span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a><span class="fu">### Route Selection</span></span>
 <span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a><span class="fu">### Risk Check</span></span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; I am choosing **Python / notebook** because my decision depends on comparing model outputs under controlled data-treatment changes, and the minimum useful output is the sensitivity ratio under each of the three treatments, computed with the same model and validation splits held fixed.</span></span>
 <span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Most fragile input:** Correct classification of which records have measured vs. imputed $T_{mrt}$ — the database does not always label this clearly</span>
-<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Likely setup problem:** Getting the missingness-indicator encoding to work correctly in the model pipeline</span>
-<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What I can cut:** Drop partial-dependence plots and report only the aggregate sensitivity ratio</span>
-<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What I need help with:** Confirming the literature audit (88 studies) is complete and consistent</span>
-<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a><span class="fu">### Risk Check</span></span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Most fragile input:** Correct classification of which records have measured vs. imputed $T_{mrt}$ — the database does not always label this clearly</span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Likely setup problem:** Getting the missingness-indicator encoding to work correctly in the model pipeline</span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What I can cut:** Drop partial-dependence plots and report only the aggregate sensitivity ratio</span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What I need help with:** Confirming the literature audit (88 studies) is complete and consistent</span>
 <span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4. Primary Workflow Selection</span></span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
-<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a><span class="in">│  INPUT                                           │</span></span>
-<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a><span class="in">│  ASHRAE Global Thermal Comfort Database II       │</span></span>
-<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a><span class="in">│  + field-study metadata (88 studies)             │</span></span>
-<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a><span class="in">└──────────────────┬──────────────────────────────┘</span></span>
-<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a><span class="in">                   │</span></span>
-<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a><span class="in">                   ▼</span></span>
-<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
-<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a><span class="in">│  CLASSIFY                                        │</span></span>
-<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a><span class="in">│  Label each record: measured Tmrt / imputed /    │</span></span>
-<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a><span class="in">│  missing. Flag = {measured, imputed, absent}.    │</span></span>
-<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a><span class="in">└──────────────────┬──────────────────────────────┘</span></span>
-<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a><span class="in">                   │</span></span>
-<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a><span class="in">          ┌────────┼────────┐</span></span>
-<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a><span class="in">          ▼        ▼        ▼</span></span>
-<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a><span class="in">       ┌─────┐ ┌─────┐ ┌─────┐</span></span>
-<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a><span class="in">       │ T1  │ │ T2  │ │ T3  │</span></span>
-<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a><span class="in">       │Rule │ │Learn│ │Meas.│</span></span>
-<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a><span class="in">       │imp. │ │miss.│ │only │</span></span>
-<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a><span class="in">       └──┬──┘ └──┬──┘ └──┬──┘</span></span>
-<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a><span class="in">          │       │       │</span></span>
-<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a><span class="in">          ▼       ▼       ▼</span></span>
-<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
-<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a><span class="in">│  TRAIN (identical for each treatment)            │</span></span>
-<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a><span class="in">│  Gradient-boosted trees, same hyperparameters,   │</span></span>
-<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a><span class="in">│  same validation splits, same target variable.   │</span></span>
-<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a><span class="in">│  Only the input data treatment differs.          │</span></span>
-<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a><span class="in">└──────────────────┬──────────────────────────────┘</span></span>
-<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a><span class="in">                   │</span></span>
-<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a><span class="in">                   ▼</span></span>
-<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
-<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a><span class="in">│  COMPARE                                         │</span></span>
-<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a><span class="in">│  Extract air-to-radiant sensitivity ratio from   │</span></span>
-<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a><span class="in">│  each model. Compute partial-dependence curves.  │</span></span>
-<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a><span class="in">│                                                  │</span></span>
-<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a><span class="in">│  Threshold: if ratio changes by &gt; 50% across     │</span></span>
-<span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a><span class="in">│  treatments, the conclusion is treatment-         │</span></span>
-<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a><span class="in">│  dependent and must be reported.                  │</span></span>
-<span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a><span class="in">└──────────────────┬──────────────────────────────┘</span></span>
-<span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a><span class="in">                   │</span></span>
-<span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a><span class="in">                   ▼</span></span>
-<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
-<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a><span class="in">│  OUTPUT                                          │</span></span>
-<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a><span class="in">│  Table: sensitivity ratio per treatment          │</span></span>
-<span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a><span class="in">│  (actual result: 1.9 → 4.5 = 137% change)       │</span></span>
-<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a><span class="in">│  Verdict: conclusion IS treatment-dependent.     │</span></span>
-<span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a><span class="in">│  Partial-dependence plots per treatment.         │</span></span>
-<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a><span class="in">└─────────────────────────────────────────────────┘</span></span>
-<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a><span class="fu">### Workflow definition</span></span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4. Primary Workflow Selection</span></span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a><span class="in">│  INPUT                                           │</span></span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a><span class="in">│  ASHRAE Global Thermal Comfort Database II       │</span></span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a><span class="in">│  + field-study metadata (88 studies)             │</span></span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a><span class="in">└──────────────────┬──────────────────────────────┘</span></span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a><span class="in">                   │</span></span>
+<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a><span class="in">                   ▼</span></span>
+<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
+<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a><span class="in">│  CLASSIFY                                        │</span></span>
+<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a><span class="in">│  Label each record: measured Tmrt / imputed /    │</span></span>
+<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a><span class="in">│  missing. Flag = {measured, imputed, absent}.    │</span></span>
+<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a><span class="in">└──────────────────┬──────────────────────────────┘</span></span>
+<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a><span class="in">                   │</span></span>
+<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a><span class="in">          ┌────────┼────────┐</span></span>
+<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a><span class="in">          ▼        ▼        ▼</span></span>
+<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a><span class="in">       ┌─────┐ ┌─────┐ ┌─────┐</span></span>
+<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a><span class="in">       │ T1  │ │ T2  │ │ T3  │</span></span>
+<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a><span class="in">       │Rule │ │Learn│ │Meas.│</span></span>
+<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a><span class="in">       │imp. │ │miss.│ │only │</span></span>
+<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a><span class="in">       └──┬──┘ └──┬──┘ └──┬──┘</span></span>
+<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a><span class="in">          │       │       │</span></span>
+<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a><span class="in">          ▼       ▼       ▼</span></span>
+<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
+<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a><span class="in">│  TRAIN (identical for each treatment)            │</span></span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a><span class="in">│  Gradient-boosted trees, same hyperparameters,   │</span></span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a><span class="in">│  same validation splits, same target variable.   │</span></span>
+<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a><span class="in">│  Only the input data treatment differs.          │</span></span>
+<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a><span class="in">└──────────────────┬──────────────────────────────┘</span></span>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a><span class="in">                   │</span></span>
+<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a><span class="in">                   ▼</span></span>
+<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
+<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a><span class="in">│  COMPARE                                         │</span></span>
+<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a><span class="in">│  Extract air-to-radiant sensitivity ratio from   │</span></span>
+<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a><span class="in">│  each model. Compute partial-dependence curves.  │</span></span>
+<span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a><span class="in">│                                                  │</span></span>
+<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a><span class="in">│  Threshold: if ratio changes by &gt; 50% across     │</span></span>
+<span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a><span class="in">│  treatments, the conclusion is treatment-         │</span></span>
+<span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a><span class="in">│  dependent and must be reported.                  │</span></span>
+<span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a><span class="in">└──────────────────┬──────────────────────────────┘</span></span>
+<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a><span class="in">                   │</span></span>
+<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a><span class="in">                   ▼</span></span>
+<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────┐</span></span>
+<span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a><span class="in">│  OUTPUT                                          │</span></span>
+<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a><span class="in">│  Table: sensitivity ratio per treatment          │</span></span>
+<span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a><span class="in">│  (actual result: 1.9 → 4.5 = 137% change)       │</span></span>
+<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a><span class="in">│  Verdict: conclusion IS treatment-dependent.     │</span></span>
+<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a><span class="in">│  Partial-dependence plots per treatment.         │</span></span>
+<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a><span class="in">└─────────────────────────────────────────────────┘</span></span>
+<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Input files:** ASHRAE Database II CSV export; field-study metadata spreadsheet</span>
-<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Variable:** Data treatment method (T1 / T2 / T3)</span>
-<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Steps:** Classify → split into three treatment branches → train identical models → extract and compare sensitivity ratios</span>
-<span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Expected output:** Sensitivity ratio table + partial-dependence plots</span>
-<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Threshold:** &gt;50% change in ratio = treatment-dependent conclusion</span>
-<span id="cb2-152"><a href="#cb2-152" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Likely failure point:** Misclassification of records (some studies silently impute without documenting it)</span>
-<span id="cb2-153"><a href="#cb2-153" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-154"><a href="#cb2-154" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a><span class="fu">### Workflow definition</span></span>
+<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Input files:** ASHRAE Database II CSV export; field-study metadata spreadsheet</span>
+<span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Variable:** Data treatment method (T1 / T2 / T3)</span>
+<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Steps:** Classify → split into three treatment branches → train identical models → extract and compare sensitivity ratios</span>
+<span id="cb2-152"><a href="#cb2-152" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Expected output:** Sensitivity ratio table + partial-dependence plots</span>
+<span id="cb2-153"><a href="#cb2-153" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Threshold:** &gt;50% change in ratio = treatment-dependent conclusion</span>
+<span id="cb2-154"><a href="#cb2-154" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Likely failure point:** Misclassification of records (some studies silently impute without documenting it)</span>
 <span id="cb2-155"><a href="#cb2-155" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-156"><a href="#cb2-156" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5. A4 Branch Declaration</span></span>
+<span id="cb2-156"><a href="#cb2-156" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb2-157"><a href="#cb2-157" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-158"><a href="#cb2-158" aria-hidden="true" tabindex="-1"></a><span class="fu">### Route</span></span>
+<span id="cb2-158"><a href="#cb2-158" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5. A4 Branch Declaration</span></span>
 <span id="cb2-159"><a href="#cb2-159" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-160"><a href="#cb2-160" aria-hidden="true" tabindex="-1"></a>**Route A: Retrospective Redesign** — this is an investigation of an existing dataset and existing practice, not a live design intervention.</span>
+<span id="cb2-160"><a href="#cb2-160" aria-hidden="true" tabindex="-1"></a><span class="fu">### Route</span></span>
 <span id="cb2-161"><a href="#cb2-161" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-162"><a href="#cb2-162" aria-hidden="true" tabindex="-1"></a><span class="fu">### Decision</span></span>
+<span id="cb2-162"><a href="#cb2-162" aria-hidden="true" tabindex="-1"></a>**Route A: Retrospective Redesign** — this is an investigation of an existing dataset and existing practice, not a live design intervention.</span>
 <span id="cb2-163"><a href="#cb2-163" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-164"><a href="#cb2-164" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Project:** Thermal comfort database analysis</span>
-<span id="cb2-165"><a href="#cb2-165" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Decision:** Whether the standard missing-data treatment ($T_{mrt} = T_a$) produces a stable or unstable learned sensitivity</span>
-<span id="cb2-166"><a href="#cb2-166" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Alternatives:** Three data treatments (T1, T2, T3)</span>
-<span id="cb2-167"><a href="#cb2-167" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Why this matters:** Every HVAC control strategy and comfort standard that relies on these databases inherits the data treatment silently</span>
-<span id="cb2-168"><a href="#cb2-168" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-169"><a href="#cb2-169" aria-hidden="true" tabindex="-1"></a><span class="fu">### Workflow</span></span>
+<span id="cb2-164"><a href="#cb2-164" aria-hidden="true" tabindex="-1"></a><span class="fu">### Decision</span></span>
+<span id="cb2-165"><a href="#cb2-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-166"><a href="#cb2-166" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Project:** Thermal comfort database analysis</span>
+<span id="cb2-167"><a href="#cb2-167" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Decision:** Whether the standard missing-data treatment ($T_{mrt} = T_a$) produces a stable or unstable learned sensitivity</span>
+<span id="cb2-168"><a href="#cb2-168" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Alternatives:** Three data treatments (T1, T2, T3)</span>
+<span id="cb2-169"><a href="#cb2-169" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Why this matters:** Every HVAC control strategy and comfort standard that relies on these databases inherits the data treatment silently</span>
 <span id="cb2-170"><a href="#cb2-170" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-171"><a href="#cb2-171" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Primary route:** Python / notebook</span>
-<span id="cb2-172"><a href="#cb2-172" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Input files:** Database CSV + metadata audit</span>
-<span id="cb2-173"><a href="#cb2-173" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What varies:** Data treatment (the single controlled variable)</span>
-<span id="cb2-174"><a href="#cb2-174" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Minimum scenarios:** 3 (one per treatment)</span>
-<span id="cb2-175"><a href="#cb2-175" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Output:** Sensitivity ratio table + partial-dependence comparison</span>
-<span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Threshold:** &gt;50% ratio change across treatments = treatment-dependent</span>
-<span id="cb2-177"><a href="#cb2-177" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-178"><a href="#cb2-178" aria-hidden="true" tabindex="-1"></a><span class="fu">### Feasibility</span></span>
+<span id="cb2-171"><a href="#cb2-171" aria-hidden="true" tabindex="-1"></a><span class="fu">### Workflow</span></span>
+<span id="cb2-172"><a href="#cb2-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-173"><a href="#cb2-173" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Primary route:** Python / notebook</span>
+<span id="cb2-174"><a href="#cb2-174" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Input files:** Database CSV + metadata audit</span>
+<span id="cb2-175"><a href="#cb2-175" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What varies:** Data treatment (the single controlled variable)</span>
+<span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Minimum scenarios:** 3 (one per treatment)</span>
+<span id="cb2-177"><a href="#cb2-177" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Output:** Sensitivity ratio table + partial-dependence comparison</span>
+<span id="cb2-178"><a href="#cb2-178" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Threshold:** &gt;50% ratio change across treatments = treatment-dependent</span>
 <span id="cb2-179"><a href="#cb2-179" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-180"><a href="#cb2-180" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What must exist by A3:** Working pipeline for at least T1 and T2, with sensitivity ratio extracted</span>
-<span id="cb2-181"><a href="#cb2-181" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Most likely failure:** Records misclassified between measured and imputed</span>
-<span id="cb2-182"><a href="#cb2-182" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Backup route:** If full retraining is too slow, use a simpler model (logistic regression) and report whether the direction of the sensitivity shift is the same</span>
-<span id="cb2-183"><a href="#cb2-183" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What can be simplified:** Drop T3 (measured-only) if the subset is too small to train on</span>
-<span id="cb2-184"><a href="#cb2-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-185"><a href="#cb2-185" aria-hidden="true" tabindex="-1"></a><span class="fu">### Branch Statement</span></span>
+<span id="cb2-180"><a href="#cb2-180" aria-hidden="true" tabindex="-1"></a><span class="fu">### Feasibility</span></span>
+<span id="cb2-181"><a href="#cb2-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-182"><a href="#cb2-182" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What must exist by A3:** Working pipeline for at least T1 and T2, with sensitivity ratio extracted</span>
+<span id="cb2-183"><a href="#cb2-183" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Most likely failure:** Records misclassified between measured and imputed</span>
+<span id="cb2-184"><a href="#cb2-184" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Backup route:** If full retraining is too slow, use a simpler model (logistic regression) and report whether the direction of the sensitivity shift is the same</span>
+<span id="cb2-185"><a href="#cb2-185" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**What can be simplified:** Drop T3 (measured-only) if the subset is too small to train on</span>
 <span id="cb2-186"><a href="#cb2-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-187"><a href="#cb2-187" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; I will use Route A (Retrospective Redesign) to test whether the learned air-to-radiant sensitivity in thermal comfort models is stable across data treatments, through a controlled comparison of three imputation strategies on the same database, because the design decision (which treatment to trust) depends on whether the conclusion survives the space of reasonable data-cleaning choices, and the minimum useful output is the sensitivity ratio under each treatment with the learning model and validation splits held fixed.</span></span>
+<span id="cb2-187"><a href="#cb2-187" aria-hidden="true" tabindex="-1"></a><span class="fu">### Branch Statement</span></span>
 <span id="cb2-188"><a href="#cb2-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-189"><a href="#cb2-189" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb2-189"><a href="#cb2-189" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; I will use Route A (Retrospective Redesign) to test whether the learned air-to-radiant sensitivity in thermal comfort models is stable across data treatments, through a controlled comparison of three imputation strategies on the same database, because the design decision (which treatment to trust) depends on whether the conclusion survives the space of reasonable data-cleaning choices, and the minimum useful output is the sensitivity ratio under each treatment with the learning model and validation splits held fixed.</span></span>
 <span id="cb2-190"><a href="#cb2-190" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-191"><a href="#cb2-191" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why This Example Works as an A2</span></span>
+<span id="cb2-191"><a href="#cb2-191" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb2-192"><a href="#cb2-192" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-193"><a href="#cb2-193" aria-hidden="true" tabindex="-1"></a>This example demonstrates several things the assignment is looking for:</span>
+<span id="cb2-193"><a href="#cb2-193" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why This Example Works as an A2</span></span>
 <span id="cb2-194"><a href="#cb2-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-195"><a href="#cb2-195" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**The decision is about evidence, not about software.** The question is not "which tool should I use" but "does the conclusion change when I handle the evidence differently."</span>
+<span id="cb2-195"><a href="#cb2-195" aria-hidden="true" tabindex="-1"></a>This example demonstrates several things the assignment is looking for:</span>
 <span id="cb2-196"><a href="#cb2-196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-197"><a href="#cb2-197" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**The alternatives are genuine.** All three treatments are defensible. The point is to test whether the choice matters, not to declare one correct.</span>
+<span id="cb2-197"><a href="#cb2-197" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**The decision is about evidence, not about software.** The question is not "which tool should I use" but "does the conclusion change when I handle the evidence differently."</span>
 <span id="cb2-198"><a href="#cb2-198" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**The workflow has a controlled variable.** Only the data treatment changes; the model, validation splits, and target are held fixed. This is what makes the comparison interpretable.</span>
+<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**The alternatives are genuine.** All three treatments are defensible. The point is to test whether the choice matters, not to declare one correct.</span>
 <span id="cb2-200"><a href="#cb2-200" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-201"><a href="#cb2-201" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**The threshold is stated in advance.** "If the ratio changes by more than 50%" is a pre-committed criterion, not a post-hoc narrative.</span>
+<span id="cb2-201"><a href="#cb2-201" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**The workflow has a controlled variable.** Only the data treatment changes; the model, validation splits, and target are held fixed. This is what makes the comparison interpretable.</span>
 <span id="cb2-202"><a href="#cb2-202" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-203"><a href="#cb2-203" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**The failure modes are named.** Record misclassification is acknowledged as the weakest link, not hidden.</span>
+<span id="cb2-203"><a href="#cb2-203" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**The threshold is stated in advance.** "If the ratio changes by more than 50%" is a pre-committed criterion, not a post-hoc narrative.</span>
 <span id="cb2-204"><a href="#cb2-204" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-205"><a href="#cb2-205" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>**The tool choice follows the question.** Python/notebook is chosen because the question requires retraining a model under controlled conditions — not because Python is the most advanced option.</span>
+<span id="cb2-205"><a href="#cb2-205" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**The failure modes are named.** Record misclassification is acknowledged as the weakest link, not hidden.</span>
 <span id="cb2-206"><a href="#cb2-206" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-207"><a href="#cb2-207" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb2-208"><a href="#cb2-208" aria-hidden="true" tabindex="-1"></a><span class="fu">## Adapting This to Your Own A2</span></span>
-<span id="cb2-209"><a href="#cb2-209" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-210"><a href="#cb2-210" aria-hidden="true" tabindex="-1"></a>Replace the database with your evidence source. Replace the three data treatments with three versions of your studio decision (three site layouts, three facade options, three scoring methods). Keep the structure: one controlled variable, same evaluation method, stated threshold, named failure mode.</span>
-<span id="cb2-211"><a href="#cb2-211" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb2-207"><a href="#cb2-207" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>**The tool choice follows the question.** Python/notebook is chosen because the question requires retraining a model under controlled conditions — not because Python is the most advanced option.</span>
+<span id="cb2-208"><a href="#cb2-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-209"><a href="#cb2-209" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb2-210"><a href="#cb2-210" aria-hidden="true" tabindex="-1"></a><span class="fu">## Adapting This to Your Own A2</span></span>
+<span id="cb2-211"><a href="#cb2-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-212"><a href="#cb2-212" aria-hidden="true" tabindex="-1"></a>Replace the database with your evidence source. Replace the three data treatments with three versions of your studio decision (three site layouts, three facade options, three scoring methods). Keep the structure: one controlled variable, same evaluation method, stated threshold, named failure mode.</span>
+<span id="cb2-213"><a href="#cb2-213" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
