@@ -264,85 +264,85 @@
   {
     "objectID": "examples/a2-example-facade-study.html",
     "href": "examples/a2-example-facade-study.html",
-    "title": "A2 Worked Example: Facade Shading for a Campus Reading Room",
+    "title": "A2 Worked Example: External Shading Devices for Offices in Hot Climates",
     "section": "",
-    "text": "NoteAbout This Example\n\n\n\nThis is a worked A2 skeleton based on a common architectural design problem: choosing a facade shading strategy using daylight and energy simulation. Unlike the Hidden Drivers example, this one starts from a spatial design decision — the kind of question a studio project would produce. The structure is the same; the evidence is different.",
+    "text": "NoteAbout This Example\n\n\n\nThis is a worked A2 skeleton based on a real research project — “Impact of external shading devices on thermal and daylighting performance of offices in hot climate regions” (Freewan, Solar Energy, 2014). DOI: 10.1016/j.solener.2014.01.009\nIt starts from a spatial design decision — which shading device to fix to a south-facing office facade — and uses both field measurement and simulation to compare three options. See also the companion data-analysis example for a non-spatial version of the same A2 structure.",
     "crumbs": [
       "Home",
       "Examples",
-      "A2: Facade Shading (design simulation)"
+      "A2: Shading Devices (design simulation)"
     ]
   },
   {
     "objectID": "examples/a2-example-facade-study.html#decision-recap",
     "href": "examples/a2-example-facade-study.html#decision-recap",
-    "title": "A2 Worked Example: Facade Shading for a Campus Reading Room",
+    "title": "A2 Worked Example: External Shading Devices for Offices in Hot Climates",
     "section": "1. Decision Recap",
-    "text": "1. Decision Recap\n\nDecision\nWhich shading strategy for the south-facing reading room of a proposed campus library produces acceptable daylight while keeping cooling loads within the project’s energy budget?\n\n\nAlternatives\n\n\n\n\n\n\n\nOption\nDescription\n\n\n\n\nA — Fixed horizontal louvers\n600 mm deep aluminum louvers at 450 mm spacing, fixed angle\n\n\nB — Perforated metal screen\n40% perforation ratio, flush-mounted, no moving parts\n\n\nC — Automated roller blinds\nInterior fabric blinds activated by exterior illuminance sensor at 25 klux\n\n\n\nAll three options share the same glazing (double low-e, SHGC 0.27) and the same floor plan. Only the shading device changes.\n\n\nAudience\nDesign team and client sustainability consultant, who will use the comparison to select one system for the schematic design package.\n\n\nWhy evidence matters\nThe team’s instinct favours Option A (louvers — familiar, low maintenance). But the reading room faces due south in a subtropical climate (Hong Kong), and the consultant has flagged that fixed louvers may over-shade the space in winter, reducing useful daylight below the 300 lux threshold for reading. The choice cannot rest on instinct alone because the three options perform differently on daylight, glare, and cooling — and the ranking changes depending on which metric leads.\n\n\nWhat action the evidence should support\nSelect one shading system for the schematic design submission, with documented evidence showing the trade-off between daylight, glare, and energy for each option.",
+    "text": "1. Decision Recap\n\nDecision\nWhich fixed external shading device for south-facing offices in a hot-arid climate (Amman, Jordan) best balances cooling-load reduction with maintained task-level daylight?\n\n\nAlternatives\n\n\n\n\n\n\n\nOption\nDescription\n\n\n\n\nA — Vertical fins\nExternal vertical aluminium fins projecting from the facade\n\n\nB — Diagonal fins\nExternal fins mounted at an oblique angle to the facade plane\n\n\nC — Egg-crate device\nCombined horizontal-and-vertical grid (egg-crate geometry) projecting from the facade\n\n\n\nAll three options were tested on identical south-facing offices at the Jordan University of Science and Technology (JUST) campus. Only the shading device changed; the glazing, room dimensions, orientation, and occupancy were held constant. A fourth condition — the unshaded base case — served as the control.\n\n\nAudience\nArchitects and building-services engineers selecting a fixed shading system for south-facing office facades in hot-arid climates, where cooling dominates the energy budget but daylight must remain sufficient for desk work.\n\n\nWhy evidence matters\nThe instinct choice is often the simplest device — vertical fins are familiar, easy to fabricate, and widely used. But Freewan’s study showed that vertical fins allowed large sun patches to penetrate the office in the afternoon, providing the least cooling relief of the three options (~7% cooling-load reduction vs. base case). The egg-crate device delivered the highest cooling savings (~17%) but cut desk-level illuminance to roughly 200 lux — below the 300 lux task threshold. The ranking of the three options reverses depending on whether you lead with energy or daylight. That tension cannot be resolved by instinct; it requires a controlled comparison.\n\n\nWhat action the evidence should support\nSelect one fixed shading device for the facade, with documented evidence showing the trade-off between cooling-load reduction and maintained daylight for each option.",
     "crumbs": [
       "Home",
       "Examples",
-      "A2: Facade Shading (design simulation)"
+      "A2: Shading Devices (design simulation)"
     ]
   },
   {
     "objectID": "examples/a2-example-facade-study.html#evidence-map",
     "href": "examples/a2-example-facade-study.html#evidence-map",
-    "title": "A2 Worked Example: Facade Shading for a Campus Reading Room",
+    "title": "A2 Worked Example: External Shading Devices for Offices in Hot Climates",
     "section": "2. Evidence Map",
-    "text": "2. Evidence Map\n\n\n\n\n\n\n\n\n\n\n\n\nSource\nType\nRelevance\nAccess\nConfidence\nLimits\nRole in workflow\n\n\n\n\nClimate file (Hong Kong, IWEC/TMY)\nMeasurement (hourly)\nPrimary — drives both daylight and energy models\nPublic (EnergyPlus weather data)\nHigh (validated station data)\nRepresents a typical year, not extremes; see sAMY research for climate-file sensitivity\nSimulation input\n\n\nRhino 3D model of reading room\nDesign geometry\nPrimary — defines the space being tested\nProject file\nHigh (own geometry)\nModel simplifications (furniture, partitions omitted) may affect daylight distribution\nSimulation input\n\n\nGlazing spec (manufacturer data)\nProduct data\nHigh — SHGC, VLT, U-value\nFrom spec sheet\nHigh\nLab-measured, may differ from installed performance\nMaterial input\n\n\nShading device geometry / properties\nDesign variable\nCritical — the thing being compared\nDefined by design team\nMedium — optical properties estimated from manufacturer ranges\nScreen perforation ratio is nominal; real transmission varies with angle\nThe controlled variable\n\n\nASHRAE 90.1 / BEAM Plus\nStandard\nMedium — sets energy budget threshold\nPublic\nHigh (code requirement)\nPrescriptive path; actual performance may differ\nThreshold for cooling load acceptability\n\n\nLEED v4 / IES LM-83\nStandard\nMedium — defines daylight metrics (sDA, ASE)\nPublic\nHigh\nMetrics are annual summaries — do not capture seasonal variation\nThreshold for daylight acceptability\n\n\n\n\nWhat is missing from this evidence map\n\nPost-occupancy data from a comparable reading room with each shading type\nOccupant preference data (do readers actually prefer 300 lux or more?)\nMaintenance and cost data (relevant to the final decision, but outside the simulation scope)\nGlare assessment from an occupant position (DGP, not just illuminance)",
+    "text": "2. Evidence Map\n\n\n\n\n\n\n\n\n\n\n\n\nSource\nType\nRelevance\nAccess\nConfidence\nLimits\nRole in workflow\n\n\n\n\nField measurements (JUST campus, Amman)\nMeasurement (hourly)\nPrimary — air temperature, illuminance, sun-patch area in three identical offices\nFrom publication\nHigh (calibrated instruments in real offices)\nLimited measurement period; does not cover full annual cycle\nCalibration and validation of simulation\n\n\nSimulation model (thermal + daylight)\nModel\nPrimary — extends field data to annual predictions\nReproduced from publication\nMedium — depends on model assumptions (material properties, schedules)\nSimplified geometry; furniture and partitions omitted\nAnnual performance estimates\n\n\nClimate file (Amman, Jordan)\nMeasurement (hourly)\nHigh — drives both thermal and daylight models\nPublic (EnergyPlus weather data)\nHigh (TMY station data)\nTypical year, not extremes\nSimulation input\n\n\nShading device geometry\nDesign variable\nCritical — the thing being compared\nDefined in publication\nHigh (built and measured)\nOptical properties at oblique incidence angles are approximated\nThe controlled variable\n\n\nJordanian building energy code / ASHRAE 55\nStandard\nMedium — sets acceptable indoor temperature and illuminance ranges\nPublic\nHigh (code requirement)\nPrescriptive; actual occupant expectations may differ\nThreshold for acceptability\n\n\n\n\nWhat is missing from this evidence map\n\nAnnual climate-based daylight metrics (sDA, ASE) — the study reports point-in-time illuminance, not annual spatial metrics\nOccupant satisfaction surveys (do workers notice the daylight difference?)\nCost and maintenance data for each shading type\nGlare probability (DGP) from occupant viewpoints",
     "crumbs": [
       "Home",
       "Examples",
-      "A2: Facade Shading (design simulation)"
+      "A2: Shading Devices (design simulation)"
     ]
   },
   {
     "objectID": "examples/a2-example-facade-study.html#tool-translation-matrix",
     "href": "examples/a2-example-facade-study.html#tool-translation-matrix",
-    "title": "A2 Worked Example: Facade Shading for a Campus Reading Room",
+    "title": "A2 Worked Example: External Shading Devices for Offices in Hot Climates",
     "section": "3. Tool Translation Matrix",
-    "text": "3. Tool Translation Matrix\n\nDesign Decision (restated)\nWhich shading option delivers adequate daylight (sDA ≥ 55% at 300 lux) and acceptable cooling load (≤ EUI threshold) for a south-facing reading room in Hong Kong?\n\n\n\n\n\n\n\n\n\n\n\n\nWorkflow route\nInput\nWhat varies\nOperation\nOutput\nWhat it cannot answer\nFit\n\n\n\n\nGH + Ladybug / Honeybee\nRhino geometry + EPW file + shading geometry\nShading option (A, B, C)\nAnnual daylight simulation (Radiance via Honeybee) + energy simulation (EnergyPlus via Honeybee) for each option\nsDA, ASE, annual cooling load (kWh), DGP at reading positions\nWhether occupants will prefer the result; whether the model captures real construction tolerances\nhigh\n\n\nBIM/BEM (Revit + Insight)\nRevit model + built-in weather\nShading type (generic families)\nWhole-building energy model; Insight lighting analysis\nEUI, daylight factor (simplified)\nRadiance-level daylight accuracy; annual climate-based metrics like sDA\nmedium\n\n\nPython / notebook\nSimulation output CSVs from Ladybug or EnergyPlus\nPost-processing and visualization\nStatistical comparison, threshold testing, sensitivity analysis\nCharts, ranked tables, sensitivity ranges\nCannot run the simulation itself — depends on upstream tool\nmedium (post-processing)\n\n\nSpreadsheet / low-code\nManufacturer data + rule-of-thumb shading coefficients\nShading coefficient lookup\nEstimate cooling load reduction and daylight factor using simplified methods\nRough ranking by shading coefficient and VLT\nNo spatial resolution; cannot capture seasonal geometry effects\nlow\n\n\nGIS / spatial\nNot applicable to a single-room facade question\n—\n—\n—\n—\nlow\n\n\nAI-assisted workflow\nGeometry description + prompt\nShading description\nGenerate parametric definitions or analysis scripts\nAccelerated setup, but outputs require verification\nCannot validate physical accuracy of the simulation\nmedium (support role)\n\n\n\n\n\nRoute Selection\n\nI am choosing Grasshopper + Ladybug/Honeybee because my decision depends on comparing spatially resolved annual daylight and cooling load for three shading options on the same geometry, and the minimum useful output is sDA, ASE, and annual cooling EUI for each option.\n\n\n\nRisk Check\n\nMost fragile input: Optical properties of the perforated screen (Option B) — manufacturer data gives a single perforation ratio, but angular transmittance is not specified\nLikely setup problem: Getting Honeybee’s Radiance material definitions to match the shading products; ensuring the EnergyPlus shading schedule for Option C (automated blinds) triggers correctly\nWhat I can cut: Drop DGP (glare probability) and report only sDA/ASE — glare requires a separate point-in-time simulation for each view direction\nWhat I need help with: Validating that the Radiance material for the perforated screen is a reasonable approximation",
+    "text": "3. Tool Translation Matrix\n\nDesign Decision (restated)\nWhich shading device delivers the greatest cooling-load reduction while keeping desk-level illuminance above the 300 lux task threshold for a south-facing office in a hot-arid climate?\n\n\n\n\n\n\n\n\n\n\n\n\nWorkflow route\nInput\nWhat varies\nOperation\nOutput\nWhat it cannot answer\nFit\n\n\n\n\nGH + Ladybug / Honeybee\nRhino geometry + EPW file + shading geometry\nShading option (A, B, C)\nAnnual daylight simulation (Radiance via Honeybee) + energy simulation (EnergyPlus via Honeybee) for each option\nsDA, ASE, annual cooling load (kWh/m²), illuminance maps\nWhether occupants will prefer the result; whether construction tolerances match the model\nhigh\n\n\nBIM/BEM (DesignBuilder / IES-VE)\n3D model + weather file + shading components\nShading type\nCoupled thermal-daylight simulation\nIndoor temperature, cooling load, daylight factor\nRadiance-level spatial daylight resolution; climate-based annual metrics\nhigh (this is what Freewan used)\n\n\nPython / notebook\nSimulation output CSVs\nPost-processing and visualization\nStatistical comparison, threshold testing, sensitivity plots\nRanked tables, charts, sensitivity ranges\nCannot run the simulation itself — depends on upstream tool\nmedium (post-processing)\n\n\nSpreadsheet / low-code\nManufacturer shading coefficients + rule-of-thumb methods\nShading coefficient lookup\nEstimate cooling-load reduction using simplified solar heat-gain method\nRough ranking by shading coefficient\nNo spatial daylight resolution; cannot capture geometry-dependent seasonal effects\nlow\n\n\nGIS / spatial\nNot applicable to a single-room facade question\n—\n—\n—\n—\nlow\n\n\nAI-assisted workflow\nGeometry description + prompt\nShading description\nGenerate parametric definitions or analysis scripts\nAccelerated setup; outputs require verification\nCannot validate physical accuracy of simulation\nmedium (support)\n\n\n\n\n\nRoute Selection\n\nI am choosing Grasshopper + Ladybug/Honeybee (or alternatively a BIM/BEM tool like IES-VE or DesignBuilder, as Freewan used) because my decision depends on comparing cooling loads and daylight levels for three shading devices on the same facade geometry, and the minimum useful output is the cooling-load reduction percentage and desk-level illuminance for each option.\n\n\n\nRisk Check\n\nMost fragile input: Optical properties of the diagonal fins at oblique angles — manufacturer data gives properties at normal incidence, but shading performance depends on solar angle throughout the day\nLikely setup problem: Matching the Radiance material definition to the physical aluminium surface; ensuring the simulation grid captures the desk plane accurately\nWhat I can cut: Drop the annual sDA/ASE calculation and report point-in-time illuminance at peak cooling hours — this reduces simulation time significantly\nWhat I need help with: Validating that the simulation model reproduces the field-measured illuminance values before trusting the annual extrapolation",
     "crumbs": [
       "Home",
       "Examples",
-      "A2: Facade Shading (design simulation)"
+      "A2: Shading Devices (design simulation)"
     ]
   },
   {
     "objectID": "examples/a2-example-facade-study.html#primary-workflow-selection",
     "href": "examples/a2-example-facade-study.html#primary-workflow-selection",
-    "title": "A2 Worked Example: Facade Shading for a Campus Reading Room",
+    "title": "A2 Worked Example: External Shading Devices for Offices in Hot Climates",
     "section": "4. Primary Workflow Selection",
-    "text": "4. Primary Workflow Selection\n┌─────────────────────────────────────────────────┐\n│  INPUT                                           │\n│  Rhino model (reading room, south facade)        │\n│  + Hong Kong EPW climate file                    │\n│  + glazing spec + 3 shading definitions          │\n└──────────────────┬──────────────────────────────┘\n                   │\n          ┌────────┼────────┐\n          ▼        ▼        ▼\n       ┌─────┐ ┌─────┐ ┌─────┐\n       │Opt A│ │Opt B│ │Opt C│\n       │Louv.│ │Perf.│ │Blind│\n       └──┬──┘ └──┬──┘ └──┬──┘\n          │       │       │\n          ▼       ▼       ▼\n┌─────────────────────────────────────────────────┐\n│  SIMULATE (same settings for each option)        │\n│  1. Annual daylight (Radiance via Honeybee)      │\n│     → sDA (% of floor area ≥ 300 lux for ≥ 50%  │\n│       of occupied hours)                         │\n│     → ASE (% of floor area &gt; 1000 lux for       │\n│       &gt; 250 hours — glare risk proxy)            │\n│  2. Annual energy (EnergyPlus via Honeybee)      │\n│     → Cooling EUI (kWh/m² for the reading room)  │\n└──────────────────┬──────────────────────────────┘\n                   │\n                   ▼\n┌─────────────────────────────────────────────────┐\n│  COMPARE                                         │\n│                                                  │\n│  Thresholds (stated in advance):                 │\n│  • sDA ≥ 55% at 300 lux       (LEED minimum)    │\n│  • ASE ≤ 10%                   (glare limit)     │\n│  • Cooling EUI ≤ project budget (from consultant)│\n│                                                  │\n│  If all three options pass all thresholds:        │\n│  rank by sDA (daylight wins ties).               │\n│  If some options fail a threshold: eliminate.     │\n│  If ranking changes when threshold shifts ±10%:  │\n│  flag as threshold-sensitive.                    │\n└──────────────────┬──────────────────────────────┘\n                   │\n                   ▼\n┌─────────────────────────────────────────────────┐\n│  OUTPUT                                          │\n│  Summary table:                                  │\n│  ┌────────┬───────┬───────┬──────────┬────────┐  │\n│  │ Option │ sDA % │ ASE % │ Cool EUI │ Pass?  │  │\n│  ├────────┼───────┼───────┼──────────┼────────┤  │\n│  │ A Louv │  48*  │   4   │   62     │ FAIL   │  │\n│  │ B Perf │  61   │   8   │   68*    │ CHECK  │  │\n│  │ C Blind│  58   │   5   │   59     │ PASS   │  │\n│  └────────┴───────┴───────┴──────────┴────────┘  │\n│  * = below/above threshold                       │\n│                                                  │\n│  Plausible outcome: the instinct favourite (A)   │\n│  fails on daylight. The \"best\" option depends    │\n│  on whether you weight daylight or energy.       │\n│  That tension IS the evidence contribution.      │\n└─────────────────────────────────────────────────┘\n\nWorkflow definition\n\nInput files: Rhino .3dm with reading-room geometry; Hong Kong .epw; three Grasshopper shading component definitions\nVariable: Shading option (A / B / C) — the only thing that changes between runs\nSteps: Model setup → apply each shading option → run annual daylight (Radiance) → run annual energy (EnergyPlus) → extract sDA, ASE, cooling EUI → compare against thresholds → rank\nExpected output: Comparison table with pass/fail per metric; spatial daylight maps for each option; recommendation with stated trade-off\nThreshold: sDA ≥ 55%, ASE ≤ 10%, cooling EUI ≤ project target\nLikely failure point: Option B’s angular transmittance — if the Radiance material is wrong, the daylight results for the perforated screen are unreliable",
+    "text": "4. Primary Workflow Selection\n┌─────────────────────────────────────────────────┐\n│  INPUT                                           │\n│  Office geometry (south-facing, JUST campus)     │\n│  + Amman EPW climate file                        │\n│  + glazing spec + 3 shading device definitions   │\n│  + base case (no shading)                        │\n└──────────────────┬──────────────────────────────┘\n                   │\n          ┌────────┼────────┐\n          ▼        ▼        ▼\n       ┌─────┐ ┌─────┐ ┌─────┐\n       │Opt A│ │Opt B│ │Opt C│\n       │Vert.│ │Diag.│ │Egg- │\n       │fins │ │fins │ │crate│\n       └──┬──┘ └──┬──┘ └──┬──┘\n          │       │       │\n          ▼       ▼       ▼\n┌─────────────────────────────────────────────────┐\n│  SIMULATE (same settings for each option)        │\n│  1. Thermal: indoor air temperature + cooling    │\n│     load for each shading configuration          │\n│  2. Daylight: desk-level illuminance at          │\n│     multiple time steps                          │\n│  (Freewan used coupled thermal-daylight          │\n│   simulation validated against field data)       │\n└──────────────────┬──────────────────────────────┘\n                   │\n                   ▼\n┌─────────────────────────────────────────────────┐\n│  COMPARE                                         │\n│                                                  │\n│  Thresholds (stated in advance):                 │\n│  • Cooling-load reduction ≥ 10% vs. base case    │\n│  • Desk illuminance ≥ 300 lux (task level)       │\n│  • Indoor air temp. reduction vs. base case      │\n│                                                  │\n│  Freewan's actual results:                       │\n│  ┌────────┬──────────┬───────────┬────────────┐  │\n│  │ Option │ Cool. Δ  │ Illum.    │ Trade-off  │  │\n│  ├────────┼──────────┼───────────┼────────────┤  │\n│  │ A Vert │  ~7%     │ ~350 lux  │ Most light │  │\n│  │        │          │           │ least save │  │\n│  │ B Diag │  ~12%    │ ~150 lux* │ Morning    │  │\n│  │        │          │           │ too dark   │  │\n│  │ C Egg  │  ~17%    │ ~200 lux* │ Best cool  │  │\n│  │        │          │           │ but dim    │  │\n│  └────────┴──────────┴───────────┴────────────┘  │\n│  * = below 300 lux task threshold                │\n│                                                  │\n│  Key finding: diagonal fins and egg-crate        │\n│  outperformed vertical fins overall, but          │\n│  BOTH reduced illuminance below the task          │\n│  threshold. The \"best\" device depends on          │\n│  whether cooling or daylight leads.              │\n│                                                  │\n│  Seasonal nuance: the egg-crate allowed solar    │\n│  penetration in winter (when heating is wanted)  │\n│  while blocking it in summer — a geometry         │\n│  advantage the other devices did not share.       │\n└─────────────────────────────────────────────────┘\n\nWorkflow definition\n\nInput files: 3D model of the south-facing office; Amman .epw climate file; three shading-device geometry definitions; base case (no shading)\nVariable: Shading device type (A / B / C) — the only thing that changes between runs\nSteps: Model setup → apply each shading device → run coupled thermal-daylight simulation → extract cooling load, indoor air temperature, and desk illuminance → compare against thresholds → rank\nExpected output: Comparison table with cooling-load reduction (%) and illuminance (lux) per option; recommendation stating the trade-off\nThreshold: Cooling reduction ≥ 10% vs. base case; illuminance ≥ 300 lux at desk level\nLikely failure point: Diagonal fin angle — the oblique geometry makes angular solar transmittance hard to model accurately",
     "crumbs": [
       "Home",
       "Examples",
-      "A2: Facade Shading (design simulation)"
+      "A2: Shading Devices (design simulation)"
     ]
   },
   {
     "objectID": "examples/a2-example-facade-study.html#a4-branch-declaration",
     "href": "examples/a2-example-facade-study.html#a4-branch-declaration",
-    "title": "A2 Worked Example: Facade Shading for a Campus Reading Room",
+    "title": "A2 Worked Example: External Shading Devices for Offices in Hot Climates",
     "section": "5. A4 Branch Declaration",
-    "text": "5. A4 Branch Declaration\n\nRoute\nRoute B: Live Studio Application — this facade decision is part of an active studio project, and the simulation results will feed directly into the schematic design submission.\n\n\nDecision\n\nProject: Campus library — south-facing reading room\nDecision: Which shading system to specify for the south facade\nAlternatives: Fixed louvers (A), perforated screen (B), automated blinds (C)\nWhy this matters: The choice affects both the occupant experience (daylight, glare) and the project’s energy budget — and the ranking depends on which metric leads\n\n\n\nWorkflow\n\nPrimary route: Grasshopper + Ladybug/Honeybee\nInput files: Rhino model, EPW, shading definitions\nWhat varies: Shading device (single controlled variable)\nMinimum scenarios: 3 (one per option) + 1 sensitivity run (threshold ± 10%)\nOutput: sDA, ASE, cooling EUI per option; comparison table; spatial daylight maps\nThreshold: sDA ≥ 55%, ASE ≤ 10%, cooling EUI ≤ project target\n\n\n\nFeasibility\n\nWhat must exist by A3: Working Honeybee model producing sDA and cooling EUI for at least Options A and C (the two with well-defined material properties)\nMost likely failure: Perforated screen material definition (Option B) — if angular transmittance cannot be modeled reliably, drop B and compare A vs. C only\nBackup route: If Honeybee simulation is too slow or fails to converge, fall back to Climate Studio or a simplified Radiance-only daylight comparison without the energy model\nWhat can be simplified: Drop the spatial daylight maps and report only the aggregate sDA percentage\n\n\n\nBranch Statement\n\nI will use Route B (Live Studio Application) to test which shading strategy meets both daylight and cooling thresholds for the reading room, through a controlled comparison of three facade options simulated under identical conditions, because the design decision depends on a trade-off the team cannot resolve by instinct — the option that wins on daylight may lose on energy — and the minimum useful output is a comparison table showing sDA, ASE, and cooling EUI for each option against pre-stated thresholds.",
+    "text": "5. A4 Branch Declaration\n\nRoute\nRoute A: Retrospective Redesign — this example dissects a published study to show how the A2 structure maps onto a real facade decision. A student using Route B would apply the same comparison structure to their own studio project.\n\n\nDecision\n\nProject: South-facing office building, JUST campus, Amman, Jordan\nDecision: Which fixed external shading device to specify for the south facade\nAlternatives: Vertical fins (A), diagonal fins (B), egg-crate device (C)\nWhy this matters: The device that saves the most cooling energy (egg-crate, ~17%) drops illuminance below the task threshold (~200 lux), while the device that preserves the most daylight (vertical fins, ~350 lux) saves the least energy (~7%). The ranking reverses depending on which metric leads.\n\n\n\nWorkflow\n\nPrimary route: Coupled thermal-daylight simulation (IES-VE, DesignBuilder, or Grasshopper + Honeybee)\nInput files: Office geometry, EPW, shading device definitions\nWhat varies: Shading device type (single controlled variable)\nMinimum scenarios: 3 shading options + 1 base case (no shading)\nOutput: Cooling-load reduction (%), indoor air temperature reduction, desk-level illuminance per option\nThreshold: Cooling reduction ≥ 10%; illuminance ≥ 300 lux\n\n\n\nFeasibility\n\nWhat must exist by A3: Working simulation model producing cooling load and illuminance for at least Options A and C (the two geometric extremes)\nMost likely failure: Angular transmittance of the diagonal fins (Option B) — if the oblique geometry cannot be modeled accurately, compare A vs. C only\nBackup route: If coupled simulation is too slow, run daylight-only (Radiance) and use a simplified cooling estimate from shading coefficients\nWhat can be simplified: Report illuminance at one desk position instead of a full spatial grid\n\n\n\nBranch Statement\n\nI will use Route A (Retrospective Redesign) to examine how Freewan’s comparison of three fixed shading devices reveals a cooling-vs-daylight trade-off that the design team cannot resolve by instinct, through a controlled comparison of three facade options tested under identical conditions on the same office geometry, because the option that wins on energy loses on daylight and the minimum useful output is a comparison table showing cooling-load reduction and desk-level illuminance for each device against pre-stated thresholds.",
     "crumbs": [
       "Home",
       "Examples",
-      "A2: Facade Shading (design simulation)"
+      "A2: Shading Devices (design simulation)"
     ]
   },
   {
     "objectID": "examples/a2-example-facade-study.html#why-this-example-works-as-an-a2",
     "href": "examples/a2-example-facade-study.html#why-this-example-works-as-an-a2",
-    "title": "A2 Worked Example: Facade Shading for a Campus Reading Room",
+    "title": "A2 Worked Example: External Shading Devices for Offices in Hot Climates",
     "section": "Why This Example Works as an A2",
-    "text": "Why This Example Works as an A2\n\nThe decision is spatial and architectural. It starts from a facade, a room, an orientation — not a dataset. The simulation serves the design question.\nThe ranking is not obvious. Option A (the team’s instinct) may fail on daylight. Option B scores well on daylight but costs more energy. Option C passes everything but requires maintenance and control logic. The evidence does not point to one winner — it reveals a trade-off the team must negotiate.\nThe controlled variable is clear. Only the shading device changes. Geometry, climate file, glazing, occupancy schedule, and simulation settings are held fixed.\nThresholds are stated before the simulation runs. sDA ≥ 55%, ASE ≤ 10%, cooling EUI ≤ target. This prevents the post-hoc narrative of “well, 47% is close enough.”\nThe weakest link is named. The perforated screen’s angular transmittance is flagged as the most fragile input, with a stated backup plan (drop Option B).\nThe tool choice follows the question. Grasshopper + Honeybee is chosen because the question requires spatially resolved annual daylight and annual energy on the same geometry — not because it is the most advanced option. The spreadsheet route is explicitly rejected because it cannot capture seasonal shading geometry effects.\n\n\n\n\n\n\n\nTipAdapting This to Your Studio Project\n\n\n\nYou do not need a facade study. Replace the shading options with any set of design alternatives you are comparing:\n\nThree site layouts → GIS or Grasshopper, evaluated by walkability, noise exposure, or solar access\nThree structural systems → BIM/BEM, evaluated by embodied carbon, span, or construction sequence\nThree ventilation strategies → EnergyPlus or CFD, evaluated by air change rate, energy use, or thermal comfort\n\nKeep the structure: one controlled variable, same evaluation method, stated thresholds, named weakest input, and a comparison table where the ranking might change depending on which metric leads. That tension is what makes the evidence useful.\n\n\n\n\n\n\n\n\nNoteCompanion Example\n\n\n\nSee also the Hidden Drivers example for a data-analysis version of the same A2 structure, based on Guo et al. (Energy and AI, 2026). DOI: 10.1016/j.egyai.2026.100709",
+    "text": "Why This Example Works as an A2\n\nThe decision is spatial and architectural. It starts from a facade, a room, an orientation — not a dataset. The simulation serves the design question.\nThe ranking is not obvious. Vertical fins preserve the most daylight but deliver the weakest cooling relief. Egg-crate saves the most energy but drops illuminance below the task threshold. Diagonal fins fall between on energy but produce the darkest mornings. No single winner exists — the evidence reveals a trade-off the design team must negotiate.\nThe controlled variable is clear. Only the shading device changes. Room geometry, glazing, orientation, climate file, and occupancy are held constant across all four conditions (three devices plus base case).\nThresholds are stated before the simulation runs. Cooling reduction ≥ 10%; illuminance ≥ 300 lux. This prevents the post-hoc narrative of “well, 200 lux is close enough.”\nThe weakest link is named. The diagonal fin’s angular transmittance is flagged as the most fragile input, with a stated backup plan (drop Option B and compare A vs. C only).\nThe tool choice follows the question. Coupled thermal-daylight simulation is chosen because the question requires both cooling-load and illuminance data on the same geometry — not because it is the most advanced option. A spreadsheet approach is explicitly rejected because it cannot capture how shading geometry interacts with seasonal solar angles.\nIt is grounded in a real publication. Every number in the comparison table comes from Freewan’s peer-reviewed study. Students can read the full paper to see how the analysis was done and verify the findings independently.\n\n\n\n\n\n\n\nTipAdapting This to Your Studio Project\n\n\n\nYou do not need a shading study. Replace the three devices with any set of design alternatives you are comparing:\n\nThree site layouts → GIS or Grasshopper, evaluated by walkability, noise exposure, or solar access\nThree structural systems → BIM/BEM, evaluated by embodied carbon, span, or construction sequence\nThree ventilation strategies → EnergyPlus or CFD, evaluated by air change rate, energy use, or thermal comfort\n\nKeep the structure: one controlled variable, same evaluation method, stated thresholds, named weakest input, and a comparison table where the ranking might change depending on which metric leads. That tension is what makes the evidence useful.\n\n\n\n\n\n\n\n\nNoteCompanion Example\n\n\n\nSee also the Hidden Drivers example for a data-analysis version of the same A2 structure, based on Guo et al. (Energy and AI, 2026). DOI: 10.1016/j.egyai.2026.100709",
     "crumbs": [
       "Home",
       "Examples",
-      "A2: Facade Shading (design simulation)"
+      "A2: Shading Devices (design simulation)"
     ]
   },
   {
@@ -2538,7 +2538,7 @@
     "href": "assignments/assignment-03.html#session-2-check-ins-that-feed-a3",
     "title": "Assignment 3: Workflow Prototype + Verification",
     "section": "Session 2 Check-Ins That Feed A3",
-    "text": "Session 2 Check-Ins That Feed A3\nThese check-ins should make the prototype visible before the deadline. Bring rough artifacts; the point is to expose workflow reasoning early.\n\n\n\n\n\n\n\n\n\nWeek\nBring to Session 2\nRound-table question\nA3 component\n\n\n\n\n7\nworkflow artifact, GH canvas, notebook output, spreadsheet, GIS map, simulation screenshot, or AI-assisted component\nWhat goes in, what varies, what comes out, and what quality check proves it ran?\nPrototype Scope + Workflow Description\n\n\n8\nprompt log, error message, output, README fragment, verification note, or workflow checklist\nWhat must someone else inspect before they trust this output?\nVerification and Failure Log\n\n\n9\nfigure, output table, comparison chart, or object-card draft\nWhat result changes the design action, and what uncertainty remains visible?\nPrototype Output + threshold language\n\n\n\nUse the Project Reasoning Check-In template if you want a consistent note structure.",
+    "text": "Session 2 Check-Ins That Feed A3\nThese check-ins should make the prototype visible before the deadline. Bring rough artifacts; the point is to expose workflow reasoning early.\n\n\n\n\n\n\n\n\n\nWeek\nBring to Session 2\nCheck-in question\nA3 component\n\n\n\n\n7\nsubmitted A2 PDF, one attempted workflow test with its result or blocker note, and the personal project page or a local draft\nAfter the formative A2 walkthrough in triads, what feedback will you act on, what did the test show or fail to show, and what is your next action? Record the dated feedback/action and test status on the page or local draft.\nPrototype Scope + Workflow Description\n\n\n8\nprompt log, error message, output, README fragment, verification note, or workflow checklist\nWhat must someone else inspect before they trust this output?\nVerification and Failure Log\n\n\n9\nfigure, output table, comparison chart, or object-card draft\nWhat result changes the design action, and what uncertainty remains visible?\nPrototype Output + threshold language\n\n\n\nUse the Project Reasoning Check-In template if you want a consistent note structure.",
     "crumbs": [
       "Home",
       "Assignments",
@@ -2958,7 +2958,7 @@
     "href": "schedule.html#session-2-format",
     "title": "Course Schedule",
     "section": "Session 2 Format",
-    "text": "Session 2 Format\nThe second half of class is a Project Reasoning Round Table, not a formal presentation.\nBefore Session 2, each student uploads one rough material to Slack:\n\nplan, section, render, massing image, or site photo\nprecedent image or evidence source\ntable, chart, GIS map, GH canvas, BIM/BEM screenshot, notebook output, or prompt log\ndraft object card, presentation slide, or reproducibility note\n\nSelected students speak for 60-90 seconds:\n\nI brought ________.\nI chose or questioned this evidence/tool because ________.\nIt supports ________.\nIt does not yet show ________.\nMy question to the room is ________.\n\nVolunteers go first and receive formative participation acknowledgement. A1-A4 grades come from submitted work unless a specific assignment says otherwise. If more examples are needed, the instructor may use random draw or select materials that make the week’s concept visible. The draw is for a short reasoning check-in, not a polished presentation.",
+    "text": "Session 2 Format\nThe usual second-half format is a Project Reasoning Round Table, not a formal presentation. Week 6 includes personal website setup; Week 7 uses the timed A2 walkthrough and prototype clinic described below.\nFor the usual round-table format, each student uploads one rough material to Slack before Session 2:\n\nplan, section, render, massing image, or site photo\nprecedent image or evidence source\ntable, chart, GIS map, GH canvas, BIM/BEM screenshot, notebook output, or prompt log\ndraft object card, presentation slide, or reproducibility note\n\nSelected students speak for 60-90 seconds:\n\nI brought ________.\nI chose or questioned this evidence/tool because ________.\nIt supports ________.\nIt does not yet show ________.\nMy question to the room is ________.\n\nVolunteers go first and receive formative participation acknowledgement. A1-A4 grades come from submitted work unless a specific assignment says otherwise. If more examples are needed, the instructor may use random draw or select materials that make the week’s concept visible. The draw is for a short reasoning check-in, not a polished presentation.",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -2970,7 +2970,7 @@
     "href": "schedule.html#at-a-glance",
     "title": "Course Schedule",
     "section": "At a Glance",
-    "text": "At a Glance\n\n\n\n\n\n\n\n\n\nWeek\nLecture / demo lens\nSession 2 material and check-in\nAssignment alignment\n\n\n\n\n1\nTotal Recall: evidence behind a past studio decision\npast project visual: what decision and evidence are visible?\nA1 decision + evidence recall\n\n\n2\nEvidence audit: weak links, overclaims, and next decision\nmarked evidence: what does it support, and what does it not show yet?\nA1 evidence critique\n\n\n3\nSpreadsheet as baseline workflow\ntable/chart/matrix: what variants or trade-offs could be compared?\nA1 due / A2 decision recap\n\n\n4\nGIS choices for architects\nsite/map/context image: is this decision spatial?\nA2 evidence map + tool matrix\n\n\n5\nBIM/BEM and performance model translation\nmodel/performance material: what assumptions would dominate?\nA2 tool matrix + feasibility\n\n\n6\nEvidence and pathway mapping\nworkflow sketch or branch declaration: what route and output are you choosing?\nA2 due / A4 branch\n\n\n7\nMethod prototype studio\nartifact/canvas/notebook/map: what goes in, varies, and comes out?\nA3 prototype scope\n\n\n8\nReproducibility, AI fact-checking, and mentor prep\nprompt log/error/README: what must be fact-checked, relationship-checked, or documented?\nA3 verification log\n\n\n9\nThresholds, recommendations, and counter-arguments\nfigure/output/object-card draft: what result changes the action?\nA3 due / A4 launch + clinic/workgroup vote\n\n\n10\nDraft workflow review\ndraft package: can reviewers trace the full evidence loop?\nA4 draft clinic or optional workgroup\n\n\n11\nFinal package polish\nfinal component draft: which A4 component is weakest?\nA4 near-final clinic or optional workgroup\n\n\n12\nObject Fair\nfinal object card/reflection: what reasoning transfers forward?\nA4 due",
+    "text": "At a Glance\n\n\n\n\n\n\n\n\n\nWeek\nLecture / demo lens\nSession 2 material and check-in\nAssignment alignment\n\n\n\n\n1\nTotal Recall: evidence behind a past studio decision\npast project visual: what decision and evidence are visible?\nA1 decision + evidence recall\n\n\n2\nEvidence audit: weak links, overclaims, and next decision\nmarked evidence: what does it support, and what does it not show yet?\nA1 evidence critique\n\n\n3\nSpreadsheet as baseline workflow\ntable/chart/matrix: what variants or trade-offs could be compared?\nA1 due / A2 decision recap\n\n\n4\nGIS choices for architects\nsite/map/context image: is this decision spatial?\nA2 evidence map + tool matrix\n\n\n5\nBIM/BEM and performance model translation\nmodel/performance material: what assumptions would dominate?\nA2 tool matrix + feasibility\n\n\n6\nEvidence and pathway mapping\nworkflow choice and A4 branch; personal GitHub Pages setup in half of the lab\nA2 due / A4 branch\n\n\n7\nA2 to first prototype\nA2 walkthrough in triads, feedback, one test, and a project-page update\nA3 prototype scope + first A4 feedback entry\n\n\n8\nReproducibility, AI fact-checking, and mentor prep\nprompt log/error/README: what must be fact-checked, relationship-checked, or documented?\nA3 verification log\n\n\n9\nThresholds, recommendations, and counter-arguments\nfigure/output/object-card draft: what result changes the action?\nA3 due / A4 launch + clinic/workgroup vote\n\n\n10\nDraft workflow review\ndraft package: can reviewers trace the full evidence loop?\nA4 draft clinic or optional workgroup\n\n\n11\nFinal package polish\nfinal component draft: which A4 component is weakest?\nA4 near-final clinic or optional workgroup\n\n\n12\nObject Fair\nfinal object card/reflection: what reasoning transfers forward?\nA4 due",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -3042,7 +3042,7 @@
     "href": "schedule.html#week-6-evidence-and-pathway-mapping",
     "title": "Course Schedule",
     "section": "Week 6: Evidence and Pathway Mapping",
-    "text": "Week 6: Evidence and Pathway Mapping\n\nLecture / Demo\n\nevidence source triage\npathway choice across spreadsheet, GIS, Python, BIM/BEM, GH, and AI-assisted routes\nRetrospective Redesign vs Live Studio Application\nscope discipline: one decision, not the whole project\n\n\n\nStudio-Lab\nStudents submit A2 and declare their provisional A4 branch and workflow plan.\nSession 2 material: upload a workflow sketch, pathway matrix, or A4 branch declaration draft.\nRound-table check-in: Which route are you choosing, and what is the smallest useful output?\nFeeds: A2 Primary Workflow Selection + A4 Branch Declaration.",
+    "text": "Week 6: Evidence and Pathway Mapping\n\nLecture / Demo\n\nevidence source triage\npathway choice across spreadsheet, GIS, Python, BIM/BEM, GH, and AI-assisted routes\nRetrospective Redesign vs Live Studio Application\nscope discipline: one decision, not the whole project\n\n\n\nStudio-Lab\nStudents submit A2 and declare their provisional A4 branch and workflow plan. Half of this lab was used to set up personal websites with GitHub Pages. Week 7 continues from those sites by adding a project section documenting the A2-to-A3 work.\nSession 2 material: upload a workflow sketch, pathway matrix, or A4 branch declaration draft.\nRound-table check-in: Which route are you choosing, and what is the smallest useful output?\nFeeds: A2 Primary Workflow Selection + A4 Branch Declaration. The personal site provides a place to document subsequent tests and revisions.",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -3050,11 +3050,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#week-7-method-prototype-studio",
-    "href": "schedule.html#week-7-method-prototype-studio",
+    "objectID": "schedule.html#week-7-prototype-clinic-from-a2-to-a-first-test",
+    "href": "schedule.html#week-7-prototype-clinic-from-a2-to-a-first-test",
     "title": "Course Schedule",
-    "section": "Week 7: Method Prototype Studio",
-    "text": "Week 7: Method Prototype Studio\n\nLecture / Demo\n\ninputs, operations, outputs, quality checks\nfailure logs\nhow to debug without hiding uncertainty\n\n\n\nStudio-Lab\nStudents assemble or run the first version of their workflow artifact.\nSession 2 material: upload a workflow artifact, GH canvas, notebook output, spreadsheet, GIS map, simulation screenshot, or AI-assisted component.\nRound-table check-in: What goes in, what varies, what comes out, and what quality check proves it ran?\nFeeds: A3 Prototype Scope + Workflow Description.",
+    "section": "Week 7: Prototype Clinic — From A2 to a First Test",
+    "text": "Week 7: Prototype Clinic — From A2 to a First Test\n\nSession 1: Demo and First Test (50 minutes)\n\nuse the submitted A2 to identify one decision, one workflow route, and one small test\ninspect a worked example: input, what varies, output, and quality check\nattempt the first test and record a result or the exact step that blocked it\nprepare the A2 walkthrough and open the project section of the personal site, or a local draft if the site is not ready\n\n\n\nSession 2: A2 Walkthrough and Prototype Clinic (50 minutes)\nBring the submitted A2 PDF, the first test result or blocker note, and the personal site or local draft. Every student takes a turn in a group of three. Use pairs for any remainder: two six-minute turns, then six minutes to refine both next-test plans. Brief the speaking and feedback protocol during Session 1’s final five minutes.\n\n\n\n\n\n\n\n\nLab time\nActivity\nWhat to do\n\n\n\n\n0-20 min\nA2 walkthroughs in triads\nTake 2 minutes to form groups and choose an order. Then take three 6-minute turns: 3 minutes to explain, followed by 3 minutes of feedback from the two peers together.\n\n\n20-25 min\nInstructor debrief\nDiscuss recurring issues and identify the changes students should test next.\n\n\n25-45 min\nAct on feedback and update the project page\nUse 10 minutes to revise a step or test the reason for retaining it; save the result or blocker. Use 10 minutes to update the page/local draft with the test and a dated feedback/action entry.\n\n\n45-50 min\nPeer page check and Slack exit\nUse 3 minutes for a page check: 90 seconds per page in pairs, or 60 seconds per page for a remaining group of three. Use the final 2 minutes to post the page URL/local screenshot, test/check result, feedback response, and next action to Slack.\n\n\n\nYour 3-minute walkthrough: explain the design decision, the evidence and its limits, why you chose this workflow, and the smallest test you attempted. Show its result or blocker and ask one specific question.\nYour peers’ 3-minute feedback: identify one assumption or scope problem and propose one next test. Record which advice you will use, defer, or reject, and why.\nLeave with: one attempted test with a result or a documented blocker; a dated feedback/action entry; and an updated project page or local draft showing the decision, workflow, test status, check or limit, and next action.\nThis is formative feedback on submitted A2 work and preparation for A3. The walkthrough and website are not new graded submissions. A3 remains due at the end of Week 9 and requires at least three variants/scenarios/alternatives and a re-runnable workflow artifact; the Week 7 page records progress toward that submission.\nFeeds: A3 Prototype Scope + Workflow Description, and an initial entry for the A4 Feedback + Revision Ledger.",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -4682,11 +4682,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#todays-agenda",
-    "href": "weeks_v2/week-07.html#todays-agenda",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Today’s Agenda",
-    "text": "Today’s Agenda\n\n\nSession 1\nLecture / studio-lab\n\nwhat a minimal viable workflow is\nwhy documentation comes before the package\nthe 10-minute method challenge\nthe documentation swap\nmentor-question prep for weak spots\n\n\n\nSession 2\nRound table on YOUR prototype\n\nupload one rough workflow artifact\nreconstruct it in four steps\noptional walk-through, then a shared audit\n\n\n\n\nThis week the object becomes your prototype workflow. A3 begins here.",
+    "objectID": "weeks_v2/week-07.html#last-week",
+    "href": "weeks_v2/week-07.html#last-week",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Last week gave you two starting points",
+    "text": "Last week gave you two starting points\nSession 1 · reconnect · 5 minutes\n\n\nYour submitted A2\nThe workflow proposal\nOne design decision, evidence sources, a chosen route, and an intended output.\n\n\nYour personal website\nA place to show the work\nWe used half of last week’s lab to set up a personal site with GitHub Pages.\n\n\n\nToday, connect the two: explain the proposal, test one step, and record what happened.\n\n\nOpening block: 5 minutes for this slide and the next two. Acknowledge the actual Week 6 website activity. Students with unfinished publishing setup can use a local page throughout today’s clinic.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4694,11 +4694,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#this-week-produces-a-prototype-artifact",
-    "href": "weeks_v2/week-07.html#this-week-produces-a-prototype-artifact",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "This week produces a prototype artifact",
-    "text": "This week produces a prototype artifact\n\n\nA2 route\n\n\nprototype\n\n\nverify\n\n\nthreshold\n\n\ndraft\n\n\nhandoff\n\n\n\n\nInput the files, geometry, data, or scenario table your route needs\n\n\nRun one function/component/notebook/definition with a visible changed output\n\n\nExport output figure, CSV/JSON/GeoJSON, GH canvas, screenshot, or notebook cell\n\n\nVerify one known test case and one failure/fragility note",
+    "objectID": "weeks_v2/week-07.html#today-sequence",
+    "href": "weeks_v2/week-07.html#today-sequence",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Use the first attempt in a lab revision cycle",
+    "text": "Use the first attempt in a lab revision cycle\nSession 1: attempt a small test. Session 2: use that attempt in this cycle.\n\n\n01 · Explain\nOpen your A2\nShow the decision and the route you selected.\n\n\n02 · Discuss\nChoose a response\nUse peer feedback to choose what to test next.\n\n\n03 · Test\nRun one step\nSave an output or record exactly where it stops.\n\n\n04 · Document\nUpdate your page\nShow the test, its status, and the next action.\n\n\n\nToday’s record: one attempted test + one dated feedback/action entry + an updated project page or local draft.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4706,11 +4706,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#minimal-viable-workflow",
-    "href": "weeks_v2/week-07.html#minimal-viable-workflow",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Minimal Viable Workflow",
-    "text": "Minimal Viable Workflow\nA prototype is successful — even when rough — if it can do four things:\n\nWhat “working” means Take real inputs, run a clear process, produce one interpretable output, and reveal where the method still breaks.\n\n\nit does not need to be polished\nit does not need to be complete\nit needs to be legible enough that someone else could rerun it",
+    "objectID": "weeks_v2/week-07.html#session-map",
+    "href": "weeks_v2/week-07.html#session-map",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Two sessions, two jobs",
+    "text": "Two sessions, two jobs\n\n\nSession 1 · 50 minutes\nUnderstand and prepare\n\n\n\nMinutes\nWork\n\n\n\n\n0–5\nReconnect A2 and the website\n\n\n5–15\nDefine a small, checkable prototype\n\n\n15–25\nFollow one worked example\n\n\n25–45\nAttempt a test on your own project\n\n\n45–50\nPrepare your A2 walkthrough\n\n\n\n\n\nSession 2 · 50 minutes\nDiscuss and revise\n\n\n\nMinutes\nWork\n\n\n\n\n0–20\nA2 walkthroughs in groups of three\n\n\n20–25\nInstructor debrief\n\n\n25–45\nApply feedback and update your page\n\n\n45–50\nPeer page check and Slack exit\n\n\n\n\n\nA 10-minute break separates the sessions. All lab times restart at 0 after the break.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4718,11 +4718,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#the-loop-every-prototype-runs",
-    "href": "weeks_v2/week-07.html#the-loop-every-prototype-runs",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "The loop every prototype runs",
-    "text": "The loop every prototype runs\nThe same five-node spine, expressed as a runnable loop. Everything you build this week sits inside it.\n\nDecision Evidence Variation Output Threshold Action\n\n\n\n\n\n\nflowchart LR\n    A[Input&lt;br/&gt;real data / model] --&gt; B[Variation&lt;br/&gt;what you change]\n    B --&gt; C[Output&lt;br/&gt;one readable result]\n    C --&gt; D{Threshold&lt;br/&gt;quality check}\n    D --&gt;|passes| E[Action&lt;br/&gt;use / decide]\n    D --&gt;|fails| A\n\n\n\n\n\n\nThe four zones of that loop are what every tool panel below makes concrete.",
+    "objectID": "weeks_v2/week-07.html#understand",
+    "href": "weeks_v2/week-07.html#understand",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Understand the first test",
+    "text": "Understand the first test\n01\nSession 1 · concepts and worked example\nChoose one operation whose input, change, output, and check you can name.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4730,11 +4730,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#the-prototype-frame-four-zones",
-    "href": "weeks_v2/week-07.html#the-prototype-frame-four-zones",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "The prototype frame — four zones",
-    "text": "The prototype frame — four zones\nRead any workflow as four zones. If you can fill all four honestly, you have a prototype, not just a file.\n\n\nInput the real files, data, or model the method starts from\n\n\nWhat varies the one thing you change between runs\n\n\nOutput the single interpretable result it produces\n\n\nQuality check what proves the run was valid, not just that it ran",
+    "objectID": "weeks_v2/week-07.html#prototype-definition",
+    "href": "weeks_v2/week-07.html#prototype-definition",
+    "title": "Week 7: Prototype Clinic",
+    "section": "A prototype makes one workflow step inspectable",
+    "text": "A prototype makes one workflow step inspectable\nA workflow is the sequence that turns inputs into an output. A prototype is a small working version you can run and inspect.\n\n\nInput The file, geometry, data, or values you start with.\n\n\nChange The one variable you alter. State what stays fixed.\n\n\nOutput The value, table, figure, or geometry you save.\n\n\nCheck A specific comparison that can reveal an error.\n\n\n\nMake these four labels explicit in your test, walkthrough, and project page.\n\n\nConcept block: 10 minutes including section divider and the next three slides. “Change” is today’s short label for the assignment’s variable/range or “what varies”. Keep exactly these four labels throughout the live deck.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4742,11 +4742,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#a-gh-component-is-a-packed-function",
-    "href": "weeks_v2/week-07.html#a-gh-component-is-a-packed-function",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "A GH component is a packed function",
-    "text": "A GH component is a packed function\n\nFunction contract Inputs have names, types, units, and allowed ranges. The operation changes something. Outputs have names, types, and units. A quality check proves the component did not just produce a plausible-looking answer.\n\n\n\n\n\n\n\n\n\nRoute\nFunction form\nVisible change\n\n\n\n\nspreadsheet\nformula / decision rule\nselected variant or score changes\n\n\ngeopandas\nbuffer / overlay / score function\nsite rank or map layer changes\n\n\nPython\nanalysis function\nplot or metric changes\n\n\nGH\ncluster / GhPython component\ngeometry variant changes\n\n\nBIM/BEM proxy\nscenario function\ndaylight/heat-risk score changes\n\n\nAI-assisted\ndrafted function, manually checked\noutput changes after repair",
+    "objectID": "weeks_v2/week-07.html#check-versus-decision",
+    "href": "weeks_v2/week-07.html#check-versus-decision",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Separate the check from the design decision",
+    "text": "Separate the check from the design decision\n\n\nCheck the workflow\nDid this step work as intended?\nFor a 24 m² wall, 20% glazing should give 4.8 m² of window area.\nCompare the exported area with that hand calculation.\n\n\nInterpret the design\nDoes this result support an action?\nWhich glazing ratio should we select for the facade?\nThat needs relevant performance evidence and a stated comparison rule.\n\n\n\nA correct area calculation alone does not establish daylight or cooling performance.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4754,11 +4754,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#reproducibility-lessons-from-practice",
-    "href": "weeks_v2/week-07.html#reproducibility-lessons-from-practice",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Reproducibility lessons from practice",
-    "text": "Reproducibility lessons from practice\nThe common failures are not about talent — they are about traceability.\n\nthe analyst leaves and no one can rerun the method\nthe spreadsheet works on one machine only\nthe GIS layers were clipped somehow but nobody recorded how\nthe notebook runs, but only if you know which file was silently edited\n\n\nIf the workflow cannot be retraced, the result is hard to trust — no matter how good the output looks.",
+    "objectID": "weeks_v2/week-07.html#test-status",
+    "href": "weeks_v2/week-07.html#test-status",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Name the state of your test",
+    "text": "Name the state of your test\n\n\n\n\n\n\n\n\nLabel on your page\nWhat it means\nWhat to record\n\n\n\n\nPlanned\nYou have not run this test.\nIntended input, change, output, and check.\n\n\nAttempted · blocked\nYou tried; a specific step stopped the run.\nFailed step, error or symptom, and next repair.\n\n\nOutput saved\nThe run produced an output you can show.\nOutput file and check result: passed, failed, or pending.\n\n\n\n\nWeek 7 completion: attempt a test. A documented blocker is a valid clinic outcome. A plan alone still needs an attempt.\n\n\nThe green status means output exists, not that the entire method is verified. A failed or pending check remains visible. Do not describe a planned simulation as a completed result.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4766,11 +4766,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#where-the-gaps-usually-hide",
-    "href": "weeks_v2/week-07.html#where-the-gaps-usually-hide",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Where the gaps usually hide",
-    "text": "Where the gaps usually hide\nTypical first-draft descriptions sound like this:\n\n“I used some plugin, but I forgot which one.”\n“I changed the settings until it looked right.”\n“The chart came from another file, I think.”\n“The model worked last week.”\n\n\nEach of these is a missing line in one of the four zones. Naming the gap is the first repair.",
+    "objectID": "weeks_v2/week-07.html#route-choices",
+    "href": "weeks_v2/week-07.html#route-choices",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Your software route determines the first operation",
+    "text": "Your software route determines the first operation\n\n\n\n\n\n\n\n\nRoute\nOne small operation\nOne check to record\n\n\n\n\nSpreadsheet\nChange one parameter; recalculate a row.\nRecalculate that row by hand.\n\n\nGIS\nRun one buffer or overlay.\nInspect CRS, units, and one known location.\n\n\nPython / notebook\nRun one function on a small input.\nCompare with a known expected value.\n\n\nGrasshopper\nChange one slider; export geometry or area.\nCheck units and one dimension or area.\n\n\nBIM/BEM / simulation\nRun one simplified case.\nInspect input settings and run warnings.\n\n\nAI-assisted component\nRun and inspect the generated step.\nCheck its result independently of the AI answer.\n\n\n\nUse the route selected in your A2. Starter kits are available if you need a runnable starting point.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4778,11 +4778,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#there-is-no-single-correct-technical-route",
-    "href": "weeks_v2/week-07.html#there-is-no-single-correct-technical-route",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "There is no single correct technical route",
-    "text": "There is no single correct technical route\nSix routes, same four zones. None is more “advanced” than the others — each is judged only by whether the loop is legible.\n\n\nSpreadsheet In comparison table · Varies parameter ranges · Out ranked options · Check formulas auditable, units stated\n\n\nGIS In layers + CRS · Varies operation sequence · Out spatial comparison · Check CRS stated, counts spot-checked\n\n\nPython / notebook In data files + paths · Varies analysis parameters · Out figure / table · Check runs top-to-bottom, paths stated\n\n\n\n\nGH / parametric In geometry + sliders · Varies the design space · Out comparable variants · Check variants share assumptions\n\n\nBIM/BEM / simulation In model + settings · Varies scenario assumptions · Out performance result · Check dominant assumptions documented\n\n\nAI-assisted In prompt + source data · Varies what AI generates / edits · Out drafted component · Check a manual review confirms it\n\n\n\nPick the route that makes your decision more defensible — not the one that looks most impressive.\n\n\nRun a reference kit Several routes have a clone-and-run starter: spreadsheet · GIS · simulation proxy · Python notebook · AI-assisted. Start from one and swap in your own decision.",
+    "objectID": "weeks_v2/week-07.html#worked-example",
+    "href": "weeks_v2/week-07.html#worked-example",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Worked example: a facade proposal becomes a test",
+    "text": "Worked example: a facade proposal becomes a test\nTeaching example · calculated geometry · no performance results\n\n\nA2 proposal\nCompare glazing ratios\nExplore 20%, 40%, and 60% glazing for the same facade.\n\n\nClinic feedback\nCheck the geometry first\nCan the workflow generate and export the area you intended?\n\n\nWeek 7 test\nCalculate two cases\nFix the wall at 8 m × 3 m. Change only the glazing ratio.\n\n\n\nThe first test checks the geometry step before adding performance analysis.\n\n\nWorked-example block: 10 minutes for this and the next three slides. This is an illustrative classroom example, not student work or measured facade performance. A3 still needs at least three variants by Week 9.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4790,11 +4790,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#the-10-minute-method-challenge",
-    "href": "weeks_v2/week-07.html#the-10-minute-method-challenge",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "The 10-Minute Method Challenge",
-    "text": "The 10-Minute Method Challenge\n\nDo this now Choose one workflow from your project and document it so clearly that another team could rerun it without you in the room.\n\nPick one route to document:\n\nspreadsheet comparison\nGH / parametric option generation\nGIS operation sequence\nnotebook analysis\nsimulation setup\nAI-assisted script or workflow component\nvisualization workflow",
+    "objectID": "weeks_v2/week-07.html#area-example",
+    "href": "weeks_v2/week-07.html#area-example",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Change one input; predict the output",
+    "text": "Change one input; predict the output\n\n\n\nInput Wall width 8 m; height 3 m.\n\n\nChange Glazing ratio: 0.20 → 0.40.\n\n\nOutput Window area in m² for each case.\n\n\nCheck Compare exported area with 24 × ratio.\n\n\n\nDemonstrate with a spreadsheet formula or a GH area output. The drawing shows geometric proportions only. If demonstrating GH, confirm the model units before comparing areas.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4802,11 +4802,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#documentation-template",
-    "href": "weeks_v2/week-07.html#documentation-template",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Documentation Template",
-    "text": "Documentation Template\n\n\nWorkflow\n\nwhat the method is for\nwhat files or inputs are required\nwhat tools are required\n\n\n\nStep-by-step\n\ndo this\ncheck this\nif this fails, try this\nexport this",
+    "objectID": "weeks_v2/week-07.html#example-result",
+    "href": "weeks_v2/week-07.html#example-result",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Save both the result and the check",
+    "text": "Save both the result and the check\nIllustrative record · arithmetic shown for teaching\n\n\n\nGlazing ratio\nCalculated window area\nIndependent check\nStatus\n\n\n\n\n20%\n4.8 m²\n8 × 3 × 0.20 = 4.8 m²\nOutput saved; check passed\n\n\n40%\n9.6 m²\n8 × 3 × 0.40 = 9.6 m²\nOutput saved; check passed\n\n\n60%\n—\nCheck when this case is run.\nPlanned\n\n\n\n\nWhat this supports: the two area calculations match the intended ratios.\nWhat remains open: daylight, cooling, and the choice of a facade option.\n\nNext action: add the third case, then connect the geometry to a justified performance method for A3.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4814,11 +4814,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#documentation-template-contd",
-    "href": "weeks_v2/week-07.html#documentation-template-contd",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Documentation Template (cont’d)",
-    "text": "Documentation Template (cont’d)\n\n\nTroubleshooting\n\ncommon error\nwarning sign\nlikely fix\n\n\n\nQuality check\n\nwhat success looks like\nwhat a red flag looks like\n\n\n\n\nNotice the template is just the four zones, written out for a stranger.",
+    "objectID": "weeks_v2/week-07.html#example-page",
+    "href": "weeks_v2/week-07.html#example-page",
+    "title": "Week 7: Prototype Clinic",
+    "section": "The page shows the same test in context",
+    "text": "The page shows the same test in context\n\nARCH7476 project section · illustrative entry\n\n\nDecision\n\n\nWhich glazing ratio should I carry forward for this facade?\n\n\n\n\nWorkflow\n\n\nInput: 8 × 3 m wall. Change: glazing ratio. Output: window area. Check: 24 × ratio.\n\n\n\n\nTest record\n\n\n20% → 4.8 m²; 40% → 9.6 m². Area checks passed. Performance analysis is still planned.\n\n\n\n\nFeedback → action\n\n\nWeek 7 · [enter date]. “Check geometry first.” I added an area check. Next: test 60%.\n\n\n\nLink the result to its source file and run instructions. Keep the test date and limits visible.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4826,11 +4826,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#documentation-swap",
-    "href": "weeks_v2/week-07.html#documentation-swap",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Documentation Swap",
-    "text": "Documentation Swap\n\nDo this now\n\nswap instructions with someone using a different route\nno verbal explanation allowed\ntry to follow their method\nrecord what is missing, unclear, or fragile\n\n\nThis is the fastest way to learn whether your workflow is genuinely reproducible or only familiar to you.",
+    "objectID": "weeks_v2/week-07.html#first-attempt",
+    "href": "weeks_v2/week-07.html#first-attempt",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Attempt one step on your own project",
+    "text": "Attempt one step on your own project\nSession 1 · minutes 25–45 · individual work · 20 minutes\nOpen your A2 PDF and the file or tool for your selected workflow.\n\n\nFirst 5 minutes: name Input, Change, Output, and Check for one small test.\nNext 10 minutes: attempt the operation. Save the output, or capture the failed step and error/symptom.\nLast 5 minutes: record the test status, check result, and one question for your peers.\n\n\n\nDone when: you can show a test record with an output or a specific blocker. Keep it open beside your A2.\n\n\nHold this slide for the work period. The next slide supplies the fallback. Help students choose a smaller operation rather than attempting an entire model or application. Preparing a plan uses the first five minutes; the remaining time must include an attempt.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4838,11 +4838,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#documentation-reality-check",
-    "href": "weeks_v2/week-07.html#documentation-reality-check",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Documentation Reality Check",
-    "text": "Documentation Reality Check\nIf another student cannot follow your documentation, the method is not yet ready for A3.\n\nThat does not mean the project is weak. It means the workflow needs one more layer of translation before someone else can inspect it.",
+    "objectID": "weeks_v2/week-07.html#blocked-route",
+    "href": "weeks_v2/week-07.html#blocked-route",
+    "title": "Week 7: Prototype Clinic",
+    "section": "If the tool stops you, record the exact stopping point",
+    "text": "If the tool stops you, record the exact stopping point\n\n\n\n\n\n\n\n\nSituation\nDo this now\nKeep this evidence\n\n\n\n\nThe file opens but the run fails.\nRepeat the smallest failing step once; record what happens.\nInput, command/component, and error or symptom.\n\n\nA required tool or input is missing.\nName it; attempt one hand-checkable row or calculation using available input.\nSmall calculation, its assumptions, and the missing dependency.\n\n\nGitHub Pages is not live.\nEdit the same project content in local index.html or a document.\nLocal page/document and a screenshot for Slack.\n\n\n\n\nWrite a repair action: “Next I will ; I will know it worked when .”\n\nA hand calculation checks a limited step. Label which part of the intended workflow remains untested.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4850,83 +4850,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#pathway-breakout-checks",
-    "href": "weeks_v2/week-07.html#pathway-breakout-checks",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Pathway breakout checks",
-    "text": "Pathway breakout checks\n\n\nSpreadsheet\n\nwhat table structure does the method depend on?\nwhich formula or chart is most fragile?\n\n\n\nGIS\n\nwhat layer preparation is essential?\nwhich operation sequence must be documented exactly?\n\n\n\n\n\nPython\n\nwhat notebook cells define the real logic?\nwhat package, path, or file assumptions must be stated?\n\n\n\nGH / parametric\n\nwhat sliders or constraints define the design space?\nwhat output proves the variants are comparable?\n\n\n\n\n\nBIM/BEM / simulation\n\nwhat model assumptions dominate the result?\nwhat setup choices must be documented first?\n\n\n\nAI-assisted\n\nwhat did AI generate or edit?\nwhat manual check confirms the output is usable?",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W7: Prototype Clinic"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-07.html#every-prototype-needs-an-ingestion-path",
-    "href": "weeks_v2/week-07.html#every-prototype-needs-an-ingestion-path",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Every prototype needs an ingestion path",
-    "text": "Every prototype needs an ingestion path\n\nBridge card for A3 What file or value leaves your workflow, what GH component reads it, what geometry/parameter it affects, and what visual change proves the bridge works?\n\n\n\nprototype output\n\n\nCSV / JSON / screenshot\n\n\nGH / package ingest\n\n\nvisible change\n\n\nquality check",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W7: Prototype Clinic"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-07.html#a-working-prototype-can-still-be-wrong",
-    "href": "weeks_v2/week-07.html#a-working-prototype-can-still-be-wrong",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "A working prototype can still be wrong",
-    "text": "A working prototype can still be wrong\n\nQuestion for your A3 What is the smallest input change that would make your prototype output visibly different?\n\nIf no visible change appears, either the workflow is not sensitive enough, the output is not meaningful, or the connection is broken.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W7: Prototype Clinic"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-07.html#capture-the-decision-logic-too",
-    "href": "weeks_v2/week-07.html#capture-the-decision-logic-too",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Capture the decision logic too",
-    "text": "Capture the decision logic too\nDo not document only button clicks. Also capture the reasoning:\n\nwhy this step exists\nwhat assumption it encodes\nwhat judgment call it contains\nhow the output connects back to the question\n\n\nA workflow becomes evidence when the reasoning travels with the steps, not just the clicks.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W7: Prototype Clinic"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-07.html#use-the-prototype-to-ask-sharper-questions",
-    "href": "weeks_v2/week-07.html#use-the-prototype-to-ask-sharper-questions",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Use the prototype to ask sharper questions",
-    "text": "Use the prototype to ask sharper questions\nThe point of a rough prototype is that it surfaces real questions for your mentor.\n\nwhere is the workflow weakest?\nwhat assumption am I least confident about?\nwhat output would most strengthen the project?\nwhat would a practitioner immediately ask about?",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W7: Prototype Clinic"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-07.html#mentor-question-development",
-    "href": "weeks_v2/week-07.html#mentor-question-development",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Mentor question development",
-    "text": "Mentor question development\n\nWrite three questions\n\none technical question\none methodological question\none strategic question about scope or decision relevance\n\n\n\nIf the question is generic, it is not ready. A good question points at a specific zone of your loop.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W7: Prototype Clinic"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-07.html#prototype-quality-check",
-    "href": "weeks_v2/week-07.html#prototype-quality-check",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Prototype Quality Check",
-    "text": "Prototype Quality Check\nThe test for “ready for the round table”:\n\n\nInput can another person tell what goes in?\n\n\nWhat varies can they see which judgment calls mattered?\n\n\nOutput can they tell what comes out?\n\n\nQuality check can they tell whether the output is already useful?",
+    "objectID": "weeks_v2/week-07.html#prepare-walkthrough",
+    "href": "weeks_v2/week-07.html#prepare-walkthrough",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Prepare a three-minute explanation of A2",
+    "text": "Prepare a three-minute explanation of A2\nSession 1 · minutes 45–50 · individual preparation · 5 minutes\nMark the relevant page or diagram in your submitted PDF. Keep your test record beside it.\n\n\n\n\n\n\n\nSpeaking time\nShow and explain\n\n\n\n\n0:00–1:00\nThe design decision, chosen evidence, and one evidence limit.\n\n\n1:00–2:00\nWhy this workflow fits. Identify Input, Change, Output, and Check.\n\n\n2:00–3:00\nToday’s output or blocker. End with one specific question.\n\n\n\n\nReady when: the PDF and test record are open, and your question names a decision, assumption, or failed step.\n\nFirst 2 minutes: review the speaking and feedback protocol together. Next 3 minutes: prepare your own explanation. Listeners will clarify a problem, propose a test, then let you record a response.\nUse your existing A2 pages. No new presentation deck is needed.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4936,9 +4864,9 @@
   {
     "objectID": "weeks_v2/week-07.html#break",
     "href": "weeks_v2/week-07.html#break",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "BREAK",
-    "text": "BREAK\nTake 10 minutes.\nWhen you return, upload one rough workflow artifact to Slack for the round table.",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Break",
+    "text": "Break\n10 minutes\nAfter the break: Session 2 starts at lab minute 0.\nKeep these open: A2 PDF · test record · personal site or local draft.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4946,11 +4874,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#round-table-on-your-prototype",
-    "href": "weeks_v2/week-07.html#round-table-on-your-prototype",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Round table on YOUR prototype",
-    "text": "Round table on YOUR prototype\n\nDecision Evidence Variation Output Threshold Action\n\nUpload one rough material before Session 2 — a workflow artifact, GH canvas, notebook output, spreadsheet, GIS map, simulation screenshot, or AI-assisted component. feeds A3",
+    "objectID": "weeks_v2/week-07.html#clinic",
+    "href": "weeks_v2/week-07.html#clinic",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Explain A2 and receive feedback",
+    "text": "Explain A2 and receive feedback\n02\nSession 2 · first 20 minutes\nEvery student gets a turn to explain the submitted proposal and discuss the next test.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4958,11 +4886,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#mode-1-the-walk-through-optional-celebrated",
-    "href": "weeks_v2/week-07.html#mode-1-the-walk-through-optional-celebrated",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Mode 1 — the walk-through (optional, celebrated)",
-    "text": "Mode 1 — the walk-through (optional, celebrated)\n\nTeach us your strongest route A volunteer runs the class through one prototype they know well — uninterrupted, 3–4 minutes. Speak for roughly 60–90 seconds on the loop itself.\n\nNarrate the four zones as you go:\n\nwhat goes in (input)\nwhat varies (the one thing you change)\nwhat comes out (output)\nwhat quality check proves it ran (threshold)\n\nNo polish required — show the real thing working. Questions wait for Mode 2.",
+    "objectID": "weeks_v2/week-07.html#clinic-timing",
+    "href": "weeks_v2/week-07.html#clinic-timing",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Three people; three six-minute turns",
+    "text": "Three people; three six-minute turns\nLab minutes 0–20 · groups of three\n\n\n\n\n\n\n\n\nLab time\nWho explains?\nWhat happens?\n\n\n\n\n0–2 min\nEveryone\nForm groups and choose order: A, B, C.\n\n\n2–8 min\nStudent A\n3 minutes explaining + 3 minutes of peer feedback.\n\n\n8–14 min\nStudent B\n3 minutes explaining + 3 minutes of peer feedback.\n\n\n14–20 min\nStudent C\n3 minutes explaining + 3 minutes of peer feedback.\n\n\n\nThe two listeners share the three-minute feedback period. One keeps time; the speaker records the advice.\n\nIf you are a pair: use two six-minute turns, then use the remaining six minutes to sharpen both next-test plans. Do not form a group of four.\n\n\nInstructor: form triads, with pairs for any remainder (e.g. 3+2+2 rather than 3+3+1). Circulate during the clinic and revision sprint. Peer feedback is built into every turn; do not promise a separate instructor consultation to each student within 20 minutes.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4970,11 +4898,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#reconstruct-your-prototype-in-four-steps",
-    "href": "weeks_v2/week-07.html#reconstruct-your-prototype-in-four-steps",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Reconstruct your prototype in four steps",
-    "text": "Reconstruct your prototype in four steps\nObject this week: your prototype workflow as someone else will meet it.\n\n\nDid What does the workflow actually do, step by step?\n\n\nAssumed What hidden inputs or settings does each step assume?\n\n\nRisk Where did I not check — where could it break or fail to rerun?\n\n\nVerify What quality check would prove the run is valid?\n\n\n\nPost your filled four-step to Slack under your artifact. Posting + an honest reconstruction is the graded unit — not how you spoke. Walking through is welcomed and earns credit; it is never required and never scored as performance. Volunteers go first; a random draw may fill the remaining examples.",
+    "objectID": "weeks_v2/week-07.html#walkthrough-script",
+    "href": "weeks_v2/week-07.html#walkthrough-script",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Speak for three minutes; finish with one question",
+    "text": "Speak for three minutes; finish with one question\nSpeaker · show the A2 PDF and today’s test record\n\n\nDecision + evidence · 1 minute: “I am deciding . My evidence supports , but does not show ___.”\nWorkflow choice · 1 minute: “I chose ___ because . Input: . Change: . Output: . Check: ___.”\nAttempt + question · 1 minute: “I tried . The result/blocker was . I need feedback on ___.”\n\n\n\nPoint to the work while you explain. Make the uncertain step visible.\n\n\nBrief this protocol during Session 1’s final five minutes. During the activity, leave the timing or feedback slide visible. This is a formative discussion of submitted A2 work, not a scored presentation.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4982,11 +4910,239 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#by-the-end-of-this-week",
-    "href": "weeks_v2/week-07.html#by-the-end-of-this-week",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "By the End of This Week",
-    "text": "By the End of This Week\nYou should leave with:\n\nWeek 7 milestone\n\na first working artifact\na function/component contract with inputs, output, and quality check\ndocumentation that survives a swap test\na list of fragile steps and assumptions\nthree sharp mentor questions\na clearer story for A3\n\n\nA3 is started, not finished — Weeks 8–9 verify the method and build toward the Prototype + Verification package.",
+    "objectID": "weeks_v2/week-07.html#feedback-script",
+    "href": "weeks_v2/week-07.html#feedback-script",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Give feedback that leads to a test",
+    "text": "Give feedback that leads to a test\nListeners · 3 minutes total, shared by both peers\n\n\n\n\n\n\n\nTime within feedback\nSay or do this\n\n\n\n\nFirst minute\nClarify: name one assumption, missing input, or scope problem. Ask the speaker to confirm it.\n\n\nSecond minute\nPropose: suggest one change and the output or check that would make it useful.\n\n\nThird minute\nRecord: the speaker chooses advice to use, defer, or reject, and states why.\n\n\n\n\nExample feedback: “Before the energy run, compare exported window area with your intended ratio.”\nExample response: “I will add that area check. I will defer annual simulation until the geometry export is consistent.”\n\n\nCapture: date · feedback source · what it challenged · your response and reason · next test.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#debrief",
+    "href": "weeks_v2/week-07.html#debrief",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Turn the debrief into your next action",
+    "text": "Turn the debrief into your next action\nLab minutes 20–25 · whole class · 5 minutes\nThe instructor will address recurring issues from the walkthroughs.\nWrite one sentence before returning to your file:\n\n“Because the feedback challenged , I will change , run , and check .”\n\nIf you retain your approach, state why and choose a test of that choice or a stronger check.\n\nDone when: the change is small enough to attempt in the next 10 minutes.\n\n\nUse five minutes for two or three recurring issues. Choose concrete scope, input, and verification problems. If an individual issue needs more time, name its next diagnostic action rather than resolving it in the whole-class debrief.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#revise",
+    "href": "weeks_v2/week-07.html#revise",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Apply feedback and document the attempt",
+    "text": "Apply feedback and document the attempt\n03\nSession 2 · lab minutes 25–45\nRespond to one feedback point with a test. Then show the result and next action on your project page.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#revision-sprint",
+    "href": "weeks_v2/week-07.html#revision-sprint",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Ten minutes to test; ten minutes to document",
+    "text": "Ten minutes to test; ten minutes to document\nLab minutes 25–45 · individual work · 20 minutes\n\n\n25–35 · test\nAct on one feedback point\n\nRevise a step, or test your reason for retaining it.\nAttempt the operation again.\nSave the output or document the blocker.\n\nRecord the check as passed, failed, or pending.\n\n\n35–45 · document\nUpdate your existing site\n\nOpen its ARCH7476 project section.\nAdd the test and feedback record.\nSave and publish the update; open the result.\n\nUse a local draft if publishing is still blocked.\n\n\n\nDone when: another person can see what you attempted, what happened, and what you will do next.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#page-checklist",
+    "href": "weeks_v2/week-07.html#page-checklist",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Put five things in the ARCH7476 project section",
+    "text": "Put five things in the ARCH7476 project section\nUse the site you started last week. Add a section titled ARCH7476; use an existing course project page if you already have one.\n\n\n\n\n\n\n\nSection\nAdd this content today\n\n\n\n\n1. Decision + A2\nOne-sentence decision and the relevant A2 workflow diagram.\n\n\n2. Workflow\nInput · Change · Output · Check, plus the tool and source-file location.\n\n\n3. Test record\nDate, test status, and one output image/table or exact blocker.\n\n\n4. Check + limit\nWhat you checked, its outcome, and what remains untested.\n\n\n5. Feedback + next action\nSource, challenge, response/reason, and the next test.\n\n\n\n\nKeep the source accessible: link the artifact and run instructions, or state their course submission location if they cannot be published.\n\nWebsite setup guide · Existing portfolio template",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#publish-update",
+    "href": "weeks_v2/week-07.html#publish-update",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Save, publish, and open the page",
+    "text": "Save, publish, and open the page\nUse your existing GitHub Pages repository\n\n\nOpen the HTML file you edited last week. Add or update the ARCH7476 section.\nUpload the output image or file you refer to; make its link match the filename and folder.\nCommit your changes. Open your published site URL and refresh once deployment completes.\nClick the image/file link yourself. If deployment is still pending, use the local draft for today’s peer check.\n\n\n\nPage check: the text is visible, the image loads, and the linked file or stated file location is usable.\n\nThe page explains the workflow. The workbook, script, notebook, or project file supplies the runnable artifact for A3.\n\nThis is an update to last week’s site, not another website setup session. Students editing locally can push through their existing GitHub Desktop workflow. Do not spend the revision sprint redesigning the homepage. Only publish material that can be shared; use a course file location for restricted inputs.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#peer-check",
+    "href": "weeks_v2/week-07.html#peer-check",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Ask a peer to inspect the page without narration",
+    "text": "Ask a peer to inspect the page without narration\nLab minutes 45–48 · pairs · 3 minutes\nExchange the URL or open the local draft for your partner. Spend 90 seconds on each person’s page.\nFor an odd remaining group of three, rotate through the three pages together: 60 seconds per page.\nCan your partner find:\n\nthe design decision and the four workflow labels;\nan actual output or a specific blocker;\nthe check result and a limit;\nthe feedback response and the next test?\n\n\nPartner’s response: “I found ; I could not find .” Mark any missing item for repair.\n\nThis checks whether the page communicates the work. A full rerun from the files is part of the Week 8 verification work.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#slack-exit",
+    "href": "weeks_v2/week-07.html#slack-exit",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Post the record before you leave",
+    "text": "Post the record before you leave\nLab minutes 48–50 · individual · 2 minutes\nPost one message in the course Slack channel used for Session 2:\n\nProject page: URL, or attach a screenshot of the local draft.\nTest: I changed ; the output/blocker was .\nCheck: ___; result: passed / failed / pending.\nFeedback → response: ___ challenged ; I used/deferred/rejected it because .\nNext test: ; I will check .\n\n\nBefore leaving: save the page/draft, the source artifact or blocker note, and the dated feedback entry.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#assessment-boundary",
+    "href": "weeks_v2/week-07.html#assessment-boundary",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Today starts A3; Week 9 completes it",
+    "text": "Today starts A3; Week 9 completes it\n\n\n\n\n\n\n\nWhen\nWhat you produce\n\n\n\n\nWeek 7 · today\nOne attempted test, an output or blocker, and a feedback/action entry on your page or local draft.\n\n\nWeek 8\nRerun and verification work: instructions, dependencies, manual checks, and failure notes.\n\n\nEnd of Week 9 · A3 due\nPDF + a runnable artifact, at least three variants/scenarios/alternatives, an interpretable output, and verification/failure log.\n\n\nA4\nA complete workflow package, including the feedback/revision ledger that today’s entry starts.\n\n\n\n\nThe A2 walkthrough and website update are formative class work, not new graded submissions. A1–A4 marks follow the published assignment briefs.\n\nRead the A3 brief · A4 feedback/revision ledger",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#end-of-class",
+    "href": "weeks_v2/week-07.html#end-of-class",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Leave with a test someone else can inspect",
+    "text": "Leave with a test someone else can inspect\nExplain → test → record\nOne attempted test. One reasoned response to feedback. One visible next action.\nEnd of today’s teaching sequence. The following slides are reference material for your workflow and Week 8.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference",
+    "href": "weeks_v2/week-07.html#reference",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Reference: documentation and rerunning",
+    "text": "Reference: documentation and rerunning\nReference\nUse these prompts when developing the first test into the A3 artifact.\nThe detailed documentation swap and mentor-question exercises continue in Week 8.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-function",
+    "href": "weeks_v2/week-07.html#reference-function",
+    "title": "Week 7: Prototype Clinic",
+    "section": "A function needs a clear contract",
+    "text": "A function needs a clear contract\nA GH component, spreadsheet formula, or Python function has the same basic contract:\n\nInputs: names, types, units, and allowed ranges.\nOperation: the transformation it performs.\nOutputs: names, types, and units.\nCheck: a known case or independent calculation.\n\n\n\n\n\n\n\n\n\nRoute\nFunction form\nVisible change\n\n\n\n\nSpreadsheet\nFormula or decision rule\nSelected variant or score changes.\n\n\nGIS / Python\nBuffer, overlay, or analysis function\nMap, rank, plot, or metric changes.\n\n\nGH / simulation\nCluster, component, or scenario setup\nGeometry or performance output changes.\n\n\nAI-assisted\nGenerated component with review\nA tested repair changes the output.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-traceability",
+    "href": "weeks_v2/week-07.html#reference-traceability",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Document the details that disappear first",
+    "text": "Document the details that disappear first\n\n\n\n\n\n\n\nA common description\nThe missing record\n\n\n\n\n“I used a plugin.”\nPlugin name, version, and required settings.\n\n\n“I changed it until it looked right.”\nParameter values and why they were chosen.\n\n\n“The chart came from another file.”\nSource path and the step that produced it.\n\n\n“The model worked last week.”\nSaved inputs, environment, and repeatable run steps.\n\n\n\n\nTraceability lets another person inspect how an output was produced.\n\n\nRetains the original reproducibility examples: the departing analyst, a spreadsheet that works on one machine, undocumented GIS clipping, and a notebook that depends on a silently edited file. Use these as examples of missing records, not judgments about student competence.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-method-challenge",
+    "href": "weeks_v2/week-07.html#reference-method-challenge",
+    "title": "Week 7: Prototype Clinic",
+    "section": "The ten-minute method challenge",
+    "text": "The ten-minute method challenge\nReference exercise · Week 8 preparation · 10 minutes\nChoose one operation from your spreadsheet, GIS, notebook, GH, simulation, AI-assisted, or visualization workflow.\n\n\nName its purpose, inputs, and required tools.\nWrite the run steps in order.\nIdentify one likely failure and its repair.\nState the expected output and one independent check.\n\n\n\nOutput: a short README another student can follow using the supplied files.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-template",
+    "href": "weeks_v2/week-07.html#reference-template",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Write run instructions and troubleshooting together",
+    "text": "Write run instructions and troubleshooting together\n\n\nRun instructions\n\nWhat decision does this step support?\nWhich input files are required?\nWhich tools and versions are required?\n\n\nOpen or load this.\nRun this operation.\nCheck this value or warning.\nExport this file.\n\n\n\nTroubleshooting + check\n\nCommon error or warning sign.\nLikely cause and first repair.\nExpected output, including units.\nKnown test case and expected value.\nWhat a failure would look like.\nWhat remains unverified.\n\n\n\nExplain why a step exists and which assumption it encodes. Preserve the reasoning with the instructions.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-swap",
+    "href": "weeks_v2/week-07.html#reference-swap",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Swap the instructions and attempt a rerun",
+    "text": "Swap the instructions and attempt a rerun\nReference exercise · Week 8 verification\n\n\nGive a peer the inputs, artifact, and written instructions.\nLet them try the steps without verbal coaching.\nRecord the first missing, unclear, or fragile step.\nRevise the instructions and try that step again.\n\n\n\nIf the peer lacks the software: audit the inputs and steps now; record the rerun as pending and arrange a check with access to the required tool.\n\nAn explanation that reads clearly is useful. Reproducing the output is the stronger test required for A3.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-route-checks",
+    "href": "weeks_v2/week-07.html#reference-route-checks",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Check the fragile part of your route",
+    "text": "Check the fragile part of your route\n\n\n\n\n\n\n\nRoute\nQuestions to answer in the run instructions\n\n\n\n\nSpreadsheet\nWhat table structure is required? Which formula or chart is most fragile?\n\n\nGIS\nWhich layer preparation is essential? What CRS and operation order are required?\n\n\nPython\nWhich cells define the logic? What packages, paths, and file assumptions are required?\n\n\nGH / parametric\nWhich sliders and constraints define the variants? Do they share the same assumptions?\n\n\nBIM/BEM\nWhich model assumptions dominate the result? Which setup choices must be recorded?\n\n\nAI-assisted\nWhat did AI generate or edit? Which independent check was performed?",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-handoff",
+    "href": "weeks_v2/week-07.html#reference-handoff",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Make each file handoff explicit",
+    "text": "Make each file handoff explicit\nFor a workflow that connects two tools, document the transfer:\n\n\nExport\nName the file, columns or geometry, and units.\n\n\nImport\nName the receiving tool/component and mapping.\n\n\nInspect\nShow the resulting value or geometry and check it.\n\n\nGH example: export a CSV of variant IDs and scores; read the scores into GH; map each score to its intended geometry and check one known variant.\nA screenshot documents appearance. It supplies an input only if the next operation actually reads the image.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-sensitivity",
+    "href": "weeks_v2/week-07.html#reference-sensitivity",
+    "title": "Week 7: Prototype Clinic",
+    "section": "A running workflow can still contain an error",
+    "text": "A running workflow can still contain an error\nChange one input within a stated range and compare the outputs.\n\nIf the output changes, inspect whether the direction and magnitude make sense.\nIf the output does not change, check whether that is expected for this input and range.\nInspect disconnected inputs, thresholds, rounding, and insensitive metrics before interpreting the result.\n\n\nRecord what the test establishes and what it leaves uncertain.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-mentor",
+    "href": "weeks_v2/week-07.html#reference-mentor",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Use the prototype to prepare mentor questions",
+    "text": "Use the prototype to prepare mentor questions\nReference exercise · Week 8 mentor preparation\nWrite three questions, each attached to a specific file, output, or failed step:\n\n\n\n\n\n\n\nQuestion type\nExample structure\n\n\n\n\nTechnical\nThis operation fails at ___. Which setting or dependency should I inspect?\n\n\nMethodological\nThis output depends on assumption ___. How could I test its effect?\n\n\nStrategic\nMy decision needs ___. Which part of this workflow should I narrow or strengthen?\n\n\n\nBring the artifact that makes the question visible, plus your attempted check and its result.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
