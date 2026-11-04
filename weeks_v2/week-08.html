@@ -34,7 +34,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-7ea4ede104def15d602f876499e1135a.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-66364196e28806ef8b1f4f9e6d8f0e9d.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -133,46 +133,86 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Week 8: Reproducibility and AI Fact-Checking</h1>
-  <p class="subtitle">Large-Model Companions, Final-Gate Checks, and Mentor Strategy</p>
+  <p class="subtitle">How LLMs Work — and What to Check in Your Architectural Workflow</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="todays-agenda" class="slide level2 center">
+<section id="todays-agenda" class="slide level2">
 <h2>Today’s Agenda</h2>
 <div class="two-col">
 <div class="concept-card">
 <p><span class="label concept">Session 1</span></p>
-<p><span class="card-title">Workflow Documentation + AI Fact-Checking</span></p>
+<p><span class="card-title">LLMs inside an architectural workflow</span></p>
 <ul>
-<li class="fragment">why your work is only evidence if someone can rerun it</li>
-<li class="fragment">document one workflow, then swap and test it</li>
-<li class="fragment">understand AI as a probabilistic companion, not a final authority</li>
-<li class="fragment">separate factual claims, relationship claims, and generated workflow components</li>
-<li class="fragment">prepare strategic questions for your mentor</li>
+<li class="fragment">decoder-only generation: what happens after a prompt</li>
+<li class="fragment">RLHF and reasoning: what training rewards</li>
+<li class="fragment">stronger systems: tools, multimodal inputs and current model designs</li>
+<li class="fragment">match a design claim to an independent check</li>
 </ul>
 </div>
 <div class="activity-card">
 <p><span class="label activity">Session 2</span></p>
-<p><span class="card-title">Round table on YOUR workflow</span></p>
+<p><span class="card-title">Walk through YOUR AI-assisted decision</span></p>
 <ul>
-<li class="fragment">upload one rough workflow material</li>
-<li class="fragment">reconstruct your verification in four steps</li>
-<li class="fragment">agree what a reader must inspect to trust it</li>
+<li class="fragment">show one current architectural decision and the AI-assisted step</li>
+<li class="fragment">get peer feedback, then perform one check</li>
+<li class="fragment">save a revised artifact or a more defensible claim</li>
 </ul>
 </div>
 </div>
 <div class="reflection-card">
-<p>This is a clinic, not a contest. We examine the <strong>workflow</strong>, and we help each other find the part a stranger could not yet reproduce.</p>
+<p>Bring existing work: a plan critique, facade component, comfort claim, precedent search or another bounded step. The output feeds your <strong>A3 Verification and Failure Log</strong>.</p>
 </div>
 </section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Course progress</span></p>
+<section id="session-plan" class="slide level2">
+<h2>Two sessions, one workflow</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Class time</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Session 1 · 0–10 min</strong></td>
+<td>Reproducibility: what a peer must be able to inspect</td>
+</tr>
+<tr class="even">
+<td><strong>10–25 min</strong></td>
+<td>Model literacy: each mechanism → what it changes in your use of LLMs</td>
+</tr>
+<tr class="odd">
+<td><strong>25–40 min</strong></td>
+<td>Architectural claims: choose the check; inspect the worked example</td>
+</tr>
+<tr class="even">
+<td><strong>40–50 min</strong></td>
+<td>Trace one component and prepare your own walkthrough</td>
+</tr>
+<tr class="odd">
+<td><strong>Break · 10 min</strong></td>
+<td>Open your saved material</td>
+</tr>
+<tr class="even">
+<td><strong>Session 2 · 50 min</strong></td>
+<td>Walkthrough → peer feedback → one check → revision</td>
+</tr>
+</tbody>
+</table>
+<div class="reflection-card">
+<p>Lab times restart at <strong>0</strong> after the break. The documentation swap and mentor workshop are retained as <a href="#/reference-activities">reference activities</a>.</p>
+</div>
 </section>
-<section id="this-week-produces-a-verification-artifact" class="slide level2 center">
+<section id="this-week-produces-a-verification-artifact" class="slide level2">
 <h2>This week produces a verification artifact</h2>
+<p><span class="kicker">Course progress</span></p>
 <div class="progress-ladder">
 <div class="step done">
 <p>A2 route</p>
@@ -195,32 +235,29 @@
 </div>
 <div class="artifact-strip">
 <div class="artifact">
-<p><span class="label concept">Input</span> prototype artifact, prompt log, notebook, GH canvas, map, or scenario file</p>
+<p><span class="label concept">Input</span> one architectural decision + saved inputs, AI exchange/output or workflow artifact</p>
 </div>
 <div class="artifact">
-<p><span class="label activity">Test</span> peer rerun, manual check, known-case comparison, or failure replay</p>
+<p><span class="label activity">Test</span> one source check, manual result, known-case test or failure replay</p>
 </div>
 <div class="artifact">
-<p><span class="label example">Output</span> verification card + reproducibility fix list</p>
+<p><span class="label example">Output</span> verification card + revised artifact/claim + one remaining limit</p>
 </div>
 <div class="artifact">
 <p><span class="label reflect">Feeds</span> A3 Verification Log and A4 Reproducibility Capsule</p>
 </div>
 </div>
 </section>
-<section class="slide level2 center">
-
-<p><span class="kicker">The reproducibility frame</span></p>
-</section>
-<section id="if-you-cant-rerun-it-it-isnt-evidence" class="slide level2 center">
+<section id="if-you-cant-rerun-it-it-isnt-evidence" class="slide level2">
 <h2>If you can’t rerun it, it isn’t evidence</h2>
+<p><span class="kicker">The reproducibility frame</span></p>
 <p>A result becomes evidence only when someone else can inspect how you got it — and ideally reproduce it.</p>
 <div class="concept-card">
 <p><span class="card-title">The week’s question</span> <strong>If you left the project tomorrow, could someone trust your output without you in the room to explain it?</strong></p>
 </div>
 <p>Documentation is not paperwork after the fact. It is the part of the method that makes the output legible.</p>
 </section>
-<section id="where-reproducibility-quietly-fails" class="slide level2 center">
+<section id="where-reproducibility-quietly-fails" class="slide level2">
 <h2>Where reproducibility quietly fails</h2>
 <p>These are ordinary, not dramatic — and they happen to careful people.</p>
 <table class="caption-top">
@@ -261,12 +298,9 @@
 <p>The risk is not embarrassment. It is presenting a result you can no longer stand behind.</p>
 </div>
 </section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Anecdote · the tool changed your data and didn’t tell you</span></p>
-</section>
-<section id="when-the-spreadsheet-silently-rewrote-the-data" class="slide level2 center">
+<section id="when-the-spreadsheet-silently-rewrote-the-data" class="slide level2">
 <h2>When the spreadsheet silently rewrote the data</h2>
+<p><span class="kicker">Anecdote · the tool changed your data and didn’t tell you</span></p>
 <div class="warning-card">
 <p><span class="card-title">What happened</span> Geneticists found that Excel was <strong>auto-converting gene names into dates and numbers</strong> (for example “SEPT2” became a date). A 2016 study found errors in roughly <strong>one in five</strong> papers with supplementary spreadsheets — the field eventually renamed the genes rather than fight the software.</p>
 </div>
@@ -274,34 +308,808 @@
 <p><span class="card-title">The lesson</span> Reproducibility starts with knowing what your tool did to your data. Document formats, versions, and import settings — the failure is invisible until someone re-runs it.</p>
 </div>
 </section>
-<section id="a-quick-honest-poll" class="slide level2 center">
+<section id="a-quick-honest-poll" class="slide level2">
 <h2>A quick, honest poll</h2>
 <p>Have you ever struggled to reconstruct what you did on a project from a few months ago?</p>
 <div class="reflection-card">
 <p>Almost everyone has. The point is not guilt — it is to treat documentation as a normal, expected part of the workflow, starting with one process today.</p>
 </div>
 </section>
-<section class="slide level2 center">
-
+<section id="why-model-literacy" class="slide level2">
+<h2>Why should you care how an LLM works?</h2>
+<p><span class="kicker">Model literacy · practical purpose</span></p>
+<p>Understanding the mechanism helps you <strong>frame the task, choose the tool and decide what evidence to trust</strong>.</p>
+<div class="three-step">
+<div class="step-box">
+<p><span class="label example">Design / studio</span></p>
+<p><strong>Explore deliberately</strong></p>
+<p>Generate alternatives around your brief. Specify what may vary and what must stay fixed.</p>
+</div>
+<div class="step-box">
+<p><span class="label activity">Architectural practice</span></p>
+<p><strong>Delegate an inspectable step</strong></p>
+<p>Connect a drawing, script or document to a decision. Keep units, sources and assumptions visible.</p>
+</div>
+<div class="step-box">
+<p><span class="label concept">Doctoral research</span></p>
+<p><strong>Defend the method</strong></p>
+<p>Separate a proposed explanation from evidence. Record the inputs, procedure and checks behind a result.</p>
+</div>
+</div>
+<div class="takeaway">
+<p>On each slide: learn the mechanism, then reveal <strong>why it matters</strong> and <strong>what to do differently</strong>.</p>
+</div>
+<aside class="notes">
+<p>One minute within the existing 15-minute primer. These are overlapping uses, not separate ability levels. Students do not need to design a neural network; they should leave able to make better decisions about their own LLM workflow. Ask them to keep one current architectural or research task in mind. On the next seven slides, show the mechanism first; the first advance reveals its practical consequence and the second reveals a concrete action.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section>
-<section id="session-1-documentation-clinic" class="title-slide slide level1 center" data-background-color="#1a1a1a">
-<h1>Session 1 · Documentation Clinic</h1>
-
+<section id="decoder-generation" class="slide level2">
+<h2>What happens after you press Send?</h2>
+<p><span class="kicker">Model literacy · 1 of 7</span></p>
+<p>A common baseline is an <strong>autoregressive, decoder-only Transformer</strong>: it generates a continuation from the context already available.</p>
+<div class="process-chain">
+<div class="process-step">
+<p><span class="label concept">01 · Input</span></p>
+<p><strong>Tokens</strong></p>
+<p>Text is split into units and represented as vectors.</p>
+</div>
+<div class="process-step">
+<p><span class="label concept">02 · Context</span></p>
+<p><strong>Causal attention</strong></p>
+<p>Layers use the available context, not future answer tokens.</p>
+</div>
+<div class="process-step">
+<p><span class="label example">03 · Predict</span></p>
+<p><strong>Next token</strong></p>
+<p>The model scores possible next tokens; decoding selects one.</p>
+</div>
+<div class="process-step">
+<p><span class="label activity">04 · Continue</span></p>
+<p><strong>Append and repeat</strong></p>
+<p>Append the token to the context; repeat.</p>
+</div>
+</div>
+<div class="practice-note fragment fade-up" data-fragment-index="0">
+<p><strong>Why it matters:</strong> the model generates a continuation conditioned on your input. A worked example and a clear format help define the artifact you want.</p>
+<div class="fragment fade-up" data-fragment-index="1">
+<p><strong>Do this:</strong> specify “inputs in metres → three overhang options → one comparison table.” Check any performance claim against a source or calculation.</p>
+</div>
+</div>
+<div class="source-note">
+<p>Documented decoder example: <a href="https://arxiv.org/html/2412.15115v2#S2">Qwen2.5 technical report, §2 (2024)</a>.</p>
+</div>
+<aside class="notes">
+<p>Allow about two minutes, including the two practice-note reveals. Distinguish the neural-network architecture from architecture as a design discipline. Decoder-only means the text backbone does not need a separate encoder–decoder pair; it does not mean a multimodal product has no image or audio encoders. During training, masked token positions can be processed in parallel. This diagram describes the conceptual generation loop, not every serving optimisation. The model learns conditional patterns and representations, not an arithmetic average of answers. An explicit format makes a draft easier to inspect; it does not guarantee correct content. This mechanism can support complex reasoning, but a fluent facade explanation does not establish that a solar calculation was performed.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section class="slide level2 center">
-
-<p><span class="kicker">The clinic</span></p>
+<section id="context-and-evidence" class="slide level2">
+<h2>What can attention connect — and what is missing?</h2>
+<p><span class="kicker">Model literacy · 2 of 7</span></p>
+<div class="example-card">
+<p><span class="card-title">Illustrative prompt</span> “Compare 0.6 m and 1.2 m overhangs on this west-facing facade. Explain the likely shading trade-off.”</p>
+</div>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="card-title">Available context</span> The model can connect the dimensions, orientation, attached material and earlier messages when forming a response.</p>
+</div>
+<div class="warning-card">
+<p><span class="card-title">Still needs evidence</span> An image may omit scale, location, glazing, weather or occupancy. Attention does not supply missing project measurements or run a simulation by itself.</p>
+</div>
+</div>
+<div class="practice-note fragment fade-up" data-fragment-index="0">
+<p><strong>Why it matters:</strong> the project context you supply shapes the comparison. Missing site information may become an unstated assumption.</p>
+<div class="fragment fade-up" data-fragment-index="1">
+<p><strong>Do this:</strong> attach a labelled plan, north arrow, scale, location and relevant brief. Ask it to distinguish supplied facts, assumptions and missing inputs.</p>
+</div>
+</div>
+<aside class="notes">
+<p>Architectural application of the preceding mechanism, not a model benchmark. A model may infer or recall information, but inferred project inputs must be identified and checked. Distinguish the model’s proposed explanation from a tool result. Avoid teaching that next-token prediction prevents reasoning, or that attention guarantees faithful use of every supplied fact.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="document-one-workflow-so-it-stands-alone" class="slide level2 center">
+<section id="training-and-rlhf" class="slide level2">
+<h2>How does a predictor become an assistant?</h2>
+<p><span class="kicker">Model literacy · 3 of 7</span></p>
+<div class="process-chain">
+<div class="process-step">
+<p><span class="label concept">01 · Pre-training</span></p>
+<p><strong>Learn from data</strong></p>
+<p>Next-token training develops language, knowledge and patterns useful for many tasks.</p>
+</div>
+<div class="process-step">
+<p><span class="label example">02 · Supervised fine-tuning</span></p>
+<p><strong>Learn from examples</strong></p>
+<p>Train on demonstrations of useful responses and task behaviour.</p>
+</div>
+<div class="process-step">
+<p><span class="label reflect">03 · Classic RLHF</span></p>
+<p><strong>Learn from preferences</strong></p>
+<p>People rank responses → a reward model learns those preferences → reinforcement learning updates the assistant.</p>
+</div>
+</div>
+<p><strong>RLHF = reinforcement learning from human feedback.</strong></p>
+<div class="practice-note fragment fade-up" data-fragment-index="0">
+<p><strong>Why it matters:</strong> assistant training helps it follow requests and respond usefully. A helpful-sounding endorsement is not an independent design review.</p>
+<div class="fragment fade-up" data-fragment-index="1">
+<p><strong>Do this:</strong> specify the audience and criteria: client explanation, methods critique or component specification. Ask for the strongest objection, then check its evidence.</p>
+</div>
+</div>
+<div class="source-note">
+<p>One influential recipe, not every model’s training sequence: <a href="https://arxiv.org/abs/2203.02155">Ouyang et al., InstructGPT (2022)</a>.</p>
+</div>
+<aside class="notes">
+<p>About two minutes, including the two practice-note reveals. Training changes model weights; supplying a prompt usually changes the context for that interaction, not the model’s weights. RLHF happens during training, not whenever a person presses a thumbs-up button. Feedback may inform later training, depending on the service. Keep the simplified diagram clearly labelled as the classic recipe. Its reward is a proxy for the qualities being judged, not a certificate of architectural correctness. Do not imply that RLHF inevitably causes agreement or that asking for a critique removes bias.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="preferences-and-verification" class="slide level2">
+<h2>A preferred answer and a checked answer differ</h2>
+<p><span class="kicker">Model literacy · 4 of 7</span></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Training signal</th>
+<th>What it can reward</th>
+<th>Architectural question it leaves open</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Human or AI preferences</strong></td>
+<td>Useful, clear, appropriate responses</td>
+<td>Does this claim hold for this site and brief?</td>
+</tr>
+<tr class="even">
+<td><strong>DPO · direct preference optimisation</strong></td>
+<td>Preferred responses directly, without classic RLHF’s separate reward-model/RL loop</td>
+<td>Do the preferences capture the right criteria?</td>
+</tr>
+<tr class="odd">
+<td><strong>RL with verifiable rewards</strong></td>
+<td>Checkable outcomes, such as correct answers or passing code tests</td>
+<td>Are those tests sufficient for the design claim?</td>
+</tr>
+</tbody>
+</table>
+<div class="practice-note fragment fade-up" data-fragment-index="0">
+<p><strong>Why it matters:</strong> passing a test only supports what that test measures. Correct arithmetic for our assumed 3.0 m setback does not establish planning compliance.</p>
+<div class="fragment fade-up" data-fragment-index="1">
+<p><strong>Do this:</strong> define success first: known cases for code, source fidelity for a literature summary, and explicit comfort/access trade-offs for a design recommendation.</p>
+</div>
+</div>
+<div class="source-note">
+<p><a href="https://arxiv.org/abs/2305.18290">DPO (2023)</a> · <a href="https://arxiv.org/abs/2212.08073">Constitutional AI: AI feedback (2022)</a> · <a href="https://arxiv.org/html/2501.12948v1#S2">DeepSeek-R1: reasoning rewards (2025)</a>. The setback is a classroom assumption.</p>
+</div>
+<aside class="notes">
+<p>About two minutes. Reward source and optimisation method are different dimensions: DPO may use human or AI preference data. In R1, verifiable math/code rewards are part of a broader training recipe; R1-Zero is the experiment without initial supervised fine-tuning, not a description of every R1 stage. Passing tests provides evidence only for the tested behaviour. Ask what “good” means when energy, access, comfort and design intent conflict.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="reasoning-and-tools" class="slide level2">
+<h2>Stronger systems also do more while answering</h2>
+<p><span class="kicker">Model literacy · 5 of 7</span></p>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="card-title">Reasoning effort</span> A model can spend more computation on intermediate steps before answering. Qwen3 documents adjustable thinking budgets; improvement depends on the task.</p>
+</div>
+<div class="concept-card">
+<p><span class="card-title">Tools and retrieved evidence</span> A system can retrieve a document, execute code or call a tool, then use the result. Those actions add evidence only if the inputs and returned results are checked.</p>
+</div>
+</div>
+<div class="bridge-flow">
+<div class="node current">
+<p>propose a step</p>
+</div>
+<div class="node">
+<p>execute a tool</p>
+</div>
+<div class="node">
+<p>inspect its result</p>
+</div>
+<div class="node">
+<p>revise the decision</p>
+</div>
+</div>
+<div class="practice-note fragment fade-up" data-fragment-index="0">
+<p><strong>Why it matters:</strong> more reasoning, more evidence and an executed calculation solve different problems. Extra reasoning time cannot itself supply a missing measurement.</p>
+<div class="fragment fade-up" data-fragment-index="1">
+<p><strong>Do this:</strong> use reasoning for a difficult comparison, retrieval for a source and code for a calculation. Save the actual sources, inputs and tool outputs.</p>
+</div>
+</div>
+<div class="source-note">
+<p><a href="https://arxiv.org/html/2505.09388v1">Qwen3 (2025), §§4.3–4.7</a> · <a href="https://www.anthropic.com/research/reasoning-models-dont-say-think">Anthropic: limits of reported reasoning (2025)</a>.</p>
+</div>
+<aside class="notes">
+<p>About two minutes. Reasoning effort is inference-time computation, not proof of a new backbone architecture. Retrieval supplies context; it is not retraining. A tool invocation is usually orchestrated by software around the model. Request sources, calculations and a concise rationale, rather than treating a generated reasoning narrative as privileged access to internal computation. Anthropic’s study found omissions in reported reasoning under specific experimental conditions; do not generalise its percentages to every model or architectural task.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="current-model-designs" class="slide level2">
+<h2>Is decoder-only still the whole story?</h2>
+<p><span class="kicker">Model literacy · 6 of 7 · evidence checked 4 November 2026</span></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Documented example</th>
+<th>What it shows</th>
+<th>What to take into practice</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Qwen3 · 2025</strong></td>
+<td>Dense and mixture-of-experts (MoE) models; MoE routes each token through selected learned components</td>
+<td>More parameters need not mean all are used on every token</td>
+</tr>
+<tr class="even">
+<td><strong>Nemotron 3 Ultra · June 2026</strong></td>
+<td>A hybrid of Mamba state-space layers and attention, with MoE</td>
+<td>Current designs also change how sequences are processed efficiently</td>
+</tr>
+<tr class="odd">
+<td><strong>Qwen3.5-Omni · April 2026</strong></td>
+<td>Text, vision and audio in a multimodal system</td>
+<td>A plan or walkthrough can be input; perceived dimensions and performance still need checks</td>
+</tr>
+</tbody>
+</table>
+<div class="practice-note fragment fade-up" data-fragment-index="0">
+<p><strong>Why it matters:</strong> model design changes capability and efficiency, but a bigger parameter count or an “expert” label does not establish skill on your task.</p>
+<div class="fragment fade-up" data-fragment-index="1">
+<p><strong>Do this:</strong> judge it on a known task from your work: plan reading, document synthesis or tool execution. Record the visible model/mode, result, date and time taken.</p>
+</div>
+</div>
+<div class="source-note">
+<p>Primary reports: <a href="https://arxiv.org/abs/2505.09388">Qwen3</a> · <a href="https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf">NVIDIA Nemotron 3 Ultra</a> · <a href="https://arxiv.org/abs/2604.15804">Qwen3.5-Omni</a>. Examples of mechanisms, not a model ranking.</p>
+</div>
+<aside class="notes">
+<p>About two minutes, including the two practice-note reveals. Mamba is a state-space sequence model that maintains and updates a state; hybrids combine it with attention. MoE “experts” are learned network components, not named professionals or necessarily human-readable specialties. Autoregressive generation can survive changes to the internal backbone. Decoder-only remains a useful baseline, not a universal description of every component. These reports document particular public designs; do not infer the undisclosed architecture of a current proprietary service from its output style, latency or benchmark score. One known task is a useful local check, not a general benchmark; log cost if visible, without requiring purchase of a second model.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="design-assistant-outlook" class="slide level2">
+<h2>What might a more capable design assistant do?</h2>
+<p><span class="kicker">Model literacy · 7 of 7 · discussion</span></p>
+<div class="example-card">
+<p><span class="card-title">Plausible direction · not an established capability claim</span> Read a brief and model → propose facade variants → call geometry and simulation tools → compare results against agreed criteria → return a traceable recommendation.</p>
+</div>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="card-title">Potentially more automated</span> File preparation, parameter changes, tool execution, error repair and comparison tables.</p>
+</div>
+<div class="reflection-card">
+<p><span class="card-title">Still needs a defensible decision</span> Who defines comfort, acceptable trade-offs and missing evidence? Who checks that the simulation represents the intended design?</p>
+</div>
+</div>
+<div class="practice-note fragment fade-up" data-fragment-index="0">
+<p><strong>Why it matters:</strong> automation can repeat a workflow faster. If its criteria miss the design question, faster iteration can optimise the wrong thing.</p>
+<div class="fragment fade-up" data-fragment-index="1">
+<p><strong>Do this:</strong> delegate one repeatable step. State what may change, what stays fixed, how improvement is judged and when the result needs your review.</p>
+</div>
+</div>
+<aside class="notes">
+<p>Use the final two minutes of the literacy block, including the practice-note reveals. This is a teaching speculation grounded in documented tool use and multimodality, not a promise that a product can reliably complete this whole architectural loop. Invite one response: “Which step would you delegate next, and what check would you keep?” Keep model structure, training and runtime orchestration distinct.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="not-every-ai-output-needs-the-same-check" class="slide level2">
+<h2>Not every AI output needs the same check</h2>
+<p><span class="kicker">Three output types</span></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>AI output type</th>
+<th>What it is good for</th>
+<th>Final-gate check</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Fact-based reiteration</strong></td>
+<td>summarize standards, definitions, precedent claims, code-like information</td>
+<td>verify against primary source, datasheet, standard, or cited document</td>
+</tr>
+<tr class="even">
+<td><strong>Relationship hypothesis / interpretation</strong></td>
+<td>propose explanations for comfort, perception or spatial experience</td>
+<td>compare with physical mechanisms, empirical evidence, an appropriate simulation or a bounded calculation</td>
+</tr>
+<tr class="odd">
+<td><strong>Workflow/code drafting</strong></td>
+<td>produce formulas, scripts, GhPython snippets, notebook cells, checklists</td>
+<td>run it, inspect units/ranges, test known cases, and log failures</td>
+</tr>
+</tbody>
+</table>
+<div class="concept-card">
+<p><span class="card-title">Final gate</span> AI can help generate an answer. <strong>You</strong> decide which gate it must pass before it enters the design argument.</p>
+</div>
+</section>
+<section id="human-experience-is-messy-enough-that-ai-can-help" class="slide level2">
+<h2>Human experience is messy enough that AI can help</h2>
+<p><span class="kicker">Why architecture needs this</span></p>
+<p>Architecture often asks about relationships that are real but hard to reduce cleanly:</p>
+<ul>
+<li class="fragment">spatial atmosphere and perceived calm</li>
+<li class="fragment">thermal acceptability rather than just air temperature</li>
+<li class="fragment">acoustic comfort rather than only decibels</li>
+<li class="fragment">wayfinding confidence rather than only shortest path</li>
+<li class="fragment">facade perception rather than only performance values</li>
+</ul>
+<div class="example-card">
+<p><span class="card-title">A productive use</span> AI can help generate hypotheses for these fuzzy relationships. It cannot validate them. Validation still comes from source checks, simple calculations, field observations, precedent mechanisms, simulations, or sensitivity tests.</p>
+</div>
+</section>
+<section id="ai-fact-checking-cases" class="slide level2">
+<h2>AI Fact-Checking Cases</h2>
+<p>Read each case and name the output type, then decide the final-gate check.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Case</th>
+<th>Output type</th>
+<th>Final gate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>AI summarizes a daylight standard</td>
+<td>fact-based reiteration</td>
+<td>find the standard and quote/check the clause</td>
+</tr>
+<tr class="even">
+<td>AI proposes why a shaded courtyard may feel cooler</td>
+<td>relationship hypothesis / interpretation</td>
+<td>compare with radiation/wind/shade logic and one bounded metric</td>
+</tr>
+<tr class="odd">
+<td>AI writes a Python scoring function</td>
+<td>workflow/code drafting</td>
+<td>run known cases and inspect units/ranges</td>
+</tr>
+<tr class="even">
+<td>AI writes a literature-review paragraph</td>
+<td>fact + writing support</td>
+<td>verify every claim and citation before use</td>
+</tr>
+</tbody>
+</table>
+<div class="warning-card">
+<p>The line is rarely “AI or not.” It is <strong>what kind of output is this, and what would make it trustworthy enough to use?</strong></p>
+</div>
+</section>
+<section id="large-model-method-review" class="slide level2">
+<h2>Large-Model Method Review</h2>
+<p>A common situation, examined as a method — not a person.</p>
+<div class="concept-card">
+<p><span class="card-title">The artifact</span> A building-performance analysis: polished charts, statistics beyond the author’s stated skill, no understanding of the method when questioned, no disclosure of AI use.</p>
+</div>
+<div class="reflection-card">
+<p><span class="card-title">Review it together</span></p>
+<ul>
+<li class="fragment">which specific claims can the author actually defend?</li>
+<li class="fragment">which claims are factual, which are relationship-based, and which are workflow/code?</li>
+<li class="fragment">what final-gate checks would have made this trustworthy?</li>
+<li class="fragment">what should have been disclosed, and where?</li>
+<li class="fragment">what is the minimum honest version of this output?</li>
+</ul>
+</div>
+<p>We critique the <strong>workflow and its claims</strong>, never the author’s ability.</p>
+</section>
+<section id="ai-assisted-work-made-honest" class="slide level2">
+<h2>AI-assisted work, made honest</h2>
+<p><span class="kicker">Key visual</span></p>
+<p>The same four-zone frame as the rest of the course — but now one zone is an AI draft, and the <strong>final gate</strong> and <strong>disclosure</strong> are not optional.</p>
+<div class="tool-panel">
+<div class="zone input">
+<p><strong>Prompt</strong> “Draft a setback function: inputs in metres; return pass/fail and the ratio to an assumed 3.0 m threshold.”</p>
+</div>
+<div class="zone operation">
+<p><strong>AI output</strong> a Python function that can become a GhPython component</p>
+</div>
+<div class="zone check">
+<p><strong>Final gate</strong> 2.4 / 3.0 = 0.8 → fail; 3.0 / 3.0 = 1.0 → pass. Check units and the actual source of the threshold separately.</p>
+</div>
+<div class="zone output">
+<p><strong>Disclosure note</strong> “AI-assisted arithmetic checked against known cases. The classroom threshold does not establish planning compliance.”</p>
+</div>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Run the kit</span> A real, runnable example: <a href="../starter_kits/ai-assisted-workflow/examples/verified_setback_score.py"><code>verified_setback_score.py</code></a> with its <a href="../starter_kits/ai-assisted-workflow/examples/prompt_log_example.md">prompt log</a> — AI drafted it, then the output type, known cases, and threshold behavior were checked. See the <a href="../starter_kits/ai-assisted-workflow/README.html">AI-assisted kit</a>.</p>
+</div>
+<aside class="notes">
+<p>Use the function as a bounded example, not a compliance tool. Its internal assertions cover selected ordinary values; they are not exhaustive validation. Save expected and observed outputs, and distinguish the arithmetic check from the separate question of which rule applies. No Python installation is required to discuss the hand-calculable values.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="warning-card">
+<p>AI can draft the step. It cannot be the final gate for its own output. That gate is your responsibility, every time.</p>
+</div>
+</section>
+<section id="vibe-coding-starts-after-the-function-contract-is-clear" class="slide level2">
+<h2>Vibe coding starts after the function contract is clear</h2>
+<p><span class="kicker">AI as component front end</span></p>
+<div class="function-contract">
+<p><strong>Before asking AI</strong> State the component’s inputs, units, allowed ranges, operation, output, and one known test case. The prompt should describe that contract, not just ask for “a script.”</p>
+</div>
+<div class="bridge-flow">
+<div class="node current">
+<p>function contract</p>
+</div>
+<div class="node">
+<p>AI draft</p>
+</div>
+<div class="node">
+<p>final-gate check</p>
+</div>
+<div class="node">
+<p>GhPython / notebook</p>
+</div>
+<div class="node">
+<p>verified output</p>
+</div>
+</div>
+</section>
+<section id="ai-drafts-can-become-gh-components-but-only-after-inspection" class="slide level2">
+<h2>AI drafts can become GH components, but only after inspection</h2>
+<p><span class="kicker">Patch to Grasshopper</span></p>
+<div class="gh-bridge">
+<p><strong>Bridge pattern</strong> AI drafts a <code>geopandas</code>, Python, GhPython, or C# component -&gt; student checks facts, units, edge cases, and one manual result -&gt; only then does the component enter the design workflow.</p>
+</div>
+<div class="uncertainty-check">
+<p><strong>Question for AI-assisted work</strong> Is this output factual, relationship-based, or code/workflow? What check would expose a wrong answer there?</p>
+</div>
+</section>
+<section id="break" class="slide level2 big-break">
+<h2>BREAK</h2>
+<p>Take 10 minutes.</p>
+<p>Open one current architectural decision, its inputs, and a saved AI exchange or workflow output. Lab time restarts at <strong>0</strong> after the break.</p>
+</section>
+<section id="architectural-workflow-lab" class="slide level2">
+<h2>Audit one AI-assisted architectural decision</h2>
+<p><span class="kicker">Session 2 · walkthrough and verification</span></p>
+<div class="spine-rail">
+<p><span class="node">Decision</span> <span class="node">Evidence</span> <span class="node">Variation</span> <span class="node is-current">Output</span> <span class="node">Threshold</span> <span class="node">Action</span></p>
+</div>
+<div class="activity-card">
+<p>Bring one recent AI exchange or generated component from your project. Show <strong>the design decision, what you gave the model, what it produced, what you accepted or changed, and one check that could reveal a wrong answer</strong>.</p>
+</div>
+<div class="task-output">
+<p><strong>Leave with:</strong> one completed <a href="../templates/ai-workflow-verification-card.html">verification card</a>, a revised artifact or qualified claim, and a dated note of what remains unverified. <span class="feeds-tag">feeds A3</span></p>
+</div>
+<div class="grading-note">
+<p>Formative work towards A3; no new graded submission. A saved transcript is enough: no new account or paid model is required.</p>
+</div>
+</section>
+<section id="lab-starting-material" class="slide level2">
+<h2>Choose a decision you actually need to make</h2>
+<div class="task-meta">
+<p>Lab 0–5 min · individual · open the decision, input and output together</p>
+</div>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Your material</th>
+<th>The architectural decision</th>
+<th>One possible independent check</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Plan or walkthrough critique</td>
+<td>Which route or spatial arrangement should change?</td>
+<td>Check dimensions in the source drawing; distinguish visible features from inferred user experience</td>
+</tr>
+<tr class="even">
+<td>Facade / GH / Python component</td>
+<td>Which variant should enter the comparison?</td>
+<td>Test units, a boundary value and a hand-calculated case</td>
+</tr>
+<tr class="odd">
+<td>Comfort or daylight explanation</td>
+<td>What change is worth testing?</td>
+<td>Compare the proposed mechanism with a suitable metric, observation or simulation</td>
+</tr>
+<tr class="even">
+<td>Precedent / standard claim</td>
+<td>Does this evidence apply to this project?</td>
+<td>Open the original source and check scope, date and conditions</td>
+</tr>
+</tbody>
+</table>
+<div class="reflection-card">
+<p><strong>No current AI use?</strong> Audit one automated or interpretive step in your own project. <strong>No accessible files or network?</strong> Use the saved <a href="../starter_kits/ai-assisted-workflow/examples/prompt_log_example.md">setback example</a> and its hand-calculable inputs. Label it as a course example.</p>
+</div>
+</section>
+<section id="lab-timing" class="slide level2">
+<h2>The 50-minute lab</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Lab time</th>
+<th>Task</th>
+<th>Save this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>0–5</strong></td>
+<td>Choose one decision; open inputs and output</td>
+<td>One sentence naming the decision</td>
+</tr>
+<tr class="even">
+<td><strong>5–23</strong></td>
+<td>Triads: three six-minute walkthroughs</td>
+<td>One peer question and an agreed check each</td>
+</tr>
+<tr class="odd">
+<td><strong>23–38</strong></td>
+<td>Perform one independent check</td>
+<td>Expected result, observed result and limitation</td>
+</tr>
+<tr class="even">
+<td><strong>38–45</strong></td>
+<td>Revise, qualify or reject the output</td>
+<td>Verification card + revised artifact/claim</td>
+</tr>
+<tr class="odd">
+<td><strong>45–50</strong></td>
+<td>Two short shared examples, then exit note</td>
+<td>One changed judgment and one remaining limit</td>
+</tr>
+</tbody>
+</table>
+<div class="task-output">
+<p>If a check cannot finish, record <strong>pending</strong>, the blocker and the next step. A proposed test is not a completed verification.</p>
+</div>
+<aside class="notes">
+<p>At 45–48 minutes invite two volunteers for 90 seconds each. At 48–50 everyone completes the exit note. The triads give every student a turn; whole-class sharing is selective. For a pair, use the extra six minutes to start the agreed check. Preserve material locally if posting or the website is unavailable.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="lab-walkthrough" class="slide level2">
+<h2>Walk through the decision, not the whole chat</h2>
+<div class="task-meta">
+<p>Lab 5–23 min · groups of three · six minutes each: three to show, three for feedback</p>
+</div>
+<p><strong>Object this week: one AI-assisted step and the architectural judgment it influenced.</strong></p>
+<div class="recall-4step">
+<div class="step">
+<p><strong>Did</strong> Show the supplied plan/data/prompt, the output and what you used in the design.</p>
+</div>
+<div class="step">
+<p><strong>Assumed</strong> Name missing scale, context, physics, sources or other conditions the answer relied on.</p>
+</div>
+<div class="step">
+<p><strong>Risk</strong> Point to one claim or operation that could change the design if it were wrong.</p>
+</div>
+<div class="step">
+<p><strong>Verify</strong> Agree one independent check and what result would make you revise the output.</p>
+</div>
+</div>
+<div class="task-output">
+<p><strong>Peers record:</strong> “We could follow <strong><em>. We still need evidence for </em></strong>. The next check is ___.” Critique the artifact and its claim.</p>
+</div>
+</section>
+<section id="lab-independent-check" class="slide level2">
+<h2>Run one check that could change your mind</h2>
+<div class="task-meta">
+<p>Lab 23–38 min · individual, with a peer available · one bounded check</p>
+</div>
+<div class="task-steps">
+<ol type="1">
+<li><strong>Before checking:</strong> record the expected result and its basis — a source, known case, manual calculation or observation.</li>
+<li><strong>Perform the check:</strong> inspect the source, rerun a saved component, calculate a value or compare independent evidence.</li>
+<li><strong>Record what happened:</strong> expected versus observed result; pass, fail or pending; what the check cannot establish.</li>
+</ol>
+</div>
+<div class="warning-card">
+<p>Asking the same model “are you sure?” is not an independent check. A second answer can suggest a test; agreement between answers does not validate the claim.</p>
+</div>
+<aside class="notes">
+<p>A peer rerun checks whether instructions and saved files reproduce a result; it does not establish physical validity by itself. For a performance claim, distinguish rerunning code from validating assumptions. Do not require students to complete a substantial simulation in 15 minutes: a bounded known case or an honest pending record is acceptable.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="lab-revision" class="slide level2">
+<h2>Make the architectural consequence visible</h2>
+<div class="task-meta">
+<p>Lab 38–45 min · revise the artifact/claim and complete the existing verification card</p>
+</div>
+<div class="example-card">
+<p><span class="card-title">Illustrative revision</span> <strong>Before:</strong> “The AI says this overhang will make the room comfortable.”</p>
+<p><strong>After:</strong> “The checked shadow geometry supports shade at this time and location. It does not establish thermal comfort. I will retain this option for a temperature, radiation and ventilation comparison.”</p>
+</div>
+<div class="task-steps">
+<ol type="1">
+<li>Mark the output <strong>accept, revise, reject or pending</strong>, with a reason.</li>
+<li>Save the input, output, check result and revised artifact. Record the visible model/tool name, mode and date; mark unknown details honestly.</li>
+<li>Add a dated note to your project page <strong>or local draft</strong>: peer feedback → check → changed decision → remaining limit.</li>
+</ol>
+</div>
+<aside class="notes">
+<p>The sample revision assumes that a shadow-geometry check actually took place. Students must not copy its result without doing an equivalent check. Accepted means adequate for the stated bounded use, not universally valid. Keep the website as a continuation of Week 7’s documentation habit, not a new publishing requirement.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="week-8-checklist" class="slide level2">
+<h2>Week 8 Checklist</h2>
+<div class="concept-card">
+<p><span class="card-title">Before Week 9</span></p>
+<ol type="1">
+<li class="fragment">save one workflow with its inputs, steps, tool/version information and output</li>
+<li class="fragment">classify the AI-assisted step: fact, relationship hypothesis or workflow/code</li>
+<li class="fragment">record one independent check, its result and what remains unverified</li>
+<li class="fragment">revise the artifact or claim and keep the peer feedback in your A3 failure/verification log</li>
+<li class="fragment">where relevant, use the reference questions for a mentor consultation and document the resulting action</li>
+</ol>
+</div>
+</section>
+<section id="lab-exit" class="slide level2">
+<h2>Your changed judgment, in one line</h2>
+<p><span class="kicker">Exit</span></p>
+<p>Lab 48–50 min · save in your notes; post the artifact link or a screenshot if available.</p>
+<div class="reflection-card">
+<p>**I used AI/automation for <strong><em>. After checking </em></strong>, I will accept / revise / reject / hold pending <strong><em>. This changes my design decision by </em></strong>. I still cannot claim ___.**</p>
+</div>
+<p>Week 9 closes A3 — we finalize the prototype and its verification before the workflow package begins.</p>
+</section>
+<section id="reference-activities" class="slide level2">
+<h2>Reference activities</h2>
+<p>The live teaching sequence ends above. Use these documentation and mentor exercises for follow-up or a longer clinic; they are not additional tasks inside today’s 50-minute lab.</p>
+</section>
+<section id="reference-documentation-clinic" class="slide level2" data-background-color="#1a1a1a">
+<h2>Reference · Documentation Clinic</h2>
+</section>
+<section id="document-one-workflow-so-it-stands-alone" class="slide level2">
 <h2>Document one workflow so it stands alone</h2>
+<p><span class="kicker">The clinic</span></p>
 <p>Pick the <strong>most complex or critical</strong> workflow in your project — the one you would least want to lose.</p>
 <div class="activity-card">
-<p><span class="card-title">Do this now · 10 minutes</span> Write step-by-step instructions clear enough that a classmate who has never seen your method could follow them and get your result — with no verbal explanation from you.</p>
+<p><span class="card-title">Optional extension · 10 minutes</span> Write step-by-step instructions clear enough that a classmate who has never seen your method could follow them and get your result — with no verbal explanation from you.</p>
 </div>
 <p>Candidates: a Grasshopper setup, a survey-data analysis, a GIS operation, a Python notebook, a statistical step.</p>
 </section>
-<section id="documentation-template" class="slide level2 center">
+<section id="documentation-template" class="slide level2">
 <h2>Documentation template</h2>
 <p>Copy this structure into your notes.</p>
 <table class="caption-top">
@@ -339,7 +1147,7 @@
 </tbody>
 </table>
 </section>
-<section id="the-documentation-swap" class="slide level2 center">
+<section id="the-documentation-swap" class="slide level2">
 <h2>The documentation swap</h2>
 <p>We test documentation the only honest way: someone else follows it cold.</p>
 <div class="three-step">
@@ -357,255 +1165,15 @@
 <p>The gaps you find are the gaps a future reader would hit. This is the most useful feedback you will get all week.</p>
 </div>
 </section>
-<section class="slide level2 center">
-
-<p><span class="kicker">AI as companion</span></p>
+<section id="reference-mentor-preparation" class="slide level2" data-background-color="#1a1a1a">
+<h2>Reference · Mentor Preparation</h2>
 </section>
-<section id="what-large-models-are-for-this-course" class="slide level2 center">
-<h2>What large models are, for this course</h2>
-<div class="concept-card">
-<p><span class="card-title">The short version</span> Large models are <strong>probabilistic models of patterns in human-produced data</strong>. They can be useful companions, but they are not a final gate for truth.</p>
-</div>
-<div class="two-col">
-<div class="concept-card">
-<p><span class="card-title">What they tend to do</span></p>
-<ul>
-<li class="fragment">produce plausible common answers</li>
-<li class="fragment">average across many writing patterns</li>
-<li class="fragment">compress complicated claims into fluent language</li>
-<li class="fragment">sound confident even when the source is weak</li>
-</ul>
-</div>
-<div class="concept-card">
-<p><span class="card-title">Why they are still useful</span></p>
-<ul>
-<li class="fragment">they can expose hidden assumptions</li>
-<li class="fragment">they can draft small workflow components</li>
-<li class="fragment">they can search the shape of an ill-defined relation</li>
-<li class="fragment">they can help when human experience is hard to model directly</li>
-</ul>
-</div>
-</div>
-<p>The skill is not “believe or reject AI.” The skill is using it, then deciding what kind of check must happen before the output becomes evidence.</p>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Large-model literacy</span></p>
-</section>
-<section id="the-useful-part-is-also-the-dangerous-part" class="slide level2 center">
-<h2>The useful part is also the dangerous part</h2>
-<div class="warning-card">
-<p><span class="card-title">Common answer problem</span> Because LLMs learn from pooled writing, they often produce the most available or average explanation. That can be helpful for orientation, but it can miss local constraints, updated facts, minority cases, and project-specific physics.</p>
-</div>
-<div class="reflection-card">
-<p><span class="card-title">Design implication</span> Do not ask only, “What does AI say?” Ask: <strong>what local fact, mechanism, calculation, or observed experience would push this answer away from the common mean?</strong></p>
-</div>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Three output types</span></p>
-</section>
-<section id="not-every-ai-output-needs-the-same-check" class="slide level2 center">
-<h2>Not every AI output needs the same check</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>AI output type</th>
-<th>What it is good for</th>
-<th>Final-gate check</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Fact-based reiteration</strong></td>
-<td>summarize standards, definitions, precedent claims, code-like information</td>
-<td>verify against primary source, datasheet, standard, or cited document</td>
-</tr>
-<tr class="even">
-<td><strong>Relationship-based simulation</strong></td>
-<td>reason about fuzzy links: comfort, perception, spatial experience, thermal/acoustic sensation</td>
-<td>compare with engineering/science logic, empirical evidence, sensitivity test, or bounded calculation</td>
-</tr>
-<tr class="odd">
-<td><strong>Workflow/code drafting</strong></td>
-<td>produce formulas, scripts, GhPython snippets, notebook cells, checklists</td>
-<td>run it, inspect units/ranges, test known cases, and log failures</td>
-</tr>
-</tbody>
-</table>
-<div class="concept-card">
-<p><span class="card-title">Final gate</span> AI can help generate an answer. <strong>You</strong> decide which gate it must pass before it enters the design argument.</p>
-</div>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Why architecture needs this</span></p>
-</section>
-<section id="human-experience-is-messy-enough-that-ai-can-help" class="slide level2 center">
-<h2>Human experience is messy enough that AI can help</h2>
-<p>Architecture often asks about relationships that are real but hard to reduce cleanly:</p>
-<ul>
-<li class="fragment">spatial atmosphere and perceived calm</li>
-<li class="fragment">thermal acceptability rather than just air temperature</li>
-<li class="fragment">acoustic comfort rather than only decibels</li>
-<li class="fragment">wayfinding confidence rather than only shortest path</li>
-<li class="fragment">facade perception rather than only performance values</li>
-</ul>
-<div class="example-card">
-<p><span class="card-title">A productive use</span> AI can help generate hypotheses for these fuzzy relationships. It cannot validate them. Validation still comes from source checks, simple calculations, field observations, precedent mechanisms, simulations, or sensitivity tests.</p>
-</div>
-</section>
-<section id="ai-fact-checking-cases" class="slide level2 center">
-<h2>AI Fact-Checking Cases</h2>
-<p>Read each case and name the output type, then decide the final-gate check.</p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Case</th>
-<th>Output type</th>
-<th>Final gate</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>AI summarizes a daylight standard</td>
-<td>fact-based reiteration</td>
-<td>find the standard and quote/check the clause</td>
-</tr>
-<tr class="even">
-<td>AI proposes why a shaded courtyard may feel cooler</td>
-<td>relationship-based simulation</td>
-<td>compare with radiation/wind/shade logic and one bounded metric</td>
-</tr>
-<tr class="odd">
-<td>AI writes a Python scoring function</td>
-<td>workflow/code drafting</td>
-<td>run known cases and inspect units/ranges</td>
-</tr>
-<tr class="even">
-<td>AI writes a literature-review paragraph</td>
-<td>fact + writing support</td>
-<td>verify every claim and citation before use</td>
-</tr>
-</tbody>
-</table>
-<div class="warning-card">
-<p>The line is rarely “AI or not.” It is <strong>what kind of output is this, and what would make it trustworthy enough to use?</strong></p>
-</div>
-</section>
-<section id="large-model-method-review" class="slide level2 center">
-<h2>Large-Model Method Review</h2>
-<p>A common situation, examined as a method — not a person.</p>
-<div class="concept-card">
-<p><span class="card-title">The artifact</span> A building-performance analysis: polished charts, statistics beyond the author’s stated skill, no understanding of the method when questioned, no disclosure of AI use.</p>
-</div>
-<div class="reflection-card">
-<p><span class="card-title">Review it together</span></p>
-<ul>
-<li class="fragment">which specific claims can the author actually defend?</li>
-<li class="fragment">which claims are factual, which are relationship-based, and which are workflow/code?</li>
-<li class="fragment">what final-gate checks would have made this trustworthy?</li>
-<li class="fragment">what should have been disclosed, and where?</li>
-<li class="fragment">what is the minimum honest version of this output?</li>
-</ul>
-</div>
-<p>We critique the <strong>workflow and its claims</strong>, never the author’s ability.</p>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Key visual</span></p>
-</section>
-<section id="ai-assisted-work-made-honest" class="slide level2 center">
-<h2>AI-assisted work, made honest</h2>
-<p>The same four-zone frame as the rest of the course — but now one zone is an AI draft, and the <strong>final gate</strong> and <strong>disclosure</strong> are not optional.</p>
-<div class="tool-panel">
-<div class="zone input">
-<p><strong>Prompt</strong> “Write a geopandas script that buffers transit stops 400 m and reports % of site parcels covered.”</p>
-</div>
-<div class="zone operation">
-<p><strong>AI output</strong> a draft script + a Grasshopper Python component stub</p>
-</div>
-<div class="zone check">
-<p><strong>Final gate</strong> CRS is projected (metres, not degrees); buffer distance correct; parcel counts spot-checked by hand</p>
-</div>
-<div class="zone output">
-<p><strong>Disclosure note</strong> “Buffer script drafted with AI; CRS and counts verified manually on DD-MM.”</p>
-</div>
-</div>
-<div class="activity-card">
-<p><span class="card-title">Run the kit</span> A real, runnable example: <a href="../starter_kits/ai-assisted-workflow/examples/verified_setback_score.py"><code>verified_setback_score.py</code></a> with its <a href="../starter_kits/ai-assisted-workflow/examples/prompt_log_example.md">prompt log</a> — AI drafted it, then the output type, known cases, and threshold behavior were checked. See the <a href="../starter_kits/ai-assisted-workflow/README.html">AI-assisted kit</a>.</p>
-</div>
-<div class="warning-card">
-<p>AI can draft the step. It cannot be the final gate for its own output. That gate is your responsibility, every time.</p>
-</div>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">AI as component front end</span></p>
-</section>
-<section id="vibe-coding-starts-after-the-function-contract-is-clear" class="slide level2 center">
-<h2>Vibe coding starts after the function contract is clear</h2>
-<div class="function-contract">
-<p><strong>Before asking AI</strong> State the component’s inputs, units, allowed ranges, operation, output, and one known test case. The prompt should describe that contract, not just ask for “a script.”</p>
-</div>
-<div class="bridge-flow">
-<div class="node current">
-<p>function contract</p>
-</div>
-<div class="node">
-<p>AI draft</p>
-</div>
-<div class="node">
-<p>final-gate check</p>
-</div>
-<div class="node">
-<p>GhPython / notebook</p>
-</div>
-<div class="node">
-<p>verified output</p>
-</div>
-</div>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Patch to Grasshopper</span></p>
-</section>
-<section id="ai-drafts-can-become-gh-components-but-only-after-inspection" class="slide level2 center">
-<h2>AI drafts can become GH components, but only after inspection</h2>
-<div class="gh-bridge">
-<p><strong>Bridge pattern</strong> AI drafts a <code>geopandas</code>, Python, GhPython, or C# component -&gt; student checks facts, units, edge cases, and one manual result -&gt; only then does the component enter the design workflow.</p>
-</div>
-<div class="uncertainty-check">
-<p><strong>Question for AI-assisted work</strong> Is this output factual, relationship-based, or code/workflow? What check would expose a wrong answer there?</p>
-</div>
-</section>
-<section class="slide level2 center">
-
-</section></section>
-<section>
-<section id="session-1-mentor-prep" class="title-slide slide level1 center" data-background-color="#1a1a1a">
-<h1>Session 1 · Mentor Prep</h1>
-
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Mentor prep</span></p>
-</section>
-<section id="make-the-mentor-meeting-count" class="slide level2 center">
+<section id="make-the-mentor-meeting-count" class="slide level2">
 <h2>Make the mentor meeting count</h2>
+<p><span class="kicker">Mentor prep</span></p>
 <p>Most mentor time is lost to vague questions. A little preparation turns a pleasant chat into a useful one.</p>
 <div class="activity-card">
-<p><span class="card-title">Prepare now · 15 minutes</span></p>
+<p><span class="card-title">When a consultation is relevant · 15 minutes</span></p>
 <ol type="1">
 <li class="fragment"><strong>One-liner</strong> — your project in a single sentence</li>
 <li class="fragment"><strong>Specific ask</strong> — the exact advice you need</li>
@@ -615,7 +1183,7 @@
 </ol>
 </div>
 </section>
-<section id="weak-questions-vs-strategic-questions" class="slide level2 center">
+<section id="weak-questions-vs-strategic-questions" class="slide level2">
 <h2>Weak questions vs strategic questions</h2>
 <div class="two-col">
 <div class="warning-card">
@@ -637,10 +1205,10 @@
 </div>
 </div>
 </section>
-<section id="question-workshop" class="slide level2 center">
+<section id="question-workshop" class="slide level2">
 <h2>Question workshop</h2>
 <div class="activity-card">
-<p><span class="card-title">In pairs · 10 minutes</span></p>
+<p><span class="card-title">Optional pair exercise · 10 minutes</span></p>
 <ol type="1">
 <li class="fragment">Person A delivers their one-liner + best strategic question</li>
 <li class="fragment">Person B gives specific feedback and one improvement</li>
@@ -651,7 +1219,7 @@
 <p>You are not competing for the best question. You are pressure-testing your own so it earns a real answer in the room.</p>
 </div>
 </section>
-<section id="follow-up-email-template" class="slide level2 center">
+<section id="follow-up-email-template" class="slide level2">
 <h2>Follow-up email template</h2>
 <p>Send within 48 hours. Show that their advice changed something.</p>
 <table class="caption-top">
@@ -685,108 +1253,11 @@
 </tbody>
 </table>
 <div class="activity-card">
-<p><span class="card-title">Draft it now</span> Write the subject line and opening for your upcoming mentor meeting before you leave class.</p>
+<p><span class="card-title">After a relevant consultation</span> After the consultation, draft the subject and opening around one specific insight and the action you took or will take.</p>
 </div>
-</section>
-<section class="slide level2 center">
-
-</section></section>
-<section>
-<section id="break" class="title-slide slide level1 big-break center">
-<h1>BREAK</h1>
-<p>Take 10 minutes.</p>
-<p>When you return, post one rough workflow material to Slack for Session 2.</p>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Session 2 · Round table</span></p>
-</section>
-<section id="round-table-on-your-workflow" class="slide level2 center">
-<h2>Round table on YOUR workflow</h2>
-<div class="spine-rail">
-<p><span class="node">Decision</span> <span class="node">Evidence</span> <span class="node">Variation</span> <span class="node is-current">Output</span> <span class="node">Threshold</span> <span class="node">Action</span></p>
-</div>
-<p>Upload one rough material to Slack before Session 2 — a prompt log, an error message, a workflow output, a README fragment, or a verification note. <span class="feeds-tag">feeds A3</span></p>
-</section>
-<section id="reconstruct-your-verification-in-four-steps" class="slide level2 center">
-<h2>Reconstruct your verification in four steps</h2>
-<p><strong>Object this week: your workflow’s verification — what someone must inspect to trust it.</strong></p>
-<div class="recall-4step">
-<div class="step">
-<p><strong>Did</strong> What does the workflow produce, and how, step by step?</p>
-</div>
-<div class="step">
-<p><strong>Assumed</strong> What inputs or settings are implicit and undocumented?</p>
-</div>
-<div class="step">
-<p><strong>Risk</strong> Which step could a reader not reproduce or check?</p>
-</div>
-<div class="step">
-<p><strong>Verify</strong> What must someone inspect before they trust this output?</p>
-</div>
-</div>
-<div class="grading-note">
-<p>Post your four-step under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Volunteers go first; random draw may fill the remaining examples.</p>
-</div>
-</section>
-<section id="peer-reproducibility-check" class="slide level2 center">
-<h2>Peer Reproducibility Check</h2>
-<p>In small groups, run each other’s documentation cold — the same test as the swap, on real project material.</p>
-<div class="three-step">
-<div class="step-box">
-<p><span class="card-title">Hand over</span> Share your workflow package: steps, tool + version list, troubleshooting notes, quality check.</p>
-</div>
-<div class="step-box">
-<p><span class="card-title">Attempt</span> A peer follows it without you explaining. They note exactly where it breaks or needs a guess.</p>
-</div>
-<div class="step-box">
-<p><span class="card-title">Improve</span> Together, name the single change that would most improve reproducibility.</p>
-</div>
-</div>
-<div class="reflection-card">
-<p>We are not ranking packages. We are finding, kindly and early, the gap a stranger would fall into.</p>
-</div>
-</section>
-<section id="session-2-reflection" class="slide level2 center">
-<h2>Session 2 reflection</h2>
-<div class="reflection-card">
-<p><span class="card-title">What changed?</span> Take three minutes and write:</p>
-<ul>
-<li class="fragment">which step in my workflow is least reproducible right now?</li>
-<li class="fragment">what did a peer get stuck on that I assumed was obvious?</li>
-<li class="fragment">where am I using AI or automation I can’t fully defend?</li>
-<li class="fragment">what is one fix before Week 9?</li>
-</ul>
-</div>
-<p>Keep it in notes or post it as a Slack thread under your material.</p>
-</section>
-<section id="week-8-checklist" class="slide level2 center">
-<h2>Week 8 Checklist</h2>
-<div class="concept-card">
-<p><span class="card-title">Before Week 9</span></p>
-<ol type="1">
-<li class="fragment">complete your mentor consultation using your strategic questions</li>
-<li class="fragment">send the follow-up email showing how their advice changed your approach</li>
-<li class="fragment">document one workflow so a peer can rerun it unaided</li>
-<li class="fragment">classify and check any AI-assisted step: fact, relationship, or workflow/code</li>
-<li class="fragment">fix the weakest reproducibility gap your peer check found</li>
-</ol>
-</div>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Exit</span></p>
-</section>
-<section id="your-verification-in-one-line" class="slide level2 center">
-<h2>Your verification, in one line</h2>
-<p>Before you leave, write and post:</p>
-<div class="reflection-card">
-<p><strong>The least reproducible step in my workflow is <strong><em>, and the one thing a reader must inspect to trust it is </em></strong>.</strong></p>
-</div>
-<p>Week 9 closes A3 — we finalize the prototype and its verification before the workflow package begins.</p>
 
 
-</section></section>
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -872,7 +1343,7 @@
         disableLayout: false,
 
         // Vertical centering of slides
-        center: true,
+        center: false,
 
         // Enables touch navigation on devices with touch input
         touch: true,

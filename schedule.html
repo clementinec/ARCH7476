@@ -460,26 +460,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#session-1-demo-and-first-test-50-minutes" id="toc-session-1-demo-and-first-test-50-minutes" class="nav-link" data-scroll-target="#session-1-demo-and-first-test-50-minutes">Session 1: Demo and First Test (50 minutes)</a></li>
   <li><a href="#session-2-a2-walkthrough-and-prototype-clinic-50-minutes" id="toc-session-2-a2-walkthrough-and-prototype-clinic-50-minutes" class="nav-link" data-scroll-target="#session-2-a2-walkthrough-and-prototype-clinic-50-minutes">Session 2: A2 Walkthrough and Prototype Clinic (50 minutes)</a></li>
   </ul></li>
-  <li><a href="#week-8-reproducibility-ai-fact-checking-and-mentor-prep" id="toc-week-8-reproducibility-ai-fact-checking-and-mentor-prep" class="nav-link" data-scroll-target="#week-8-reproducibility-ai-fact-checking-and-mentor-prep">Week 8: Reproducibility, AI Fact-Checking, and Mentor Prep</a>
+  <li><a href="#week-8-reproducibility-and-ai-assisted-architectural-decisions" id="toc-week-8-reproducibility-and-ai-assisted-architectural-decisions" class="nav-link" data-scroll-target="#week-8-reproducibility-and-ai-assisted-architectural-decisions">Week 8: Reproducibility and AI-Assisted Architectural Decisions</a>
   <ul class="collapse">
   <li><a href="#lecture-demo-6" id="toc-lecture-demo-6" class="nav-link" data-scroll-target="#lecture-demo-6">Lecture / Demo</a></li>
-  <li><a href="#studio-lab-6" id="toc-studio-lab-6" class="nav-link" data-scroll-target="#studio-lab-6">Studio-Lab</a></li>
+  <li><a href="#session-2-audit-one-architectural-decision-50-minutes" id="toc-session-2-audit-one-architectural-decision-50-minutes" class="nav-link" data-scroll-target="#session-2-audit-one-architectural-decision-50-minutes">Session 2: Audit One Architectural Decision (50 minutes)</a></li>
   </ul></li>
   <li><a href="#week-9-thresholds-and-recommendations" id="toc-week-9-thresholds-and-recommendations" class="nav-link" data-scroll-target="#week-9-thresholds-and-recommendations">Week 9: Thresholds and Recommendations</a>
   <ul class="collapse">
   <li><a href="#lecture-demo-7" id="toc-lecture-demo-7" class="nav-link" data-scroll-target="#lecture-demo-7">Lecture / Demo</a></li>
-  <li><a href="#studio-lab-7" id="toc-studio-lab-7" class="nav-link" data-scroll-target="#studio-lab-7">Studio-Lab</a></li>
+  <li><a href="#studio-lab-6" id="toc-studio-lab-6" class="nav-link" data-scroll-target="#studio-lab-6">Studio-Lab</a></li>
   <li><a href="#end-of-week-9-class-vote" id="toc-end-of-week-9-class-vote" class="nav-link" data-scroll-target="#end-of-week-9-class-vote">End-of-Week 9 Class Vote</a></li>
   </ul></li>
   <li><a href="#week-10-draft-workflow-review" id="toc-week-10-draft-workflow-review" class="nav-link" data-scroll-target="#week-10-draft-workflow-review">Week 10: Draft Workflow Review</a>
   <ul class="collapse">
   <li><a href="#lecture-demo-8" id="toc-lecture-demo-8" class="nav-link" data-scroll-target="#lecture-demo-8">Lecture / Demo</a></li>
-  <li><a href="#studio-lab-8" id="toc-studio-lab-8" class="nav-link" data-scroll-target="#studio-lab-8">Studio-Lab</a></li>
+  <li><a href="#studio-lab-7" id="toc-studio-lab-7" class="nav-link" data-scroll-target="#studio-lab-7">Studio-Lab</a></li>
   </ul></li>
   <li><a href="#week-11-final-package-polish" id="toc-week-11-final-package-polish" class="nav-link" data-scroll-target="#week-11-final-package-polish">Week 11: Final Package Polish</a>
   <ul class="collapse">
   <li><a href="#lecture-demo-9" id="toc-lecture-demo-9" class="nav-link" data-scroll-target="#lecture-demo-9">Lecture / Demo</a></li>
-  <li><a href="#studio-lab-9" id="toc-studio-lab-9" class="nav-link" data-scroll-target="#studio-lab-9">Studio-Lab</a></li>
+  <li><a href="#studio-lab-8" id="toc-studio-lab-8" class="nav-link" data-scroll-target="#studio-lab-8">Studio-Lab</a></li>
   </ul></li>
   <li><a href="#week-12-object-fair" id="toc-week-12-object-fair" class="nav-link" data-scroll-target="#week-12-object-fair">Week 12: Object Fair</a>
   <ul class="collapse">
@@ -522,7 +522,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="session-2-format" class="level2">
 <h2 class="anchored" data-anchor-id="session-2-format">Session 2 Format</h2>
-<p>The usual second-half format is a <strong>Project Reasoning Round Table</strong>, not a formal presentation. Week 6 includes personal website setup; Week 7 uses the timed A2 walkthrough and prototype clinic described below.</p>
+<p>The usual second-half format is a <strong>Project Reasoning Round Table</strong>, not a formal presentation. Week 6 includes personal website setup; Week 7 uses the timed A2 walkthrough and prototype clinic; Week 8 uses a walkthrough and verification lab on one architectural decision, as described below.</p>
 <p>For the usual round-table format, each student uploads one rough material to Slack before Session 2:</p>
 <ul>
 <li>plan, section, render, massing image, or site photo</li>
@@ -602,9 +602,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td>8</td>
-<td>Reproducibility, AI fact-checking, and mentor prep</td>
-<td>prompt log/error/README: what must be fact-checked, relationship-checked, or documented?</td>
-<td>A3 verification log</td>
+<td>Reproducibility, LLM mechanisms, and independent verification</td>
+<td>walk through one AI-assisted architectural decision, perform one check, and revise or qualify the output</td>
+<td>A3 verification and failure log</td>
 </tr>
 <tr class="odd">
 <td>9</td>
@@ -820,25 +820,67 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Feeds:</strong> A3 Prototype Scope + Workflow Description, and an initial entry for the A4 Feedback + Revision Ledger.</p>
 </section>
 </section>
-<section id="week-8-reproducibility-ai-fact-checking-and-mentor-prep" class="level2">
-<h2 class="anchored" data-anchor-id="week-8-reproducibility-ai-fact-checking-and-mentor-prep">Week 8: Reproducibility, AI Fact-Checking, and Mentor Prep</h2>
+<section id="week-8-reproducibility-and-ai-assisted-architectural-decisions" class="level2">
+<h2 class="anchored" data-anchor-id="week-8-reproducibility-and-ai-assisted-architectural-decisions">Week 8: Reproducibility and AI-Assisted Architectural Decisions</h2>
 <section id="lecture-demo-6" class="level3">
 <h3 class="anchored" data-anchor-id="lecture-demo-6">Lecture / Demo</h3>
 <ul>
-<li>workflow documentation</li>
-<li>AI as probabilistic companion, not final authority</li>
-<li>fact-based vs relationship-based AI outputs</li>
-<li>prompt logs</li>
-<li>manual checks, calculations, and disclosure</li>
-<li>mentor consultation preparation</li>
+<li>workflow documentation and the difference between saving a checked artifact and reproducing an AI response word for word</li>
+<li>decoder-only generation, preference training, and reasoning/tool use: what they change in an architectural workflow</li>
+<li>factual claims, relationship hypotheses/interpretations, and generated workflow components</li>
+<li>independent checks, prompt/output records, and disclosure</li>
+<li>mentor consultation preparation where relevant to the project</li>
 </ul>
 </section>
-<section id="studio-lab-6" class="level3">
-<h3 class="anchored" data-anchor-id="studio-lab-6">Studio-Lab</h3>
-<p>Students test whether one workflow component, AI-assisted or not, is documented and checked well enough to be inspected by someone else.</p>
-<p><strong>Session 2 material:</strong> upload a prompt log, error message, output, README fragment, verification note, or workflow checklist.</p>
-<p><strong>Round-table check-in:</strong> What must someone else inspect before they trust this output?</p>
-<p><strong>Feeds:</strong> A3 Verification and Failure Log.</p>
+<section id="session-2-audit-one-architectural-decision-50-minutes" class="level3">
+<h3 class="anchored" data-anchor-id="session-2-audit-one-architectural-decision-50-minutes">Session 2: Audit One Architectural Decision (50 minutes)</h3>
+<p>Use one bounded decision from the current A2/A3 project. Prefer a recent AI exchange or generated component: bring the exact input, saved output, and the drawing, calculation, script, or claim it affected.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Lab time</th>
+<th>Activity</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0–5 min</td>
+<td>Choose and prepare</td>
+<td>Name one architectural decision. Open its input, output, and relevant workflow artifact.</td>
+</tr>
+<tr class="even">
+<td>5–23 min</td>
+<td>Walkthroughs in triads</td>
+<td>Three six-minute turns: three minutes to explain, followed by three minutes of feedback from the two peers together.</td>
+</tr>
+<tr class="odd">
+<td>23–38 min</td>
+<td>Perform one independent check</td>
+<td>State the expected result, then inspect a primary source, hand-calculate a case, run a known-case test, or compare with independent evidence. Record the observed result or exact blocker.</td>
+</tr>
+<tr class="even">
+<td>38–45 min</td>
+<td>Revise and document</td>
+<td>Revise, qualify, or reject the claim/component; complete the verification card and save a dated project-page or local entry. Mark an unfinished check as pending.</td>
+</tr>
+<tr class="odd">
+<td>45–50 min</td>
+<td>Share and exit</td>
+<td>Two volunteers share for 90 seconds each; everyone then saves one changed judgment, remaining limit and next action. Post the artifact link or screenshot to Slack if available.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Your walkthrough:</strong> “I am deciding <strong><em>. I gave the model </em></strong>. It produced <strong><em>. I accepted or changed </em></strong>. The check I need is ___.” Peers identify one unsupported step and propose a feasible check. If you are a pair, take two six-minute turns and use the remaining six minutes to refine both checks.</p>
+<p><strong>Access fallback:</strong> no new AI account or paid model is required. Use a saved exchange, inspect an existing non-AI workflow step, or use the supplied <a href="./starter_kits/ai-assisted-workflow/README.html">setback-scoring example</a>. Its 3 m threshold is a classroom assumption, not a verified building regulation. Mark a non-AI route as such in the card.</p>
+<p><strong>Leave with:</strong> the <a href="./templates/ai-workflow-verification-card.html">verification card</a>, one revised or qualified claim/artifact (or an explicit rejection/pending judgment), and a dated entry showing the check and next action. An update to the existing project website is optional; a local record is sufficient.</p>
+<p>This lab is formative preparation, not a new graded submission. A3 requirements and its end-of-Week-9 deadline remain unchanged.</p>
+<p><strong>Feeds:</strong> A3 Verification and Failure Log, and the A4 Feedback + Revision Ledger.</p>
 </section>
 </section>
 <section id="week-9-thresholds-and-recommendations" class="level2">
@@ -852,8 +894,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>decision memo framing</li>
 </ul>
 </section>
-<section id="studio-lab-7" class="level3">
-<h3 class="anchored" data-anchor-id="studio-lab-7">Studio-Lab</h3>
+<section id="studio-lab-6" class="level3">
+<h3 class="anchored" data-anchor-id="studio-lab-6">Studio-Lab</h3>
 <p>Students write a threshold statement and one counter-argument.</p>
 <p><strong>Session 2 material:</strong> upload a figure, output table, comparison chart, or object-card draft.</p>
 <p><strong>Round-table check-in:</strong> What result changes the design action, and what uncertainty remains visible?</p>
@@ -905,8 +947,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>how reviewers inspect decision, evidence, workflow, output, threshold, and limit</li>
 </ul>
 </section>
-<section id="studio-lab-8" class="level3">
-<h3 class="anchored" data-anchor-id="studio-lab-8">Studio-Lab</h3>
+<section id="studio-lab-7" class="level3">
+<h3 class="anchored" data-anchor-id="studio-lab-7">Studio-Lab</h3>
 <p>Default mode is 1-1 or small-panel A4 clinic. If the Week 9 vote shows enough demand, a small optional workgroup may run in parallel for students with stable GH/Python tooling.</p>
 <p>No tournament scoring; the emphasis is professional critique and making the final package traceable.</p>
 <p><strong>Session 2 material:</strong> upload a draft presentation, object card, package outline, or reproducibility capsule index.</p>
@@ -932,8 +974,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Reproducibility Capsule</li>
 </ul>
 </section>
-<section id="studio-lab-9" class="level3">
-<h3 class="anchored" data-anchor-id="studio-lab-9">Studio-Lab</h3>
+<section id="studio-lab-8" class="level3">
+<h3 class="anchored" data-anchor-id="studio-lab-8">Studio-Lab</h3>
 <p>Students run a package audit and complete final revisions. The default expectation is clinic support for A4. If an optional GH/Python workgroup is still useful, it must produce documentation that can fit inside the Reproducibility Capsule rather than becoming a new ungraded side project.</p>
 <p><strong>Session 2 material:</strong> upload the weakest A4 component or the component most in need of peer review.</p>
 <p><strong>Round-table check-in:</strong> Which A4 component is weakest, and what must be fixed before submission?</p>
@@ -1444,7 +1486,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Session 2 Format</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>The usual second-half format is a **Project Reasoning Round Table**, not a formal presentation. Week 6 includes personal website setup; Week 7 uses the timed A2 walkthrough and prototype clinic described below.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>The usual second-half format is a **Project Reasoning Round Table**, not a formal presentation. Week 6 includes personal website setup; Week 7 uses the timed A2 walkthrough and prototype clinic; Week 8 uses a walkthrough and verification lab on one architectural decision, as described below.</span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>For the usual round-table format, each student uploads one rough material to Slack before Session 2:</span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
@@ -1474,7 +1516,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 5 <span class="pp">|</span> BIM/BEM and performance model translation <span class="pp">|</span> model/performance material: what assumptions would dominate? <span class="pp">|</span> A2 tool matrix + feasibility <span class="pp">|</span></span>
 <span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 6 <span class="pp">|</span> Evidence and pathway mapping <span class="pp">|</span> workflow choice and A4 branch; personal GitHub Pages setup in half of the lab <span class="pp">|</span> A2 due / A4 branch <span class="pp">|</span></span>
 <span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 7 <span class="pp">|</span> A2 to first prototype <span class="pp">|</span> A2 walkthrough in triads, feedback, one test, and a project-page update <span class="pp">|</span> A3 prototype scope + first A4 feedback entry <span class="pp">|</span></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 8 <span class="pp">|</span> Reproducibility, AI fact-checking, and mentor prep <span class="pp">|</span> prompt log/error/README: what must be fact-checked, relationship-checked, or documented? <span class="pp">|</span> A3 verification log <span class="pp">|</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 8 <span class="pp">|</span> Reproducibility, LLM mechanisms, and independent verification <span class="pp">|</span> walk through one AI-assisted architectural decision, perform one check, and revise or qualify the output <span class="pp">|</span> A3 verification and failure log <span class="pp">|</span></span>
 <span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 9 <span class="pp">|</span> Thresholds, recommendations, and counter-arguments <span class="pp">|</span> figure/output/object-card draft: what result changes the action? <span class="pp">|</span> A3 due / A4 launch + clinic/workgroup vote <span class="pp">|</span></span>
 <span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 10 <span class="pp">|</span> Draft workflow review <span class="pp">|</span> draft package: can reviewers trace the full evidence loop? <span class="pp">|</span> A4 draft clinic or optional workgroup <span class="pp">|</span></span>
 <span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 11 <span class="pp">|</span> Final package polish <span class="pp">|</span> final component draft: which A4 component is weakest? <span class="pp">|</span> A4 near-final clinic or optional workgroup <span class="pp">|</span></span>
@@ -1641,132 +1683,143 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>**Feeds:** A3 Prototype Scope + Workflow Description, and an initial entry for the A4 Feedback + Revision Ledger.</span>
 <span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="fu">## Week 8: Reproducibility, AI Fact-Checking, and Mentor Prep</span></span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="fu">## Week 8: Reproducibility and AI-Assisted Architectural Decisions</span></span>
 <span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="fu">### Lecture / Demo</span></span>
 <span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>workflow documentation</span>
-<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>AI as probabilistic companion, not final authority</span>
-<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>fact-based vs relationship-based AI outputs</span>
-<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>prompt logs</span>
-<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>manual checks, calculations, and disclosure</span>
-<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>mentor consultation preparation</span>
-<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a><span class="fu">### Studio-Lab</span></span>
-<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>Students test whether one workflow component, AI-assisted or not, is documented and checked well enough to be inspected by someone else.</span>
-<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>**Session 2 material:** upload a prompt log, error message, output, README fragment, verification note, or workflow checklist.</span>
-<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>**Round-table check-in:** What must someone else inspect before they trust this output?</span>
-<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>**Feeds:** A3 Verification and Failure Log.</span>
-<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a><span class="fu">## Week 9: Thresholds and Recommendations</span></span>
-<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a><span class="fu">### Lecture / Demo</span></span>
-<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>adopt/defer thresholds</span>
-<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>uncertainty language</span>
-<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>counter-arguments</span>
-<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>decision memo framing</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>workflow documentation and the difference between saving a checked artifact and reproducing an AI response word for word</span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>decoder-only generation, preference training, and reasoning/tool use: what they change in an architectural workflow</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>factual claims, relationship hypotheses/interpretations, and generated workflow components</span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>independent checks, prompt/output records, and disclosure</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>mentor consultation preparation where relevant to the project</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a><span class="fu">### Session 2: Audit One Architectural Decision (50 minutes)</span></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>Use one bounded decision from the current A2/A3 project. Prefer a recent AI exchange or generated component: bring the exact input, saved output, and the drawing, calculation, script, or claim it affected.</span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Lab time <span class="pp">|</span> Activity <span class="pp">|</span> What to do <span class="pp">|</span></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 0–5 min <span class="pp">|</span> Choose and prepare <span class="pp">|</span> Name one architectural decision. Open its input, output, and relevant workflow artifact. <span class="pp">|</span></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 5–23 min <span class="pp">|</span> Walkthroughs in triads <span class="pp">|</span> Three six-minute turns: three minutes to explain, followed by three minutes of feedback from the two peers together. <span class="pp">|</span></span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 23–38 min <span class="pp">|</span> Perform one independent check <span class="pp">|</span> State the expected result, then inspect a primary source, hand-calculate a case, run a known-case test, or compare with independent evidence. Record the observed result or exact blocker. <span class="pp">|</span></span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 38–45 min <span class="pp">|</span> Revise and document <span class="pp">|</span> Revise, qualify, or reject the claim/component; complete the verification card and save a dated project-page or local entry. Mark an unfinished check as pending. <span class="pp">|</span></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 45–50 min <span class="pp">|</span> Share and exit <span class="pp">|</span> Two volunteers share for 90 seconds each; everyone then saves one changed judgment, remaining limit and next action. Post the artifact link or screenshot to Slack if available. <span class="pp">|</span></span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>**Your walkthrough:** “I am deciding ___. I gave the model ___. It produced ___. I accepted or changed ___. The check I need is ___.” Peers identify one unsupported step and propose a feasible check. If you are a pair, take two six-minute turns and use the remaining six minutes to refine both checks.</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>**Access fallback:** no new AI account or paid model is required. Use a saved exchange, inspect an existing non-AI workflow step, or use the supplied <span class="co">[</span><span class="ot">setback-scoring example</span><span class="co">](starter_kits/ai-assisted-workflow/README.md)</span>. Its 3 m threshold is a classroom assumption, not a verified building regulation. Mark a non-AI route as such in the card.</span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>**Leave with:** the <span class="co">[</span><span class="ot">verification card</span><span class="co">](templates/ai-workflow-verification-card.md)</span>, one revised or qualified claim/artifact (or an explicit rejection/pending judgment), and a dated entry showing the check and next action. An update to the existing project website is optional; a local record is sufficient.</span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>This lab is formative preparation, not a new graded submission. A3 requirements and its end-of-Week-9 deadline remain unchanged.</span>
 <span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a><span class="fu">### Studio-Lab</span></span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>**Feeds:** A3 Verification and Failure Log, and the A4 Feedback + Revision Ledger.</span>
 <span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>Students write a threshold statement and one counter-argument.</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a><span class="fu">## Week 9: Thresholds and Recommendations</span></span>
 <span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>**Session 2 material:** upload a figure, output table, comparison chart, or object-card draft.</span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a><span class="fu">### Lecture / Demo</span></span>
 <span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>**Round-table check-in:** What result changes the design action, and what uncertainty remains visible?</span>
-<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>**Feeds:** A3 Prototype Output + A4 Practice Case/Object Card.</span>
-<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a><span class="fu">### End-of-Week 9 Class Vote</span></span>
-<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>The instructor checks whether Weeks 10-11 should stay as full-class A4 clinics or split into two modes:</span>
-<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Mode <span class="pp">|</span> For whom <span class="pp">|</span> Use of class time <span class="pp">|</span></span>
-<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
-<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A4 clinic <span class="pp">|</span> students who need 1-1 help finishing the package <span class="pp">|</span> desk crits, package triage, reproducibility checks <span class="pp">|</span></span>
-<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Optional GH/Python workgroup <span class="pp">|</span> students with stable tooling who want to build their own pipeline <span class="pp">|</span> small-group workflow mapping, vibe-coded component review, manual verification <span class="pp">|</span></span>
-<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Mixed mode <span class="pp">|</span> split class interest <span class="pp">|</span> short shared opening, then clinic/workgroup breakout <span class="pp">|</span></span>
-<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a>The optional workgroup is not a required route. Direct <span class="in">`.gh`</span> / <span class="in">`.ghx`</span> starter files are planned for the website and currently WIP; until they are published, the workgroup uses CSV / GeoJSON / Python handoff and student-owned GH setups.</span>
-<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a><span class="fu">## Week 10: Draft Workflow Review</span></span>
-<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a><span class="fu">### Lecture / Demo</span></span>
-<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>how to present a workflow-backed design decision</span>
-<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>how reviewers inspect decision, evidence, workflow, output, threshold, and limit</span>
-<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a><span class="fu">### Studio-Lab</span></span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>adopt/defer thresholds</span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>uncertainty language</span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>counter-arguments</span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>decision memo framing</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a><span class="fu">### Studio-Lab</span></span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>Students write a threshold statement and one counter-argument.</span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>**Session 2 material:** upload a figure, output table, comparison chart, or object-card draft.</span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>**Round-table check-in:** What result changes the design action, and what uncertainty remains visible?</span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a>**Feeds:** A3 Prototype Output + A4 Practice Case/Object Card.</span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a><span class="fu">### End-of-Week 9 Class Vote</span></span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a>The instructor checks whether Weeks 10-11 should stay as full-class A4 clinics or split into two modes:</span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Mode <span class="pp">|</span> For whom <span class="pp">|</span> Use of class time <span class="pp">|</span></span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A4 clinic <span class="pp">|</span> students who need 1-1 help finishing the package <span class="pp">|</span> desk crits, package triage, reproducibility checks <span class="pp">|</span></span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Optional GH/Python workgroup <span class="pp">|</span> students with stable tooling who want to build their own pipeline <span class="pp">|</span> small-group workflow mapping, vibe-coded component review, manual verification <span class="pp">|</span></span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Mixed mode <span class="pp">|</span> split class interest <span class="pp">|</span> short shared opening, then clinic/workgroup breakout <span class="pp">|</span></span>
 <span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>Default mode is 1-1 or small-panel A4 clinic. If the Week 9 vote shows enough demand, a small optional workgroup may run in parallel for students with stable GH/Python tooling.</span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>The optional workgroup is not a required route. Direct <span class="in">`.gh`</span> / <span class="in">`.ghx`</span> starter files are planned for the website and currently WIP; until they are published, the workgroup uses CSV / GeoJSON / Python handoff and student-owned GH setups.</span>
 <span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>No tournament scoring; the emphasis is professional critique and making the final package traceable.</span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a><span class="fu">## Week 10: Draft Workflow Review</span></span>
 <span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>**Session 2 material:** upload a draft presentation, object card, package outline, or reproducibility capsule index.</span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a><span class="fu">### Lecture / Demo</span></span>
 <span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>**Round-table check-in:** Can a reviewer trace decision -&gt; variants/scenarios -&gt; workflow -&gt; output -&gt; threshold -&gt; limit?</span>
-<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>**Feeds:** A4 Draft Package.</span>
-<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>Optional workgroup output, if it runs:</span>
-<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>one pipeline sketch</span>
-<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>one function contract or component brief</span>
-<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>one manual verification note</span>
-<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>one decision about whether the workgroup route will actually enter A4</span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>how to present a workflow-backed design decision</span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>how reviewers inspect decision, evidence, workflow, output, threshold, and limit</span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a><span class="fu">### Studio-Lab</span></span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>Default mode is 1-1 or small-panel A4 clinic. If the Week 9 vote shows enough demand, a small optional workgroup may run in parallel for students with stable GH/Python tooling.</span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a>No tournament scoring; the emphasis is professional critique and making the final package traceable.</span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>**Session 2 material:** upload a draft presentation, object card, package outline, or reproducibility capsule index.</span>
 <span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a><span class="fu">## Week 11: Final Package Polish</span></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>**Round-table check-in:** Can a reviewer trace decision -&gt; variants/scenarios -&gt; workflow -&gt; output -&gt; threshold -&gt; limit?</span>
 <span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a><span class="fu">### Lecture / Demo</span></span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>**Feeds:** A4 Draft Package.</span>
 <span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Practice Case</span>
-<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Research Brief</span>
-<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Object Card</span>
-<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Reproducibility Capsule</span>
-<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a><span class="fu">### Studio-Lab</span></span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a>Optional workgroup output, if it runs:</span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>one pipeline sketch</span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>one function contract or component brief</span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>one manual verification note</span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>one decision about whether the workgroup route will actually enter A4</span>
 <span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>Students run a package audit and complete final revisions. The default expectation is clinic support for A4. If an optional GH/Python workgroup is still useful, it must produce documentation that can fit inside the Reproducibility Capsule rather than becoming a new ungraded side project.</span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a><span class="fu">## Week 11: Final Package Polish</span></span>
 <span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>**Session 2 material:** upload the weakest A4 component or the component most in need of peer review.</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a><span class="fu">### Lecture / Demo</span></span>
 <span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>**Round-table check-in:** Which A4 component is weakest, and what must be fixed before submission?</span>
-<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>**Feeds:** A4 Final Package.</span>
-<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>The package must show the full loop:</span>
-<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>decision</span>
-<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>variants or scenarios</span>
-<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>workflow</span>
-<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>evaluation</span>
-<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>threshold</span>
-<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>design action</span>
-<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>reproducibility check</span>
-<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a><span class="ss">8. </span>feedback/revision decision</span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Practice Case</span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Research Brief</span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Object Card</span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Reproducibility Capsule</span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a><span class="fu">### Studio-Lab</span></span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a>Students run a package audit and complete final revisions. The default expectation is clinic support for A4. If an optional GH/Python workgroup is still useful, it must produce documentation that can fit inside the Reproducibility Capsule rather than becoming a new ungraded side project.</span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a>**Session 2 material:** upload the weakest A4 component or the component most in need of peer review.</span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>**Round-table check-in:** Which A4 component is weakest, and what must be fixed before submission?</span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a>**Feeds:** A4 Final Package.</span>
 <span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a><span class="fu">## Week 12: Object Fair</span></span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a>The package must show the full loop:</span>
 <span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a><span class="fu">### In Class</span></span>
-<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>6-8 minute final presentation</span>
-<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>4 minute Q&amp;A</span>
-<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>object card / evidence board review</span>
-<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>final reflection on workflow transfer</span>
-<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>**Session 2 material:** use the final object card or reflection note.</span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>decision</span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>variants or scenarios</span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>workflow</span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>evaluation</span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>threshold</span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>design action</span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>reproducibility check</span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a><span class="ss">8. </span>feedback/revision decision</span>
 <span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a>**Round-table check-in:** What design reasoning can transfer to another studio project?</span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a><span class="fu">## Week 12: Object Fair</span></span>
 <span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a>**Feeds:** A4 Reflection Note.</span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a><span class="fu">### In Class</span></span>
 <span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a><span class="fu">### Final Prompt</span></span>
-<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>What design decision did your workflow improve, what did the evidence change, and what should happen next?</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>6-8 minute final presentation</span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>4 minute Q&amp;A</span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>object card / evidence board review</span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>final reflection on workflow transfer</span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a>**Session 2 material:** use the final object card or reflection note.</span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a>**Round-table check-in:** What design reasoning can transfer to another studio project?</span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a>**Feeds:** A4 Reflection Note.</span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a><span class="fu">### Final Prompt</span></span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a>What design decision did your workflow improve, what did the evidence change, and what should happen next?</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
