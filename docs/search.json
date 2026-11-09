@@ -680,28 +680,28 @@
     "href": "templates/ai-workflow-verification-card.html",
     "title": "Template: AI-Assisted Fact-Checking Card",
     "section": "",
-    "text": "Use this template whenever AI assists a factual claim, relationship interpretation, workflow, script, GH component, analysis step, figure text, or documentation."
+    "text": "Use this template whenever AI assists a factual claim, relationship interpretation, workflow, script, GH component, analysis step, figure text, or documentation.\nFor the Week 8 lab, audit one bounded architectural decision. If your chosen step did not use AI, write “AI not used” and complete the decision, input/output, verification, judgment, and reproducibility sections. No new account or paid model is required."
   },
   {
     "objectID": "templates/ai-workflow-verification-card.html#task-and-ai-role",
     "href": "templates/ai-workflow-verification-card.html#task-and-ai-role",
     "title": "Template: AI-Assisted Fact-Checking Card",
     "section": "Task And AI Role",
-    "text": "Task And AI Role\n\nWhat did you ask AI to do?\nWhy was AI useful here: fact-checking, relationship exploration, code/workflow drafting, writing structure, or debugging?\nWhat tool/model did you use?\nWhat exact material did you give it?"
+    "text": "Task And AI Role\n\nWhat architectural decision does this step affect?\nWhat did you ask AI to do?\nWhy was AI useful here: fact-checking, relationship exploration, code/workflow drafting, writing structure, or debugging?\nWhat tool and model name were visible in the interface? Record the mode/setting and date used; write unknown where the interface does not disclose them.\nWhat exact material did you give it?\nWhere are the saved inputs, prompt/output transcript, and any tool results it used? Record file locations or links; keep non-shareable material in the permitted course location."
   },
   {
     "objectID": "templates/ai-workflow-verification-card.html#output-type",
     "href": "templates/ai-workflow-verification-card.html#output-type",
     "title": "Template: AI-Assisted Fact-Checking Card",
     "section": "Output Type",
-    "text": "Output Type\n\n\n\n\n\n\n\n\nType\nMark one\nRequired check\n\n\n\n\nFact-based reiteration\nyes / no\nverify against cited source, standard, datasheet, or primary reference\n\n\nRelationship-based simulation\nyes / no\ncompare against engineering/science logic, empirical evidence, sensitivity test, or bounded calculation\n\n\nWorkflow/code component\nyes / no\nrun it, test known cases, inspect units/ranges, and check edge cases\n\n\nWriting/structure support\nyes / no\nverify claims, sources, and tone; do not treat phrasing as evidence"
+    "text": "Output Type\n\n\n\n\n\n\n\n\nType\nApplies?\nRequired check\n\n\n\n\nFact-based reiteration\nyes / no\nverify against cited source, standard, datasheet, or primary reference\n\n\nRelationship hypothesis / interpretation\nyes / no\ncompare against engineering/science logic, empirical evidence, sensitivity test, or bounded calculation; text generation does not itself validate building performance or user experience\n\n\nWorkflow/code component\nyes / no\nrun it, test known cases, inspect units/ranges, and check edge cases\n\n\nWriting/structure support\nyes / no\nverify claims, sources, and tone; do not treat phrasing as evidence"
   },
   {
     "objectID": "templates/ai-workflow-verification-card.html#prompt-log",
     "href": "templates/ai-workflow-verification-card.html#prompt-log",
     "title": "Template: AI-Assisted Fact-Checking Card",
     "section": "Prompt Log",
-    "text": "Prompt Log\n\n\n\n\n\n\n\n\n\nStep\nPrompt summary\nOutput summary\nAccepted / rejected / revised\n\n\n\n\n1\n\n\n\n\n\n2\n\n\n\n\n\n3"
+    "text": "Prompt Log\n\n\n\n\n\n\n\n\n\nStep\nPrompt summary\nOutput summary\nAccept / revise / reject / pending\n\n\n\n\n1\n\n\n\n\n\n2\n\n\n\n\n\n3"
   },
   {
     "objectID": "templates/ai-workflow-verification-card.html#generated-output",
@@ -715,7 +715,14 @@
     "href": "templates/ai-workflow-verification-card.html#verification-final-gate",
     "title": "Template: AI-Assisted Fact-Checking Card",
     "section": "Verification / Final Gate",
-    "text": "Verification / Final Gate\n\n\n\n\n\n\n\n\nCheck\nHow you checked\nResult\n\n\n\n\nfactual source check\n\npass / fail / not applicable\n\n\nrelationship or mechanism check\n\npass / fail / not applicable\n\n\nsyntax / execution\n\npass / fail / not applicable\n\n\nunits / scale\n\npass / fail / not applicable\n\n\noutput plausibility\n\npass / fail / not applicable\n\n\ncomparison with manual result or known case\n\npass / fail / not applicable"
+    "text": "Verification / Final Gate\nChoose one check small enough to perform. State the expected result before testing. A model repeating or approving its own answer is not an independent check.\n\n\n\n\n\n\n\n\n\nCheck attempted\nExpected result and basis\nObserved result or blocker\nStatus\n\n\n\n\n\n\n\npassed / failed / pending\n\n\n\n\n\n\n\n\n\n\n\nCheck\nHow you checked\nResult\n\n\n\n\nfactual source check\n\npass / fail / pending / not applicable\n\n\nrelationship or mechanism check\n\npass / fail / pending / not applicable\n\n\nsyntax / execution\n\npass / fail / pending / not applicable\n\n\nunits / scale\n\npass / fail / pending / not applicable\n\n\noutput plausibility\n\npass / fail / pending / not applicable\n\n\ncomparison with manual result or known case\n\npass / fail / pending / not applicable"
+  },
+  {
+    "objectID": "templates/ai-workflow-verification-card.html#judgment-and-design-consequence",
+    "href": "templates/ai-workflow-verification-card.html#judgment-and-design-consequence",
+    "title": "Template: AI-Assisted Fact-Checking Card",
+    "section": "Judgment And Design Consequence",
+    "text": "Judgment And Design Consequence\n\nDecision: accept / revise / reject / pending — and why?\nRevised or qualified claim/component, or the claim you have withdrawn:\nWhat changes in the architectural decision as a result?\nWhat remains unchecked, and what must happen before you rely on it?\nDate, peer feedback used, and next action:\nSaved artifact and dated project-page/local-entry location (website publication is optional):"
   },
   {
     "objectID": "templates/ai-workflow-verification-card.html#reproducibility-note",
@@ -736,7 +743,7 @@
     "href": "templates/ai-workflow-verification-card.html#disclosure-statement",
     "title": "Template: AI-Assisted Fact-Checking Card",
     "section": "Disclosure Statement",
-    "text": "Disclosure Statement\n\nAI assisted with [task]. I treated it as [fact-based / relationship-based / workflow-drafting] support. I checked it by [method]. I do not rely on AI for [unsupported claim or judgment]."
+    "text": "Disclosure Statement\n\nAI assisted with [task]. I treated it as [fact-based / relationship-hypothesis / workflow-drafting] support. I checked it by [method], with [result]. I [accepted / revised / rejected / left pending] the output because [reason]. I do not rely on AI for [unsupported claim or judgment]."
   },
   {
     "objectID": "templates/tool-translation-matrix.html",
@@ -1162,7 +1169,19 @@
     "href": "weeks_v2/week-08.html#todays-agenda",
     "title": "Week 8: Reproducibility and AI Fact-Checking",
     "section": "Today’s Agenda",
-    "text": "Today’s Agenda\n\n\nSession 1\nWorkflow Documentation + AI Fact-Checking\n\nwhy your work is only evidence if someone can rerun it\ndocument one workflow, then swap and test it\nunderstand AI as a probabilistic companion, not a final authority\nseparate factual claims, relationship claims, and generated workflow components\nprepare strategic questions for your mentor\n\n\n\nSession 2\nRound table on YOUR workflow\n\nupload one rough workflow material\nreconstruct your verification in four steps\nagree what a reader must inspect to trust it\n\n\n\n\nThis is a clinic, not a contest. We examine the workflow, and we help each other find the part a stranger could not yet reproduce.",
+    "text": "Today’s Agenda\n\n\nSession 1\nLLMs inside an architectural workflow\n\ndecoder-only generation: what happens after a prompt\nRLHF and reasoning: what training rewards\nstronger systems: tools, multimodal inputs and current model designs\nmatch a design claim to an independent check\n\n\n\nSession 2\nWalk through YOUR AI-assisted decision\n\nshow one current architectural decision and the AI-assisted step\nget peer feedback, then perform one check\nsave a revised artifact or a more defensible claim\n\n\n\n\nBring existing work: a plan critique, facade component, comfort claim, precedent search or another bounded step. The output feeds your A3 Verification and Failure Log.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#session-plan",
+    "href": "weeks_v2/week-08.html#session-plan",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "Two sessions, one workflow",
+    "text": "Two sessions, one workflow\n\n\n\n\n\n\n\nClass time\nFocus\n\n\n\n\nSession 1 · 0–10 min\nReproducibility: what a peer must be able to inspect\n\n\n10–25 min\nModel literacy: each mechanism → what it changes in your use of LLMs\n\n\n25–40 min\nArchitectural claims: choose the check; inspect the worked example\n\n\n40–50 min\nTrace one component and prepare your own walkthrough\n\n\nBreak · 10 min\nOpen your saved material\n\n\nSession 2 · 50 min\nWalkthrough → peer feedback → one check → revision\n\n\n\n\nLab times restart at 0 after the break. The documentation swap and mentor workshop are retained as reference activities.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1174,7 +1193,7 @@
     "href": "weeks_v2/week-08.html#this-week-produces-a-verification-artifact",
     "title": "Week 8: Reproducibility and AI Fact-Checking",
     "section": "This week produces a verification artifact",
-    "text": "This week produces a verification artifact\n\n\nA2 route\n\n\nprototype\n\n\nverification\n\n\nthreshold\n\n\ndraft package\n\n\nhandoff\n\n\n\n\nInput prototype artifact, prompt log, notebook, GH canvas, map, or scenario file\n\n\nTest peer rerun, manual check, known-case comparison, or failure replay\n\n\nOutput verification card + reproducibility fix list\n\n\nFeeds A3 Verification Log and A4 Reproducibility Capsule",
+    "text": "This week produces a verification artifact\nCourse progress\n\n\nA2 route\n\n\nprototype\n\n\nverification\n\n\nthreshold\n\n\ndraft package\n\n\nhandoff\n\n\n\n\nInput one architectural decision + saved inputs, AI exchange/output or workflow artifact\n\n\nTest one source check, manual result, known-case test or failure replay\n\n\nOutput verification card + revised artifact/claim + one remaining limit\n\n\nFeeds A3 Verification Log and A4 Reproducibility Capsule",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1186,7 +1205,7 @@
     "href": "weeks_v2/week-08.html#if-you-cant-rerun-it-it-isnt-evidence",
     "title": "Week 8: Reproducibility and AI Fact-Checking",
     "section": "If you can’t rerun it, it isn’t evidence",
-    "text": "If you can’t rerun it, it isn’t evidence\nA result becomes evidence only when someone else can inspect how you got it — and ideally reproduce it.\n\nThe week’s question If you left the project tomorrow, could someone trust your output without you in the room to explain it?\n\nDocumentation is not paperwork after the fact. It is the part of the method that makes the output legible.",
+    "text": "If you can’t rerun it, it isn’t evidence\nThe reproducibility frame\nA result becomes evidence only when someone else can inspect how you got it — and ideally reproduce it.\n\nThe week’s question If you left the project tomorrow, could someone trust your output without you in the room to explain it?\n\nDocumentation is not paperwork after the fact. It is the part of the method that makes the output legible.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1210,7 +1229,7 @@
     "href": "weeks_v2/week-08.html#when-the-spreadsheet-silently-rewrote-the-data",
     "title": "Week 8: Reproducibility and AI Fact-Checking",
     "section": "When the spreadsheet silently rewrote the data",
-    "text": "When the spreadsheet silently rewrote the data\n\nWhat happened Geneticists found that Excel was auto-converting gene names into dates and numbers (for example “SEPT2” became a date). A 2016 study found errors in roughly one in five papers with supplementary spreadsheets — the field eventually renamed the genes rather than fight the software.\n\n\nThe lesson Reproducibility starts with knowing what your tool did to your data. Document formats, versions, and import settings — the failure is invisible until someone re-runs it.",
+    "text": "When the spreadsheet silently rewrote the data\nAnecdote · the tool changed your data and didn’t tell you\n\nWhat happened Geneticists found that Excel was auto-converting gene names into dates and numbers (for example “SEPT2” became a date). A 2016 study found errors in roughly one in five papers with supplementary spreadsheets — the field eventually renamed the genes rather than fight the software.\n\n\nThe lesson Reproducibility starts with knowing what your tool did to your data. Document formats, versions, and import settings — the failure is invisible until someone re-runs it.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1230,11 +1249,323 @@
     ]
   },
   {
+    "objectID": "weeks_v2/week-08.html#why-model-literacy",
+    "href": "weeks_v2/week-08.html#why-model-literacy",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "Why should you care how an LLM works?",
+    "text": "Why should you care how an LLM works?\nModel literacy · practical purpose\nUnderstanding the mechanism helps you frame the task, choose the tool and decide what evidence to trust.\n\n\nDesign / studio\nExplore deliberately\nGenerate alternatives around your brief. Specify what may vary and what must stay fixed.\n\n\nArchitectural practice\nDelegate an inspectable step\nConnect a drawing, script or document to a decision. Keep units, sources and assumptions visible.\n\n\nDoctoral research\nDefend the method\nSeparate a proposed explanation from evidence. Record the inputs, procedure and checks behind a result.\n\n\n\nOn each slide: learn the mechanism, then reveal why it matters and what to do differently.\n\n\nOne minute within the existing 15-minute primer. These are overlapping uses, not separate ability levels. Students do not need to design a neural network; they should leave able to make better decisions about their own LLM workflow. Ask them to keep one current architectural or research task in mind. On the next seven slides, show the mechanism first; the first advance reveals its practical consequence and the second reveals a concrete action.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#decoder-generation",
+    "href": "weeks_v2/week-08.html#decoder-generation",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "What happens after you press Send?",
+    "text": "What happens after you press Send?\nModel literacy · 1 of 7\nA common baseline is an autoregressive, decoder-only Transformer: it generates a continuation from the context already available.\n\n\n01 · Input\nTokens\nText is split into units and represented as vectors.\n\n\n02 · Context\nCausal attention\nLayers use the available context, not future answer tokens.\n\n\n03 · Predict\nNext token\nThe model scores possible next tokens; decoding selects one.\n\n\n04 · Continue\nAppend and repeat\nAppend the token to the context; repeat.\n\n\n\nWhy it matters: the model generates a continuation conditioned on your input. A worked example and a clear format help define the artifact you want.\n\nDo this: specify “inputs in metres → three overhang options → one comparison table.” Check any performance claim against a source or calculation.\n\n\n\nDocumented decoder example: Qwen2.5 technical report, §2 (2024).\n\n\nAllow about two minutes, including the two practice-note reveals. Distinguish the neural-network architecture from architecture as a design discipline. Decoder-only means the text backbone does not need a separate encoder–decoder pair; it does not mean a multimodal product has no image or audio encoders. During training, masked token positions can be processed in parallel. This diagram describes the conceptual generation loop, not every serving optimisation. The model learns conditional patterns and representations, not an arithmetic average of answers. An explicit format makes a draft easier to inspect; it does not guarantee correct content. This mechanism can support complex reasoning, but a fluent facade explanation does not establish that a solar calculation was performed.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#context-and-evidence",
+    "href": "weeks_v2/week-08.html#context-and-evidence",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "What can attention connect — and what is missing?",
+    "text": "What can attention connect — and what is missing?\nModel literacy · 2 of 7\n\nIllustrative prompt “Compare 0.6 m and 1.2 m overhangs on this west-facing facade. Explain the likely shading trade-off.”\n\n\n\nAvailable context The model can connect the dimensions, orientation, attached material and earlier messages when forming a response.\n\n\nStill needs evidence An image may omit scale, location, glazing, weather or occupancy. Attention does not supply missing project measurements or run a simulation by itself.\n\n\n\nWhy it matters: the project context you supply shapes the comparison. Missing site information may become an unstated assumption.\n\nDo this: attach a labelled plan, north arrow, scale, location and relevant brief. Ask it to distinguish supplied facts, assumptions and missing inputs.\n\n\n\nArchitectural application of the preceding mechanism, not a model benchmark. A model may infer or recall information, but inferred project inputs must be identified and checked. Distinguish the model’s proposed explanation from a tool result. Avoid teaching that next-token prediction prevents reasoning, or that attention guarantees faithful use of every supplied fact.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#training-and-rlhf",
+    "href": "weeks_v2/week-08.html#training-and-rlhf",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "How does a predictor become an assistant?",
+    "text": "How does a predictor become an assistant?\nModel literacy · 3 of 7\n\n\n01 · Pre-training\nLearn from data\nNext-token training develops language, knowledge and patterns useful for many tasks.\n\n\n02 · Supervised fine-tuning\nLearn from examples\nTrain on demonstrations of useful responses and task behaviour.\n\n\n03 · Classic RLHF\nLearn from preferences\nPeople rank responses → a reward model learns those preferences → reinforcement learning updates the assistant.\n\n\nRLHF = reinforcement learning from human feedback.\n\nWhy it matters: assistant training helps it follow requests and respond usefully. A helpful-sounding endorsement is not an independent design review.\n\nDo this: specify the audience and criteria: client explanation, methods critique or component specification. Ask for the strongest objection, then check its evidence.\n\n\n\nOne influential recipe, not every model’s training sequence: Ouyang et al., InstructGPT (2022).\n\n\nAbout two minutes, including the two practice-note reveals. Training changes model weights; supplying a prompt usually changes the context for that interaction, not the model’s weights. RLHF happens during training, not whenever a person presses a thumbs-up button. Feedback may inform later training, depending on the service. Keep the simplified diagram clearly labelled as the classic recipe. Its reward is a proxy for the qualities being judged, not a certificate of architectural correctness. Do not imply that RLHF inevitably causes agreement or that asking for a critique removes bias.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#preferences-and-verification",
+    "href": "weeks_v2/week-08.html#preferences-and-verification",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "A preferred answer and a checked answer differ",
+    "text": "A preferred answer and a checked answer differ\nModel literacy · 4 of 7\n\n\n\n\n\n\n\n\nTraining signal\nWhat it can reward\nArchitectural question it leaves open\n\n\n\n\nHuman or AI preferences\nUseful, clear, appropriate responses\nDoes this claim hold for this site and brief?\n\n\nDPO · direct preference optimisation\nPreferred responses directly, without classic RLHF’s separate reward-model/RL loop\nDo the preferences capture the right criteria?\n\n\nRL with verifiable rewards\nCheckable outcomes, such as correct answers or passing code tests\nAre those tests sufficient for the design claim?\n\n\n\n\nWhy it matters: passing a test only supports what that test measures. Correct arithmetic for our assumed 3.0 m setback does not establish planning compliance.\n\nDo this: define success first: known cases for code, source fidelity for a literature summary, and explicit comfort/access trade-offs for a design recommendation.\n\n\n\nDPO (2023) · Constitutional AI: AI feedback (2022) · DeepSeek-R1: reasoning rewards (2025). The setback is a classroom assumption.\n\n\nAbout two minutes. Reward source and optimisation method are different dimensions: DPO may use human or AI preference data. In R1, verifiable math/code rewards are part of a broader training recipe; R1-Zero is the experiment without initial supervised fine-tuning, not a description of every R1 stage. Passing tests provides evidence only for the tested behaviour. Ask what “good” means when energy, access, comfort and design intent conflict.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#reasoning-and-tools",
+    "href": "weeks_v2/week-08.html#reasoning-and-tools",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "Stronger systems also do more while answering",
+    "text": "Stronger systems also do more while answering\nModel literacy · 5 of 7\n\n\nReasoning effort A model can spend more computation on intermediate steps before answering. Qwen3 documents adjustable thinking budgets; improvement depends on the task.\n\n\nTools and retrieved evidence A system can retrieve a document, execute code or call a tool, then use the result. Those actions add evidence only if the inputs and returned results are checked.\n\n\n\n\npropose a step\n\n\nexecute a tool\n\n\ninspect its result\n\n\nrevise the decision\n\n\n\nWhy it matters: more reasoning, more evidence and an executed calculation solve different problems. Extra reasoning time cannot itself supply a missing measurement.\n\nDo this: use reasoning for a difficult comparison, retrieval for a source and code for a calculation. Save the actual sources, inputs and tool outputs.\n\n\n\nQwen3 (2025), §§4.3–4.7 · Anthropic: limits of reported reasoning (2025).\n\n\nAbout two minutes. Reasoning effort is inference-time computation, not proof of a new backbone architecture. Retrieval supplies context; it is not retraining. A tool invocation is usually orchestrated by software around the model. Request sources, calculations and a concise rationale, rather than treating a generated reasoning narrative as privileged access to internal computation. Anthropic’s study found omissions in reported reasoning under specific experimental conditions; do not generalise its percentages to every model or architectural task.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#current-model-designs",
+    "href": "weeks_v2/week-08.html#current-model-designs",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "Is decoder-only still the whole story?",
+    "text": "Is decoder-only still the whole story?\nModel literacy · 6 of 7 · evidence checked 4 November 2026\n\n\n\n\n\n\n\n\nDocumented example\nWhat it shows\nWhat to take into practice\n\n\n\n\nQwen3 · 2025\nDense and mixture-of-experts (MoE) models; MoE routes each token through selected learned components\nMore parameters need not mean all are used on every token\n\n\nNemotron 3 Ultra · June 2026\nA hybrid of Mamba state-space layers and attention, with MoE\nCurrent designs also change how sequences are processed efficiently\n\n\nQwen3.5-Omni · April 2026\nText, vision and audio in a multimodal system\nA plan or walkthrough can be input; perceived dimensions and performance still need checks\n\n\n\n\nWhy it matters: model design changes capability and efficiency, but a bigger parameter count or an “expert” label does not establish skill on your task.\n\nDo this: judge it on a known task from your work: plan reading, document synthesis or tool execution. Record the visible model/mode, result, date and time taken.\n\n\n\nPrimary reports: Qwen3 · NVIDIA Nemotron 3 Ultra · Qwen3.5-Omni. Examples of mechanisms, not a model ranking.\n\n\nAbout two minutes, including the two practice-note reveals. Mamba is a state-space sequence model that maintains and updates a state; hybrids combine it with attention. MoE “experts” are learned network components, not named professionals or necessarily human-readable specialties. Autoregressive generation can survive changes to the internal backbone. Decoder-only remains a useful baseline, not a universal description of every component. These reports document particular public designs; do not infer the undisclosed architecture of a current proprietary service from its output style, latency or benchmark score. One known task is a useful local check, not a general benchmark; log cost if visible, without requiring purchase of a second model.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#design-assistant-outlook",
+    "href": "weeks_v2/week-08.html#design-assistant-outlook",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "What might a more capable design assistant do?",
+    "text": "What might a more capable design assistant do?\nModel literacy · 7 of 7 · discussion\n\nPlausible direction · not an established capability claim Read a brief and model → propose facade variants → call geometry and simulation tools → compare results against agreed criteria → return a traceable recommendation.\n\n\n\nPotentially more automated File preparation, parameter changes, tool execution, error repair and comparison tables.\n\n\nStill needs a defensible decision Who defines comfort, acceptable trade-offs and missing evidence? Who checks that the simulation represents the intended design?\n\n\n\nWhy it matters: automation can repeat a workflow faster. If its criteria miss the design question, faster iteration can optimise the wrong thing.\n\nDo this: delegate one repeatable step. State what may change, what stays fixed, how improvement is judged and when the result needs your review.\n\n\n\nUse the final two minutes of the literacy block, including the practice-note reveals. This is a teaching speculation grounded in documented tool use and multimodality, not a promise that a product can reliably complete this whole architectural loop. Invite one response: “Which step would you delegate next, and what check would you keep?” Keep model structure, training and runtime orchestration distinct.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#not-every-ai-output-needs-the-same-check",
+    "href": "weeks_v2/week-08.html#not-every-ai-output-needs-the-same-check",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "Not every AI output needs the same check",
+    "text": "Not every AI output needs the same check\nThree output types\n\n\n\n\n\n\n\n\nAI output type\nWhat it is good for\nFinal-gate check\n\n\n\n\nFact-based reiteration\nsummarize standards, definitions, precedent claims, code-like information\nverify against primary source, datasheet, standard, or cited document\n\n\nRelationship hypothesis / interpretation\npropose explanations for comfort, perception or spatial experience\ncompare with physical mechanisms, empirical evidence, an appropriate simulation or a bounded calculation\n\n\nWorkflow/code drafting\nproduce formulas, scripts, GhPython snippets, notebook cells, checklists\nrun it, inspect units/ranges, test known cases, and log failures\n\n\n\n\nFinal gate AI can help generate an answer. You decide which gate it must pass before it enters the design argument.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#human-experience-is-messy-enough-that-ai-can-help",
+    "href": "weeks_v2/week-08.html#human-experience-is-messy-enough-that-ai-can-help",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "Human experience is messy enough that AI can help",
+    "text": "Human experience is messy enough that AI can help\nWhy architecture needs this\nArchitecture often asks about relationships that are real but hard to reduce cleanly:\n\nspatial atmosphere and perceived calm\nthermal acceptability rather than just air temperature\nacoustic comfort rather than only decibels\nwayfinding confidence rather than only shortest path\nfacade perception rather than only performance values\n\n\nA productive use AI can help generate hypotheses for these fuzzy relationships. It cannot validate them. Validation still comes from source checks, simple calculations, field observations, precedent mechanisms, simulations, or sensitivity tests.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#ai-fact-checking-cases",
+    "href": "weeks_v2/week-08.html#ai-fact-checking-cases",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "AI Fact-Checking Cases",
+    "text": "AI Fact-Checking Cases\nRead each case and name the output type, then decide the final-gate check.\n\n\n\n\n\n\n\n\nCase\nOutput type\nFinal gate\n\n\n\n\nAI summarizes a daylight standard\nfact-based reiteration\nfind the standard and quote/check the clause\n\n\nAI proposes why a shaded courtyard may feel cooler\nrelationship hypothesis / interpretation\ncompare with radiation/wind/shade logic and one bounded metric\n\n\nAI writes a Python scoring function\nworkflow/code drafting\nrun known cases and inspect units/ranges\n\n\nAI writes a literature-review paragraph\nfact + writing support\nverify every claim and citation before use\n\n\n\n\nThe line is rarely “AI or not.” It is what kind of output is this, and what would make it trustworthy enough to use?",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#large-model-method-review",
+    "href": "weeks_v2/week-08.html#large-model-method-review",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "Large-Model Method Review",
+    "text": "Large-Model Method Review\nA common situation, examined as a method — not a person.\n\nThe artifact A building-performance analysis: polished charts, statistics beyond the author’s stated skill, no understanding of the method when questioned, no disclosure of AI use.\n\n\nReview it together\n\nwhich specific claims can the author actually defend?\nwhich claims are factual, which are relationship-based, and which are workflow/code?\nwhat final-gate checks would have made this trustworthy?\nwhat should have been disclosed, and where?\nwhat is the minimum honest version of this output?\n\n\nWe critique the workflow and its claims, never the author’s ability.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#ai-assisted-work-made-honest",
+    "href": "weeks_v2/week-08.html#ai-assisted-work-made-honest",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "AI-assisted work, made honest",
+    "text": "AI-assisted work, made honest\nKey visual\nThe same four-zone frame as the rest of the course — but now one zone is an AI draft, and the final gate and disclosure are not optional.\n\n\nPrompt “Draft a setback function: inputs in metres; return pass/fail and the ratio to an assumed 3.0 m threshold.”\n\n\nAI output a Python function that can become a GhPython component\n\n\nFinal gate 2.4 / 3.0 = 0.8 → fail; 3.0 / 3.0 = 1.0 → pass. Check units and the actual source of the threshold separately.\n\n\nDisclosure note “AI-assisted arithmetic checked against known cases. The classroom threshold does not establish planning compliance.”\n\n\n\nRun the kit A real, runnable example: verified_setback_score.py with its prompt log — AI drafted it, then the output type, known cases, and threshold behavior were checked. See the AI-assisted kit.\n\n\nUse the function as a bounded example, not a compliance tool. Its internal assertions cover selected ordinary values; they are not exhaustive validation. Save expected and observed outputs, and distinguish the arithmetic check from the separate question of which rule applies. No Python installation is required to discuss the hand-calculable values.\n\n\nAI can draft the step. It cannot be the final gate for its own output. That gate is your responsibility, every time.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#vibe-coding-starts-after-the-function-contract-is-clear",
+    "href": "weeks_v2/week-08.html#vibe-coding-starts-after-the-function-contract-is-clear",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "Vibe coding starts after the function contract is clear",
+    "text": "Vibe coding starts after the function contract is clear\nAI as component front end\n\nBefore asking AI State the component’s inputs, units, allowed ranges, operation, output, and one known test case. The prompt should describe that contract, not just ask for “a script.”\n\n\n\nfunction contract\n\n\nAI draft\n\n\nfinal-gate check\n\n\nGhPython / notebook\n\n\nverified output",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#ai-drafts-can-become-gh-components-but-only-after-inspection",
+    "href": "weeks_v2/week-08.html#ai-drafts-can-become-gh-components-but-only-after-inspection",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "AI drafts can become GH components, but only after inspection",
+    "text": "AI drafts can become GH components, but only after inspection\nPatch to Grasshopper\n\nBridge pattern AI drafts a geopandas, Python, GhPython, or C# component -&gt; student checks facts, units, edge cases, and one manual result -&gt; only then does the component enter the design workflow.\n\n\nQuestion for AI-assisted work Is this output factual, relationship-based, or code/workflow? What check would expose a wrong answer there?",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#break",
+    "href": "weeks_v2/week-08.html#break",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "BREAK",
+    "text": "BREAK\nTake 10 minutes.\nOpen one current architectural decision, its inputs, and a saved AI exchange or workflow output. Lab time restarts at 0 after the break.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#architectural-workflow-lab",
+    "href": "weeks_v2/week-08.html#architectural-workflow-lab",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "Audit one AI-assisted architectural decision",
+    "text": "Audit one AI-assisted architectural decision\nSession 2 · walkthrough and verification\n\nDecision Evidence Variation Output Threshold Action\n\n\nBring one recent AI exchange or generated component from your project. Show the design decision, what you gave the model, what it produced, what you accepted or changed, and one check that could reveal a wrong answer.\n\n\nLeave with: one completed verification card, a revised artifact or qualified claim, and a dated note of what remains unverified. feeds A3\n\n\nFormative work towards A3; no new graded submission. A saved transcript is enough: no new account or paid model is required.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#lab-starting-material",
+    "href": "weeks_v2/week-08.html#lab-starting-material",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "Choose a decision you actually need to make",
+    "text": "Choose a decision you actually need to make\n\nLab 0–5 min · individual · open the decision, input and output together\n\n\n\n\n\n\n\n\n\nYour material\nThe architectural decision\nOne possible independent check\n\n\n\n\nPlan or walkthrough critique\nWhich route or spatial arrangement should change?\nCheck dimensions in the source drawing; distinguish visible features from inferred user experience\n\n\nFacade / GH / Python component\nWhich variant should enter the comparison?\nTest units, a boundary value and a hand-calculated case\n\n\nComfort or daylight explanation\nWhat change is worth testing?\nCompare the proposed mechanism with a suitable metric, observation or simulation\n\n\nPrecedent / standard claim\nDoes this evidence apply to this project?\nOpen the original source and check scope, date and conditions\n\n\n\n\nNo current AI use? Audit one automated or interpretive step in your own project. No accessible files or network? Use the saved setback example and its hand-calculable inputs. Label it as a course example.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#lab-timing",
+    "href": "weeks_v2/week-08.html#lab-timing",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "The 50-minute lab",
+    "text": "The 50-minute lab\n\n\n\n\n\n\n\n\nLab time\nTask\nSave this\n\n\n\n\n0–5\nChoose one decision; open inputs and output\nOne sentence naming the decision\n\n\n5–23\nTriads: three six-minute walkthroughs\nOne peer question and an agreed check each\n\n\n23–38\nPerform one independent check\nExpected result, observed result and limitation\n\n\n38–45\nRevise, qualify or reject the output\nVerification card + revised artifact/claim\n\n\n45–50\nTwo short shared examples, then exit note\nOne changed judgment and one remaining limit\n\n\n\n\nIf a check cannot finish, record pending, the blocker and the next step. A proposed test is not a completed verification.\n\n\nAt 45–48 minutes invite two volunteers for 90 seconds each. At 48–50 everyone completes the exit note. The triads give every student a turn; whole-class sharing is selective. For a pair, use the extra six minutes to start the agreed check. Preserve material locally if posting or the website is unavailable.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#lab-walkthrough",
+    "href": "weeks_v2/week-08.html#lab-walkthrough",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "Walk through the decision, not the whole chat",
+    "text": "Walk through the decision, not the whole chat\n\nLab 5–23 min · groups of three · six minutes each: three to show, three for feedback\n\nObject this week: one AI-assisted step and the architectural judgment it influenced.\n\n\nDid Show the supplied plan/data/prompt, the output and what you used in the design.\n\n\nAssumed Name missing scale, context, physics, sources or other conditions the answer relied on.\n\n\nRisk Point to one claim or operation that could change the design if it were wrong.\n\n\nVerify Agree one independent check and what result would make you revise the output.\n\n\n\nPeers record: “We could follow . We still need evidence for . The next check is ___.” Critique the artifact and its claim.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#lab-independent-check",
+    "href": "weeks_v2/week-08.html#lab-independent-check",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "Run one check that could change your mind",
+    "text": "Run one check that could change your mind\n\nLab 23–38 min · individual, with a peer available · one bounded check\n\n\n\nBefore checking: record the expected result and its basis — a source, known case, manual calculation or observation.\nPerform the check: inspect the source, rerun a saved component, calculate a value or compare independent evidence.\nRecord what happened: expected versus observed result; pass, fail or pending; what the check cannot establish.\n\n\n\nAsking the same model “are you sure?” is not an independent check. A second answer can suggest a test; agreement between answers does not validate the claim.\n\n\nA peer rerun checks whether instructions and saved files reproduce a result; it does not establish physical validity by itself. For a performance claim, distinguish rerunning code from validating assumptions. Do not require students to complete a substantial simulation in 15 minutes: a bounded known case or an honest pending record is acceptable.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#lab-revision",
+    "href": "weeks_v2/week-08.html#lab-revision",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "Make the architectural consequence visible",
+    "text": "Make the architectural consequence visible\n\nLab 38–45 min · revise the artifact/claim and complete the existing verification card\n\n\nIllustrative revision Before: “The AI says this overhang will make the room comfortable.”\nAfter: “The checked shadow geometry supports shade at this time and location. It does not establish thermal comfort. I will retain this option for a temperature, radiation and ventilation comparison.”\n\n\n\nMark the output accept, revise, reject or pending, with a reason.\nSave the input, output, check result and revised artifact. Record the visible model/tool name, mode and date; mark unknown details honestly.\nAdd a dated note to your project page or local draft: peer feedback → check → changed decision → remaining limit.\n\n\n\nThe sample revision assumes that a shadow-geometry check actually took place. Students must not copy its result without doing an equivalent check. Accepted means adequate for the stated bounded use, not universally valid. Keep the website as a continuation of Week 7’s documentation habit, not a new publishing requirement.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#week-8-checklist",
+    "href": "weeks_v2/week-08.html#week-8-checklist",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "Week 8 Checklist",
+    "text": "Week 8 Checklist\n\nBefore Week 9\n\nsave one workflow with its inputs, steps, tool/version information and output\nclassify the AI-assisted step: fact, relationship hypothesis or workflow/code\nrecord one independent check, its result and what remains unverified\nrevise the artifact or claim and keep the peer feedback in your A3 failure/verification log\nwhere relevant, use the reference questions for a mentor consultation and document the resulting action",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#lab-exit",
+    "href": "weeks_v2/week-08.html#lab-exit",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "Your changed judgment, in one line",
+    "text": "Your changed judgment, in one line\nExit\nLab 48–50 min · save in your notes; post the artifact link or a screenshot if available.\n\n**I used AI/automation for . After checking , I will accept / revise / reject / hold pending . This changes my design decision by . I still cannot claim ___.**\n\nWeek 9 closes A3 — we finalize the prototype and its verification before the workflow package begins.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#reference-activities",
+    "href": "weeks_v2/week-08.html#reference-activities",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "Reference activities",
+    "text": "Reference activities\nThe live teaching sequence ends above. Use these documentation and mentor exercises for follow-up or a longer clinic; they are not additional tasks inside today’s 50-minute lab.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-08.html#reference-documentation-clinic",
+    "href": "weeks_v2/week-08.html#reference-documentation-clinic",
+    "title": "Week 8: Reproducibility and AI Fact-Checking",
+    "section": "Reference · Documentation Clinic",
+    "text": "Reference · Documentation Clinic",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W8: Reproducibility"
+    ]
+  },
+  {
     "objectID": "weeks_v2/week-08.html#document-one-workflow-so-it-stands-alone",
     "href": "weeks_v2/week-08.html#document-one-workflow-so-it-stands-alone",
     "title": "Week 8: Reproducibility and AI Fact-Checking",
     "section": "Document one workflow so it stands alone",
-    "text": "Document one workflow so it stands alone\nPick the most complex or critical workflow in your project — the one you would least want to lose.\n\nDo this now · 10 minutes Write step-by-step instructions clear enough that a classmate who has never seen your method could follow them and get your result — with no verbal explanation from you.\n\nCandidates: a Grasshopper setup, a survey-data analysis, a GIS operation, a Python notebook, a statistical step.",
+    "text": "Document one workflow so it stands alone\nThe clinic\nPick the most complex or critical workflow in your project — the one you would least want to lose.\n\nOptional extension · 10 minutes Write step-by-step instructions clear enough that a classmate who has never seen your method could follow them and get your result — with no verbal explanation from you.\n\nCandidates: a Grasshopper setup, a survey-data analysis, a GIS operation, a Python notebook, a statistical step.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1266,107 +1597,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-08.html#what-large-models-are-for-this-course",
-    "href": "weeks_v2/week-08.html#what-large-models-are-for-this-course",
+    "objectID": "weeks_v2/week-08.html#reference-mentor-preparation",
+    "href": "weeks_v2/week-08.html#reference-mentor-preparation",
     "title": "Week 8: Reproducibility and AI Fact-Checking",
-    "section": "What large models are, for this course",
-    "text": "What large models are, for this course\n\nThe short version Large models are probabilistic models of patterns in human-produced data. They can be useful companions, but they are not a final gate for truth.\n\n\n\nWhat they tend to do\n\nproduce plausible common answers\naverage across many writing patterns\ncompress complicated claims into fluent language\nsound confident even when the source is weak\n\n\n\nWhy they are still useful\n\nthey can expose hidden assumptions\nthey can draft small workflow components\nthey can search the shape of an ill-defined relation\nthey can help when human experience is hard to model directly\n\n\n\nThe skill is not “believe or reject AI.” The skill is using it, then deciding what kind of check must happen before the output becomes evidence.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W8: Reproducibility"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-08.html#the-useful-part-is-also-the-dangerous-part",
-    "href": "weeks_v2/week-08.html#the-useful-part-is-also-the-dangerous-part",
-    "title": "Week 8: Reproducibility and AI Fact-Checking",
-    "section": "The useful part is also the dangerous part",
-    "text": "The useful part is also the dangerous part\n\nCommon answer problem Because LLMs learn from pooled writing, they often produce the most available or average explanation. That can be helpful for orientation, but it can miss local constraints, updated facts, minority cases, and project-specific physics.\n\n\nDesign implication Do not ask only, “What does AI say?” Ask: what local fact, mechanism, calculation, or observed experience would push this answer away from the common mean?",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W8: Reproducibility"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-08.html#not-every-ai-output-needs-the-same-check",
-    "href": "weeks_v2/week-08.html#not-every-ai-output-needs-the-same-check",
-    "title": "Week 8: Reproducibility and AI Fact-Checking",
-    "section": "Not every AI output needs the same check",
-    "text": "Not every AI output needs the same check\n\n\n\n\n\n\n\n\nAI output type\nWhat it is good for\nFinal-gate check\n\n\n\n\nFact-based reiteration\nsummarize standards, definitions, precedent claims, code-like information\nverify against primary source, datasheet, standard, or cited document\n\n\nRelationship-based simulation\nreason about fuzzy links: comfort, perception, spatial experience, thermal/acoustic sensation\ncompare with engineering/science logic, empirical evidence, sensitivity test, or bounded calculation\n\n\nWorkflow/code drafting\nproduce formulas, scripts, GhPython snippets, notebook cells, checklists\nrun it, inspect units/ranges, test known cases, and log failures\n\n\n\n\nFinal gate AI can help generate an answer. You decide which gate it must pass before it enters the design argument.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W8: Reproducibility"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-08.html#human-experience-is-messy-enough-that-ai-can-help",
-    "href": "weeks_v2/week-08.html#human-experience-is-messy-enough-that-ai-can-help",
-    "title": "Week 8: Reproducibility and AI Fact-Checking",
-    "section": "Human experience is messy enough that AI can help",
-    "text": "Human experience is messy enough that AI can help\nArchitecture often asks about relationships that are real but hard to reduce cleanly:\n\nspatial atmosphere and perceived calm\nthermal acceptability rather than just air temperature\nacoustic comfort rather than only decibels\nwayfinding confidence rather than only shortest path\nfacade perception rather than only performance values\n\n\nA productive use AI can help generate hypotheses for these fuzzy relationships. It cannot validate them. Validation still comes from source checks, simple calculations, field observations, precedent mechanisms, simulations, or sensitivity tests.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W8: Reproducibility"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-08.html#ai-fact-checking-cases",
-    "href": "weeks_v2/week-08.html#ai-fact-checking-cases",
-    "title": "Week 8: Reproducibility and AI Fact-Checking",
-    "section": "AI Fact-Checking Cases",
-    "text": "AI Fact-Checking Cases\nRead each case and name the output type, then decide the final-gate check.\n\n\n\n\n\n\n\n\nCase\nOutput type\nFinal gate\n\n\n\n\nAI summarizes a daylight standard\nfact-based reiteration\nfind the standard and quote/check the clause\n\n\nAI proposes why a shaded courtyard may feel cooler\nrelationship-based simulation\ncompare with radiation/wind/shade logic and one bounded metric\n\n\nAI writes a Python scoring function\nworkflow/code drafting\nrun known cases and inspect units/ranges\n\n\nAI writes a literature-review paragraph\nfact + writing support\nverify every claim and citation before use\n\n\n\n\nThe line is rarely “AI or not.” It is what kind of output is this, and what would make it trustworthy enough to use?",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W8: Reproducibility"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-08.html#large-model-method-review",
-    "href": "weeks_v2/week-08.html#large-model-method-review",
-    "title": "Week 8: Reproducibility and AI Fact-Checking",
-    "section": "Large-Model Method Review",
-    "text": "Large-Model Method Review\nA common situation, examined as a method — not a person.\n\nThe artifact A building-performance analysis: polished charts, statistics beyond the author’s stated skill, no understanding of the method when questioned, no disclosure of AI use.\n\n\nReview it together\n\nwhich specific claims can the author actually defend?\nwhich claims are factual, which are relationship-based, and which are workflow/code?\nwhat final-gate checks would have made this trustworthy?\nwhat should have been disclosed, and where?\nwhat is the minimum honest version of this output?\n\n\nWe critique the workflow and its claims, never the author’s ability.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W8: Reproducibility"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-08.html#ai-assisted-work-made-honest",
-    "href": "weeks_v2/week-08.html#ai-assisted-work-made-honest",
-    "title": "Week 8: Reproducibility and AI Fact-Checking",
-    "section": "AI-assisted work, made honest",
-    "text": "AI-assisted work, made honest\nThe same four-zone frame as the rest of the course — but now one zone is an AI draft, and the final gate and disclosure are not optional.\n\n\nPrompt “Write a geopandas script that buffers transit stops 400 m and reports % of site parcels covered.”\n\n\nAI output a draft script + a Grasshopper Python component stub\n\n\nFinal gate CRS is projected (metres, not degrees); buffer distance correct; parcel counts spot-checked by hand\n\n\nDisclosure note “Buffer script drafted with AI; CRS and counts verified manually on DD-MM.”\n\n\n\nRun the kit A real, runnable example: verified_setback_score.py with its prompt log — AI drafted it, then the output type, known cases, and threshold behavior were checked. See the AI-assisted kit.\n\n\nAI can draft the step. It cannot be the final gate for its own output. That gate is your responsibility, every time.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W8: Reproducibility"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-08.html#vibe-coding-starts-after-the-function-contract-is-clear",
-    "href": "weeks_v2/week-08.html#vibe-coding-starts-after-the-function-contract-is-clear",
-    "title": "Week 8: Reproducibility and AI Fact-Checking",
-    "section": "Vibe coding starts after the function contract is clear",
-    "text": "Vibe coding starts after the function contract is clear\n\nBefore asking AI State the component’s inputs, units, allowed ranges, operation, output, and one known test case. The prompt should describe that contract, not just ask for “a script.”\n\n\n\nfunction contract\n\n\nAI draft\n\n\nfinal-gate check\n\n\nGhPython / notebook\n\n\nverified output",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W8: Reproducibility"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-08.html#ai-drafts-can-become-gh-components-but-only-after-inspection",
-    "href": "weeks_v2/week-08.html#ai-drafts-can-become-gh-components-but-only-after-inspection",
-    "title": "Week 8: Reproducibility and AI Fact-Checking",
-    "section": "AI drafts can become GH components, but only after inspection",
-    "text": "AI drafts can become GH components, but only after inspection\n\nBridge pattern AI drafts a geopandas, Python, GhPython, or C# component -&gt; student checks facts, units, edge cases, and one manual result -&gt; only then does the component enter the design workflow.\n\n\nQuestion for AI-assisted work Is this output factual, relationship-based, or code/workflow? What check would expose a wrong answer there?",
+    "section": "Reference · Mentor Preparation",
+    "text": "Reference · Mentor Preparation",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1378,7 +1613,7 @@
     "href": "weeks_v2/week-08.html#make-the-mentor-meeting-count",
     "title": "Week 8: Reproducibility and AI Fact-Checking",
     "section": "Make the mentor meeting count",
-    "text": "Make the mentor meeting count\nMost mentor time is lost to vague questions. A little preparation turns a pleasant chat into a useful one.\n\nPrepare now · 15 minutes\n\nOne-liner — your project in a single sentence\nSpecific ask — the exact advice you need\nContext check — what your mentor actually does\nQuestion bank — five strategic questions\nShow-and-tell — the one thing you want them to see",
+    "text": "Make the mentor meeting count\nMentor prep\nMost mentor time is lost to vague questions. A little preparation turns a pleasant chat into a useful one.\n\nWhen a consultation is relevant · 15 minutes\n\nOne-liner — your project in a single sentence\nSpecific ask — the exact advice you need\nContext check — what your mentor actually does\nQuestion bank — five strategic questions\nShow-and-tell — the one thing you want them to see",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1402,7 +1637,7 @@
     "href": "weeks_v2/week-08.html#question-workshop",
     "title": "Week 8: Reproducibility and AI Fact-Checking",
     "section": "Question workshop",
-    "text": "Question workshop\n\nIn pairs · 10 minutes\n\nPerson A delivers their one-liner + best strategic question\nPerson B gives specific feedback and one improvement\nSwap roles and repeat\n\n\n\nYou are not competing for the best question. You are pressure-testing your own so it earns a real answer in the room.",
+    "text": "Question workshop\n\nOptional pair exercise · 10 minutes\n\nPerson A delivers their one-liner + best strategic question\nPerson B gives specific feedback and one improvement\nSwap roles and repeat\n\n\n\nYou are not competing for the best question. You are pressure-testing your own so it earns a real answer in the room.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -1414,79 +1649,7 @@
     "href": "weeks_v2/week-08.html#follow-up-email-template",
     "title": "Week 8: Reproducibility and AI Fact-Checking",
     "section": "Follow-up email template",
-    "text": "Follow-up email template\nSend within 48 hours. Show that their advice changed something.\n\n\n\nPart\nWhat to write\n\n\n\n\nSubject\n“Thank you for your insights on [topic] — [Your name]”\n\n\nOpening\nthe specific point that shifted your thinking\n\n\nAction taken\nthe concrete change or next step you made\n\n\nProgress\none short paragraph on how it shaped your work\n\n\nNext step\nwhat you’ll do next; offer to share results\n\n\n\n\nDraft it now Write the subject line and opening for your upcoming mentor meeting before you leave class.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W8: Reproducibility"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-08.html#round-table-on-your-workflow",
-    "href": "weeks_v2/week-08.html#round-table-on-your-workflow",
-    "title": "Week 8: Reproducibility and AI Fact-Checking",
-    "section": "Round table on YOUR workflow",
-    "text": "Round table on YOUR workflow\n\nDecision Evidence Variation Output Threshold Action\n\nUpload one rough material to Slack before Session 2 — a prompt log, an error message, a workflow output, a README fragment, or a verification note. feeds A3",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W8: Reproducibility"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-08.html#reconstruct-your-verification-in-four-steps",
-    "href": "weeks_v2/week-08.html#reconstruct-your-verification-in-four-steps",
-    "title": "Week 8: Reproducibility and AI Fact-Checking",
-    "section": "Reconstruct your verification in four steps",
-    "text": "Reconstruct your verification in four steps\nObject this week: your workflow’s verification — what someone must inspect to trust it.\n\n\nDid What does the workflow produce, and how, step by step?\n\n\nAssumed What inputs or settings are implicit and undocumented?\n\n\nRisk Which step could a reader not reproduce or check?\n\n\nVerify What must someone inspect before they trust this output?\n\n\n\nPost your four-step under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Volunteers go first; random draw may fill the remaining examples.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W8: Reproducibility"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-08.html#peer-reproducibility-check",
-    "href": "weeks_v2/week-08.html#peer-reproducibility-check",
-    "title": "Week 8: Reproducibility and AI Fact-Checking",
-    "section": "Peer Reproducibility Check",
-    "text": "Peer Reproducibility Check\nIn small groups, run each other’s documentation cold — the same test as the swap, on real project material.\n\n\nHand over Share your workflow package: steps, tool + version list, troubleshooting notes, quality check.\n\n\nAttempt A peer follows it without you explaining. They note exactly where it breaks or needs a guess.\n\n\nImprove Together, name the single change that would most improve reproducibility.\n\n\n\nWe are not ranking packages. We are finding, kindly and early, the gap a stranger would fall into.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W8: Reproducibility"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-08.html#session-2-reflection",
-    "href": "weeks_v2/week-08.html#session-2-reflection",
-    "title": "Week 8: Reproducibility and AI Fact-Checking",
-    "section": "Session 2 reflection",
-    "text": "Session 2 reflection\n\nWhat changed? Take three minutes and write:\n\nwhich step in my workflow is least reproducible right now?\nwhat did a peer get stuck on that I assumed was obvious?\nwhere am I using AI or automation I can’t fully defend?\nwhat is one fix before Week 9?\n\n\nKeep it in notes or post it as a Slack thread under your material.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W8: Reproducibility"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-08.html#week-8-checklist",
-    "href": "weeks_v2/week-08.html#week-8-checklist",
-    "title": "Week 8: Reproducibility and AI Fact-Checking",
-    "section": "Week 8 Checklist",
-    "text": "Week 8 Checklist\n\nBefore Week 9\n\ncomplete your mentor consultation using your strategic questions\nsend the follow-up email showing how their advice changed your approach\ndocument one workflow so a peer can rerun it unaided\nclassify and check any AI-assisted step: fact, relationship, or workflow/code\nfix the weakest reproducibility gap your peer check found",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W8: Reproducibility"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-08.html#your-verification-in-one-line",
-    "href": "weeks_v2/week-08.html#your-verification-in-one-line",
-    "title": "Week 8: Reproducibility and AI Fact-Checking",
-    "section": "Your verification, in one line",
-    "text": "Your verification, in one line\nBefore you leave, write and post:\n\nThe least reproducible step in my workflow is , and the one thing a reader must inspect to trust it is .\n\nWeek 9 closes A3 — we finalize the prototype and its verification before the workflow package begins.",
+    "text": "Follow-up email template\nSend within 48 hours. Show that their advice changed something.\n\n\n\nPart\nWhat to write\n\n\n\n\nSubject\n“Thank you for your insights on [topic] — [Your name]”\n\n\nOpening\nthe specific point that shifted your thinking\n\n\nAction taken\nthe concrete change or next step you made\n\n\nProgress\none short paragraph on how it shaped your work\n\n\nNext step\nwhat you’ll do next; offer to share results\n\n\n\n\nAfter a relevant consultation After the consultation, draft the subject and opening around one specific insight and the action you took or will take.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -2538,7 +2701,7 @@
     "href": "assignments/assignment-03.html#session-2-check-ins-that-feed-a3",
     "title": "Assignment 3: Workflow Prototype + Verification",
     "section": "Session 2 Check-Ins That Feed A3",
-    "text": "Session 2 Check-Ins That Feed A3\nThese check-ins should make the prototype visible before the deadline. Bring rough artifacts; the point is to expose workflow reasoning early.\n\n\n\n\n\n\n\n\n\nWeek\nBring to Session 2\nRound-table question\nA3 component\n\n\n\n\n7\nworkflow artifact, GH canvas, notebook output, spreadsheet, GIS map, simulation screenshot, or AI-assisted component\nWhat goes in, what varies, what comes out, and what quality check proves it ran?\nPrototype Scope + Workflow Description\n\n\n8\nprompt log, error message, output, README fragment, verification note, or workflow checklist\nWhat must someone else inspect before they trust this output?\nVerification and Failure Log\n\n\n9\nfigure, output table, comparison chart, or object-card draft\nWhat result changes the design action, and what uncertainty remains visible?\nPrototype Output + threshold language\n\n\n\nUse the Project Reasoning Check-In template if you want a consistent note structure.",
+    "text": "Session 2 Check-Ins That Feed A3\nThese check-ins should make the prototype visible before the deadline. Bring rough artifacts; the point is to expose workflow reasoning early.\n\n\n\n\n\n\n\n\n\nWeek\nBring to Session 2\nCheck-in question\nA3 component\n\n\n\n\n7\nsubmitted A2 PDF, one attempted workflow test with its result or blocker note, and the personal project page or a local draft\nAfter the formative A2 walkthrough in triads, what feedback will you act on, what did the test show or fail to show, and what is your next action? Record the dated feedback/action and test status on the page or local draft.\nPrototype Scope + Workflow Description\n\n\n8\none current architectural decision, its input and output, and a saved AI exchange/component where used; an existing non-AI step or supplied example is also valid\nWhat did the output change in your design reasoning? After a peer walkthrough, perform one independent check, compare expected and observed results, and record an accept/revise/reject/pending judgment in the verification card and a dated project-page or local entry. This is formative work; publishing a website is optional.\nVerification and Failure Log\n\n\n9\nfigure, output table, comparison chart, or object-card draft\nWhat result changes the design action, and what uncertainty remains visible?\nPrototype Output + threshold language\n\n\n\nUse the Project Reasoning Check-In template if you want a consistent note structure.",
     "crumbs": [
       "Home",
       "Assignments",
@@ -2958,7 +3121,7 @@
     "href": "schedule.html#session-2-format",
     "title": "Course Schedule",
     "section": "Session 2 Format",
-    "text": "Session 2 Format\nThe second half of class is a Project Reasoning Round Table, not a formal presentation.\nBefore Session 2, each student uploads one rough material to Slack:\n\nplan, section, render, massing image, or site photo\nprecedent image or evidence source\ntable, chart, GIS map, GH canvas, BIM/BEM screenshot, notebook output, or prompt log\ndraft object card, presentation slide, or reproducibility note\n\nSelected students speak for 60-90 seconds:\n\nI brought ________.\nI chose or questioned this evidence/tool because ________.\nIt supports ________.\nIt does not yet show ________.\nMy question to the room is ________.\n\nVolunteers go first and receive formative participation acknowledgement. A1-A4 grades come from submitted work unless a specific assignment says otherwise. If more examples are needed, the instructor may use random draw or select materials that make the week’s concept visible. The draw is for a short reasoning check-in, not a polished presentation.",
+    "text": "Session 2 Format\nThe usual second-half format is a Project Reasoning Round Table, not a formal presentation. Week 6 includes personal website setup; Week 7 uses the timed A2 walkthrough and prototype clinic; Week 8 uses a walkthrough and verification lab on one architectural decision, as described below.\nFor the usual round-table format, each student uploads one rough material to Slack before Session 2:\n\nplan, section, render, massing image, or site photo\nprecedent image or evidence source\ntable, chart, GIS map, GH canvas, BIM/BEM screenshot, notebook output, or prompt log\ndraft object card, presentation slide, or reproducibility note\n\nSelected students speak for 60-90 seconds:\n\nI brought ________.\nI chose or questioned this evidence/tool because ________.\nIt supports ________.\nIt does not yet show ________.\nMy question to the room is ________.\n\nVolunteers go first and receive formative participation acknowledgement. A1-A4 grades come from submitted work unless a specific assignment says otherwise. If more examples are needed, the instructor may use random draw or select materials that make the week’s concept visible. The draw is for a short reasoning check-in, not a polished presentation.",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -2970,7 +3133,7 @@
     "href": "schedule.html#at-a-glance",
     "title": "Course Schedule",
     "section": "At a Glance",
-    "text": "At a Glance\n\n\n\n\n\n\n\n\n\nWeek\nLecture / demo lens\nSession 2 material and check-in\nAssignment alignment\n\n\n\n\n1\nTotal Recall: evidence behind a past studio decision\npast project visual: what decision and evidence are visible?\nA1 decision + evidence recall\n\n\n2\nEvidence audit: weak links, overclaims, and next decision\nmarked evidence: what does it support, and what does it not show yet?\nA1 evidence critique\n\n\n3\nSpreadsheet as baseline workflow\ntable/chart/matrix: what variants or trade-offs could be compared?\nA1 due / A2 decision recap\n\n\n4\nGIS choices for architects\nsite/map/context image: is this decision spatial?\nA2 evidence map + tool matrix\n\n\n5\nBIM/BEM and performance model translation\nmodel/performance material: what assumptions would dominate?\nA2 tool matrix + feasibility\n\n\n6\nEvidence and pathway mapping\nworkflow sketch or branch declaration: what route and output are you choosing?\nA2 due / A4 branch\n\n\n7\nMethod prototype studio\nartifact/canvas/notebook/map: what goes in, varies, and comes out?\nA3 prototype scope\n\n\n8\nReproducibility, AI fact-checking, and mentor prep\nprompt log/error/README: what must be fact-checked, relationship-checked, or documented?\nA3 verification log\n\n\n9\nThresholds, recommendations, and counter-arguments\nfigure/output/object-card draft: what result changes the action?\nA3 due / A4 launch + clinic/workgroup vote\n\n\n10\nDraft workflow review\ndraft package: can reviewers trace the full evidence loop?\nA4 draft clinic or optional workgroup\n\n\n11\nFinal package polish\nfinal component draft: which A4 component is weakest?\nA4 near-final clinic or optional workgroup\n\n\n12\nObject Fair\nfinal object card/reflection: what reasoning transfers forward?\nA4 due",
+    "text": "At a Glance\n\n\n\n\n\n\n\n\n\nWeek\nLecture / demo lens\nSession 2 material and check-in\nAssignment alignment\n\n\n\n\n1\nTotal Recall: evidence behind a past studio decision\npast project visual: what decision and evidence are visible?\nA1 decision + evidence recall\n\n\n2\nEvidence audit: weak links, overclaims, and next decision\nmarked evidence: what does it support, and what does it not show yet?\nA1 evidence critique\n\n\n3\nSpreadsheet as baseline workflow\ntable/chart/matrix: what variants or trade-offs could be compared?\nA1 due / A2 decision recap\n\n\n4\nGIS choices for architects\nsite/map/context image: is this decision spatial?\nA2 evidence map + tool matrix\n\n\n5\nBIM/BEM and performance model translation\nmodel/performance material: what assumptions would dominate?\nA2 tool matrix + feasibility\n\n\n6\nEvidence and pathway mapping\nworkflow choice and A4 branch; personal GitHub Pages setup in half of the lab\nA2 due / A4 branch\n\n\n7\nA2 to first prototype\nA2 walkthrough in triads, feedback, one test, and a project-page update\nA3 prototype scope + first A4 feedback entry\n\n\n8\nReproducibility, LLM mechanisms, and independent verification\nwalk through one AI-assisted architectural decision, perform one check, and revise or qualify the output\nA3 verification and failure log\n\n\n9\nThresholds, recommendations, and counter-arguments\nfigure/output/object-card draft: what result changes the action?\nA3 due / A4 launch + clinic/workgroup vote\n\n\n10\nDraft workflow review\ndraft package: can reviewers trace the full evidence loop?\nA4 draft clinic or optional workgroup\n\n\n11\nFinal package polish\nfinal component draft: which A4 component is weakest?\nA4 near-final clinic or optional workgroup\n\n\n12\nObject Fair\nfinal object card/reflection: what reasoning transfers forward?\nA4 due",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -3042,7 +3205,7 @@
     "href": "schedule.html#week-6-evidence-and-pathway-mapping",
     "title": "Course Schedule",
     "section": "Week 6: Evidence and Pathway Mapping",
-    "text": "Week 6: Evidence and Pathway Mapping\n\nLecture / Demo\n\nevidence source triage\npathway choice across spreadsheet, GIS, Python, BIM/BEM, GH, and AI-assisted routes\nRetrospective Redesign vs Live Studio Application\nscope discipline: one decision, not the whole project\n\n\n\nStudio-Lab\nStudents submit A2 and declare their provisional A4 branch and workflow plan.\nSession 2 material: upload a workflow sketch, pathway matrix, or A4 branch declaration draft.\nRound-table check-in: Which route are you choosing, and what is the smallest useful output?\nFeeds: A2 Primary Workflow Selection + A4 Branch Declaration.",
+    "text": "Week 6: Evidence and Pathway Mapping\n\nLecture / Demo\n\nevidence source triage\npathway choice across spreadsheet, GIS, Python, BIM/BEM, GH, and AI-assisted routes\nRetrospective Redesign vs Live Studio Application\nscope discipline: one decision, not the whole project\n\n\n\nStudio-Lab\nStudents submit A2 and declare their provisional A4 branch and workflow plan. Half of this lab was used to set up personal websites with GitHub Pages. Week 7 continues from those sites by adding a project section documenting the A2-to-A3 work.\nSession 2 material: upload a workflow sketch, pathway matrix, or A4 branch declaration draft.\nRound-table check-in: Which route are you choosing, and what is the smallest useful output?\nFeeds: A2 Primary Workflow Selection + A4 Branch Declaration. The personal site provides a place to document subsequent tests and revisions.",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -3050,11 +3213,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#week-7-method-prototype-studio",
-    "href": "schedule.html#week-7-method-prototype-studio",
+    "objectID": "schedule.html#week-7-prototype-clinic-from-a2-to-a-first-test",
+    "href": "schedule.html#week-7-prototype-clinic-from-a2-to-a-first-test",
     "title": "Course Schedule",
-    "section": "Week 7: Method Prototype Studio",
-    "text": "Week 7: Method Prototype Studio\n\nLecture / Demo\n\ninputs, operations, outputs, quality checks\nfailure logs\nhow to debug without hiding uncertainty\n\n\n\nStudio-Lab\nStudents assemble or run the first version of their workflow artifact.\nSession 2 material: upload a workflow artifact, GH canvas, notebook output, spreadsheet, GIS map, simulation screenshot, or AI-assisted component.\nRound-table check-in: What goes in, what varies, what comes out, and what quality check proves it ran?\nFeeds: A3 Prototype Scope + Workflow Description.",
+    "section": "Week 7: Prototype Clinic — From A2 to a First Test",
+    "text": "Week 7: Prototype Clinic — From A2 to a First Test\n\nSession 1: Demo and First Test (50 minutes)\n\nuse the submitted A2 to identify one decision, one workflow route, and one small test\ninspect a worked example: input, what varies, output, and quality check\nattempt the first test and record a result or the exact step that blocked it\nprepare the A2 walkthrough and open the project section of the personal site, or a local draft if the site is not ready\n\n\n\nSession 2: A2 Walkthrough and Prototype Clinic (50 minutes)\nBring the submitted A2 PDF, the first test result or blocker note, and the personal site or local draft. Every student takes a turn in a group of three. Use pairs for any remainder: two six-minute turns, then six minutes to refine both next-test plans. Brief the speaking and feedback protocol during Session 1’s final five minutes.\n\n\n\n\n\n\n\n\nLab time\nActivity\nWhat to do\n\n\n\n\n0-20 min\nA2 walkthroughs in triads\nTake 2 minutes to form groups and choose an order. Then take three 6-minute turns: 3 minutes to explain, followed by 3 minutes of feedback from the two peers together.\n\n\n20-25 min\nInstructor debrief\nDiscuss recurring issues and identify the changes students should test next.\n\n\n25-45 min\nAct on feedback and update the project page\nUse 10 minutes to revise a step or test the reason for retaining it; save the result or blocker. Use 10 minutes to update the page/local draft with the test and a dated feedback/action entry.\n\n\n45-50 min\nPeer page check and Slack exit\nUse 3 minutes for a page check: 90 seconds per page in pairs, or 60 seconds per page for a remaining group of three. Use the final 2 minutes to post the page URL/local screenshot, test/check result, feedback response, and next action to Slack.\n\n\n\nYour 3-minute walkthrough: explain the design decision, the evidence and its limits, why you chose this workflow, and the smallest test you attempted. Show its result or blocker and ask one specific question.\nYour peers’ 3-minute feedback: identify one assumption or scope problem and propose one next test. Record which advice you will use, defer, or reject, and why.\nLeave with: one attempted test with a result or a documented blocker; a dated feedback/action entry; and an updated project page or local draft showing the decision, workflow, test status, check or limit, and next action.\nThis is formative feedback on submitted A2 work and preparation for A3. The walkthrough and website are not new graded submissions. A3 remains due at the end of Week 9 and requires at least three variants/scenarios/alternatives and a re-runnable workflow artifact; the Week 7 page records progress toward that submission.\nFeeds: A3 Prototype Scope + Workflow Description, and an initial entry for the A4 Feedback + Revision Ledger.",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -3062,11 +3225,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#week-8-reproducibility-ai-fact-checking-and-mentor-prep",
-    "href": "schedule.html#week-8-reproducibility-ai-fact-checking-and-mentor-prep",
+    "objectID": "schedule.html#week-8-reproducibility-and-ai-assisted-architectural-decisions",
+    "href": "schedule.html#week-8-reproducibility-and-ai-assisted-architectural-decisions",
     "title": "Course Schedule",
-    "section": "Week 8: Reproducibility, AI Fact-Checking, and Mentor Prep",
-    "text": "Week 8: Reproducibility, AI Fact-Checking, and Mentor Prep\n\nLecture / Demo\n\nworkflow documentation\nAI as probabilistic companion, not final authority\nfact-based vs relationship-based AI outputs\nprompt logs\nmanual checks, calculations, and disclosure\nmentor consultation preparation\n\n\n\nStudio-Lab\nStudents test whether one workflow component, AI-assisted or not, is documented and checked well enough to be inspected by someone else.\nSession 2 material: upload a prompt log, error message, output, README fragment, verification note, or workflow checklist.\nRound-table check-in: What must someone else inspect before they trust this output?\nFeeds: A3 Verification and Failure Log.",
+    "section": "Week 8: Reproducibility and AI-Assisted Architectural Decisions",
+    "text": "Week 8: Reproducibility and AI-Assisted Architectural Decisions\n\nLecture / Demo\n\nworkflow documentation and the difference between saving a checked artifact and reproducing an AI response word for word\ndecoder-only generation, preference training, and reasoning/tool use: what they change in an architectural workflow\nfactual claims, relationship hypotheses/interpretations, and generated workflow components\nindependent checks, prompt/output records, and disclosure\nmentor consultation preparation where relevant to the project\n\n\n\nSession 2: Audit One Architectural Decision (50 minutes)\nUse one bounded decision from the current A2/A3 project. Prefer a recent AI exchange or generated component: bring the exact input, saved output, and the drawing, calculation, script, or claim it affected.\n\n\n\n\n\n\n\n\nLab time\nActivity\nWhat to do\n\n\n\n\n0–5 min\nChoose and prepare\nName one architectural decision. Open its input, output, and relevant workflow artifact.\n\n\n5–23 min\nWalkthroughs in triads\nThree six-minute turns: three minutes to explain, followed by three minutes of feedback from the two peers together.\n\n\n23–38 min\nPerform one independent check\nState the expected result, then inspect a primary source, hand-calculate a case, run a known-case test, or compare with independent evidence. Record the observed result or exact blocker.\n\n\n38–45 min\nRevise and document\nRevise, qualify, or reject the claim/component; complete the verification card and save a dated project-page or local entry. Mark an unfinished check as pending.\n\n\n45–50 min\nShare and exit\nTwo volunteers share for 90 seconds each; everyone then saves one changed judgment, remaining limit and next action. Post the artifact link or screenshot to Slack if available.\n\n\n\nYour walkthrough: “I am deciding . I gave the model . It produced . I accepted or changed . The check I need is ___.” Peers identify one unsupported step and propose a feasible check. If you are a pair, take two six-minute turns and use the remaining six minutes to refine both checks.\nAccess fallback: no new AI account or paid model is required. Use a saved exchange, inspect an existing non-AI workflow step, or use the supplied setback-scoring example. Its 3 m threshold is a classroom assumption, not a verified building regulation. Mark a non-AI route as such in the card.\nLeave with: the verification card, one revised or qualified claim/artifact (or an explicit rejection/pending judgment), and a dated entry showing the check and next action. An update to the existing project website is optional; a local record is sufficient.\nThis lab is formative preparation, not a new graded submission. A3 requirements and its end-of-Week-9 deadline remain unchanged.\nFeeds: A3 Verification and Failure Log, and the A4 Feedback + Revision Ledger.",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -4682,11 +4845,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#todays-agenda",
-    "href": "weeks_v2/week-07.html#todays-agenda",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Today’s Agenda",
-    "text": "Today’s Agenda\n\n\nSession 1\nLecture / studio-lab\n\nwhat a minimal viable workflow is\nwhy documentation comes before the package\nthe 10-minute method challenge\nthe documentation swap\nmentor-question prep for weak spots\n\n\n\nSession 2\nRound table on YOUR prototype\n\nupload one rough workflow artifact\nreconstruct it in four steps\noptional walk-through, then a shared audit\n\n\n\n\nThis week the object becomes your prototype workflow. A3 begins here.",
+    "objectID": "weeks_v2/week-07.html#last-week",
+    "href": "weeks_v2/week-07.html#last-week",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Last week gave you two starting points",
+    "text": "Last week gave you two starting points\nSession 1 · reconnect · 5 minutes\n\n\nYour submitted A2\nThe workflow proposal\nOne design decision, evidence sources, a chosen route, and an intended output.\n\n\nYour personal website\nA place to show the work\nWe used half of last week’s lab to set up a personal site with GitHub Pages.\n\n\n\nToday, connect the two: explain the proposal, test one step, and record what happened.\n\n\nOpening block: 5 minutes for this slide and the next two. Acknowledge the actual Week 6 website activity. Students with unfinished publishing setup can use a local page throughout today’s clinic.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4694,11 +4857,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#this-week-produces-a-prototype-artifact",
-    "href": "weeks_v2/week-07.html#this-week-produces-a-prototype-artifact",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "This week produces a prototype artifact",
-    "text": "This week produces a prototype artifact\n\n\nA2 route\n\n\nprototype\n\n\nverify\n\n\nthreshold\n\n\ndraft\n\n\nhandoff\n\n\n\n\nInput the files, geometry, data, or scenario table your route needs\n\n\nRun one function/component/notebook/definition with a visible changed output\n\n\nExport output figure, CSV/JSON/GeoJSON, GH canvas, screenshot, or notebook cell\n\n\nVerify one known test case and one failure/fragility note",
+    "objectID": "weeks_v2/week-07.html#today-sequence",
+    "href": "weeks_v2/week-07.html#today-sequence",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Use the first attempt in a lab revision cycle",
+    "text": "Use the first attempt in a lab revision cycle\nSession 1: attempt a small test. Session 2: use that attempt in this cycle.\n\n\n01 · Explain\nOpen your A2\nShow the decision and the route you selected.\n\n\n02 · Discuss\nChoose a response\nUse peer feedback to choose what to test next.\n\n\n03 · Test\nRun one step\nSave an output or record exactly where it stops.\n\n\n04 · Document\nUpdate your page\nShow the test, its status, and the next action.\n\n\n\nToday’s record: one attempted test + one dated feedback/action entry + an updated project page or local draft.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4706,11 +4869,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#minimal-viable-workflow",
-    "href": "weeks_v2/week-07.html#minimal-viable-workflow",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Minimal Viable Workflow",
-    "text": "Minimal Viable Workflow\nA prototype is successful — even when rough — if it can do four things:\n\nWhat “working” means Take real inputs, run a clear process, produce one interpretable output, and reveal where the method still breaks.\n\n\nit does not need to be polished\nit does not need to be complete\nit needs to be legible enough that someone else could rerun it",
+    "objectID": "weeks_v2/week-07.html#session-map",
+    "href": "weeks_v2/week-07.html#session-map",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Two sessions, two jobs",
+    "text": "Two sessions, two jobs\n\n\nSession 1 · 50 minutes\nUnderstand and prepare\n\n\n\nMinutes\nWork\n\n\n\n\n0–5\nReconnect A2 and the website\n\n\n5–15\nDefine a small, checkable prototype\n\n\n15–25\nFollow one worked example\n\n\n25–45\nAttempt a test on your own project\n\n\n45–50\nPrepare your A2 walkthrough\n\n\n\n\n\nSession 2 · 50 minutes\nDiscuss and revise\n\n\n\nMinutes\nWork\n\n\n\n\n0–20\nA2 walkthroughs in groups of three\n\n\n20–25\nInstructor debrief\n\n\n25–45\nApply feedback and update your page\n\n\n45–50\nPeer page check and Slack exit\n\n\n\n\n\nA 10-minute break separates the sessions. All lab times restart at 0 after the break.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4718,11 +4881,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#the-loop-every-prototype-runs",
-    "href": "weeks_v2/week-07.html#the-loop-every-prototype-runs",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "The loop every prototype runs",
-    "text": "The loop every prototype runs\nThe same five-node spine, expressed as a runnable loop. Everything you build this week sits inside it.\n\nDecision Evidence Variation Output Threshold Action\n\n\n\n\n\n\nflowchart LR\n    A[Input&lt;br/&gt;real data / model] --&gt; B[Variation&lt;br/&gt;what you change]\n    B --&gt; C[Output&lt;br/&gt;one readable result]\n    C --&gt; D{Threshold&lt;br/&gt;quality check}\n    D --&gt;|passes| E[Action&lt;br/&gt;use / decide]\n    D --&gt;|fails| A\n\n\n\n\n\n\nThe four zones of that loop are what every tool panel below makes concrete.",
+    "objectID": "weeks_v2/week-07.html#understand",
+    "href": "weeks_v2/week-07.html#understand",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Understand the first test",
+    "text": "Understand the first test\n01\nSession 1 · concepts and worked example\nChoose one operation whose input, change, output, and check you can name.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4730,11 +4893,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#the-prototype-frame-four-zones",
-    "href": "weeks_v2/week-07.html#the-prototype-frame-four-zones",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "The prototype frame — four zones",
-    "text": "The prototype frame — four zones\nRead any workflow as four zones. If you can fill all four honestly, you have a prototype, not just a file.\n\n\nInput the real files, data, or model the method starts from\n\n\nWhat varies the one thing you change between runs\n\n\nOutput the single interpretable result it produces\n\n\nQuality check what proves the run was valid, not just that it ran",
+    "objectID": "weeks_v2/week-07.html#prototype-definition",
+    "href": "weeks_v2/week-07.html#prototype-definition",
+    "title": "Week 7: Prototype Clinic",
+    "section": "A prototype makes one workflow step inspectable",
+    "text": "A prototype makes one workflow step inspectable\nA workflow is the sequence that turns inputs into an output. A prototype is a small working version you can run and inspect.\n\n\nInput The file, geometry, data, or values you start with.\n\n\nChange The one variable you alter. State what stays fixed.\n\n\nOutput The value, table, figure, or geometry you save.\n\n\nCheck A specific comparison that can reveal an error.\n\n\n\nMake these four labels explicit in your test, walkthrough, and project page.\n\n\nConcept block: 10 minutes including section divider and the next three slides. “Change” is today’s short label for the assignment’s variable/range or “what varies”. Keep exactly these four labels throughout the live deck.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4742,11 +4905,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#a-gh-component-is-a-packed-function",
-    "href": "weeks_v2/week-07.html#a-gh-component-is-a-packed-function",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "A GH component is a packed function",
-    "text": "A GH component is a packed function\n\nFunction contract Inputs have names, types, units, and allowed ranges. The operation changes something. Outputs have names, types, and units. A quality check proves the component did not just produce a plausible-looking answer.\n\n\n\n\n\n\n\n\n\nRoute\nFunction form\nVisible change\n\n\n\n\nspreadsheet\nformula / decision rule\nselected variant or score changes\n\n\ngeopandas\nbuffer / overlay / score function\nsite rank or map layer changes\n\n\nPython\nanalysis function\nplot or metric changes\n\n\nGH\ncluster / GhPython component\ngeometry variant changes\n\n\nBIM/BEM proxy\nscenario function\ndaylight/heat-risk score changes\n\n\nAI-assisted\ndrafted function, manually checked\noutput changes after repair",
+    "objectID": "weeks_v2/week-07.html#check-versus-decision",
+    "href": "weeks_v2/week-07.html#check-versus-decision",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Separate the check from the design decision",
+    "text": "Separate the check from the design decision\n\n\nCheck the workflow\nDid this step work as intended?\nFor a 24 m² wall, 20% glazing should give 4.8 m² of window area.\nCompare the exported area with that hand calculation.\n\n\nInterpret the design\nDoes this result support an action?\nWhich glazing ratio should we select for the facade?\nThat needs relevant performance evidence and a stated comparison rule.\n\n\n\nA correct area calculation alone does not establish daylight or cooling performance.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4754,11 +4917,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#reproducibility-lessons-from-practice",
-    "href": "weeks_v2/week-07.html#reproducibility-lessons-from-practice",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Reproducibility lessons from practice",
-    "text": "Reproducibility lessons from practice\nThe common failures are not about talent — they are about traceability.\n\nthe analyst leaves and no one can rerun the method\nthe spreadsheet works on one machine only\nthe GIS layers were clipped somehow but nobody recorded how\nthe notebook runs, but only if you know which file was silently edited\n\n\nIf the workflow cannot be retraced, the result is hard to trust — no matter how good the output looks.",
+    "objectID": "weeks_v2/week-07.html#test-status",
+    "href": "weeks_v2/week-07.html#test-status",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Name the state of your test",
+    "text": "Name the state of your test\n\n\n\n\n\n\n\n\nLabel on your page\nWhat it means\nWhat to record\n\n\n\n\nPlanned\nYou have not run this test.\nIntended input, change, output, and check.\n\n\nAttempted · blocked\nYou tried; a specific step stopped the run.\nFailed step, error or symptom, and next repair.\n\n\nOutput saved\nThe run produced an output you can show.\nOutput file and check result: passed, failed, or pending.\n\n\n\n\nWeek 7 completion: attempt a test. A documented blocker is a valid clinic outcome. A plan alone still needs an attempt.\n\n\nThe green status means output exists, not that the entire method is verified. A failed or pending check remains visible. Do not describe a planned simulation as a completed result.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4766,11 +4929,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#where-the-gaps-usually-hide",
-    "href": "weeks_v2/week-07.html#where-the-gaps-usually-hide",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Where the gaps usually hide",
-    "text": "Where the gaps usually hide\nTypical first-draft descriptions sound like this:\n\n“I used some plugin, but I forgot which one.”\n“I changed the settings until it looked right.”\n“The chart came from another file, I think.”\n“The model worked last week.”\n\n\nEach of these is a missing line in one of the four zones. Naming the gap is the first repair.",
+    "objectID": "weeks_v2/week-07.html#route-choices",
+    "href": "weeks_v2/week-07.html#route-choices",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Your software route determines the first operation",
+    "text": "Your software route determines the first operation\n\n\n\n\n\n\n\n\nRoute\nOne small operation\nOne check to record\n\n\n\n\nSpreadsheet\nChange one parameter; recalculate a row.\nRecalculate that row by hand.\n\n\nGIS\nRun one buffer or overlay.\nInspect CRS, units, and one known location.\n\n\nPython / notebook\nRun one function on a small input.\nCompare with a known expected value.\n\n\nGrasshopper\nChange one slider; export geometry or area.\nCheck units and one dimension or area.\n\n\nBIM/BEM / simulation\nRun one simplified case.\nInspect input settings and run warnings.\n\n\nAI-assisted component\nRun and inspect the generated step.\nCheck its result independently of the AI answer.\n\n\n\nUse the route selected in your A2. Starter kits are available if you need a runnable starting point.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4778,11 +4941,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#there-is-no-single-correct-technical-route",
-    "href": "weeks_v2/week-07.html#there-is-no-single-correct-technical-route",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "There is no single correct technical route",
-    "text": "There is no single correct technical route\nSix routes, same four zones. None is more “advanced” than the others — each is judged only by whether the loop is legible.\n\n\nSpreadsheet In comparison table · Varies parameter ranges · Out ranked options · Check formulas auditable, units stated\n\n\nGIS In layers + CRS · Varies operation sequence · Out spatial comparison · Check CRS stated, counts spot-checked\n\n\nPython / notebook In data files + paths · Varies analysis parameters · Out figure / table · Check runs top-to-bottom, paths stated\n\n\n\n\nGH / parametric In geometry + sliders · Varies the design space · Out comparable variants · Check variants share assumptions\n\n\nBIM/BEM / simulation In model + settings · Varies scenario assumptions · Out performance result · Check dominant assumptions documented\n\n\nAI-assisted In prompt + source data · Varies what AI generates / edits · Out drafted component · Check a manual review confirms it\n\n\n\nPick the route that makes your decision more defensible — not the one that looks most impressive.\n\n\nRun a reference kit Several routes have a clone-and-run starter: spreadsheet · GIS · simulation proxy · Python notebook · AI-assisted. Start from one and swap in your own decision.",
+    "objectID": "weeks_v2/week-07.html#worked-example",
+    "href": "weeks_v2/week-07.html#worked-example",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Worked example: a facade proposal becomes a test",
+    "text": "Worked example: a facade proposal becomes a test\nTeaching example · calculated geometry · no performance results\n\n\nA2 proposal\nCompare glazing ratios\nExplore 20%, 40%, and 60% glazing for the same facade.\n\n\nClinic feedback\nCheck the geometry first\nCan the workflow generate and export the area you intended?\n\n\nWeek 7 test\nCalculate two cases\nFix the wall at 8 m × 3 m. Change only the glazing ratio.\n\n\n\nThe first test checks the geometry step before adding performance analysis.\n\n\nWorked-example block: 10 minutes for this and the next three slides. This is an illustrative classroom example, not student work or measured facade performance. A3 still needs at least three variants by Week 9.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4790,11 +4953,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#the-10-minute-method-challenge",
-    "href": "weeks_v2/week-07.html#the-10-minute-method-challenge",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "The 10-Minute Method Challenge",
-    "text": "The 10-Minute Method Challenge\n\nDo this now Choose one workflow from your project and document it so clearly that another team could rerun it without you in the room.\n\nPick one route to document:\n\nspreadsheet comparison\nGH / parametric option generation\nGIS operation sequence\nnotebook analysis\nsimulation setup\nAI-assisted script or workflow component\nvisualization workflow",
+    "objectID": "weeks_v2/week-07.html#area-example",
+    "href": "weeks_v2/week-07.html#area-example",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Change one input; predict the output",
+    "text": "Change one input; predict the output\n\n\n\nInput Wall width 8 m; height 3 m.\n\n\nChange Glazing ratio: 0.20 → 0.40.\n\n\nOutput Window area in m² for each case.\n\n\nCheck Compare exported area with 24 × ratio.\n\n\n\nDemonstrate with a spreadsheet formula or a GH area output. The drawing shows geometric proportions only. If demonstrating GH, confirm the model units before comparing areas.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4802,11 +4965,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#documentation-template",
-    "href": "weeks_v2/week-07.html#documentation-template",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Documentation Template",
-    "text": "Documentation Template\n\n\nWorkflow\n\nwhat the method is for\nwhat files or inputs are required\nwhat tools are required\n\n\n\nStep-by-step\n\ndo this\ncheck this\nif this fails, try this\nexport this",
+    "objectID": "weeks_v2/week-07.html#example-result",
+    "href": "weeks_v2/week-07.html#example-result",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Save both the result and the check",
+    "text": "Save both the result and the check\nIllustrative record · arithmetic shown for teaching\n\n\n\nGlazing ratio\nCalculated window area\nIndependent check\nStatus\n\n\n\n\n20%\n4.8 m²\n8 × 3 × 0.20 = 4.8 m²\nOutput saved; check passed\n\n\n40%\n9.6 m²\n8 × 3 × 0.40 = 9.6 m²\nOutput saved; check passed\n\n\n60%\n—\nCheck when this case is run.\nPlanned\n\n\n\n\nWhat this supports: the two area calculations match the intended ratios.\nWhat remains open: daylight, cooling, and the choice of a facade option.\n\nNext action: add the third case, then connect the geometry to a justified performance method for A3.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4814,11 +4977,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#documentation-template-contd",
-    "href": "weeks_v2/week-07.html#documentation-template-contd",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Documentation Template (cont’d)",
-    "text": "Documentation Template (cont’d)\n\n\nTroubleshooting\n\ncommon error\nwarning sign\nlikely fix\n\n\n\nQuality check\n\nwhat success looks like\nwhat a red flag looks like\n\n\n\n\nNotice the template is just the four zones, written out for a stranger.",
+    "objectID": "weeks_v2/week-07.html#example-page",
+    "href": "weeks_v2/week-07.html#example-page",
+    "title": "Week 7: Prototype Clinic",
+    "section": "The page shows the same test in context",
+    "text": "The page shows the same test in context\n\nARCH7476 project section · illustrative entry\n\n\nDecision\n\n\nWhich glazing ratio should I carry forward for this facade?\n\n\n\n\nWorkflow\n\n\nInput: 8 × 3 m wall. Change: glazing ratio. Output: window area. Check: 24 × ratio.\n\n\n\n\nTest record\n\n\n20% → 4.8 m²; 40% → 9.6 m². Area checks passed. Performance analysis is still planned.\n\n\n\n\nFeedback → action\n\n\nWeek 7 · [enter date]. “Check geometry first.” I added an area check. Next: test 60%.\n\n\n\nLink the result to its source file and run instructions. Keep the test date and limits visible.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4826,11 +4989,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#documentation-swap",
-    "href": "weeks_v2/week-07.html#documentation-swap",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Documentation Swap",
-    "text": "Documentation Swap\n\nDo this now\n\nswap instructions with someone using a different route\nno verbal explanation allowed\ntry to follow their method\nrecord what is missing, unclear, or fragile\n\n\nThis is the fastest way to learn whether your workflow is genuinely reproducible or only familiar to you.",
+    "objectID": "weeks_v2/week-07.html#first-attempt",
+    "href": "weeks_v2/week-07.html#first-attempt",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Attempt one step on your own project",
+    "text": "Attempt one step on your own project\nSession 1 · minutes 25–45 · individual work · 20 minutes\nOpen your A2 PDF and the file or tool for your selected workflow.\n\n\nFirst 5 minutes: name Input, Change, Output, and Check for one small test.\nNext 10 minutes: attempt the operation. Save the output, or capture the failed step and error/symptom.\nLast 5 minutes: record the test status, check result, and one question for your peers.\n\n\n\nDone when: you can show a test record with an output or a specific blocker. Keep it open beside your A2.\n\n\nHold this slide for the work period. The next slide supplies the fallback. Help students choose a smaller operation rather than attempting an entire model or application. Preparing a plan uses the first five minutes; the remaining time must include an attempt.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4838,11 +5001,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#documentation-reality-check",
-    "href": "weeks_v2/week-07.html#documentation-reality-check",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Documentation Reality Check",
-    "text": "Documentation Reality Check\nIf another student cannot follow your documentation, the method is not yet ready for A3.\n\nThat does not mean the project is weak. It means the workflow needs one more layer of translation before someone else can inspect it.",
+    "objectID": "weeks_v2/week-07.html#blocked-route",
+    "href": "weeks_v2/week-07.html#blocked-route",
+    "title": "Week 7: Prototype Clinic",
+    "section": "If the tool stops you, record the exact stopping point",
+    "text": "If the tool stops you, record the exact stopping point\n\n\n\n\n\n\n\n\nSituation\nDo this now\nKeep this evidence\n\n\n\n\nThe file opens but the run fails.\nRepeat the smallest failing step once; record what happens.\nInput, command/component, and error or symptom.\n\n\nA required tool or input is missing.\nName it; attempt one hand-checkable row or calculation using available input.\nSmall calculation, its assumptions, and the missing dependency.\n\n\nGitHub Pages is not live.\nEdit the same project content in local index.html or a document.\nLocal page/document and a screenshot for Slack.\n\n\n\n\nWrite a repair action: “Next I will ; I will know it worked when .”\n\nA hand calculation checks a limited step. Label which part of the intended workflow remains untested.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4850,83 +5013,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#pathway-breakout-checks",
-    "href": "weeks_v2/week-07.html#pathway-breakout-checks",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Pathway breakout checks",
-    "text": "Pathway breakout checks\n\n\nSpreadsheet\n\nwhat table structure does the method depend on?\nwhich formula or chart is most fragile?\n\n\n\nGIS\n\nwhat layer preparation is essential?\nwhich operation sequence must be documented exactly?\n\n\n\n\n\nPython\n\nwhat notebook cells define the real logic?\nwhat package, path, or file assumptions must be stated?\n\n\n\nGH / parametric\n\nwhat sliders or constraints define the design space?\nwhat output proves the variants are comparable?\n\n\n\n\n\nBIM/BEM / simulation\n\nwhat model assumptions dominate the result?\nwhat setup choices must be documented first?\n\n\n\nAI-assisted\n\nwhat did AI generate or edit?\nwhat manual check confirms the output is usable?",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W7: Prototype Clinic"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-07.html#every-prototype-needs-an-ingestion-path",
-    "href": "weeks_v2/week-07.html#every-prototype-needs-an-ingestion-path",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Every prototype needs an ingestion path",
-    "text": "Every prototype needs an ingestion path\n\nBridge card for A3 What file or value leaves your workflow, what GH component reads it, what geometry/parameter it affects, and what visual change proves the bridge works?\n\n\n\nprototype output\n\n\nCSV / JSON / screenshot\n\n\nGH / package ingest\n\n\nvisible change\n\n\nquality check",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W7: Prototype Clinic"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-07.html#a-working-prototype-can-still-be-wrong",
-    "href": "weeks_v2/week-07.html#a-working-prototype-can-still-be-wrong",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "A working prototype can still be wrong",
-    "text": "A working prototype can still be wrong\n\nQuestion for your A3 What is the smallest input change that would make your prototype output visibly different?\n\nIf no visible change appears, either the workflow is not sensitive enough, the output is not meaningful, or the connection is broken.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W7: Prototype Clinic"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-07.html#capture-the-decision-logic-too",
-    "href": "weeks_v2/week-07.html#capture-the-decision-logic-too",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Capture the decision logic too",
-    "text": "Capture the decision logic too\nDo not document only button clicks. Also capture the reasoning:\n\nwhy this step exists\nwhat assumption it encodes\nwhat judgment call it contains\nhow the output connects back to the question\n\n\nA workflow becomes evidence when the reasoning travels with the steps, not just the clicks.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W7: Prototype Clinic"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-07.html#use-the-prototype-to-ask-sharper-questions",
-    "href": "weeks_v2/week-07.html#use-the-prototype-to-ask-sharper-questions",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Use the prototype to ask sharper questions",
-    "text": "Use the prototype to ask sharper questions\nThe point of a rough prototype is that it surfaces real questions for your mentor.\n\nwhere is the workflow weakest?\nwhat assumption am I least confident about?\nwhat output would most strengthen the project?\nwhat would a practitioner immediately ask about?",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W7: Prototype Clinic"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-07.html#mentor-question-development",
-    "href": "weeks_v2/week-07.html#mentor-question-development",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Mentor question development",
-    "text": "Mentor question development\n\nWrite three questions\n\none technical question\none methodological question\none strategic question about scope or decision relevance\n\n\n\nIf the question is generic, it is not ready. A good question points at a specific zone of your loop.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W7: Prototype Clinic"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-07.html#prototype-quality-check",
-    "href": "weeks_v2/week-07.html#prototype-quality-check",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Prototype Quality Check",
-    "text": "Prototype Quality Check\nThe test for “ready for the round table”:\n\n\nInput can another person tell what goes in?\n\n\nWhat varies can they see which judgment calls mattered?\n\n\nOutput can they tell what comes out?\n\n\nQuality check can they tell whether the output is already useful?",
+    "objectID": "weeks_v2/week-07.html#prepare-walkthrough",
+    "href": "weeks_v2/week-07.html#prepare-walkthrough",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Prepare a three-minute explanation of A2",
+    "text": "Prepare a three-minute explanation of A2\nSession 1 · minutes 45–50 · individual preparation · 5 minutes\nMark the relevant page or diagram in your submitted PDF. Keep your test record beside it.\n\n\n\n\n\n\n\nSpeaking time\nShow and explain\n\n\n\n\n0:00–1:00\nThe design decision, chosen evidence, and one evidence limit.\n\n\n1:00–2:00\nWhy this workflow fits. Identify Input, Change, Output, and Check.\n\n\n2:00–3:00\nToday’s output or blocker. End with one specific question.\n\n\n\n\nReady when: the PDF and test record are open, and your question names a decision, assumption, or failed step.\n\nFirst 2 minutes: review the speaking and feedback protocol together. Next 3 minutes: prepare your own explanation. Listeners will clarify a problem, propose a test, then let you record a response.\nUse your existing A2 pages. No new presentation deck is needed.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4936,9 +5027,9 @@
   {
     "objectID": "weeks_v2/week-07.html#break",
     "href": "weeks_v2/week-07.html#break",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "BREAK",
-    "text": "BREAK\nTake 10 minutes.\nWhen you return, upload one rough workflow artifact to Slack for the round table.",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Break",
+    "text": "Break\n10 minutes\nAfter the break: Session 2 starts at lab minute 0.\nKeep these open: A2 PDF · test record · personal site or local draft.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4946,11 +5037,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#round-table-on-your-prototype",
-    "href": "weeks_v2/week-07.html#round-table-on-your-prototype",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Round table on YOUR prototype",
-    "text": "Round table on YOUR prototype\n\nDecision Evidence Variation Output Threshold Action\n\nUpload one rough material before Session 2 — a workflow artifact, GH canvas, notebook output, spreadsheet, GIS map, simulation screenshot, or AI-assisted component. feeds A3",
+    "objectID": "weeks_v2/week-07.html#clinic",
+    "href": "weeks_v2/week-07.html#clinic",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Explain A2 and receive feedback",
+    "text": "Explain A2 and receive feedback\n02\nSession 2 · first 20 minutes\nEvery student gets a turn to explain the submitted proposal and discuss the next test.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4958,11 +5049,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#mode-1-the-walk-through-optional-celebrated",
-    "href": "weeks_v2/week-07.html#mode-1-the-walk-through-optional-celebrated",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Mode 1 — the walk-through (optional, celebrated)",
-    "text": "Mode 1 — the walk-through (optional, celebrated)\n\nTeach us your strongest route A volunteer runs the class through one prototype they know well — uninterrupted, 3–4 minutes. Speak for roughly 60–90 seconds on the loop itself.\n\nNarrate the four zones as you go:\n\nwhat goes in (input)\nwhat varies (the one thing you change)\nwhat comes out (output)\nwhat quality check proves it ran (threshold)\n\nNo polish required — show the real thing working. Questions wait for Mode 2.",
+    "objectID": "weeks_v2/week-07.html#clinic-timing",
+    "href": "weeks_v2/week-07.html#clinic-timing",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Three people; three six-minute turns",
+    "text": "Three people; three six-minute turns\nLab minutes 0–20 · groups of three\n\n\n\n\n\n\n\n\nLab time\nWho explains?\nWhat happens?\n\n\n\n\n0–2 min\nEveryone\nForm groups and choose order: A, B, C.\n\n\n2–8 min\nStudent A\n3 minutes explaining + 3 minutes of peer feedback.\n\n\n8–14 min\nStudent B\n3 minutes explaining + 3 minutes of peer feedback.\n\n\n14–20 min\nStudent C\n3 minutes explaining + 3 minutes of peer feedback.\n\n\n\nThe two listeners share the three-minute feedback period. One keeps time; the speaker records the advice.\n\nIf you are a pair: use two six-minute turns, then use the remaining six minutes to sharpen both next-test plans. Do not form a group of four.\n\n\nInstructor: form triads, with pairs for any remainder (e.g. 3+2+2 rather than 3+3+1). Circulate during the clinic and revision sprint. Peer feedback is built into every turn; do not promise a separate instructor consultation to each student within 20 minutes.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4970,11 +5061,11 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#reconstruct-your-prototype-in-four-steps",
-    "href": "weeks_v2/week-07.html#reconstruct-your-prototype-in-four-steps",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "Reconstruct your prototype in four steps",
-    "text": "Reconstruct your prototype in four steps\nObject this week: your prototype workflow as someone else will meet it.\n\n\nDid What does the workflow actually do, step by step?\n\n\nAssumed What hidden inputs or settings does each step assume?\n\n\nRisk Where did I not check — where could it break or fail to rerun?\n\n\nVerify What quality check would prove the run is valid?\n\n\n\nPost your filled four-step to Slack under your artifact. Posting + an honest reconstruction is the graded unit — not how you spoke. Walking through is welcomed and earns credit; it is never required and never scored as performance. Volunteers go first; a random draw may fill the remaining examples.",
+    "objectID": "weeks_v2/week-07.html#walkthrough-script",
+    "href": "weeks_v2/week-07.html#walkthrough-script",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Speak for three minutes; finish with one question",
+    "text": "Speak for three minutes; finish with one question\nSpeaker · show the A2 PDF and today’s test record\n\n\nDecision + evidence · 1 minute: “I am deciding . My evidence supports , but does not show ___.”\nWorkflow choice · 1 minute: “I chose ___ because . Input: . Change: . Output: . Check: ___.”\nAttempt + question · 1 minute: “I tried . The result/blocker was . I need feedback on ___.”\n\n\n\nPoint to the work while you explain. Make the uncertain step visible.\n\n\nBrief this protocol during Session 1’s final five minutes. During the activity, leave the timing or feedback slide visible. This is a formative discussion of submitted A2 work, not a scored presentation.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -4982,11 +5073,239 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-07.html#by-the-end-of-this-week",
-    "href": "weeks_v2/week-07.html#by-the-end-of-this-week",
-    "title": "Week 7: Method Prototype Studio",
-    "section": "By the End of This Week",
-    "text": "By the End of This Week\nYou should leave with:\n\nWeek 7 milestone\n\na first working artifact\na function/component contract with inputs, output, and quality check\ndocumentation that survives a swap test\na list of fragile steps and assumptions\nthree sharp mentor questions\na clearer story for A3\n\n\nA3 is started, not finished — Weeks 8–9 verify the method and build toward the Prototype + Verification package.",
+    "objectID": "weeks_v2/week-07.html#feedback-script",
+    "href": "weeks_v2/week-07.html#feedback-script",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Give feedback that leads to a test",
+    "text": "Give feedback that leads to a test\nListeners · 3 minutes total, shared by both peers\n\n\n\n\n\n\n\nTime within feedback\nSay or do this\n\n\n\n\nFirst minute\nClarify: name one assumption, missing input, or scope problem. Ask the speaker to confirm it.\n\n\nSecond minute\nPropose: suggest one change and the output or check that would make it useful.\n\n\nThird minute\nRecord: the speaker chooses advice to use, defer, or reject, and states why.\n\n\n\n\nExample feedback: “Before the energy run, compare exported window area with your intended ratio.”\nExample response: “I will add that area check. I will defer annual simulation until the geometry export is consistent.”\n\n\nCapture: date · feedback source · what it challenged · your response and reason · next test.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#debrief",
+    "href": "weeks_v2/week-07.html#debrief",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Turn the debrief into your next action",
+    "text": "Turn the debrief into your next action\nLab minutes 20–25 · whole class · 5 minutes\nThe instructor will address recurring issues from the walkthroughs.\nWrite one sentence before returning to your file:\n\n“Because the feedback challenged , I will change , run , and check .”\n\nIf you retain your approach, state why and choose a test of that choice or a stronger check.\n\nDone when: the change is small enough to attempt in the next 10 minutes.\n\n\nUse five minutes for two or three recurring issues. Choose concrete scope, input, and verification problems. If an individual issue needs more time, name its next diagnostic action rather than resolving it in the whole-class debrief.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#revise",
+    "href": "weeks_v2/week-07.html#revise",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Apply feedback and document the attempt",
+    "text": "Apply feedback and document the attempt\n03\nSession 2 · lab minutes 25–45\nRespond to one feedback point with a test. Then show the result and next action on your project page.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#revision-sprint",
+    "href": "weeks_v2/week-07.html#revision-sprint",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Ten minutes to test; ten minutes to document",
+    "text": "Ten minutes to test; ten minutes to document\nLab minutes 25–45 · individual work · 20 minutes\n\n\n25–35 · test\nAct on one feedback point\n\nRevise a step, or test your reason for retaining it.\nAttempt the operation again.\nSave the output or document the blocker.\n\nRecord the check as passed, failed, or pending.\n\n\n35–45 · document\nUpdate your existing site\n\nOpen its ARCH7476 project section.\nAdd the test and feedback record.\nSave and publish the update; open the result.\n\nUse a local draft if publishing is still blocked.\n\n\n\nDone when: another person can see what you attempted, what happened, and what you will do next.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#page-checklist",
+    "href": "weeks_v2/week-07.html#page-checklist",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Put five things in the ARCH7476 project section",
+    "text": "Put five things in the ARCH7476 project section\nUse the site you started last week. Add a section titled ARCH7476; use an existing course project page if you already have one.\n\n\n\n\n\n\n\nSection\nAdd this content today\n\n\n\n\n1. Decision + A2\nOne-sentence decision and the relevant A2 workflow diagram.\n\n\n2. Workflow\nInput · Change · Output · Check, plus the tool and source-file location.\n\n\n3. Test record\nDate, test status, and one output image/table or exact blocker.\n\n\n4. Check + limit\nWhat you checked, its outcome, and what remains untested.\n\n\n5. Feedback + next action\nSource, challenge, response/reason, and the next test.\n\n\n\n\nKeep the source accessible: link the artifact and run instructions, or state their course submission location if they cannot be published.\n\nWebsite setup guide · Existing portfolio template",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#publish-update",
+    "href": "weeks_v2/week-07.html#publish-update",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Save, publish, and open the page",
+    "text": "Save, publish, and open the page\nUse your existing GitHub Pages repository\n\n\nOpen the HTML file you edited last week. Add or update the ARCH7476 section.\nUpload the output image or file you refer to; make its link match the filename and folder.\nCommit your changes. Open your published site URL and refresh once deployment completes.\nClick the image/file link yourself. If deployment is still pending, use the local draft for today’s peer check.\n\n\n\nPage check: the text is visible, the image loads, and the linked file or stated file location is usable.\n\nThe page explains the workflow. The workbook, script, notebook, or project file supplies the runnable artifact for A3.\n\nThis is an update to last week’s site, not another website setup session. Students editing locally can push through their existing GitHub Desktop workflow. Do not spend the revision sprint redesigning the homepage. Only publish material that can be shared; use a course file location for restricted inputs.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#peer-check",
+    "href": "weeks_v2/week-07.html#peer-check",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Ask a peer to inspect the page without narration",
+    "text": "Ask a peer to inspect the page without narration\nLab minutes 45–48 · pairs · 3 minutes\nExchange the URL or open the local draft for your partner. Spend 90 seconds on each person’s page.\nFor an odd remaining group of three, rotate through the three pages together: 60 seconds per page.\nCan your partner find:\n\nthe design decision and the four workflow labels;\nan actual output or a specific blocker;\nthe check result and a limit;\nthe feedback response and the next test?\n\n\nPartner’s response: “I found ; I could not find .” Mark any missing item for repair.\n\nThis checks whether the page communicates the work. A full rerun from the files is part of the Week 8 verification work.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#slack-exit",
+    "href": "weeks_v2/week-07.html#slack-exit",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Post the record before you leave",
+    "text": "Post the record before you leave\nLab minutes 48–50 · individual · 2 minutes\nPost one message in the course Slack channel used for Session 2:\n\nProject page: URL, or attach a screenshot of the local draft.\nTest: I changed ; the output/blocker was .\nCheck: ___; result: passed / failed / pending.\nFeedback → response: ___ challenged ; I used/deferred/rejected it because .\nNext test: ; I will check .\n\n\nBefore leaving: save the page/draft, the source artifact or blocker note, and the dated feedback entry.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#assessment-boundary",
+    "href": "weeks_v2/week-07.html#assessment-boundary",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Today starts A3; Week 9 completes it",
+    "text": "Today starts A3; Week 9 completes it\n\n\n\n\n\n\n\nWhen\nWhat you produce\n\n\n\n\nWeek 7 · today\nOne attempted test, an output or blocker, and a feedback/action entry on your page or local draft.\n\n\nWeek 8\nRerun and verification work: instructions, dependencies, manual checks, and failure notes.\n\n\nEnd of Week 9 · A3 due\nPDF + a runnable artifact, at least three variants/scenarios/alternatives, an interpretable output, and verification/failure log.\n\n\nA4\nA complete workflow package, including the feedback/revision ledger that today’s entry starts.\n\n\n\n\nThe A2 walkthrough and website update are formative class work, not new graded submissions. A1–A4 marks follow the published assignment briefs.\n\nRead the A3 brief · A4 feedback/revision ledger",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#end-of-class",
+    "href": "weeks_v2/week-07.html#end-of-class",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Leave with a test someone else can inspect",
+    "text": "Leave with a test someone else can inspect\nExplain → test → record\nOne attempted test. One reasoned response to feedback. One visible next action.\nEnd of today’s teaching sequence. The following slides are reference material for your workflow and Week 8.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference",
+    "href": "weeks_v2/week-07.html#reference",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Reference: documentation and rerunning",
+    "text": "Reference: documentation and rerunning\nReference\nUse these prompts when developing the first test into the A3 artifact.\nThe detailed documentation swap and mentor-question exercises continue in Week 8.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-function",
+    "href": "weeks_v2/week-07.html#reference-function",
+    "title": "Week 7: Prototype Clinic",
+    "section": "A function needs a clear contract",
+    "text": "A function needs a clear contract\nA GH component, spreadsheet formula, or Python function has the same basic contract:\n\nInputs: names, types, units, and allowed ranges.\nOperation: the transformation it performs.\nOutputs: names, types, and units.\nCheck: a known case or independent calculation.\n\n\n\n\n\n\n\n\n\nRoute\nFunction form\nVisible change\n\n\n\n\nSpreadsheet\nFormula or decision rule\nSelected variant or score changes.\n\n\nGIS / Python\nBuffer, overlay, or analysis function\nMap, rank, plot, or metric changes.\n\n\nGH / simulation\nCluster, component, or scenario setup\nGeometry or performance output changes.\n\n\nAI-assisted\nGenerated component with review\nA tested repair changes the output.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-traceability",
+    "href": "weeks_v2/week-07.html#reference-traceability",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Document the details that disappear first",
+    "text": "Document the details that disappear first\n\n\n\n\n\n\n\nA common description\nThe missing record\n\n\n\n\n“I used a plugin.”\nPlugin name, version, and required settings.\n\n\n“I changed it until it looked right.”\nParameter values and why they were chosen.\n\n\n“The chart came from another file.”\nSource path and the step that produced it.\n\n\n“The model worked last week.”\nSaved inputs, environment, and repeatable run steps.\n\n\n\n\nTraceability lets another person inspect how an output was produced.\n\n\nRetains the original reproducibility examples: the departing analyst, a spreadsheet that works on one machine, undocumented GIS clipping, and a notebook that depends on a silently edited file. Use these as examples of missing records, not judgments about student competence.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-method-challenge",
+    "href": "weeks_v2/week-07.html#reference-method-challenge",
+    "title": "Week 7: Prototype Clinic",
+    "section": "The ten-minute method challenge",
+    "text": "The ten-minute method challenge\nReference exercise · Week 8 preparation · 10 minutes\nChoose one operation from your spreadsheet, GIS, notebook, GH, simulation, AI-assisted, or visualization workflow.\n\n\nName its purpose, inputs, and required tools.\nWrite the run steps in order.\nIdentify one likely failure and its repair.\nState the expected output and one independent check.\n\n\n\nOutput: a short README another student can follow using the supplied files.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-template",
+    "href": "weeks_v2/week-07.html#reference-template",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Write run instructions and troubleshooting together",
+    "text": "Write run instructions and troubleshooting together\n\n\nRun instructions\n\nWhat decision does this step support?\nWhich input files are required?\nWhich tools and versions are required?\n\n\nOpen or load this.\nRun this operation.\nCheck this value or warning.\nExport this file.\n\n\n\nTroubleshooting + check\n\nCommon error or warning sign.\nLikely cause and first repair.\nExpected output, including units.\nKnown test case and expected value.\nWhat a failure would look like.\nWhat remains unverified.\n\n\n\nExplain why a step exists and which assumption it encodes. Preserve the reasoning with the instructions.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-swap",
+    "href": "weeks_v2/week-07.html#reference-swap",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Swap the instructions and attempt a rerun",
+    "text": "Swap the instructions and attempt a rerun\nReference exercise · Week 8 verification\n\n\nGive a peer the inputs, artifact, and written instructions.\nLet them try the steps without verbal coaching.\nRecord the first missing, unclear, or fragile step.\nRevise the instructions and try that step again.\n\n\n\nIf the peer lacks the software: audit the inputs and steps now; record the rerun as pending and arrange a check with access to the required tool.\n\nAn explanation that reads clearly is useful. Reproducing the output is the stronger test required for A3.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-route-checks",
+    "href": "weeks_v2/week-07.html#reference-route-checks",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Check the fragile part of your route",
+    "text": "Check the fragile part of your route\n\n\n\n\n\n\n\nRoute\nQuestions to answer in the run instructions\n\n\n\n\nSpreadsheet\nWhat table structure is required? Which formula or chart is most fragile?\n\n\nGIS\nWhich layer preparation is essential? What CRS and operation order are required?\n\n\nPython\nWhich cells define the logic? What packages, paths, and file assumptions are required?\n\n\nGH / parametric\nWhich sliders and constraints define the variants? Do they share the same assumptions?\n\n\nBIM/BEM\nWhich model assumptions dominate the result? Which setup choices must be recorded?\n\n\nAI-assisted\nWhat did AI generate or edit? Which independent check was performed?",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-handoff",
+    "href": "weeks_v2/week-07.html#reference-handoff",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Make each file handoff explicit",
+    "text": "Make each file handoff explicit\nFor a workflow that connects two tools, document the transfer:\n\n\nExport\nName the file, columns or geometry, and units.\n\n\nImport\nName the receiving tool/component and mapping.\n\n\nInspect\nShow the resulting value or geometry and check it.\n\n\nGH example: export a CSV of variant IDs and scores; read the scores into GH; map each score to its intended geometry and check one known variant.\nA screenshot documents appearance. It supplies an input only if the next operation actually reads the image.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-sensitivity",
+    "href": "weeks_v2/week-07.html#reference-sensitivity",
+    "title": "Week 7: Prototype Clinic",
+    "section": "A running workflow can still contain an error",
+    "text": "A running workflow can still contain an error\nChange one input within a stated range and compare the outputs.\n\nIf the output changes, inspect whether the direction and magnitude make sense.\nIf the output does not change, check whether that is expected for this input and range.\nInspect disconnected inputs, thresholds, rounding, and insensitive metrics before interpreting the result.\n\n\nRecord what the test establishes and what it leaves uncertain.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W7: Prototype Clinic"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-07.html#reference-mentor",
+    "href": "weeks_v2/week-07.html#reference-mentor",
+    "title": "Week 7: Prototype Clinic",
+    "section": "Use the prototype to prepare mentor questions",
+    "text": "Use the prototype to prepare mentor questions\nReference exercise · Week 8 mentor preparation\nWrite three questions, each attached to a specific file, output, or failed step:\n\n\n\n\n\n\n\nQuestion type\nExample structure\n\n\n\n\nTechnical\nThis operation fails at ___. Which setting or dependency should I inspect?\n\n\nMethodological\nThis output depends on assumption ___. How could I test its effect?\n\n\nStrategic\nMy decision needs ___. Which part of this workflow should I narrow or strengthen?\n\n\n\nBring the artifact that makes the question visible, plus your attempted check and its result.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
