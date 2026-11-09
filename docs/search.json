@@ -4998,7 +4998,7 @@
     "href": "weeks_v2/week-09.html#before-class-the-flip",
     "title": "Week 9: Thresholds, Drawn",
     "section": "Before class (the flip)",
-    "text": "Before class (the flip)\n\n\nBring · 20 minutes at home\n\nOne A3 output: a table, chart, map, or model result.\nTwo diagram briefs from your own project, written for someone else to draw. Use the brief format on the next slide.\nSpend five minutes with the Threshold Explorer. Move one slider until the recommendation changes.\n\n\n\nIn class, we do not lecture at you\n\nSession 1: we look at drawn threshold diagrams and argue about where the lines are.\nSession 2: you draw each other’s briefs three ways (hand, AI, data tool) and compare.\nEveryone presents every round, including the instructor.",
+    "text": "Before class (the flip)\n\n\nBring · 20 minutes at home\n\nOne A3 output: a table, chart, map, or model result.\nTwo diagram briefs from your own project, written for someone else to draw. Use the brief format on the next slide.\nSpend five minutes with the Threshold Explorer. Move one slider until the recommendation changes.\n\n\n\nIn class, we do not lecture at you\n\nSession 1: we look at drawn threshold diagrams and argue about where the lines are.\nSession 2: you draw each other’s briefs three ways (hand, AI, data tool) and compare.\nThree of us: two students and the instructor. The instructor writes two briefs too and is drawn, judged, and challenged like everyone else.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -5154,7 +5154,7 @@
     "href": "weeks_v2/week-09.html#your-brief-drawn-by-someone-else-three-ways",
     "title": "Week 9: Thresholds, Drawn",
     "section": "Your brief, drawn by someone else, three ways",
-    "text": "Your brief, drawn by someone else, three ways\nSession 2 · Swap studio\n\nDecision Evidence Variation Output Threshold Action\n\nSwap: A → B → C → A. The instructor joins the rotation if there are four of us. You draw a classmate’s Brief 1. Your own brief comes back to you drawn three ways.\n\n\n1 · By hand · 8 min\nPaper and two pens: black plus one colour for the line. No software. Sketch fast, but the threshold must be drawn in.\n\n\n2 · With AI · 10 min\nAny chat or image tool. Paste the brief. Save the prompt and every output, including the bad ones.\n\n\n3 · From the data · 10 min\nSpreadsheet chart, the Threshold Explorer, or AI-written Python that you run. The numbers must come from the brief.\n\n\nBrief 2 goes the other way round (A → C) as the exit task: one route of your choice.",
+    "text": "Your brief, drawn by someone else, three ways\nSession 2 · Swap studio\n\nDecision Evidence Variation Output Threshold Action\n\nSwap ring: Student 1 → Student 2 → Instructor → Student 1. You draw the Brief 1 of the next person in the ring, and your own brief comes back to you drawn three ways. If another student attends, they join the ring.\n\n\n1 · By hand · 8 min\nPaper and two pens: black plus one colour for the line. No software. Sketch fast, but the threshold must be drawn in.\n\n\n2 · With AI · 10 min\nAny chat or image tool. Paste the brief. Save the prompt and every output, including the bad ones.\n\n\n3 · From the data · 10 min\nSpreadsheet chart, the Threshold Explorer, or AI-written Python that you run. The numbers must come from the brief.\n\n\nBrief 2 goes round the ring in reverse as the exit task: one route of your choice.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -5190,7 +5190,7 @@
     "href": "weeks_v2/week-09.html#defend-one-line-5-min-each",
     "title": "Week 9: Thresholds, Drawn",
     "section": "Defend one line (5 min each)",
-    "text": "Defend one line (5 min each)\nEach author takes one threshold from their winning diagram. The other two each pick a role and attack it once.\n\n\nRoles\n\nClient: “That line costs me money.”\nOccupant: “That line leaves me out.”\nRegulator: “Where did that number come from?”\n\n\n\nAuthor answers with three things\n\nthe source: code, precedent, client, physics, or my guess\nhow far it can move before the recommendation flips\nwhat evidence would make you move it",
+    "text": "Defend one line (5 min each)\nEach author takes one threshold from their winning diagram. The other two each take one role and attack it once. Rotate roles each round so everyone plays all three.\n\n\nRoles\n\nClient: “That line costs me money.”\nOccupant: “That line leaves me out.”\nRegulator: “Where did that number come from?”\n\n\n\nAuthor answers with three things\n\nthe source: code, precedent, client, physics, or my guess\nhow far it can move before the recommendation flips\nwhat evidence would make you move it",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -5226,7 +5226,7 @@
     "href": "weeks_v2/week-09.html#exit-before-week-10",
     "title": "Week 9: Thresholds, Drawn",
     "section": "Exit · before Week 10",
-    "text": "Exit · before Week 10\n\n\nBring\n\nBrief 2, drawn one way, for the classmate it was assigned to\nyour chosen threshold diagram, revised\nyour recommendation sentence, including the flip distance\nA3 is due this week. A4 starts now: the diagram and sentence become your Object Card draft.\n\n\n\nWeeks 10–11, with three of us No vote needed. Each of you writes one line in Slack: clinic (1-1 help finishing A4) or workgroup (building your own GH/Python pipeline). With three people we can run both.",
+    "text": "Exit · before Week 10\n\n\nBring\n\nBrief 2, drawn one way, for the classmate it was assigned to\nyour chosen threshold diagram, revised\nyour recommendation sentence, including the flip distance\nA3 is due this week. A4 starts now: the diagram and sentence become your Object Card draft.\n\n\n\nWeeks 10–11, with two students No vote needed. Each of you writes one line in Slack: clinic (1-1 help finishing A4) or workgroup (building your own GH/Python pipeline). With two of you, we can run both modes side by side.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",

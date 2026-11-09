@@ -30,7 +30,7 @@ format:
 
 - **Session 1:** we look at drawn threshold diagrams and argue about where the lines are.
 - **Session 2:** you draw each other's briefs three ways (hand, AI, data tool) and compare.
-- Everyone presents every round, including the instructor.
+- Three of us: two students and the instructor. The instructor writes two briefs too and is drawn, judged, and challenged like everyone else.
 :::
 ::::
 
@@ -405,7 +405,7 @@ Ten minutes. Put both of your briefs in Slack before we restart.
 [Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node} [Threshold]{.node .is-current} [Action]{.node}
 :::
 
-**Swap:** A → B → C → A. The instructor joins the rotation if there are four of us. You draw a classmate's **Brief 1**. Your own brief comes back to you drawn three ways.
+**Swap ring:** Student 1 → Student 2 → Instructor → Student 1. You draw the **Brief 1** of the next person in the ring, and your own brief comes back to you drawn three ways. If another student attends, they join the ring.
 
 ::: {.three-step}
 ::: {.step-box}
@@ -425,7 +425,7 @@ Spreadsheet chart, the Threshold Explorer, or AI-written Python **that you run**
 :::
 :::
 
-[Brief 2 goes the other way round (A → C) as the exit task: one route of your choice.]{.feeds-tag}
+[Brief 2 goes round the ring in reverse as the exit task: one route of your choice.]{.feeds-tag}
 
 ---
 
@@ -467,7 +467,7 @@ Put every drawing in Slack. **The brief's author** judges their own three versio
 
 ## Defend one line (5 min each)
 
-Each author takes one threshold from their winning diagram. The other two each pick a role and attack it once.
+Each author takes one threshold from their winning diagram. The other two each take one role and attack it once. Rotate roles each round so everyone plays all three.
 
 :::: {.two-col}
 ::: {.concept-card}
@@ -541,7 +541,7 @@ Post the four steps under your chosen diagram in Slack. The graded unit is the p
 :::
 
 ::: {.activity-card}
-[Weeks 10–11, with three of us]{.card-title}
-No vote needed. Each of you writes one line in Slack: **clinic** (1-1 help finishing A4) or **workgroup** (building your own GH/Python pipeline). With three people we can run both.
+[Weeks 10–11, with two students]{.card-title}
+No vote needed. Each of you writes one line in Slack: **clinic** (1-1 help finishing A4) or **workgroup** (building your own GH/Python pipeline). With two of you, we can run both modes side by side.
 :::
 ::::
