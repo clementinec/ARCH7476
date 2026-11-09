@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="400" viewBox="0 0 1240 400" role="img" aria-labelledby="title desc">
+  <title id="title">Two window areas on the same 24 square metre wall</title>
+  <desc id="desc">Both walls are 8 metres wide and 3 metres high. A window-to-wall ratio of 20 percent gives 4.8 square metres of glazing. A ratio of 40 percent gives 9.6 square metres. These are calculated geometric areas, not performance simulation results.</desc>
+  <style>text{font-family:Arial,sans-serif;fill:#16181D}.label{font-size:24px;font-weight:700}.value{font-size:32px;font-weight:700;fill:#1F5C7A}.note{font-size:21px;fill:#50555E}.wall{fill:#F2F2EC;stroke:#16181D;stroke-width:2}.glass{fill:#B7D6E5;stroke:#1F5C7A;stroke-width:2}.dim{stroke:#6B7079;stroke-width:1.5}</style>
+  <text x="50" y="36" class="label">TEST 1 · 20% GLAZING</text>
+  <text x="680" y="36" class="label">TEST 2 · 40% GLAZING</text>
+  <path class="dim" d="M50 72h480 M50 65v14 M530 65v14 M680 72h480 M680 65v14 M1160 65v14"/>
+  <text x="270" y="64" class="note">8 m</text><text x="900" y="64" class="note">8 m</text>
+  <rect x="50" y="96" width="480" height="180" class="wall"/>
+  <rect x="182.669" y="145.751" width="214.663" height="80.498" class="glass"/>
+  <rect x="680" y="96" width="480" height="180" class="wall"/>
+  <rect x="768.211" y="129.079" width="303.579" height="113.842" class="glass"/>
+  <text x="540" y="190" class="note">3 m</text><text x="1170" y="190" class="note">3 m</text>
+  <text x="50" y="326" class="value">24 × 0.20 = 4.8 m²</text>
+  <text x="680" y="326" class="value">24 × 0.40 = 9.6 m²</text>
+  <text x="50" y="378" class="note">Same wall dimensions. Only the glazing ratio changes.</text>
+</svg>

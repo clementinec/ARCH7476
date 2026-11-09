@@ -142,7 +142,7 @@ website:
         contents:
           - text: "A2: Hidden Drivers (data analysis)"
             href: examples/a2-example-hidden-drivers.qmd
-          - text: "A2: Facade Shading (design simulation)"
+          - text: "A2: Shading Devices (design simulation)"
             href: examples/a2-example-facade-study.qmd
       - section: "Tools & Guides"
         contents:

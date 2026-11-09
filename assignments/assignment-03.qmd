@@ -26,10 +26,10 @@ You will build the smallest working version of your chosen workflow, generate or
 
 These check-ins should make the prototype visible before the deadline. Bring rough artifacts; the point is to expose workflow reasoning early.
 
-| Week | Bring to Session 2 | Round-table question | A3 component |
+| Week | Bring to Session 2 | Check-in question | A3 component |
 |---:|---|---|---|
-| 7 | workflow artifact, GH canvas, notebook output, spreadsheet, GIS map, simulation screenshot, or AI-assisted component | What goes in, what varies, what comes out, and what quality check proves it ran? | Prototype Scope + Workflow Description |
-| 8 | prompt log, error message, output, README fragment, verification note, or workflow checklist | What must someone else inspect before they trust this output? | Verification and Failure Log |
+| 7 | submitted A2 PDF, one attempted workflow test with its result or blocker note, and the personal project page or a local draft | After the formative A2 walkthrough in triads, what feedback will you act on, what did the test show or fail to show, and what is your next action? Record the dated feedback/action and test status on the page or local draft. | Prototype Scope + Workflow Description |
+| 8 | one current architectural decision, its input and output, and a saved AI exchange/component where used; an existing non-AI step or supplied example is also valid | What did the output change in your design reasoning? After a peer walkthrough, perform one independent check, compare expected and observed results, and record an accept/revise/reject/pending judgment in the verification card and a dated project-page or local entry. This is formative work; publishing a website is optional. | Verification and Failure Log |
 | 9 | figure, output table, comparison chart, or object-card draft | What result changes the design action, and what uncertainty remains visible? | Prototype Output + threshold language |
 
 Use the [Project Reasoning Check-In](../templates/project-reasoning-checkin.md) template if you want a consistent note structure.

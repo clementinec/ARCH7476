@@ -615,3 +615,204 @@ $code-color: #16181D !default;
   .reveal .tool-panel .zone { border-right: 0; border-bottom: 1px solid var(--rule-soft); }
   .reveal .vibe-visual img { height: 34vh; }
 }
+
+/*---------------------------------------------------------------------------
+  18. TEACHING SEQUENCE — reusable section, process, task, and page components
+  Introduced for the Week 7 clinic. These are opt-in shared components: other
+  decks keep their existing appearance. Use normal document flow; split a
+  crowded slide instead of clipping content or giving a panel a fixed height.
+---------------------------------------------------------------------------*/
+.reveal .slides section.section-slide {
+  box-sizing: border-box;
+  background: transparent;
+  color: var(--paper);
+  padding: 1.5em 1.6em;
+  text-align: left;
+}
+.reveal .section-slide h1,
+.reveal .section-slide h2,
+.reveal .section-slide h3,
+.reveal .section-slide strong {
+  color: var(--paper);
+}
+.reveal .slides section.section-slide > h1,
+.reveal .slides section.section-slide > h2 {
+  border-top: 2px solid #73767c;
+  padding-top: 0.4em;
+  font-size: 2.2em;
+  line-height: 1.1;
+}
+.reveal .section-slide a { color: #f2b7a9; }
+.reveal .section-slide .kicker { color: #c6c8cd; }
+.reveal .section-number {
+  display: block;
+  font-family: "Archivo", sans-serif;
+  font-size: 3.2em;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #f2b7a9;
+  margin-bottom: 0.3em;
+}
+.reveal .section-lead {
+  display: block;
+  max-width: 32em;
+  font-size: 1.15em;
+  line-height: 1.45;
+  margin-top: 0.8em;
+}
+.reveal .section-slide .section-lead { color: #e2e3e6; }
+
+.reveal .process-chain {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.65em;
+  margin: 0.8em 0;
+  align-items: stretch;
+}
+.reveal .process-step {
+  min-width: 0;
+  border: 1px solid var(--rule-soft);
+  border-top: 4px solid var(--role-concept);
+  padding: 0.75em 0.8em;
+  background: #fff;
+  line-height: 1.4;
+}
+.reveal .process-step > p:first-child { margin-top: 0; }
+.reveal .process-step > p:last-child { margin-bottom: 0; }
+.reveal .process-step .label { margin-bottom: 0.35em; }
+.reveal .process-step > p > strong:first-child {
+  display: block;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.1em;
+  margin-bottom: 0.2em;
+}
+.reveal .takeaway {
+  border-left: 6px solid var(--signal);
+  padding: 0.25em 0 0.25em 0.8em;
+  margin: 0.9em 0 0;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.15em;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.reveal .takeaway > p { margin: 0; }
+
+.reveal .task-meta {
+  display: block;
+  border-top: 1px solid var(--rule-soft);
+  border-bottom: 1px solid var(--rule-soft);
+  padding: 0.55em 0;
+  margin: 0.5em 0 0.8em;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72em;
+  line-height: 1.5;
+  color: var(--role-activity);
+}
+.reveal .task-meta > p { margin: 0; }
+.reveal .source-note {
+  font-size: 0.58em;
+  line-height: 1.4;
+  color: var(--muted);
+  margin-top: 0.9em;
+}
+.reveal .source-note > p { margin: 0; }
+
+// Mechanism -> practical consequence -> action. Reveal each row on advance.
+.reveal .practice-note {
+  border-left: 5px solid var(--role-activity);
+  background: var(--activity-soft);
+  padding: 0.55em 0.8em;
+  margin: 0.65em 0 0;
+  font-size: 0.82em;
+  line-height: 1.4;
+}
+.reveal .practice-note > p,
+.reveal .practice-note > .fragment > p { margin: 0; }
+.reveal .practice-note > .fragment {
+  border-top: 1px solid var(--rule-soft);
+  margin-top: 0.45em;
+  padding-top: 0.45em;
+}
+.reveal .practice-note strong { color: var(--role-activity); }
+@media (prefers-reduced-motion: reduce) {
+  .reveal .practice-note.fragment.fade-up,
+  .reveal .practice-note > .fragment.fade-up {
+    transform: none;
+    transition: none;
+  }
+}
+@media print {
+  .reveal .practice-note.fragment,
+  .reveal .practice-note > .fragment {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+}
+
+.reveal ol.task-steps,
+.reveal .task-steps > ol {
+  margin: 0.6em 0 0.6em 1.2em;
+  padding-left: 0.35em;
+  line-height: 1.45;
+}
+.reveal .task-steps li { padding-left: 0.2em; margin-bottom: 0.55em; }
+.reveal .task-steps li::marker {
+  color: var(--role-activity);
+  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+}
+.reveal .task-steps li > p { margin: 0; }
+.reveal .task-output {
+  border: 1px solid var(--role-activity);
+  border-left: 6px solid var(--role-activity);
+  background: var(--activity-soft);
+  padding: 0.6em 0.8em;
+  margin: 0.8em 0 0;
+  line-height: 1.4;
+}
+.reveal .task-output > p { margin: 0; }
+
+.reveal .status-tag {
+  display: inline-block;
+  border: 1px solid currentColor;
+  padding: 0.18em 0.5em;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8em;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.reveal .status-planned { color: var(--role-concept); background: var(--concept-soft); }
+.reveal .status-tested { color: var(--role-activity); background: var(--activity-soft); }
+.reveal .status-blocked { color: var(--role-warn); background: var(--warn-soft); }
+
+.reveal .example-sheet {
+  border: 1px solid var(--rule-soft);
+  border-top: 5px solid var(--role-example);
+  background: #fff;
+  padding: 0.7em 0.9em;
+  margin: 0.6em 0;
+  line-height: 1.4;
+}
+.reveal .example-sheet > p:first-child { margin-top: 0; }
+.reveal .example-sheet > p:last-child { margin-bottom: 0; }
+.reveal .page-line {
+  display: grid;
+  grid-template-columns: minmax(7em, 0.28fr) minmax(0, 1fr);
+  gap: 0.8em;
+  border-top: 1px solid var(--rule-soft);
+  padding: 0.55em 0;
+  font-size: 0.9em;
+}
+.reveal .page-line > * { min-width: 0; }
+.reveal .page-line p { margin: 0; }
+.reveal .page-line > :first-child { font-family: "Archivo", sans-serif; }
+
+@media (max-width: 900px) {
+  .reveal .process-chain { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .reveal .page-line { grid-template-columns: minmax(6em, 0.3fr) minmax(0, 1fr); }
+}

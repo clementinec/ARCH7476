@@ -15,9 +15,9 @@ Every week has two parts:
 
 ## Session 2 Format
 
-The second half of class is a **Project Reasoning Round Table**, not a formal presentation.
+The usual second-half format is a **Project Reasoning Round Table**, not a formal presentation. Week 6 includes personal website setup; Week 7 uses the timed A2 walkthrough and prototype clinic; Week 8 uses a walkthrough and verification lab on one architectural decision, as described below.
 
-Before Session 2, each student uploads one rough material to Slack:
+For the usual round-table format, each student uploads one rough material to Slack before Session 2:
 
 - plan, section, render, massing image, or site photo
 - precedent image or evidence source
@@ -43,10 +43,10 @@ Volunteers go first and receive formative participation acknowledgement. A1-A4 g
 | 3 | Spreadsheet as baseline workflow | table/chart/matrix: what variants or trade-offs could be compared? | A1 due / A2 decision recap |
 | 4 | GIS choices for architects | site/map/context image: is this decision spatial? | A2 evidence map + tool matrix |
 | 5 | BIM/BEM and performance model translation | model/performance material: what assumptions would dominate? | A2 tool matrix + feasibility |
-| 6 | Evidence and pathway mapping | workflow sketch or branch declaration: what route and output are you choosing? | A2 due / A4 branch |
-| 7 | Method prototype studio | artifact/canvas/notebook/map: what goes in, varies, and comes out? | A3 prototype scope |
-| 8 | Reproducibility, AI fact-checking, and mentor prep | prompt log/error/README: what must be fact-checked, relationship-checked, or documented? | A3 verification log |
-| 9 | Thresholds, drawn: threshold diagrams + swap studio (hand / AI / data) | two diagram briefs + chosen threshold diagram: where is the line, and how far before it flips? | A3 due / A4 launch + clinic/workgroup vote |
+| 6 | Evidence and pathway mapping | workflow choice and A4 branch; personal GitHub Pages setup in half of the lab | A2 due / A4 branch |
+| 7 | A2 to first prototype | A2 walkthrough in triads, feedback, one test, and a project-page update | A3 prototype scope + first A4 feedback entry |
+| 8 | Reproducibility, LLM mechanisms, and independent verification | walk through one AI-assisted architectural decision, perform one check, and revise or qualify the output | A3 verification and failure log |
+| 9 | Thresholds, drawn: threshold diagrams + swap studio (hand / AI / data) | two diagram briefs + chosen threshold diagram: where is the line, and how far before it flips? | A3 due / A4 launch + Weeks 10-11 clinic/workgroup choice |
 | 10 | Draft workflow review | draft package: can reviewers trace the full evidence loop? | A4 draft clinic or optional workgroup |
 | 11 | Final package polish | final component draft: which A4 component is weakest? | A4 near-final clinic or optional workgroup |
 | 12 | Object Fair | final object card/reflection: what reasoning transfers forward? | A4 due |
@@ -174,52 +174,75 @@ Students identify whether their project needs model/performance evidence, a prox
 
 ### Studio-Lab
 
-Students submit A2 and declare their provisional A4 branch and workflow plan.
+Students submit A2 and declare their provisional A4 branch and workflow plan. Half of this lab was used to set up personal websites with GitHub Pages. Week 7 continues from those sites by adding a project section documenting the A2-to-A3 work.
 
 **Session 2 material:** upload a workflow sketch, pathway matrix, or A4 branch declaration draft.
 
 **Round-table check-in:** Which route are you choosing, and what is the smallest useful output?
 
-**Feeds:** A2 Primary Workflow Selection + A4 Branch Declaration.
+**Feeds:** A2 Primary Workflow Selection + A4 Branch Declaration. The personal site provides a place to document subsequent tests and revisions.
 
-## Week 7: Method Prototype Studio
+## Week 7: Prototype Clinic — From A2 to a First Test
+
+### Session 1: Demo and First Test (50 minutes)
+
+- use the submitted A2 to identify one decision, one workflow route, and one small test
+- inspect a worked example: input, what varies, output, and quality check
+- attempt the first test and record a result or the exact step that blocked it
+- prepare the A2 walkthrough and open the project section of the personal site, or a local draft if the site is not ready
+
+### Session 2: A2 Walkthrough and Prototype Clinic (50 minutes)
+
+Bring the submitted A2 PDF, the first test result or blocker note, and the personal site or local draft. Every student takes a turn in a group of three. Use pairs for any remainder: two six-minute turns, then six minutes to refine both next-test plans. Brief the speaking and feedback protocol during Session 1's final five minutes.
+
+| Lab time | Activity | What to do |
+|---|---|---|
+| 0-20 min | A2 walkthroughs in triads | Take 2 minutes to form groups and choose an order. Then take three 6-minute turns: 3 minutes to explain, followed by 3 minutes of feedback from the two peers together. |
+| 20-25 min | Instructor debrief | Discuss recurring issues and identify the changes students should test next. |
+| 25-45 min | Act on feedback and update the project page | Use 10 minutes to revise a step or test the reason for retaining it; save the result or blocker. Use 10 minutes to update the page/local draft with the test and a dated feedback/action entry. |
+| 45-50 min | Peer page check and Slack exit | Use 3 minutes for a page check: 90 seconds per page in pairs, or 60 seconds per page for a remaining group of three. Use the final 2 minutes to post the page URL/local screenshot, test/check result, feedback response, and next action to Slack. |
+
+**Your 3-minute walkthrough:** explain the design decision, the evidence and its limits, why you chose this workflow, and the smallest test you attempted. Show its result or blocker and ask one specific question.
+
+**Your peers' 3-minute feedback:** identify one assumption or scope problem and propose one next test. Record which advice you will use, defer, or reject, and why.
+
+**Leave with:** one attempted test with a result or a documented blocker; a dated feedback/action entry; and an updated project page or local draft showing the decision, workflow, test status, check or limit, and next action.
+
+This is formative feedback on submitted A2 work and preparation for A3. The walkthrough and website are not new graded submissions. A3 remains due at the end of Week 9 and requires at least three variants/scenarios/alternatives and a re-runnable workflow artifact; the Week 7 page records progress toward that submission.
+
+**Feeds:** A3 Prototype Scope + Workflow Description, and an initial entry for the A4 Feedback + Revision Ledger.
+
+## Week 8: Reproducibility and AI-Assisted Architectural Decisions
 
 ### Lecture / Demo
 
-- inputs, operations, outputs, quality checks
-- failure logs
-- how to debug without hiding uncertainty
+- workflow documentation and the difference between saving a checked artifact and reproducing an AI response word for word
+- decoder-only generation, preference training, and reasoning/tool use: what they change in an architectural workflow
+- factual claims, relationship hypotheses/interpretations, and generated workflow components
+- independent checks, prompt/output records, and disclosure
+- mentor consultation preparation where relevant to the project
 
-### Studio-Lab
+### Session 2: Audit One Architectural Decision (50 minutes)
 
-Students assemble or run the first version of their workflow artifact.
+Use one bounded decision from the current A2/A3 project. Prefer a recent AI exchange or generated component: bring the exact input, saved output, and the drawing, calculation, script, or claim it affected.
 
-**Session 2 material:** upload a workflow artifact, GH canvas, notebook output, spreadsheet, GIS map, simulation screenshot, or AI-assisted component.
+| Lab time | Activity | What to do |
+|---|---|---|
+| 0–5 min | Choose and prepare | Name one architectural decision. Open its input, output, and relevant workflow artifact. |
+| 5–23 min | Walkthroughs in triads | Three six-minute turns: three minutes to explain, followed by three minutes of feedback from the two peers together. |
+| 23–38 min | Perform one independent check | State the expected result, then inspect a primary source, hand-calculate a case, run a known-case test, or compare with independent evidence. Record the observed result or exact blocker. |
+| 38–45 min | Revise and document | Revise, qualify, or reject the claim/component; complete the verification card and save a dated project-page or local entry. Mark an unfinished check as pending. |
+| 45–50 min | Share and exit | Two volunteers share for 90 seconds each; everyone then saves one changed judgment, remaining limit and next action. Post the artifact link or screenshot to Slack if available. |
 
-**Round-table check-in:** What goes in, what varies, what comes out, and what quality check proves it ran?
+**Your walkthrough:** “I am deciding ___. I gave the model ___. It produced ___. I accepted or changed ___. The check I need is ___.” Peers identify one unsupported step and propose a feasible check. If you are a pair, take two six-minute turns and use the remaining six minutes to refine both checks.
 
-**Feeds:** A3 Prototype Scope + Workflow Description.
+**Access fallback:** no new AI account or paid model is required. Use a saved exchange, inspect an existing non-AI workflow step, or use the supplied [setback-scoring example](starter_kits/ai-assisted-workflow/README.md). Its 3 m threshold is a classroom assumption, not a verified building regulation. Mark a non-AI route as such in the card.
 
-## Week 8: Reproducibility, AI Fact-Checking, and Mentor Prep
+**Leave with:** the [verification card](templates/ai-workflow-verification-card.md), one revised or qualified claim/artifact (or an explicit rejection/pending judgment), and a dated entry showing the check and next action. An update to the existing project website is optional; a local record is sufficient.
 
-### Lecture / Demo
+This lab is formative preparation, not a new graded submission. A3 requirements and its end-of-Week-9 deadline remain unchanged.
 
-- workflow documentation
-- AI as probabilistic companion, not final authority
-- fact-based vs relationship-based AI outputs
-- prompt logs
-- manual checks, calculations, and disclosure
-- mentor consultation preparation
-
-### Studio-Lab
-
-Students test whether one workflow component, AI-assisted or not, is documented and checked well enough to be inspected by someone else.
-
-**Session 2 material:** upload a prompt log, error message, output, README fragment, verification note, or workflow checklist.
-
-**Round-table check-in:** What must someone else inspect before they trust this output?
-
-**Feeds:** A3 Verification and Failure Log.
+**Feeds:** A3 Verification and Failure Log, and the A4 Feedback + Revision Ledger.
 
 ## Week 9: Thresholds, Drawn
 
@@ -237,6 +260,7 @@ Flipped week: little lecture, mostly drawing and arguing.
 - drawn threshold diagrams: Challenger temperature, facade knife edge, flip distance, walking ring vs street, four PM2.5 lines
 - Snow, Nightingale, and Minard read for the threshold inside each figure
 - a menu of threshold diagram patterns
+- project examples at two depths: pavilion siting (Pareto front cut by threshold lines; UTCI drop vs category) and studio massing (sections against a daylight line and a GFA target)
 
 ### Session 2: Swap Studio
 

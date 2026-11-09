@@ -1,6 +1,6 @@
 ---
 title: "Week 8: Reproducibility and AI Fact-Checking"
-subtitle: "Large-Model Companions, Final-Gate Checks, and Mentor Strategy"
+subtitle: "How LLMs Work — and What to Check in Your Architectural Workflow"
 output-file: week-08.html
 format:
   revealjs:
@@ -10,7 +10,7 @@ format:
     incremental: true
     width: 1400
     height: 900
-    center: true
+    center: false
     footer: "Week 8 · feeds A3: Prototype + Verification"
 ---
 
@@ -20,35 +20,53 @@ format:
 ::: {.concept-card}
 [Session 1]{.label .concept}
 
-[Workflow Documentation + AI Fact-Checking]{.card-title}
+[LLMs inside an architectural workflow]{.card-title}
 
-- why your work is only evidence if someone can rerun it
-- document one workflow, then swap and test it
-- understand AI as a probabilistic companion, not a final authority
-- separate factual claims, relationship claims, and generated workflow components
-- prepare strategic questions for your mentor
+- decoder-only generation: what happens after a prompt
+- RLHF and reasoning: what training rewards
+- stronger systems: tools, multimodal inputs and current model designs
+- match a design claim to an independent check
 :::
 
 ::: {.activity-card}
 [Session 2]{.label .activity}
 
-[Round table on YOUR workflow]{.card-title}
+[Walk through YOUR AI-assisted decision]{.card-title}
 
-- upload one rough workflow material
-- reconstruct your verification in four steps
-- agree what a reader must inspect to trust it
+- show one current architectural decision and the AI-assisted step
+- get peer feedback, then perform one check
+- save a revised artifact or a more defensible claim
 :::
 ::::
 
 ::: {.reflection-card}
-This is a clinic, not a contest. We examine the **workflow**, and we help each other find the part a stranger could not yet reproduce.
+Bring existing work: a plan critique, facade component, comfort claim, precedent search or another bounded step. The output feeds your **A3 Verification and Failure Log**.
 :::
 
 ---
 
-[Course progress]{.kicker}
+## Two sessions, one workflow {#session-plan}
+
+::: {.nonincremental}
+| Class time | Focus |
+|---|---|
+| **Session 1 · 0–10 min** | Reproducibility: what a peer must be able to inspect |
+| **10–25 min** | Model literacy: each mechanism → what it changes in your use of LLMs |
+| **25–40 min** | Architectural claims: choose the check; inspect the worked example |
+| **40–50 min** | Trace one component and prepare your own walkthrough |
+| **Break · 10 min** | Open your saved material |
+| **Session 2 · 50 min** | Walkthrough → peer feedback → one check → revision |
+:::
+
+::: {.reflection-card}
+Lab times restart at **0** after the break. The documentation swap and mentor workshop are retained as [reference activities](#reference-activities).
+:::
+
+---
 
 ## This week produces a verification artifact
+
+[Course progress]{.kicker}
 
 ::: {.progress-ladder}
 ::: {.step .done}
@@ -74,15 +92,15 @@ handoff
 ::: {.artifact-strip}
 ::: {.artifact}
 [Input]{.label .concept}
-prototype artifact, prompt log, notebook, GH canvas, map, or scenario file
+one architectural decision + saved inputs, AI exchange/output or workflow artifact
 :::
 ::: {.artifact}
 [Test]{.label .activity}
-peer rerun, manual check, known-case comparison, or failure replay
+one source check, manual result, known-case test or failure replay
 :::
 ::: {.artifact}
 [Output]{.label .example}
-verification card + reproducibility fix list
+verification card + revised artifact/claim + one remaining limit
 :::
 ::: {.artifact}
 [Feeds]{.label .reflect}
@@ -92,9 +110,9 @@ A3 Verification Log and A4 Reproducibility Capsule
 
 ---
 
-[The reproducibility frame]{.kicker}
-
 ## If you can't rerun it, it isn't evidence
+
+[The reproducibility frame]{.kicker}
 
 A result becomes evidence only when someone else can inspect how you got it — and ideally reproduce it.
 
@@ -125,9 +143,9 @@ The risk is not embarrassment. It is presenting a result you can no longer stand
 
 ---
 
-[Anecdote · the tool changed your data and didn't tell you]{.kicker}
-
 ## When the spreadsheet silently rewrote the data
+
+[Anecdote · the tool changed your data and didn't tell you]{.kicker}
 
 ::: {.warning-card}
 [What happened]{.card-title}
@@ -151,18 +169,677 @@ Almost everyone has. The point is not guilt — it is to treat documentation as 
 
 ---
 
-# Session 1 · Documentation Clinic {background-color="#1a1a1a"}
+## Why should you care how an LLM works? {#why-model-literacy}
+
+[Model literacy · practical purpose]{.kicker}
+
+Understanding the mechanism helps you **frame the task, choose the tool and decide what evidence to trust**.
+
+:::: {.three-step}
+::: {.step-box}
+[Design / studio]{.label .example}
+
+**Explore deliberately**
+
+Generate alternatives around your brief. Specify what may vary and what must stay fixed.
+:::
+::: {.step-box}
+[Architectural practice]{.label .activity}
+
+**Delegate an inspectable step**
+
+Connect a drawing, script or document to a decision. Keep units, sources and assumptions visible.
+:::
+::: {.step-box}
+[Doctoral research]{.label .concept}
+
+**Defend the method**
+
+Separate a proposed explanation from evidence. Record the inputs, procedure and checks behind a result.
+:::
+::::
+
+::: {.takeaway}
+On each slide: learn the mechanism, then reveal **why it matters** and **what to do differently**.
+:::
+
+::: {.notes}
+One minute within the existing 15-minute primer. These are overlapping uses, not separate ability levels. Students do not need to design a neural network; they should leave able to make better decisions about their own LLM workflow. Ask them to keep one current architectural or research task in mind. On the next seven slides, show the mechanism first; the first advance reveals its practical consequence and the second reveals a concrete action.
+:::
 
 ---
 
-[The clinic]{.kicker}
+## What happens after you press Send? {#decoder-generation}
+
+[Model literacy · 1 of 7]{.kicker}
+
+A common baseline is an **autoregressive, decoder-only Transformer**: it generates a continuation from the context already available.
+
+:::: {.process-chain}
+::: {.process-step}
+[01 · Input]{.label .concept}
+
+**Tokens**
+
+Text is split into units and represented as vectors.
+:::
+::: {.process-step}
+[02 · Context]{.label .concept}
+
+**Causal attention**
+
+Layers use the available context, not future answer tokens.
+:::
+::: {.process-step}
+[03 · Predict]{.label .example}
+
+**Next token**
+
+The model scores possible next tokens; decoding selects one.
+:::
+::: {.process-step}
+[04 · Continue]{.label .activity}
+
+**Append and repeat**
+
+Append the token to the context; repeat.
+:::
+::::
+
+:::: {.practice-note .fragment .fade-up data-fragment-index="0"}
+**Why it matters:** the model generates a continuation conditioned on your input. A worked example and a clear format help define the artifact you want.
+
+::: {.fragment .fade-up data-fragment-index="1"}
+**Do this:** specify “inputs in metres → three overhang options → one comparison table.” Check any performance claim against a source or calculation.
+:::
+::::
+
+::: {.source-note}
+Documented decoder example: [Qwen2.5 technical report, §2 (2024)](https://arxiv.org/html/2412.15115v2#S2).
+:::
+
+::: {.notes}
+Allow about two minutes, including the two practice-note reveals. Distinguish the neural-network architecture from architecture as a design discipline. Decoder-only means the text backbone does not need a separate encoder–decoder pair; it does not mean a multimodal product has no image or audio encoders. During training, masked token positions can be processed in parallel. This diagram describes the conceptual generation loop, not every serving optimisation. The model learns conditional patterns and representations, not an arithmetic average of answers. An explicit format makes a draft easier to inspect; it does not guarantee correct content. This mechanism can support complex reasoning, but a fluent facade explanation does not establish that a solar calculation was performed.
+:::
+
+---
+
+## What can attention connect — and what is missing? {#context-and-evidence}
+
+[Model literacy · 2 of 7]{.kicker}
+
+::: {.example-card}
+[Illustrative prompt]{.card-title}
+“Compare 0.6 m and 1.2 m overhangs on this west-facing facade. Explain the likely shading trade-off.”
+:::
+
+:::: {.two-col}
+::: {.concept-card}
+[Available context]{.card-title}
+The model can connect the dimensions, orientation, attached material and earlier messages when forming a response.
+:::
+::: {.warning-card}
+[Still needs evidence]{.card-title}
+An image may omit scale, location, glazing, weather or occupancy. Attention does not supply missing project measurements or run a simulation by itself.
+:::
+::::
+
+:::: {.practice-note .fragment .fade-up data-fragment-index="0"}
+**Why it matters:** the project context you supply shapes the comparison. Missing site information may become an unstated assumption.
+
+::: {.fragment .fade-up data-fragment-index="1"}
+**Do this:** attach a labelled plan, north arrow, scale, location and relevant brief. Ask it to distinguish supplied facts, assumptions and missing inputs.
+:::
+::::
+
+::: {.notes}
+Architectural application of the preceding mechanism, not a model benchmark. A model may infer or recall information, but inferred project inputs must be identified and checked. Distinguish the model's proposed explanation from a tool result. Avoid teaching that next-token prediction prevents reasoning, or that attention guarantees faithful use of every supplied fact.
+:::
+
+---
+
+## How does a predictor become an assistant? {#training-and-rlhf}
+
+[Model literacy · 3 of 7]{.kicker}
+
+:::: {.process-chain}
+::: {.process-step}
+[01 · Pre-training]{.label .concept}
+
+**Learn from data**
+
+Next-token training develops language, knowledge and patterns useful for many tasks.
+:::
+::: {.process-step}
+[02 · Supervised fine-tuning]{.label .example}
+
+**Learn from examples**
+
+Train on demonstrations of useful responses and task behaviour.
+:::
+::: {.process-step}
+[03 · Classic RLHF]{.label .reflect}
+
+**Learn from preferences**
+
+People rank responses → a reward model learns those preferences → reinforcement learning updates the assistant.
+:::
+::::
+
+**RLHF = reinforcement learning from human feedback.**
+
+:::: {.practice-note .fragment .fade-up data-fragment-index="0"}
+**Why it matters:** assistant training helps it follow requests and respond usefully. A helpful-sounding endorsement is not an independent design review.
+
+::: {.fragment .fade-up data-fragment-index="1"}
+**Do this:** specify the audience and criteria: client explanation, methods critique or component specification. Ask for the strongest objection, then check its evidence.
+:::
+::::
+
+::: {.source-note}
+One influential recipe, not every model's training sequence: [Ouyang et al., InstructGPT (2022)](https://arxiv.org/abs/2203.02155).
+:::
+
+::: {.notes}
+About two minutes, including the two practice-note reveals. Training changes model weights; supplying a prompt usually changes the context for that interaction, not the model's weights. RLHF happens during training, not whenever a person presses a thumbs-up button. Feedback may inform later training, depending on the service. Keep the simplified diagram clearly labelled as the classic recipe. Its reward is a proxy for the qualities being judged, not a certificate of architectural correctness. Do not imply that RLHF inevitably causes agreement or that asking for a critique removes bias.
+:::
+
+---
+
+## A preferred answer and a checked answer differ {#preferences-and-verification}
+
+[Model literacy · 4 of 7]{.kicker}
+
+::: {.nonincremental}
+| Training signal | What it can reward | Architectural question it leaves open |
+|---|---|---|
+| **Human or AI preferences** | Useful, clear, appropriate responses | Does this claim hold for this site and brief? |
+| **DPO · direct preference optimisation** | Preferred responses directly, without classic RLHF's separate reward-model/RL loop | Do the preferences capture the right criteria? |
+| **RL with verifiable rewards** | Checkable outcomes, such as correct answers or passing code tests | Are those tests sufficient for the design claim? |
+:::
+
+:::: {.practice-note .fragment .fade-up data-fragment-index="0"}
+**Why it matters:** passing a test only supports what that test measures. Correct arithmetic for our assumed 3.0 m setback does not establish planning compliance.
+
+::: {.fragment .fade-up data-fragment-index="1"}
+**Do this:** define success first: known cases for code, source fidelity for a literature summary, and explicit comfort/access trade-offs for a design recommendation.
+:::
+::::
+
+::: {.source-note}
+[DPO (2023)](https://arxiv.org/abs/2305.18290) · [Constitutional AI: AI feedback (2022)](https://arxiv.org/abs/2212.08073) · [DeepSeek-R1: reasoning rewards (2025)](https://arxiv.org/html/2501.12948v1#S2). The setback is a classroom assumption.
+:::
+
+::: {.notes}
+About two minutes. Reward source and optimisation method are different dimensions: DPO may use human or AI preference data. In R1, verifiable math/code rewards are part of a broader training recipe; R1-Zero is the experiment without initial supervised fine-tuning, not a description of every R1 stage. Passing tests provides evidence only for the tested behaviour. Ask what “good” means when energy, access, comfort and design intent conflict.
+:::
+
+---
+
+## Stronger systems also do more while answering {#reasoning-and-tools}
+
+[Model literacy · 5 of 7]{.kicker}
+
+:::: {.two-col}
+::: {.concept-card}
+[Reasoning effort]{.card-title}
+A model can spend more computation on intermediate steps before answering. Qwen3 documents adjustable thinking budgets; improvement depends on the task.
+:::
+::: {.concept-card}
+[Tools and retrieved evidence]{.card-title}
+A system can retrieve a document, execute code or call a tool, then use the result. Those actions add evidence only if the inputs and returned results are checked.
+:::
+::::
+
+::: {.bridge-flow}
+::: {.node .current}
+propose a step
+:::
+::: {.node}
+execute a tool
+:::
+::: {.node}
+inspect its result
+:::
+::: {.node}
+revise the decision
+:::
+:::
+
+:::: {.practice-note .fragment .fade-up data-fragment-index="0"}
+**Why it matters:** more reasoning, more evidence and an executed calculation solve different problems. Extra reasoning time cannot itself supply a missing measurement.
+
+::: {.fragment .fade-up data-fragment-index="1"}
+**Do this:** use reasoning for a difficult comparison, retrieval for a source and code for a calculation. Save the actual sources, inputs and tool outputs.
+:::
+::::
+
+::: {.source-note}
+[Qwen3 (2025), §§4.3–4.7](https://arxiv.org/html/2505.09388v1) · [Anthropic: limits of reported reasoning (2025)](https://www.anthropic.com/research/reasoning-models-dont-say-think).
+:::
+
+::: {.notes}
+About two minutes. Reasoning effort is inference-time computation, not proof of a new backbone architecture. Retrieval supplies context; it is not retraining. A tool invocation is usually orchestrated by software around the model. Request sources, calculations and a concise rationale, rather than treating a generated reasoning narrative as privileged access to internal computation. Anthropic's study found omissions in reported reasoning under specific experimental conditions; do not generalise its percentages to every model or architectural task.
+:::
+
+---
+
+## Is decoder-only still the whole story? {#current-model-designs}
+
+[Model literacy · 6 of 7 · evidence checked 4 November 2026]{.kicker}
+
+::: {.nonincremental}
+| Documented example | What it shows | What to take into practice |
+|---|---|---|
+| **Qwen3 · 2025** | Dense and mixture-of-experts (MoE) models; MoE routes each token through selected learned components | More parameters need not mean all are used on every token |
+| **Nemotron 3 Ultra · June 2026** | A hybrid of Mamba state-space layers and attention, with MoE | Current designs also change how sequences are processed efficiently |
+| **Qwen3.5-Omni · April 2026** | Text, vision and audio in a multimodal system | A plan or walkthrough can be input; perceived dimensions and performance still need checks |
+:::
+
+:::: {.practice-note .fragment .fade-up data-fragment-index="0"}
+**Why it matters:** model design changes capability and efficiency, but a bigger parameter count or an “expert” label does not establish skill on your task.
+
+::: {.fragment .fade-up data-fragment-index="1"}
+**Do this:** judge it on a known task from your work: plan reading, document synthesis or tool execution. Record the visible model/mode, result, date and time taken.
+:::
+::::
+
+::: {.source-note}
+Primary reports: [Qwen3](https://arxiv.org/abs/2505.09388) · [NVIDIA Nemotron 3 Ultra](https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf) · [Qwen3.5-Omni](https://arxiv.org/abs/2604.15804). Examples of mechanisms, not a model ranking.
+:::
+
+::: {.notes}
+About two minutes, including the two practice-note reveals. Mamba is a state-space sequence model that maintains and updates a state; hybrids combine it with attention. MoE “experts” are learned network components, not named professionals or necessarily human-readable specialties. Autoregressive generation can survive changes to the internal backbone. Decoder-only remains a useful baseline, not a universal description of every component. These reports document particular public designs; do not infer the undisclosed architecture of a current proprietary service from its output style, latency or benchmark score. One known task is a useful local check, not a general benchmark; log cost if visible, without requiring purchase of a second model.
+:::
+
+---
+
+## What might a more capable design assistant do? {#design-assistant-outlook}
+
+[Model literacy · 7 of 7 · discussion]{.kicker}
+
+::: {.example-card}
+[Plausible direction · not an established capability claim]{.card-title}
+Read a brief and model → propose facade variants → call geometry and simulation tools → compare results against agreed criteria → return a traceable recommendation.
+:::
+
+:::: {.two-col}
+::: {.concept-card}
+[Potentially more automated]{.card-title}
+File preparation, parameter changes, tool execution, error repair and comparison tables.
+:::
+::: {.reflection-card}
+[Still needs a defensible decision]{.card-title}
+Who defines comfort, acceptable trade-offs and missing evidence? Who checks that the simulation represents the intended design?
+:::
+::::
+
+:::: {.practice-note .fragment .fade-up data-fragment-index="0"}
+**Why it matters:** automation can repeat a workflow faster. If its criteria miss the design question, faster iteration can optimise the wrong thing.
+
+::: {.fragment .fade-up data-fragment-index="1"}
+**Do this:** delegate one repeatable step. State what may change, what stays fixed, how improvement is judged and when the result needs your review.
+:::
+::::
+
+::: {.notes}
+Use the final two minutes of the literacy block, including the practice-note reveals. This is a teaching speculation grounded in documented tool use and multimodality, not a promise that a product can reliably complete this whole architectural loop. Invite one response: “Which step would you delegate next, and what check would you keep?” Keep model structure, training and runtime orchestration distinct.
+:::
+
+---
+
+## Not every AI output needs the same check
+
+[Three output types]{.kicker}
+
+| AI output type | What it is good for | Final-gate check |
+|---|---|---|
+| **Fact-based reiteration** | summarize standards, definitions, precedent claims, code-like information | verify against primary source, datasheet, standard, or cited document |
+| **Relationship hypothesis / interpretation** | propose explanations for comfort, perception or spatial experience | compare with physical mechanisms, empirical evidence, an appropriate simulation or a bounded calculation |
+| **Workflow/code drafting** | produce formulas, scripts, GhPython snippets, notebook cells, checklists | run it, inspect units/ranges, test known cases, and log failures |
+
+::: {.concept-card}
+[Final gate]{.card-title}
+AI can help generate an answer. **You** decide which gate it must pass before it enters the design argument.
+:::
+
+---
+
+## Human experience is messy enough that AI can help
+
+[Why architecture needs this]{.kicker}
+
+Architecture often asks about relationships that are real but hard to reduce cleanly:
+
+- spatial atmosphere and perceived calm
+- thermal acceptability rather than just air temperature
+- acoustic comfort rather than only decibels
+- wayfinding confidence rather than only shortest path
+- facade perception rather than only performance values
+
+::: {.example-card}
+[A productive use]{.card-title}
+AI can help generate hypotheses for these fuzzy relationships. It cannot validate them. Validation still comes from source checks, simple calculations, field observations, precedent mechanisms, simulations, or sensitivity tests.
+:::
+
+---
+
+## AI Fact-Checking Cases
+
+Read each case and name the output type, then decide the final-gate check.
+
+| Case | Output type | Final gate |
+|---|---|---|
+| AI summarizes a daylight standard | fact-based reiteration | find the standard and quote/check the clause |
+| AI proposes why a shaded courtyard may feel cooler | relationship hypothesis / interpretation | compare with radiation/wind/shade logic and one bounded metric |
+| AI writes a Python scoring function | workflow/code drafting | run known cases and inspect units/ranges |
+| AI writes a literature-review paragraph | fact + writing support | verify every claim and citation before use |
+
+::: {.warning-card}
+The line is rarely "AI or not." It is **what kind of output is this, and what would make it trustworthy enough to use?**
+:::
+
+---
+
+## Large-Model Method Review
+
+A common situation, examined as a method — not a person.
+
+::: {.concept-card}
+[The artifact]{.card-title}
+A building-performance analysis: polished charts, statistics beyond the author's stated skill, no understanding of the method when questioned, no disclosure of AI use.
+:::
+
+::: {.reflection-card}
+[Review it together]{.card-title}
+
+- which specific claims can the author actually defend?
+- which claims are factual, which are relationship-based, and which are workflow/code?
+- what final-gate checks would have made this trustworthy?
+- what should have been disclosed, and where?
+- what is the minimum honest version of this output?
+:::
+
+We critique the **workflow and its claims**, never the author's ability.
+
+---
+
+## AI-assisted work, made honest
+
+[Key visual]{.kicker}
+
+The same four-zone frame as the rest of the course — but now one zone is an AI draft, and the **final gate** and **disclosure** are not optional.
+
+::: {.tool-panel}
+::: {.zone .input}
+**Prompt** “Draft a setback function: inputs in metres; return pass/fail and the ratio to an assumed 3.0 m threshold.”
+:::
+::: {.zone .operation}
+**AI output** a Python function that can become a GhPython component
+:::
+::: {.zone .check}
+**Final gate** 2.4 / 3.0 = 0.8 → fail; 3.0 / 3.0 = 1.0 → pass. Check units and the actual source of the threshold separately.
+:::
+::: {.zone .output}
+**Disclosure note** “AI-assisted arithmetic checked against known cases. The classroom threshold does not establish planning compliance.”
+:::
+:::
+
+::: {.activity-card}
+[Run the kit]{.card-title}
+A real, runnable example: [`verified_setback_score.py`](../starter_kits/ai-assisted-workflow/examples/verified_setback_score.py) with its [prompt log](../starter_kits/ai-assisted-workflow/examples/prompt_log_example.md) — AI drafted it, then the output type, known cases, and threshold behavior were checked. See the [AI-assisted kit](../starter_kits/ai-assisted-workflow/README.md).
+:::
+
+::: {.notes}
+Use the function as a bounded example, not a compliance tool. Its internal assertions cover selected ordinary values; they are not exhaustive validation. Save expected and observed outputs, and distinguish the arithmetic check from the separate question of which rule applies. No Python installation is required to discuss the hand-calculable values.
+:::
+
+::: {.warning-card}
+AI can draft the step. It cannot be the final gate for its own output. That gate is your responsibility, every time.
+:::
+
+---
+
+## Vibe coding starts after the function contract is clear
+
+[AI as component front end]{.kicker}
+
+::: {.function-contract}
+**Before asking AI**
+State the component's inputs, units, allowed ranges, operation, output, and one known test case. The prompt should describe that contract, not just ask for "a script."
+:::
+
+::: {.bridge-flow}
+::: {.node .current}
+function contract
+:::
+::: {.node}
+AI draft
+:::
+::: {.node}
+final-gate check
+:::
+::: {.node}
+GhPython / notebook
+:::
+::: {.node}
+verified output
+:::
+:::
+
+---
+
+## AI drafts can become GH components, but only after inspection
+
+[Patch to Grasshopper]{.kicker}
+
+::: {.gh-bridge}
+**Bridge pattern**
+AI drafts a `geopandas`, Python, GhPython, or C# component -> student checks facts, units, edge cases, and one manual result -> only then does the component enter the design workflow.
+:::
+
+::: {.uncertainty-check}
+**Question for AI-assisted work**
+Is this output factual, relationship-based, or code/workflow? What check would expose a wrong answer there?
+:::
+
+---
+
+## BREAK {.big-break}
+
+Take 10 minutes.
+
+Open one current architectural decision, its inputs, and a saved AI exchange or workflow output. Lab time restarts at **0** after the break.
+
+---
+
+## Audit one AI-assisted architectural decision {#architectural-workflow-lab}
+
+[Session 2 · walkthrough and verification]{.kicker}
+
+::: {.spine-rail}
+[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node .is-current} [Threshold]{.node} [Action]{.node}
+:::
+
+::: {.activity-card}
+Bring one recent AI exchange or generated component from your project. Show **the design decision, what you gave the model, what it produced, what you accepted or changed, and one check that could reveal a wrong answer**.
+:::
+
+::: {.task-output}
+**Leave with:** one completed [verification card](../templates/ai-workflow-verification-card.md), a revised artifact or qualified claim, and a dated note of what remains unverified. [feeds A3]{.feeds-tag}
+:::
+
+::: {.grading-note}
+Formative work towards A3; no new graded submission. A saved transcript is enough: no new account or paid model is required.
+:::
+
+---
+
+## Choose a decision you actually need to make {#lab-starting-material}
+
+::: {.task-meta}
+Lab 0–5 min · individual · open the decision, input and output together
+:::
+
+::: {.nonincremental}
+| Your material | The architectural decision | One possible independent check |
+|---|---|---|
+| Plan or walkthrough critique | Which route or spatial arrangement should change? | Check dimensions in the source drawing; distinguish visible features from inferred user experience |
+| Facade / GH / Python component | Which variant should enter the comparison? | Test units, a boundary value and a hand-calculated case |
+| Comfort or daylight explanation | What change is worth testing? | Compare the proposed mechanism with a suitable metric, observation or simulation |
+| Precedent / standard claim | Does this evidence apply to this project? | Open the original source and check scope, date and conditions |
+:::
+
+::: {.reflection-card}
+**No current AI use?** Audit one automated or interpretive step in your own project. **No accessible files or network?** Use the saved [setback example](../starter_kits/ai-assisted-workflow/examples/prompt_log_example.md) and its hand-calculable inputs. Label it as a course example.
+:::
+
+---
+
+## The 50-minute lab {#lab-timing}
+
+::: {.nonincremental}
+| Lab time | Task | Save this |
+|---|---|---|
+| **0–5** | Choose one decision; open inputs and output | One sentence naming the decision |
+| **5–23** | Triads: three six-minute walkthroughs | One peer question and an agreed check each |
+| **23–38** | Perform one independent check | Expected result, observed result and limitation |
+| **38–45** | Revise, qualify or reject the output | Verification card + revised artifact/claim |
+| **45–50** | Two short shared examples, then exit note | One changed judgment and one remaining limit |
+:::
+
+::: {.task-output}
+If a check cannot finish, record **pending**, the blocker and the next step. A proposed test is not a completed verification.
+:::
+
+::: {.notes}
+At 45–48 minutes invite two volunteers for 90 seconds each. At 48–50 everyone completes the exit note. The triads give every student a turn; whole-class sharing is selective. For a pair, use the extra six minutes to start the agreed check. Preserve material locally if posting or the website is unavailable.
+:::
+
+---
+
+## Walk through the decision, not the whole chat {#lab-walkthrough}
+
+::: {.task-meta}
+Lab 5–23 min · groups of three · six minutes each: three to show, three for feedback
+:::
+
+**Object this week: one AI-assisted step and the architectural judgment it influenced.**
+
+::: {.recall-4step}
+::: {.step}
+**Did** Show the supplied plan/data/prompt, the output and what you used in the design.
+:::
+::: {.step}
+**Assumed** Name missing scale, context, physics, sources or other conditions the answer relied on.
+:::
+::: {.step}
+**Risk** Point to one claim or operation that could change the design if it were wrong.
+:::
+::: {.step}
+**Verify** Agree one independent check and what result would make you revise the output.
+:::
+:::
+
+::: {.task-output}
+**Peers record:** “We could follow ___. We still need evidence for ___. The next check is ___.” Critique the artifact and its claim.
+:::
+
+---
+
+## Run one check that could change your mind {#lab-independent-check}
+
+::: {.task-meta}
+Lab 23–38 min · individual, with a peer available · one bounded check
+:::
+
+::: {.task-steps .nonincremental}
+1. **Before checking:** record the expected result and its basis — a source, known case, manual calculation or observation.
+2. **Perform the check:** inspect the source, rerun a saved component, calculate a value or compare independent evidence.
+3. **Record what happened:** expected versus observed result; pass, fail or pending; what the check cannot establish.
+:::
+
+::: {.warning-card}
+Asking the same model “are you sure?” is not an independent check. A second answer can suggest a test; agreement between answers does not validate the claim.
+:::
+
+::: {.notes}
+A peer rerun checks whether instructions and saved files reproduce a result; it does not establish physical validity by itself. For a performance claim, distinguish rerunning code from validating assumptions. Do not require students to complete a substantial simulation in 15 minutes: a bounded known case or an honest pending record is acceptable.
+:::
+
+---
+
+## Make the architectural consequence visible {#lab-revision}
+
+::: {.task-meta}
+Lab 38–45 min · revise the artifact/claim and complete the existing verification card
+:::
+
+::: {.example-card}
+[Illustrative revision]{.card-title}
+**Before:** “The AI says this overhang will make the room comfortable.”
+
+**After:** “The checked shadow geometry supports shade at this time and location. It does not establish thermal comfort. I will retain this option for a temperature, radiation and ventilation comparison.”
+:::
+
+::: {.task-steps .nonincremental}
+1. Mark the output **accept, revise, reject or pending**, with a reason.
+2. Save the input, output, check result and revised artifact. Record the visible model/tool name, mode and date; mark unknown details honestly.
+3. Add a dated note to your project page **or local draft**: peer feedback → check → changed decision → remaining limit.
+:::
+
+::: {.notes}
+The sample revision assumes that a shadow-geometry check actually took place. Students must not copy its result without doing an equivalent check. Accepted means adequate for the stated bounded use, not universally valid. Keep the website as a continuation of Week 7's documentation habit, not a new publishing requirement.
+:::
+
+---
+
+## Week 8 Checklist
+
+::: {.concept-card}
+[Before Week 9]{.card-title}
+
+1. save one workflow with its inputs, steps, tool/version information and output
+2. classify the AI-assisted step: fact, relationship hypothesis or workflow/code
+3. record one independent check, its result and what remains unverified
+4. revise the artifact or claim and keep the peer feedback in your A3 failure/verification log
+5. where relevant, use the reference questions for a mentor consultation and document the resulting action
+:::
+
+---
+
+## Your changed judgment, in one line {#lab-exit}
+
+[Exit]{.kicker}
+
+Lab 48–50 min · save in your notes; post the artifact link or a screenshot if available.
+
+::: {.reflection-card}
+**I used AI/automation for ___. After checking ___, I will accept / revise / reject / hold pending ___. This changes my design decision by ___. I still cannot claim ___.**
+:::
+
+Week 9 closes A3 — we finalize the prototype and its verification before the workflow package begins.
+
+---
+
+## Reference activities {#reference-activities}
+
+The live teaching sequence ends above. Use these documentation and mentor exercises for follow-up or a longer clinic; they are not additional tasks inside today's 50-minute lab.
+
+---
+
+## Reference · Documentation Clinic {background-color="#1a1a1a"}
+
+---
 
 ## Document one workflow so it stands alone
+
+[The clinic]{.kicker}
 
 Pick the **most complex or critical** workflow in your project — the one you would least want to lose.
 
 ::: {.activity-card}
-[Do this now · 10 minutes]{.card-title}
+[Optional extension · 10 minutes]{.card-title}
 Write step-by-step instructions clear enough that a classmate who has never seen your method could follow them and get your result — with no verbal explanation from you.
 :::
 
@@ -210,219 +887,18 @@ The gaps you find are the gaps a future reader would hit. This is the most usefu
 
 ---
 
-[AI as companion]{.kicker}
-
-## What large models are, for this course
-
-::: {.concept-card}
-[The short version]{.card-title}
-Large models are **probabilistic models of patterns in human-produced data**. They can be useful companions, but they are not a final gate for truth.
-:::
-
-:::: {.two-col}
-::: {.concept-card}
-[What they tend to do]{.card-title}
-
-- produce plausible common answers
-- average across many writing patterns
-- compress complicated claims into fluent language
-- sound confident even when the source is weak
-:::
-::: {.concept-card}
-[Why they are still useful]{.card-title}
-
-- they can expose hidden assumptions
-- they can draft small workflow components
-- they can search the shape of an ill-defined relation
-- they can help when human experience is hard to model directly
-:::
-::::
-
-The skill is not "believe or reject AI." The skill is using it, then deciding what kind of check must happen before the output becomes evidence.
+## Reference · Mentor Preparation {background-color="#1a1a1a"}
 
 ---
-
-[Large-model literacy]{.kicker}
-
-## The useful part is also the dangerous part
-
-::: {.warning-card}
-[Common answer problem]{.card-title}
-Because LLMs learn from pooled writing, they often produce the most available or average explanation. That can be helpful for orientation, but it can miss local constraints, updated facts, minority cases, and project-specific physics.
-:::
-
-::: {.reflection-card}
-[Design implication]{.card-title}
-Do not ask only, "What does AI say?" Ask: **what local fact, mechanism, calculation, or observed experience would push this answer away from the common mean?**
-:::
-
----
-
-[Three output types]{.kicker}
-
-## Not every AI output needs the same check
-
-| AI output type | What it is good for | Final-gate check |
-|---|---|---|
-| **Fact-based reiteration** | summarize standards, definitions, precedent claims, code-like information | verify against primary source, datasheet, standard, or cited document |
-| **Relationship-based simulation** | reason about fuzzy links: comfort, perception, spatial experience, thermal/acoustic sensation | compare with engineering/science logic, empirical evidence, sensitivity test, or bounded calculation |
-| **Workflow/code drafting** | produce formulas, scripts, GhPython snippets, notebook cells, checklists | run it, inspect units/ranges, test known cases, and log failures |
-
-::: {.concept-card}
-[Final gate]{.card-title}
-AI can help generate an answer. **You** decide which gate it must pass before it enters the design argument.
-:::
-
----
-
-[Why architecture needs this]{.kicker}
-
-## Human experience is messy enough that AI can help
-
-Architecture often asks about relationships that are real but hard to reduce cleanly:
-
-- spatial atmosphere and perceived calm
-- thermal acceptability rather than just air temperature
-- acoustic comfort rather than only decibels
-- wayfinding confidence rather than only shortest path
-- facade perception rather than only performance values
-
-::: {.example-card}
-[A productive use]{.card-title}
-AI can help generate hypotheses for these fuzzy relationships. It cannot validate them. Validation still comes from source checks, simple calculations, field observations, precedent mechanisms, simulations, or sensitivity tests.
-:::
-
----
-
-## AI Fact-Checking Cases
-
-Read each case and name the output type, then decide the final-gate check.
-
-| Case | Output type | Final gate |
-|---|---|---|
-| AI summarizes a daylight standard | fact-based reiteration | find the standard and quote/check the clause |
-| AI proposes why a shaded courtyard may feel cooler | relationship-based simulation | compare with radiation/wind/shade logic and one bounded metric |
-| AI writes a Python scoring function | workflow/code drafting | run known cases and inspect units/ranges |
-| AI writes a literature-review paragraph | fact + writing support | verify every claim and citation before use |
-
-::: {.warning-card}
-The line is rarely "AI or not." It is **what kind of output is this, and what would make it trustworthy enough to use?**
-:::
-
----
-
-## Large-Model Method Review
-
-A common situation, examined as a method — not a person.
-
-::: {.concept-card}
-[The artifact]{.card-title}
-A building-performance analysis: polished charts, statistics beyond the author's stated skill, no understanding of the method when questioned, no disclosure of AI use.
-:::
-
-::: {.reflection-card}
-[Review it together]{.card-title}
-
-- which specific claims can the author actually defend?
-- which claims are factual, which are relationship-based, and which are workflow/code?
-- what final-gate checks would have made this trustworthy?
-- what should have been disclosed, and where?
-- what is the minimum honest version of this output?
-:::
-
-We critique the **workflow and its claims**, never the author's ability.
-
----
-
-[Key visual]{.kicker}
-
-## AI-assisted work, made honest
-
-The same four-zone frame as the rest of the course — but now one zone is an AI draft, and the **final gate** and **disclosure** are not optional.
-
-::: {.tool-panel}
-::: {.zone .input}
-**Prompt** "Write a geopandas script that buffers transit stops 400 m and reports % of site parcels covered."
-:::
-::: {.zone .operation}
-**AI output** a draft script + a Grasshopper Python component stub
-:::
-::: {.zone .check}
-**Final gate** CRS is projected (metres, not degrees); buffer distance correct; parcel counts spot-checked by hand
-:::
-::: {.zone .output}
-**Disclosure note** "Buffer script drafted with AI; CRS and counts verified manually on DD-MM."
-:::
-:::
-
-::: {.activity-card}
-[Run the kit]{.card-title}
-A real, runnable example: [`verified_setback_score.py`](../starter_kits/ai-assisted-workflow/examples/verified_setback_score.py) with its [prompt log](../starter_kits/ai-assisted-workflow/examples/prompt_log_example.md) — AI drafted it, then the output type, known cases, and threshold behavior were checked. See the [AI-assisted kit](../starter_kits/ai-assisted-workflow/README.md).
-:::
-
-::: {.warning-card}
-AI can draft the step. It cannot be the final gate for its own output. That gate is your responsibility, every time.
-:::
-
----
-
-[AI as component front end]{.kicker}
-
-## Vibe coding starts after the function contract is clear
-
-::: {.function-contract}
-**Before asking AI**
-State the component's inputs, units, allowed ranges, operation, output, and one known test case. The prompt should describe that contract, not just ask for "a script."
-:::
-
-::: {.bridge-flow}
-::: {.node .current}
-function contract
-:::
-::: {.node}
-AI draft
-:::
-::: {.node}
-final-gate check
-:::
-::: {.node}
-GhPython / notebook
-:::
-::: {.node}
-verified output
-:::
-:::
-
----
-
-[Patch to Grasshopper]{.kicker}
-
-## AI drafts can become GH components, but only after inspection
-
-::: {.gh-bridge}
-**Bridge pattern**
-AI drafts a `geopandas`, Python, GhPython, or C# component -> student checks facts, units, edge cases, and one manual result -> only then does the component enter the design workflow.
-:::
-
-::: {.uncertainty-check}
-**Question for AI-assisted work**
-Is this output factual, relationship-based, or code/workflow? What check would expose a wrong answer there?
-:::
-
----
-
-# Session 1 · Mentor Prep {background-color="#1a1a1a"}
-
----
-
-[Mentor prep]{.kicker}
 
 ## Make the mentor meeting count
+
+[Mentor prep]{.kicker}
 
 Most mentor time is lost to vague questions. A little preparation turns a pleasant chat into a useful one.
 
 ::: {.activity-card}
-[Prepare now · 15 minutes]{.card-title}
+[When a consultation is relevant · 15 minutes]{.card-title}
 
 1. **One-liner** — your project in a single sentence
 2. **Specific ask** — the exact advice you need
@@ -458,7 +934,7 @@ Most mentor time is lost to vague questions. A little preparation turns a pleasa
 ## Question workshop
 
 ::: {.activity-card}
-[In pairs · 10 minutes]{.card-title}
+[Optional pair exercise · 10 minutes]{.card-title}
 
 1. Person A delivers their one-liner + best strategic question
 2. Person B gives specific feedback and one improvement
@@ -484,120 +960,6 @@ Send within 48 hours. Show that their advice changed something.
 | **Next step** | what you'll do next; offer to share results |
 
 ::: {.activity-card}
-[Draft it now]{.card-title}
-Write the subject line and opening for your upcoming mentor meeting before you leave class.
+[After a relevant consultation]{.card-title}
+After the consultation, draft the subject and opening around one specific insight and the action you took or will take.
 :::
-
----
-
-# BREAK {.big-break}
-
-Take 10 minutes.
-
-When you return, post one rough workflow material to Slack for Session 2.
-
----
-
-[Session 2 · Round table]{.kicker}
-
-## Round table on YOUR workflow
-
-::: {.spine-rail}
-[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node .is-current} [Threshold]{.node} [Action]{.node}
-:::
-
-Upload one rough material to Slack before Session 2 — a prompt log, an error message, a workflow output, a README fragment, or a verification note. [feeds A3]{.feeds-tag}
-
----
-
-## Reconstruct your verification in four steps
-
-**Object this week: your workflow's verification — what someone must inspect to trust it.**
-
-::: {.recall-4step}
-::: {.step}
-**Did** What does the workflow produce, and how, step by step?
-:::
-::: {.step}
-**Assumed** What inputs or settings are implicit and undocumented?
-:::
-::: {.step}
-**Risk** Which step could a reader not reproduce or check?
-:::
-::: {.step}
-**Verify** What must someone inspect before they trust this output?
-:::
-:::
-
-::: {.grading-note}
-Post your four-step under your material. Posting + an honest reconstruction is the graded unit — not how you spoke. Volunteers go first; random draw may fill the remaining examples.
-:::
-
----
-
-## Peer Reproducibility Check
-
-In small groups, run each other's documentation cold — the same test as the swap, on real project material.
-
-:::: {.three-step}
-::: {.step-box}
-[Hand over]{.card-title}
-Share your workflow package: steps, tool + version list, troubleshooting notes, quality check.
-:::
-::: {.step-box}
-[Attempt]{.card-title}
-A peer follows it without you explaining. They note exactly where it breaks or needs a guess.
-:::
-::: {.step-box}
-[Improve]{.card-title}
-Together, name the single change that would most improve reproducibility.
-:::
-::::
-
-::: {.reflection-card}
-We are not ranking packages. We are finding, kindly and early, the gap a stranger would fall into.
-:::
-
----
-
-## Session 2 reflection
-
-::: {.reflection-card}
-[What changed?]{.card-title}
-Take three minutes and write:
-
-- which step in my workflow is least reproducible right now?
-- what did a peer get stuck on that I assumed was obvious?
-- where am I using AI or automation I can't fully defend?
-- what is one fix before Week 9?
-:::
-
-Keep it in notes or post it as a Slack thread under your material.
-
----
-
-## Week 8 Checklist
-
-::: {.concept-card}
-[Before Week 9]{.card-title}
-
-1. complete your mentor consultation using your strategic questions
-2. send the follow-up email showing how their advice changed your approach
-3. document one workflow so a peer can rerun it unaided
-4. classify and check any AI-assisted step: fact, relationship, or workflow/code
-5. fix the weakest reproducibility gap your peer check found
-:::
-
----
-
-[Exit]{.kicker}
-
-## Your verification, in one line
-
-Before you leave, write and post:
-
-::: {.reflection-card}
-**The least reproducible step in my workflow is ___, and the one thing a reader must inspect to trust it is ___.**
-:::
-
-Week 9 closes A3 — we finalize the prototype and its verification before the workflow package begins.
