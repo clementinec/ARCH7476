@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.10.19">
 
-  <title>ARCH7476: Evidence-Based Generative Design – Week 9: Storytelling, Figures, and Decisions</title>
+  <title>ARCH7476: Evidence-Based Generative Design – Week 9: Thresholds, Drawn</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -34,7 +34,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-66364196e28806ef8b1f4f9e6d8f0e9d.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-61383126543572f5f5fe9b83536c913c.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -132,226 +132,266 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 9: Storytelling, Figures, and Decisions</h1>
-  <p class="subtitle">Turn Analysis Into a Recommendation People Can Understand</p>
+  <h1 class="title">Week 9: Thresholds, Drawn</h1>
+  <p class="subtitle">Where you draw the line decides the story. Can a reader see it?</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="todays-agenda" class="slide level2 center">
-<h2>Today’s Agenda</h2>
+<section id="before-class-the-flip" class="slide level2 center">
+<h2>Before class (the flip)</h2>
 <div class="two-col">
-<div class="concept-card">
-<p><span class="label concept">Session 1</span></p>
-<p><span class="card-title">Lecture / demo</span></p>
-<ul>
-<li class="fragment">when good research goes bad in presentation</li>
-<li class="fragment">story structure for busy stakeholders</li>
-<li class="fragment">figure rescue and the 3-second test</li>
-<li class="fragment">object-card design and thresholds</li>
-</ul>
-</div>
 <div class="activity-card">
-<p><span class="label activity">Session 2</span></p>
-<p><span class="card-title">Round table on YOUR work</span></p>
+<p><span class="card-title">Bring · 20 minutes at home</span></p>
+<ol type="1">
+<li><strong>One A3 output</strong>: a table, chart, map, or model result.</li>
+<li><strong>Two diagram briefs</strong> from your own project, written for someone else to draw. Use the brief format on the next slide; there are worked examples for both projects later in the deck.</li>
+<li>Spend five minutes with the <a href="../site_tools/threshold-explorer.html">Threshold Explorer</a>. Move one slider until the recommendation changes.</li>
+</ol>
+</div>
+<div class="concept-card">
+<p><span class="card-title">In class, we do not lecture at you</span></p>
 <ul>
-<li class="fragment">upload one rough figure or object-card draft</li>
-<li class="fragment">reconstruct it in four steps</li>
-<li class="fragment">name the result and the design action it changes</li>
+<li><strong>Session 1:</strong> we look at drawn threshold diagrams and argue about where the lines are.</li>
+<li><strong>Session 2:</strong> you draw each other’s briefs three ways (hand, AI, data tool) and compare.</li>
+<li>Three of us: two students and the instructor. The instructor writes two briefs too and is drawn, judged, and challenged like everyone else.</li>
 </ul>
 </div>
 </div>
-<div class="reflection-card">
-<p>This is decision support, not decoration. We help each other turn finished analysis into something a busy reader can act on.</p>
-</div>
 </section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Course progress</span></p>
-</section>
-<section id="this-week-produces-the-first-a4-facing-artifact" class="slide level2 center">
-<h2>This week produces the first A4-facing artifact</h2>
-<div class="progress-ladder">
-<div class="step done">
-<p>prototype</p>
-</div>
-<div class="step done">
-<p>verification</p>
-</div>
-<div class="step current">
-<p>threshold</p>
-</div>
-<div class="step current">
-<p>object card</p>
-</div>
-<div class="step">
-<p>draft package</p>
-</div>
-<div class="step">
-<p>handoff</p>
-</div>
-</div>
-<div class="artifact-strip">
-<div class="artifact">
-<p><span class="label concept">Input</span> A3 output, chart, map, model result, or variant table</p>
-</div>
-<div class="artifact">
-<p><span class="label activity">Change</span> figure title, threshold, uncertainty note, recommendation sentence</p>
-</div>
-<div class="artifact">
-<p><span class="label example">Output</span> object-card draft + one decision-ready figure</p>
-</div>
-<div class="artifact">
-<p><span class="label reflect">Feeds</span> A3 final output and A4 Practice Case/Object Card</p>
-</div>
-</div>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Before evaluation</span></p>
-</section>
-<section id="recap-the-two-gates-from-week-8" class="slide level2 center">
-<h2>Recap: the two gates from Week 8</h2>
-<p>A3 is due this week; evaluation begins next. You will use AI, so both gates apply to everything you submit.</p>
-<div class="two-col">
-<div class="concept-card">
-<p><span class="card-title">Reproducibility</span> Could someone re-run your workflow and get your result without you in the room? Environment + steps + “re-running reproduces the figure.”</p>
-</div>
-<div class="concept-card">
-<p><span class="card-title">AI fact-checking</span> For any AI-assisted part: name the output type (fact / relationship / code) and state the final-gate check that made it trustworthy.</p>
-</div>
-</div>
-<p>Carry both into your Object Card and Reproducibility Capsule.</p>
-</section>
-<section id="quick-reference-match-the-check-to-the-ai-output" class="slide level2 center">
-<h2>Quick reference: match the check to the AI output</h2>
+<section id="the-brief-you-bring-2" class="slide level2 center">
+<h2>The brief you bring (×2)</h2>
+<p>Write it so a classmate who does not know your project could draw it.</p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>AI output</th>
-<th>What it’s good for</th>
-<th>Final-gate check</th>
+<th>Field</th>
+<th>What to write</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Fact reiteration</strong></td>
-<td>standards, definitions, precedent claims</td>
-<td>verify against the primary source or document</td>
+<td><strong>Decision</strong></td>
+<td>the choice this diagram supports, in one line</td>
 </tr>
 <tr class="even">
-<td><strong>Relationship simulation</strong></td>
-<td>comfort, perception, fuzzy spatial links</td>
-<td>compare with science logic + one bounded metric</td>
+<td><strong>Data</strong></td>
+<td>the numbers, or a pasted table / CSV (10 rows or fewer)</td>
 </tr>
 <tr class="odd">
-<td><strong>Workflow / code</strong></td>
-<td>formulas, scripts, GhPython, notebook cells</td>
-<td>run it, check units/ranges, test a known case</td>
+<td><strong>Threshold</strong></td>
+<td>the line, its unit, and where it came from: code, precedent, client, physics, or my guess</td>
+</tr>
+<tr class="even">
+<td><strong>Audience</strong></td>
+<td>who looks at it, and for how long (e.g.&nbsp;client, 30 s)</td>
+</tr>
+<tr class="odd">
+<td><strong>Must show</strong></td>
+<td>the one thing the reader must see at a glance</td>
 </tr>
 </tbody>
 </table>
-<p>See <a href="week-08.html">Week 8</a> for the full treatment.</p>
+<p><span class="ask-room">If you cannot write the threshold line, that <em>is</em> your finding for this week. Bring it anyway.</span></p>
 </section>
-<section class="slide level2 center">
+<section id="the-line-nobody-drew" class="slide level2 center">
+<h2>1986: the line nobody drew</h2>
+<p><span class="kicker">Session 1 · Where is the line?</span></p>
+<div class="diagram">
+<svg viewbox="0 0 1200 440" role="img" aria-label="Shuttle flights before Challenger plotted by launch temperature, showing no prior flight below 53 degrees F and the Challenger launch at 36 degrees F">
+  <rect x="80" y="40" width="504" height="320" fill="var(--warn-soft)"></rect>
+  <text x="96" y="74" font-size="20" fill="var(--role-warn)" font-weight="600">No flight had ever launched this cold</text>
+  <line x1="584" y1="40" x2="584" y2="370" stroke="var(--ink)" stroke-width="2" stroke-dasharray="7 6"></line>
+  <text x="594" y="62" font-size="18" fill="var(--ink)">coldest prior launch · 53°F</text>
+  <line x1="278" y1="96" x2="278" y2="370" stroke="var(--signal)" stroke-width="4"></line>
+  <text x="290" y="122" font-size="22" fill="var(--signal)" font-weight="700">Challenger · 36°F</text>
+  <text x="290" y="148" font-size="17" fill="var(--signal)">28 January 1986</text>
+  <text x="1160" y="138" font-size="17" fill="var(--muted)" text-anchor="end">flights with O-ring damage</text>
+  <text x="1160" y="356" font-size="17" fill="var(--muted)" text-anchor="end">flights without damage</text>
+  <g fill="var(--role-warn)">
+    <circle cx="584" cy="190" r="9"></circle><circle cx="656" cy="190" r="9"></circle><circle cx="674" cy="190" r="9"></circle>
+    <circle cx="764" cy="190" r="9"></circle><circle cx="890" cy="190" r="9"></circle><circle cx="890" cy="168" r="9"></circle>
+    <circle cx="980" cy="190" r="9"></circle>
+  </g>
+  <g fill="var(--paper)" stroke="var(--ink)" stroke-width="2">
+    <circle cx="818" cy="320" r="8"></circle><circle cx="836" cy="320" r="8"></circle><circle cx="836" cy="298" r="8"></circle><circle cx="836" cy="276" r="8"></circle>
+    <circle cx="854" cy="320" r="8"></circle><circle cx="872" cy="320" r="8"></circle><circle cx="890" cy="320" r="8"></circle><circle cx="890" cy="298" r="8"></circle>
+    <circle cx="926" cy="320" r="8"></circle><circle cx="944" cy="320" r="8"></circle><circle cx="980" cy="320" r="8"></circle><circle cx="998" cy="320" r="8"></circle>
+    <circle cx="998" cy="298" r="8"></circle><circle cx="1034" cy="320" r="8"></circle><circle cx="1052" cy="320" r="8"></circle><circle cx="1088" cy="320" r="8"></circle>
+  </g>
+  <line x1="80" y1="370" x2="1160" y2="370" stroke="var(--ink)" stroke-width="1.5"></line>
+  <g font-size="18" fill="var(--muted)" text-anchor="middle">
+    <text x="170" y="398">30°F</text><text x="350" y="398">40</text><text x="530" y="398">50</text>
+    <text x="710" y="398">60</text><text x="890" y="398">70</text><text x="1070" y="398">80</text>
+  </g>
+  <text x="620" y="432" font-size="17" fill="var(--muted)" text-anchor="middle">launch temperature</text>
+</svg>
+<p><span class="src">Schematic redraw of the 23 earlier flights, after Dalal, Fowlkes &amp; Hoadley (1989) and Tufte (1997). The engineers’ real charts never put temperature on an axis.</span></p>
+</div>
+<p><span class="ask-room">The threshold was there in the data: 53°F was the edge of experience. Why did no chart draw it?</span></p>
+</section>
+<section id="draw-the-line-live-10-min" class="slide level2 center">
+<h2>Draw the line · live (10 min)</h2>
+<p>Open the <a href="../site_tools/threshold-explorer.html">Threshold Explorer</a> on <strong>your own device</strong>. Tick <strong>Blind mode</strong>. Set all five thresholds alone, with no talking. Then reveal together.</p>
+<iframe class="xlsx-preview-frame" src="../site_tools/threshold-explorer.html" title="Threshold Explorer">
+</iframe>
+<p><span class="ask-room">Same data, same rules. Did we all recommend the same facade? If not, where did the disagreement live: in the data or in the lines?</span></p>
+</section>
+<section id="the-knife-edge-0.4-over-a-line" class="slide level2 center">
+<h2>The knife edge: 0.4 over a line</h2>
+<div class="diagram">
+<svg viewbox="0 0 1200 430" role="img" aria-label="Solar gain proxy strip plot for five facade variants, drawn twice: with a hard line High greenery fails; with an uncertainty band it is under review">
+  <text x="80" y="40" font-size="20" font-weight="700" fill="var(--ink)">A · Hard lines on all five criteria</text>
+  <rect x="80" y="92" width="460" height="28" fill="var(--activity-soft)"></rect>
+  <line x1="80" y1="106" x2="1080" y2="106" stroke="var(--rule-soft)" stroke-width="2"></line>
+  <line x1="540" y1="70" x2="540" y2="140" stroke="var(--signal)" stroke-width="4"></line>
+  <text x="540" y="62" font-size="17" fill="var(--signal)" text-anchor="middle" font-weight="600">≤ 48.0</text>
+  <g font-size="16" fill="var(--muted)" text-anchor="middle">
+    <circle cx="206" cy="106" r="10" fill="var(--role-activity)"></circle><text x="206" y="150">Deep fins</text>
+    <circle cx="328" cy="106" r="10" fill="var(--role-activity)"></circle><text x="328" y="150">Compact</text>
+    <circle cx="438" cy="106" r="12" fill="var(--role-activity)" stroke="var(--ink)" stroke-width="2"></circle><text x="438" y="150" fill="var(--ink)" font-weight="700">Hybrid</text>
+    <circle cx="548" cy="106" r="10" fill="var(--role-warn)"></circle><text x="600" y="150" fill="var(--role-warn)" font-weight="700">High greenery · fail</text>
+    <circle cx="1020" cy="106" r="10" fill="var(--role-warn)"></circle><text x="1020" y="150">Baseline</text>
+  </g>
+  <text x="1160" y="40" font-size="18" fill="var(--role-warn)" text-anchor="end" font-weight="700">High greenery: score 30 → revise</text>
 
-<p><span class="kicker">Working with AI honestly</span></p>
-</section>
-<section id="you-will-use-ai-so-use-it-accountably" class="slide level2 center">
-<h2>You will use AI — so use it accountably</h2>
-<p>Four obligations that travel with any AI-assisted work — this is <a href="../lectures/ml-primer-12-principles.html">ML Primer Principle 12</a> in practice:</p>
-<div class="two-col">
-<div class="activity-card">
-<p><span class="card-title">Disclose</span> State what AI did, the prompts/seeds, and what you verified. Undisclosed AI is the problem, not AI use.</p>
-</div>
-<div class="concept-card">
-<p><span class="card-title">Sources &amp; IP</span> Use open or owned references; cite image and data sources; respect licenses; do not pass a model’s averaged answer off as your own evidence.</p>
-</div>
-</div>
-<div class="two-col">
-<div class="warning-card">
-<p><span class="card-title">Bias</span> Models return the common/average answer and inherit dataset bias — name who or what your data and outputs might exclude.</p>
-</div>
-<div class="reflection-card">
-<p><span class="card-title">Accountability</span> You remain responsible for every claim. AI is a companion, never the final gate — and never identify people without consent.</p>
-</div>
-</div>
-<p>See the <a href="../templates/ai-workflow-verification-card.html">AI-Assisted Fact-Checking Card</a>.</p>
-</section>
-<section class="slide level2 center">
+  <text x="80" y="232" font-size="20" font-weight="700" fill="var(--ink)">B · Same lines + Week 3 review bands (solar: +10%)</text>
+  <rect x="80" y="284" width="460" height="28" fill="var(--activity-soft)"></rect>
+  <rect x="540" y="284" width="96" height="28" fill="var(--example-soft)"></rect>
+  <line x1="80" y1="298" x2="1080" y2="298" stroke="var(--rule-soft)" stroke-width="2"></line>
+  <line x1="540" y1="262" x2="540" y2="332" stroke="var(--signal)" stroke-width="4"></line>
+  <line x1="636" y1="270" x2="636" y2="326" stroke="var(--role-example)" stroke-width="2" stroke-dasharray="5 4"></line>
+  <text x="588" y="254" font-size="16" fill="var(--role-example)" text-anchor="middle">review band to 52.8</text>
+  <g font-size="16" fill="var(--muted)" text-anchor="middle">
+    <circle cx="206" cy="298" r="10" fill="var(--role-activity)"></circle>
+    <circle cx="328" cy="298" r="10" fill="var(--role-activity)"></circle>
+    <circle cx="438" cy="298" r="12" fill="var(--role-activity)" stroke="var(--ink)" stroke-width="2"></circle>
+    <circle cx="548" cy="298" r="10" fill="var(--role-example)"></circle><text x="600" y="346" fill="var(--role-example)" font-weight="700">High greenery · review</text>
+    <circle cx="1020" cy="298" r="10" fill="var(--role-warn)"></circle>
+  </g>
+  <text x="1160" y="232" font-size="18" fill="var(--role-example)" text-anchor="end" font-weight="700">High greenery: score 55 → review</text>
 
-<p><span class="kicker">The problem</span></p>
-</section>
-<section id="when-good-research-goes-bad" class="slide level2 center">
-<h2>When good research goes bad</h2>
-<p>Strong work can still fail at the moment it reaches an audience.</p>
-<div class="two-col">
-<div class="warning-card">
-<p><span class="card-title">Case 1 · method over message</span></p>
-<ul>
-<li class="fragment">great method</li>
-<li class="fragment">weak message</li>
-<li class="fragment">the audience hears process, not action</li>
-</ul>
+  <line x1="80" y1="380" x2="1080" y2="380" stroke="var(--ink)" stroke-width="1.5"></line>
+  <g font-size="16" fill="var(--muted)" text-anchor="middle">
+    <text x="180" y="404">30</text><text x="380" y="404">40</text><text x="580" y="404">50</text>
+    <text x="780" y="404">60</text><text x="980" y="404">70</text>
+  </g>
+  <text x="580" y="426" font-size="16" fill="var(--muted)" text-anchor="middle">solar gain proxy (index, lower is better) · confidence for High greenery: LOW</text>
+</svg>
+<p><span class="src">Week 3 facade data · <code>starter_kits/spreadsheet-thresholds/decision_matrix_filled_example.csv</code></span></p>
 </div>
-<div class="warning-card">
-<p><span class="card-title">Case 2 · correct but unclear</span></p>
-<ul>
-<li class="fragment">technically correct charts</li>
-<li class="fragment">no clear takeaway</li>
-<li class="fragment">the status quo survives because the room stays confused</li>
-</ul>
+<p><span class="ask-room">Same number (48.4), two pictures, two verdicts. Which one is honest about a low-confidence proxy?</span></p>
+</section>
+<section id="which-lines-are-actually-worth-defending" class="slide level2 center">
+<h2>Which lines are actually worth defending?</h2>
+<div class="diagram">
+<svg viewbox="0 0 1200 400" role="img" aria-label="Bar chart of how far each threshold must tighten before Hybrid stops being the top recommendation">
+  <text x="330" y="30" font-size="18" fill="var(--muted)">how far the threshold must tighten before Hybrid stops being the top pick</text>
+  <g font-size="20" text-anchor="end">
+    <text x="310" y="90" fill="var(--ink)" font-weight="700">facade depth ≤ 0.75 m</text>
+    <text x="310" y="150" fill="var(--ink)" font-weight="700">solar gain ≤ 48.0</text>
+    <text x="310" y="210" fill="var(--muted)">morning glare ≤ 2.0 h</text>
+    <text x="310" y="270" fill="var(--muted)">view openness ≥ 0.55</text>
+    <text x="310" y="330" fill="var(--muted)">planting depth ≥ 0.80 m</text>
+  </g>
+  <rect x="330" y="68" width="283" height="32" fill="var(--signal)"></rect>
+  <text x="625" y="91" font-size="19" fill="var(--signal)" font-weight="700">−18% (to 0.62 m) → Deep fins wins</text>
+  <rect x="330" y="128" width="304" height="32" fill="var(--signal)"></rect>
+  <text x="646" y="151" font-size="19" fill="var(--signal)" font-weight="700">−19% (to 38.9) → Deep fins wins</text>
+  <defs>
+    <pattern id="w9hatch" width="10" height="10" patternunits="userSpaceOnUse" patterntransform="rotate(45)">
+      <rect width="10" height="10" fill="var(--rule-soft)"></rect><line x1="0" y1="0" x2="0" y2="10" stroke="var(--paper)" stroke-width="4"></line>
+    </pattern>
+  </defs>
+  <rect x="330" y="188" width="800" height="32" fill="url(#w9hatch)"></rect>
+  <rect x="330" y="248" width="800" height="32" fill="url(#w9hatch)"></rect>
+  <rect x="330" y="308" width="800" height="32" fill="url(#w9hatch)"></rect>
+  <text x="1120" y="270" font-size="17" fill="var(--muted)" text-anchor="end">no move in the tested range changes the pick</text>
+  <line x1="330" y1="356" x2="1130" y2="356" stroke="var(--ink)" stroke-width="1.5"></line>
+  <g font-size="16" fill="var(--muted)" text-anchor="middle">
+    <text x="330" y="380">0%</text><text x="490" y="380">10%</text><text x="650" y="380">20%</text>
+    <text x="810" y="380">30%</text><text x="970" y="380">40%</text><text x="1130" y="380">50%</text>
+  </g>
+</svg>
+<p><span class="src">Computed by the Threshold Explorer (“flip” readout) on the Week 3 rules</span></p>
 </div>
+<p><span class="ask-room">Five thresholds, but only two can change the answer. Which two belong on the object card, and which three can go in a footnote?</span></p>
+</section>
+<section id="a-line-on-a-map-is-a-ring.-people-walk-streets." class="slide level2 center">
+<h2>A line on a map is a ring. People walk streets.</h2>
+<div class="diagram">
+<svg viewbox="0 0 1200 500" role="img" aria-label="Illustrative map: a home 680 metres from a station in a straight line sits inside the 800 metre ring, but a highway forces a 2.1 kilometre walk">
+  <g stroke="var(--rule-soft)" stroke-width="1">
+    <line x1="160" y1="40" x2="160" y2="490"></line><line x1="240" y1="40" x2="240" y2="490"></line><line x1="320" y1="40" x2="320" y2="490"></line>
+    <line x1="420" y1="40" x2="420" y2="490"></line><line x1="600" y1="40" x2="600" y2="490"></line><line x1="680" y1="40" x2="680" y2="490"></line>
+    <line x1="140" y1="100" x2="700" y2="100"></line><line x1="140" y1="170" x2="700" y2="170"></line><line x1="140" y1="270" x2="700" y2="270"></line>
+    <line x1="140" y1="360" x2="700" y2="360"></line><line x1="140" y1="440" x2="700" y2="440"></line>
+  </g>
+  <rect x="512" y="30" width="36" height="400" fill="var(--ink)" opacity="0.82"></rect>
+  <rect x="512" y="452" width="36" height="40" fill="var(--ink)" opacity="0.82"></rect>
+  <text x="530" y="24" font-size="15" fill="var(--ink)" text-anchor="middle">highway</text>
+  <text x="556" y="482" font-size="14" fill="var(--muted)">bridge</text>
+  <circle cx="420" cy="270" r="110" fill="none" stroke="var(--signal)" stroke-width="2" stroke-dasharray="6 6"></circle>
+  <circle cx="420" cy="270" r="220" fill="none" stroke="var(--signal)" stroke-width="3"></circle>
+  <text x="420" y="44" font-size="16" fill="var(--signal)" text-anchor="middle" font-weight="600">800 m ring</text>
+  <text x="420" y="154" font-size="14" fill="var(--signal)" text-anchor="middle">400 m</text>
+  <polyline points="600,220 600,441 420,441 420,270" fill="none" stroke="var(--role-concept)" stroke-width="5" stroke-linejoin="round"></polyline>
+  <line x1="420" y1="270" x2="600" y2="220" stroke="var(--muted)" stroke-width="2" stroke-dasharray="3 5"></line>
+  <rect x="408" y="258" width="24" height="24" fill="var(--ink)"></rect>
+  <text x="380" y="300" font-size="16" fill="var(--ink)" text-anchor="end" font-weight="700">station</text>
+  <circle cx="600" cy="220" r="12" fill="var(--role-warn)"></circle>
+  <text x="618" y="214" font-size="17" fill="var(--role-warn)" font-weight="700">home</text>
+  <circle cx="300" cy="150" r="10" fill="var(--role-activity)"></circle>
+  <circle cx="250" cy="360" r="10" fill="var(--role-activity)"></circle>
+  <g font-size="20">
+    <text x="760" y="140" fill="var(--muted)">straight line</text>
+    <text x="760" y="172" fill="var(--ink)" font-weight="700">680 m · inside the ring ✓</text>
+    <text x="760" y="240" fill="var(--role-concept)">on foot, via the bridge</text>
+    <text x="760" y="272" fill="var(--role-concept)" font-weight="700">≈ 2.1 km · ≈ 25 min ✗</text>
+    <text x="760" y="350" fill="var(--ink)">The threshold (800 m) was fine.</text>
+    <text x="760" y="380" fill="var(--signal)" font-weight="700">The way it was measured was not.</text>
+  </g>
+</svg>
+<p><span class="src">Illustrative site. 400 m / 800 m are common planning rules of thumb for walking catchments, not a Hong Kong standard.</span></p>
 </div>
+<p><span class="ask-room">Draw this line for a 75-year-old walking at half speed. Does the ring shrink, or does the line move?</span></p>
 </section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Anecdote · a figure that failed</span></p>
-</section>
-<section id="the-chart-that-did-not-show-the-danger" class="slide level2 center">
-<h2>1986: the chart that did not show the danger</h2>
-<div class="warning-card">
-<p><span class="card-title">What went wrong</span> The night before the Challenger launch, engineers argued against a cold-weather launch — but their charts scattered O-ring damage across thirteen pages and never plotted damage <strong>against temperature</strong>. The pattern stayed invisible; the launch was approved.</p>
+<section id="same-air-four-lines" class="slide level2 center">
+<h2>Same air, four lines</h2>
+<div class="diagram">
+<svg viewbox="0 0 1200 460" role="img" aria-label="Annual PM2.5 thresholds: Hong Kong before 2022 at 35, Hong Kong from 2022 at 25, WHO 2005 at 10, WHO 2021 at 5, with an illustrative site at 20">
+  <line x1="140" y1="40" x2="140" y2="400" stroke="var(--ink)" stroke-width="1.5"></line>
+  <g font-size="16" fill="var(--muted)" text-anchor="end">
+    <text x="128" y="405">0</text><text x="128" y="315">10</text><text x="128" y="225">20</text><text x="128" y="135">30</text><text x="128" y="45">40</text>
+  </g>
+  <text x="60" y="230" font-size="16" fill="var(--muted)" transform="rotate(-90 60 230)" text-anchor="middle">annual PM2.5 (µg/m³)</text>
+  <line x1="140" y1="85" x2="880" y2="85" stroke="var(--role-activity)" stroke-width="3" stroke-dasharray="8 6"></line>
+  <line x1="140" y1="175" x2="880" y2="175" stroke="var(--role-activity)" stroke-width="4"></line>
+  <line x1="140" y1="310" x2="880" y2="310" stroke="var(--role-warn)" stroke-width="3" stroke-dasharray="8 6"></line>
+  <line x1="140" y1="355" x2="880" y2="355" stroke="var(--role-warn)" stroke-width="4"></line>
+  <g font-size="18">
+    <text x="895" y="91" fill="var(--role-activity)">35 · Hong Kong AQO, before 2022</text>
+    <text x="895" y="181" fill="var(--role-activity)" font-weight="700">25 · Hong Kong AQO, from 2022</text>
+    <text x="895" y="316" fill="var(--role-warn)">10 · WHO guideline, 2005</text>
+    <text x="895" y="361" fill="var(--role-warn)" font-weight="700">5 · WHO guideline, 2021</text>
+  </g>
+  <circle cx="510" cy="220" r="14" fill="var(--signal)"></circle>
+  <text x="535" y="214" font-size="20" fill="var(--signal)" font-weight="700">your site: 20</text>
+  <text x="535" y="240" font-size="15" fill="var(--muted)">(illustrative value)</text>
+  <text x="160" y="440" font-size="17" fill="var(--ink)">Passes both Hong Kong lines. 2× the 2005 WHO line. <tspan fill="var(--signal)" font-weight="700">4× the 2021 WHO line.</tspan></text>
+</svg>
+<p><span class="src">WHO Global Air Quality Guidelines (2021); HK EPD Air Quality Objectives (in force 1 Jan 2022). In the same revision the HK 24-hour limit tightened from 75 to 50 µg/m³, but allowed exceedances rose from 9 to 35 a year.</span></p>
 </div>
-<div class="example-card">
-<p><span class="card-title">The lesson</span> Correct data is not enough. If the figure does not make the relationship visible, the decision does not get made. (Edward Tufte’s classic case study of this launch.)</p>
-</div>
+<p><span class="ask-room">Write a recommendation for this site that is true under all four lines. Is a threshold just a number, or a number plus a counting rule?</span></p>
 </section>
-<section id="the-two-slide-challenge" class="slide level2 center">
-<h2>The two-slide challenge</h2>
-<div class="concept-card">
-<p><span class="card-title">The test</span> Could you explain your semester in <strong>two slides</strong> to a busy critic, client, or studio tutor who gives you three minutes?</p>
-</div>
-<p>If not, your findings are still trapped inside your process.</p>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Story structure</span></p>
-</section>
-<section id="one-useful-story-structure-for-busy-stakeholders" class="slide level2 center">
-<h2>One useful story structure for busy stakeholders</h2>
-<div class="concept-card">
-<ol type="1">
-<li class="fragment">What problem or decision matters?</li>
-<li class="fragment">What evidence did you gather?</li>
-<li class="fragment">What changed because of that evidence?</li>
-<li class="fragment">What should happen next?</li>
-</ol>
-</div>
-<p>This is not simplification for its own sake. It is decision support.</p>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Anecdote · a figure that drove a decision</span></p>
-</section>
-<section id="the-map-that-removed-a-pump-handle" class="slide level2 center">
-<h2>1854: the map that removed a pump handle</h2>
+<section id="snow-drew-a-walking-distance-line" class="slide level2 center">
+<h2>1854: Snow drew a walking-distance line</h2>
+<p><span class="kicker">Old figures, read for their lines</span></p>
 <div class="vibe-case">
 <div class="vibe-visual">
 <div class="quarto-figure quarto-figure-center">
@@ -363,79 +403,14 @@
 </div>
 <div class="vibe-panel">
 <div class="example-card">
-<p><span class="card-title">What it did</span> Plotting each cholera death as a mark on the street map made one water pump’s deadly cluster impossible to miss.</p>
+<p><span class="card-title">Threshold in the picture</span> In a later version made for the parish inquiry (not the one shown), Snow added a dotted boundary: the points that were <strong>equally far on foot</strong> from the Broad Street pump and from the next nearest pump. The deaths sat inside the line.</p>
 </div>
-<div class="activity-card">
-<p><span class="card-title">The lesson</span> The figure <strong>located the cause</strong>, so the action was obvious: remove the Broad Street pump handle. A figure that locates the problem changes the decision.</p>
-</div>
+<p><span class="ask-room">Snow’s boundary followed streets, not a circle. Compare it with the ring on our map two slides back.</span></p>
 </div>
 </div>
 </section>
-<section id="start-with-their-problem" class="slide level2 center">
-<h2>Start with their problem</h2>
-<div class="two-col">
-<div class="warning-card">
-<p><span class="card-title">Do not begin with</span></p>
-<ul>
-<li class="fragment">software</li>
-<li class="fragment">methods jargon</li>
-<li class="fragment">every intermediate step</li>
-</ul>
-</div>
-<div class="activity-card">
-<p><span class="card-title">Begin with</span></p>
-<ul>
-<li class="fragment">the decision</li>
-<li class="fragment">the stake</li>
-<li class="fragment">the missing evidence</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="worked-stakeholder-question" class="slide level2 center">
-<h2>Worked stakeholder question</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../assets/examples/the-edge-amsterdam.jpg" height="460"></p>
-<figcaption>The Edge, Amsterdam</figcaption>
-</figure>
-</div>
-<p>If your recommendation depends on a case like this, what would a skeptical stakeholder ask first?</p>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Figure rescue</span></p>
-</section>
-<section id="why-charts-fail" class="slide level2 center">
-<h2>Why charts fail</h2>
-<div class="warning-card">
-<ul>
-<li class="fragment">too many variables at once</li>
-<li class="fragment">vague titles</li>
-<li class="fragment">no highlighted message</li>
-<li class="fragment">uncertainty hidden</li>
-<li class="fragment">no connection back to the decision</li>
-</ul>
-</div>
-</section>
-<section id="the-3-second-message-test" class="slide level2 center">
-<h2>The 3-second message test</h2>
-<p>Give your figure three seconds. Can a viewer tell:</p>
-<div class="concept-card">
-<ul>
-<li class="fragment">what is being compared?</li>
-<li class="fragment">which side performs better?</li>
-<li class="fragment">what the implication is?</li>
-</ul>
-</div>
-<p>If not, it needs revision.</p>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Anecdote · make the dominant cause unmissable</span></p>
-</section>
-<section id="the-diagram-that-won-a-sanitation-argument" class="slide level2 center">
-<h2>1858: the diagram that won a sanitation argument</h2>
+<section id="nightingale-made-the-comparison-the-line" class="slide level2 center">
+<h2>1858: Nightingale made the comparison the line</h2>
 <div class="vibe-case">
 <div class="vibe-visual">
 <div class="quarto-figure quarto-figure-center">
@@ -447,85 +422,14 @@
 </div>
 <div class="vibe-panel">
 <div class="example-card">
-<p><span class="card-title">What it did</span> The large wedges showed deaths from <strong>preventable disease</strong> dwarfing deaths from wounds — visible at a glance, no table required.</p>
+<p><span class="card-title">Threshold in the picture</span> There is no number to clear. The line is relative: preventable disease against wounds. When the outer wedge dwarfs the inner one, the case is made.</p>
 </div>
-<div class="activity-card">
-<p><span class="card-title">The lesson</span> One dominant visual comparison can carry an argument that columns of numbers cannot. Make the biggest thing the most visible thing.</p>
-</div>
+<p><span class="ask-room">Your threshold could be relative (“better than baseline by X”) instead of absolute. Which would your audience trust more?</span></p>
 </div>
 </div>
 </section>
-<section id="figure-rescue-before-and-after" class="slide level2 center">
-<h2>Figure rescue: before and after</h2>
-<div class="two-col">
-<div class="warning-card">
-<p><span class="card-title">Before · the weak figure</span></p>
-<ul>
-<li class="fragment">five series, no focus</li>
-<li class="fragment">title reads “Results — Final”</li>
-<li class="fragment">legend the reader must decode</li>
-<li class="fragment">error bars buried or absent</li>
-<li class="fragment">nothing ties it to a decision</li>
-</ul>
-</div>
-<div class="activity-card">
-<p><span class="card-title">After · the cleaned figure</span></p>
-<ul>
-<li class="fragment">one message, two series compared</li>
-<li class="fragment">title states the takeaway in words</li>
-<li class="fragment">the winning option labelled directly</li>
-<li class="fragment">uncertainty shown where it matters</li>
-<li class="fragment">a caption naming the design action</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="rescue-formula" class="slide level2 center">
-<h2>Rescue formula</h2>
-<div class="concept-card">
-<ol type="1">
-<li class="fragment">decide the one message</li>
-<li class="fragment">remove non-essential data</li>
-<li class="fragment">label the takeaway directly</li>
-<li class="fragment">show uncertainty where it matters</li>
-<li class="fragment">connect the figure to the design decision</li>
-</ol>
-</div>
-</section>
-<section id="figure-rescue-sprint" class="slide level2 center">
-<h2>Figure rescue sprint</h2>
-<div class="activity-card">
-<p><span class="card-title">Do this now</span> Bring one weak figure and improve it under these rules:</p>
-<ul>
-<li class="fragment">one message only</li>
-<li class="fragment">readable title</li>
-<li class="fragment">no decorative legends if direct labels work</li>
-<li class="fragment">one annotation that tells the audience why it matters</li>
-</ul>
-</div>
-<p>Present the before and after in 60 seconds.</p>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Object cards</span></p>
-</section>
-<section id="the-30-second-board-test" class="slide level2 center">
-<h2>The 30-second board test</h2>
-<p>During the Object Fair, a viewer gives your board about 30 seconds. In that time they should be able to:</p>
-<div class="concept-card">
-<ol type="1">
-<li class="fragment">stop</li>
-<li class="fragment">understand the key message</li>
-<li class="fragment">know what action or question follows</li>
-</ol>
-</div>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Anecdote · one figure, the whole story</span></p>
-</section>
-<section id="six-variables-in-a-single-image" class="slide level2 center">
-<h2>1869: six variables in a single image</h2>
+<section id="minard-put-the-cold-on-its-own-axis" class="slide level2 center">
+<h2>1869: Minard put the cold on its own axis</h2>
 <div class="vibe-case">
 <div class="vibe-visual">
 <div class="quarto-figure quarto-figure-center">
@@ -537,313 +441,406 @@
 </div>
 <div class="vibe-panel">
 <div class="example-card">
-<p><span class="card-title">What it shows</span> Army size, location, direction, and temperature on the retreat — the shrinking band tells the whole catastrophe without a caption.</p>
+<p><span class="card-title">Threshold in the picture</span> The temperature line along the bottom is tied to the shrinking army above it. You can see the band collapse as the cold drops. Challenger’s charts were missing exactly this axis.</p>
 </div>
-<div class="activity-card">
-<p><span class="card-title">The object-card ideal</span> Tufte called it among the best statistical graphics ever drawn. Your object card has the same job: one figure that carries the decision on its own.</p>
-</div>
+<p><span class="ask-room">What is the “temperature line” in your project: the variable that, once it crosses a value, changes everything?</span></p>
 </div>
 </div>
 </section>
-<section id="object-card-anatomy" class="slide level2 center">
-<h2>Object-card anatomy</h2>
-<p>The whole card is built around one dominant recommendation. Everything else supports it.</p>
+<section id="a-menu-of-threshold-diagrams" class="slide level2 center">
+<h2>A menu of threshold diagrams</h2>
+<div class="diagram">
+<svg viewbox="0 0 1200 250" role="img" aria-label="Five small threshold diagram patterns">
+  <g>
+    <rect x="0" y="0" width="216" height="170" fill="#fff" stroke="var(--rule-soft)"></rect>
+    <rect x="12" y="80" width="98" height="20" fill="var(--activity-soft)"></rect>
+    <line x1="12" y1="90" x2="204" y2="90" stroke="var(--rule-soft)" stroke-width="2"></line>
+    <line x1="110" y1="55" x2="110" y2="125" stroke="var(--signal)" stroke-width="3"></line>
+    <circle cx="40" cy="90" r="7" fill="var(--role-activity)"></circle><circle cx="75" cy="90" r="7" fill="var(--role-activity)"></circle>
+    <circle cx="100" cy="90" r="7" fill="var(--role-activity)"></circle><circle cx="126" cy="90" r="7" fill="var(--role-warn)"></circle><circle cx="182" cy="90" r="7" fill="var(--role-warn)"></circle>
+    <text x="108" y="200" font-size="19" font-weight="700" text-anchor="middle" fill="var(--ink)">Line on a strip</text>
+    <text x="108" y="224" font-size="15" text-anchor="middle" fill="var(--muted)">few options, one metric</text>
+  </g>
+  <g transform="translate(246,0)">
+    <rect x="0" y="0" width="216" height="170" fill="#fff" stroke="var(--rule-soft)"></rect>
+    <rect x="12" y="80" width="98" height="20" fill="var(--activity-soft)"></rect>
+    <rect x="110" y="80" width="34" height="20" fill="var(--example-soft)"></rect>
+    <line x1="12" y1="90" x2="204" y2="90" stroke="var(--rule-soft)" stroke-width="2"></line>
+    <line x1="110" y1="55" x2="110" y2="125" stroke="var(--signal)" stroke-width="3"></line>
+    <circle cx="60" cy="90" r="7" fill="var(--role-activity)"></circle><circle cx="126" cy="90" r="7" fill="var(--role-example)"></circle><circle cx="182" cy="90" r="7" fill="var(--role-warn)"></circle>
+    <text x="108" y="200" font-size="19" font-weight="700" text-anchor="middle" fill="var(--ink)">Band, not a line</text>
+    <text x="108" y="224" font-size="15" text-anchor="middle" fill="var(--muted)">uncertain or proxy data</text>
+  </g>
+  <g transform="translate(492,0)">
+    <rect x="0" y="0" width="216" height="170" fill="#fff" stroke="var(--rule-soft)"></rect>
+    <circle cx="96" cy="85" r="62" fill="none" stroke="var(--signal)" stroke-width="3"></circle>
+    <rect x="88" y="77" width="16" height="16" fill="var(--ink)"></rect>
+    <rect x="150" y="8" width="12" height="154" fill="var(--ink)" opacity="0.8"></rect>
+    <circle cx="60" cy="60" r="6" fill="var(--role-activity)"></circle><circle cx="72" cy="120" r="6" fill="var(--role-activity)"></circle>
+    <circle cx="140" cy="60" r="6" fill="var(--role-activity)"></circle><circle cx="178" cy="70" r="6" fill="var(--role-warn)"></circle>
+    <text x="108" y="200" font-size="19" font-weight="700" text-anchor="middle" fill="var(--ink)">Ring on a map</text>
+    <text x="108" y="224" font-size="15" text-anchor="middle" fill="var(--muted)">distance and access</text>
+  </g>
+  <g transform="translate(738,0)">
+    <rect x="0" y="0" width="216" height="170" fill="#fff" stroke="var(--rule-soft)"></rect>
+    <line x1="16" y1="30" x2="200" y2="30" stroke="var(--role-activity)" stroke-width="3"></line>
+    <line x1="16" y1="60" x2="200" y2="60" stroke="var(--role-activity)" stroke-width="3"></line>
+    <line x1="16" y1="118" x2="200" y2="118" stroke="var(--role-warn)" stroke-width="3"></line>
+    <line x1="16" y1="145" x2="200" y2="145" stroke="var(--role-warn)" stroke-width="3"></line>
+    <circle cx="108" cy="88" r="9" fill="var(--signal)"></circle>
+    <text x="108" y="200" font-size="19" font-weight="700" text-anchor="middle" fill="var(--ink)">Ladder of lines</text>
+    <text x="108" y="224" font-size="15" text-anchor="middle" fill="var(--muted)">competing standards</text>
+  </g>
+  <g transform="translate(984,0)">
+    <rect x="0" y="0" width="216" height="170" fill="#fff" stroke="var(--rule-soft)"></rect>
+    <rect x="16" y="22" width="70" height="20" fill="var(--signal)"></rect>
+    <rect x="16" y="54" width="80" height="20" fill="var(--signal)"></rect>
+    <rect x="16" y="86" width="184" height="20" fill="var(--rule-soft)"></rect>
+    <rect x="16" y="118" width="184" height="20" fill="var(--rule-soft)"></rect>
+    <text x="108" y="200" font-size="19" font-weight="700" text-anchor="middle" fill="var(--ink)">How far to flip</text>
+    <text x="108" y="224" font-size="15" text-anchor="middle" fill="var(--muted)">which lines matter</text>
+  </g>
+</svg>
+</div>
+<p>Every pattern draws the line <em>inside</em> the figure. A threshold that only appears in a caption is a threshold the reader will miss.</p>
+<p><span class="ask-room">Which pattern fits your brief? Is there a sixth one we have not drawn?</span></p>
+</section>
+<section id="your-projects-a-pareto-front-is-not-a-decision" class="slide level2 center">
+<h2>Your projects · a Pareto front is not a decision</h2>
+<p><span class="kicker">Pavilion siting · multi-objective</span></p>
+<div class="diagram">
+<svg viewbox="0 0 1200 470" role="img" aria-label="Illustrative Pareto front of candidate pavilion sites by walking time and UTCI reduction, with two threshold lines leaving two feasible Pareto sites">
+  <rect x="120" y="60" width="350" height="180" fill="var(--activity-soft)"></rect>
+  <text x="132" y="86" font-size="17" fill="var(--role-activity)" font-weight="600">passes both lines</text>
+  <line x1="120" y1="240" x2="820" y2="240" stroke="var(--signal)" stroke-width="3"></line>
+  <text x="826" y="246" font-size="17" fill="var(--signal)" font-weight="700">UTCI drop ≥ 4.0 °C</text>
+  <line x1="470" y1="40" x2="470" y2="420" stroke="var(--signal)" stroke-width="3"></line>
+  <text x="476" y="36" font-size="17" fill="var(--signal)" font-weight="700">walk ≤ 4 min</text>
+  <polyline points="190,352.5 225,303 277.5,267 330,213 400,181.5 513.75,145.5 645,114 750,100.5" fill="none" stroke="var(--ink)" stroke-width="2" stroke-dasharray="6 5"></polyline>
+  <text x="700" y="88" font-size="16" fill="var(--ink)">Pareto front (8 sites)</text>
+  <g fill="var(--paper)" stroke="var(--muted)" stroke-width="2">
+    <circle cx="295" cy="339" r="7"></circle><circle cx="426" cy="285" r="7"></circle><circle cx="557.5" cy="231" r="7"></circle>
+    <circle cx="688.75" cy="195" r="7"></circle><circle cx="365" cy="321" r="7"></circle><circle cx="487.5" cy="249" r="7"></circle>
+  </g>
+  <g fill="var(--ink)">
+    <circle cx="190" cy="352.5" r="8"></circle><circle cx="225" cy="303" r="8"></circle><circle cx="277.5" cy="267" r="8"></circle>
+    <circle cx="513.75" cy="145.5" r="8"></circle><circle cx="645" cy="114" r="8"></circle><circle cx="750" cy="100.5" r="8"></circle>
+  </g>
+  <circle cx="330" cy="213" r="11" fill="var(--signal)"></circle><text x="306" y="205" font-size="18" fill="var(--signal)" font-weight="700" text-anchor="end">P4</text>
+  <circle cx="400" cy="181.5" r="11" fill="var(--signal)"></circle><text x="412" y="172" font-size="18" fill="var(--signal)" font-weight="700">P5</text>
+  <line x1="120" y1="420" x2="820" y2="420" stroke="var(--ink)" stroke-width="1.5"></line>
+  <line x1="120" y1="60" x2="120" y2="420" stroke="var(--ink)" stroke-width="1.5"></line>
+  <g font-size="15" fill="var(--muted)" text-anchor="middle">
+    <text x="120" y="442">0</text><text x="295" y="442">2</text><text x="470" y="442">4</text><text x="645" y="442">6</text><text x="820" y="442">8</text>
+  </g>
+  <text x="470" y="464" font-size="15" fill="var(--muted)" text-anchor="middle">walk from the main path (min) · lower is better</text>
+  <g font-size="15" fill="var(--muted)" text-anchor="end">
+    <text x="110" y="425">0</text><text x="110" y="335">2</text><text x="110" y="245">4</text><text x="110" y="155">6</text><text x="110" y="65">8</text>
+  </g>
+  <text x="40" y="240" font-size="15" fill="var(--muted)" transform="rotate(-90 40 240)" text-anchor="middle">peak-hour UTCI reduction (°C) · higher is better</text>
+  <g font-size="18">
+    <text x="880" y="300" fill="var(--ink)" font-weight="700">The lines choose, not the front.</text>
+    <text x="880" y="332" fill="var(--ink)">Both lines → P4 or P5</text>
+    <text x="880" y="360" fill="var(--ink)">Comfort ≥ 5.0 → only P5</text>
+    <text x="880" y="388" fill="var(--ink)">Walk ≤ 3 min → only P4</text>
+    <text x="880" y="416" fill="var(--signal)" font-weight="700">Both moves → nothing left</text>
+  </g>
+</svg>
+<p><span class="src">Illustrative values, not the student’s data: 14 candidate sites, 8 on the front (filled), 6 dominated (hollow).</span></p>
+</div>
+<p><span class="ask-room">Would you write comfort as an objective or as a constraint (ε)? Each choice gives a different set of “optimal” sites.</span></p>
+</section>
+<section id="your-projects-is-the-line-a-drop-or-a-category" class="slide level2 center">
+<h2>Your projects · is the line a drop, or a category?</h2>
+<p><span class="kicker">Pavilion siting · defining the comfort threshold</span></p>
+<div class="diagram">
+<svg viewbox="0 0 1200 420" role="img" aria-label="UTCI heat stress categories with two sites: site A drops 1.4 degrees and crosses into a lower category, site B drops 7 degrees but stays in very strong heat stress">
+  <rect x="120" y="70" width="250" height="60" fill="var(--example-soft)"></rect>
+  <rect x="370" y="70" width="250" height="60" fill="#F1D9B5"></rect>
+  <rect x="620" y="70" width="333" height="60" fill="var(--warn-soft)"></rect>
+  <rect x="953" y="70" width="167" height="60" fill="#E8BDBD"></rect>
+  <g font-size="16" fill="var(--ink)" text-anchor="middle">
+    <text x="245" y="106">moderate</text><text x="495" y="106">strong</text>
+    <text x="786" y="106">very strong</text><text x="1036" y="106">extreme</text>
+  </g>
+  <text x="120" y="56" font-size="16" fill="var(--muted)">UTCI heat stress category</text>
+  <g stroke="var(--ink)" stroke-width="2">
+    <line x1="370" y1="62" x2="370" y2="360"></line><line x1="620" y1="62" x2="620" y2="360"></line><line x1="953" y1="62" x2="953" y2="360"></line>
+  </g>
+  <defs><marker id="w9arrow" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="7" markerheight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--signal)"></path></marker></defs>
+  <circle cx="661.7" cy="210" r="9" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"></circle>
+  <line x1="652" y1="210" x2="612" y2="210" stroke="var(--signal)" stroke-width="5" marker-end="url(#w9arrow)"></line>
+  <circle cx="603.3" cy="210" r="9" fill="var(--signal)"></circle>
+  <text x="140" y="200" font-size="19" fill="var(--ink)" font-weight="700">Site A · −1.4 °C</text>
+  <text x="140" y="226" font-size="16" fill="var(--signal)">crosses into "strong" ✓ category drop</text>
+  <circle cx="932.5" cy="300" r="9" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"></circle>
+  <line x1="922" y1="300" x2="650" y2="300" stroke="var(--signal)" stroke-width="5" marker-end="url(#w9arrow)"></line>
+  <circle cx="640.8" cy="300" r="9" fill="var(--signal)"></circle>
+  <text x="140" y="290" font-size="19" fill="var(--ink)" font-weight="700">Site B · −7.0 °C</text>
+  <text x="140" y="316" font-size="16" fill="var(--role-warn)">still "very strong" ✗ no category drop</text>
+  <line x1="120" y1="360" x2="1120" y2="360" stroke="var(--ink)" stroke-width="1.5"></line>
+  <g font-size="15" fill="var(--muted)" text-anchor="middle">
+    <text x="120" y="384">26</text><text x="370" y="384">32</text><text x="620" y="384">38</text><text x="953" y="384">46 °C</text>
+  </g>
+  <text x="620" y="412" font-size="16" fill="var(--ink)" text-anchor="middle">Judged by the size of the drop, B wins 5×. Judged by category, only A changes anyone's heat stress.</text>
+</svg>
+<p><span class="src">UTCI category boundaries (26 / 32 / 38 / 46 °C) follow the standard UTCI assessment scale. The site values are illustrative.</span></p>
+</div>
+<p><span class="ask-room">Which definition can you defend from the comfort literature, and does your Pareto front survive the switch?</span></p>
+</section>
+<section id="your-projects-put-the-line-on-the-section" class="slide level2 center">
+<h2>Your projects · put the line on the section</h2>
+<p><span class="kicker">Studio massing · volume options</span></p>
+<div class="diagram">
+<svg viewbox="0 0 1200 430" role="img" aria-label="Three massing sections with a 25 degree daylight line from the neighbour's window and a floor-area target: the slab breaks the line, the low block misses the area, the stepped block meets both">
+  <g>
+    <text x="10" y="26" font-size="20" font-weight="700" fill="var(--ink)">A · Slab</text>
+    <text x="10" y="142" font-size="14" fill="var(--muted)">neighbour</text>
+    <text x="300" y="166" font-size="16" fill="var(--signal)" font-weight="700">25°</text>
+    <rect x="10" y="150" width="60" height="190" fill="var(--rule-soft)"></rect>
+    <rect x="58" y="312" width="12" height="16" fill="var(--paper)" stroke="var(--ink)"></rect>
+    <rect x="110" y="200" width="260" height="140" fill="var(--warn-soft)" stroke="var(--role-warn)" stroke-width="2"></rect>
+    <line x1="70" y1="320" x2="380" y2="175.5" stroke="var(--signal)" stroke-width="3"></line>
+    <line x1="0" y1="340" x2="390" y2="340" stroke="var(--ink)" stroke-width="2"></line>
+    <text x="10" y="372" font-size="17" fill="var(--role-warn)">25° line ✗ breaks through</text>
+    <text x="10" y="398" font-size="17" fill="var(--role-activity)">GFA 7,800 m² ✓</text>
+  </g>
+  <g transform="translate(405,0)">
+    <text x="10" y="26" font-size="20" font-weight="700" fill="var(--ink)">B · Low block</text>
+    <rect x="10" y="150" width="60" height="190" fill="var(--rule-soft)"></rect>
+    <rect x="58" y="312" width="12" height="16" fill="var(--paper)" stroke="var(--ink)"></rect>
+    <rect x="110" y="305" width="260" height="35" fill="var(--concept-soft)" stroke="var(--role-concept)" stroke-width="2"></rect>
+    <line x1="70" y1="320" x2="380" y2="175.5" stroke="var(--signal)" stroke-width="3"></line>
+    <line x1="0" y1="340" x2="390" y2="340" stroke="var(--ink)" stroke-width="2"></line>
+    <text x="10" y="372" font-size="17" fill="var(--role-activity)">25° line ✓</text>
+    <text x="10" y="398" font-size="17" fill="var(--role-warn)">GFA 1,950 m² ✗ misses brief</text>
+  </g>
+  <g transform="translate(810,0)">
+    <text x="10" y="26" font-size="20" font-weight="700" fill="var(--ink)">C · Stepped</text>
+    <rect x="10" y="150" width="60" height="190" fill="var(--rule-soft)"></rect>
+    <rect x="58" y="312" width="12" height="16" fill="var(--paper)" stroke="var(--ink)"></rect>
+    <polygon points="110,340 110,305 190,305 190,268 270,268 270,230 370,230 370,340" fill="var(--activity-soft)" stroke="var(--role-activity)" stroke-width="2"></polygon>
+    <line x1="70" y1="320" x2="380" y2="175.5" stroke="var(--signal)" stroke-width="3"></line>
+    <line x1="0" y1="340" x2="390" y2="340" stroke="var(--ink)" stroke-width="2"></line>
+    <text x="10" y="372" font-size="17" fill="var(--role-activity)">25° line ✓</text>
+    <text x="10" y="398" font-size="17" fill="var(--role-activity)">GFA 4,190 m² ✓ (target ≥ 4,000)</text>
+  </g>
+</svg>
+<p><span class="src">Illustrative massings. The 25° test is a UK rule of thumb (BRE 209), borrowed here; check the local code (in Hong Kong, the Building (Planning) Regulations).</span></p>
+</div>
+<p><span class="ask-room">Stepped clears the area target by about 5%. What happens to it if the brief adds one more studio?</span></p>
+</section>
+<section id="two-example-briefs-written-for-the-other-person" class="slide level2 center">
+<h2>Two example briefs, written for the other person</h2>
 <div class="two-col">
 <div class="concept-card">
-<p><span class="card-title">1 · The dominant recommendation</span> The one sentence the viewer must leave with. Largest, first, unmissable.</p>
-</div>
-<div class="example-card">
-<p><span class="card-title">2 · One comparison figure</span> A single legible chart that shows the comparison behind the recommendation — secondary to the headline, never competing with it.</p>
-</div>
-</div>
-<div class="two-col">
-<div class="concept-card">
-<p><span class="card-title">3 · One threshold sentence</span> The rule that turns the comparison into a decision: “we prefer X once the gain clears Y.”</p>
-</div>
-<div class="warning-card">
-<p><span class="card-title">4 · One limitations note</span> Where the evidence is weakest and what would change the conclusion — small, honest, present.</p>
-</div>
-</div>
-</section>
-<section id="object-card-priorities" class="slide level2 center">
-<h2>Object-card priorities</h2>
-<div class="concept-card">
+<p><span class="card-title">Pavilion siting (research track)</span></p>
 <ul>
-<li class="fragment">one dominant message</li>
-<li class="fragment">supporting evidence that is legible but secondary</li>
-<li class="fragment">clear next action or recommendation</li>
-<li class="fragment">contact / follow-up information without clutter</li>
+<li><strong>Decision:</strong> which Pareto site goes to the estates office</li>
+<li><strong>Data:</strong> 14 sites × (walk min, peak UTCI drop °C) from the simulation run, plus the weather file and analysis hour</li>
+<li><strong>Threshold:</strong> UTCI drop ≥ 4 °C (<em>my guess</em>, or a category drop from the UTCI scale); walk ≤ 4 min (<em>client</em>)</li>
+<li><strong>Audience:</strong> estates office, 30 seconds</li>
+<li><strong>Must show:</strong> the front, the two lines, and which sites survive both</li>
 </ul>
 </div>
-</section>
-<section id="object-card-clinic" class="slide level2 center">
-<h2>Object-card clinic</h2>
 <div class="activity-card">
-<p><span class="card-title">Check your draft for</span></p>
+<p><span class="card-title">Studio massing (studio track)</span></p>
 <ul>
-<li class="fragment">message hierarchy</li>
-<li class="fragment">visual hierarchy</li>
-<li class="fragment">stakeholder-friendly language</li>
-<li class="fragment">print readability from a distance</li>
+<li><strong>Decision:</strong> which massing to develop for the mid-review</li>
+<li><strong>Data:</strong> 3 options × floors, GFA, and pass/fail on the 25° check</li>
+<li><strong>Threshold:</strong> GFA ≥ 4,000 m² (<em>brief</em>); 25° line from the neighbour (<em>borrowed rule of thumb</em>)</li>
+<li><strong>Audience:</strong> studio tutor, 3-minute crit</li>
+<li><strong>Must show:</strong> the section with the line, and the one option that fits under it</li>
 </ul>
 </div>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Thresholds</span></p>
-</section>
-<section id="evidence-alone-does-not-make-the-decision" class="slide level2 center">
-<h2>Evidence alone does not make the decision</h2>
-<p>You still need:</p>
-<div class="concept-card">
-<ul>
-<li class="fragment">a threshold</li>
-<li class="fragment">a comparison rule</li>
-<li class="fragment">a stakeholder frame</li>
-<li class="fragment">an explanation of what matters most</li>
-</ul>
 </div>
+<p><span class="ask-room">Replace every number with your own. If a field is blank, that is what you bring to the swap.</span></p>
 </section>
-<section id="typical-threshold-questions" class="slide level2 center">
-<h2>Typical threshold questions</h2>
-<div class="concept-card">
-<ul>
-<li class="fragment">how much improvement is enough to justify a change?</li>
-<li class="fragment">what cost increase is acceptable?</li>
-<li class="fragment">what travel-time difference matters?</li>
-<li class="fragment">how much uncertainty can the decision tolerate?</li>
-</ul>
-</div>
-</section>
-<section id="threshold-examples-across-project-types" class="slide level2 center">
-<h2>Threshold examples across project types</h2>
-<p>A threshold turns a number into a decision rule. It looks different in each domain:</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Project type</th>
-<th>Quantity</th>
-<th>Example threshold</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Transit / access</td>
-<td>access time</td>
-<td>within 10 min of a stop</td>
-</tr>
-<tr class="even">
-<td>Daylight study</td>
-<td>daylight hours</td>
-<td>≥ 50% of area meets sDA 300/50%</td>
-</tr>
-<tr class="odd">
-<td>Cost trade-off</td>
-<td>cost premium</td>
-<td>accept ≤ 8% over baseline</td>
-</tr>
-<tr class="even">
-<td>Facade / envelope</td>
-<td>heat gain</td>
-<td>reduce peak gain by ≥ 15%</td>
-</tr>
-<tr class="odd">
-<td>Post-occupancy</td>
-<td>survey confidence</td>
-<td>≥ 70% agreement, n ≥ 30</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="trade-off-table" class="slide level2 center">
-<h2>Trade-off table</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Option</th>
-<th>strongest benefit</th>
-<th>main cost</th>
-<th>biggest risk</th>
-<th>recommendation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>A</td>
-<td>access</td>
-<td>cost</td>
-<td>moderate</td>
-<td>good if budget is stable</td>
-</tr>
-<tr class="even">
-<td>B</td>
-<td>performance</td>
-<td>complexity</td>
-<td>high</td>
-<td>only if support is available</td>
-</tr>
-<tr class="odd">
-<td>C</td>
-<td>speed</td>
-<td>lower upside</td>
-<td>low</td>
-<td>safest baseline</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="counter-arguments-matter" class="slide level2 center">
-<h2>Counter-arguments matter</h2>
-<p>A strong recommendation also says:</p>
-<div class="reflection-card">
-<ul>
-<li class="fragment">what could change the conclusion</li>
-<li class="fragment">where the evidence is weakest</li>
-<li class="fragment">why another option may still be reasonable</li>
-<li class="fragment">what additional evidence would strengthen confidence</li>
-</ul>
-</div>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Patch to Grasshopper</span></p>
-</section>
-<section id="a-figure-can-still-feed-back-into-geometry" class="slide level2 center">
-<h2>A figure can still feed back into geometry</h2>
-<div class="gh-bridge">
-<p><strong>Bridge pattern</strong> Use your figure or threshold to revise the GH design space: narrow a slider range, reject a variant family, color variants by risk, or export a final recommendation table.</p>
-</div>
-<div class="bridge-flow">
-<div class="node current">
-<p>A3 output</p>
-</div>
-<div class="node">
-<p>threshold</p>
-</div>
-<div class="node">
-<p>object card</p>
-</div>
-<div class="node">
-<p>GH range / color</p>
-</div>
-<div class="node">
-<p>design action</p>
-</div>
-</div>
-<p>If the figure does not change any action, it is not yet a decision figure.</p>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Uncertainty check</span></p>
-</section>
-<section id="thresholds-are-decisions-not-facts" class="slide level2 center">
-<h2>Thresholds are decisions, not facts</h2>
-<div class="uncertainty-check">
-<p><strong>Question for Week 9</strong> Who would disagree with your threshold, and what evidence would they use to move it?</p>
-</div>
-<p>Write that disagreement into the limitation note. A strong recommendation can survive a named counter-argument.</p>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">ML principle connection</span></p>
-</section>
-<section id="treat-a-model-output-as-a-suggestion-and-match-the-metric-to-the-task" class="slide level2 center">
-<h2>Treat a model output as a suggestion, and match the metric to the task</h2>
+<section id="same-exercise-two-depths" class="slide level2 center">
+<h2>Same exercise, two depths</h2>
 <div class="two-col">
-<div class="concept-card">
-<p><span class="card-title">Principle 8 — Uncertainty is real</span> Predictions are probabilistic. Sample multiple outputs and critique; avoid presenting one lucky frame as truth.</p>
-</div>
-<div class="concept-card">
-<p><span class="card-title">Principle 11 — Evaluation must match the task</span> Numbers alone can reward “pretty wrong” results. Pair a metric with human A/B judgment for visuals.</p>
-</div>
-</div>
-<div class="reflection-card">
-<p><span class="card-title">So</span> State your threshold WITH its uncertainty, and make the figure show the comparison — not a single hero result.</p>
-</div>
-<p>See <a href="../lectures/ml-primer-12-principles.html">ML Primer · Principles 8 &amp; 11</a>.</p>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">The drill</span></p>
-</section>
-<section id="recommendation-sentence-drill" class="slide level2 center">
-<h2>Recommendation sentence drill</h2>
-<p>Write one sentence:</p>
-<div class="concept-card">
-<p><span class="card-title">The recommendation sentence</span> <strong>Given this evidence, for this audience, I would do X under conditions Y and Z.</strong></p>
-</div>
-<p>Then test whether the sentence:</p>
 <div class="activity-card">
+<p><span class="card-title">Undergraduate · studio track</span></p>
 <ul>
-<li class="fragment">names the decision</li>
-<li class="fragment">reflects uncertainty</li>
-<li class="fragment">implies a next move</li>
+<li>one threshold per diagram, drawn on the drawing (section, plan, or elevation)</li>
+<li>name where the line came from: brief, code, precedent, or guess</li>
+<li>answer the flip question in words: “If the GFA target rises 5%, C fails.”</li>
+<li>hand sketch plus one data version is enough</li>
 </ul>
 </div>
-</section>
-<section id="exit-task" class="slide level2 center">
-<h2>Exit task</h2>
-<p>Before next week, each student should have:</p>
-<div class="reflection-card">
+<div class="concept-card">
+<p><span class="card-title">PhD · research track</span></p>
 <ul>
-<li class="fragment">one improved figure</li>
-<li class="fragment">one clearer object-card draft</li>
-<li class="fragment">one recommendation sentence</li>
-<li class="fragment">one explicit note on limits and confidence</li>
+<li>decide which goals are objectives and which are constraints (ε), and justify the split</li>
+<li>report how the surviving Pareto set changes as each ε moves: a flip chart over ε</li>
+<li>test the robustness of the result across weather years, analysis hours, or sun-angle sampling</li>
+<li>defend the threshold <em>definition</em> (a continuous drop vs a category crossing) from the literature, and say which line is your contribution and which you borrowed</li>
 </ul>
 </div>
+</div>
+<p><span class="ask-room">In the swap, each of you draws the <em>other</em> track’s brief. Studio eyes on a Pareto plot, research eyes on a section.</span></p>
 </section>
 <section id="break" class="slide level2 big-break center">
 <h2>BREAK</h2>
-<p>Take 10 minutes.</p>
-<p>When you return, upload one rough figure or object-card draft to Slack for Session 2.</p>
+<p>Ten minutes. Put both of your briefs in Slack before we restart.</p>
 </section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Session 2 · Round table</span></p>
-</section>
-<section id="round-table-on-your-work" class="slide level2 center">
-<h2>Round table on YOUR work</h2>
+<section id="your-brief-drawn-by-someone-else-three-ways" class="slide level2 center">
+<h2>Your brief, drawn by someone else, three ways</h2>
+<p><span class="kicker">Session 2 · Swap studio</span></p>
 <div class="spine-rail">
 <p><span class="node">Decision</span> <span class="node">Evidence</span> <span class="node">Variation</span> <span class="node">Output</span> <span class="node is-current">Threshold</span> <span class="node">Action</span></p>
 </div>
-<p>Upload one rough material to Slack before Session 2 — a figure, output table, comparison chart, or object-card draft. <span class="feeds-tag">feeds A3 + A4</span></p>
+<p><strong>Swap ring:</strong> Student 1 → Student 2 → Instructor → Student 1. You draw the <strong>Brief 1</strong> of the next person in the ring, and your own brief comes back to you drawn three ways. If another student attends, they join the ring.</p>
+<div class="three-step">
+<div class="step-box">
+<p><strong>1 · By hand · 8 min</strong></p>
+<p>Paper and two pens: black plus one colour for the line. No software. Sketch fast, but the threshold must be drawn in.</p>
+</div>
+<div class="step-box">
+<p><strong>2 · With AI · 10 min</strong></p>
+<p>Any chat or image tool. Paste the brief. Save the prompt and every output, including the bad ones.</p>
+</div>
+<div class="step-box">
+<p><strong>3 · From the data · 10 min</strong></p>
+<p>Spreadsheet chart, the Threshold Explorer, or AI-written Python <strong>that you run</strong>. The numbers must come from the brief.</p>
+</div>
+</div>
+<p><span class="feeds-tag">Brief 2 goes round the ring in reverse as the exit task: one route of your choice.</span></p>
 </section>
-<section id="reconstruct-your-figure-in-four-steps" class="slide level2 center">
-<h2>Reconstruct your figure in four steps</h2>
-<p><strong>Object this week: your result/figure and the design action it changes.</strong></p>
+<section id="prompt-starter-for-round-2" class="slide level2 center">
+<h2>Prompt starter for round 2</h2>
+<div class="concept-card">
+<p><span class="card-title">Paste into any AI tool, then paste your brief</span> “You are drawing a decision diagram for an architecture audience. Draw <strong>one</strong> figure in which the threshold is a visible line or band inside the plot, the options are labelled directly (no legend), and the title states the takeaway. Use <strong>only</strong> the numbers in my brief. If you need a number that is not there, ask me. If you can, give me Python/matplotlib code instead of an image.”</p>
+</div>
+<div class="two-col">
+<div class="warning-card">
+<p><span class="card-title">Image generators draw pictures <em>of</em> charts</span> They can invent ticks, nudge the line, or round 48.4 down to “under 48”. Fine for a layout sketch, but never as evidence.</p>
+</div>
+<div class="concept-card">
+<p><span class="card-title">Code is checkable</span> A chart made by code you ran is a Week 8 “workflow/code” output: run it, check the units, and test it with one known value.</p>
+</div>
+</div>
+</section>
+<section id="compare-lay-out-all-nine" class="slide level2 center">
+<h2>Compare: lay out all nine</h2>
+<p>Put every drawing in Slack. <strong>The brief’s author</strong> judges their own three versions; everyone else adds one note.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Check</th>
+<th>Hand</th>
+<th>AI</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>3-second test:</strong> can you tell what’s compared and who wins?</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Is the <strong>threshold drawn</strong> at the right value, in the right unit?</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Is <strong>uncertainty</strong> visible (band, range, confidence)?</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Did anything get <strong>invented</strong> (numbers, options, labels)?</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Which <strong>one</strong> goes on your object card, and what would you steal from the others?</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><span class="ask-room">Which route told the story best, and was it the same route that got the numbers right?</span></p>
+</section>
+<section id="defend-one-line-5-min-each" class="slide level2 center">
+<h2>Defend one line (5 min each)</h2>
+<p>Each author takes one threshold from their winning diagram. The other two each take one role and attack it once. Rotate roles each round so everyone plays all three.</p>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="card-title">Roles</span></p>
+<ul>
+<li><strong>Client:</strong> “That line costs me money.”</li>
+<li><strong>Occupant:</strong> “That line leaves me out.”</li>
+<li><strong>Regulator:</strong> “Where did that number come from?”</li>
+</ul>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Author answers with three things</span></p>
+<ol type="1">
+<li>the source: code, precedent, client, physics, or my guess</li>
+<li>how far it can move before the recommendation flips</li>
+<li>what evidence would make you move it</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="the-sentence-that-goes-on-the-card" class="slide level2 center">
+<h2>The sentence that goes on the card</h2>
+<div class="concept-card">
+<p><span class="card-title">Recommendation sentence, Week 9 version</span> <strong>For [audience], I recommend [option] because it clears [threshold] ([source]). This changes if [threshold] moves by [how much] or if [counter-argument] holds.</strong></p>
+</div>
+<div class="example-card">
+<p><span class="card-title">Worked from today’s facade data</span> For the client team, I recommend <strong>Hybrid</strong> because it passes all five thresholds in our Week 3 matrix. This changes to <strong>Deep fins</strong> if the solar gain line tightens by about 19% (to ≤ 38.9) or the depth allowance drops below about 0.62 m.</p>
+</div>
+</section>
+<section id="reconstruct-your-threshold-diagram-in-four-steps" class="slide level2 center">
+<h2>Reconstruct your threshold diagram in four steps</h2>
+<p><strong>Object this week: the diagram of your own brief that you chose, and the line inside it.</strong></p>
 <div class="recall-4step">
 <div class="step">
-<p><strong>Did</strong> What does this figure currently show, and what is its one message?</p>
+<p><strong>Did</strong> Which version did you choose (hand, AI, or data), and what is its one message?</p>
 </div>
 <div class="step">
-<p><strong>Assumed</strong> What does the reader have to already know for it to land?</p>
+<p><strong>Assumed</strong> Where does the line come from, and who chose it?</p>
 </div>
 <div class="step">
-<p><strong>Risk</strong> Where is the takeaway unclear, or the uncertainty hidden?</p>
+<p><strong>Risk</strong> How far can it move before the recommendation flips? What did AI get wrong?</p>
 </div>
 <div class="step">
-<p><strong>Verify</strong> What threshold or label would tie it to a design action?</p>
+<p><strong>Verify</strong> Which number in the figure did you check against the brief?</p>
 </div>
 </div>
 <div class="grading-note">
-<p>Post your four-step under your figure. Posting + an honest reconstruction is the graded unit — not how you spoke. Speak for 60–90 seconds: what result changes the design action, and what uncertainty remains visible?</p>
+<p>Post the four steps under your chosen diagram in Slack. The graded unit is the posting plus an honest reconstruction, not how well you spoke.</p>
 </div>
 </section>
-<section id="order-and-the-waiting-role" class="slide level2 center">
-<h2>Order and the waiting role</h2>
-<div class="activity-card">
-<p><span class="card-title">How we run it</span> Volunteers go first; a random draw may fill the remaining examples.</p>
+<section id="exit-before-week-10" class="slide level2 center">
+<h2>Exit · before Week 10</h2>
+<div class="two-col">
+<div class="reflection-card">
+<p><span class="card-title">Bring</span></p>
+<ul>
+<li><strong>Brief 2</strong>, drawn one way, for the classmate it was assigned to</li>
+<li>your chosen threshold diagram, revised</li>
+<li>your recommendation sentence, including the flip distance</li>
+<li><strong>A3 is due this week.</strong> A4 starts now: the diagram and sentence become your Object Card draft.</li>
+</ul>
 </div>
-<div class="example-card">
-<p><span class="card-title">While others present</span> You are not waiting your turn — you are reading. Note one clear move and one missing link per figure. Those notes are your participation record.</p>
+<div class="activity-card">
+<p><span class="card-title">Weeks 10–11, with two students</span> No vote needed. Each of you writes one line in Slack: <strong>clinic</strong> (1-1 help finishing A4) or <strong>workgroup</strong> (building your own GH/Python pipeline). With two of you, we can run both modes side by side.</p>
+</div>
 </div>
 
 
@@ -1133,7 +1130,7 @@
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp("https:\/\/clementinec\.github\.io\/ARCH7476\/");
+            var filterRegex = new RegExp('/' + window.location.host + '/');
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
