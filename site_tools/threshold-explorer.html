@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Threshold Explorer</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #6b6b6b;
+    --paper: #ffffff;
+    --bg: #f6f5f1;
+    --rule: #d9d6cf;
+    --pass: #2e7d4f;
+    --pass-soft: #dcefe3;
+    --review: #b26a00;
+    --review-soft: #fce5cd;
+    --fail: #b3261e;
+    --fail-soft: #f6d7d4;
+    --signal: #e4572e;
+    --concept: #2457a6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 15px/1.45 "Inter", "Helvetica Neue", Arial, sans-serif;
+  }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 16px; }
+  h1 { font-size: 20px; margin: 0 0 2px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0 0 14px; font-size: 13px; }
+  .grid { display: grid; grid-template-columns: 360px minmax(0, 1fr); gap: 16px; }
+  .grid > * { min-width: 0; }
+  @media (max-width: 900px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+  .panel {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 14px;
+  }
+  .panel h2 {
+    font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--muted); margin: 0 0 10px; font-weight: 600;
+  }
+  .crit { padding: 8px 0 10px; border-bottom: 1px solid var(--rule); }
+  .crit:last-of-type { border-bottom: 0; }
+  .crit-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .crit-name { font-weight: 600; }
+  .crit-val { font-family: "JetBrains Mono", Menlo, monospace; font-size: 13px; color: var(--concept); white-space: nowrap; }
+  .crit input[type=range] { width: 100%; margin: 6px 0 2px; accent-color: var(--signal); }
+  .flip { font-size: 12px; color: var(--muted); }
+  .flip b { color: var(--ink); font-weight: 600; }
+  .flip.fragile b { color: var(--fail); }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  button {
+    font: inherit; font-size: 13px; padding: 6px 10px; border-radius: 4px;
+    border: 1px solid var(--rule); background: var(--paper); cursor: pointer;
+  }
+  button:hover { border-color: var(--ink); }
+  button.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  label.toggle { font-size: 13px; display: flex; align-items: center; gap: 6px; margin-top: 10px; }
+  .rec {
+    border-left: 6px solid var(--signal);
+    background: var(--paper);
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    border-radius: 0 6px 6px 0;
+    border-top: 1px solid var(--rule); border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+  }
+  .rec .k { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+  .rec .s { font-size: 17px; font-weight: 600; margin-top: 2px; }
+  .rec .n { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { padding: 6px 8px; border-bottom: 1px solid var(--rule); text-align: left; }
+  th { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; }
+  td.num { font-family: "JetBrains Mono", Menlo, monospace; }
+  .cell-pass { background: var(--pass-soft); color: var(--pass); }
+  .cell-review { background: var(--review-soft); color: var(--review); }
+  .cell-fail { background: var(--fail-soft); color: var(--fail); }
+  .badge { display: inline-block; padding: 1px 7px; border-radius: 10px; font-size: 12px; font-weight: 600; }
+  .b-candidate { background: var(--pass-soft); color: var(--pass); }
+  .b-review { background: var(--review-soft); color: var(--review); }
+  .b-revise { background: var(--fail-soft); color: var(--fail); }
+  .tablewrap { overflow-x: auto; }
+  .strips { display: grid; grid-template-columns: 1fr; gap: 4px; margin-top: 6px; }
+  .strip-title { font-size: 12px; font-weight: 600; margin-top: 6px; }
+  .strip-title span { font-weight: 400; color: var(--muted); }
+  svg text { font-family: "Inter", Arial, sans-serif; }
+  .hidden-mode .reveal-me { filter: blur(7px); pointer-events: none; user-select: none; }
+  .legend { font-size: 12px; color: var(--muted); margin-top: 8px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
+  .copied { color: var(--pass); font-size: 12px; margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Threshold Explorer · facade variants</h1>
+  <p class="sub">Same data as the Week 3 live workbook. Move a threshold and watch the recommendation change. Rules: inside the line = pass (full weight); inside the review band = review (half weight); beyond = fail. A variant with 80+ is a candidate; 2+ fails forces a revision.</p>
+
+  <div class="grid">
+    <div class="panel">
+      <h2>Your thresholds</h2>
+      <div id="sliders"></div>
+      <label class="toggle"><input type="checkbox" id="blind"> Blind mode: hide results until you click "Reveal"</label>
+      <div class="controls">
+        <button id="reveal" class="primary">Reveal</button>
+        <button id="reset">Reset to Week 3</button>
+        <button id="copy">Copy my thresholds</button>
+        <button id="csv">Download CSV for GH</button>
+        <span id="copied" class="copied"></span>
+      </div>
+    </div>
+
+    <div id="results">
+      <div class="rec reveal-me">
+        <div class="k">Recommendation under these thresholds</div>
+        <div class="s" id="recSentence">…</div>
+        <div class="n" id="recNote">…</div>
+      </div>
+
+      <div class="panel reveal-me" style="margin-bottom:14px">
+        <h2>Decision matrix</h2>
+        <div class="tablewrap"><table id="matrix"></table></div>
+        <div class="legend">
+          <span><i style="background:var(--pass-soft);border:1px solid var(--pass)"></i>pass</span>
+          <span><i style="background:var(--review-soft);border:1px solid var(--review)"></i>review (inside band)</span>
+          <span><i style="background:var(--fail-soft);border:1px solid var(--fail)"></i>fail</span>
+        </div>
+      </div>
+
+      <div class="panel reveal-me">
+        <h2>Where each variant sits against the line</h2>
+        <div class="strips" id="strips"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const CRITERIA = [
+  { key: "glare",  name: "morning glare",      unit: "h/day",    dir: "<=", t: 2.0,  band: 0.15, w: 0.25, min: 0.5, max: 3.5, step: 0.05 },
+  { key: "view",   name: "view openness",      unit: "fraction", dir: ">=", t: 0.55, band: 0.05, w: 0.20, min: 0.30, max: 0.90, step: 0.01 },
+  { key: "plant",  name: "planting depth",     unit: "m",        dir: ">=", t: 0.80, band: 0.05, w: 0.15, min: 0.20, max: 1.50, step: 0.05 },
+  { key: "solar",  name: "solar gain proxy",   unit: "index",    dir: "<=", t: 48.0, band: 0.10, w: 0.25, min: 20,   max: 80,   step: 0.5 },
+  { key: "depth",  name: "added facade depth", unit: "m",        dir: "<=", t: 0.75, band: 0.10, w: 0.15, min: 0.20, max: 1.20, step: 0.01 },
+];
+const VARIANTS = [
+  { name: "Baseline",        glare: 2.8, view: 0.74, plant: 0.60, solar: 72.0, depth: 0.00 },
+  { name: "Deep fins",       glare: 1.5, view: 0.58, plant: 0.80, solar: 31.3, depth: 0.90 },
+  { name: "High greenery",   glare: 2.1, view: 0.52, plant: 1.20, solar: 48.4, depth: 0.45 },
+  { name: "Hybrid",          glare: 1.7, view: 0.61, plant: 0.95, solar: 42.9, depth: 0.68 },
+  { name: "Compact opening", glare: 1.2, view: 0.49, plant: 0.40, solar: 37.4, depth: 0.50 },
+];
+const RULES = { candidate: 80, reviseFails: 2, reviewFloor: 50 };
+const DEFAULTS = Object.fromEntries(CRITERIA.map(c => [c.key, c.t]));
+let T = { ...DEFAULTS };
+let useBand = true;
+
+function status(c, v, t) {
+  const band = useBand ? c.band : 0;
+  if (c.dir === "<=") {
+    if (v <= t + 1e-9) return "pass";
+    if (v <= t * (1 + band) + 1e-9) return "review";
+    return "fail";
+  }
+  if (v >= t - 1e-9) return "pass";
+  if (v >= t * (1 - band) - 1e-9) return "review";
+  return "fail";
+}
+
+function evaluate(th) {
+  const rows = VARIANTS.map(v => {
+    let score = 0, wsum = 0, fails = 0, reviews = 0;
+    const cells = {};
+    CRITERIA.forEach(c => {
+      const s = status(c, v[c.key], th[c.key]);
+      cells[c.key] = s;
+      wsum += c.w;
+      if (s === "pass") score += c.w;
+      else if (s === "review") { score += c.w * 0.5; reviews++; }
+      else fails++;
+    });
+    const pct = Math.round(score / wsum * 100);
+    let st = fails >= RULES.reviseFails ? "revise"
+           : pct >= RULES.candidate ? "candidate"
+           : pct >= RULES.reviewFloor ? "review" : "revise";
+    return { ...v, cells, pct, fails, reviews, status: st };
+  });
+  const order = { candidate: 0, review: 1, revise: 2 };
+  const ranked = [...rows].sort((a, b) =>
+    order[a.status] - order[b.status] || b.pct - a.pct || a.fails - b.fails || a.name.localeCompare(b.name));
+  return { rows, ranked, top: ranked[0] };
+}
+
+function fmt(c, x) {
+  const d = c.step < 0.05 ? 2 : c.step < 1 ? 2 : 1;
+  return Number(x).toFixed(c.key === "solar" ? 1 : d);
+}
+
+// Smallest move of one threshold (others fixed) that changes the top recommendation.
+function flipDistance(c) {
+  const base = evaluate(T).top.name;
+  let best = null;
+  for (const sign of [-1, 1]) {
+    for (let i = 1; i <= 4000; i++) {
+      const t = +(T[c.key] + sign * i * c.step / 4).toFixed(4);
+      if (t < c.min || t > c.max) break;
+      const th = { ...T, [c.key]: t };
+      const top = evaluate(th).top.name;
+      if (top !== base) {
+        const delta = t - T[c.key];
+        if (!best || Math.abs(delta) < Math.abs(best.delta)) best = { delta, t, top };
+        break;
+      }
+    }
+  }
+  return best;
+}
+
+function buildSliders() {
+  const host = document.getElementById("sliders");
+  host.innerHTML = "";
+  CRITERIA.forEach(c => {
+    const div = document.createElement("div");
+    div.className = "crit";
+    div.innerHTML = `
+      <div class="crit-head">
+        <span class="crit-name">${c.name}</span>
+        <span class="crit-val" id="val-${c.key}"></span>
+      </div>
+      <input type="range" id="s-${c.key}" min="${c.min}" max="${c.max}" step="${c.step}" value="${T[c.key]}" aria-label="${c.name} threshold">
+      <div class="flip reveal-me" id="flip-${c.key}"></div>`;
+    host.appendChild(div);
+    div.querySelector("input").addEventListener("input", e => { T[c.key] = +e.target.value; render(); });
+  });
+  const band = document.createElement("label");
+  band.className = "toggle";
+  band.innerHTML = `<input type="checkbox" id="band" checked> Use review bands (uncertainty margin)`;
+  host.appendChild(band);
+  band.querySelector("input").addEventListener("change", e => { useBand = e.target.checked; render(); });
+}
+
+function render() {
+  const { rows, ranked, top } = evaluate(T);
+  CRITERIA.forEach(c => {
+    document.getElementById(`val-${c.key}`).textContent =
+      `${c.dir} ${fmt(c, T[c.key])} ${c.unit}` + (T[c.key] !== DEFAULTS[c.key] ? "  (W3: " + fmt(c, DEFAULTS[c.key]) + ")" : "");
+    const f = flipDistance(c);
+    const el = document.getElementById(`flip-${c.key}`);
+    if (!f) { el.className = "flip reveal-me"; el.innerHTML = "No move in range changes the top pick: <b>robust</b>"; }
+    else {
+      const pct = Math.abs(f.delta / T[c.key] * 100);
+      el.className = "flip reveal-me" + (pct < 10 ? " fragile" : "");
+      el.innerHTML = `Flips to <b>${f.top}</b> if moved ${f.delta > 0 ? "+" : ""}${fmt(c, f.delta)} ${c.unit} (<b>${pct.toFixed(0)}%</b>)`;
+    }
+  });
+
+  const second = ranked[1];
+  document.getElementById("recSentence").textContent =
+    top.status === "candidate"
+      ? `Develop ${top.name} (${top.pct}/100). Runner-up: ${second.name} (${second.pct}, ${second.status}).`
+      : `No variant clears the bar. Best available: ${top.name} (${top.pct}, ${top.status}). Revise before developing.`;
+  const borderline = CRITERIA.filter(c => top.cells[c.key] === "review").map(c => c.name);
+  const failing = CRITERIA.filter(c => top.cells[c.key] === "fail").map(c => c.name);
+  document.getElementById("recNote").textContent =
+    (failing.length ? `Fails: ${failing.join(", ")}. ` : "") +
+    (borderline.length ? `Borderline (inside review band): ${borderline.join(", ")}. ` : "No borderline criteria. ") +
+    `Candidates: ${rows.filter(r => r.status === "candidate").map(r => r.name).join(", ") || "none"}.`;
+
+  const m = document.getElementById("matrix");
+  m.innerHTML = `<tr><th>variant</th>${CRITERIA.map(c => `<th>${c.name}<br>${c.dir} ${fmt(c, T[c.key])}</th>`).join("")}<th>score</th><th>status</th></tr>` +
+    ranked.map(r => `<tr><td><b>${r.name}</b></td>${CRITERIA.map(c =>
+      `<td class="num cell-${r.cells[c.key]}">${fmt(c, r[c.key])}</td>`).join("")}
+      <td class="num">${r.pct}</td><td><span class="badge b-${r.status}">${r.status}</span></td></tr>`).join("");
+
+  renderStrips(top.name);
+}
+
+function renderStrips(topName) {
+  const host = document.getElementById("strips");
+  host.innerHTML = "";
+  const W = 760, H = 56, padL = 14, padR = 14;
+  CRITERIA.forEach(c => {
+    const t = T[c.key];
+    const lo = c.min, hi = c.max;
+    const x = v => padL + (v - lo) / (hi - lo) * (W - padL - padR);
+    const band = useBand ? c.band : 0;
+    const bandEdge = c.dir === "<=" ? t * (1 + band) : t * (1 - band);
+    const passFrom = c.dir === "<=" ? lo : t, passTo = c.dir === "<=" ? t : hi;
+    const bandFrom = Math.min(t, bandEdge), bandTo = Math.max(t, bandEdge);
+    const title = document.createElement("div");
+    title.className = "strip-title";
+    title.innerHTML = `${c.name} <span>· ${c.dir === "<=" ? "lower is better" : "higher is better"} · ${c.unit}</span>`;
+    host.appendChild(title);
+    const dots = VARIANTS.map(v => {
+      const s = status(c, v[c.key], t);
+      const col = s === "pass" ? "var(--pass)" : s === "review" ? "var(--review)" : "var(--fail)";
+      const isTop = v.name === topName;
+      return { v, s, col, isTop, cx: x(v[c.key]) };
+    }).sort((a, b) => a.cx - b.cx);
+    // stagger labels to avoid overlap
+    let lastX = -999, row = 0;
+    dots.forEach(d => { row = (d.cx - lastX < 70) ? (row + 1) % 2 : 0; d.ly = row ? 50 : 14; lastX = d.cx; });
+    const svg = `
+      <svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="${c.name} strip plot">
+        <rect x="${x(passFrom)}" y="22" width="${Math.max(0, x(passTo) - x(passFrom))}" height="14" fill="var(--pass-soft)"/>
+        ${band ? `<rect x="${x(bandFrom)}" y="22" width="${Math.max(0, x(bandTo) - x(bandFrom))}" height="14" fill="var(--review-soft)"/>` : ""}
+        <line x1="${padL}" x2="${W - padR}" y1="29" y2="29" stroke="var(--rule)"/>
+        <line x1="${x(t)}" x2="${x(t)}" y1="18" y2="40" stroke="var(--ink)" stroke-width="2"/>
+        ${dots.map(d => `
+          <circle cx="${d.cx}" cy="29" r="${d.isTop ? 7 : 5}" fill="${d.col}" stroke="${d.isTop ? "var(--ink)" : "#fff"}" stroke-width="${d.isTop ? 2 : 1}"/>
+          <text x="${d.cx}" y="${d.ly}" font-size="11" text-anchor="middle" fill="${d.isTop ? "var(--ink)" : "var(--muted)"}" font-weight="${d.isTop ? 700 : 400}">${d.v.name}</text>`).join("")}
+      </svg>`;
+    const wrap = document.createElement("div");
+    wrap.innerHTML = svg;
+    host.appendChild(wrap);
+  });
+}
+
+document.getElementById("reset").onclick = () => { T = { ...DEFAULTS }; buildSliders(); render(); };
+document.getElementById("blind").onchange = e => document.body.classList.toggle("hidden-mode", e.target.checked);
+document.getElementById("reveal").onclick = () => { document.getElementById("blind").checked = false; document.body.classList.remove("hidden-mode"); };
+document.getElementById("copy").onclick = async () => {
+  const { top } = evaluate(T);
+  const txt = CRITERIA.map(c => `${c.name} ${c.dir} ${fmt(c, T[c.key])} ${c.unit}`).join("; ") + ` -> ${top.name} (${top.pct})`;
+  try { await navigator.clipboard.writeText(txt); document.getElementById("copied").textContent = "copied"; }
+  catch { prompt("Copy your thresholds:", txt); }
+  setTimeout(() => document.getElementById("copied").textContent = "", 1500);
+};
+document.getElementById("csv").onclick = () => {
+  const { ranked } = evaluate(T);
+  const head = "variant,score_pct,status,rank,fail_count,review_count," + CRITERIA.map(c => c.key + "_threshold").join(",");
+  const lines = ranked.map((r, i) => [r.name, r.pct, r.status, i + 1, r.fails, r.reviews, ...CRITERIA.map(c => T[c.key])].join(","));
+  const blob = new Blob([head + "\n" + lines.join("\n") + "\n"], { type: "text/csv" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = "variant_scores_week9.csv"; a.click();
+};
+
+buildSliders();
+render();
+</script>
+</body>
+</html>

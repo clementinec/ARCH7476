@@ -2970,7 +2970,7 @@
     "href": "schedule.html#at-a-glance",
     "title": "Course Schedule",
     "section": "At a Glance",
-    "text": "At a Glance\n\n\n\n\n\n\n\n\n\nWeek\nLecture / demo lens\nSession 2 material and check-in\nAssignment alignment\n\n\n\n\n1\nTotal Recall: evidence behind a past studio decision\npast project visual: what decision and evidence are visible?\nA1 decision + evidence recall\n\n\n2\nEvidence audit: weak links, overclaims, and next decision\nmarked evidence: what does it support, and what does it not show yet?\nA1 evidence critique\n\n\n3\nSpreadsheet as baseline workflow\ntable/chart/matrix: what variants or trade-offs could be compared?\nA1 due / A2 decision recap\n\n\n4\nGIS choices for architects\nsite/map/context image: is this decision spatial?\nA2 evidence map + tool matrix\n\n\n5\nBIM/BEM and performance model translation\nmodel/performance material: what assumptions would dominate?\nA2 tool matrix + feasibility\n\n\n6\nEvidence and pathway mapping\nworkflow sketch or branch declaration: what route and output are you choosing?\nA2 due / A4 branch\n\n\n7\nMethod prototype studio\nartifact/canvas/notebook/map: what goes in, varies, and comes out?\nA3 prototype scope\n\n\n8\nReproducibility, AI fact-checking, and mentor prep\nprompt log/error/README: what must be fact-checked, relationship-checked, or documented?\nA3 verification log\n\n\n9\nThresholds, recommendations, and counter-arguments\nfigure/output/object-card draft: what result changes the action?\nA3 due / A4 launch + clinic/workgroup vote\n\n\n10\nDraft workflow review\ndraft package: can reviewers trace the full evidence loop?\nA4 draft clinic or optional workgroup\n\n\n11\nFinal package polish\nfinal component draft: which A4 component is weakest?\nA4 near-final clinic or optional workgroup\n\n\n12\nObject Fair\nfinal object card/reflection: what reasoning transfers forward?\nA4 due",
+    "text": "At a Glance\n\n\n\n\n\n\n\n\n\nWeek\nLecture / demo lens\nSession 2 material and check-in\nAssignment alignment\n\n\n\n\n1\nTotal Recall: evidence behind a past studio decision\npast project visual: what decision and evidence are visible?\nA1 decision + evidence recall\n\n\n2\nEvidence audit: weak links, overclaims, and next decision\nmarked evidence: what does it support, and what does it not show yet?\nA1 evidence critique\n\n\n3\nSpreadsheet as baseline workflow\ntable/chart/matrix: what variants or trade-offs could be compared?\nA1 due / A2 decision recap\n\n\n4\nGIS choices for architects\nsite/map/context image: is this decision spatial?\nA2 evidence map + tool matrix\n\n\n5\nBIM/BEM and performance model translation\nmodel/performance material: what assumptions would dominate?\nA2 tool matrix + feasibility\n\n\n6\nEvidence and pathway mapping\nworkflow sketch or branch declaration: what route and output are you choosing?\nA2 due / A4 branch\n\n\n7\nMethod prototype studio\nartifact/canvas/notebook/map: what goes in, varies, and comes out?\nA3 prototype scope\n\n\n8\nReproducibility, AI fact-checking, and mentor prep\nprompt log/error/README: what must be fact-checked, relationship-checked, or documented?\nA3 verification log\n\n\n9\nThresholds, drawn: threshold diagrams + swap studio (hand / AI / data)\ntwo diagram briefs + chosen threshold diagram: where is the line, and how far before it flips?\nA3 due / A4 launch + clinic/workgroup vote\n\n\n10\nDraft workflow review\ndraft package: can reviewers trace the full evidence loop?\nA4 draft clinic or optional workgroup\n\n\n11\nFinal package polish\nfinal component draft: which A4 component is weakest?\nA4 near-final clinic or optional workgroup\n\n\n12\nObject Fair\nfinal object card/reflection: what reasoning transfers forward?\nA4 due",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -3074,11 +3074,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#week-9-thresholds-and-recommendations",
-    "href": "schedule.html#week-9-thresholds-and-recommendations",
+    "objectID": "schedule.html#week-9-thresholds-drawn",
+    "href": "schedule.html#week-9-thresholds-drawn",
     "title": "Course Schedule",
-    "section": "Week 9: Thresholds and Recommendations",
-    "text": "Week 9: Thresholds and Recommendations\n\nLecture / Demo\n\nadopt/defer thresholds\nuncertainty language\ncounter-arguments\ndecision memo framing\n\n\n\nStudio-Lab\nStudents write a threshold statement and one counter-argument.\nSession 2 material: upload a figure, output table, comparison chart, or object-card draft.\nRound-table check-in: What result changes the design action, and what uncertainty remains visible?\nFeeds: A3 Prototype Output + A4 Practice Case/Object Card.\n\n\nEnd-of-Week 9 Class Vote\nThe instructor checks whether Weeks 10-11 should stay as full-class A4 clinics or split into two modes:\n\n\n\n\n\n\n\n\nMode\nFor whom\nUse of class time\n\n\n\n\nA4 clinic\nstudents who need 1-1 help finishing the package\ndesk crits, package triage, reproducibility checks\n\n\nOptional GH/Python workgroup\nstudents with stable tooling who want to build their own pipeline\nsmall-group workflow mapping, vibe-coded component review, manual verification\n\n\nMixed mode\nsplit class interest\nshort shared opening, then clinic/workgroup breakout\n\n\n\nThe optional workgroup is not a required route. Direct .gh / .ghx starter files are planned for the website and currently WIP; until they are published, the workgroup uses CSV / GeoJSON / Python handoff and student-owned GH setups.",
+    "section": "Week 9: Thresholds, Drawn",
+    "text": "Week 9: Thresholds, Drawn\nFlipped week: little lecture, mostly drawing and arguing.\n\nBefore Class\n\nbring one A3 output\nwrite two diagram briefs from your own project (decision, data, threshold + source, audience, must-show)\ntry the Threshold Explorer: move one slider until the recommendation flips\n\n\n\nSession 1: Where Is the Line?\n\nlive “draw the line” exercise in the Threshold Explorer (blind, then reveal)\ndrawn threshold diagrams: Challenger temperature, facade knife edge, flip distance, walking ring vs street, four PM2.5 lines\nSnow, Nightingale, and Minard read for the threshold inside each figure\na menu of threshold diagram patterns\n\n\n\nSession 2: Swap Studio\nStudents draw a classmate’s brief three ways (by hand, with AI, and from the data) and compare all versions for the 3-second test, threshold placement, visible uncertainty, and invented content. Each author then defends one threshold against client, occupant, and regulator roles.\nSession 2 material: two diagram briefs plus the chosen threshold diagram.\nRound-table check-in: Where is the line, who drew it, and how far can it move before the recommendation flips?\nFeeds: A3 Prototype Output + A4 Practice Case/Object Card.\n\n\nEnd-of-Week 9 Class Vote\nThe instructor checks whether Weeks 10-11 should stay as full-class A4 clinics or split into two modes:\n\n\n\n\n\n\n\n\nMode\nFor whom\nUse of class time\n\n\n\n\nA4 clinic\nstudents who need 1-1 help finishing the package\ndesk crits, package triage, reproducibility checks\n\n\nOptional GH/Python workgroup\nstudents with stable tooling who want to build their own pipeline\nsmall-group workflow mapping, vibe-coded component review, manual verification\n\n\nMixed mode\nsplit class interest\nshort shared opening, then clinic/workgroup breakout\n\n\n\nThe optional workgroup is not a required route. Direct .gh / .ghx starter files are planned for the website and currently WIP; until they are published, the workgroup uses CSV / GeoJSON / Python handoff and student-owned GH setups.",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -4994,447 +4994,243 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#todays-agenda",
-    "href": "weeks_v2/week-09.html#todays-agenda",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Today’s Agenda",
-    "text": "Today’s Agenda\n\n\nSession 1\nLecture / demo\n\nwhen good research goes bad in presentation\nstory structure for busy stakeholders\nfigure rescue and the 3-second test\nobject-card design and thresholds\n\n\n\nSession 2\nRound table on YOUR work\n\nupload one rough figure or object-card draft\nreconstruct it in four steps\nname the result and the design action it changes\n\n\n\n\nThis is decision support, not decoration. We help each other turn finished analysis into something a busy reader can act on.",
+    "objectID": "weeks_v2/week-09.html#before-class-the-flip",
+    "href": "weeks_v2/week-09.html#before-class-the-flip",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "Before class (the flip)",
+    "text": "Before class (the flip)\n\n\nBring · 20 minutes at home\n\nOne A3 output: a table, chart, map, or model result.\nTwo diagram briefs from your own project, written for someone else to draw. Use the brief format on the next slide.\nSpend five minutes with the Threshold Explorer. Move one slider until the recommendation changes.\n\n\n\nIn class, we do not lecture at you\n\nSession 1: we look at drawn threshold diagrams and argue about where the lines are.\nSession 2: you draw each other’s briefs three ways (hand, AI, data tool) and compare.\nEveryone presents every round, including the instructor.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W9: Thresholds, Drawn"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#this-week-produces-the-first-a4-facing-artifact",
-    "href": "weeks_v2/week-09.html#this-week-produces-the-first-a4-facing-artifact",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "This week produces the first A4-facing artifact",
-    "text": "This week produces the first A4-facing artifact\n\n\nprototype\n\n\nverification\n\n\nthreshold\n\n\nobject card\n\n\ndraft package\n\n\nhandoff\n\n\n\n\nInput A3 output, chart, map, model result, or variant table\n\n\nChange figure title, threshold, uncertainty note, recommendation sentence\n\n\nOutput object-card draft + one decision-ready figure\n\n\nFeeds A3 final output and A4 Practice Case/Object Card",
+    "objectID": "weeks_v2/week-09.html#the-brief-you-bring-2",
+    "href": "weeks_v2/week-09.html#the-brief-you-bring-2",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "The brief you bring (×2)",
+    "text": "The brief you bring (×2)\nWrite it so a classmate who does not know your project could draw it.\n\n\n\n\n\n\n\nField\nWhat to write\n\n\n\n\nDecision\nthe choice this diagram supports, in one line\n\n\nData\nthe numbers, or a pasted table / CSV (10 rows or fewer)\n\n\nThreshold\nthe line, its unit, and where it came from: code, precedent, client, physics, or my guess\n\n\nAudience\nwho looks at it, and for how long (e.g. client, 30 s)\n\n\nMust show\nthe one thing the reader must see at a glance\n\n\n\nIf you cannot write the threshold line, that is your finding for this week. Bring it anyway.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W9: Thresholds, Drawn"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#recap-the-two-gates-from-week-8",
-    "href": "weeks_v2/week-09.html#recap-the-two-gates-from-week-8",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Recap: the two gates from Week 8",
-    "text": "Recap: the two gates from Week 8\nA3 is due this week; evaluation begins next. You will use AI, so both gates apply to everything you submit.\n\n\nReproducibility Could someone re-run your workflow and get your result without you in the room? Environment + steps + “re-running reproduces the figure.”\n\n\nAI fact-checking For any AI-assisted part: name the output type (fact / relationship / code) and state the final-gate check that made it trustworthy.\n\n\nCarry both into your Object Card and Reproducibility Capsule.",
+    "objectID": "weeks_v2/week-09.html#the-line-nobody-drew",
+    "href": "weeks_v2/week-09.html#the-line-nobody-drew",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "1986: the line nobody drew",
+    "text": "1986: the line nobody drew\nSession 1 · Where is the line?\n\n\n  \n  No flight had ever launched this cold\n  \n  coldest prior launch · 53°F\n  \n  Challenger · 36°F\n  28 January 1986\n  flights with O-ring damage\n  flights without damage\n  \n    \n    \n    \n  \n  \n    \n    \n    \n    \n  \n  \n  \n    30°F4050\n    607080\n  \n  launch temperature\n\nSchematic redraw of the 23 earlier flights, after Dalal, Fowlkes & Hoadley (1989) and Tufte (1997). The engineers’ real charts never put temperature on an axis.\n\nThe threshold was there in the data: 53°F was the edge of experience. Why did no chart draw it?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W9: Thresholds, Drawn"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#quick-reference-match-the-check-to-the-ai-output",
-    "href": "weeks_v2/week-09.html#quick-reference-match-the-check-to-the-ai-output",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Quick reference: match the check to the AI output",
-    "text": "Quick reference: match the check to the AI output\n\n\n\n\n\n\n\n\nAI output\nWhat it’s good for\nFinal-gate check\n\n\n\n\nFact reiteration\nstandards, definitions, precedent claims\nverify against the primary source or document\n\n\nRelationship simulation\ncomfort, perception, fuzzy spatial links\ncompare with science logic + one bounded metric\n\n\nWorkflow / code\nformulas, scripts, GhPython, notebook cells\nrun it, check units/ranges, test a known case\n\n\n\nSee Week 8 for the full treatment.",
+    "objectID": "weeks_v2/week-09.html#draw-the-line-live-10-min",
+    "href": "weeks_v2/week-09.html#draw-the-line-live-10-min",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "Draw the line · live (10 min)",
+    "text": "Draw the line · live (10 min)\nOpen the Threshold Explorer on your own device. Tick Blind mode. Set all five thresholds alone, with no talking. Then reveal together.\n\n\nSame data, same rules. Did we all recommend the same facade? If not, where did the disagreement live: in the data or in the lines?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W9: Thresholds, Drawn"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#you-will-use-ai-so-use-it-accountably",
-    "href": "weeks_v2/week-09.html#you-will-use-ai-so-use-it-accountably",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "You will use AI — so use it accountably",
-    "text": "You will use AI — so use it accountably\nFour obligations that travel with any AI-assisted work — this is ML Primer Principle 12 in practice:\n\n\nDisclose State what AI did, the prompts/seeds, and what you verified. Undisclosed AI is the problem, not AI use.\n\n\nSources & IP Use open or owned references; cite image and data sources; respect licenses; do not pass a model’s averaged answer off as your own evidence.\n\n\n\n\nBias Models return the common/average answer and inherit dataset bias — name who or what your data and outputs might exclude.\n\n\nAccountability You remain responsible for every claim. AI is a companion, never the final gate — and never identify people without consent.\n\n\nSee the AI-Assisted Fact-Checking Card.",
+    "objectID": "weeks_v2/week-09.html#the-knife-edge-0.4-over-a-line",
+    "href": "weeks_v2/week-09.html#the-knife-edge-0.4-over-a-line",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "The knife edge: 0.4 over a line",
+    "text": "The knife edge: 0.4 over a line\n\n\n  A · Hard lines on all five criteria\n  \n  \n  \n  ≤ 48.0\n  \n    Deep fins\n    Compact\n    Hybrid\n    High greenery · fail\n    Baseline\n  \n  High greenery: score 30 → revise\n\n  B · Same lines + Week 3 review bands (solar: +10%)\n  \n  \n  \n  \n  \n  review band to 52.8\n  \n    \n    \n    \n    High greenery · review\n    \n  \n  High greenery: score 55 → review\n\n  \n  \n    304050\n    6070\n  \n  solar gain proxy (index, lower is better) · confidence for High greenery: LOW\n\nWeek 3 facade data · starter_kits/spreadsheet-thresholds/decision_matrix_filled_example.csv\n\nSame number (48.4), two pictures, two verdicts. Which one is honest about a low-confidence proxy?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W9: Thresholds, Drawn"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#when-good-research-goes-bad",
-    "href": "weeks_v2/week-09.html#when-good-research-goes-bad",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "When good research goes bad",
-    "text": "When good research goes bad\nStrong work can still fail at the moment it reaches an audience.\n\n\nCase 1 · method over message\n\ngreat method\nweak message\nthe audience hears process, not action\n\n\n\nCase 2 · correct but unclear\n\ntechnically correct charts\nno clear takeaway\nthe status quo survives because the room stays confused",
+    "objectID": "weeks_v2/week-09.html#which-lines-are-actually-worth-defending",
+    "href": "weeks_v2/week-09.html#which-lines-are-actually-worth-defending",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "Which lines are actually worth defending?",
+    "text": "Which lines are actually worth defending?\n\n\n  how far the threshold must tighten before Hybrid stops being the top pick\n  \n    facade depth ≤ 0.75 m\n    solar gain ≤ 48.0\n    morning glare ≤ 2.0 h\n    view openness ≥ 0.55\n    planting depth ≥ 0.80 m\n  \n  \n  −18% (to 0.62 m) → Deep fins wins\n  \n  −19% (to 38.9) → Deep fins wins\n  \n    \n      \n    \n  \n  \n  \n  \n  no move in the tested range changes the pick\n  \n  \n    0%10%20%\n    30%40%50%\n  \n\nComputed by the Threshold Explorer (“flip” readout) on the Week 3 rules\n\nFive thresholds, but only two can change the answer. Which two belong on the object card, and which three can go in a footnote?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W9: Thresholds, Drawn"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#the-chart-that-did-not-show-the-danger",
-    "href": "weeks_v2/week-09.html#the-chart-that-did-not-show-the-danger",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "1986: the chart that did not show the danger",
-    "text": "1986: the chart that did not show the danger\n\nWhat went wrong The night before the Challenger launch, engineers argued against a cold-weather launch — but their charts scattered O-ring damage across thirteen pages and never plotted damage against temperature. The pattern stayed invisible; the launch was approved.\n\n\nThe lesson Correct data is not enough. If the figure does not make the relationship visible, the decision does not get made. (Edward Tufte’s classic case study of this launch.)",
+    "objectID": "weeks_v2/week-09.html#a-line-on-a-map-is-a-ring.-people-walk-streets.",
+    "href": "weeks_v2/week-09.html#a-line-on-a-map-is-a-ring.-people-walk-streets.",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "A line on a map is a ring. People walk streets.",
+    "text": "A line on a map is a ring. People walk streets.\n\n\n  \n    \n    \n    \n    \n  \n  \n  \n  highway\n  bridge\n  \n  \n  800 m ring\n  400 m\n  \n  \n  \n  station\n  \n  home\n  \n  \n  \n    straight line\n    680 m · inside the ring ✓\n    on foot, via the bridge\n    ≈ 2.1 km · ≈ 25 min ✗\n    The threshold (800 m) was fine.\n    The way it was measured was not.\n  \n\nIllustrative site. 400 m / 800 m are common planning rules of thumb for walking catchments, not a Hong Kong standard.\n\nDraw this line for a 75-year-old walking at half speed. Does the ring shrink, or does the line move?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W9: Thresholds, Drawn"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#the-two-slide-challenge",
-    "href": "weeks_v2/week-09.html#the-two-slide-challenge",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "The two-slide challenge",
-    "text": "The two-slide challenge\n\nThe test Could you explain your semester in two slides to a busy critic, client, or studio tutor who gives you three minutes?\n\nIf not, your findings are still trapped inside your process.",
+    "objectID": "weeks_v2/week-09.html#same-air-four-lines",
+    "href": "weeks_v2/week-09.html#same-air-four-lines",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "Same air, four lines",
+    "text": "Same air, four lines\n\n\n  \n  \n    010203040\n  \n  annual PM2.5 (µg/m³)\n  \n  \n  \n  \n  \n    35 · Hong Kong AQO, before 2022\n    25 · Hong Kong AQO, from 2022\n    10 · WHO guideline, 2005\n    5 · WHO guideline, 2021\n  \n  \n  your site: 20\n  (illustrative value)\n  Passes both Hong Kong lines. 2× the 2005 WHO line. 4× the 2021 WHO line.\n\nWHO Global Air Quality Guidelines (2021); HK EPD Air Quality Objectives (in force 1 Jan 2022). In the same revision the HK 24-hour limit tightened from 75 to 50 µg/m³, but allowed exceedances rose from 9 to 35 a year.\n\nWrite a recommendation for this site that is true under all four lines. Is a threshold just a number, or a number plus a counting rule?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W9: Thresholds, Drawn"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#one-useful-story-structure-for-busy-stakeholders",
-    "href": "weeks_v2/week-09.html#one-useful-story-structure-for-busy-stakeholders",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "One useful story structure for busy stakeholders",
-    "text": "One useful story structure for busy stakeholders\n\n\nWhat problem or decision matters?\nWhat evidence did you gather?\nWhat changed because of that evidence?\nWhat should happen next?\n\n\nThis is not simplification for its own sake. It is decision support.",
+    "objectID": "weeks_v2/week-09.html#snow-drew-a-walking-distance-line",
+    "href": "weeks_v2/week-09.html#snow-drew-a-walking-distance-line",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "1854: Snow drew a walking-distance line",
+    "text": "1854: Snow drew a walking-distance line\nOld figures, read for their lines\n\n\n\n\n\nJohn Snow’s cholera map of Soho, 1854. Public domain, via Wikimedia Commons.\n\n\n\n\n\nThreshold in the picture In a later version made for the parish inquiry (not the one shown), Snow added a dotted boundary: the points that were equally far on foot from the Broad Street pump and from the next nearest pump. The deaths sat inside the line.\n\nSnow’s boundary followed streets, not a circle. Compare it with the ring on our map two slides back.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W9: Thresholds, Drawn"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#the-map-that-removed-a-pump-handle",
-    "href": "weeks_v2/week-09.html#the-map-that-removed-a-pump-handle",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "1854: the map that removed a pump handle",
-    "text": "1854: the map that removed a pump handle\n\n\n\n\n\nJohn Snow’s cholera map of Soho, 1854. Public domain, via Wikimedia Commons.\n\n\n\n\n\nWhat it did Plotting each cholera death as a mark on the street map made one water pump’s deadly cluster impossible to miss.\n\n\nThe lesson The figure located the cause, so the action was obvious: remove the Broad Street pump handle. A figure that locates the problem changes the decision.",
+    "objectID": "weeks_v2/week-09.html#nightingale-made-the-comparison-the-line",
+    "href": "weeks_v2/week-09.html#nightingale-made-the-comparison-the-line",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "1858: Nightingale made the comparison the line",
+    "text": "1858: Nightingale made the comparison the line\n\n\n\n\n\nFlorence Nightingale’s rose / coxcomb diagram of army mortality, 1858. Public domain, via Wikimedia Commons.\n\n\n\n\n\nThreshold in the picture There is no number to clear. The line is relative: preventable disease against wounds. When the outer wedge dwarfs the inner one, the case is made.\n\nYour threshold could be relative (“better than baseline by X”) instead of absolute. Which would your audience trust more?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W9: Thresholds, Drawn"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#start-with-their-problem",
-    "href": "weeks_v2/week-09.html#start-with-their-problem",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Start with their problem",
-    "text": "Start with their problem\n\n\nDo not begin with\n\nsoftware\nmethods jargon\nevery intermediate step\n\n\n\nBegin with\n\nthe decision\nthe stake\nthe missing evidence",
+    "objectID": "weeks_v2/week-09.html#minard-put-the-cold-on-its-own-axis",
+    "href": "weeks_v2/week-09.html#minard-put-the-cold-on-its-own-axis",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "1869: Minard put the cold on its own axis",
+    "text": "1869: Minard put the cold on its own axis\n\n\n\n\n\nCharles Minard’s figurative map of Napoleon’s 1812 Russian campaign. Public domain, via Wikimedia Commons.\n\n\n\n\n\nThreshold in the picture The temperature line along the bottom is tied to the shrinking army above it. You can see the band collapse as the cold drops. Challenger’s charts were missing exactly this axis.\n\nWhat is the “temperature line” in your project: the variable that, once it crosses a value, changes everything?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W9: Thresholds, Drawn"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#worked-stakeholder-question",
-    "href": "weeks_v2/week-09.html#worked-stakeholder-question",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Worked stakeholder question",
-    "text": "Worked stakeholder question\n\n\n\nThe Edge, Amsterdam\n\n\nIf your recommendation depends on a case like this, what would a skeptical stakeholder ask first?",
+    "objectID": "weeks_v2/week-09.html#a-menu-of-threshold-diagrams",
+    "href": "weeks_v2/week-09.html#a-menu-of-threshold-diagrams",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "A menu of threshold diagrams",
+    "text": "A menu of threshold diagrams\n\n\n  \n    \n    \n    \n    \n    \n    \n    Line on a strip\n    few options, one metric\n  \n  \n    \n    \n    \n    \n    \n    \n    Band, not a line\n    uncertain or proxy data\n  \n  \n    \n    \n    \n    \n    \n    \n    Ring on a map\n    distance and access\n  \n  \n    \n    \n    \n    \n    \n    \n    Ladder of lines\n    competing standards\n  \n  \n    \n    \n    \n    \n    \n    How far to flip\n    which lines matter\n  \n\n\nEvery pattern draws the line inside the figure. A threshold that only appears in a caption is a threshold the reader will miss.\nWhich pattern fits your brief? Is there a sixth one we have not drawn?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#why-charts-fail",
-    "href": "weeks_v2/week-09.html#why-charts-fail",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Why charts fail",
-    "text": "Why charts fail\n\n\ntoo many variables at once\nvague titles\nno highlighted message\nuncertainty hidden\nno connection back to the decision",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#the-3-second-message-test",
-    "href": "weeks_v2/week-09.html#the-3-second-message-test",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "The 3-second message test",
-    "text": "The 3-second message test\nGive your figure three seconds. Can a viewer tell:\n\n\nwhat is being compared?\nwhich side performs better?\nwhat the implication is?\n\n\nIf not, it needs revision.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#the-diagram-that-won-a-sanitation-argument",
-    "href": "weeks_v2/week-09.html#the-diagram-that-won-a-sanitation-argument",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "1858: the diagram that won a sanitation argument",
-    "text": "1858: the diagram that won a sanitation argument\n\n\n\n\n\nFlorence Nightingale’s rose / coxcomb diagram of army mortality, 1858. Public domain, via Wikimedia Commons.\n\n\n\n\n\nWhat it did The large wedges showed deaths from preventable disease dwarfing deaths from wounds — visible at a glance, no table required.\n\n\nThe lesson One dominant visual comparison can carry an argument that columns of numbers cannot. Make the biggest thing the most visible thing.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#figure-rescue-before-and-after",
-    "href": "weeks_v2/week-09.html#figure-rescue-before-and-after",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Figure rescue: before and after",
-    "text": "Figure rescue: before and after\n\n\nBefore · the weak figure\n\nfive series, no focus\ntitle reads “Results — Final”\nlegend the reader must decode\nerror bars buried or absent\nnothing ties it to a decision\n\n\n\nAfter · the cleaned figure\n\none message, two series compared\ntitle states the takeaway in words\nthe winning option labelled directly\nuncertainty shown where it matters\na caption naming the design action",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#rescue-formula",
-    "href": "weeks_v2/week-09.html#rescue-formula",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Rescue formula",
-    "text": "Rescue formula\n\n\ndecide the one message\nremove non-essential data\nlabel the takeaway directly\nshow uncertainty where it matters\nconnect the figure to the design decision",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#figure-rescue-sprint",
-    "href": "weeks_v2/week-09.html#figure-rescue-sprint",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Figure rescue sprint",
-    "text": "Figure rescue sprint\n\nDo this now Bring one weak figure and improve it under these rules:\n\none message only\nreadable title\nno decorative legends if direct labels work\none annotation that tells the audience why it matters\n\n\nPresent the before and after in 60 seconds.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#the-30-second-board-test",
-    "href": "weeks_v2/week-09.html#the-30-second-board-test",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "The 30-second board test",
-    "text": "The 30-second board test\nDuring the Object Fair, a viewer gives your board about 30 seconds. In that time they should be able to:\n\n\nstop\nunderstand the key message\nknow what action or question follows",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#six-variables-in-a-single-image",
-    "href": "weeks_v2/week-09.html#six-variables-in-a-single-image",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "1869: six variables in a single image",
-    "text": "1869: six variables in a single image\n\n\n\n\n\nCharles Minard’s figurative map of Napoleon’s 1812 Russian campaign. Public domain, via Wikimedia Commons.\n\n\n\n\n\nWhat it shows Army size, location, direction, and temperature on the retreat — the shrinking band tells the whole catastrophe without a caption.\n\n\nThe object-card ideal Tufte called it among the best statistical graphics ever drawn. Your object card has the same job: one figure that carries the decision on its own.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#object-card-anatomy",
-    "href": "weeks_v2/week-09.html#object-card-anatomy",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Object-card anatomy",
-    "text": "Object-card anatomy\nThe whole card is built around one dominant recommendation. Everything else supports it.\n\n\n1 · The dominant recommendation The one sentence the viewer must leave with. Largest, first, unmissable.\n\n\n2 · One comparison figure A single legible chart that shows the comparison behind the recommendation — secondary to the headline, never competing with it.\n\n\n\n\n3 · One threshold sentence The rule that turns the comparison into a decision: “we prefer X once the gain clears Y.”\n\n\n4 · One limitations note Where the evidence is weakest and what would change the conclusion — small, honest, present.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#object-card-priorities",
-    "href": "weeks_v2/week-09.html#object-card-priorities",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Object-card priorities",
-    "text": "Object-card priorities\n\n\none dominant message\nsupporting evidence that is legible but secondary\nclear next action or recommendation\ncontact / follow-up information without clutter",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#object-card-clinic",
-    "href": "weeks_v2/week-09.html#object-card-clinic",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Object-card clinic",
-    "text": "Object-card clinic\n\nCheck your draft for\n\nmessage hierarchy\nvisual hierarchy\nstakeholder-friendly language\nprint readability from a distance",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#evidence-alone-does-not-make-the-decision",
-    "href": "weeks_v2/week-09.html#evidence-alone-does-not-make-the-decision",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Evidence alone does not make the decision",
-    "text": "Evidence alone does not make the decision\nYou still need:\n\n\na threshold\na comparison rule\na stakeholder frame\nan explanation of what matters most",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#typical-threshold-questions",
-    "href": "weeks_v2/week-09.html#typical-threshold-questions",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Typical threshold questions",
-    "text": "Typical threshold questions\n\n\nhow much improvement is enough to justify a change?\nwhat cost increase is acceptable?\nwhat travel-time difference matters?\nhow much uncertainty can the decision tolerate?",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#threshold-examples-across-project-types",
-    "href": "weeks_v2/week-09.html#threshold-examples-across-project-types",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Threshold examples across project types",
-    "text": "Threshold examples across project types\nA threshold turns a number into a decision rule. It looks different in each domain:\n\n\n\nProject type\nQuantity\nExample threshold\n\n\n\n\nTransit / access\naccess time\nwithin 10 min of a stop\n\n\nDaylight study\ndaylight hours\n≥ 50% of area meets sDA 300/50%\n\n\nCost trade-off\ncost premium\naccept ≤ 8% over baseline\n\n\nFacade / envelope\nheat gain\nreduce peak gain by ≥ 15%\n\n\nPost-occupancy\nsurvey confidence\n≥ 70% agreement, n ≥ 30",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#trade-off-table",
-    "href": "weeks_v2/week-09.html#trade-off-table",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Trade-off table",
-    "text": "Trade-off table\n\n\n\n\n\n\n\n\n\n\nOption\nstrongest benefit\nmain cost\nbiggest risk\nrecommendation\n\n\n\n\nA\naccess\ncost\nmoderate\ngood if budget is stable\n\n\nB\nperformance\ncomplexity\nhigh\nonly if support is available\n\n\nC\nspeed\nlower upside\nlow\nsafest baseline",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#counter-arguments-matter",
-    "href": "weeks_v2/week-09.html#counter-arguments-matter",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Counter-arguments matter",
-    "text": "Counter-arguments matter\nA strong recommendation also says:\n\n\nwhat could change the conclusion\nwhere the evidence is weakest\nwhy another option may still be reasonable\nwhat additional evidence would strengthen confidence",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#a-figure-can-still-feed-back-into-geometry",
-    "href": "weeks_v2/week-09.html#a-figure-can-still-feed-back-into-geometry",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "A figure can still feed back into geometry",
-    "text": "A figure can still feed back into geometry\n\nBridge pattern Use your figure or threshold to revise the GH design space: narrow a slider range, reject a variant family, color variants by risk, or export a final recommendation table.\n\n\n\nA3 output\n\n\nthreshold\n\n\nobject card\n\n\nGH range / color\n\n\ndesign action\n\n\nIf the figure does not change any action, it is not yet a decision figure.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#thresholds-are-decisions-not-facts",
-    "href": "weeks_v2/week-09.html#thresholds-are-decisions-not-facts",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Thresholds are decisions, not facts",
-    "text": "Thresholds are decisions, not facts\n\nQuestion for Week 9 Who would disagree with your threshold, and what evidence would they use to move it?\n\nWrite that disagreement into the limitation note. A strong recommendation can survive a named counter-argument.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#treat-a-model-output-as-a-suggestion-and-match-the-metric-to-the-task",
-    "href": "weeks_v2/week-09.html#treat-a-model-output-as-a-suggestion-and-match-the-metric-to-the-task",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Treat a model output as a suggestion, and match the metric to the task",
-    "text": "Treat a model output as a suggestion, and match the metric to the task\n\n\nPrinciple 8 — Uncertainty is real Predictions are probabilistic. Sample multiple outputs and critique; avoid presenting one lucky frame as truth.\n\n\nPrinciple 11 — Evaluation must match the task Numbers alone can reward “pretty wrong” results. Pair a metric with human A/B judgment for visuals.\n\n\n\nSo State your threshold WITH its uncertainty, and make the figure show the comparison — not a single hero result.\n\nSee ML Primer · Principles 8 & 11.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#recommendation-sentence-drill",
-    "href": "weeks_v2/week-09.html#recommendation-sentence-drill",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Recommendation sentence drill",
-    "text": "Recommendation sentence drill\nWrite one sentence:\n\nThe recommendation sentence Given this evidence, for this audience, I would do X under conditions Y and Z.\n\nThen test whether the sentence:\n\n\nnames the decision\nreflects uncertainty\nimplies a next move",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-09.html#exit-task",
-    "href": "weeks_v2/week-09.html#exit-task",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Exit task",
-    "text": "Exit task\nBefore next week, each student should have:\n\n\none improved figure\none clearer object-card draft\none recommendation sentence\none explicit note on limits and confidence",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W9: Thresholds, Drawn"
     ]
   },
   {
     "objectID": "weeks_v2/week-09.html#break",
     "href": "weeks_v2/week-09.html#break",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
+    "title": "Week 9: Thresholds, Drawn",
     "section": "BREAK",
-    "text": "BREAK\nTake 10 minutes.\nWhen you return, upload one rough figure or object-card draft to Slack for Session 2.",
+    "text": "BREAK\nTen minutes. Put both of your briefs in Slack before we restart.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W9: Thresholds, Drawn"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#round-table-on-your-work",
-    "href": "weeks_v2/week-09.html#round-table-on-your-work",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Round table on YOUR work",
-    "text": "Round table on YOUR work\n\nDecision Evidence Variation Output Threshold Action\n\nUpload one rough material to Slack before Session 2 — a figure, output table, comparison chart, or object-card draft. feeds A3 + A4",
+    "objectID": "weeks_v2/week-09.html#your-brief-drawn-by-someone-else-three-ways",
+    "href": "weeks_v2/week-09.html#your-brief-drawn-by-someone-else-three-ways",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "Your brief, drawn by someone else, three ways",
+    "text": "Your brief, drawn by someone else, three ways\nSession 2 · Swap studio\n\nDecision Evidence Variation Output Threshold Action\n\nSwap: A → B → C → A. The instructor joins the rotation if there are four of us. You draw a classmate’s Brief 1. Your own brief comes back to you drawn three ways.\n\n\n1 · By hand · 8 min\nPaper and two pens: black plus one colour for the line. No software. Sketch fast, but the threshold must be drawn in.\n\n\n2 · With AI · 10 min\nAny chat or image tool. Paste the brief. Save the prompt and every output, including the bad ones.\n\n\n3 · From the data · 10 min\nSpreadsheet chart, the Threshold Explorer, or AI-written Python that you run. The numbers must come from the brief.\n\n\nBrief 2 goes the other way round (A → C) as the exit task: one route of your choice.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W9: Thresholds, Drawn"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#reconstruct-your-figure-in-four-steps",
-    "href": "weeks_v2/week-09.html#reconstruct-your-figure-in-four-steps",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Reconstruct your figure in four steps",
-    "text": "Reconstruct your figure in four steps\nObject this week: your result/figure and the design action it changes.\n\n\nDid What does this figure currently show, and what is its one message?\n\n\nAssumed What does the reader have to already know for it to land?\n\n\nRisk Where is the takeaway unclear, or the uncertainty hidden?\n\n\nVerify What threshold or label would tie it to a design action?\n\n\n\nPost your four-step under your figure. Posting + an honest reconstruction is the graded unit — not how you spoke. Speak for 60–90 seconds: what result changes the design action, and what uncertainty remains visible?",
+    "objectID": "weeks_v2/week-09.html#prompt-starter-for-round-2",
+    "href": "weeks_v2/week-09.html#prompt-starter-for-round-2",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "Prompt starter for round 2",
+    "text": "Prompt starter for round 2\n\nPaste into any AI tool, then paste your brief “You are drawing a decision diagram for an architecture audience. Draw one figure in which the threshold is a visible line or band inside the plot, the options are labelled directly (no legend), and the title states the takeaway. Use only the numbers in my brief. If you need a number that is not there, ask me. If you can, give me Python/matplotlib code instead of an image.”\n\n\n\nImage generators draw pictures of charts They can invent ticks, nudge the line, or round 48.4 down to “under 48”. Fine for a layout sketch, but never as evidence.\n\n\nCode is checkable A chart made by code you ran is a Week 8 “workflow/code” output: run it, check the units, and test it with one known value.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W9: Thresholds, Drawn"
     ]
   },
   {
-    "objectID": "weeks_v2/week-09.html#order-and-the-waiting-role",
-    "href": "weeks_v2/week-09.html#order-and-the-waiting-role",
-    "title": "Week 9: Storytelling, Figures, and Decisions",
-    "section": "Order and the waiting role",
-    "text": "Order and the waiting role\n\nHow we run it Volunteers go first; a random draw may fill the remaining examples.\n\n\nWhile others present You are not waiting your turn — you are reading. Note one clear move and one missing link per figure. Those notes are your participation record.",
+    "objectID": "weeks_v2/week-09.html#compare-lay-out-all-nine",
+    "href": "weeks_v2/week-09.html#compare-lay-out-all-nine",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "Compare: lay out all nine",
+    "text": "Compare: lay out all nine\nPut every drawing in Slack. The brief’s author judges their own three versions; everyone else adds one note.\n\n\n\n\n\n\n\n\n\nCheck\nHand\nAI\nData\n\n\n\n\n3-second test: can you tell what’s compared and who wins?\n\n\n\n\n\nIs the threshold drawn at the right value, in the right unit?\n\n\n\n\n\nIs uncertainty visible (band, range, confidence)?\n\n\n\n\n\nDid anything get invented (numbers, options, labels)?\n\n\n\n\n\nWhich one goes on your object card, and what would you steal from the others?\n\n\n\n\n\n\nWhich route told the story best, and was it the same route that got the numbers right?",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
-      "W9: Thresholds"
+      "W9: Thresholds, Drawn"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#defend-one-line-5-min-each",
+    "href": "weeks_v2/week-09.html#defend-one-line-5-min-each",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "Defend one line (5 min each)",
+    "text": "Defend one line (5 min each)\nEach author takes one threshold from their winning diagram. The other two each pick a role and attack it once.\n\n\nRoles\n\nClient: “That line costs me money.”\nOccupant: “That line leaves me out.”\nRegulator: “Where did that number come from?”\n\n\n\nAuthor answers with three things\n\nthe source: code, precedent, client, physics, or my guess\nhow far it can move before the recommendation flips\nwhat evidence would make you move it",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds, Drawn"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#the-sentence-that-goes-on-the-card",
+    "href": "weeks_v2/week-09.html#the-sentence-that-goes-on-the-card",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "The sentence that goes on the card",
+    "text": "The sentence that goes on the card\n\nRecommendation sentence, Week 9 version For [audience], I recommend [option] because it clears [threshold] ([source]). This changes if [threshold] moves by [how much] or if [counter-argument] holds.\n\n\nWorked from today’s facade data For the client team, I recommend Hybrid because it passes all five thresholds in our Week 3 matrix. This changes to Deep fins if the solar gain line tightens by about 19% (to ≤ 38.9) or the depth allowance drops below about 0.62 m.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds, Drawn"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#reconstruct-your-threshold-diagram-in-four-steps",
+    "href": "weeks_v2/week-09.html#reconstruct-your-threshold-diagram-in-four-steps",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "Reconstruct your threshold diagram in four steps",
+    "text": "Reconstruct your threshold diagram in four steps\nObject this week: the diagram of your own brief that you chose, and the line inside it.\n\n\nDid Which version did you choose (hand, AI, or data), and what is its one message?\n\n\nAssumed Where does the line come from, and who chose it?\n\n\nRisk How far can it move before the recommendation flips? What did AI get wrong?\n\n\nVerify Which number in the figure did you check against the brief?\n\n\n\nPost the four steps under your chosen diagram in Slack. The graded unit is the posting plus an honest reconstruction, not how well you spoke.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds, Drawn"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#exit-before-week-10",
+    "href": "weeks_v2/week-09.html#exit-before-week-10",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "Exit · before Week 10",
+    "text": "Exit · before Week 10\n\n\nBring\n\nBrief 2, drawn one way, for the classmate it was assigned to\nyour chosen threshold diagram, revised\nyour recommendation sentence, including the flip distance\nA3 is due this week. A4 starts now: the diagram and sentence become your Object Card draft.\n\n\n\nWeeks 10–11, with three of us No vote needed. Each of you writes one line in Slack: clinic (1-1 help finishing A4) or workgroup (building your own GH/Python pipeline). With three people we can run both.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds, Drawn"
     ]
   },
   {

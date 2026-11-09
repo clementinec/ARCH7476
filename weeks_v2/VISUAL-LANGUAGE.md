@@ -119,6 +119,24 @@ Two distinct modes. **Walk-through** = celebrated, opt-in, "teach your
 strongest tool". **Audit** = universal, reciprocal, examine the work not the
 person. Keep them visually and sequentially separate (teach first, then audit).
 
+### Drawn diagram — `.diagram` + `.ask-room` (Week 9)
+Inline SVG inside a ```` ```{=html} ```` block, wrapped in `.diagram`. Draw with
+the colour tokens (`var(--role-activity)` = pass, `var(--role-example)` =
+review band, `var(--role-warn)` = fail, `var(--signal)` = the threshold or the
+decision). Every drawn diagram shows its threshold explicitly. Follow it with
+one `.ask-room` line: a single question, not a list.
+
+```markdown
+::: {.diagram}
+```{=html}
+<svg viewBox="0 0 1200 420">…</svg>
+```
+[Schematic · source]{.src}
+:::
+
+[Where is the line, and who drew it?]{.ask-room}
+```
+
 ### Small parts
 - `[feeds A2]{.feeds-tag}` — links Session 2 work to its assignment.
 - `::: {.grading-note} … :::` — how the week's participation is graded.

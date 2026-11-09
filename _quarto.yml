@@ -29,6 +29,7 @@ project:
     - "starter_kits/ai-assisted-workflow/examples/*.py"
     - "starter_kits/ai-assisted-workflow/examples/*.md"
     - "site_tools/gis-explorer.html"
+    - "site_tools/threshold-explorer.html"
     - "site_tools/portfolio-template.html"
   render:
     - index.qmd
@@ -119,7 +120,7 @@ website:
             href: weeks_v2/week-07.qmd
           - text: "W8: Reproducibility"
             href: weeks_v2/week-08.qmd
-          - text: "W9: Thresholds"
+          - text: "W9: Thresholds, Drawn"
             href: weeks_v2/week-09.qmd
           - text: "W10: Draft Review"
             href: weeks_v2/week-10.qmd
@@ -147,6 +148,8 @@ website:
         contents:
           - text: "GIS Site Explorer"
             href: site_tools/gis-explorer.html
+          - text: "Threshold Explorer"
+            href: site_tools/threshold-explorer.html
           - text: "Portfolio Template"
             href: site_tools/portfolio-template.html
           - text: "GitHub Pages Guide"

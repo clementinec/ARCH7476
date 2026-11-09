@@ -46,7 +46,7 @@ Volunteers go first and receive formative participation acknowledgement. A1-A4 g
 | 6 | Evidence and pathway mapping | workflow sketch or branch declaration: what route and output are you choosing? | A2 due / A4 branch |
 | 7 | Method prototype studio | artifact/canvas/notebook/map: what goes in, varies, and comes out? | A3 prototype scope |
 | 8 | Reproducibility, AI fact-checking, and mentor prep | prompt log/error/README: what must be fact-checked, relationship-checked, or documented? | A3 verification log |
-| 9 | Thresholds, recommendations, and counter-arguments | figure/output/object-card draft: what result changes the action? | A3 due / A4 launch + clinic/workgroup vote |
+| 9 | Thresholds, drawn: threshold diagrams + swap studio (hand / AI / data) | two diagram briefs + chosen threshold diagram: where is the line, and how far before it flips? | A3 due / A4 launch + clinic/workgroup vote |
 | 10 | Draft workflow review | draft package: can reviewers trace the full evidence loop? | A4 draft clinic or optional workgroup |
 | 11 | Final package polish | final component draft: which A4 component is weakest? | A4 near-final clinic or optional workgroup |
 | 12 | Object Fair | final object card/reflection: what reasoning transfers forward? | A4 due |
@@ -221,22 +221,30 @@ Students test whether one workflow component, AI-assisted or not, is documented 
 
 **Feeds:** A3 Verification and Failure Log.
 
-## Week 9: Thresholds and Recommendations
+## Week 9: Thresholds, Drawn
 
-### Lecture / Demo
+Flipped week: little lecture, mostly drawing and arguing.
 
-- adopt/defer thresholds
-- uncertainty language
-- counter-arguments
-- decision memo framing
+### Before Class
 
-### Studio-Lab
+- bring one A3 output
+- write two **diagram briefs** from your own project (decision, data, threshold + source, audience, must-show)
+- try the [Threshold Explorer](site_tools/threshold-explorer.html): move one slider until the recommendation flips
 
-Students write a threshold statement and one counter-argument.
+### Session 1: Where Is the Line?
 
-**Session 2 material:** upload a figure, output table, comparison chart, or object-card draft.
+- live "draw the line" exercise in the Threshold Explorer (blind, then reveal)
+- drawn threshold diagrams: Challenger temperature, facade knife edge, flip distance, walking ring vs street, four PM2.5 lines
+- Snow, Nightingale, and Minard read for the threshold inside each figure
+- a menu of threshold diagram patterns
 
-**Round-table check-in:** What result changes the design action, and what uncertainty remains visible?
+### Session 2: Swap Studio
+
+Students draw a classmate's brief three ways (by hand, with AI, and from the data) and compare all versions for the 3-second test, threshold placement, visible uncertainty, and invented content. Each author then defends one threshold against client, occupant, and regulator roles.
+
+**Session 2 material:** two diagram briefs plus the chosen threshold diagram.
+
+**Round-table check-in:** Where is the line, who drew it, and how far can it move before the recommendation flips?
 
 **Feeds:** A3 Prototype Output + A4 Practice Case/Object Card.
 

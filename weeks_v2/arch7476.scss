@@ -568,6 +568,25 @@ $code-color: #16181D !default;
 }
 
 /*---------------------------------------------------------------------------
+  15b. DRAWN DIAGRAM (Week 9)  — inline SVG figure + one "ask the room" line
+---------------------------------------------------------------------------*/
+.reveal .diagram { margin: 0.2em 0 0.4em; }
+.reveal .diagram svg { width: 100%; height: auto; max-height: 60vh; display: block; }
+.reveal .diagram .src {
+  display: block;
+  font-family: "JetBrains Mono", monospace; font-size: 0.42em;
+  color: var(--muted); letter-spacing: 0.04em; margin-top: 0.3em;
+}
+.reveal .ask-room {
+  display: block; border-top: 1px solid var(--rule); padding-top: 0.35em; margin-top: 0.4em;
+  font-size: 0.8em;
+}
+.reveal .ask-room::before {
+  content: "ASK THE ROOM  "; font-family: "JetBrains Mono", monospace;
+  font-size: 0.7em; letter-spacing: 0.1em; color: var(--signal); font-weight: 600;
+}
+
+/*---------------------------------------------------------------------------
   16. SLIDE CHROME — running footer (lightweight persistent context)
   Set per deck via the YAML `footer:` option, e.g. "Week 5 · feeds A2".
 ---------------------------------------------------------------------------*/
