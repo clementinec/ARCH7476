@@ -146,7 +146,7 @@
 <p><span class="card-title">Bring · 20 minutes at home</span></p>
 <ol type="1">
 <li><strong>One A3 output</strong>: a table, chart, map, or model result.</li>
-<li><strong>Two diagram briefs</strong> from your own project, written for someone else to draw. Use the brief format on the next slide.</li>
+<li><strong>Two diagram briefs</strong> from your own project, written for someone else to draw. Use the brief format on the next slide; there are worked examples for both projects later in the deck.</li>
 <li>Spend five minutes with the <a href="../site_tools/threshold-explorer.html">Threshold Explorer</a>. Move one slider until the recommendation changes.</li>
 </ol>
 </div>
@@ -504,6 +504,181 @@
 </div>
 <p>Every pattern draws the line <em>inside</em> the figure. A threshold that only appears in a caption is a threshold the reader will miss.</p>
 <p><span class="ask-room">Which pattern fits your brief? Is there a sixth one we have not drawn?</span></p>
+</section>
+<section id="your-projects-a-pareto-front-is-not-a-decision" class="slide level2 center">
+<h2>Your projects · a Pareto front is not a decision</h2>
+<p><span class="kicker">Pavilion siting · multi-objective</span></p>
+<div class="diagram">
+<svg viewbox="0 0 1200 470" role="img" aria-label="Illustrative Pareto front of candidate pavilion sites by walking time and UTCI reduction, with two threshold lines leaving two feasible Pareto sites">
+  <rect x="120" y="60" width="350" height="180" fill="var(--activity-soft)"></rect>
+  <text x="132" y="86" font-size="17" fill="var(--role-activity)" font-weight="600">passes both lines</text>
+  <line x1="120" y1="240" x2="820" y2="240" stroke="var(--signal)" stroke-width="3"></line>
+  <text x="826" y="246" font-size="17" fill="var(--signal)" font-weight="700">UTCI drop ≥ 4.0 °C</text>
+  <line x1="470" y1="40" x2="470" y2="420" stroke="var(--signal)" stroke-width="3"></line>
+  <text x="476" y="36" font-size="17" fill="var(--signal)" font-weight="700">walk ≤ 4 min</text>
+  <polyline points="190,352.5 225,303 277.5,267 330,213 400,181.5 513.75,145.5 645,114 750,100.5" fill="none" stroke="var(--ink)" stroke-width="2" stroke-dasharray="6 5"></polyline>
+  <text x="700" y="88" font-size="16" fill="var(--ink)">Pareto front (8 sites)</text>
+  <g fill="var(--paper)" stroke="var(--muted)" stroke-width="2">
+    <circle cx="295" cy="339" r="7"></circle><circle cx="426" cy="285" r="7"></circle><circle cx="557.5" cy="231" r="7"></circle>
+    <circle cx="688.75" cy="195" r="7"></circle><circle cx="365" cy="321" r="7"></circle><circle cx="487.5" cy="249" r="7"></circle>
+  </g>
+  <g fill="var(--ink)">
+    <circle cx="190" cy="352.5" r="8"></circle><circle cx="225" cy="303" r="8"></circle><circle cx="277.5" cy="267" r="8"></circle>
+    <circle cx="513.75" cy="145.5" r="8"></circle><circle cx="645" cy="114" r="8"></circle><circle cx="750" cy="100.5" r="8"></circle>
+  </g>
+  <circle cx="330" cy="213" r="11" fill="var(--signal)"></circle><text x="306" y="205" font-size="18" fill="var(--signal)" font-weight="700" text-anchor="end">P4</text>
+  <circle cx="400" cy="181.5" r="11" fill="var(--signal)"></circle><text x="412" y="172" font-size="18" fill="var(--signal)" font-weight="700">P5</text>
+  <line x1="120" y1="420" x2="820" y2="420" stroke="var(--ink)" stroke-width="1.5"></line>
+  <line x1="120" y1="60" x2="120" y2="420" stroke="var(--ink)" stroke-width="1.5"></line>
+  <g font-size="15" fill="var(--muted)" text-anchor="middle">
+    <text x="120" y="442">0</text><text x="295" y="442">2</text><text x="470" y="442">4</text><text x="645" y="442">6</text><text x="820" y="442">8</text>
+  </g>
+  <text x="470" y="464" font-size="15" fill="var(--muted)" text-anchor="middle">walk from the main path (min) · lower is better</text>
+  <g font-size="15" fill="var(--muted)" text-anchor="end">
+    <text x="110" y="425">0</text><text x="110" y="335">2</text><text x="110" y="245">4</text><text x="110" y="155">6</text><text x="110" y="65">8</text>
+  </g>
+  <text x="40" y="240" font-size="15" fill="var(--muted)" transform="rotate(-90 40 240)" text-anchor="middle">peak-hour UTCI reduction (°C) · higher is better</text>
+  <g font-size="18">
+    <text x="880" y="300" fill="var(--ink)" font-weight="700">The lines choose, not the front.</text>
+    <text x="880" y="332" fill="var(--ink)">Both lines → P4 or P5</text>
+    <text x="880" y="360" fill="var(--ink)">Comfort ≥ 5.0 → only P5</text>
+    <text x="880" y="388" fill="var(--ink)">Walk ≤ 3 min → only P4</text>
+    <text x="880" y="416" fill="var(--signal)" font-weight="700">Both moves → nothing left</text>
+  </g>
+</svg>
+<p><span class="src">Illustrative values, not the student’s data: 14 candidate sites, 8 on the front (filled), 6 dominated (hollow).</span></p>
+</div>
+<p><span class="ask-room">Would you write comfort as an objective or as a constraint (ε)? Each choice gives a different set of “optimal” sites.</span></p>
+</section>
+<section id="your-projects-is-the-line-a-drop-or-a-category" class="slide level2 center">
+<h2>Your projects · is the line a drop, or a category?</h2>
+<p><span class="kicker">Pavilion siting · defining the comfort threshold</span></p>
+<div class="diagram">
+<svg viewbox="0 0 1200 420" role="img" aria-label="UTCI heat stress categories with two sites: site A drops 1.4 degrees and crosses into a lower category, site B drops 7 degrees but stays in very strong heat stress">
+  <rect x="120" y="70" width="250" height="60" fill="var(--example-soft)"></rect>
+  <rect x="370" y="70" width="250" height="60" fill="#F1D9B5"></rect>
+  <rect x="620" y="70" width="333" height="60" fill="var(--warn-soft)"></rect>
+  <rect x="953" y="70" width="167" height="60" fill="#E8BDBD"></rect>
+  <g font-size="16" fill="var(--ink)" text-anchor="middle">
+    <text x="245" y="106">moderate</text><text x="495" y="106">strong</text>
+    <text x="786" y="106">very strong</text><text x="1036" y="106">extreme</text>
+  </g>
+  <text x="120" y="56" font-size="16" fill="var(--muted)">UTCI heat stress category</text>
+  <g stroke="var(--ink)" stroke-width="2">
+    <line x1="370" y1="62" x2="370" y2="360"></line><line x1="620" y1="62" x2="620" y2="360"></line><line x1="953" y1="62" x2="953" y2="360"></line>
+  </g>
+  <defs><marker id="w9arrow" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="7" markerheight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--signal)"></path></marker></defs>
+  <circle cx="661.7" cy="210" r="9" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"></circle>
+  <line x1="652" y1="210" x2="612" y2="210" stroke="var(--signal)" stroke-width="5" marker-end="url(#w9arrow)"></line>
+  <circle cx="603.3" cy="210" r="9" fill="var(--signal)"></circle>
+  <text x="140" y="200" font-size="19" fill="var(--ink)" font-weight="700">Site A · −1.4 °C</text>
+  <text x="140" y="226" font-size="16" fill="var(--signal)">crosses into "strong" ✓ category drop</text>
+  <circle cx="932.5" cy="300" r="9" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"></circle>
+  <line x1="922" y1="300" x2="650" y2="300" stroke="var(--signal)" stroke-width="5" marker-end="url(#w9arrow)"></line>
+  <circle cx="640.8" cy="300" r="9" fill="var(--signal)"></circle>
+  <text x="140" y="290" font-size="19" fill="var(--ink)" font-weight="700">Site B · −7.0 °C</text>
+  <text x="140" y="316" font-size="16" fill="var(--role-warn)">still "very strong" ✗ no category drop</text>
+  <line x1="120" y1="360" x2="1120" y2="360" stroke="var(--ink)" stroke-width="1.5"></line>
+  <g font-size="15" fill="var(--muted)" text-anchor="middle">
+    <text x="120" y="384">26</text><text x="370" y="384">32</text><text x="620" y="384">38</text><text x="953" y="384">46 °C</text>
+  </g>
+  <text x="620" y="412" font-size="16" fill="var(--ink)" text-anchor="middle">Judged by the size of the drop, B wins 5×. Judged by category, only A changes anyone's heat stress.</text>
+</svg>
+<p><span class="src">UTCI category boundaries (26 / 32 / 38 / 46 °C) follow the standard UTCI assessment scale. The site values are illustrative.</span></p>
+</div>
+<p><span class="ask-room">Which definition can you defend from the comfort literature, and does your Pareto front survive the switch?</span></p>
+</section>
+<section id="your-projects-put-the-line-on-the-section" class="slide level2 center">
+<h2>Your projects · put the line on the section</h2>
+<p><span class="kicker">Studio massing · volume options</span></p>
+<div class="diagram">
+<svg viewbox="0 0 1200 430" role="img" aria-label="Three massing sections with a 25 degree daylight line from the neighbour's window and a floor-area target: the slab breaks the line, the low block misses the area, the stepped block meets both">
+  <g>
+    <text x="10" y="26" font-size="20" font-weight="700" fill="var(--ink)">A · Slab</text>
+    <text x="10" y="142" font-size="14" fill="var(--muted)">neighbour</text>
+    <text x="300" y="166" font-size="16" fill="var(--signal)" font-weight="700">25°</text>
+    <rect x="10" y="150" width="60" height="190" fill="var(--rule-soft)"></rect>
+    <rect x="58" y="312" width="12" height="16" fill="var(--paper)" stroke="var(--ink)"></rect>
+    <rect x="110" y="200" width="260" height="140" fill="var(--warn-soft)" stroke="var(--role-warn)" stroke-width="2"></rect>
+    <line x1="70" y1="320" x2="380" y2="175.5" stroke="var(--signal)" stroke-width="3"></line>
+    <line x1="0" y1="340" x2="390" y2="340" stroke="var(--ink)" stroke-width="2"></line>
+    <text x="10" y="372" font-size="17" fill="var(--role-warn)">25° line ✗ breaks through</text>
+    <text x="10" y="398" font-size="17" fill="var(--role-activity)">GFA 7,800 m² ✓</text>
+  </g>
+  <g transform="translate(405,0)">
+    <text x="10" y="26" font-size="20" font-weight="700" fill="var(--ink)">B · Low block</text>
+    <rect x="10" y="150" width="60" height="190" fill="var(--rule-soft)"></rect>
+    <rect x="58" y="312" width="12" height="16" fill="var(--paper)" stroke="var(--ink)"></rect>
+    <rect x="110" y="305" width="260" height="35" fill="var(--concept-soft)" stroke="var(--role-concept)" stroke-width="2"></rect>
+    <line x1="70" y1="320" x2="380" y2="175.5" stroke="var(--signal)" stroke-width="3"></line>
+    <line x1="0" y1="340" x2="390" y2="340" stroke="var(--ink)" stroke-width="2"></line>
+    <text x="10" y="372" font-size="17" fill="var(--role-activity)">25° line ✓</text>
+    <text x="10" y="398" font-size="17" fill="var(--role-warn)">GFA 1,950 m² ✗ misses brief</text>
+  </g>
+  <g transform="translate(810,0)">
+    <text x="10" y="26" font-size="20" font-weight="700" fill="var(--ink)">C · Stepped</text>
+    <rect x="10" y="150" width="60" height="190" fill="var(--rule-soft)"></rect>
+    <rect x="58" y="312" width="12" height="16" fill="var(--paper)" stroke="var(--ink)"></rect>
+    <polygon points="110,340 110,305 190,305 190,268 270,268 270,230 370,230 370,340" fill="var(--activity-soft)" stroke="var(--role-activity)" stroke-width="2"></polygon>
+    <line x1="70" y1="320" x2="380" y2="175.5" stroke="var(--signal)" stroke-width="3"></line>
+    <line x1="0" y1="340" x2="390" y2="340" stroke="var(--ink)" stroke-width="2"></line>
+    <text x="10" y="372" font-size="17" fill="var(--role-activity)">25° line ✓</text>
+    <text x="10" y="398" font-size="17" fill="var(--role-activity)">GFA 4,190 m² ✓ (target ≥ 4,000)</text>
+  </g>
+</svg>
+<p><span class="src">Illustrative massings. The 25° test is a UK rule of thumb (BRE 209), borrowed here; check the local code (in Hong Kong, the Building (Planning) Regulations).</span></p>
+</div>
+<p><span class="ask-room">Stepped clears the area target by about 5%. What happens to it if the brief adds one more studio?</span></p>
+</section>
+<section id="two-example-briefs-written-for-the-other-person" class="slide level2 center">
+<h2>Two example briefs, written for the other person</h2>
+<div class="two-col">
+<div class="concept-card">
+<p><span class="card-title">Pavilion siting (research track)</span></p>
+<ul>
+<li><strong>Decision:</strong> which Pareto site goes to the estates office</li>
+<li><strong>Data:</strong> 14 sites × (walk min, peak UTCI drop °C) from the simulation run, plus the weather file and analysis hour</li>
+<li><strong>Threshold:</strong> UTCI drop ≥ 4 °C (<em>my guess</em>, or a category drop from the UTCI scale); walk ≤ 4 min (<em>client</em>)</li>
+<li><strong>Audience:</strong> estates office, 30 seconds</li>
+<li><strong>Must show:</strong> the front, the two lines, and which sites survive both</li>
+</ul>
+</div>
+<div class="activity-card">
+<p><span class="card-title">Studio massing (studio track)</span></p>
+<ul>
+<li><strong>Decision:</strong> which massing to develop for the mid-review</li>
+<li><strong>Data:</strong> 3 options × floors, GFA, and pass/fail on the 25° check</li>
+<li><strong>Threshold:</strong> GFA ≥ 4,000 m² (<em>brief</em>); 25° line from the neighbour (<em>borrowed rule of thumb</em>)</li>
+<li><strong>Audience:</strong> studio tutor, 3-minute crit</li>
+<li><strong>Must show:</strong> the section with the line, and the one option that fits under it</li>
+</ul>
+</div>
+</div>
+<p><span class="ask-room">Replace every number with your own. If a field is blank, that is what you bring to the swap.</span></p>
+</section>
+<section id="same-exercise-two-depths" class="slide level2 center">
+<h2>Same exercise, two depths</h2>
+<div class="two-col">
+<div class="activity-card">
+<p><span class="card-title">Undergraduate · studio track</span></p>
+<ul>
+<li>one threshold per diagram, drawn on the drawing (section, plan, or elevation)</li>
+<li>name where the line came from: brief, code, precedent, or guess</li>
+<li>answer the flip question in words: “If the GFA target rises 5%, C fails.”</li>
+<li>hand sketch plus one data version is enough</li>
+</ul>
+</div>
+<div class="concept-card">
+<p><span class="card-title">PhD · research track</span></p>
+<ul>
+<li>decide which goals are objectives and which are constraints (ε), and justify the split</li>
+<li>report how the surviving Pareto set changes as each ε moves: a flip chart over ε</li>
+<li>test the robustness of the result across weather years, analysis hours, or sun-angle sampling</li>
+<li>defend the threshold <em>definition</em> (a continuous drop vs a category crossing) from the literature, and say which line is your contribution and which you borrowed</li>
+</ul>
+</div>
+</div>
+<p><span class="ask-room">In the swap, each of you draws the <em>other</em> track’s brief. Studio eyes on a Pareto plot, research eyes on a section.</span></p>
 </section>
 <section id="break" class="slide level2 big-break center">
 <h2>BREAK</h2>

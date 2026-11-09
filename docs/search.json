@@ -4998,7 +4998,7 @@
     "href": "weeks_v2/week-09.html#before-class-the-flip",
     "title": "Week 9: Thresholds, Drawn",
     "section": "Before class (the flip)",
-    "text": "Before class (the flip)\n\n\nBring · 20 minutes at home\n\nOne A3 output: a table, chart, map, or model result.\nTwo diagram briefs from your own project, written for someone else to draw. Use the brief format on the next slide.\nSpend five minutes with the Threshold Explorer. Move one slider until the recommendation changes.\n\n\n\nIn class, we do not lecture at you\n\nSession 1: we look at drawn threshold diagrams and argue about where the lines are.\nSession 2: you draw each other’s briefs three ways (hand, AI, data tool) and compare.\nThree of us: two students and the instructor. The instructor writes two briefs too and is drawn, judged, and challenged like everyone else.",
+    "text": "Before class (the flip)\n\n\nBring · 20 minutes at home\n\nOne A3 output: a table, chart, map, or model result.\nTwo diagram briefs from your own project, written for someone else to draw. Use the brief format on the next slide; there are worked examples for both projects later in the deck.\nSpend five minutes with the Threshold Explorer. Move one slider until the recommendation changes.\n\n\n\nIn class, we do not lecture at you\n\nSession 1: we look at drawn threshold diagrams and argue about where the lines are.\nSession 2: you draw each other’s briefs three ways (hand, AI, data tool) and compare.\nThree of us: two students and the instructor. The instructor writes two briefs too and is drawn, judged, and challenged like everyone else.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6193,5 +6193,77 @@
     "title": "Python + ML Basics for Architects",
     "section": "Key ideas",
     "text": "Key ideas\n\nAlways hold out test data or use cross-validation\nStart simple; only add complexity if it improves validated performance\nDocument random seeds and settings for reproducibility\n“Deep” models need more data and care; don’t overfit\n\nNext: a richer notebook focused on visualizing pilot results and making figures for stakeholders."
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#your-projects-an-optimiser-gives-you-a-front-not-a-decision",
+    "href": "weeks_v2/week-09.html#your-projects-an-optimiser-gives-you-a-front-not-a-decision",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "Your projects · an optimiser gives you a front, not a decision",
+    "text": "Your projects · an optimiser gives you a front, not a decision\nPavilion siting · multi-objective\n\n\n  \n  passes both lines\n  \n  UTCI drop ≥ 4.0 °C\n  \n  walk ≤ 4 min\n  \n  Pareto front (8 sites)\n  \n    \n    \n  \n  \n    \n    \n  \n  P4\n  P5\n  \n  \n  \n    02468\n  \n  walk from the main path (min) · lower is better\n  \n    02468\n  \n  peak-hour UTCI reduction (°C) · higher is better\n  \n    The lines choose, not the front.\n    Both lines → P4 or P5\n    Comfort ≥ 5.0 → only P5\n    Walk ≤ 3 min → only P4\n    Both moves → nothing left\n  \n\nIllustrative values, not the student’s data: 14 candidate sites, 8 on the front (filled), 6 dominated (hollow).\n\nWould you write comfort as an objective or as a constraint (ε)? Each choice gives a different set of “optimal” sites.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds, Drawn"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#your-projects-is-the-line-a-drop-or-a-category",
+    "href": "weeks_v2/week-09.html#your-projects-is-the-line-a-drop-or-a-category",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "Your projects · is the line a drop, or a category?",
+    "text": "Your projects · is the line a drop, or a category?\nPavilion siting · defining the comfort threshold\n\n\n  \n  \n  \n  \n  \n    moderatestrong\n    very strongextreme\n  \n  UTCI heat stress category\n  \n    \n  \n  \n  \n  \n  \n  Site A · −1.4 °C\n  crosses into \"strong\" ✓ category drop\n  \n  \n  \n  Site B · −7.0 °C\n  still \"very strong\" ✗ no category drop\n  \n  \n    26323846 °C\n  \n  Judged by the size of the drop, B wins 5×. Judged by category, only A changes anyone's heat stress.\n\nUTCI category boundaries (26 / 32 / 38 / 46 °C) follow the standard UTCI assessment scale. The site values are illustrative.\n\nWhich definition can you defend from the comfort literature, and does your Pareto front survive the switch?",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds, Drawn"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#your-projects-put-the-line-on-the-section",
+    "href": "weeks_v2/week-09.html#your-projects-put-the-line-on-the-section",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "Your projects · put the line on the section",
+    "text": "Your projects · put the line on the section\nStudio massing · volume options\n\n\n  \n    A · Slab\n    neighbour\n    25°\n    \n    \n    \n    \n    \n    25° line ✗ breaks through\n    GFA 7,800 m² ✓\n  \n  \n    B · Low block\n    \n    \n    \n    \n    \n    25° line ✓\n    GFA 1,950 m² ✗ misses brief\n  \n  \n    C · Stepped\n    \n    \n    \n    \n    \n    25° line ✓\n    GFA 4,190 m² ✓ (target ≥ 4,000)\n  \n\nIllustrative massings. The 25° test is a UK rule of thumb (BRE 209), borrowed here; check the local code (in Hong Kong, the Building (Planning) Regulations).\n\nStepped clears the area target by about 5%. What happens to it if the brief adds one more studio?",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds, Drawn"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#two-example-briefs-written-for-the-other-person",
+    "href": "weeks_v2/week-09.html#two-example-briefs-written-for-the-other-person",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "Two example briefs, written for the other person",
+    "text": "Two example briefs, written for the other person\n\n\nPavilion siting (research track)\n\nDecision: which Pareto site goes to the estates office\nData: 14 sites × (walk min, peak UTCI drop °C) from the simulation run, plus the weather file and analysis hour\nThreshold: UTCI drop ≥ 4 °C (my guess, or a category drop from the UTCI scale); walk ≤ 4 min (client)\nAudience: estates office, 30 seconds\nMust show: the front, the two lines, and which sites survive both\n\n\n\nStudio massing (studio track)\n\nDecision: which massing to develop for the mid-review\nData: 3 options × floors, GFA, and pass/fail on the 25° check\nThreshold: GFA ≥ 4,000 m² (brief); 25° line from the neighbour (borrowed rule of thumb)\nAudience: studio tutor, 3-minute crit\nMust show: the section with the line, and the one option that fits under it\n\n\n\nReplace every number with your own. If a field is blank, that is what you bring to the swap.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds, Drawn"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#same-exercise-two-depths",
+    "href": "weeks_v2/week-09.html#same-exercise-two-depths",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "Same exercise, two depths",
+    "text": "Same exercise, two depths\n\n\nUndergraduate · studio track\n\none threshold per diagram, drawn on the drawing (section, plan, or elevation)\nname where the line came from: brief, code, precedent, or guess\nanswer the flip question in words: “If the GFA target rises 5%, C fails.”\nhand sketch plus one data version is enough\n\n\n\nPhD · research track\n\ndecide which goals are objectives and which are constraints (ε), and justify the split\nreport how the surviving Pareto set changes as each ε moves: a flip chart over ε\ntest the robustness of the result across weather years, analysis hours, or sun-angle sampling\ndefend the threshold definition (a continuous drop vs a category crossing) from the literature, and say which line is your contribution and which you borrowed\n\n\n\nIn the swap, each of you draws the other track’s brief. Studio eyes on a Pareto plot, research eyes on a section.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds, Drawn"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-09.html#your-projects-a-pareto-front-is-not-a-decision",
+    "href": "weeks_v2/week-09.html#your-projects-a-pareto-front-is-not-a-decision",
+    "title": "Week 9: Thresholds, Drawn",
+    "section": "Your projects · a Pareto front is not a decision",
+    "text": "Your projects · a Pareto front is not a decision\nPavilion siting · multi-objective\n\n\n  \n  passes both lines\n  \n  UTCI drop ≥ 4.0 °C\n  \n  walk ≤ 4 min\n  \n  Pareto front (8 sites)\n  \n    \n    \n  \n  \n    \n    \n  \n  P4\n  P5\n  \n  \n  \n    02468\n  \n  walk from the main path (min) · lower is better\n  \n    02468\n  \n  peak-hour UTCI reduction (°C) · higher is better\n  \n    The lines choose, not the front.\n    Both lines → P4 or P5\n    Comfort ≥ 5.0 → only P5\n    Walk ≤ 3 min → only P4\n    Both moves → nothing left\n  \n\nIllustrative values, not the student’s data: 14 candidate sites, 8 on the front (filled), 6 dominated (hollow).\n\nWould you write comfort as an objective or as a constraint (ε)? Each choice gives a different set of “optimal” sites.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W9: Thresholds, Drawn"
+    ]
   }
 ]
