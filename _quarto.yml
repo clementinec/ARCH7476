@@ -59,6 +59,7 @@ project:
     - templates/a4-branch-declaration.md
     - templates/ai-workflow-verification-card.md
     - templates/final-package-checklist.md
+    - templates/peer-review-card.qmd
     - starter_kits/README.md
     - starter_kits/gh-parametric-variants/README.md
     - starter_kits/preset-simulation-proxy/README.md

@@ -1,0 +1,154 @@
+---
+title: "Week 10: Flipped Review Practice Card"
+subtitle: "Record What You Inspected, Judge the Result, Explain the Next Action"
+format:
+  html:
+    toc: true
+---
+
+This is a **formative working note**, not another graded submission. Use rough A3/A4 materials. Reviewers do not award marks; the author decides how to respond. Save locally or share through Slack.
+
+## Before Class
+
+Allow 15–20 minutes to share your packet and read the other student's work. Share early enough for your classmate to inspect it.
+
+Your packet contains one decision/recommendation, one A3 result or Week 9 diagram, the criterion/metric/threshold and its source, a file/page behind the result, one limitation and one review question. Identify missing material honestly. A full A4 package is not required yet.
+
+## Your Inspection Record
+
+**Complete one record from your classmate's actual work.** Inspect at least one project criterion and its supporting evidence. Use your two chosen A4 criteria as review lenses. Repeat the record for a second claim if time allows; you are not expected to rerun the entire project.
+
+Copy this table into your notes. Fill the rule and expected result **before** judging what you observe.
+
+| Field | Fill this in |
+|---|---|
+| Author / reviewer / date | ___ / ___ / ___ |
+| Decision and claim I am checking | “The author recommends ___ because ___.” |
+| Project criterion and stakeholder; two A4 review lenses | The quality that matters is ___, for ___. I will inspect A4 criteria ___ and ___. |
+| What I will measure or inspect | Value + units, drawing feature, calculation, source or workflow step: ___ |
+| Rule and its source | Expected value/range, threshold or qualitative comparison: ___. Source/location: ___. Requirement / project target / assumption / disputed or missing. |
+| Expected result and conditions | I expect ___ because ___. Baseline, inputs, scenario/hour/user and any justified tolerance: ___. |
+| What I actually observed | Value/feature/error/missing item: ___. Exact file/page/figure/cell/run: ___. Difference from the rule or expected result: ___. |
+| Design-result judgment | **Meets stated rule / Does not meet stated rule / Cannot yet judge**, because ___. Applies only to ___. |
+| Evidence judgment | **Supported within checked scope / Problem found / Not established**, because ___. I checked ___; I did not check ___. |
+| Advice and next check | Proceed within ___ / revise ___ / hold pending ___. Priority and reason: ___. The concern is resolved when we can observe ___. |
+
+Record missing units, an absent source or a blocked run as findings. Do not fill gaps with a guess or change a threshold silently after seeing the result. A new proposed threshold needs a reason and a comparison with the original.
+
+## What Exactly Should You Inspect?
+
+Choose the row that fits the claim. You do not need to perform every kind of check.
+
+| Claim or artifact | Measure or look for | What an adequate check records |
+|---|---|---|
+| An option meets a project target | Area, walk time, model output or another relevant value; units, scenario and target source | Observed value versus the rule, margin where meaningful, and which conditions were checked |
+| One option performs better | Comparable alternatives, common baseline, fixed constraints and the criterion used to rank them | The difference under like-for-like conditions; any trade-off that prevents a general “best” claim |
+| A spatial quality is improved | A specific sightline, route, section, sequence or other visible feature | Annotated evidence tied to the stated user need; remaining ambiguity or a proposed observation/user check |
+| A workflow result can be trusted | One input → operation → output; manual calculation, known case or rerun where feasible | Expected versus observed result, units, tolerance and its justification; exact blocker if not completed |
+| A conclusion follows from a figure | The claim's users, locations and times versus the evidence's actual coverage | A claim limited to what was checked, with the important caveat visible |
+
+A qualitative criterion needs inspectable evidence too; do not invent a numerical score for everything. A review band is a decision rule, not automatically an uncertainty interval. A result close to a threshold needs its margin stated; closeness alone does not create a new pass/fail rule.
+
+## Judge the Design Result and Evidence Separately
+
+### 1. Does the design result meet the stated rule?
+
+| Status | Use it when… |
+|---|---|
+| **Meets stated rule** | The observed value or feature satisfies the declared rule under the recorded conditions. Name those conditions. |
+| **Does not meet stated rule** | The observation breaches the declared rule. State the gap or missing feature. |
+| **Cannot yet judge** | A necessary rule, observation, unit or condition is missing, disputed or unresolved. State what is needed. |
+
+If a range represents **tested conditions**, identify which pass and fail. If it represents **uncertainty around an estimate**, crossing the threshold leaves the judgment unresolved unless a justified decision rule says otherwise. In either case, do not claim the rule is met throughout a range that crosses it. Passing one criterion does not establish that all project constraints are satisfied or that an option is best.
+
+### 2. Is the evidence adequate for this conclusion?
+
+| Status | Use it when… |
+|---|---|
+| **Supported within checked scope** | Your inspection supports this particular conclusion. Name the check and its limits. |
+| **Problem found** | You can point to an error, mismatch, unsupported extension of the claim or contradictory result. |
+| **Not established** | A necessary source, run or verification has not been supplied or inspected. This is an open question, not proof of an error. |
+
+You may need different evidence statuses for different layers: a table comparison can be checked while the underlying simulation remains unverified.
+
+## What Counts as Good, Acceptable or Needing Work?
+
+These are judgments about the **work and the next action**, not marks for the student.
+
+| What you find | Defensible judgment | Next action |
+|---|---|---|
+| The option meets the relevant rules and the claim is supported by the checks made | **Acceptable to advance within the stated scope.** Call it stronger than another option only with a justified comparison. | State the conditions and remaining limits; proceed to the next design step. |
+| The option misses a rule, but the analysis demonstrating that failure is sound | **The design needs revision; the analysis is useful.** | Revise/reject the option or investigate a justified change to the brief. |
+| A number passes, but the needed evidence has not been checked | **A provisional result, not yet an established recommendation.** | Hold the broader claim and perform the missing check. |
+| A demonstrated error or overclaim affects the recommendation | **The current conclusion needs correction.** | Correct the issue, rerun/reinterpret as needed and recheck the claim. |
+
+If a necessary rule or observation is absent, say **“cannot yet judge”**. Explain what would resolve that uncertainty rather than labelling the project “bad.”
+
+## Filled Example: Pavilion Site B
+
+**Exercise only:** all values and targets below are fabricated. They are not actual student results or comfort standards.
+
+| Field | Example entry |
+|---|---|
+| Claim | “B is the optimal site and keeps all users comfortable throughout summer.” |
+| Criterion and rule | Accessible cooling; provisional walk ≤4 min and UTCI reduction ≥4°C. Targets are exercise assumptions. |
+| What I inspect | Row B in the supplied table: **4 min walk; 4.2°C modelled reduction**, relative to the same unshaded baseline on one assumed summer day at 14:00. |
+| Comparison | Both targets are met in this condition. Walking-time headroom is **0 min**; cooling-reduction margin is **0.2°C**. |
+| Design judgment | **Meets stated rule for this condition.** This does not establish summer-wide comfort or a general optimum. |
+| Evidence judgment | **Supported:** arithmetic comparison with the supplied targets. **Not established:** the underlying model run. **Problem found:** the claim extends to users/times not tested. |
+| Advice | Advance B only provisionally under this screen. Trace its input/run, inspect a contrasting condition and narrow the recommendation to supported conditions. |
+
+If an added illustrative sensitivity scenario gives B **3.7–4.4°C reduction**, at least one tested condition misses the 4°C target. Record that conditional failure; do not call this range a confidence interval or move the target just to keep B passing.
+
+## Say Your Review Clearly
+
+> I inspected **___** in **[artifact/location]**. Against rule **___**, I observed **___**. The design result **___**. The evidence **___**, because I checked **___** but not **___**. My advice is **___**. I would change that advice if **___**.
+
+## The Existing A4 Criteria
+
+**Project criteria** judge the design options. **A4 criteria** judge the quality of the argument and workflow.
+
+| Criterion | Course weight | Useful reviewer action |
+|---|---:|---|
+| Decision clarity | 15% | Restate the decision and alternatives |
+| Generative workflow execution | 20% | Trace one input → operation → output |
+| Evidence quality and uncertainty | 20% | Inspect the metric, threshold source and a sensitivity |
+| Design impact | 15% | Find the actual design action |
+| Reproducibility | 15% | Locate runnable files, instructions and expected result |
+| Feedback/revision judgment | 10% | Inspect the reason for accepting or declining advice |
+| Documentation and communication clarity | 5% | Read silently and report what you understood |
+
+The weights come from the [A4 brief](../assignments/assignment-04.qmd#assessment-criteria). They explain the course assessment; they are not a peer-scoring exercise. Select two criteria for detailed review, while always flagging an unsupported main claim or missing runnable artifact.
+
+## Twelve-Minute Review
+
+| Time | Lead | Action |
+|---|---|---|
+| 0–3 | Reviewer | Read back the claim, locate evidence and explain one challenge |
+| 3–5 | Author | Correct misunderstandings and supply context |
+| 5–8 | Both | Inspect one link or discuss the proposed test |
+| 8–10 | Reviewer | Recommend an action and completion evidence |
+| 10–12 | Author | Accept, adapt, defer or reject the advice, with a reason |
+
+## Author Response and Repair
+
+| Field | Your note |
+|---|---|
+| Advice received | |
+| My response | Accept / adapt / defer / reject, with a reason |
+| Check or revision attempted | Input, action and expected result |
+| Observed result or exact blocker | A proposed test is not a completed verification |
+| Revised claim, figure or artifact | File/version/location |
+| What remains uncertain | |
+| Peer recheck | Did the recorded result address the original concern? |
+| Next action | What, by whom, and when? |
+
+## Add One A4 Ledger Entry
+
+| Feedback source/date | What it challenged | What changed | What did not change, and why |
+|---|---|---|---|
+| | | | |
+
+A4 requires at least **three ledger entries across the project**. This review contributes one entry; it does not replace the existing requirement.
+
+Carry the revision into the Practice Case, Research Brief, Object Card or Reproducibility Capsule. Keep the ledger and Reflection Note visible in the [six-component final checklist](final-package-checklist.md).

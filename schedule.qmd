@@ -47,7 +47,7 @@ Volunteers go first and receive formative participation acknowledgement. A1-A4 g
 | 7 | A2 to first prototype | A2 walkthrough in triads, feedback, one test, and a project-page update | A3 prototype scope + first A4 feedback entry |
 | 8 | Reproducibility, LLM mechanisms, and independent verification | walk through one AI-assisted architectural decision, perform one check, and revise or qualify the output | A3 verification and failure log |
 | 9 | Thresholds, drawn: threshold diagrams + swap studio (hand / AI / data) | two diagram briefs + chosen threshold diagram: where is the line, and how far before it flips? | A3 due / A4 launch + Weeks 10-11 clinic/workgroup choice |
-| 10 | Draft workflow review | draft package: can reviewers trace the full evidence loop? | A4 draft clinic or optional workgroup |
+| 10 | Criteria, reviewer judgment and draft workflow review | review a classmate's claim, test a threshold, implement one repair and recheck it | A4 draft + Feedback/Revision Ledger |
 | 11 | Final package polish | final component draft: which A4 component is weakest? | A4 near-final clinic or optional workgroup |
 | 12 | Object Fair | final object card/reflection: what reasoning transfers forward? | A4 due |
 
@@ -272,43 +272,53 @@ Students draw a classmate's brief three ways (by hand, with AI, and from the dat
 
 **Feeds:** A3 Prototype Output + A4 Practice Case/Object Card.
 
-### End-of-Week 9 Class Vote
+### End-of-Week 9 Clinic / Workgroup Choice
 
-The instructor checks whether Weeks 10-11 should stay as full-class A4 clinics or split into two modes:
+For the current small cohort, each student states whether they need A4 clinic support or help with an existing GH/Python workflow. No class vote is needed. Week 10 has a shared reviewer exercise for everyone; its repair block can support either route.
 
 | Mode | For whom | Use of class time |
 |---|---|---|
 | A4 clinic | students who need 1-1 help finishing the package | desk crits, package triage, reproducibility checks |
 | Optional GH/Python workgroup | students with stable tooling who want to build their own pipeline | small-group workflow mapping, vibe-coded component review, manual verification |
-| Mixed mode | split class interest | short shared opening, then clinic/workgroup breakout |
+| Mixed mode | different project needs | shared review, then individual repairs with instructor support |
 
 The optional workgroup is not a required route. Direct `.gh` / `.ghx` starter files are planned for the website and currently WIP; until they are published, the workgroup uses CSV / GeoJSON / Python handoff and student-owned GH setups.
 
 ## Week 10: Draft Workflow Review
 
-### Lecture / Demo
+### Before Class: Prepare as a Reviewer
 
-- how to present a workflow-backed design decision
-- how reviewers inspect decision, evidence, workflow, output, threshold, and limit
+Spend 15–20 minutes sharing a small packet and reading your classmate's work. Share early enough to allow that reading. Bring one decision/recommendation, one A3 result or Week 9 diagram, the criterion/metric/threshold and source, the file/page behind the result, one limitation and one question. Use the [Flipped Review Practice Card](templates/peer-review-card.qmd): record what you inspect, the rule/source, expected and observed results, and separate judgments about design performance and supporting evidence. A full A4 package is not required yet.
 
-### Studio-Lab
+### Session 1: Learn How to Review (50 minutes)
 
-Default mode is 1-1 or small-panel A4 clinic. If the Week 9 vote shows enough demand, a small optional workgroup may run in parallel for students with stable GH/Python tooling.
+| Time | Activity |
+|---|---|
+| 0–5 min | Identify the A3 → A4 claim worth reviewing |
+| 5–20 min | Distinguish crit, design decision review and method review; connect criteria, metrics, thresholds and judgments to reviewer actions |
+| 20–30 min | Independently review a shared illustrative case, compare judgments and test one changed assumption |
+| 30–40 min | Inspect the other student's packet and complete a draft review card |
+| 40–50 min | Clarify criteria, record disputed thresholds and prepare one question/check |
 
-No tournament scoring; the emphasis is professional critique and making the final package traceable.
+### Session 2: Review, Act, Recheck (50 minutes)
 
-**Session 2 material:** upload a draft presentation, object card, package outline, or reproducibility capsule index.
+Plan for two students plus the instructor. The reviewer speaks before the author explains the work.
 
-**Round-table check-in:** Can a reviewer trace decision -> variants/scenarios -> workflow -> output -> threshold -> limit?
+| Time | Activity | Saved result |
+|---|---|---|
+| 0–12 min | B leads the review of A's work | Review card and author's response |
+| 12–24 min | A leads the review of B's work | Review card and author's response |
+| 24–42 min | Each author performs one check or revision | Revised artifact/result or exact blocker |
+| 42–47 min | Peer recheck, 2½ minutes per project | Supported claim and remaining gap |
+| 47–50 min | Record the response and next action | Dated A4 ledger entry |
 
-**Feeds:** A4 Draft Package.
+**Each 12-minute review:** reviewer readback/challenge (3 min); author clarification (2 min); joint inspection/question (3 min); reviewer advice and completion evidence (2 min); author's accept/adapt/defer/reject response with a reason (2 min). The instructor facilitates and checks evidence.
 
-Optional workgroup output, if it runs:
+The repair can improve a claim/figure or test a small component in an existing GH/Python workflow. No new tooling setup is required. If blocked, record the exact step and next check; a proposed test is not completed verification.
 
-- one pipeline sketch
-- one function contract or component brief
-- one manual verification note
-- one decision about whether the workgroup route will actually enter A4
+**Leave with:** one defensible reviewer judgment, one revised artifact or blocker record, a peer recheck and one dated feedback-ledger entry. Share through Slack or save locally. The clinic is formative; reviewers do not award marks, and A4's existing requirements and weights remain unchanged.
+
+**Feeds:** A4 Draft Package + Feedback/Revision Ledger. The six-component final package remains the target for Week 12.
 
 ## Week 11: Final Package Polish
 

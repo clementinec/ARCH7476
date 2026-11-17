@@ -47,7 +47,7 @@ These check-ins are how the final package is tested in class before submission.
 | Week | Bring to Session 2 | Round-table question | A4 component |
 |---:|---|---|---|
 | 9 | figure, output table, comparison chart, or object-card draft | What result changes the design action, and what uncertainty remains visible? | Practice Case + Object Card |
-| 10 | draft presentation, object card, package outline, or reproducibility capsule index | Can a reviewer trace decision -> variants/scenarios -> workflow -> output -> threshold -> limit? | Draft Package |
+| 10 | small review packet: one decision/claim, A3 output or threshold diagram, criterion/metric/threshold and source, evidence location, limit and question | After a reviewer-led critique, which check or revision did you attempt, what did it show, and why did you accept/adapt/defer/reject the advice? Use the [Peer Review Card](../templates/peer-review-card.qmd). | Draft Package + Feedback/Revision Ledger |
 | 11 | weakest A4 component or the component most in need of peer review | Which A4 component is weakest, and what must be fixed before submission? | Final Package |
 | 12 | final object card or reflection note | What design reasoning can transfer to another studio project? | Reflection Note |
 
