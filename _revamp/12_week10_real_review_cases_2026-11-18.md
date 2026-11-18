@@ -38,6 +38,17 @@ Branch: `codex/week10-real-review-cases`, created from freshly fetched
 
 ## Publication
 
-Publication details will be recorded after the source push and successful
-GitHub Pages deployment. Publish only the five changed output files so that
-the existing site metadata and unrelated pages remain intact.
+- Source pushed to `main` at `577679c` before deployment. Local `main` was
+  fast-forwarded onto the freshly fetched remote history and the new revision.
+- `gh-pages` commit `4a81184` changes exactly five files: the deck, practice
+  card, source pack, schedule and search index. The GitHub connector deployed
+  the checked Quarto output; existing site metadata and unrelated file hashes
+  are unchanged. Published blob hashes match the rendered local files.
+- GitHub Pages run `44279013669` completed successfully, including build and
+  deploy: https://github.com/clementinec/ARCH7476/actions/runs/44279013669 .
+- The published index already points to `weeks_v2/week-10.html`.
+- Slides: https://clementinec.github.io/ARCH7476/weeks_v2/week-10.html .
+- Sources/cases: https://clementinec.github.io/ARCH7476/templates/reviewer-source-pack.html .
+- Card: https://clementinec.github.io/ARCH7476/templates/peer-review-card.html .
+- Direct access to the Pages host remained unavailable to the web tool;
+  deployment and published content hashes are verified, not a live visual view.
