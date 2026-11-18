@@ -3061,7 +3061,7 @@
     "href": "schedule.html#week-10-draft-workflow-review",
     "title": "Course Schedule",
     "section": "Week 10: Draft Workflow Review",
-    "text": "Week 10: Draft Workflow Review\n\nBefore Class: Prepare as a Reviewer\nSpend 15–20 minutes sharing a small packet and reading your classmate’s work. Share early enough to allow that reading. Bring one decision/recommendation, one A3 result or Week 9 diagram, the criterion/metric/threshold and source, the file/page behind the result, one limitation and one question. Use the Flipped Review Practice Card: record what you inspect, the rule/source, expected and observed results, and separate judgments about design performance and supporting evidence. A full A4 package is not required yet.\n\n\nSession 1: Learn How to Review (50 minutes)\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n0–5 min\nIdentify the A3 → A4 claim worth reviewing\n\n\n5–20 min\nDistinguish crit, design decision review and method review; connect criteria, metrics, thresholds and judgments to reviewer actions\n\n\n20–30 min\nIndependently review a shared illustrative case, compare judgments and test one changed assumption\n\n\n30–40 min\nInspect the other student’s packet and complete a draft review card\n\n\n40–50 min\nClarify criteria, record disputed thresholds and prepare one question/check\n\n\n\n\n\nSession 2: Review, Act, Recheck (50 minutes)\nPlan for two students plus the instructor. The reviewer speaks before the author explains the work.\n\n\n\n\n\n\n\n\nTime\nActivity\nSaved result\n\n\n\n\n0–12 min\nB leads the review of A’s work\nReview card and author’s response\n\n\n12–24 min\nA leads the review of B’s work\nReview card and author’s response\n\n\n24–42 min\nEach author performs one check or revision\nRevised artifact/result or exact blocker\n\n\n42–47 min\nPeer recheck, 2½ minutes per project\nSupported claim and remaining gap\n\n\n47–50 min\nRecord the response and next action\nDated A4 ledger entry\n\n\n\nEach 12-minute review: reviewer readback/challenge (3 min); author clarification (2 min); joint inspection/question (3 min); reviewer advice and completion evidence (2 min); author’s accept/adapt/defer/reject response with a reason (2 min). The instructor facilitates and checks evidence.\nThe repair can improve a claim/figure or test a small component in an existing GH/Python workflow. No new tooling setup is required. If blocked, record the exact step and next check; a proposed test is not completed verification.\nLeave with: one defensible reviewer judgment, one revised artifact or blocker record, a peer recheck and one dated feedback-ledger entry. Share through Slack or save locally. The clinic is formative; reviewers do not award marks, and A4’s existing requirements and weights remain unchanged.\nFeeds: A4 Draft Package + Feedback/Revision Ledger. The six-component final package remains the target for Week 12.",
+    "text": "Week 10: Draft Workflow Review\n\nBefore Class: Prepare as a Reviewer\nSpend 15–20 minutes sharing a small packet and reading your classmate’s work. Share early enough to allow that reading. Bring one decision/recommendation, one A3 result or Week 9 diagram, the criterion/metric/threshold and source, the file/page behind the result, one limitation and one question. Use the Flipped Review Practice Card: record what you inspect, the rule/source, expected and observed results, and separate judgments about design performance and supporting evidence. A full A4 package is not required yet.\nChoose Research or Studio prompts for the review of your own work. The Real Review Forms and Cases pack supplies the original forms, House-GAN++ and Cambridge retrofit readings, and a documented DCFW review request. The ten-minute paper exercise is preparation for inspecting your A4 work; it is not a whole-paper publication verdict.\n\n\nSession 1: Learn How to Review (50 minutes)\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n0–5 min\nIdentify the A3 → A4 claim worth reviewing\n\n\n5–20 min\nCompare actual NeurIPS/CHI/PLOS review requirements, published paper metrics and a real architectural panel request\n\n\n20–30 min\nInspect one published paper case, compare bounded judgments and specify one evidence request\n\n\n30–40 min\nInspect the other student’s packet and complete a draft review card\n\n\n40–50 min\nClarify criteria, record disputed thresholds and prepare one question/check\n\n\n\n\n\nSession 2: Review, Act, Recheck (50 minutes)\nPlan for two students plus the instructor. The reviewer speaks before the author explains the work.\n\n\n\n\n\n\n\n\nTime\nActivity\nSaved result\n\n\n\n\n0–12 min\nB leads the review of A’s work\nReview card and author’s response\n\n\n12–24 min\nA leads the review of B’s work\nReview card and author’s response\n\n\n24–42 min\nEach author performs one check or revision\nRevised artifact/result or exact blocker\n\n\n42–47 min\nPeer recheck, 2½ minutes per project\nSupported claim and remaining gap\n\n\n47–50 min\nRecord the response and next action\nDated A4 ledger entry\n\n\n\nEach 12-minute review: reviewer readback/challenge (3 min); author clarification (2 min); joint inspection/question (3 min); reviewer advice and completion evidence (2 min); author’s accept/adapt/defer/reject response with a reason (2 min). The instructor facilitates and checks evidence.\nThe repair can improve a claim/figure or test a small component in an existing GH/Python workflow. No new tooling setup is required. If blocked, record the exact step and next check; a proposed test is not completed verification.\nLeave with: one defensible reviewer judgment, one revised artifact or blocker record, a peer recheck and one dated feedback-ledger entry. Share through Slack or save locally. The clinic is formative; reviewers do not award marks, and A4’s existing requirements and weights remain unchanged.\nFeeds: A4 Draft Package + Feedback/Revision Ledger. The six-component final package remains the target for Week 12.",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -6382,107 +6382,11 @@
     "text": "Key ideas\n\nAlways hold out test data or use cross-validation\nStart simple; only add complexity if it improves validated performance\nDocument random seeds and settings for reproducibility\n“Deep” models need more data and care; don’t overfit\n\nNext: a richer notebook focused on visualizing pilot results and making figures for stakeholders."
   },
   {
-    "objectID": "weeks_v2/week-10.html#before-class-prepare-to-review",
-    "href": "weeks_v2/week-10.html#before-class-prepare-to-review",
-    "title": "Week 10: Draft Workflow Review",
-    "section": "Before class: prepare to review",
-    "text": "Before class: prepare to review\nThe flip · 15–20 minutes using existing work\n\n\nShare a small review packet\n\none design decision and recommendation\none A3 result or Week 9 threshold diagram\nthe criterion, metric, threshold and its source\nthe file/page behind the result\none limitation and one question\n\n\n\nRead your classmate’s packet\nUse the flipped practice card.\nPrepare a one-sentence readback, one evidence-linked challenge and one feasible check. Mark missing evidence as missing.\n\n\nThis is rough work for a formative clinic. You do not need a complete A4 package or a new polished presentation. Share through Slack or a local file exchange.\n\nShare early enough for the other student to read before class. The instructor reads both packets. If preparation is missing, use the calibration case first and assemble the packet in Session 1’s preparation block. Do not infer an A3 calendar deadline from this deck; the brief states end of Week 9 only.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W10: Draft Review"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-10.html#session-1-learn-how-to-review",
-    "href": "weeks_v2/week-10.html#session-1-learn-how-to-review",
-    "title": "Week 10: Draft Workflow Review",
-    "section": "Session 1: learn how to review",
-    "text": "Session 1: learn how to review\n50 minutes · two students and the instructor\n\n\n\n\n\n\n\n\nTime\nActivity\nResult\n\n\n\n\n0–5\nLocate the A3 → A4 decision\nOne claim worth reviewing\n\n\n5–20\nReview purposes, criteria and actions\nA shared framework\n\n\n20–30\nReview one shared case, then compare\nA judgment with a reason\n\n\n30–40\nInspect the other student’s evidence\nA draft review card\n\n\n40–50\nClarify criteria and prepare the review\nOne question and a feasible check\n\n\n\n\nSession 2 uses your review to change an artifact, check or recommendation.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W10: Draft Review"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-10.html#a3-supplies-the-evidence-a4-makes-it-usable",
-    "href": "weeks_v2/week-10.html#a3-supplies-the-evidence-a4-makes-it-usable",
-    "title": "Week 10: Draft Workflow Review",
-    "section": "A3 supplies the evidence; A4 makes it usable",
-    "text": "A3 supplies the evidence; A4 makes it usable\n\n\n\n\n\n\n\n\nExisting material\nReviewer asks\nA4 destination\n\n\n\n\nA1 decision + A2 workflow choice\nWhy this decision and method?\nPractice Case + Research Brief\n\n\nA3 variants, output and failure log\nWhat does the result support?\nObject Card + Research Brief\n\n\nRunnable files and checks\nCan I trace or reproduce it?\nReproducibility Capsule\n\n\nCritique and your response\nWhat changed, and why?\nFeedback + Revision Ledger\n\n\nRemaining limits\nWhat can transfer?\nReflection Note\n\n\n\n\nA4 brief: six required components. Today we inspect rough fragments; all six do not need to be complete yet.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W10: Draft Review"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-10.html#what-is-this-review-trying-to-decide",
-    "href": "weeks_v2/week-10.html#what-is-this-review-trying-to-decide",
-    "title": "Week 10: Draft Workflow Review",
-    "section": "What is this review trying to decide?",
-    "text": "What is this review trying to decide?\nThree useful review situations\n\n\n\n\n\n\n\n\nSituation\nMain question\nUseful outcome\n\n\n\n\nStudio crit\nWhat should the designer explore or change next?\nA spatial revision or targeted comparison\n\n\nDesign decision review\nIs the evidence sufficient to proceed under this brief?\nProceed within limits, revise, or seek evidence\n\n\nMethod review\nDoes the method support the stated claim?\nA justified interpretation, stronger check, or narrower claim\n\n\n\n\nWhich decision are you being asked to review today?\n\n\nThese are teaching lenses, not universal professional or journal review procedures. Students advise the author; they do not certify compliance or award marks.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W10: Draft Review"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-10.html#read-the-work-before-hearing-the-explanation",
-    "href": "weeks_v2/week-10.html#read-the-work-before-hearing-the-explanation",
-    "title": "Week 10: Draft Workflow Review",
-    "section": "Read the work before hearing the explanation",
-    "text": "Read the work before hearing the explanation\n\n\n01 · Read\nState the claim\nWhat is the author recommending?\n\n\n02 · Trace\nFind the evidence\nWhich drawing, table, run or source supports it?\n\n\n03 · Test\nChallenge one link\nWhat check or changed assumption could alter it?\n\n\n04 · Advise\nName the next action\nWhat should change, and what would count as done?\n\n\n\nThe reviewer opens. The author then corrects misunderstandings and responds.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W10: Draft Review"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-10.html#criterion-metric-threshold-judgment",
-    "href": "weeks_v2/week-10.html#criterion-metric-threshold-judgment",
-    "title": "Week 10: Draft Workflow Review",
-    "section": "Criterion, metric, threshold, judgment",
-    "text": "Criterion, metric, threshold, judgment\nKeep these four things separate\n\n\n\n\n\n\n\n\nTerm\nMeaning\nPavilion example\n\n\n\n\nCriterion\nWhat quality matters, and to whom?\nA cooler place within a usable walk\n\n\nMetric\nWhat represents that quality, in which conditions?\nWalk time; modelled UTCI reduction at a stated hour\n\n\nThreshold\nWhich rule triggers a decision, and who chose it?\nWalk ≤4 min and reduction ≥4°C\n\n\nJudgment\nWhat action is justified, given the evidence and limits?\nAdvance a candidate provisionally and test its weak assumption\n\n\n\n\nThe thresholds are invented project assumptions for this exercise, not standards, regulations or actual student results.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W10: Draft Review"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-10.html#check-the-rule-as-well-as-the-result",
-    "href": "weeks_v2/week-10.html#check-the-rule-as-well-as-the-result",
-    "title": "Week 10: Draft Workflow Review",
-    "section": "Check the rule as well as the result",
-    "text": "Check the rule as well as the result\n\nRelevance: does the metric represent the quality the claim names?\nAuthority: is the threshold from a source, the brief or your assumption?\nConditions: are baseline, units, users, location and time comparable?\nSensitivity: how far can the rule or input move before the recommendation changes?\n\n\nA review band is a decision rule. An uncertainty range describes what is uncertain. Label which one you are using.\n\n\nIf the result passes, what have you established—and what is still untested?",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W10: Draft Review"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-10.html#some-criteria-need-qualitative-judgment",
-    "href": "weeks_v2/week-10.html#some-criteria-need-qualitative-judgment",
-    "title": "Week 10: Draft Workflow Review",
-    "section": "Some criteria need qualitative judgment",
-    "text": "Some criteria need qualitative judgment\n“The entrance is confusing” needs evidence too.\n\nCriterion: a first-time visitor can recognise the route.\nEvidence: sightlines in plan/section, cues at each turn, and an annotated route walkthrough.\nReviewer action: locate the point of confusion and propose a changed view, drawing or user check.\n\nDistinguish a stated user need, an observed problem and your own aesthetic preference. Explain whom a preference serves before treating it as a requirement.\n\nA qualitative criterion still needs an explicit reason and inspectable evidence.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W10: Draft Review"
-    ]
-  },
-  {
     "objectID": "weeks_v2/week-10.html#a4-criteria-inspect-the-argument",
     "href": "weeks_v2/week-10.html#a4-criteria-inspect-the-argument",
     "title": "Week 10: Draft Workflow Review",
     "section": "A4 criteria: inspect the argument",
-    "text": "A4 criteria: inspect the argument\nProject criteria judge the design options. A4 criteria judge the quality of the argument and workflow.\n\n\n\n\n\n\n\n\nCriterion · course weight\nReviewer question\nInspect\n\n\n\n\nDecision clarity · 15%\nWhat choice, for whom, between which alternatives?\nDecision sentence and alternatives\n\n\nWorkflow execution · 20%\nWhat changed between runs?\nOne input → operation → output chain\n\n\nEvidence and uncertainty · 20%\nWhat could reverse the conclusion?\nMetric, threshold source and sensitivity\n\n\nDesign impact · 15%\nWhat changes in the design?\nDrawing, selected option or next action\n\n\n\n\nA4 assessment criteria. These are the course weights; classmates do not award marks here.",
+    "text": "A4 criteria: inspect the argument\nProject criteria judge the design options. A4 criteria judge the quality of the argument and workflow.\n\n\n\n\n\n\n\n\nCriterion · course weight\nReviewer question\nInspect\n\n\n\n\nDecision clarity · 15%\nWhat choice, for whom, between which alternatives?\nDecision sentence and alternatives\n\n\nWorkflow execution · 20%\nWhat changed between runs?\nOne input → operation → output chain\n\n\nEvidence and uncertainty · 20%\nWhat could reverse the conclusion?\nMetric, rule source and sensitivity\n\n\nDesign impact · 15%\nWhat changes in the design?\nDrawing, selected option or next action\n\n\n\n\nA4 assessment criteria. These are course weights; classmates do not award marks.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6494,79 +6398,7 @@
     "href": "weeks_v2/week-10.html#a4-criteria-inspect-the-handoff",
     "title": "Week 10: Draft Workflow Review",
     "section": "A4 criteria: inspect the handoff",
-    "text": "A4 criteria: inspect the handoff\n\n\n\n\n\n\n\n\nCriterion · course weight\nReviewer question\nInspect\n\n\n\n\nReproducibility · 15%\nCan another person reproduce the key result?\nInputs, runnable file, instructions and expected output\n\n\nRevision judgment · 10%\nWhat did critique change, and why?\nOne feedback → response → revision link\n\n\nCommunication · 5%\nWhat can I understand without narration?\nFigure/card read silently, then restated\n\n\n\nChoose two criteria for detailed review. Always flag an unsupported main claim or missing runnable artifact, even outside your chosen pair.\n\nThis clinic is formative. Reviewers propose checks and revisions; assignment grades come from submitted work under the published rubric.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W10: Draft Review"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-10.html#choose-a-useful-reviewer-action",
-    "href": "weeks_v2/week-10.html#choose-a-useful-reviewer-action",
-    "title": "Week 10: Draft Workflow Review",
-    "section": "Choose a useful reviewer action",
-    "text": "Choose a useful reviewer action\n\n\n\n\n\n\n\n\nIf you find…\nDo this\nExample question\n\n\n\n\nAn unclear claim\nClarify\nWhich option and user is this recommendation for?\n\n\nAn unsupported step\nTrace or check\nShow the input, calculation or source behind this value.\n\n\nA fragile conclusion\nChallenge an assumption\nWhat happens if this threshold or condition changes?\n\n\nA claim broader than its evidence\nBound the recommendation\nWhat can you recommend under the conditions tested?\n\n\nA consequential gap\nSpecify a next test\nWhich check could change the decision?\n\n\n\nSeparate an error you can demonstrate from a question you still need to investigate.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W10: Draft Review"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-10.html#make-the-comment-actionable",
-    "href": "weeks_v2/week-10.html#make-the-comment-actionable",
-    "title": "Week 10: Draft Workflow Review",
-    "section": "Make the comment actionable",
-    "text": "Make the comment actionable\n\n“This is unconvincing. Improve the analysis.”\n\n\n“Your table shows 4.2°C reduction for one modelled condition. The criterion is reliable cooling, but the recommendation covers all summer. Test a contrasting condition or narrow the claim. I can recheck it when the condition and limit are visible beside the result.”\n\n\nObservation → criterion → consequence → action → completion evidence.\n\nThe numbers are illustrative. Point to a specific file, figure or sentence when reviewing real work.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W10: Draft Review"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-10.html#calibration-case-choose-a-pavilion-site",
-    "href": "weeks_v2/week-10.html#calibration-case-choose-a-pavilion-site",
-    "title": "Week 10: Draft Workflow Review",
-    "section": "Calibration case: choose a pavilion site",
-    "text": "Calibration case: choose a pavilion site\nShared exercise · fabricated data\nBrief: walk ≤4 min; modelled UTCI reduction ≥4°C against the same unshaded baseline. All results refer to one assumed summer day at 14:00.\n\n\n\nSite\nWalk time\nUTCI reduction\n\n\n\n\nA\n3 min\n3.0°C\n\n\nB\n4 min\n4.2°C\n\n\nC\n5 min\n5.0°C\n\n\n\n\nDraft claim: “B is the optimal site and will keep all users comfortable throughout summer.”\n\nThese are exercise values and provisional targets, not measured student data or comfort standards.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W10: Draft Review"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-10.html#write-a-judgment-before-comparing-answers",
-    "href": "weeks_v2/week-10.html#write-a-judgment-before-comparing-answers",
-    "title": "Week 10: Draft Workflow Review",
-    "section": "Write a judgment before comparing answers",
-    "text": "Write a judgment before comparing answers\n3 minutes alone · 4 minutes compare · 3 minutes test the change\n\nRestate the claim and identify one relevant criterion.\nState what the table supports and what it does not show.\nChoose a design-result status and an evidence status independently, using the practice card. Give a reason and scope for each.\nPropose one check and name the result that would change your advice.\n\n\nIf you disagree, is it about the criterion, threshold, evidence or acceptable uncertainty?\n\n\nKeep the next slide hidden until everyone has written. The instructor also writes before comparing. Seek explicit reasons and a useful next check, not identical verdicts. This exercise and the following slide share the 20–30 minute block. The optional massing case at the end can replace the pavilion case in this same slot.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W10: Draft Review"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-10.html#compare-judgments-and-test-one-change",
-    "href": "weeks_v2/week-10.html#compare-judgments-and-test-one-change",
-    "title": "Week 10: Draft Workflow Review",
-    "section": "Compare judgments and test one change",
-    "text": "Compare judgments and test one change\nSupported: B is the only listed candidate passing both assumed targets in the tested condition.\nUnproven: a general optimum, comfort for every user, or performance throughout summer. Reduction alone does not establish the final thermal condition.\n\nSuppose B’s reduction ranges from 3.7–4.4°C across additional test conditions. It no longer passes the 4°C target in every condition.\nNext action: identify the condition causing 3.7°C; revise the design, the justified brief, or the scope of the recommendation.\n\n\nThis is a fabricated sensitivity scenario, not a measured confidence interval. If you propose changing the target, retain the original and explain why.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W10: Draft Review"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-10.html#review-the-two-projects-at-different-depths",
-    "href": "weeks_v2/week-10.html#review-the-two-projects-at-different-depths",
-    "title": "Week 10: Draft Workflow Review",
-    "section": "Review the two projects at different depths",
-    "text": "Review the two projects at different depths\n\n\nStudio massing\nWhich section or volume changes? Are area and spatial constraints checked on comparable options? Does a geometry screen justify the daylight claim?\nNext step: a revised section, comparable option, or narrower claim.\n\n\nPavilion research\nAre baseline, weather/hour and access assumptions explicit? Does the result survive changing a threshold? What is borrowed method, and what is the contribution?\nNext step: a sensitivity check and bounded interpretation.\n\n\nBoth reviewers must point to evidence and justify their advice. You can ask a precise question without mastering the other person’s software.",
+    "text": "A4 criteria: inspect the handoff\n\n\n\n\n\n\n\n\nCriterion · course weight\nReviewer question\nInspect\n\n\n\n\nReproducibility · 15%\nCan someone reproduce the key result?\nInputs, file, instructions and expected output\n\n\nRevision judgment · 10%\nWhat did critique change, and why?\nOne feedback → response → revision link\n\n\nCommunication · 5%\nWhat is clear without narration?\nFigure/card read silently, then restated\n\n\n\nReference during inspection: choose two A4 criteria for detailed review. Always flag an unsupported main claim or missing runnable artifact.\n\nThese criteria apply to your A4 work. They do not grade the published papers or replace a venue’s review form.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6578,7 +6410,7 @@
     "href": "weeks_v2/week-10.html#prepare-your-classmates-review",
     "title": "Week 10: Draft Workflow Review",
     "section": "Prepare your classmate’s review",
-    "text": "Prepare your classmate’s review\nSession 1 · 30–50 minutes\nFirst 10 minutes: inspect the packet silently. Complete one record on the flipped practice card: rule, expected result, actual observation/location, design judgment, evidence judgment and next check.\nNext 10 minutes: clarify terms or files with the author and instructor. Agree the criterion and review question; record any disputed threshold.\n\n“I understand your decision to be . The result supports  under . My main question is  because ___.”\n\nChoose a check that can be attempted in the 18-minute repair block. Record a larger investigation as a next step.",
+    "text": "Prepare your classmate’s review\nSession 1 · 30–50 minutes\nFirst 10 minutes: inspect the packet silently. Complete one record on the practice card: question/rule, expected result or feature, actual observation/location, judgment and next check.\nNext 10 minutes: clarify terms or files with the author and instructor. Record any disputed threshold or interpretation.\n\n“I understand your decision to be . The result supports  under . My main question is  because ___.”\n\nChoose a check that can be attempted in the 18-minute repair block. Record a larger investigation as a next step.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6694,44 +6526,32 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-10.html#alternate-calibration-studio-massing",
-    "href": "weeks_v2/week-10.html#alternate-calibration-studio-massing",
-    "title": "Week 10: Draft Workflow Review",
-    "section": "Alternate calibration: studio massing",
-    "text": "Alternate calibration: studio massing\nOptional case · use instead of the pavilion case\nIllustrative brief: area ≥4,000 m² plus a hypothetical 25° geometry screen. That screen alone does not establish actual daylight performance.\n\n\n\nOption\nArea\nGeometry screen\n\n\n\n\nSlab\n7,800 m²\nFails\n\n\nLow block\n1,950 m²\nPasses\n\n\nStepped\n4,190 m²\nPasses\n\n\n\nDraft claim: “Stepped solves the daylight and area requirements.”\n\nWhat if the area target rose by 5%? Which part of the claim still needs evidence?\n\n\nReuses Week 9’s illustrative massing example. These are not code requirements or actual student results.\n\n\nUse this instead of the pavilion case in the same ten-minute slot. New target = 4,200 m²; stepped misses by 10 m². Original margin = 190 m² = 4.75% of the original target. Develop stepped under the present brief, verify daylight separately, and revisit massing if the area target changes. Do not secretly change the threshold to preserve a preferred option.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W10: Draft Review"
-    ]
-  },
-  {
     "objectID": "templates/peer-review-card.html",
     "href": "templates/peer-review-card.html",
     "title": "Week 10: Flipped Review Practice Card",
     "section": "",
-    "text": "This is a formative working note, not another graded submission. Use rough A3/A4 materials. Reviewers do not award marks; the author decides how to respond. Save locally or share through Slack."
+    "text": "This is a formative working note, not another graded submission. Reviewers do not award marks. Everyone first uses a real paper in the shared 10-minute calibration exercise in Session 1. Then choose a Research or Studio focus for reviewing your classmate’s own A3/A4 work in Session 2. Save the record locally or share it through Slack."
   },
   {
     "objectID": "templates/peer-review-card.html#before-class",
     "href": "templates/peer-review-card.html#before-class",
     "title": "Week 10: Flipped Review Practice Card",
     "section": "Before Class",
-    "text": "Before Class\nAllow 15–20 minutes to share your packet and read the other student’s work. Share early enough for your classmate to inspect it.\nYour packet contains one decision/recommendation, one A3 result or Week 9 diagram, the criterion/metric/threshold and its source, a file/page behind the result, one limitation and one review question. Identify missing material honestly. A full A4 package is not required yet."
+    "text": "Before Class\nAllow 15–20 minutes to share your packet and read the other student’s work. Share early enough for your classmate to inspect it.\nFor both tracks, share a claim or decision from your own A3/A4 work, its actual drawing or result, the criterion/metric/comparison and its source, one limitation and one review question. Identify missing material honestly. A full A4 package is not required yet. The published paper is the shared Session 1 calibration material; it does not replace this project packet."
   },
   {
     "objectID": "templates/peer-review-card.html#the-existing-a4-criteria",
     "href": "templates/peer-review-card.html#the-existing-a4-criteria",
     "title": "Week 10: Flipped Review Practice Card",
     "section": "The Existing A4 Criteria",
-    "text": "The Existing A4 Criteria\nProject criteria judge the design options. A4 criteria judge the quality of the argument and workflow.\n\n\n\n\n\n\n\n\nCriterion\nCourse weight\nUseful reviewer action\n\n\n\n\nDecision clarity\n15%\nRestate the decision and alternatives\n\n\nGenerative workflow execution\n20%\nTrace one input → operation → output\n\n\nEvidence quality and uncertainty\n20%\nInspect the metric, threshold source and a sensitivity\n\n\nDesign impact\n15%\nFind the actual design action\n\n\nReproducibility\n15%\nLocate runnable files, instructions and expected result\n\n\nFeedback/revision judgment\n10%\nInspect the reason for accepting or declining advice\n\n\nDocumentation and communication clarity\n5%\nRead silently and report what you understood\n\n\n\nThe weights come from the A4 brief. They explain the course assessment; they are not a peer-scoring exercise. Select two criteria for detailed review, while always flagging an unsupported main claim or missing runnable artifact."
+    "text": "The Existing A4 Criteria\nProject criteria judge the design options. A4 criteria judge the quality of the argument and workflow.\n\n\n\n\n\n\n\n\nCriterion\nCourse weight\nUseful reviewer action\n\n\n\n\nDecision clarity\n15%\nRestate the decision and alternatives\n\n\nGenerative workflow execution\n20%\nTrace one input → operation → output\n\n\nEvidence quality and uncertainty\n20%\nInspect the metric, threshold source and a sensitivity\n\n\nDesign impact\n15%\nFind the actual design action\n\n\nReproducibility\n15%\nLocate runnable files, instructions and expected result\n\n\nFeedback/revision judgment\n10%\nInspect the reason for accepting or declining advice\n\n\nDocumentation and communication clarity\n5%\nRead silently and report what you understood\n\n\n\nThe weights come from the A4 brief. They explain the course assessment; they are not a peer-scoring exercise or a publication rubric. For A4 work, select two criteria for detailed review, while always flagging an unsupported main claim or missing runnable artifact."
   },
   {
     "objectID": "templates/peer-review-card.html#twelve-minute-review",
     "href": "templates/peer-review-card.html#twelve-minute-review",
     "title": "Week 10: Flipped Review Practice Card",
     "section": "Twelve-Minute Review",
-    "text": "Twelve-Minute Review\n\n\n\n\n\n\n\n\nTime\nLead\nAction\n\n\n\n\n0–3\nReviewer\nRead back the claim, locate evidence and explain one challenge\n\n\n3–5\nAuthor\nCorrect misunderstandings and supply context\n\n\n5–8\nBoth\nInspect one link or discuss the proposed test\n\n\n8–10\nReviewer\nRecommend an action and completion evidence\n\n\n10–12\nAuthor\nAccept, adapt, defer or reject the advice, with a reason"
+    "text": "Twelve-Minute Review\n\n\n\n\n\n\n\n\nTime\nLead\nAction\n\n\n\n\n0–3\nReviewer\nRead back the claim, locate evidence and explain one challenge\n\n\n3–5\nAuthor\nCorrect misunderstandings and supply context\n\n\n5–8\nBoth\nInspect one link or discuss the proposed test\n\n\n8–10\nReviewer\nRecommend an action and completion evidence\n\n\n10–12\nAuthor\nAccept, adapt, defer or reject the advice, with a reason\n\n\n\nBoth tracks use this protocol for the student’s own A3/A4 work. The author responds to feedback on their actual project, then performs one check or revision in the repair block. The published-paper calibration is a separate Session 1 exercise."
   },
   {
     "objectID": "templates/peer-review-card.html#author-response-and-repair",
@@ -6745,56 +6565,49 @@
     "href": "templates/peer-review-card.html#add-one-a4-ledger-entry",
     "title": "Week 10: Flipped Review Practice Card",
     "section": "Add One A4 Ledger Entry",
-    "text": "Add One A4 Ledger Entry\n\n\n\n\n\n\n\n\n\nFeedback source/date\nWhat it challenged\nWhat changed\nWhat did not change, and why\n\n\n\n\n\n\n\n\n\n\n\nA4 requires at least three ledger entries across the project. This review contributes one entry; it does not replace the existing requirement.\nCarry the revision into the Practice Case, Research Brief, Object Card or Reproducibility Capsule. Keep the ledger and Reflection Note visible in the six-component final checklist."
+    "text": "Add One A4 Ledger Entry\n\n\n\n\n\n\n\n\n\nFeedback source/date\nWhat it challenged\nWhat changed\nWhat did not change, and why\n\n\n\n\n\n\n\n\n\n\n\nA4 requires at least three ledger entries across the project. A review of your own work can contribute an entry; it does not replace the existing requirement. After the paper exercise, record any critique that changes your own workflow or interpretation. Reviewing someone else’s published paper alone does not demonstrate a revision to your A4 project.\nCarry the revision into the Practice Case, Research Brief, Object Card or Reproducibility Capsule. Keep the ledger and Reflection Note visible in the six-component final checklist."
   },
   {
     "objectID": "templates/peer-review-card.html#your-inspection-record",
     "href": "templates/peer-review-card.html#your-inspection-record",
     "title": "Week 10: Flipped Review Practice Card",
     "section": "Your Inspection Record",
-    "text": "Your Inspection Record\nComplete one record from your classmate’s actual work. Inspect at least one project criterion and its supporting evidence. Use your two chosen A4 criteria as review lenses. Repeat the record for a second claim if time allows; you are not expected to rerun the entire project.\nCopy this table into your notes. Fill the rule and expected result before judging what you observe.\n\n\n\n\n\n\n\nField\nFill this in\n\n\n\n\nAuthor / reviewer / date\n___ / ___ / ___\n\n\nDecision and claim I am checking\n“The author recommends ___ because ___.”\n\n\nProject criterion and stakeholder; two A4 review lenses\nThe quality that matters is , for . I will inspect A4 criteria ___ and ___.\n\n\nWhat I will measure or inspect\nValue + units, drawing feature, calculation, source or workflow step: ___\n\n\nRule and its source\nExpected value/range, threshold or qualitative comparison: . Source/location: . Requirement / project target / assumption / disputed or missing.\n\n\nExpected result and conditions\nI expect ___ because . Baseline, inputs, scenario/hour/user and any justified tolerance: .\n\n\nWhat I actually observed\nValue/feature/error/missing item: . Exact file/page/figure/cell/run: . Difference from the rule or expected result: ___.\n\n\nDesign-result judgment\nMeets stated rule / Does not meet stated rule / Cannot yet judge, because . Applies only to .\n\n\nEvidence judgment\nSupported within checked scope / Problem found / Not established, because . I checked ; I did not check ___.\n\n\nAdvice and next check\nProceed within ___ / revise ___ / hold pending . Priority and reason: . The concern is resolved when we can observe ___.\n\n\n\nRecord missing units, an absent source or a blocked run as findings. Do not fill gaps with a guess or change a threshold silently after seeing the result. A new proposed threshold needs a reason and a comparison with the original."
+    "text": "Your Inspection Record\nFor the peer review, complete one record from your classmate’s actual A3/A4 project. Use the questions for your chosen track and select two A4 criteria as review lenses. You may use a separate copy during the 10-minute paper calibration, marked with the paper citation and sections inspected; do not apply course weights or issue a publication verdict from that extract. Repeat the project record for a second claim if time allows; you are not expected to rerun the entire project.\nCopy this table into your notes. State the comparison or question before judging what you observe. If a target, expected value or tolerance is not relevant, write “not applicable” and explain what you will inspect instead.\n\n\n\n\n\n\n\nField\nFill this in\n\n\n\n\nTrack / material / reviewer / date\nResearch or Studio: . Paper citation or project author: . Reviewer/date: . Sections or artifacts inspected: .\n\n\nDecision and claim I am checking\n“The paper/project claims or recommends ___ because ___.”\n\n\nResearch question or project criterion; review lenses\nThe claim/quality that matters is , for . I will inspect . For A4 work, my two course criteria are  and ___.\n\n\nWhat I will measure or inspect\nValue + units, drawing feature, calculation, source or workflow step: ___\n\n\nComparison/rule and its source\nReported comparator, project target or qualitative criterion: . Source/location: . Stated / assumed / disputed / missing / not applicable.\n\n\nExpected result and conditions, where applicable\nMetric definition, units, baseline, sample, inputs and test conditions: . Expected result and reason, or qualitative feature to inspect: . Justified tolerance, if needed: ___.\n\n\nWhat I actually observed\nActual reported value/feature/error/missing item: . Exact file/page/figure/cell/run: . Comparison with the stated rule or claim: ___.\n\n\nResult/design judgment\nMeets stated rule / Does not meet stated rule / Cannot yet judge / Not applicable, because . Applies only to . If no target/comparison rule applies, state the qualitative finding: ___.\n\n\nEvidence judgment\nSupported within checked scope / Problem found / Not established, because . I checked ; I did not check ___.\n\n\nAdvice and next check\nProceed within ___ / revise ___ / hold pending . Priority and reason: . The concern is resolved when we can observe ___.\n\n\n\nRecord missing units, an absent source or a blocked run as findings. Do not fill gaps with a guess or change a threshold silently after seeing the result. A new proposed threshold needs a reason and a comparison with the original."
   },
   {
     "objectID": "templates/peer-review-card.html#what-exactly-should-you-inspect",
     "href": "templates/peer-review-card.html#what-exactly-should-you-inspect",
     "title": "Week 10: Flipped Review Practice Card",
     "section": "What Exactly Should You Inspect?",
-    "text": "What Exactly Should You Inspect?\nChoose the row that fits the claim. You do not need to perform every kind of check.\n\n\n\n\n\n\n\n\nClaim or artifact\nMeasure or look for\nWhat an adequate check records\n\n\n\n\nAn option meets a project target\nArea, walk time, model output or another relevant value; units, scenario and target source\nObserved value versus the rule, margin where meaningful, and which conditions were checked\n\n\nOne option performs better\nComparable alternatives, common baseline, fixed constraints and the criterion used to rank them\nThe difference under like-for-like conditions; any trade-off that prevents a general “best” claim\n\n\nA spatial quality is improved\nA specific sightline, route, section, sequence or other visible feature\nAnnotated evidence tied to the stated user need; remaining ambiguity or a proposed observation/user check\n\n\nA workflow result can be trusted\nOne input → operation → output; manual calculation, known case or rerun where feasible\nExpected versus observed result, units, tolerance and its justification; exact blocker if not completed\n\n\nA conclusion follows from a figure\nThe claim’s users, locations and times versus the evidence’s actual coverage\nA claim limited to what was checked, with the important caveat visible\n\n\n\nA qualitative criterion needs inspectable evidence too; do not invent a numerical score for everything. A review band is a decision rule, not automatically an uncertainty interval. A result close to a threshold needs its margin stated; closeness alone does not create a new pass/fail rule."
+    "text": "What Exactly Should You Inspect?\nChoose the row that fits the claim. You do not need to perform every kind of check.\n\n\n\n\n\n\n\n\nClaim or artifact\nMeasure or look for\nWhat an adequate check records\n\n\n\n\nAn option meets a project target\nArea, walk time, model output or another relevant value; units, scenario and target source\nObserved value versus the rule, margin where meaningful, and which conditions were checked\n\n\nOne option performs better\nComparable alternatives, common baseline, fixed constraints and the criterion used to rank them\nThe difference under like-for-like conditions; any trade-off that prevents a general “best” claim\n\n\nA paper’s result supports its contribution\nThe claimed contribution, metric definition, actual reported values, baseline and study conditions\nWhere the result supports the claim; a validity/contribution limitation and the clarification that would change your judgment\n\n\nA spatial quality is improved\nA specific sightline, route, section, sequence or other visible feature\nAnnotated evidence tied to the stated user need; remaining ambiguity or a proposed observation/user check\n\n\nA workflow result can be trusted\nOne input → operation → output; manual calculation, known case or rerun where feasible\nExpected versus observed result, units, tolerance and its justification; exact blocker if not completed\n\n\nA conclusion follows from a figure\nThe claim’s users, locations and times versus the evidence’s actual coverage\nA claim limited to what was checked, with the important caveat visible\n\n\n\nA qualitative criterion needs inspectable evidence too; do not invent a numerical score for everything. A review band is a decision rule, not automatically an uncertainty interval. A result close to a threshold needs its margin stated; closeness alone does not create a new pass/fail rule."
   },
   {
     "objectID": "templates/peer-review-card.html#judge-the-design-result-and-evidence-separately",
     "href": "templates/peer-review-card.html#judge-the-design-result-and-evidence-separately",
     "title": "Week 10: Flipped Review Practice Card",
-    "section": "Judge the Design Result and Evidence Separately",
-    "text": "Judge the Design Result and Evidence Separately\n\n1. Does the design result meet the stated rule?\n\n\n\n\n\n\n\nStatus\nUse it when…\n\n\n\n\nMeets stated rule\nThe observed value or feature satisfies the declared rule under the recorded conditions. Name those conditions.\n\n\nDoes not meet stated rule\nThe observation breaches the declared rule. State the gap or missing feature.\n\n\nCannot yet judge\nA necessary rule, observation, unit or condition is missing, disputed or unresolved. State what is needed.\n\n\n\nIf a range represents tested conditions, identify which pass and fail. If it represents uncertainty around an estimate, crossing the threshold leaves the judgment unresolved unless a justified decision rule says otherwise. In either case, do not claim the rule is met throughout a range that crosses it. Passing one criterion does not establish that all project constraints are satisfied or that an option is best.\n\n\n2. Is the evidence adequate for this conclusion?\n\n\n\n\n\n\n\nStatus\nUse it when…\n\n\n\n\nSupported within checked scope\nYour inspection supports this particular conclusion. Name the check and its limits.\n\n\nProblem found\nYou can point to an error, mismatch, unsupported extension of the claim or contradictory result.\n\n\nNot established\nA necessary source, run or verification has not been supplied or inspected. This is an open question, not proof of an error.\n\n\n\nYou may need different evidence statuses for different layers: a table comparison can be checked while the underlying simulation remains unverified."
+    "section": "Judge the Result or Design and Evidence Separately",
+    "text": "Judge the Result or Design and Evidence Separately\n\n1. Does a stated target or comparison rule apply?\nUse the first two statuses only when the claim has an applicable rule. For a qualitative interpretation or contribution claim without such a rule, use Not applicable, state your finding in words, and assess its evidential support below. Do not manufacture a pass/fail threshold.\n\n\n\n\n\n\n\nStatus\nUse it when…\n\n\n\n\nMeets stated rule\nThe observed value or feature satisfies the declared rule under the recorded conditions. Name those conditions.\n\n\nDoes not meet stated rule\nThe observation breaches the declared rule. State the gap or missing feature.\n\n\nCannot yet judge\nA necessary rule, observation, unit or condition is missing, disputed or unresolved. State what is needed.\n\n\nNot applicable\nThis claim does not assert that a target or comparison rule is met. Record the qualitative finding and its reason instead.\n\n\n\nIf a range represents tested conditions, identify which pass and fail. If it represents uncertainty around an estimate, crossing the threshold leaves the judgment unresolved unless a justified decision rule says otherwise. In either case, do not claim the rule is met throughout a range that crosses it. Passing one criterion does not establish that all project constraints are satisfied or that an option is best.\n\n\n2. Is the evidence adequate for this conclusion?\n\n\n\n\n\n\n\nStatus\nUse it when…\n\n\n\n\nSupported within checked scope\nYour inspection supports this particular conclusion. Name the check and its limits.\n\n\nProblem found\nYou can point to an error, mismatch, unsupported extension of the claim or contradictory result.\n\n\nNot established\nA necessary source, run or verification has not been supplied or inspected. This is an open question, not proof of an error.\n\n\n\nYou may need different evidence statuses for different layers: a table comparison can be checked while the underlying simulation remains unverified."
   },
   {
     "objectID": "templates/peer-review-card.html#what-counts-as-good-acceptable-or-needing-work",
     "href": "templates/peer-review-card.html#what-counts-as-good-acceptable-or-needing-work",
     "title": "Week 10: Flipped Review Practice Card",
     "section": "What Counts as Good, Acceptable or Needing Work?",
-    "text": "What Counts as Good, Acceptable or Needing Work?\nThese are judgments about the work and the next action, not marks for the student.\n\n\n\n\n\n\n\n\nWhat you find\nDefensible judgment\nNext action\n\n\n\n\nThe option meets the relevant rules and the claim is supported by the checks made\nAcceptable to advance within the stated scope. Call it stronger than another option only with a justified comparison.\nState the conditions and remaining limits; proceed to the next design step.\n\n\nThe option misses a rule, but the analysis demonstrating that failure is sound\nThe design needs revision; the analysis is useful.\nRevise/reject the option or investigate a justified change to the brief.\n\n\nA number passes, but the needed evidence has not been checked\nA provisional result, not yet an established recommendation.\nHold the broader claim and perform the missing check.\n\n\nA demonstrated error or overclaim affects the recommendation\nThe current conclusion needs correction.\nCorrect the issue, rerun/reinterpret as needed and recheck the claim.\n\n\n\nIf a necessary rule or observation is absent, say “cannot yet judge”. Explain what would resolve that uncertainty rather than labelling the project “bad.”"
-  },
-  {
-    "objectID": "templates/peer-review-card.html#filled-example-pavilion-site-b",
-    "href": "templates/peer-review-card.html#filled-example-pavilion-site-b",
-    "title": "Week 10: Flipped Review Practice Card",
-    "section": "Filled Example: Pavilion Site B",
-    "text": "Filled Example: Pavilion Site B\nExercise only: all values and targets below are fabricated. They are not actual student results or comfort standards.\n\n\n\n\n\n\n\nField\nExample entry\n\n\n\n\nClaim\n“B is the optimal site and keeps all users comfortable throughout summer.”\n\n\nCriterion and rule\nAccessible cooling; provisional walk ≤4 min and UTCI reduction ≥4°C. Targets are exercise assumptions.\n\n\nWhat I inspect\nRow B in the supplied table: 4 min walk; 4.2°C modelled reduction, relative to the same unshaded baseline on one assumed summer day at 14:00.\n\n\nComparison\nBoth targets are met in this condition. Walking-time headroom is 0 min; cooling-reduction margin is 0.2°C.\n\n\nDesign judgment\nMeets stated rule for this condition. This does not establish summer-wide comfort or a general optimum.\n\n\nEvidence judgment\nSupported: arithmetic comparison with the supplied targets. Not established: the underlying model run. Problem found: the claim extends to users/times not tested.\n\n\nAdvice\nAdvance B only provisionally under this screen. Trace its input/run, inspect a contrasting condition and narrow the recommendation to supported conditions.\n\n\n\nIf an added illustrative sensitivity scenario gives B 3.7–4.4°C reduction, at least one tested condition misses the 4°C target. Record that conditional failure; do not call this range a confidence interval or move the target just to keep B passing."
+    "text": "What Counts as Good, Acceptable or Needing Work?\nThese are judgments about the work and the next action, not marks for the student.\n\n\n\n\n\n\n\n\nWhat you find\nDefensible judgment\nNext action\n\n\n\n\nThe option meets the relevant rules and the claim is supported by the checks made\nAcceptable to advance within the stated scope. Call it stronger than another option only with a justified comparison.\nState the conditions and remaining limits; proceed to the next design step.\n\n\nThe option misses a rule, but the analysis demonstrating that failure is sound\nThe design needs revision; the analysis is useful.\nRevise/reject the option or investigate a justified change to the brief.\n\n\nA number passes, but the needed evidence has not been checked\nA provisional result, not yet an established recommendation.\nHold the broader claim and perform the missing check.\n\n\nA demonstrated error or overclaim affects the recommendation\nThe current conclusion needs correction.\nCorrect the issue, rerun/reinterpret as needed and recheck the claim.\n\n\nNo design target applies, but the inspected paper claim follows from its methods/results within stated limits\nThe inspected claim is defensible; this is not a whole-paper publication verdict.\nExplain the supported contribution and any remaining question.\n\n\n\nIf a necessary rule or observation is absent, say “cannot yet judge”. If the claim does not require a target/comparison rule, use “not applicable” and assess the argument in words. Explain what would resolve uncertainty rather than labelling the paper or project “bad.”"
   },
   {
     "objectID": "templates/peer-review-card.html#say-your-review-clearly",
     "href": "templates/peer-review-card.html#say-your-review-clearly",
     "title": "Week 10: Flipped Review Practice Card",
     "section": "Say Your Review Clearly",
-    "text": "Say Your Review Clearly\n\nI inspected **___** in [artifact/location]. Against rule , I observed . The design result . The evidence , because I checked **___** but not . My advice is . I would change that advice if **___**."
+    "text": "Say Your Review Clearly\n\nI inspected **___** in [artifact/location]. For question/comparison , I observed . My result/design finding is . The evidence , because I checked **___** but not . My advice is . I would change that advice if **___**."
   },
   {
-    "objectID": "weeks_v2/week-10.html#practice-card-record-an-actual-inspection",
-    "href": "weeks_v2/week-10.html#practice-card-record-an-actual-inspection",
+    "objectID": "weeks_v2/week-10.html#before-class-bring-something-inspectable",
+    "href": "weeks_v2/week-10.html#before-class-bring-something-inspectable",
     "title": "Week 10: Draft Workflow Review",
-    "section": "Practice card: record an actual inspection",
-    "text": "Practice card: record an actual inspection\nUse during the 30–40 minute preparation block\n\n\n\n\n\n\n\nFill in\nWhat to record\n\n\n\n\nMeasure or inspect\nA value + units, a visible feature, source or workflow step\n\n\nRule + expectation\nTarget/comparison and source; expected result and conditions\n\n\nObservation\nWhat you actually found, with the exact file/figure/cell/run\n\n\nTwo judgments\nDoes the result meet the rule? Is the evidence adequate?\n\n\nNext action\nWhat to change/check, and what result would resolve the concern\n\n\n\n\nComplete one record. Select both judgments. Point to the evidence. Explain what would change your advice.",
+    "section": "Before class: bring something inspectable",
+    "text": "Before class: bring something inspectable\nThe flip · 15–20 minutes using existing work\n\n\nShare your review packet\n\none decision or research claim\none actual drawing, result or comparison\nits criterion, metric/rule and source\nthe exact file/page behind the claim\none limitation and one question\n\n\n\nRead your classmate’s packet\nChoose the Research or Studio prompts on the practice card.\nWrite one readback, one evidence-linked challenge and one feasible check. Mark missing evidence as missing.\n\n\nRough A3/A4 material is enough. Share early enough for the other student to inspect it; use Slack or a local file exchange.\n\nThe instructor reads both packets. If preparation is missing, use the published case first, then assemble the packet in the preparation block. The A3 brief states end of Week 9 only; do not infer a calendar deadline from this deck. Real paper forms and source editions are collected in the source pack, checked 18 November 2026.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6802,11 +6615,233 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-10.html#a-passing-result-can-still-need-checking",
-    "href": "weeks_v2/week-10.html#a-passing-result-can-still-need-checking",
+    "objectID": "weeks_v2/week-10.html#session-1-real-requirements-then-your-work",
+    "href": "weeks_v2/week-10.html#session-1-real-requirements-then-your-work",
     "title": "Week 10: Draft Workflow Review",
-    "section": "A passing result can still need checking",
-    "text": "A passing result can still need checking\n\n\nDesign result · choose one\n\nMeets stated rule\nDoes not meet stated rule\nCannot yet judge\n\n\n\nEvidence · choose separately\n\nSupported within checked scope\nProblem found\nNot established\n\n\n\nAn option can fail a target while the analysis is sound. A passing number can rest on evidence you have not checked.\n\nB: 4.2°C ≥ 4°C. The table comparison passes for the recorded condition. The underlying model is unverified; a summer-wide comfort claim needs more evidence.\n\n\nIllustrative pavilion case. Give a reason and scope with each judgment. “Cannot yet judge” does not mean a demonstrated failure.",
+    "section": "Session 1: real requirements, then your work",
+    "text": "Session 1: real requirements, then your work\n50 minutes · two students and the instructor\n\n\n\n\n\n\n\n\nTime\nActivity\nResult\n\n\n\n\n0–5\nIdentify the A3 → A4 claim\nOne reviewable decision\n\n\n5–20\nCompare real forms, measurements and studio requests\nKnow what each review asks for\n\n\n20–30\nInspect one published paper case\nOne bounded judgment and request\n\n\n30–40\nInspect the other student’s packet\nA draft review card\n\n\n40–50\nClarify the criterion and missing evidence\nOne feasible check\n\n\n\n\nSession 2 turns the critique into a revision and a recheck of your own work.\n\n\nThe source pack is a reference, not additional required lecture content. Introduce both paper cases briefly; choose one for the ten-minute exercise. Use the studio report to demonstrate an actual reviewer request, then select the prompts relevant to each student’s project. Preserve the peer-inspection time.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-10.html#a3-supplies-evidence-a4-makes-it-usable",
+    "href": "weeks_v2/week-10.html#a3-supplies-evidence-a4-makes-it-usable",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "A3 supplies evidence; A4 makes it usable",
+    "text": "A3 supplies evidence; A4 makes it usable\n\n\n\n\n\n\n\n\nExisting material\nReviewer asks\nA4 destination\n\n\n\n\nA1 decision + A2 method\nWhy this choice and comparison?\nPractice Case + Research Brief\n\n\nA3 output and failures\nWhat does the result actually support?\nObject Card + Research Brief\n\n\nFiles and checks\nCan someone trace or reproduce it?\nReproducibility Capsule\n\n\nFeedback and response\nWhat changed, and why?\nFeedback + Revision Ledger\n\n\nRemaining limits\nWhat can transfer?\nReflection Note\n\n\n\n\nA4 brief: six required components. Today we inspect rough fragments; a complete package is not required yet.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-10.html#four-things-that-should-never-be-one-score",
+    "href": "weeks_v2/week-10.html#four-things-that-should-never-be-one-score",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "Four things that should never be one score",
+    "text": "Four things that should never be one score\n\n\n\n\n\n\n\n\nItem\nWhat it tells you\nWhat to record\n\n\n\n\nStudy metric\nA measured or computed property\nDefinition, units, baseline and conditions\n\n\nDecision rule\nWhat triggers a project action\nThreshold/comparison and its authority\n\n\nReviewer rating\nA judgment under a particular venue’s criteria\nScale, reason and confidence/expertise\n\n\nA4 grade\nAchievement under the course rubric\nPublished criteria and weights\n\n\n\n\nA better metric does not automatically mean a better building—or an acceptable paper.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-10.html#three-actual-forms-ask-different-things",
+    "href": "weeks_v2/week-10.html#three-actual-forms-ask-different-things",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "Three actual forms ask different things",
+    "text": "Three actual forms ask different things\nPublished reviewer requirements · selected fields\n\n\n\n\n\n\n\n\nVenue\nReviewer task\nWhat the form produces\n\n\n\n\nNeurIPS 2026\nAssess the contribution on separate dimensions\nRatings, actionable questions and confidence\n\n\nACM CHI 2026\nExplain the HCI contribution and necessary changes\nRecommendation plus a revision list\n\n\nPLOS ONE\nCheck technical validity and support for conclusions\nStructured answers with explanatory comments\n\n\n\n\nWould the same evidence answer all three sets of questions?\n\n\nActual forms and scales: source pack. These are named editions, not a universal review rubric.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-10.html#neurips-a-rating-needs-a-reason",
+    "href": "weeks_v2/week-10.html#neurips-a-rating-needs-a-reason",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "NeurIPS: a rating needs a reason",
+    "text": "NeurIPS: a rating needs a reason\n\n\nActual 2026 form\n\nfour dimension ratings: 1–4\noverall recommendation: 1–6\nreviewer confidence: 1–5\nideally 3–5 actionable questions\n\n\n\nOur short practice\nChoose one consequential question.\nWhat answer would change your advice?\nName the evidence you need and why it matters to the contribution.\n\n\n\nNeurIPS 2026 handbook, Review Form. Full dimension names and scale meanings are in the source pack. Do not average these into one validity score.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-10.html#chi-and-plos-specify-the-missing-evidence",
+    "href": "weeks_v2/week-10.html#chi-and-plos-specify-the-missing-evidence",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "CHI and PLOS: specify the missing evidence",
+    "text": "CHI and PLOS: specify the missing evidence\n\n\nCHI · contribution and revision\nThe actual form asks for a clear list of revisions.\nOur prompt: Which correction is needed for this contribution to be supported? How could you check that it was made?\n\n\nPLOS ONE · validity\nThe actual form asks whether the method is sound and the conclusions follow from the data.\nOur prompt: Which claim can you verify from a specific result, regardless of how exciting the topic sounds?\n\n\n\nCHI 2026 form · PLOS ONE form, p. 1. Classroom prompts are adaptations, not quotations from reviewers of the following papers.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-10.html#real-paper-a-improving-which-output",
+    "href": "weeks_v2/week-10.html#real-paper-a-improving-which-output",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "Real paper A: improving which output?",
+    "text": "Real paper A: improving which output?\nHouse-GAN++ · Nauata et al., CVPR 2021 · Table 2\n\n\n\nDynamic refinement target\nFID ↓\nGraph-edit distance ↓\n\n\n\n\nFID (paper’s diversity proxy)\n24.7 ± 0.8\n3.7 ± 0.0\n\n\nCompatibility\n35.7 ± 1.3\n2.6 ± 0.0\n\n\n\nFID: distance between generated/reference image-feature distributions; unitless. Graph-edit distance: mismatch between requested and reconstructed room/door graphs. Lower is better for both.\n\nThe target changes which metric improves. Neither column measures every architectural requirement.\n\n\nPublished Table 2, p. 13639. Mean ± SD across five rounds; 1,000 layouts per round. Exact model/target labels and reading task: case A.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-10.html#real-paper-b-what-does-the-threshold-justify",
+    "href": "weeks_v2/week-10.html#real-paper-b-what-does-the-threshold-justify",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "Real paper B: what does the threshold justify?",
+    "text": "Real paper B: what does the threshold justify?\nMora & Bardhan · Cambridge retrofit study · 2025\n\n\nReported result\n18 of 25 cases were classified as having higher retrofit need using the study’s wall ΔT &gt;2°C criterion.\nThis is a screening rule from this study, not a general building standard.\n\n\nInspect before transferring it\nWhat temperatures define ΔT? Why that cutoff? Would a different heating condition alter the classification?\nThe authors acknowledge unknown thermostat/occupancy conditions and limited sampling.\n\n\n\nPaper, §2.2.3, §3.1.3/Figure 6 and §4.4; open PDF and reading task. These are our review questions, not published reviewer comments.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-10.html#review-one-published-result-in-ten-minutes",
+    "href": "weeks_v2/week-10.html#review-one-published-result-in-ten-minutes",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "Review one published result in ten minutes",
+    "text": "Review one published result in ten minutes\nChoose case A or B · open the source pack\n\n\n\n\n\n\n\n\nTime\nDo this\nWrite\n\n\n\n\n0–3 · alone\nLocate the table/sections and metric definition\nOne supported statement and its scope\n\n\n3–7 · compare\nIdentify a missing check or consequential disagreement\nOne evidence-linked question\n\n\n7–10 · together\nSpecify the evidence or correction needed\nOne request and what would change your advice\n\n\n\n\nA: Which metric would guide your decision, and which spatial quality still needs checking?\nB: Does this result justify investigation, a diagnosis, or a design action? What further evidence distinguishes them?\n\n\nPaper track: exact reading locations. Judge the inspected claim; a short excerpt does not justify a whole-paper accept/reject verdict.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-10.html#studio-review-an-actual-request-for-evidence",
+    "href": "weeks_v2/week-10.html#studio-review-an-actual-request-for-evidence",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "Studio review: an actual request for evidence",
+    "text": "Studio review: an actual request for evidence\nPier Pavilion redevelopment, Llandudno · DCFW review · August 2020\nProblem identified: the submitted text and drawings did not make the proposed changes clear enough to assess.\nActual reviewer request: a revised Design and Access Statement with side-by-side comparisons of the consented and proposed schemes—covering residential units, retail area and access.\n\nOur transfer: put two versions of your project beside each other. Mark what changed, then show the spatial consequence that the reviewer needs to judge.\n\n\nActual review letter, 24 August 2020, p. 2, items 4–5. We use its evidence request; the planning-procedure discussion is outside this exercise.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-10.html#what-does-a-real-design-panel-ask-to-see",
+    "href": "weeks_v2/week-10.html#what-does-a-real-design-panel-ask-to-see",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "What does a real design panel ask to see?",
+    "text": "What does a real design panel ask to see?\n\n\nMid Sussex · published criteria\nArchitectural integrity · context · environmental performance · character · detail.\nThe panel gives advice; its review is not a planning decision.\n\n\nDCFW · submission requirements\nBrief, site analysis, plans, sections and elevations.\nOur task: trace one site observation or design intention to a visible decision in those drawings.\n\n\n\nMid Sussex terms, 2018, p. 1 · DCFW Essentials, 2020. UK review examples, not Hong Kong regulations or A4 weights.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-10.html#studio-track-ask-inspect-then-advise",
+    "href": "weeks_v2/week-10.html#studio-track-ask-inspect-then-advise",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "Studio track: ask, inspect, then advise",
+    "text": "Studio track: ask, inspect, then advise\nCourse-curated questions · choose one row\n\n\n\n\n\n\n\n\nFocus\nQuestion\nEvidence to open\n\n\n\n\nContext\nWhich site condition changed the design?\nSite analysis + affected plan/section\n\n\nIntegrity\nWhere do use, circulation and structure conflict?\nCoordinated drawings\n\n\nEnvironment\nWhat improves against which alternative?\nComparable runs + assumptions\n\n\nCharacter\nWhere does the concept become spatial?\nDiagram + drawing consequence\n\n\nDetail\nWhich interface could undermine the intent?\nRelevant junction/material detail\n\n\n\n\nAdvance this aspect, revise it, or request evidence—with a located reason and a checkable next action.\n\n\nStudio track: adequacy checks and real sources. These questions and course actions are adaptations. Qualitative judgments need evidence; they do not need an invented numerical cutoff.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-10.html#transfer-the-review-to-your-own-a3a4-work",
+    "href": "weeks_v2/week-10.html#transfer-the-review-to-your-own-a3a4-work",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "Transfer the review to your own A3/A4 work",
+    "text": "Transfer the review to your own A3/A4 work\n\n\nResearch track\nChoose one result and its contribution claim.\nInspect the method, metric definition, comparator and test conditions. State what can be concluded and what check could change that conclusion.\n\n\nStudio track\nChoose one spatial or environmental decision.\nInspect the relevant drawing/output and its consequence. Recommend a change or comparison, with evidence needed to judge it.\n\n\n\nBoth tracks end with a review of the student’s own work and one revision or check for A4.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-10.html#the-card-records-what-you-actually-inspected",
+    "href": "weeks_v2/week-10.html#the-card-records-what-you-actually-inspected",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "The card records what you actually inspected",
+    "text": "The card records what you actually inspected\n\n\n\n\n\n\n\nField\nRecord\n\n\n\n\nMeasure or inspect\nA defined metric, visible feature, source or workflow step\n\n\nComparison + conditions\nBaseline/rule and its source; test conditions or intended spatial relationship\n\n\nObservation\nWhat you found, with exact file/figure/cell/run\n\n\nJudgment\nWhat the result supports; whether the evidence is adequate\n\n\nNext action\nWhat to check/change and what would resolve the concern\n\n\n\n\nUse an actual value or located observation. Missing evidence is a finding, not a number to fill in.\n\n\nPractice card: inspection record. One complete record is enough for the class review.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-10.html#judge-the-result-and-the-evidence-separately",
+    "href": "weeks_v2/week-10.html#judge-the-result-and-the-evidence-separately",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "Judge the result and the evidence separately",
+    "text": "Judge the result and the evidence separately\n\n\nResult or design\nIf a stated rule applies: meets / does not meet / cannot yet judge.\nIf no target rule applies: mark not applicable and explain the qualitative finding.\n\n\nEvidence\nSupported within checked scope / problem found / not established.\nState what you checked and what you did not check.\n\n\nAn option can miss a target while the analysis is sound. A passing number can rest on an unchecked model. A qualitative judgment can be well supported without a numerical score.\n\nThese are course working labels, not journal ratings. Definitions on the practice card.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W10: Draft Review"
+    ]
+  },
+  {
+    "objectID": "templates/reviewer-source-pack.html",
+    "href": "templates/reviewer-source-pack.html",
+    "title": "Week 10: Real Review Forms and Cases",
+    "section": "",
+    "text": "Use this with the Week 10 slides and flipped practice card. Choose one claim to inspect. The short classroom exercise does not qualify you to judge an entire paper or approve a building.\nRead the labels: the forms below are actual published requirements; the paper results come from published studies; the exercises and studio questions are course adaptations. No classroom comment below is presented as an actual peer review of either paper. Sources checked 18 November 2026; the named editions are deliberate."
+  },
+  {
+    "objectID": "templates/reviewer-source-pack.html#real-review-forms",
+    "href": "templates/reviewer-source-pack.html#real-review-forms",
+    "title": "Week 10: Real Review Forms and Cases",
+    "section": "Real Review Forms",
+    "text": "Real Review Forms\n\nNeurIPS 2026: distinguish dimensions, recommendation and confidence\nOfficial Main Track Handbook, Review Form, version V2026.3.\nReviewers supply a summary, contribution type, reasoned strengths/weaknesses, limitations and actionable questions. The four dimensions are Quality, Clarity, Significance and Originality; their interpretation depends on contribution type. The form requests ideally 3–5 questions and what answers could change the evaluation. Requested experiments should address a stated question and be feasible.\n\n\n\n\n\n\n\nActual scale\nMeaning\n\n\n\n\nEach dimension: 1–4\nPoor, fair, good, excellent\n\n\nOverall: 1–6\nStrong reject, reject, borderline reject, borderline accept, accept, strong accept\n\n\nConfidence: 1–5\nFrom an educated guess to strong familiarity and careful checking\n\n\n\nCourse use: write one consequential question and a condition for changing your advice. Do not average the scales into a “scientific validity” score. A confident reviewer can still be wrong; explain the check behind the confidence.\n\n\nACM CHI 2026: contribution and a revision list\nOfficial guide, “The Review Form”.\nThe form asks for the HCI contribution, an expertise rating (1–4), and assessment of significance, originality, research quality, clarity and prior work. Reviewers must specify required revisions.\n\n\n\nActual recommendation\nMeaning\n\n\n\n\nA\nAccept with minor revisions\n\n\nARR\nEither A or revise and resubmit\n\n\nRR\nRevise and resubmit\n\n\nRRX\nEither RR or reject\n\n\nX\nReject\n\n\n\nCourse use: distinguish a required correction from a desirable extension. Finish with “I can verify this revision by looking at ___.” CHI’s codes describe publication options; they are not percentages, architectural performance measures or A4 marks.\n\n\nPLOS ONE: can the evidence support the conclusion?\nActual review-form PDF, pp. 1–2 · publication criteria.\n\nIs the manuscript technically sound, and do the data support the conclusions?\n\nOther form questions address statistical analysis, underlying data availability and intelligible presentation; the reviewer explains the answers in written comments. PLOS ONE evaluates scientific validity without selecting on perceived importance.\nCourse use: identify a claim you could check without agreeing that the topic is fashionable. For a qualitative or design contribution, specify appropriate evidence; do not demand a statistical test merely because another study type uses one.\n\n\nWhat can be borrowed across the forms?\nUse this short sequence for the class exercise, rather than pretending there is one universal journal form:\n\nReadback: what is the contribution or decision?\nEvidence: where exactly is its support?\nChallenge: which missing definition, comparison or condition matters?\nRevision: what must change, and what observation would resolve it?\nScope: what did you inspect, and what remains unchecked?\n\nIf practising a full venue form later, use that venue’s current instructions and review the whole submission. Today’s excerpt review ends with a bounded evidence judgment, not an accept/reject verdict on the paper."
+  },
+  {
+    "objectID": "templates/reviewer-source-pack.html#paper-track",
+    "href": "templates/reviewer-source-pack.html#paper-track",
+    "title": "Week 10: Real Review Forms and Cases",
+    "section": "Paper Track",
+    "text": "Paper Track\n\nCase A: layout generation — which metric is being improved?\nNauata et al. (2021), House-GAN++: Generative Adversarial Layout Refinement Network towards Intelligent Computational Agent for Professional Architects. Official CVPR paper.\nAuthor preprint, Table 2 is an alternate open reading link.\nRead: metric definitions in §3 (p. 13634), protocol in §5 (p. 13636), and Table 2 (p. 13639). The slide reproduces the two Ours_dyna rows, labelled Divers. and Compat. in the paper. These compare dynamic refinement with different optimization targets. The reported ± is across-round standard deviation, not a confidence interval or a building pass mark.\nCourse-authored reviewer task: use both columns to explain the trade-off. Then choose one architectural requirement the table cannot establish—such as a usable circulation route—and specify the drawing or test you would need. Do not infer accessibility, daylight or construction feasibility from image/graph metrics alone.\n\n\nCase B: thermal images — what does a screening threshold establish?\nMora & Bardhan (2025), Towards carbon neutrality: mapping mass retrofit opportunities in Cambridge, UK, Royal Society Open Science 12:241337. Publisher · open manuscript PDF.\nRead: §2.2.3 and §3.1.3, Figure 6, and §4.4 (PDF pp. 7, 10, 14–15). The study uses wall ΔT &gt;2°C as its criterion for higher retrofit need. It reports 18 of 25 cases in that category. This is a study-specific screening rule, not an established building standard.\nDefinition check: the main text does not fully specify the temperature reference used for ΔT. Do not rename it wall–air or indoor–outdoor difference. Supplement Table S3 is a follow-up reading, not something this exercise has already verified.\nCourse-authored reviewer task: locate the measurement definition and conditions; ask what evidence justifies the cutoff and whether uncontrolled heating changes classification. Separate “prioritise further investigation” from “establish retrofit need.” Missing information in the excerpt is a request to investigate, not proof that the entire study is invalid.\n\n\nTen-minute exercise: choose A or B\n\n\n\n\n\n\n\n\nTime\nDo this\nWrite or mark\n\n\n\n\n0–3 min, individually\nOpen the specified table/sections. Locate one claim and the reported measurement.\nMetric, units or scale, direction, test conditions and exact source location\n\n\n3–7 min, compare\nEach person states what the result supports. Identify one disagreement or missing check.\nOne supported statement and one unresolved question\n\n\n7–10 min, agree a request\nSpecify a proportionate correction, additional evidence or narrower claim.\nRequired action, completion evidence and what would change your advice\n\n\n\nSubmit to your own notes: a short inspection record. Use “supported within this comparison,” “problem found,” or “not established,” with a reason. Do not assign a journal verdict based on this excerpt. You are not expected to run a new model or collect new building data in ten minutes.\nFor a research-oriented A4 review, transfer this method to one result from the author’s actual workflow: check its definition, comparison and claimed scope. The published cases supply models of what to question, not thresholds to copy into your project."
+  },
+  {
+    "objectID": "templates/reviewer-source-pack.html#studio-track",
+    "href": "templates/reviewer-source-pack.html#studio-track",
+    "title": "Week 10: Real Review Forms and Cases",
+    "section": "Studio Track",
+    "text": "Studio Track\n\nPublished design-review requirements\nMid Sussex Design Review Panel Terms of Reference, approved 24 January 2018, pp. 1 and 5: five criteria—architectural integrity, context, environmental performance, character and detail. Its recommendations are support / support with amendments / object; the panel advises rather than makes planning decisions.\nDesign Commission for Wales, Design Review Essentials, 2020 document, p. 1: bring a brief, location/site analysis, plans, sections and elevations. One actual prompt is:\n\nHow has your site analysis informed the design?\n\nThese are published UK design-review examples. They are not Hong Kong regulations, project-specific compliance checks or the A4 marking rubric.\n\n\nA real panel request: Pier Pavilion, Llandudno\nDCFW desktop-review letter, 24 August 2020, p. 2, items 4–5. The panel asked for a revised Design and Access Statement comparing the consented and proposed schemes directly, so changes and their effects could be assessed.\nCourse task: apply that evidence request to two versions of your project. Use matching scale/view, mark a changed route, area or relationship, and explain its consequence. Finish with one remaining question. This uses a documented review action; it does not import the report’s planning-law discussion into this class.\n\n\nCurated questions for your studio project\nThe questions and adequacy checks below are course adaptations of those criteria. Choose one row, then inspect a consequential drawing or result. A rendering alone may not answer the question.\n\n\n\n\n\n\n\n\n\nReview focus\nAsk the designer\nInspect\nWhat makes the answer adequate?\n\n\n\n\nContext\nWhich site condition changed the proposal?\nSite plan plus the affected section or route\nTrace the condition to a visible spatial decision; identify an unresolved consequence.\n\n\nArchitectural integrity\nWhere do programme, circulation and structure conflict?\nCoordinated plan/section and one junction\nLocate the conflict or show how it is resolved across drawings.\n\n\nEnvironmental performance\nWhat improves relative to which alternative?\nComparable options, actual output and assumptions\nState the measure, conditions and trade-off; keep the claim within the test.\n\n\nCharacter\nWhich design idea survives beyond the concept image?\nDiagram and its built-form consequence\nPoint to the same idea in a plan, section or material decision.\n\n\nDetail\nWhich interface could undermine the intended quality?\nDetail appropriate to project stage\nExplain the issue and a feasible next drawing, test or specialist question.\n\n\n\n\n\nMake the studio judgment explicit\nUse a course action, with a reason:\n\nAdvance this aspect: the inspected evidence answers this question; retain the stated limit.\nRevise this aspect: identify the drawing or decision that needs to change and the consequence it addresses.\nEvidence needed: name the missing comparison, dimension, view, model assumption or observation.\n\nThese actions are not the council’s official recommendations. For a measured claim, record value, unit, rule source and margin where meaningful. For a qualitative claim, annotate the relevant feature and explain the stakeholder consequence. Do not turn preference into an invented numerical pass mark.\nFinish with: one annotated drawing/result, a reasoned action, and one specific request that can be checked after revision. Continue on the practice card for the reviewer-led conversation, author response and A4 ledger entry."
+  },
+  {
+    "objectID": "templates/peer-review-card.html#choose-one-track",
+    "href": "templates/peer-review-card.html#choose-one-track",
+    "title": "Week 10: Flipped Review Practice Card",
+    "section": "Choose One Track",
+    "text": "Choose One Track\nThese are course-curated questions, not an official journal or conference review form. The real review forms explain their own criteria and recommendation scales; this exercise does not ask you to issue a publication decision from an extract.\n\nResearch: Review Your Own Workflow and Result\nTask: use the real paper case in the paper track to practise locating a claim and checking its evidence during the shared calibration. Then transfer those questions to one claim, workflow and result from your own A3/A4 project; your classmate reviews that work.\nQuestions to answer:\n\nWhat does your project claim to add or establish, and what comparison supports that contribution?\nHow is your metric defined? What are its units, baseline, sample and test conditions?\nWhat value or observation did your workflow actually produce, and where is it recorded?\nDoes the method support your claim? What validation was completed, and which limitation affects the result or contribution?\nWhat specific clarification or revision is needed, and what response would change your judgment?\n\nEvidence: your actual metric definitions, workflow, outputs, validation records and relevant sources. Record missing information; do not substitute an invented value or acceptance cutoff. Use the published paper as a model for the questions, not as a substitute for your own project evidence.\nOutput: one inspection record for your classmate’s project, with precise locations and a judgment limited to the evidence checked; one required revision or check; then a saved result or blocker and a dated feedback-ledger entry. The shared paper exercise produces separate calibration notes, not a whole-paper acceptance or rejection decision.\n\n\nStudio: Review One Decision in an Actual Project\nTask: select one of the studio question groups: site/route, spatial/structural coherence, environment, or character/detail. Bring a plan, section, detail or dataset from your own project; your classmate reviews it.\nQuestions to answer:\n\nWhat quality matters here, to whom, and why?\nWhere can you see the relevant spatial relationship, load path, environmental result or material/detail decision?\nWhich drawing or data supports the claim? What remains hidden or inconsistent?\nWhat consequence does this have for use, space, construction or the intended architectural character?\nWhich revision or comparison would resolve the concern, and what would you look for in the revised work?\n\nEvidence: the actual project material and its brief, sources or stated design intentions. Use a numerical threshold only when it is relevant and justified; qualitative spatial judgments need reasons and located evidence, not a universal cutoff.\nOutput: one completed inspection record, an annotated observation with one consequence, and one proposed revision plus the evidence needed to recheck it."
+  },
+  {
+    "objectID": "templates/peer-review-card.html#a-comment-tied-to-a-papers-evidence",
+    "href": "templates/peer-review-card.html#a-comment-tied-to-a-papers-evidence",
+    "title": "Week 10: Flipped Review Practice Card",
+    "section": "A Comment Tied to a Paper’s Evidence",
+    "text": "A Comment Tied to a Paper’s Evidence\nThis is a course-authored sentence pattern, not a quote from a reviewer or a finding about a particular paper. Fill the brackets only after inspecting the selected paper.\n\nTable [identifier] reports [actual metric and value] against [baseline] under [conditions]. This supports [bounded claim]. The statement in [section] also covers [untested condition or outcome]. Please provide [specific clarification/check] or narrow that statement. I would change my judgment if [the evidence needed] were available.\n\nUse this pattern only when you find that mismatch. If the paper already bounds its claim appropriately, state the strength and ask a different question supported by your inspection. A paper’s reported metric, a venue’s reviewer rating and a course grade are different things; consult the real review forms for the venue-specific task."
+  },
+  {
+    "objectID": "weeks_v2/week-10.html#now-inspect-your-classmates-work",
+    "href": "weeks_v2/week-10.html#now-inspect-your-classmates-work",
+    "title": "Week 10: Draft Workflow Review",
+    "section": "Now inspect your classmate’s work",
+    "text": "Now inspect your classmate’s work\nSession 1 · 30–50 minutes · following slides are references\n\n\nLocate the concern\nPoint to the result and the claim it supports.\nIs the issue a missing definition, an unfair comparison, an untested condition or a claim beyond the evidence?\n\n\nSpecify completion\nRequest a clarification, a feasible check or a narrower statement.\n**“I could reconsider when I can inspect ___.”**\n\n\nA missing item in your reading is not automatically an error in the paper. Check whether it appears elsewhere; acknowledge limits the authors already state.\n\nStart ten minutes of silent inspection now. Then spend ten minutes clarifying the criterion and next check with the author.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
