@@ -66,3 +66,9 @@ Branch: `codex/week10-real-review-cases`, created from freshly fetched
 - The primary slide link now opens the course's readable case note; an official
   publisher landing page and secondary PDF link are provided. No working PDF
   download is claimed. The slide count, timings and A4 requirements are unchanged.
+- Correction source: `5dd88b3`; published output: `be8e907`. Exactly four
+  output files changed, with all other published hashes preserved.
+- Pages build and deploy succeeded in run `44280514688`:
+  https://github.com/clementinec/ARCH7476/actions/runs/44280514688 .
+- The replacement case is readable directly at
+  https://clementinec.github.io/ARCH7476/templates/reviewer-source-pack.html#real-panel-request .
