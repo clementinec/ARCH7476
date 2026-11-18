@@ -52,3 +52,17 @@ Branch: `codex/week10-real-review-cases`, created from freshly fetched
 - Card: https://clementinec.github.io/ARCH7476/templates/peer-review-card.html .
 - Direct access to the Pages host remained unavailable to the web tool;
   deployment and published content hashes are verified, not a live visual view.
+
+
+## Follow-up: unavailable source PDF
+
+- The reader reported that the 24 August 2020 Pier Pavilion PDF opened empty.
+  The original validation had established indexed text, not a successful
+  download or visual display. Direct download and browser verification remained
+  unavailable in this environment; no cause for the empty file is asserted.
+- Replaced that case in the deck and source pack with DCFW's Creigiau Phase 5B
+  review, issued 5 June 2026. Its current official resource page links the report.
+  Checked the report text and exact page locations for the revised example.
+- The primary slide link now opens the course's readable case note; an official
+  publisher landing page and secondary PDF link are provided. No working PDF
+  download is claimed. The slide count, timings and A4 requirements are unchanged.

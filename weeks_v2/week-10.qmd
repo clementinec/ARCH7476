@@ -221,18 +221,18 @@ The authors acknowledge unknown thermostat/occupancy conditions and limited samp
 
 ## Studio review: an actual request for evidence
 
-[Pier Pavilion redevelopment, Llandudno · DCFW review · August 2020]{.kicker}
+[Creigiau Phase 5B, Cardiff · DCFW review · issued 5 June 2026]{.kicker}
 
-**Problem identified:** the submitted text and drawings did not make the proposed changes clear enough to assess.
+**Problem identified:** the revised layout departs from the original masterplan without clearly demonstrating the design process or how the alternatives were tested.
 
-**Actual reviewer request:** a revised Design and Access Statement with side-by-side comparisons of the consented and proposed schemes—covering residential units, retail area and access.
+**Actual reviewer request:** evidence of layout exploration and sections through the site's edges, including its relationships with green space, a service station and Pencoed House.
 
 ::: {.activity-card}
-**Our transfer:** put two versions of your project beside each other. Mark what changed, then show the spatial consequence that the reviewer needs to judge.
+**Our transfer:** compare two versions of your project. Draw one critical boundary section and explain how the revision responds to its surroundings.
 :::
 
 ::: {.source-note}
-[Actual review letter, 24 August 2020, p. 2, items 4–5](https://dcfw.org/wp-content/uploads/2020/08/PierPavilionLLandudnoSection73DeskTopEnquiry2482020.pdf#page=2). We use its evidence request; the planning-procedure discussion is outside this exercise.
+[Read the case and source references](../templates/reviewer-source-pack.qmd#real-panel-request) · [Official report page](https://dcfw.org/resource/land-north-of-j33-m4-phase-5b-may-2026/), report p. 5. The exercise applies the evidence request; it does not import local planning rules.
 :::
 
 ---
