@@ -6,30 +6,66 @@ format:
     toc: true
 ---
 
-This is a **formative working note**, not another graded submission. Use rough A3/A4 materials. Reviewers do not award marks; the author decides how to respond. Save locally or share through Slack.
+This is a **formative working note**, not another graded submission. Reviewers do not award marks. Everyone first uses a real paper in the shared **10-minute calibration exercise in Session 1**. Then choose a Research or Studio focus for reviewing your classmate's **own A3/A4 work in Session 2**. Save the record locally or share it through Slack.
+
+## Choose One Track
+
+These are **course-curated questions**, not an official journal or conference review form. The [real review forms](reviewer-source-pack.qmd#real-review-forms) explain their own criteria and recommendation scales; this exercise does not ask you to issue a publication decision from an extract.
+
+### Research: Review Your Own Workflow and Result
+
+**Task:** use the real paper case in the [paper track](reviewer-source-pack.qmd#paper-track) to practise locating a claim and checking its evidence during the shared calibration. Then transfer those questions to one claim, workflow and result from your own A3/A4 project; your classmate reviews that work.
+
+**Questions to answer:**
+
+- What does your project claim to add or establish, and what comparison supports that contribution?
+- How is your metric defined? What are its units, baseline, sample and test conditions?
+- What value or observation did your workflow actually produce, and where is it recorded?
+- Does the method support your claim? What validation was completed, and which limitation affects the result or contribution?
+- What specific clarification or revision is needed, and what response would change your judgment?
+
+**Evidence:** your actual metric definitions, workflow, outputs, validation records and relevant sources. Record missing information; do not substitute an invented value or acceptance cutoff. Use the published paper as a model for the questions, not as a substitute for your own project evidence.
+
+**Output:** one inspection record for your classmate's project, with precise locations and a judgment limited to the evidence checked; one required revision or check; then a saved result or blocker and a dated feedback-ledger entry. The shared paper exercise produces separate calibration notes, not a whole-paper acceptance or rejection decision.
+
+### Studio: Review One Decision in an Actual Project
+
+**Task:** select one of the [studio question groups](reviewer-source-pack.qmd#studio-track): site/route, spatial/structural coherence, environment, or character/detail. Bring a plan, section, detail or dataset from your own project; your classmate reviews it.
+
+**Questions to answer:**
+
+- What quality matters here, to whom, and why?
+- Where can you see the relevant spatial relationship, load path, environmental result or material/detail decision?
+- Which drawing or data supports the claim? What remains hidden or inconsistent?
+- What consequence does this have for use, space, construction or the intended architectural character?
+- Which revision or comparison would resolve the concern, and what would you look for in the revised work?
+
+**Evidence:** the actual project material and its brief, sources or stated design intentions. Use a numerical threshold only when it is relevant and justified; qualitative spatial judgments need reasons and located evidence, not a universal cutoff.
+
+**Output:** one completed inspection record, an annotated observation with one consequence, and one proposed revision plus the evidence needed to recheck it.
 
 ## Before Class
 
 Allow 15–20 minutes to share your packet and read the other student's work. Share early enough for your classmate to inspect it.
 
-Your packet contains one decision/recommendation, one A3 result or Week 9 diagram, the criterion/metric/threshold and its source, a file/page behind the result, one limitation and one review question. Identify missing material honestly. A full A4 package is not required yet.
+For **both tracks**, share a claim or decision from your own A3/A4 work, its actual drawing or result, the criterion/metric/comparison and its source, one limitation and one review question. Identify missing material honestly. A full A4 package is not required yet. The published paper is the shared Session 1 calibration material; it does not replace this project packet.
 
 ## Your Inspection Record
 
-**Complete one record from your classmate's actual work.** Inspect at least one project criterion and its supporting evidence. Use your two chosen A4 criteria as review lenses. Repeat the record for a second claim if time allows; you are not expected to rerun the entire project.
+**For the peer review, complete one record from your classmate's actual A3/A4 project.** Use the questions for your chosen track and select two A4 criteria as review lenses. You may use a separate copy during the 10-minute paper calibration, marked with the paper citation and sections inspected; do not apply course weights or issue a publication verdict from that extract. Repeat the project record for a second claim if time allows; you are not expected to rerun the entire project.
 
-Copy this table into your notes. Fill the rule and expected result **before** judging what you observe.
+Copy this table into your notes. State the comparison or question **before** judging what you observe. If a target, expected value or tolerance is not relevant, write “not applicable” and explain what you will inspect instead.
 
 | Field | Fill this in |
 |---|---|
-| Author / reviewer / date | ___ / ___ / ___ |
-| Decision and claim I am checking | “The author recommends ___ because ___.” |
-| Project criterion and stakeholder; two A4 review lenses | The quality that matters is ___, for ___. I will inspect A4 criteria ___ and ___. |
+| Track / material / reviewer / date | Research or Studio: ___. Paper citation or project author: ___. Reviewer/date: ___. Sections or artifacts inspected: ___. |
+| Decision and claim I am checking | “The paper/project claims or recommends ___ because ___.” |
+| Research question or project criterion; review lenses | The claim/quality that matters is ___, for ___. I will inspect ___. For A4 work, my two course criteria are ___ and ___. |
 | What I will measure or inspect | Value + units, drawing feature, calculation, source or workflow step: ___ |
-| Rule and its source | Expected value/range, threshold or qualitative comparison: ___. Source/location: ___. Requirement / project target / assumption / disputed or missing. |
-| Expected result and conditions | I expect ___ because ___. Baseline, inputs, scenario/hour/user and any justified tolerance: ___. |
-| What I actually observed | Value/feature/error/missing item: ___. Exact file/page/figure/cell/run: ___. Difference from the rule or expected result: ___. |
-| Design-result judgment | **Meets stated rule / Does not meet stated rule / Cannot yet judge**, because ___. Applies only to ___. |
+| Comparison/rule and its source | Reported comparator, project target or qualitative criterion: ___. Source/location: ___. Stated / assumed / disputed / missing / not applicable. |
+| Expected result and conditions, where applicable | Metric definition, units, baseline, sample, inputs and test conditions: ___. Expected result and reason, or qualitative feature to inspect: ___. Justified tolerance, if needed: ___. |
+| What I actually observed | Actual reported value/feature/error/missing item: ___. Exact file/page/figure/cell/run: ___. Comparison with the stated rule or claim: ___. |
+| Result/design judgment | **Meets stated rule / Does not meet stated rule / Cannot yet judge / Not applicable**, because ___. Applies only to ___. If no target/comparison rule applies, state the qualitative finding: ___. |
 | Evidence judgment | **Supported within checked scope / Problem found / Not established**, because ___. I checked ___; I did not check ___. |
 | Advice and next check | Proceed within ___ / revise ___ / hold pending ___. Priority and reason: ___. The concern is resolved when we can observe ___. |
 
@@ -43,21 +79,25 @@ Choose the row that fits the claim. You do not need to perform every kind of che
 |---|---|---|
 | An option meets a project target | Area, walk time, model output or another relevant value; units, scenario and target source | Observed value versus the rule, margin where meaningful, and which conditions were checked |
 | One option performs better | Comparable alternatives, common baseline, fixed constraints and the criterion used to rank them | The difference under like-for-like conditions; any trade-off that prevents a general “best” claim |
+| A paper's result supports its contribution | The claimed contribution, metric definition, actual reported values, baseline and study conditions | Where the result supports the claim; a validity/contribution limitation and the clarification that would change your judgment |
 | A spatial quality is improved | A specific sightline, route, section, sequence or other visible feature | Annotated evidence tied to the stated user need; remaining ambiguity or a proposed observation/user check |
 | A workflow result can be trusted | One input → operation → output; manual calculation, known case or rerun where feasible | Expected versus observed result, units, tolerance and its justification; exact blocker if not completed |
 | A conclusion follows from a figure | The claim's users, locations and times versus the evidence's actual coverage | A claim limited to what was checked, with the important caveat visible |
 
 A qualitative criterion needs inspectable evidence too; do not invent a numerical score for everything. A review band is a decision rule, not automatically an uncertainty interval. A result close to a threshold needs its margin stated; closeness alone does not create a new pass/fail rule.
 
-## Judge the Design Result and Evidence Separately
+## Judge the Result or Design and Evidence Separately {#judge-the-design-result-and-evidence-separately}
 
-### 1. Does the design result meet the stated rule?
+### 1. Does a stated target or comparison rule apply?
+
+Use the first two statuses only when the claim has an applicable rule. For a qualitative interpretation or contribution claim without such a rule, use **Not applicable**, state your finding in words, and assess its evidential support below. Do not manufacture a pass/fail threshold.
 
 | Status | Use it when… |
 |---|---|
 | **Meets stated rule** | The observed value or feature satisfies the declared rule under the recorded conditions. Name those conditions. |
 | **Does not meet stated rule** | The observation breaches the declared rule. State the gap or missing feature. |
 | **Cannot yet judge** | A necessary rule, observation, unit or condition is missing, disputed or unresolved. State what is needed. |
+| **Not applicable** | This claim does not assert that a target or comparison rule is met. Record the qualitative finding and its reason instead. |
 
 If a range represents **tested conditions**, identify which pass and fail. If it represents **uncertainty around an estimate**, crossing the threshold leaves the judgment unresolved unless a justified decision rule says otherwise. In either case, do not claim the rule is met throughout a range that crosses it. Passing one criterion does not establish that all project constraints are satisfied or that an option is best.
 
@@ -81,28 +121,21 @@ These are judgments about the **work and the next action**, not marks for the st
 | The option misses a rule, but the analysis demonstrating that failure is sound | **The design needs revision; the analysis is useful.** | Revise/reject the option or investigate a justified change to the brief. |
 | A number passes, but the needed evidence has not been checked | **A provisional result, not yet an established recommendation.** | Hold the broader claim and perform the missing check. |
 | A demonstrated error or overclaim affects the recommendation | **The current conclusion needs correction.** | Correct the issue, rerun/reinterpret as needed and recheck the claim. |
+| No design target applies, but the inspected paper claim follows from its methods/results within stated limits | **The inspected claim is defensible; this is not a whole-paper publication verdict.** | Explain the supported contribution and any remaining question. |
 
-If a necessary rule or observation is absent, say **“cannot yet judge”**. Explain what would resolve that uncertainty rather than labelling the project “bad.”
+If a necessary rule or observation is absent, say **“cannot yet judge”**. If the claim does not require a target/comparison rule, use **“not applicable”** and assess the argument in words. Explain what would resolve uncertainty rather than labelling the paper or project “bad.”
 
-## Filled Example: Pavilion Site B
+## A Comment Tied to a Paper's Evidence
 
-**Exercise only:** all values and targets below are fabricated. They are not actual student results or comfort standards.
+This is a **course-authored sentence pattern**, not a quote from a reviewer or a finding about a particular paper. Fill the brackets only after inspecting the selected paper.
 
-| Field | Example entry |
-|---|---|
-| Claim | “B is the optimal site and keeps all users comfortable throughout summer.” |
-| Criterion and rule | Accessible cooling; provisional walk ≤4 min and UTCI reduction ≥4°C. Targets are exercise assumptions. |
-| What I inspect | Row B in the supplied table: **4 min walk; 4.2°C modelled reduction**, relative to the same unshaded baseline on one assumed summer day at 14:00. |
-| Comparison | Both targets are met in this condition. Walking-time headroom is **0 min**; cooling-reduction margin is **0.2°C**. |
-| Design judgment | **Meets stated rule for this condition.** This does not establish summer-wide comfort or a general optimum. |
-| Evidence judgment | **Supported:** arithmetic comparison with the supplied targets. **Not established:** the underlying model run. **Problem found:** the claim extends to users/times not tested. |
-| Advice | Advance B only provisionally under this screen. Trace its input/run, inspect a contrasting condition and narrow the recommendation to supported conditions. |
+> Table [identifier] reports [actual metric and value] against [baseline] under [conditions]. This supports [bounded claim]. The statement in [section] also covers [untested condition or outcome]. Please provide [specific clarification/check] or narrow that statement. I would change my judgment if [the evidence needed] were available.
 
-If an added illustrative sensitivity scenario gives B **3.7–4.4°C reduction**, at least one tested condition misses the 4°C target. Record that conditional failure; do not call this range a confidence interval or move the target just to keep B passing.
+Use this pattern only when you find that mismatch. If the paper already bounds its claim appropriately, state the strength and ask a different question supported by your inspection. A paper's reported metric, a venue's reviewer rating and a course grade are different things; consult the [real review forms](reviewer-source-pack.qmd#real-review-forms) for the venue-specific task.
 
 ## Say Your Review Clearly
 
-> I inspected **___** in **[artifact/location]**. Against rule **___**, I observed **___**. The design result **___**. The evidence **___**, because I checked **___** but not **___**. My advice is **___**. I would change that advice if **___**.
+> I inspected **___** in **[artifact/location]**. For question/comparison **___**, I observed **___**. My result/design finding is **___**. The evidence **___**, because I checked **___** but not **___**. My advice is **___**. I would change that advice if **___**.
 
 ## The Existing A4 Criteria
 
@@ -118,7 +151,7 @@ If an added illustrative sensitivity scenario gives B **3.7–4.4°C reduction**
 | Feedback/revision judgment | 10% | Inspect the reason for accepting or declining advice |
 | Documentation and communication clarity | 5% | Read silently and report what you understood |
 
-The weights come from the [A4 brief](../assignments/assignment-04.qmd#assessment-criteria). They explain the course assessment; they are not a peer-scoring exercise. Select two criteria for detailed review, while always flagging an unsupported main claim or missing runnable artifact.
+The weights come from the [A4 brief](../assignments/assignment-04.qmd#assessment-criteria). They explain the course assessment; they are not a peer-scoring exercise or a publication rubric. For A4 work, select two criteria for detailed review, while always flagging an unsupported main claim or missing runnable artifact.
 
 ## Twelve-Minute Review
 
@@ -129,6 +162,8 @@ The weights come from the [A4 brief](../assignments/assignment-04.qmd#assessment
 | 5–8 | Both | Inspect one link or discuss the proposed test |
 | 8–10 | Reviewer | Recommend an action and completion evidence |
 | 10–12 | Author | Accept, adapt, defer or reject the advice, with a reason |
+
+Both tracks use this protocol for the student's own A3/A4 work. The author responds to feedback on their actual project, then performs one check or revision in the repair block. The published-paper calibration is a separate Session 1 exercise.
 
 ## Author Response and Repair
 
@@ -149,6 +184,6 @@ The weights come from the [A4 brief](../assignments/assignment-04.qmd#assessment
 |---|---|---|---|
 | | | | |
 
-A4 requires at least **three ledger entries across the project**. This review contributes one entry; it does not replace the existing requirement.
+A4 requires at least **three ledger entries across the project**. A review of your own work can contribute an entry; it does not replace the existing requirement. After the paper exercise, record any critique that changes your own workflow or interpretation. Reviewing someone else's published paper alone does not demonstrate a revision to your A4 project.
 
 Carry the revision into the Practice Case, Research Brief, Object Card or Reproducibility Capsule. Keep the ledger and Reflection Note visible in the [six-component final checklist](final-package-checklist.md).

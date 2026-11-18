@@ -1,6 +1,6 @@
 ---
 title: "Week 10: Draft Workflow Review"
-subtitle: "Act as a Reviewer, Test a Judgment, Improve the Work"
+subtitle: "What Real Reviewers Ask For — Papers, Studio, and Your A4 Revision"
 output-file: week-10.html
 format:
   revealjs:
@@ -14,180 +14,348 @@ format:
     footer: "Week 10 · feeds A4: Workflow Package"
 ---
 
-## Before class: prepare to review
+## Before class: bring something inspectable
 
 [The flip · 15–20 minutes using existing work]{.kicker}
 
 :::: {.two-col}
 ::: {.activity-card}
-[Share a small review packet]{.card-title}
+[Share your review packet]{.card-title}
 
-- one design decision and recommendation
-- one A3 result or Week 9 threshold diagram
-- the criterion, metric, threshold and its source
-- the file/page behind the result
+- one decision or research claim
+- one actual drawing, result or comparison
+- its criterion, metric/rule and source
+- the exact file/page behind the claim
 - one limitation and one question
 :::
 ::: {.concept-card}
 [Read your classmate's packet]{.card-title}
 
-Use the [flipped practice card](../templates/peer-review-card.qmd).
+Choose the **Research** or **Studio** prompts on the [practice card](../templates/peer-review-card.qmd).
 
-Prepare a one-sentence readback, one evidence-linked challenge and one feasible check. Mark missing evidence as missing.
+Write one readback, one evidence-linked challenge and one feasible check. Mark missing evidence as missing.
 :::
 ::::
 
-This is rough work for a formative clinic. You do not need a complete A4 package or a new polished presentation. Share through Slack or a local file exchange.
+Rough A3/A4 material is enough. Share early enough for the other student to inspect it; use Slack or a local file exchange.
 
 ::: {.notes}
-Share early enough for the other student to read before class. The instructor reads both packets. If preparation is missing, use the calibration case first and assemble the packet in Session 1's preparation block. Do not infer an A3 calendar deadline from this deck; the brief states end of Week 9 only.
+The instructor reads both packets. If preparation is missing, use the published case first, then assemble the packet in the preparation block. The A3 brief states end of Week 9 only; do not infer a calendar deadline from this deck. Real paper forms and source editions are collected in the source pack, checked 18 November 2026.
 :::
 
 ---
 
-## Session 1: learn how to review
+## Session 1: real requirements, then your work
 
 [50 minutes · two students and the instructor]{.kicker}
 
 | Time | Activity | Result |
 |---|---|---|
-| 0–5 | Locate the A3 → A4 decision | One claim worth reviewing |
-| 5–20 | Review purposes, criteria and actions | A shared framework |
-| 20–30 | Review one shared case, then compare | A judgment with a reason |
-| 30–40 | Inspect the other student's evidence | A draft review card |
-| 40–50 | Clarify criteria and prepare the review | One question and a feasible check |
+| 0–5 | Identify the A3 → A4 claim | One reviewable decision |
+| 5–20 | Compare real forms, measurements and studio requests | Know what each review asks for |
+| 20–30 | Inspect one published paper case | One bounded judgment and request |
+| 30–40 | Inspect the other student's packet | A draft review card |
+| 40–50 | Clarify the criterion and missing evidence | One feasible check |
 
 ::: {.takeaway}
-Session 2 uses your review to change an artifact, check or recommendation.
-:::
-
----
-
-## A3 supplies the evidence; A4 makes it usable
-
-| Existing material | Reviewer asks | A4 destination |
-|---|---|---|
-| A1 decision + A2 workflow choice | Why this decision and method? | Practice Case + Research Brief |
-| A3 variants, output and failure log | What does the result support? | Object Card + Research Brief |
-| Runnable files and checks | Can I trace or reproduce it? | Reproducibility Capsule |
-| Critique and your response | What changed, and why? | Feedback + Revision Ledger |
-| Remaining limits | What can transfer? | Reflection Note |
-
-::: {.source-note}
-[A4 brief: six required components](../assignments/assignment-04.qmd). Today we inspect rough fragments; all six do not need to be complete yet.
-:::
-
----
-
-## What is this review trying to decide?
-
-[Three useful review situations]{.kicker}
-
-| Situation | Main question | Useful outcome |
-|---|---|---|
-| **Studio crit** | What should the designer explore or change next? | A spatial revision or targeted comparison |
-| **Design decision review** | Is the evidence sufficient to proceed under this brief? | Proceed within limits, revise, or seek evidence |
-| **Method review** | Does the method support the stated claim? | A justified interpretation, stronger check, or narrower claim |
-
-::: {.ask-room}
-Which decision are you being asked to review today?
+Session 2 turns the critique into a revision and a recheck of your own work.
 :::
 
 ::: {.notes}
-These are teaching lenses, not universal professional or journal review procedures. Students advise the author; they do not certify compliance or award marks.
+The source pack is a reference, not additional required lecture content. Introduce both paper cases briefly; choose one for the ten-minute exercise. Use the studio report to demonstrate an actual reviewer request, then select the prompts relevant to each student's project. Preserve the peer-inspection time.
 :::
 
 ---
 
-## Read the work before hearing the explanation
+## A3 supplies evidence; A4 makes it usable
 
-:::: {.process-chain}
-::: {.process-step}
-[01 · Read]{.label .concept}
+| Existing material | Reviewer asks | A4 destination |
+|---|---|---|
+| A1 decision + A2 method | Why this choice and comparison? | Practice Case + Research Brief |
+| A3 output and failures | What does the result actually support? | Object Card + Research Brief |
+| Files and checks | Can someone trace or reproduce it? | Reproducibility Capsule |
+| Feedback and response | What changed, and why? | Feedback + Revision Ledger |
+| Remaining limits | What can transfer? | Reflection Note |
 
-**State the claim**
-
-What is the author recommending?
+::: {.source-note}
+[A4 brief: six required components](../assignments/assignment-04.qmd). Today we inspect rough fragments; a complete package is not required yet.
 :::
-::: {.process-step}
-[02 · Trace]{.label .example}
 
-**Find the evidence**
+---
 
-Which drawing, table, run or source supports it?
+## Four things that should never be one score
+
+| Item | What it tells you | What to record |
+|---|---|---|
+| **Study metric** | A measured or computed property | Definition, units, baseline and conditions |
+| **Decision rule** | What triggers a project action | Threshold/comparison and its authority |
+| **Reviewer rating** | A judgment under a particular venue's criteria | Scale, reason and confidence/expertise |
+| **A4 grade** | Achievement under the course rubric | Published criteria and weights |
+
+::: {.takeaway}
+A better metric does not automatically mean a better building—or an acceptable paper.
 :::
-::: {.process-step}
-[03 · Test]{.label .activity}
 
-**Challenge one link**
+---
 
-What check or changed assumption could alter it?
+## Three actual forms ask different things
+
+[Published reviewer requirements · selected fields]{.kicker}
+
+| Venue | Reviewer task | What the form produces |
+|---|---|---|
+| **NeurIPS 2026** | Assess the contribution on separate dimensions | Ratings, actionable questions and confidence |
+| **ACM CHI 2026** | Explain the HCI contribution and necessary changes | Recommendation plus a revision list |
+| **PLOS ONE** | Check technical validity and support for conclusions | Structured answers with explanatory comments |
+
+::: {.ask-room}
+Would the same evidence answer all three sets of questions?
 :::
-::: {.process-step}
-[04 · Advise]{.label .reflect}
 
-**Name the next action**
+::: {.source-note}
+Actual forms and scales: [source pack](../templates/reviewer-source-pack.qmd#real-review-forms). These are named editions, not a universal review rubric.
+:::
 
-What should change, and what would count as done?
+---
+
+## NeurIPS: a rating needs a reason
+
+:::: {.two-col}
+::: {.concept-card}
+[Actual 2026 form]{.card-title}
+
+- four dimension ratings: **1–4**
+- overall recommendation: **1–6**
+- reviewer confidence: **1–5**
+- ideally **3–5 actionable questions**
+:::
+::: {.activity-card}
+[Our short practice]{.card-title}
+
+Choose one consequential question.
+
+**What answer would change your advice?**
+
+Name the evidence you need and why it matters to the contribution.
+:::
+::::
+
+::: {.source-note}
+[NeurIPS 2026 handbook, Review Form](https://neurips.cc/Conferences/2026/MainTrackHandbook#review-form). Full dimension names and scale meanings are in the [source pack](../templates/reviewer-source-pack.qmd#real-review-forms). Do not average these into one validity score.
+:::
+
+---
+
+## CHI and PLOS: specify the missing evidence
+
+:::: {.two-col}
+::: {.concept-card}
+[CHI · contribution and revision]{.card-title}
+
+The actual form asks for a **clear list of revisions**.
+
+**Our prompt:** Which correction is needed for this contribution to be supported? How could you check that it was made?
+:::
+::: {.concept-card}
+[PLOS ONE · validity]{.card-title}
+
+The actual form asks whether the method is sound and the conclusions follow from the data.
+
+**Our prompt:** Which claim can you verify from a specific result, regardless of how exciting the topic sounds?
+:::
+::::
+
+::: {.source-note}
+[CHI 2026 form](https://chi2026.acm.org/guide-to-a-successful-submission/#the-review-form) · [PLOS ONE form, p. 1](https://genweb.plos.org/Marketing/plosone-reviewer-form.pdf). Classroom prompts are adaptations, not quotations from reviewers of the following papers.
+:::
+
+---
+
+## Real paper A: improving which output?
+
+[House-GAN++ · Nauata et al., CVPR 2021 · Table 2]{.kicker}
+
+| Dynamic refinement target | FID ↓ | Graph-edit distance ↓ |
+|---|---:|---:|
+| FID (paper’s diversity proxy) | 24.7 ± 0.8 | 3.7 ± 0.0 |
+| Compatibility | 35.7 ± 1.3 | 2.6 ± 0.0 |
+
+**FID:** distance between generated/reference image-feature distributions; unitless. **Graph-edit distance:** mismatch between requested and reconstructed room/door graphs. Lower is better for both.
+
+::: {.takeaway}
+The target changes which metric improves. Neither column measures every architectural requirement.
+:::
+
+::: {.source-note}
+[Published Table 2, p. 13639](https://openaccess.thecvf.com/content/CVPR2021/papers/Nauata_House-GAN_Generative_Adversarial_Layout_Refinement_Network_towards_Intelligent_Computational_Agent_CVPR_2021_paper.pdf#page=8). Mean ± SD across five rounds; 1,000 layouts per round. Exact model/target labels and reading task: [case A](../templates/reviewer-source-pack.qmd#case-a-layout-generation-which-metric-is-being-improved).
+:::
+
+---
+
+## Real paper B: what does the threshold justify?
+
+[Mora & Bardhan · Cambridge retrofit study · 2025]{.kicker}
+
+:::: {.two-col}
+::: {.example-card}
+[Reported result]{.card-title}
+
+**18 of 25** cases were classified as having higher retrofit need using the study's wall **ΔT >2°C** criterion.
+
+This is a screening rule from this study, not a general building standard.
+:::
+::: {.warning-card}
+[Inspect before transferring it]{.card-title}
+
+What temperatures define ΔT? Why that cutoff? Would a different heating condition alter the classification?
+
+The authors acknowledge unknown thermostat/occupancy conditions and limited sampling.
+:::
+::::
+
+::: {.source-note}
+[Paper](https://doi.org/10.1098/rsos.241337), §2.2.3, §3.1.3/Figure 6 and §4.4; [open PDF and reading task](../templates/reviewer-source-pack.qmd#case-b-thermal-images-what-does-a-screening-threshold-establish). These are our review questions, not published reviewer comments.
+:::
+
+---
+
+## Studio review: an actual request for evidence
+
+[Pier Pavilion redevelopment, Llandudno · DCFW review · August 2020]{.kicker}
+
+**Problem identified:** the submitted text and drawings did not make the proposed changes clear enough to assess.
+
+**Actual reviewer request:** a revised Design and Access Statement with side-by-side comparisons of the consented and proposed schemes—covering residential units, retail area and access.
+
+::: {.activity-card}
+**Our transfer:** put two versions of your project beside each other. Mark what changed, then show the spatial consequence that the reviewer needs to judge.
+:::
+
+::: {.source-note}
+[Actual review letter, 24 August 2020, p. 2, items 4–5](https://dcfw.org/wp-content/uploads/2020/08/PierPavilionLLandudnoSection73DeskTopEnquiry2482020.pdf#page=2). We use its evidence request; the planning-procedure discussion is outside this exercise.
+:::
+
+---
+
+## What does a real design panel ask to see?
+
+:::: {.two-col}
+::: {.concept-card}
+[Mid Sussex · published criteria]{.card-title}
+
+Architectural integrity · context · environmental performance · character · detail.
+
+The panel gives advice; its review is not a planning decision.
+:::
+::: {.concept-card}
+[DCFW · submission requirements]{.card-title}
+
+Brief, site analysis, plans, sections and elevations.
+
+**Our task:** trace one site observation or design intention to a visible decision in those drawings.
+:::
+::::
+
+::: {.source-note}
+[Mid Sussex terms, 2018, p. 1](https://www.midsussex.gov.uk/media/1579/design-review-panel-terms-of-reference.pdf) · [DCFW Essentials, 2020](https://dcfw.org/wp-content/uploads/2025/03/DCFW-DR-Essentials-2020-Eng.pdf). UK review examples, not Hong Kong regulations or A4 weights.
+:::
+
+---
+
+## Studio track: ask, inspect, then advise
+
+[Course-curated questions · choose one row]{.kicker}
+
+| Focus | Question | Evidence to open |
+|---|---|---|
+| Context | Which site condition changed the design? | Site analysis + affected plan/section |
+| Integrity | Where do use, circulation and structure conflict? | Coordinated drawings |
+| Environment | What improves against which alternative? | Comparable runs + assumptions |
+| Character | Where does the concept become spatial? | Diagram + drawing consequence |
+| Detail | Which interface could undermine the intent? | Relevant junction/material detail |
+
+::: {.takeaway}
+Advance this aspect, revise it, or request evidence—with a located reason and a checkable next action.
+:::
+
+::: {.source-note}
+[Studio track: adequacy checks and real sources](../templates/reviewer-source-pack.qmd#studio-track). These questions and course actions are adaptations. Qualitative judgments need evidence; they do not need an invented numerical cutoff.
+:::
+
+---
+
+## Review one published result in ten minutes
+
+[Choose case A or B · open the source pack]{.kicker}
+
+| Time | Do this | Write |
+|---|---|---|
+| 0–3 · alone | Locate the table/sections and metric definition | One supported statement and its scope |
+| 3–7 · compare | Identify a missing check or consequential disagreement | One evidence-linked question |
+| 7–10 · together | Specify the evidence or correction needed | One request and what would change your advice |
+
+::: {.activity-card}
+**A:** Which metric would guide your decision, and which spatial quality still needs checking?
+
+**B:** Does this result justify investigation, a diagnosis, or a design action? What further evidence distinguishes them?
+:::
+
+::: {.source-note}
+[Paper track: exact reading locations](../templates/reviewer-source-pack.qmd#paper-track). Judge the inspected claim; a short excerpt does not justify a whole-paper accept/reject verdict.
+:::
+
+---
+
+## Now inspect your classmate's work
+
+[Session 1 · 30–50 minutes · following slides are references]{.kicker}
+
+:::: {.two-col}
+::: {.concept-card}
+[Locate the concern]{.card-title}
+
+Point to the result and the claim it supports.
+
+Is the issue a missing definition, an unfair comparison, an untested condition or a claim beyond the evidence?
+:::
+::: {.activity-card}
+[Specify completion]{.card-title}
+
+Request a clarification, a feasible check or a narrower statement.
+
+**“I could reconsider when I can inspect ___.”**
+:::
+::::
+
+A missing item in your reading is not automatically an error in the paper. Check whether it appears elsewhere; acknowledge limits the authors already state.
+
+::: {.takeaway}
+Start ten minutes of silent inspection now. Then spend ten minutes clarifying the criterion and next check with the author.
+:::
+
+---
+
+## Transfer the review to your own A3/A4 work
+
+:::: {.two-col}
+::: {.concept-card}
+[Research track]{.card-title}
+
+Choose one result and its contribution claim.
+
+Inspect the method, metric definition, comparator and test conditions. State what can be concluded and what check could change that conclusion.
+:::
+::: {.concept-card}
+[Studio track]{.card-title}
+
+Choose one spatial or environmental decision.
+
+Inspect the relevant drawing/output and its consequence. Recommend a change or comparison, with evidence needed to judge it.
 :::
 ::::
 
 ::: {.takeaway}
-The reviewer opens. The author then corrects misunderstandings and responds.
-:::
-
----
-
-## Criterion, metric, threshold, judgment
-
-[Keep these four things separate]{.kicker}
-
-| Term | Meaning | Pavilion example |
-|---|---|---|
-| **Criterion** | What quality matters, and to whom? | A cooler place within a usable walk |
-| **Metric** | What represents that quality, in which conditions? | Walk time; modelled UTCI reduction at a stated hour |
-| **Threshold** | Which rule triggers a decision, and who chose it? | Walk ≤4 min and reduction ≥4°C |
-| **Judgment** | What action is justified, given the evidence and limits? | Advance a candidate provisionally and test its weak assumption |
-
-::: {.source-note}
-The thresholds are invented project assumptions for this exercise, not standards, regulations or actual student results.
-:::
-
----
-
-## Check the rule as well as the result
-
-- **Relevance:** does the metric represent the quality the claim names?
-- **Authority:** is the threshold from a source, the brief or your assumption?
-- **Conditions:** are baseline, units, users, location and time comparable?
-- **Sensitivity:** how far can the rule or input move before the recommendation changes?
-
-::: {.warning-card}
-A review band is a decision rule. An uncertainty range describes what is uncertain. Label which one you are using.
-:::
-
-::: {.ask-room}
-If the result passes, what have you established—and what is still untested?
-:::
-
----
-
-## Some criteria need qualitative judgment
-
-“The entrance is confusing” needs evidence too.
-
-::: {.example-card}
-**Criterion:** a first-time visitor can recognise the route.
-
-**Evidence:** sightlines in plan/section, cues at each turn, and an annotated route walkthrough.
-
-**Reviewer action:** locate the point of confusion and propose a changed view, drawing or user check.
-:::
-
-Distinguish a stated user need, an observed problem and your own aesthetic preference. Explain whom a preference serves before treating it as a requirement.
-
-::: {.takeaway}
-A qualitative criterion still needs an explicit reason and inspectable evidence.
+Both tracks end with a review of the student's own work and one revision or check for A4.
 :::
 
 ---
@@ -200,11 +368,11 @@ A qualitative criterion still needs an explicit reason and inspectable evidence.
 |---|---|---|
 | Decision clarity · 15% | What choice, for whom, between which alternatives? | Decision sentence and alternatives |
 | Workflow execution · 20% | What changed between runs? | One input → operation → output chain |
-| Evidence and uncertainty · 20% | What could reverse the conclusion? | Metric, threshold source and sensitivity |
+| Evidence and uncertainty · 20% | What could reverse the conclusion? | Metric, rule source and sensitivity |
 | Design impact · 15% | What changes in the design? | Drawing, selected option or next action |
 
 ::: {.source-note}
-[A4 assessment criteria](../assignments/assignment-04.qmd#assessment-criteria). These are the course weights; classmates do not award marks here.
+[A4 assessment criteria](../assignments/assignment-04.qmd#assessment-criteria). These are course weights; classmates do not award marks.
 :::
 
 ---
@@ -213,127 +381,15 @@ A qualitative criterion still needs an explicit reason and inspectable evidence.
 
 | Criterion · course weight | Reviewer question | Inspect |
 |---|---|---|
-| Reproducibility · 15% | Can another person reproduce the key result? | Inputs, runnable file, instructions and expected output |
+| Reproducibility · 15% | Can someone reproduce the key result? | Inputs, file, instructions and expected output |
 | Revision judgment · 10% | What did critique change, and why? | One feedback → response → revision link |
-| Communication · 5% | What can I understand without narration? | Figure/card read silently, then restated |
+| Communication · 5% | What is clear without narration? | Figure/card read silently, then restated |
 
-Choose **two criteria** for detailed review. Always flag an unsupported main claim or missing runnable artifact, even outside your chosen pair.
+Reference during inspection: choose **two A4 criteria** for detailed review. Always flag an unsupported main claim or missing runnable artifact.
 
 ::: {.grading-note}
-This clinic is formative. Reviewers propose checks and revisions; assignment grades come from submitted work under the published rubric.
+These criteria apply to your A4 work. They do not grade the published papers or replace a venue's review form.
 :::
-
----
-
-## Choose a useful reviewer action
-
-| If you find… | Do this | Example question |
-|---|---|---|
-| An unclear claim | **Clarify** | Which option and user is this recommendation for? |
-| An unsupported step | **Trace or check** | Show the input, calculation or source behind this value. |
-| A fragile conclusion | **Challenge an assumption** | What happens if this threshold or condition changes? |
-| A claim broader than its evidence | **Bound the recommendation** | What can you recommend under the conditions tested? |
-| A consequential gap | **Specify a next test** | Which check could change the decision? |
-
-Separate an error you can demonstrate from a question you still need to investigate.
-
----
-
-## Make the comment actionable
-
-::: {.warning-card}
-“This is unconvincing. Improve the analysis.”
-:::
-
-::: {.example-card}
-“Your table shows **4.2°C reduction for one modelled condition**. The criterion is **reliable cooling**, but the recommendation covers all summer. **Test a contrasting condition or narrow the claim.** I can recheck it when the condition and limit are visible beside the result.”
-:::
-
-::: {.takeaway}
-Observation → criterion → consequence → action → completion evidence.
-:::
-
-The numbers are illustrative. Point to a specific file, figure or sentence when reviewing real work.
-
----
-
-## Calibration case: choose a pavilion site
-
-[Shared exercise · fabricated data]{.kicker}
-
-**Brief:** walk ≤4 min; modelled UTCI reduction ≥4°C against the same unshaded baseline. All results refer to one assumed summer day at 14:00.
-
-| Site | Walk time | UTCI reduction |
-|---|---:|---:|
-| A | 3 min | 3.0°C |
-| B | 4 min | 4.2°C |
-| C | 5 min | 5.0°C |
-
-::: {.warning-card}
-**Draft claim:** “B is the optimal site and will keep all users comfortable throughout summer.”
-:::
-
-These are exercise values and provisional targets, not measured student data or comfort standards.
-
----
-
-## Write a judgment before comparing answers
-
-[3 minutes alone · 4 minutes compare · 3 minutes test the change]{.kicker}
-
-1. Restate the claim and identify one relevant criterion.
-2. State what the table supports and what it does not show.
-3. Choose a **design-result status** and an **evidence status** independently, using the [practice card](../templates/peer-review-card.qmd#judge-the-design-result-and-evidence-separately). Give a reason and scope for each.
-4. Propose one check and name the result that would change your advice.
-
-::: {.ask-room}
-If you disagree, is it about the criterion, threshold, evidence or acceptable uncertainty?
-:::
-
-::: {.notes}
-Keep the next slide hidden until everyone has written. The instructor also writes before comparing. Seek explicit reasons and a useful next check, not identical verdicts. This exercise and the following slide share the 20–30 minute block. The optional massing case at the end can replace the pavilion case in this same slot.
-:::
-
----
-
-## Compare judgments and test one change
-
-**Supported:** B is the only listed candidate passing both assumed targets in the tested condition.
-
-**Unproven:** a general optimum, comfort for every user, or performance throughout summer. Reduction alone does not establish the final thermal condition.
-
-::: {.example-card}
-Suppose B's reduction ranges from **3.7–4.4°C** across additional test conditions. It no longer passes the 4°C target in every condition.
-
-**Next action:** identify the condition causing 3.7°C; revise the design, the justified brief, or the scope of the recommendation.
-:::
-
-::: {.source-note}
-This is a fabricated sensitivity scenario, not a measured confidence interval. If you propose changing the target, retain the original and explain why.
-:::
-
----
-
-## Review the two projects at different depths
-
-:::: {.two-col}
-::: {.concept-card}
-[Studio massing]{.card-title}
-
-Which section or volume changes? Are area and spatial constraints checked on comparable options? Does a geometry screen justify the daylight claim?
-
-**Next step:** a revised section, comparable option, or narrower claim.
-:::
-::: {.concept-card}
-[Pavilion research]{.card-title}
-
-Are baseline, weather/hour and access assumptions explicit? Does the result survive changing a threshold? What is borrowed method, and what is the contribution?
-
-**Next step:** a sensitivity check and bounded interpretation.
-:::
-::::
-
-Both reviewers must point to evidence and justify their advice. You can ask a precise question without mastering the other person's software.
 
 ---
 
@@ -341,9 +397,9 @@ Both reviewers must point to evidence and justify their advice. You can ask a pr
 
 [Session 1 · 30–50 minutes]{.kicker}
 
-**First 10 minutes:** inspect the packet silently. Complete one record on the [flipped practice card](../templates/peer-review-card.qmd): rule, expected result, actual observation/location, design judgment, evidence judgment and next check.
+**First 10 minutes:** inspect the packet silently. Complete one record on the [practice card](../templates/peer-review-card.qmd): question/rule, expected result or feature, actual observation/location, judgment and next check.
 
-**Next 10 minutes:** clarify terms or files with the author and instructor. Agree the criterion and review question; record any disputed threshold.
+**Next 10 minutes:** clarify terms or files with the author and instructor. Record any disputed threshold or interpretation.
 
 ::: {.activity-card}
 “I understand your decision to be ___. The result supports ___ under ___. My main question is ___ because ___.”
@@ -353,51 +409,49 @@ Choose a check that can be attempted in the 18-minute repair block. Record a lar
 
 ---
 
-## Practice card: record an actual inspection
+## The card records what you actually inspected
 
-[Use during the 30–40 minute preparation block]{.kicker}
-
-| Fill in | What to record |
+| Field | Record |
 |---|---|
-| **Measure or inspect** | A value + units, a visible feature, source or workflow step |
-| **Rule + expectation** | Target/comparison and source; expected result and conditions |
-| **Observation** | What you actually found, with the exact file/figure/cell/run |
-| **Two judgments** | Does the result meet the rule? Is the evidence adequate? |
-| **Next action** | What to change/check, and what result would resolve the concern |
+| **Measure or inspect** | A defined metric, visible feature, source or workflow step |
+| **Comparison + conditions** | Baseline/rule and its source; test conditions or intended spatial relationship |
+| **Observation** | What you found, with exact file/figure/cell/run |
+| **Judgment** | What the result supports; whether the evidence is adequate |
+| **Next action** | What to check/change and what would resolve the concern |
 
 ::: {.takeaway}
-Complete one record. Select both judgments. Point to the evidence. Explain what would change your advice.
+Use an actual value or located observation. Missing evidence is a finding, not a number to fill in.
+:::
+
+::: {.source-note}
+[Practice card: inspection record](../templates/peer-review-card.qmd#your-inspection-record). One complete record is enough for the class review.
 :::
 
 ---
 
-## A passing result can still need checking
+## Judge the result and the evidence separately
 
 :::: {.two-col}
 ::: {.concept-card}
-[Design result · choose one]{.card-title}
+[Result or design]{.card-title}
 
-- Meets stated rule
-- Does not meet stated rule
-- Cannot yet judge
+If a stated rule applies: **meets / does not meet / cannot yet judge**.
+
+If no target rule applies: mark **not applicable** and explain the qualitative finding.
 :::
 ::: {.concept-card}
-[Evidence · choose separately]{.card-title}
+[Evidence]{.card-title}
 
-- Supported within checked scope
-- Problem found
-- Not established
+**Supported within checked scope / problem found / not established**.
+
+State what you checked and what you did not check.
 :::
 ::::
 
-An option can fail a target while the analysis is sound. A passing number can rest on evidence you have not checked.
-
-::: {.example-card}
-**B: 4.2°C ≥ 4°C.** The table comparison passes for the recorded condition. The underlying model is unverified; a summer-wide comfort claim needs more evidence.
-:::
+An option can miss a target while the analysis is sound. A passing number can rest on an unchecked model. A qualitative judgment can be well supported without a numerical score.
 
 ::: {.source-note}
-Illustrative pavilion case. Give a reason and scope with each judgment. “Cannot yet judge” does not mean a demonstrated failure.
+These are course working labels, not journal ratings. [Definitions on the practice card](../templates/peer-review-card.qmd#judge-the-design-result-and-evidence-separately).
 :::
 
 ---
@@ -557,31 +611,3 @@ Save this with your review card or ledger entry; share through Slack if availabl
 Retain the review card, revised artifact or blocker record, and dated ledger entry. Before Week 11, resolve the highest-priority open check or state its limit clearly.
 
 Week 11 tests whether another person can understand and reproduce the package you hand over.
-
----
-
-## Alternate calibration: studio massing
-
-[Optional case · use instead of the pavilion case]{.kicker}
-
-**Illustrative brief:** area ≥4,000 m² plus a hypothetical 25° geometry screen. That screen alone does not establish actual daylight performance.
-
-| Option | Area | Geometry screen |
-|---|---:|---|
-| Slab | 7,800 m² | Fails |
-| Low block | 1,950 m² | Passes |
-| Stepped | 4,190 m² | Passes |
-
-**Draft claim:** “Stepped solves the daylight and area requirements.”
-
-::: {.ask-room}
-What if the area target rose by 5%? Which part of the claim still needs evidence?
-:::
-
-::: {.source-note}
-Reuses Week 9's illustrative massing example. These are not code requirements or actual student results.
-:::
-
-::: {.notes}
-Use this instead of the pavilion case in the same ten-minute slot. New target = 4,200 m²; stepped misses by 10 m². Original margin = 190 m² = 4.75% of the original target. Develop stepped under the present brief, verify daylight separately, and revisit massing if the area target changes. Do not secretly change the threshold to preserve a preferred option.
-:::

@@ -290,13 +290,15 @@ The optional workgroup is not a required route. Direct `.gh` / `.ghx` starter fi
 
 Spend 15–20 minutes sharing a small packet and reading your classmate's work. Share early enough to allow that reading. Bring one decision/recommendation, one A3 result or Week 9 diagram, the criterion/metric/threshold and source, the file/page behind the result, one limitation and one question. Use the [Flipped Review Practice Card](templates/peer-review-card.qmd): record what you inspect, the rule/source, expected and observed results, and separate judgments about design performance and supporting evidence. A full A4 package is not required yet.
 
+Choose Research or Studio prompts for the review of your own work. The [Real Review Forms and Cases](templates/reviewer-source-pack.qmd) pack supplies the original forms, House-GAN++ and Cambridge retrofit readings, and a documented DCFW review request. The ten-minute paper exercise is preparation for inspecting your A4 work; it is not a whole-paper publication verdict.
+
 ### Session 1: Learn How to Review (50 minutes)
 
 | Time | Activity |
 |---|---|
 | 0–5 min | Identify the A3 → A4 claim worth reviewing |
-| 5–20 min | Distinguish crit, design decision review and method review; connect criteria, metrics, thresholds and judgments to reviewer actions |
-| 20–30 min | Independently review a shared illustrative case, compare judgments and test one changed assumption |
+| 5–20 min | Compare actual NeurIPS/CHI/PLOS review requirements, published paper metrics and a real architectural panel request |
+| 20–30 min | Inspect one published paper case, compare bounded judgments and specify one evidence request |
 | 30–40 min | Inspect the other student's packet and complete a draft review card |
 | 40–50 min | Clarify criteria, record disputed thresholds and prepare one question/check |
 

@@ -1,0 +1,141 @@
+---
+title: "Week 10: Real Review Forms and Cases"
+subtitle: "Published requirements, reported measurements, and a separate studio track"
+format:
+  html:
+    toc: true
+---
+
+Use this with the [Week 10 slides](../weeks_v2/week-10.qmd) and [flipped practice card](peer-review-card.qmd). Choose one claim to inspect. The short classroom exercise does not qualify you to judge an entire paper or approve a building.
+
+**Read the labels:** the forms below are actual published requirements; the paper results come from published studies; the exercises and studio questions are course adaptations. No classroom comment below is presented as an actual peer review of either paper. Sources checked 18 November 2026; the named editions are deliberate.
+
+## Real Review Forms
+
+### NeurIPS 2026: distinguish dimensions, recommendation and confidence
+
+[Official Main Track Handbook, Review Form](https://neurips.cc/Conferences/2026/MainTrackHandbook#review-form), version V2026.3.
+
+Reviewers supply a summary, contribution type, reasoned strengths/weaknesses, limitations and actionable questions. The four dimensions are **Quality, Clarity, Significance and Originality**; their interpretation depends on contribution type. The form requests ideally 3–5 questions and what answers could change the evaluation. Requested experiments should address a stated question and be feasible.
+
+| Actual scale | Meaning |
+|---|---|
+| Each dimension: 1–4 | Poor, fair, good, excellent |
+| Overall: 1–6 | Strong reject, reject, borderline reject, borderline accept, accept, strong accept |
+| Confidence: 1–5 | From an educated guess to strong familiarity and careful checking |
+
+**Course use:** write one consequential question and a condition for changing your advice. Do not average the scales into a “scientific validity” score. A confident reviewer can still be wrong; explain the check behind the confidence.
+
+### ACM CHI 2026: contribution and a revision list
+
+[Official guide, “The Review Form”](https://chi2026.acm.org/guide-to-a-successful-submission/#the-review-form).
+
+The form asks for the HCI contribution, an expertise rating (1–4), and assessment of significance, originality, research quality, clarity and prior work. Reviewers must specify required revisions.
+
+| Actual recommendation | Meaning |
+|---|---|
+| A | Accept with minor revisions |
+| ARR | Either A or revise and resubmit |
+| RR | Revise and resubmit |
+| RRX | Either RR or reject |
+| X | Reject |
+
+**Course use:** distinguish a required correction from a desirable extension. Finish with “I can verify this revision by looking at ___.” CHI's codes describe publication options; they are not percentages, architectural performance measures or A4 marks.
+
+### PLOS ONE: can the evidence support the conclusion?
+
+[Actual review-form PDF](https://genweb.plos.org/Marketing/plosone-reviewer-form.pdf), pp. 1–2 · [publication criteria](https://journals.plos.org/plosone/s/criteria-for-publication).
+
+> Is the manuscript technically sound, and do the data support the conclusions?
+
+Other form questions address statistical analysis, underlying data availability and intelligible presentation; the reviewer explains the answers in written comments. PLOS ONE evaluates scientific validity without selecting on perceived importance.
+
+**Course use:** identify a claim you could check without agreeing that the topic is fashionable. For a qualitative or design contribution, specify appropriate evidence; do not demand a statistical test merely because another study type uses one.
+
+### What can be borrowed across the forms?
+
+Use this short sequence for the class exercise, rather than pretending there is one universal journal form:
+
+1. **Readback:** what is the contribution or decision?
+2. **Evidence:** where exactly is its support?
+3. **Challenge:** which missing definition, comparison or condition matters?
+4. **Revision:** what must change, and what observation would resolve it?
+5. **Scope:** what did you inspect, and what remains unchecked?
+
+If practising a full venue form later, use that venue's current instructions and review the whole submission. Today's excerpt review ends with a bounded evidence judgment, not an accept/reject verdict on the paper.
+
+## Paper Track
+
+### Case A: layout generation — which metric is being improved?
+
+Nauata et al. (2021), *House-GAN++: Generative Adversarial Layout Refinement Network towards Intelligent Computational Agent for Professional Architects*. [Official CVPR paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Nauata_House-GAN_Generative_Adversarial_Layout_Refinement_Network_towards_Intelligent_Computational_Agent_CVPR_2021_paper.pdf#page=8).
+
+[Author preprint, Table 2](https://arxiv.org/pdf/2103.02574#page=8) is an alternate open reading link.
+
+**Read:** metric definitions in §3 (p. 13634), protocol in §5 (p. 13636), and Table 2 (p. 13639). The slide reproduces the two **`Ours_dyna`** rows, labelled **`Divers.`** and **`Compat.`** in the paper. These compare dynamic refinement with different optimization targets. The reported ± is across-round standard deviation, not a confidence interval or a building pass mark.
+
+**Course-authored reviewer task:** use both columns to explain the trade-off. Then choose one architectural requirement the table cannot establish—such as a usable circulation route—and specify the drawing or test you would need. Do not infer accessibility, daylight or construction feasibility from image/graph metrics alone.
+
+### Case B: thermal images — what does a screening threshold establish?
+
+Mora & Bardhan (2025), *Towards carbon neutrality: mapping mass retrofit opportunities in Cambridge, UK*, Royal Society Open Science 12:241337. [Publisher](https://doi.org/10.1098/rsos.241337) · [open manuscript PDF](https://api.repository.cam.ac.uk/server/api/core/bitstreams/c172c8f7-8678-4838-acb0-82c966408f0e/content).
+
+**Read:** §2.2.3 and §3.1.3, Figure 6, and §4.4 (PDF pp. 7, 10, 14–15). The study uses wall ΔT >2°C as its criterion for higher retrofit need. It reports **18 of 25** cases in that category. This is a study-specific screening rule, not an established building standard.
+
+**Definition check:** the main text does not fully specify the temperature reference used for ΔT. Do not rename it wall–air or indoor–outdoor difference. [Supplement Table S3](https://rs.figshare.com/collections/Supplementary_material_from_Towards_Carbon_Neutrality_Mapping_Mass_Retrofit_Opportunities_in_Cambridge_UK_/7618561) is a follow-up reading, not something this exercise has already verified.
+
+**Course-authored reviewer task:** locate the measurement definition and conditions; ask what evidence justifies the cutoff and whether uncontrolled heating changes classification. Separate “prioritise further investigation” from “establish retrofit need.” Missing information in the excerpt is a request to investigate, not proof that the entire study is invalid.
+
+### Ten-minute exercise: choose A or B
+
+| Time | Do this | Write or mark |
+|---|---|---|
+| 0–3 min, individually | Open the specified table/sections. Locate one claim and the reported measurement. | Metric, units or scale, direction, test conditions and exact source location |
+| 3–7 min, compare | Each person states what the result supports. Identify one disagreement or missing check. | One supported statement and one unresolved question |
+| 7–10 min, agree a request | Specify a proportionate correction, additional evidence or narrower claim. | Required action, completion evidence and what would change your advice |
+
+**Submit to your own notes:** a short inspection record. Use “supported within this comparison,” “problem found,” or “not established,” with a reason. Do not assign a journal verdict based on this excerpt. You are not expected to run a new model or collect new building data in ten minutes.
+
+For a research-oriented A4 review, transfer this method to **one result from the author's actual workflow**: check its definition, comparison and claimed scope. The published cases supply models of what to question, not thresholds to copy into your project.
+
+## Studio Track
+
+### Published design-review requirements
+
+[Mid Sussex Design Review Panel Terms of Reference](https://www.midsussex.gov.uk/media/1579/design-review-panel-terms-of-reference.pdf), approved 24 January 2018, pp. 1 and 5: five criteria—architectural integrity, context, environmental performance, character and detail. Its recommendations are **support / support with amendments / object**; the panel advises rather than makes planning decisions.
+
+[Design Commission for Wales, Design Review Essentials](https://dcfw.org/wp-content/uploads/2025/03/DCFW-DR-Essentials-2020-Eng.pdf), 2020 document, p. 1: bring a brief, location/site analysis, plans, sections and elevations. One actual prompt is:
+
+> How has your site analysis informed the design?
+
+These are published UK design-review examples. They are not Hong Kong regulations, project-specific compliance checks or the A4 marking rubric.
+
+### A real panel request: Pier Pavilion, Llandudno
+
+[DCFW desktop-review letter, 24 August 2020](https://dcfw.org/wp-content/uploads/2020/08/PierPavilionLLandudnoSection73DeskTopEnquiry2482020.pdf#page=2), p. 2, items 4–5. The panel asked for a revised Design and Access Statement comparing the consented and proposed schemes directly, so changes and their effects could be assessed.
+
+**Course task:** apply that evidence request to two versions of your project. Use matching scale/view, mark a changed route, area or relationship, and explain its consequence. Finish with one remaining question. This uses a documented review action; it does not import the report's planning-law discussion into this class.
+
+### Curated questions for your studio project
+
+The questions and adequacy checks below are **course adaptations** of those criteria. Choose one row, then inspect a consequential drawing or result. A rendering alone may not answer the question.
+
+| Review focus | Ask the designer | Inspect | What makes the answer adequate? |
+|---|---|---|---|
+| Context | Which site condition changed the proposal? | Site plan plus the affected section or route | Trace the condition to a visible spatial decision; identify an unresolved consequence. |
+| Architectural integrity | Where do programme, circulation and structure conflict? | Coordinated plan/section and one junction | Locate the conflict or show how it is resolved across drawings. |
+| Environmental performance | What improves relative to which alternative? | Comparable options, actual output and assumptions | State the measure, conditions and trade-off; keep the claim within the test. |
+| Character | Which design idea survives beyond the concept image? | Diagram and its built-form consequence | Point to the same idea in a plan, section or material decision. |
+| Detail | Which interface could undermine the intended quality? | Detail appropriate to project stage | Explain the issue and a feasible next drawing, test or specialist question. |
+
+### Make the studio judgment explicit
+
+Use a **course action**, with a reason:
+
+- **Advance this aspect:** the inspected evidence answers this question; retain the stated limit.
+- **Revise this aspect:** identify the drawing or decision that needs to change and the consequence it addresses.
+- **Evidence needed:** name the missing comparison, dimension, view, model assumption or observation.
+
+These actions are not the council's official recommendations. For a measured claim, record value, unit, rule source and margin where meaningful. For a qualitative claim, annotate the relevant feature and explain the stakeholder consequence. Do not turn preference into an invented numerical pass mark.
+
+**Finish with:** one annotated drawing/result, a reasoned action, and one specific request that can be checked after revision. Continue on the [practice card](peer-review-card.qmd#your-inspection-record) for the reviewer-led conversation, author response and A4 ledger entry.
