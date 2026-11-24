@@ -324,22 +324,41 @@ The repair can improve a claim/figure or test a small component in an existing G
 
 ## Week 11: Final Package Polish
 
-### Lecture / Demo
+**Focus:** check how literature supports one claim in your own project, and what changes when you read beyond the abstract. All four students—two PhD and two undergraduate students—do the same task. The claim may concern a research hypothesis or method, or a studio design decision; in every case, connect the source's methods, results and limitations to your actual project.
 
-- Practice Case
-- Research Brief
-- Object Card
-- Reproducibility Capsule
+Use the [Evidence Clinic Card](templates/evidence-clinic-card.qmd) to record your initial interpretation, inspect the full text, and revise the claim or decision. An abstract in a RIS record may omit conditions or limits that matter to your project. Search, regex and record-retrieval tools support this inspection; a match or retrieved record does not verify the claim.
 
-### Studio-Lab
+**Prepare:** bring your weakest A4 component, one literature source relevant to a claim you make, its abstract and full text if accessible, and the relevant project drawing, output or workflow file. A RIS export and your own API key are optional preparation for exploring the tools; no key is needed to participate in the clinic. Keep keys private and out of shared files, screenshots and posts.
 
-Students run a package audit and complete final revisions. The default expectation is clinic support for A4. If an optional GH/Python workgroup is still useful, it must produce documentation that can fit inside the Reproducibility Capsule rather than becoming a new ungraded side project.
+If the full text is unavailable, mark the relevant support **unverified** and record what you need to inspect; do not exclude the paper merely because you cannot access it. One shared real paper can provide a comparison exercise while you retain that limitation on your own project claim.
 
-**Session 2 material:** upload the weakest A4 component or the component most in need of peer review.
+### Session 1 — From abstract to project decision (50 minutes)
+
+| Time | Activity | Concrete output |
+|---|---|---|
+| 0–8 min | Brainstorm one claim or decision in your own project | Write the claim and what evidence would support or refute it. |
+| 8–18 min | Four pitches, 2.5 minutes per student | Explain your project idea, the claim and the literature evidence you need. |
+| 18–28 min | Short search / regex / RIS / OpenAlex demonstration using the [Regex Lab](site_tools/regex-lab.html) | See how records and abstracts are found, and identify what the retrieved material cannot establish. |
+| 28–50 min | Abstract-first / full-text comparison in pairs, with each student inspecting their selected source | Record the abstract-only interpretation, then inspect relevant methods, results and limitations with precise source locations. Compare with your partner and state what changes in your project claim or decision. |
+
+**The 22-minute comparison:** write your abstract-only interpretation (4 min); inspect your own source's relevant full-text sections (8 min); compare findings in pairs, three minutes each (6 min); write your revised claim and remaining question (4 min). If using the shared paper, distinguish what it demonstrates from what still needs evidence in your own project.
+
+### Session 2 — Four-person evidence clinic (50 minutes)
+
+**Bring to the clinic:** the weakest A4 component or the component most in need of peer review, plus the source and project evidence needed to inspect it. Share through Slack or open the files locally.
 
 **Round-table check-in:** Which A4 component is weakest, and what must be fixed before submission?
 
-**Feeds:** A4 Final Package.
+| Time | Activity | Concrete output |
+|---|---|---|
+| 0–16 min | Four four-minute clinics: each student explains their before/after claim and source evidence for two minutes, then peers and instructor respond for two minutes | One feasible claim, design or test revision per student. Everyone contributes as an author and as a reviewer. |
+| 16–36 min | Revise your claim, design decision or small test, with instructor support | A revision justified by the source, and an observed test result if a test is attempted; otherwise a clearly stated remaining test or blocker. |
+| 36–44 min | Pair recheck, four minutes per student's work | A partner follows the source locations, checks the revised claim against the evidence and identifies any remaining gap. |
+| 44–50 min | Update the A4 record | Save the before/after claim, source and locators, consequence for the project decision, remaining test, and a dated feedback/revision entry explaining your response. |
+
+**Leave with:** one before/after project claim, its source and precise locators, a changed or narrowed research/design decision (or an evidenced reason to retain it), and one remaining test. Save the peer check and any unverified support or blocker in your A4 notes. A proposed check is not completed verification.
+
+**Feeds:** A4 Final Package. The six required components remain the Practice Case, Research Brief, Object Card, Reproducibility Capsule, Feedback + Revision Ledger (at least three entries across the project), and Reflection Note. The capsule must contain the runnable workflow artifact and run instructions; screenshots may support it but cannot replace that artifact. This clinic is formative, adds no graded assignment, and changes no A4 requirements, weights or deadlines.
 
 The package must show the full loop:
 

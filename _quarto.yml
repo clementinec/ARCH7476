@@ -31,6 +31,7 @@ project:
     - "site_tools/gis-explorer.html"
     - "site_tools/threshold-explorer.html"
     - "site_tools/portfolio-template.html"
+    - "site_tools/regex-lab.html"
   render:
     - index.qmd
     - schedule.qmd
@@ -61,6 +62,7 @@ project:
     - templates/final-package-checklist.md
     - templates/peer-review-card.qmd
     - templates/reviewer-source-pack.qmd
+    - templates/evidence-clinic-card.qmd
     - starter_kits/README.md
     - starter_kits/gh-parametric-variants/README.md
     - starter_kits/preset-simulation-proxy/README.md

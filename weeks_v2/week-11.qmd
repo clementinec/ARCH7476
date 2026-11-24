@@ -1,459 +1,510 @@
 ---
 title: "Week 11: Final Package Clinic"
-subtitle: "Refine the Four A4 Components and Prepare for the Object Fair"
+subtitle: "Your Project Claim, the Abstract, and the Evidence Behind It"
 output-file: week-11.html
 format:
   revealjs:
     theme: [default, arch7476.scss]
     transition: slide
     slide-number: true
-    incremental: true
+    incremental: false
     width: 1400
     height: 900
     center: true
     footer: "Week 11 · feeds A4: Workflow Package"
 ---
 
-## Today's Agenda
+## Preparation for the evidence clinic
 
-:::: {.two-col}
-::: {.concept-card}
-[Session 1]{.label .concept}
+Bring **one claim from your own project** and the literature you think supports it.
 
-[Final package clinic]{.card-title}
-
-- the four A4 components, side by side
-- visual-polish lab and content refinement
-- the message-clarity clinic
-- Q&A preparation, then the submission checklist
-:::
+- a research idea, method choice or studio design decision
+- one relevant paper, its abstract and full text where accessible
+- your current drawing, result or A4 paragraph
+- the question you need the evidence to answer
 
 ::: {.activity-card}
-[Session 2]{.label .activity}
-
-[Round table on YOUR weakest component]{.card-title}
-
-- upload one rough A4 fragment
-- reconstruct it in four steps
-- agree the one fix before submission
+Open the [Evidence Clinic Card](../templates/evidence-clinic-card.qmd). Keep your initial claim visible when you revise it.
 :::
-::::
 
-::: {.reflection-card}
-This is a clinic, not a contest. We refine the **work**, find the weakest component early enough to fix it, and make the package legible to a stranger.
+A RIS file and OpenAlex key are optional. If access fails, record what remains unverified and use the shared paper to practise the reading method.
+
+::: {.notes}
+Four students: two PhD and two undergraduate students. All undertake the same evidence task on their own projects. There is no assumption that the undergraduate students need a systematic review. The shared case teaches how to inspect evidence; it does not establish support for their individual projects. Keep source and account preparation short so it does not consume clinic time.
 :::
 
 ---
 
-[Course progress]{.kicker}
+## Session 1: the idea and its evidence
 
-## This week finalizes the handoff artifact
+[50 minutes · four students and the instructor]{.kicker}
 
-::: {.progress-ladder}
-::: {.step .done}
-A1 board
-:::
-::: {.step .done}
-A2 contract
-:::
-::: {.step .done}
-A3 output
-:::
-::: {.step .done}
-threshold
-:::
-::: {.step .done}
-draft
-:::
-::: {.step .current}
-handoff
-:::
-:::
+| Time | Activity | Save |
+|---|---|---|
+| 0–8 | Brainstorm your project claim | Decision and evidence needed |
+| 8–18 | Four pitches, 2½ minutes each | One question per project |
+| 18–28 | Short search, regex, RIS and OpenAlex demonstration | A useful tool and its limit |
+| 28–50 | Compare abstract-based interpretation with the full paper | Before/after claim and source locations |
 
-::: {.artifact-strip}
-::: {.artifact}
-[Practice]{.label .concept}
-2-slide decision memo: what changed and what to do
-:::
-::: {.artifact}
-[Research]{.label .activity}
-2-page method brief: how you know and what remains uncertain
-:::
-::: {.artifact}
-[Object]{.label .example}
-1-page card: dominant figure, threshold, recommendation
-:::
-::: {.artifact}
-[Capsule]{.label .reflect}
-README, files, sources, prompt/code notes, verification log
-:::
+::: {.takeaway}
+The test is what the literature lets you say or do in your own project.
 :::
 
 ---
 
-[The spine of the week]{.kicker}
+## Brainstorm: the claim you are relying on
 
-## Four components, one package
+[8 minutes · write before discussing]{.kicker}
 
-A4 is not one document. It is four linked components, each answering a different question. Polish here means each one answers its question clearly.
+1. **Decision:** what do you want to investigate, choose or change?
+2. **Claim:** what must be true for that choice to make sense?
+3. **Evidence:** what observation would support or challenge it?
+4. **Consequence:** what would you change if the evidence did not support it?
+
+::: {.activity-card}
+“My project proposes ___. It relies on the claim that ___. I need evidence about ___ before I can justify ___.”
+:::
+
+Use an idea already in your project. A rough claim is useful material for the clinic.
+
+---
+
+## Four short project pitches
+
+[2½ minutes per student · 10 minutes total]{.kicker}
+
+| Time | Action |
+|---|---|
+| First 90 seconds | Show the idea, name the claim and explain the source you need |
+| Next 60 seconds | Peers or instructor ask one question about its evidence |
+
+::: {.ask-room}
+What exactly would the paper need to show for this project decision to follow?
+:::
+
+Write the question on your card. Keep the discussion on the decision and the evidence it needs.
+
+---
+
+## One task, different project decisions
+
+| Your project may ask… | The literature must help you establish… | Inspect later |
+|---|---|---|
+| Is this a defensible research premise? | What is known, under which conditions, and what remains unresolved | Actual finding and stated limitation |
+| Is this method suitable for my study? | What inputs, assumptions and checks it needs | Method and validation conditions |
+| Should I change this studio design? | Whether the reported benefit applies to my site, users and alternatives | Metric, context and design consequence |
+
+These are possible questions to bring, not findings about any particular design.
+
+::: {.takeaway}
+Choose the question your project needs answered. Everyone checks a claim against the source behind it.
+:::
+
+---
+
+## Search operators and regex
+
+[Supporting demonstration · part of the 18–28 minute block]{.kicker}
+
+| Tool | Example | What it does |
+|---|---|---|
+| Google Search | `"courtyard ventilation" site:edu filetype:pdf -hotel` | Combines a phrase with site/file filters and an exclusion |
+| OpenAlex search | `"courtyard ventilation" AND housing` | Combines search terms using the service's query syntax |
+| Regex on text you hold | `\bshade\b` | Finds character patterns in an export, document or filename |
+
+Google's ordinary search box uses search operators. It does **not** execute a general regex pattern. An exclusion may also hide a useful result; inspect what your query misses.
+
+::: {.source-note}
+[Google operators](https://support.google.com/websearch/answer/2466433?hl=en) · [OpenAlex search syntax](https://help.openalex.org/api/searching/) · examples are teaching queries, not completed searches.
+:::
+
+---
+
+## Regex: a pattern in characters
+
+**Regular expression (regex):** a compact rule for finding or checking text.
+
+| Symbol | Meaning in these JavaScript examples | Example |
+|---|---|---|
+| `\b` | Word boundary | `\bshade\b` matches shade, not shaded |
+| `()` | Group part of a pattern | `(shade)` groups the letters |
+| `[0-9]{2}` | Exactly two digits | `01`, `12` |
+| `^` and `$` | Start/end of the text; of each line with flag `m` | Whole-line filename check |
+| `\.` | A literal full stop | `.csv` extension |
+
+**Alternatives:** `(shade|shading)` means either word. **Flags:** `i` ignores letter case; `m` makes anchors work per line. Syntax can differ between tools.
+
+::: {.source-note}
+[MDN regex guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions) · [try the local Regex Lab](../site_tools/regex-lab.html). Predict one match and one miss before running.
+:::
+
+---
+
+## Two patterns, two different checks
 
 :::: {.two-col}
 ::: {.concept-card}
-[1 · Practice Case]{.card-title}
-The applied story: a real decision and what changed because of the evidence.
+[Find a design term]{.card-title}
 
-*Answers:* **what changed?**
+`\b(shade|shading)\b` with `i`
+
+Matches **SHADE** and **shading**. Misses **shaded** and **overhang**.
+
+A match in “no shade benefit” still contains the word. Regex has not judged the claim.
 :::
-
 ::: {.concept-card}
-[2 · Research Brief]{.card-title}
-The reasoning and evidence behind the recommendation, stated honestly.
+[Check a filename]{.card-title}
 
-*Answers:* **how do you know?**
+`^variant_[0-9]{2}\.csv$` with `m`
+
+Matches **variant_03.csv**.
+
+Rejects **variant_3.csv** and **variant_03.csv.bak**. This checks a naming rule, not the file's contents.
 :::
 ::::
 
-:::: {.two-col}
-::: {.concept-card}
-[3 · Object Card]{.card-title}
-The single readable artifact a viewer meets at the fair.
-
-*Answers:* **what does a viewer see?**
+::: {.takeaway}
+A false positive is an unwanted match. A false negative is a relevant item missed. Judge both against your purpose.
 :::
-
-::: {.concept-card}
-[4 · Reproducibility Capsule]{.card-title}
-The inputs, steps, and files so the method can be inspected.
-
-*Answers:* **how can someone inspect the method?**
-:::
-::::
 
 ---
 
-## How the components fit together
+## RIS carries records, not a whole argument
 
-The four components are not parallel deliverables — they answer four questions a reviewer asks in sequence.
+ScienceDirect can export citations as **RIS**, a tagged text format. Depending on the export, an abstract may be present or absent. Inspect the file you actually have.
 
-```{mermaid}
-flowchart LR
-    PC[Practice Case<br/>what changed?] --> RB[Research Brief<br/>how do you know?]
-    RB --> OC[Object Card<br/>what does a viewer see?]
-    OC --> RC[Reproducibility Capsule<br/>how can someone inspect the method?]
-    RC --> A4[A4: Workflow Package]
+```text
+DO  - 10.1098/rsos.241337
 ```
 
-::: {.reflection-card}
-If a stranger can walk this chain without you in the room, the package is done. Networking is secondary — the package comes first.
+**Field extraction example:** `^DO[ \t]+-[ \t]+(.+)$` with `m` captures the text after the DOI tag. `+` means one or more; parentheses retain the captured part.
+
+Preserve the raw export. Use a RIS parser for records, repeated authors and wrapped fields. Regex can assist a specific cleanup; it cannot recover methods or results that were never exported.
+
+::: {.source-note}
+[ScienceDirect export instructions](https://www.elsevier.support/sciencedirect/answer/how-can-i-export-my-citations). The DOI line illustrates the format using the shared paper's identifier; it is not a ScienceDirect export of that paper.
 :::
 
 ---
 
-[Final polish]{.kicker}
+## OpenAlex: identify the paper and keep the trail
 
-## The semester spine, one last time
-
-Every component must still let a reader trace the same six-part spine your A4 has carried all along.
-
-::: {.spine-rail}
-[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node} [Threshold]{.node} [Action]{.node}
-:::
-
-::: {.concept-card}
-[The reviewer's question]{.card-title}
-Can I trace **decision → variants → workflow → output → threshold → limit** across the four components without asking you to explain it out loud?
-:::
-
-Polish is not decoration. It is making each link legible.
-
----
-
-[Handoff map]{.kicker}
-
-## The package is a small inspectable archive
-
-::: {.bridge-flow}
-::: {.node .current}
-decision memo
-:::
-::: {.node}
-method brief
-:::
-::: {.node}
-object card
-:::
-::: {.node}
-source files
-:::
-::: {.node}
-verification log
-:::
-:::
-
-::: {.gh-bridge}
-**Bridge pattern**
-If your workflow uses GH, the capsule includes the `.gh` file or screenshots, exported variant table, component/function contract, and one note explaining which sliders or inputs should be changed next.
-:::
-
----
-
-# Visual-polish lab {.big-break}
-
-Bring your weakest figure and your Object Card draft.
-
----
-
-## Visual-polish lab
-
-Work on one figure at a time. The goal is clarity, not ornament.
+1. Look up the **DOI** and retain the returned work ID.
+2. If needed, search the title and compare authors/year before accepting a candidate.
+3. Record discrepancies and missing abstracts. A match establishes a record link, not support for your project claim.
 
 ::: {.activity-card}
-[Do this now]{.card-title}
-Take your weakest figure and run the four checks below, in order. Stop when the key message is obvious in three seconds.
+**Optional preparation:** [create an account](https://openalex.org/signup), verify your email, then obtain your key from [Settings → API key](https://openalex.org/settings/api-key). Keep it private.
 :::
 
-| Check | Question | Fix if no |
+Basic queries currently work without a key. A free key increases the budget and is needed for cursor paging beyond the first page. Account setup must not delay today's reading task.
+
+::: {.source-note}
+[Lookup](https://help.openalex.org/api/get-single-entities/) · [authentication, checked 24 November 2026](https://help.openalex.org/api/authentication/) · [private setup and example request](../templates/evidence-clinic-card.qmd#openalex-setup).
+:::
+
+---
+
+## The 22-minute source comparison
+
+[Start at minute 28 · work on your own project source]{.kicker}
+
+| Minutes | Action | Record |
 |---|---|---|
-| Message | Is the key insight obvious in 3 seconds? | cut clutter, label the point |
-| Readability | Legible at fair scale, from a few feet away? | larger type, fewer series |
-| Honesty | Are uncertainty and limits visible? | add range, caveat, or note |
-| Consistency | Same fonts, colours, units across components? | align to one style |
+| 0–4 | Read the abstract only | Your initial interpretation and proposed project action |
+| 4–12 | Inspect the relevant methods, results and limitations | Exact passage, table or figure locations |
+| 12–18 | Compare with a partner, three minutes each | The inference that holds, changes or remains unverified |
+| 18–22 | Rewrite your claim and its consequence | What changes in your research/design, and the next test |
+
+::: {.takeaway}
+Preserve the first interpretation. The comparison makes your change in reasoning visible.
+:::
+
+::: {.notes}
+The next slides are reading prompts for this block, not additional lecture time. Use the two shared-case slides only as a brief demonstration or fallback. A student who already knows the full paper can record their earlier abstract-based expectation honestly rather than pretend the reading is blind.
+:::
 
 ---
 
-## Object Card refinement
+## First reading: what did you infer?
 
-The Object Card is the one artifact most viewers actually read. It must stand alone.
-
-:::: {.two-col}
-::: {.concept-card}
-[What it must carry]{.card-title}
-
-- the decision and who it is for
-- one figure that carries the message
-- the recommendation, in plain language
-- a stated limit
-:::
+Read the abstract or exported summary **before** inspecting the rest of the article.
 
 ::: {.activity-card}
-[The 30-second test]{.card-title}
-Hand your draft card to a neighbour. Can they state your recommendation and one limit after 30 seconds, without you speaking?
+“The abstract reports ___. I took this to support ___ in my project. I was about to choose/test/change ___.”
 :::
-::::
+
+Separate the words in the source from the step you added. Record whether your claim concerns a method, a measured effect or transfer to your own context.
+
+::: {.ask-room}
+Which part of your project claim is actually stated, and which part is your inference?
+:::
 
 ---
 
-[Content refinement]{.kicker}
+## Full-paper reading: locate the missing conditions
 
-## Sharpen the writing
+| Inspect | Question for your project |
+|---|---|
+| Methods | What was studied, where, with which sample, inputs and controls? |
+| Results | Which measure, comparator and result support the claim? |
+| Figures/tables | What variation, exception or failure does the summary omit? |
+| Limitations/discussion | Where do the authors restrict interpretation or transfer? |
+| Supplement, if needed | Is the required definition, dataset or procedure there? |
 
-The Research Brief and Practice Case carry the argument. Tighten them.
+::: {.takeaway}
+Save a section and table/figure/page locator. A link alone does not show where your claim gets its support.
+:::
+
+Full text provides more evidence to assess. It does not automatically validate a study or make its findings transferable.
+
+---
+
+## Why the abstract may change your impression
+
+| Information compressed or absent | A possible consequence for your idea |
+|---|---|
+| Metric or comparator | “Improvement” may refer to a proxy rather than the outcome you need |
+| Sample and conditions | A result may support a narrower population, season or setting |
+| Method and validation | A simulation, association or exploratory study may need a different claim |
+| Mixed results and limitations | The design benefit may depend on a trade-off or unresolved assumption |
+
+These are questions to investigate, not accusations against the paper. An abstract may be accurate while leaving out details that matter to your use of it.
+
+---
+
+## Shared paper: the abstract-level view
+
+[Mora & Bardhan · Cambridge retrofit study · 2025]{.kicker}
+
+The abstract presents a **proof-of-concept retrofit-prioritisation framework**, combining neighbourhood data with building-scale thermal imaging.
 
 ::: {.activity-card}
-[8-minute writing pass]{.card-title}
+**Our project question:** could I use thermal imaging to choose which building should be retrofitted first?
 
-1. **Opening** — does the first paragraph state the decision, finding, and action?
-2. **Thread** — is the stakeholder's relevance clear all the way through?
-3. **Evidence** — is confidence matched to the strength of the evidence?
-4. **Citations** — are sources complete and the capsule index linked?
+What would you need to know before accepting that use of the method?
 :::
+
+::: {.source-note}
+[Read the abstract and full article in HTML](https://pmc.ncbi.nlm.nih.gov/articles/PMC11732419/) · *Towards carbon neutrality: mapping mass retrofit opportunities in Cambridge, UK*, DOI 10.1098/rsos.241337. The project question is our application, not the authors' wording.
+:::
+
+---
+
+## Shared paper: what the full text adds
+
+**§3.1.3:** the thermal campaign covers five buildings per cluster, 25 in total.
+
+**§4.4:** the authors acknowledge limited sampling and unknown thermostat settings and occupancy schedules during data collection.
+
+::: {.activity-card}
+**Our revised use:** treat the method as a starting point for investigation. Before relying on building-level rankings in our project, check operating conditions and suitability of the sample.
+:::
+
+::: {.takeaway}
+The details change the justification and the next test. They do not by themselves show that the paper is wrong.
+:::
+
+::: {.source-note}
+[Full-text sections 3.1.3 and 4.4](https://pmc.ncbi.nlm.nih.gov/articles/PMC11732419/) · this is a teaching interpretation of a published study. Apply the same inspection to your own source.
+:::
+
+---
+
+## A defensible before-and-after claim
+
+::: {.activity-card}
+**Before:** I used this source to justify ___ in my project.
+
+**Found:** section/table/figure ___ establishes ___ under ___. It leaves ___ unresolved.
+
+**After:** I can now justify ___, so I will change/retain ___ and test ___ next.
+:::
+
+Your conclusion may be **supported as stated**, **needs narrowing/adaptation**, **contradicted by the inspected evidence**, or **not yet established**. Give a reason; these are course working labels.
+
+Keeping a claim is valid if you show why it survives the check. Do not invent a flaw to complete the exercise.
+
+---
+
+## If an LLM reads only the abstracts
+
+Its answer is constrained by the text you supplied. A fluent synthesis can conceal that the relevant methods, values or limitations were absent.
+
+::: {.activity-card}
+For every consequential statement, require:
+
+- a source and exact supporting location
+- the conditions under which it holds
+- a visible **not reported / not checked** when evidence is missing
+:::
+
+Do not let a generated explanation fill missing methods or merge different studies into an unsupported general result. Compare the answer with the actual article before using it to justify a project decision.
+
+::: {.source-note}
+RIS is a container format, not a measure of completeness. OpenAlex abstract fields can also be missing. [Field documentation](https://help.openalex.org/data/works/attributes/#abstract_inverted_index).
+:::
+
+---
+
+## Session 2: clinic on your own idea
+
+[50 minutes · four students and the instructor]{.kicker}
+
+| Time | Activity | Save |
+|---|---|---|
+| 0–16 | Four four-minute evidence clinics | One consequential question for each project |
+| 16–36 | Make one justified revision or small test | Changed claim, design or research plan |
+| 36–44 | Pair recheck, four minutes each | Evidence trace and remaining gap |
+| 44–50 | Update the A4 record | Card, revised artifact and ledger entry |
+
+The clinic ends with an action in your own project. A literature list alone is not the outcome.
+
+---
+
+## Each clinic takes four minutes
+
+| Time | Lead | What happens |
+|---|---|---|
+| 0–2 | Project author | Show the initial claim, source location and revised interpretation |
+| 2–4 | Peers + instructor | Challenge one transfer assumption and agree a feasible next action |
+
+::: {.ask-room}
+What changes in this project because we now know how the source produced its result?
+:::
+
+The author records whether to accept, adapt, defer or reject the suggestion, with a reason. Everyone takes a turn as author and contributes to another project.
+
+---
+
+## Twenty minutes to change the work
+
+Choose the action your evidence supports:
+
+- **Research premise:** narrow the hypothesis or identify the unresolved comparison.
+- **Method:** revise a sampling, control, metric or validation choice.
+- **Studio:** revise a design option or draw the contextual condition that needs checking.
+- **Claim:** correct the A4 sentence and show the design consequence.
+
+Before a test, write the expected observation and what result would change your decision. Save the actual result if attempted.
 
 ::: {.warning-card}
-State uncertainty plainly. Overclaiming weakens credibility faster than admitting a limit ever will.
+If access, time or tools block the check, save the exact gap and next action. A planned test stays labelled as planned.
 :::
 
 ---
 
-[Uncertainty check]{.kicker}
+## Pair recheck: can someone follow the evidence?
 
-## Final polish should not polish away doubt
+[Eight minutes · four per project]{.kicker}
 
-::: {.uncertainty-check}
-**Question for Week 11**
-Which caveat would change the recommendation if it turned out worse than expected?
-:::
+Your partner opens the cited section or figure and checks:
 
-That caveat belongs on the Object Card or in the Practice Case, not buried in the capsule.
-
----
-
-[Message clarity]{.kicker}
-
-## The message-clarity clinic
-
-Pair up. One reads as a busy reader; the other presents the core message.
+1. Is the source finding represented accurately?
+2. Are its conditions and your transfer assumption visible?
+3. Does the revised project decision follow?
+4. What still needs evidence or a local test?
 
 ::: {.activity-card}
-[Role-play, 4 minutes]{.card-title}
-The reader skims, then asks: **"So what should I actually do?"** The presenter must answer in one sentence.
+“I can trace ___ to ___. I still cannot establish ___ because ___.”
 :::
 
-::: {.reflection-card}
-[The one-thing test]{.card-title}
-If a reader remembers only one thing, what should it be? Does every part of your package support that one message?
+Update the record if the recheck exposes another gap.
+
+---
+
+## Six components in the A4 package
+
+| Component | Today's evidence check can improve… |
+|---|---|
+| Practice Case · 2 slides | Decision, recommendation and its scope |
+| Research Brief · 2 pages | Source use, method rationale and interpretation |
+| Object Card · 1 page | Claim, figure and visible caveat |
+| Reproducibility Capsule | Source locations, runnable workflow and verification notes |
+| Feedback + Revision Ledger · ≥3 entries | Advice, response, change and reason |
+| Reflection Note · 1 page | What changed in your reasoning and what remains unresolved |
+
+::: {.source-note}
+[A4 brief](../assignments/assignment-04.qmd) · [final checklist](../templates/final-package-checklist.md). Today's clinic is formative and changes no assessment requirements or deadlines.
 :::
 
 ---
 
-[Q&A preparation]{.kicker}
+## The capsule supports the claim and the rerun
 
-## Prepare for the likely questions
+Include the actual runnable artifact, inputs, tool versions, instructions and expected key output. Supporting screenshots explain a workflow; they do not replace its runnable file.
 
-Most fair questions fall into three families. Draft one honest answer for each.
-
-:::: {.three-step}
-::: {.step-box}
-[Method]{.card-title}
-"How do you know the sample / model is adequate?" → state your check and its limit.
-:::
-::: {.step-box}
-[Implementation]{.card-title}
-"What would this cost or take to apply?" → give a range, not a guess.
-:::
-::: {.step-box}
-[Alternatives]{.card-title}
-"Could something else explain this?" → name the alternative you ruled out, and how.
-:::
-::::
-
-::: {.concept-card}
-A question is a chance to show your reasoning, not an attack to defend against. Acknowledging a limit builds more credibility than deflecting.
-:::
-
----
-
-## A useful answer, in four moves
+For literature used in the argument, retain the citation, source location, what you checked and any relevant search or transformation notes. Keep API keys out of the package.
 
 ::: {.activity-card}
-[The response shape]{.card-title}
-
-1. **Acknowledge** — "Good question about ___."
-2. **Answer** — "Here is what I found / checked."
-3. **Connect** — "What this means for your decision is ___."
-4. **Offer** — "I can follow up with the detail in the capsule."
+Can a peer follow the evidence trail and rerun the workflow that produced your key figure? Record the successful check or exact blocker.
 :::
 
-Keep it short. A clear, honest answer beats a long defensive one.
+If you explore RIS/OpenAlex further, save raw and processed records separately. Metadata matching alone does not complete a literature review.
 
 ---
 
-[Session 2 · Round table]{.kicker}
+## The Object Card after the evidence check
 
-## Round table on YOUR weakest component
+Show the revised claim with the figure or drawing it actually supports.
 
-::: {.spine-rail}
-[Decision]{.node} [Evidence]{.node} [Variation]{.node} [Output]{.node} [Threshold]{.node} [Action]{.node .is-current}
+| Check | What the reader needs |
+|---|---|
+| Decision | What should change, and for whom? |
+| Evidence | Which comparison supports that action? |
+| Conditions | Where and when does the statement apply? |
+| Limit | What could change the recommendation? |
+
+::: {.activity-card}
+Give the card to a partner for 30 seconds. Ask them to restate the recommendation and one limit without your explanation.
 :::
-
-Upload one rough material to Slack before Session 2 — a Practice Case section, Research Brief fragment, final Object Card draft, or a Reproducibility Capsule index. [feeds A4]{.feeds-tag}
 
 ---
 
-## Reconstruct your weakest component in four steps
+## A4 record: reasoning that changed
 
-**Object this week: your weakest A4 component, as a reviewer will meet it.**
+[Final six minutes · save the card and a dated ledger entry]{.kicker}
 
 ::: {.recall-4step}
 ::: {.step}
-**Did** What does this component currently claim and show?
+**Did** What claim and source did I inspect?
 :::
 ::: {.step}
-**Assumed** What am I assuming the reader already knows?
+**Assumed** What did I infer from the abstract?
 :::
 ::: {.step}
-**Risk** Why is this the weakest of the four — what is missing?
+**Risk** What did the full paper leave uncertain for my project?
 :::
 ::: {.step}
-**Verify** What one fix would most improve it before submission?
+**Verify** What changed or survived, and what test remains?
 :::
 :::
 
-::: {.grading-note}
-Post your four-step under your component. Posting + an honest reconstruction is the graded unit. Presenting is welcomed and earns credit; it is never required and never scored as performance. Volunteers go first; random draw may fill the remaining examples.
+Retain the original statement, source locators, revised artifact and peer response. Today's entry contributes to A4's existing minimum of three ledger entries across the project.
+
+---
+
+## Preparation for the Object Fair
+
+A reader should be able to understand the decision, inspect its evidence and locate the workflow.
+
+- make the six required components easy to find
+- test the files and the key figure's rerun
+- prepare an answer about method, limits and alternatives
+- distinguish what you checked from what you would investigate next
+
+::: {.takeaway}
+Show the project as it now stands, including the uncertainty that still matters to the decision.
 :::
 
 ---
 
-## Triage what you hear
-
-You will get more notes than you can act on before submission. Sort first.
-
-| Priority | Meaning | When to fix |
-|---|---|---|
-| **Critical** | a component fails to answer its question | this week |
-| **Important** | credibility or clarity gap | before submission |
-| **Polish** | would improve, not essential | if time allows |
-
-::: {.warning-card}
-Fix one critical item well rather than ten polish items poorly.
-:::
-
----
-
-## Final submission checklist
-
-Run this before you submit the package.
+## Exit: what does the evidence let you claim?
 
 ::: {.activity-card}
-[Quality assurance — check each]{.card-title}
+“I initially thought ___. Reading ___ showed ___. In my project I will now ___, because ___. The next check is ___.”
 :::
 
-| Component | Done when |
-|---|---|
-| Practice Case | what changed is clear, and who it was for |
-| Research Brief | the reasoning and evidence are honest and cited |
-| Object Card | recommendation + one figure readable in 30 seconds |
-| Reproducibility Capsule | inputs, steps, and files let a stranger re-run it |
-| Across all four | findings consistent, spine traceable end to end |
+If your claim survives, explain why. If support remains unverified, keep that limit visible.
 
----
-
-## Object Fair, the day
-
-A calm checklist, not a performance plan.
-
-:::: {.two-col}
-::: {.activity-card}
-[Before you arrive]{.card-title}
-
-- test any display or files early
-- set up the Object Card where it reads at a glance
-- have the capsule index ready to point to
-:::
-
-::: {.activity-card}
-[During the fair]{.card-title}
-
-- open with the decision and who it is for
-- let the one figure do the work
-- answer questions in the four-move shape
-- a few real conversations beat many quick ones
-:::
-::::
-
----
-
-## Week 11 milestone
-
-::: {.concept-card}
-[Before the Object Fair]{.card-title}
-
-1. each component answers its own question clearly
-2. the weakest component you named is fixed
-3. the Object Card reads in 30 seconds
-4. the capsule lets a stranger inspect the method
-:::
-
----
-
-[Exit]{.kicker}
-
-## Your final fix, in one line
-
-Before you leave, write and post:
-
-::: {.reflection-card}
-**My weakest A4 component is ___, and the one fix I will make before submission is ___.**
-:::
-
-Next week is the Object Fair: you present the package and discuss it with peers and reviewers.
+Next week: the Object Fair and discussion of your final package.

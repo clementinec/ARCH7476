@@ -48,7 +48,7 @@ These check-ins are how the final package is tested in class before submission.
 |---:|---|---|---|
 | 9 | figure, output table, comparison chart, or object-card draft | What result changes the design action, and what uncertainty remains visible? | Practice Case + Object Card |
 | 10 | small review packet: one decision/claim, A3 output or threshold diagram, criterion/metric/threshold and source, evidence location, limit and question | After a reviewer-led critique, which check or revision did you attempt, what did it show, and why did you accept/adapt/defer/reject the advice? Use the [Peer Review Card](../templates/peer-review-card.qmd). | Draft Package + Feedback/Revision Ledger |
-| 11 | weakest A4 component or the component most in need of peer review | Which A4 component is weakest, and what must be fixed before submission? | Final Package |
+| 11 | weakest A4 component, one project claim, and its source abstract/full text where accessible | What does the full paper support, narrow or leave unverified in your project claim, and what changes in the research/design decision? Use the [Evidence Clinic Card](../templates/evidence-clinic-card.qmd). | Final Package |
 | 12 | final object card or reflection note | What design reasoning can transfer to another studio project? | Reflection Note |
 
 Use the [Project Reasoning Check-In](../templates/project-reasoning-checkin.md) template if you want a consistent note structure.

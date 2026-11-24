@@ -3073,7 +3073,7 @@
     "href": "schedule.html#week-11-final-package-polish",
     "title": "Course Schedule",
     "section": "Week 11: Final Package Polish",
-    "text": "Week 11: Final Package Polish\n\nLecture / Demo\n\nPractice Case\nResearch Brief\nObject Card\nReproducibility Capsule\n\n\n\nStudio-Lab\nStudents run a package audit and complete final revisions. The default expectation is clinic support for A4. If an optional GH/Python workgroup is still useful, it must produce documentation that can fit inside the Reproducibility Capsule rather than becoming a new ungraded side project.\nSession 2 material: upload the weakest A4 component or the component most in need of peer review.\nRound-table check-in: Which A4 component is weakest, and what must be fixed before submission?\nFeeds: A4 Final Package.\nThe package must show the full loop:\n\ndecision\nvariants or scenarios\nworkflow\nevaluation\nthreshold\ndesign action\nreproducibility check\nfeedback/revision decision",
+    "text": "Week 11: Final Package Polish\nFocus: check how literature supports one claim in your own project, and what changes when you read beyond the abstract. All four students—two PhD and two undergraduate students—do the same task. The claim may concern a research hypothesis or method, or a studio design decision; in every case, connect the source’s methods, results and limitations to your actual project.\nUse the Evidence Clinic Card to record your initial interpretation, inspect the full text, and revise the claim or decision. An abstract in a RIS record may omit conditions or limits that matter to your project. Search, regex and record-retrieval tools support this inspection; a match or retrieved record does not verify the claim.\nPrepare: bring your weakest A4 component, one literature source relevant to a claim you make, its abstract and full text if accessible, and the relevant project drawing, output or workflow file. A RIS export and your own API key are optional preparation for exploring the tools; no key is needed to participate in the clinic. Keep keys private and out of shared files, screenshots and posts.\nIf the full text is unavailable, mark the relevant support unverified and record what you need to inspect; do not exclude the paper merely because you cannot access it. One shared real paper can provide a comparison exercise while you retain that limitation on your own project claim.\n\nSession 1 — From abstract to project decision (50 minutes)\n\n\n\nTime\nActivity\nConcrete output\n\n\n\n\n0–8 min\nBrainstorm one claim or decision in your own project\nWrite the claim and what evidence would support or refute it.\n\n\n8–18 min\nFour pitches, 2.5 minutes per student\nExplain your project idea, the claim and the literature evidence you need.\n\n\n18–28 min\nShort search / regex / RIS / OpenAlex demonstration using the Regex Lab\nSee how records and abstracts are found, and identify what the retrieved material cannot establish.\n\n\n28–50 min\nAbstract-first / full-text comparison in pairs, with each student inspecting their selected source\nRecord the abstract-only interpretation, then inspect relevant methods, results and limitations with precise source locations. Compare with your partner and state what changes in your project claim or decision.\n\n\n\nThe 22-minute comparison: write your abstract-only interpretation (4 min); inspect your own source’s relevant full-text sections (8 min); compare findings in pairs, three minutes each (6 min); write your revised claim and remaining question (4 min). If using the shared paper, distinguish what it demonstrates from what still needs evidence in your own project.\n\n\nSession 2 — Four-person evidence clinic (50 minutes)\nBring to the clinic: the weakest A4 component or the component most in need of peer review, plus the source and project evidence needed to inspect it. Share through Slack or open the files locally.\nRound-table check-in: Which A4 component is weakest, and what must be fixed before submission?\n\n\n\n\n\n\n\n\nTime\nActivity\nConcrete output\n\n\n\n\n0–16 min\nFour four-minute clinics: each student explains their before/after claim and source evidence for two minutes, then peers and instructor respond for two minutes\nOne feasible claim, design or test revision per student. Everyone contributes as an author and as a reviewer.\n\n\n16–36 min\nRevise your claim, design decision or small test, with instructor support\nA revision justified by the source, and an observed test result if a test is attempted; otherwise a clearly stated remaining test or blocker.\n\n\n36–44 min\nPair recheck, four minutes per student’s work\nA partner follows the source locations, checks the revised claim against the evidence and identifies any remaining gap.\n\n\n44–50 min\nUpdate the A4 record\nSave the before/after claim, source and locators, consequence for the project decision, remaining test, and a dated feedback/revision entry explaining your response.\n\n\n\nLeave with: one before/after project claim, its source and precise locators, a changed or narrowed research/design decision (or an evidenced reason to retain it), and one remaining test. Save the peer check and any unverified support or blocker in your A4 notes. A proposed check is not completed verification.\nFeeds: A4 Final Package. The six required components remain the Practice Case, Research Brief, Object Card, Reproducibility Capsule, Feedback + Revision Ledger (at least three entries across the project), and Reflection Note. The capsule must contain the runnable workflow artifact and run instructions; screenshots may support it but cannot replace that artifact. This clinic is formative, adds no graded assignment, and changes no A4 requirements, weights or deadlines.\nThe package must show the full loop:\n\ndecision\nvariants or scenarios\nworkflow\nevaluation\nthreshold\ndesign action\nreproducibility check\nfeedback/revision decision",
     "crumbs": [
       "Home",
       "Course Overview",
@@ -3349,7 +3349,7 @@
     "href": "assignments/assignment-04.html#session-2-check-ins-that-feed-a4",
     "title": "Assignment 4: Evidence-Backed Design Workflow Package",
     "section": "Session 2 Check-Ins That Feed A4",
-    "text": "Session 2 Check-Ins That Feed A4\nThese check-ins are how the final package is tested in class before submission.\n\n\n\nWeek\nBring to Session 2\nRound-table question\nA4 component\n\n\n\n\n9\nfigure, output table, comparison chart, or object-card draft\nWhat result changes the design action, and what uncertainty remains visible?\nPractice Case + Object Card\n\n\n10\nsmall review packet: one decision/claim, A3 output or threshold diagram, criterion/metric/threshold and source, evidence location, limit and question\nAfter a reviewer-led critique, which check or revision did you attempt, what did it show, and why did you accept/adapt/defer/reject the advice? Use the Peer Review Card.\nDraft Package + Feedback/Revision Ledger\n\n\n11\nweakest A4 component or the component most in need of peer review\nWhich A4 component is weakest, and what must be fixed before submission?\nFinal Package\n\n\n12\nfinal object card or reflection note\nWhat design reasoning can transfer to another studio project?\nReflection Note\n\n\n\nUse the Project Reasoning Check-In template if you want a consistent note structure.",
+    "text": "Session 2 Check-Ins That Feed A4\nThese check-ins are how the final package is tested in class before submission.\n\n\n\nWeek\nBring to Session 2\nRound-table question\nA4 component\n\n\n\n\n9\nfigure, output table, comparison chart, or object-card draft\nWhat result changes the design action, and what uncertainty remains visible?\nPractice Case + Object Card\n\n\n10\nsmall review packet: one decision/claim, A3 output or threshold diagram, criterion/metric/threshold and source, evidence location, limit and question\nAfter a reviewer-led critique, which check or revision did you attempt, what did it show, and why did you accept/adapt/defer/reject the advice? Use the Peer Review Card.\nDraft Package + Feedback/Revision Ledger\n\n\n11\nweakest A4 component, one project claim, and its source abstract/full text where accessible\nWhat does the full paper support, narrow or leave unverified in your project claim, and what changes in the research/design decision? Use the Evidence Clinic Card.\nFinal Package\n\n\n12\nfinal object card or reflection note\nWhat design reasoning can transfer to another studio project?\nReflection Note\n\n\n\nUse the Project Reasoning Check-In template if you want a consistent note structure.",
     "crumbs": [
       "Home",
       "Assignments",
@@ -5421,246 +5421,6 @@
     ]
   },
   {
-    "objectID": "weeks_v2/week-11.html#todays-agenda",
-    "href": "weeks_v2/week-11.html#todays-agenda",
-    "title": "Week 11: Final Package Clinic",
-    "section": "Today’s Agenda",
-    "text": "Today’s Agenda\n\n\nSession 1\nFinal package clinic\n\nthe four A4 components, side by side\nvisual-polish lab and content refinement\nthe message-clarity clinic\nQ&A preparation, then the submission checklist\n\n\n\nSession 2\nRound table on YOUR weakest component\n\nupload one rough A4 fragment\nreconstruct it in four steps\nagree the one fix before submission\n\n\n\n\nThis is a clinic, not a contest. We refine the work, find the weakest component early enough to fix it, and make the package legible to a stranger.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#this-week-finalizes-the-handoff-artifact",
-    "href": "weeks_v2/week-11.html#this-week-finalizes-the-handoff-artifact",
-    "title": "Week 11: Final Package Clinic",
-    "section": "This week finalizes the handoff artifact",
-    "text": "This week finalizes the handoff artifact\n\n\nA1 board\n\n\nA2 contract\n\n\nA3 output\n\n\nthreshold\n\n\ndraft\n\n\nhandoff\n\n\n\n\nPractice 2-slide decision memo: what changed and what to do\n\n\nResearch 2-page method brief: how you know and what remains uncertain\n\n\nObject 1-page card: dominant figure, threshold, recommendation\n\n\nCapsule README, files, sources, prompt/code notes, verification log",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#four-components-one-package",
-    "href": "weeks_v2/week-11.html#four-components-one-package",
-    "title": "Week 11: Final Package Clinic",
-    "section": "Four components, one package",
-    "text": "Four components, one package\nA4 is not one document. It is four linked components, each answering a different question. Polish here means each one answers its question clearly.\n\n\n1 · Practice Case The applied story: a real decision and what changed because of the evidence.\nAnswers: what changed?\n\n\n2 · Research Brief The reasoning and evidence behind the recommendation, stated honestly.\nAnswers: how do you know?\n\n\n\n\n3 · Object Card The single readable artifact a viewer meets at the fair.\nAnswers: what does a viewer see?\n\n\n4 · Reproducibility Capsule The inputs, steps, and files so the method can be inspected.\nAnswers: how can someone inspect the method?",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#how-the-components-fit-together",
-    "href": "weeks_v2/week-11.html#how-the-components-fit-together",
-    "title": "Week 11: Final Package Clinic",
-    "section": "How the components fit together",
-    "text": "How the components fit together\nThe four components are not parallel deliverables — they answer four questions a reviewer asks in sequence.\n\n\n\n\n\nflowchart LR\n    PC[Practice Case&lt;br/&gt;what changed?] --&gt; RB[Research Brief&lt;br/&gt;how do you know?]\n    RB --&gt; OC[Object Card&lt;br/&gt;what does a viewer see?]\n    OC --&gt; RC[Reproducibility Capsule&lt;br/&gt;how can someone inspect the method?]\n    RC --&gt; A4[A4: Workflow Package]\n\n\n\n\n\n\n\nIf a stranger can walk this chain without you in the room, the package is done. Networking is secondary — the package comes first.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#the-semester-spine-one-last-time",
-    "href": "weeks_v2/week-11.html#the-semester-spine-one-last-time",
-    "title": "Week 11: Final Package Clinic",
-    "section": "The semester spine, one last time",
-    "text": "The semester spine, one last time\nEvery component must still let a reader trace the same six-part spine your A4 has carried all along.\n\nDecision Evidence Variation Output Threshold Action\n\n\nThe reviewer’s question Can I trace decision → variants → workflow → output → threshold → limit across the four components without asking you to explain it out loud?\n\nPolish is not decoration. It is making each link legible.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#the-package-is-a-small-inspectable-archive",
-    "href": "weeks_v2/week-11.html#the-package-is-a-small-inspectable-archive",
-    "title": "Week 11: Final Package Clinic",
-    "section": "The package is a small inspectable archive",
-    "text": "The package is a small inspectable archive\n\n\ndecision memo\n\n\nmethod brief\n\n\nobject card\n\n\nsource files\n\n\nverification log\n\n\n\nBridge pattern If your workflow uses GH, the capsule includes the .gh file or screenshots, exported variant table, component/function contract, and one note explaining which sliders or inputs should be changed next.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#visual-polish-lab-1",
-    "href": "weeks_v2/week-11.html#visual-polish-lab-1",
-    "title": "Week 11: Final Package Clinic",
-    "section": "Visual-polish lab",
-    "text": "Visual-polish lab\nWork on one figure at a time. The goal is clarity, not ornament.\n\nDo this now Take your weakest figure and run the four checks below, in order. Stop when the key message is obvious in three seconds.\n\n\n\n\n\n\n\n\n\nCheck\nQuestion\nFix if no\n\n\n\n\nMessage\nIs the key insight obvious in 3 seconds?\ncut clutter, label the point\n\n\nReadability\nLegible at fair scale, from a few feet away?\nlarger type, fewer series\n\n\nHonesty\nAre uncertainty and limits visible?\nadd range, caveat, or note\n\n\nConsistency\nSame fonts, colours, units across components?\nalign to one style",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#object-card-refinement",
-    "href": "weeks_v2/week-11.html#object-card-refinement",
-    "title": "Week 11: Final Package Clinic",
-    "section": "Object Card refinement",
-    "text": "Object Card refinement\nThe Object Card is the one artifact most viewers actually read. It must stand alone.\n\n\nWhat it must carry\n\nthe decision and who it is for\none figure that carries the message\nthe recommendation, in plain language\na stated limit\n\n\n\nThe 30-second test Hand your draft card to a neighbour. Can they state your recommendation and one limit after 30 seconds, without you speaking?",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#sharpen-the-writing",
-    "href": "weeks_v2/week-11.html#sharpen-the-writing",
-    "title": "Week 11: Final Package Clinic",
-    "section": "Sharpen the writing",
-    "text": "Sharpen the writing\nThe Research Brief and Practice Case carry the argument. Tighten them.\n\n8-minute writing pass\n\nOpening — does the first paragraph state the decision, finding, and action?\nThread — is the stakeholder’s relevance clear all the way through?\nEvidence — is confidence matched to the strength of the evidence?\nCitations — are sources complete and the capsule index linked?\n\n\n\nState uncertainty plainly. Overclaiming weakens credibility faster than admitting a limit ever will.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#final-polish-should-not-polish-away-doubt",
-    "href": "weeks_v2/week-11.html#final-polish-should-not-polish-away-doubt",
-    "title": "Week 11: Final Package Clinic",
-    "section": "Final polish should not polish away doubt",
-    "text": "Final polish should not polish away doubt\n\nQuestion for Week 11 Which caveat would change the recommendation if it turned out worse than expected?\n\nThat caveat belongs on the Object Card or in the Practice Case, not buried in the capsule.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#the-message-clarity-clinic",
-    "href": "weeks_v2/week-11.html#the-message-clarity-clinic",
-    "title": "Week 11: Final Package Clinic",
-    "section": "The message-clarity clinic",
-    "text": "The message-clarity clinic\nPair up. One reads as a busy reader; the other presents the core message.\n\nRole-play, 4 minutes The reader skims, then asks: “So what should I actually do?” The presenter must answer in one sentence.\n\n\nThe one-thing test If a reader remembers only one thing, what should it be? Does every part of your package support that one message?",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#prepare-for-the-likely-questions",
-    "href": "weeks_v2/week-11.html#prepare-for-the-likely-questions",
-    "title": "Week 11: Final Package Clinic",
-    "section": "Prepare for the likely questions",
-    "text": "Prepare for the likely questions\nMost fair questions fall into three families. Draft one honest answer for each.\n\n\nMethod “How do you know the sample / model is adequate?” → state your check and its limit.\n\n\nImplementation “What would this cost or take to apply?” → give a range, not a guess.\n\n\nAlternatives “Could something else explain this?” → name the alternative you ruled out, and how.\n\n\n\nA question is a chance to show your reasoning, not an attack to defend against. Acknowledging a limit builds more credibility than deflecting.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#a-useful-answer-in-four-moves",
-    "href": "weeks_v2/week-11.html#a-useful-answer-in-four-moves",
-    "title": "Week 11: Final Package Clinic",
-    "section": "A useful answer, in four moves",
-    "text": "A useful answer, in four moves\n\nThe response shape\n\nAcknowledge — “Good question about ___.”\nAnswer — “Here is what I found / checked.”\nConnect — “What this means for your decision is ___.”\nOffer — “I can follow up with the detail in the capsule.”\n\n\nKeep it short. A clear, honest answer beats a long defensive one.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#round-table-on-your-weakest-component",
-    "href": "weeks_v2/week-11.html#round-table-on-your-weakest-component",
-    "title": "Week 11: Final Package Clinic",
-    "section": "Round table on YOUR weakest component",
-    "text": "Round table on YOUR weakest component\n\nDecision Evidence Variation Output Threshold Action\n\nUpload one rough material to Slack before Session 2 — a Practice Case section, Research Brief fragment, final Object Card draft, or a Reproducibility Capsule index. feeds A4",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#reconstruct-your-weakest-component-in-four-steps",
-    "href": "weeks_v2/week-11.html#reconstruct-your-weakest-component-in-four-steps",
-    "title": "Week 11: Final Package Clinic",
-    "section": "Reconstruct your weakest component in four steps",
-    "text": "Reconstruct your weakest component in four steps\nObject this week: your weakest A4 component, as a reviewer will meet it.\n\n\nDid What does this component currently claim and show?\n\n\nAssumed What am I assuming the reader already knows?\n\n\nRisk Why is this the weakest of the four — what is missing?\n\n\nVerify What one fix would most improve it before submission?\n\n\n\nPost your four-step under your component. Posting + an honest reconstruction is the graded unit. Presenting is welcomed and earns credit; it is never required and never scored as performance. Volunteers go first; random draw may fill the remaining examples.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#triage-what-you-hear",
-    "href": "weeks_v2/week-11.html#triage-what-you-hear",
-    "title": "Week 11: Final Package Clinic",
-    "section": "Triage what you hear",
-    "text": "Triage what you hear\nYou will get more notes than you can act on before submission. Sort first.\n\n\n\nPriority\nMeaning\nWhen to fix\n\n\n\n\nCritical\na component fails to answer its question\nthis week\n\n\nImportant\ncredibility or clarity gap\nbefore submission\n\n\nPolish\nwould improve, not essential\nif time allows\n\n\n\n\nFix one critical item well rather than ten polish items poorly.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#final-submission-checklist",
-    "href": "weeks_v2/week-11.html#final-submission-checklist",
-    "title": "Week 11: Final Package Clinic",
-    "section": "Final submission checklist",
-    "text": "Final submission checklist\nRun this before you submit the package.\n\nQuality assurance — check each\n\n\n\n\n\n\n\n\nComponent\nDone when\n\n\n\n\nPractice Case\nwhat changed is clear, and who it was for\n\n\nResearch Brief\nthe reasoning and evidence are honest and cited\n\n\nObject Card\nrecommendation + one figure readable in 30 seconds\n\n\nReproducibility Capsule\ninputs, steps, and files let a stranger re-run it\n\n\nAcross all four\nfindings consistent, spine traceable end to end",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#object-fair-the-day",
-    "href": "weeks_v2/week-11.html#object-fair-the-day",
-    "title": "Week 11: Final Package Clinic",
-    "section": "Object Fair, the day",
-    "text": "Object Fair, the day\nA calm checklist, not a performance plan.\n\n\nBefore you arrive\n\ntest any display or files early\nset up the Object Card where it reads at a glance\nhave the capsule index ready to point to\n\n\n\nDuring the fair\n\nopen with the decision and who it is for\nlet the one figure do the work\nanswer questions in the four-move shape\na few real conversations beat many quick ones",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#week-11-milestone",
-    "href": "weeks_v2/week-11.html#week-11-milestone",
-    "title": "Week 11: Final Package Clinic",
-    "section": "Week 11 milestone",
-    "text": "Week 11 milestone\n\nBefore the Object Fair\n\neach component answers its own question clearly\nthe weakest component you named is fixed\nthe Object Card reads in 30 seconds\nthe capsule lets a stranger inspect the method",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
-    "objectID": "weeks_v2/week-11.html#your-final-fix-in-one-line",
-    "href": "weeks_v2/week-11.html#your-final-fix-in-one-line",
-    "title": "Week 11: Final Package Clinic",
-    "section": "Your final fix, in one line",
-    "text": "Your final fix, in one line\nBefore you leave, write and post:\n\nMy weakest A4 component is , and the one fix I will make before submission is .\n\nNext week is the Object Fair: you present the package and discuss it with peers and reviewers.",
-    "crumbs": [
-      "Home",
-      "Weekly Studio-Labs",
-      "W11: Final Package"
-    ]
-  },
-  {
     "objectID": "templates/total-recall-board.html",
     "href": "templates/total-recall-board.html",
     "title": "Template: Total Recall Board",
@@ -6847,5 +6607,404 @@
       "Weekly Studio-Labs",
       "W10: Draft Review"
     ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#preparation-for-the-evidence-clinic",
+    "href": "weeks_v2/week-11.html#preparation-for-the-evidence-clinic",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Preparation for the evidence clinic",
+    "text": "Preparation for the evidence clinic\nBring one claim from your own project and the literature you think supports it.\n\na research idea, method choice or studio design decision\none relevant paper, its abstract and full text where accessible\nyour current drawing, result or A4 paragraph\nthe question you need the evidence to answer\n\n\nOpen the Evidence Clinic Card. Keep your initial claim visible when you revise it.\n\nA RIS file and OpenAlex key are optional. If access fails, record what remains unverified and use the shared paper to practise the reading method.\n\nFour students: two PhD and two undergraduate students. All undertake the same evidence task on their own projects. There is no assumption that the undergraduate students need a systematic review. The shared case teaches how to inspect evidence; it does not establish support for their individual projects. Keep source and account preparation short so it does not consume clinic time.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#session-1-the-idea-and-its-evidence",
+    "href": "weeks_v2/week-11.html#session-1-the-idea-and-its-evidence",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Session 1: the idea and its evidence",
+    "text": "Session 1: the idea and its evidence\n50 minutes · four students and the instructor\n\n\n\n\n\n\n\n\nTime\nActivity\nSave\n\n\n\n\n0–8\nBrainstorm your project claim\nDecision and evidence needed\n\n\n8–18\nFour pitches, 2½ minutes each\nOne question per project\n\n\n18–28\nShort search, regex, RIS and OpenAlex demonstration\nA useful tool and its limit\n\n\n28–50\nCompare abstract-based interpretation with the full paper\nBefore/after claim and source locations\n\n\n\n\nThe test is what the literature lets you say or do in your own project.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#brainstorm-the-claim-you-are-relying-on",
+    "href": "weeks_v2/week-11.html#brainstorm-the-claim-you-are-relying-on",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Brainstorm: the claim you are relying on",
+    "text": "Brainstorm: the claim you are relying on\n8 minutes · write before discussing\n\nDecision: what do you want to investigate, choose or change?\nClaim: what must be true for that choice to make sense?\nEvidence: what observation would support or challenge it?\nConsequence: what would you change if the evidence did not support it?\n\n\n“My project proposes . It relies on the claim that . I need evidence about ___ before I can justify ___.”\n\nUse an idea already in your project. A rough claim is useful material for the clinic.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#four-short-project-pitches",
+    "href": "weeks_v2/week-11.html#four-short-project-pitches",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Four short project pitches",
+    "text": "Four short project pitches\n2½ minutes per student · 10 minutes total\n\n\n\n\n\n\n\nTime\nAction\n\n\n\n\nFirst 90 seconds\nShow the idea, name the claim and explain the source you need\n\n\nNext 60 seconds\nPeers or instructor ask one question about its evidence\n\n\n\n\nWhat exactly would the paper need to show for this project decision to follow?\n\nWrite the question on your card. Keep the discussion on the decision and the evidence it needs.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#one-task-different-project-decisions",
+    "href": "weeks_v2/week-11.html#one-task-different-project-decisions",
+    "title": "Week 11: Final Package Clinic",
+    "section": "One task, different project decisions",
+    "text": "One task, different project decisions\n\n\n\n\n\n\n\n\nYour project may ask…\nThe literature must help you establish…\nInspect later\n\n\n\n\nIs this a defensible research premise?\nWhat is known, under which conditions, and what remains unresolved\nActual finding and stated limitation\n\n\nIs this method suitable for my study?\nWhat inputs, assumptions and checks it needs\nMethod and validation conditions\n\n\nShould I change this studio design?\nWhether the reported benefit applies to my site, users and alternatives\nMetric, context and design consequence\n\n\n\nThese are possible questions to bring, not findings about any particular design.\n\nChoose the question your project needs answered. Everyone checks a claim against the source behind it.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#search-operators-and-regex",
+    "href": "weeks_v2/week-11.html#search-operators-and-regex",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Search operators and regex",
+    "text": "Search operators and regex\nSupporting demonstration · part of the 18–28 minute block\n\n\n\n\n\n\n\n\nTool\nExample\nWhat it does\n\n\n\n\nGoogle Search\n\"courtyard ventilation\" site:edu filetype:pdf -hotel\nCombines a phrase with site/file filters and an exclusion\n\n\nOpenAlex search\n\"courtyard ventilation\" AND housing\nCombines search terms using the service’s query syntax\n\n\nRegex on text you hold\n\\bshade\\b\nFinds character patterns in an export, document or filename\n\n\n\nGoogle’s ordinary search box uses search operators. It does not execute a general regex pattern. An exclusion may also hide a useful result; inspect what your query misses.\n\nGoogle operators · OpenAlex search syntax · examples are teaching queries, not completed searches.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#regex-a-pattern-in-characters",
+    "href": "weeks_v2/week-11.html#regex-a-pattern-in-characters",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Regex: a pattern in characters",
+    "text": "Regex: a pattern in characters\nRegular expression (regex): a compact rule for finding or checking text.\n\n\n\n\n\n\n\n\nSymbol\nMeaning in these JavaScript examples\nExample\n\n\n\n\n\\b\nWord boundary\n\\bshade\\b matches shade, not shaded\n\n\n()\nGroup part of a pattern\n(shade) groups the letters\n\n\n[0-9]{2}\nExactly two digits\n01, 12\n\n\n^ and $\nStart/end of the text; of each line with flag m\nWhole-line filename check\n\n\n\\.\nA literal full stop\n.csv extension\n\n\n\nAlternatives: (shade|shading) means either word. Flags: i ignores letter case; m makes anchors work per line. Syntax can differ between tools.\n\nMDN regex guide · try the local Regex Lab. Predict one match and one miss before running.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#two-patterns-two-different-checks",
+    "href": "weeks_v2/week-11.html#two-patterns-two-different-checks",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Two patterns, two different checks",
+    "text": "Two patterns, two different checks\n\n\nFind a design term\n\\b(shade|shading)\\b with i\nMatches SHADE and shading. Misses shaded and overhang.\nA match in “no shade benefit” still contains the word. Regex has not judged the claim.\n\n\nCheck a filename\n^variant_[0-9]{2}\\.csv$ with m\nMatches variant_03.csv.\nRejects variant_3.csv and variant_03.csv.bak. This checks a naming rule, not the file’s contents.\n\n\n\nA false positive is an unwanted match. A false negative is a relevant item missed. Judge both against your purpose.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#ris-carries-records-not-a-whole-argument",
+    "href": "weeks_v2/week-11.html#ris-carries-records-not-a-whole-argument",
+    "title": "Week 11: Final Package Clinic",
+    "section": "RIS carries records, not a whole argument",
+    "text": "RIS carries records, not a whole argument\nScienceDirect can export citations as RIS, a tagged text format. Depending on the export, an abstract may be present or absent. Inspect the file you actually have.\nDO  - 10.1098/rsos.241337\nField extraction example: ^DO[ \\t]+-[ \\t]+(.+)$ with m captures the text after the DOI tag. + means one or more; parentheses retain the captured part.\nPreserve the raw export. Use a RIS parser for records, repeated authors and wrapped fields. Regex can assist a specific cleanup; it cannot recover methods or results that were never exported.\n\nScienceDirect export instructions. The DOI line illustrates the format using the shared paper’s identifier; it is not a ScienceDirect export of that paper.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#openalex-identify-the-paper-and-keep-the-trail",
+    "href": "weeks_v2/week-11.html#openalex-identify-the-paper-and-keep-the-trail",
+    "title": "Week 11: Final Package Clinic",
+    "section": "OpenAlex: identify the paper and keep the trail",
+    "text": "OpenAlex: identify the paper and keep the trail\n\nLook up the DOI and retain the returned work ID.\nIf needed, search the title and compare authors/year before accepting a candidate.\nRecord discrepancies and missing abstracts. A match establishes a record link, not support for your project claim.\n\n\nOptional preparation: create an account, verify your email, then obtain your key from Settings → API key. Keep it private.\n\nBasic queries currently work without a key. A free key increases the budget and is needed for cursor paging beyond the first page. Account setup must not delay today’s reading task.\n\nLookup · authentication, checked 24 November 2026 · private setup and example request.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#the-22-minute-source-comparison",
+    "href": "weeks_v2/week-11.html#the-22-minute-source-comparison",
+    "title": "Week 11: Final Package Clinic",
+    "section": "The 22-minute source comparison",
+    "text": "The 22-minute source comparison\nStart at minute 28 · work on your own project source\n\n\n\n\n\n\n\n\nMinutes\nAction\nRecord\n\n\n\n\n0–4\nRead the abstract only\nYour initial interpretation and proposed project action\n\n\n4–12\nInspect the relevant methods, results and limitations\nExact passage, table or figure locations\n\n\n12–18\nCompare with a partner, three minutes each\nThe inference that holds, changes or remains unverified\n\n\n18–22\nRewrite your claim and its consequence\nWhat changes in your research/design, and the next test\n\n\n\n\nPreserve the first interpretation. The comparison makes your change in reasoning visible.\n\n\nThe next slides are reading prompts for this block, not additional lecture time. Use the two shared-case slides only as a brief demonstration or fallback. A student who already knows the full paper can record their earlier abstract-based expectation honestly rather than pretend the reading is blind.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#first-reading-what-did-you-infer",
+    "href": "weeks_v2/week-11.html#first-reading-what-did-you-infer",
+    "title": "Week 11: Final Package Clinic",
+    "section": "First reading: what did you infer?",
+    "text": "First reading: what did you infer?\nRead the abstract or exported summary before inspecting the rest of the article.\n\n“The abstract reports . I took this to support  in my project. I was about to choose/test/change ___.”\n\nSeparate the words in the source from the step you added. Record whether your claim concerns a method, a measured effect or transfer to your own context.\n\nWhich part of your project claim is actually stated, and which part is your inference?",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#full-paper-reading-locate-the-missing-conditions",
+    "href": "weeks_v2/week-11.html#full-paper-reading-locate-the-missing-conditions",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Full-paper reading: locate the missing conditions",
+    "text": "Full-paper reading: locate the missing conditions\n\n\n\n\n\n\n\nInspect\nQuestion for your project\n\n\n\n\nMethods\nWhat was studied, where, with which sample, inputs and controls?\n\n\nResults\nWhich measure, comparator and result support the claim?\n\n\nFigures/tables\nWhat variation, exception or failure does the summary omit?\n\n\nLimitations/discussion\nWhere do the authors restrict interpretation or transfer?\n\n\nSupplement, if needed\nIs the required definition, dataset or procedure there?\n\n\n\n\nSave a section and table/figure/page locator. A link alone does not show where your claim gets its support.\n\nFull text provides more evidence to assess. It does not automatically validate a study or make its findings transferable.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#why-the-abstract-may-change-your-impression",
+    "href": "weeks_v2/week-11.html#why-the-abstract-may-change-your-impression",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Why the abstract may change your impression",
+    "text": "Why the abstract may change your impression\n\n\n\n\n\n\n\nInformation compressed or absent\nA possible consequence for your idea\n\n\n\n\nMetric or comparator\n“Improvement” may refer to a proxy rather than the outcome you need\n\n\nSample and conditions\nA result may support a narrower population, season or setting\n\n\nMethod and validation\nA simulation, association or exploratory study may need a different claim\n\n\nMixed results and limitations\nThe design benefit may depend on a trade-off or unresolved assumption\n\n\n\nThese are questions to investigate, not accusations against the paper. An abstract may be accurate while leaving out details that matter to your use of it.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#shared-paper-the-abstract-level-view",
+    "href": "weeks_v2/week-11.html#shared-paper-the-abstract-level-view",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Shared paper: the abstract-level view",
+    "text": "Shared paper: the abstract-level view\nMora & Bardhan · Cambridge retrofit study · 2025\nThe abstract presents a proof-of-concept retrofit-prioritisation framework, combining neighbourhood data with building-scale thermal imaging.\n\nOur project question: could I use thermal imaging to choose which building should be retrofitted first?\nWhat would you need to know before accepting that use of the method?\n\n\nRead the abstract and full article in HTML · Towards carbon neutrality: mapping mass retrofit opportunities in Cambridge, UK, DOI 10.1098/rsos.241337. The project question is our application, not the authors’ wording.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#shared-paper-what-the-full-text-adds",
+    "href": "weeks_v2/week-11.html#shared-paper-what-the-full-text-adds",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Shared paper: what the full text adds",
+    "text": "Shared paper: what the full text adds\n§3.1.3: the thermal campaign covers five buildings per cluster, 25 in total.\n§4.4: the authors acknowledge limited sampling and unknown thermostat settings and occupancy schedules during data collection.\n\nOur revised use: treat the method as a starting point for investigation. Before relying on building-level rankings in our project, check operating conditions and suitability of the sample.\n\n\nThe details change the justification and the next test. They do not by themselves show that the paper is wrong.\n\n\nFull-text sections 3.1.3 and 4.4 · this is a teaching interpretation of a published study. Apply the same inspection to your own source.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#a-defensible-before-and-after-claim",
+    "href": "weeks_v2/week-11.html#a-defensible-before-and-after-claim",
+    "title": "Week 11: Final Package Clinic",
+    "section": "A defensible before-and-after claim",
+    "text": "A defensible before-and-after claim\n\nBefore: I used this source to justify ___ in my project.\nFound: section/table/figure ___ establishes ___ under . It leaves  unresolved.\nAfter: I can now justify , so I will change/retain  and test ___ next.\n\nYour conclusion may be supported as stated, needs narrowing/adaptation, contradicted by the inspected evidence, or not yet established. Give a reason; these are course working labels.\nKeeping a claim is valid if you show why it survives the check. Do not invent a flaw to complete the exercise.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#if-an-llm-reads-only-the-abstracts",
+    "href": "weeks_v2/week-11.html#if-an-llm-reads-only-the-abstracts",
+    "title": "Week 11: Final Package Clinic",
+    "section": "If an LLM reads only the abstracts",
+    "text": "If an LLM reads only the abstracts\nIts answer is constrained by the text you supplied. A fluent synthesis can conceal that the relevant methods, values or limitations were absent.\n\nFor every consequential statement, require:\n\na source and exact supporting location\nthe conditions under which it holds\na visible not reported / not checked when evidence is missing\n\n\nDo not let a generated explanation fill missing methods or merge different studies into an unsupported general result. Compare the answer with the actual article before using it to justify a project decision.\n\nRIS is a container format, not a measure of completeness. OpenAlex abstract fields can also be missing. Field documentation.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#session-2-clinic-on-your-own-idea",
+    "href": "weeks_v2/week-11.html#session-2-clinic-on-your-own-idea",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Session 2: clinic on your own idea",
+    "text": "Session 2: clinic on your own idea\n50 minutes · four students and the instructor\n\n\n\n\n\n\n\n\nTime\nActivity\nSave\n\n\n\n\n0–16\nFour four-minute evidence clinics\nOne consequential question for each project\n\n\n16–36\nMake one justified revision or small test\nChanged claim, design or research plan\n\n\n36–44\nPair recheck, four minutes each\nEvidence trace and remaining gap\n\n\n44–50\nUpdate the A4 record\nCard, revised artifact and ledger entry\n\n\n\nThe clinic ends with an action in your own project. A literature list alone is not the outcome.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#each-clinic-takes-four-minutes",
+    "href": "weeks_v2/week-11.html#each-clinic-takes-four-minutes",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Each clinic takes four minutes",
+    "text": "Each clinic takes four minutes\n\n\n\n\n\n\n\n\nTime\nLead\nWhat happens\n\n\n\n\n0–2\nProject author\nShow the initial claim, source location and revised interpretation\n\n\n2–4\nPeers + instructor\nChallenge one transfer assumption and agree a feasible next action\n\n\n\n\nWhat changes in this project because we now know how the source produced its result?\n\nThe author records whether to accept, adapt, defer or reject the suggestion, with a reason. Everyone takes a turn as author and contributes to another project.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#twenty-minutes-to-change-the-work",
+    "href": "weeks_v2/week-11.html#twenty-minutes-to-change-the-work",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Twenty minutes to change the work",
+    "text": "Twenty minutes to change the work\nChoose the action your evidence supports:\n\nResearch premise: narrow the hypothesis or identify the unresolved comparison.\nMethod: revise a sampling, control, metric or validation choice.\nStudio: revise a design option or draw the contextual condition that needs checking.\nClaim: correct the A4 sentence and show the design consequence.\n\nBefore a test, write the expected observation and what result would change your decision. Save the actual result if attempted.\n\nIf access, time or tools block the check, save the exact gap and next action. A planned test stays labelled as planned.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#pair-recheck-can-someone-follow-the-evidence",
+    "href": "weeks_v2/week-11.html#pair-recheck-can-someone-follow-the-evidence",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Pair recheck: can someone follow the evidence?",
+    "text": "Pair recheck: can someone follow the evidence?\nEight minutes · four per project\nYour partner opens the cited section or figure and checks:\n\nIs the source finding represented accurately?\nAre its conditions and your transfer assumption visible?\nDoes the revised project decision follow?\nWhat still needs evidence or a local test?\n\n\n“I can trace ___ to . I still cannot establish  because ___.”\n\nUpdate the record if the recheck exposes another gap.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#six-components-in-the-a4-package",
+    "href": "weeks_v2/week-11.html#six-components-in-the-a4-package",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Six components in the A4 package",
+    "text": "Six components in the A4 package\n\n\n\n\n\n\n\nComponent\nToday’s evidence check can improve…\n\n\n\n\nPractice Case · 2 slides\nDecision, recommendation and its scope\n\n\nResearch Brief · 2 pages\nSource use, method rationale and interpretation\n\n\nObject Card · 1 page\nClaim, figure and visible caveat\n\n\nReproducibility Capsule\nSource locations, runnable workflow and verification notes\n\n\nFeedback + Revision Ledger · ≥3 entries\nAdvice, response, change and reason\n\n\nReflection Note · 1 page\nWhat changed in your reasoning and what remains unresolved\n\n\n\n\nA4 brief · final checklist. Today’s clinic is formative and changes no assessment requirements or deadlines.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#the-capsule-supports-the-claim-and-the-rerun",
+    "href": "weeks_v2/week-11.html#the-capsule-supports-the-claim-and-the-rerun",
+    "title": "Week 11: Final Package Clinic",
+    "section": "The capsule supports the claim and the rerun",
+    "text": "The capsule supports the claim and the rerun\nInclude the actual runnable artifact, inputs, tool versions, instructions and expected key output. Supporting screenshots explain a workflow; they do not replace its runnable file.\nFor literature used in the argument, retain the citation, source location, what you checked and any relevant search or transformation notes. Keep API keys out of the package.\n\nCan a peer follow the evidence trail and rerun the workflow that produced your key figure? Record the successful check or exact blocker.\n\nIf you explore RIS/OpenAlex further, save raw and processed records separately. Metadata matching alone does not complete a literature review.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#the-object-card-after-the-evidence-check",
+    "href": "weeks_v2/week-11.html#the-object-card-after-the-evidence-check",
+    "title": "Week 11: Final Package Clinic",
+    "section": "The Object Card after the evidence check",
+    "text": "The Object Card after the evidence check\nShow the revised claim with the figure or drawing it actually supports.\n\n\n\nCheck\nWhat the reader needs\n\n\n\n\nDecision\nWhat should change, and for whom?\n\n\nEvidence\nWhich comparison supports that action?\n\n\nConditions\nWhere and when does the statement apply?\n\n\nLimit\nWhat could change the recommendation?\n\n\n\n\nGive the card to a partner for 30 seconds. Ask them to restate the recommendation and one limit without your explanation.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#a4-record-reasoning-that-changed",
+    "href": "weeks_v2/week-11.html#a4-record-reasoning-that-changed",
+    "title": "Week 11: Final Package Clinic",
+    "section": "A4 record: reasoning that changed",
+    "text": "A4 record: reasoning that changed\nFinal six minutes · save the card and a dated ledger entry\n\n\nDid What claim and source did I inspect?\n\n\nAssumed What did I infer from the abstract?\n\n\nRisk What did the full paper leave uncertain for my project?\n\n\nVerify What changed or survived, and what test remains?\n\n\nRetain the original statement, source locators, revised artifact and peer response. Today’s entry contributes to A4’s existing minimum of three ledger entries across the project.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#preparation-for-the-object-fair",
+    "href": "weeks_v2/week-11.html#preparation-for-the-object-fair",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Preparation for the Object Fair",
+    "text": "Preparation for the Object Fair\nA reader should be able to understand the decision, inspect its evidence and locate the workflow.\n\nmake the six required components easy to find\ntest the files and the key figure’s rerun\nprepare an answer about method, limits and alternatives\ndistinguish what you checked from what you would investigate next\n\n\nShow the project as it now stands, including the uncertainty that still matters to the decision.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#exit-what-does-the-evidence-let-you-claim",
+    "href": "weeks_v2/week-11.html#exit-what-does-the-evidence-let-you-claim",
+    "title": "Week 11: Final Package Clinic",
+    "section": "Exit: what does the evidence let you claim?",
+    "text": "Exit: what does the evidence let you claim?\n\n“I initially thought . Reading  showed . In my project I will now , because . The next check is .”\n\nIf your claim survives, explain why. If support remains unverified, keep that limit visible.\nNext week: the Object Fair and discussion of your final package.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "templates/evidence-clinic-card.html",
+    "href": "templates/evidence-clinic-card.html",
+    "title": "Week 11: Project Evidence Clinic Card",
+    "section": "",
+    "text": "Use this with the Week 11 slides. All four students undertake the same task. Your claim may concern a PhD research idea, a method choice or an undergraduate studio decision. Choose one consequential claim already in your work. This is a formative clinic feeding A4, with no new graded submission."
+  },
+  {
+    "objectID": "templates/evidence-clinic-card.html#preparation",
+    "href": "templates/evidence-clinic-card.html#preparation",
+    "title": "Week 11: Project Evidence Clinic Card",
+    "section": "Preparation",
+    "text": "Preparation\nBring the project claim, a relevant paper’s abstract and full text where accessible, and the paragraph, drawing or output that currently relies on it. Share or open the material locally. A RIS export and API key are optional; neither is necessary for the source-reading task.\nIf the full paper is inaccessible, record the support as unverified, with the section or evidence you need. Do not equate access failure with irrelevance. The shared article below can demonstrate the reading process while your own project claim remains qualified."
+  },
+  {
+    "objectID": "templates/evidence-clinic-card.html#brainstorm-and-pitch",
+    "href": "templates/evidence-clinic-card.html#brainstorm-and-pitch",
+    "title": "Week 11: Project Evidence Clinic Card",
+    "section": "Brainstorm and Pitch",
+    "text": "Brainstorm and Pitch\nSpend eight minutes writing:\n\nWhat do I want to investigate, choose or change in my project?\nWhat must be true for that decision to make sense?\nWhat evidence would support or challenge it?\nWhat would change if the claim did not hold?\n\nEach student then has 90 seconds to show their idea and evidence need, followed by 60 seconds for one peer/instructor question. Four pitches take ten minutes."
+  },
+  {
+    "objectID": "templates/evidence-clinic-card.html#your-before-and-after-record",
+    "href": "templates/evidence-clinic-card.html#your-before-and-after-record",
+    "title": "Week 11: Project Evidence Clinic Card",
+    "section": "Your Before-and-After Record",
+    "text": "Your Before-and-After Record\nKeep the initial interpretation. Do not overwrite it after reading the rest of the paper.\n\n\n\n\n\n\n\nField\nYour record\n\n\n\n\nProject / author / date\n___\n\n\nCurrent decision and claim\nI propose ___ because I believe ___.\n\n\nWhat would support or challenge it?\nI would need to observe/establish ___.\n\n\nSource and access\nCitation + DOI/URL: . Abstract / full article / supplement inspected: .\n\n\nAbstract-only interpretation\nThe abstract reports . I inferred  for my project.\n\n\nIntended action before checking\nI was going to choose/test/change ___ because ___.\n\n\nMethods and conditions\nWhat was studied, where, with which inputs/sample, comparison and controls? Location: ___.\n\n\nActual result\nMeasure, unit, comparison and finding: . Table/figure/section/page: .\n\n\nLimitation relevant to my use\nThe source states ___ / I cannot establish . Location or missing item: .\n\n\nTransfer to my project\nMy site, users, data, scale or method differs in . This matters because .\n\n\nJudgment and reason\nSupported as stated / needs narrowing or adaptation / contradicted by inspected evidence / not yet established: ___.\n\n\nRevised claim\nI can justify ___ under ;  remains unresolved.\n\n\nProject consequence\nChange / retain / defer this design or research decision: , because .\n\n\nNext test\nCheck ; expected observation ; change my decision if ___.\n\n\nPeer recheck\nReviewer ___ could trace ; still questioned .\n\n\n\nThese judgment labels are course working terms, not publication recommendations. A missing detail in an abstract is not proof that the study is defective. Inspect the article before attributing an error to its authors. Full-text reading can support retaining your original claim; explain that result honestly."
+  },
+  {
+    "objectID": "templates/evidence-clinic-card.html#twenty-two-minute-comparison",
+    "href": "templates/evidence-clinic-card.html#twenty-two-minute-comparison",
+    "title": "Week 11: Project Evidence Clinic Card",
+    "section": "Twenty-Two-Minute Comparison",
+    "text": "Twenty-Two-Minute Comparison\n\n4 minutes: read the abstract and save your initial interpretation/action.\n8 minutes: inspect the relevant methods, results and limitations. Locate the evidence; this is a focused check, not a claim to have appraised the whole paper.\n6 minutes: exchange findings with a partner, three minutes per student.\n4 minutes: write the revised claim, consequence for your project and remaining test.\n\nA source can establish a narrower point than the one your project needs. For instance, check whether the output is a proxy for your desired outcome, whether a simulation has been validated in a relevant setting, and whether the reported comparison supports causal or broader claims. These are inspection questions, not assumptions that every paper has these problems.\n\nShared Article for Demonstration\nMora & Bardhan (2025), Towards carbon neutrality: mapping mass retrofit opportunities in Cambridge, UK. HTML abstract and full text · DOI.\nRead the abstract first, then §3.1.3 and §4.4. Ask which sampling and operating-condition details change your intended use of thermal imaging. The slide example identifies those details; record your own inference before revealing it. This article demonstrates the reading method and does not supply evidence for an unrelated project."
+  },
+  {
+    "objectID": "templates/evidence-clinic-card.html#four-minute-clinic-and-project-revision",
+    "href": "templates/evidence-clinic-card.html#four-minute-clinic-and-project-revision",
+    "title": "Week 11: Project Evidence Clinic Card",
+    "section": "Four-Minute Clinic and Project Revision",
+    "text": "Four-Minute Clinic and Project Revision\nEach author has two minutes to show the before/after claim and source evidence. Peers and the instructor then have two minutes to challenge a transfer assumption and identify a feasible revision. Four students take 16 minutes.\nUse the next 20 minutes to revise a hypothesis, method choice, design option, claim or small test. Record whether you accept, adapt, defer or reject the feedback, and why. If you attempt a test, keep the actual result or exact blocker. A proposed test remains planned.\nSpend eight minutes on pair rechecks, four minutes per project. The reviewer opens the evidence location and tests whether the revised interpretation and project consequence follow. Use the final six minutes to save this card, the changed artifact and an A4 ledger entry."
+  },
+  {
+    "objectID": "templates/evidence-clinic-card.html#supporting-tools-search-and-regex",
+    "href": "templates/evidence-clinic-card.html#supporting-tools-search-and-regex",
+    "title": "Week 11: Project Evidence Clinic Card",
+    "section": "Supporting Tools: Search and Regex",
+    "text": "Supporting Tools: Search and Regex\nTools help locate and organise evidence. The reading and project judgment remain the main activity.\n\n\n\n\n\n\n\n\nWhere\nExample\nLimit to inspect\n\n\n\n\nGoogle\n\"courtyard ventilation\" site:edu filetype:pdf -hotel\nRestricting source/file type or excluding a word can hide relevant material.\n\n\nOpenAlex\n\"courtyard ventilation\" AND housing\nA search hit is a candidate, not proof of relevance or quality.\n\n\nRegex over text\n\\bshade\\b with i\nMisses synonyms and matches words even in a negative statement.\n\n\n\nGoogle’s search operators and database query languages differ from regex. Check the syntax for the specific tool rather than pasting the same expression everywhere. Google operator guide · OpenAlex search guide.\nRegex means regular expression: a character-pattern rule. In the local Regex Lab, \\b marks a word boundary, (a|b) chooses alternatives, [0-9]{2} means two digits, and \\. matches a literal full stop. The i flag ignores case; m makes ^ and $ work at line boundaries. Syntax reference.\nFor example, \\b(shade|shading)\\b with i matches SHADE and shading, but misses shaded and overhang. It also matches “no shade benefit”; a word match does not establish a positive finding.\nTry one preset, predict a match and a miss, then inspect the output. The filename pattern checks names; the DOI-field pattern extracts text. Neither establishes valid research evidence. The examples are explicitly marked as format/pattern demonstrations.\n\nWhat RIS and an Abstract Can Supply\nRIS is a tagged citation format. ScienceDirect offers RIS export; availability of an abstract depends on the export path and options. Keep the untouched export and inspect its fields. A record may contain title, authors and DOI without an abstract, and an abstract is not the methods/results text. Official export instructions.\nUse a parser for complete records, repeated author fields and continued lines. Apply regex only to a defined cleanup or extraction and inspect its effect. A well-formatted record can still support an unsuitable inference.\n\n\nOpenAlex Setup\nAn API lets a program request data from a service. An API key identifies your account for access and usage limits.\n\nCreate your own OpenAlex account.\nVerify your email, then open Settings → API key.\nStore the key privately, such as an environment variable. Do not paste it into slides, shared notebooks, screenshots or a GitHub repository.\n\nChecked 24 November 2026: basic requests can run without a key. A free verified key increases the request budget and enables cursor paging beyond the first page. If setup fails, use the article’s DOI/HTML page and continue the evidence clinic. Official authentication instructions.\nFor students already using a terminal with OPENALEX_API_KEY set privately, this is a single DOI lookup:\ncurl --fail-with-body \\\n  -H \"Authorization: Bearer ${OPENALEX_API_KEY}\" \\\n  'https://api.openalex.org/works/https://doi.org/10.1098/rsos.241337'\nCompare the returned title/authors/year with the source. Save the OpenAlex ID beside the original DOI, retrieval date and discrepancies. Title search can suggest candidates when the DOI is missing; inspect them before accepting a match. Lookup documentation.\nOpenAlex’s abstract_inverted_index stores words with their positions; reconstruction requires ordering those positions. It can be absent. Preserve missing, and check the article rather than inventing abstract text. Field definition."
+  },
+  {
+    "objectID": "templates/evidence-clinic-card.html#why-abstract-only-automated-analysis-can-mislead",
+    "href": "templates/evidence-clinic-card.html#why-abstract-only-automated-analysis-can-mislead",
+    "title": "Week 11: Project Evidence Clinic Card",
+    "section": "Why Abstract-Only Automated Analysis Can Mislead",
+    "text": "Why Abstract-Only Automated Analysis Can Mislead\nAn LLM or classifier cannot inspect evidence absent from its input. Distinguish a source’s reported result from the model’s inference about your project. Require a source locator for consequential claims and mark missing conditions as not reported in the supplied text.\nCheck the actual article for measurement definitions, sample and controls, comparisons, numerical results and limitations. Record the difference between the source context and yours. More text can make assessment possible, but it does not remove the need to judge study quality and transferability.\n\nOptional Literature-Set Extension\nIf you extend the RIS/OpenAlex demonstration, retain the query, dates, filters, source-specific counts, raw export, duplicate decisions and screening reasons. Label a classroom subset as a subset. Matching the same records in OpenAlex is metadata checking; an independent search that discovers additional records needs its own log.\nThese records can support PRISMA reporting, but a cleaned bibliography does not complete screening, retrieval, eligibility assessment or synthesis. Do not fill unperformed flow-diagram stages with zero. PRISMA search guidance · flow diagram guidance."
+  },
+  {
+    "objectID": "templates/evidence-clinic-card.html#carry-the-result-into-a4",
+    "href": "templates/evidence-clinic-card.html#carry-the-result-into-a4",
+    "title": "Week 11: Project Evidence Clinic Card",
+    "section": "Carry the Result into A4",
+    "text": "Carry the Result into A4\nUpdate the relevant Practice Case, Research Brief or Object Card. Save source locations and verification notes in the capsule alongside the runnable workflow, inputs and instructions. Screenshots can support the explanation but cannot replace the runnable artifact.\nUse the existing Feedback + Revision Ledger to record what the peer/instructor challenged, what changed and why. A4 still requires at least three entries across the project and a Reflection Note. See the six-component brief and final checklist."
   }
 ]
