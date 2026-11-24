@@ -25,4 +25,13 @@ Updated only the Week 11 schedule section and A4 check-in row. The deck now name
 
 ## Publication
 
-Source must be pushed to `main` before deployment. Publish only the six changed `docs/` files over the latest `gh-pages` tree, preserving all other published files. Record the resulting source commit, deployment commit and Pages run below after completion.
+Source was pushed to `main` before deployment. Published only the six changed `docs/` files over the latest `gh-pages` tree, preserving all other published files.
+
+- Source commit: `f16dbf7713caf2489e361e2f37f39e9b37772061`.
+- Deployment commit: `2e370364f283867f7ef32a0da17c062c1b243d51`, parent `be8e9072d2ac8f4ad9dd5ec50ef3343467e912d4`.
+- Each uploaded file's Git blob hash matched its local rendered file. A recursive tree comparison confirmed exactly six changed paths and 227 other published files preserved.
+- GitHub Pages run [45301095983](https://github.com/clementinec/ARCH7476/actions/runs/45301095983) completed successfully for the deployment commit.
+- The web reader could not access the public deck URL after deployment. Deployment and published-file hashes are verified; a live browser inspection is not claimed.
+- Published deck: <https://clementinec.github.io/ARCH7476/weeks_v2/week-11.html>.
+- Published card: <https://clementinec.github.io/ARCH7476/templates/evidence-clinic-card.html>.
+- Published optional lab: <https://clementinec.github.io/ARCH7476/site_tools/regex-lab.html>.
