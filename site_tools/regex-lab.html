@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Regex Lab · ARCH7476 Week 11</title>
+<style>
+:root { --ink:#1a1a1a; --muted:#595959; --bg:#f6f5f1; --paper:#fff; --rule:#d9d6cf; --accent:#2457a6; --signal:#e4572e; }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--ink); background:var(--bg); font:16px/1.55 "Helvetica Neue",Arial,sans-serif; }
+main { max-width:1160px; margin:auto; padding:24px; }
+nav { display:flex; flex-wrap:wrap; gap:20px; margin-bottom:20px; }
+a { color:var(--accent); text-underline-offset:3px; }
+h1 { font-size:clamp(25px,4vw,36px); line-height:1.2; margin:0 0 14px; }
+h2 { font-size:21px; margin:0 0 14px; }
+h3 { font-size:17px; margin:20px 0 8px; }
+p { margin:0 0 14px; }
+.intro { max-width:85ch; }
+.grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:20px; margin:20px 0; }
+.panel { background:var(--paper); border:1px solid var(--rule); border-radius:6px; padding:20px; min-width:0; }
+.note { border-left:5px solid var(--signal); padding:10px 15px; background:var(--paper); }
+label { display:block; font-weight:600; margin:16px 0 5px; }
+input,select,textarea,button { font:inherit; }
+input,select,textarea { display:block; width:100%; border:1px solid #858585; border-radius:4px; background:#fff; color:var(--ink); padding:9px; }
+textarea { resize:vertical; min-height:210px; tab-size:4; }
+input,textarea,code,pre,td { font-family:Menlo,Consolas,monospace; font-size:14px; }
+code { overflow-wrap:anywhere; }
+button { background:var(--ink); color:#fff; border:2px solid var(--ink); border-radius:4px; padding:10px 18px; margin:16px 0; cursor:pointer; }
+button:disabled { opacity:.65; cursor:wait; }
+:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
+.help { font-size:14px; color:var(--muted); margin-top:5px; }
+.status { font-weight:600; min-height:3em; }
+.error { color:#9f241b; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; background:var(--bg); border:1px solid var(--rule); padding:14px; min-height:120px; max-height:390px; overflow:auto; }
+mark { background:#ffe09a; color:#1a1a1a; border-bottom:2px solid #855200; }
+table { border-collapse:collapse; width:100%; font-size:14px; }
+th,td { text-align:left; vertical-align:top; padding:8px; border-bottom:1px solid var(--rule); overflow-wrap:anywhere; }
+th { font-family:"Helvetica Neue",Arial,sans-serif; }
+.tablewrap { overflow:auto; max-height:380px; }
+ol,ul { padding-left:23px; }
+footer { font-size:14px; color:var(--muted); margin-top:20px; }
+@media(max-width:800px) { .grid { grid-template-columns:1fr; } main { padding:16px; } .panel { padding:16px; } }
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="Course links"><a href="../weeks_v2/week-11.html">← Week 11 slides</a><a href="../templates/evidence-clinic-card.html">Evidence clinic card</a></nav>
+<header class="intro">
+<h1>Regex Lab: test a text pattern</h1>
+<p class="help">Optional support demo · 3–5 minutes · choose one example. Return to your own project's literature claim and evidence after this check.</p>
+<p>A <strong>regular expression (regex)</strong> describes a pattern in characters. Use it to find terms, check filenames or extract a labelled field. It does not understand a design claim, judge a paper, or work like a semantic search engine.</p>
+<p class="note"><strong>Illustrative text, not research data.</strong> These small examples are authored for this exercise. The DOI example uses a real paper identifier solely to demonstrate a field format; it is not a ScienceDirect export.</p>
+</header>
+<div class="grid">
+<section class="panel" aria-labelledby="setup-heading">
+<h2 id="setup-heading">1. Predict, then run</h2>
+<label for="preset">Load an example</label>
+<select id="preset">
+<option value="shade">Design terms: shade and canopy</option>
+<option value="filename">Filename rule: two-digit variant number</option>
+<option value="doi">RIS-style DOI field: capture the value</option>
+<option value="passive">Meaning trap: “not passive”</option>
+</select>
+<p id="example-note" class="help"></p>
+<label for="pattern">Pattern — omit the surrounding /slashes/</label>
+<input id="pattern" type="text" maxlength="200" autocomplete="off" spellcheck="false" aria-describedby="pattern-help">
+<p id="pattern-help" class="help">Editable. Maximum 200 characters. Backslashes are typed once here: <code>\b</code>, not <code>\\b</code>.</p>
+<label for="flags">JavaScript regex flags</label>
+<input id="flags" type="text" maxlength="4" autocomplete="off" spellcheck="false" aria-describedby="flags-help">
+<p id="flags-help" class="help"><code>i</code>: ignore case. <code>m</code>: <code>^</code>/<code>$</code> mark line boundaries. <code>u</code>: Unicode mode. <code>g</code>: enumerate matches; this lab adds it automatically. Only <code>i m g u</code>, each at most once, are allowed.</p>
+<label for="sample">Text to inspect</label>
+<textarea id="sample" maxlength="5000" spellcheck="false" aria-describedby="sample-help"></textarea>
+<p id="sample-help" class="help">Maximum 5,000 characters. Before running, identify one expected match and one item that should not match.</p>
+<button id="run" type="button">Run pattern</button>
+<p class="help">Changing inputs does not execute a pattern. Results use your browser’s JavaScript regex engine; other search tools may use different syntax.</p>
+</section>
+<section class="panel" aria-labelledby="results-heading">
+<h2 id="results-heading">2. Inspect what matched</h2>
+<p id="status" class="status" role="status" aria-live="polite">Load an example, predict the matches, then select Run pattern.</p>
+<h3>Matched text</h3>
+<pre id="highlight" aria-label="Text with matches highlighted"></pre>
+<p class="help">Yellow marks show matched characters. A zero-length match has no characters to highlight; its position is listed below. Positions count UTF-16 code units from 0.</p>
+<h3>Matches and capture groups</h3>
+<p class="help">Parentheses capture parts of a match. The DOI example stores the field value in group 1. Unmatched optional groups are labelled explicitly.</p>
+<div class="tablewrap">
+<table><caption id="table-caption">Run a pattern to populate this table.</caption><thead><tr><th scope="col">Match / position</th><th scope="col">Full match</th><th scope="col">Capture groups</th></tr></thead><tbody id="matches"></tbody></table>
+</div>
+</section>
+</div>
+<section class="panel" aria-labelledby="interpret-heading">
+<h2 id="interpret-heading">3. Judge the pattern against your purpose</h2>
+<ol>
+<li><strong>False positive:</strong> an unwanted item matches. <code>\bpassive\b</code> matches “not passive”; matching the word does not establish a passive-design claim.</li>
+<li><strong>False negative:</strong> a relevant item is missed. The shade pattern misses “overhang” and “shaded”, even when either could matter to your design question.</li>
+<li><strong>Revise and recheck:</strong> edit one term, filename or field. Predict the effect, run again, and record the expected versus observed result and one remaining limitation on the clinic card.</li>
+</ol>
+<p>Boundary symbols and groups control text matching, not meaning. The filename example checks a naming rule, not whether the file exists or contains valid data. The DOI example extracts a field value; it does not validate the identifier or the research.</p>
+<p class="help">DOI format demonstration: Mora &amp; Bardhan (2025), <em>Towards carbon neutrality: mapping mass retrofit opportunities in Cambridge, UK</em>, <code>10.1098/rsos.241337</code>. The example formats published citation metadata for a field-extraction exercise; it is not a database export.</p>
+</section>
+<footer>This page runs locally without external libraries, analytics or network requests. Pattern execution is isolated in a Web Worker and stopped after 500 ms. A completed test does not make the pattern error-proof; test representative examples and exceptions. If the browser blocks workers, this page reports the limitation instead of running your pattern on the main page.</footer>
+</main>
+<script>
+"use strict";
+const PRESETS = {
+  shade: {
+    pattern: String.raw`\b(shad(e|ing)|canop(y|ies))\b`, flags: "i",
+    text: "Shade at the entrance.\nSHADING along the west facade.\nA canopy above the route; two canopies beside the court.\nA shaded bench and an overhang are also relevant.\nThe word canopy-like contains a canopy term.",
+    note: "Expected: 6 matches, including two occurrences of canopy in the final line. Notice that shaded and overhang are missed; decide whether those omissions matter."
+  },
+  filename: {
+    pattern: String.raw`^variant_[0-9]{2}\.csv$`, flags: "m",
+    text: "variant_01.csv\nvariant_12.csv\nvariant_1.csv\nvariant_123.csv\nVariant_03.csv\nvariant_04.csv.bak\nnotes_variant_05.csv",
+    note: "Expected: 2 matches. Each complete line must contain variant_, exactly two digits, and .csv. Case matters without i."
+  },
+  doi: {
+    pattern: String.raw`^DO[ \t]+-[ \t]+(.+)$`, flags: "m",
+    text: "TY  - JOUR\nTI  - Towards carbon neutrality: mapping mass retrofit opportunities in Cambridge, UK\nDO  - 10.1098/rsos.241337\nN1  - A note mentioning DO is not the DOI field\nER  -",
+    note: "Expected: 1 match; group 1 is 10.1098/rsos.241337. This is an authored RIS-style format example, not an export from a database."
+  },
+  passive: {
+    pattern: String.raw`\bpassive\b`, flags: "i",
+    text: "This scheme uses passive cooling.\nThis scheme is not passive.\nPassive strategies need local testing.\nA passively cooled room uses a different word form.",
+    note: "Expected: 3 word matches. For the purpose ‘find claims of passive design’, not passive is a false positive and passively may be a false negative."
+  }
+};
+const el = id => document.getElementById(id);
+let activeWorker = null;
+let activeTimer = null;
+let activeUrl = null;
+let generation = 0;
+
+function stopWorker() {
+  if (activeWorker) activeWorker.terminate();
+  if (activeTimer !== null) clearTimeout(activeTimer);
+  if (activeUrl) URL.revokeObjectURL(activeUrl);
+  activeWorker = null; activeTimer = null; activeUrl = null;
+  el("run").disabled = false;
+}
+function setStatus(message, error = false) {
+  el("status").textContent = message;
+  el("status").classList.toggle("error", error);
+}
+function resetResults(message) {
+  generation += 1;
+  stopWorker();
+  el("highlight").textContent = el("sample").value;
+  el("matches").replaceChildren();
+  el("table-caption").textContent = "No current test result.";
+  setStatus(message);
+}
+function loadPreset() {
+  const preset = PRESETS[el("preset").value];
+  el("pattern").value = preset.pattern;
+  el("flags").value = preset.flags;
+  el("sample").value = preset.text;
+  el("example-note").textContent = preset.note;
+  resetResults("Example loaded. Predict the matches, then select Run pattern.");
+}
+
+// User-supplied expressions are compiled and executed only inside this worker.
+function regexWorker() {
+  self.onmessage = event => {
+    const { pattern, flags, text } = event.data;
+    try {
+      const regex = new RegExp(pattern, flags.includes("g") ? flags : flags + "g");
+      const matches = [];
+      let count = 0, match;
+      while ((match = regex.exec(text)) !== null) {
+        count += 1;
+        if (matches.length < 200) {
+          matches.push({ start: match.index, end: match.index + match[0].length,
+            groups: match.slice(1).map(value => value === undefined ? null : value.slice(0, 250)),
+            shortened: match.slice(1).map(value => value !== undefined && value.length > 250) });
+        }
+        // RegExp.exec does not itself advance after an empty match.
+        if (match[0].length === 0) {
+          const position = regex.lastIndex;
+          const first = text.charCodeAt(position), next = text.charCodeAt(position + 1);
+          regex.lastIndex += flags.includes("u") && first >= 0xD800 && first <= 0xDBFF && next >= 0xDC00 && next <= 0xDFFF ? 2 : 1;
+        }
+      }
+      self.postMessage({ count, matches });
+    } catch (error) { self.postMessage({ error: error.message }); }
+  };
+}
+
+function showResults(result, text, flags) {
+  const output = el("highlight");
+  output.replaceChildren();
+  let cursor = 0;
+  for (const match of result.matches) {
+    output.appendChild(document.createTextNode(text.slice(cursor, match.start)));
+    if (match.end > match.start) {
+      const mark = document.createElement("mark");
+      mark.textContent = text.slice(match.start, match.end);
+      output.appendChild(mark);
+    }
+    cursor = match.end;
+  }
+  output.appendChild(document.createTextNode(text.slice(cursor)));
+  const shown = result.matches.slice(0, 30);
+  const body = el("matches");
+  body.replaceChildren();
+  shown.forEach((match, index) => {
+    const row = document.createElement("tr");
+    const complete = text.slice(match.start, match.end);
+    const values = [
+      `${index + 1} / ${match.start}`,
+      complete.length ? complete.slice(0, 250) + (complete.length > 250 ? "… [truncated]" : "") : "[zero-length match]",
+      match.groups.length ? match.groups.map((value, i) => `${i + 1}: ${value === null ? "[group did not match]" : value === "" ? "[empty string]" : value}${match.shortened[i] ? "… [truncated]" : ""}`).join("\n") : "No capture groups"
+    ];
+    values.forEach(value => {
+      const cell = document.createElement("td");
+      cell.textContent = value;
+      cell.style.whiteSpace = "pre-wrap";
+      row.appendChild(cell);
+    });
+    body.appendChild(row);
+  });
+  el("table-caption").textContent = `${shown.length} of ${result.count} matches shown; table limited to 30 matches, each value to 250 characters.`;
+  setStatus(`${result.count} match${result.count === 1 ? "" : "es"}. Effective flags: ${flags.includes("g") ? flags : flags + "g"}.${result.count > 200 ? " Only the first 200 matches are highlighted." : ""} Compare this with your prediction.`);
+}
+
+function runPattern() {
+  resetResults("Running in an isolated worker…");
+  const pattern = el("pattern").value;
+  const flags = el("flags").value;
+  const text = el("sample").value;
+  if (pattern.length > 200 || text.length > 5000) return setStatus("Test not run: use at most 200 pattern characters and 5,000 text characters.", true);
+  if (/[^imgu]/.test(flags) || new Set(flags).size !== flags.length) return setStatus("Test not run: flags may contain only i, m, g and u, with no spaces or repeats.", true);
+  if (typeof Worker === "undefined" || typeof Blob === "undefined" || typeof URL.createObjectURL !== "function") return setStatus("Test unavailable: this browser cannot create the isolated worker. Try a modern browser that allows local Blob workers. Your pattern has not run.", true);
+  const runId = generation;
+  try {
+    activeUrl = URL.createObjectURL(new Blob([`(${regexWorker.toString()})();`], { type: "text/javascript" }));
+    activeWorker = new Worker(activeUrl);
+    el("run").disabled = true;
+    activeWorker.onmessage = event => {
+      if (runId !== generation) return;
+      stopWorker();
+      if (event.data.error) setStatus(`Pattern error: ${event.data.error}`, true);
+      else showResults(event.data, text, flags);
+    };
+    activeWorker.onerror = event => {
+      if (runId !== generation) return;
+      event.preventDefault();
+      stopWorker();
+      setStatus("Worker could not complete the test. Your browser may block local Blob workers; try another browser. No main-page fallback was used.", true);
+    };
+    activeTimer = setTimeout(() => {
+      if (runId !== generation) return;
+      stopWorker();
+      setStatus("Stopped after 500 ms: no result was established. Simplify the pattern or shorten the text; nested repeated groups can be expensive. Slow worker startup can also trigger this limit.", true);
+    }, 500);
+    activeWorker.postMessage({ pattern, flags, text });
+  } catch (error) {
+    stopWorker();
+    setStatus("Test unavailable: the browser blocked creation of the isolated worker. Try another browser; the pattern was not run on the main page.", true);
+  }
+}
+el("preset").addEventListener("change", loadPreset);
+el("run").addEventListener("click", runPattern);
+["pattern", "flags", "sample"].forEach(id => el(id).addEventListener("input", () => {
+  el("example-note").textContent = "Inputs edited: the original example's expected count may no longer apply. Make a new prediction.";
+  resetResults("Inputs changed. Select Run pattern to test this version.");
+}));
+window.addEventListener("pagehide", stopWorker);
+loadPreset();
+</script>
+</body>
+</html>
