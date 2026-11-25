@@ -57,6 +57,7 @@ footer { font-size:14px; color:var(--muted); margin-top:20px; }
 <label for="preset">Load an example</label>
 <select id="preset">
 <option value="shade">Design terms: shade and canopy</option>
+<option value="units">Numbers with units: temperatures in °C</option>
 <option value="filename">Filename rule: two-digit variant number</option>
 <option value="doi">RIS-style DOI field: capture the value</option>
 <option value="passive">Meaning trap: “not passive”</option>
@@ -106,6 +107,11 @@ const PRESETS = {
     pattern: String.raw`\b(shad(e|ing)|canop(y|ies))\b`, flags: "i",
     text: "Shade at the entrance.\nSHADING along the west facade.\nA canopy above the route; two canopies beside the court.\nA shaded bench and an overhang are also relevant.\nThe word canopy-like contains a canopy term.",
     note: "Expected: 6 matches, including two occurrences of canopy in the final line. Notice that shaded and overhang are missed; decide whether those omissions matter."
+  },
+  units: {
+    pattern: String.raw`\d+(\.\d+)?\s?°C`, flags: "",
+    text: "Wall difference above 2°C suggests a higher retrofit need.\nA 2.5 °C difference at the window frame.\n25 buildings were surveyed.\nThe 0.5 K drift is sensor noise.\nIndoor setpoint unknown (°C not recorded).",
+    note: "Expected: 2 matches, 2°C and 2.5 °C. The count of buildings, the value in kelvin and the bare unit are not matched. Authored sentences, not quotations from the paper."
   },
   filename: {
     pattern: String.raw`^variant_[0-9]{2}\.csv$`, flags: "m",
