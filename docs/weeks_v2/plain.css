@@ -39,3 +39,10 @@
 /* Section-break slides (dark background) */
 .reveal .slides section.has-dark-background h1,
 .reveal .slides section.has-dark-background h2 { color: #fff; }
+
+/* Simple left-to-right flow of steps (used instead of tiny Mermaid diagrams) */
+.reveal .flow { display: flex; align-items: stretch; gap: 1.4em; margin: 0.6em 0; }
+.reveal .flow .step { flex: 1; background: #eaf0fa; border: 2px solid #2457a6; border-radius: 10px;
+  padding: 0.5em 0.7em; font-size: 0.75em; line-height: 1.35; position: relative; }
+.reveal .flow .step:not(:last-child)::after { content: "→"; position: absolute; right: -1.15em; top: 50%;
+  transform: translateY(-50%); color: #2457a6; font-size: 1.4em; font-weight: 700; }

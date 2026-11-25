@@ -6484,7 +6484,7 @@
     "href": "weeks_v2/week-11.html#today",
     "title": "Week 11: Evidence and Final Package Clinic",
     "section": "Today",
-    "text": "Today\n\n\nSession 1 · 50 min\n\n0–10 Did Week 10’s feedback land?\n10–14 Write down your claim, before reading\n14–30 Regex from zero\n30–42 OpenAlex: the paper, the full text, the trail\n42–50 Worked example: one paper, two readings\n\n\nSession 2 · 50 min\n\n0–16 Read your paper and rewrite the claim\n16–28 Four evidence clinics\n28–40 The final package, walked through\n40–48 Fix one thing, log it\n48–50 Next week: quick-fire and the LLM judge\n\n\n\nBring: your Week 10 Peer Review Card, your Revision Ledger, one claim and its source.\n\n\nFour students: two PhD, two undergraduate. Everyone does the same tasks on their own project. A4 is due at the end of Week 12, so every activity today should leave a change in the package.",
+    "text": "Today\n\n\nSession 1 · 50 min\n\n0–3 Why a literature check, and why now\n3–13 Did Week 10’s feedback land?\n13–17 Write down your claim, before reading\n17–31 Regex from zero\n31–44 OpenAlex, and where PRISMA fits\n44–50 Worked example: one paper, two readings\n\n\nSession 2 · 50 min\n\n0–16 Read your paper and rewrite the claim\n16–28 Four evidence clinics\n28–40 The final package, walked through\n40–48 Fix one thing, log it\n48–50 Next week: quick-fire and the LLM judge\n\n\n\nBring: your Week 10 Peer Review Card, your Revision Ledger, one claim and its source.\n\n\nFour students: two PhD, two undergraduate. Everyone does the same tasks on their own project. A4 is due at the end of Week 12, so every activity today should leave a change in the package.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6496,7 +6496,7 @@
     "href": "weeks_v2/week-11.html#week-10-your-a4-today",
     "title": "Week 11: Evidence and Final Package Clinic",
     "section": "Week 10 → your A4, today",
-    "text": "Week 10 → your A4, today\n10 min · 2½ min each\n\n\nShow the one piece of advice you got from your Week 10 reviewer.\nShow the ledger entry you wrote for it.\nShow where it changed the package: file, page or figure.\n\n\n\nYour Week 10 reviewer answers one question:\n\n“Is that what I meant?”\n\n\n\nThis is a receipt check, not a second review. If the reviewer says “not quite”, the author writes one line in the ledger clarifying the advice; they don’t redo the work now. Keep strictly to 2.5 minutes.",
+    "text": "Week 10 → your A4, today\n3–13 min · 2½ min each\n\n\nShow the one piece of advice you got from your Week 10 reviewer.\nShow the ledger entry you wrote for it.\nShow where it changed the package: file, page or figure.\n\n\n\nYour Week 10 reviewer answers one question:\n\n“Is that what I meant?”\n\n\n\nThis is a receipt check, not a second review. If the reviewer says “not quite”, the author writes one line in the ledger clarifying the advice; they don’t redo the work now. Keep strictly to 2.5 minutes.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6520,7 +6520,7 @@
     "href": "weeks_v2/week-11.html#write-it-down-first",
     "title": "Week 11: Evidence and Final Package Clinic",
     "section": "Write it down first",
-    "text": "Write it down first\n4 min · on the worksheet\n\nPick one claim your project relies on, and the source you rely on for it.\nRead only the abstract, then write:\n\n\n“The abstract says ___. I took it to mean ___ for my project, so I was going to ___.”\n\n\nPhD: a research premise or method choice. Studio: a design decision. A guideline, standard or published precedent is a valid source if that is what your decision rests on. Evidence Clinic Worksheet (PDF)\n\n\nWe do this before the tool block on purpose: the “before” reading has to be written down before anyone opens the full text. If a student already knows the paper well, they write what they would have assumed from the abstract alone.",
+    "text": "Write it down first\n13–17 min · on the worksheet\n\nPick one claim your project relies on, and the source you rely on for it.\nRead only the abstract, then write:\n\n\n“The abstract says ___. I took it to mean ___ for my project, so I was going to ___.”\n\n\nPhD: a research premise or method choice. Studio: a design decision. A guideline, standard or published precedent is a valid source if that is what your decision rests on. Evidence Clinic Worksheet (PDF)\n\n\nWe do this before the tool block on purpose: the “before” reading has to be written down before anyone opens the full text. If a student already knows the paper well, they write what they would have assumed from the abstract alone.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6664,7 +6664,7 @@
     "href": "weeks_v2/week-11.html#a-free-catalogue-you-can-read-in-the-browser",
     "title": "Week 11: Evidence and Final Package Clinic",
     "section": "A free catalogue you can read in the browser",
-    "text": "A free catalogue you can read in the browser\n\nOpenAlex is a free, open index of scholarly works: papers, authors, institutions, citations.\nPaste this into a browser tab. You don’t need an account or a key:\n\nhttps://api.openalex.org/works/doi:10.1098/rsos.241337\n\nOne DOI gives you one record: who, when, where, whether it’s free to read, what it cites and what cites it.",
+    "text": "A free catalogue you can read in the browser\n\nOpenAlex is a free, open index of scholarly works: papers, authors, institutions, citations.\nPaste this into a browser tab. You don’t need an account or a key:\n\nhttps://api.openalex.org/works/doi:10.1098/rsos.241337\n\nOne DOI gives you one record: who, when, where, whether it’s free to read, what it cites and what cites it.\n\n\nUse it when the PDF is paywalled (check oa_url), when you want to know if a paper you cite has been tested or challenged since, or when you’re building a reading list for a chapter.",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -6712,7 +6712,7 @@
     "href": "weeks_v2/week-11.html#your-turn-run-it-on-your-own-source",
     "title": "Week 11: Evidence and Final Package Clinic",
     "section": "Your turn: run it on your own source",
-    "text": "Your turn: run it on your own source\n4 min · browser tab\n\n\nhttps://api.openalex.org/works/doi:YOUR-DOI\nWrite down: the OpenAlex ID, oa_url (or “none”), cited by and references counts.\nOpen the cites: list. Note one title worth checking later.\n\n\n\nNo DOI? Search by title: https://api.openalex.org/works?search=your title words. Compare authors and year before accepting a match.\n\n\nA free API key raises the request limit and is only needed for heavier scripted use. Setup and private-key instructions",
+    "text": "Your turn: run it on your own source\n4 min · browser tab · within 31–44\n\n\nhttps://api.openalex.org/works/doi:YOUR-DOI\nWrite down: the OpenAlex ID, oa_url (or “none”), cited by and references counts.\nOpen the cites: list. Note one title worth checking later.\n\n\n\nNo DOI? Search by title: https://api.openalex.org/works?search=your title words. Compare authors and year before accepting a match.\n\n\nA free API key raises the request limit and is only needed for heavier scripted use. Setup and private-key instructions",
     "crumbs": [
       "Home",
       "Weekly Studio-Labs",
@@ -7102,11 +7102,71 @@
     "href": "schedule.html#week-11-evidence-and-final-package-clinic",
     "title": "Course Schedule",
     "section": "Week 11: Evidence and Final Package Clinic",
-    "text": "Week 11: Evidence and Final Package Clinic\nFocus: confirm that Week 10’s feedback has reached your A4 package, check what one source actually supports in your own project, learn two tools for that check (regex and OpenAlex), and walk through the final package. All four students (two PhD, two undergraduate) do the same tasks on their own projects. A claim may concern a research premise, a method choice or a studio design decision.\nPrepare: bring your Week 10 Peer Review Card, your Feedback + Revision Ledger, one claim your project relies on, and its source (DOI if it has one). Use the Evidence Clinic Worksheet (PDF). No account or API key is needed. Tool reference: Regex Lab · Evidence Clinic Card.\n\nSession 1: Feedback, claim and tools (50 minutes)\n\n\n\n\n\n\n\n\nTime\nActivity\nConcrete output\n\n\n\n\n0–10 min\nDid Week 10’s feedback land? 2½ minutes each: the advice, the ledger entry, where it changed the package. The Week 10 reviewer confirms.\nStatus of each Week 10 entry: addressed, in progress, or deferred/rejected with a reason.\n\n\n10–14 min\nWrite down your claim and your abstract-only reading, before opening the full text\nThe “before” record.\n\n\n14–30 min\nRegex from zero: word edges, alternatives, digits and units, filename checks, capturing a field; 5 minutes in the Regex Lab\nThree working patterns, and one example of a false positive and a false negative.\n\n\n30–42 min\nOpenAlex: one DOI gives one record, the free full-text link, what it cites and what cites it. Run it on your own source.\nOpenAlex ID, oa_url, citation counts and one related work to check.\n\n\n42–50 min\nWorked example: Mora & Bardhan (2025), abstract versus full text\nHow the sample and operating conditions narrow a studio use of the method.\n\n\n\n\n\nSession 2: Read, revise and walk through the package (50 minutes)\n\n\n\n\n\n\n\n\nTime\nActivity\nConcrete output\n\n\n\n\n0–16 min\nRead your source’s methods, results, figures and limitations; rewrite the claim\nBefore · Found · After, with section/page/figure locations.\n\n\n16–28 min\nFour three-minute evidence clinics\nOne question per project, and the author’s accept/adapt/defer/reject response.\n\n\n28–40 min\nFinal package walkthrough: what “done” looks like for each component, the capsule rerun test, where today’s work goes\nA list of the gaps left in your own package.\n\n\n40–48 min\nFix one thing and log it\nOne changed component and one ledger entry.\n\n\n48–50 min\nWeek 12 preview: quick-fire and the LLM judge\nConsent decision for the LLM judge.\n\n\n\nFeeds: A4 Final Package. The six required components remain the Practice Case, Research Brief, Object Card, Reproducibility Capsule, Feedback + Revision Ledger (at least three entries across the project), and Reflection Note. Use the Final Package Checklist. This clinic is formative and changes no A4 requirements, weights or deadlines.",
+    "text": "Week 11: Evidence and Final Package Clinic\nFocus: confirm that Week 10’s feedback has reached your A4 package, check what one source actually supports in your own project, learn two tools for that check (regex and OpenAlex), and walk through the final package. This is not a new literature review: it applies the Week 2 evidence audit to published sources, because A4’s Research Brief must name its sources and evidence quality is 20% of the A4 mark. All four students (two PhD, two undergraduate) do the same tasks on their own projects. A claim may concern a research premise, a method choice or a studio design decision.\nPrepare: bring your Week 10 Peer Review Card, your Feedback + Revision Ledger, one claim your project relies on, and its source (DOI if it has one). Use the Evidence Clinic Worksheet (PDF). No account or API key is needed. Tool reference: Regex Lab · Evidence Clinic Card.\n\nSession 1: Feedback, claim and tools (50 minutes)\n\n\n\n\n\n\n\n\nTime\nActivity\nConcrete output\n\n\n\n\n0–3 min\nWhy a literature check now, and where it sits in your workflow\nThe link from the Week 2 evidence audit to A4’s source and evidence-quality requirements.\n\n\n3–13 min\nDid Week 10’s feedback land? 2½ minutes each: the advice, the ledger entry, where it changed the package. The Week 10 reviewer confirms.\nStatus of each Week 10 entry: addressed, in progress, or deferred/rejected with a reason.\n\n\n13–17 min\nWrite down your claim and your abstract-only reading, before opening the full text\nThe “before” record.\n\n\n17–31 min\nRegex from zero: where you’d use it, word edges, alternatives, digits and units, filename checks, capturing a field; 5 minutes in the Regex Lab\nThree working patterns, and one example of a false positive and a false negative.\n\n\n31–44 min\nOpenAlex: one DOI gives one record, the free full-text link, what it cites and what cites it. Run it on your own source. Where this leads: the PRISMA flow diagram for reporting a systematic review.\nOpenAlex ID, oa_url, citation counts and one related work to check. PhD students: start a search log (query, date, source, counts).\n\n\n44–50 min\nWorked example: Mora & Bardhan (2025), abstract versus full text\nHow the sample and operating conditions narrow a studio use of the method.\n\n\n\n\n\nSession 2: Read, revise and walk through the package (50 minutes)\n\n\n\n\n\n\n\n\nTime\nActivity\nConcrete output\n\n\n\n\n0–16 min\nRead your source’s methods, results, figures and limitations; rewrite the claim\nBefore · Found · After, with section/page/figure locations.\n\n\n16–28 min\nFour three-minute evidence clinics\nOne question per project, and the author’s accept/adapt/defer/reject response.\n\n\n28–40 min\nFinal package walkthrough: what “done” looks like for each component, the capsule rerun test, where today’s work goes\nA list of the gaps left in your own package.\n\n\n40–48 min\nFix one thing and log it\nOne changed component and one ledger entry.\n\n\n48–50 min\nWeek 12 preview: quick-fire and the LLM judge\nConsent decision for the LLM judge.\n\n\n\nFeeds: A4 Final Package. The six required components remain the Practice Case, Research Brief, Object Card, Reproducibility Capsule, Feedback + Revision Ledger (at least three entries across the project), and Reflection Note. Use the Final Package Checklist. This clinic is formative and changes no A4 requirements, weights or deadlines.",
     "crumbs": [
       "Home",
       "Course Overview",
       "Course Schedule"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#why-a-literature-check-and-why-now",
+    "href": "weeks_v2/week-11.html#why-a-literature-check-and-why-now",
+    "title": "Week 11: Evidence and Final Package Clinic",
+    "section": "Why a literature check, and why now?",
+    "text": "Why a literature check, and why now?\n\nThis isn’t a new literature-review assignment. It’s the Week 2 evidence audit, applied to the one kind of source we haven’t inspected yet: published papers.\n\n\n\nA4’s Research Brief must name its input sources.\nEvidence quality and uncertainty is 20% of the A4 mark.\nThe brief’s first listed failure mode: “making stronger claims than the evidence supports”.\n\n\n\nPapers are the evidence most often cited from the abstract alone. One claim, one source, read properly.\n\n\nWeek 2’s ladder put “well-matched comparative evidence” near the top and “a single relevant precedent” in the middle, strong only if assumptions and context hold. A published study is exactly that: strong for its own conditions, and today’s question is whether those conditions match the student’s project.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#where-today-sits-in-your-workflow",
+    "href": "weeks_v2/week-11.html#where-today-sits-in-your-workflow",
+    "title": "Week 11: Evidence and Final Package Clinic",
+    "section": "Where today sits in your workflow",
+    "text": "Where today sits in your workflow\n\n\nFind\nOpenAlex: the record, a free PDF, what cites it\n\n\nRead\nfull text: methods, results, limitations\n\n\nCheck\nregex over text and files\n\n\nRecord\nBrief, capsule source list, ledger\n\n\n\nWeek 2 audited your evidence · Week 8 reran your workflow and fact-checked AI · Week 10 reviewed each other’s work · Week 11 checks the published sources · Week 12 checks an AI critic.\n\n\nThe same question each time: what does this evidence actually support?",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#where-youll-actually-use-it",
+    "href": "weeks_v2/week-11.html#where-youll-actually-use-it",
+    "title": "Week 11: Evidence and Final Package Clinic",
+    "section": "Where you’ll actually use it",
+    "text": "Where you’ll actually use it\n\n\n\n\n\n\n\nJob in your project\nExample pattern\n\n\n\n\nCapsule: check every exported variant file follows the README’s naming rule\n^variant_\\d{2}\\.csv$\n\n\nReading: find every temperature reported in a paper’s text\n\\d+(\\.\\d+)?\\s?°C\n\n\nData: pull the number out of a messy column (“approx. 0.62 WWR”)\n=REGEXEXTRACT(A2, \"\\d+\\.?\\d*\") in Sheets\n\n\nLiterature (PhD): flag records in an export that mention your method\n\\bthermal imag[a-z]* with i\n\n\n\n\nTen minutes of regex can save an hour of scrolling, but only if you check what it missed.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#where-the-trail-leads-prisma",
+    "href": "weeks_v2/week-11.html#where-the-trail-leads-prisma",
+    "title": "Week 11: Evidence and Final Package Clinic",
+    "section": "Where the trail leads: PRISMA",
+    "text": "Where the trail leads: PRISMA\n\nWhen you review many papers, readers need to know how you chose them.\nPRISMA 2020 is the standard way to report that for a systematic review: a 27-item checklist and a flow diagram.\n\n\n\nIdentification\nrecords found, by source\n\n\nScreening\nrecords excluded, with reasons\n\n\nIncluded\nstudies in the review\n\n\n\nPRISMA 2020 statement and flow diagram · PRISMA-S for reporting searches",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
+    ]
+  },
+  {
+    "objectID": "weeks_v2/week-11.html#todays-trail-is-the-first-box",
+    "href": "weeks_v2/week-11.html#todays-trail-is-the-first-box",
+    "title": "Week 11: Evidence and Final Package Clinic",
+    "section": "Today’s trail is the first box",
+    "text": "Today’s trail is the first box\n\n\n\nFor the shared paper, OpenAlex gave us:\n\n33 works it cites\n2 works citing it\n\n= 35 records identified by citation searching, one source, 25 Nov 2026.\n\n\n\nScreening: not done.\nIncluded: not done.\n\n\nNever fill a box you didn’t do, not even with a zero.\n\n\n\nPhD: a review chapter will need the full diagram, so start the log now: query, date, source, counts. Studio: when a review paper shows this diagram, it tells you how its sources were chosen, which is worth checking before you cite it.",
+    "crumbs": [
+      "Home",
+      "Weekly Studio-Labs",
+      "W11: Final Package"
     ]
   }
 ]

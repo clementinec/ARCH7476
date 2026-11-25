@@ -324,7 +324,7 @@ The repair can improve a claim/figure or test a small component in an existing G
 
 ## Week 11: Evidence and Final Package Clinic
 
-**Focus:** confirm that Week 10's feedback has reached your A4 package, check what one source actually supports in your own project, learn two tools for that check (regex and OpenAlex), and walk through the final package. All four students (two PhD, two undergraduate) do the same tasks on their own projects. A claim may concern a research premise, a method choice or a studio design decision.
+**Focus:** confirm that Week 10's feedback has reached your A4 package, check what one source actually supports in your own project, learn two tools for that check (regex and OpenAlex), and walk through the final package. This is not a new literature review: it applies the Week 2 evidence audit to published sources, because A4's Research Brief must name its sources and evidence quality is 20% of the A4 mark. All four students (two PhD, two undergraduate) do the same tasks on their own projects. A claim may concern a research premise, a method choice or a studio design decision.
 
 **Prepare:** bring your Week 10 Peer Review Card, your Feedback + Revision Ledger, one claim your project relies on, and its source (DOI if it has one). Use the [Evidence Clinic Worksheet (PDF)](templates/evidence-clinic-worksheet.pdf). No account or API key is needed. Tool reference: [Regex Lab](site_tools/regex-lab.html) · [Evidence Clinic Card](templates/evidence-clinic-card.qmd).
 
@@ -332,11 +332,12 @@ The repair can improve a claim/figure or test a small component in an existing G
 
 | Time | Activity | Concrete output |
 |---|---|---|
-| 0–10 min | Did Week 10's feedback land? 2½ minutes each: the advice, the ledger entry, where it changed the package. The Week 10 reviewer confirms. | Status of each Week 10 entry: addressed, in progress, or deferred/rejected with a reason. |
-| 10–14 min | Write down your claim and your abstract-only reading, before opening the full text | The "before" record. |
-| 14–30 min | Regex from zero: word edges, alternatives, digits and units, filename checks, capturing a field; 5 minutes in the Regex Lab | Three working patterns, and one example of a false positive and a false negative. |
-| 30–42 min | OpenAlex: one DOI gives one record, the free full-text link, what it cites and what cites it. Run it on your own source. | OpenAlex ID, `oa_url`, citation counts and one related work to check. |
-| 42–50 min | Worked example: Mora & Bardhan (2025), abstract versus full text | How the sample and operating conditions narrow a studio use of the method. |
+| 0–3 min | Why a literature check now, and where it sits in your workflow | The link from the Week 2 evidence audit to A4's source and evidence-quality requirements. |
+| 3–13 min | Did Week 10's feedback land? 2½ minutes each: the advice, the ledger entry, where it changed the package. The Week 10 reviewer confirms. | Status of each Week 10 entry: addressed, in progress, or deferred/rejected with a reason. |
+| 13–17 min | Write down your claim and your abstract-only reading, before opening the full text | The "before" record. |
+| 17–31 min | Regex from zero: where you'd use it, word edges, alternatives, digits and units, filename checks, capturing a field; 5 minutes in the Regex Lab | Three working patterns, and one example of a false positive and a false negative. |
+| 31–44 min | OpenAlex: one DOI gives one record, the free full-text link, what it cites and what cites it. Run it on your own source. Where this leads: the PRISMA flow diagram for reporting a systematic review. | OpenAlex ID, `oa_url`, citation counts and one related work to check. PhD students: start a search log (query, date, source, counts). |
+| 44–50 min | Worked example: Mora & Bardhan (2025), abstract versus full text | How the sample and operating conditions narrow a studio use of the method. |
 
 ### Session 2: Read, revise and walk through the package (50 minutes)
 

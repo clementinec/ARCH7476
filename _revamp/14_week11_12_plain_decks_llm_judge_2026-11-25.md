@@ -57,3 +57,22 @@ A4 components, weights and deadline are unchanged.
 - Removed 44 stale search-index anchors from changed pages; the 581 records
   for other pages are identical to the previous commit.
 - `git diff --check` passed.
+
+## Follow-up: why, where, and PRISMA
+
+- Added "Why a literature check, and why now?" (links the Week 2 evidence
+  audit to A4's input-source requirement, the 20% evidence-quality criterion
+  and the overclaiming failure mode) and "Where today sits in your workflow"
+  (find → read → check → record; Weeks 2, 8, 10, 11, 12).
+- Added "Where you'll actually use it" for regex (capsule filenames, values in
+  a paper, a Sheets column, a PhD literature export) and a when-to-use note
+  for OpenAlex. Every pattern was run in Node; the Sheets pattern has no
+  capture group, so REGEXEXTRACT returns the whole number.
+- Added two PRISMA slides: PRISMA 2020 (27-item checklist, flow diagram) and
+  "Today's trail is the first box": 33 references + 2 citing works = 35
+  records identified by citation searching; screening and inclusion are shown
+  as not done.
+- Session 1 re-timed (0–3 why, 3–13 feedback, 13–17 claim, 17–31 regex,
+  31–44 OpenAlex + PRISMA, 44–50 worked example); schedule updated to match.
+- Diagrams are CSS step boxes rather than Mermaid, which rendered too small.
+  Screenshots of the new slides checked.

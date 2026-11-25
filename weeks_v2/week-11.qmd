@@ -20,11 +20,12 @@ format:
 ::: {.column width="50%"}
 ### Session 1 · 50 min
 
-- **0–10** Did Week 10's feedback land?
-- **10–14** Write down your claim, before reading
-- **14–30** Regex from zero
-- **30–42** OpenAlex: the paper, the full text, the trail
-- **42–50** Worked example: one paper, two readings
+- **0–3** Why a literature check, and why now
+- **3–13** Did Week 10's feedback land?
+- **13–17** Write down your claim, before reading
+- **17–31** Regex from zero
+- **31–44** OpenAlex, and where PRISMA fits
+- **44–50** Worked example: one paper, two readings
 :::
 ::: {.column width="50%"}
 ### Session 2 · 50 min
@@ -45,13 +46,64 @@ Bring: your Week 10 Peer Review Card, your Revision Ledger, one claim and its so
 Four students: two PhD, two undergraduate. Everyone does the same tasks on their own project. A4 is due at the end of Week 12, so every activity today should leave a change in the package.
 :::
 
+## Why a literature check, and why now?
+
+::: {.big}
+This isn't a new literature-review assignment. It's the **Week 2 evidence audit**, applied to the one kind of source we haven't inspected yet: **published papers**.
+:::
+
+::: {.fragment .big}
+- A4's Research Brief must name its **input sources**.
+- **Evidence quality and uncertainty** is 20% of the A4 mark.
+- The brief's first listed failure mode: *"making stronger claims than the evidence supports"*.
+:::
+
+::: {.fragment .punch}
+Papers are the evidence most often cited from the abstract alone. One claim, one source, read properly.
+:::
+
+::: notes
+Week 2's ladder put "well-matched comparative evidence" near the top and "a single relevant precedent" in the middle, strong only if assumptions and context hold. A published study is exactly that: strong for its own conditions, and today's question is whether those conditions match the student's project.
+:::
+
+---
+
+## Where today sits in your workflow
+
+:::: {.flow}
+::: {.step}
+**Find**\
+OpenAlex: the record, a free PDF, what cites it
+:::
+::: {.step}
+**Read**\
+full text: methods, results, limitations
+:::
+::: {.step}
+**Check**\
+regex over text and files
+:::
+::: {.step}
+**Record**\
+Brief, capsule source list, ledger
+:::
+::::
+
+::: {.big}
+**Week 2** audited your evidence · **Week 8** reran your workflow and fact-checked AI · **Week 10** reviewed each other's work · **Week 11** checks the published sources · **Week 12** checks an AI critic.
+:::
+
+::: {.punch .blue}
+The same question each time: what does this evidence actually support?
+:::
+
 # Did last week's feedback land? {background-color="#1a1a1a"}
 
 ---
 
 ## Week 10 → your A4, today
 
-[10 min · 2½ min each]{.timer}
+[3–13 min · 2½ min each]{.timer}
 
 ::: {.big}
 1. Show the **one piece of advice** you got from your Week 10 reviewer.
@@ -95,7 +147,7 @@ A reasoned rejection counts as a ledger entry. Silence doesn't.
 
 ## Write it down first
 
-[4 min · on the worksheet]{.timer}
+[13–17 min · on the worksheet]{.timer}
 
 ::: {.big}
 Pick **one claim** your project relies on, and the source you rely on for it.
@@ -134,6 +186,21 @@ You can use it in:
 
 ::: {.punch}
 It doesn't work in Google's search box. That has its own operators.
+:::
+
+---
+
+## Where you'll actually use it
+
+| Job in your project | Example pattern |
+|---|---|
+| **Capsule:** check every exported variant file follows the README's naming rule | `^variant_\d{2}\.csv$` |
+| **Reading:** find every temperature reported in a paper's text | `\d+(\.\d+)?\s?°C` |
+| **Data:** pull the number out of a messy column ("approx. 0.62 WWR") | `=REGEXEXTRACT(A2, "\d+\.?\d*")` in Sheets |
+| **Literature (PhD):** flag records in an export that mention your method | `\bthermal imag[a-z]*` with `i` |
+
+::: {.punch .blue}
+Ten minutes of regex can save an hour of scrolling, but only if you check what it missed.
 :::
 
 ---
@@ -371,6 +438,10 @@ https://api.openalex.org/works/doi:10.1098/rsos.241337
 One DOI gives you one record: who, when, where, whether it's free to read, what it cites and what cites it.
 :::
 
+::: {.src}
+Use it when the PDF is paywalled (check `oa_url`), when you want to know if a paper you cite has been tested or challenged since, or when you're building a reading list for a chapter.
+:::
+
 ---
 
 ## What comes back (trimmed)
@@ -452,7 +523,7 @@ Titles only: we have not read these two papers. The point is what the list does 
 
 ## Your turn: run it on your own source
 
-[4 min · browser tab]{.timer}
+[4 min · browser tab · within 31–44]{.timer}
 
 ::: {.big}
 1. `https://api.openalex.org/works/doi:YOUR-DOI`
@@ -484,6 +555,67 @@ Some records are also missing an abstract, have the wrong metadata, or match the
 
 ::: {.fragment .punch .blue}
 OpenAlex gets you to the paper. Only reading it tells you what it says.
+:::
+
+---
+
+## Where the trail leads: PRISMA
+
+::: {.big}
+When you review *many* papers, readers need to know **how you chose them**.
+
+**PRISMA 2020** is the standard way to report that for a systematic review: a 27-item checklist and a flow diagram.
+:::
+
+:::: {.flow}
+::: {.step}
+**Identification**\
+records found, by source
+:::
+::: {.step}
+**Screening**\
+records excluded, with reasons
+:::
+::: {.step}
+**Included**\
+studies in the review
+:::
+::::
+
+::: {.src}
+[PRISMA 2020 statement and flow diagram](https://www.prisma-statement.org/prisma-2020-flow-diagram) · [PRISMA-S for reporting searches](https://www.prisma-statement.org/prisma-search)
+:::
+
+---
+
+## Today's trail is the first box
+
+:::: {.columns}
+::: {.column width="55%"}
+::: {.big}
+For the shared paper, OpenAlex gave us:
+
+- **33** works it cites
+- **2** works citing it
+
+= **35 records identified by citation searching**, one source, 25 Nov 2026.
+:::
+:::
+::: {.column width="45%"}
+::: {.box .big}
+**Screening:** not done.
+
+**Included:** not done.
+:::
+
+::: {.punch}
+Never fill a box you didn't do, not even with a zero.
+:::
+:::
+::::
+
+::: {.src}
+**PhD:** a review chapter will need the full diagram, so start the log now: query, date, source, counts. **Studio:** when a review paper shows this diagram, it tells you how its sources were chosen, which is worth checking before you cite it.
 :::
 
 # Worked example: one paper, two readings {background-color="#1a1a1a"}

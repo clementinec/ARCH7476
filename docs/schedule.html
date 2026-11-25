@@ -1053,7 +1053,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="week-11-evidence-and-final-package-clinic" class="level2">
 <h2 class="anchored" data-anchor-id="week-11-evidence-and-final-package-clinic">Week 11: Evidence and Final Package Clinic</h2>
-<p><strong>Focus:</strong> confirm that Week 10’s feedback has reached your A4 package, check what one source actually supports in your own project, learn two tools for that check (regex and OpenAlex), and walk through the final package. All four students (two PhD, two undergraduate) do the same tasks on their own projects. A claim may concern a research premise, a method choice or a studio design decision.</p>
+<p><strong>Focus:</strong> confirm that Week 10’s feedback has reached your A4 package, check what one source actually supports in your own project, learn two tools for that check (regex and OpenAlex), and walk through the final package. This is not a new literature review: it applies the Week 2 evidence audit to published sources, because A4’s Research Brief must name its sources and evidence quality is 20% of the A4 mark. All four students (two PhD, two undergraduate) do the same tasks on their own projects. A claim may concern a research premise, a method choice or a studio design decision.</p>
 <p><strong>Prepare:</strong> bring your Week 10 Peer Review Card, your Feedback + Revision Ledger, one claim your project relies on, and its source (DOI if it has one). Use the <a href="templates/evidence-clinic-worksheet.pdf">Evidence Clinic Worksheet (PDF)</a>. No account or API key is needed. Tool reference: <a href="site_tools/regex-lab.html">Regex Lab</a> · <a href="./templates/evidence-clinic-card.html">Evidence Clinic Card</a>.</p>
 <section id="session-1-feedback-claim-and-tools-50-minutes" class="level3">
 <h3 class="anchored" data-anchor-id="session-1-feedback-claim-and-tools-50-minutes">Session 1: Feedback, claim and tools (50 minutes)</h3>
@@ -1072,27 +1072,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td>0–10 min</td>
+<td>0–3 min</td>
+<td>Why a literature check now, and where it sits in your workflow</td>
+<td>The link from the Week 2 evidence audit to A4’s source and evidence-quality requirements.</td>
+</tr>
+<tr class="even">
+<td>3–13 min</td>
 <td>Did Week 10’s feedback land? 2½ minutes each: the advice, the ledger entry, where it changed the package. The Week 10 reviewer confirms.</td>
 <td>Status of each Week 10 entry: addressed, in progress, or deferred/rejected with a reason.</td>
 </tr>
-<tr class="even">
-<td>10–14 min</td>
+<tr class="odd">
+<td>13–17 min</td>
 <td>Write down your claim and your abstract-only reading, before opening the full text</td>
 <td>The “before” record.</td>
 </tr>
-<tr class="odd">
-<td>14–30 min</td>
-<td>Regex from zero: word edges, alternatives, digits and units, filename checks, capturing a field; 5 minutes in the Regex Lab</td>
+<tr class="even">
+<td>17–31 min</td>
+<td>Regex from zero: where you’d use it, word edges, alternatives, digits and units, filename checks, capturing a field; 5 minutes in the Regex Lab</td>
 <td>Three working patterns, and one example of a false positive and a false negative.</td>
 </tr>
-<tr class="even">
-<td>30–42 min</td>
-<td>OpenAlex: one DOI gives one record, the free full-text link, what it cites and what cites it. Run it on your own source.</td>
-<td>OpenAlex ID, <code>oa_url</code>, citation counts and one related work to check.</td>
-</tr>
 <tr class="odd">
-<td>42–50 min</td>
+<td>31–44 min</td>
+<td>OpenAlex: one DOI gives one record, the free full-text link, what it cites and what cites it. Run it on your own source. Where this leads: the PRISMA flow diagram for reporting a systematic review.</td>
+<td>OpenAlex ID, <code>oa_url</code>, citation counts and one related work to check. PhD students: start a search log (query, date, source, counts).</td>
+</tr>
+<tr class="even">
+<td>44–50 min</td>
 <td>Worked example: Mora &amp; Bardhan (2025), abstract versus full text</td>
 <td>How the sample and operating conditions narrow a studio use of the method.</td>
 </tr>
@@ -2011,7 +2016,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a><span class="fu">## Week 11: Evidence and Final Package Clinic</span></span>
 <span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a>**Focus:** confirm that Week 10's feedback has reached your A4 package, check what one source actually supports in your own project, learn two tools for that check (regex and OpenAlex), and walk through the final package. All four students (two PhD, two undergraduate) do the same tasks on their own projects. A claim may concern a research premise, a method choice or a studio design decision.</span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a>**Focus:** confirm that Week 10's feedback has reached your A4 package, check what one source actually supports in your own project, learn two tools for that check (regex and OpenAlex), and walk through the final package. This is not a new literature review: it applies the Week 2 evidence audit to published sources, because A4's Research Brief must name its sources and evidence quality is 20% of the A4 mark. All four students (two PhD, two undergraduate) do the same tasks on their own projects. A claim may concern a research premise, a method choice or a studio design decision.</span>
 <span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a>**Prepare:** bring your Week 10 Peer Review Card, your Feedback + Revision Ledger, one claim your project relies on, and its source (DOI if it has one). Use the <span class="co">[</span><span class="ot">Evidence Clinic Worksheet (PDF)</span><span class="co">](templates/evidence-clinic-worksheet.pdf)</span>. No account or API key is needed. Tool reference: <span class="co">[</span><span class="ot">Regex Lab</span><span class="co">](site_tools/regex-lab.html)</span> · <span class="co">[</span><span class="ot">Evidence Clinic Card</span><span class="co">](templates/evidence-clinic-card.qmd)</span>.</span>
 <span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a></span>
@@ -2019,53 +2024,54 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Time <span class="pp">|</span> Activity <span class="pp">|</span> Concrete output <span class="pp">|</span></span>
 <span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
-<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 0–10 min <span class="pp">|</span> Did Week 10's feedback land? 2½ minutes each: the advice, the ledger entry, where it changed the package. The Week 10 reviewer confirms. <span class="pp">|</span> Status of each Week 10 entry: addressed, in progress, or deferred/rejected with a reason. <span class="pp">|</span></span>
-<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 10–14 min <span class="pp">|</span> Write down your claim and your abstract-only reading, before opening the full text <span class="pp">|</span> The "before" record. <span class="pp">|</span></span>
-<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 14–30 min <span class="pp">|</span> Regex from zero: word edges, alternatives, digits and units, filename checks, capturing a field; 5 minutes in the Regex Lab <span class="pp">|</span> Three working patterns, and one example of a false positive and a false negative. <span class="pp">|</span></span>
-<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 30–42 min <span class="pp">|</span> OpenAlex: one DOI gives one record, the free full-text link, what it cites and what cites it. Run it on your own source. <span class="pp">|</span> OpenAlex ID, <span class="in">`oa_url`</span>, citation counts and one related work to check. <span class="pp">|</span></span>
-<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 42–50 min <span class="pp">|</span> Worked example: Mora &amp; Bardhan (2025), abstract versus full text <span class="pp">|</span> How the sample and operating conditions narrow a studio use of the method. <span class="pp">|</span></span>
-<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a><span class="fu">### Session 2: Read, revise and walk through the package (50 minutes)</span></span>
-<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Time <span class="pp">|</span> Activity <span class="pp">|</span> Concrete output <span class="pp">|</span></span>
-<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
-<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 0–16 min <span class="pp">|</span> Read your source's methods, results, figures and limitations; rewrite the claim <span class="pp">|</span> Before · Found · After, with section/page/figure locations. <span class="pp">|</span></span>
-<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 16–28 min <span class="pp">|</span> Four three-minute evidence clinics <span class="pp">|</span> One question per project, and the author's accept/adapt/defer/reject response. <span class="pp">|</span></span>
-<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 28–40 min <span class="pp">|</span> Final package walkthrough: what "done" looks like for each component, the capsule rerun test, where today's work goes <span class="pp">|</span> A list of the gaps left in your own package. <span class="pp">|</span></span>
-<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 40–48 min <span class="pp">|</span> Fix one thing and log it <span class="pp">|</span> One changed component and one ledger entry. <span class="pp">|</span></span>
-<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 48–50 min <span class="pp">|</span> Week 12 preview: quick-fire and the LLM judge <span class="pp">|</span> Consent decision for the LLM judge. <span class="pp">|</span></span>
-<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a>**Feeds:** A4 Final Package. The six required components remain the Practice Case, Research Brief, Object Card, Reproducibility Capsule, Feedback + Revision Ledger (at least three entries across the project), and Reflection Note. Use the <span class="co">[</span><span class="ot">Final Package Checklist</span><span class="co">](templates/final-package-checklist.md)</span>. This clinic is formative and changes no A4 requirements, weights or deadlines.</span>
-<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a><span class="fu">## Week 12: Object Fair</span></span>
-<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a>**Focus:** a four-minute quick-fire of each final package, an LLM critique of each Object Card that the room then judges, final fixes, and what transfers to your next project.</span>
-<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a>**Prepare:** your final Object Card as a PDF, with your name removed from the copy sent to the LLM. Before class, confirm whether your card may be sent to the LLM; you can opt out and receive a human critique instead. The LLM gives no scores and has no effect on A4 marks. See <span class="co">[</span><span class="ot">The LLM Judge</span><span class="co">](templates/llm-judge.qmd)</span> for the prompt and ground rules.</span>
-<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a><span class="fu">### Session 1: Quick-fire and the judge (50 minutes)</span></span>
-<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Time <span class="pp">|</span> Activity <span class="pp">|</span> Concrete output <span class="pp">|</span></span>
-<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
-<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 0–4 min <span class="pp">|</span> How today works <span class="pp">|</span> <span class="pp">|</span></span>
-<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 4–28 min <span class="pp">|</span> Quick-fire: four minutes per package, then two minutes of questions <span class="pp">|</span> Questions from the room on each link: decision, evidence, comparison, action, limit. <span class="pp">|</span></span>
-<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 28–48 min <span class="pp">|</span> The LLM judge, five minutes per card: did it restate the recommendation correctly; is each criticism Grounded, Off-target or Invented; the author's ruling <span class="pp">|</span> A completed <span class="co">[</span><span class="ot">Judge Scorecard (PDF)</span><span class="co">](templates/judge-scorecard.pdf)</span> and the author's accept/adapt/defer/reject decisions. <span class="pp">|</span></span>
-<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 48–50 min <span class="pp">|</span> Break <span class="pp">|</span> <span class="pp">|</span></span>
-<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a><span class="fu">### Session 2: Fix and transfer (50 minutes)</span></span>
-<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Time <span class="pp">|</span> Activity <span class="pp">|</span> Concrete output <span class="pp">|</span></span>
-<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
-<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 0–8 min <span class="pp">|</span> Judge versus room: what the LLM caught, invented and missed <span class="pp">|</span> When you would use an LLM critic, and how you would check it. <span class="pp">|</span></span>
-<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 8–26 min <span class="pp">|</span> Last fixes <span class="pp">|</span> One change, plus two ledger entries: one from the room and one *AI check*. <span class="pp">|</span></span>
-<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 26–42 min <span class="pp">|</span> Round table, four minutes each <span class="pp">|</span> The reasoning move you're keeping and what you'd check before reusing it. Feeds the Reflection Note. <span class="pp">|</span></span>
-<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 42–50 min <span class="pp">|</span> Submission check and close <span class="pp">|</span> Six components present, sources located, capsule rerun by someone else. <span class="pp">|</span></span>
-<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a>**Feeds:** A4 Reflection Note and Feedback + Revision Ledger. A4 is due at the end of Week 12.</span>
-<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a><span class="fu">### Final Prompt</span></span>
-<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a>What design decision did your workflow improve, what did the evidence change, and what should happen next?</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 0–3 min <span class="pp">|</span> Why a literature check now, and where it sits in your workflow <span class="pp">|</span> The link from the Week 2 evidence audit to A4's source and evidence-quality requirements. <span class="pp">|</span></span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 3–13 min <span class="pp">|</span> Did Week 10's feedback land? 2½ minutes each: the advice, the ledger entry, where it changed the package. The Week 10 reviewer confirms. <span class="pp">|</span> Status of each Week 10 entry: addressed, in progress, or deferred/rejected with a reason. <span class="pp">|</span></span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 13–17 min <span class="pp">|</span> Write down your claim and your abstract-only reading, before opening the full text <span class="pp">|</span> The "before" record. <span class="pp">|</span></span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 17–31 min <span class="pp">|</span> Regex from zero: where you'd use it, word edges, alternatives, digits and units, filename checks, capturing a field; 5 minutes in the Regex Lab <span class="pp">|</span> Three working patterns, and one example of a false positive and a false negative. <span class="pp">|</span></span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 31–44 min <span class="pp">|</span> OpenAlex: one DOI gives one record, the free full-text link, what it cites and what cites it. Run it on your own source. Where this leads: the PRISMA flow diagram for reporting a systematic review. <span class="pp">|</span> OpenAlex ID, <span class="in">`oa_url`</span>, citation counts and one related work to check. PhD students: start a search log (query, date, source, counts). <span class="pp">|</span></span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 44–50 min <span class="pp">|</span> Worked example: Mora &amp; Bardhan (2025), abstract versus full text <span class="pp">|</span> How the sample and operating conditions narrow a studio use of the method. <span class="pp">|</span></span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a><span class="fu">### Session 2: Read, revise and walk through the package (50 minutes)</span></span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Time <span class="pp">|</span> Activity <span class="pp">|</span> Concrete output <span class="pp">|</span></span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 0–16 min <span class="pp">|</span> Read your source's methods, results, figures and limitations; rewrite the claim <span class="pp">|</span> Before · Found · After, with section/page/figure locations. <span class="pp">|</span></span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 16–28 min <span class="pp">|</span> Four three-minute evidence clinics <span class="pp">|</span> One question per project, and the author's accept/adapt/defer/reject response. <span class="pp">|</span></span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 28–40 min <span class="pp">|</span> Final package walkthrough: what "done" looks like for each component, the capsule rerun test, where today's work goes <span class="pp">|</span> A list of the gaps left in your own package. <span class="pp">|</span></span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 40–48 min <span class="pp">|</span> Fix one thing and log it <span class="pp">|</span> One changed component and one ledger entry. <span class="pp">|</span></span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 48–50 min <span class="pp">|</span> Week 12 preview: quick-fire and the LLM judge <span class="pp">|</span> Consent decision for the LLM judge. <span class="pp">|</span></span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a>**Feeds:** A4 Final Package. The six required components remain the Practice Case, Research Brief, Object Card, Reproducibility Capsule, Feedback + Revision Ledger (at least three entries across the project), and Reflection Note. Use the <span class="co">[</span><span class="ot">Final Package Checklist</span><span class="co">](templates/final-package-checklist.md)</span>. This clinic is formative and changes no A4 requirements, weights or deadlines.</span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a><span class="fu">## Week 12: Object Fair</span></span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a>**Focus:** a four-minute quick-fire of each final package, an LLM critique of each Object Card that the room then judges, final fixes, and what transfers to your next project.</span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a>**Prepare:** your final Object Card as a PDF, with your name removed from the copy sent to the LLM. Before class, confirm whether your card may be sent to the LLM; you can opt out and receive a human critique instead. The LLM gives no scores and has no effect on A4 marks. See <span class="co">[</span><span class="ot">The LLM Judge</span><span class="co">](templates/llm-judge.qmd)</span> for the prompt and ground rules.</span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a><span class="fu">### Session 1: Quick-fire and the judge (50 minutes)</span></span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Time <span class="pp">|</span> Activity <span class="pp">|</span> Concrete output <span class="pp">|</span></span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 0–4 min <span class="pp">|</span> How today works <span class="pp">|</span> <span class="pp">|</span></span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 4–28 min <span class="pp">|</span> Quick-fire: four minutes per package, then two minutes of questions <span class="pp">|</span> Questions from the room on each link: decision, evidence, comparison, action, limit. <span class="pp">|</span></span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 28–48 min <span class="pp">|</span> The LLM judge, five minutes per card: did it restate the recommendation correctly; is each criticism Grounded, Off-target or Invented; the author's ruling <span class="pp">|</span> A completed <span class="co">[</span><span class="ot">Judge Scorecard (PDF)</span><span class="co">](templates/judge-scorecard.pdf)</span> and the author's accept/adapt/defer/reject decisions. <span class="pp">|</span></span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 48–50 min <span class="pp">|</span> Break <span class="pp">|</span> <span class="pp">|</span></span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a><span class="fu">### Session 2: Fix and transfer (50 minutes)</span></span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Time <span class="pp">|</span> Activity <span class="pp">|</span> Concrete output <span class="pp">|</span></span>
+<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 0–8 min <span class="pp">|</span> Judge versus room: what the LLM caught, invented and missed <span class="pp">|</span> When you would use an LLM critic, and how you would check it. <span class="pp">|</span></span>
+<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 8–26 min <span class="pp">|</span> Last fixes <span class="pp">|</span> One change, plus two ledger entries: one from the room and one *AI check*. <span class="pp">|</span></span>
+<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 26–42 min <span class="pp">|</span> Round table, four minutes each <span class="pp">|</span> The reasoning move you're keeping and what you'd check before reusing it. Feeds the Reflection Note. <span class="pp">|</span></span>
+<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 42–50 min <span class="pp">|</span> Submission check and close <span class="pp">|</span> Six components present, sources located, capsule rerun by someone else. <span class="pp">|</span></span>
+<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a>**Feeds:** A4 Reflection Note and Feedback + Revision Ledger. A4 is due at the end of Week 12.</span>
+<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a><span class="fu">### Final Prompt</span></span>
+<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a>What design decision did your workflow improve, what did the evidence change, and what should happen next?</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

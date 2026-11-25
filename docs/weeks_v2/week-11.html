@@ -212,11 +212,12 @@
 <div class="column" style="width:50%;">
 <h3 id="session-1-50-min">Session 1 · 50 min</h3>
 <ul>
-<li><strong>0–10</strong> Did Week 10’s feedback land?</li>
-<li><strong>10–14</strong> Write down your claim, before reading</li>
-<li><strong>14–30</strong> Regex from zero</li>
-<li><strong>30–42</strong> OpenAlex: the paper, the full text, the trail</li>
-<li><strong>42–50</strong> Worked example: one paper, two readings</li>
+<li><strong>0–3</strong> Why a literature check, and why now</li>
+<li><strong>3–13</strong> Did Week 10’s feedback land?</li>
+<li><strong>13–17</strong> Write down your claim, before reading</li>
+<li><strong>17–31</strong> Regex from zero</li>
+<li><strong>31–44</strong> OpenAlex, and where PRISMA fits</li>
+<li><strong>44–50</strong> Worked example: one paper, two readings</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <h3 id="session-2-50-min">Session 2 · 50 min</h3>
@@ -245,6 +246,62 @@
           display:block!important;
       }</style></aside>
 </section>
+<section id="why-a-literature-check-and-why-now" class="slide level2 center">
+<h2>Why a literature check, and why now?</h2>
+<div class="big">
+<p>This isn’t a new literature-review assignment. It’s the <strong>Week 2 evidence audit</strong>, applied to the one kind of source we haven’t inspected yet: <strong>published papers</strong>.</p>
+</div>
+<div class="fragment big">
+<ul>
+<li>A4’s Research Brief must name its <strong>input sources</strong>.</li>
+<li><strong>Evidence quality and uncertainty</strong> is 20% of the A4 mark.</li>
+<li>The brief’s first listed failure mode: <em>“making stronger claims than the evidence supports”</em>.</li>
+</ul>
+</div>
+<div class="fragment punch">
+<p>Papers are the evidence most often cited from the abstract alone. One claim, one source, read properly.</p>
+</div>
+<aside class="notes">
+<p>Week 2’s ladder put “well-matched comparative evidence” near the top and “a single relevant precedent” in the middle, strong only if assumptions and context hold. A published study is exactly that: strong for its own conditions, and today’s question is whether those conditions match the student’s project.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="where-today-sits-in-your-workflow" class="slide level2 center">
+<h2>Where today sits in your workflow</h2>
+<div class="flow">
+<div class="step">
+<p><strong>Find</strong><br>
+OpenAlex: the record, a free PDF, what cites it</p>
+</div>
+<div class="step">
+<p><strong>Read</strong><br>
+full text: methods, results, limitations</p>
+</div>
+<div class="step">
+<p><strong>Check</strong><br>
+regex over text and files</p>
+</div>
+<div class="step">
+<p><strong>Record</strong><br>
+Brief, capsule source list, ledger</p>
+</div>
+</div>
+<div class="big">
+<p><strong>Week 2</strong> audited your evidence · <strong>Week 8</strong> reran your workflow and fact-checked AI · <strong>Week 10</strong> reviewed each other’s work · <strong>Week 11</strong> checks the published sources · <strong>Week 12</strong> checks an AI critic.</p>
+</div>
+<div class="punch blue">
+<p>The same question each time: what does this evidence actually support?</p>
+</div>
+</section>
 <section>
 <section id="did-last-weeks-feedback-land" class="title-slide slide level1 center" data-background-color="#1a1a1a">
 <h1>Did last week’s feedback land?</h1>
@@ -252,7 +309,7 @@
 </section>
 <section id="week-10-your-a4-today" class="slide level2 center">
 <h2>Week 10 → your A4, today</h2>
-<p><span class="timer">10 min · 2½ min each</span></p>
+<p><span class="timer">3–13 min · 2½ min each</span></p>
 <div class="big">
 <ol type="1">
 <li>Show the <strong>one piece of advice</strong> you got from your Week 10 reviewer.</li>
@@ -322,7 +379,7 @@
 </section>
 <section id="write-it-down-first" class="slide level2 center">
 <h2>Write it down first</h2>
-<p><span class="timer">4 min · on the worksheet</span></p>
+<p><span class="timer">13–17 min · on the worksheet</span></p>
 <div class="big">
 <p>Pick <strong>one claim</strong> your project relies on, and the source you rely on for it.</p>
 <p>Read <strong>only the abstract</strong>, then write:</p>
@@ -366,6 +423,42 @@
 </div>
 <div class="punch">
 <p>It doesn’t work in Google’s search box. That has its own operators.</p>
+</div>
+</section>
+<section id="where-youll-actually-use-it" class="slide level2 center">
+<h2>Where you’ll actually use it</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Job in your project</th>
+<th>Example pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Capsule:</strong> check every exported variant file follows the README’s naming rule</td>
+<td><code>^variant_\d{2}\.csv$</code></td>
+</tr>
+<tr class="even">
+<td><strong>Reading:</strong> find every temperature reported in a paper’s text</td>
+<td><code>\d+(\.\d+)?\s?°C</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Data:</strong> pull the number out of a messy column (“approx. 0.62 WWR”)</td>
+<td><code>=REGEXEXTRACT(A2, "\d+\.?\d*")</code> in Sheets</td>
+</tr>
+<tr class="even">
+<td><strong>Literature (PhD):</strong> flag records in an export that mention your method</td>
+<td><code>\bthermal imag[a-z]*</code> with <code>i</code></td>
+</tr>
+</tbody>
+</table>
+<div class="punch blue">
+<p>Ten minutes of regex can save an hour of scrolling, but only if you check what it missed.</p>
 </div>
 </section>
 <section id="plain-text-matches-plain-text" class="slide level2 center">
@@ -637,6 +730,9 @@
 <div class="punch blue">
 <p>One DOI gives you one record: who, when, where, whether it’s free to read, what it cites and what cites it.</p>
 </div>
+<div class="src">
+<p>Use it when the PDF is paywalled (check <code>oa_url</code>), when you want to know if a paper you cite has been tested or challenged since, or when you’re building a reading list for a chapter.</p>
+</div>
 </section>
 <section id="what-comes-back-trimmed" class="slide level2 center">
 <h2>What comes back (trimmed)</h2>
@@ -707,7 +803,7 @@
 </section>
 <section id="your-turn-run-it-on-your-own-source" class="slide level2 center">
 <h2>Your turn: run it on your own source</h2>
-<p><span class="timer">4 min · browser tab</span></p>
+<p><span class="timer">4 min · browser tab · within 31–44</span></p>
 <div class="big">
 <ol type="1">
 <li><code>https://api.openalex.org/works/doi:YOUR-DOI</code></li>
@@ -736,6 +832,55 @@
 </div>
 <div class="fragment punch blue">
 <p>OpenAlex gets you to the paper. Only reading it tells you what it says.</p>
+</div>
+</section>
+<section id="where-the-trail-leads-prisma" class="slide level2 center">
+<h2>Where the trail leads: PRISMA</h2>
+<div class="big">
+<p>When you review <em>many</em> papers, readers need to know <strong>how you chose them</strong>.</p>
+<p><strong>PRISMA 2020</strong> is the standard way to report that for a systematic review: a 27-item checklist and a flow diagram.</p>
+</div>
+<div class="flow">
+<div class="step">
+<p><strong>Identification</strong><br>
+records found, by source</p>
+</div>
+<div class="step">
+<p><strong>Screening</strong><br>
+records excluded, with reasons</p>
+</div>
+<div class="step">
+<p><strong>Included</strong><br>
+studies in the review</p>
+</div>
+</div>
+<div class="src">
+<p><a href="https://www.prisma-statement.org/prisma-2020-flow-diagram">PRISMA 2020 statement and flow diagram</a> · <a href="https://www.prisma-statement.org/prisma-search">PRISMA-S for reporting searches</a></p>
+</div>
+</section>
+<section id="todays-trail-is-the-first-box" class="slide level2 center">
+<h2>Today’s trail is the first box</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div class="big">
+<p>For the shared paper, OpenAlex gave us:</p>
+<ul>
+<li><strong>33</strong> works it cites</li>
+<li><strong>2</strong> works citing it</li>
+</ul>
+<p>= <strong>35 records identified by citation searching</strong>, one source, 25 Nov 2026.</p>
+</div>
+</div><div class="column" style="width:45%;">
+<div class="box big">
+<p><strong>Screening:</strong> not done.</p>
+<p><strong>Included:</strong> not done.</p>
+</div>
+<div class="punch">
+<p>Never fill a box you didn’t do, not even with a zero.</p>
+</div>
+</div></div>
+<div class="src">
+<p><strong>PhD:</strong> a review chapter will need the full diagram, so start the log now: query, date, source, counts. <strong>Studio:</strong> when a review paper shows this diagram, it tells you how its sources were chosen, which is worth checking before you cite it.</p>
 </div>
 </section></section>
 <section>
