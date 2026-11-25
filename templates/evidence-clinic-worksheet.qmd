@@ -1,0 +1,60 @@
+---
+title: "Week 11 · Evidence Clinic Worksheet"
+subtitle: "ARCH7476 · one claim, one source, before and after"
+format:
+  typst:
+    papersize: a4
+    margin:
+      x: 1.6cm
+      y: 1.4cm
+    fontsize: 10pt
+    include-in-header:
+      text: |
+        #let field(label, h: 1.6cm) = block(width: 100%, inset: (x: 6pt, y: 5pt), stroke: 0.5pt + luma(150), radius: 3pt, height: h, below: 6pt)[#text(size: 8.5pt, weight: "bold", fill: luma(80))[#label]]
+---
+
+```{=typst}
+#grid(columns: (1fr, 1fr, 1fr), gutter: 6pt,
+  field("Name", h: 1cm), field("Date", h: 1cm), field("Project (PhD research / studio)", h: 1cm))
+
+== 1 · Did Week 10's feedback land?
+
+#field("The advice I received, and from whom", h: 2.2cm)
+#grid(columns: (1fr, 2fr), gutter: 6pt,
+  field("Addressed / In progress / Deferred / Rejected", h: 1.3cm),
+  field("Where you can see it (file, page, figure), or why not", h: 1.3cm))
+#field("Reviewer's answer: is that what you meant?", h: 1cm)
+
+== 2 · Before: the abstract only (write this before opening the full text)
+
+#field("My claim: my project proposes ___ because I believe ___", h: 2cm)
+#field("Source (citation + DOI)", h: 1cm)
+#field("The abstract says ___. I took it to mean ___, so I was going to ___.", h: 3cm)
+
+== 3 · The trail (OpenAlex)
+
+#grid(columns: (1fr, 1fr, 1fr, 1fr), gutter: 6pt,
+  field("OpenAlex ID", h: 1.1cm), field("oa_url (or none)", h: 1.1cm),
+  field("Cited by / references", h: 1.1cm), field("Date retrieved", h: 1.1cm))
+#field("One citing or cited work worth checking", h: 1cm)
+
+#pagebreak()
+
+== 4 · Found: the full text
+
+#grid(columns: (1fr, 1fr), gutter: 6pt,
+  field("Methods: what, where, how many, which conditions? (location)", h: 4.2cm),
+  field("Result: which measure, compared with what? (location)", h: 4.2cm),
+  field("What the abstract left out (figure / table / location)", h: 4.2cm),
+  field("Limitation the authors state (location)", h: 4.2cm))
+
+== 5 · After
+
+#field("Supported as stated / Needs narrowing / Contradicted / Not yet established, because ___", h: 2.2cm)
+#field("I can now claim ___, so I will keep / narrow / change ___ and check ___ next.", h: 3cm)
+#grid(columns: (1fr, 1fr), gutter: 6pt,
+  field("Clinic question I was asked", h: 2.4cm),
+  field("My response: accept / adapt / defer / reject, because ___", h: 2.4cm))
+
+#text(size: 8pt, fill: luma(90))[Copy sections 1, 5 and the clinic response into your Feedback + Revision Ledger. Put the DOI, OpenAlex ID and retrieval date in your capsule's source list. Week 11 is formative; A4 requirements are unchanged.]
+```

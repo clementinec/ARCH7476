@@ -26,7 +26,7 @@ The final package clearly shows:
 - [ ] variants or scenarios
 - [ ] workflow route
 - [ ] evidence output
-- [ ] threshold or comparison rule
+- [ ] threshold or comparison rule (or, for a qualitative claim, the stated criterion it was judged against)
 - [ ] design action
 - [ ] uncertainty or limit
 
@@ -34,7 +34,7 @@ The final package clearly shows:
 
 - [ ] decision is visible within 10 seconds
 - [ ] recommendation is clear
-- [ ] threshold or comparison rule is stated
+- [ ] threshold, comparison rule or qualitative criterion is stated
 - [ ] visual evidence supports the action
 - [ ] caveat is not hidden
 
@@ -54,11 +54,21 @@ The final package clearly shows:
 - [ ] no decorative data
 - [ ] next action visible
 
+## Evidence Trace Check
+
+For each source that a key claim relies on:
+
+- [ ] citation and DOI (or stable link), plus OpenAlex ID and retrieval date where available
+- [ ] section, page, table or figure where the supporting evidence is
+- [ ] the conditions under which it holds, and how your project differs
+- [ ] the claim is worded no more broadly than the source supports
+- [ ] anything not checked is labelled as not yet established
+
 ## Reproducibility Capsule Check
 
 - [ ] README with step-by-step run instructions
 - [ ] environment / dependency list (tools and versions)
-- [ ] data/source list
+- [ ] data/source list, including the literature sources and locators above
 - [ ] the runnable workflow artifact (script / workbook / project / notebook — not only a screenshot)
 - [ ] figure sources
 - [ ] **re-running the workflow reproduces the key figure**

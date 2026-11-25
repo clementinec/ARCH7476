@@ -63,6 +63,9 @@ project:
     - templates/peer-review-card.qmd
     - templates/reviewer-source-pack.qmd
     - templates/evidence-clinic-card.qmd
+    - templates/evidence-clinic-worksheet.qmd
+    - templates/llm-judge.qmd
+    - templates/judge-scorecard.qmd
     - starter_kits/README.md
     - starter_kits/gh-parametric-variants/README.md
     - starter_kits/preset-simulation-proxy/README.md

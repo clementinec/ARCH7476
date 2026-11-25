@@ -1,0 +1,84 @@
+---
+title: "Week 12: The LLM Judge"
+subtitle: "Prompt, ground rules and how we judge the judge"
+format:
+  html:
+    toc: true
+---
+
+In Week 12, after each quick-fire presentation, a large language model (LLM) reads the presenter's **Object Card** and critiques it. Then the room judges the critique. This page has the ground rules, the exact prompt, and the labels we use.
+
+It continues the Week 11 standard: **a claim needs a location**. We asked papers to show where their evidence was. Now we ask the same of the LLM.
+
+## Ground rules
+
+- **The judge critiques; it does not grade.** Nothing the LLM says affects A4 marks. It gives no scores.
+- **Consent first.** Before class, each student confirms whether their Object Card may be sent to the LLM. Anyone can opt out and receive a human-only critique instead, with no explanation needed.
+- **Only the Object Card is sent.** Remove your name and student number from the copy you send. Don't send data files, capsules or anything you have been asked to keep confidential (for example, live client material).
+- **The instructor runs it**, using the course's chosen tool, so students don't need an account. Each critique is saved with the model name and date.
+- **Pre-generated, plus one live.** To avoid lost time, all critiques are generated before class with the prompt below. One volunteer's card is also run live in class, so we can see whether the critique changes between runs.
+
+## The prompt
+
+Attach the Object Card (PDF or image) and paste this unchanged:
+
+```text
+You are a critic at the final review of an architecture course on
+evidence-based design. You will read one student's Object Card: a one-page
+summary of a design or research decision, the evidence behind it, and its
+limits. You are a critic, not a grader.
+
+Do this, in order:
+
+1. RESTATE. In one sentence, say what the card recommends and for whom.
+   If you cannot tell, say so: that is your first criticism.
+
+2. CRITICISE. Give at most four criticisms. For each one:
+   - Quote: the exact words, or the exact figure element, you are criticising.
+   - Link: which link it tests: decision, evidence, comparison/threshold,
+     action, or limit.
+   - Problem: what a careful reader could not verify, or would misread.
+   - Fix: one specific change or check that would resolve it.
+
+3. STRENGTH. Name one thing the card does well, with a quote.
+
+4. CANNOT JUDGE. List what you would need to see (data, source, workflow,
+   site or user information) to go further. Do not guess about these.
+
+Rules:
+- Use only what is on the card. Do not assume facts about the site, data,
+  sources or methods that the card does not state.
+- Do not give a score, grade, ranking or overall verdict.
+- Be direct and specific. No general writing advice.
+```
+
+### Optional: a second judge
+
+To see how much a critique depends on the framing, run the same card again with one line added at the top:
+
+- *"Read this as a busy client deciding whether to fund the next stage."*, or
+- *"Read this as a building-science reviewer checking the method."*
+
+When two judges disagree, the room decides which one is right, and why.
+
+## Judging the judge
+
+For each criticism, the room gives one label:
+
+| Label | Use it when the criticism… |
+|---|---|
+| **Grounded** | quotes the card accurately, and the problem is real |
+| **Off-target** | quotes accurately, but misreads the card's purpose or applies the wrong standard |
+| **Invented** | relies on something not on the card, or misquotes it |
+
+Then the room adds anything the judge **missed** that a human reviewer caught.
+
+The judge's score is the number of **Grounded** criticisms. These are the only scores given in Week 12, and they go to the LLM, not to the student.
+
+Record your labels on the [Judge Scorecard (PDF)](judge-scorecard.pdf).
+
+## What the author does with it
+
+The author rules on each **Grounded** or **Off-target** point: **accept / adapt / defer / reject**, with a reason. One ruling goes in the Feedback + Revision Ledger, with *AI check* as the source. The [A4 brief](../assignments/assignment-04.qmd) already lists it as a valid source.
+
+> "The LLM judge (model, date) said ___. The room labelled it Grounded / Off-target. I ___, because ___."

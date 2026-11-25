@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.10.19">
 
-  <title>ARCH7476: Evidence-Based Generative Design – Week 11: Final Package Clinic</title>
+  <title>ARCH7476: Evidence-Based Generative Design – Week 11: Evidence and Final Package Clinic</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -100,7 +100,8 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-b029eb0caf385fc5521fb94e224df9c3.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-0427d8d92a431aa6a6430e53ec02a470.css">
+  <link rel="stylesheet" href="plain.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -198,28 +199,40 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 11: Final Package Clinic</h1>
-  <p class="subtitle">Your Project Claim, the Abstract, and the Evidence Behind It</p>
+  <h1 class="title">Week 11: Evidence and Final Package Clinic</h1>
+  <p class="subtitle">Did the feedback land? Does the paper say what you think? Is the package complete?</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="preparation-for-the-evidence-clinic" class="slide level2 center">
-<h2>Preparation for the evidence clinic</h2>
-<p>Bring <strong>one claim from your own project</strong> and the literature you think supports it.</p>
+<section id="today" class="slide level2 center">
+<h2>Today</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="session-1-50-min">Session 1 · 50 min</h3>
 <ul>
-<li>a research idea, method choice or studio design decision</li>
-<li>one relevant paper, its abstract and full text where accessible</li>
-<li>your current drawing, result or A4 paragraph</li>
-<li>the question you need the evidence to answer</li>
+<li><strong>0–10</strong> Did Week 10’s feedback land?</li>
+<li><strong>10–14</strong> Write down your claim, before reading</li>
+<li><strong>14–30</strong> Regex from zero</li>
+<li><strong>30–42</strong> OpenAlex: the paper, the full text, the trail</li>
+<li><strong>42–50</strong> Worked example: one paper, two readings</li>
 </ul>
-<div class="activity-card">
-<p>Open the <a href="../templates/evidence-clinic-card.html">Evidence Clinic Card</a>. Keep your initial claim visible when you revise it.</p>
+</div><div class="column" style="width:50%;">
+<h3 id="session-2-50-min">Session 2 · 50 min</h3>
+<ul>
+<li><strong>0–16</strong> Read your paper and rewrite the claim</li>
+<li><strong>16–28</strong> Four evidence clinics</li>
+<li><strong>28–40</strong> The final package, walked through</li>
+<li><strong>40–48</strong> Fix one thing, log it</li>
+<li><strong>48–50</strong> Next week: quick-fire and the LLM judge</li>
+</ul>
+</div></div>
+<div class="punch blue">
+<p>Bring: your Week 10 Peer Review Card, your Revision Ledger, one claim and its source.</p>
 </div>
-<p>A RIS file and OpenAlex key are optional. If access fails, record what remains unverified and use the shared paper to practise the reading method.</p>
 <aside class="notes">
-<p>Four students: two PhD and two undergraduate students. All undertake the same evidence task on their own projects. There is no assumption that the undergraduate students need a systematic review. The shared case teaches how to inspect evidence; it does not establish support for their individual projects. Keep source and account preparation short so it does not consume clinic time.</p>
+<p>Four students: two PhD, two undergraduate. Everyone does the same tasks on their own project. A4 is due at the end of Week 12, so every activity today should leave a change in the package.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -232,66 +245,43 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="session-1-the-idea-and-its-evidence" class="slide level2 center">
-<h2>Session 1: the idea and its evidence</h2>
-<p><span class="kicker">50 minutes · four students and the instructor</span></p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Time</th>
-<th>Activity</th>
-<th>Save</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0–8</td>
-<td>Brainstorm your project claim</td>
-<td>Decision and evidence needed</td>
-</tr>
-<tr class="even">
-<td>8–18</td>
-<td>Four pitches, 2½ minutes each</td>
-<td>One question per project</td>
-</tr>
-<tr class="odd">
-<td>18–28</td>
-<td>Short search, regex, RIS and OpenAlex demonstration</td>
-<td>A useful tool and its limit</td>
-</tr>
-<tr class="even">
-<td>28–50</td>
-<td>Compare abstract-based interpretation with the full paper</td>
-<td>Before/after claim and source locations</td>
-</tr>
-</tbody>
-</table>
-<div class="takeaway">
-<p>The test is what the literature lets you say or do in your own project.</p>
-</div>
+<section>
+<section id="did-last-weeks-feedback-land" class="title-slide slide level1 center" data-background-color="#1a1a1a">
+<h1>Did last week’s feedback land?</h1>
+
 </section>
-<section id="brainstorm-the-claim-you-are-relying-on" class="slide level2 center">
-<h2>Brainstorm: the claim you are relying on</h2>
-<p><span class="kicker">8 minutes · write before discussing</span></p>
+<section id="week-10-your-a4-today" class="slide level2 center">
+<h2>Week 10 → your A4, today</h2>
+<p><span class="timer">10 min · 2½ min each</span></p>
+<div class="big">
 <ol type="1">
-<li><strong>Decision:</strong> what do you want to investigate, choose or change?</li>
-<li><strong>Claim:</strong> what must be true for that choice to make sense?</li>
-<li><strong>Evidence:</strong> what observation would support or challenge it?</li>
-<li><strong>Consequence:</strong> what would you change if the evidence did not support it?</li>
+<li>Show the <strong>one piece of advice</strong> you got from your Week 10 reviewer.</li>
+<li>Show the <strong>ledger entry</strong> you wrote for it.</li>
+<li>Show <strong>where it changed</strong> the package: file, page or figure.</li>
 </ol>
-<div class="activity-card">
-<p>“My project proposes <strong><em>. It relies on the claim that </em></strong>. I need evidence about ___ before I can justify ___.”</p>
 </div>
-<p>Use an idea already in your project. A rough claim is useful material for the clinic.</p>
+<div class="fragment">
+<p>Your Week 10 reviewer answers one question:</p>
+<div class="punch">
+<p>“Is that what I meant?”</p>
+</div>
+</div>
+<aside class="notes">
+<p>This is a receipt check, not a second review. If the reviewer says “not quite”, the author writes one line in the ledger clarifying the advice; they don’t redo the work now. Keep strictly to 2.5 minutes.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="four-short-project-pitches" class="slide level2 center">
-<h2>Four short project pitches</h2>
-<p><span class="kicker">2½ minutes per student · 10 minutes total</span></p>
+<section id="three-honest-answers" class="slide level2 center">
+<h2>Three honest answers</h2>
 <table class="caption-top">
 <colgroup>
 <col style="width: 50%">
@@ -299,241 +289,216 @@
 </colgroup>
 <thead>
 <tr class="header">
-<th>Time</th>
-<th>Action</th>
+<th>Status</th>
+<th>What you show</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>First 90 seconds</td>
-<td>Show the idea, name the claim and explain the source you need</td>
+<td><strong>Addressed</strong></td>
+<td>The changed page or figure, next to the advice</td>
 </tr>
 <tr class="even">
-<td>Next 60 seconds</td>
-<td>Peers or instructor ask one question about its evidence</td>
+<td><strong>In progress</strong></td>
+<td>What you have done, and what still remains before Week 12</td>
+</tr>
+<tr class="odd">
+<td><strong>Deferred or rejected</strong></td>
+<td>The reason, written in the ledger</td>
 </tr>
 </tbody>
 </table>
-<div class="ask-room">
-<p>What exactly would the paper need to show for this project decision to follow?</p>
+<div class="box big">
+<p>“The advice was ___. I <strong>addressed / am working on / deferred</strong> it: ___. You can see it in ___.”</p>
 </div>
-<p>Write the question on your card. Keep the discussion on the decision and the evidence it needs.</p>
+<div class="punch green">
+<p>A reasoned rejection counts as a ledger entry. Silence doesn’t.</p>
+</div>
+</section></section>
+<section>
+<section id="your-claim-before-you-read" class="title-slide slide level1 center" data-background-color="#1a1a1a">
+<h1>Your claim, before you read</h1>
+
 </section>
-<section id="one-task-different-project-decisions" class="slide level2 center">
-<h2>One task, different project decisions</h2>
+<section id="write-it-down-first" class="slide level2 center">
+<h2>Write it down first</h2>
+<p><span class="timer">4 min · on the worksheet</span></p>
+<div class="big">
+<p>Pick <strong>one claim</strong> your project relies on, and the source you rely on for it.</p>
+<p>Read <strong>only the abstract</strong>, then write:</p>
+</div>
+<div class="box big">
+<p>“The abstract says ___. I took it to mean ___ for my project, so I was going to ___.”</p>
+</div>
+<div class="src">
+<p>PhD: a research premise or method choice. Studio: a design decision. A guideline, standard or published precedent is a valid source if that is what your decision rests on. <a href="../templates/evidence-clinic-worksheet.pdf">Evidence Clinic Worksheet (PDF)</a></p>
+</div>
+<aside class="notes">
+<p>We do this before the tool block on purpose: the “before” reading has to be written down before anyone opens the full text. If a student already knows the paper well, they write what they would have assumed from the abstract alone.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="regex-from-zero" class="title-slide slide level1 center" data-background-color="#1a1a1a">
+<h1>Regex from zero</h1>
+
+</section>
+<section id="a-find-box-that-understands-patterns" class="slide level2 center">
+<h2>A find box that understands patterns</h2>
+<div class="big">
+<p><strong>Regex</strong> (regular expression) is a short rule that describes a <em>pattern</em> of characters, not a fixed word.</p>
+<p>You can use it in:</p>
+<ul>
+<li><strong>VS Code</strong>: Find, then the <code>.*</code> button</li>
+<li><strong>Python</strong>: <code>re.findall(r"pattern", text)</code></li>
+<li><strong>Google Sheets</strong>: <code>=REGEXMATCH(A2, "pattern")</code></li>
+<li>the course <strong><a href="../site_tools/regex-lab.html">Regex Lab</a></strong></li>
+</ul>
+</div>
+<div class="punch">
+<p>It doesn’t work in Google’s search box. That has its own operators.</p>
+</div>
+</section>
+<section id="plain-text-matches-plain-text" class="slide level2 center">
+<h2>Plain text matches plain text</h2>
+<p>Four lines of notes:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a aria-label="1"></a>Shade at the entrance.</span>
+<span id="cb1-2"><a aria-label="2"></a>The shaded bench.</span>
+<span id="cb1-3"><a aria-label="3"></a>SHADING along the facade.</span>
+<span id="cb1-4"><a aria-label="4"></a>A shadow line.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="fragment">
+<p>Pattern <code>shade</code>: predict the matches.</p>
+</div>
+<div class="fragment big">
+<p>One match: the <strong>shade</strong> inside “<strong>shade</strong>d”. It misses “Shade” and “SHADING”, because matching is case-sensitive by default.</p>
+</div>
+<div class="fragment punch blue">
+<p>Add the flag <code>i</code> (ignore case) and “Shade” joins it. “SHADING” still doesn’t, since it doesn’t contain “shade”.</p>
+</div>
+</section>
+<section id="b-marks-the-edge-of-a-word" class="slide level2 center">
+<h2><code>\b</code> marks the edge of a word</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a aria-label="1"></a>\bshade\b      with flag i</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="big">
+<p><code>\b</code> means “a word starts or ends here”.</p>
+</div>
+<div class="fragment big">
+<p>Now: <strong>Shade</strong> ✓ · shaded ✗ · SHADING ✗ · shadow ✗</p>
+</div>
+<div class="fragment punch">
+<p>Stricter, but now the forms we wanted are missing too.</p>
+</div>
+</section>
+<section id="means-either-or" class="slide level2 center">
+<h2><code>( | )</code> means either / or</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a aria-label="1"></a>\bshad(e|ed|ing)\b      with flag i</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="big">
+<p>“shad”, followed by <strong>e</strong>, <strong>ed</strong> or <strong>ing</strong>, then the end of a word.</p>
+</div>
+<div class="fragment big">
+<p><strong>Shade</strong> ✓ · <strong>shaded</strong> ✓ · <strong>SHADING</strong> ✓ · shadow ✗</p>
+</div>
+<div class="fragment punch green">
+<p>You’ve just written a search for one design term in every form you care about.</p>
+</div>
+</section>
+<section id="digits-and-how-many" class="slide level2 center">
+<h2>Digits and how many</h2>
 <table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Your project may ask…</th>
-<th>The literature must help you establish…</th>
-<th>Inspect later</th>
+<th>Piece</th>
+<th>Means</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Is this a defensible research premise?</td>
-<td>What is known, under which conditions, and what remains unresolved</td>
-<td>Actual finding and stated limitation</td>
+<td><code>\d</code></td>
+<td>one digit, 0–9</td>
 </tr>
 <tr class="even">
-<td>Is this method suitable for my study?</td>
-<td>What inputs, assumptions and checks it needs</td>
-<td>Method and validation conditions</td>
+<td><code>+</code></td>
+<td>one or more of the thing before it</td>
 </tr>
 <tr class="odd">
-<td>Should I change this studio design?</td>
-<td>Whether the reported benefit applies to my site, users and alternatives</td>
-<td>Metric, context and design consequence</td>
-</tr>
-</tbody>
-</table>
-<p>These are possible questions to bring, not findings about any particular design.</p>
-<div class="takeaway">
-<p>Choose the question your project needs answered. Everyone checks a claim against the source behind it.</p>
-</div>
-</section>
-<section id="search-operators-and-regex" class="slide level2 center">
-<h2>Search operators and regex</h2>
-<p><span class="kicker">Supporting demonstration · part of the 18–28 minute block</span></p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Tool</th>
-<th>Example</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Google Search</td>
-<td><code>"courtyard ventilation" site:edu filetype:pdf -hotel</code></td>
-<td>Combines a phrase with site/file filters and an exclusion</td>
+<td><code>?</code></td>
+<td>the thing before it is optional</td>
 </tr>
 <tr class="even">
-<td>OpenAlex search</td>
-<td><code>"courtyard ventilation" AND housing</code></td>
-<td>Combines search terms using the service’s query syntax</td>
-</tr>
-<tr class="odd">
-<td>Regex on text you hold</td>
-<td><code>\bshade\b</code></td>
-<td>Finds character patterns in an export, document or filename</td>
-</tr>
-</tbody>
-</table>
-<p>Google’s ordinary search box uses search operators. It does <strong>not</strong> execute a general regex pattern. An exclusion may also hide a useful result; inspect what your query misses.</p>
-<div class="source-note">
-<p><a href="https://support.google.com/websearch/answer/2466433?hl=en">Google operators</a> · <a href="https://help.openalex.org/api/searching/">OpenAlex search syntax</a> · examples are teaching queries, not completed searches.</p>
-</div>
-</section>
-<section id="regex-a-pattern-in-characters" class="slide level2 center">
-<h2>Regex: a pattern in characters</h2>
-<p><strong>Regular expression (regex):</strong> a compact rule for finding or checking text.</p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Symbol</th>
-<th>Meaning in these JavaScript examples</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>\b</code></td>
-<td>Word boundary</td>
-<td><code>\bshade\b</code> matches shade, not shaded</td>
-</tr>
-<tr class="even">
-<td><code>()</code></td>
-<td>Group part of a pattern</td>
-<td><code>(shade)</code> groups the letters</td>
-</tr>
-<tr class="odd">
-<td><code>[0-9]{2}</code></td>
-<td>Exactly two digits</td>
-<td><code>01</code>, <code>12</code></td>
-</tr>
-<tr class="even">
-<td><code>^</code> and <code>$</code></td>
-<td>Start/end of the text; of each line with flag <code>m</code></td>
-<td>Whole-line filename check</td>
+<td><code>{2}</code></td>
+<td>exactly two of the thing before it</td>
 </tr>
 <tr class="odd">
 <td><code>\.</code></td>
-<td>A literal full stop</td>
-<td><code>.csv</code> extension</td>
+<td>a real full stop (a bare <code>.</code> means <em>any</em> character)</td>
+</tr>
+<tr class="even">
+<td><code>\s</code></td>
+<td>a space</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Alternatives:</strong> <code>(shade|shading)</code> means either word. <strong>Flags:</strong> <code>i</code> ignores letter case; <code>m</code> makes anchors work per line. Syntax can differ between tools.</p>
-<div class="source-note">
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions">MDN regex guide</a> · <a href="../site_tools/regex-lab.html">try the local Regex Lab</a>. Predict one match and one miss before running.</p>
+<div class="fragment">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a aria-label="1"></a>\d+(\.\d+)?\s?°C</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Digits, an optional decimal part, an optional space, then °C.</p>
 </div>
 </section>
-<section id="two-patterns-two-different-checks" class="slide level2 center">
-<h2>Two patterns, two different checks</h2>
-<div class="two-col">
-<div class="concept-card">
-<p><span class="card-title">Find a design term</span></p>
-<p><code>\b(shade|shading)\b</code> with <code>i</code></p>
-<p>Matches <strong>SHADE</strong> and <strong>shading</strong>. Misses <strong>shaded</strong> and <strong>overhang</strong>.</p>
-<p>A match in “no shade benefit” still contains the word. Regex has not judged the claim.</p>
+<section id="pull-the-temperatures-out-of-your-notes" class="slide level2 center">
+<h2>Pull the temperatures out of your notes</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb5-1"><a aria-label="1"></a>Wall difference above 2°C suggests a higher retrofit need.</span>
+<span id="cb5-2"><a aria-label="2"></a>A 2.5 °C difference at the window frame.</span>
+<span id="cb5-3"><a aria-label="3"></a>25 buildings were surveyed.</span>
+<span id="cb5-4"><a aria-label="4"></a>The 0.5 K drift is sensor noise.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="fragment big">
+<p>Matches: <strong>2°C</strong> and <strong>2.5 °C</strong>. Not “25 buildings”, not “0.5 K”.</p>
 </div>
-<div class="concept-card">
-<p><span class="card-title">Check a filename</span></p>
-<p><code>^variant_[0-9]{2}\.csv$</code> with <code>m</code></p>
-<p>Matches <strong>variant_03.csv</strong>.</p>
-<p>Rejects <strong>variant_3.csv</strong> and <strong>variant_03.csv.bak</strong>. This checks a naming rule, not the file’s contents.</p>
-</div>
-</div>
-<div class="takeaway">
-<p>A false positive is an unwanted match. A false negative is a relevant item missed. Judge both against your purpose.</p>
+<div class="fragment punch blue">
+<p>Useful for scanning a long PDF’s text for every reported value, before you check what each one refers to.</p>
 </div>
 </section>
-<section id="ris-carries-records-not-a-whole-argument" class="slide level2 center">
-<h2>RIS carries records, not a whole argument</h2>
-<p>ScienceDirect can export citations as <strong>RIS</strong>, a tagged text format. Depending on the export, an abstract may be present or absent. Inspect the file you actually have.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a aria-label="1"></a>DO  - 10.1098/rsos.241337</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Field extraction example:</strong> <code>^DO[ \t]+-[ \t]+(.+)$</code> with <code>m</code> captures the text after the DOI tag. <code>+</code> means one or more; parentheses retain the captured part.</p>
-<p>Preserve the raw export. Use a RIS parser for records, repeated authors and wrapped fields. Regex can assist a specific cleanup; it cannot recover methods or results that were never exported.</p>
-<div class="source-note">
-<p><a href="https://www.elsevier.support/sciencedirect/answer/how-can-i-export-my-citations">ScienceDirect export instructions</a>. The DOI line illustrates the format using the shared paper’s identifier; it is not a ScienceDirect export of that paper.</p>
-</div>
-</section>
-<section id="openalex-identify-the-paper-and-keep-the-trail" class="slide level2 center">
-<h2>OpenAlex: identify the paper and keep the trail</h2>
-<ol type="1">
-<li>Look up the <strong>DOI</strong> and retain the returned work ID.</li>
-<li>If needed, search the title and compare authors/year before accepting a candidate.</li>
-<li>Record discrepancies and missing abstracts. A match establishes a record link, not support for your project claim.</li>
-</ol>
-<div class="activity-card">
-<p><strong>Optional preparation:</strong> <a href="https://openalex.org/signup">create an account</a>, verify your email, then obtain your key from <a href="https://openalex.org/settings/api-key">Settings → API key</a>. Keep it private.</p>
-</div>
-<p>Basic queries currently work without a key. A free key increases the budget and is needed for cursor paging beyond the first page. Account setup must not delay today’s reading task.</p>
-<div class="source-note">
-<p><a href="https://help.openalex.org/api/get-single-entities/">Lookup</a> · <a href="https://help.openalex.org/api/authentication/">authentication, checked 24 November 2026</a> · <a href="../templates/evidence-clinic-card.html#openalex-setup">private setup and example request</a>.</p>
-</div>
-</section>
-<section id="the-22-minute-source-comparison" class="slide level2 center">
-<h2>The 22-minute source comparison</h2>
-<p><span class="kicker">Start at minute 28 · work on your own project source</span></p>
+<section id="and-the-whole-line-nothing-else" class="slide level2 center">
+<h2><code>^</code> and <code>$</code>: the whole line, nothing else</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a aria-label="1"></a>^variant_\d{2}\.csv$      with flag m (each line separately)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Minutes</th>
-<th>Action</th>
-<th>Record</th>
+<th>File</th>
+<th>Passes?</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>0–4</td>
-<td>Read the abstract only</td>
-<td>Your initial interpretation and proposed project action</td>
+<td><code>variant_01.csv</code></td>
+<td>✓</td>
 </tr>
 <tr class="even">
-<td>4–12</td>
-<td>Inspect the relevant methods, results and limitations</td>
-<td>Exact passage, table or figure locations</td>
+<td><code>variant_1.csv</code></td>
+<td>✗ only one digit</td>
 </tr>
 <tr class="odd">
-<td>12–18</td>
-<td>Compare with a partner, three minutes each</td>
-<td>The inference that holds, changes or remains unverified</td>
+<td><code>Variant_03.csv</code></td>
+<td>✗ capital V</td>
 </tr>
 <tr class="even">
-<td>18–22</td>
-<td>Rewrite your claim and its consequence</td>
-<td>What changes in your research/design, and the next test</td>
+<td><code>variant_04.csv.bak</code></td>
+<td>✗ something after <code>.csv</code></td>
 </tr>
 </tbody>
 </table>
-<div class="takeaway">
-<p>Preserve the first interpretation. The comparison makes your change in reasoning visible.</p>
+<div class="fragment punch">
+<p>Drop the <code>\</code> before <code>.csv</code> and <code>variant_05xcsv</code> passes too. <code>.</code> means any character.</p>
 </div>
 <aside class="notes">
-<p>The next slides are reading prompts for this block, not additional lecture time. Use the two shared-case slides only as a brief demonstration or fallback. A student who already knows the full paper can record their earlier abstract-based expectation honestly rather than pretend the reading is blind.</p>
+<p>This is the practical use for the capsule: check that every exported variant file follows the naming rule your README promises.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -546,249 +511,381 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="first-reading-what-did-you-infer" class="slide level2 center">
-<h2>First reading: what did you infer?</h2>
-<p>Read the abstract or exported summary <strong>before</strong> inspecting the rest of the article.</p>
-<div class="activity-card">
-<p>“The abstract reports <strong><em>. I took this to support </em></strong> in my project. I was about to choose/test/change ___.”</p>
+<section id="parentheses-also-capture" class="slide level2 center">
+<h2>Parentheses also <em>capture</em></h2>
+<p>A reference export (RIS) puts each field on its own tagged line:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb7-1"><a aria-label="1"></a>TY  - JOUR</span>
+<span id="cb7-2"><a aria-label="2"></a>DO  - 10.1098/rsos.241337</span>
+<span id="cb7-3"><a aria-label="3"></a>ER  -</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb8-1"><a aria-label="1"></a>^DO  - (.+)$      with flag m</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="fragment big">
+<p>The part inside <code>( )</code> is returned on its own: <strong>10.1098/rsos.241337</strong>, the DOI.</p>
 </div>
-<p>Separate the words in the source from the step you added. Record whether your claim concerns a method, a measured effect or transfer to your own context.</p>
-<div class="ask-room">
-<p>Which part of your project claim is actually stated, and which part is your inference?</p>
-</div>
-</section>
-<section id="full-paper-reading-locate-the-missing-conditions" class="slide level2 center">
-<h2>Full-paper reading: locate the missing conditions</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Inspect</th>
-<th>Question for your project</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Methods</td>
-<td>What was studied, where, with which sample, inputs and controls?</td>
-</tr>
-<tr class="even">
-<td>Results</td>
-<td>Which measure, comparator and result support the claim?</td>
-</tr>
-<tr class="odd">
-<td>Figures/tables</td>
-<td>What variation, exception or failure does the summary omit?</td>
-</tr>
-<tr class="even">
-<td>Limitations/discussion</td>
-<td>Where do the authors restrict interpretation or transfer?</td>
-</tr>
-<tr class="odd">
-<td>Supplement, if needed</td>
-<td>Is the required definition, dataset or procedure there?</td>
-</tr>
-</tbody>
-</table>
-<div class="takeaway">
-<p>Save a section and table/figure/page locator. A link alone does not show where your claim gets its support.</p>
-</div>
-<p>Full text provides more evidence to assess. It does not automatically validate a study or make its findings transferable.</p>
-</section>
-<section id="why-the-abstract-may-change-your-impression" class="slide level2 center">
-<h2>Why the abstract may change your impression</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Information compressed or absent</th>
-<th>A possible consequence for your idea</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Metric or comparator</td>
-<td>“Improvement” may refer to a proxy rather than the outcome you need</td>
-</tr>
-<tr class="even">
-<td>Sample and conditions</td>
-<td>A result may support a narrower population, season or setting</td>
-</tr>
-<tr class="odd">
-<td>Method and validation</td>
-<td>A simulation, association or exploratory study may need a different claim</td>
-</tr>
-<tr class="even">
-<td>Mixed results and limitations</td>
-<td>The design benefit may depend on a trade-off or unresolved assumption</td>
-</tr>
-</tbody>
-</table>
-<p>These are questions to investigate, not accusations against the paper. An abstract may be accurate while leaving out details that matter to your use of it.</p>
-</section>
-<section id="shared-paper-the-abstract-level-view" class="slide level2 center">
-<h2>Shared paper: the abstract-level view</h2>
-<p><span class="kicker">Mora &amp; Bardhan · Cambridge retrofit study · 2025</span></p>
-<p>The abstract presents a <strong>proof-of-concept retrofit-prioritisation framework</strong>, combining neighbourhood data with building-scale thermal imaging.</p>
-<div class="activity-card">
-<p><strong>Our project question:</strong> could I use thermal imaging to choose which building should be retrofitted first?</p>
-<p>What would you need to know before accepting that use of the method?</p>
-</div>
-<div class="source-note">
-<p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11732419/">Read the abstract and full article in HTML</a> · <em>Towards carbon neutrality: mapping mass retrofit opportunities in Cambridge, UK</em>, DOI 10.1098/rsos.241337. The project question is our application, not the authors’ wording.</p>
+<div class="src">
+<p>For whole reference libraries, use a reference manager or a RIS parser. Regex is for one specific clean-up. <a href="https://www.elsevier.support/sciencedirect/answer/how-can-i-export-my-citations">ScienceDirect export help</a></p>
 </div>
 </section>
-<section id="shared-paper-what-the-full-text-adds" class="slide level2 center">
-<h2>Shared paper: what the full text adds</h2>
-<p><strong>§3.1.3:</strong> the thermal campaign covers five buildings per cluster, 25 in total.</p>
-<p><strong>§4.4:</strong> the authors acknowledge limited sampling and unknown thermostat settings and occupancy schedules during data collection.</p>
-<div class="activity-card">
-<p><strong>Our revised use:</strong> treat the method as a starting point for investigation. Before relying on building-level rankings in our project, check operating conditions and suitability of the sample.</p>
-</div>
-<div class="takeaway">
-<p>The details change the justification and the next test. They do not by themselves show that the paper is wrong.</p>
-</div>
-<div class="source-note">
-<p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11732419/">Full-text sections 3.1.3 and 4.4</a> · this is a teaching interpretation of a published study. Apply the same inspection to your own source.</p>
-</div>
-</section>
-<section id="a-defensible-before-and-after-claim" class="slide level2 center">
-<h2>A defensible before-and-after claim</h2>
-<div class="activity-card">
-<p><strong>Before:</strong> I used this source to justify ___ in my project.</p>
-<p><strong>Found:</strong> section/table/figure ___ establishes ___ under <strong><em>. It leaves </em></strong> unresolved.</p>
-<p><strong>After:</strong> I can now justify <strong><em>, so I will change/retain </em></strong> and test ___ next.</p>
-</div>
-<p>Your conclusion may be <strong>supported as stated</strong>, <strong>needs narrowing/adaptation</strong>, <strong>contradicted by the inspected evidence</strong>, or <strong>not yet established</strong>. Give a reason; these are course working labels.</p>
-<p>Keeping a claim is valid if you show why it survives the check. Do not invent a flaw to complete the exercise.</p>
-</section>
-<section id="if-an-llm-reads-only-the-abstracts" class="slide level2 center">
-<h2>If an LLM reads only the abstracts</h2>
-<p>Its answer is constrained by the text you supplied. A fluent synthesis can conceal that the relevant methods, values or limitations were absent.</p>
-<div class="activity-card">
-<p>For every consequential statement, require:</p>
-<ul>
-<li>a source and exact supporting location</li>
-<li>the conditions under which it holds</li>
-<li>a visible <strong>not reported / not checked</strong> when evidence is missing</li>
-</ul>
-</div>
-<p>Do not let a generated explanation fill missing methods or merge different studies into an unsupported general result. Compare the answer with the actual article before using it to justify a project decision.</p>
-<div class="source-note">
-<p>RIS is a container format, not a measure of completeness. OpenAlex abstract fields can also be missing. <a href="https://help.openalex.org/data/works/attributes/#abstract_inverted_index">Field documentation</a>.</p>
-</div>
-</section>
-<section id="session-2-clinic-on-your-own-idea" class="slide level2 center">
-<h2>Session 2: clinic on your own idea</h2>
-<p><span class="kicker">50 minutes · four students and the instructor</span></p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Time</th>
-<th>Activity</th>
-<th>Save</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0–16</td>
-<td>Four four-minute evidence clinics</td>
-<td>One consequential question for each project</td>
-</tr>
-<tr class="even">
-<td>16–36</td>
-<td>Make one justified revision or small test</td>
-<td>Changed claim, design or research plan</td>
-</tr>
-<tr class="odd">
-<td>36–44</td>
-<td>Pair recheck, four minutes each</td>
-<td>Evidence trace and remaining gap</td>
-</tr>
-<tr class="even">
-<td>44–50</td>
-<td>Update the A4 record</td>
-<td>Card, revised artifact and ledger entry</td>
-</tr>
-</tbody>
-</table>
-<p>The clinic ends with an action in your own project. A literature list alone is not the outcome.</p>
-</section>
-<section id="each-clinic-takes-four-minutes" class="slide level2 center">
-<h2>Each clinic takes four minutes</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Time</th>
-<th>Lead</th>
-<th>What happens</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0–2</td>
-<td>Project author</td>
-<td>Show the initial claim, source location and revised interpretation</td>
-</tr>
-<tr class="even">
-<td>2–4</td>
-<td>Peers + instructor</td>
-<td>Challenge one transfer assumption and agree a feasible next action</td>
-</tr>
-</tbody>
-</table>
-<div class="ask-room">
-<p>What changes in this project because we now know how the source produced its result?</p>
-</div>
-<p>The author records whether to accept, adapt, defer or reject the suggestion, with a reason. Everyone takes a turn as author and contributes to another project.</p>
-</section>
-<section id="twenty-minutes-to-change-the-work" class="slide level2 center">
-<h2>Twenty minutes to change the work</h2>
-<p>Choose the action your evidence supports:</p>
-<ul>
-<li><strong>Research premise:</strong> narrow the hypothesis or identify the unresolved comparison.</li>
-<li><strong>Method:</strong> revise a sampling, control, metric or validation choice.</li>
-<li><strong>Studio:</strong> revise a design option or draw the contextual condition that needs checking.</li>
-<li><strong>Claim:</strong> correct the A4 sentence and show the design consequence.</li>
-</ul>
-<p>Before a test, write the expected observation and what result would change your decision. Save the actual result if attempted.</p>
-<div class="warning-card">
-<p>If access, time or tools block the check, save the exact gap and next action. A planned test stays labelled as planned.</p>
-</div>
-</section>
-<section id="pair-recheck-can-someone-follow-the-evidence" class="slide level2 center">
-<h2>Pair recheck: can someone follow the evidence?</h2>
-<p><span class="kicker">Eight minutes · four per project</span></p>
-<p>Your partner opens the cited section or figure and checks:</p>
+<section id="your-turn" class="slide level2 center">
+<h2>Your turn</h2>
+<p><span class="timer">5 min · <a href="../site_tools/regex-lab.html">Regex Lab</a> · predict before you run</span></p>
+<div class="big">
 <ol type="1">
-<li>Is the source finding represented accurately?</li>
-<li>Are its conditions and your transfer assumption visible?</li>
-<li>Does the revised project decision follow?</li>
-<li>What still needs evidence or a local test?</li>
+<li>Match <em>shade</em>, <em>shaded</em> and <em>shading</em>, but not <em>shadow</em>.</li>
+<li>Load <strong>Numbers with units</strong>. Make it also catch temperatures in <strong>K</strong>.</li>
+<li>Load <strong>Filename rule</strong>. Make it accept <em>three</em>-digit variants too.</li>
 </ol>
-<div class="activity-card">
-<p>“I can trace ___ to <strong><em>. I still cannot establish </em></strong> because ___.”</p>
 </div>
-<p>Update the record if the recheck exposes another gap.</p>
+<div class="fragment">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb9-1"><a aria-label="1"></a>1.  \bshad(e|ed|ing)\b         flag i</span>
+<span id="cb9-2"><a aria-label="2"></a>2.  \d+(\.\d+)?\s?(°C|K)\b</span>
+<span id="cb9-3"><a aria-label="3"></a>3.  ^variant_\d{2,3}\.csv$     flag m</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<aside class="notes">
+<p>{2,3} hasn’t been shown yet. Let them try; reveal it as “between two and three”. The trailing n answer 2 stops it matching the K at the start of a longer word.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="six-components-in-the-a4-package" class="slide level2 center">
-<h2>Six components in the A4 package</h2>
+<section id="regex-finds-characters-not-meaning" class="slide level2 center">
+<h2>Regex finds characters, not meaning</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb10-1"><a aria-label="1"></a>This scheme uses passive cooling.</span>
+<span id="cb10-2"><a aria-label="2"></a>This scheme is not passive.</span>
+<span id="cb10-3"><a aria-label="3"></a>A passively cooled room.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>\bpassive\b</code> matches the first two lines.</p>
+<div class="fragment big">
+<ul>
+<li><strong>False positive:</strong> “not passive” matched, but it’s the opposite claim.</li>
+<li><strong>False negative:</strong> “passively cooled” was missed, but it’s relevant.</li>
+</ul>
+</div>
+<div class="fragment punch">
+<p>A match tells you where to look. You still have to read it.</p>
+</div>
+</section>
+<section id="one-slide-cheat-sheet" class="slide level2 center">
+<h2>One-slide cheat sheet</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>You write</th>
+<th>It means</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>shade</code></td>
+<td>those letters, in that order</td>
+</tr>
+<tr class="even">
+<td><code>\b</code></td>
+<td>edge of a word</td>
+</tr>
+<tr class="odd">
+<td><code>(a|b)</code></td>
+<td>a or b, and capture it</td>
+</tr>
+<tr class="even">
+<td><code>\d</code> · <code>\s</code> · <code>.</code></td>
+<td>digit · space · any character</td>
+</tr>
+<tr class="odd">
+<td><code>+</code> · <code>?</code> · <code>{2}</code> · <code>{2,3}</code></td>
+<td>one or more · optional · exactly 2 · 2 to 3</td>
+</tr>
+<tr class="even">
+<td><code>^</code> · <code>$</code></td>
+<td>start · end (of each line, with flag <code>m</code>)</td>
+</tr>
+<tr class="odd">
+<td><code>\.</code></td>
+<td>a real full stop</td>
+</tr>
+<tr class="even">
+<td>flag <code>i</code></td>
+<td>ignore upper/lower case</td>
+</tr>
+</tbody>
+</table>
+<div class="src">
+<p>Syntax differs slightly between tools. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions">MDN regex guide</a> · <a href="../site_tools/regex-lab.html">Regex Lab</a></p>
+</div>
+</section></section>
+<section>
+<section id="openalex-the-paper-the-full-text-the-trail" class="title-slide slide level1 center" data-background-color="#1a1a1a">
+<h1>OpenAlex: the paper, the full text, the trail</h1>
+
+</section>
+<section id="a-free-catalogue-you-can-read-in-the-browser" class="slide level2 center">
+<h2>A free catalogue you can read in the browser</h2>
+<div class="big">
+<p><strong>OpenAlex</strong> is a free, open index of scholarly works: papers, authors, institutions, citations.</p>
+<p>Paste this into a browser tab. You don’t need an account or a key:</p>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb11-1"><a aria-label="1"></a>https://api.openalex.org/works/doi:10.1098/rsos.241337</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="punch blue">
+<p>One DOI gives you one record: who, when, where, whether it’s free to read, what it cites and what cites it.</p>
+</div>
+</section>
+<section id="what-comes-back-trimmed" class="slide level2 center">
+<h2>What comes back (trimmed)</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb12-1"><a aria-label="1"></a><span class="fu">{</span></span>
+<span id="cb12-2"><a aria-label="2"></a>  <span class="dt">"id"</span><span class="fu">:</span> <span class="st">"https://openalex.org/W4406352916"</span><span class="fu">,</span></span>
+<span id="cb12-3"><a aria-label="3"></a>  <span class="dt">"display_name"</span><span class="fu">:</span> <span class="st">"Towards carbon neutrality: mapping mass retrofit</span></span>
+<span id="cb12-4"><a aria-label="4"></a><span class="st">                   opportunities in Cambridge, UK"</span><span class="fu">,</span></span>
+<span id="cb12-5"><a aria-label="5"></a>  <span class="dt">"publication_year"</span><span class="fu">:</span> <span class="dv">2025</span><span class="fu">,</span></span>
+<span id="cb12-6"><a aria-label="6"></a>  <span class="dt">"open_access"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb12-7"><a aria-label="7"></a>    <span class="dt">"is_oa"</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span></span>
+<span id="cb12-8"><a aria-label="8"></a>    <span class="dt">"oa_url"</span><span class="fu">:</span> <span class="st">"https://royalsocietypublishing.org/rsos/article-pdf/doi/10.1098/rsos.241337/..."</span></span>
+<span id="cb12-9"><a aria-label="9"></a>  <span class="fu">},</span></span>
+<span id="cb12-10"><a aria-label="10"></a>  <span class="dt">"cited_by_count"</span><span class="fu">:</span> <span class="dv">2</span><span class="fu">,</span></span>
+<span id="cb12-11"><a aria-label="11"></a>  <span class="dt">"referenced_works_count"</span><span class="fu">:</span> <span class="dv">33</span></span>
+<span id="cb12-12"><a aria-label="12"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="src">
+<p>Retrieved 25 November 2026. Add <code>?select=id,display_name,open_access,cited_by_count,referenced_works_count</code> to the URL to get only these fields. Counts change as the index updates.</p>
+</div>
+</section>
+<section id="three-fields-that-do-the-work" class="slide level2 center">
+<h2>Three fields that do the work</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<h3 id="oa_url"><code>oa_url</code></h3>
+<p>A <strong>legal free copy</strong> of the full text, if one is known.</p>
+<p><em>Before you write “no access”, check here.</em></p>
+</div><div class="column" style="width:33%;">
+<h3 id="referenced_works"><code>referenced_works</code></h3>
+<p>What this paper <strong>cites</strong>.</p>
+<p><em>Go backwards to where its claim comes from.</em></p>
+</div><div class="column" style="width:33%;">
+<h3 id="cites-filter"><code>cites:</code> filter</h3>
+<p>What <strong>cites this paper</strong>.</p>
+<p><em>Go forwards: has anyone tested, extended or challenged it?</em></p>
+</div></div>
+<div class="fragment">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb13-1"><a aria-label="1"></a>https://api.openalex.org/works?filter=cites:W4406352916</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="forward-from-the-shared-paper" class="slide level2 center">
+<h2>Forward from the shared paper</h2>
+<p><code>filter=cites:W4406352916</code> returns <strong>2 works</strong>:</p>
+<div class="big">
+<ul>
+<li><em>District Heating in High-rise Buildings: A Sociotechnical Approach to Reduce Fuel Poverty</em> (2025)</li>
+<li><em>Heat as a service as a viable decarbonisation strategy and energy cost affordability in the UK</em> (2026)</li>
+</ul>
+</div>
+<div class="fragment punch">
+<p>Judging by the titles alone, neither seems to retest the thermal-imaging method. If that holds when you open them, it tells you something too: nobody has checked the method yet, as far as this index shows.</p>
+</div>
+<div class="src">
+<p>Retrieved 25 November 2026. “Not in the index” is not the same as “does not exist”. Check one other source (e.g.&nbsp;Google Scholar’s “Cited by”) before relying on it.</p>
+</div>
+<aside class="notes">
+<p>Titles only: we have not read these two papers. The point is what the list does and doesn’t contain, not their findings.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="your-turn-run-it-on-your-own-source" class="slide level2 center">
+<h2>Your turn: run it on your own source</h2>
+<p><span class="timer">4 min · browser tab</span></p>
+<div class="big">
+<ol type="1">
+<li><code>https://api.openalex.org/works/doi:YOUR-DOI</code></li>
+<li>Write down: the <strong>OpenAlex ID</strong>, <strong><code>oa_url</code></strong> (or “none”), <strong>cited by</strong> and <strong>references</strong> counts.</li>
+<li>Open the <code>cites:</code> list. Note <strong>one</strong> title worth checking later.</li>
+</ol>
+</div>
+<div class="box">
+<p><strong>No DOI?</strong> Search by title: <code>https://api.openalex.org/works?search=your title words</code>. Compare authors and year before accepting a match.</p>
+</div>
+<div class="src">
+<p>A free API key raises the request limit and is only needed for heavier scripted use. <a href="../templates/evidence-clinic-card.html#openalex-setup">Setup and private-key instructions</a></p>
+</div>
+</section>
+<section id="what-a-record-cant-tell-you" class="slide level2 center">
+<h2>What a record can’t tell you</h2>
+<div class="big">
+<ul>
+<li>whether the paper is <strong>good</strong></li>
+<li>whether it <strong>supports your claim</strong></li>
+<li>the <strong>conditions</strong> behind its result</li>
+</ul>
+</div>
+<div class="fragment big">
+<p>Some records are also missing an abstract, have the wrong metadata, or match the wrong paper.</p>
+</div>
+<div class="fragment punch blue">
+<p>OpenAlex gets you to the paper. Only reading it tells you what it says.</p>
+</div>
+</section></section>
+<section>
+<section id="worked-example-one-paper-two-readings" class="title-slide slide level1 center" data-background-color="#1a1a1a">
+<h1>Worked example: one paper, two readings</h1>
+
+</section>
+<section id="the-abstract-level-view" class="slide level2 center">
+<h2>The abstract-level view</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p>Mora &amp; Bardhan (2025) propose a <strong>proof-of-concept framework</strong> to prioritise mass retrofit, combining neighbourhood open data with building-scale thermal imaging.</p>
+<div class="box">
+<p><strong>Our use:</strong> a studio proposal ranks the houses on a street for retrofit using thermal images.</p>
+<p>What would you need to know first? <strong>Write it down.</strong></p>
+</div>
+</div><div class="column" style="width:48%;">
+<p><img data-src="assets/week11/rsos.241337.f002.jpg" style="width:100.0%"></p>
+</div></div>
+<div class="src">
+<p>Mora, H. &amp; Bardhan, R. (2025). <em>Towards carbon neutrality: mapping mass retrofit opportunities in Cambridge, UK.</em> R. Soc. Open Sci. 12: 241337. <a href="https://doi.org/10.1098/rsos.241337">doi:10.1098/rsos.241337</a> · Fig. 2, CC BY 4.0. “Our use” is a course scenario, not the authors’ claim.</p>
+</div>
+</section>
+<section id="section" class="slide level2 center" data-background-color="#1a1a1a">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:42%;">
+<p><img data-src="assets/week11/rsos.241337.f007.jpg" style="width:100.0%"></p>
+</div><div class="column" style="width:58%;">
+<div class="huge" style="color:#fff;">
+<p>25 buildings.</p>
+</div>
+<div class="fragment big" style="color:#ddd;">
+<p>Five per cluster, surveyed at the white dots on the map (§3.1.3).</p>
+</div>
+<div class="fragment big" style="color:#ddd;">
+<p>Row (c) gives each one a retrofit priority. That’s the ranking our studio use wanted.</p>
+</div>
+<div class="fragment big" style="color:#ffb199;">
+<p>But thermostat settings and occupancy schedules were unknown during the survey (§4.4).</p>
+</div>
+</div></div>
+<div class="src" style="color:#aaa;">
+<p>Fig. 7, Mora &amp; Bardhan (2025), CC BY 4.0. (a) clusters and survey locations; (b) cluster enrichment; (c) building retrofit priority; (d) hard-to-decarbonise classification.</p>
+</div>
+</section>
+<section id="what-the-full-text-changes" class="slide level2 center">
+<h2>What the full text changes</h2>
+<div class="big">
+<p><strong>Before:</strong> thermal images can rank which house to retrofit first.</p>
+<p><strong>Found:</strong> a 25-building survey of living rooms, without knowing how the houses were heated during the survey (§3.1.3, §4.4).</p>
+<p><strong>After:</strong> use thermal imaging to choose <em>which houses to inspect</em>, not to rank them, unless heating conditions are controlled or recorded.</p>
+</div>
+<div class="punch green">
+<p>The paper isn’t wrong. Our use of it was wider than its evidence.</p>
+</div>
+<div class="src">
+<p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11732419/">Read §3.1.3 and §4.4 in full (PMC HTML)</a></p>
+</div>
+</section></section>
+<section>
+<section id="session-2-read-revise-walk-through" class="title-slide slide level1 center" data-background-color="#1a1a1a">
+<h1>Session 2 · Read, revise, walk through</h1>
+
+</section>
+<section id="read-your-own-paper" class="slide level2 center">
+<h2>Read your own paper</h2>
+<p><span class="timer">12 min · full text · then 4 min to rewrite</span></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Look in</th>
+<th>Ask</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Methods</strong></td>
+<td>What was studied, where, how many, under what conditions?</td>
+</tr>
+<tr class="even">
+<td><strong>Results</strong></td>
+<td>Which measure, compared with what?</td>
+</tr>
+<tr class="odd">
+<td><strong>Figures/tables</strong></td>
+<td>What variation or exception does the abstract leave out?</td>
+</tr>
+<tr class="even">
+<td><strong>Limitations</strong></td>
+<td>Where do the authors restrict their own claim?</td>
+</tr>
+</tbody>
+</table>
+<div class="punch blue">
+<p>Write down a section, page or figure number for each point. A link alone isn’t evidence.</p>
+</div>
+<aside class="notes">
+<p>If full text isn’t available even via oa_url: mark the claim “not yet established”, note what section you’d need, and continue with the shared paper.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="before-found-after" class="slide level2 center">
+<h2>Before · Found · After</h2>
+<div class="box big">
+<p><strong>Before:</strong> I used ___ to justify ___.</p>
+<p><strong>Found:</strong> §/fig.&nbsp;___ shows ___ under ___. It doesn’t establish ___.</p>
+<p><strong>After:</strong> I can now claim ___, so I will <strong>keep / narrow / change</strong> ___ and check ___ next.</p>
+</div>
+<div class="fragment big">
+<p><strong>Supported as stated</strong> · <strong>Needs narrowing</strong> · <strong>Contradicted</strong> · <strong>Not yet established</strong></p>
+</div>
+<div class="fragment punch green">
+<p>If your claim survives, say why. That counts as a result.</p>
+</div>
+</section>
+<section id="four-evidence-clinics" class="slide level2 center">
+<h2>Four evidence clinics</h2>
+<p><span class="timer">12 min · 3 min each</span></p>
+<div class="big">
+<p><strong>1½ min</strong>: author shows Before · Found · After, with the location.</p>
+<p><strong>1½ min</strong>: the room asks one question:</p>
+</div>
+<div class="punch">
+<p>“What does your project do differently now that you know how the result was produced?”</p>
+</div>
+<div class="src">
+<p>The author writes down the question and their answer (accept / adapt / defer / reject) in the ledger.</p>
+</div>
+</section></section>
+<section>
+<section id="the-final-package-walked-through" class="title-slide slide level1 center" data-background-color="#1a1a1a">
+<h1>The final package, walked through</h1>
+
+</section>
+<section id="six-components-and-what-done-looks-like" class="slide level2 center">
+<h2>Six components, and what “done” looks like</h2>
 <table class="caption-top">
 <colgroup>
 <col style="width: 50%">
@@ -797,128 +894,146 @@
 <thead>
 <tr class="header">
 <th>Component</th>
-<th>Today’s evidence check can improve…</th>
+<th>Done when…</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Practice Case · 2 slides</td>
-<td>Decision, recommendation and its scope</td>
+<td><strong>Practice Case</strong> · 2 slides</td>
+<td>A critic sees the decision and recommendation in 10 seconds</td>
 </tr>
 <tr class="even">
-<td>Research Brief · 2 pages</td>
-<td>Source use, method rationale and interpretation</td>
+<td><strong>Research Brief</strong> · 2 pages</td>
+<td>Method, sources and uncertainty are stated, with page/figure locations for key sources</td>
 </tr>
 <tr class="odd">
-<td>Object Card · 1 page</td>
-<td>Claim, figure and visible caveat</td>
+<td><strong>Object Card</strong> · 1 page</td>
+<td>One figure carries the recommendation and one visible limit</td>
 </tr>
 <tr class="even">
-<td>Reproducibility Capsule</td>
-<td>Source locations, runnable workflow and verification notes</td>
+<td><strong>Reproducibility Capsule</strong></td>
+<td>Someone else reruns it and gets your key figure</td>
 </tr>
 <tr class="odd">
-<td>Feedback + Revision Ledger · ≥3 entries</td>
-<td>Advice, response, change and reason</td>
+<td><strong>Feedback + Revision Ledger</strong> · ≥3</td>
+<td>Each entry: advice → response → change or reason</td>
 </tr>
 <tr class="even">
-<td>Reflection Note · 1 page</td>
-<td>What changed in your reasoning and what remains unresolved</td>
+<td><strong>Reflection Note</strong> · 1 page</td>
+<td>What changed, what didn’t, what transfers</td>
 </tr>
 </tbody>
 </table>
-<div class="source-note">
-<p><a href="../assignments/assignment-04.html">A4 brief</a> · <a href="../templates/final-package-checklist.html">final checklist</a>. Today’s clinic is formative and changes no assessment requirements or deadlines.</p>
+<div class="src">
+<p><a href="../assignments/assignment-04.html">A4 brief</a> · <a href="../templates/final-package-checklist.html">Final Package Checklist</a> · due end of Week 12. Requirements and weights unchanged.</p>
 </div>
 </section>
-<section id="the-capsule-supports-the-claim-and-the-rerun" class="slide level2 center">
-<h2>The capsule supports the claim and the rerun</h2>
-<p>Include the actual runnable artifact, inputs, tool versions, instructions and expected key output. Supporting screenshots explain a workflow; they do not replace its runnable file.</p>
-<p>For literature used in the argument, retain the citation, source location, what you checked and any relevant search or transformation notes. Keep API keys out of the package.</p>
-<div class="activity-card">
-<p>Can a peer follow the evidence trail and rerun the workflow that produced your key figure? Record the successful check or exact blocker.</p>
+<section id="one-thread-runs-through-all-six" class="slide level2 center">
+<h2>One thread runs through all six</h2>
+<div class="huge">
+<p>decision → evidence → comparison → action → limit</p>
 </div>
-<p>If you explore RIS/OpenAlex further, save raw and processed records separately. Metadata matching alone does not complete a literature review.</p>
+<div class="fragment big">
+<p>A reader should be able to follow that thread from the <strong>Object Card</strong> alone, then confirm it in the <strong>Brief</strong> and rerun it from the <strong>Capsule</strong>.</p>
+</div>
+<div class="fragment punch blue">
+<p>Next week the LLM judge only sees your Object Card. Make sure the thread is visible there.</p>
+</div>
 </section>
-<section id="the-object-card-after-the-evidence-check" class="slide level2 center">
-<h2>The Object Card after the evidence check</h2>
-<p>Show the revised claim with the figure or drawing it actually supports.</p>
+<section id="where-todays-work-goes" class="slide level2 center">
+<h2>Where today’s work goes</h2>
 <table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Check</th>
-<th>What the reader needs</th>
+<th>Today you did…</th>
+<th>It goes into…</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Decision</td>
-<td>What should change, and for whom?</td>
+<td>Feedback receipt check</td>
+<td><strong>Ledger</strong>: status of each Week 10 entry</td>
 </tr>
 <tr class="even">
-<td>Evidence</td>
-<td>Which comparison supports that action?</td>
+<td>Before · Found · After</td>
+<td><strong>Brief</strong>: source use and limits · <strong>Object Card</strong>: the caveat</td>
 </tr>
 <tr class="odd">
-<td>Conditions</td>
-<td>Where and when does the statement apply?</td>
+<td>OpenAlex record</td>
+<td><strong>Capsule</strong> source list: DOI, OpenAlex ID, date retrieved</td>
 </tr>
 <tr class="even">
-<td>Limit</td>
-<td>What could change the recommendation?</td>
+<td>Regex filename / value check</td>
+<td><strong>Capsule</strong> verification notes</td>
+</tr>
+<tr class="odd">
+<td>Evidence clinic question</td>
+<td><strong>Ledger</strong>: a new entry</td>
 </tr>
 </tbody>
 </table>
-<div class="activity-card">
-<p>Give the card to a partner for 30 seconds. Ask them to restate the recommendation and one limit without your explanation.</p>
+</section>
+<section id="the-capsule-rerun-test" class="slide level2 center">
+<h2>The capsule rerun test</h2>
+<div class="big">
+<p>Before Week 12, <strong>swap capsules with a partner</strong>:</p>
+<ol type="1">
+<li>Unzip on <em>their</em> machine.</li>
+<li>Follow only the README.</li>
+<li>Do you get the key figure?</li>
+</ol>
+</div>
+<div class="punch">
+<p>If not, record the exact step where it broke. That’s a ledger entry and a fix.</p>
+</div>
+<div class="src">
+<p>Keep API keys and passwords out of the capsule.</p>
 </div>
 </section>
-<section id="a4-record-reasoning-that-changed" class="slide level2 center">
-<h2>A4 record: reasoning that changed</h2>
-<p><span class="kicker">Final six minutes · save the card and a dated ledger entry</span></p>
-<div class="recall-4step">
-<div class="step">
-<p><strong>Did</strong> What claim and source did I inspect?</p>
+<section id="fix-one-thing-log-it" class="slide level2 center">
+<h2>Fix one thing, log it</h2>
+<p><span class="timer">8 min</span></p>
+<div class="big">
+<p>Pick the <strong>weakest component</strong> from the checklist, or the gap your clinic exposed.</p>
+<p>Change it now. Write the ledger line:</p>
 </div>
-<div class="step">
-<p><strong>Assumed</strong> What did I infer from the abstract?</p>
+<div class="box big">
+<p>“___ said ___. I changed ___ / I didn’t, because ___.”</p>
 </div>
-<div class="step">
-<p><strong>Risk</strong> What did the full paper leave uncertain for my project?</p>
-</div>
-<div class="step">
-<p><strong>Verify</strong> What changed or survived, and what test remains?</p>
-</div>
-</div>
-<p>Retain the original statement, source locators, revised artifact and peer response. Today’s entry contributes to A4’s existing minimum of three ledger entries across the project.</p>
 </section>
-<section id="preparation-for-the-object-fair" class="slide level2 center">
-<h2>Preparation for the Object Fair</h2>
-<p>A reader should be able to understand the decision, inspect its evidence and locate the workflow.</p>
+<section id="next-week-quick-fire-then-the-judge" class="slide level2 center">
+<h2>Next week: quick-fire, then the judge</h2>
+<div class="big">
 <ul>
-<li>make the six required components easy to find</li>
-<li>test the files and the key figure’s rerun</li>
-<li>prepare an answer about method, limits and alternatives</li>
-<li>distinguish what you checked from what you would investigate next</li>
+<li><strong>4-minute quick-fire</strong> of your package, then questions from the room</li>
+<li>An <strong>LLM reads your Object Card</strong> and critiques it</li>
+<li><strong>We judge the judge.</strong> Is each point grounded, off-target or made up?</li>
+<li>You decide what to act on. That becomes your last ledger entry.</li>
 </ul>
-<div class="takeaway">
-<p>Show the project as it now stands, including the uncertainty that still matters to the decision.</p>
+</div>
+<div class="box">
+<p><strong>Bring:</strong> your final Object Card as a PDF. You’ll be asked before class whether it may be sent to the LLM; you can opt out and get a human-only review instead. No scores come from the LLM.</p>
 </div>
 </section>
-<section id="exit-what-does-the-evidence-let-you-claim" class="slide level2 center">
-<h2>Exit: what does the evidence let you claim?</h2>
-<div class="activity-card">
-<p>“I initially thought <strong><em>. Reading </em></strong> showed <strong><em>. In my project I will now </em></strong>, because <strong><em>. The next check is </em></strong>.”</p>
+<section id="exit-line" class="slide level2 center">
+<h2>Exit line</h2>
+<div class="box big">
+<p>“I thought ___. Reading ___ showed ___. In my package I’ve now changed ___. Still to do before Week 12: ___.”</p>
 </div>
-<p>If your claim survives, explain why. If support remains unverified, keep that limit visible.</p>
-<p>Next week: the Object Fair and discussion of your final package.</p>
+<div class="punch blue">
+<p>Post it under your Object Card draft.</p>
+</div>
 
 
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>Week 11 · feeds A4: Workflow Package</p>
+
 </div>
 </div></div>
 
@@ -944,7 +1059,7 @@
       // https://revealjs.com/config/
       Reveal.initialize({
 'controlsAuto': true,
-'previewLinksAuto': false,
+'previewLinksAuto': true,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -1076,7 +1191,7 @@
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'slide',
+        transition: 'none',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
@@ -1096,9 +1211,9 @@
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1400,
+        width: 1600,
 
-        height: 900,
+        height: 1000,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,

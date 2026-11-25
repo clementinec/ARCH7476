@@ -322,69 +322,59 @@ The repair can improve a claim/figure or test a small component in an existing G
 
 **Feeds:** A4 Draft Package + Feedback/Revision Ledger. The six-component final package remains the target for Week 12.
 
-## Week 11: Final Package Polish
+## Week 11: Evidence and Final Package Clinic
 
-**Focus:** check how literature supports one claim in your own project, and what changes when you read beyond the abstract. All four students—two PhD and two undergraduate students—do the same task. The claim may concern a research hypothesis or method, or a studio design decision; in every case, connect the source's methods, results and limitations to your actual project.
+**Focus:** confirm that Week 10's feedback has reached your A4 package, check what one source actually supports in your own project, learn two tools for that check (regex and OpenAlex), and walk through the final package. All four students (two PhD, two undergraduate) do the same tasks on their own projects. A claim may concern a research premise, a method choice or a studio design decision.
 
-Use the [Evidence Clinic Card](templates/evidence-clinic-card.qmd) to record your initial interpretation, inspect the full text, and revise the claim or decision. An abstract in a RIS record may omit conditions or limits that matter to your project. Search, regex and record-retrieval tools support this inspection; a match or retrieved record does not verify the claim.
+**Prepare:** bring your Week 10 Peer Review Card, your Feedback + Revision Ledger, one claim your project relies on, and its source (DOI if it has one). Use the [Evidence Clinic Worksheet (PDF)](templates/evidence-clinic-worksheet.pdf). No account or API key is needed. Tool reference: [Regex Lab](site_tools/regex-lab.html) · [Evidence Clinic Card](templates/evidence-clinic-card.qmd).
 
-**Prepare:** bring your weakest A4 component, one literature source relevant to a claim you make, its abstract and full text if accessible, and the relevant project drawing, output or workflow file. A RIS export and your own API key are optional preparation for exploring the tools; no key is needed to participate in the clinic. Keep keys private and out of shared files, screenshots and posts.
-
-If the full text is unavailable, mark the relevant support **unverified** and record what you need to inspect; do not exclude the paper merely because you cannot access it. One shared real paper can provide a comparison exercise while you retain that limitation on your own project claim.
-
-### Session 1 — From abstract to project decision (50 minutes)
+### Session 1: Feedback, claim and tools (50 minutes)
 
 | Time | Activity | Concrete output |
 |---|---|---|
-| 0–8 min | Brainstorm one claim or decision in your own project | Write the claim and what evidence would support or refute it. |
-| 8–18 min | Four pitches, 2.5 minutes per student | Explain your project idea, the claim and the literature evidence you need. |
-| 18–28 min | Short search / regex / RIS / OpenAlex demonstration using the [Regex Lab](site_tools/regex-lab.html) | See how records and abstracts are found, and identify what the retrieved material cannot establish. |
-| 28–50 min | Abstract-first / full-text comparison in pairs, with each student inspecting their selected source | Record the abstract-only interpretation, then inspect relevant methods, results and limitations with precise source locations. Compare with your partner and state what changes in your project claim or decision. |
+| 0–10 min | Did Week 10's feedback land? 2½ minutes each: the advice, the ledger entry, where it changed the package. The Week 10 reviewer confirms. | Status of each Week 10 entry: addressed, in progress, or deferred/rejected with a reason. |
+| 10–14 min | Write down your claim and your abstract-only reading, before opening the full text | The "before" record. |
+| 14–30 min | Regex from zero: word edges, alternatives, digits and units, filename checks, capturing a field; 5 minutes in the Regex Lab | Three working patterns, and one example of a false positive and a false negative. |
+| 30–42 min | OpenAlex: one DOI gives one record, the free full-text link, what it cites and what cites it. Run it on your own source. | OpenAlex ID, `oa_url`, citation counts and one related work to check. |
+| 42–50 min | Worked example: Mora & Bardhan (2025), abstract versus full text | How the sample and operating conditions narrow a studio use of the method. |
 
-**The 22-minute comparison:** write your abstract-only interpretation (4 min); inspect your own source's relevant full-text sections (8 min); compare findings in pairs, three minutes each (6 min); write your revised claim and remaining question (4 min). If using the shared paper, distinguish what it demonstrates from what still needs evidence in your own project.
-
-### Session 2 — Four-person evidence clinic (50 minutes)
-
-**Bring to the clinic:** the weakest A4 component or the component most in need of peer review, plus the source and project evidence needed to inspect it. Share through Slack or open the files locally.
-
-**Round-table check-in:** Which A4 component is weakest, and what must be fixed before submission?
+### Session 2: Read, revise and walk through the package (50 minutes)
 
 | Time | Activity | Concrete output |
 |---|---|---|
-| 0–16 min | Four four-minute clinics: each student explains their before/after claim and source evidence for two minutes, then peers and instructor respond for two minutes | One feasible claim, design or test revision per student. Everyone contributes as an author and as a reviewer. |
-| 16–36 min | Revise your claim, design decision or small test, with instructor support | A revision justified by the source, and an observed test result if a test is attempted; otherwise a clearly stated remaining test or blocker. |
-| 36–44 min | Pair recheck, four minutes per student's work | A partner follows the source locations, checks the revised claim against the evidence and identifies any remaining gap. |
-| 44–50 min | Update the A4 record | Save the before/after claim, source and locators, consequence for the project decision, remaining test, and a dated feedback/revision entry explaining your response. |
+| 0–16 min | Read your source's methods, results, figures and limitations; rewrite the claim | Before · Found · After, with section/page/figure locations. |
+| 16–28 min | Four three-minute evidence clinics | One question per project, and the author's accept/adapt/defer/reject response. |
+| 28–40 min | Final package walkthrough: what "done" looks like for each component, the capsule rerun test, where today's work goes | A list of the gaps left in your own package. |
+| 40–48 min | Fix one thing and log it | One changed component and one ledger entry. |
+| 48–50 min | Week 12 preview: quick-fire and the LLM judge | Consent decision for the LLM judge. |
 
-**Leave with:** one before/after project claim, its source and precise locators, a changed or narrowed research/design decision (or an evidenced reason to retain it), and one remaining test. Save the peer check and any unverified support or blocker in your A4 notes. A proposed check is not completed verification.
-
-**Feeds:** A4 Final Package. The six required components remain the Practice Case, Research Brief, Object Card, Reproducibility Capsule, Feedback + Revision Ledger (at least three entries across the project), and Reflection Note. The capsule must contain the runnable workflow artifact and run instructions; screenshots may support it but cannot replace that artifact. This clinic is formative, adds no graded assignment, and changes no A4 requirements, weights or deadlines.
-
-The package must show the full loop:
-
-1. decision
-2. variants or scenarios
-3. workflow
-4. evaluation
-5. threshold
-6. design action
-7. reproducibility check
-8. feedback/revision decision
+**Feeds:** A4 Final Package. The six required components remain the Practice Case, Research Brief, Object Card, Reproducibility Capsule, Feedback + Revision Ledger (at least three entries across the project), and Reflection Note. Use the [Final Package Checklist](templates/final-package-checklist.md). This clinic is formative and changes no A4 requirements, weights or deadlines.
 
 ## Week 12: Object Fair
 
-### In Class
+**Focus:** a four-minute quick-fire of each final package, an LLM critique of each Object Card that the room then judges, final fixes, and what transfers to your next project.
 
-- 6-8 minute final presentation
-- 4 minute Q&A
-- object card / evidence board review
-- final reflection on workflow transfer
+**Prepare:** your final Object Card as a PDF, with your name removed from the copy sent to the LLM. Before class, confirm whether your card may be sent to the LLM; you can opt out and receive a human critique instead. The LLM gives no scores and has no effect on A4 marks. See [The LLM Judge](templates/llm-judge.qmd) for the prompt and ground rules.
 
-**Session 2 material:** use the final object card or reflection note.
+### Session 1: Quick-fire and the judge (50 minutes)
 
-**Round-table check-in:** What design reasoning can transfer to another studio project?
+| Time | Activity | Concrete output |
+|---|---|---|
+| 0–4 min | How today works | |
+| 4–28 min | Quick-fire: four minutes per package, then two minutes of questions | Questions from the room on each link: decision, evidence, comparison, action, limit. |
+| 28–48 min | The LLM judge, five minutes per card: did it restate the recommendation correctly; is each criticism Grounded, Off-target or Invented; the author's ruling | A completed [Judge Scorecard (PDF)](templates/judge-scorecard.pdf) and the author's accept/adapt/defer/reject decisions. |
+| 48–50 min | Break | |
 
-**Feeds:** A4 Reflection Note.
+### Session 2: Fix and transfer (50 minutes)
+
+| Time | Activity | Concrete output |
+|---|---|---|
+| 0–8 min | Judge versus room: what the LLM caught, invented and missed | When you would use an LLM critic, and how you would check it. |
+| 8–26 min | Last fixes | One change, plus two ledger entries: one from the room and one *AI check*. |
+| 26–42 min | Round table, four minutes each | The reasoning move you're keeping and what you'd check before reusing it. Feeds the Reflection Note. |
+| 42–50 min | Submission check and close | Six components present, sources located, capsule rerun by someone else. |
+
+**Feeds:** A4 Reflection Note and Feedback + Revision Ledger. A4 is due at the end of Week 12.
 
 ### Final Prompt
 

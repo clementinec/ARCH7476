@@ -34,7 +34,8 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-b029eb0caf385fc5521fb94e224df9c3.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-0427d8d92a431aa6a6430e53ec02a470.css">
+  <link rel="stylesheet" href="plain.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -126,9 +127,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -136,391 +134,329 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Week 12: Object Fair</h1>
-  <p class="subtitle">Final Review, Synthesis, and Transfer Forward</p>
+  <p class="subtitle">Quick-fire, the LLM judge, and what you take with you</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="todays-agenda" class="slide level2 center">
-<h2>Today’s Agenda</h2>
-<div class="two-col">
-<div class="concept-card">
-<p><span class="label concept">Session 1</span></p>
-<p><span class="card-title">Final review</span></p>
+<section id="today" class="slide level2 center">
+<h2>Today</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="session-1-50-min">Session 1 · 50 min</h3>
 <ul>
-<li class="fragment">present your A4 package to the room and invited critics</li>
-<li class="fragment">timed presentations, then questions</li>
-<li class="fragment">read every project against the same evaluation loop</li>
-<li class="fragment">capture the feedback that matters</li>
+<li><strong>0–4</strong> How today works</li>
+<li><strong>4–28</strong> Quick-fire: four packages</li>
+<li><strong>28–48</strong> The LLM judge, and judging the judge</li>
+<li><strong>48–50</strong> Break</li>
 </ul>
-</div>
-<div class="activity-card">
-<p><span class="label activity">Session 2</span></p>
-<p><span class="card-title">Reasoning round table</span></p>
+</div><div class="column" style="width:50%;">
+<h3 id="session-2-50-min">Session 2 · 50 min</h3>
 <ul>
-<li class="fragment">synthesis, not a second formal presentation</li>
-<li class="fragment">reconstruct the reasoning you can carry forward</li>
-<li class="fragment">name what transfers to your next project</li>
+<li><strong>0–8</strong> Judge vs room: what did we learn?</li>
+<li><strong>8–26</strong> Last fixes, last ledger entries</li>
+<li><strong>26–42</strong> Round table: what transfers</li>
+<li><strong>42–50</strong> Submission check and close</li>
 </ul>
-</div>
-</div>
-<div class="reflection-card">
-<p>This is a final review, not a contest. We read each package carefully, name what it shows, and help each other see what carries forward.</p>
+</div></div>
+<div class="punch blue">
+<p>A4 is due at the end of this week. Every part of today should leave the package better.</p>
 </div>
 </section>
-<section class="slide level2 center">
+<section id="twelve-weeks-one-method" class="slide level2 center">
+<h2>Twelve weeks, one method</h2>
+<div class="big">
+<p><strong>A1</strong> Total Recall → <strong>A2</strong> Evidence + Workflow Map → <strong>A3</strong> Prototype + Verification → <strong>A4</strong> Workflow Package</p>
+</div>
+<div class="huge">
+<p>decision → evidence → comparison → action → limit</p>
+</div>
+<div class="punch">
+<p>Today you show the package, and test whether a stranger (human or machine) can follow that thread.</p>
+</div>
+</section>
+<section>
+<section id="quick-fire" class="title-slide slide level1 center" data-background-color="#1a1a1a">
+<h1>Quick-fire</h1>
 
-<p><span class="kicker">Course progress</span></p>
 </section>
-<section id="final-handoff-and-transfer" class="slide level2 center">
-<h2>Final handoff and transfer</h2>
-<div class="progress-ladder">
-<div class="step done">
-<p>A1 recall</p>
+<section id="four-minutes-each" class="slide level2 center">
+<h2>Four minutes each</h2>
+<p><span class="timer">24 min · 4 min talk + 2 min questions</span></p>
+<div class="big">
+<p>Put your <strong>Object Card</strong> on screen and walk the thread:</p>
+<ol type="1">
+<li><strong>Decision</strong>: what was being decided, and for whom?</li>
+<li><strong>Evidence</strong>: what workflow, what sources?</li>
+<li><strong>Comparison</strong>: against what threshold, option or criterion?</li>
+<li><strong>Action</strong>: what changes in the design or research?</li>
+<li><strong>Limit</strong>: where does this stop being true?</li>
+</ol>
 </div>
-<div class="step done">
-<p>A2 route</p>
-</div>
-<div class="step done">
-<p>A3 prototype</p>
-</div>
-<div class="step done">
-<p>A4 draft</p>
-</div>
-<div class="step current">
-<p>Object Fair</p>
-</div>
-<div class="step current">
-<p>transfer</p>
-</div>
-</div>
-<div class="artifact-strip">
-<div class="artifact">
-<p><span class="label concept">Present</span> one bounded decision, one workflow, one output, one threshold</p>
-</div>
-<div class="artifact">
-<p><span class="label activity">Hand over</span> practice case, research brief, object card, capsule</p>
-</div>
-<div class="artifact">
-<p><span class="label example">Inspect</span> reviewers trace the evidence loop and ask what remains uncertain</p>
-</div>
-<div class="artifact">
-<p><span class="label reflect">Transfer</span> one reasoning move to reuse in another studio project</p>
-</div>
-</div>
+<aside class="notes">
+<p>Hard stop at 4 minutes. Volunteer first, then random order. Keep the other three on their scorecards during questions.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section class="slide level2 center">
-
-<p><span class="kicker">The arc</span></p>
-</section>
-<section id="where-this-sits-in-the-semester" class="slide level2 center">
-<h2>Where this sits in the semester</h2>
-<p>The Object Fair closes the loop. It is the last review of A4, read against the same spine we have used since Week 1.</p>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-    A[A1: Total Recall&lt;br/&gt;Weeks 1-3] --&gt; B[A2: Evidence + Workflow Map&lt;br/&gt;Weeks 4-6]
-    B --&gt; C[A3: Prototype + Verification&lt;br/&gt;Weeks 7-9]
-    C --&gt; D[A4: Workflow Package&lt;br/&gt;Weeks 10-12]
-    D --&gt; E{Final review}
-    E --&gt; F[Object Fair: present &amp; defend]
-    E --&gt; G[Transfer: reasoning you keep]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<div class="concept-card">
-<p>One method, four objects. Today you hand over the <strong>package</strong> — and then you keep the <strong>reasoning</strong>.</p>
-</div>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Tool coverage closure</span></p>
-</section>
-<section id="what-was-mapped-and-what-remains-yours-to-own" class="slide level2 center">
-<h2>What was mapped, and what remains yours to own</h2>
-<div class="tool-ledger">
-<div class="slot core">
-<p><span class="label activity">Mapped by course</span></p>
+<section id="questions-that-test-a-link" class="slide level2 center">
+<h2>Questions that test a link</h2>
+<div class="big">
 <ul>
-<li class="fragment">evidence audit</li>
-<li class="fragment">spreadsheet thresholds</li>
-<li class="fragment"><code>geopandas</code></li>
-<li class="fragment">BIM-derived proxy</li>
-<li class="fragment">Python / AI-assisted fact-checking logic</li>
+<li>“What would have changed your recommendation?”</li>
+<li>“How would I rerun this?”</li>
+<li>“Which source location does that rest on?”</li>
+<li>“Where does this stop being true?”</li>
 </ul>
 </div>
-<div class="slot peer">
-<p><span class="label concept">Mapped by room</span></p>
-<ul>
-<li class="fragment">GH workflows</li>
-<li class="fragment">Ladybug/Radiance pieces</li>
-<li class="fragment">studio-specific tool practices</li>
-</ul>
+<div class="punch">
+<p>Question the claim, not the person.</p>
 </div>
-<div class="slot explore">
-<p><span class="label example">Still exploratory</span></p>
-<ul>
-<li class="fragment">large plugins</li>
-<li class="fragment">full BIM interoperability</li>
-<li class="fragment">advanced simulation</li>
-<li class="fragment">office-specific automation</li>
-</ul>
+<div class="src">
+<p>While others present, note one strong move and one open question for each.</p>
 </div>
-</div>
-<p>The honest endpoint is not “we covered every tool.” It is: you can now tell whether a tool’s output deserves trust.</p>
-</section>
-<section class="slide level2 center">
+</section></section>
+<section>
+<section id="the-judge" class="title-slide slide level1 center" data-background-color="#1a1a1a">
+<h1>The judge</h1>
 
-<p><span class="kicker">The session</span></p>
 </section>
-<section id="run-of-show" class="slide level2 center">
-<h2>Run of show</h2>
-<p>A calm, predictable order so no one over-prepares for a slot.</p>
+<section id="an-llm-has-read-your-object-card" class="slide level2 center">
+<h2>An LLM has read your Object Card</h2>
+<div class="big">
+<p>It saw <strong>only the card</strong>: not your talk, your data or your capsule.</p>
+<p>It was told to:</p>
+<ul>
+<li><strong>restate</strong> your recommendation in one sentence</li>
+<li>give <strong>up to four criticisms</strong>, each <strong>quoting</strong> the card</li>
+<li>name <strong>one strength</strong></li>
+<li>list what it <strong>cannot judge</strong> from the card</li>
+<li>give <strong>no score</strong></li>
+</ul>
+</div>
+<div class="src">
+<p><a href="../templates/llm-judge.html">The exact prompt and ground rules</a>. Critiques were generated before class (model and date recorded); one is run live.</p>
+</div>
+</section>
+<section id="round-1-did-it-understand-you" class="slide level2 center">
+<h2>Round 1: did it understand you?</h2>
+<div class="huge">
+<p>“Your card recommends…”</p>
+</div>
+<div class="fragment big">
+<p>The author answers: <strong>yes · partly · no</strong></p>
+</div>
+<div class="fragment punch blue">
+<p>If it got it wrong, that’s information about your card, not just about the model.</p>
+</div>
+</section>
+<section id="round-2-judge-each-criticism" class="slide level2 center">
+<h2>Round 2: judge each criticism</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Segment</th>
-<th>Time</th>
-<th>What happens</th>
+<th>Label</th>
+<th>When the criticism…</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Setup &amp; final check</td>
-<td>15 min</td>
-<td>files loaded, object cards posted, timing confirmed</td>
+<td><strong>Grounded</strong></td>
+<td>quotes the card accurately, and the problem is real</td>
 </tr>
 <tr class="even">
-<td>Welcome &amp; framing</td>
-<td>5 min</td>
-<td>the evaluation loop we all read against</td>
+<td><strong>Off-target</strong></td>
+<td>quotes accurately, but misreads the purpose or uses the wrong standard</td>
 </tr>
 <tr class="odd">
-<td>Final presentations</td>
-<td>~90 min</td>
-<td>timed, with questions after each</td>
-</tr>
-<tr class="even">
-<td>Invited critic notes</td>
-<td>20 min</td>
-<td>practice and method perspectives</td>
-</tr>
-<tr class="odd">
-<td>Session 2: round table</td>
-<td>30 min</td>
-<td>synthesis and transfer forward</td>
+<td><strong>Invented</strong></td>
+<td>relies on something not on the card, or misquotes it</td>
 </tr>
 </tbody>
 </table>
-<div class="example-card">
-<p><span class="card-title">While others present</span> You are not waiting your turn — you are reviewing. Note one strong move and one open question per presenter. Those notes are your participation record.</p>
+<div class="fragment big">
+<p>Then: <strong>what did it miss</strong> that the room caught in the quick-fire?</p>
+</div>
+<div class="src">
+<p>Mark it on the <a href="../templates/judge-scorecard.pdf">Judge Scorecard (PDF)</a>.</p>
 </div>
 </section>
-<section id="presentation-format" class="slide level2 center">
-<h2>Presentation format</h2>
-<div class="activity-card">
-<p><span class="card-title">Per person</span></p>
-<ul>
-<li class="fragment"><strong>6–8 min</strong> — final presentation of your A4 package</li>
-<li class="fragment"><strong>4 min</strong> — questions from the room and invited critics</li>
-<li class="fragment"><strong>2 min</strong> — notes captured, one carry-forward noted</li>
-</ul>
+<section id="the-only-scores-today" class="slide level2 center">
+<h2>The only scores today</h2>
+<div class="huge">
+<p>go to the judge.</p>
 </div>
-<p>Use your object card as the single visual that carries the recommendation and the one figure. Volunteers go first; a random draw may fill the remaining slots.</p>
+<div class="fragment big">
+<p>Judge’s score = <strong>grounded criticisms out of four</strong>, for each card.</p>
+</div>
+<div class="fragment punch green">
+<p>Last week we asked papers to show where their evidence was. Today we ask the same of the machine.</p>
+</div>
 </section>
-<section class="slide level2 center">
+<section id="round-3-the-author-rules" class="slide level2 center">
+<h2>Round 3: the author rules</h2>
+<p><span class="timer">5 min per card, all three rounds</span></p>
+<div class="big">
+<p>For each <strong>Grounded</strong> or <strong>Off-target</strong> point:</p>
+<p><strong>accept · adapt · defer · reject</strong>, with a reason.</p>
+</div>
+<div class="box big">
+<p>“The LLM judge said ___. The room called it ___. I ___, because ___.”</p>
+</div>
+<div class="src">
+<p>One of these goes in your ledger, with <em>AI check</em> as the source. The A4 brief already accepts that.</p>
+</div>
+<aside class="notes">
+<p>Run one card live, from a volunteer who consented, right after showing its pre-generated critique. Ask the room whether the two runs agree. If a student opted out, the instructor gives a human critique in the same format, and the room judges that critique just the same.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="break" class="slide level2 center">
+<h2>Break</h2>
+<p><span class="timer">10 min</span></p>
+<div class="big">
+<p>When we come back: what the judge was good and bad at, then your final fixes.</p>
+</div>
+</section></section>
+<section>
+<section id="session-2-judge-vs-room" class="title-slide slide level1 center" data-background-color="#1a1a1a">
+<h1>Session 2 · Judge vs room</h1>
 
-<p><span class="kicker">The criteria</span></p>
 </section>
-<section id="what-every-presentation-is-read-against" class="slide level2 center">
-<h2>What every presentation is read against</h2>
-<p>Each package is read against one evaluation loop — the same logic your A4 must let a stranger trace.</p>
-<div class="spine-rail">
-<p><span class="node">Decision</span> <span class="node">Evidence</span> <span class="node">Variation</span> <span class="node">Output</span> <span class="node">Threshold</span> <span class="node">Action</span></p>
+<section id="what-did-we-learn-about-the-judge" class="slide level2 center">
+<h2>What did we learn about the judge?</h2>
+<p><span class="timer">8 min</span></p>
+<div class="big">
+<ol type="1">
+<li>Which <strong>kind</strong> of problem did it catch best? Wording, logic, missing limits?</li>
+<li>What did it <strong>invent</strong> or misread, and why?</li>
+<li>What did <strong>the room</strong> catch that it couldn’t?</li>
+<li>Would you use it on your next project, and <strong>at which stage</strong>?</li>
+</ol>
 </div>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-    A[design decision] --&gt; B[variants / scenarios]
-    B --&gt; C[workflow]
-    C --&gt; D[evidence output]
-    D --&gt; E{threshold}
-    E --&gt; F[design action]
-    F --&gt; G[limit]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<div class="concept-card">
-<p><span class="card-title">The reviewer’s question</span> Can I trace <strong>decision → variants/scenarios → workflow → evidence output → threshold → action → limit</strong> without you explaining it out loud?</p>
-</div>
-<p>If a link is missing, that is feedback — not a verdict.</p>
-</section>
-<section id="invited-critics-three-reading-positions" class="slide level2 center">
-<h2>Invited critics: three reading positions</h2>
-<p>Not judges with scores — three perspectives, so the feedback is varied rather than repetitive.</p>
-<div class="three-step">
-<div class="step-box">
-<p><span class="card-title">Practice lens</span> Would this convince a studio tutor or client? Is the recommendation usable?</p>
-</div>
-<div class="step-box">
-<p><span class="card-title">Method lens</span> Is the workflow sound? Are assumptions, thresholds, and limits stated?</p>
-</div>
-<div class="step-box">
-<p><span class="card-title">Communication lens</span> Can a busy reader get the message in 30 seconds?</p>
-</div>
+<div class="fragment punch">
+<p>A critic you can check is useful. A critic you can’t check is just confident.</p>
 </div>
 </section>
-<section id="qa-that-helps-the-presenter" class="slide level2 center">
-<h2>Q&amp;A that helps the presenter</h2>
-<p>The questions that help most are the ones that test a link in the loop, not the person.</p>
-<div class="activity-card">
-<p><span class="card-title">Useful questions sound like</span></p>
-<ul>
-<li class="fragment">“What would have changed the recommendation?” (threshold)</li>
-<li class="fragment">“How would someone rerun this?” (workflow)</li>
-<li class="fragment">“Where does this stop being true?” (limit)</li>
-</ul>
+<section id="last-fixes-last-ledger-entries" class="slide level2 center">
+<h2>Last fixes, last ledger entries</h2>
+<p><span class="timer">18 min</span></p>
+<div class="big">
+<p>Act on <strong>one</strong> point from today, from the room or the judge.</p>
+<p>Then write two ledger lines:</p>
 </div>
-<div class="warning-card">
-<p>We examine the artifact and its claim, never the presenter’s competence.</p>
+<div class="box">
+<ol type="1">
+<li><strong>Room:</strong> “___ asked ___. I changed ___ / I didn’t, because ___.”</li>
+<li><strong>AI check:</strong> “The judge said ___, labelled ___. I ___, because ___.”</li>
+</ol>
 </div>
+<div class="src">
+<p>If the change is to the capsule: rerun it and confirm the key figure still comes out.</p>
+</div>
+</section></section>
+<section>
+<section id="what-transfers" class="title-slide slide level1 center" data-background-color="#1a1a1a">
+<h1>What transfers</h1>
+
 </section>
-<section id="capture-feedback-as-you-go" class="slide level2 center">
-<h2>Capture feedback as you go</h2>
-<p>You will hear more than you can hold. Sort it while it is fresh.</p>
+<section id="round-table" class="slide level2 center">
+<h2>Round table</h2>
+<p><span class="timer">16 min · 4 min each · no slides</span></p>
+<div class="box big">
+<p>“The reasoning move I’m keeping is ___.</p>
+<p>It worked here because ___.</p>
+<p>Before I reuse it on another project, I’d check ___.”</p>
+</div>
+<div class="punch blue">
+<p>PhD: the next chapter or study. Studio: the next project.</p>
+</div>
+<aside class="notes">
+<p>This feeds the Reflection Note. It’s a conversation, not a presentation. Ask one follow-up per person: “what would make that move fail?”</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="submission-check" class="slide level2 center">
+<h2>Submission check</h2>
+<p><span class="timer">5 min</span></p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
-<thead>
-<tr class="header">
-<th>Note type</th>
-<th>Meaning</th>
-<th>What to do</th>
-</tr>
-</thead>
 <tbody>
 <tr class="odd">
-<td><strong>Trace gap</strong></td>
-<td>a link in the loop is unclear</td>
-<td>record it for the final package edit</td>
+<td>☐</td>
+<td>Practice Case · Research Brief · Object Card · Capsule · Ledger (≥3) · Reflection Note</td>
 </tr>
 <tr class="even">
-<td><strong>Carry-forward</strong></td>
-<td>a move worth reusing next time</td>
-<td>add to your transfer list</td>
+<td>☐</td>
+<td>Every key source has a location (section, page, figure)</td>
 </tr>
 <tr class="odd">
-<td><strong>Polish</strong></td>
-<td>small clarity improvement</td>
-<td>note if time allows</td>
+<td>☐</td>
+<td>Someone else has rerun the capsule</td>
+</tr>
+<tr class="even">
+<td>☐</td>
+<td>Today’s two ledger entries are in</td>
+</tr>
+<tr class="odd">
+<td>☐</td>
+<td>No API keys or passwords in the capsule</td>
 </tr>
 </tbody>
 </table>
-<div class="reflection-card">
-<p>The skill is not defending everything. It is hearing one true note and knowing what to do with it.</p>
+<div class="src">
+<p><a href="../templates/final-package-checklist.html">Final Package Checklist</a> · <a href="../assignments/assignment-04.html">A4 brief</a> · due end of Week 12</p>
 </div>
 </section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Uncertainty check</span></p>
-</section>
-<section id="the-final-question-is-not-whether-the-tool-worked" class="slide level2 center">
-<h2>The final question is not whether the tool worked</h2>
-<div class="uncertainty-check">
-<p><strong>Question for the Object Fair</strong> What would have to change for your recommendation to become wrong?</p>
+<section id="thank-you" class="slide level2 center">
+<h2>Thank you</h2>
+<div class="big">
+<p>You checked your own claims, your classmates’ claims, published papers, and today, a machine’s.</p>
 </div>
-<p>That answer is the most useful transfer from this course: it tells you where the next project should start checking.</p>
-</section>
-<section id="break" class="slide level2 big-break center">
-<h2>BREAK</h2>
-<p>Take 10 minutes.</p>
-<p>When you return, we move from presenting to synthesis — what reasoning you keep.</p>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Session 2 · Round table</span></p>
-</section>
-<section id="the-reasoning-you-can-transfer" class="slide level2 center">
-<h2>The reasoning you can transfer</h2>
-<div class="spine-rail">
-<p><span class="node">Decision</span> <span class="node">Evidence</span> <span class="node">Variation</span> <span class="node">Output</span> <span class="node">Threshold</span> <span class="node is-current">Action</span></p>
+<div class="punch">
+<p>That habit is the part that travels with you.</p>
 </div>
-<p>This is synthesis, not a second formal presentation. Using your final object card or reflection note, speak for 60–90 seconds on the reasoning you would carry into another project. <span class="feeds-tag">feeds A4</span></p>
-<p>Volunteers go first; a random draw may fill the remaining turns.</p>
-</section>
-<section id="reconstruct-what-transfers" class="slide level2 center">
-<h2>Reconstruct what transfers</h2>
-<p><strong>Object this week: the reasoning you can transfer to another project.</strong></p>
-<div class="recall-4step">
-<div class="step">
-<p><strong>Did</strong> What was the core reasoning move in your A4 workflow?</p>
-</div>
-<div class="step">
-<p><strong>Assumed</strong> What did it depend on that was specific to this project?</p>
-</div>
-<div class="step">
-<p><strong>Risk</strong> Where might that reasoning break on a different problem?</p>
-</div>
-<div class="step">
-<p><strong>Verify</strong> What would you check before reusing it next time?</p>
-</div>
-</div>
-<div class="grading-note">
-<p>Post your four-step under your object card. Posting + an honest reconstruction is the graded unit — not how you spoke. Session 2 today is synthesis; there is no second graded presentation.</p>
-</div>
-</section>
-<section id="transfer-forward" class="slide level2 center">
-<h2>Transfer forward</h2>
-<div class="reflection-card">
-<p><span class="card-title">What do you keep?</span> Take three minutes and write:</p>
-<ul>
-<li class="fragment">which reasoning move from A4 will I reuse in studio?</li>
-<li class="fragment">what evidence habit is now part of how I work?</li>
-<li class="fragment">where will I still need to slow down and check?</li>
-<li class="fragment">what is one decision I will treat differently next time?</li>
-</ul>
-</div>
-<p>Keep it in notes or post it as a Slack thread under your object card.</p>
-</section>
-<section class="slide level2 center">
-
-<p><span class="kicker">Exit</span></p>
-</section>
-<section id="your-transfer-line-in-one-sentence" class="slide level2 center">
-<h2>Your transfer line, in one sentence</h2>
-<p>Before you leave, write and post:</p>
-<div class="reflection-card">
-<p><strong>The one reasoning move I am keeping from this course is <strong><em>, and the next project I will use it on is </em></strong>.</strong></p>
-</div>
-<p>Thank you for the work, the honesty, and for examining each other’s reasoning rather than each other. That habit is the part that travels with you.</p>
 
 
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>Week 12 · feeds A4: Workflow Package</p>
+
 </div>
 </div></div>
 
@@ -546,7 +482,7 @@
       // https://revealjs.com/config/
       Reveal.initialize({
 'controlsAuto': true,
-'previewLinksAuto': false,
+'previewLinksAuto': true,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -678,7 +614,7 @@
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'slide',
+        transition: 'none',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
@@ -698,9 +634,9 @@
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1400,
+        width: 1600,
 
-        height: 900,
+        height: 1000,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,

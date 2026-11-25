@@ -1,0 +1,41 @@
+/* Plain deck style for Weeks 11-12: native Quarto `simple` theme plus a few
+   emphasis helpers. Kept deliberately small; prefer Quarto features
+   (fragments, columns, background slides) over new classes. */
+
+.reveal .slides { text-align: left; }
+.reveal h1, .reveal h2 { font-weight: 700; letter-spacing: -0.01em; }
+.reveal section > h2:first-child { margin-bottom: 0.6em; }
+
+/* Large running text, as in the CCGL9065 later weeks */
+.reveal .big { font-size: 1.35em; line-height: 1.6; }
+.reveal .huge { font-size: 2.2em; line-height: 1.25; font-weight: 700; }
+
+/* One emphasised line per slide at most */
+.reveal .punch { font-size: 1.3em; font-weight: 700; color: #c0392b; margin-top: 0.8em; }
+.reveal .punch.blue { color: #2457a6; }
+.reveal .punch.green { color: #1e8449; }
+
+/* A quiet grey box for prompts and sentence frames */
+.reveal .box { background: #f0f0f0; padding: 0.7em 0.9em; border-radius: 10px; margin-top: 0.6em; }
+
+/* Small source / credit line */
+.reveal .src { font-size: 0.6em; color: #666; margin-top: 0.8em; }
+
+/* Timer chip in the corner of activity slides */
+.reveal .timer { display: inline-block; font-size: 0.7em; font-weight: 700; color: #fff;
+  background: #2457a6; padding: 0.1em 0.6em; border-radius: 6px; margin-bottom: 0.4em; }
+.reveal .timer a { color: #fff; text-decoration: underline; }
+
+/* Code: larger and highlighted matches */
+.reveal pre code { font-size: 0.95em; line-height: 1.4; max-height: none; }
+.reveal code { font-size: 0.95em; }
+.reveal .hit { background: #ffe09a; border-bottom: 3px solid #b7791f; padding: 0 0.1em; }
+.reveal .miss { color: #999; text-decoration: line-through; }
+
+/* Tables: larger, airier */
+.reveal table { font-size: 0.85em; }
+.reveal table th, .reveal table td { padding: 0.35em 0.6em; }
+
+/* Section-break slides (dark background) */
+.reveal .slides section.has-dark-background h1,
+.reveal .slides section.has-dark-background h2 { color: #fff; }

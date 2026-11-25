@@ -1,510 +1,736 @@
 ---
-title: "Week 11: Final Package Clinic"
-subtitle: "Your Project Claim, the Abstract, and the Evidence Behind It"
+title: "Week 11: Evidence and Final Package Clinic"
+subtitle: "Did the feedback land? Does the paper say what you think? Is the package complete?"
 output-file: week-11.html
 format:
   revealjs:
-    theme: [default, arch7476.scss]
-    transition: slide
+    theme: simple
+    css: plain.css
+    width: 1600
+    height: 1000
     slide-number: true
     incremental: false
-    width: 1400
-    height: 900
     center: true
-    footer: "Week 11 · feeds A4: Workflow Package"
+    preview-links: auto
 ---
 
-## Preparation for the evidence clinic
+## Today
 
-Bring **one claim from your own project** and the literature you think supports it.
+:::: {.columns}
+::: {.column width="50%"}
+### Session 1 · 50 min
 
-- a research idea, method choice or studio design decision
-- one relevant paper, its abstract and full text where accessible
-- your current drawing, result or A4 paragraph
-- the question you need the evidence to answer
-
-::: {.activity-card}
-Open the [Evidence Clinic Card](../templates/evidence-clinic-card.qmd). Keep your initial claim visible when you revise it.
+- **0–10** Did Week 10's feedback land?
+- **10–14** Write down your claim, before reading
+- **14–30** Regex from zero
+- **30–42** OpenAlex: the paper, the full text, the trail
+- **42–50** Worked example: one paper, two readings
 :::
+::: {.column width="50%"}
+### Session 2 · 50 min
 
-A RIS file and OpenAlex key are optional. If access fails, record what remains unverified and use the shared paper to practise the reading method.
-
-::: {.notes}
-Four students: two PhD and two undergraduate students. All undertake the same evidence task on their own projects. There is no assumption that the undergraduate students need a systematic review. The shared case teaches how to inspect evidence; it does not establish support for their individual projects. Keep source and account preparation short so it does not consume clinic time.
-:::
-
----
-
-## Session 1: the idea and its evidence
-
-[50 minutes · four students and the instructor]{.kicker}
-
-| Time | Activity | Save |
-|---|---|---|
-| 0–8 | Brainstorm your project claim | Decision and evidence needed |
-| 8–18 | Four pitches, 2½ minutes each | One question per project |
-| 18–28 | Short search, regex, RIS and OpenAlex demonstration | A useful tool and its limit |
-| 28–50 | Compare abstract-based interpretation with the full paper | Before/after claim and source locations |
-
-::: {.takeaway}
-The test is what the literature lets you say or do in your own project.
-:::
-
----
-
-## Brainstorm: the claim you are relying on
-
-[8 minutes · write before discussing]{.kicker}
-
-1. **Decision:** what do you want to investigate, choose or change?
-2. **Claim:** what must be true for that choice to make sense?
-3. **Evidence:** what observation would support or challenge it?
-4. **Consequence:** what would you change if the evidence did not support it?
-
-::: {.activity-card}
-“My project proposes ___. It relies on the claim that ___. I need evidence about ___ before I can justify ___.”
-:::
-
-Use an idea already in your project. A rough claim is useful material for the clinic.
-
----
-
-## Four short project pitches
-
-[2½ minutes per student · 10 minutes total]{.kicker}
-
-| Time | Action |
-|---|---|
-| First 90 seconds | Show the idea, name the claim and explain the source you need |
-| Next 60 seconds | Peers or instructor ask one question about its evidence |
-
-::: {.ask-room}
-What exactly would the paper need to show for this project decision to follow?
-:::
-
-Write the question on your card. Keep the discussion on the decision and the evidence it needs.
-
----
-
-## One task, different project decisions
-
-| Your project may ask… | The literature must help you establish… | Inspect later |
-|---|---|---|
-| Is this a defensible research premise? | What is known, under which conditions, and what remains unresolved | Actual finding and stated limitation |
-| Is this method suitable for my study? | What inputs, assumptions and checks it needs | Method and validation conditions |
-| Should I change this studio design? | Whether the reported benefit applies to my site, users and alternatives | Metric, context and design consequence |
-
-These are possible questions to bring, not findings about any particular design.
-
-::: {.takeaway}
-Choose the question your project needs answered. Everyone checks a claim against the source behind it.
-:::
-
----
-
-## Search operators and regex
-
-[Supporting demonstration · part of the 18–28 minute block]{.kicker}
-
-| Tool | Example | What it does |
-|---|---|---|
-| Google Search | `"courtyard ventilation" site:edu filetype:pdf -hotel` | Combines a phrase with site/file filters and an exclusion |
-| OpenAlex search | `"courtyard ventilation" AND housing` | Combines search terms using the service's query syntax |
-| Regex on text you hold | `\bshade\b` | Finds character patterns in an export, document or filename |
-
-Google's ordinary search box uses search operators. It does **not** execute a general regex pattern. An exclusion may also hide a useful result; inspect what your query misses.
-
-::: {.source-note}
-[Google operators](https://support.google.com/websearch/answer/2466433?hl=en) · [OpenAlex search syntax](https://help.openalex.org/api/searching/) · examples are teaching queries, not completed searches.
-:::
-
----
-
-## Regex: a pattern in characters
-
-**Regular expression (regex):** a compact rule for finding or checking text.
-
-| Symbol | Meaning in these JavaScript examples | Example |
-|---|---|---|
-| `\b` | Word boundary | `\bshade\b` matches shade, not shaded |
-| `()` | Group part of a pattern | `(shade)` groups the letters |
-| `[0-9]{2}` | Exactly two digits | `01`, `12` |
-| `^` and `$` | Start/end of the text; of each line with flag `m` | Whole-line filename check |
-| `\.` | A literal full stop | `.csv` extension |
-
-**Alternatives:** `(shade|shading)` means either word. **Flags:** `i` ignores letter case; `m` makes anchors work per line. Syntax can differ between tools.
-
-::: {.source-note}
-[MDN regex guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions) · [try the local Regex Lab](../site_tools/regex-lab.html). Predict one match and one miss before running.
-:::
-
----
-
-## Two patterns, two different checks
-
-:::: {.two-col}
-::: {.concept-card}
-[Find a design term]{.card-title}
-
-`\b(shade|shading)\b` with `i`
-
-Matches **SHADE** and **shading**. Misses **shaded** and **overhang**.
-
-A match in “no shade benefit” still contains the word. Regex has not judged the claim.
-:::
-::: {.concept-card}
-[Check a filename]{.card-title}
-
-`^variant_[0-9]{2}\.csv$` with `m`
-
-Matches **variant_03.csv**.
-
-Rejects **variant_3.csv** and **variant_03.csv.bak**. This checks a naming rule, not the file's contents.
+- **0–16** Read your paper and rewrite the claim
+- **16–28** Four evidence clinics
+- **28–40** The final package, walked through
+- **40–48** Fix one thing, log it
+- **48–50** Next week: quick-fire and the LLM judge
 :::
 ::::
 
-::: {.takeaway}
-A false positive is an unwanted match. A false negative is a relevant item missed. Judge both against your purpose.
+::: {.punch .blue}
+Bring: your Week 10 Peer Review Card, your Revision Ledger, one claim and its source.
+:::
+
+::: notes
+Four students: two PhD, two undergraduate. Everyone does the same tasks on their own project. A4 is due at the end of Week 12, so every activity today should leave a change in the package.
+:::
+
+# Did last week's feedback land? {background-color="#1a1a1a"}
+
+---
+
+## Week 10 → your A4, today
+
+[10 min · 2½ min each]{.timer}
+
+::: {.big}
+1. Show the **one piece of advice** you got from your Week 10 reviewer.
+2. Show the **ledger entry** you wrote for it.
+3. Show **where it changed** the package: file, page or figure.
+:::
+
+::: {.fragment}
+Your Week 10 reviewer answers one question:
+
+::: {.punch}
+"Is that what I meant?"
+:::
+:::
+
+::: notes
+This is a receipt check, not a second review. If the reviewer says "not quite", the author writes one line in the ledger clarifying the advice; they don't redo the work now. Keep strictly to 2.5 minutes.
 :::
 
 ---
 
-## RIS carries records, not a whole argument
+## Three honest answers
 
-ScienceDirect can export citations as **RIS**, a tagged text format. Depending on the export, an abstract may be present or absent. Inspect the file you actually have.
+| Status | What you show |
+|---|---|
+| **Addressed** | The changed page or figure, next to the advice |
+| **In progress** | What you have done, and what still remains before Week 12 |
+| **Deferred or rejected** | The reason, written in the ledger |
+
+::: {.box .big}
+"The advice was \_\_\_. I **addressed / am working on / deferred** it: \_\_\_. You can see it in \_\_\_."
+:::
+
+::: {.punch .green}
+A reasoned rejection counts as a ledger entry. Silence doesn't.
+:::
+
+# Your claim, before you read {background-color="#1a1a1a"}
+
+---
+
+## Write it down first
+
+[4 min · on the worksheet]{.timer}
+
+::: {.big}
+Pick **one claim** your project relies on, and the source you rely on for it.
+
+Read **only the abstract**, then write:
+:::
+
+::: {.box .big}
+"The abstract says \_\_\_. I took it to mean \_\_\_ for my project, so I was going to \_\_\_."
+:::
+
+::: {.src}
+PhD: a research premise or method choice. Studio: a design decision. A guideline, standard or published precedent is a valid source if that is what your decision rests on. [Evidence Clinic Worksheet (PDF)](../templates/evidence-clinic-worksheet.pdf)
+:::
+
+::: notes
+We do this before the tool block on purpose: the "before" reading has to be written down before anyone opens the full text. If a student already knows the paper well, they write what they would have assumed from the abstract alone.
+:::
+
+# Regex from zero {background-color="#1a1a1a"}
+
+---
+
+## A find box that understands patterns
+
+::: {.big}
+**Regex** (regular expression) is a short rule that describes a *pattern* of characters, not a fixed word.
+
+You can use it in:
+
+- **VS Code**: Find, then the `.*` button
+- **Python**: `re.findall(r"pattern", text)`
+- **Google Sheets**: `=REGEXMATCH(A2, "pattern")`
+- the course **[Regex Lab](../site_tools/regex-lab.html)**
+:::
+
+::: {.punch}
+It doesn't work in Google's search box. That has its own operators.
+:::
+
+---
+
+## Plain text matches plain text
+
+Four lines of notes:
 
 ```text
-DO  - 10.1098/rsos.241337
+Shade at the entrance.
+The shaded bench.
+SHADING along the facade.
+A shadow line.
 ```
 
-**Field extraction example:** `^DO[ \t]+-[ \t]+(.+)$` with `m` captures the text after the DOI tag. `+` means one or more; parentheses retain the captured part.
+::: {.fragment}
+Pattern `shade`: predict the matches.
+:::
 
-Preserve the raw export. Use a RIS parser for records, repeated authors and wrapped fields. Regex can assist a specific cleanup; it cannot recover methods or results that were never exported.
+::: {.fragment .big}
+One match: the **shade** inside "**shade**d". It misses "Shade" and "SHADING", because matching is case-sensitive by default.
+:::
 
-::: {.source-note}
-[ScienceDirect export instructions](https://www.elsevier.support/sciencedirect/answer/how-can-i-export-my-citations). The DOI line illustrates the format using the shared paper's identifier; it is not a ScienceDirect export of that paper.
+::: {.fragment .punch .blue}
+Add the flag `i` (ignore case) and "Shade" joins it. "SHADING" still doesn't, since it doesn't contain "shade".
 :::
 
 ---
 
-## OpenAlex: identify the paper and keep the trail
+## `\b` marks the edge of a word
 
-1. Look up the **DOI** and retain the returned work ID.
-2. If needed, search the title and compare authors/year before accepting a candidate.
-3. Record discrepancies and missing abstracts. A match establishes a record link, not support for your project claim.
+```text
+\bshade\b      with flag i
+```
 
-::: {.activity-card}
-**Optional preparation:** [create an account](https://openalex.org/signup), verify your email, then obtain your key from [Settings → API key](https://openalex.org/settings/api-key). Keep it private.
+::: {.big}
+`\b` means "a word starts or ends here".
 :::
 
-Basic queries currently work without a key. A free key increases the budget and is needed for cursor paging beyond the first page. Account setup must not delay today's reading task.
-
-::: {.source-note}
-[Lookup](https://help.openalex.org/api/get-single-entities/) · [authentication, checked 24 November 2026](https://help.openalex.org/api/authentication/) · [private setup and example request](../templates/evidence-clinic-card.qmd#openalex-setup).
+::: {.fragment .big}
+Now: **Shade** ✓ · shaded ✗ · SHADING ✗ · shadow ✗
 :::
 
----
-
-## The 22-minute source comparison
-
-[Start at minute 28 · work on your own project source]{.kicker}
-
-| Minutes | Action | Record |
-|---|---|---|
-| 0–4 | Read the abstract only | Your initial interpretation and proposed project action |
-| 4–12 | Inspect the relevant methods, results and limitations | Exact passage, table or figure locations |
-| 12–18 | Compare with a partner, three minutes each | The inference that holds, changes or remains unverified |
-| 18–22 | Rewrite your claim and its consequence | What changes in your research/design, and the next test |
-
-::: {.takeaway}
-Preserve the first interpretation. The comparison makes your change in reasoning visible.
-:::
-
-::: {.notes}
-The next slides are reading prompts for this block, not additional lecture time. Use the two shared-case slides only as a brief demonstration or fallback. A student who already knows the full paper can record their earlier abstract-based expectation honestly rather than pretend the reading is blind.
+::: {.fragment .punch}
+Stricter, but now the forms we wanted are missing too.
 :::
 
 ---
 
-## First reading: what did you infer?
+## `( | )` means either / or
 
-Read the abstract or exported summary **before** inspecting the rest of the article.
+```text
+\bshad(e|ed|ing)\b      with flag i
+```
 
-::: {.activity-card}
-“The abstract reports ___. I took this to support ___ in my project. I was about to choose/test/change ___.”
+::: {.big}
+"shad", followed by **e**, **ed** or **ing**, then the end of a word.
 :::
 
-Separate the words in the source from the step you added. Record whether your claim concerns a method, a measured effect or transfer to your own context.
+::: {.fragment .big}
+**Shade** ✓ · **shaded** ✓ · **SHADING** ✓ · shadow ✗
+:::
 
-::: {.ask-room}
-Which part of your project claim is actually stated, and which part is your inference?
+::: {.fragment .punch .green}
+You've just written a search for one design term in every form you care about.
 :::
 
 ---
 
-## Full-paper reading: locate the missing conditions
+## Digits and how many
 
-| Inspect | Question for your project |
+| Piece | Means |
 |---|---|
-| Methods | What was studied, where, with which sample, inputs and controls? |
-| Results | Which measure, comparator and result support the claim? |
-| Figures/tables | What variation, exception or failure does the summary omit? |
-| Limitations/discussion | Where do the authors restrict interpretation or transfer? |
-| Supplement, if needed | Is the required definition, dataset or procedure there? |
+| `\d` | one digit, 0–9 |
+| `+` | one or more of the thing before it |
+| `?` | the thing before it is optional |
+| `{2}` | exactly two of the thing before it |
+| `\.` | a real full stop (a bare `.` means *any* character) |
+| `\s` | a space |
 
-::: {.takeaway}
-Save a section and table/figure/page locator. A link alone does not show where your claim gets its support.
+::: {.fragment}
+```text
+\d+(\.\d+)?\s?°C
+```
+Digits, an optional decimal part, an optional space, then °C.
 :::
-
-Full text provides more evidence to assess. It does not automatically validate a study or make its findings transferable.
 
 ---
 
-## Why the abstract may change your impression
+## Pull the temperatures out of your notes
 
-| Information compressed or absent | A possible consequence for your idea |
+```text
+Wall difference above 2°C suggests a higher retrofit need.
+A 2.5 °C difference at the window frame.
+25 buildings were surveyed.
+The 0.5 K drift is sensor noise.
+```
+
+::: {.fragment .big}
+Matches: **2°C** and **2.5 °C**. Not "25 buildings", not "0.5 K".
+:::
+
+::: {.fragment .punch .blue}
+Useful for scanning a long PDF's text for every reported value, before you check what each one refers to.
+:::
+
+---
+
+## `^` and `$`: the whole line, nothing else
+
+```text
+^variant_\d{2}\.csv$      with flag m (each line separately)
+```
+
+| File | Passes? |
 |---|---|
-| Metric or comparator | “Improvement” may refer to a proxy rather than the outcome you need |
-| Sample and conditions | A result may support a narrower population, season or setting |
-| Method and validation | A simulation, association or exploratory study may need a different claim |
-| Mixed results and limitations | The design benefit may depend on a trade-off or unresolved assumption |
+| `variant_01.csv` | ✓ |
+| `variant_1.csv` | ✗ only one digit |
+| `Variant_03.csv` | ✗ capital V |
+| `variant_04.csv.bak` | ✗ something after `.csv` |
 
-These are questions to investigate, not accusations against the paper. An abstract may be accurate while leaving out details that matter to your use of it.
-
----
-
-## Shared paper: the abstract-level view
-
-[Mora & Bardhan · Cambridge retrofit study · 2025]{.kicker}
-
-The abstract presents a **proof-of-concept retrofit-prioritisation framework**, combining neighbourhood data with building-scale thermal imaging.
-
-::: {.activity-card}
-**Our project question:** could I use thermal imaging to choose which building should be retrofitted first?
-
-What would you need to know before accepting that use of the method?
+::: {.fragment .punch}
+Drop the `\` before `.csv` and `variant_05xcsv` passes too. `.` means any character.
 :::
 
-::: {.source-note}
-[Read the abstract and full article in HTML](https://pmc.ncbi.nlm.nih.gov/articles/PMC11732419/) · *Towards carbon neutrality: mapping mass retrofit opportunities in Cambridge, UK*, DOI 10.1098/rsos.241337. The project question is our application, not the authors' wording.
+::: notes
+This is the practical use for the capsule: check that every exported variant file follows the naming rule your README promises.
 :::
 
 ---
 
-## Shared paper: what the full text adds
+## Parentheses also *capture*
 
-**§3.1.3:** the thermal campaign covers five buildings per cluster, 25 in total.
+A reference export (RIS) puts each field on its own tagged line:
 
-**§4.4:** the authors acknowledge limited sampling and unknown thermostat settings and occupancy schedules during data collection.
+```text
+TY  - JOUR
+DO  - 10.1098/rsos.241337
+ER  -
+```
 
-::: {.activity-card}
-**Our revised use:** treat the method as a starting point for investigation. Before relying on building-level rankings in our project, check operating conditions and suitability of the sample.
+```text
+^DO  - (.+)$      with flag m
+```
+
+::: {.fragment .big}
+The part inside `( )` is returned on its own: **10.1098/rsos.241337**, the DOI.
 :::
 
-::: {.takeaway}
-The details change the justification and the next test. They do not by themselves show that the paper is wrong.
-:::
-
-::: {.source-note}
-[Full-text sections 3.1.3 and 4.4](https://pmc.ncbi.nlm.nih.gov/articles/PMC11732419/) · this is a teaching interpretation of a published study. Apply the same inspection to your own source.
-:::
-
----
-
-## A defensible before-and-after claim
-
-::: {.activity-card}
-**Before:** I used this source to justify ___ in my project.
-
-**Found:** section/table/figure ___ establishes ___ under ___. It leaves ___ unresolved.
-
-**After:** I can now justify ___, so I will change/retain ___ and test ___ next.
-:::
-
-Your conclusion may be **supported as stated**, **needs narrowing/adaptation**, **contradicted by the inspected evidence**, or **not yet established**. Give a reason; these are course working labels.
-
-Keeping a claim is valid if you show why it survives the check. Do not invent a flaw to complete the exercise.
-
----
-
-## If an LLM reads only the abstracts
-
-Its answer is constrained by the text you supplied. A fluent synthesis can conceal that the relevant methods, values or limitations were absent.
-
-::: {.activity-card}
-For every consequential statement, require:
-
-- a source and exact supporting location
-- the conditions under which it holds
-- a visible **not reported / not checked** when evidence is missing
-:::
-
-Do not let a generated explanation fill missing methods or merge different studies into an unsupported general result. Compare the answer with the actual article before using it to justify a project decision.
-
-::: {.source-note}
-RIS is a container format, not a measure of completeness. OpenAlex abstract fields can also be missing. [Field documentation](https://help.openalex.org/data/works/attributes/#abstract_inverted_index).
+::: {.src}
+For whole reference libraries, use a reference manager or a RIS parser. Regex is for one specific clean-up. [ScienceDirect export help](https://www.elsevier.support/sciencedirect/answer/how-can-i-export-my-citations)
 :::
 
 ---
 
-## Session 2: clinic on your own idea
+## Your turn
 
-[50 minutes · four students and the instructor]{.kicker}
+[5 min · [Regex Lab](../site_tools/regex-lab.html) · predict before you run]{.timer}
 
-| Time | Activity | Save |
-|---|---|---|
-| 0–16 | Four four-minute evidence clinics | One consequential question for each project |
-| 16–36 | Make one justified revision or small test | Changed claim, design or research plan |
-| 36–44 | Pair recheck, four minutes each | Evidence trace and remaining gap |
-| 44–50 | Update the A4 record | Card, revised artifact and ledger entry |
-
-The clinic ends with an action in your own project. A literature list alone is not the outcome.
-
----
-
-## Each clinic takes four minutes
-
-| Time | Lead | What happens |
-|---|---|---|
-| 0–2 | Project author | Show the initial claim, source location and revised interpretation |
-| 2–4 | Peers + instructor | Challenge one transfer assumption and agree a feasible next action |
-
-::: {.ask-room}
-What changes in this project because we now know how the source produced its result?
+::: {.big}
+1. Match *shade*, *shaded* and *shading*, but not *shadow*.
+2. Load **Numbers with units**. Make it also catch temperatures in **K**.
+3. Load **Filename rule**. Make it accept *three*-digit variants too.
 :::
 
-The author records whether to accept, adapt, defer or reject the suggestion, with a reason. Everyone takes a turn as author and contributes to another project.
+::: {.fragment}
+```text
+1.  \bshad(e|ed|ing)\b         flag i
+2.  \d+(\.\d+)?\s?(°C|K)\b
+3.  ^variant_\d{2,3}\.csv$     flag m
+```
+:::
 
----
-
-## Twenty minutes to change the work
-
-Choose the action your evidence supports:
-
-- **Research premise:** narrow the hypothesis or identify the unresolved comparison.
-- **Method:** revise a sampling, control, metric or validation choice.
-- **Studio:** revise a design option or draw the contextual condition that needs checking.
-- **Claim:** correct the A4 sentence and show the design consequence.
-
-Before a test, write the expected observation and what result would change your decision. Save the actual result if attempted.
-
-::: {.warning-card}
-If access, time or tools block the check, save the exact gap and next action. A planned test stays labelled as planned.
+::: notes
+{2,3} hasn't been shown yet. Let them try; reveal it as "between two and three". The trailing \b in answer 2 stops it matching the K at the start of a longer word.
 :::
 
 ---
 
-## Pair recheck: can someone follow the evidence?
+## Regex finds characters, not meaning
 
-[Eight minutes · four per project]{.kicker}
+```text
+This scheme uses passive cooling.
+This scheme is not passive.
+A passively cooled room.
+```
 
-Your partner opens the cited section or figure and checks:
+`\bpassive\b` matches the first two lines.
 
-1. Is the source finding represented accurately?
-2. Are its conditions and your transfer assumption visible?
-3. Does the revised project decision follow?
-4. What still needs evidence or a local test?
-
-::: {.activity-card}
-“I can trace ___ to ___. I still cannot establish ___ because ___.”
+::: {.fragment .big}
+- **False positive:** "not passive" matched, but it's the opposite claim.
+- **False negative:** "passively cooled" was missed, but it's relevant.
 :::
 
-Update the record if the recheck exposes another gap.
+::: {.fragment .punch}
+A match tells you where to look. You still have to read it.
+:::
 
 ---
 
-## Six components in the A4 package
+## One-slide cheat sheet
 
-| Component | Today's evidence check can improve… |
+| You write | It means |
 |---|---|
-| Practice Case · 2 slides | Decision, recommendation and its scope |
-| Research Brief · 2 pages | Source use, method rationale and interpretation |
-| Object Card · 1 page | Claim, figure and visible caveat |
-| Reproducibility Capsule | Source locations, runnable workflow and verification notes |
-| Feedback + Revision Ledger · ≥3 entries | Advice, response, change and reason |
-| Reflection Note · 1 page | What changed in your reasoning and what remains unresolved |
+| `shade` | those letters, in that order |
+| `\b` | edge of a word |
+| <code>(a&#124;b)</code> | a or b, and capture it |
+| `\d` · `\s` · `.` | digit · space · any character |
+| `+` · `?` · `{2}` · `{2,3}` | one or more · optional · exactly 2 · 2 to 3 |
+| `^` · `$` | start · end (of each line, with flag `m`) |
+| `\.` | a real full stop |
+| flag `i` | ignore upper/lower case |
 
-::: {.source-note}
-[A4 brief](../assignments/assignment-04.qmd) · [final checklist](../templates/final-package-checklist.md). Today's clinic is formative and changes no assessment requirements or deadlines.
+::: {.src}
+Syntax differs slightly between tools. [MDN regex guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions) · [Regex Lab](../site_tools/regex-lab.html)
+:::
+
+# OpenAlex: the paper, the full text, the trail {background-color="#1a1a1a"}
+
+---
+
+## A free catalogue you can read in the browser
+
+::: {.big}
+**OpenAlex** is a free, open index of scholarly works: papers, authors, institutions, citations.
+
+Paste this into a browser tab. You don't need an account or a key:
+:::
+
+```text
+https://api.openalex.org/works/doi:10.1098/rsos.241337
+```
+
+::: {.punch .blue}
+One DOI gives you one record: who, when, where, whether it's free to read, what it cites and what cites it.
 :::
 
 ---
 
-## The capsule supports the claim and the rerun
+## What comes back (trimmed)
 
-Include the actual runnable artifact, inputs, tool versions, instructions and expected key output. Supporting screenshots explain a workflow; they do not replace its runnable file.
+```json
+{
+  "id": "https://openalex.org/W4406352916",
+  "display_name": "Towards carbon neutrality: mapping mass retrofit
+                   opportunities in Cambridge, UK",
+  "publication_year": 2025,
+  "open_access": {
+    "is_oa": true,
+    "oa_url": "https://royalsocietypublishing.org/rsos/article-pdf/doi/10.1098/rsos.241337/..."
+  },
+  "cited_by_count": 2,
+  "referenced_works_count": 33
+}
+```
 
-For literature used in the argument, retain the citation, source location, what you checked and any relevant search or transformation notes. Keep API keys out of the package.
-
-::: {.activity-card}
-Can a peer follow the evidence trail and rerun the workflow that produced your key figure? Record the successful check or exact blocker.
+::: {.src}
+Retrieved 25 November 2026. Add `?select=id,display_name,open_access,cited_by_count,referenced_works_count` to the URL to get only these fields. Counts change as the index updates.
 :::
-
-If you explore RIS/OpenAlex further, save raw and processed records separately. Metadata matching alone does not complete a literature review.
 
 ---
 
-## The Object Card after the evidence check
+## Three fields that do the work
 
-Show the revised claim with the figure or drawing it actually supports.
+:::: {.columns}
+::: {.column width="33%"}
+### `oa_url`
+A **legal free copy** of the full text, if one is known.
 
-| Check | What the reader needs |
+*Before you write "no access", check here.*
+:::
+::: {.column width="33%"}
+### `referenced_works`
+What this paper **cites**.
+
+*Go backwards to where its claim comes from.*
+:::
+::: {.column width="33%"}
+### `cites:` filter
+What **cites this paper**.
+
+*Go forwards: has anyone tested, extended or challenged it?*
+:::
+::::
+
+::: {.fragment}
+```text
+https://api.openalex.org/works?filter=cites:W4406352916
+```
+:::
+
+---
+
+## Forward from the shared paper
+
+`filter=cites:W4406352916` returns **2 works**:
+
+::: {.big}
+- *District Heating in High-rise Buildings: A Sociotechnical Approach to Reduce Fuel Poverty* (2025)
+- *Heat as a service as a viable decarbonisation strategy and energy cost affordability in the UK* (2026)
+:::
+
+::: {.fragment .punch}
+Judging by the titles alone, neither seems to retest the thermal-imaging method. If that holds when you open them, it tells you something too: nobody has checked the method yet, as far as this index shows.
+:::
+
+::: {.src}
+Retrieved 25 November 2026. "Not in the index" is not the same as "does not exist". Check one other source (e.g. Google Scholar's "Cited by") before relying on it.
+:::
+
+::: notes
+Titles only: we have not read these two papers. The point is what the list does and doesn't contain, not their findings.
+:::
+
+---
+
+## Your turn: run it on your own source
+
+[4 min · browser tab]{.timer}
+
+::: {.big}
+1. `https://api.openalex.org/works/doi:YOUR-DOI`
+2. Write down: the **OpenAlex ID**, **`oa_url`** (or "none"), **cited by** and **references** counts.
+3. Open the `cites:` list. Note **one** title worth checking later.
+:::
+
+::: {.box}
+**No DOI?** Search by title: `https://api.openalex.org/works?search=your title words`. Compare authors and year before accepting a match.
+:::
+
+::: {.src}
+A free API key raises the request limit and is only needed for heavier scripted use. [Setup and private-key instructions](../templates/evidence-clinic-card.qmd#openalex-setup)
+:::
+
+---
+
+## What a record can't tell you
+
+::: {.big}
+- whether the paper is **good**
+- whether it **supports your claim**
+- the **conditions** behind its result
+:::
+
+::: {.fragment .big}
+Some records are also missing an abstract, have the wrong metadata, or match the wrong paper.
+:::
+
+::: {.fragment .punch .blue}
+OpenAlex gets you to the paper. Only reading it tells you what it says.
+:::
+
+# Worked example: one paper, two readings {background-color="#1a1a1a"}
+
+---
+
+## The abstract-level view
+
+:::: {.columns}
+::: {.column width="52%"}
+Mora & Bardhan (2025) propose a **proof-of-concept framework** to prioritise mass retrofit, combining neighbourhood open data with building-scale thermal imaging.
+
+::: {.box}
+**Our use:** a studio proposal ranks the houses on a street for retrofit using thermal images.
+
+What would you need to know first? **Write it down.**
+:::
+:::
+::: {.column width="48%"}
+![](assets/week11/rsos.241337.f002.jpg){width="100%"}
+:::
+::::
+
+::: {.src}
+Mora, H. & Bardhan, R. (2025). *Towards carbon neutrality: mapping mass retrofit opportunities in Cambridge, UK.* R. Soc. Open Sci. 12: 241337. [doi:10.1098/rsos.241337](https://doi.org/10.1098/rsos.241337) · Fig. 2, CC BY 4.0. "Our use" is a course scenario, not the authors' claim.
+:::
+
+---
+
+## {background-color="#1a1a1a"}
+
+:::: {.columns}
+::: {.column width="42%"}
+![](assets/week11/rsos.241337.f007.jpg){width="100%"}
+:::
+::: {.column width="58%"}
+::: {.huge style="color:#fff;"}
+25 buildings.
+:::
+
+::: {.fragment .big style="color:#ddd;"}
+Five per cluster, surveyed at the white dots on the map (§3.1.3).
+:::
+
+::: {.fragment .big style="color:#ddd;"}
+Row (c) gives each one a retrofit priority. That's the ranking our studio use wanted.
+:::
+
+::: {.fragment .big style="color:#ffb199;"}
+But thermostat settings and occupancy schedules were unknown during the survey (§4.4).
+:::
+:::
+::::
+
+::: {.src style="color:#aaa;"}
+Fig. 7, Mora & Bardhan (2025), CC BY 4.0. (a) clusters and survey locations; (b) cluster enrichment; (c) building retrofit priority; (d) hard-to-decarbonise classification.
+:::
+
+---
+
+## What the full text changes
+
+::: {.big}
+**Before:** thermal images can rank which house to retrofit first.
+
+**Found:** a 25-building survey of living rooms, without knowing how the houses were heated during the survey (§3.1.3, §4.4).
+
+**After:** use thermal imaging to choose *which houses to inspect*, not to rank them, unless heating conditions are controlled or recorded.
+:::
+
+::: {.punch .green}
+The paper isn't wrong. Our use of it was wider than its evidence.
+:::
+
+::: {.src}
+[Read §3.1.3 and §4.4 in full (PMC HTML)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11732419/)
+:::
+
+# Session 2 · Read, revise, walk through {background-color="#1a1a1a"}
+
+---
+
+## Read your own paper
+
+[12 min · full text · then 4 min to rewrite]{.timer}
+
+| Look in | Ask |
 |---|---|
-| Decision | What should change, and for whom? |
-| Evidence | Which comparison supports that action? |
-| Conditions | Where and when does the statement apply? |
-| Limit | What could change the recommendation? |
+| **Methods** | What was studied, where, how many, under what conditions? |
+| **Results** | Which measure, compared with what? |
+| **Figures/tables** | What variation or exception does the abstract leave out? |
+| **Limitations** | Where do the authors restrict their own claim? |
 
-::: {.activity-card}
-Give the card to a partner for 30 seconds. Ask them to restate the recommendation and one limit without your explanation.
+::: {.punch .blue}
+Write down a section, page or figure number for each point. A link alone isn't evidence.
+:::
+
+::: notes
+If full text isn't available even via oa_url: mark the claim "not yet established", note what section you'd need, and continue with the shared paper.
 :::
 
 ---
 
-## A4 record: reasoning that changed
+## Before · Found · After
 
-[Final six minutes · save the card and a dated ledger entry]{.kicker}
+::: {.box .big}
+**Before:** I used \_\_\_ to justify \_\_\_.
 
-::: {.recall-4step}
-::: {.step}
-**Did** What claim and source did I inspect?
-:::
-::: {.step}
-**Assumed** What did I infer from the abstract?
-:::
-::: {.step}
-**Risk** What did the full paper leave uncertain for my project?
-:::
-::: {.step}
-**Verify** What changed or survived, and what test remains?
-:::
+**Found:** §/fig. \_\_\_ shows \_\_\_ under \_\_\_. It doesn't establish \_\_\_.
+
+**After:** I can now claim \_\_\_, so I will **keep / narrow / change** \_\_\_ and check \_\_\_ next.
 :::
 
-Retain the original statement, source locators, revised artifact and peer response. Today's entry contributes to A4's existing minimum of three ledger entries across the project.
+::: {.fragment .big}
+**Supported as stated** · **Needs narrowing** · **Contradicted** · **Not yet established**
+:::
 
----
-
-## Preparation for the Object Fair
-
-A reader should be able to understand the decision, inspect its evidence and locate the workflow.
-
-- make the six required components easy to find
-- test the files and the key figure's rerun
-- prepare an answer about method, limits and alternatives
-- distinguish what you checked from what you would investigate next
-
-::: {.takeaway}
-Show the project as it now stands, including the uncertainty that still matters to the decision.
+::: {.fragment .punch .green}
+If your claim survives, say why. That counts as a result.
 :::
 
 ---
 
-## Exit: what does the evidence let you claim?
+## Four evidence clinics
 
-::: {.activity-card}
-“I initially thought ___. Reading ___ showed ___. In my project I will now ___, because ___. The next check is ___.”
+[12 min · 3 min each]{.timer}
+
+::: {.big}
+**1½ min**: author shows Before · Found · After, with the location.
+
+**1½ min**: the room asks one question:
 :::
 
-If your claim survives, explain why. If support remains unverified, keep that limit visible.
+::: {.punch}
+"What does your project do differently now that you know how the result was produced?"
+:::
 
-Next week: the Object Fair and discussion of your final package.
+::: {.src}
+The author writes down the question and their answer (accept / adapt / defer / reject) in the ledger.
+:::
+
+# The final package, walked through {background-color="#1a1a1a"}
+
+---
+
+## Six components, and what "done" looks like
+
+| Component | Done when… |
+|---|---|
+| **Practice Case** · 2 slides | A critic sees the decision and recommendation in 10 seconds |
+| **Research Brief** · 2 pages | Method, sources and uncertainty are stated, with page/figure locations for key sources |
+| **Object Card** · 1 page | One figure carries the recommendation and one visible limit |
+| **Reproducibility Capsule** | Someone else reruns it and gets your key figure |
+| **Feedback + Revision Ledger** · ≥3 | Each entry: advice → response → change or reason |
+| **Reflection Note** · 1 page | What changed, what didn't, what transfers |
+
+::: {.src}
+[A4 brief](../assignments/assignment-04.qmd) · [Final Package Checklist](../templates/final-package-checklist.md) · due end of Week 12. Requirements and weights unchanged.
+:::
+
+---
+
+## One thread runs through all six
+
+::: {.huge}
+decision → evidence → comparison → action → limit
+:::
+
+::: {.fragment .big}
+A reader should be able to follow that thread from the **Object Card** alone, then confirm it in the **Brief** and rerun it from the **Capsule**.
+:::
+
+::: {.fragment .punch .blue}
+Next week the LLM judge only sees your Object Card. Make sure the thread is visible there.
+:::
+
+---
+
+## Where today's work goes
+
+| Today you did… | It goes into… |
+|---|---|
+| Feedback receipt check | **Ledger**: status of each Week 10 entry |
+| Before · Found · After | **Brief**: source use and limits · **Object Card**: the caveat |
+| OpenAlex record | **Capsule** source list: DOI, OpenAlex ID, date retrieved |
+| Regex filename / value check | **Capsule** verification notes |
+| Evidence clinic question | **Ledger**: a new entry |
+
+---
+
+## The capsule rerun test
+
+::: {.big}
+Before Week 12, **swap capsules with a partner**:
+
+1. Unzip on *their* machine.
+2. Follow only the README.
+3. Do you get the key figure?
+:::
+
+::: {.punch}
+If not, record the exact step where it broke. That's a ledger entry and a fix.
+:::
+
+::: {.src}
+Keep API keys and passwords out of the capsule.
+:::
+
+---
+
+## Fix one thing, log it
+
+[8 min]{.timer}
+
+::: {.big}
+Pick the **weakest component** from the checklist, or the gap your clinic exposed.
+
+Change it now. Write the ledger line:
+:::
+
+::: {.box .big}
+"\_\_\_ said \_\_\_. I changed \_\_\_ / I didn't, because \_\_\_."
+:::
+
+---
+
+## Next week: quick-fire, then the judge
+
+::: {.big}
+- **4-minute quick-fire** of your package, then questions from the room
+- An **LLM reads your Object Card** and critiques it
+- **We judge the judge.** Is each point grounded, off-target or made up?
+- You decide what to act on. That becomes your last ledger entry.
+:::
+
+::: {.box}
+**Bring:** your final Object Card as a PDF. You'll be asked before class whether it may be sent to the LLM; you can opt out and get a human-only review instead. No scores come from the LLM.
+:::
+
+---
+
+## Exit line
+
+::: {.box .big}
+"I thought \_\_\_. Reading \_\_\_ showed \_\_\_. In my package I've now changed \_\_\_. Still to do before Week 12: \_\_\_."
+:::
+
+::: {.punch .blue}
+Post it under your Object Card draft.
+:::
