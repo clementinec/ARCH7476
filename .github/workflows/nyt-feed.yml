@@ -1,0 +1,69 @@
+name: Refresh NYTimes feed
+
+on:
+  schedule:
+    - cron: '23 */4 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/nyt_feed.py
+      - .github/workflows/nyt-feed.yml
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: refresh-nyt-feed
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts/nyt_feed.py
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+
+      - name: Fetch and validate the feed
+        shell: bash
+        run: |
+          curl --fail --silent --show-error --location --retry 3 --max-time 45 \
+            https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml \
+            --output "$RUNNER_TEMP/nyt-original.xml"
+          python3 scripts/nyt_feed.py < "$RUNNER_TEMP/nyt-original.xml" > "$RUNNER_TEMP/nyt.xml"
+
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: site
+          sparse-checkout: /data/feeds/nyt.xml
+          sparse-checkout-cone-mode: false
+
+      - name: Update the unlisted file
+        working-directory: site
+        run: |
+          mkdir -p data/feeds
+          cp "$RUNNER_TEMP/nyt.xml" data/feeds/nyt.xml
+          git add -- data/feeds/nyt.xml
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Refresh unlisted NYTimes feed'
+            git push origin HEAD:gh-pages
+          fi
+
+      - name: Publish if the live copy differs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          url='https://caadfutures2025.hku.hk/ARCH7476/data/feeds/nyt.xml'
+          if curl -fsSL --max-time 20 "$url" -o "$RUNNER_TEMP/live.xml" && cmp -s "$RUNNER_TEMP/live.xml" "$RUNNER_TEMP/nyt.xml"; then
+            exit 0
+          fi
+          # A push using GITHUB_TOKEN does not start a branch-based Pages build.
+          gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds" --silent
