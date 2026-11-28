@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:nyt="http://www.nytimes.com/namespaces/rss/2.0" version="2.0">
+  <channel>
+    <title>NYT &gt; Top Stories</title>
+    <link>https://www.nytimes.com</link>
+    <atom:link href="https://caadfutures2025.hku.hk/ARCH7476/data/feeds/nyt.xml" rel="self" type="application/rss+xml"/>
+    <description/>
+    <language>en-us</language>
+    <copyright>Copyright 2026 The New York Times Company</copyright>
+    <lastBuildDate>Sat, 28 Nov 2026 02:14:40 +0000</lastBuildDate>
+    <pubDate>Sat, 28 Nov 2026 02:11:55 +0000</pubDate>
+    <image>
+      <title>NYT &gt; Top Stories</title>
+      <url>https://static01.nyt.com/images/misc/NYT_logo_rss_250x40.png</url>
+      <link>https://www.nytimes.com</link>
+    </image>
+    <item>
+      <title>Russia’s Big Ambitions for A.I. Are Undercut by Constraints of War</title>
+      <link>https://www.nytimes.com/2026/11/27/world/europe/russia-ai-journey-conference.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/world/europe/russia-ai-journey-conference.html</guid>
+      
+      <description>Russian officials see artificial intelligence as a way to solve the country’s pressing problems. But Russia’s technological development has been held back.</description>
+      <dc:creator>Ivan Nechepurenko</dc:creator>
+      <pubDate>Fri, 27 Nov 2026 21:41:12 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Artificial Intelligence</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Russian Invasion of Ukraine (2022)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Data Centers</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Robots and Robotics</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Sberbank</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Gref, German O</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Putin, Vladimir V</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Russia</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/11/27/multimedia/27int-russia-AI-001-cfkp/27int-russia-AI-001-cfkp-mediumSquareAt3X.jpg" width="1800"/>
+      <media:credit>Vyacheslav Prokofyev/Sputnik, via Reuters</media:credit>
+      
+    </item>
+    <item>
+      <title>Supreme Court Rulings Cheered by Republicans Wound Up Hurting Them</title>
+      <link>https://www.nytimes.com/2026/11/27/us/politics/supreme-court-rulings-midterms-voting.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/us/politics/supreme-court-rulings-midterms-voting.html</guid>
+      
+      <description>Decisions on voting rights, immigration and corruption generated a backlash that helped spur turnout that drove the Democratic sweep of Congress.</description>
+      <dc:creator>Carl Hulse</dc:creator>
+      <pubDate>Sat, 28 Nov 2026 00:43:25 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Midterm Elections (2026)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Voting Rights Act (1965)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Redistricting and Reapportionment</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Corruption (Institutional)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Democratic Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Republican Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Supreme Court (US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Emanuel, Rahm</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Colom, Scott</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Clyburn, James E</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Blumenthal, Richard</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Roberts, John G Jr</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Mississippi</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">South Carolina</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">United States</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/11/27/multimedia/00DC-BACKLASH-01-vzhc/00DC-BACKLASH-01-vzhc-mediumSquareAt3X-v2.jpg" width="1800"/>
+      <media:credit>Alex Kent/The New York Times</media:credit>
+      
+    </item>
+    <item>
+      <title>Five Big Questions for the 2028 Presidential Race</title>
+      <link>https://www.nytimes.com/2026/11/27/us/politics/2028-presidential-race-questions.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/us/politics/2028-presidential-race-questions.html</guid>
+      
+      <description>Will JD Vance and Marco Rubio run? What about Kamala Harris and Alexandria Ocasio-Cortez? And, of course, what role will President Trump play?</description>
+      <dc:creator>Tim Balk</dc:creator>
+      <pubDate>Fri, 27 Nov 2026 23:51:52 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Presidential Election of 2028</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Primaries and Caucuses</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Ocasio-Cortez, Alexandria</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Harris, Kamala D</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Vance, J D</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Rubio, Marco</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Democratic Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Republican Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/11/27/multimedia/27pol-2028-five-questions-01-bqvw/27pol-2028-five-questions-01-bqvw-mediumSquareAt3X.jpg" width="1800"/>
+      <media:credit>Alex Kent/The New York Times</media:credit>
+      
+    </item>
+    <item>
+      <title>In Democrats vs. Trump, the Loser May Be Federal Contractors</title>
+      <link>https://www.nytimes.com/2026/11/27/us/politics/trump-congressional-investigations-contractors.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/us/politics/trump-congressional-investigations-contractors.html</guid>
+      
+      <description>The incoming Democratic majorities have begun targeting businesses and other outsiders in their planned inquiries, but the president has threatened to fire them if they comply without his permission.</description>
+      <dc:creator>Luke Broadwater</dc:creator>
+      <pubDate>Fri, 27 Nov 2026 15:47:57 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Government Contracts and Procurement</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Corruption (Institutional)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">House Committee on Oversight and Government Reform</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">House of Representatives</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Senate</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <media:content height="1799" medium="image" url="https://static01.nyt.com/images/2026/11/27/multimedia/27dc-oversight-gpvc/27dc-oversight-gpvc-mediumSquareAt3X.jpg" width="1800"/>
+      <media:credit>Haiyun Jiang/The New York Times</media:credit>
+      
+    </item>
+    <item>
+      <title>Andrea Stewart-Cousins, New York’s First Female Senate Majority Leader, Dies</title>
+      <link>https://www.nytimes.com/2026/11/27/us/andrea-stewart-cousins-dead.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/us/andrea-stewart-cousins-dead.html</guid>
+      
+      <description>Ms. Stewart-Cousins, 76, served in the State Senate for 20 years.  Her sudden death leaves a leadership void among top state Democrats.</description>
+      <dc:creator>Benjamin Oreskes, Maya King and Dana Rubinstein</dc:creator>
+      <pubDate>Fri, 27 Nov 2026 23:04:49 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">State Legislatures</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Stewart-Cousins, Andrea</category>
+      <media:content height="1701" medium="image" url="https://static01.nyt.com/images/2026/11/27/multimedia/27met-cousins-death-kpcz/27met-cousins-death-kpcz-mediumSquareAt3X.jpg" width="1700"/>
+      <media:credit>Erika P. Rodríguez for The New York Times</media:credit>
+      
+    </item>
+    <item>
+      <title>Black Friday Deals and Holiday Sales Are Big Money for Influencers</title>
+      <link>https://www.nytimes.com/2026/11/27/business/influencers-black-friday-deals-holiday-shopping.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/business/influencers-black-friday-deals-holiday-shopping.html</guid>
+      
+      <description>A growing part of a brand’s Black Friday and Cyber Monday marketing strategy rests on paying top dollar for social media influencers to post videos.</description>
+      <dc:creator>Aruni Soni and Kim Bhasin</dc:creator>
+      <pubDate>Fri, 27 Nov 2026 15:29:05 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Advertising and Marketing</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Social Media</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Online Advertising</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">E-Commerce</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Shopping and Retail</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Black Friday and Cyber Monday (Shopping)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Fashion and Apparel</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Cosmetics and Toiletries</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Gifts</category>
+      <category domain="">Social Media Influencers</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Instagram Inc</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">L'Oreal SA</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Interactive Advertising Bureau</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">TikTok (ByteDance)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Unilever NV</category>
+      <media:content height="1802" medium="image" url="https://static01.nyt.com/images/2026/11/27/multimedia/27biz-influencer-holiday-shopping-mcvk/27biz-influencer-holiday-shopping-mcvk-mediumSquareAt3X.jpg" width="1800"/>
+      <media:credit>Brian Karlsson for The New York Times</media:credit>
+      
+    </item>
+    <item>
+      <title>The Society Page Reporter Who Outraged the Jet Set</title>
+      <link>https://www.nytimes.com/2026/11/27/style/charlotte-curtis-black-panthers.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/style/charlotte-curtis-black-panthers.html</guid>
+      
+      <description>Before there was Tom Wolfe, there was Charlotte Curtis, who turned Park Avenue into news.</description>
+      <dc:creator>Ginia Bellafante</dc:creator>
+      <pubDate>Fri, 27 Nov 2026 14:35:36 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Women and Girls</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">High Society and Socialites</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Bernstein, Leonard</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Morgan, Robin</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Capote, Truman</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Curtis, Charlotte</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Black Panther Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">anniversary-175</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">archives-informed</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">internal-paywall-exempt</category>
+      <media:content height="1799" medium="image" url="https://static01.nyt.com/images/2026/10/22/multimedia/00PROJECTS-175-EYEWITNESS-CURTIS-cvhq/00PROJECTS-175-EYEWITNESS-CURTIS-cvhq-mediumSquareAt3X.jpg" width="1800"/>
+      <media:credit>Matt Dorfman</media:credit>
+    </item>
+    <item>
+      <title>Some Americans canceled or postponed Thanksgiving dinners amid power outages and storms.</title>
+      <link>https://www.nytimes.com/2026/11/27/us/thanksgiving-delayed-storm.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/us/thanksgiving-delayed-storm.html</guid>
+      
+      <description>Some Americans canceled or postponed Thanksgiving dinners amid power outages and storms. They were rescheduled to Friday, Saturday and beyond.</description>
+      <dc:creator>Katie Benner, Mack Liederman and Emma Schartz</dc:creator>
+      <pubDate>Sat, 28 Nov 2026 02:07:54 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Thanksgiving Day</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Power Failures and Blackouts</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Turkeys</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Parades</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Snow and Snowstorms</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2026/11/27/multimedia/27nat-thanksgiving-do-over-1-ktwf/27nat-thanksgiving-do-over-1-ktwf-mediumSquareAt3X.jpg" width="1800"/>
+      <media:credit>Graham Dickie for The New York Times</media:credit>
+      
+    </item>
+    <item>
+      <title>What to Know About the (Rescheduled) Macy’s Thanksgiving Parade</title>
+      <link>https://www.nytimes.com/2026/11/27/nyregion/rescheduled-macys-thanksgiving-parade.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/nyregion/rescheduled-macys-thanksgiving-parade.html</guid>
+      
+      <description>Yes, there will be balloons. Some people even got a sneak peek at them. Here’s what to expect for Saturday’s version of the postponed holiday event.</description>
+      <dc:creator>Christopher Maag</dc:creator>
+      <pubDate>Fri, 27 Nov 2026 22:32:37 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Parades</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Thanksgiving Day</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">New York City</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/11/27/multimedia/27met-saturday-parade-WTK-cglh/27met-saturday-parade-WTK-cglh-mediumSquareAt3X.jpg" width="1800"/>
+      <media:credit>Graham Dickie for The New York Times</media:credit>
+      
+    </item>
+    <item>
+      <title>Thanksgiving Storm Leaves More Than 400,000 Without Power on the East Coast</title>
+      <link>https://www.nytimes.com/2026/11/27/us/thanksgiving-weather-east-coast-storm.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/us/thanksgiving-weather-east-coast-storm.html</guid>
+      
+      <description>Conditions continued to improve on Friday after heavy rain and strong winds lashed the coast from Virginia to New York. But many remained without power and travel disruptions persisted.</description>
+      <dc:creator>Qasim Nauman, Francesca Regalado and Amanda Holpuch</dc:creator>
+      <pubDate>Sat, 28 Nov 2026 02:11:55 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Weather</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">National Weather Service</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">New England States (US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Northeastern States (US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Mid-Atlantic States (US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">New York City</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Thanksgiving Day</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Power Failures and Blackouts</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Delays (Transportation)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Central Park (Manhattan, NY)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">East Coast (US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">New Jersey</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">New York Metropolitan Area</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2026/11/27/multimedia/27xp-storm-toll-01-htqv/27xp-storm-toll-01-htqv-mediumSquareAt3X.jpg" width="1800"/>
+      <media:credit>Anna Rose Layden/Reuters</media:credit>
+      
+    </item>
+    <item>
+      <title>It’s Boom Times for Old TV Shows. New TV, Not So Much.</title>
+      <link>https://www.nytimes.com/2026/11/27/business/media/old-tv-shows-mad-men.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/business/media/old-tv-shows-mad-men.html</guid>
+      
+      <description>Fewer original series, decision fatigue and a desire for comfort have viewers escaping to the past.</description>
+      <dc:creator>John Koblin</dc:creator>
+      <pubDate>Fri, 27 Nov 2026 17:02:48 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Television</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Ratings (Audience Measurement)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Bloys, Casey</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Greenblatt, Robert</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Landgraf, John</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Band of Brothers (TV Program)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Seinfeld (TV Program)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Stranger Things (TV Program)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Grand Theft Auto VI (Video Game)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Cheers (TV Program)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Pitt (TV Program)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Succession (TV Program)</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/11/27/business/00biz-library-tv/00biz-library-tv-mediumSquareAt3X.jpg" width="1800"/>
+      <media:credit>Ricardo Santos</media:credit>
+    </item>
+    <item>
+      <title>2 TV Shows Take on Sam Bankman-Fried and FTX</title>
+      <link>https://www.nytimes.com/2026/11/27/business/media/sam-bankman-fried-ftx-altruists.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/business/media/sam-bankman-fried-ftx-altruists.html</guid>
+      
+      <description>The limited series “The Altruists” and the documentary “The Boy Who Stole Billions?” offer different takes on the crypto exchange founder’s role in one of the largest frauds in history.</description>
+      <dc:creator>Nicole Sperling</dc:creator>
+      <pubDate>Fri, 27 Nov 2026 10:02:09 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Television</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Documentary Films and Programs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Virtual Currency</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Frauds and Swindling</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Content Type: Personal Profile</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Altruists (TV Program)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Moore, Graham</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Netflix Inc</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Boy Who Stole Billions? (TV Program)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Burstein, Nanette</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Amazon.com Inc</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Bankman-Fried, Sam</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Ellison, Caroline (1994- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">HK FTX Trading Ltd (Futures Exchange)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Alameda Research LLC</category>
+    </item>
+    <item>
+      <title>For One Stormy Moment, D.C. Reveled in a Blank Wall Where Trump’s Name Once Hung</title>
+      <link>https://www.nytimes.com/2026/11/27/us/politics/kennedy-center-trump-name-tarp.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/us/politics/kennedy-center-trump-name-tarp.html</guid>
+      
+      <description>High winds dislodged a section of tarp obscuring the removal of the president’s name from the John F. Kennedy Center for the Performing Arts, whipping up some members of the capital.</description>
+      <dc:creator>Elizabeth Williamson</dc:creator>
+      <pubDate>Sat, 28 Nov 2026 01:26:03 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Building (Construction)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Kennedy, John F, Center for the Performing Arts</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Kennedy, John Fitzgerald</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Floca, Matt</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Beatty, Joyce</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Washington (DC)</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/11/27/multimedia/27dc-tarps-lpjw/27dc-tarps-lpjw-mediumSquareAt3X.jpg" width="1800"/>
+      <media:credit>Salwan Georges for The New York Times</media:credit>
+      
+    </item>
+    <item>
+      <title>Planning Board to Hold Last-Minute Meeting to Consider Trump’s D.C. Construction</title>
+      <link>https://www.nytimes.com/2026/11/27/us/politics/planning-board-trump-construction-meeting.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/us/politics/planning-board-trump-construction-meeting.html</guid>
+      
+      <description>President Trump will lose control over the National Capital Planning Commission after Democrats take control of Congress in January. It could give final approval to some of his prized projects.</description>
+      <dc:creator>Luke Broadwater</dc:creator>
+      <pubDate>Sat, 28 Nov 2026 02:08:43 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">National Parks, Monuments and Seashores</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Building (Construction)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Democratic Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">National Capital Planning Commission</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">East Potomac Park (Washington, DC)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Washington (DC)</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/11/27/multimedia/27dc-planning-pzmq/27dc-planning-pzmq-mediumSquareAt3X.jpg" width="1800"/>
+      <media:credit>Eric Lee for The New York Times</media:credit>
+      
+    </item>
+    <item>
+      <title>Anita DeFrantz, Who Rowed Her Way Into Olympic History, Dies at 74</title>
+      <link>https://www.nytimes.com/2026/11/27/sports/anita-defrantz-dead.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/sports/anita-defrantz-dead.html</guid>
+      
+      <description>She was the first Black woman to win an Olympic medal in rowing. She then became a relentless advocate for women’s inclusion in the Olympics.</description>
+      <dc:creator>Jeré Longman</dc:creator>
+      <pubDate>Sat, 28 Nov 2026 01:52:45 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Anita DeFrantz</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Rowing</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Black People</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Deaths (Obituaries)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Olympic Games (1980)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Women and Girls</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Records and Achievements</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Olympic Games (1976)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">International Olympic Committee</category>
+    </item>
+    <item>
+      <title>I Prosecuted Government Corruption. We’re in Trouble.</title>
+      <link>https://www.nytimes.com/2026/11/27/opinion/corruption-government-prosecutions.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/opinion/corruption-government-prosecutions.html</guid>
+      
+      <description>Federal prosecutors will struggle to prosecute any corrupt government official for years.</description>
+      <dc:creator>Kate Gilbert</dc:creator>
+      <pubDate>Fri, 27 Nov 2026 11:00:10 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Corruption (Institutional)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Federal-State Relations (US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Government Employees</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Justice Department</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Ethics and Official Misconduct</category>
+      <media:content height="1799" medium="image" url="https://static01.nyt.com/images/2026/11/27/opinion/27gilbert/27gilbert-mediumSquareAt3X.jpg" width="1800"/>
+      <media:credit>Álvaro Bernis</media:credit>
+    </item>
+    <item>
+      <title>What to Do About the Epidemic of Bad Dogs</title>
+      <link>https://www.nytimes.com/2026/11/27/opinion/what-to-do-about-the-epidemic-of-bad-dogs.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/opinion/what-to-do-about-the-epidemic-of-bad-dogs.html</guid>
+      
+      <description>The status quo view of good and bad dog behavior is often deeply unfair to dogs.</description>
+      <dc:creator>Jessica Pierce</dc:creator>
+      <pubDate>Fri, 27 Nov 2026 16:39:59 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Dogs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Animal Behavior</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Pets</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/11/30/opinion/27pierce/27pierce-mediumSquareAt3X.jpg" width="1800"/>
+      <media:credit>Mark Krzepis</media:credit>
+    </item>
+    <item>
+      <title>Princess Kate’s Cancer Documentary ‘Heal’: 3 Takeaways</title>
+      <link>https://www.nytimes.com/2026/11/27/world/europe/princess-catherine-kate-heal-cancer-documentary.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/11/27/world/europe/princess-catherine-kate-heal-cancer-documentary.html</guid>
+      
+      <description>‘Heal,’ a 30-minute authorized documentary released this week, offers glimpses into Catherine’s recovery since her 2024 cancer diagnosis and treatment.</description>
+      <dc:creator>Megan Specia</dc:creator>
+      <pubDate>Sat, 28 Nov 2026 01:35:00 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Documentary Films and Programs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Cancer</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Hikes and Hiking</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">England</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Great Britain</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Catherine, Princess of Wales</category>
+      <media:content height="1798" medium="image" url="https://static01.nyt.com/images/2026/11/27/multimedia/27int-uk-royals-catherine-cancer--pkgv/27int-uk-royals-catherine-cancer--pkgv-mediumSquareAt3X.jpg" width="1800"/>
+      <media:credit>Pool photo by Aaron Chown</media:credit>
+      
+    </item>
+  </channel>
+</rss>
